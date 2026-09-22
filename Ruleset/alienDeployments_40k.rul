@@ -1090,7 +1090,7 @@ alienDeployments:
     height: 9
 
   - type: STR_CULTIST_BASE_LEVEL_1
-    # markerName: STR_CULT_MARKERNAME #commented for save compatibility, will be enabled in 3.4
+    markerName: STR_CULT_MARKERNAME
     randomRace: [STR_EARLY_CULTISTS]
     data: &cultistBaseLevel1
       - alienRank: 2
@@ -1137,7 +1137,7 @@ alienDeployments:
     unlockedResearch: STR_CHAOS_ARTIFACTS_RESEARCH
 
   - type: STR_CULTIST_BASE_LEVEL_2
-    # markerName: STR_CULT_MARKERNAME #commented for save compatibility, will be enabled in 3.4
+    markerName: STR_CULT_MARKERNAME
     randomRace: [STR_SECTOID, STR_CULTIST_SQUATS]
     data: &cultBaseLevel2
       - alienRank: 1  # move to mapscript assassin tower?
@@ -1201,7 +1201,7 @@ alienDeployments:
     unlockedResearch: STR_CHAOS_ARTIFACTS_RESEARCH
 
   - type: STR_CULTIST_BASE_LEVEL_3
-    # markerName: STR_CULT_MARKERNAME #commented for save compatibility, will be enabled in 3.4
+    markerName: STR_CULT_MARKERNAME
     randomRace: [STR_SECTOID_ELITE, STR_SECTOID_ELITE, STR_SECTOID_ELITE, STR_NEVERBORN_CULT, STR_ALPHA_CULT]
     data: &cultBaseLevel3
       - alienRank: 0
@@ -1263,7 +1263,7 @@ alienDeployments:
   - type: STR_CULTIST_BASE_START
     randomRace: [STR_SECTOID]
     data: *cultBaseLevel2
-    # markerName: STR_CULT_MARKERNAME #commented for save compatibility, will be enabled in 3.4
+    markerName: STR_CULT_MARKERNAME
     genMissionFreq: 4  # 9
     alienBaseUpgrades:
       0:
