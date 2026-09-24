@@ -164,7 +164,7 @@ alienDeployments:
       STR_GSC_TAUROX_PATROL_LARGE: 30
       STR_GENE_INFILTRATION: 0  # inherited from OXCE_40k objective: 1 doesn't work properly for bases. Might also miss spawnZone
     genMissionFreq: 2
-    #markerName: STR_GENE_HIVE_MARKERNAME # commented to not break save compatibility, it will be enabled in 3.4
+    markerName: STR_GENE_HIVE_MARKERNAME
     points: 1
     missionBountyItem: STR_ALIEN_ALLOYS
     missionBountyItemCount: 50
@@ -371,7 +371,7 @@ alienDeployments:
     missionBountyItemCount: 4
     objectiveType: 14
     objectivesRequired: 1  # only destroy 1 of 8 tiles
-    #markerName: STR_TOMB_NECRON_MARKERNAME # commented to not break save compatibility, it will be enabled in 3.4
+    markerName: STR_TOMB_NECRON_MARKERNAME
     briefing:
       cutscene: NECRONTOMB
       desc: STR_TOMB_DESCRIPTION
@@ -546,7 +546,7 @@ alienDeployments:
             itemSets: *emptyItemSets
     missionBountyItem: STR_REQUISITION_BOUNTY_500K
     missionBountyItemCount: 2
-    #markerName: STR_MONOLITH_MARKERNAME # commented to not break save compatibility, it will be enabled in 3.4
+    markerName: STR_MONOLITH_MARKERNAME
     unlockedResearch: STR_MONOLITH
 
   - type: STR_DOOMSDAY_MONOLITH    # NECRON
@@ -730,7 +730,7 @@ alienDeployments:
             itemSets: *emptyItemSets
     missionBountyItem: STR_REQUISITION_BOUNTY_500K
     missionBountyItemCount: 3
-    #markerName: STR_DOOMSDAY_MONOLITH_MARKERNAME # commented to not break save compatibility, it will be enabled in 3.4
+    markerName: STR_DOOMSDAY_MONOLITH_MARKERNAME
     unlockedResearch: STR_DOOMSDAY_MONOLITH
 
   - type: STR_NECRON_RETALIATION
