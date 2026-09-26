@@ -912,6 +912,7 @@ alienDeployments:
             highQty: 0
             dQty: 1
             itemSets: *emptyItemSets
+      markerName: STR_TERROR_SITE #default terror mission marker
 
 
   - type: STR_NECRON_TERROR
@@ -1088,6 +1089,7 @@ alienDeployments:
             dQty: 1
             itemSets: *emptyItemSets
     height: 9
+    markerName: STR_TERROR_SITE
 
   - type: STR_CULTIST_BASE_LEVEL_1
     markerName: STR_CULT_MARKERNAME
@@ -1282,6 +1284,7 @@ alienDeployments:
     unlockedResearch: STR_CHAOS_ARTIFACTS_RESEARCH
 
   - type: STR_CULTIST_SACRIFICES_LEVEL_1
+    markerName: STR_CULT_RITUAL_MARKERNAME
     data:
       - alienRank: 2
         lowQty: 0
@@ -1312,6 +1315,7 @@ alienDeployments:
     missionBountyItemCount: 25
 
   - type: STR_CULTIST_SUMMONING_LEVEL_1
+    markerName: STR_CULT_RITUAL_MARKERNAME
     objectiveType: 100
     abortPenalty: 100
     data:
@@ -1373,6 +1377,7 @@ alienDeployments:
     missionBountyItemCount: 100
 
   - type: STR_CULTIST_RIOT
+    markerName: STR_RIOT_MARKERNAME
     data:
       - alienRank: 1
         lowQty: 1
@@ -1830,6 +1835,7 @@ alienDeployments:
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
 
   - type: STR_RIOT
+    markerName: STR_RIOT_MARKERNAME
     startingCondition: STR_RIGCITY_NOMASSIVECRAFT
     civiliansByType:
       STR_CIVILIAN_F0: 1
@@ -1853,6 +1859,7 @@ alienDeployments:
     missionBountyItem: STR_REQUISITION_BOUNTY_100K
 
   - type: STR_ORKBASE1  # ORKBASE1 INC.
+    markerName: STR_ORK_BASE_MARKERNAME
     data: &orkBaseTier1Data
       - alienRank: 5
         lowQty: 5  # 4
@@ -1906,6 +1913,7 @@ alienDeployments:
     abortPenalty: 100
 
   - type: STR_ORKBASE2  # ORKBASE2 INC.
+    markerName: STR_ORK_BASE_MARKERNAME
     data:
       - alienRank: 5
         lowQty: 5  # 4
@@ -1959,6 +1967,7 @@ alienDeployments:
     abortPenalty: 150
 
   - type: STR_ORKBASE3  # ORKBASE3 INC.
+    markerName: STR_ORK_BASE_MARKERNAME
     markerIcon: 127
     data:
       - alienRank: 5
@@ -2014,6 +2023,7 @@ alienDeployments:
     abortPenalty: 250
 
   - type: STR_ORKBASE4  # ORKBASE4 INC.
+    markerName: STR_ORK_BASE_MARKERNAME
     markerIcon: 127
     data: &orkBaseTier4Data
       - alienRank: 5
@@ -2069,6 +2079,7 @@ alienDeployments:
     abortPenalty: 400
 
   - type: STR_ORKBASE5  # ORKBASE5 INC.
+    markerName: STR_ORK_BASE_MARKERNAME
     markerIcon: 128
     data:
       - alienRank: 5  # Regular Boyz
@@ -2137,6 +2148,7 @@ alienDeployments:
     abortPenalty: 500
 
   - type: STR_ORKBASE_START
+    markerName: STR_ORK_BASE_MARKERNAME
     markerIcon: 127
     data: *orkBaseTier4Data
     genMission:
@@ -2160,6 +2172,7 @@ alienDeployments:
     missionBountyItemCount: 200
 
   - type: STR_ORK_OUTPOST
+    markerName: STR_ORK_OUTPOST_MARKERNAME
     data: *orkBaseTier1Data
     genMissionFreq: 2  # 4  # average of ~1.2/month
     unlockedResearch: STR_ORK_BASE_LEVEL1_DEFEATED
@@ -2850,6 +2863,7 @@ alienDeployments:
     missionBountyItemCount: 20
 
   - type: STR_TRAITOR_FIREBASE
+    markerName: STR_FIREBASE_MARKERNAME
     data:
       - alienRank: 1
         lowQty: 1
@@ -2969,6 +2983,7 @@ alienDeployments:
     missionBountyItemCount: 10
 
   - type: STR_TRAITOR_GUARD_BASE_LEVEL_1
+    markerName: STR_TRAITOR_GUARD_BASE_MARKERNAME
     randomRace: [STR_SLAANESH_TRAITOR_GUARD_EARLY, STR_EARLY_TRAITOR_GUARD_WITH_SQUATS, STR_CHAOS_PENETANTE_LEGION, STR_SNAKEMAN_DESERTERS, STR_SNAKEMAN_DESERTERS, STR_TZEENTCH_EARLY_GUARD_WDESERTERS, STR_TZEENTCH_EARLY_GUARD, STR_TZEENTCH_EARLY_GUARD_WMUTANTS, STR_CATACHAN_TRAITORS_EARLY]
     data:
       - alienRank: 1
@@ -3033,6 +3048,7 @@ alienDeployments:
 
 
   - type: STR_TRAITOR_GUARD_BASE_LEVEL_2
+    markerName: STR_TRAITOR_GUARD_BASE_MARKERNAME
     randomRace: [STR_SNAKEMAN, STR_SNAKEMAN, STR_TRAITOR_SQUATS, STR_EARLY_TRAITOR_GUARD_WITHSISTERS, STR_SLAANESH_TRAITOR_GUARD_MID, STR_TZEENTCH_TRAITOR_GUARD, STR_TZEENTCH_TRAITOR_GUARD_TZAANGOR, STR_CATACHAN_TRAITORS_EARLY, STR_CATACHAN_TRAITORS_EARLY, STR_CATACHAN_TRAITORS_MIDDLE]
     data:
       - alienRank: 1
@@ -3088,6 +3104,7 @@ alienDeployments:
     abortPenalty: 150
 
   - type: STR_TRAITOR_GUARD_BASE_LEVEL_3
+    markerName: STR_TRAITOR_GUARD_BASE_MARKERNAME
     randomRace: [STR_SNAKEMAN_ELITE, STR_SNAKEMAN_ELITE, STR_SNAKEMAN_ELITE, STR_SNAKEMAN_ELITE, STR_EARLY_TRAITOR_GUARD_WITHSISTERS, STR_EARLY_TRAITOR_GUARD_MARINES, STR_SLAANESH_TRAITOR_GUARD_LATE, STR_BLACKSTONE_STORMTROOPERS_LIST, STR_BLACKSTONE_RECON_FORCE, STR_BLACKSTONE_WITH_CSM_BLACKGUARD, STR_TZEENTCH_TRAITOR_GUARD_WITCH, STR_TZEENTCH_TRAITOR_GUARD_ELITE, STR_TZEENTCH_TRAITOR_GUARD_STORMTROOPERS, STR_CATACHAN_TRAITORS_LATE, STR_CATACHAN_TRAITORS_LATE, STR_CATACHAN_TRAITORS_LATE]
     data:
       - alienRank: 0
@@ -3149,6 +3166,7 @@ alienDeployments:
     abortPenalty: 250
 
   - type: STR_TRAITOR_GUARD_BASE_START
+    markerName: STR_TRAITOR_GUARD_BASE_MARKERNAME
     randomRace: [STR_SNAKEMAN, STR_SNAKEMAN, STR_SNAKEMAN, STR_SNAKEMAN_ELITE, STR_TRAITOR_SQUATS, STR_TRAITOR_SQUATS, STR_CATACHAN_TRAITORS_EARLY, STR_CATACHAN_TRAITORS_EARLY, STR_CATACHAN_TRAITORS_EARLY, STR_CATACHAN_TRAITORS_MIDDLE, STR_CATACHAN_TRAITORS_LATE]
     data:
       - alienRank: 1
