@@ -702,7 +702,7 @@ soldiers:
     soldierNames:
       - delete
       - Names/eldar.nam
-    # prefix: "Hwk. " #UNCOMMENT WHEN RULESET SCHEMA IS UPDATED, NOTE CAUSING LINTER ERRORS
+    prefix: "Hwk. "
 
 # ELDAR.TIER3 # EXARCH / AUTARCH
 
