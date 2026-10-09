@@ -292,6 +292,12 @@ extended:
       # perils of the warp
       SKILL_IS_PSYCHIC_POWER: int # is the skill psychic power or interacting with the warp? if yes this is the power
       SKILL_PSYCHIC_POWER_MODIFIER: int # increments UNIT_PERILS_MODIFIER or our risk of perils by this much per use
+      # *** sprint skill script (ie. banshee sprint) ***
+      SKILL_SPRINT_MOVECOST_TIMEPERCENT: int # what is the new TU % when sprinting
+      SKILL_SPRINT_MOVECOST_ENERGYPERCENT: int # what is the new ENERGY % when sprinting
+      SKILL_SPRINT_COOLDOWN_PERIOD: int # how many turns the unit must wait after sprinting once
+      SKILL_SPRINT_REUSABLE: int #is sprint reusable? 1=YES 0=Limited uses (use SKILL_SPRINT_USES to specify how many)
+      SKILL_SPRINT_USES: int #how many uses of sprint you have
 
     BattleUnit:
       # *** Tags for handling energy shields on units ***
@@ -358,6 +364,9 @@ extended:
       UNIT_CULEXUS_HORROR_STORM_ACTIVE: int
       # Ratling Scripts
       UNIT_SHOOT_AND_SCOOT_ACTIVE: int # Relevant values: 1 = expended but active, -1 = expended but inactive.
+      # *** sprint skill script (ie. banshee sprint) ***
+      SKILL_SPRINT_COOLDOWN_TURNS: int # how many turns of cooldown it must wait to sprint again
+      SKILL_SPRINT_USES_SPENT: int #how many uses of sprint you have left
 
 
     RuleSoldier:
