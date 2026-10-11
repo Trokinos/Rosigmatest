@@ -12,7 +12,7 @@ armors:
     spriteInv: HNDM_33
     customArmorPreviewIndex: 1128
     spriteFaceGroup: 6
-    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    spriteFaceColor: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
     corpseBattle:
       - STR_SLAANESH_HANDMAIDEN_CORPSE
     stats:
