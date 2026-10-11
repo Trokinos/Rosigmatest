@@ -15,10 +15,8 @@ soldiers:
     flagOffset: 21 # !!! need to fix this later !!!
     costBuy: 20000  # Not meant to be purchased directly. 
     costSalary: 15000 # Thrice as expensive as a Novice; Hedonist lifestyles
-    requires: # !!! need to fix this later !!!
-      - STR_ADEPTAS_NOVICE_RESEARCH
-      - STR_CHAPTER_PURITY
-      - STR_NOT_BLOODYROSES
+    requires: ### >Remove this later.< ###
+    - STR_SLAANESH_SELECTED
     minStats:
       tu: 55 # Slaanesh Influence
       stamina: 60 # 5 Slaanesh influence
@@ -37,7 +35,7 @@ soldiers:
       health: 45
       bravery: 100 # Followers of Slaanesh do not fear death
       reactions: 80 # Slaanesh Influence
-      firing: 65 # 10 More
+      firing: 60 # 5 More
       throwing: 50 # 5 More
       strength: 30
       psiStrength: 90 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
@@ -90,3 +88,78 @@ soldiers:
     rankSprite: 4144
     rankBattleSprite: 4144 
     rankTinySprite: 4144
+
+  - type: STR_SLAANESH_EXALTEDMAIDEN  # Exalted Handmaidens. Essentially the slaanesh cantus promotion.  
+    flagOffset: 21 # !!! need to fix this later !!!
+    costBuy: 20000  # Not meant to be purchased directly. 
+    costSalary: 18000 # Somewhat higher salary than base.
+    requires: ### >Remove this later.< ###
+    - STR_SLAANESH_SELECTED
+    minStats: # Don't matter
+      tu: 55 
+      stamina: 60
+      health: 35 
+      bravery: 60 
+      reactions: 40 
+      firing: 45 
+      throwing: 35 
+      strength: 16
+      psiStrength: 25
+      psiSkill: 30
+      melee: 40 
+    maxStats: # Don't matter
+      tu: 75 
+      stamina: 80 
+      health: 45
+      bravery: 100 
+      reactions: 80 
+      firing: 60 # 
+      throwing: 50 
+      strength: 30
+      psiStrength: 90
+      psiSkill: 60
+      melee: 60 
+    statCaps:
+      tu: 115 # + 10
+      stamina: 125 # + 10
+      health: 75 # unchanged
+      bravery: 110
+      reactions: 130 # + 10
+      firing: 110 # + 10
+      throwing: 75 # unchanged
+      strength: 75 # unchanged
+      psiStrength: 100
+      psiSkill: 120 # + 20
+      melee: 130 # + 10
+    trainingStatCaps:
+      tu: 90 # +5  
+      stamina: 85 # +5 
+      health: 70 # +5 
+      firing: 85 #  +5 
+      throwing: 70
+      strength: 55 # +5 
+      psiStrength: 60
+      psiSkill: 100
+      melee: 85 # +5
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESH_EXALTEDMAIDEN_ARMOR
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 95
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/adeptas_novice.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+    - STR_SLAANESH_EXALTEDMAIDEN_RANK_0
+    rankSprite: 4148
+    rankBattleSprite: 4148 
+    rankTinySprite: 4148

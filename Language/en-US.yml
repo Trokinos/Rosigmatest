@@ -14955,14 +14955,42 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_TAUBASE_LV1: "Test Tau base"
   MAP_TAU_MOUNT: "Tau Mountains"
 
-  ## SLAANESH STRATEGY SECTION
+  ########## SLAANESH STRATEGY SECTION ################
+
+  ### RESEARCH DEFINITIONS
+
+  STR_SLAANESH_STRATEGY: "Slaanesh strategy [EARLY WIP]"
+  STR_SLAANESH_SELECTED: "(Slaanesh strategy selected)"
+  STR_NOT_SLAANESH_STRATEGY: "(Not Slaanesh strategy)"
+  STR_CHOSEN_SLAANESH_STRATEGY: "Slaanesh Strategy Subversively Selected"
+  STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
+  STR_HANDMAIDEN_INDOCTRINATION: "(Handmaiden Indoctrination)"
+
+  ### MANUFACTURE DEFINITIONS
+
+  STR_RITUALS_OF_EXCESS: "Rituals of Excess"
+  STR_RITUALS_OF_DEPRAVITY: "Rituals of Depravity"
+  STR_RITUALS_OF_PAIN: "Rituals of Pain"
+  STR_RITUALS_OF_DECADENCE: "Rituals of Decadence" 
+
+  STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
+  STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
+
+  ## UNIT PROJECTS
+
+  STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
+
+  #ITEM DEFINITIONS
+
+  STR_SLAANESH_PIETY: "Piety"
+  STR_WARPSTONE_TRIBUTE: "Warpstone Tribute"
 
   #UNIT DEFINITIONS
 
   STR_SLAANESH_HANDMAIDEN: "Handmaiden"
   STR_SLAANESH_EXALTEDMAIDEN: "Exalted Handmaiden"
-  STR_SLAANESH_SISTER: "Sister Immaculate"
-  STR_SLAANESH_EXALTEDSISTER: "Exalted Sister Immaculate"
+  STR_SLAANESH_IMMACULATE_SISTER: "Sister Immaculate"
+  STR_SLAANESH_EXALTEDSISTER: "Exalted Immaculate"
   STR_SLAANESH_SORC: "Sorceress of Slaanesh"
   STR_SLAANESH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
   STR_SLAANESH_MORBIDANGEL: "Morbid Angel"
@@ -14971,6 +14999,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   ## Slaanesh Adeptas Armors
 
   STR_SLAANESH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
+  STR_SLAANESH_EXALTEDMAIDEN_ARMOR: "Exalted Handmaiden Armor"
   STR_SLAANESH_HANDMAIDEN_MEDICAE_ARMOR: "Handmaiden Medicae Armor"
 
   ## Slaanesh Adeptas Ranks

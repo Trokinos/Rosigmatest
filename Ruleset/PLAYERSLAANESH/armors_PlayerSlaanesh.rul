@@ -59,6 +59,64 @@ armors:
       DODGE_CHANCE: 15
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
+
+  - type: STR_SLAANESH_EXALTEDMAIDEN_ARMOR     # Exalted Handmaidens have better vision and are more evasive.
+    visibilityAtDay: 40
+    visibilityAtDark: 25 # Minor mark of Slaanesh
+    antiCamouflageAtDay: 5  # Minor mark of Slaanesh
+    antiCamouflageAtDark: 5 # Minor mark of Slaanesh
+    heatVision: 20 # Minor mark of Slaanesh
+    spriteSheet: HANDMAIDEN.PCK # Fix later
+    spriteInv: HNDM_33 # Fix later
+    customArmorPreviewIndex: 1128 # Add later
+    spriteFaceGroup: 6
+    spriteFaceColor: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_SLAANESH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 10
+      stamina: 10
+      health: 5 # +5 vs HM
+      bravery: 10  # always multiples of 10
+      reactions: 10  # Slightly better reactions
+      firing: 10 # +5 vs HM
+      throwing: 7
+      strength: 5 # +5 vs HM
+      psiStrength: 0
+      psiSkill: 10
+      melee: 10 # Slightly better melee
+    storeItem: STR_NONE
+    frontArmor: 85
+    sideArmor: 70
+    rearArmor: 45
+    underArmor: 70
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 0.9  # AP - Evasive
+      - 1.0  # FLAMES
+      - 1.1  # HE - Further weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Even further improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESH_EXALTEDHM
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 22
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
       
   - type: STR_SLAANESH_HANDMAIDEN_MEDICAE_ARMOR    # Handmaiden Medicae armor, with less protection but better stats
     visibilityAtDay: 40

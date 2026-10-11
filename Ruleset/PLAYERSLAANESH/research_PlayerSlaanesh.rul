@@ -1,0 +1,81 @@
+###
+
+research:
+### core tech tree research
+  - name: STR_SLAANESH_SELECTED        # (Slaanesh strategy skillfully selected)
+    dependencies:
+      - STR_GENERALLOCK
+
+# Blocker tech
+  - name: STR_NOT_SLAANESH_STRATEGY         # (Not a supple servant of Slaanesh)
+
+  ### The Slaanesh condition is
+### STR_ARBITES: true
+### STR_NOT_CHAOSCULT: true
+
+  - name: STR_SLAANESH_STRATEGY
+    points: 0
+    cost: 5
+    dependencies:
+      - STR_ARBITES
+#    lookup: STR_CHOSEN_SLAANESH_STRATEGY
+    unlocks:
+      - STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE ### TEMPORARY, THIS NEEDS TO BE SET BY EVENT
+      - STR_HANDMAIDEN_INDOCTRINATION
+      #- STR_LASER_WEAPONS     # easiest way to activate heavy stubbers (???)
+      #- STR_IMPERIAL_WEAPONS  # Flamer/Shotgun/Guard Laspistol/Guard Lasgun
+      #- STR_GUARD_AND_ARBITES # easiest way to activate stub rifles
+      #- STR_NOT_STEEL_LEGION_STRATEGY # needed to activate normal chimeras (???)
+      - STR_NOT_IMPERIUM
+      - STR_NOT_CHAOSCULT
+      - STR_NOT_THE_IMPERIAL_LAW
+      #- STR_ENDGANGERSBASE    # Stop the onslaught of gang events
+      #- STR_GENESTEALERS_INACTIVE # no genestealers
+      #- STR_GSC_ARBITES_SPAWNED   # prevent GSC arbites spawn
+      - STR_SLAANESH_SELECTED
+      - STR_CHAOS_ARMORY_EXAM_SLAANESH
+    disables:
+      - STR_NOT_SLAANESH_STRATEGY
+      - STR_GENESTEALERS_ACTIVE
+      - STR_CHAOS_PATH
+      - STR_CHAOS_STRATEGY_ARBITES
+      - STR_CHAOS_STRATEGY
+      - STR_ELDAR_STRATEGY
+      - STR_GREENEST_ORKZ
+      - STR_TAU_GUEVESA_STRATEGY_GV
+      - STR_CHAPTER_PURITY
+      # STR_PSI_LAB
+      # STR_PSI_AMP
+      - STR_THE_MARTIAN_SOLUTION
+      #- STR_DEFAULT_CAMPAIGN
+      - STR_DIFFICULTY_OPTIONS    # does not have harder missions
+
+     ############## SECTION FOR DISABLED GENERIC TECHS ###############
+
+      - STR_MOTION_SCANNER
+      - STR_COMBAT_SERVITOR_PROGRAM # Lobotomization deeply offends Slaanesh! 
+
+     ############## SECTION FOR DISABLED CHAOS-RELATED TECHS #################
+      
+      - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
+      - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
+      - STR_ALIEN_ORIGINS # Followers of Slaanesh do not need to research chaos implements normally
+      - STR_CHAOS_PATH # Already on the only TRUE chaos path!
+
+  #- name: STR_CHOSEN_SLAANESH_STRATEGY #research lookup for Slaanesh chosen
+  # cost: 0
+  #  points: 0
+  #  dependencies:
+  #    - STR_GENERALLOCK
+
+  - name: STR_HANDMAIDEN_INDOCTRINATION # 
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_RITUALS_OF_WORSHIP # 
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK

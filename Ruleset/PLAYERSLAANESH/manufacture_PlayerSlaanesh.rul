@@ -1,0 +1,51 @@
+manufacture:
+
+#### RITUALS OF EXCESS - PIETY GENERATION
+
+  - name: STR_PROPITIATE_SLAANESH
+    category: STR_RITUALS_OF_EXCESS
+    requires:
+    - STR_RITUALS_OF_WORSHIP
+    space: 15
+    time: 200
+    cost: 6000
+    producedItems:
+      STR_SLAANESH_PIETY: 66
+    requiredItems:
+      STR_KILLPOINT_TOKEN: 60
+    points: 10
+
+  - name: STR_SACRIFICE_TO_SLAANESH
+    category: STR_RITUALS_OF_EXCESS
+    requires:
+    - STR_RITUALS_OF_WORSHIP
+    space: 15
+    time: 200
+    cost: 2000
+    producedItems:
+      STR_SLAANESH_PIETY: 260
+    requiredItems:
+      STR_ALIEN_SURGERY: 6
+    points: 10
+
+
+#### RITUALS OF PAIN - CHAOS SACRIFICE PREPARATION & GENERATION
+
+#### RITUALS OF DEPRAVITY - UNIT RECRUITMENT, UNIT CONVERSIONS
+
+  - name: STR_RECRUIT_HANDMAIDEN
+    category: STR_RITUALS_OF_DEPRAVITY
+    requires:
+    - STR_HANDMAIDEN_INDOCTRINATION
+    space: 0
+    time: 260
+    cost: 30000
+    producedItems: {}
+    spawnedPersonType: STR_SLAANESH_HANDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 75
+    points: 0
+
+#### RITUALS OF DECADENCE ####
+
+#### RITUALS OF PERFECTION - HIGH TIER UNIT PROMOTION

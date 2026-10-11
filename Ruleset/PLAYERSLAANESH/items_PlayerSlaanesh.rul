@@ -1,0 +1,15 @@
+### STRUCTURE OF FILE:
+### 1: PLOT ITEMS & TOKENS
+### 2: RITUAL ITEMS
+
+items:
+
+### Piety token, main currency for Slaanesh followers. Used in place of Imperial tokens for most situations.
+
+  - type: STR_SLAANESH_PIETY
+    size: 0.0
+
+### Manufactured token, used to bribe Slaanesh-aligned Hereteks. Required for tech progression.
+
+  - type: STR_WARPSTONE_TRIBUTE
+    size: 0.0

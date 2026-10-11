@@ -178,3 +178,20 @@ commendations:
         - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
     units:
       - STR_REPENTIA_PLAYERBLOODYROSE
+
+
+
+### SLAANESH COMMENDATIONS
+
+#  - type: STR_HANDMAIDEN_COMMENDATION
+#    description: STR_PARDON_COMMENDATION_DESCRIPTION # Fix this later !
+#    sprite: 5
+#    criteria:
+#      killsWithCriteriaCareer: [3, 6, 12]
+#      totalWins: [3, 6, 12]
+#    killCriteria:
+#      -
+#        - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+#    units:
+#      - STR_SLAANESH_HANDMAIDEN
+#      - STR_SLAANESH_EXALTEDMAIDEN
