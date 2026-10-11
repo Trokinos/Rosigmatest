@@ -1,0 +1,92 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+
+# STRUCTURE of this file
+# SISTERS.TIER1 # Immaculate Sisterhood units
+# CARETTA.TIER1 # De Caretta units, uncorrupted by Chaos
+# SERVANTS.TIER1 # Chaff units, cultists, gangers
+
+soldiers:
+
+# SISTERS.TIER1 #
+
+  - type: STR_SLAANESH_HANDMAIDEN  # Tier 1 corrupted Sororitas. Significantly more elite than loyalist novices.  
+    flagOffset: 21 # !!! need to fix this later !!!
+    costBuy: 20000  # Not meant to be purchased directly. 
+    costSalary: 15000 # Thrice as expensive as a Novice; Hedonist lifestyles
+    requires: # !!! need to fix this later !!!
+      - STR_ADEPTAS_NOVICE_RESEARCH
+      - STR_CHAPTER_PURITY
+      - STR_NOT_BLOODYROSES
+    minStats:
+      tu: 55 # Slaanesh Influence
+      stamina: 60 # 5 Slaanesh influence
+      health: 35 # 5 More vs Adeptas
+      bravery: 60 # Followers of Slaanesh do not fear death
+      reactions: 40 # Slaanesh influence
+      firing: 45 # 10 More
+      throwing: 35 # 5 More
+      strength: 16
+      psiStrength: 25
+      psiSkill: 30
+      melee: 40 # Slaanesh Influence
+    maxStats:
+      tu: 75 # Slaanesh influence
+      stamina: 80 # Slaanesh Influence
+      health: 45
+      bravery: 100 # Followers of Slaanesh do not fear death
+      reactions: 80 # Slaanesh Influence
+      firing: 65 # 10 More
+      throwing: 50 # 5 More
+      strength: 30
+      psiStrength: 90 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiSkill: 60
+      melee: 60 # Slaanesh Influence
+    statCaps:
+      tu: 105 # Slaanesh Influence
+      stamina: 115 # Slaanesh Influence
+      health: 75 # 5 More
+      bravery: 110
+      reactions: 120 # Slaanesh Influence
+      firing: 105 # 5 More
+      throwing: 75 # 5 More
+      strength: 75 # 5 Less
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    trainingStatCaps:
+      tu: 85 # 5 More
+      stamina: 80
+      health: 65
+      firing: 80 # 5 More
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80 # Slaanesh Influence
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESH_HANDMAIDEN_ARMOR # Slightly improved Cantus Armor
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 95
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/adeptas_novice.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESH_HANDMAIDEN_RANK_0
+      - STR_SLAANESH_HANDMAIDEN_RANK_1
+      - STR_SLAANESH_HANDMAIDEN_RANK_2
+      - STR_SLAANESH_HANDMAIDEN_RANK_3
+    rankSprite: 4144
+    rankBattleSprite: 4144 
+    rankTinySprite: 4144

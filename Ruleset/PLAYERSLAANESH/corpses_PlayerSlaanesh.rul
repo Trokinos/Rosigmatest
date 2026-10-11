@@ -1,0 +1,11 @@
+items:
+  - type: STR_SLAANESH_HANDMAIDEN_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: 2216
+    floorSprite: 2406
+    invWidth: 2
+    invHeight: 3
+    armor: 80
+    recover: false
+    battleType: 11

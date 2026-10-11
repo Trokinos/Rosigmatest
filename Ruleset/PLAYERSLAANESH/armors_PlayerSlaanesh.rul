@@ -1,0 +1,117 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+armors:
+  - type: STR_SLAANESH_HANDMAIDEN_ARMOR     # Corrupted Cantus Armor, with minor Chaos blessings.
+    visibilityAtDay: 40
+    visibilityAtDark: 22 # Heightened senses
+    antiCamouflageAtDay: 2  # Heightened Senses
+    antiCamouflageAtDark: 2 # Heightened Senses
+    heatVision: 10 # Heightened Senses
+    spriteSheet: HANDMAIDEN.PCK
+    spriteInv: HNDM_33
+    customArmorPreviewIndex: 1128
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_SLAANESH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 10
+      stamina: 10
+      health: 0
+      bravery: 10  # always multiples of 10
+      reactions: 10  # Slightly better reactions
+      firing: 5
+      throwing: 5
+      strength: 0 # No extra strength
+      psiStrength: 0
+      psiSkill: 10
+      melee: 10 # Slightly better melee
+    storeItem: STR_NONE
+    frontArmor: 85
+    sideArmor: 70
+    rearArmor: 45
+    underArmor: 70
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 1.0  # HE - Weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.9  # MELEE - Improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESH_HANDMAIDEN
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 15
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      
+  - type: STR_SLAANESH_HANDMAIDEN_MEDICAE_ARMOR    # Handmaiden Medicae armor, with less protection but better stats
+    visibilityAtDay: 40
+    visibilityAtDark: 22
+    antiCamouflageAtDay: 6  # Heightened senses
+    antiCamouflageAtDark: 6 # Heightened senses
+    heatVision: 15 # Heightened senses
+    spriteSheet: ADEPTASMEDICAE.PCK
+    spriteInv: MED_33
+    customArmorPreviewIndex: 140
+    corpseBattle:
+      - STR_SLAANESH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 5 # Less bulky than standard medicae armor
+      stamina: 10
+      health: 10
+      bravery: 0  # always multiples of 10
+      reactions: -5 # Significantly improved performance due to lighter armor
+      firing: -5 # Significantly improved performance due to lighter armor
+      throwing: 0
+      strength: 5
+      psiStrength: 0
+      psiSkill: 5
+      melee: 0 # Significantly improved performance due to lighter armor
+    storeItem: STR_ADEPTAS_MEDICAE_ARMORSTORE
+    frontArmor: 75 # 15 less than sororitas armor
+    sideArmor: 70 # 10 less than sororitas armor
+    rearArmor: 55 # 5 less than sororitas armor 
+    underArmor: 75 # 5 less than sororitas armor
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.7  # FLAMES
+      - 0.9  # HE - Slight weakness to HE
+      - 0.9  # LASCANON
+      - 0.9  # PLASMA
+      - 0.7  # STUN Further improved stun resistance
+      - 1.0  # MELEE Slightly improved melee resistance
+      - 0.7  # ACID
+      - 0.2  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESH_HANDMAIDEN
+    builtInWeapons:
+      - INV_NULL_3X3
+      - AUX_MEDICAE_MEDI_KIT
+    loftempsSet: [3] # Less agile than handmaidens
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 10
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1

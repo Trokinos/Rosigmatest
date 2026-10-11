@@ -14955,4 +14955,58 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_TAUBASE_LV1: "Test Tau base"
   MAP_TAU_MOUNT: "Tau Mountains"
 
+  ## SLAANESH STRATEGY SECTION
 
+  #UNIT DEFINITIONS
+
+  STR_SLAANESH_HANDMAIDEN: "Handmaiden"
+  STR_SLAANESH_EXALTEDMAIDEN: "Exalted Handmaiden"
+  STR_SLAANESH_SISTER: "Sister Immaculate"
+  STR_SLAANESH_EXALTEDSISTER: "Exalted Sister Immaculate"
+  STR_SLAANESH_SORC: "Sorceress of Slaanesh"
+  STR_SLAANESH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
+  STR_SLAANESH_MORBIDANGEL: "Morbid Angel"
+  STR_SLAANESH_EXALTEDANGEL: "Exalted Morbid Angel"
+
+  ## Slaanesh Adeptas Armors
+
+  STR_SLAANESH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
+  STR_SLAANESH_HANDMAIDEN_MEDICAE_ARMOR: "Handmaiden Medicae Armor"
+
+  ## Slaanesh Adeptas Ranks
+
+  STR_SLAANESH_HANDMAIDEN_RANK_0: "Seeker"
+  STR_SLAANESH_HANDMAIDEN_RANK_1: "Sinful Seeker"
+  STR_SLAANESH_HANDMAIDEN_RANK_2: "Seeker Sincere"
+  STR_SLAANESH_HANDMAIDEN_RANK_3: "Seeker Sublime"
+  STR_SLAANESH_EXALTEDMAIDEN_RANK_0: "Seeker Superior"
+
+  STR_SLAANESH_SISTER_RANK_0: "Sister"
+  STR_SLAANESH_SISTER_RANK_1: "Sumptuous Sister"
+  STR_SLAANESH_SISTER_RANK_2: "Sister Suggestive"
+  STR_SLAANESH_SISTER_RANK_3: "Sister Sensational"
+  STR_SLAANESH_EXALTEDSISTER_RANK_0: "Sister Superlative"
+
+  STR_SLAANESH_SORC_RANK_0: "Sorceress"
+  STR_SLAANESH_SORC_RANK_1: "Savvy Sorceress"
+  STR_SLAANESH_SORC_RANK_2: "Sorceress Suave"
+  STR_SLAANESH_SORC_RANK_3: "Sorceress Successful"
+  STR_SLAANESH_EXALTEDSORC_RANK_0: "Sorceress Supreme"
+
+  STR_SLAANESH_MORBIDANGEL_RANK_0: "Sensate"
+  STR_SLAANESH_MORBIDANGEL_RANK_1: "Sordid Sensate"
+  STR_SLAANESH_MORBIDANGEL_RANK_2: "Sensate Seditious"
+  STR_SLAANESH_MORBIDANGEL_RANK_3: "Sensate Subversive"
+  STR_SLAANESH_EXALTEDANGEL_RANK_0: "Sensate Subliminal"
+
+  ## Slaanesh cultist ranks
+
+  STR_SLAANESH_SERVANT-RANK_0: "Servant"
+  STR_SLAANESH_SERVANT-RANK_1: "Skillful Servant"
+  STR_SLAANESH_SERVANT-RANK_2: "Servant Substantial"
+  STR_SLAANESH_SERVANT-RANK_3: "Servant Significant"
+
+  STR_SLAANESH_SADIST_RANK_0: "Sadist"
+  STR_SLAANESH_SADIST_RANK_1: "Shrewd Sadist"
+  STR_SLAANESH_SADIST_RANK_2: "Sadist Scrupulous"
+  STR_SLAANESH_SADIST_RANK_3: "Sadist Sanguine"
