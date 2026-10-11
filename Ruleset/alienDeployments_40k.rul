@@ -25026,6 +25026,7 @@ alienDeployments:
   # black templar bloody rose orks waagh
 
   - type: STR_ORKBASEBTBR1  # waagh base for BT BR campaign
+    baseSelfDestructCode: STR_WAAGHISENDED
     points: 1
     markerIcon: 126
     terrains:
@@ -25116,6 +25117,7 @@ alienDeployments:
     abortPenalty: 150
 
   - type: STR_ORKBASEBTBR2
+    baseSelfDestructCode: STR_WAAGHISENDED
     points: 1
     markerIcon: 127
     terrains:
@@ -25218,6 +25220,7 @@ alienDeployments:
     abortPenalty: 250
 
   - type: STR_ORKBASEBTBR3
+    baseSelfDestructCode: STR_WAAGHISENDED
     points: 1
     markerIcon: 127
     terrains:
@@ -25323,6 +25326,7 @@ alienDeployments:
     abortPenalty: 400
 
   - type: STR_ORKBASEBTBR4
+    baseSelfDestructCode: STR_WAAGHISENDED
     points: 1
     markerIcon: 128
     terrains:
@@ -25486,6 +25490,8 @@ alienDeployments:
     despawnPenalty: 0
     keepCraftAfterFailedMission: true
     objectiveComplete: [STR_MAINORKSBASE_WIN, 400]
+    winCutscene: BTBRTEMPwinGame  # end the game for now to avoid everything breaking after as it's still work in progress and not ready for more
+    unlockedResearch: STR_WAAGHISENDED  # to allow BTBR to research their mid tier
 
   # Tau AI base test for quick battle
 

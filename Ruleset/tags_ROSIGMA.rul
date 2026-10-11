@@ -252,6 +252,7 @@ extended:
       # *** Stealth Items ***
       ITEM_STIM_ACTIVATES_STEALTH: int
       ITEM_IS_STEALTH_CLOAK: int # Does this item toggle camo cloak functionality when used?
+      ITEM_IS_STEALTH_SUIT_CLOAK: int # Does this item toggle stealth suit cloak functionality when used?
       ITEM_STEALTH_CLOAK_DURATION: int # How long does the camo cloak last when activated?
       ITEM_STEALTH_CLOAK_MOVEMENT_COST_MULTIPLIER: int # Movement ultiplier for this stealth cloak
       # *** Medikit Dummy Handling ***
@@ -265,6 +266,8 @@ extended:
       SKILL_LIKE_FIGHTING_A_SHADOW_RESTEALTH_DURATION: int
       SKILL_ACTIVATE_CAMO_CLOAK_ID: int
       SKILL_ACTIVATE_CAMO_CLOAK_RESTEALTH_DURATION: int
+      SKILL_ACTIVATE_STEALTH_SUIT_CLOAK_ID: int
+      SKILL_ACTIVATE_STEALTH_SUIT_CLOAK_RESTEALTH_DURATION: int
       # *** Dig In ***
       DigIn: int
       # *** Sisters of Battle Miracles ***

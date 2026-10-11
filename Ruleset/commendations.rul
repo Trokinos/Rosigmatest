@@ -171,8 +171,8 @@ commendations:
     description: STR_PARDON_COMMENDATION_DESCRIPTION
     sprite: 5
     criteria:
-      killsWithCriteriaCareer: [5]
-      totalWins: [2]
+      killsWithCriteriaCareer: [3]
+      totalWins: [1]
     killCriteria:
       -
         - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]

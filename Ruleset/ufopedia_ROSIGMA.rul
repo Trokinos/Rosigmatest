@@ -333,6 +333,12 @@ ufopaedia:
     image_id: UP033.SPK
     text: STR_PERILS_OF_THE_WARP_CODEX
 
+  - id: STR_AURA_MECHANICS
+    type_id: 10
+    section: STR_HELP
+    image_id: CULTLEGIONWARPTALON.SPK # placeholder
+    text: STR_AURA_MECHANICS_UFOPEDIA
+
   - id: STR_VISION_MODES_CODEXTITLE
     type_id: 10
     section: STR_HELP
@@ -800,6 +806,41 @@ ufopaedia:
         text: STR_BLACKTEMPLARHINTS_CODEX_PAGE1
       - title: STR_BLACKTEMPLAR_HELP
         text: STR_BLACKTEMPLARHINTS_CODEX_PAGE2
+      - title: STR_BLACKTEMPLAR_HELP
+        text: STR_BLACKTEMPLARHINTS_CODEX_PAGE3
+
+  - id: STR_BTMARINE_MIDTIER
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLACKTEMPLARLITANY_CODEX.SPK
+    text: STR_BTMARINE_MIDTIER_CODEX
+    requires:
+      - STR_BTMARINE_MIDTIER
+
+  - id: STR_BTMARINE_HIGHTIER
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLACKTEMPLARLITANY_CODEX.SPK
+    text: STR_BTMARINE_HIGHTIER_CODEX
+    requires:
+      - STR_BTMARINE_HIGHTIER
+
+  - id: STR_BTMARINEASSAULT_MIDTIER
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLACKTEMPLARLITANY_CODEX.SPK
+    text: STR_BTMARINEASSAULT_MIDTIER_CODEX
+    requires:
+      - STR_BTMARINEASSAULT_MIDTIER
+
+  - id: STR_BTTECH_HIGHTIER
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLACKTEMPLARLITANY_CODEX.SPK
+    text: STR_BTTECH_HIGHTIER_CODEX
+    requires:
+      - STR_BTTECH_HIGHTIER
+
 
 ## #STRATEGY.BR#
 
@@ -1350,7 +1391,7 @@ ufopaedia:
     section: STR_STRATEGY
     image_id: STR_TAU_PROPAGANDA_CODEX.SPK
     requires:
-      - STR_GUEVESA_CLUSTER_GV
+      - STR_TAU_PROPAGANDA_GV
     text: STR_TAU_PROPAGANDA_CODEX_DESCRIPTION_GV
 
   - id: STR_BEASTMEN_CULTISTS_EVENT_GV
@@ -1598,6 +1639,21 @@ ufopaedia:
     image_id: ELDAR_DRAGONEX_ARMOR_CODEX.SPK
     text: STR_ELDAR_DRAGONEX_ARMOR_CODEX
 
+  - id: STR_ELDAR_HAWK_ARMOR_P
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HAWK_ARMOR_CODEX.SPK
+    text: STR_ELDAR_HAWK_ARMOR_CODEX
+  - id: STR_ELDAR_HAWKEX_ARMOR_P
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HAWKEX_ARMOR_CODEX.SPK
+    text: STR_ELDAR_HAWKEX_ARMOR_CODEX
+
   - id: STR_ELDAR_SPIDER_ARMOR_P
     type_id: 15
     section: STR_ARMORPEDIA
@@ -1620,6 +1676,42 @@ ufopaedia:
     image_id: ELDAR_SPIDEREXPB_ARMOR_CODEX.SPK
     text: STR_ELDAR_SPIDEREXPB_ARMOR_CODEX
 
+  ### ELDAR STRATEGY EQUIPPABLE HWP ARMOR
+  - id: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_P
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_SHURIKENCANNON_ARMOR_CODEX.SPK
+    text: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_CODEX
+  - id: STR_ELDAR_HWP_AML_ARMOR_P
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_AML_ARMOR_CODEX.SPK
+    text: STR_ELDAR_HWP_AML_ARMOR_CODEX
+  - id: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_P
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_BRIGHTLANCE_ARMOR_CODEX.SPK
+    text: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_CODEX
+  - id: STR_ELDAR_HWP_SCATTERLASER_ARMOR_P
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_SCATTERLASER_ARMOR_CODEX.SPK
+    text: STR_ELDAR_HWP_SCATTERLASER_ARMOR_CODEX
+  - id: STR_ELDAR_HWP_STARCANNON_ARMOR_P
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_STARCANNON_ARMOR_CODEX.SPK
+    text: STR_ELDAR_HWP_STARCANNON_ARMOR_CODEX
 
 ## #STRATEGY.SOB#
   - delete: STR_CHOSEN_ADEPTAS
@@ -1775,6 +1867,21 @@ ufopaedia:
       - STR_VALHALLAN_STRATEGY
     text: STR_VALHALLAN_WEAPONS_CODEX
     image_id: VALHALLAN_SNIPER_CODEX.SPK
+
+# #STRATEGY.IG.KRIEG#            KRIEG STRATEGY
+  - id: STR_KRIEG_STRATEGY
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: 4IG.SPK
+    text: STR_KRIEG_STRATEGY_IG_UFOPEDIA
+    requires:
+      - STR_IMPERIAL_GUARD_OPERATIONS
+  - id: STR_CHOSEN_KRIEG
+    type_id: 10
+    section: STR_STRATEGY
+    requires:
+      - STR_KRIEG_STRATEGY
+    image_id: KRIEG_INTRO_CODEX.SPK
 
 ####################################
 # #RESEARCH#
@@ -5203,7 +5310,7 @@ ufopaedia:
     image_id: HULLLASCANNON_CODEX.SPK
     text: STR_LASCANNON_HANDHELD_UFOPEDIA
 
-  - id: STR_MOUNTED_HEAVY_STUBBER  # Heavy Stubber
+  - id: STR_MOUNTED_HEAVY_STUBBER_ITEM  # Heavy Stubber
     # THIS IS ALSO A HULL-MOUNTED WEAPON
     type_id: 14
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -12169,7 +12276,7 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: 1CH.SPK
     requires:
-      - STR_CHB
+      # - STR_CHB
       - STR_CHAOS_ARMORY_EXAM_BOLTER_STORM
     text: STR_CHB_UFOPEDIA
 
@@ -12705,6 +12812,18 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: LASGUNHIGHGRADE_CODEX.SPK #needs custom scoped art
     text: STR_LASER_RIFLE_KRIEG_TIER3_SCOPED_UFOPEDIA
+
+  - id: STR_LASER_RIFLE_KRIEG_MC
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: LASGUNHIGHGRADE_CODEX.SPK #needs custom MC lasgun art
+    text: STR_LASER_RIFLE_KRIEG_MC_UFOPEDIA
+
+  - id: STR_LASER_RIFLE_KRIEG_MC_SCOPED
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: LASGUNHIGHGRADE_CODEX.SPK #needs custom scoped art
+    text: STR_LASER_RIFLE_KRIEG_MC_SCOPED_UFOPEDIA
 
   - delete: STR_MCLASER_RIFLE
   - id: STR_MCLASER_RIFLE
@@ -16280,6 +16399,48 @@ ufopaedia:
       - STR_ELDAR_SHIELD
     text: STR_WRAITH_MELEE_WEAPON_UFOPEDIA
 
+  - id: STR_ELDAR_HWP_SHURIKENCANNON
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_SHURIKENCANNON_CODEX.SPK
+    text: STR_ELDAR_HWP_SHURIKENCANNON_CODEX
+  - id: STR_ELDAR_HWP_AML
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_AML_CODEX.SPK
+    text: STR_ELDAR_HWP_AML_CODEX
+  - id: STR_HWP_STARSWARM_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HWP_STARSHOT_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_ELDAR_HWP_BRIGHTLANCE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_BRIGHTLANCE_CODEX.SPK
+    text: STR_ELDAR_HWP_BRIGHTLANCE_CODEX
+  - id: STR_ELDAR_HWP_SCATTERLASER
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_SCATTERLASER_CODEX.SPK
+    text: STR_ELDAR_HWP_SCATTERLASER_CODEX
+  - id: STR_ELDAR_HWP_STARCANNON
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_ELDAR_STRATEGY
+    image_id: ELDAR_HWP_STARCANNON_CODEX.SPK
+    text: STR_ELDAR_HWP_STARCANNON_CODEX
+
 #WEAPONS.NECRON#      Necron Weapons
   - id: STR_GAUSS_REAPER  # GAUSS_REAPER
     type_id: 14
@@ -18469,6 +18630,13 @@ ufopaedia:
     requires:
       - STR_OGRYN_IGOPFOR
 
+  - id: STR_GUARD_ARMORS_MOUNTED_HEAVY_BOLTER_AI
+    type_id: 15
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    image_id: IMPGUARDAI_CODEX.SPK
+    text: STR_GUARD_ARMORS_MOUNTED_HEAVY_BOLTER_UFOPEDIA
+    requires:
+      - STR_GUARDS_MOUNTED_BOLTER_AI
 
   - id: SLGUARD_ARMOR_M_LV1_AI
     type_id: 15
@@ -22586,12 +22754,16 @@ ufopaedia:
     section: STR_ALIEN_LIFE_FORMS
     image_id: GANGERTROOPER.SPK
     text: STR_GANGERBASE_SOLDIER_AI_CODEX
+    requires:
+      - STR_LIVE_CAPTURE_GANGER
 
   - id: STR_GANGERBASE_ARMORSOLDIERF0
     type_id: 15
     section: STR_ALIEN_LIFE_FORMS
     image_id: GANGERTROOPER.SPK
     text: STR_GANGERBASE_SOLDIER_AI_UFOPEDIA
+    requires:
+      - STR_LIVE_CAPTURE_GANGER
 
 #FOES.RENE.DESERT#       Deserters and Instigators
   - id: STR_DESERTER_SOLDIER_ORIGINS
@@ -22826,7 +22998,6 @@ ufopaedia:
       - STR_ELDAR_DRAGON_CORPSE
     image_id: ELDAR_DRAGON_AUTOPSY_CODEX.SPK
     text: STR_ELDAR_DRAGON_AUTOPSY_CODEX
-
   - id: STR_ELDAR_DRAGONEX_AUTOPSY
     type_id: 10
     section: STR_ALIEN_LIFE_FORMS
@@ -22835,6 +23006,20 @@ ufopaedia:
     image_id: ELDAR_DRAGONEX_AUTOPSY_CODEX.SPK
     text: STR_ELDAR_DRAGONEX_AUTOPSY_CODEX
 
+  - id: STR_ELDAR_HAWK_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ELDAR_HAWK_CORPSE
+    image_id: ELDAR_HAWK_AUTOPSY_CODEX.SPK
+    text: STR_ELDAR_HAWK_AUTOPSY_CODEX
+  - id: STR_ELDAR_HAWKEX_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ELDAR_HAWKEX_CORPSE
+    image_id: ELDAR_HAWKEX_AUTOPSY_CODEX.SPK
+    text: STR_ELDAR_HAWKEX_AUTOPSY_CODEX
 
   - id: STR_ELDAR_SPIDER_AUTOPSY
     type_id: 10
@@ -22869,6 +23054,7 @@ ufopaedia:
     image_id: UP171.SPK
     text: STR_WRAITHGUARD_ARMOR_UFOPEDIA
 
+  ### ELDAR ALLIANCE SERVITOR STYLE GRAV PLATFORM
   - delete: STR_ELDAR_PLAT_AUTOPSY
   - id: STR_ELDAR_PLAT_AUTOPSY
     type_id: 10
@@ -24766,7 +24952,7 @@ ufopaedia:
     image_id: WARPLOOTED.SPK
     text: STR_BLACKLEGsaturn_ARMORPLAYER_CODEX
     requires:
-      - STR_SATURNINE_ARMOR_HULK
+      - STR_WORDBEARERsaturnine_ARMORPLAYER
       - STR_WORDBEARERS_STRATEGY
 
   - id: STR_WARPEDVAULT_HULK

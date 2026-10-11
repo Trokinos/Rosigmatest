@@ -18,6 +18,73 @@ extended:
 
 soldiers:
 
+### ELDAR don't use penitents
+  - type: STR_PENITENT
+    requires: !add
+      - STR_NOT_ELDAR_STRATEGY
+
+  - type: STR_MONKEIGH_COLLABORATOR
+    requires:
+      - STR_MONKEIGH_PACT
+    avatarOffsetX: 68  # 66
+    avatarOffsetY: 40  # 42
+    minStats:
+      tu: 45
+      stamina: 45
+      health: 30
+      bravery: 20
+      reactions: 35
+      firing: 45
+      throwing: 40
+      strength: 15
+      psiStrength: 0
+      psiSkill: 0
+      melee: 25
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 60
+      reactions: 60
+      firing: 70
+      throwing: 65
+      strength: 25
+      psiStrength: 100
+      psiSkill: 6
+      melee: 60
+    statCaps:
+      tu: 75
+      stamina: 90
+      health: 55
+      bravery: 110
+      reactions: 80
+      firing: 100
+      throwing: 70
+      strength: 65
+      psiStrength: 100
+      psiSkill: 50
+      melee: 90
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 30
+      firing: 70
+      throwing: 65
+      strength: 20
+      psiStrength: 100
+      psiSkill: 50
+      melee: 50
+    armor: STR_ENFORCER_ARMOR_UC
+    costBuy: 30000
+    costSalary: 10000
+    soldierNames:
+      - delete
+      - Names/arbites.nam
+    allowPiloting: false
+    allowPromotion: false
+    value: 10                   # Biel Tan Eldar have very little respect for human life
+    moraleLossWhenKilled: 50    # Biel Tan Eldar low effect for human deaths
+
 # ELDAR.TIER1 # GUARDIANS
 
   - &ELDAR_GUARDIAN
@@ -26,11 +93,11 @@ soldiers:
       - STR_RECRUIT_ELDAR_T1
     flagOffset: 100
     #requiresBuyBaseFunc: [ELDAROUT] #eldar guardian now will be recruitable in a base
-    costBuy: 30000
+    #costBuy: 30000
     costSalary: 15000
     minStats:
       tu: 65
-      stamina: 45
+      stamina: 55
       health: 25
       bravery: 40
       reactions: 40
@@ -42,7 +109,7 @@ soldiers:
       melee: 30
     maxStats:
       tu: 80
-      stamina: 65
+      stamina: 75
       health: 40
       bravery: 80
       reactions: 70
@@ -100,7 +167,8 @@ soldiers:
     rankTinySprite: 4012
     soldierNames:
       - delete
-      - Names/eldar_guardian.nam
+      - Names/eldar.nam
+    prefix: "Gd. "
 
   - type: STR_ELDAR_RANGER_PLAYER # Eldar Ranger
     requires:
@@ -168,7 +236,8 @@ soldiers:
       - STR_ELDAR_RANGER_RANK_5
     soldierNames:
       - delete
-      - Names/eldar_ranger.nam
+      - Names/eldar.nam
+    prefix: "Rg. "
 
 # DEPRECATED. in future version (3.4 onward) please add - delete: name to keep rosigma clean
 
@@ -305,7 +374,8 @@ soldiers:
     rankTinySprite: 4054
     soldierNames:
       - delete
-      - Names/eldar_avenger.nam
+      - Names/eldar.nam
+    prefix: "Av. "
 
 
 # ELDAR SCORPION
@@ -374,7 +444,8 @@ soldiers:
     rankTinySprite: 4066
     soldierNames:
       - delete
-      - Names/eldar_scorpion.nam
+      - Names/eldar.nam
+    prefix: "Sc. "
 
   # Banshee
 
@@ -394,7 +465,8 @@ soldiers:
     rankTinySprite: 4078
     soldierNames:
       - delete
-      - Names/eldar_banshee.nam
+      - Names/eldar.nam
+    prefix: "Bs. "
 
   - type: STR_ELDAR_REAPER_M
     refNode: *ASPECT_WARRIOR_TEMPLATE
@@ -464,7 +536,8 @@ soldiers:
     rankTinySprite: {mod: 40k, index: 205}
     soldierNames:
       - delete
-      - Names/eldar_reaper.nam
+      - Names/eldar.nam
+    prefix: "Rp. "
 
   - type: STR_ELDAR_DRAGON_MF
     refNode: *ASPECT_WARRIOR_TEMPLATE
@@ -534,7 +607,8 @@ soldiers:
     rankTinySprite: 4000
     soldierNames:
       - delete
-      - Names/eldar_dragon.nam
+      - Names/eldar.nam
+    prefix: "Dg. "
 
   - type: STR_ELDAR_SPIDER_PLAYER  # Dragon copy paste, fix later Spider
     refNode: *ASPECT_WARRIOR_TEMPLATE
@@ -604,7 +678,8 @@ soldiers:
     rankTinySprite: 4030
     soldierNames:
       - delete
-      - Names/eldar_spider.nam
+      - Names/eldar.nam
+    prefix: "Sd. "
 
         # Swooping Hawk , flying, mobile, lightly armored grenadier
   - type: STR_ELDAR_HAWK_P
@@ -629,13 +704,14 @@ soldiers:
       - STR_ELDAR_HAWK_RANK_3
       - STR_ELDAR_HAWK_RANK_4
       - STR_ELDAR_HAWK_RANK_5
-    rankSprite: 4054
-    rankBattleSprite: 4054
-    rankTinySprite: 4054
+    rankSprite: 4090
+    rankBattleSprite: 4090
+    rankTinySprite: 4090
     soldierNames:
       - delete
       - Names/eldar.nam
-    prefix: "Hwk. "
+    prefix: "Hk. " #UNCOMMENT WHEN RULESET SCHEMA IS UPDATED, NOTE CAUSING LINTER ERRORS
+
 # ELDAR.TIER3 # EXARCH / AUTARCH
 
   - &EXARCH_TEMPLATE
@@ -697,7 +773,8 @@ soldiers:
     rankTinySprite: 4060
     soldierNames:
       - delete
-      - Names/eldar_avenger.nam
+      - Names/eldar.nam
+    prefix: "AvX. "
 
   - type: STR_ELDAR_SCORPIONEX_P # Main stat Strength. Important stats: Melee, Health, Stamina
     refNode: *EXARCH_TEMPLATE
@@ -758,7 +835,8 @@ soldiers:
     rankTinySprite: 4072
     soldierNames:
       - delete
-      - Names/eldar_scorpion.nam
+      - Names/eldar.nam
+    prefix: "ScX. "
 
   - type: STR_ELDAR_BANSHEE_EXARCH_PLAYER
     # requires:
@@ -790,7 +868,7 @@ soldiers:
       psiStrength: 100
       psiSkill: 30
       melee: 95
-    statCaps: # very high stat caps for autarch
+    statCaps:
       tu: 120
       stamina: 115
       health: 125
@@ -840,7 +918,8 @@ soldiers:
     rankTinySprite: 4084
     soldierNames:
       - delete
-      - Names/eldar_banshee.nam
+      - Names/eldar.nam
+    prefix: "BsX. "
 
   - type: STR_ELDAR_REAPER_EXARCH_M
     refNode: *EXARCH_TEMPLATE
@@ -885,7 +964,8 @@ soldiers:
     rankTinySprite: {mod: 40k, index: 205}
     soldierNames:
       - delete
-      - Names/eldar_reaper.nam
+      - Names/eldar.nam
+    prefix: "RpX. "
 
   - type: STR_ELDAR_DRAGON_EXARCH_SOLDIER
     refNode: *EXARCH_TEMPLATE
@@ -932,7 +1012,39 @@ soldiers:
     rankTinySprite: 4006
     soldierNames:
       - delete
-      - Names/eldar_dragon.nam
+      - Names/eldar.nam
+    prefix: "DgX. "
+
+        # Swooping Hawk , flying, mobile, lightly armored grenadier
+  - type: STR_ELDAR_HAWKEX_P
+    refNode: *EXARCH_TEMPLATE
+    statCaps: # higher stat caps based on exarch type
+      tu: 140
+      stamina: 135
+      health: 100 # -15
+      bravery: 120
+      reactions: 120
+      firing: 140
+      throwing: 120 # +20 Hawk main stat
+      strength: 110
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    armor: STR_ELDAR_HAWKEX_ARMOR_P
+    rankStrings:
+      - STR_ELDAR_HAWKEX_RANK_0
+      - STR_ELDAR_HAWKEX_RANK_1
+      - STR_ELDAR_HAWKEX_RANK_2
+      - STR_ELDAR_HAWKEX_RANK_3
+      - STR_ELDAR_HAWKEX_RANK_4
+      - STR_ELDAR_HAWKEX_RANK_5
+    rankSprite: 4096
+    rankBattleSprite: 4096
+    rankTinySprite: 4096
+    soldierNames:
+      - delete
+      - Names/eldar.nam
+    prefix: "HkX. "
 
   - type: STR_ELDAR_SPIDEREX_PLAYER # Stats from dragon exarch FIX
     refNode: *EXARCH_TEMPLATE
@@ -979,7 +1091,8 @@ soldiers:
     rankTinySprite: 4036
     soldierNames:
       - delete
-      - Names/eldar_spider.nam
+      - Names/eldar.nam
+    prefix: "SdX. "
 
   - type: STR_ELDAR_AUTARCH_PLAYER # Statcaps will be overall larger than exarchs, Commander character
     refNode: *EXARCH_TEMPLATE
@@ -1060,8 +1173,8 @@ soldiers:
     rankTinySprite: {mod: 40k, index: 217}
     soldierNames:
       - delete
-      - Names/eldar_avenger.nam
-
+      - Names/eldar.nam
+    prefix: "Aut. "
 # ELDAR.TIER2_PSY # PSY WARRIORS (path of the psyker)
 
   - &PSYKER_TEMPLATE # TEMPLATE ONLY
@@ -1070,7 +1183,7 @@ soldiers:
       - STR_ELDAR_PSYKER_RESEARCH
     flagOffset: 100
     requiresBuyBaseFunc: [PSI]
-    costBuy: 30000
+    costBuy: 0
     costSalary: 15000
     minStats:
       tu: 65
@@ -1144,7 +1257,8 @@ soldiers:
     rankTinySprite: 4042
     soldierNames:
       - delete
-      - Names/eldar_seer.nam
+      - Names/eldar.nam
+    prefix: "Sr. "
 
   - type: STR_ELDAR_SEER_F
     refNode: *PSYKER_TEMPLATE
@@ -1163,11 +1277,12 @@ soldiers:
 # ELDAR.TIER3_MIXED # Path of the warlock
   - type: STR_ELDAR_WARLOCK_PLAYER
     requires:
-      - STR_ELDAR_PATH
+      - STR_ELDAR_PSYKER_RESEARCH
       - STR_HIGHTIER_PREREQ
+      - STR_ELDAR_WARLOCK_RESEARCH
     flagOffset: 100
-    requiresBuyBaseFunc: [ELDAROUT]
-    costBuy: 60000
+    #requiresBuyBaseFunc: [ELDAROUT]
+    costBuy: 0
     costSalary: 30000
     minStats:
       tu: 90
@@ -1243,7 +1358,8 @@ soldiers:
     rankTinySprite: 4048
     soldierNames:
       - delete
-      - Names/eldar_warlock.nam
+      - Names/eldar.nam
+    prefix: "Wlk. "
 
 # ELDAR.WRAITHGUARD # special units (example: avatar of khaine)
 
@@ -1299,4 +1415,5 @@ soldiers:
       melee: 140
     soldierNames:
       - delete
-      - Names/eldar_wraithguard.nam
+      - Names/eldar.nam
+    prefix: "Wg. "

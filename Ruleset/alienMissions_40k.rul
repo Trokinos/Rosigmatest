@@ -8900,7 +8900,39 @@ alienMissions:
         escort: true
         objective: false
 
+  - type: STR_VLCULTISTBASE
+    points: 10
+    objective: 2  # it is a base
+    spawnZone: 0
+    siteType: STR_CULTIST_BASE_START
+    raceWeights:
+      0:
+        STR_SLAANESH_CULT_EARLY: 33  #Traitor's Hand
+        STR_SLAANGOR_MIXED: 10
+        STR_CULTIST_SQUATS: 15 #Porretta campaign
+    waves:
+      - ufo: STR_CULTBASE_TRICK # does not exist so should spawn immediately
+        count: 1
+        trajectory: DIRECT_TO_MISSION_SITE_TRAJECTORY
+        timer: 0
+        objective: true
 
+  - type: STR_VLTRAITORGUARDBASE
+    points: 10
+    objective: 2  # it is a base
+    spawnZone: 0
+    siteType: STR_TRAITOR_GUARD_BASE_START
+    raceWeights:
+      0:
+        STR_SLAANESH_TRAITOR_GUARD_MID: 80
+        STR_TRAITOR_SQUATS: 15
+        STR_HRUD_WARRIOR_FORCE: 5
+    waves:
+      - ufo: STR_TRAITORGUARDBASE_TRICK # does not exist so should spawn immediately
+        count: 1
+        trajectory: DIRECT_TO_MISSION_SITE_TRAJECTORY
+        timer: 0
+        objective: true
 
 # *** Final Mission Bases ***
   - type: STR_FINAL_MISSION_GUARD_SL #Steel Legion

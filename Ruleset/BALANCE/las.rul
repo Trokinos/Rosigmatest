@@ -166,76 +166,6 @@ items:
     tuSnap: 25
     tuAimed: 0
 
-  - type: STR_LASER_RIFLE_KRIEG_TIER2  # mid-tier basic krieg lasgun
-    dropoff: 4
-    autoRange: 10  # +1
-    snapRange: 17  # +1
-    aimRange: 0
-
-    accuracyAuto: 60  # +10 vs RIFLEG, -5 vs mastercrafted
-    accuracySnap: 75  # +5 vs RIFLEG, -15 vs MC
-    accuracyAimed: 0
-    tuAuto: 33  # 40k 34
-    tuSnap: 25
-    tuAimed: 0
-
-  - type: STR_LASER_RIFLE_KRIEG_TIER2_SCOPED  # mid-tier scoped krieg lasgun
-    dropoff: 4
-    autoRange: 9 #-1
-    snapRange: 17  # +1
-    aimRange: 27 #worse than longlas
-
-    accuracyAuto: 55  # +5 vs RIFLEG, -5 vs mastercrafted
-    accuracySnap: 75  # +5 vs RIFLEG, -15 vs MC
-    accuracyAimed: 90 #-10 vs longlas
-    tuAuto: 37 #worse autofire
-    tuSnap: 28 #worse snapfire
-    tuAimed: 60
-
-    autoShots: 2  # another downside vs basic rifle version
-    minRange: 6  # long arm; unwieldy in CQC
-    oneHandedPenalty: 25  # too long and unwieldy to use effectively one-handed
-
-    tags:
-      REACTION_MULTIPLIER: 75  # awkward long arm
-      REACTION_PENALTY_KNEELING_BYPASS: 1
-
-  - type: STR_LASER_RIFLE_KRIEG_TIER3  # ceramite tier basic krieg lasgun
-    dropoff: 4
-    autoRange: 11  # +1
-    snapRange: 18  # +1
-    aimRange: 0
-
-    accuracyAuto: 60  # +10 vs RIFLEG, -5 vs mastercrafted
-    accuracySnap: 80  # +5 vs RIFLEG, -10 vs MC
-    accuracyAimed: 0
-    tuAuto: 32
-    tuSnap: 24
-    tuAimed: 0
-
-  - type: STR_LASER_RIFLE_KRIEG_TIER3_SCOPED  # ceramite tier scoped krieg lasgun
-    dropoff: 4
-    autoRange: 9 #-1
-    snapRange: 18  # +1
-    aimRange: 29 #+2 vs mid-tier, still worse than longlas
-
-    accuracyAuto: 60  # +10 vs RIFLEG, -5 vs mastercrafted
-    accuracySnap: 85  # +5 vs RIFLEG, -5 vs MC
-    accuracyAimed: 90 #-10 vs longlas
-    tuAuto: 36 #worse autofire
-    tuSnap: 27 #worse snapfire
-    tuAimed: 55 #-5
-
-    autoShots: 2  # another downside vs basic rifle version
-    minRange: 6  # long arm; unwieldy in CQC
-    oneHandedPenalty: 25  # too long and unwieldy to use effectively one-handed
-
-    tags:
-      REACTION_MULTIPLIER: 75  # awkward long arm
-      REACTION_PENALTY_KNEELING_BYPASS: 1
-      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
-      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25
-
   - type: STR_LASGUN_ESCHER
     dropoff: 4  # slightly worse drop off than other DMR lasrifles
     autoRange: 0
@@ -397,6 +327,220 @@ items:
     compatibleAmmo:
       - STR_LASGUN_CLIP
       - STR_LASGUN_CLIP_HOTSHOT  # the accuracy falloff with this is gonna be intense
+
+  - type: STR_LASER_RIFLE_KRIEG_TIER1 #POWER SHOT, STARTER KRIEG STRATEGY LASGUN
+    dropoff: 4
+    autoRange: 0
+    snapRange: 16
+    aimRange: 16  # Powershot
+    accuracyAuto: 0  # 40k 50
+    accuracySnap: 70  # 40k 70
+    accuracyAimed: 70
+    tuAuto: 0  # 40k 50
+    tuSnap: 25
+    tuAimed: 33
+    confSnap:
+      shots: 1
+      spendPerShot: 2
+    confAimed:
+      shots: 1
+      spendPerShot: 10
+      name: STR_POWER_SHOT
+      shortName: STR_POWER_SHOT_COUNT
+
+    tags:
+      ITEM_SNAP_FLAT_POWER_BONUS: 10  # higher yield/higher damage
+      ITEM_AIMED_FLAT_POWER_BONUS: 50  # power shot
+      ITEM_WEAPON_REPEATED_ACCURACY_FALLOFF_MULTIPLIER: 1  # lucius lasguns get hot
+
+  - type: STR_LASER_RIFLE_KRIEG_TIER2  # mid-tier basic krieg lasgun
+    dropoff: 4
+    autoRange: 0
+    snapRange: 17  # +1
+    aimRange: 17 # +1
+
+    accuracyAuto: 0
+    accuracySnap: 75  # +5 vs RIFLEG, -15 vs MC
+    accuracyAimed: 75
+    tuAuto: 0
+    tuSnap: 25
+    tuAimed: 33
+
+    tags:
+      ITEM_SNAP_FLAT_POWER_BONUS: 10  # higher yield/higher damage
+      ITEM_AIMED_FLAT_POWER_BONUS: 50  # power shot
+      ITEM_WEAPON_REPEATED_ACCURACY_FALLOFF_MULTIPLIER: 1  # lucius lasguns get hot
+
+  - type: STR_LASER_RIFLE_KRIEG_TIER2_SCOPED  # mid-tier scoped krieg lasgun
+    dropoff: 4
+    autoRange: 0
+    snapRange: 17  # +1
+    aimRange: 27 #worse than longlas
+
+    accuracyAuto: 0
+    accuracySnap: 75  # +5 vs RIFLEG, -15 vs MC
+    accuracyAimed: 90 #-10 vs longlas
+    tuAuto: 0
+    tuSnap: 28 #worse snapfire
+    tuAimed: 60
+
+    minRange: 6  # long arm; unwieldy in CQC
+    oneHandedPenalty: 25  # too long and unwieldy to use effectively one-handed
+
+    tags:
+      REACTION_MULTIPLIER: 75  # awkward long arm
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_SNAP_FLAT_POWER_BONUS: 10  # higher yield/higher damage
+      ITEM_AIMED_FLAT_POWER_BONUS: 50  # power shot
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25
+      ITEM_WEAPON_REPEATED_ACCURACY_FALLOFF_MULTIPLIER: 1  # lucius lasguns get hot
+
+  - type: STR_LASER_RIFLE_KRIEG_TIER3  # ceramite tier basic krieg lasgun
+    dropoff: 4
+    autoRange: 0
+    snapRange: 18  # +1
+    aimRange: 18 # +1
+
+    accuracyAuto: 0
+    accuracySnap: 80  # +5 vs RIFLEG, -10 vs MC
+    accuracyAimed: 80
+    tuAuto: 0
+    tuSnap: 24
+    tuAimed: 32
+
+    tags:
+      ITEM_SNAP_FLAT_POWER_BONUS: 10  # higher yield/higher damage
+      ITEM_AIMED_FLAT_POWER_BONUS: 50  # power shot
+      ITEM_WEAPON_REPEATED_ACCURACY_FALLOFF_MULTIPLIER: 1  # lucius lasguns get hot
+
+  - type: STR_LASER_RIFLE_KRIEG_TIER3_SCOPED  # ceramite tier scoped krieg lasgun
+    dropoff: 4
+    autoRange: 9 #-1
+    snapRange: 18  # +1
+    aimRange: 29 #+2 vs mid-tier, still worse than longlas
+
+    accuracyAuto: 60  # +10 vs RIFLEG, -5 vs mastercrafted
+    accuracySnap: 85  # +5 vs RIFLEG, -5 vs MC
+    accuracyAimed: 90 #-10 vs longlas
+    tuAuto: 36 #worse autofire
+    tuSnap: 27 #worse snapfire
+    tuAimed: 55 #-5
+
+    autoShots: 2  # another downside vs basic rifle version
+    minRange: 6  # long arm; unwieldy in CQC
+    oneHandedPenalty: 25  # too long and unwieldy to use effectively one-handed
+
+    tags:
+      REACTION_MULTIPLIER: 75  # awkward long arm
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
+      ITEM_AIMED_FLAT_POWER_BONUS: 50  # power shot
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25
+      ITEM_WEAPON_REPEATED_ACCURACY_FALLOFF_MULTIPLIER: 1  # lucius lasguns get hot
+
+  - type: STR_LASER_RIFLE_KRIEG_MC  #MC
+    dropoff: 4
+    snapRange: 18
+    autoRange: 0
+    aimRange: 17 # Powershot
+
+    accuracyAuto: 0
+    accuracySnap: 90  # 40k 85
+    accuracyAimed: 75
+    tuAuto: 0
+    tuSnap: 25
+    tuAimed: 33
+
+    confSnap:
+      shots: 1
+      spendPerShot: 2
+    confAimed:
+      shots: 1
+      spendPerShot: 5 #MC bonus
+      name: STR_POWER_SHOT
+      shortName: STR_POWER_SHOT_COUNT
+
+    tags:
+      ITEM_SNAP_FLAT_POWER_BONUS: 10  # higher yield/higher damage
+      ITEM_AIMED_FLAT_POWER_BONUS: 50  # power shot
+
+  - type: STR_LASER_RIFLE_KRIEG_MC_SCOPED
+    dropoff: 3  # -1
+    autoRange: 0
+    snapRange: 22
+    aimRange: 30  # make it a option vs longlas, slightly worse at the sniping role
+
+    accuracyAuto: 0
+    accuracySnap: 85
+    accuracyAimed: 100
+    tuAuto: 0
+    tuSnap: 30
+    tuAimed: 65
+
+    minRange: 7  # scoped; unwieldy in CQC
+    oneHandedPenalty: 25  # too long and unwieldy to use effectively one-handed
+
+    confSnap:
+      shots: 1
+      spendPerShot: 2
+
+    confAimed:
+      shots: 1
+      spendPerShot: 5 #MC bonus
+      name: STR_POWER_SHOT
+      shortName: STR_POWER_SHOT_COUNT
+
+    tags:
+      ITEM_SNAP_FLAT_POWER_BONUS: 10  # higher yield/higher damage
+      ITEM_AIMED_FLAT_POWER_BONUS: 50  # power shot
+      REACTION_MULTIPLIER: 75  # awkward long arm
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25
+
+  - type: STR_HEAVY_LASGUN_LUCIUS_XIV  # done  # Power Pack
+    dropoff: 4
+    autoRange: 18  # Power shot
+    snapRange: 18
+    aimRange: 18  # POWER SHOT
+    # maxRange: 26
+
+    accuracyAuto: 70
+    accuracySnap: 70
+    accuracyAimed: 70
+    tuAuto: 33
+    tuSnap: 33
+    tuAimed: 33
+
+    confSnap:  # TODO: Heat script implemenation
+      shots: 1
+      spendPerShot: 1
+    confAuto:
+      shots: 1
+      spendPerShot: 5  # + 1 heat
+      name: STR_POWER_SHOT
+      shortName: STR_POWER_SHOT_COUNT
+    confAimed:
+      shots: 1
+      spendPerShot: 20  # + 4 heat
+      name: STR_POWER_SHOT_2
+      shortName: STR_POWER_SHOT_2_COUNT
+
+    clipSize: 900  # shouldn't deplete
+    kneelBonus: 120  # medium/heavy
+
+    power: 70  # hellgun traits
+    damageType: 1
+    damageAlter:
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToHealth: 1.0
+      ToArmor: 0.1
+      ToStun: 0.3  # painful las burns
+      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
+      RandomWound: false
+    tags:
+      ITEM_AUTO_FLAT_POWER_BONUS: 20
+      ITEM_AIMED_FLAT_POWER_BONUS: 60
 
   - type: STR_LASGUN_STEEL_LEGION
     dropoff: 4
@@ -577,6 +721,33 @@ items:
     snapRange: 14  # inferior snapfire range
     autoRange: 14  # superior autofire range
     autoShots: 5  # superior autofire
+
+    tags:
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25  # battle rifle bonus
+
+  - type: STR_HELLGUN_KRIEG #Lucius Hellgun
+    dropoff: 4  # scoped
+    weight: 15 #+6
+    power: 80 #+5
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
+      ToStun: 0.3  # painful las burns
+      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
+    accuracyAuto: 70
+    accuracySnap: 75
+    accuracyAimed: 90
+    tuAuto: 35
+    tuSnap: 25
+    tuAimed: 70
+    aimRange: 25
+    snapRange: 14  # inferior snapfire range
+    autoRange: 14  # superior autofire range
+    autoShots: 5  # superior autofire
+
     tags:
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25  # battle rifle bonus
 
@@ -665,51 +836,30 @@ items:
       shots: 3
       name: STR_BURST_SNAP_SHOT
 
-
-  - type: STR_HEAVY_LASGUN_LUCIUS_XIV  # done  # Power Pack
-    dropoff: 4
-    autoRange: 18  # Power shot
-    snapRange: 18
-    aimRange: 18  # POWER SHOT
-    # maxRange: 26
-
-    accuracyAuto: 70
-    accuracySnap: 70
-    accuracyAimed: 70
-    tuAuto: 33
-    tuSnap: 33
-    tuAimed: 33
-
-    confSnap:  # TODO: Heat script implemenation
-      shots: 1
-      spendPerShot: 1
-    confAuto:
-      shots: 1
-      spendPerShot: 5  # + 1 heat
-      name: STR_POWER_SHOT
-      shortName: STR_POWER_SHOT_COUNT
-    confAimed:
-      shots: 1
-      spendPerShot: 20  # + 4 heat
-      name: STR_POWER_SHOT_2
-      shortName: STR_POWER_SHOT_2_COUNT
-
-    clipSize: 900  # shouldn't deplete
-    kneelBonus: 120  # medium/heavy
-
-    power: 70  # hellgun traits
+  - type: STR_VOLLEYGUN_KRIEG #Lucius Volleygun
+    dropoff: 6  # CQC focused; basically a laser automatic shotgun
+    weight: 15 #+6
+    power: 75
     damageType: 1
     damageAlter:
-      ToArmorPre: 0.3
       ArmorEffectiveness: 0.75
+      ToArmorPre: 0.2
       ToHealth: 1.0
-      ToArmor: 0.1
+      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
       ToStun: 0.3  # painful las burns
       ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
-      RandomWound: false
-    tags:
-      ITEM_AUTO_FLAT_POWER_BONUS: 20
-      ITEM_AIMED_FLAT_POWER_BONUS: 60
+    accuracyAuto: 60
+    accuracySnap: 65
+    snapRange: 13
+    autoRange: 13
+    tuAuto: 35
+    tuSnap: 30
+    confAuto:
+      shots: 10
+    confSnap:
+      shots: 3
+      name: STR_BURST_SNAP_SHOT
+    clipSize: -1
 
 ## Heavy Weapons
 

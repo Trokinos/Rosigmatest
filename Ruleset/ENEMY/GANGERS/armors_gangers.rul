@@ -243,3 +243,37 @@ armors:
       DODGE_CHANCE: 5
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
       UNIT_SIZE: 150 # LARGE
+
+  - type: STR_GANGERBASE_OGRYN_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    heatVision: 5
+    spriteSheet: GANGEROGRYNbattle.PCK
+    spriteInv: GANGERBASEOGRYNWinvent.PCK
+    corpseBattle:
+      - STR_GANGERBASE_OGRYN_CORPSE
+    frontArmor: 25
+    sideArmor: 20
+    rearArmor: 15
+    underArmor: 10
+    drawingRoutine: 0
+    damageModifier:  # OGRYN ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 1.0  # HE
+      - 1.0  # LASCANON
+      - 1.0  # PLASMA
+      - 0.6  # STUN
+      - 0.7  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 0.5  # IMPACT
+      - 1.0  # MELTA
+    loftempsSet: [5]
+    allowsRunning: false  # NPC limits for BAI
+    tags:
+      UNIT_SIZE: 150 # Large
+      UNIT_TYPE_LIVING: 1
+      UNIT_IS_DIEHARD: 1 # Ogryns have basic Feel No Pain
+      DIEHARD_TEMP_MODIFIER_INCREMENT: -100

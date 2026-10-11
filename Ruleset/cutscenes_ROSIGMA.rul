@@ -103,3 +103,29 @@ cutscenes:
           captionSize: [232, 64]
           captionPos: [88, 136]
           captionColor: 244
+
+
+# temporaty win for work in progress unfinished yet strategies
+# currently used for the black templar - bloody rose
+
+  - type: BTBRTEMPwinGame
+    winGame: true
+    slideshow:
+      transitionSeconds: 20
+      musicId: GMTACTIC3
+      slides:
+        - imagePath: Resources/Cutscenes/BTORK1.png
+          caption: STR_BTBRTEMP_1
+          captionSize: [195, 56]
+          captionPos: [5, 0]
+          captionColor: 244
+        - imagePath: Resources/Cutscenes/BTORK2.png
+          caption: STR_BTBRTEMP_2
+          captionSize: [232, 64]
+          captionPos: [88, 136]
+          captionColor: 244
+        - imagePath: Resources/Cutscenes/BTORK3.png
+          caption: STR_BTBRTEMP_3
+          captionSize: [195, 56]
+          captionPos: [5, 0]
+          captionColor: 244

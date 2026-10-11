@@ -189,10 +189,24 @@ soldierTransformation:
     minRank: 1
     requiredCommendations:
       STR_BATTLE_TESTED: 0
-    requiredMinStats:
-      bravery: 40
-      firing: 40
-      melee: 40
+    # requiredMinStats:
+    #   bravery: 40
+    #   firing: 40
+    #   melee: 40
+
+  - name: STR_TAU_PROMOTE_ADEPTAS_GV
+    cost: 10000
+    requires:
+      - STR_COOPT_ECCLESIARCHY_GV
+    producedSoldierType: STR_ADEPTAS_VETERAN
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    allowedSoldierTypes:
+      - STR_ADEPTAS
+    minRank: 1
+    requiredCommendations:
+      STR_VETERAN_COMMENDATION: 0
 
   - name: STR_TAU_PROMOTE_SUPERIOR_GV
     cost: 100000

@@ -1,5 +1,31 @@
 facilities:
 #ELDAR-----------------------------
+  - type: STR_ELDAR_LABORATORY
+    placeSound: {mod: 40k, index: 98}
+    requires:
+      - STR_ELDAR_STRATEGY
+    requiresBaseFunc: [BASE]
+    spriteShape: {mod: 40k, index: 1}
+    spriteFacility: {mod: 40k, index: 19}
+    buildCost: 750000
+    buildTime: 26
+    monthlyCost: 30000
+    labs: 25
+    provideBaseFunc: [RESE]
+    mapName: XBASE_02
+  - type: STR_ELDAR_WORKSHOP
+    placeSound: {mod: 40k, index: 98}
+    requires:
+      - STR_ELDAR_STRATEGY
+    requiresBaseFunc: [BASE]
+    provideBaseFunc: [MANU]
+    spriteShape: {mod: 40k, index: 1}
+    spriteFacility: {mod: 40k, index: 20}
+    buildCost: 800000
+    buildTime: 32
+    monthlyCost: 35000
+    workshops: 50
+    mapName: XBASE_03
   - type: STR_ELDARWALLN
     requires:
       - STR_ELDAR_OUTPOST_BUILDING_RESEARCH

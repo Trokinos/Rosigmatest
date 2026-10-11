@@ -2233,7 +2233,7 @@ armors:
     spriteInv: CHA.SPK
     customArmorPreviewIndex: 1098
     corpseBattle:
-      - STR_SLAANESH_NOVICE_CORPSE_PLAYER
+      - STR_NURGLE_NOVICE_CORPSE_PLAYER
     frontArmor: 55
     sideArmor: 45
     rearArmor: 25

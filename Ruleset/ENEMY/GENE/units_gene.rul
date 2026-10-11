@@ -272,6 +272,7 @@ units:
 
   - type: STR_LOCUS_CLOAKED
     race: STR_GENE_CULT
+    liveAlien: STR_LOCUS_PRISIONER
     # rank:
     stats:
       tu: 70  # GSC gene boost
@@ -307,6 +308,7 @@ units:
 
   - type: STR_LOCUS_FRENZIED
     race: STR_GENE_CULT
+    liveAlien: STR_LOCUS_PRISIONER
     # rank:
     stats:
       tu: 70  # GSC gene boost

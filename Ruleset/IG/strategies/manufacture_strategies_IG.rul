@@ -80,6 +80,14 @@ manufacture:
     requiredItems:
       STR_CHIMERA_LIGHT_TOKEN: 1
 
+
+  - name: STR_TRUCKARMOR_KRIEG
+    refNode: *STR_CRAFT_START
+    requires:
+      - STR_KRIEG_STRATEGY
+    requiredItems:
+      STR_TRUCKSTARTER_KRIEG_TOKEN: 1
+
   - name: STR_TRUCKARMOR_VALHALLA_STARTER
     refNode: *STR_CRAFT_START
     requires:

@@ -37,10 +37,9 @@ alienMissions:
 
   - type: STR_SLAANESH_BASE_ELDAR
     points: 50
+    retaliationOdds: 0
+    operationType: 0
     objective: 2
-    spawnZone: 4  # Mission zone for alien bases
-    operationType: 2
-    operationSpawnZone: 0
     siteType: STR_ALIEN_BASE_ASSAULT_SLAANESH_ELDAR
     raceWeights:
       0:

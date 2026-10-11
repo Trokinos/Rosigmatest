@@ -133,7 +133,7 @@ armors:
     refNode: *STR_BTMARINE_BASEARMOR
     storeItem: STR_BTMARINEARMOR_PLAYER
     ufopediaType: STR_BTMARINEARMOR_PLAYER
-    requires: STR_MIDTIER_PREREQ
+    requires: STR_BTMARINE_MIDTIER
     builtInWeapons:
       - STR_PLASMA_RIFLE_BT
       - STR_PLASMA_RIFLE_CLIP
@@ -143,7 +143,7 @@ armors:
     refNode: *STR_BTMARINE_BASEARMOR
     storeItem: STR_BTMARINEARMOR_PLAYER
     ufopediaType: STR_BTMARINEARMOR_PLAYER
-    requires: STR_HIGHTIER_PREREQ
+    requires: STR_BTMARINE_HIGHTIER
     builtInWeapons:
       - STR_BLASTER_LAUNCHER_BT
       - STR_BLASTER_BOMB
@@ -216,7 +216,7 @@ armors:
     refNode: *STR_BTASSAULT_BASEARMOR
     storeItem: STR_BTMARINEASSAULTARMOR_PLAYER
     ufopediaType: STR_BTMARINEASSAULTARMOR_PLAYER
-    requires: STR_MIDTIER_PREREQ
+    requires: STR_BTMARINEASSAULT_MIDTIER
     builtInWeapons:
       - STR_PISTOLH_BT
       - STR_PISTOL_CLIP_MC
@@ -409,7 +409,7 @@ armors:
   - type: STR_BTTECHGRAVARMOR_PLAYER  # BT TECHMARINE GRAVGUN
     refNode: *STR_BTTECH_BASEARMOR
     storeItem: STR_BTTECHARMOR_PLAYER
-    requires: STR_HIGHTIER_PREREQ
+    requires: STR_BTTECH_HIGHTIER
     builtInWeapons:
       - STR_SMALL_LAUNCHER_TERRAN_BT
       - STR_STUN_BOMB

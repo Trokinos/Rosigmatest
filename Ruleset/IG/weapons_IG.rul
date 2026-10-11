@@ -200,6 +200,47 @@ items:
     size: 0.2
     costSell: 20000
 
+  - type: STR_TRENCHGUN_LUCIUS # KRIEG SHOTGUN
+    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    size: 0.2
+    costBuy: 20000
+    requiresBuy:
+      - STR_KRIEG_STRATEGY
+      - STR_BASIC_BALLISTICS_DEP
+      - STR_NOT_STEEL_LEGION_STRATEGY
+      - STR_NOT_VALHALLAN_STRATEGY
+    costSell: 5000
+    weight: 12
+    armor: 200
+    bigSprite: 1111
+    floorSprite: 302
+    handSprite: 1400
+    bulletSprite: {mod: 40k, index: 2}
+    fireSound: {mod: 40k, index: 755}
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_DRUM
+      - STR_STUN_SHELLS
+      - STR_STUN_GAS_SHELLS
+    accuracyAuto: 45
+    accuracySnap: 65
+    accuracyAimed: 0
+    tuSnap: 25
+    tuAimed: 0
+    tuAuto: 30
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    listOrder: 10605
+    autoShots: 3
+    sprayWaypoints: 2
+    snapRange: 9
+    autoRange: 5
+    dropoff: 5
+    tags:
+      ITEM_RECOIL: 40
+
   - type: STR_AUTOSHOTGUN  #                               10600
     categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
     size: 0.2
@@ -632,6 +673,8 @@ items:
     requiresBuy:
       - STR_KRIEG_STRATEGY
       - STR_BASIC_BALLISTICS_DEP
+      - STR_NOT_STEEL_LEGION_STRATEGY
+      - STR_NOT_VALHALLAN_STRATEGY
     size: 0.2
     costBuy: 20000
     costSell: 5000
@@ -678,6 +721,8 @@ items:
       - STR_KRIEG_STRATEGY
       - STR_BASIC_BALLISTICS_DEP
       - STR_MIDTIER_PREREQ
+      - STR_NOT_STEEL_LEGION_STRATEGY
+      - STR_NOT_VALHALLAN_STRATEGY
     size: 0.2
     costBuy: 30000
     costSell: 7500
@@ -2199,6 +2244,55 @@ items:
       time: true
       energy: true
 
+  - type: STR_LASER_RIFLE_KRIEG_TIER1  # basic lasgun lucius pattern starter
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    requiresBuy:
+      - STR_KRIEG_STRATEGY
+      - STR_NOT_STEEL_LEGION_STRATEGY
+      - STR_NOT_VALHALLAN_STRATEGY
+    costBuy: 5000 #slightly more expensive than generic lasguns
+    costSell: 1500
+    weight: 9 #+1 weight
+    bigSprite: 1104
+    floorSprite: 299
+    handSprite: 1334
+    bulletSprite: {mod: 40k, index: 12}
+    fireSound: {mod: 40k, index: 741}
+    hitSound: {mod: 40k, index: 19}
+    hitAnimation: {mod: 40k, index: 36}
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+    clipSize: 0
+    bulletSpeed: 50
+    armor: 200  # to avoid item pile destruction
+    listOrder: 10912
+    # *** Melee bayonet
+    meleeHitSound: {mod: 40k, index: 101}
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40 #lower than T2
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.9
+      RandomType: 1
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 12
+    costMelee:
+      energy: 2
+    flatMelee:
+      time: true
+      energy: true
+
   - type: STR_LASER_RIFLE_KRIEG_TIER2  # mid-tier basic lasgun lucius pattern
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     size: 0.2
@@ -2371,6 +2465,79 @@ items:
     tags:
       ITEM_AIMED_FLAT_POWER_BONUS: 50
 
+  - type: STR_LASER_RIFLE_KRIEG_MC
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    costSell: 10000
+    weight: 7 #-1 weight MC
+    bigSprite: 1118
+    floorSprite: 309
+    handSprite: 1456
+    bulletSprite: {mod: 40k, index: 12}
+    fireSound: {mod: 40k, index: 741}
+    hitSound: {mod: 40k, index: 19}
+    hitAnimation: {mod: 40k, index: 36}
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+      - STR_LASGUN_CLIP_HOTSHOT
+    clipSize: 0
+    bulletSpeed: 50
+    armor: 200  # to avoid item pile destruction
+    listOrder: 10916
+    # *** Melee bayonet
+    meleeHitSound: {mod: 40k, index: 101}
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 55
+    meleeBonus:
+      strength: 0.2
+      melee: 0.2
+    meleeAlter:
+      ArmorEffectiveness: 0.8
+      RandomType: 1
+    accuracyMelee: 100  # lower due to weight
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    tuMelee: 12
+    costMelee:
+      energy: 2
+    flatMelee:
+      time: true
+      energy: true
+
+  - type: STR_LASER_RIFLE_KRIEG_MC_SCOPED
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    size: 0.2
+    costSell: 12000
+    weight: 8 #+1 weight, scoped
+    bigSprite: 1119
+    floorSprite: 310
+    handSprite: 1464
+    bulletSprite: {mod: 40k, index: 12}
+    fireSound: {mod: 40k, index: 741}
+    hitSound: {mod: 40k, index: 19}
+    hitAnimation: {mod: 40k, index: 36}
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    compatibleAmmo:
+      - STR_LASGUN_CLIP
+      - STR_LASGUN_CLIP_HOTSHOT
+    clipSize: 0
+    bulletSpeed: 50
+    armor: 200  # to avoid item pile destruction
+    listOrder: 10917
+    confAimed:
+      spendPerShot: 2
+    tags:
+      ITEM_AIMED_FLAT_POWER_BONUS: 60
+
   - type: STR_LASCARBINE
     requiresBuy:
       - STR_BASIC_BALLISTICS_DEP
@@ -2522,8 +2689,10 @@ items:
     confAimed:
       spendPerShot: 2
 
-  - type: STR_LASGUN_LUCIUS
+  - type: STR_LASGUN_LUCIUS #for non-Krieg Strats
     requiresBuyBaseFunc: [TRADE]
+    requiresBuy:
+      - STR_NOT_KRIEG_STRATEGY #added, Krieg gets T1 version instead without TRADE
     bigSprite: 1104
     floorSprite: 299
     handSprite: 1334
@@ -2605,32 +2774,9 @@ items:
   - type: STR_VOLLEYGUN_KRIEG #Lucius Volleygun
     categories: [STR_CAT_LASGUN]
     size: 0.2
-    dropoff: 6  # CQC focused; basically a laser automatic shotgun
-    weight: 15 #+6
     bigSprite: 1123
     floorSprite: 311
     handSprite: 1480
-    power: 75
-    damageType: 1
-    damageAlter:
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.2
-      ToHealth: 1.0
-      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
-      ToStun: 0.3  # painful las burns
-      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
-    accuracyAuto: 60
-    accuracySnap: 65
-    snapRange: 13
-    autoRange: 13
-    tuAuto: 35
-    tuSnap: 30
-    confAuto:
-      shots: 10
-    confSnap:
-      shots: 3
-      name: STR_BURST_SNAP_SHOT
-    clipSize: -1
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -2656,32 +2802,11 @@ items:
 
   - type: STR_HELLGUN_KRIEG #Lucius Hellgun
     categories: [STR_CAT_LASGUN]
+    clipSize: -1
     size: 0.2
-    dropoff: 4  # scoped
-    weight: 15 #+6
     bigSprite: 1120
     floorSprite: 312
     handSprite: 1472
-    power: 80 #+5
-    damageType: 1
-    damageAlter:
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.2
-      ToHealth: 1.0
-      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
-      ToStun: 0.3  # painful las burns
-      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
-    accuracyAuto: 70
-    accuracySnap: 75
-    accuracyAimed: 90
-    tuAuto: 35
-    tuSnap: 25
-    tuAimed: 70
-    aimRange: 25
-    snapRange: 14  # inferior snapfire range
-    autoRange: 14  # superior autofire range
-    autoShots: 5  # superior autofire
-    clipSize: -1
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -2690,8 +2815,6 @@ items:
     recover: false
     fixedWeapon: true
     fixedWeaponShow: true
-    tags:
-      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25  # battle rifle bonus
     # lasgun aesthetics
     hitSound: 3986
     fireSound: 3983
@@ -3884,6 +4007,7 @@ items:
     requiresBuy:  # what tech is required for the item to be visible in the Hire/Purchase screen.
       - STR_BASIC_BALLISTICS_DEP
       - STR_HEAVY_WEAPONS_IG
+      - STR_VALHALLAN_STRATEGY
     ufopediaType: STR_MORTAR_AMMO_HE_EXPLOSION
     costBuy: 7500
     costSell: 1000
@@ -3922,6 +4046,10 @@ items:
     costBuy: 5000
     costSell: 1000
     weight: 7
+    requiresBuy:  # what tech is required for the item to be visible in the Hire/Purchase screen.
+      - STR_BASIC_BALLISTICS_DEP
+      - STR_HEAVY_WEAPONS_IG
+      - STR_VALHALLAN_STRATEGY
     bigSprite: 912
     damageAlter:  # high explosive
       ToHealth: 0
@@ -3946,6 +4074,7 @@ items:
     requiresBuy:  # what tech is required for the item to be visible in the Hire/Purchase screen.
       - STR_SMOKE
       - STR_HEAVY_WEAPONS_IG
+      - STR_VALHALLAN_STRATEGY
     costBuy: 500
     costSell: 100
     weight: 2
@@ -5640,7 +5769,7 @@ items:
     categories: [STR_CAT_EQUIPMENT]
     requiresBuy:
       - STR_BASIC_BALLISTICS_DEP
-      - STR_IMPERIAL_GUARD_OPERATIONS
+      - STR_HEAVY_WEAPONS_IG
     size: 0.2
     costBuy: 500
     costSell: 50

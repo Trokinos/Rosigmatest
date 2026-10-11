@@ -11,7 +11,7 @@ armors:
     spriteSheet: BLOODLETTER_BS.PCK
     spriteInv: BLOODLETTER_INV.SPK
     heatVision: 33  # daemons have 33% heat vision as standard
-    psiVision: 10
+    psiVision: 18  # bloodhunter
     frontArmor: 60  # decently armored; Brass armor of Khorne
     sideArmor: 60
     rearArmor: 50
@@ -152,7 +152,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 40  # daemonic senses
     heatVision: 33  # daemonic senses
-    psiVision: 15  # bloodhunter
+    psiVision: 18  # bloodhunter
     spriteInv: JUGINV.SPK
     frontArmor: 150
     sideArmor: 140
@@ -335,6 +335,19 @@ armors:
       UNIT_TYPE_NURGLE: 1
       UNIT_IS_DIEHARD: 1
       DIEHARD_TEMP_MODIFIER_INCREMENT: -5
+      # Aura parameters
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 1 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 8 # acid damage
+      AURA_DAMAGE_ARMOR: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_CELATID_ARMOR                            # Nurgle Deamon
     visibilityAtDay: 40
@@ -378,6 +391,19 @@ armors:
       UNIT_TYPE_NURGLE: 1
       UNIT_IS_DIEHARD: 1
       DIEHARD_TEMP_MODIFIER_INCREMENT: -5
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 1 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 8 # acid damage
+      AURA_DAMAGE_ARMOR: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
+
 
   - type: NURGLINGS_ARMOR  # NURGLE ANIMATED Blessed variant
     visibilityAtDay: 40
@@ -533,6 +559,19 @@ armors:
       UNIT_TYPE_SLAANESH: 1
       DODGE_CHANCE: 33
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 3 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 6 # stun damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_ENERGY: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_CHRYSSALID_ARMORSELENE     # DEMON HARPY
     visibilityAtDay: 40
@@ -620,6 +659,19 @@ armors:
       UNIT_TYPE_SLAANESH: 1
       DODGE_CHANCE: 33
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 20
+      AURA_CORRUPTION_TYPE: 3 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 20
+      AURA_DAMAGE_TYPE: 6 # stun damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_ENERGY: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 10 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_DEMI_DAEMONETTE_ARMOR     # DEMI ARMOR
     visibilityAtDay: 40
@@ -737,6 +789,20 @@ armors:
       UNIT_TYPE_TZEENTCH: 1
       DODGE_CHANCE: 50  # fast and dodgy; compensates for lack of health and armor; use aoes/volume of fire to combat these
       ARMOR_MAX_SUCCESSFUL_DODGES: 5
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # swingy Tzeentch
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 5
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 30
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_IGNITES: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 9 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_FLAMER_ARMOR                          # TZ     Deamon
     visibilityAtDay: 40
@@ -778,6 +844,21 @@ armors:
       UNIT_TYPE_TZEENTCH: 1
       DODGE_CHANCE: 10
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # swingy Tzeentch
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 5
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 5
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_DAMAGE_HEALTH: 1
+      AURA_IGNITES: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_EXALTED_FLAMER_ARMOR                          # TZ     Deamon
     visibilityAtDay: 40
@@ -826,6 +907,22 @@ armors:
       UNIT_TYPE_TZEENTCH: 1
       DODGE_CHANCE: 20
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 15
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 15
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_DAMAGE_HEALTH: 1
+      AURA_IGNITES: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 9 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
+
 
   - type: STR_TZEENTCH_LESSER_DAEMON_ARMOR  # Gleaming One Mr Crabby
     visibilityAtDay: 40
@@ -867,6 +964,19 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_PSYKER: 1
       UNIT_TYPE_TZEENTCH: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 5
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 5
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_PINKHORROR_ARMOR                               # SLAANESH REGULAR
     visibilityAtDay: 40
@@ -912,6 +1022,19 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_PSYKER: 1
       UNIT_TYPE_TZEENTCH: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_BLUEHORROR_ARMOR                               # SLAANESH REGULAR
     visibilityAtDay: 40
@@ -959,6 +1082,19 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_PSYKER: 1
       UNIT_TYPE_TZEENTCH: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 5
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 5
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_BRIMSTONE_HORROR_ARMOR
     visibilityAtDay: 40
@@ -1029,6 +1165,20 @@ armors:
       ARMOR_ALPHA_TARGET_VALUE_MODIFIER: -1  # does not trigger AL when killed
       DODGE_CHANCE: 20
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 5
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 5
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_HEALTH: 1
+      AURA_IGNITES: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 3 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
+
 
 # Undivided Daemons
   - type: STR_NEVERBORN_TERRORIST_ARMOR                        # Undivided Deamon

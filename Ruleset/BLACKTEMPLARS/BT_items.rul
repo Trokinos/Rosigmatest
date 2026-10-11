@@ -110,3 +110,53 @@ items:
     battleType: 4
 
 
+  # items manufacture to upgrade armors
+
+  - type: STR_BTMARINE_MIDTIER_BASE
+    listOrder: 50
+    size: 0.0
+    costBuy: 0
+    costSell: 0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+    specialType: 8
+
+  - type: STR_BTMARINE_HIGHTIER_BASE
+    listOrder: 50
+    size: 0.0
+    costBuy: 0
+    costSell: 0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+    specialType: 8
+
+  - type: STR_BTMARINEASSAULT_MIDTIER_BASE
+    listOrder: 50
+    size: 0.0
+    costBuy: 0
+    costSell: 0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+    specialType: 8
+
+  - type: STR_BTTECH_HIGHTIER_BASE
+    listOrder: 50
+    size: 0.0
+    costBuy: 0
+    costSell: 0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+    specialType: 8
+

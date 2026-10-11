@@ -1,4 +1,44 @@
 manufacture:
+
+  ## CITIZEN CONVERSIONS
+  - name: STR_ELDAR_CITIZEN_TO_ENGINEER
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_ELDAR_STRATEGY
+    cost: 25000
+    time: 1
+    refund: true
+    producedItems: {}
+    spawnedPersonType: STR_ENGINEER
+    requiredItems:
+      STR_ELDAR_CITIZEN: 1
+  - name: STR_ELDAR_CITIZEN_TO_SCIENTIST
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_ELDAR_STRATEGY
+    cost: 30000
+    time: 1
+    refund: true
+    producedItems: {}
+    spawnedPersonType: STR_SCIENTIST
+    requiredItems:
+      STR_ELDAR_CITIZEN: 1
+
+### Soldier Manufacture
+  - name: STR_CONSCRIPT_ELDAR_GUARDIAN
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_ELDAR_STRATEGY
+      - STR_RECRUIT_ELDAR_T1
+    space: 0
+    time: 100
+    cost: 30000
+    producedItems: {}
+    spawnedPersonType: STR_ELDAR_GUARDIAN_PLAYER
+    #requiredItems:
+    #  STR_KILLPOINT_TOKEN: 10
+    points: 0
+
   - name: STR_ENLIST_ELDAR_OUTCAST_RANGER
     category: STR_ADVANCEMENT
     requires:
@@ -10,6 +50,7 @@ manufacture:
     spawnedPersonType: STR_ELDAR_RANGER_PLAYER
     requiredItems:
       STR_KILLPOINT_TOKEN: 60
+      STR_ELDAR_CITIZEN: 1 # For now consider rangers part of the eldar population, this can be changed but requires adjusting costs.
     points: -50 # lose eldar trust for enlisting outcasts
 
   - name: STR_DIRESWORD_VESSEL_MANUFACTURE
@@ -43,6 +84,47 @@ manufacture:
       STR_DIRESWORD_VESSEL: 1
     producedItems:
       STR_DIRESWORD: 1
+
+  - &ELDAR_HWP_ITEM_MANUFACTURE
+    name: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_ITEM
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_RESEARCH
+    space: 0
+    time: 600
+    cost: 250000
+
+  - name: STR_ELDAR_HWP_AML_ARMOR_ITEM
+    refNode: *ELDAR_HWP_ITEM_MANUFACTURE
+    requires:
+      - STR_ELDAR_HWP_AML_ARMOR_RESEARCH
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+      # STR_ELERIUM_115: 30 # Swap if accessibility improved
+
+  - name: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_ITEM
+    refNode: *ELDAR_HWP_ITEM_MANUFACTURE
+    requires:
+      - STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_RESEARCH
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+      STR_ELERIUM_115: 30
+
+  - name: STR_ELDAR_HWP_SCATTERLASER_ARMOR_ITEM
+    refNode: *ELDAR_HWP_ITEM_MANUFACTURE
+    requires:
+      - STR_ELDAR_HWP_SCATTERLASER_ARMOR_RESEARCH
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+
+  - name: STR_ELDAR_HWP_STARCANNON_ARMOR_ITEM
+    refNode: *ELDAR_HWP_ITEM_MANUFACTURE
+    requires:
+      - STR_ELDAR_HWP_STARCANNON_ARMOR_RESEARCH
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+      STR_ELERIUM_115: 30
+
 
   - name: STR_CRATED_HORNET
     category: STR_CRAFT

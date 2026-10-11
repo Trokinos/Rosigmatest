@@ -25,9 +25,9 @@ extended:
             return power part side;
           end;
 
-          debug_log "ROSIGMA_hU_markerlight_damage_bonus | Starting damage was:" power;
+          # debug_log "ROSIGMA_hU_markerlight_damage_bonus | Starting damage was:" power;
           muldiv power 120 100; #markerlight increases damage by 20%
-          debug_log "ROSIGMA_hU_markerlight_damage_bonus | Markerlit target takes 20% extra damage:" power;
+          # debug_log "ROSIGMA_hU_markerlight_damage_bonus | Markerlit target takes 20% extra damage:" power;
           battle_game.flashMessage "STR_SCRIPT_TARGET_TOOK_MARKERLIGHT_DAMAGE_NOTICE";
           return power part side;
 
@@ -80,7 +80,7 @@ extended:
           set temp attackerFaction;
           add temp 1;
           unit.setTag Tag.IS_MARKERLIT temp;
-          debug_log "ROSIGMA_hU_markerlight_target | Markerlight applied:" attackerFaction;
+          # debug_log "ROSIGMA_hU_markerlight_target | Markerlight applied:" attackerFaction;
           battle_game.flashMessage "STR_SCRIPT_TARGET_IS_MARKERLIT_NOTICE";
           return power part side;
 

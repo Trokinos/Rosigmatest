@@ -18,13 +18,14 @@ research:
     points: 0
     cost: 5
     dependencies:
-      - STR_ARBITES
+      #- STR_ARBITES
+      - STR_GENERALLOCK # Remove after patch 3.3 release
     reenables:
       - STR_CHAPTER_PURITY    # not all who wander are lost
     lookup: STR_CHOSEN_ELDAR_STRATEGY
     unlocks:
       - STR_GUARD_BARRACKS
-      - STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE
+      #- STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE
       #- STR_PILOT_GUARDSMEN # TODO: understand how we want to manage Eldar pilots
       - STR_RECRUIT_ELDAR_T1
       #- STR_LASER_WEAPONS     # easiest way to activate heavy stubbers (???)
@@ -124,6 +125,30 @@ research:
     dependencies:
       - STR_ELDAR_STRATEGY
 
+  - name: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_RESEARCH # 1st Unlocks eldar Heavy Weapons Platform
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+  - name: STR_ELDAR_HWP_SCATTERLASER_ARMOR_RESEARCH
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+  - name: STR_ELDAR_HWP_AML_ARMOR_RESEARCH
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+  - name: STR_ELDAR_HWP_STARCANNON_ARMOR_RESEARCH
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+  - name: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_RESEARCH
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+
   ### Eldar Alliance imports
   - delete: STR_ELDAR_SHIELD
   - name: STR_ELDAR_SHIELD  # Eldar Personal Shield
@@ -131,6 +156,32 @@ research:
     points: 50
     dependencies:
       - STR_ELDAR_STRATEGY # todo: change dependency
+
+ ### Early Game Imperium Pact
+  - name: STR_MONKEIGH_PACT # Allows recruitment of Imperial meatshield unit
+    cost: 100
+    points: -200 # unpopular with the Eldar
+    dependencies:
+      - STR_ELDAR_STRATEGY
+    # spawnedEvent: MONKEIGH ALLIES STARTING PACKAGE EVENT
+
+  - name: STR_MONKEIGH_RETALIATION # ACTIVATES RETALIATION EVENT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MONKEIGH_PACT
+      - STR_ELDAR_ASPECT_RESEARCH #   research triggers ahead of  STR_MONKEIGH_PACT_UNNECESSARY
+    # spawnedEvent: MONKEIGH RETALIATION EVENT HERE
+
+  - name: STR_MONKEIGH_PACT_UNNECESSARY
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ELDAR_ASPECT_RESEARCH
+    disables:
+      - STR_MONKEIGH_PACT # Remove access to Imperial recruits once Aspect Warriors are unlocked
+
+
 
 #------------------------------------------------------------------
 # TIER 2
@@ -145,6 +196,7 @@ research:
       - STR_MOTION_SCANNER
     unlocks:
       - STR_MIDTIER_PREREQ
+    spawnedEvent: STR_ELDAR_MIDTIER_REINFORCEMENTS
 
   - name: STR_ELDAR_ASPECT_RESEARCH  # Aspect Warrior Promotions
     cost: 100
@@ -256,6 +308,7 @@ research:
       - STR_ELDAR_ASURYANI_CAMPAING_SLAANESH_PALACE_DEFEATED # event to be completed
     unlocks:
       - STR_HIGHTIER_PREREQ
+    spawnedEvent: STR_ELDAR_HIGHTIER_REINFORCEMENTS
 
   - name: STR_ELDAR_AUTARCH_EXARCH_RESEARCH  # Promotions to exarch and autarch
     cost: 666 #slanesh lucky number
@@ -297,6 +350,13 @@ research:
     points: 0
     dependencies:
       - STR_ELDAR_BANSHEE_RESEARCH
+      - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
+
+  - name: STR_ELDAR_HAWK_EXARCH_RESEARCH
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ELDAR_HAWK_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
 
   - name: STR_ELDAR_SPIDER_EXARCH_RESEARCH

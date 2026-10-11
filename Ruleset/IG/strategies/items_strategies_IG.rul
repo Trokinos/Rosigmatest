@@ -22,6 +22,9 @@ items:
   - type: STR_LIGHTNING_SL_TOKEN  # steel legion version
     size: 0.1
 
+  - type: STR_TRUCKSTARTER_KRIEG_TOKEN
+    size: 0.1
+
   - type: STR_TRUCKSTARTER_VL_TOKEN
     size: 0.1
 

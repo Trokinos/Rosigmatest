@@ -18,6 +18,142 @@ manufacture:
 #    producedItems:
 #      STR_BRARVUS_ADEPTAS: 1
 
+  - name: STR_NOVICE_ARMOR_BLOODYROSE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+    space: 0
+    time: 500
+    cost: 20000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+
+  - name: STR_HOSPITALIER_ARMOR_BLOODYROSE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_MEDI_KIT_PREREQ
+      - STR_MEDICAE_RESEARCH
+      - STR_CHAPTER_PURITY
+    space: 0
+    time: 300
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+
+  - name: STR_ADEPTAS_ARMOR_BLOODYROSE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_FAITHFUL_ARMORY
+      - STR_CHAPTER_PURITY
+    space: 0
+    time: 800
+    cost: 35000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_KILLPOINT_TOKEN: 50
+
+  - name: STR_SERAPHIM_ARMOR_BLOODYROSE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_ADEPTAS_ARMORS
+      - STR_FAITHFUL_ARMORY
+      - STR_CHAPTER_PURITY
+    space: 0
+    time: 800
+    cost: 40000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 20
+      STR_KILLPOINT_TOKEN: 60
+
+  - name: STR_SUPERIOR_ARMOR_BLOODYROSE
+    category: STR_ADVANCEMENT
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_ADEPTAS_SOB_MOBILIZATION
+    space: 0
+    time: 250
+    cost: 150000
+    requiredItems:
+      STR_KILLPOINT_TOKEN: 80
+      STR_ALIEN_ALLOYS: 40
+      STR_ELERIUM_115: 20
+
+
+  - name: STR_ELOHIM_ARMOR_BLOODYROSE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_ADEPTAS_SOB_MOBILIZATION
+      - STR_ADEPTAS_ARMORS
+      - STR_FAITHFUL_ARMORY
+      - STR_MIDTIER_PREREQ
+    space: 0
+    time: 500
+    cost: 50000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 60
+      STR_ELERIUM_115: 60
+      STR_KILLPOINT_TOKEN: 80
+
+  - name: STR_RETRIBUTOR_ARMOR_BLOODYROSE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_ADEPTAS_SOB_MOBILIZATION
+      - STR_ADEPTAS_ARMORS
+      - STR_FAITHFUL_ARMORY
+      - STR_MIDTIER_PREREQ
+    space: 0
+    time: 500
+    cost: 70000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 80
+      STR_ELERIUM_115: 80
+      STR_KILLPOINT_TOKEN: 90
+
+  - name: STR_CELESTIAN_ARMOR_BLOODYROSE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_HIGHTIER_PREREQ
+      - STR_FAITHFUL_ARMORY
+      - STR_CHAPTER_PURITY
+    space: 0
+    time: 1280
+    cost: 300000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 100  # built in shield
+      STR_ELERIUM_115: 100
+      STR_KILLPOINT_TOKEN: 100
+
+  - name: STR_SACRESANT_ARMOR_BLOODYROSE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_HIGHTIER_PREREQ
+      - STR_FAITHFUL_ARMORY
+      - STR_CHAPTER_PURITY
+    space: 0
+    time: 1280
+    cost: 300000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 120
+      STR_ELERIUM_115: 120
+      STR_KILLPOINT_TOKEN: 120
+
   - name: STR_PENITENT_ARMOR_BLOODYROSE
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:

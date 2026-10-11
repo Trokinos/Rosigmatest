@@ -1218,6 +1218,13 @@ items:
       STR_KILLPOINT_TOKEN: [3]
       STR_GSC_JUDGE_CORPSE: [1]
 
+  - type: STR_GSC_SENTINELPD_CORPSE
+    costSell: 10000
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [8]
+      STR_ALIEN_ALLOYS: [4]
+      STR_GSC_SENTINELPD_CORPSE: [1]
+
   - type: 11_BIKE1
     name: STR_BIKE_CORPSE
     weight: 200
@@ -1903,16 +1910,22 @@ items:
       STR_GANGERBASE_SOLDIERM_GEO: [1]
 
   - type: STR_GANGEROUS_GEO
-    costSell: 6000
+    costSell: 5000
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [15]
       STR_GANGEROUS_GEO: [1]
 
   - type: STR_GANGERGOLIATH_GEO
-    costSell: 8000
+    costSell: 9000
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [20]
       STR_GANGERGOLIATH_GEO: [1]
+
+  - type: STR_GANGERBASE_OGRYN_CORPSE
+    costSell: 5000
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [10]
+      STR_GANGERBASE_OGRYN_CORPSE: [1]
 
   - type: STR_WORDBEARER_GALV_CORPSE
     costSell: 10000
@@ -2005,6 +2018,27 @@ items:
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [5]
       STR_GUARDH_AICORPSE: [1]
+
+  - type: STR_GUARD_ARMORS_MOUNTED_HEAVY_BOLTER_AI_CORPSE
+    costSell: 10000
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [8]
+      STR_ALIEN_ALLOYS: [2]
+      STR_GUARD_ARMORS_MOUNTED_HEAVY_BOLTER_AI_CORPSE: [1]
+
+  - type: STR_IGOPFOR_SENTINEL_LIGHT_CORPSE
+    costSell: 10000
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [8]
+      STR_ALIEN_ALLOYS: [2]
+      STR_IGOPFOR_SENTINEL_LIGHT_CORPSE: [1]
+
+  - type: STR_IGOPFOR_SENTINEL_HEAVY_CORPSE
+    costSell: 14000
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [10]
+      STR_ALIEN_ALLOYS: [4]
+      STR_IGOPFOR_SENTINEL_HEAVY_CORPSE: [1]
 
   - type: STR_STEELLEGION_FLAK_CORPSEAI
     costSell: 2500

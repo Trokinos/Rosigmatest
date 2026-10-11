@@ -79,6 +79,17 @@ manufacture:
     time: 100
     cost: 20000
 
+  - name: STR_TAUMARINVESACARAP_PC_MEDIC_ARMOR_ITEM_GV
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_INFILTRATION_CADRE_GV
+    requiredItems:
+      STR_KILLPOINT_TOKEN: 10
+      STR_ALIEN_ALLOYS: 1
+    space: 1
+    time: 100
+    cost: 20000
+
   - name: STR_TAU_PATHFINDER_TRANSPECTRAL_ARMOR_ITEM_GV
     category: STR_PERSONAL_ARMOR
     requires:

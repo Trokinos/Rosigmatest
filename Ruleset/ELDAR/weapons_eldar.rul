@@ -98,7 +98,7 @@ items:
     weight: 20
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-    # Avenger Research
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
     costBuy: 15000
     costSell: 5000
     bigSprite: 4884
@@ -123,7 +123,7 @@ items:
     weight: 20
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-    # Avenger Research
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
     costBuy: 15000
     costSell: 5000
     bigSprite: 4885
@@ -201,8 +201,8 @@ items:
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      #Avenger Research
     costBuy: 12000
     costSell: 4000
     bigSprite: 4886
@@ -241,6 +241,7 @@ items:
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
       #Avenger Research
     costBuy: 12000
@@ -383,7 +384,7 @@ items:
     invWidth: 2
     invHeight: 3
     arcingShot: false
-    minRange: 5
+    minRange: 10 # Scoped Sniper Rifle
     aimRange: 40
     snapRange: 20
     autoRange: 14
@@ -405,7 +406,7 @@ items:
     tags:
       REACTION_MULTIPLIER: 60 # -40 Sniper Malus
 
-  - type: STR_SHURIKEN_CANNON             # tentative start, needs fixing
+  - type: STR_SHURIKEN_CANNON
     refNode: *ELDAR_SHURIKEN_WEAPON_TEMPLATE
     requires:
       - STR_ELDAR_ONLY
@@ -416,7 +417,6 @@ items:
     weight: 50
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
     size: 0.3
-    dropoff: 5
     costBuy: 50000
     costSell: 20000
     bigSprite: 4861
@@ -426,6 +426,8 @@ items:
     fireSound: [1884, 1885, 1886]
     compatibleAmmo:
       - STR_SHURIKEN_CANNON_MAG
+    snapRange: 15
+    dropoff: 5
     accuracySnap: 80
     accuracyAuto: 66
     tuSnap: 25
@@ -441,7 +443,7 @@ items:
     attraction: 1
     confSnap:
       shots: 4
-    experienceTrainingMode: 6
+    experienceTrainingMode: 5 # 50% firing exp, may need to go down to 33%
     listOrder: 16930 # either with reaper/heavy weapons or shuriken
 
   - delete: STR_ELDAR_LAUNCHER
@@ -829,18 +831,16 @@ items:
       - STR_ELDAR_HAWK_RESEARCH
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-    requiresBuyBaseFunc: []
     weight: 10
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_LASGUN]
     size: 0.3
-    dropoff: 5
     costBuy: 50000
     costSell: 10000
     bigSprite: 4901
     floorSprite: 4901
     handSprite: 1770
     bulletSprite: {mod: 40k, index: 20}
-    fireSound: [{mod: 40k, index: 839}, {mod: 40k, index: 840}, {mod: 40k, index: 841}]
+    fireSound: [1899, 1900, 1901]
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -850,16 +850,18 @@ items:
     attraction: 5
     compatibleAmmo:
       - STR_LASBLASTER_CHARGE
+    tuSnap: 19
+    accuracySnap: 80
     accuracyMultiplier:
       firing: 0.5
       throwing: 0.5 # Hawk Main Stat
-    accuracySnap: 80
     snapRange: 14
+    dropoff: 5
     confSnap:
       shots: 2
       name: STR_HAWK_WEAPON_SNAPSHOT
-    experienceTrainingMode: 5
-    tuSnap: 19
+    experienceTrainingMode: 5 #50%
+
     flatRate: true
     listOrder: 16550
 
@@ -867,8 +869,7 @@ items:
     refNode: *ELDAR_HAWK_LAS_WEAPON_TEMPLATE
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_HAWK_RESEARCH
-      #- STR_ELDAR_HAWKEX_RESEARCH
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
     weight: 20
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_LASGUN, STR_CAT_DEVASTATOR]
     size: 0.3
@@ -912,12 +913,17 @@ items:
     confSnap:
       shots: 2
       name: STR_HAWK_WEAPON_SNAPSHOT
-    experienceTrainingMode: 5
+    experienceTrainingMode: 5 #50%
     tuSnap: 17
     listOrder: 16554
+    tags:
+      REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
   - type: STR_SUNPISTOL_SCOPED # T3 Hawk Pistol, meant for safe potshots rather than lethalness
     refNode: *ELDAR_HAWK_LAS_WEAPON_TEMPLATE
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
     weight: 7
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_LASGUN]
     size: 0.2
@@ -951,13 +957,14 @@ items:
     tuAimed: 30
     experienceTrainingMode: 5
     listOrder: 16555
+    tags:
+      REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
   - type: STR_HAWK_SCATTERLASER # Long Range, High firerate, zero AP, Easy Training Weapon
     refNode: *ELDAR_HAWK_LAS_WEAPON_TEMPLATE
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_HAWK_RESEARCH
-      #- STR_ELDAR_HAWKEX_RESEARCH
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
     weight: 30
     size: 0.3
     costBuy: 150000
@@ -973,10 +980,12 @@ items:
     confSnap:
       shots: 4
       name: STR_HAWK_WEAPON_SNAPSHOT
-    experienceTrainingMode: 6
+    experienceTrainingMode: 5
     tuSnap: 30
     blockBothHands: true # technically a heavy weapon
     listOrder: 16557
+    tags:
+      REACTION_MULTIPLIER: 50 # multiplies base reaction score by this amount divided by 100
 
 
   - type: STR_DEATH_SPINNER  # Chaos ripper gun stats temporary
@@ -1044,6 +1053,188 @@ items:
     aimRange: 20
     snapRange: 16
     listOrder: 16620
+
+#--- ELDAR.HWP and Support Platform
+
+  - &ELDAR_HWP_WEAPON_TEMPLATE
+    type: STR_ELDAR_HWP_WEAPON
+    categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
+    weight: 0
+    battleType: 1
+    fixedWeapon: true
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    clipSize: -1
+    snapRange: 20 # 36" range
+    dropoff: 4
+
+  - type: STR_ELDAR_HWP_SCATTERLASER
+    refNode: *ELDAR_HWP_WEAPON_TEMPLATE
+    categories: [STR_CAT_LASER, STR_CAT_ELDAR]
+  # Aesthetics
+    bigSprite: 4945  # TEMPORARY
+    hitSound: 3986
+    hitAnimation: 2220
+    bulletSprite: {mod: 40k, index: 22}
+    fireSound: [1899, 1900, 1901]
+    vaporColorSurface: 4  # red laser
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    bulletSpeed: 10
+    explosionSpeed: 3
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+  # Weapon Stats
+    accuracySnap: 70
+    confSnap:
+      shots: 4 # Can be increased if buff needed
+      name: STR_HAWK_WEAPON_SNAPSHOT
+    experienceTrainingMode: 5
+    tuSnap: 25 # %TU mounted weapon cannot be wielded with finesse
+  # Damage Stats
+    power: 75 # STR 5
+    damageType: 1  # AP instead of LAS
+    damageAlter:
+      RandomType: 2 # Consistent damage, lower crits less effective against high armor.
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
+      ToStun: 0.3  # painful las burns
+      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
+      RandomWound: false
+
+  - type: STR_ELDAR_HWP_SHURIKENCANNON
+    refNode: *ELDAR_HWP_WEAPON_TEMPLATE
+  # Aesthetics
+    bigSprite: 4946
+    bulletSprite: {mod: 40k, index: 20}
+    fireSound: [1884, 1885, 1886]
+    hitSound: 1887 #{mod: 40k, index: 708} old sound
+    hitAnimation: {mod: 40k, index: 26}
+    explosionSpeed: 5
+  # Weapon Stats
+    snapRange: 15
+    dropoff: 5
+    accuracySnap: 80
+    accuracyAuto: 66
+    tuSnap: 25
+    tuAuto: 40
+    autoShots: 12
+    bulletSpeed: 30
+    confSnap:
+      shots: 4
+      name: STR_SHURIKEN_WEAPON_SNAPSHOT
+    confAuto:
+      name: STR_SHURIKEN_WEAPON_AUTOSHOT
+    experienceTrainingMode: 5 # 50% firing exp
+  # Damage stats
+    power: 50
+    damageType: 1
+    damageAlter:  # DA SHURIKEN
+      ToArmorPre: 0.1  # was ToArmor, i.e doesn't damage high armor it can't pen, making certain units invincible.
+      RandomType: 2  # TFTD [50% - 150%]
+      ToHealth: 0.5
+      ToStun: 0.2
+      ArmorEffectiveness: 0.3
+
+  - type: STR_ELDAR_HWP_AML
+    refNode: *ELDAR_HWP_WEAPON_TEMPLATE
+  # Aesthetics
+    bigSprite: 4947
+    bulletSprite: {mod: 40k, index: 0}
+    fireSound: {mod: 40k, index: 52}
+  # Weapon Stats
+    accuracySnap: 70  # +10 vs marine
+    accuracyAimed: 70  # +10 vs marine
+    tuSnap: 45
+    tuAimed: 45
+    snapRange: 32  #48" range
+    aimRange: 32
+    confAimed:
+      name: STR_HWP_STARSWARM_SHOT
+      ammoSlot: 0
+    confSnap:
+      name: STR_HWP_STARSHOT_SHOT
+      ammoSlot: 1
+    ammo:
+      0:
+        compatibleAmmo:
+          - STR_HWP_STARSWARM_AMMO
+      1:
+        compatibleAmmo:
+          - STR_HWP_STARSHOT_AMMO
+      #- STR_HEAVY_ROCKET_HE
+      #- STR_HEAVY_ROCKET_KRAK
+
+  - type: STR_ELDAR_HWP_STARCANNON
+    refNode: *ELDAR_HWP_WEAPON_TEMPLATE
+  # Aesthetics
+    bigSprite: 4948
+    fireSound: [{mod: 40k, index: 846}, {mod: 40k, index: 847}]
+    hitSound: {mod: 40k, index: 858}
+    hitAnimation: {mod: 40k, index: 100}
+    bulletSprite: {mod: 40k, index: 17}
+    bulletSpeed: 10
+  # Weapon Stats
+    tuSnap: 30
+    tuAimed: 40
+    accuracySnap: 70
+    accuracyAimed: 90
+    confSnap:
+      shots: 2
+      name: STR_HAWK_WEAPON_SNAPSHOT
+    confAimed:
+      shots: 2
+      name: STR_HAWK_WEAPON_AIMEDSHOT
+    aimRange: 20 # 36" range, accuracy gives extra range
+  # Damage stats
+    power: 100
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 0.1  # melts some armor on the way in
+      ArmorEffectiveness: 0.75  # *** PLASMA rebalance
+      FireThreshold: 70  # can ignite at high damage
+      ToArmor: 0.1
+    #powerRangeReduction: 5
+    #powerRangeThreshold: 25.0  # plasma decoheres at longer ranges
+
+  - type: STR_ELDAR_HWP_BRIGHTLANCE # 36" range 1d6+2 damage
+    refNode: *ELDAR_HWP_WEAPON_TEMPLATE
+  # Aesthetics
+    bigSprite: 4949
+    hitSound: 3986
+    fireSound: 3984
+    hitAnimation: 2230
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 4  # red laser
+    vaporDensitySurface: 6
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+  # Weapon Stats
+    accuracySnap: 90
+    tuSnap: 40
+  # Damage stats
+    damageType: 4
+    power: 250 # +30 over Imperium to balance lower RandomType damage cap.
+    damageAlter:  # DA LAS
+      RandomType: 2  # 1d6+2 More consistent damage
+      ToArmorPre: 0.4
+      ToHealth: 1.0
+      ToArmor: 0.1
+      ToStun: 0.3
 
 #--- ELDAR.GRENADES ---
 
@@ -1352,7 +1543,7 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      # BANSHEE EXARCH RESEARCH
+      - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
     requiresBuyBaseFunc: []
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 1
@@ -1440,7 +1631,7 @@ items:
     categories: [STR_CAT_MELEE, STR_CAT_ELDAR, STR_CAT_ASSAULT]
     requires:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      # BANSHEE EXARCH RESEARCH
+      - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
     requiresBuy: []
     size: 0.3
     costBuy: 100000
@@ -1679,7 +1870,7 @@ items:
     categories: [STR_CAT_MELEE, STR_CAT_ELDAR, STR_CAT_ASSAULT]
     requires:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      # AVENGER EXARCH RESEARCH
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
     requiresBuy: []
     size: 0.3
     costBuy: 85000
@@ -1815,8 +2006,8 @@ items:
   - type: STR_SCORPION_CHAINSWORD  # Tier2 Armor shredding strength based melee
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-      # Scorpion Research
     requiresBuy:
+      - STR_ELDAR_SCORPION_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
     requiresBuyBaseFunc: []
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT, STR_CAT_ELDAR]
@@ -1874,6 +2065,7 @@ items:
       # Scorpion Exarch Reasearch
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
     costBuy: 100000
     costSell: 25000
     size: 0.2
@@ -1929,6 +2121,7 @@ items:
       # Scorpion Research
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
     size: 0.2
     dropoff: 5
     costBuy: 100000

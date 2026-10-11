@@ -1315,7 +1315,7 @@ armors:
     antiCamouflageAtDark: 5
     heatVision: 20
     loftempsSet: [5]
-    storeItem: STR_saturnine_ARMOR
+    storeItem: STR_WORDBEARERsaturnine_ARMORPLAYER
     spriteInv: WORDBEARER_saturninvent.SPK
     spriteSheet: WORDBEARERsaturnbattle.PCK
     units:

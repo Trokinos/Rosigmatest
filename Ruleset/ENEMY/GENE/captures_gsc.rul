@@ -411,11 +411,15 @@ items:
     recover: true
     liveAlien: true
     costSell: 10000
-  - type: STR_LOCUS_CLOAKED                    # 22000
+  - type: STR_LOCUS_CLOAKED # unused, kept for compatibility
     recover: true
     liveAlien: true
     costSell: 15000
-  - type: STR_LOCUS_FRENZIED                    # 22000
+  - type: STR_LOCUS_FRENZIED # unused, kept for compatibility
+    recover: true
+    liveAlien: true
+    costSell: 15000
+  - type: STR_LOCUS_PRISIONER #GSC locus capture
     recover: true
     liveAlien: true
     costSell: 15000
@@ -657,3 +661,10 @@ items:
     liveAlien: false
     costSell: 2000
 
+  #GSC INFECTED PDF
+  - type: STR_GSC_SENTINEL
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 5000
+    listOrder: 20400

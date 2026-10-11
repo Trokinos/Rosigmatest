@@ -88,8 +88,8 @@ soldiers:
       - delete
       - Names/sm_blacktemplar.nam
     deathMale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]
-    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}, {mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
-    value: 30
+    deathFemale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]  # BT all men. women slots are used for additional armor layers
+    value: 20
 
 
   - type: STR_BTHONORED_PLAYER
@@ -176,8 +176,8 @@ soldiers:
       - delete
       - Names/sm_blacktemplar.nam
     deathMale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]
-    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}, {mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
-    value: 60
+    deathFemale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]  # BT all men. women slots are used for additional armor layers
+    value: 40
 
 
   - type: STR_BTCHAMPION_PLAYER
@@ -259,7 +259,7 @@ soldiers:
       - delete
       - Names/sm_btchamp.nam
     deathMale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]
-    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}, {mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]  # BT all men. women slots are used for additional armor layers
     value: 150
 
 
@@ -317,5 +317,5 @@ soldiers:
       - delete
       - Names/sm_dreadnought.nam
     deathMale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]
-    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}, {mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]  # BT all men. women slots are used for additional armor layers
     value: 60

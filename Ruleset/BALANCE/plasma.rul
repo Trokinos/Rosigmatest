@@ -237,6 +237,9 @@ items:
 
   - type: STR_HEAVY_PLASMA
     refNode: *STR_HEAVY_PLASMA_WEAPON
+    requires:
+      - STR_CHAOS_WEAPON_USE_DEP
+      - STR_HEAVY_PLASMA_DEP1
 
     accuracySnap: 70  # less accurate because no heat restrictions
     accuracyAimed: 70

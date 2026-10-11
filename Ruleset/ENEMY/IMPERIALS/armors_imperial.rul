@@ -85,9 +85,9 @@ armors:
     spriteSheet: SENTINEL_MISSILE.PCK
     spriteInv: IGOPFOR_OPEN_SENTINEL_MISSILES_INV.SPK
     storeItem: STR_GUARD_ARMORS_SENTINEL_MISSILE
-    corpseGeo: STR_BIKE_CORPSE
+    corpseGeo: STR_IGOPFOR_SENTINEL_LIGHT_CORPSE
     corpseBattle:
-      - 5_SENT1
+      - 5_SENT1_AI
       - 5_SENT2
       - 5_SENT3
       - 5_SENT4
@@ -134,9 +134,9 @@ armors:
     instantWoundRecovery: true
     spriteSheet: SENT.PCK #open lascannon sentinel
     spriteInv: IGOPFOR_OPEN_SENTINEL_LASCANNON_INV.SPK
-    corpseGeo: STR_BIKE_CORPSE
+    corpseGeo: STR_IGOPFOR_SENTINEL_LIGHT_CORPSE
     corpseBattle:
-      - 5_SENT1
+      - 5_SENT1_AI
       - 5_SENT2
       - 5_SENT3
       - 5_SENT4
@@ -171,6 +171,53 @@ armors:
       UNIT_SIZE: 200 # Huge
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_MECHANICAL: 1
+
+  - type: STR_GUARD_ARMORS_MOUNTED_HEAVY_BOLTER_AI
+    visibilityAtDay: 40
+    visibilityAtDark: 9
+    antiCamouflageAtDay: 10
+    antiCamouflageAtDark: 5
+    spriteSheet: GUARD_MOUNTED_AUTOCANNON.PCK
+    spriteInv: GUARD_MOUNTED_HBOLTERAI.PCK
+    corpseGeo: STR_GUARD_ARMORS_MOUNTED_HEAVY_BOLTER_AI_CORPSE
+    corpseBattle:
+      - GUARD_MOUNT_CORPSE1_AI
+      - GUARD_MOUNT_CORPSE2
+      - GUARD_MOUNT_CORPSE3
+      - GUARD_MOUNT_CORPSE4
+    frontArmor: 150
+    sideArmor: 120
+    rearArmor: 30
+    underArmor: 30
+    damageModifier:  # VEHICLE ARMOR LARGE
+      - 1.0  # none
+      - 0.9  # AP
+      - 0.8  # FLAMES
+      - 1.0  # HE
+      - 1.4  # LASCANON
+      - 1.0  # PLASMA
+      - 0.9  # STUN
+      - 1.0  # MELEE
+      - 1.0  # ACID
+      - 1.0  # SMOKE
+      - 0.0  # IMPACT
+      - 1.2  # MELTA
+    size: 2
+    drawingRoutine: 20
+    allowsKneeling: false
+    allowsRunning: false  # NPC limits for BAI
+    loftempsSet: [92, 89, 90, 91]
+    moveSound: {mod: 40k, index: 14}
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_MOUNT_WHEEL
+      - STR_MOUNTED_HEAVY_BOLTER
+    tags:
+      UNIT_SIZE: 200 # HUGE
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_IMPERIAL_GUARD: 1
+      UNIT_TYPE_IMPERIUM: 1
 
   - type: STR_OGRYN_UC_AI
     visibilityAtDay: 40
@@ -292,9 +339,9 @@ armors:
     instantWoundRecovery: true
     spriteSheet: CLOSED_SENTINEL_MISSILE_BS.PCK
     spriteInv: IGOPFOR_SENTINEL_MISSILES_INV.SPK
-    corpseGeo: STR_BIKE_CORPSE
+    corpseGeo: STR_IGOPFOR_SENTINEL_HEAVY_CORPSE
     corpseBattle:
-      - 5_SENT1
+      - 5_SENT1_AI
       - 5_SENT2
       - 5_SENT3
       - 5_SENT4
@@ -341,9 +388,9 @@ armors:
     instantWoundRecovery: true
     spriteSheet: CLOSED_SENTINEL_LASCANNON_BS.PCK
     spriteInv: IGOPFOR_SENTINEL_LASCANNON_INV.SPK
-    corpseGeo: STR_BIKE_CORPSE
+    corpseGeo: STR_IGOPFOR_SENTINEL_HEAVY_CORPSE
     corpseBattle:
-      - 5_SENT1
+      - 5_SENT1_AI
       - 5_SENT2
       - 5_SENT3
       - 5_SENT4
@@ -488,9 +535,9 @@ armors:
     instantWoundRecovery: true
     spriteSheet: SENT_HEAVY_PLASMA.PCK
     spriteInv: IGOPFOR_SENTINEL_HEAVY_PLASMA_INV.SPK
-    corpseGeo: STR_BIKE_CORPSE
+    corpseGeo: STR_IGOPFOR_SENTINEL_HEAVY_CORPSE
     corpseBattle:
-      - 5_SENT1
+      - 5_SENT1_AI
       - 5_SENT2
       - 5_SENT3
       - 5_SENT4
@@ -823,19 +870,6 @@ armors:
       stamina: -15
       reactions: -5
       melee: 5
-    layersDefaultPrefix: BULLGRYN_SLAB
-    layersSpecificPrefix:
-      0: BULLGRYN_SLAB
-    layersDefinition:
-      M0: ["BULLGRYN_SLABinvent"]
-      M1: ["BULLGRYN_SLABinvent"]
-      M2: ["BULLGRYN_SLABinvent"]
-      M3: ["BULLGRYN_SLABinvent"]
-      F0: ["BULLGRYN_SLABinvent"]
-      F1: ["BULLGRYN_SLABinvent"]
-      F2: ["BULLGRYN_SLABinvent"]
-      F3: ["BULLGRYN_SLABinvent"]
-
 
   - &STR_GUARD_ARMOR_BULLGRYN_BUCKLER  # DAMAGE + STATS
     type: STR_BULLGRYN_BUCKLER_OPFOR
@@ -852,18 +886,6 @@ armors:
     stats:
       stamina: -10
       melee: 10
-    layersDefaultPrefix: BULLGRYN_BUCKLER
-    layersSpecificPrefix:
-      0: BULLGRYN_BUCKLER
-    layersDefinition:
-      M0: ["BULLGRYN_BUCKLERinvent"]
-      M1: ["BULLGRYN_BUCKLERinvent"]
-      M2: ["BULLGRYN_BUCKLERinvent"]
-      M3: ["BULLGRYN_BUCKLERinvent"]
-      F0: ["BULLGRYN_BUCKLERinvent"]
-      F1: ["BULLGRYN_BUCKLERinvent"]
-      F2: ["BULLGRYN_BUCKLERinvent"]
-      F3: ["BULLGRYN_BUCKLERinvent"]
 
   # IG TANITH
 

@@ -1,10 +1,5 @@
 items:
 # TODO: import this corpses from 40k mod
-#  - type: STR_PLAT_CORPSE_P
-#  - type: 7_PLAT1P
-#  - type: 7_PLAT2P
-#  - type: 7_PLAT3P
-#  - type: 7_PLAT4P
 #  - type: STR_HEALER_CORPSE
 #  - type: STR_SEER_CORPSE_P
 #  - type: STR_ELDARTURRET2_CORPSE #explod
@@ -68,7 +63,7 @@ items:
     invHeight: 3
     battleType: 11
     recover: false
-    armor: 60
+    armor: 80
   - delete: STR_BANSHEE_CORPSE_P
   - type: STR_ELDAR_BANSHEE_CORPSE_P
     weight: 30
@@ -124,6 +119,24 @@ items:
     battleType: 11
     recover: false
     armor: 80 # +20
+  - type: STR_ELDAR_HAWK_CORPSE_P
+    weight: 30
+    bigSprite: 4967
+    floorSprite: 4967
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 60
+  - type: STR_ELDAR_HAWKEX_CORPSE_P
+    weight: 30
+    bigSprite: 4968
+    floorSprite: 4968
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 80
   - type: STR_ELDAR_SPIDER_CORPSE_P
     weight: 30
     bigSprite: 4956
@@ -169,3 +182,57 @@ items:
     battleType: 11
     recover: false
     armor: 80 # +20
+
+  - delete: STR_PLAT_CORPSE_P
+  - type: STR_PLAT_CORPSE_P                  #ELDAR
+    size: 1
+    battleType: 11
+    power: 5
+    blastRadius: 1
+    recover: false
+    damageAlter:
+      RandomType: 3
+      FixRadius: 1
+      ResistType: 10
+      ArmorEffectiveness: 0.2
+      ToArmor: 0.0
+      ToItem: 0.0
+      ToTile: 1.0
+      RadiusReduction: 0.0
+    hitAnimation: {mod: 40k, index: 144} #PLAT EX
+    explosionSpeed: 1
+  - delete: 7_PLAT1P
+  - type: 7_PLAT1P                          #PLAT CORPSE 19960
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 4947
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 30
+    listOrder: 19960
+  - delete: 7_PLAT2P
+  - type: 7_PLAT2P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 4948
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - delete: 7_PLAT3P
+  - type: 7_PLAT3P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 4949
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - delete: 7_PLAT4P
+  - type: 7_PLAT4P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 4950
+    invWidth: 0
+    invHeight: 0
+    recover: false

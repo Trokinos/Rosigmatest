@@ -3038,6 +3038,9 @@ extraSounds:
       1896: Resources/Eldar/Sounds/eldar_banshee_scream_1.ogg
       1897: Resources/Eldar/Sounds/eldar_banshee_scream_2.ogg
       1898: Resources/Eldar/Sounds/eldar_banshee_scream_3.ogg
+      1899: Resources/Eldar/Sounds/eldar_laser_1.ogg
+      1900: Resources/Eldar/Sounds/eldar_laser_2.ogg
+      1901: Resources/Eldar/Sounds/eldar_laser_3.ogg
 
 # rubric silence
       # SELECT UNIT

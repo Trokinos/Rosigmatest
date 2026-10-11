@@ -80,6 +80,47 @@ items:
     armor: 40
     battleType: 11
 
+  - type: GUARD_MOUNT_CORPSE1_AI
+    floorSprite: {mod: 40k, index: 1307}
+    weight: 120
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+
+  - type: STR_GUARD_ARMORS_MOUNTED_HEAVY_BOLTER_AI_CORPSE #geoscape corpse
+    recoveryPoints: 5
+    battleType: 11
+    size: 0.5
+    weight: 400
+    armor: 200
+    recover: true
+
+  - type: 5_SENT1_AI
+    name: STR_CENT_CORPSE
+    armor: 100
+    floorSprite: {mod: 40k, index: 228}
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+
+  - type: STR_IGOPFOR_SENTINEL_LIGHT_CORPSE
+    recoveryPoints: 5
+    battleType: 11
+    size: 0.5
+    weight: 400
+    armor: 200
+    recover: true
+
+  - type: STR_IGOPFOR_SENTINEL_HEAVY_CORPSE
+    recoveryPoints: 8
+    battleType: 11
+    size: 0.5
+    weight: 400
+    armor: 200
+    recover: true
+
   - type: STR_SCOUT_AICORPSE
     recover: true
     weight: 50

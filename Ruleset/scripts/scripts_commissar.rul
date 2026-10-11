@@ -142,6 +142,7 @@ extended:
           # debug_log "Commissar Execution Mode Scripts; ROSIGMA_hU_commissar_execution_mode, offset 1: Success! Target marked for execution.";
           return power part side;
 
+      - delete: 40k_hU_traitor_execution_morale_tagger # null this; it's no longer used/needed
 
     damageUnit:
       - new: ROSIGMA_dU_commissar_execution_mode

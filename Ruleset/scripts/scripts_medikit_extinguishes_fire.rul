@@ -9,6 +9,7 @@ extended:
         offset: 1
         code: |
           var int isMechanical;
+          var int isLiving;
           var ptr RuleArmor armorRule;
           var ptr RuleItem itemRule;
           var int isFake;
@@ -21,9 +22,14 @@ extended:
 
           target.getRuleArmor armorRule;
           armorRule.getTag isMechanical Tag.UNIT_TYPE_MECHANICAL;
+          armorRule.getTag isLiving Tag.UNIT_TYPE_LIVING;
 
           if le isMechanical 0; # abort if we don't have the mechanical tag; we don't care
             # debug_log "healUnit | ROSIGMA_healU_medikit_no_pain_or_stim_mechanical_units | offset: 1 | isMechanical null. Aborting." isMechanical;
+            return;
+          end;
+
+          if ge isLiving 1;  # if we're living and mechanical go ahead - for stealth and crisis suits
             return;
           end;
 
