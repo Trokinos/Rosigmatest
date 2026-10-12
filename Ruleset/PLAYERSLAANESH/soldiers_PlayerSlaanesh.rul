@@ -171,7 +171,7 @@ soldiers:
     costBuy: 12000
     costSalary: 8000
     requires:
-      - STR_RITUALS_OF_WORSHIP # PLACEHOLDER
+      - STR_SLAANESHPATH # PLACEHOLDER
     minStats:
       tu: 65
       stamina: 45 # +5
@@ -243,3 +243,88 @@ soldiers:
       - Names/cultists.nam
     value: 4
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
+
+  - type: STR_SLAANESHPATH_JUICED_CULTIST
+    requires:
+      - STR_SLAANESHPATH # Placeholder
+    flagOffset: 42
+    armor: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR
+    costSalary: 15000
+    minStats: # For now these are just catachan stats. Will adjust later.
+      tu: 50  # 75
+      stamina: 60  # 90
+      health: 40  # 55
+      bravery: 10  # 110
+      reactions: 50  # 80
+      firing: 40  # 100
+      throwing: 40  # 70
+      strength: 40  # 65
+      psiStrength: 0  # 100
+      psiSkill: 0  # 100
+      melee: 60  # 90
+      mana: 0  # 0
+    maxStats: # For now these are just catachan stats. Will adjust later.
+      tu: 60  # 75
+      stamina: 80  # 90
+      health: 50  # 55
+      bravery: 90  # 110
+      reactions: 70  # 80
+      firing: 60  # 100
+      throwing: 60  # 70
+      strength: 65  # 65
+      psiStrength: 100  # 100
+      psiSkill: 50  # 100
+      melee: 90  # 90
+      mana: 0  # 0
+    statCaps:
+      tu: 80  
+      stamina: 100  
+      health: 65  
+      bravery: 110  
+      reactions: 90  
+      firing: 90  
+      throwing: 70 
+      strength: 75 
+      psiStrength: 100 
+      psiSkill: 50 
+      melee: 110  
+      mana: 0 
+    trainingStatCaps:
+      tu: 70 
+      stamina: 90  
+      health: 60  
+      bravery: 110  
+      reactions: 80 
+      firing: 80  
+      throwing: 65  
+      strength: 70  
+      psiStrength: 100  
+      psiSkill: 50 
+      melee: 100  
+      mana: 0  
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 16
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/cultists.nam
+    rankStrings:
+    - STR_SLAANESHPATH_SERVANT-RANK_0
+    - STR_SLAANESHPATH_SERVANT-RANK_1
+    - STR_SLAANESHPATH_SERVANT-RANK_2
+    - STR_SLAANESHPATH_SERVANT-RANK_3
+    deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
+    deathFemale: [{mod: 40k, index: 44}, {mod: 40k, index: 45}, {mod: 40k, index: 46}]
+    rankSprite: {mod: 40k, index: 1012}
+    rankBattleSprite: {mod: 40k, index: 1012}
+    rankTinySprite: {mod: 40k, index: 1012}
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    moraleLossWhenKilled: 75  # no one cares about grunts
+    value: 10

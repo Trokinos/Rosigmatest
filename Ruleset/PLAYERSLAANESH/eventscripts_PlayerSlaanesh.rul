@@ -1,6 +1,7 @@
 eventScripts:
 
  ######## INTRO EVENTS #########
+ #### TIMED INTRO EVENTS SHOULD TRIGGER AT 24 HOURS AND 48 HOURS
 
   - type: STR_SLAANESHPATH_INTRO_A_EVENTSCRIPT
     oneTimeSequentialEvents:
@@ -11,20 +12,11 @@ eventScripts:
     researchTriggers:
       STR_ARBITES: true
 
-#  - type: STR_SLAANESHPATH_INTRO_B_EVENTSCRIPT
-#    oneTimeSequentialEvents:
-#      - STR_SLAANESHPATH_INTRO_B_EVENT
-#    firstMonth: 0
-#    lastMonth: 0
-#    executionOdds: 100
-#    researchTriggers:
-#      STR_ARBITES: true
-
-#  - type: STR_SLAANESHPATH_INTRO_C_EVENTSCRIPT
-#    oneTimeSequentialEvents:
-#      - STR_SLAANESHPATH_INTRO_C_EVENT
-#    firstMonth: 0
-#    lastMonth: 0
-#    executionOdds: 100
-#    researchTriggers:
-#      STR_ARBITES: true
+  - type: STR_SLAANESHPATH_INTRO_D_EVENTSCRIPT
+    oneTimeSequentialEvents:
+      - STR_SLAANESHPATH_INTRO_D_EVENT
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    researchTriggers:
+      STR_ARBITES: true
