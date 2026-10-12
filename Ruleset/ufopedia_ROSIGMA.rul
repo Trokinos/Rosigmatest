@@ -12638,6 +12638,14 @@ ufopaedia:
       - STR_CHAOS_ARMORY_EXAM_AUTOCANNON
     text: STR_IW_REAPER_AUTOCANNON_CODEX
 
+  - id: DW_SATAUTOCAN #saturnine armour integrated Autocannon
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: AUTOCANNON.SPK
+    text: DW_SATAUTOCAN_RESEARCH_UFOPEDIA
+    requires:
+      - DW_SATAUTOCAN_RESEARCH
+
   - delete: STR_AUTOCANNON_CLIP
   - id: STR_AUTOCANNON_CLIP
     type_id: 14

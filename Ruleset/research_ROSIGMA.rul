@@ -10659,6 +10659,13 @@ research:
       - STR_INTERROGATION_COMPLETED
       - STR_LEADER_PLUS
     destroyItem: true
+    getOneFree: DW_SATAUTOCAN_RESEARCH
+
+  - name: DW_SATAUTOCAN_RESEARCH #locked integrated autocannon research. used to show the relative integrated autocannon to saturnine armour
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
 
   - name: STR_BLACKTEMPLAR_SCOUT_AI
     cost: 100
@@ -11046,6 +11053,7 @@ research:
       - STR_INTERROGATION_COMPLETED
       - STR_LEADER_PLUS
     destroyItem: true
+    getOneFree: DW_SATAUTOCAN_RESEARCH
 
   - name: STR_DARKANGEL_SCOUT_AI
     cost: 100
@@ -15690,6 +15698,7 @@ research:
     destroyItem: false
     cost: 25
     points: 25
+    getOneFree: DW_SATAUTOCAN_RESEARCH
 
   - name: STR_cataphract_ARMOR
     needItem: true
@@ -15702,18 +15711,21 @@ research:
     destroyItem: false
     cost: 25
     points: 25
+    getOneFree: DW_SATAUTOCAN_RESEARCH
 
   - name: STR_ULTRAsaturnine_ARMORPLAYER
     needItem: true
     destroyItem: false
     cost: 25
     points: 25
+    getOneFree: DW_SATAUTOCAN_RESEARCH
 
   - name: STR_WORDBEARERsaturnine_ARMORPLAYER
     needItem: true
     destroyItem: false
     cost: 25
     points: 25
+    getOneFree: DW_SATAUTOCAN_RESEARCH
 
   - name: STR_WARPED_VAULT
     dependencies:
