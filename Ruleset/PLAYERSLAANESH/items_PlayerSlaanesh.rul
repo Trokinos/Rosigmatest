@@ -3,20 +3,14 @@
 ### 2: RITUAL ITEMS
 
 items:
-
-### Piety token, main currency for Slaanesh followers. Used in place of Imperial tokens for most situations.
-
   - type: STR_SLAANESHPATH_PIETY
     size: 0.0
-
-
- ################ STORY PROGRESSION TOKENS ############
-
   - type: STR_SLAANESHPATH_WARPSTONE_TRIBUTE
     size: 0.0
-
   - type: STR_SLAANESHPATH_SORORITAS_TOKEN
     size: 0.0
-
   - type: STR_SLAANESHPATH_PDF_TOKEN
     size: 0.0
+############### STORY PROGRESSION TOKENS ############
+
+  

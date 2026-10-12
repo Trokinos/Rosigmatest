@@ -10,7 +10,7 @@ manufacture:
     time: 200
     cost: 6000
     producedItems:
-      STR_SLAANESH_PIETY: 66
+      STR_SLAANESHPATH_PIETY: 66
     requiredItems:
       STR_KILLPOINT_TOKEN: 60
     points: 10
@@ -23,7 +23,7 @@ manufacture:
     time: 200
     cost: 2000
     producedItems:
-      STR_SLAANESH_PIETY: 260
+      STR_SLAANESHPATH_PIETY: 260
     requiredItems:
       STR_ALIEN_SURGERY: 6
     points: 10
@@ -43,7 +43,7 @@ manufacture:
     producedItems: {}
     spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 75
+      STR_SLAANESHPATH_PIETY: 75
     points: 0
 
 #### RITUALS OF DECADENCE ####

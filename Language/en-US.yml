@@ -14957,12 +14957,23 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ########## SLAANESH STRATEGY SECTION ################
 
+  ### EVENTS
+
+  STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
+  STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“They're in your charge now.” Those were Superior Miriam's last words.{NEWLINE}{NEWLINE}The mission is gone, brought low by heretics from without and treachery from within. Only the novices are left. {NEWLINE}{NEWLINE}If not for the warp storm, you'd be back at the convent, taking your final vows to the Emperor. Now you, a mere Novitiate, are the highest-ranking member of the Order of the Sacred Rose left on this throne-cursed world."
+  STR_SLAANESHPATH_GATE_EVENT: "The Voices Of Angels"
+
+  ### CODEX ENTRIES
+
+
   ### RESEARCH DEFINITIONS
 
   STR_SLAANESHPATH: "Slaanesh strategy [EARLY WIP]"
   STR_SLAANESHPATH_SELECTED: "(Slaanesh strategy selected)"
   STR_NOT_SLAANESHPATH: "(Not Slaanesh strategy)"
   STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
+  STR_SLAANESHPATH_BUNKER_EXPLORED: "(Bunker Explored)"
+  STR_SLAANESHPATH_GATE: "The Voices Of Angels"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
   STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION: "(Handmaiden Indoctrination)"
 

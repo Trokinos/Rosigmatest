@@ -1,9 +1,30 @@
-#eventScripts:
-#  - type: STR_SLAANESHPATH_INTRO_A_EVENTSCRIPT
-#    oneTimeSequentialEvents:
-#      - STR_SLAANESHPATH_INTRO_A_EVENT
-#    firstMonth: 0
-#    lastMonth: 0
-#    executionOdds: 100
-#    researchTriggers:
-#      STR_ARBITES: true
+eventScripts:
+
+ ######## INTRO EVENTS #########
+
+  - type: STR_SLAANESHPATH_INTRO_A_EVENTSCRIPT
+    oneTimeSequentialEvents:
+      - STR_SLAANESHPATH_INTRO_A_EVENT
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    researchTriggers:
+      STR_SLAANESHPATH: true
+
+  - type: STR_SLAANESHPATH_INTRO_B_EVENTSCRIPT
+    oneTimeSequentialEvents:
+      - STR_SLAANESHPATH_INTRO_B_EVENT
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    researchTriggers:
+      STR_SLAANESHPATH: true
+
+  - type: STR_SLAANESHPATH_INTRO_C_EVENTSCRIPT
+    oneTimeSequentialEvents:
+      - STR_SLAANESHPATH_INTRO_C_EVENT
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    researchTriggers:
+      STR_SLAANESHPATH: true

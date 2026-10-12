@@ -1,6 +1,6 @@
 soldierTransformation:
 
-    name: STR_EXALT_HANDMAIDEN
+  - name: STR_EXALT_HANDMAIDEN
     requires:
       - STR_RITUALS_OF_WORSHIP # Placeholder. Change later.
     producedSoldierType: STR_SLAANESHPATH_EXALTEDMAIDEN

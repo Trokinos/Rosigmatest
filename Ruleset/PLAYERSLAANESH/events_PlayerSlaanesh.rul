@@ -1,0 +1,49 @@
+#adhocScripts:
+
+ # 10040 minutes in a week
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+events:
+
+  - name: STR_SLAANESHPATH_CHOSEN_EVENT
+    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+    background: AdeptasAttackedBG.scr
+  
+  ###### INTRO EVENTS ######
+  
+  - name: STR_SLAANESHPATH_INTRO_A_EVENT
+    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTKHORNESISTERBG.SCR
+    interruptResearch: STR_NOT_SLAANESHPATH
+    timer: 480  # 8 hours
+
+  - name: STR_SLAANESHPATH_INTRO_B_EVENT
+    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTSISTERCHAOSBG.SCR
+    interruptResearch: STR_NOT_SLAANESHPATH
+    timer: 1440  # 24 hours
+
+  - name: STR_SLAANESHPATH_INTRO_C_EVENT
+    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTSISTERCORRUPTBG.SCR
+    interruptResearch: STR_NOT_SLAANESHPATH
+    timer: 1920  # 32 hours
+    researchList:
+      - STR_SLAANESHPATH_BUNKER_EXPLORED
+
+  - name: STR_SLAANESHPATH_GATE_EVENT
+    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTTEMPLEADEPTASBG.scr
