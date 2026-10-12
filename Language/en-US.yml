@@ -15001,10 +15001,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   #ITEM DEFINITIONS
   ### PLOT ITEMS AND TOKENS
 
-  STR_SLAANESH_PIETY: "Piety"
-  STR_WARPSTONE_TRIBUTE: "Warpstone Tribute"
-  STR_SLAANESH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
-  STR_SLAANESH_PDF_TOKEN: "Slaaneshi PDF Contact Ledger"
+  STR_SLAANESHPATH_PIETY: "Piety"
+  STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
+  STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
+  STR_SLAANESHPATH_PDF_TOKEN: "Slaaneshi PDF Contact Ledger"
 
   #SOLDIER BONUSES
 
@@ -15012,14 +15012,14 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   #UNIT DEFINITIONS
 
-  STR_SLAANESH_HANDMAIDEN: "Handmaiden"
-  STR_SLAANESH_EXALTEDMAIDEN: "Exalted Handmaiden"
-  STR_SLAANESH_IMMACULATE_SISTER: "Sister Immaculate"
-  STR_SLAANESH_EXALTEDSISTER: "Exalted Immaculate"
-  STR_SLAANESH_SORC: "Sorceress of Slaanesh"
-  STR_SLAANESH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
-  STR_SLAANESH_MORBIDANGEL: "Morbid Angel"
-  STR_SLAANESH_EXALTEDANGEL: "Exalted Morbid Angel"
+  STR_SLAANESHPATH_HANDMAIDEN: "Handmaiden"
+  STR_SLAANESHPATH_EXALTEDMAIDEN: "Exalted Handmaiden"
+  STR_SLAANESHPATH_IMMACULATE_SISTER: "Sister Immaculate"
+  STR_SLAANESHPATH_EXALTEDSISTER: "Exalted Immaculate"
+  STR_SLAANESHPATH_SORC: "Sorceress of Slaanesh"
+  STR_SLAANESHPATH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
+  STR_SLAANESHPATH_MORBIDANGEL: "Morbid Angel"
+  STR_SLAANESHPATH_EXALTEDANGEL: "Exalted Morbid Angel"
 
   ## Slaanesh Adeptas Armors
 

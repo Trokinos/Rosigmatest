@@ -28,22 +28,17 @@ events:
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTKHORNESISTERBG.SCR
     interruptResearch: STR_NOT_SLAANESHPATH
-    timer: 480  # 8 hours
+    timer: 1920  # 32 hours
 
   - name: STR_SLAANESHPATH_INTRO_B_EVENT
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTSISTERCHAOSBG.SCR
-    interruptResearch: STR_NOT_SLAANESHPATH
-    timer: 1440  # 24 hours
-
+    
   - name: STR_SLAANESHPATH_INTRO_C_EVENT
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTSISTERCORRUPTBG.SCR
-    interruptResearch: STR_NOT_SLAANESHPATH
-    timer: 1920  # 32 hours
-    researchList:
-      - STR_SLAANESHPATH_BUNKER_EXPLORED
 
-  - name: STR_SLAANESHPATH_GATE_EVENT
+
+  - name: STR_SLAANESHPATH_GATE_EVENT # This is the event that gives you the sisters.
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
-    background: CHAOSCULTTEMPLEADEPTASBG.scr
+    background: CHAOSCULTTEMPLEADEPTASBG.SCR

@@ -50,35 +50,46 @@ research:
       - STR_DIFFICULTY_OPTIONS    # does not have harder missions
 
      ############## SECTION FOR DISABLED GENERIC TECHS ###############
-
+      - STR_SMOKE
       - STR_MOTION_SCANNER
       - STR_COMBAT_SERVITOR_PROGRAM # Lobotomization deeply offends Slaanesh. 
 
      ############## SECTION FOR DISABLED CHAOS-RELATED TECHS #########
-      
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_ORIGINS # Followers of Slaanesh do not need to research chaos implements normally
       - STR_CHAOS_PATH # Already on the only TRUE chaos path!
+      - STR_CHAOS_SORCERY
+     ###################################################
     spawnedEvent: STR_SLAANESHPATH_CHOSEN_EVENT
 
-  - name: STR_SLAANESHPATH_BUNKER_EXPLORED
-    cost: 0
+  - name: STR_SLAANESHPATH_INTRO_BUNKER
+    cost: 5
     points: 0
-    unlocks:
-      - STR_SLAANESHPATH_GATE
+    dependencies:
+      - STR_SLAANESHPATH
+    unlocks: 
+      - STR_SLAANESHPATH_INTRO_CALLING
+    spawnedEvent: STR_SLAANESHPATH_INTRO_B_EVENT
+
+  - name: STR_SLAANESHPATH_INTRO_CALLING
+    cost: 5
+    points: 0
     dependencies:
       - STR_GENERALLOCK
+    unlocks: 
+      - STR_SLAANESHPATH_GATE
+    spawnedEvent: STR_SLAANESHPATH_INTRO_C_EVENT
 
   - name: STR_SLAANESHPATH_GATE
-    cost: 0
-    points: 5
+    cost: 5
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
     unlocks:
       - STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE
       - STR_RITUALS_OF_WORSHIP
-      # - STR_CHAOS_ARMORY_EXAM_SLAANESH (This should be moved to later in the tree)
-    dependencies:
-      - STR_GENERALLOCK
+    # - STR_CHAOS_ARMORY_EXAM_SLAANESH (This should be moved to later in the tree)
     spawnedEvent: STR_SLAANESHPATH_GATE_EVENT
 
   #- name: STR_CHOSEN_SLAANESH_STRATEGY #research lookup for Slaanesh chosen
