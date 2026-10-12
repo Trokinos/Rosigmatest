@@ -188,7 +188,7 @@ armors:
     forcedTorso: 0
     customArmorPreviewIndex: 1121
     corpseBattle:
-      - STR_SLAANESHPATH_CULTIST_CORPSE_PLAYER
+      - STR_SLAANESH_CULTIST_CORPSE_PLAYER
     frontArmor: 25 # +5
     sideArmor: 15
     rearArmor: 15

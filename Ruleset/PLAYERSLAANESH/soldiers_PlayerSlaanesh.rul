@@ -11,12 +11,12 @@ soldiers:
 
 # SISTERS.TIER1 #
 
-  - type: STR_SLAANESH_HANDMAIDEN  # Tier 1 corrupted Sororitas. Significantly more elite than loyalist novices.  
+  - type: STR_SLAANESHPATH_HANDMAIDEN  # Tier 1 corrupted Sororitas. Significantly more elite than loyalist novices.  
     flagOffset: 21 # !!! need to fix this later !!!
     costBuy: 20000  # Not meant to be purchased directly. 
     costSalary: 15000 # Thrice as expensive as a Novice; Hedonist lifestyles
     requires: ### >Remove this later.< ###
-    - STR_SLAANESH_SELECTED
+    - STR_SLAANESHPATH_GATE
     minStats:
       tu: 55 # Slaanesh Influence
       stamina: 60 # 5 Slaanesh influence
@@ -67,7 +67,7 @@ soldiers:
       bravery: 20
       reactions: 35
       firing: 30
-    armor: STR_SLAANESH_HANDMAIDEN_ARMOR # Slightly improved Cantus Armor
+    armor: STR_SLAANESHPATH_HANDMAIDEN_ARMOR # Slightly improved Cantus Armor
     allowPiloting: true
     allowPromotion: true
     standHeight: 22
@@ -89,12 +89,12 @@ soldiers:
     rankBattleSprite: 4144 
     rankTinySprite: 4144
 
-  - type: STR_SLAANESH_EXALTEDMAIDEN  # Exalted Handmaidens. Essentially the slaanesh cantus promotion.  
+  - type: STR_SLAANESHPATH_EXALTEDMAIDEN  # Exalted Handmaidens. Essentially the slaanesh cantus promotion.  
     flagOffset: 21 # !!! need to fix this later !!!
     costBuy: 20000  # Temporary. 
     costSalary: 18000 # Somewhat higher salary than base.
     requires: ### >Remove this later.< ###
-    - STR_SLAANESH_SELECTED
+    - STR_SLAANESHPATH_GATE
     minStats: # Don't matter
       tu: 55 
       stamina: 60
@@ -145,7 +145,7 @@ soldiers:
       bravery: 20
       reactions: 35
       firing: 30
-    armor: STR_SLAANESH_EXALTEDMAIDEN_ARMOR
+    armor: STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR
     allowPiloting: true
     allowPromotion: false
     standHeight: 22
@@ -167,7 +167,7 @@ soldiers:
 
  #### SLAANESH BASIC CULTIST. More expensive than PLAYERCHAOS cultists, but have better scaling potential.
 
-  - type: STR_SLAANESH_VICTUAL_CULTIST 
+  - type: STR_SLAANESHPATH_VICTUAL_CULTIST 
     costBuy: 12000
     costSalary: 8000
     requires:
@@ -220,7 +220,7 @@ soldiers:
       psiStrength: 30
       psiSkill: 100
       melee: 60
-    armor: STR_SLAANESH_CULTIST_ARMOR_PLAYER
+    armor: STR_SLAANESHPATH_VICTUAL_CULTIST_ARMOR
     standHeight: 21
     kneelHeight: 16
     deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
