@@ -4,8 +4,8 @@ extended:
 
 # STRUCTURE of this file
 # SISTERS.TIER1 # Immaculate Sisterhood units
-# CARETTA.TIER1 # De Caretta units, uncorrupted by Chaos
-# SERVANTS.TIER1 # Chaff units, cultists, gangers
+# CULTISTS TIER1 # BASIC cultists. 
+
 
 soldiers:
 
@@ -163,3 +163,83 @@ soldiers:
     rankSprite: 4148
     rankBattleSprite: 4148 
     rankTinySprite: 4148
+
+
+ #### SLAANESH BASIC CULTIST. More expensive than PLAYERCHAOS cultists, but have better scaling potential.
+
+  - type: STR_SLAANESH_VICTUAL_CULTIST 
+    costBuy: 12000
+    costSalary: 8000
+    requires:
+      - STR_RITUALS_OF_WORSHIP # PLACEHOLDER
+    minStats:
+      tu: 65
+      stamina: 45 # +5
+      health: 25
+      bravery: 30 # +10
+      reactions: 35
+      firing: 38 # +3 
+      throwing: 35
+      strength: 12 # +2 vs Flesh cultist
+      psiStrength: 10
+      psiSkill: 8
+      melee: 35 # +10
+    maxStats:
+      tu: 80
+      stamina: 70
+      health: 35 # +5 vs flesh cultist
+      bravery: 60 # +10 
+      reactions: 60 # +5
+      firing: 60 # + 5
+      throwing: 60
+      strength: 22 # +4
+      psiStrength: 40
+      psiSkill: 8
+      melee: 60
+    statCaps:
+      tu: 115
+      stamina: 120
+      health: 90
+      bravery: 110
+      reactions: 115
+      firing: 125
+      throwing: 120
+      strength: 90
+      psiStrength: 100
+      psiSkill: 100
+      melee: 135
+    trainingStatCaps:
+      tu: 70
+      stamina: 70 # + 10
+      health: 40 # + 15
+      bravery: 40
+      reactions: 55
+      firing: 65 # +5
+      throwing: 55
+      strength: 40 # + 20
+      psiStrength: 30
+      psiSkill: 100
+      melee: 60
+    armor: STR_SLAANESH_CULTIST_ARMOR_PLAYER
+    standHeight: 21
+    kneelHeight: 16
+    deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
+    deathFemale: [{mod: 40k, index: 44}, {mod: 40k, index: 45}, {mod: 40k, index: 46}]
+    allowPiloting: false
+    allowPromotion: true
+    rankStrings:
+    - STR_SLAANESH_SERVANT-RANK_0
+    - STR_SLAANESH_SERVANT-RANK_1
+    - STR_SLAANESH_SERVANT-RANK_2
+    - STR_SLAANESH_SERVANT-RANK_3
+    rankSprite: {mod: 40k, index: 80} # ADD LATER
+    rankBattleSprite: {mod: 40k, index: 194} # ADD LATER
+    rankTinySprite: {mod: 40k, index: 127} # ADD LATER
+    femaleFrequency: 20
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/cultists.nam
+    value: 4
+    moraleLossWhenKilled: 75  # people don't care about the grunts so much

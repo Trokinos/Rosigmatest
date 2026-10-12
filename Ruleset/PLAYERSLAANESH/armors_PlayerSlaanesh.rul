@@ -52,6 +52,7 @@ armors:
       - INV_NULL_2X1_LL
     loftempsSet: [2] # Handmaidens are lithe and hard to hit
     tags:
+      INFECTION_RESIST: 25 # Slaanesh protection
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -110,6 +111,8 @@ armors:
       - INV_NULL_2X1_LL
     loftempsSet: [2] # Handmaidens are lithe and hard to hit
     tags:
+      INFECTION_RESIST: 35 # Exalted Slaanesh protection
+      INTIMIDATION_RESISTANCE: 25 # Exalted Slaanesh protection
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -117,7 +120,9 @@ armors:
       DODGE_CHANCE: 22
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
-      
+
+    #### MEDICAE ARMOR ###
+
   - type: STR_SLAANESH_HANDMAIDEN_MEDICAE_ARMOR    # Handmaiden Medicae armor, with less protection but better stats
     visibilityAtDay: 40
     visibilityAtDark: 22
@@ -166,10 +171,63 @@ armors:
       - AUX_MEDICAE_MEDI_KIT
     loftempsSet: [3] # Less agile than handmaidens
     tags:
+      INFECTION_RESIST: 35 # Slaanesh protection + medicae armor 
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_SLAANESH: 1
       DODGE_CHANCE: 10
       FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+
+
+
+  - type: STR_SLAANESH_VICTUAL_CULTIST_ARMOR     # Basic cultist armor. Slightly more luxurious and better-performing.
+    visibilityAtDay: 40
+    visibilityAtDark: 20 
+    forcedTorso: 0
+    customArmorPreviewIndex: 1121
+    corpseBattle:
+      - STR_SLAANESH_CULTIST_CORPSE_PLAYER
+    frontArmor: 25 # +5
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 25 # + 10
+    stats:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0  # always multiples of 10
+      reactions: 0  # Slightly better reactions
+      firing: 0
+      throwing: 0
+      strength: 0 # No extra strength
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0 # Slightly better melee
+    storeItem: STR_NONE
+    damageModifier:  # CULTIST ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 1.0  # HE
+      - 1.0  # LASCANON
+      - 1.0  # PLASMA
+      - 1.0  # STUN
+      - 1.0  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 1.0  # IMPACT
+      - 1.0  # MELTA
+    loftempsSet: [2]
+    units:
+      - STR_SLAANESH_VICTUAL_CULTIST
+    spriteSheet: SLAANCULTIST_BS.PCK
+    spriteInv: SLAANCULTIST_PLAYER_INV
+    tags:
+      INFECTION_RESIST: 25  # infection resistant
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
       ARMOR_MAX_SUCCESSFUL_DODGES: 1

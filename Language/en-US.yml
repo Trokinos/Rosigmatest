@@ -15042,6 +15042,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESH_MORBIDANGEL_RANK_3: "Sensate Subversive"
   STR_SLAANESH_EXALTEDANGEL_RANK_0: "Sensate Subliminal"
 
+  ## Slaanesh cultist armors
+
+  STR_SLAANESH_VICTUAL_CULTIST_ARMOR: "Victual Cultist Armor"
+
   ## Slaanesh cultist ranks
 
   STR_SLAANESH_SERVANT-RANK_0: "Servant"
