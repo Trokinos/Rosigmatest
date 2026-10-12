@@ -104,7 +104,7 @@ armors:
       - 0.2  # IMPACT
       - 1.0  # MELTA
     units:
-      - STR_SLAANESH_EXALTEDHM
+      - STR_SLAANESH_EXALTEDMAIDEN
     builtInWeapons:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL

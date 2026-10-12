@@ -91,7 +91,7 @@ soldiers:
 
   - type: STR_SLAANESH_EXALTEDMAIDEN  # Exalted Handmaidens. Essentially the slaanesh cantus promotion.  
     flagOffset: 21 # !!! need to fix this later !!!
-    costBuy: 20000  # Not meant to be purchased directly. 
+    costBuy: 20000  # Temporary. 
     costSalary: 18000 # Somewhat higher salary than base.
     requires: ### >Remove this later.< ###
     - STR_SLAANESH_SELECTED
@@ -147,7 +147,7 @@ soldiers:
       firing: 30
     armor: STR_SLAANESH_EXALTEDMAIDEN_ARMOR
     allowPiloting: true
-    allowPromotion: true
+    allowPromotion: false
     standHeight: 22
     kneelHeight: 14
     femaleFrequency: 95

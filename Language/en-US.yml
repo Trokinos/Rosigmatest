@@ -14985,6 +14985,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESH_PIETY: "Piety"
   STR_WARPSTONE_TRIBUTE: "Warpstone Tribute"
 
+  #SOLDIER BONUSES
+
+  STR_SEEKER_MARK: "Mark of the Seeker"
+
   #UNIT DEFINITIONS
 
   STR_SLAANESH_HANDMAIDEN: "Handmaiden"

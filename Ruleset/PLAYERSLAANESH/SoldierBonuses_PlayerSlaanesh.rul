@@ -1,0 +1,8 @@
+soldierBonuses:
+  - name: STR_SEEKER_MARK
+    stats:
+      melee: 3
+      firing: 3
+    recovery:
+      energy:
+        flatOne: 6

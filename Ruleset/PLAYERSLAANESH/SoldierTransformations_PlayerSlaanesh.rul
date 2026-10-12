@@ -1,0 +1,19 @@
+soldierTransformation:
+
+    name: STR_EXALT_HANDMAIDEN
+    requires:
+      - STR_RITUALS_OF_WORSHIP # Placeholder. Change later.
+    producedSoldierType: STR_SLAANESH_EXALTEDMAIDEN
+    producedSoldierArmor: STR_SLAANESH_EXALTEDMAIDEN_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    transferTime: 72
+    allowedSoldierTypes:
+      - STR_SLAANESH_HANDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 60
+      STR_ALIEN_SURGERY: 1
+    #requiredCommendations:
+    #  STR_BATTLE_TESTED: 0
+    soldierBonusType: STR_SEEKER_MARK

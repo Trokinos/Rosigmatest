@@ -36,7 +36,7 @@ manufacture:
   - name: STR_RECRUIT_HANDMAIDEN
     category: STR_RITUALS_OF_DEPRAVITY
     requires:
-    - STR_HANDMAIDEN_INDOCTRINATION
+    - STR_RITUALS_OF_WORSHIP
     space: 0
     time: 260
     cost: 30000
