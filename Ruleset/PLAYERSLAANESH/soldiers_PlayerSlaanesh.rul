@@ -81,10 +81,10 @@ soldiers:
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
-      - STR_SLAANESH_HANDMAIDEN_RANK_0
-      - STR_SLAANESH_HANDMAIDEN_RANK_1
-      - STR_SLAANESH_HANDMAIDEN_RANK_2
-      - STR_SLAANESH_HANDMAIDEN_RANK_3
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_0
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_1
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_2
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_3
     rankSprite: 4144
     rankBattleSprite: 4144 
     rankTinySprite: 4144
@@ -159,7 +159,7 @@ soldiers:
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
-    - STR_SLAANESH_EXALTEDMAIDEN_RANK_0
+    - STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0
     rankSprite: 4148
     rankBattleSprite: 4148 
     rankTinySprite: 4148
@@ -228,10 +228,10 @@ soldiers:
     allowPiloting: false
     allowPromotion: true
     rankStrings:
-    - STR_SLAANESH_SERVANT-RANK_0
-    - STR_SLAANESH_SERVANT-RANK_1
-    - STR_SLAANESH_SERVANT-RANK_2
-    - STR_SLAANESH_SERVANT-RANK_3
+    - STR_SLAANESHPATH_SERVANT-RANK_0
+    - STR_SLAANESHPATH_SERVANT-RANK_1
+    - STR_SLAANESHPATH_SERVANT-RANK_2
+    - STR_SLAANESHPATH_SERVANT-RANK_3
     rankSprite: {mod: 40k, index: 80} # ADD LATER
     rankBattleSprite: {mod: 40k, index: 194} # ADD LATER
     rankTinySprite: {mod: 40k, index: 127} # ADD LATER

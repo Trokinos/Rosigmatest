@@ -2,23 +2,23 @@
 
 research:
 ### core tech tree research
-  - name: STR_SLAANESH_SELECTED        # (Slaanesh strategy skillfully selected)
+  - name: STR_SLAANESHPATH_SELECTED        # (Slaanesh strategy skillfully selected)
     dependencies:
       - STR_GENERALLOCK
 
 # Blocker tech
-  - name: STR_NOT_SLAANESH_STRATEGY         # (Not a supple servant of Slaanesh)
+  - name: STR_NOT_SLAANESHPATH        # (Not a supple servant of Slaanesh)
 
   ### The Slaanesh condition is
 ### STR_ARBITES: true
 ### STR_NOT_CHAOSCULT: true
 
-  - name: STR_SLAANESH_STRATEGY
+  - name: STR_SLAANESHPATH
     points: 0
     cost: 5
     dependencies:
       - STR_ARBITES
-#    lookup: STR_CHOSEN_SLAANESH_STRATEGY
+#    lookup: STR_CHOSEN_SLAANESHPATH
     unlocks:
       - STR_ALIENS_ONLY # Chaos corruption
       - STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE ### TEMPORARY, THIS NEEDS TO BE SET BY EVENT
@@ -33,10 +33,10 @@ research:
       #- STR_ENDGANGERSBASE    # Stop the onslaught of gang events
       - STR_GENESTEALERS_INACTIVE # no genestealers
       #- STR_GSC_ARBITES_SPAWNED   # prevent GSC arbites spawn
-      - STR_SLAANESH_SELECTED
+      - STR_SLAANESHPATH_SELECTED
       - STR_CHAOS_ARMORY_EXAM_SLAANESH
     disables:
-      - STR_NOT_SLAANESH_STRATEGY
+      - STR_NOT_SLAANESHPATH
       - STR_GENESTEALERS_ACTIVE
       - STR_CHAOS_PATH
       - STR_CHAOS_STRATEGY_ARBITES
@@ -73,6 +73,12 @@ research:
   #    - STR_GENERALLOCK
 
   - name: STR_RITUALS_OF_WORSHIP # Tech for basic piety projects.
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION
     cost: 0
     points: 0
     dependencies:

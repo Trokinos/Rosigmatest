@@ -14959,12 +14959,12 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ### RESEARCH DEFINITIONS
 
-  STR_SLAANESH_STRATEGY: "Slaanesh strategy [EARLY WIP]"
-  STR_SLAANESH_SELECTED: "(Slaanesh strategy selected)"
-  STR_NOT_SLAANESH_STRATEGY: "(Not Slaanesh strategy)"
-  STR_CHOSEN_SLAANESH_STRATEGY: "Slaanesh Strategy Subversively Selected"
+  STR_SLAANESHPATH: "Slaanesh strategy [EARLY WIP]"
+  STR_SLAANESHPATH_SELECTED: "(Slaanesh strategy selected)"
+  STR_NOT_SLAANESHPATH: "(Not Slaanesh strategy)"
+  STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
-  STR_HANDMAIDEN_INDOCTRINATION: "(Handmaiden Indoctrination)"
+  STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION: "(Handmaiden Indoctrination)"
 
   ### MANUFACTURE DEFINITIONS
 
@@ -15012,48 +15012,48 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ## Slaanesh Adeptas Armors
 
-  STR_SLAANESH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
-  STR_SLAANESH_EXALTEDMAIDEN_ARMOR: "Exalted Handmaiden Armor"
-  STR_SLAANESH_HANDMAIDEN_MEDICAE_ARMOR: "Handmaiden Medicae Armor"
+  STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
+  STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR: "Exalted Handmaiden Armor"
+  STR_SLAANESHPATH_HANDMAIDEN_MEDICAE_ARMOR: "Handmaiden Medicae Armor"
 
   ## Slaanesh Adeptas Ranks
 
-  STR_SLAANESH_HANDMAIDEN_RANK_0: "Seeker"
-  STR_SLAANESH_HANDMAIDEN_RANK_1: "Sinful Seeker"
-  STR_SLAANESH_HANDMAIDEN_RANK_2: "Seeker Sincere"
-  STR_SLAANESH_HANDMAIDEN_RANK_3: "Seeker Sublime"
-  STR_SLAANESH_EXALTEDMAIDEN_RANK_0: "Seeker Superior"
+  STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"
+  STR_SLAANESHPATH_HANDMAIDEN_RANK_1: "Sinful Seeker"
+  STR_SLAANESHPATH_HANDMAIDEN_RANK_2: "Seeker Sincere"
+  STR_SLAANESHPATH_HANDMAIDEN_RANK_3: "Seeker Sublime"
+  STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Seeker Superior"
 
-  STR_SLAANESH_SISTER_RANK_0: "Sister"
-  STR_SLAANESH_SISTER_RANK_1: "Sumptuous Sister"
-  STR_SLAANESH_SISTER_RANK_2: "Sister Suggestive"
-  STR_SLAANESH_SISTER_RANK_3: "Sister Sensational"
-  STR_SLAANESH_EXALTEDSISTER_RANK_0: "Sister Superlative"
+  STR_SLAANESHPATH_SISTER_RANK_0: "Sister"
+  STR_SLAANESHPATH_SISTER_RANK_1: "Sumptuous Sister"
+  STR_SLAANESHPATH_SISTER_RANK_2: "Sister Suggestive"
+  STR_SLAANESHPATH_SISTER_RANK_3: "Sister Sensational"
+  STR_SLAANESHPATH_EXALTEDSISTER_RANK_0: "Sister Superlative"
 
-  STR_SLAANESH_SORC_RANK_0: "Sorceress"
-  STR_SLAANESH_SORC_RANK_1: "Savvy Sorceress"
-  STR_SLAANESH_SORC_RANK_2: "Sorceress Suave"
-  STR_SLAANESH_SORC_RANK_3: "Sorceress Successful"
-  STR_SLAANESH_EXALTEDSORC_RANK_0: "Sorceress Supreme"
+  STR_SLAANESHPATH_SORC_RANK_0: "Sorceress"
+  STR_SLAANESHPATH_SORC_RANK_1: "Savvy Sorceress"
+  STR_SLAANESHPATH_SORC_RANK_2: "Sorceress Suave"
+  STR_SLAANESHPATH_SORC_RANK_3: "Sorceress Successful"
+  STR_SLAANESHPATH_EXALTEDSORC_RANK_0: "Sorceress Supreme"
 
-  STR_SLAANESH_MORBIDANGEL_RANK_0: "Sensate"
-  STR_SLAANESH_MORBIDANGEL_RANK_1: "Sordid Sensate"
-  STR_SLAANESH_MORBIDANGEL_RANK_2: "Sensate Seditious"
-  STR_SLAANESH_MORBIDANGEL_RANK_3: "Sensate Subversive"
-  STR_SLAANESH_EXALTEDANGEL_RANK_0: "Sensate Subliminal"
+  STR_SLAANESHPATH_MORBIDANGEL_RANK_0: "Sensate"
+  STR_SLAANESHPATH_MORBIDANGEL_RANK_1: "Sordid Sensate"
+  STR_SLAANESHPATH_MORBIDANGEL_RANK_2: "Sensate Seditious"
+  STR_SLAANESHPATH_MORBIDANGEL_RANK_3: "Sensate Subversive"
+  STR_SLAANESHPATH_EXALTEDANGEL_RANK_0: "Sensate Subliminal"
 
   ## Slaanesh cultist armors
 
-  STR_SLAANESH_VICTUAL_CULTIST_ARMOR: "Victual Cultist Armor"
+  STR_SLAANESHPATH_VICTUAL_CULTIST_ARMOR: "Victual Cultist Armor"
 
   ## Slaanesh cultist ranks
 
-  STR_SLAANESH_SERVANT-RANK_0: "Servant"
-  STR_SLAANESH_SERVANT-RANK_1: "Skillful Servant"
-  STR_SLAANESH_SERVANT-RANK_2: "Servant Substantial"
-  STR_SLAANESH_SERVANT-RANK_3: "Servant Significant"
+  STR_SLAANESHPATH_SERVANT-RANK_0: "Servant"
+  STR_SLAANESHPATH_SERVANT-RANK_1: "Skillful Servant"
+  STR_SLAANESHPATH_SERVANT-RANK_2: "Servant Substantial"
+  STR_SLAANESHPATH_SERVANT-RANK_3: "Servant Significant"
 
-  STR_SLAANESH_SADIST_RANK_0: "Sadist"
-  STR_SLAANESH_SADIST_RANK_1: "Shrewd Sadist"
-  STR_SLAANESH_SADIST_RANK_2: "Sadist Scrupulous"
-  STR_SLAANESH_SADIST_RANK_3: "Sadist Sanguine"
+  STR_SLAANESHPATH_SADIST_RANK_0: "Sadist"
+  STR_SLAANESHPATH_SADIST_RANK_1: "Shrewd Sadist"
+  STR_SLAANESHPATH_SADIST_RANK_2: "Sadist Scrupulous"
+  STR_SLAANESHPATH_SADIST_RANK_3: "Sadist Sanguine"

@@ -6,17 +6,17 @@ items:
 
 ### Piety token, main currency for Slaanesh followers. Used in place of Imperial tokens for most situations.
 
-  - type: STR_SLAANESH_PIETY
+  - type: STR_SLAANESHPATH_PIETY
     size: 0.0
 
 
  ################ STORY PROGRESSION TOKENS ############
 
-  - type: STR_WARPSTONE_TRIBUTE
+  - type: STR_SLAANESHPATH_WARPSTONE_TRIBUTE
     size: 0.0
 
-  - type: STR_SLAANESH_SORORITAS_TOKEN
+  - type: STR_SLAANESHPATH_SORORITAS_TOKEN
     size: 0.0
 
-  - type: STR_SLAANESH_PDF_TOKEN
+  - type: STR_SLAANESHPATH_PDF_TOKEN
     size: 0.0

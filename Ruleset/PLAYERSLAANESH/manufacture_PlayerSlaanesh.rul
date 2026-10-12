@@ -41,7 +41,7 @@ manufacture:
     time: 260
     cost: 30000
     producedItems: {}
-    spawnedPersonType: STR_SLAANESH_HANDMAIDEN
+    spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
       STR_SLAANESH_PIETY: 75
     points: 0

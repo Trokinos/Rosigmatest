@@ -1,27 +1,27 @@
 #manufacture:
 
-#  - name: STR_SLAANESH_SORORITAS_TOKEN_MANUFACTURE
+#  - name: STR_SLAANESHPATH_SORORITAS_TOKEN_MANUFACTURE
 #    category: STR_RITUALS_OF_SUBVERSION
 #    requires:
-#    - STR_SLAANESH_MONITORING_SORORITAS
+#    - STR_SLAANESHPATH_MONITORING_SORORITAS
 #    space: 15
 #    time: 600
 #    cost: 50000  # This project shouldn't necessarily be done *first*.
 #    producedItems:
-#      STR_SLAANESH_SORORITAS_TOKEN: 1
+#      STR_SLAANESHPATH_SORORITAS_TOKEN: 1
 #    requiredItems:
-#      STR_SLAANESH_PIETY: 100 # This project shouldn't necessarily be done *first*.
+#      STR_SLAANESHPATH_PIETY: 100 # This project shouldn't necessarily be done *first*.
 #    points: 0
 
-#  - name: STR_SLAANESH_PDF_TOKEN_MANUFACTURE
+#  - name: STR_SLAANESHPATH_PDF_TOKEN_MANUFACTURE
 #    category: STR_RITUALS_OF_SUBVERSION
 #    requires:
-#    - STR_SLAANESH_SUBVERTING_PDF
+#    - STR_SLAANESHPATH_SUBVERTING_PDF
 #    space: 15
 #    time: 400 # Cheap
 #    cost: 20000 # Cheap
 #    requiredItems:
-#      STR_SLAANESH_PIETY: 60 # Cheap
+#      STR_SLAANESHPATH_PIETY: 60 # Cheap
 #    producedItems:
-#      STR_SLAANESH_PDF_TOKEN: 1
+#      STR_SLAANESHPATH_PDF_TOKEN: 1
 #    points: 0

@@ -1,5 +1,5 @@
 items:
-  - type: STR_SLAANESH_HANDMAIDEN_CORPSE
+  - type: STR_SLAANESHPATH_HANDMAIDEN_CORPSE
     name: STR_CORPSE
     weight: 30
     bigSprite: 2216
