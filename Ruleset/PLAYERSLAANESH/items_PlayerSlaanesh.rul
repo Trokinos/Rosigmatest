@@ -9,7 +9,14 @@ items:
   - type: STR_SLAANESH_PIETY
     size: 0.0
 
-### Manufactured token, used to bribe Slaanesh-aligned Hereteks. Required for tech progression.
+
+ ################ STORY PROGRESSION TOKENS ############
 
   - type: STR_WARPSTONE_TRIBUTE
+    size: 0.0
+
+  - type: STR_SLAANESH_SORORITAS_TOKEN
+    size: 0.0
+
+  - type: STR_SLAANESH_PDF_TOKEN
     size: 0.0

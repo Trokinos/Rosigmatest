@@ -56,12 +56,15 @@ research:
       - STR_MOTION_SCANNER
       - STR_COMBAT_SERVITOR_PROGRAM # Lobotomization deeply offends Slaanesh. 
 
-     ############## SECTION FOR DISABLED CHAOS-RELATED TECHS #################
+     ############## SECTION FOR DISABLED CHAOS-RELATED TECHS #########
       
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_ORIGINS # Followers of Slaanesh do not need to research chaos implements normally
       - STR_CHAOS_PATH # Already on the only TRUE chaos path!
+
+
+
 
   #- name: STR_CHOSEN_SLAANESH_STRATEGY #research lookup for Slaanesh chosen
   # cost: 0

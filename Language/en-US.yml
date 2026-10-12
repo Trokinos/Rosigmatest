@@ -14968,10 +14968,17 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ### MANUFACTURE DEFINITIONS
 
-  STR_RITUALS_OF_EXCESS: "Rituals of Excess"
-  STR_RITUALS_OF_DEPRAVITY: "Rituals of Depravity"
-  STR_RITUALS_OF_PAIN: "Rituals of Pain"
-  STR_RITUALS_OF_DECADENCE: "Rituals of Decadence" 
+  STR_RITUALS_OF_EXCESS: "Rites of Excess"
+  STR_RITUALS_OF_DEPRAVITY: "Rites of Depravity"
+  STR_RITUALS_OF_PAIN: "Rites of Pain"
+  STR_RITUALS_OF_DECADENCE: "Rites of Decadence"
+  STR_RITUALS_OF_SUBVERSION: "Rites of Subversion" 
+
+  ### MANUFACTURING PROJECTS - PROGRESSION
+
+  STR_SLAANESH_PDF_TOKEN_MANUFACTURE: "Infiltrate Local PDF Regiments"
+  
+  ### MANUFACTURING PROJECTS - PIETY & WARPSTONES
 
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
   STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
@@ -14981,9 +14988,12 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
 
   #ITEM DEFINITIONS
+  ### PLOT ITEMS AND TOKENS
 
   STR_SLAANESH_PIETY: "Piety"
   STR_WARPSTONE_TRIBUTE: "Warpstone Tribute"
+  STR_SLAANESH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
+  STR_SLAANESH_PDF_TOKEN: "Slaaneshi PDF Contact Ledger"
 
   #SOLDIER BONUSES
 

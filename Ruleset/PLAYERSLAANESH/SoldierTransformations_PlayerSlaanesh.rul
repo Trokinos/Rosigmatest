@@ -17,3 +17,6 @@ soldierTransformation:
     #requiredCommendations:
     #  STR_BATTLE_TESTED: 0
     soldierBonusType: STR_SEEKER_MARK
+
+
+    #resetRank - use this for promoting handmaidens to sisters immaculate.
