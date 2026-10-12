@@ -103,7 +103,6 @@ research:
     points: 0
     dependencies:
       - STR_GENERALLOCK
-    spawnedEvent: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT
 
   - name: STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION
     cost: 0

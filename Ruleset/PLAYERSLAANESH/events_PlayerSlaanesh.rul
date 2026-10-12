@@ -41,7 +41,7 @@ events:
 
   - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Spotted heretics event
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
-    background: CHAOSCULTSISTERCORRUPTBG.SCR
+    background: CHAOSCULTKHORNESISTERBG.SCR
     interruptResearch: STR_NOT_SLAANESHPATH
     timer: 2880  # 48 hours
 
@@ -62,10 +62,11 @@ events:
       STR_BOLTPISTOL_DEAZ: 2
       STR_LIGHT_BOLTPISTOL_AMMO: 12
 
-  - name: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT # This is the event that gives you the sisters.
+  - name: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTDRAFTBG.SCR
-    timer: 1440  # 24 hours
+    timer: 5700  # 95 hours
+    interruptResearch: STR_NOT_SLAANESHPATH
     spawnedPersons: 8
     spawnedCraftType: STR_TRUCKBASE_CHAOS
     spawnedPersonType: STR_SLAANESHPATH_VICTUAL_CULTIST
