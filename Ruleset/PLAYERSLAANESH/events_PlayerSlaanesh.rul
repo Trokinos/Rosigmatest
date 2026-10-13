@@ -21,14 +21,14 @@ events:
   - name: STR_SLAANESHPATH_CHOSEN_EVENT
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: AdeptasAttackedBG.scr
-    timer: 210
+    timer: 300
   
   ###### INTRO EVENTS ######
   - name: STR_SLAANESHPATH_INTRO_A_EVENT
-    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
-    background: CHAOSCULTKHORNESISTERBG.SCR
+    description: STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION
+    background: UnrestBG.SCR
     interruptResearch: STR_NOT_SLAANESHPATH
-    timer: 1440  # 24 hours
+    timer: 1560  # 26 hours
 
   - name: STR_SLAANESHPATH_INTRO_B_EVENT ### BUNKER EVENT, TRIGGERS SERVITOR TRANSFER
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION

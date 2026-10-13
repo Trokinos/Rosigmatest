@@ -14960,7 +14960,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   ### EVENTS
 
   STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
-  STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“They're in your charge now.” Those were Superior Miriam's last words.{NEWLINE}{NEWLINE}The mission is gone, brought low by heretics from without and treachery from within. Only the novices are left. {NEWLINE}{NEWLINE}If not for the warp storm, you'd be back at the convent, taking your final vows to the Emperor. Now you, a mere Novitiate, are the highest-ranking member of the Order of the Sacred Rose left on this throne-cursed world."
+  STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you stand as the most senior member of the Order of the Sacred Rose left on this Throne-cursed world."
+  STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"
+  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "A few heretic groups still pursue you, leading to pitched battles throughout the night.{NEWLINE}{NEWLINE}Even so, your sisters are in good spirits: they fire and maneuver in perfect unison, their hymns mingling with the roar of your bolters.{NEWLINE}{NEWLINE}As their impromptu leader, you take pains not to show the novices even a hint of doubt or worry. Yet, you can't help but feel strangely ill at ease."
   STR_SLAANESHPATH_GATE_EVENT: "The Voices Of Angels"
 
   ### CODEX ENTRIES
