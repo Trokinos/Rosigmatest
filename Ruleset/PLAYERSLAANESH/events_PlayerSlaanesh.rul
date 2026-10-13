@@ -1,8 +1,8 @@
 #adhocScripts:
 
  # 10040 minutes in a week
- #
- #
+ # NOTE: Currently all items and units will have arrived at HQ on the 6th day of January.
+ # Missions should not start generating before the 10th.
  #
  #
  #
@@ -24,7 +24,6 @@ events:
     timer: 210
   
   ###### INTRO EVENTS ######
-  
   - name: STR_SLAANESHPATH_INTRO_A_EVENT
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTKHORNESISTERBG.SCR
@@ -39,11 +38,11 @@ events:
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTSISTERCORRUPTBG.SCR
 
-  - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Spotted heretics event
-    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
-    background: CHAOSCULTKHORNESISTERBG.SCR
-    interruptResearch: STR_NOT_SLAANESHPATH
-    timer: 2880  # 48 hours
+ #  - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Spotted heretics event
+ #    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+ #    background: CHAOSCULTKHORNESISTERBG.SCR
+ #    interruptResearch: STR_NOT_SLAANESHPATH
+ #    timer: 2880  # 48 hours
 
   - name: STR_SLAANESHPATH_GATE_EVENT # This is the event that gives you the sisters.
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
@@ -62,7 +61,7 @@ events:
       STR_BOLTPISTOL_DEAZ: 2
       STR_LIGHT_BOLTPISTOL_AMMO: 12
 
-  - name: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT
+  - name: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT # This event gives no weapons. Early game weapons are gained through starting tech.
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTDRAFTBG.SCR
     timer: 5700  # 95 hours
@@ -73,12 +72,3 @@ events:
     everyMultiSoldierList:
       STR_SLAANESHPATH_VICTUAL_CULTIST: 8
       STR_SLAANESHPATH_JUICED_CULTIST: 2
-    everyMultiItemList: # placeholder
-      STR_ADEPTAS_MEDICAE_ARMORSTORE: 2
-      STR_BOLTER_CANTUS: 8
-      STR_CANTUS_BOLTER_AMMO: 36
-      STR_FLAMETHROWER: 2
-      STR_FLAMETHROWER_CLIP: 6
-      STR_NEURAL_WHIP: 1
-      STR_BOLTPISTOL_DEAZ: 2
-      STR_LIGHT_BOLTPISTOL_AMMO: 12

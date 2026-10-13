@@ -14977,6 +14977,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_GATE: "The Voices Of Angels"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
   STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION: "(Handmaiden Indoctrination)"
+  STR_SLAANESHPATH_RESTORING_THE_ALTAR: "Restoring The Altar"
 
   ### MANUFACTURE DEFINITIONS
 
@@ -15005,7 +15006,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_PIETY: "Piety"
   STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
   STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
-  STR_SLAANESHPATH_PDF_TOKEN: "Slaaneshi PDF Contact Ledger"
+  STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
 
   #SOLDIER BONUSES
 

@@ -98,6 +98,7 @@ research:
   #  dependencies:
   #    - STR_GENERALLOCK
 
+  ################# SECTION FOR EARLY GAME INSTANT UNLOCKS ######################
   - name: STR_RITUALS_OF_WORSHIP # Tech for basic piety projects.
     cost: 0
     points: 0
@@ -109,3 +110,19 @@ research:
     points: 0
     dependencies:
       - STR_GENERALLOCK
+  ################### END OF SECTION ##################
+
+  ################### SECTION FOR EARLY GAME PROGRESSION TECHS #############
+  
+  - name: STR_SLAANESHPATH_RESTORING_THE_ALTAR
+    cost: 5
+    points: 0
+    dependencies:
+      - STR_SLAANESHPATH_GATE
+
+  - name: STR_SLAANESHPATH_IMPLEMENTS_OF_FAITH
+    cost: 5
+    points: 0
+    dependencies:
+      - STR_SLAANESHPATH_GATE
+    #spawnedEvent:
