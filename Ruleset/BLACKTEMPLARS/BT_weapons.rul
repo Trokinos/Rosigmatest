@@ -111,7 +111,7 @@ items:
     accuracyAimed: 100
     tuAuto: 0
     tuSnap: 21
-    tuAimed: 356
+    tuAimed: 35
     autoShots: 2
     size: 0.2
     weight: 20
