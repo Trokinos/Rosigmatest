@@ -1710,7 +1710,7 @@ research:
   - name: STR_BLOODYROSE_STRATEGY  #  Request Commandery Support
     points: 0
     cost: 50
-    requiresBaseFunc: [BLOODYORDER]  # must be done in the Commandery outpost
+    requiresBaseFunc: [BLOODYORDER]  # must be done in the Commandery
     dependencies:
       - STR_BLACKTEMPLAR_STRATEGY
       - STR_REQIMPERIAL_SUPPORT
@@ -1759,6 +1759,53 @@ research:
       - STR_BLACKTEMPLAR_STRATEGY
       - STR_BLOODYROSE_STRATEGY
       - STR_GENERALLOCK
+
+  - name: STR_BLOODYROSE_HEALERS  # Sermons of Amelda
+    requiresBaseFunc: [BLOODYORDER]  # must be done in the Commandery
+    cost: 300
+    points: 20
+    dependencies:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+    getOneFree:
+      - STR_MEDICAE_RESEARCH
+
+  - name: STR_BLOODYROSE_FAITHFUL  #  Sermons of Roxhanna
+    requiresBaseFunc: [BLOODYORDER]  # must be done in the Commandery
+    cost: 500
+    points: 20
+    dependencies:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_BLOODYROSE_HEALERS
+    getOneFree:
+      - STR_FAITHFUL_ARMORY
+
+  - name: STR_BLOODYROSE_SERAPH  #  Sermons of Mari
+    requiresBaseFunc: [BLOODYORDER]  # must be done in the Commandery
+    cost: 600
+    points: 20
+    dependencies:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_BLOODYROSE_HEALERS
+      - STR_BLOODYROSE_FAITHFUL
+    getOneFree:
+      - STR_ADEPTAS_ARMORS
+
+  - name: STR_BLOODYROSE_SUPERIOR  #  Sermons of Augusta
+    requiresBaseFunc: [BLOODYORDER]  # must be done in the Commandery
+    cost: 600
+    points: 20
+    dependencies:
+      - STR_BLACKTEMPLAR_STRATEGY
+      - STR_BLOODYROSE_STRATEGY
+      - STR_BLOODYROSE_HEALERS
+      - STR_BLOODYROSE_FAITHFUL
+      - STR_BLOODYROSE_SERAPH
+    getOneFree:
+      - STR_ADEPTAS_SOB_MOBILIZATION
+
 
 
   - name: STR_ORKSDATAITEM  # The Orks Main Base

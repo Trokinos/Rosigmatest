@@ -9139,6 +9139,18 @@ extraSprites:
   - typeSingle: BLOODYROSEPLAYER_CODEX.SPK
     fileSingle: Resources/CODEX/bloodyroseintroicon.png
 
+  - typeSingle: BLOODYROSESERMON1_CODEX.SPK
+    fileSingle: Resources/CODEX/BRsermon1.png
+
+  - typeSingle: BLOODYROSESERMON2_CODEX.SPK
+    fileSingle: Resources/CODEX/BRsermon2.png
+
+  - typeSingle: BLOODYROSESERMON3_CODEX.SPK
+    fileSingle: Resources/CODEX/BRsermon3.png
+
+  - typeSingle: BLOODYROSESERMON4_CODEX.SPK
+    fileSingle: Resources/CODEX/BRsermon4.png
+
   # Slaangor Ufopedia
   - typeSingle: SlaangorArmorPedia.SPK
     fileSingle: Resources/FOESPEDIAADEPTAS/SlaangorArmorPedia.png
