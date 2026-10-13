@@ -15077,7 +15077,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CHOSEN_BLOODYROSES: "Bloody Roses Selected"
 
   STR_BLOODYROSE_HEALERS: "Sermon of Amelda"
-  STR_BLOODYROSE_HEALERS_DESCRIPTION: "{NEWLINE} No other soul saw what transpired, but when Mina’s body was discovered, it was surrounded by the brutalised corpses of her enemies.{NEWLINE}{NEWLINE} Armoured heads and limbs lay strewn amongst rubble, and gore flowed in rivers through cracks in the flagstones.{NEWLINE}{NEWLINE}{ALT} You can now forge Hospitalier Armors"
+  STR_BLOODYROSE_HEALERS_DESCRIPTION: "{NEWLINE} No other soul saw what transpired, but when Minas body was discovered, it was surrounded by the brutalised corpses of her enemies.{NEWLINE}{NEWLINE} Armoured heads and limbs lay strewn amongst rubble, and gore flowed in rivers through cracks in the flagstones.{NEWLINE}{NEWLINE}{ALT} You can now forge Hospitalier Armors"
   STR_BLOODYROSE_FAITHFUL: "Sermon of Roxhanna"
   STR_BLOODYROSE_FAITHFUL_DESCRIPTION: "{NEWLINE} Burn, heretic, and as you burn know that I do not cleanse you out of any desire to save your soul or shrive you of your mortal sins.{NEWLINE} I put you to the torch because I hate you..{NEWLINE} -  Retributor Roxhanna Dasyrov of the Bloody Rose{NEWLINE}{NEWLINE}{ALT} You can now forge Battle Sister Armors"
   STR_BLOODYROSE_SERAPH: "Sermon of Mari"
