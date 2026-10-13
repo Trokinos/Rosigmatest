@@ -3164,6 +3164,7 @@ alienDeployments:
     objectiveComplete: [STR_TRAITOR_GUARD_BASE_DESTROYED, 500]
     objectiveFailed: [STR_TRAITOR_GUARD_BASE_NOT_DESTROYED, -250]
     abortPenalty: 250
+    objectivesRequired: 4
 
   - type: STR_TRAITOR_GUARD_BASE_START
     markerName: STR_TRAITOR_GUARD_BASE_MARKERNAME
@@ -4074,6 +4075,7 @@ alienDeployments:
     height: 9
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
     missionBountyItemCount: 1
+    markerName: STR_TERROR_SITE
 
   - type: STR_TERROR_MISSION_SLAAN          # RANK1
     data:
@@ -4257,6 +4259,7 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
     height: 9
+    markerName: STR_SABOTAGE_SITE
 
   - type: STR_TERROR_MISSION_CULTISTS_MARINES
     data:
@@ -4353,6 +4356,7 @@ alienDeployments:
     height: 9
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
     missionBountyItemCount: 1
+    markerName: STR_TERROR_SITE
 
   - type: STR_ALIEN_WAR  # WAR                     # RANK1
     data:
@@ -4403,6 +4407,7 @@ alienDeployments:
       STR_GUARD_KRIEG: 10
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
     missionBountyItemCount: 1
+    markerName: STR_WAR_SITE
 
   - type: STR_ADEPTAS_WAR  # WAR                     # RANK1
     data:
@@ -4453,6 +4458,7 @@ alienDeployments:
       STR_GUARD_KRIEG: 10
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
     missionBountyItemCount: 1
+    markerName: STR_WAR_SITE
 
   - type: STR_ALIEN_BASE_ASSAULT                       # RANK0  # RANK1
     data:
@@ -4512,6 +4518,7 @@ alienDeployments:
     genMissionFreq: 5  # 6
     genMissionLimit: 10000  # was 4 in OXCE_40k
     huntMissionMaxFrequency: 1440  # 300       # generate hunt mission max every 300 minutes (= 5 hours)
+    markerName: STR_ALIEN_BASE
 
   - type: STR_ALIEN_BASE_ASSAULT2                     # RANK0  # RANK1
     enviroEffects: STR_INSIDE_ENVIRO
@@ -4994,6 +5001,7 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
     height: 12
+    markerName: STR_FINAL_BASE #brought for clarity
 
   - type: STR_CHAOS_FINAL_LANDING                     # RANK0  # RANK1
     width: 60
@@ -5168,6 +5176,7 @@ alienDeployments:
         dQty: 2
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
+    markerName: STR_INQ_BASE #brought for clarity
 
   - type: STR_CHAOS_FINAL_ASSAULT #Chaos final mission part 2
     width: 70
@@ -5349,6 +5358,7 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
     race: STR_CHAOS_FINAL_UNITED_HARD
+    markerName: STR_FINAL_BASE
 
   - type: STR_MARS_CYDONIA_LANDING_GUARD
     data:
@@ -5395,6 +5405,7 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
     race: STR_CHAOS_FINAL_UNITED_HARD  # Guard are big boys now; no pulling punches
+    markerName: STR_FINAL_BASE
 
   - type: STR_MARS_CYDONIA_LANDING_GUARD_SL
     music:
@@ -5624,6 +5635,7 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
     race: STR_CHAOS_FINAL_UNITED_HARD
+    markerName: STR_FINAL_BASE
 
   - type: STR_MARS_CYDONIA_LANDING_CHAMBER
     data:
@@ -5670,6 +5682,7 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
     race: STR_CHAOS_FINAL_UNITED_HARD
+    markerName: STR_FINAL_BASE
 
   - type: STR_MARS_CYDONIA_ENTRANCE                    # MARINES
     data:
@@ -5870,6 +5883,7 @@ alienDeployments:
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
+    markerName: STR_ARTIFACT_SITE
 #    music:
 #      - SPACE_HULK
 
@@ -5967,6 +5981,7 @@ alienDeployments:
         dQty: 2
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
+    markerName: STR_FORTRESS_SITE
 
   - type: STR_SPACESHIP_M7  # MISSION 7  1-Spaceship  # RANK1
     data:
@@ -6012,6 +6027,7 @@ alienDeployments:
         dQty: 2
         percentageOutsideUfo: 50
         itemSets: *emptyItemSets
+    markerName: STR_SPACESHIP_SITE
 
   - type: STR_SPACESHIP_M8  # MISSION 8 2-Spaceship PART1
     markerIcon: 33
@@ -6022,6 +6038,7 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *emptyItemSets
+    markerName: STR_SPACESHIP_SITE
 
   - type: STR_SPACESHIP_M8_PART2  # MISSION 8 2-Spaceship PART2
     data:
@@ -6143,6 +6160,7 @@ alienDeployments:
         percentageOutsideUfo: 100
         itemSets: *emptyItemSets
     height: 9
+    markerName: STR_TANK_SITE
 
   - type: STR_OUTPOST_DEFENSE  # MISSION 3                 # RANK1
     data:
@@ -6286,6 +6304,7 @@ alienDeployments:
     length: 50
     height: 9
     missionBountyItem: STR_REQUISITION_BOUNTY_100K
+    markerName: STR_DOWNED_CRAFT_MARKERNAME
 
 ## missions_IG
 
@@ -6297,6 +6316,7 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *emptyItemSets
+    markerName: STR_GUARD_TRAINING_MARKERNAME
 
   - type: STR_BULLGRYN_RIOT
     data:
@@ -6360,6 +6380,7 @@ alienDeployments:
       STR_GREEN_MONK: 1
       STR_MONK1: 2
       STR_MONK2: 2
+    markerName: STR_RIOT_MARKERNAME
 
   - type: STR_GUARD_OUTPOST_DEFENSE
     data:
@@ -9657,7 +9678,7 @@ alienDeployments:
       title: STR_CATACOMBS_MONTHLY_MISSION_TITLE
     alert: STR_CATACOMBS_MONTHLY_MISSION_TITLE
     alertBackground: ChaosActivityBG2.SCR
-    markerName: STR_SABOTAGE_SITE
+    markerName: STR_CATACOMBS_MARKERNAME
     duration: [420, 640]
     despawnPenalty: 100
     missionBountyItem: STR_KILLPOINT_TOKEN
@@ -9734,7 +9755,7 @@ alienDeployments:
       title: STR_CATACOMBS_ASSAULT_MISSION_TITLE
     alert: STR_CATACOMBS_ASSAULT_MISSION_TITLE
     alertBackground: ChaosActivityBG2.SCR
-    markerName: STR_CATACOMBS_ASSAULT
+    markerName: STR_CATACOMBS_HRUD_MARKERNAME
     duration: [168, 252]
     despawnPenalty: 0
     missionBountyItem: STR_KILLPOINT_TOKEN
@@ -9894,9 +9915,6 @@ alienDeployments:
 
   - type: STR_MARS_THE_FINAL_ASSAULT                   # RANK0  # RANK1      STR_INSIDE_ENVIRO
     script: BOSSBATTLE1
-
-  - type: STR_TRAITOR_GUARD_BASE_LEVEL_3
-    objectivesRequired: 4
 
   - type: STR_BASE_DEFENSE_NEW_BATTLE
     bughuntMinTurn: 1   # your base your cameras
@@ -14036,7 +14054,7 @@ alienDeployments:
       palette: 2
       desc: STR_JUNGLETEMPLE_TERROR_BRIEFING
       title: STR_JUNGLETEMPLE_TERROR_DEPLOY
-    markerName: STR_JUNGLETEMPLE_TERROR_SITE
+    markerName: STR_CATACH_TERROR_SITE
     duration: [8, 14]
     despawnPenalty: 300
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
@@ -14102,7 +14120,7 @@ alienDeployments:
       palette: 2
       desc: STR_JUNGLETEMPLE_TERROR_BRIEFING2
       title: STR_JUNGLETEMPLE_TERROR_DEPLOY
-    markerName: STR_JUNGLETEMPLE_TERROR_SITE
+    markerName: STR_CATACH_TERROR_SITE
     duration: [8, 14]
     despawnPenalty: 300
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
@@ -14168,7 +14186,7 @@ alienDeployments:
       palette: 2
       desc: STR_DESERTTEMPLE_TERROR_BRIEFING
       title: STR_DESERTTEMPLE_TERROR_DEPLOY
-    markerName: STR_DESERTTEMPLE_TERROR_SITE
+    markerName: STR_CATACH_TERROR_SITE3
     duration: [8, 14]
     despawnPenalty: 300
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
@@ -14234,7 +14252,7 @@ alienDeployments:
       palette: 2
       desc: STR_DESERTTEMPLE_TERROR_BRIEFING2
       title: STR_DESERTTEMPLE_TERROR_DEPLOY
-    markerName: STR_DESERTTEMPLE_TERROR_SITE
+    markerName: STR_CATACH_TERROR_SITE3
     duration: [8, 14]
     despawnPenalty: 300
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
@@ -14865,7 +14883,7 @@ alienDeployments:
       desc: STR_SABOTAGE_MISSIONCHAOSCULT_BRIEFING
       title: STR_ALIENS_SABOTAGEMISSION
       background: CHAOSCULTDRAFTBG.SCR
-    markerName: STR_SABOTAGECHAOSCULT_SITE
+    markerName: STR_RIOTCHAOSCULT_SITE
     duration: [4, 10]
     despawnPenalty: 400
     missionBountyItem: STR_REQUISITION_BOUNTY_100K
@@ -15311,7 +15329,7 @@ alienDeployments:
     alertBackground: CHAOSCULTMARKETBG.SCR
     duration: [168, 168]
     despawnPenalty: 400
-    markerName: STR_WARP_TERRORCCULT_SITE
+    markerName: STR_ALIEN_TERRORCCULT_SITE
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
     missionBountyItemCount: 1
 
@@ -15493,7 +15511,7 @@ alienDeployments:
     alertDescription: STR_CHAOSPDF_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 400
-    markerName: STR_CHAOSPDF_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_CHAOSPDFSUPPORTREWARD: 100
 
@@ -15566,7 +15584,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_CHAOSMARINESUPPORTREWARD: 100
 
@@ -15609,7 +15628,8 @@ alienDeployments:
     alertDescription: STR_GUARD_OUTPOST_DEFENSE_DESCRIPTION
     duration: [200, 400]
     despawnPenalty: 300
-    markerName: STR_CHAOSPDF_VALK_SITE
+    #markerName: STR_CHAOSPDF_VALK_SITE
+    markerName: STR_DOWNED_CRAFT_MARKERNAME
     missionBountyItem: STR_REQUISITION_BOUNTY_250K
 
   - type: STR_CHAOSGUARD_OUTPOST_DEFENSE
@@ -15703,7 +15723,8 @@ alienDeployments:
     alertDescription: STR_CHAOSGUARD_OUTPOST_DEFENSE_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 400
-    markerName: STR_GUARD_OUTPOST_DEFENSE_SITE
+    #markerName: STR_GUARD_OUTPOST_DEFENSE_SITE
+    markerName: STR_OUTPOST_CHAOS_DEFENSE_MARKERNAME
     missionBountyItem: STR_ALIEN_ALLOYS
     missionBountyItemCount: 50
 
@@ -15797,7 +15818,8 @@ alienDeployments:
     alertDescription: STR_CHAOSGUARD_OUTPOST_DEFENSE_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 400
-    markerName: STR_GUARD_OUTPOST_DEFENSE_SITE
+    #markerName: STR_GUARD_OUTPOST_DEFENSE_SITE
+    markerName: STR_OUTPOST_CHAOS_DEFENSE_MARKERNAME
     missionBountyItem: STR_ALIEN_ALLOYS
     missionBountyItemCount: 50
 
@@ -21410,7 +21432,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_KHORNEMARINESUPPORTREWARD: 100
 
@@ -21483,7 +21506,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_NURGLEMARINESUPPORTREWARD: 100
 
@@ -21556,7 +21580,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_TZEENTCHMARINESUPPORTREWARD: 100
 
@@ -21630,7 +21655,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_SLAANESHMARINESUPPORTREWARD: 100
 
@@ -21703,7 +21729,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_NIGHTLORDMARINESUPPORTREWARD: 100
 
@@ -21776,7 +21803,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_IRONWARRIORMARINESUPPORTREWARD: 100
 
@@ -21849,7 +21877,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_BLACKLEGIONMARINESUPPORTREWARD: 100
 
@@ -21922,7 +21951,8 @@ alienDeployments:
     alertDescription: STR_CHAOSMARINE_ASSAULTALERT_DESCRIPTION
     duration: [168, 168]
     despawnPenalty: 600
-    markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    #markerName: STR_CHAOSMARINE_ASSAULT_SITE
+    markerName: STR_OUTPOST_ASSAULT_IMPERIAL_MARKERNAME
     successEvents:
       STR_ALPHALEGIONMARINESUPPORTREWARD: 100
 
@@ -25084,7 +25114,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    markerName: STR_ALIEN_BASE
+    # markerName: STR_ALIEN_BASE
+    markerName: STR_ORK_BASE_MARKERNAME
     genMission:
       STR_ORK_WAGGON_PATROL_SMALL: 25
       STR_ORK_WAGGON_PATROL_MEDIUM: 50
@@ -25175,7 +25206,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    markerName: STR_ALIEN_BASE
+    # markerName: STR_ALIEN_BASE
+    markerName: STR_ORK_BASE_MARKERNAME
     genMission:
       STR_ORK_WAGGON_PATROL_SMALL: 20
       STR_ORK_WAGGON_PATROL_MEDIUM: 20
@@ -25278,7 +25310,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    markerName: STR_ALIEN_BASE
+    # markerName: STR_ALIEN_BASE
+    markerName: STR_ORK_BASE_MARKERNAME
     genMission:
       STR_ORK_WAGGON_PATROL_SMALL: 5
       STR_ORK_WAGGON_PATROL_MEDIUM: 15
@@ -25390,7 +25423,8 @@ alienDeployments:
       background: BACK163.SCR
       showTarget: false
       desc: STR_ORK_BASE_ASSAULT_BRIEFING
-    markerName: STR_ALIEN_BASE
+    # markerName: STR_ALIEN_BASE
+    markerName: STR_ORK_BASE_MARKERNAME
     genMission:
       STR_ORK_WAGGON_PATROL_MEDIUM: 10
       STR_ORK_WAGGON_PATROL_LARGE: 15
@@ -25485,7 +25519,8 @@ alienDeployments:
     alert: STR_ORK_MAINBASE_DETECTED
     alertBackground: CHAOSBOWLED.SCR
     alertSound: {mod: 40k, index: 52}
-    markerName: STR_ORK_MAINBASE_SITE
+    # markerName: STR_ALIEN_BASE
+    markerName: STR_ORK_BASE_MARKERNAME
     duration: [50000, 100000]
     despawnPenalty: 0
     keepCraftAfterFailedMission: true
