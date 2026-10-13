@@ -15076,6 +15076,15 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BLOODYROSE_STRATEGY: "Commandery Support"
   STR_CHOSEN_BLOODYROSES: "Bloody Roses Selected"
 
+  STR_BLOODYROSE_HEALERS: "Sermon of Amelda"
+  STR_BLOODYROSE_HEALERS_DESCRIPTION: "{NEWLINE} No other soul saw what transpired, but when Mina’s body was discovered, it was surrounded by the brutalised corpses of her enemies.{NEWLINE}{NEWLINE} Armoured heads and limbs lay strewn amongst rubble, and gore flowed in rivers through cracks in the flagstones.{NEWLINE}{NEWLINE}{ALT} You can now forge Hospitalier Armors"
+  STR_BLOODYROSE_FAITHFUL: "Sermon of Roxhanna"
+  STR_BLOODYROSE_FAITHFUL_DESCRIPTION: "{NEWLINE} Burn, heretic, and as you burn know that I do not cleanse you out of any desire to save your soul or shrive you of your mortal sins.{NEWLINE} I put you to the torch because I hate you..{NEWLINE} -  Retributor Roxhanna Dasyrov of the Bloody Rose{NEWLINE}{NEWLINE}{ALT} You can now forge Battle Sister Armors"
+  STR_BLOODYROSE_SERAPH: "Sermon of Mari"
+  STR_BLOODYROSE_SERAPH_DESCRIPTION: "When the last of the Slaanesh-worshippers had been eradicated,{NEWLINE} the Canoness Superior of the Bloody Rose, who upon her death would become canonised as Saint Mari,{NEWLINE} penned the Thorn Treatise{NEWLINE} using the blood of those Sisters who had fallen to record the teachings of this war.{NEWLINE}{NEWLINE}{ALT} You can now forge Seraphim Armors"
+  STR_BLOODYROSE_SUPERIOR: "Sermon of Augusta"
+  STR_BLOODYROSE_SUPERIOR_DESCRIPTION: "{NEWLINE} He promised that He would grant us strength to face our enemies, the weapons of all who hate us.{NEWLINE} I do not fear you.{NEWLINE} I carry the Light.{NEWLINE} -  Sister Superior Augusta Santorus of the Bloody Rose{NEWLINE}{NEWLINE}{ALT} You can now forge Sister Superior Armors"
+
   # Bloody Roses Transformations
 
   STR_BRREPENTIA_TO_BRSISTER: "Absolve Sister of Sin"

@@ -859,6 +859,40 @@ ufopaedia:
     requires:
       - STR_BLOODYROSE_STRATEGY
 
+  - id: STR_BLOODYROSE_HEALERS
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLOODYROSESERMON1_CODEX.SPK
+    text: STR_BLOODYROSE_HEALERS_DESCRIPTION
+    requires:
+      - STR_BLOODYROSE_HEALERS
+
+  - id: STR_BLOODYROSE_FAITHFUL
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLOODYROSESERMON2_CODEX.SPK
+    text: STR_BLOODYROSE_FAITHFUL_DESCRIPTION
+    requires:
+      - STR_BLOODYROSE_FAITHFUL
+
+  - id: STR_BLOODYROSE_SERAPH
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLOODYROSESERMON3_CODEX.SPK
+    text: STR_BLOODYROSE_SERAPH_DESCRIPTION
+    requires:
+      - STR_BLOODYROSE_SERAPH
+
+  - id: STR_BLOODYROSE_SUPERIOR
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLOODYROSESERMON4_CODEX.SPK
+    text: STR_BLOODYROSE_SUPERIOR_DESCRIPTION
+    requires:
+      - STR_BLOODYROSE_SUPERIOR
+
+
+
 ## #STRATEGY.WB#
   - id: STR_CHOSEN_WORDBEARERS
     type_id: 10
