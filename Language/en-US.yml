@@ -162,6 +162,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_INQUISITION_RETALIATION: "Retaliation"
   STR_ELDAR_RETALIATION: "Retaliation"
   STR_ELDAR_RETALIATION_CHAOS: "Retaliation"
+  STR_UFO_POWER_SOURCE: "Power Source" #UFO ITEMS
+  STR_UFO_POWER_SOURCE_UFOPEDIA: "{NEWLINE}This essential component, present in craft of all sizes, supplies power to the other components and subsystems. Power sources will often depend on consuming promethium as fuel, though on larger craft it will function to route power from the craft's plasma generators."
 
   # Map mission markers names with numbers
   STR_CULT_MARKERNAME: "Chaos Cult Site"
