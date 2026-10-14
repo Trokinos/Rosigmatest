@@ -912,7 +912,7 @@ alienDeployments:
             highQty: 0
             dQty: 1
             itemSets: *emptyItemSets
-      markerName: STR_TERROR_SITE #default terror mission marker
+    markerName: STR_TERROR_SITE #default terror mission marker
 
 
   - type: STR_NECRON_TERROR
