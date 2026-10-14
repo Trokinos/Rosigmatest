@@ -222,12 +222,13 @@ armors:
       - 1.0  # MELTA
     units:
       - STR_SLAANESHPATH_CHIRURGEON
+    specialWeapon: AUX_CHIRURGEON_NEEDLER
     builtInWeapons:
       - INV_NULL_3X3
-      - AUX_MEDICAE_MEDI_KIT
-    loftempsSet: [3] # Less agile than handmaidens
+      - AUX_CHIRURGEON_MEDI_KIT
+    loftempsSet: [2] # Agile and dodgy!
     tags:
-      INFECTION_RESIST: 45 # Slaanesh protection + medicae armor 
+      INFECTION_RESIST: 55 # Slaanesh protection + serial drug abuse 
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1

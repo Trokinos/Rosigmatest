@@ -69,3 +69,95 @@ items:
       ITEM_ACCENT_COLOR: 1 # PLACEHOLDER
       ITEM_SWAP_BASE_COLOR: 8 # PLACEHOLDER
       ITEM_SWAP_ACCENT_COLOR: 6 # PLACEHOLDER
+
+  - type: AUX_CHIRURGEON_NEEDLER # LOOK AT ADEPTAS NEURAL WHIP FOR ALT FIRE IMPLEMENTATION
+    weight: 0
+    dropoff: 6 # Very inaccurate beyond close range
+    bigSprite: {mod: 40k, index: 228}
+    floorSprite: {mod: 40k, index: 113}
+    bulletSprite: 25
+    fireSound: 2419  # silentshot
+    hitSound: {mod: 40k, index: 101}  # stabhit
+    hitAnimation: 2190  # purple juice
+    handSprite: 3813
+    power: 30
+    tuSnap: 20
+    tuAimed: 0
+    snapRange: 7
+    aimRange: 0
+    damageBonus: # Not a sniper weapon unlike most other needlers. Gains a bonus from reactions.
+      reactions: 0.1     
+    damageType: 8  # acid
+    damageAlter:  # Hallucinogenic, warp-tainted chems.
+      ArmorEffectiveness: 0.5  # low power but high penetration
+      ToArmorPre: 0.05  # precision weapon; minimal armor damage
+      ToArmor: 0.05  # precision weapon; minimal armor damage
+      ToHealth: 0.2
+      ToMana: 0.9
+      ToEnergy: 0.75  # Hallucinogenic cocktail
+      ToStun: 1.5  # Hallucinogenic cocktail
+      ToTime: 0.5  # higher than normal TU depletion
+      ToWound: 0.01  # Precision needler weapon; leaves no terminal wounds
+      ToMorale: 4.5 # A psychedelic mushroom trip courtesy of hell itself.
+      RandomWound: false
+      RandomType: 6  # gaussian
+    clipSize: -1
+    battleType: 1
+    twoHanded: false
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 2778
+    specialUseEmptyHand: false
+    tags:
+      INFECTION_DAMAGE_PERCENT: 85  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+    bulletSpeed: 15
+
+  - type: AUX_CHIRURGEON_MEDI_KIT      # A modified medicae kit. More killy, with better stimulants.
+    medikitTargetImmune: true
+    size: 0.1
+    costSell: 50
+    weight: 0
+    bigSprite: {mod: 40k, index: 611}
+    floorSprite: {mod: 40k, index: 24}
+    battleType: 6
+    invWidth: 2
+    invHeight: 3
+    painKiller: 10
+    heal: 15
+    stimulant: 20
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 4
+    energyRecovery: 10
+    tuUse: 10
+    experienceTrainingMode: 19  # *** makes the apothecary medikit item train bravery ***
+    medikitTargetSelf: true
+    flatRate: true
+    recover: false
+    fixedWeapon: true
+    # *** Melee
+    meleeSound: {mod: 40k, index: 753}  # 753 Powersword miss
+    meleeHitSound: {mod: 40k, index: 709}  # 709 chainhit
+    meleeAnimation: 44
+    meleeType: 7
+    meleePower: 60
+    damageType: 7
+    accuracyMelee: 80
+    tuMelee: 15
+    meleeBonus:
+      reactions: 0.2
+      melee: 0.2
+    damageAlter:  # DA CHAIN
+      ToArmorPre: 0.5
+      ToHealth: 0.8
+      RandomType: 2  # TFTD [50% - 150%]
+      ToWound: 0.45 # Extra sadistic
+      ToEnergy: 0.8
+      ToMorale: 0.2
+      ToStun: 0.1
+      RandomWound: false
+    meleeMultiplier:
+      reactions: 0.25
+      melee: 0.75
+    defaultInventorySlot: STR_LEFT_HAND

@@ -15012,6 +15012,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
   STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
+ ### WEAPONS
+  AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
+  AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
+  
   ### AMMO
   STR_CANTUS_BOLTER_AMMO_SLAAN: "Cantus Penetrator Ammo"
   STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Ammo" 
@@ -15065,7 +15069,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ## Slaanesh cultist armors
 
-  STR_SLAANESHPATH_VICTUAL_CULTIST_ARMOR: "Victual Cultist Armor"
+  STR_SLAANESHPATH_VICTUAL_CULTIST_ARMOR: "Victual Brother Armor"
 
   ## Slaanesh cultist ranks
 
