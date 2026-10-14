@@ -1125,7 +1125,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_INQUISITION_PURGE: "Purge Heretics"
   STR_INQUISITION_PURGE_MISSION: "Prevent Inquisitorial Purge"
-  STR_INQUISITION_PURGE_MISSION: "Prevent Inquisitorial Purge-{0}"
+  STR_INQUISITION_PURGE_MISSION_: "Prevent Inquisitorial Purge-{0}"
   STR_PURGE_ALERT: "PURGE IN-PROGRESS"
   STR_INQUISITION_PURGE_DESCRIPTION: "The forces of the Inquisition have discovered the presence of a chaos cult and have targeted it for a purge. We cannot allow them to re-establish stability if we are to assume control of this planet. We must intervene and rout the forces of the false idol."
 
