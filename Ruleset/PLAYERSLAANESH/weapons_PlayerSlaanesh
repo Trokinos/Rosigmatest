@@ -1,0 +1,56 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+items:
+
+  - type: STR_BOLTER_CANTUS_SLAAN  # Corrupted Cantus bolter. Low recoil, rapid fire, penetrating bolts.
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
+    requiresBuy:
+      - STR_SLAANESHPATH
+    size: 0.3
+    costBuy: 5000
+    costSell: 1500
+    weight: 10
+    bigSprite: 2006
+    floorSprite: {mod: 40k, index: 1}
+    handSprite: {mod: 40k, index: 1496}
+    bulletSprite: {mod: 40k, index: 6}
+    fireSound: 2137
+    compatibleAmmo:
+      - STR_CANTUS_BOLTER_AMMO
+      - STR_CANTUS_BOLTER_AMMO_SLAAN
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 300
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10286
+    tags:
+      ITEM_RECOIL: 20
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+
+  - type: STR_CANTUS_BOLTER_AMMO_SLAAN  # Penetrator Ammo for the Cantus light bolter
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?""
+    size: 0.1
+    weight: 2
+    bigSprite: 3230
+    floorSprite: {mod: 40k, index: 2} # PLACEHOLDER
+    handSprite: {mod: 40k, index: 464} # PLACEHOLDER
+    hitSound: {mod: 40k, index: 708} # PLACEHOLDER
+    hitAnimation: {mod: 40k, index: 26} # PLACEHOLDER
+    explosionSpeed: 5 # PLACEHOLDER
+    battleType: 2 
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10287
+    tags:
+      ITEM_AMMO_COLOR: 0 # PLACEHOLDER
+      ITEM_IS_PALETTE_SWAP: 1 # PLACEHOLDER
+      ITEM_GETS_ACCENT_RECOLOR: 1 # PLACEHOLDER
+      ITEM_BASE_COLOR: 14 # PLACEHOLDER
+      ITEM_ACCENT_COLOR: 1 # PLACEHOLDER
+      ITEM_SWAP_BASE_COLOR: 8 # PLACEHOLDER
+      ITEM_SWAP_ACCENT_COLOR: 6 # PLACEHOLDER
