@@ -32,6 +32,7 @@ research:
       - STR_GENESTEALERS_INACTIVE # no genestealers
       #- STR_GSC_ARBITES_SPAWNED   # prevent GSC arbites spawn
       - STR_SLAANESHPATH_SELECTED
+      - STR_SLAANESHPATH_BUNKER_NOT_DISCOVERED
     disables:
      # - STR_ARBITES
       - STR_NOT_SLAANESHPATH
@@ -63,6 +64,14 @@ research:
      ###################################################
     spawnedEvent: STR_SLAANESHPATH_CHOSEN_EVENT
 
+ ##################### SECTION FOR INTRO-RELATED TECHS ######################
+
+  - name: STR_SLAANESHPATH_BUNKER_NOT_DISCOVERED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+
   - name: STR_SLAANESHPATH_INTRO_BUNKER
     cost: 5
     points: 0
@@ -70,6 +79,8 @@ research:
       - STR_SLAANESHPATH
     unlocks: 
       - STR_SLAANESHPATH_INTRO_CALLING
+    disables: 
+      - STR_SLAANESHPATH_BUNKER_NOT_DISCOVERED
     spawnedEvent: STR_SLAANESHPATH_INTRO_B_EVENT
 
   - name: STR_SLAANESHPATH_INTRO_CALLING

@@ -14962,9 +14962,12 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
   STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you stand as the most senior member of the Order of the Sacred Rose left on this Throne-cursed world."
   STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"
-  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "A few heretic groups still pursue you, leading to pitched battles throughout the night.{NEWLINE}{NEWLINE}Even so, your sisters are in good spirits: they fire and maneuver in perfect unison, their hymns mingling with the roar of your bolters.{NEWLINE}{NEWLINE}As their impromptu leader, you take pains not to show the novices even a hint of doubt or worry. Yet, you can't help but feel strangely ill at ease."
+  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "A few heretic groups pursue you, leading to pitched battles throughout the night.{NEWLINE}{NEWLINE}Even so, your sisters are in good spirits: they fire and maneuver in perfect unison, their hymns mingling with the roar of your bolters.{NEWLINE}{NEWLINE}As their impromptu leader, you take pains not to show the novices even a hint of doubt or worry. Yet, you can't help but feel strangely ill at ease."
   STR_SLAANESHPATH_GATE_EVENT: "The Voices Of Angels"
-
+  STR_SLAANESHPATH_INTRO_B_EVENT: "The Bunker"
+  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The entrance to the command bunker is well-hidden; you'd never have found it if not for three of your sisters receiving a guiding vision from the Emperor.{NEWLINE}{NEWLINE}Inside, you find died blood and shell casings, but no dead bodies. Unfortunately, the Vox array is broken and non-functional.{NEWLINE}{NEWLINE}Thankfully, The Emperor helps those who help themselves. Finding a few servitors in a semi-functional state, you set about repairing the array."
+  STR_SLAANESHPATH_INTRO_D_EVENT: "Shadows And Whispers"
+  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of power failure has disabled all the lumens in most sections of the base. Not wishing to take any chances, you order the doors to those sections jammed shut."
   ### CODEX ENTRIES
 
 
@@ -14974,6 +14977,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_SELECTED: "(Slaanesh strategy selected)"
   STR_NOT_SLAANESHPATH: "(Not Slaanesh strategy)"
   STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
+  STR_SLAANESHPATH_BUNKER_NOT_DISCOVERED: "(Bunker not discovered)"
   STR_SLAANESHPATH_INTRO_BUNKER: "The Abandoned Bunker"
   STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
   STR_SLAANESHPATH_GATE: "The Voices Of Angels"

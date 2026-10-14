@@ -31,18 +31,22 @@ events:
     timer: 1560  # 26 hours
 
   - name: STR_SLAANESHPATH_INTRO_B_EVENT ### BUNKER EVENT, TRIGGERS SERVITOR TRANSFER
-    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+    description: STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTSISTERCHAOSBG.SCR
-    
+    spawnedPersons: 6
+    spawnedPersonType: STR_ENGINEER
+    everyMultiSoldierList:
+      STR_ENGINEER: 6
+
   - name: STR_SLAANESHPATH_INTRO_C_EVENT
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTSISTERCORRUPTBG.SCR
 
- #  - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Spotted heretics event
- #    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
- #    background: CHAOSCULTKHORNESISTERBG.SCR
- #    interruptResearch: STR_NOT_SLAANESHPATH
- #    timer: 2880  # 48 hours
+  - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Power failure event
+    description: STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION
+    background: ARMORYRAID.SCR
+    interruptResearch: STR_SLAANESHPATH_BUNKER_NOT_DISCOVERED
+    timer: 2880  # 48 hours
 
   - name: STR_SLAANESHPATH_GATE_EVENT # This is the event that gives you the sisters.
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
