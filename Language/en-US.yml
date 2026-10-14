@@ -14967,7 +14967,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_B_EVENT: "The Bunker"
   STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The entrance to the command bunker is well-hidden; you'd never have found it if not for three of your sisters receiving a guiding vision from the Emperor.{NEWLINE}{NEWLINE}Inside, you find died blood and shell casings, but no dead bodies. Unfortunately, the Vox array is broken and non-functional.{NEWLINE}{NEWLINE}Thankfully, The Emperor helps those who help themselves. Finding a few servitors in a semi-functional state, you set about repairing the array."
   STR_SLAANESHPATH_INTRO_D_EVENT: "Shadows And Whispers"
-  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of power failure has disabled all the lumens in most sections of the base. Not wishing to take any chances, you order the doors to those sections jammed shut."
+  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of power failure just disabled all the lumens in most sections of the base. Not wishing to take any chances, you order the doors to those sections jammed shut."
   ### CODEX ENTRIES
 
 
@@ -14977,7 +14977,6 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_SELECTED: "(Slaanesh strategy selected)"
   STR_NOT_SLAANESHPATH: "(Not Slaanesh strategy)"
   STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
-  STR_SLAANESHPATH_BUNKER_NOT_DISCOVERED: "(Bunker not discovered)"
   STR_SLAANESHPATH_INTRO_BUNKER: "The Abandoned Bunker"
   STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
   STR_SLAANESHPATH_GATE: "The Voices Of Angels"

@@ -12,14 +12,14 @@ eventScripts:
     researchTriggers:
       STR_ARBITES: true
 
- #  - type: STR_SLAANESHPATH_INTRO_D_EVENTSCRIPT
- #    oneTimeSequentialEvents:
- #      - STR_SLAANESHPATH_INTRO_D_EVENT
- #    firstMonth: 0
- #    lastMonth: 0
- #    executionOdds: 100
- #    researchTriggers:
- #      STR_ARBITES: true
+  - type: STR_SLAANESHPATH_INTRO_D_EVENTSCRIPT
+    oneTimeSequentialEvents:
+      - STR_SLAANESHPATH_INTRO_D_EVENT
+    firstMonth: 0
+    lastMonth: 0
+    executionOdds: 100
+    researchTriggers:
+      STR_ARBITES: true
 
 
   - type: STR_SLAANESHPATH_INTRO_CULTISTS_EVENTSCRIPT
