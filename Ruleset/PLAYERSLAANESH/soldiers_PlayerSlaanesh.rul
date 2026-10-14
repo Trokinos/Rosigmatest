@@ -164,6 +164,83 @@ soldiers:
     rankBattleSprite: 4148 
     rankTinySprite: 4148
 
+  - type: STR_SLAANESHPATH_CHIRURGEON  # Tier 1 ELITE units. A mix between Novitiate superiors, death cultists, and medicae. 
+    flagOffset: 21 # !!! need to fix this later !!!
+    costBuy: 20000  # Not meant to be purchased directly. 
+    costSalary: 40000 # VERY expensive.
+    requires: ### >Remove this later.< ###
+    - STR_SLAANESHPATH_GATE
+    minStats:
+      tu: 65 # Slaanesh Influence
+      stamina: 70 # 5 Slaanesh influence
+      health: 40 # 5 More vs Adeptas
+      bravery: 60 # Followers of Slaanesh do not fear death
+      reactions: 40 # Slaanesh influence
+      firing: 40 # 10 More
+      throwing: 35 # 5 More
+      strength: 25
+      psiStrength: 25
+      psiSkill: 30
+      melee: 50 # Slaanesh Influence
+    maxStats:
+      tu: 75 # Slaanesh influence
+      stamina: 80 # Slaanesh Influence
+      health: 45
+      bravery: 110 # Followers of Slaanesh do not fear death
+      reactions: 80 # Slaanesh Influence
+      firing: 55
+      throwing: 50 # 5 More
+      strength: 35
+      psiStrength: 90 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiSkill: 60
+      melee: 65 # Slaanesh Influence
+    statCaps:
+      tu: 120 # Slaanesh Influence
+      stamina: 130 # Slaanesh Influence
+      health: 80 # 5 More
+      bravery: 110
+      reactions: 120 # Slaanesh Influence
+      firing: 90
+      throwing: 75 # 5 More
+      strength: 80 # 5 Less
+      psiStrength: 100
+      psiSkill: 100
+      melee: 130
+    trainingStatCaps:
+      tu: 85 # 5 More
+      stamina: 80
+      health: 65
+      firing: 80 # 5 More
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80 # Slaanesh Influence
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_CHIRURGEON_ARMOR # Slightly improved Cantus Armor
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 95
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/adeptas_novice.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_0
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_1
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_2
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_3
+    rankSprite: 4144
+    rankBattleSprite: 4144 
+    rankTinySprite: 4144
 
  #### SLAANESH BASIC CULTIST. More expensive than PLAYERCHAOS cultists, but have better scaling potential.
 

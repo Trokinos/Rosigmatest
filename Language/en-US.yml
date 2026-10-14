@@ -15012,7 +15012,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
   STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
-
+  ### AMMO
+  STR_CANTUS_BOLTER_AMMO_SLAAN: "Cantus Penetrator Ammo"
+  STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Ammo" 
   #SOLDIER BONUSES
 
   STR_SEEKER_MARK: "Mark of the Seeker"
@@ -15021,8 +15023,9 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_SLAANESHPATH_HANDMAIDEN: "Handmaiden"
   STR_SLAANESHPATH_EXALTEDMAIDEN: "Exalted Handmaiden"
-  STR_SLAANESHPATH_IMMACULATE_SISTER: "Sister Immaculate"
-  STR_SLAANESHPATH_EXALTEDSISTER: "Exalted Immaculate"
+  STR_SLAANESHPATH_CHIRURGEON: "Chirurgeon"
+  STR_SLAANESHPATH_IMMACULATE_SISTER: "Immaculate Sister"
+  STR_SLAANESHPATH_EXALTEDSISTER: "Exalted Sister"
   STR_SLAANESHPATH_SORC: "Sorceress of Slaanesh"
   STR_SLAANESHPATH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
   STR_SLAANESHPATH_MORBIDANGEL: "Morbid Angel"

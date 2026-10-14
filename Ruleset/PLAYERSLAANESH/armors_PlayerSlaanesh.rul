@@ -180,7 +180,63 @@ armors:
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
 
-
+  - type: STR_SLAANESHPATH_CHIRURGEON_ARMOR # HEAVILY modified Medicae armor. A medicae-assassin hybrid.
+    visibilityAtDay: 40 # ADD SLAANESH NEEDLE RIFLE
+    visibilityAtDark: 26 # Heightened senses and modified medicae sensors.
+    antiCamouflageAtDay: 7  # Heightened senses
+    antiCamouflageAtDark: 7 # Heightened senses
+    heatVision: 30 # Heightened senses and modified medicae sensors.
+    spriteSheet: ADEPTASMEDICAE.PCK
+    spriteInv: MED_33
+    customArmorPreviewIndex: 140
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 25 # Combat drugs
+      stamina: 25 # Combat drugs
+      health: 15 # Combat drugs, medicae armor
+      bravery: 10  # always multiples of 10
+      reactions: 15 # Combat drugs
+      firing: 0  
+      throwing: 0
+      strength: 5
+      psiStrength: 0
+      psiSkill: 5
+      melee: 15 # Combat drugs
+    frontArmor: 50 # 40 less than sororitas armor
+    sideArmor: 50 # 30 less than sororitas armor
+    rearArmor: 50 # 10 less than sororitas armor 
+    underArmor: 65 # Agility
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 0.9  # Uncanny dodge
+      - 0.7  # FLAMES
+      - 0.7  # Resistance to HE, uncanny dodge
+      - 0.9  # LASCANON
+      - 0.9  # PLASMA
+      - 0.7  # STUN Further improved stun resistance
+      - 0.7  # MELEE Uncanny dodge + combat drugs
+      - 0.7  # ACID
+      - 0.2  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_CHIRURGEON
+    builtInWeapons:
+      - INV_NULL_3X3
+      - AUX_MEDICAE_MEDI_KIT
+    loftempsSet: [3] # Less agile than handmaidens
+    tags:
+      INFECTION_RESIST: 45 # Slaanesh protection + medicae armor 
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      UNIT_IS_DIEHARD: 1
+      DIEHARD_TEMP_MODIFIER_INCREMENT: -100  # they only get one second chance
+      DODGE_CHANCE: 30
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
   - type: STR_SLAANESHPATH_VICTUAL_CULTIST_ARMOR     # Basic cultist armor. Slightly more luxurious and better-performing.
     visibilityAtDay: 40

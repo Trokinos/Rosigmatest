@@ -7,6 +7,21 @@ items:
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
       - STR_SLAANESHPATH
+    dropoff: 5
+    autoRange: 7 
+    snapRange: 12 # -2 vs Cantus, Slaanesh weapon profile
+    aimRange: 0
+
+    accuracyAuto: 55
+    accuracySnap: 85
+    accuracyAimed: 0
+    tuAuto: 30
+    tuSnap: 20
+    tuAimed: 0
+    confSnap:
+      name: STR_BURST_SNAP_SHOT
+      shots: 2  # Double shot snap
+    autoShots: 4 # foregrip
     size: 0.3
     costBuy: 5000
     costSell: 1500
