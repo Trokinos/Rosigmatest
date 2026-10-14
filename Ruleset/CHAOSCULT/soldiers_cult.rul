@@ -97,6 +97,7 @@ soldiers:
     soldierNames:
       - delete
       - Names/cultists.nam
+    prefix: "CULT. "
     value: 2
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -182,7 +183,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistsveterans.nam
+      - Names/cultists.nam
+    prefix: "CULT.# "
     value: 2
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -269,7 +271,8 @@ soldiers:
       firing: 15
     soldierNames:
       - delete
-      - Names/cultistspilot.nam
+      - Names/cultists.nam
+    prefix: "CAIR. "
     value: 2
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -348,6 +351,7 @@ soldiers:
     soldierNames:
       - delete
       - Names/cultistsogryn.nam
+    prefix: "COGR. "
     value: 10
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
     tags:
@@ -435,7 +439,8 @@ soldiers:
       firing: 15
     soldierNames:
       - delete
-      - Names/cultistspriest.nam
+      - Names/cultists.nam
+    prefix: "CPRT. "
     value: 15
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -521,7 +526,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistspriestpowered.nam
+      - Names/cultists.nam
+    prefix: "CPRT.# "
     value: 20
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
     tags:
@@ -611,7 +617,8 @@ soldiers:
       firing: 15
     soldierNames:
       - delete
-      - Names/cultistguards .nam
+      - Names/cultists.nam
+    prefix: "CGRD. "
     value: 15
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -694,7 +701,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistguardselite.nam
+      - Names/cultists.nam
+    prefix: "CGRD.# "
     value: 20
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -773,7 +781,8 @@ soldiers:
     avatarOffsetY: 38
     soldierNames:
       - delete
-      - Names/cultistsbogryndef.nam
+      - Names/cultistsogryn.nam
+    prefix: "CBGN. "
     value: 20
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
     tags:
@@ -854,7 +863,8 @@ soldiers:
     avatarOffsetY: 38
     soldierNames:
       - delete
-      - Names/cultistsogrynber.nam
+      - Names/cultistsogryn.nam
+    prefix: "CBEO. "
     value: 20
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
     tags:
@@ -939,7 +949,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistsdemagog.nam
+      - Names/cultists.nam
+    prefix: "CDMG. "
     value: 20
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
     tags:
@@ -1027,7 +1038,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistlegionscout.nam
+      - Names/cultists.nam
+    prefix: "CSCT. "
     value: 20
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -1111,7 +1123,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistlegionarie.nam
+      - Names/cultists.nam
+    prefix: "CSM. "
     value: 40
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -1195,7 +1208,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistraptor.nam
+      - Names/cultists.nam
+    prefix: "CRA. "
     value: 40
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
 
@@ -1279,7 +1293,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistwarptalon.nam
+      - Names/cultists.nam
+    prefix: "WARP. "
     value: 50
     moraleLossWhenKilled: 100
 
@@ -1361,7 +1376,8 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/cultistssorc.nam
+      - Names/cultists.nam
+    prefix: "CSOR. "
     value: 40
     moraleLossWhenKilled: 100
     tags:
@@ -1447,7 +1463,8 @@ soldiers:
     avatarOffsetY: 40
     soldierNames:
       - delete
-      - Names/cultisttermi.nam
+      - Names/cultists.nam
+    prefix: "CTER. "
     value: 60
     moraleLossWhenKilled: 100
 
@@ -1526,7 +1543,8 @@ soldiers:
     avatarOffsetY: 40
     soldierNames:
       - delete
-      - Names/cultisttermi.nam
+      - Names/cultists.nam
+    prefix: "COBL. "
     value: 80
     moraleLossWhenKilled: 120
 
@@ -1679,7 +1697,8 @@ soldiers:
     armor: STR_CHAOSCULT_SENTINEL_ARMOR_LSC
     soldierNames:
       - delete
-      - Names/cultistssentinellsc.nam
+      - Names/cultists.nam
+    prefix: "CSNTL. "
     rankStrings:
       - STR_CHAOSGUARD_RANK_0
       - STR_CHAOSGUARD_RANK_1
@@ -1751,7 +1770,8 @@ soldiers:
     armor: STR_CHAOSCULT_SENTINEL_ARMOR_RKT
     soldierNames:
       - delete
-      - Names/cultistssentinelrkt.nam
+      - Names/cultists.nam
+    prefix: "CSNTR. "
     rankStrings:
       - STR_CHAOSGUARD_RANK_0
       - STR_CHAOSGUARD_RANK_1
@@ -1836,7 +1856,8 @@ soldiers:
     avatarOffsetY: 28
     soldierNames:
       - delete
-      - Names/cultistsbchaosbeast.nam
+      - Names/cultistsogryn.nam
+    prefix: "CBST. "
     value: 30
     moraleLossWhenKilled: 150
     tags:
@@ -1916,7 +1937,8 @@ soldiers:
     avatarOffsetY: 28
     soldierNames:
       - delete
-      - Names/cultistschaosslime.nam
+      - Names/cultistsogryn.nam
+    prefix: "CSLM. "
     value: 2
     moraleLossWhenKilled: 2
     tags:
@@ -1996,7 +2018,8 @@ soldiers:
     avatarOffsetY: 28
     soldierNames:
       - delete
-      - Names/cultistschaosslime.nam
+      - Names/cultistsogryn.nam
+    prefix: "CSLM. "
     value: 2
     moraleLossWhenKilled: 2
     tags:
@@ -2156,7 +2179,8 @@ soldiers:
       - STR_HELBRUTE_RANK_0
     soldierNames:
       - delete
-      - Names/chaosculthelbrute.nam
+      - Names/cultists.nam
+    prefix: "HLB. "
     deathMale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}, {mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     value: 40
@@ -2240,7 +2264,8 @@ soldiers:
     avatarOffsetY: 40
     soldierNames:
       - delete
-      - Names/cultistmutil.nam
+      - Names/cultistsogryn.nam
+    prefix: "CMUT. "
     value: 80
     moraleLossWhenKilled: 80
 
