@@ -1224,3 +1224,34 @@ units:
         - STR_MGRENADE
         - STR_MGRENADE
         - STR_MGRENADE
+
+  # krieg truck turret unit
+
+  - type: STR_KRIEGTRUCK_SMALL_TURRET
+    race: STR_CHIMERA_TURRET
+    liveAlien: ""
+    stats:
+      tu: 20
+      stamina: 10
+      health: 50
+      bravery: 100
+      reactions: 20
+      firing: 110
+      throwing: 0
+      strength: 245
+      psiStrength: 250
+      psiSkill: 0
+      melee: 0
+      mana: 200 #extra dakka
+    armor: STR_KRIEGTRUCK_SMALL_TURRET_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    deathSound: 23
+    value: 20
+    energyRecovery: 10
+    moraleLossWhenKilled: 25
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_GORGON_HEAVY_STUBBER_UNMANNED
+      - - STR_GORGON_HEAVY_STUBBER_UNMANNED
+      - - STR_GORGON_HEAVY_STUBBER_UNMANNED

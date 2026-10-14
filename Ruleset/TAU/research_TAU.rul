@@ -272,7 +272,7 @@ research:
     unlocks:
       - STR_AIRSTRIKE_REQUISITION
       - STR_VULTURE_IG_REQUISITION  # should allow vulture
-      - STR_STRATIG_DONE  # should allow valkyrie
+      - STR_STRATIG_DONE  # should allow valkyrie. all other instances of STR_STRATIG_DONE are combined with STR_IG_OPERATIONS and therefore this is safe
     spawnedEvent: STR_COOPT_NAVY_PILOTS_EVENT_GV
 
   - name: STR_DALYTH_PATTERN_GV
@@ -436,17 +436,9 @@ research:
       - STR_PSI_LAB
     unlocks:
       - STR_PSI_LAB
-      - STR_ADEPTAS_RECRUITMENT_REQ   # recruit full flavor sisters because novices have rough stats
+      - STR_ADEPTAS_SOB_MOBILIZATION   # recruit full flavor sisters because novices have rough stats
       - STR_GUARD_PRIEST_REQUISITION      # Priests
     spawnedEvent: STR_COOPT_ECCLESIARCHY_EVENT_GV
-
-  # - name: STR_CONTACT_NICASSAR_GV
-  #   points: -250    # unpopular with Tau
-  #   cost: 500
-  #   dependencies:
-  #     - STR_COOPT_ECCLESIARCHY
-  #     - STR_LOSE_250
-  #   spawnedEvent: STR_CONTACT_NICASSAR_EVENT_GV
 
 ### Tau high tier - part 1
 ### High tier starts a little early to reward the player
@@ -580,28 +572,6 @@ research:
       - STR_SUNFORGE_CRISIS_OPERATIONS_GV
       - STR_NOCTILITH_SALVAGE_GV
 
-  # - name: STR_BLESSED_NANOMEDICINES_GV
-  #   points: 250
-  #   cost: 1000
-  #   dependencies:
-  #     - STR_TAU_FRONTIER_PSYCH_GV
-  #     - STR_APOTHECARY_CORRUPTION_RESEARCH
-  #     - STR_CHAPEL_CORRUPTION_RESEARCH
-  #     - STR_COOPT_ECCLESIARCHY_GV
-  #     - STR_GAIN_250
-  #   unlocks:
-  #     - STR_SLAANESH_CORRUPTION_RESEARCH
-  #     - STR_TZEENTCH_CORRUPTION_RESEARCH
-  #     - STR_NURGLE_CORRUPTION_RESEARCH
-  #   spawnedEvent: STR_BLESSED_NANOMEDICINES_EVENT_GV
-
-  # - name: STR_THE_SILVER_TOWER_BACKUP_GV
-  #   points: 0
-  #   cost: 10
-  #   dependencies:
-  #     - STR_THE_SILVER_TOWER_GV
-  #   spawnedEvent: STR_THE_SILVER_TOWER_BACKUP_EVENT_GV
-
 # # Future Imperial Crusade content
 # [NYI] STR_THE_TERRAN_PROBLEM_GV bifurcates into STR_THE_WARPSTORM_PROBLEM_GV and STR_THE_CRUSADE_PROBLEM_GV
 # [NYI] STR_INFILTRATION_CADRE_GV + STR_THREAT_ONE => STR_WITCH_HUNTER_CADRE (FLAMER_FUSION_AND_PULSE, OCCULT METHODS, CONTACT NICASSAR, CO-OPT ECCLESIARCHY, DAMPED ARMOR)
@@ -631,15 +601,6 @@ research:
     dependencies:
       - STR_INFILTRATION_CADRE_GV
       - STR_TAU_XENOTECH
-
-### Unlocks Guard tier beastmen (and Marinvesa colored carapace)
-#  - name: STR_MARINVESA_GV
-#    dependencies:
-#      - STR_BEASTMEN_CULTISTS_GV
-#      - STR_A_SECRET_PACT_GV
-#    unlocks:
-#      - STR_BEASTMEN_GUARDSMEN
-
 
 
 ### Tau weapons visible in ufopaedia
@@ -716,20 +677,3 @@ research:
     spawnedEvent: STR_DELIVER_DEBUG_PACKAGE_EVENT_GV
     getOneFree:
       - STR_STEALTH_SUIT_OPERATIONS_GV
-
-#   # destroy the Watch Fortress and send a fake signal
-#   - name: STR_END_OF_WATCH_GV
-#     cost: 0
-#     points: 0
-#     dependencies:
-#       - STR_GENERALLOCK
-
-# ### Ambush and capture the Imperial occupation force
-#   - name: STR_TAU_BUST  # Ending the Warp # cutcscene c3 STR_ARBITES disables STR_CYDONIA_OR_BUST SO MISSION CAN DIFERE
-#     cost: 600
-#     cutscene: c3
-#     points: 60
-#     dependencies:
-#       - STR_TAU_EMPIRE_GV
-#       - STR_END_OF_WATCH_GV
-#     unlockFinalMission: false

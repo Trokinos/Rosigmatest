@@ -1083,3 +1083,22 @@ items:
     costSell: 0
     transferTime: 10
     listOrder: 6661
+
+  # krieg truck turret item armor and spawner
+
+
+  - type: STR_KRIEGTRUCKTURRET_SPAWNER
+    liveAlien: false
+    recover: true
+    spawnUnit: STR_KRIEGTRUCK_SMALL_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+
+  - type: STR_KRIEGTRUCK_SMALL_TURRET_ARMOR
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6661

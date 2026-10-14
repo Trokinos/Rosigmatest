@@ -1532,7 +1532,7 @@ extraSprites:
     subX: 32
     subY: 40
     width: 256
-    height: 840
+    height: 320
     files:
       0: Resources/Advanced Turrets/VALHALLAN_COMMANDTURRET_V2_BS.png #VALHALLAN_COMMANDTURRET_BS.png
 
@@ -9139,6 +9139,18 @@ extraSprites:
   - typeSingle: BLOODYROSEPLAYER_CODEX.SPK
     fileSingle: Resources/CODEX/bloodyroseintroicon.png
 
+  - typeSingle: BLOODYROSESERMON1_CODEX.SPK
+    fileSingle: Resources/CODEX/BRsermon1.png
+
+  - typeSingle: BLOODYROSESERMON2_CODEX.SPK
+    fileSingle: Resources/CODEX/BRsermon2.png
+
+  - typeSingle: BLOODYROSESERMON3_CODEX.SPK
+    fileSingle: Resources/CODEX/BRsermon3.png
+
+  - typeSingle: BLOODYROSESERMON4_CODEX.SPK
+    fileSingle: Resources/CODEX/BRsermon4.png
+
   # Slaangor Ufopedia
   - typeSingle: SlaangorArmorPedia.SPK
     fileSingle: Resources/FOESPEDIAADEPTAS/SlaangorArmorPedia.png
@@ -12251,6 +12263,14 @@ extraSprites:
     height: 120
     files:
       0: Resources/UnitSprites/chaostruck_hstubber.png
+
+  - type: KRIEGTRUCK_SMALL_TURRET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/UnitSprites/kriegtruck_hstubber.png
 
   - type: IMPULSOR_TURRET.PCK
     subX: 32

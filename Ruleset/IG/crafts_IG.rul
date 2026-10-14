@@ -1428,11 +1428,11 @@ crafts:
           width: 10
           length: 20
           items:
-            STR_CHAOSTRUCKTURRET_SPAWNERCHAOS:  # placeholder
+            STR_KRIEGTRUCKTURRET_SPAWNER:
               - [7, 16, 2]
               - [3, 7, 2]
           fuseTimers:
-            STR_CHAOSTRUCKTURRET_SPAWNERCHAOS: [0, 0]  # placeholder
+            STR_KRIEGTRUCKTURRET_SPAWNER: [0, 0]
     deployment:
       - [6, 15, 1, 0]  # truck1
       - [7, 15, 1, 0]  # truck1

@@ -304,7 +304,7 @@ events:
     background: InquisitionBG.SCR
 
   - name: STR_PSI_LAB_BACKUP_EVENT_GV
-    description: STR_PSI_LAB_BACKUP_CODEX_DESCRIPTION_GV
+    description: STR_COOPT_ECCLESIARCHY_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
 
   - name: STR_TAU_FRONTIER_PSYCH_EVENT_GV

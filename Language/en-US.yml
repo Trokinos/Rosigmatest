@@ -5985,6 +5985,11 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_TRUCKARMOR_KRIEG_STARTER: "Krieg Truck Convoy"
   STR_TRUCKSTARTER_KRIEG_TOKEN: "Truck Convoy Token"
 
+  STR_KRIEGTRUCKTURRET_SPAWNER: "Krieg Truck Turret Spawner"
+  STR_KRIEGTRUCK_SMALL_TURRET: "Truck Turret"
+  STR_KRIEGTRUCK_SMALL_TURRET_ARMOR: "Truck Turret Armor"
+  STR_KRIEGTRUCK_SMALL_TURRET_CORPSE: "Truck Turret Corpse"
+
   STR_GUARDSM_KRIEG: "Guardsman (Krieg)"
   STR_GUARD_KRIEG_GRENADIER: "Grenadier (Krieg)"
   STR_KRIEG_SHOVEL: "Shovel (Krieg)"
@@ -13401,12 +13406,12 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_DAIMPERIALBASE_ASSAULTV3: "Dark Angels Monastery"
 
   STR_IMPERIALBASE_ASSAULT_TITLE: "IMPERIAL BASE ASSAULT"
-  STR_IMPERIALBASE_ASSAULTLOW_BRIEFING: "Our troops have finally gained entrance to an Imperial base. We must eliminate all those Imperium fools and leave their ruins behind, or escape when your troops have returned to the green exit area (click on the 'abort mission' icon to escape)."
-  STR_IMPERIALBASE_ASSAULT_BRIEFING: "Our troops have finally gained entrance to an Imperial base. We must eliminate all those Imperium fools and leave their ruins behind, or escape when your troops have returned to the green exit area (click on the 'abort mission' icon to escape).{NEWLINE}{NEWLINE}{ALT}Destroy 3 of those large Imperial Bases to collect 3 Components to the Great Sacrifice, then use them to Manufacture the Great Sacrifice that the Adept in Research will use."
+  STR_IMPERIALBASE_ASSAULTLOW_BRIEFING: "Our troops have gained entrance to an Imperial base. Eliminate all Imperial resistance to destroy the facility, or flee when your troops have returned to the green exit area (click on the 'abort mission' icon to escape)."
+  STR_IMPERIALBASE_ASSAULT_BRIEFING: "Our troops have gained entrance to a major Imperial base. Eliminate all Imperial resistance to destroy the facility, or flee when your troops have returned to the green exit area (click on the 'abort mission' icon to escape).{NEWLINE}{NEWLINE}{ALT}Destroying a major Imperial base will yield Imperial Warp Data. Chaos forces must collect 3 Imperial Warp Data, then use them to Manufacture the Great Sacrifice for Research by Adepts. The Word Bearers have long since mastered this knowledge, and Xenos forces have not yet dared to research these occult subjects...{ALT}"
   STR_IMPERIAL_BASE_KILLED: "Imperial base has been eliminated"
   STR_IMPERIAL_BASE_DESTROYED: "IMPERIAL BASE DESTROYED"
   STR_IMPERIAL_BASE_NOT_DESTROYED: "Imperial base still operational"
-  STR_IMPERIAL_BASE_DATA: "Component to the Great Sacrifice"
+  STR_IMPERIAL_BASE_DATA: "Imperial Warp Data"
 
   STR_IMPOSTER_BASE: "'Imperial' Base"
 
@@ -14052,6 +14057,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ABSOLVE_ADEPTAS_NOVICE_GV: "Absolve Novice of Xenos Sin"
   STR_ABSOLVE_ADEPTAS_SUPERIOR_GV: "Absolve Superior of Xenos Sin"
   STR_TAU_PROMOTE_NOVICE_GV: "Promote Proven Novice"
+  STR_TAU_PROMOTE_ADEPTAS_GV: "Promote Veteran Sister"
   STR_TAU_PROMOTE_SUPERIOR_GV: "Promote Good Sister Superior"
   STR_TAU_PROMOTE_NOVITIATE_SUPERIOR_GV: "Promote Good Novitiate Superior"
   STR_TAU_PROMOTE_TO_CANONESS_GV: "Promote Good Sister Canoness"
@@ -14144,7 +14150,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_GUN_RUNNERS_GV: "Gun Runners+"
   STR_GUN_RUNNERS_EVENT_GV: "Gun Runners"
-  STR_GUN_RUNNERS_CODEX_DESCRIPTION_GV: "The firearms available on the black market couldn't be more different from the poor and rusty specimens offered by the Guard. Feeds that operate. Actions that work. Cleaned barrels and maintained parts. Sure, they might cost a pretty penny, but they get the job done where the Guard's castoffs don't."
+  STR_GUN_RUNNERS_CODEX_DESCRIPTION_GV: "The firearms available on the black market couldn't be more different from the poor and rusty specimens offered by the Guard. Feeds that operate. Actions that work. Cleaned barrels and maintained parts.{NEWLINE}{NEWLINE}Sure, they might cost a pretty penny, but they get the job done where the Guard's castoffs don't."
 
   # Meltagun and Gun Runners event?
   STR_THE_COLD_TRADE_GV: "The Cold Trade+"
@@ -14178,7 +14184,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_GUEVESA_CLUSTER_GV: "Establish Gue'vesa Cluster+"
   STR_GUEVESA_CLUSTER_EVENT_GV: "Establish Gue'vesa Cluster"
-  STR_GUEVESA_CLUSTER_CODEX_DESCRIPTION_GV: "Imperial authority has collapsed. The government and church are riven by mutual accusations of treason. Nobles become warlords. The evil influence of the warp storm spreads treason like wildfire. But the gue'vesa cultists remain steadfast. More and more pilgrims appear daily. Many of your soldiers have converted. Ha'lea begins to talk regularly of the Greater Good with you."
+  STR_GUEVESA_CLUSTER_CODEX_DESCRIPTION_GV: "Imperial authority has collapsed. The government and church are riven by mutual accusations of treason. Nobles become warlords. The evil influence of the warp storm spreads treason like wildfire. But the gue'vesa cultists remain steadfast.{NEWLINE}{NEWLINE}More and more pilgrims appear daily. Many of your soldiers have converted. Ha'lea begins to talk regularly of the Greater Good with you."
 
   STR_A_SECRET_PACT_GV: "A Secret Pact With Known Alien Forces+"
   STR_A_SECRET_PACT_EVENT_GV: "A Secret Pact With Known Alien Forces"
@@ -14190,7 +14196,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_FIRE_OF_UNKNOWN_ORIGIN_GV: "Signal Tau Merchant Fleet+"
   STR_FIRE_OF_UNKNOWN_ORIGIN_EVENT_GV: "Signal Tau Merchant Fleet"
-  STR_FIRE_OF_UNKNOWN_ORIGIN_CODEX_DESCRIPTION_GV: "COMM.0.376.1.GRILOK.blaze - TSUNAMI-GV - PRIORITY  - MERCHANT FLEET ASSETS - COREWARD FRONTIER{NEWLINE}PELEGA-EMBASSY [class:GUELA-FRONTIER] REPORTS ANOMALOUS DIMENSIONAL STRESS PRESENTING HAZARD TO NAVIGATION.{NEWLINE}IMPERIAL CONTROL FALTERS. RIGHTEOUS GUE'VESA BEG ASSISTANCE.{NEWLINE}CAPABLE MERCHANT FLEET ASSETS [class:TSUNAMI-GV] DIRECTED TO RESPOND.{NEWLINE}EXPECT BEACON TYPE CIV-IMPROV-126E, COALITION PROTOCOL HOTSPRING-3A."
+  STR_FIRE_OF_UNKNOWN_ORIGIN_CODEX_DESCRIPTION_GV: "COMM.0.376.1.GRILOK.blaze - MERCHANT FLEET ASSETS - COREWARD FRONTIER{NEWLINE}PELEGA-EMBASSY [class:GUELA-FRONTIER] REPORTS ANOMALOUS DIMENSIONAL STRESS PRESENTING HAZARD TO NAVIGATION. IMPERIAL CONTROL FALTERS [class:TSUNAMI-GV]. RIGHTEOUS GUE'VESA BEG ASSISTANCE.{NEWLINE}{NEWLINE}CAPABLE MERCHANT FLEET ASSETS DIRECTED TO RESPOND. EXPECT BEACON TYPE CIV-IMPROV-126E, COALITION PROTOCOL HOTSPRING-3A."
   # STR_FIRE_OF_UNKNOWN_ORIGIN_CODEX_DESCRIPTION_GV: "COMM.0.376.1.GRILOK.blaze [CLGRP.PRI:TSUNAMI-GV]{NEWLINE}{NEWLINE}ANOMALOUS CONDITION REPORT - EMERGENCY ALERT{NEWLINE}{NEWLINE}Gravitic sensors in system: PELEGA [GUELA-FRONTIER] report maximum daily spatial stress transient > 3sig in excess of 30 standard days.{NEWLINE}{NEWLINE}PELEGA-CONSUL advises TSUNAMI-GV conditions. Capable merchant assets directed to respond. Expect beacon type CIV-IMPROV-126E, coalition protocol HOTSPRING-3A."
   # STR_FIRE_OF_UNKNOWN_ORIGIN_CODEX_DESCRIPTION_GV: "You and Mai go back and forth through the battle-vid footage in the privacy of her cramped little office.  's cramped little office is lit by a mixture of drone projections and 'recovered' Imperial candles. She's absorbed in cleaning a pulse carbine.  Sergeant Falx  COMM.0.376.1.GRILOK.blaze [CLGRP.PRI:TSUNAMI-GV]{NEWLINE}{NEWLINE}ANOMALOUS CONDITION REPORT - EMERGENCY ALERT{NEWLINE}{NEWLINE}Gravitic sensors in system: PELEGA [GUELA-FRONTIER] report maximum daily spatial stress transient > 3sig in excess of 30 standard days.{NEWLINE}{NEWLINE}PELEGA-CONSUL advises TSUNAMI-GV conditions. Capable merchant assets directed to respond. Expect beacon type CIV-IMPROV-126E, coalition protocol HOTSPRING-3A."
   # STR_FIRE_OF_UNKNOWN_ORIGIN_CODEX_DESCRIPTION_GV: "Ha'lea calls you and Mai into her cramped little office. You take a seat amidst the flickering drone projections and 'recovered' Imperial candles. 'The communication disturbances. '
@@ -14229,7 +14235,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_RALLY_GUARD_GV: "Rally Faithful Guard+"
   STR_RALLY_GUARD_EVENT_GV: "Rally Faithful Guard"
-  STR_RALLY_GUARD_CODEX_DESCRIPTION_GV: "Covered by Tau airpower, the loyal remnants of the Guard break free of their encirclement and retreat towards gue'vesa territory. Newly constructed fortifications and fresh black-market supplies await them. Many perish in the retreat, but the survivors help to stabilize the perilous frontline, and are swiftly reorganized into the Pelegan 1st Volunteers."
+  STR_RALLY_GUARD_CODEX_DESCRIPTION_GV: "Covered by Tau airpower and guided by Tau beacons, the last desperate remnants of the loyal Guard break free of their encirclement and retreat towards gue'vesa territory. Newly constructed fortifications and fresh black-market supplies await them. Many perish in the retreat, but the survivors help to stabilize the perilous frontline, and are swiftly reorganized into the Pelegan 1st Volunteers."
 
   STR_FORM_KILL_TEAMS_GV: "Form Kill Teams+"
   STR_FORM_KILL_TEAMS_EVENT_GV: "Form Kill Teams"
@@ -14241,11 +14247,11 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_COOPT_NAVY_PILOTS_GV: "Co-Opt Navy Pilots+"
   STR_COOPT_NAVY_PILOTS_EVENT_GV: "Co-Opt Navy Pilots"
-  STR_COOPT_NAVY_PILOTS_CODEX_DESCRIPTION_GV: "As safe airbases dwindle, the Imperial Navy pilots that call your base home have gotten easier to deal with. They know that flight operations have been running on black-market Tau fuel and spare parts for weeks. Their transports have fled in the face of the warp storm, and they've got no ticket offworld. So you work out a deal. You keep them flying, but you call the targets. The Guard's growing instability makes it an easy sell."
+  STR_COOPT_NAVY_PILOTS_CODEX_DESCRIPTION_GV: "As safe airbases dwindle, the Imperial Navy pilots that call your base home have gotten easier to deal with. They know that flight operations have been running on black-market Tau fuel and spare parts for weeks. Their transports have fled in the face of the warp storm, and they've got no ticket offworld.{NEWLINE}{NEWLINE}So you work out a deal. You keep them flying, but you call the targets. The Guard's growing instability makes it an easy sell."
 
-  STR_COOPT_ECCLESIARCHY_GV: "Co-opt Ecclesiarchy+"
-  STR_COOPT_ECCLESIARCHY_EVENT_GV: "Co-opt Ecclesiarchy"
-  STR_COOPT_ECCLESIARCHY_CODEX_DESCRIPTION_GV: "Most of the surviving Pelegan bishops have been shepherded into council at gunpoint and encouraged to issue a highly conditional declaration of tolerance for xenos. Dialogus Holly becomes a prolific commentator on the Imperial Creed, pointing out at some length that interference with witch-hunting xenos really does count as harboring the witch."
+  STR_COOPT_ECCLESIARCHY_GV: "Co-Opt Ecclesiarchy+"
+  STR_COOPT_ECCLESIARCHY_EVENT_GV: "Co-Opt Ecclesiarchy"
+  STR_COOPT_ECCLESIARCHY_CODEX_DESCRIPTION_GV: "From a fortified pulpit in one of your bases, Pelega's last surviving bishop has granted official sanction to the numerous illicit chapels constructed by gue'vesa forces.{NEWLINE}{NEWLINE}Armed with slightly updated battle litanies and a thick sheaf of crusade indulgences, you can now train your troops to resist Chaos attacks by faith. You can also construct Adeptas Convents of the Order of Living Water to house recusant Sisters who have accepted your leadership in the crusade against Chaos."
 
   STR_IMPERIAL_CRUSADE_GV: "Excommunicate Traitoris+"
   STR_IMPERIAL_CRUSADE_EVENT_GV: "Excommunicate Traitoris"
@@ -14255,8 +14261,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_THE_SILVER_TOWER_EVENT_GV: "The Silver Tower"
   STR_THE_SILVER_TOWER_CODEX_DESCRIPTION_GV: "We have at last identified the master ritualist drawing Pelega into the warp: a mad Imperial Inquisitor, ensnared by the dark powers she thought to master. Her cabal now gathers for its final rituals in Fortress Ravenna. Once the gothic pride of Pelega's ultra-parishes, Ravenna has mutated into a vast ramifying silvered tower of razor-sharp angles. Roiling energies coruscate from the tower's surface, scarring the land far and wide. Save your world. Storm Fortress Ravenna, cast down the Silver Tower, and kill all within."
 
-  STR_PSI_LAB_BACKUP_EVENT_GV: "Ecclesiarchal Blessing+"
-  STR_PSI_LAB_BACKUP_CODEX_DESCRIPTION_GV: "Pelega's newly installed metropolitan archbishop has granted official sanction to the numerous illicit chapels constructed by gue'vesa forces, reasoning that it is better for the Emperor's light to shine amidst the xenos than for it not to shine at all. Armed with slightly updated battle litanies and a thick sheaf of crusade indulgences, you will now be able to train your troops to resist Chaos attacks by faith."
+  # need to do some generallock surgery to avoid breaking saves in 3.3 so keeping this around
+  STR_PSI_LAB_BACKUP_EVENT_GV: "Co-Opt Ecclesiarchy"
+  STR_PSI_LAB_BACKUP_CODEX_DESCRIPTION_GV: "From a fortified pulpit in one of your bases, Pelega's last surviving bishop has granted official sanction to the numerous illicit chapels constructed by gue'vesa forces.{NEWLINE}{NEWLINE}Armed with slightly updated battle litanies and a thick sheaf of crusade indulgences, you can now train your troops to resist Chaos attacks by faith. You can also construct Adeptas Convents of the Order of Living Water to house recusant Sisters who have accepted your leadership in the crusade against Chaos."
 
   STR_ENGRAVED_ARMORS_GV: "Engraved Shas'vre Armors+"
   STR_ENGRAVED_ARMORS_EVENT_GV: "Engraved Shas'vre Armors"
@@ -15145,6 +15152,15 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_BLOODYROSE_STRATEGY: "Commandery Support"
   STR_CHOSEN_BLOODYROSES: "Bloody Roses Selected"
+
+  STR_BLOODYROSE_HEALERS: "Sermon of Amelda"
+  STR_BLOODYROSE_HEALERS_DESCRIPTION: "{NEWLINE} No other soul saw what transpired, but when Minas body was discovered, it was surrounded by the brutalised corpses of her enemies.{NEWLINE}{NEWLINE} Armoured heads and limbs lay strewn amongst rubble, and gore flowed in rivers through cracks in the flagstones.{NEWLINE}{NEWLINE}{ALT} You can now forge Hospitalier Armors"
+  STR_BLOODYROSE_FAITHFUL: "Sermon of Roxhanna"
+  STR_BLOODYROSE_FAITHFUL_DESCRIPTION: "{NEWLINE} Burn, heretic, and as you burn know that I do not cleanse you out of any desire to save your soul or shrive you of your mortal sins.{NEWLINE} I put you to the torch because I hate you..{NEWLINE} -  Retributor Roxhanna Dasyrov of the Bloody Rose{NEWLINE}{NEWLINE}{ALT} You can now forge Battle Sister Armors"
+  STR_BLOODYROSE_SERAPH: "Sermon of Mari"
+  STR_BLOODYROSE_SERAPH_DESCRIPTION: "When the last of the Slaanesh-worshippers had been eradicated,{NEWLINE} the Canoness Superior of the Bloody Rose, who upon her death would become canonised as Saint Mari,{NEWLINE} penned the Thorn Treatise{NEWLINE} using the blood of those Sisters who had fallen to record the teachings of this war.{NEWLINE}{NEWLINE}{ALT} You can now forge Seraphim Armors"
+  STR_BLOODYROSE_SUPERIOR: "Sermon of Augusta"
+  STR_BLOODYROSE_SUPERIOR_DESCRIPTION: "{NEWLINE} He promised that He would grant us strength to face our enemies, the weapons of all who hate us.{NEWLINE} I do not fear you.{NEWLINE} I carry the Light.{NEWLINE} -  Sister Superior Augusta Santorus of the Bloody Rose{NEWLINE}{NEWLINE}{ALT} You can now forge Sister Superior Armors"
 
   # Bloody Roses Transformations
 
