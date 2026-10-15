@@ -61,3 +61,29 @@ items:
     requires:
       - STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_RESEARCH
     size: 6
+
+
+  #- type: INV_NULL_SENTINEL_BACK_MELTALANCE_ADEPTAS
+  #  bigSprite: 2221
+  #  invWidth: 3
+  #  invHeight: 3
+  #  weight: 0
+  #  fixedWeapon: true
+  #  recover: false
+  #  defaultInventorySlot: STR_BACK_PACK
+  - type: INV_NULL_ELDARHWP_2x1_LL
+    bigSprite: 4943
+    invWidth: 2
+    invHeight: 1
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_LEFT_LEG
+  - type: INV_NULL_ELDARHWP_BELT
+    bigSprite: 4944
+    invWidth: 4
+    invHeight: 3
+    weight: 0
+    fixedWeapon: true
+    recover: false
+    defaultInventorySlot: STR_BELT

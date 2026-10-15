@@ -1826,14 +1826,44 @@ armors:
     storeItem: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30 # Same vision as guardian
-    customArmorPreviewIndex: [258, 259] #TEMP
-    spriteSheet: ELDAR_HWP_SCATTERLASER.SPK #Swap when done
-    spriteInv: ELDARHWPSCATTERLASER #Swap when done
+    customArmorPreviewIndex: [1368, 1369, 1370]
+    spriteSheet: ELDAR_HWP_SHURIKENCANNON.SPK
     corpseBattle:
-      - 7_PLAT1P
-      - 7_PLAT2P
-      - 7_PLAT3P
-      - 7_PLAT4P
+      - STR_ELDAR_HWP_CORPSE1_P
+      - STR_ELDAR_HWP_CORPSE2_P
+      - STR_ELDAR_HWP_CORPSE3_P
+      - STR_ELDAR_HWP_CORPSE4_P
+    corpseGeo: STR_PLAT_CORPSE_P
+    layersDefaultPrefix: "1"
+    layersSpecificPrefix:
+      1: ELDARHWPSHURIKENCANNON
+      2: GUARDIAN_HELMET
+      3: ELDARG_ACCESSORY
+    layersDefinition:
+      M0: ["", "ELDAR", "OPENHELMET_M1", "ACCESSORY11"]
+      M1: ["", "ELDAR", "OPENHELMET_M2", "ACCESSORY1"]
+      M2: ["", "ELDAR", "CLOSEDHELMET2", "ACCESSORY2"]
+      M3: ["", "ELDAR", "CLOSEDHELMET3", "ACCESSORY12"]
+      M4: ["", "ELDAR", "CLOSEDHELMET4", "ACCESSORY3"]
+      M5: ["", "ELDAR", "CLOSEDHELMET5", "ACCESSORY4"]
+      M6: ["", "ELDAR", "CLOSEDHELMET1", "ACCESSORY5"]
+      M7: ["", "ELDAR", "CLOSEDHELMET2", "ACCESSORY6"]
+      M8: ["", "ELDAR", "CLOSEDHELMET3", "ACCESSORY7"]
+      M9: ["", "ELDAR", "CLOSEDHELMET4", "ACCESSORY8"]
+      M10: ["", "ELDAR", "CLOSEDHELMET5", "ACCESSORY9"]
+      M11: ["", "ELDAR", "CLOSEDHELMET1", "ACCESSORY10"]
+      F0: ["", "ELDAR_F", "OPENHELMET_F1", "ACCESSORY11"]
+      F1: ["", "ELDAR_F", "OPENHELMET_F2", "ACCESSORY5"]
+      F2: ["", "ELDAR_F", "CLOSEDHELMET1", "ACCESSORY12"]
+      F3: ["", "ELDAR_F", "CLOSEDHELMET2", "ACCESSORY7"]
+      F4: ["", "ELDAR_F", "CLOSEDHELMET3", "ACCESSORY6"]
+      F5: ["", "ELDAR_F", "CLOSEDHELMET4", "ACCESSORY11"]
+      F6: ["", "ELDAR_F", "CLOSEDHELMET1", "ACCESSORY1"]
+      F7: ["", "ELDAR_F", "CLOSEDHELMET2", "ACCESSORY2"]
+      F8: ["", "ELDAR_F", "CLOSEDHELMET3", "ACCESSORY3"]
+      F9: ["", "ELDAR_F", "CLOSEDHELMET4", "ACCESSORY4"]
+      F10: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY12"]
+      F11: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY8"]
     bleedImmune: true
     fearImmune: false
     recovery:  # Manned turrets recover morale rapidly
@@ -1843,13 +1873,13 @@ armors:
     sideArmor: 120  #
     rearArmor: 60 # Guardian Armor
     underArmor: 60
-    drawingRoutine: 20
+    drawingRoutine: 5
     constantAnimation: false
-    movementType: 1
+    movementType: 0
     moveCost:
       baseNormalPercent: [150, 100] #move cost for ground
-      baseFlyPercent: [200, 100] #move cost for flying
-      flyDownPercent: [25, 0] #cost of flying down
+      #baseFlyPercent: [200, 100] #move cost for flying
+      #flyDownPercent: [25, 0] #cost of flying down
     moveSound: {mod: 40k, index: 845}
     standHeight: 23
     kneelHeight: 16
@@ -1888,10 +1918,10 @@ armors:
     allowsKneeling: false
     builtInWeapons:
       - STR_ELDAR_HWP_SHURIKENCANNON
-      - INV_NULL_3X3
+      #- INV_NULL_3X3
       - INV_NULL_2X1_RL
-      - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_ELDARHWP_2x1_LL
+      - INV_NULL_ELDARHWP_BELT
     tags:
       INFECTION_RESIST: 100  # infection immune
       INTIMIDATION_RESISTANCE: 50  # intimidate immune
@@ -1902,23 +1932,24 @@ armors:
       HAS_EXTENDED_FRONT_SHIELD: 1
     scripts:
       selectUnitSprite: |
-        var int temp;
-        var int walking;
-        var int floating;
-        unit.isWalking walking;
-        unit.isFloating floating;
-        if and eq walking 0 eq floating 1;
-          unit.getId temp;
-          offsetmod temp 11 0 8; # desync animation of different units
-          add temp anim_frame;
-          wavegen_saw temp 4 4 4;
-          add sprite_offset 1;
-          add sprite_offset temp;
-          add sprite_index sprite_offset;
-        else;
-          add sprite_index sprite_offset;
-        end;
-        return sprite_index;
+                        # FLOATING ANIMATION SCRIPT DRAWING ROUTINE 20 (Current sprite DR 5)
+        #var int temp;
+        #var int walking;
+        #var int floating;
+        #unit.isWalking walking;
+        #unit.isFloating floating;
+        #if and eq walking 0 eq floating 1;
+          #unit.getId temp;
+          #offsetmod temp 11 0 8; # desync animation of different units
+          #add temp anim_frame;
+          #wavegen_saw temp 4 4 4;
+          #add sprite_offset 1;
+          #add sprite_offset temp;
+          #add sprite_index sprite_offset;
+        #else;
+          #add sprite_index sprite_offset;
+        #end;
+        #return sprite_index;
 
       hitUnit:          # EXTENDED FRONT SHIELD SCRIPT
         var int unitDirection;
@@ -1949,56 +1980,68 @@ armors:
   - type: STR_ELDAR_HWP_SCATTERLASER_ARMOR_P   # HWP PLAYER
     refNode: *HWP_ARMOR_TEMPLATE
     storeItem: STR_ELDAR_HWP_SCATTERLASER_ARMOR_ITEM
-    customArmorPreviewIndex: [258, 259] #TEMP
+    customArmorPreviewIndex: [1368, 1375, 1376]
     spriteSheet: ELDAR_HWP_SCATTERLASER.SPK #Swap when done
-    spriteInv: ELDARHWPSCATTERLASER #Swap when done
+    layersSpecificPrefix:
+      1: ELDARHWPSCATTERLASER
+      2: GUARDIAN_HELMET
+      3: ELDARG_ACCESSORY
     builtInWeapons:
       - STR_ELDAR_HWP_SCATTERLASER
-      - INV_NULL_3X3
+      #- INV_NULL_3X3
       - INV_NULL_2X1_RL
-      - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_ELDARHWP_2x1_LL
+      - INV_NULL_ELDARHWP_BELT
 
   - type: STR_ELDAR_HWP_AML_ARMOR_P   # HWP PLAYER
     refNode: *HWP_ARMOR_TEMPLATE
     storeItem: STR_ELDAR_HWP_AML_ARMOR_ITEM
-    customArmorPreviewIndex: [258, 259] #TEMP
-    spriteSheet: ELDAR_HWP_SCATTERLASER.SPK #Swap when done
-    spriteInv: ELDARHWPSCATTERLASER #Swap when done
+    customArmorPreviewIndex: [1368, 1371, 1372]
+    spriteSheet: ELDAR_HWP_AML.SPK
+    layersSpecificPrefix:
+      1: ELDARHWPAML
+      2: GUARDIAN_HELMET
+      3: ELDARG_ACCESSORY
     builtInWeapons:
       - STR_HWP_STARSWARM_AMMO
       - STR_HWP_STARSHOT_AMMO
       - STR_ELDAR_HWP_AML
-      - INV_NULL_3X3
+      #- INV_NULL_3X3
       - INV_NULL_2X1_RL
-      - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_ELDARHWP_2x1_LL
+      - INV_NULL_ELDARHWP_BELT
 
   - type: STR_ELDAR_HWP_STARCANNON_ARMOR_P   # HWP PLAYER
     refNode: *HWP_ARMOR_TEMPLATE
     storeItem: STR_ELDAR_HWP_STARCANNON_ARMOR_ITEM
-    customArmorPreviewIndex: [258, 259] #TEMP
-    spriteSheet: ELDAR_HWP_SCATTERLASER.SPK #Swap when done
-    spriteInv: ELDARHWPSCATTERLASER #Swap when done
+    customArmorPreviewIndex: [1368, 1377, 1378]
+    spriteSheet: ELDAR_HWP_STARCANNON.SPK
+    layersSpecificPrefix:
+      1: ELDARHWPSTARCANNON
+      2: GUARDIAN_HELMET
+      3: ELDARG_ACCESSORY
     builtInWeapons:
       - STR_ELDAR_HWP_STARCANNON
-      - INV_NULL_3X3
+      #- INV_NULL_3X3
       - INV_NULL_2X1_RL
-      - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_ELDARHWP_2x1_LL
+      - INV_NULL_ELDARHWP_BELT
 
   - type: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_P   # HWP PLAYER
     refNode: *HWP_ARMOR_TEMPLATE
     storeItem: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_ITEM
-    customArmorPreviewIndex: [258, 259] #TEMP
-    spriteSheet: ELDAR_HWP_SCATTERLASER.SPK #Swap when done
-    spriteInv: ELDARHWPSCATTERLASER #Swap when done
+    customArmorPreviewIndex: [1368, 1373, 1374]
+    spriteSheet: ELDAR_HWP_BRIGHTLANCE.SPK
+    layersSpecificPrefix:
+      1: ELDARHWPBRIGHTLANCE
+      2: GUARDIAN_HELMET
+      3: ELDARG_ACCESSORY
     builtInWeapons:
       - STR_ELDAR_HWP_BRIGHTLANCE
-      - INV_NULL_3X3
+      #- INV_NULL_3X3
       - INV_NULL_2X1_RL
-      - INV_NULL_2X1_LL
-      - INV_NULL_4X2
+      - INV_NULL_ELDARHWP_2x1_LL
+      - INV_NULL_ELDARHWP_BELT
 # ELDAR.OTHER
 
   - type: STR_ELDAR_PLAT_ARMOR_P   # GRAV PLATFORM ITEM#TODO-import remaining values from 40k mod
