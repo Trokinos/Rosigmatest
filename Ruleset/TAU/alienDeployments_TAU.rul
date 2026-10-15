@@ -1460,6 +1460,7 @@ alienDeployments:
     shade: 7
     nextStage: STR_FINAL_ENTRANCE_GUEVESA_GV
     loseCutscene: loseGame
+    abortCutscene: loseGame
     briefing:
       title: STR_FINAL_LANDING_GUEVESA_GV
       desc: STR_FINAL_LANDING_GUEVESA_GV_BRIEFING
@@ -1604,6 +1605,7 @@ alienDeployments:
         itemSets: *emptyItemSets
     winCutscene: winGame
     loseCutscene: loseGame
+    abortCutscene: loseGame
     briefing:
       title: STR_FINAL_ASSAULT_GUEVESA_GV
       desc: STR_FINAL_ASSAULT_GUEVESA_GV_BRIEFING

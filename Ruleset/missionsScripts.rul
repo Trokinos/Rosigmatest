@@ -210,6 +210,22 @@ adhocScripts:
     startDelay: 4320  # 3 days
     randomDelay: 4320  # additional random 0 to 3 days
 
+  - type: VLcultistbase
+    missionWeights:
+      0:
+        STR_VLCULTISTBASE: 100
+    startDelay: 3000
+    randomDelay: 4320  # additional random 0 to 3 days
+    adhocMissionScriptTags: ["gocultbase4VL"]
+
+  - type: VLtraitorguardbase
+    missionWeights:
+      0:
+        STR_VLTRAITORGUARDBASE: 100
+    startDelay: 3000
+    randomDelay: 4320  # additional random 0 to 3 days
+    adhocMissionScriptTags: ["gotraitorguardbase4VL"]
+
 
 
 missionScripts:
@@ -1822,22 +1838,6 @@ missionScripts:
     researchTriggers:
       STR_STEEL_LEGION_STRATEGY: true
       STR_EVEN_HARDER_MISSIONS: false
-
-  - type: VLcultistbase
-    missionWeights:
-      0:
-        STR_VLCULTISTBASE: 100
-    startDelay: 3000
-    randomDelay: 4320  # additional random 0 to 3 days
-    adhocMissionScriptTags: ["gocultbase4VL"]
-
-  - type: VLtraitorguardbase
-    missionWeights:
-      0:
-        STR_VLTRAITORGUARDBASE: 100
-    startDelay: 3000
-    randomDelay: 4320  # additional random 0 to 3 days
-    adhocMissionScriptTags: ["gotraitorguardbase4VL"]
 
   # Rebels
   - &STR_DESERTER_HIDEOUT

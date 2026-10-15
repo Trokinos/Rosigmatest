@@ -859,6 +859,40 @@ ufopaedia:
     requires:
       - STR_BLOODYROSE_STRATEGY
 
+  - id: STR_BLOODYROSE_HEALERS
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLOODYROSESERMON1_CODEX.SPK
+    text: STR_BLOODYROSE_HEALERS_DESCRIPTION
+    requires:
+      - STR_BLOODYROSE_HEALERS
+
+  - id: STR_BLOODYROSE_FAITHFUL
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLOODYROSESERMON2_CODEX.SPK
+    text: STR_BLOODYROSE_FAITHFUL_DESCRIPTION
+    requires:
+      - STR_BLOODYROSE_FAITHFUL
+
+  - id: STR_BLOODYROSE_SERAPH
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLOODYROSESERMON3_CODEX.SPK
+    text: STR_BLOODYROSE_SERAPH_DESCRIPTION
+    requires:
+      - STR_BLOODYROSE_SERAPH
+
+  - id: STR_BLOODYROSE_SUPERIOR
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: BLOODYROSESERMON4_CODEX.SPK
+    text: STR_BLOODYROSE_SUPERIOR_DESCRIPTION
+    requires:
+      - STR_BLOODYROSE_SUPERIOR
+
+
+
 ## #STRATEGY.WB#
   - id: STR_CHOSEN_WORDBEARERS
     type_id: 10
@@ -1391,7 +1425,7 @@ ufopaedia:
     section: STR_STRATEGY
     image_id: STR_TAU_PROPAGANDA_CODEX.SPK
     requires:
-      - STR_GUEVESA_CLUSTER_GV
+      - STR_TAU_PROPAGANDA_GV
     text: STR_TAU_PROPAGANDA_CODEX_DESCRIPTION_GV
 
   - id: STR_BEASTMEN_CULTISTS_EVENT_GV
@@ -1424,7 +1458,7 @@ ufopaedia:
     image_id: STR_TAU_GUEVESA_MARKET_CODEX.SPK
     requires:
       - STR_COOPT_ECCLESIARCHY_GV
-    text: STR_PSI_LAB_BACKUP_CODEX_DESCRIPTION_GV
+    text: STR_COOPT_ECCLESIARCHY_CODEX_DESCRIPTION_GV
 
   - id: STR_TAU_ADEPTAS_ARMOR_GV
     type_id: 15
@@ -12638,6 +12672,14 @@ ufopaedia:
       - STR_CHAOS_ARMORY_EXAM_AUTOCANNON
     text: STR_IW_REAPER_AUTOCANNON_CODEX
 
+  - id: DW_SATAUTOCAN #saturnine armour integrated Autocannon
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: AUTOCANNON.SPK
+    text: DW_SATAUTOCAN_RESEARCH_UFOPEDIA
+    requires:
+      - DW_SATAUTOCAN_RESEARCH
+
   - delete: STR_AUTOCANNON_CLIP
   - id: STR_AUTOCANNON_CLIP
     type_id: 14
@@ -17678,7 +17720,7 @@ ufopaedia:
     requires:
       - STR_TAU_EMPIRE_GV
       - STR_TAU_XENOTECH
-    text: STR_TAUDRONE_GUN_GV_CODEX
+    text: STR_TAUDRONE_GUN_ARMOR_GV_CODEX
 
   - id: STR_TAUDRONE_MARKER_ARMOR_GV
     type_id: 15

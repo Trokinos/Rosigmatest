@@ -201,11 +201,44 @@ items:
       RadiusReduction: 0.0
     hitAnimation: {mod: 40k, index: 144} #PLAT EX
     explosionSpeed: 1
-  - delete: 7_PLAT1P
-  - type: 7_PLAT1P                          #PLAT CORPSE 19960
+  # HWP Armor PLAYER TYPE
+  - type: STR_ELDAR_HWP_CORPSE1_P
     name: STR_PLAT_CORPSE
     armor: 100
     floorSprite: 4947
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 30
+    listOrder: 19960
+  - type: STR_ELDAR_HWP_CORPSE2_P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 4948
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_ELDAR_HWP_CORPSE3_P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 4949
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_ELDAR_HWP_CORPSE4_P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: 4950
+    invWidth: 0
+    invHeight: 0
+    recover: false
+                          #PLAT CORPSE 19960 PLAYER SERVITOR TYPE HWP
+  - delete: 7_PLAT1P
+  - type: 7_PLAT1P
+    name: STR_PLAT_CORPSE
+    armor: 100
+    floorSprite: {mod: 40k, index: 400}
     invWidth: 0
     invHeight: 0
     battleType: 11
@@ -216,7 +249,7 @@ items:
   - type: 7_PLAT2P
     name: STR_PLAT_CORPSE
     armor: 100
-    floorSprite: 4948
+    floorSprite: {mod: 40k, index: 401}
     invWidth: 0
     invHeight: 0
     recover: false
@@ -224,7 +257,7 @@ items:
   - type: 7_PLAT3P
     name: STR_PLAT_CORPSE
     armor: 100
-    floorSprite: 4949
+    floorSprite: {mod: 40k, index: 402}
     invWidth: 0
     invHeight: 0
     recover: false
@@ -232,7 +265,7 @@ items:
   - type: 7_PLAT4P
     name: STR_PLAT_CORPSE
     armor: 100
-    floorSprite: 4950
+    floorSprite: {mod: 40k, index: 403}
     invWidth: 0
     invHeight: 0
     recover: false

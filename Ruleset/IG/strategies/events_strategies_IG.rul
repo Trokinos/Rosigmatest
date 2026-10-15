@@ -134,7 +134,7 @@ events:
       STR_AUTOPISTOL: 2
       STR_AUTOPISTOL_CLIP: 8
 
-  - name: STR_RECRUITS_VALHALLAN_STRATEGY_IG
+  - name: STR_RECRUITS_VALHALLA_STRATEGY_IG
     adhocMissionScriptTags: ["gameStart", "gameStartOrkVL"]
     description: STR_RECRUITS_VALHALLA_STRATEGY_IG_DESCRIPTION
     background: VALHALLANICEWARRIORSBG.SCR

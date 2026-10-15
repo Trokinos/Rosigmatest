@@ -1979,3 +1979,38 @@ armors:
       UNIT_TYPE_NURGLE: 1
       UNIT_IS_DIEHARD: 1
       DIEHARD_TEMP_MODIFIER_INCREMENT: -40
+
+# trying to avoid an issue with some corpse inheritance
+
+  - type: ZOMBIE_ARMOR  # old UFO zombies giving it a nurgle zombie corpse to avoid issue
+    painImmune: true
+    spriteSheet: ZOMBIE.PCK
+    allowInv: false
+    corpseBattle:
+      - STR_NURGLE_ZOMBIE_CORPSE
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    drawingRoutine: 4
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.0
+      - 0.8
+      - 0.7
+      - 0.7
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [3]
+    deathFrames: 18
+    tags:
+      INFECTION_RESIST: 100  # infection immune
+      INTIMIDATION_RESISTANCE: 100
+      UNIT_IS_DIEHARD: 1
+      DIEHARD_TEMP_MODIFIER_INCREMENT: -5
+      UNIT_TYPE_DAEMONIC: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_NURGLE: 1

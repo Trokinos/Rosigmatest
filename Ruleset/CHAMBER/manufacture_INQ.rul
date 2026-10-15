@@ -434,7 +434,7 @@ manufacture:
 # NECRON
 # Cannot build the Warscythe and Staff of Light; these are too complex even for Adepts to 'piece together' with considerable trial and error
 
-  - name: STR_GAUSS_FLAYER
+  - name: STR_GAUSS_FLAYER_PLAYER
     requires:
       - STR_NECRONTECH_RESEARCH
     space: 0
@@ -447,7 +447,7 @@ manufacture:
       STR_GAUSS_FLAYER_REMNANT: 10
       STR_KILLPOINT_TOKEN: 100
 
-  - name: STR_GAUSS_REAPER
+  - name: STR_GAUSS_REAPER_PLAYER
     requires:
       - STR_NECRONTECH_RESEARCH
     space: 0
@@ -460,7 +460,7 @@ manufacture:
       STR_GAUSS_REAPER_REMNANT: 15
       STR_KILLPOINT_TOKEN: 200
 
-  - name: STR_SYNAPTIC_DISINTEGRATOR
+  - name: STR_SYNAPTIC_DISINTEGRATOR_PLAYER
     requires:
       - STR_NECRONTECH_RESEARCH
     space: 0
@@ -473,7 +473,7 @@ manufacture:
       STR_SYNAPTIC_DISINTEGRATOR_REMNANT: 20
       STR_KILLPOINT_TOKEN: 300
 
-  - name: STR_HYPERPHASESWORD
+  - name: STR_HYPERPHASESWORD_PLAYER
     requires:
       - STR_NECRONTECH_RESEARCH
     space: 0
@@ -486,7 +486,7 @@ manufacture:
       STR_HYPERPHASESWORD_REMNANT: 20
       STR_KILLPOINT_TOKEN: 300
 
-  - name: STR_GAUSS_BLASTER
+  - name: STR_GAUSS_BLASTER_PLAYER
     requires:
       - STR_NECRONTECH_RESEARCH
     space: 0
