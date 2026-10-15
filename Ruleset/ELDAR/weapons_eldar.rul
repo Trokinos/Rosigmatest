@@ -46,8 +46,10 @@ items:
     confSnap:
       shots: 3
       name: STR_SHURIKEN_WEAPON_SNAPSHOT
+      followProjectiles: false
     confAuto:
       name: STR_SHURIKEN_WEAPON_AUTOSHOT
+      followProjectiles: false
     experienceTrainingMode: 6
     tuSnap: 21
     tuAuto: 32
@@ -144,7 +146,9 @@ items:
     accuracyAimed: 100
     tuAuto: 0
     confAimed:
+      name: STR_HAWK_WEAPON_AIMEDSHOT
       shots: 3
+      followProjectiles: false
     listOrder: 16103
     tags:
       REACTION_MULTIPLIER: 120 # 20% Avenger Bonus
@@ -180,6 +184,11 @@ items:
     autoRange: 8
     confSnap:
       shots: 3
+      name: STR_SHURIKEN_WEAPON_SNAPSHOT
+      followProjectiles: false
+    confAuto:
+      name: STR_SHURIKEN_WEAPON_AUTOSHOT
+      followProjectiles: false
     autoShots: 9
     experienceTrainingMode: 6
     battleType: 1
@@ -265,6 +274,8 @@ items:
     aimRange: 16
     confAimed:
       shots: 3
+      name: STR_HAWK_WEAPON_AIMEDSHOT
+      followProjectiles: false
     battleType: 1
     twoHanded: false
     invWidth: 2
@@ -443,6 +454,11 @@ items:
     attraction: 1
     confSnap:
       shots: 4
+      name: STR_SHURIKEN_WEAPON_SNAPSHOT
+      followProjectiles: false
+    confAuto:
+      name: STR_SHURIKEN_WEAPON_AUTOSHOT
+      followProjectiles: false
     experienceTrainingMode: 5 # 50% firing exp, may need to go down to 33%
     listOrder: 16930 # either with reaper/heavy weapons or shuriken
 
@@ -508,9 +524,11 @@ items:
     confSnap:
       shots: 3
       name: STR_ELDAR_TEMPEST_LAUNCHER_SNAPSHOT
+      followProjectiles: false
     confAuto:
       shots: 9
       name: STR_ELDAR_TEMPEST_LAUNCHER_AUTOSHOT
+      followProjectiles: false
     #accuracyAimed: 115
     accuracySnap: 60
     accuracyAuto: 10
@@ -860,6 +878,7 @@ items:
     confSnap:
       shots: 2
       name: STR_HAWK_WEAPON_SNAPSHOT
+      followProjectiles: false
     experienceTrainingMode: 5 #50%
 
     flatRate: true
@@ -913,6 +932,7 @@ items:
     confSnap:
       shots: 2
       name: STR_HAWK_WEAPON_SNAPSHOT
+      followProjectiles: false
     experienceTrainingMode: 5 #50%
     tuSnap: 17
     listOrder: 16554
@@ -948,6 +968,7 @@ items:
     confSnap:
       shots: 2
       name: STR_HAWK_WEAPON_SNAPSHOT
+      followProjectiles: false
     tuSnap: 17
     accuracyAimed: 90
     aimRange: 16
@@ -980,6 +1001,7 @@ items:
     confSnap:
       shots: 4
       name: STR_HAWK_WEAPON_SNAPSHOT
+      followProjectiles: false
     experienceTrainingMode: 5
     tuSnap: 30
     blockBothHands: true # technically a heavy weapon
@@ -1096,6 +1118,7 @@ items:
     confSnap:
       shots: 4 # Can be increased if buff needed
       name: STR_HAWK_WEAPON_SNAPSHOT
+      followProjectiles: false
     experienceTrainingMode: 5
     tuSnap: 25 # %TU mounted weapon cannot be wielded with finesse
   # Damage Stats
@@ -1131,8 +1154,10 @@ items:
     confSnap:
       shots: 4
       name: STR_SHURIKEN_WEAPON_SNAPSHOT
+      followProjectiles: false
     confAuto:
       name: STR_SHURIKEN_WEAPON_AUTOSHOT
+      followProjectiles: false
     experienceTrainingMode: 5 # 50% firing exp
   # Damage stats
     power: 50
@@ -1190,9 +1215,11 @@ items:
     confSnap:
       shots: 2
       name: STR_HAWK_WEAPON_SNAPSHOT
+      followProjectiles: false
     confAimed:
       shots: 2
       name: STR_HAWK_WEAPON_AIMEDSHOT
+      followProjectiles: false
     aimRange: 20 # 36" range, accuracy gives extra range
   # Damage stats
     power: 100
