@@ -3,6 +3,7 @@ extended:
 
 items:
 
+
   - type: STR_BOLTER_CANTUS_SLAAN  # Corrupted Cantus bolter. Low recoil, rapid fire, penetrating bolts.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
@@ -46,29 +47,45 @@ items:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-  - type: STR_CANTUS_BOLTER_AMMO_SLAAN  # Penetrator Ammo for the Cantus light bolter
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?""
-    size: 0.1
-    weight: 2
-    bigSprite: 3230
-    floorSprite: {mod: 40k, index: 2} # PLACEHOLDER
-    handSprite: {mod: 40k, index: 464} # PLACEHOLDER
-    hitSound: {mod: 40k, index: 708} # PLACEHOLDER
-    hitAnimation: {mod: 40k, index: 26} # PLACEHOLDER
-    explosionSpeed: 5 # PLACEHOLDER
-    battleType: 2 
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    listOrder: 10287
-    tags:
-      ITEM_AMMO_COLOR: 0 # PLACEHOLDER
-      ITEM_IS_PALETTE_SWAP: 1 # PLACEHOLDER
-      ITEM_GETS_ACCENT_RECOLOR: 1 # PLACEHOLDER
-      ITEM_BASE_COLOR: 14 # PLACEHOLDER
-      ITEM_ACCENT_COLOR: 1 # PLACEHOLDER
-      ITEM_SWAP_BASE_COLOR: 8 # PLACEHOLDER
-      ITEM_SWAP_ACCENT_COLOR: 6 # PLACEHOLDER
+  - type: STR_SLAANESHPATH_BOLTER_NAIAD  # Corrupted Adeptas bolter with a sonic projector.
+    dropoff: 5
+    autoRange: 7  # 4 Auto
+    snapRange: 12  # Double Tap
+    aimRange: 14  # Sonic projector
+
+    accuracyAuto: 70
+    accuracySnap: 80
+    accuracyAimed: 60
+    tuAuto: 40
+    tuSnap: 25
+    tuAimed: 35
+    compatibleAmmo: # PLACEHOLDER
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_CLIP_S
+      - STR_RIFLE_CLIP_MC
+      - STR_RIFLE_CLIP_AP
+      - STR_RIFLE_CLIP_EX
+    ammo: # PLACEHOLDER
+      0:
+        compatibleAmmo: [STR_RIFLE_CLIP_S, STR_RIFLE_CLIP, STR_RIFLE_CLIP_MC, STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX]
+      1:
+        compatibleAmmo: [STR_NAIAD_SONIC_SHRIEKER_CHARGE, STR_NAIAD_SONIC_SCREAMER_CHARGE]
+
+    autoShots: 4
+    confAuto:  # Bolter
+      ammoSlot: 0  # Bolter
+      name: STR_AUTOFIRE
+      arcing: false
+    confSnap:  # Double Shot
+      ammoSlot: 0  # Bolter
+      name: STR_BURST_SNAP_SHOT
+      arcing: false
+      shots: 2  # Double shot snap
+    confAimed:  # Sonic projector
+      ammoSlot: 1  # Sonic
+      name: STR_SONIC_FIRE
+
+
 
   - type: AUX_CHIRURGEON_NEEDLER # LOOK AT ADEPTAS NEURAL WHIP FOR ALT FIRE IMPLEMENTATION
     weight: 0
@@ -80,8 +97,11 @@ items:
     hitSound: {mod: 40k, index: 101}  # stabhit
     hitAnimation: 2190  # purple juice
     handSprite: 3813
+
     power: 30
-    tuSnap: 20
+    costSnap:
+      time: 15
+      mana: 4
     accuracySnap: 55
     accuracyMultiplier:
       firing: 0.75
@@ -89,6 +109,7 @@ items:
     tuAimed: 0
     snapRange: 7
     aimRange: 0
+
     damageBonus: # Not a sniper weapon unlike most other needlers. Gains a bonus from reactions.
       reactions: 0.15
       firing: 0.15     
@@ -106,6 +127,32 @@ items:
       ToMorale: 4.5 # A psychedelic mushroom trip courtesy of hell itself.
       RandomWound: false
       RandomType: 6  # gaussian
+    ##### CLOSE RANGE SEDATIVE NEEDLE #####
+    #meleeAnimation: 0
+    #meleeType: 7
+    #meleeHitSound: {mod: 40k, index: 101}  # stabhit
+    #meleePower: 45
+    #meleeBonus:
+    #  reactions: 0.2
+    #  melee: 0.2
+    #meleeAlter:
+    #  ArmorEffectiveness: 0.3
+    #  toArmorPre: 0.1
+    #  ToTime: 0.5
+    #  ToEnergy: 0.5
+    #  RandomEnergy: true
+    #  ToMorale: 1.5
+    #  ToHealth: 0.1
+    #  RandomHealth: true
+    #  ToStun: 1.2
+    #  ToWound: 0.1
+    #accuracyMelee: 70
+    #meleeMultiplier: # Requires precision to hit a weak spot.
+    #  reactions: 0.6
+    #  melee: 0.3
+    #tuMelee: 15
+    #flatMelee:
+    #  time: true
     clipSize: -1
     battleType: 1
     twoHanded: false
@@ -117,6 +164,50 @@ items:
       INFECTION_DAMAGE_PERCENT: 85  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
     bulletSpeed: 15
+
+  - type: AUX_CHIRURGEON_GAS_LAUNCHER
+    weight: 0
+    dropoff: 5 # close range weapon
+    bigSprite: {mod: 40k, index: 611}
+    floorSprite: {mod: 40k, index: 24}
+    fireSound: {mod: 40k, index: 4}
+    bulletSprite: {mod: 40k, index: 0}
+    explosionHitSound: [2122, 2119]  # daemonettelaughter
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    power: 70
+
+    accuracySnap: 60 
+    accuracyMultiplier:
+      firing: 0.15
+      reactions: 0.25
+    costSnap:
+      time: 30
+      mana: 7
+    snapRange: 12
+    battleType: 1
+    arcingShot: true
+
+    damageType: 8
+    damageAlter:  # DA SPOOKY GAS
+      ToHealth: 0.01
+      ToEnergy: 0.3
+      ToStun: 0.3
+      ToMorale: 3.5  # even with high bravery this will fuck you up
+      ArmorEffectiveness: 0.4
+      RandomType: 2  # TFTD [50% - 150%]
+      FixRadius: 3
+    twoHanded: false
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 2778
+    specialUseEmptyHand: false
+    battleType: 4
+    clipSize: -1
+    listOrder: 15300
+    tags:
+      INFECTION_DAMAGE_PERCENT: 65  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+
 
   - type: AUX_CHIRURGEON_MEDI_KIT      # A modified medicae kit. More killy, with better stimulants.
     medikitTargetImmune: true
