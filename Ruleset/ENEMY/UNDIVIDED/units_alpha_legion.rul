@@ -728,7 +728,7 @@ units:
       psiSkill: 0
       melee: 90
     armor: STR_ALPHA_ARMOR_DAEMONETTE
-    aggroSound: 2125  # naughty
+    aggroSound: [2125, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1966]
     intelligence: 4
     aggression: 8
     avoidsFire: false
@@ -765,7 +765,7 @@ units:
       psiSkill: 0
       melee: 90
     armor: STR_ALPHA_ARMOR_DAEMONETTE_RITUALIST
-    aggroSound: 2125  # naughty
+    aggroSound: [2125, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1966]
     intelligence: 4
     aggression: 8
     avoidsFire: false
