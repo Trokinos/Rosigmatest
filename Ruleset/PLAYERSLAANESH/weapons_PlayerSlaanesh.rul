@@ -82,17 +82,22 @@ items:
     handSprite: 3813
     power: 30
     tuSnap: 20
+    accuracySnap: 55
+    accuracyMultiplier:
+      firing: 0.75
+      reactions: 0.25
     tuAimed: 0
     snapRange: 7
     aimRange: 0
     damageBonus: # Not a sniper weapon unlike most other needlers. Gains a bonus from reactions.
-      reactions: 0.1     
+      reactions: 0.15
+      firing: 0.15     
     damageType: 8  # acid
     damageAlter:  # Hallucinogenic, warp-tainted chems.
       ArmorEffectiveness: 0.5  # low power but high penetration
       ToArmorPre: 0.05  # precision weapon; minimal armor damage
       ToArmor: 0.05  # precision weapon; minimal armor damage
-      ToHealth: 0.2
+      ToHealth: 0.25
       ToMana: 0.9
       ToEnergy: 0.75  # Hallucinogenic cocktail
       ToStun: 1.5  # Hallucinogenic cocktail
