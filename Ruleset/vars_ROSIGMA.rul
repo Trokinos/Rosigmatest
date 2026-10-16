@@ -32,6 +32,7 @@ timePersonnel: 72
 maxLookVariant: 10  # max numbers of faces to display avatar changer # 2 is 12 faces # 10 is 44 faces # 14 is 60 faces # 19 is 80 faces # need to be at least 10 for the 42 BT faces
 enableNewResearchSorting: true
 flagByKills: [9, 19, 29, 39, 49, 59, 69, 79, 89, 99, 109, 119, 129, 139, 149, 159, 169, 179, 189, 199]
+displayCustomCategories: 2 # Displays Custom Categories to Basescape Shop
 
 # Interception
 selectBaseSound: {mod: 40k, index: 57}   # indices into GEO.CAT

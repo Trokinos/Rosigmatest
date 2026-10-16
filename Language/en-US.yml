@@ -14293,6 +14293,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   # STR_BLESSED_NANOMEDICINES_CODEX_DESCRIPTION_GV: "PLACEHOLDER."
 
   TRADE: "TRADE"
+  STR_CAT_TRADE: "Trade Equipment"
+  STR_CAT_EQUIPMENT: "Auxiliary Equipment"
 
   STR_TAU_PULSE_RIFLE_EXPORT_GUEVESA: "Tau Guevesa Pulse Rifle"
   STR_TAU_PULSE_MAG_EXPORT_GUEVESA: "Tau Guevesa Pulse Charge"

@@ -242,7 +242,7 @@ items:
       ITEM_RECOIL: 40
 
   - type: STR_AUTOSHOTGUN  #                               10600
-    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_TRADE]
     size: 0.2
     costBuy: 40000  # 4x standard shotgun. Probably still too high.
     requiresBuyBaseFunc: [TRADE]  # Market exclusive but available from the moment you get the market
@@ -279,7 +279,7 @@ items:
       ITEM_RECOIL: 40
 
   - type: STR_SHOTGUN_DRUM
-    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_TRADE]
     shotgunBehavior: 1   # *** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
     size: 0.1
@@ -334,7 +334,7 @@ items:
     listOrder: 12650  # don't know if this works
 
   - type: STR_LASGUN_ESCHER
-    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     size: 0.2
     weight: 7  # lightish weight
     requiresBuyBaseFunc: [TRADE]
@@ -2633,6 +2633,7 @@ items:
 
   - type: STR_LASGUN_ACCATRAN
     requiresBuyBaseFunc: [TRADE]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     costBuy: 50000  # made cheaper for balance
     listOrder: 19101
     armor: 200  # to avoid item pile destruction
@@ -2653,12 +2654,14 @@ items:
 
   - type: STR_LASGUN_VOSS  # no bayonet
     requiresBuyBaseFunc: [TRADE]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     costBuy: 7500
     armor: 200  # to avoid item pile destruction
     listOrder: 19102
 
   - type: STR_LASGUN_VOSTROYA
     requiresBuyBaseFunc: [TRADE]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     costBuy: 150000
     listOrder: 19103
     compatibleAmmo:
@@ -2691,6 +2694,7 @@ items:
 
   - type: STR_LASGUN_LUCIUS #for non-Krieg Strats
     requiresBuyBaseFunc: [TRADE]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     requiresBuy:
       - STR_NOT_KRIEG_STRATEGY #added, Krieg gets T1 version instead without TRADE
     bigSprite: 1104
@@ -2831,7 +2835,7 @@ items:
         return;
 
   - type: STR_SHOTLAS
-    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     size: 0.3
     requiresBuyBaseFunc: [TRADE]
     requiresBuy:
@@ -2921,30 +2925,35 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 14
 
   - type: STR_PISTOLB
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     armor: 200  # to avoid item pile destruction
     costBuy: 150000
     listOrder: 10110
 
   - type: STR_PISTOLS
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 150000
     armor: 200  # to avoid item pile destruction
     listOrder: 10120
 
   - type: STR_PISTOLH
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 150000
     armor: 200  # to avoid item pile destruction
     listOrder: 10130
 
   - type: STR_PISTOL_CLIP_AP  # Kraken Penetrator
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 7000
     armor: 200  # to avoid item pile destruction
     listOrder: 10220
 
   - type: STR_PISTOL_CLIP_EX  # Metal Storm Frag
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 7000
     armor: 200  # to avoid item pile destruction
@@ -2957,12 +2966,14 @@ items:
     listOrder: 10330
 
   - type: STR_RIFLE_CLIP_AP  # Kraken Penetrator
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 15000
     armor: 200  # to avoid item pile destruction
     listOrder: 10420
 
   - type: STR_RIFLE_CLIP_EX  # Metal Storm Frag
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 15000
     armor: 200  # to avoid item pile destruction
@@ -4575,7 +4586,7 @@ items:
     accuracyAimed: 55  # +5
 
   - type: STR_BOLTER_LIGHT_ULTRA  # early access light bolter with market place
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuy:
       - STR_LIGHT_BOLTERS
       - STR_IMPERIAL_WEAPONS
@@ -4610,7 +4621,7 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
   - type: STR_BOLTPISTOL_LIGHT_ULTRA
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuy:
       - STR_LIGHT_BOLTERS
     size: 0.2
@@ -4893,7 +4904,7 @@ items:
 
   - &STR_LIGHT_BOLTER_CLIP_AP
     type: STR_LIGHT_BOLTER_AMMO_PEN
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuy:
       - STR_LIGHT_BOLTERS
     size: 0.1
@@ -6325,6 +6336,7 @@ items:
       ToStun: 0.5  # impact shock
 
   - type: STR_RIPPER_GUN_CLIP_AP
+    categories: [STR_CAT_SHOTGUN]
     costBuy: 6000
     costSell: 1000
     requiresBuy:
@@ -6359,6 +6371,7 @@ items:
     listOrder: 10790
 
   - type: STR_RIPPER_GUN_CLIP_INC
+    categories: [STR_CAT_SHOTGUN]
     costBuy: 3000
     costSell: 800
     requiresBuy:
@@ -6573,6 +6586,7 @@ items:
     medikitTargetImmune: true
 
   - type: STR_STIMM_AUTOINJECTOR
+    categories: [STR_CAT_EQUIPMENT]
     costBuy: 1000
     costSell: 200
     bigSprite: 1102
@@ -6616,6 +6630,7 @@ items:
       ITEM_IS_NOT_MEDIKIT: 1
 
   - type: STR_TRAUMA_PACK
+    categories: [STR_CAT_EQUIPMENT]
     costBuy: 5000
     costSell: 1000
     bigSprite: 1103
@@ -7816,7 +7831,7 @@ items:
       spendPerShot: 2
 
   - type: STR_SATCHEL_CHARGE_HE  # remote det charge
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    categories: [STR_CAT_GRENADES, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     size: 0.2
     costBuy: 20000
@@ -7851,7 +7866,7 @@ items:
       ITEM_IS_REMOTE_DETONATED: 1
 
   - type: STR_SATCHEL_CHARGE_KRAK  # remote det charge
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    categories: [STR_CAT_GRENADES, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     size: 0.2
     costBuy: 5000
@@ -7886,7 +7901,7 @@ items:
       ITEM_IS_REMOTE_DETONATED: 1
 
   - type: STR_SATCHEL_DETONATOR
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    categories: [STR_CAT_GRENADES, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 500
     costSell: 100
