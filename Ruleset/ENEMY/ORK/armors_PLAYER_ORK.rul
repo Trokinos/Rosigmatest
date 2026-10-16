@@ -1369,6 +1369,16 @@ armors:
     bleedImmune: false
     drawingRoutine: 4
     constantAnimation: false
+    deathMale: [1970]
+    deathFemale: [1970]
+    selectUnitMale: [1971, 1972]
+    selectUnitFemale: [1971, 1972]
+    startMovingMale: [1975, 1976]
+    startMovingFemale: [1975, 1976]
+    selectWeaponMale: [1973, 1974]
+    selectWeaponFemale: [1973, 1974]
+    annoyedMale: [1968, 1969]
+    annoyedFemale: [1968, 1969]
     corpseBattle:
       - STR_PLAYER_SQUIG_CORPSE # Needs to be finished
     builtInWeapons:
@@ -1422,6 +1432,16 @@ armors:
     bleedImmune: false
     drawingRoutine: 4
     constantAnimation: false
+    deathMale: [1970]
+    deathFemale: [1970]
+    selectUnitMale: [1971, 1972]
+    selectUnitFemale: [1971, 1972]
+    startMovingMale: [1975, 1976]
+    startMovingFemale: [1975, 1976]
+    selectWeaponMale: [1973, 1974]
+    selectWeaponFemale: [1973, 1974]
+    annoyedMale: [1968, 1969]
+    annoyedFemale: [1968, 1969]
     corpseBattle: # TODO: CONFIGURE AS BOMB SQUIG
       - STR_PLAYER_SQUIG_CORPSE # Needs to be finished
     stats:
