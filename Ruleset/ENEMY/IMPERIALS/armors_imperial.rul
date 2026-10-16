@@ -84,7 +84,7 @@ armors:
     allowInv: false
     spriteSheet: SENTINEL_MISSILE.PCK
     spriteInv: IGOPFOR_OPEN_SENTINEL_MISSILES_INV.SPK
-    storeItem: STR_GUARD_ARMORS_SENTINEL_MISSILE
+    # storeItem: STR_GUARD_ARMORS_SENTINEL_MISSILE  # commented out because it was making it available for every player soldiers
     corpseGeo: STR_IGOPFOR_SENTINEL_LIGHT_CORPSE
     corpseBattle:
       - 5_SENT1_AI

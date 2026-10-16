@@ -1149,7 +1149,7 @@ armors:
     spriteSheet: WORDBEARERhelbrutebattle.PCK
     instantWoundRecovery: true
     allowInv: true
-    storeItem: STR_WORDBEARER_HELBRUTE_ARMOR
+    #storeItem: STR_WORDBEARER_HELBRUTE_ARMOR  # commented out because it was making it available for every player soldiers
     corpseGeo: STR_WBDREAD_CORPSE
     corpseBattle:
       - WBDREAD_CORPSE1
