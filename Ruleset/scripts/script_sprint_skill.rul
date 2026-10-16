@@ -10,7 +10,6 @@ extended:
       SKILL_SPRINT_USES: int #how many uses of sprint you have
     BattleUnit:
       SKILL_SPRINT_COOLDOWN_TURNS: int # how many turns of cooldown it must wait to sprint again
-      SKILL_SPRINT_NOT_REUSABLE: int #
       SKILL_SPRINT_USES_SPENT: int #how many uses of sprint you have left
 
   scripts:

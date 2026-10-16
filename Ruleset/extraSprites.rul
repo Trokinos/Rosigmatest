@@ -6413,13 +6413,41 @@ extraSprites:
     files:
       0: Resources/Eldar/units/warlock/eldar_warlock_unitsprite.png
 
+  - type: ELDAR_HWP_SHURIKENCANNON.SPK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Eldar/units/eldar_heavy_weapon_platform/split_eldar_hwp_shurikencannon_unitsprite.png
+  - type: ELDAR_HWP_AML.SPK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Eldar/units/eldar_heavy_weapon_platform/split_eldar_hwp_aml_unitsprite.png
+  - type: ELDAR_HWP_BRIGHTLANCE.SPK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Eldar/units/eldar_heavy_weapon_platform/split_eldar_hwp_brightlance_unitsprite.png
   - type: ELDAR_HWP_SCATTERLASER.SPK
     subX: 32
     subY: 40
     width: 256
     height: 840
     files:
-      0: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_scatterlaser_unitsprite.png
+      0: Resources/Eldar/units/eldar_heavy_weapon_platform/split_eldar_hwp_scatterlaser_unitsprite.png
+  - type: ELDAR_HWP_STARCANNON.SPK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Eldar/units/eldar_heavy_weapon_platform/split_eldar_hwp_starcannon_unitsprite.png
 
   # ELDAR paperdoll images
 
@@ -7430,8 +7458,30 @@ extraSprites:
   # ELDAR GUARDIAN HWP
   # SCATTERLASER HWP
 
-  - typeSingle: ELDARHWPSCATTERLASER
-    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_scatterlaser_INV.png
+  - typeSingle: ELDARHWPSHURIKENCANNON__1__ELDAR
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_shurikencannon_body.png
+  - typeSingle: ELDARHWPSHURIKENCANNON__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_shurikencannon_bodyf.png
+
+  - typeSingle: ELDARHWPAML__1__ELDAR
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_aml_body.png
+  - typeSingle: ELDARHWPAML__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_aml_bodyf.png
+
+  - typeSingle: ELDARHWPBRIGHTLANCE__1__ELDAR
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_brightlance_body.png
+  - typeSingle: ELDARHWPBRIGHTLANCE__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_brightlance_bodyf.png
+
+  - typeSingle: ELDARHWPSCATTERLASER__1__ELDAR
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_scatterlaser_body.png
+  - typeSingle: ELDARHWPSCATTERLASER__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_scatterlaser_bodyf.png
+
+  - typeSingle: ELDARHWPSTARCANNON__1__ELDAR
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_starcannon_body.png
+  - typeSingle: ELDARHWPSTARCANNON__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_starcannon_bodyf.png
 
   # PLAYER CHAOS
   - typeSingle: ALPHAMARINE_INV.SPK

@@ -18,8 +18,7 @@ research:
     points: 0
     cost: 5
     dependencies:
-      #- STR_ARBITES
-      - STR_GENERALLOCK # Remove after patch 3.3 release
+      - STR_ARBITES
     reenables:
       - STR_CHAPTER_PURITY    # not all who wander are lost
     lookup: STR_CHOSEN_ELDAR_STRATEGY

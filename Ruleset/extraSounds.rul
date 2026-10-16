@@ -313,14 +313,39 @@ extraSounds:
       1945: Resources/Adeptas/battlesprite/ExtraSoundsAdeptas/AdeptasPilot/ANOYSituationalAwareness.ogg
       1946: Resources/Adeptas/battlesprite/ExtraSoundsAdeptas/AdeptasPilot/ANOYStayAliveUntilEvacuated.ogg
 
+#Daemonette additional aggro sounds
+#All lines done by Piotrabonde voice actor
+#Lesser Daemonette
+      1947: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Lesser/1hurt.wav
+      1948: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Lesser/2comeout.wav
+      1949: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Lesser/3naughty.wav
+      1950: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Lesser/4best.wav
+      1951: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Lesser/5play.wav
+      1952: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Lesser/6fun.wav
+      1953: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Lesser/7bad.wav
+#Regular Daemonette
+      1954: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Regular/1know.wav
+      1955: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Regular/2givein.wav
+      1956: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Regular/3closer.wav
+      1957: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Regular/4fear.wav
+      1958: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Regular/5pretend.wav
+      1959: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Regular/6taste.wav
+      1960: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Regular/BONUSlaughter.wav
+#Dire Daemonette
+      1961: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Dire/1kneel.wav
+      1962: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Dire/2improvisation.wav
+      1963: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Dire/3doomed.wav
+      1964: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Dire/4better.wav
+      1965: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Dire/5scream.wav
+# Common to different Daemonettes
+      1966: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Common_naughty/Naughty_piotrabonde2.wav
+      1967: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Common_naughty/Naughty_piotrabonde3.wav
 
 # CallidusSuitSoundEffects
 # Selection
 # StarTMoving
 # SelectWeapon
 # Annoyedfemale
-
-
 
       2000: Resources/Sounds/Whip.wav
       2001: Resources/Sounds/diabloa1.wav
@@ -3060,7 +3085,7 @@ extraSounds:
 
 # Remaining Indexes: (Thanks Theron!)
 
-# 1947 - 1999
+# 1968 - 1999
 # 2173 - 2199
 # 2445 - 2499
 # 2557 - 2599
