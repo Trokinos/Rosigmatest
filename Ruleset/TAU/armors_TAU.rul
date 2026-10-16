@@ -2218,8 +2218,8 @@ armors:
     visibilityAtDark: 20
     alwaysVisible: true
     personalLight: 0
-    camouflageAtDark: -999
-    camouflageAtDay: -999
+    camouflageAtDark: 15
+    camouflageAtDay: 25
     psiCamouflage: -999
     spriteSheet: GEVCHIMERAHULLGUN.PCK
     allowInv: false
@@ -2453,8 +2453,8 @@ armors:
     antiCamouflageAtDay: 20
     antiCamouflageAtDark: 10
     heatVision: 50
-    camouflageAtDark: -999
-    camouflageAtDay: -999
+    camouflageAtDark: 15
+    camouflageAtDay: 25
     psiCamouflage: -999
     spriteSheet: DEVILFISH_TURRET.PCK
     allowInv: false
@@ -2538,8 +2538,8 @@ armors:
       - 0.0  # IMPACT
       - 1.2  # MELTA
     loftempsSet: [4]
-    camouflageAtDark: -999
-    camouflageAtDay: -999
+    camouflageAtDark: 15
+    camouflageAtDay: 25
     psiCamouflage: -999
     movementType: 0
     drawingRoutine: 4
