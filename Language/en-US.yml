@@ -5838,7 +5838,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CHIMERA_VL_HULL_ARMOR: "Front Hull"
   STR_CHIMERA_VL_HULL_BOLTER_ARMOR: "Hull Bolter"
 
-  STR_GORGONVL: "GORGON"
+  STR_GORGONVL: "GORGON VL"
   STR_GORGONVL_HEAVY_FLAMER_FRONT_LEFT: "Heavy Flamer Mount"
   STR_GORGONVL_HEAVY_FLAMER_FRONT_LEFT_ARMOR: "Heavy Flamer Mount"
   STR_GORGONVL_HEAVY_FLAMER_BACK_LEFT: "Heavy Flamer Mount"
@@ -5953,7 +5953,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CHIMERASL_HULL_SPAWNER: "Empty Chimera Hull Spawner"
   STR_LEMANSL_HULL_SPAWNER: "Empty Leman Hull Spawner"
 
-  STR_GORGONSL: "GORGON"
+  STR_GORGONSL: "GORGON SL"
   STR_GORGONSL_HEAVY_FLAMER_FRONT_LEFT: "Heavy Flamer Mount"
   STR_GORGONSL_HEAVY_FLAMER_FRONT_LEFT_ARMOR: "Heavy Flamer Mount"
   STR_GORGONSL_HEAVY_FLAMER_BACK_LEFT: "Heavy Flamer Mount"

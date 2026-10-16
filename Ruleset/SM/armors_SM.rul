@@ -370,11 +370,11 @@ armors:
       tu: 10
       stamina: 30
       health: 30
-      bravery: 0  # always multiples of 10
-      reactions: 0
+      bravery: 10  # always multiples of 10
+      reactions: 1
       firing: -10
-      throwing: 0
-      strength: 0
+      throwing: 1
+      strength: 1
       psiStrength: -10
       psiSkill: -10
       melee: 20
@@ -391,13 +391,13 @@ armors:
   - type: STR_DEV_ARMOR_UC
     refNode: *STR_MARINE_ARMOR
     stats:
-      tu: 0
+      tu: 1
       stamina: 20
-      health: 0
-      bravery: 0  # always multiples of 10
+      health: 1
+      bravery: 10  # always multiples of 10
       reactions: 5
       firing: 25
-      throwing: 0
+      throwing: 1
       strength: 50
       psiStrength: 0
       psiSkill: 0
@@ -422,7 +422,7 @@ armors:
       bravery: 20  # always multiples of 10
       reactions: 10
       firing: 10
-      throwing: 0
+      throwing: 1
       strength: 10
       psiStrength: 0
       psiSkill: 0
@@ -441,7 +441,7 @@ armors:
       bravery: 10  # always multiples of 10
       reactions: 30
       firing: 10
-      throwing: 0
+      throwing: 1
       strength: 20
       psiStrength: 0
       psiSkill: 0
@@ -463,9 +463,9 @@ armors:
       stamina: 30
       health: 20
       bravery: 20  # always multiples of 10
-      reactions: 0
+      reactions: 1
       firing: 20
-      throwing: 0
+      throwing: 1
       strength: 10
       psiStrength: 0
       psiSkill: 0
@@ -490,10 +490,10 @@ armors:
       stamina: 20
       health: 30
       bravery: 20  # always multiples of 10
-      reactions: 0
-      firing: 0
+      reactions: 1
+      firing: 1
       throwing: -10
-      strength: 0
+      strength: 1
       psiStrength: 0
       psiSkill: 0
       melee: 20
@@ -513,10 +513,10 @@ armors:
       stamina: 20
       health: 10
       bravery: 10  # always multiples of 10
-      reactions: 0
-      firing: 0
+      reactions: 1
+      firing: 1
       throwing: -10
-      strength: 0
+      strength: 1
       psiStrength: 0
       psiSkill: 0
       melee: 20
@@ -554,7 +554,7 @@ armors:
       tu: -10
       stamina: 10
       health: 20
-      bravery: 0  # always multiples of 10
+      bravery: 10  # always multiples of 10
       reactions: -10
       firing: -10
       throwing: -10
@@ -642,7 +642,7 @@ armors:
       bravery: 30  # always multiples of 10
       reactions: 20
       firing: 10
-      throwing: 0
+      throwing: 1
       strength: 50
       psiStrength: 0
       psiSkill: 0
@@ -673,7 +673,7 @@ armors:
       tu: 10
       stamina: 20
       firing: 10
-      health: 0
+      health: 1
       bravery: 10  # always multiples of 10
       reactions: -10
       throwing: 30
@@ -781,7 +781,7 @@ armors:
     underArmor: 80
     stats:
       tu: 30
-      stamina: 0
+      stamina: 1
       # firing: 0
       health: 10
       bravery: 20  # always multiples of 10
@@ -831,7 +831,7 @@ armors:
       tu: 10
       stamina: 20
       firing: 10
-      health: 0
+      health: 1
       bravery: 10  # always multiples of 10
       reactions: -10
       throwing: 30
@@ -852,10 +852,10 @@ armors:
       tu: 20
       stamina: 30
       firing: 20
-      health: 0
+      health: 1
       bravery: 10  # always multiples of 10
       reactions: 10
-      throwing: 0
+      throwing: 1
       strength: 100
       psiStrength: 0
       psiSkill: 0
@@ -872,7 +872,7 @@ armors:
     stats:
       tu: 20
       stamina: 30
-      health: 0
+      health: 1
       bravery: 20  # always multiples of 10
       reactions: 10
       firing: 5
@@ -1450,7 +1450,7 @@ armors:
       health: 5
       bravery: 10
       reactions: 10
-      firing: 0
+      firing: 1
       throwing: 5
       strength: 20
       psiStrength: 0
@@ -1610,7 +1610,7 @@ armors:
     underArmor: 80
     stats:
       tu: 30
-      stamina: 0
+      stamina: 1
       # firing: 0
       health: 10
       bravery: 20  # always multiples of 10
@@ -1687,8 +1687,8 @@ armors:
       health: 10
       bravery: 10  # always multiples of 10
       reactions: 30
-      firing: 0
-      throwing: 0
+      firing: 1
+      throwing: 1
       strength: 20
       psiStrength: 0
       psiSkill: 0
@@ -1759,13 +1759,13 @@ armors:
     corpseBattle:
       - STR_SPACEWOLVES_LONGFANG_CORPSE
     stats:
-      tu: 0
+      tu: 10
       stamina: 20
-      health: 0
-      bravery: 0  # always multiples of 10
+      health: 1
+      bravery: 10  # always multiples of 10
       reactions: 5
       firing: 25
-      throwing: 0
+      throwing: 1
       strength: 50
       psiStrength: 0
       psiSkill: 0
@@ -1840,10 +1840,10 @@ armors:
       stamina: 20
       health: 30
       bravery: 20  # always multiples of 10
-      reactions: 0
+      reactions: 1
       firing: -10
       throwing: -10
-      strength: 0
+      strength: 1
       psiStrength: 10
       psiSkill: 0
       melee: 20
@@ -1924,10 +1924,10 @@ armors:
       stamina: 20
       health: 30
       bravery: 20  # always multiples of 10
-      reactions: 0
-      firing: 0
+      reactions: 1
+      firing: 1
       throwing: -10
-      strength: 0
+      strength: 1
       psiStrength: 5
       psiSkill: 0
       melee: 10
@@ -2085,7 +2085,7 @@ armors:
       bravery: 10  # always multiples of 10
       reactions: 20
       firing: 20
-      throwing: 0
+      throwing: 1
       strength: 30
       psiStrength: 5
       psiSkill: 0
@@ -2164,7 +2164,7 @@ armors:
       tu: 10
       stamina: 20
       firing: 10
-      health: 0
+      health: 1
       bravery: 10  # always multiples of 10
       reactions: -10
       throwing: 30
@@ -2252,7 +2252,7 @@ armors:
       bravery: 10  # always multiples of 10
       reactions: 20
       firing: 20
-      throwing: 0
+      throwing: 1
       strength: 30
       psiStrength: 20
       psiSkill: 0
@@ -2308,7 +2308,7 @@ armors:
       - STR_SPACEWOLVES_VETERAN_SOLDIER  # i suppose those guys are the terminator level
     drawingRoutine: 0
     stats:
-      tu: 0 #-10 vs modern Terminator armor mobility
+      tu: 1 #-10 vs modern Terminator armor mobility
       health: 30
       stamina: 45
       strength: 45
@@ -2368,8 +2368,8 @@ armors:
       health: 30
       bravery: 20  # always multiples of 10
       reactions: 10
-      firing: 0
-      throwing: 0
+      firing: 1
+      throwing: 1
       strength: 30
       psiStrength: 40 #Librarian
       psiSkill: 10 #Librarian
@@ -2542,7 +2542,7 @@ armors:
       health: 5
       bravery: 10  # always multiples of 10
       reactions: 10
-      firing: 0 #wulfen
+      firing: 1 #wulfen
       throwing: 5
       strength: 20
       psiStrength: 0

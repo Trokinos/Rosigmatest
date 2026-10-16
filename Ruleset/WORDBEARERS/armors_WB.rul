@@ -152,7 +152,7 @@ armors:
     drawingRoutine: 0
     builtInWeapons: []
     stats:
-      tu: 0
+      tu: 1
       stamina: 20
       health: 10
       bravery: 10  # always multiples of 10
@@ -160,9 +160,9 @@ armors:
       firing: 30
       throwing: 10
       strength: 20
-      psiStrength: 0
-      psiSkill: 0
-      melee: 0
+      psiStrength: 1
+      psiSkill: 1
+      melee: 1
     frontArmor: 125
     sideArmor: 110
     rearArmor: 80
@@ -192,11 +192,11 @@ armors:
       health: 10
       bravery: 10  # always multiples of 10
       reactions: 20
-      firing: 0
-      throwing: 0
-      strength: 0
-      psiStrength: 0
-      psiSkill: 0
+      firing: 1
+      throwing: 1
+      strength: 1
+      psiStrength: 1
+      psiSkill: 1
       melee: 25
     frontArmor: 115
     sideArmor: 95
@@ -245,8 +245,8 @@ armors:
       firing: 25
       throwing: 10
       strength: 10
-      psiStrength: 0
-      psiSkill: 0
+      psiStrength: 1
+      psiSkill: 1
       melee: 20
     frontArmor: 125
     sideArmor: 125
@@ -290,16 +290,16 @@ armors:
     corpseGeo: STR_WBFALLEN_CORPSE
     storeItem: STR_WBAPOTHECARY_ARMORPLAYER
     stats:
-      tu: 0
+      tu: 1
       stamina: 50
       health: 20
       bravery: 10  # always multiples of 10
       reactions: 5
-      firing: 0
+      firing: 1
       throwing: -10
-      strength: 0
-      psiStrength: 0
-      psiSkill: 0
+      strength: 1
+      psiStrength: 1
+      psiSkill: 1
       melee: 10
     frontArmor: 105
     sideArmor: 100
@@ -407,7 +407,7 @@ armors:
       stamina: 40
       health: 40
       bravery: 40 #always multiples of 10
-      reactions: 0
+      reactions: 1
       firing: 30
       throwing: 40
       strength: 110
@@ -463,8 +463,8 @@ armors:
       stamina: 40
       health: 40
       bravery: 10 #always multiples of 10
-      reactions: 0
-      firing: 0
+      reactions: 1
+      firing: 1
       throwing: -10
       strength: 30
       psiStrength: 10
@@ -637,11 +637,11 @@ armors:
       tu: 10
       stamina: 20
       health: 40
-      bravery: 0  # always multiples of 10
+      bravery: 10  # always multiples of 10
       reactions: 20
       firing: 10
-      throwing: 0
-      strength: 0
+      throwing: 1
+      strength: 1
       psiStrength: 40
       psiSkill: 20
       melee: 5
@@ -743,7 +743,7 @@ armors:
       bravery: 30  # always multiples of 10
       reactions: 40
       firing: 20
-      throwing: 0
+      throwing: 1
       strength: 20
       psiStrength: 60
       psiSkill: 30
@@ -847,8 +847,8 @@ armors:
       stamina: 20
       health: 20
       bravery: 10  # always multiples of 10
-      reactions: 0
-      firing: 0
+      reactions: 1
+      firing: 1
       throwing: -10
       strength: 20
       psiStrength: 10
@@ -1561,9 +1561,9 @@ armors:
       reactions: 10
       firing: -30
       throwing: -20
-      strength: 0
-      psiStrength: 0
-      psiSkill: 0
+      strength: 1
+      psiStrength: 1
+      psiSkill: 1
       melee: 30
     frontArmor: 125
     sideArmor: 105
@@ -1627,8 +1627,8 @@ armors:
       firing: -30
       throwing: -20
       strength: 10
-      psiStrength: 0
-      psiSkill: 0
+      psiStrength: 1
+      psiSkill: 1
       melee: 30
     frontArmor: 125
     sideArmor: 105
@@ -1827,9 +1827,9 @@ armors:
       firing: 30
       throwing: 10
       strength: 20
-      psiStrength: 0
-      psiSkill: 0
-      melee: 0
+      psiStrength: 1
+      psiSkill: 1
+      melee: 1
     frontArmor: 185  # +50 shield
     sideArmor: 140  # + 20 shield
     rearArmor: 80
@@ -1867,11 +1867,11 @@ armors:
       health: 10
       bravery: 10  # always multiples of 10
       reactions: 20
-      firing: 0
-      throwing: 0
-      strength: 0
-      psiStrength: 0
-      psiSkill: 0
+      firing: 1
+      throwing: 1
+      strength: 1
+      psiStrength: 1
+      psiSkill: 1
       melee: 25
     frontArmor: 125
     sideArmor: 105
@@ -1913,11 +1913,11 @@ armors:
       health: 20
       bravery: 10  # always multiples of 10
       reactions: 5
-      firing: 0
+      firing: 1
       throwing: -10
-      strength: 0
+      strength: 1
       psiStrength: 10
-      psiSkill: 0
+      psiSkill: 1
       melee: 10
     frontArmor: 115
     sideArmor: 110
@@ -2226,8 +2226,8 @@ armors:
       bravery: 30  # always multiples of 10
       reactions: 40
       firing: 20
-      throwing: 0
-      strength: 0
+      throwing: 1
+      strength: 1
       psiStrength: 20
       psiSkill: 30
       melee: 25
@@ -2711,7 +2711,7 @@ armors:
       health: 50
       bravery: 20  # always multiples of 10
       firing: -20
-      throwing: 0
+      throwing: 1
       strength: 30
       psiStrength: 20
       psiSkill: 10
