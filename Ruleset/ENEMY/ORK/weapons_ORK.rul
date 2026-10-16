@@ -2311,6 +2311,7 @@ items:
       ITEM_IGNORES_2X2_REDUCTION: 1 # Busts Tanks
 
   - type: STR_ORK_STINKBOMB  # Stun grenade
+    categories: [STR_CAT_GRENADES, STR_CAT_ORK]
     requires:
       - STR_ORK_BASIC_WEAPONS
     costBuy: 20000 # stunning should be pricey
