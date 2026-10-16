@@ -7,8 +7,8 @@ armors:
 
   - &STR_CALLIDUS_ASSASSIN_UNARMED
     type: STR_CALLIDUS_ASSASSIN_UNARMED    # ADEPTAS ASSASIN CALLIDUS Top Tier Assassin Armor
-    camouflageAtDay: -25  # you need to be 10 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: -16  # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark
+    camouflageAtDay: 5
+    camouflageAtDark: 5
     visibilityAtDay: 40
     visibilityAtDark: 35
     antiCamouflageAtDay: 15
@@ -226,8 +226,8 @@ armors:
 
   - &STR_CULEXUS_ASSASSIN_UNARMED
     type: STR_CULEXUS_ASSASSIN_UNARMED
-    camouflageAtDay: -25  # you need to be 10 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: -16  # you need to be 5 tiles closer than max vision range (at night!) to see this unit in the dark
+    camouflageAtDay: 5
+    camouflageAtDark: 5
     visibilityAtDay: 40
     visibilityAtDark: 35
     antiCamouflageAtDay: 20 # animus speculum includes advanced optics, and psychic cloaking effects don't work.
@@ -551,8 +551,8 @@ armors:
     corpseBattle:
       - STR_VANUS_ASSASSIN_CORPSE
     loftempsSet: [3]
-    camouflageAtDay: -18
-    camouflageAtDark: -10
+    camouflageAtDay: 5
+    camouflageAtDark: 5
     visibilityAtDay: 40
     visibilityAtDark: 35  # best possible Imperium night vision
     antiCamouflageAtDay: 15  # Good Imperium anti-camo
@@ -631,8 +631,8 @@ armors:
 
   - &STR_REPRISALIA_ARMOR
     type: STR_REPRISALIA_ARMOR
-    camouflageAtDay: -11  # Half Assassin Camo
-    camouflageAtDark: -7
+    camouflageAtDay: 8
+    camouflageAtDark: 8
     visibilityAtDay: 40
     visibilityAtDark: 25  # Between assassin and stormtrooper
     heatVision: 30  # Inq

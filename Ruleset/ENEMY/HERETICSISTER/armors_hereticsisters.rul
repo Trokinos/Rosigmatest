@@ -220,7 +220,7 @@ armors:
   - type: STR_NIGHT_LORDS_SISTER_ARMOR    # ADEPTAS Heretic armor weak
     visibilityAtDay: 40
     visibilityAtDark: 25  # Nightsister groupies do not have CSM optics
-    camouflageAtDark: 10  # Worse than NL, these are cultists
+    camouflageAtDark: 12  # Worse than NL, these are cultists
     camouflageAtDay: 20
     heatVision: 20  # Worse than NL, these are cultists
     spriteSheet: NIGHTLORDS_SISTER_BS.PCK
@@ -253,7 +253,7 @@ armors:
   - type: STR_NIGHT_LORDS_SISTER_SUPERIOR_ARMOR    # ADEPTAS Heretic armor weak
     visibilityAtDay: 40
     visibilityAtDark: 30  # Nightsister groupies do not have CSM optics
-    camouflageAtDark: 10  # Worse than NL, these are cultists
+    camouflageAtDark: 12  # Worse than NL, these are cultists
     camouflageAtDay: 20
     heatVision: 20  # Worse than NL, these are cultists
     spriteSheet: NIGHTLORDS_SISTER_BS.PCK

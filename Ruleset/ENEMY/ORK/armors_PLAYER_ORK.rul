@@ -1009,8 +1009,8 @@ armors:
   - type: STR_PLAYER_ORK_TANKBUSTA_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 20
-    camouflageAtDay: -18  # you need to be 12 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: -12  # you need to be 8 tiles closer than max vision range (at night!) to see this unit in the dark
+    camouflageAtDay: 18
+    camouflageAtDark: 12
     heatVision: 20  # tech
     spriteSheet: ORKtankhuntazbattlesprite.PCK
     spriteInv: ORKTankhuntaz.SPK
@@ -1076,10 +1076,10 @@ armors:
   - type: STR_PLAYER_ORK_KOMMANDO_ARMOR  # ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 30
-    camouflageAtDay: 15  # Visible at 15 tiles out without anticamo
-    camouflageAtDark: 12  # Visible at 12 tiles out without anticamo
+    camouflageAtDay: 12  # Visible at 15 tiles out without anticamo
+    camouflageAtDark: 8  # Visible at 12 tiles out without anticamo
     antiCamouflageAtDay: 15
-    antiCamouflageAtDark: 10
+    antiCamouflageAtDark: 12
     heatVision: 30  # tech
     spriteSheet: ORKKOMMANDO_SNIPER.PCK  # Sniper Version
     spriteInv: KOMMANDOZ_SNIPER_INV.SPK
