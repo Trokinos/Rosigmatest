@@ -453,3 +453,72 @@ items:
     invWidth: 1
     invHeight: 2
     listOrder: 10295
+
+ #### EXPLOSIVES AND GRENADES
+
+  - type: STR_SLAANESHPATH_HALLUCINOGEN_40MM  # multipurpose purpose smoke/morale/debuff weapon
+    bigSprite: 2055
+    floorSprite: 2060
+    handSprite: {mod: 40k, index: 336}  # Needs new
+    battleType: 2  # 4 is Grenade, but these are not primed
+    invWidth: 1  # smaller
+    invHeight: 1
+    explosionHitSound: [2122, 2119]  # daemonettelaughter
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    listOrder: 10331
+    power: 70
+    damageType: 8
+    damageAlter:  # DA CRAZY GAS
+      ToArmorPre: 0.3 # Corrosive
+      RandomType: 1  # Swingy; unpredictable response
+      ToHealth: 0.2 # Corrosive, toxic gas
+      ToWound: 0.0
+      RandomWound: false
+      ToTile: 0.0
+      ToItem: 0.0  
+      ToArmor: 0.0  
+      ToEnergy: 0.5 
+      ToStun: 0.5
+      ToTime: 0.5
+      ToMorale: 2.0  
+      ArmorEffectiveness: 0.4
+      FixRadius: 5
+      RadiusReduction: 5.0
+      SmokeThreshold: 0  
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+      ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
+      INFECTION_DAMAGE_PERCENT: 50
+      INFECTION_TYPE: 3
+    clipSize: 2
+
+  - type: STR_SLAANESHPATH_KNOCKOUT_40MM  # Slaanesh photon grenades
+    bigSprite: 2055
+    floorSprite: 2060
+    handSprite: {mod: 40k, index: 336}  # Needs new
+    battleType: 2  # 4 is Grenade, but these are not primed
+    invWidth: 1  # smaller
+    invHeight: 1
+    explosionHitSound: {mod: 40k, index: 776}  # 776: Resources/Sounds/SPELLFAIL.wav
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    listOrder: 10331
+    power: 75
+    damageType: 8
+    damageAlter:  # DA STUN GAS
+      RandomType: 2  # Less swingy
+      ToHealth: 0.01
+      ToWound: 0.0
+      RandomWound: false
+      ToTile: 0.0
+      ToItem: 0.0  
+      ToArmor: 0.0  
+      ToEnergy: 0.5 
+      ToStun: 1.1
+      ToTime: 0.5  
+      ArmorEffectiveness: 0.4
+      FixRadius: 4
+      SmokeThreshold: 0  # Still creates smoke
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+      ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
+    clipSize: 2

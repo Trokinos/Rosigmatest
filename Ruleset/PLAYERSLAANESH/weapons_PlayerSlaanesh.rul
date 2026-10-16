@@ -150,6 +150,64 @@ items:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
+  - type: STR_BOLTER_CANTUS_GL  # Corrupted Cantus with a grenade launcher attachment.
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
+    requiresBuy:
+      - STR_SLAANESHPATH
+    dropoff: 5
+    autoRange: 7 
+    snapRange: 12
+    aimRange: 0
+    accuracyAuto: 55
+    accuracySnap: 85
+    accuracyAimed: 0
+    tuAuto: 30
+    tuSnap: 20
+    tuAimed: 0
+    autoShots: 3
+    size: 0.3
+    costBuy: 5000
+    costSell: 1500
+    weight: 13 # Heavier
+    bigSprite: 2006
+    floorSprite: {mod: 40k, index: 1}
+    handSprite: {mod: 40k, index: 1496}
+    bulletSprite: {mod: 40k, index: 6}
+    fireSound: 2137
+    compatibleAmmo:
+      - STR_CANTUS_BOLTER_AMMO_PENETRATOR
+      - STR_MELTA_GRENADE40
+    ammo: # PLACEHOLDER
+      0:
+        compatibleAmmo: [STR_CANTUS_BOLTER_AMMO_PENETRATOR]
+      1:
+        compatibleAmmo: [STR_MELTA_GRENADE40]
+    confAuto:  # Bolter
+      ammoSlot: 0  # Bolter
+      name: STR_AUTOFIRE
+      arcing: false
+    confSnap:  # Double Shot
+      ammoSlot: 0  # Bolter
+      name: STR_BURST_SNAP_SHOT
+      arcing: false
+      shots: 2  # Double shot snap
+    confAimed:  # Grenade launcher 40mm
+      ammoSlot: 1  # Grenades
+      name: STR_LAUNCH_GRENADE
+      shortName: STR_LAUNCH_GRENADE_SHORT
+      arcing: true     
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 300
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10286
+    tags:
+      ITEM_RECOIL: 20
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+
   - type: STR_SLAANESHPATH_BOLTER_NAIAD  # Corrupted Adeptas bolter with a sonic projector.
     dropoff: 5
     autoRange: 7  # 4 Auto
