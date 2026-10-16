@@ -3,6 +3,72 @@ extended:
 
 items:
 
+ #### SLAANESH LAS WEAPONS ####
+
+  - type: STR_SLAANESHPATH_LASCANNON_HANDHELD  # 
+    dropoff: 4  # heavy weapon platform, not a sniper weapon
+    autoRange: 0
+    snapRange: 20
+    aimRange: 30  # sniper rifle range; not better than sniper rifle range
+
+    accuracyAuto: 0
+    accuracySnap: 55 # More accurate snap fire
+    accuracyAimed: 85
+    kneelBonus: 130  # heavy weapon, cumbersome and bulky, even if you have the strength to wield it standing; need to kneel to use this effectively
+    minRange: 7
+
+    tuAuto: 0
+    tuSnap: 35 # Much faster and lighter
+    tuAimed: 65 # Much faster and lighter
+
+    tuLoad: 40  # reloading this heavy weapon is a PITA
+    armor: 200
+
+    tags:
+      REACTION_MULTIPLIER: 50
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+
+  - type: STR_SLAANESHPATH_LAS_BATTLERIFLE
+    dropoff: 3
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.3
+    costBuy: 16000 # More expensive - should this be buyable?
+    requiresBuy: # Placeholder
+    - STR_SLAANESHPATH
+    costSell: 4000
+    weight: 8
+    bigSprite: 205
+    floorSprite: 203
+    handSprite: 1698
+    bulletSprite: {mod: 40k, index: 12}
+    fireSound: {mod: 40k, index: 741}
+    hitSound: {mod: 40k, index: 19}
+    hitAnimation: {mod: 40k, index: 36}
+    autoRange: 11 # 1 More
+    snapRange: 18
+    aimRange: 22
+    accuracyAuto: 55 
+    accuracySnap: 80  
+    accuracyAimed: 90 
+    tuAuto: 35  # Better at autofire than stock battle rifles
+    tuSnap: 33
+    tuAimed: 45 # 5 tu less
+    autoShots: 2
+    compatibleAmmo:
+      - STR_SLAANESHPATH_LASGUN_CLIP_STANDARD
+      - STR_SLAANESHPATH_LASGUN_CLIP_TAINTED
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 10916
+    armor: 200  # to avoid item pile destruction
+    tags:
+      REACTION_MULTIPLIER: 75 # battle rifle penalty; multiplies base reaction score by this amount divided by 100
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25
 
   - type: STR_SLAANESHPATH_DUELING_LASPISTOL  # Much more dangerous than the slaanesh laspistol.
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
