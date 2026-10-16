@@ -375,7 +375,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     camouflageAtDay: 20  # you need to be 20 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: 13  # you need to be 12 tiles closer than max vision range (at night!) to see this unit in the dark
+    camouflageAtDark: 12
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 8
     frontArmor: 100 #One of the stronger aspect armors 3+ Save
@@ -1198,7 +1198,7 @@ armors:
     visibilityAtDay: 42
     visibilityAtDark: 30
     camouflageAtDay: 20  # you need to be 20 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: 13  # you need to be 12 tiles closer than max vision range (at night!) to see this unit in the dark
+    camouflageAtDark: 12
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 11
     frontArmor: 120

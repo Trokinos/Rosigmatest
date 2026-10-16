@@ -271,8 +271,8 @@ armors:
     antiCamouflageAtDark: 10
     antiCamouflageAtDay: 10
     heatVision: 40
-    camouflageAtDark: -5 #minor camo
-    camouflageAtDay: -3
+    camouflageAtDark: 12
+    camouflageAtDay: 15
     spriteSheet: TAUFIREWARRIORPATHFINDERbattlePLAYER_GOG.PCK
     spriteInv: TAUPATHFINDERPLAYER
     customArmorPreviewIndex: 1381
@@ -634,8 +634,8 @@ armors:
     antiCamouflageAtDark: 15
     antiCamouflageAtDay: 15
     heatVision: 50
-    camouflageAtDark: -15 #tanith level camo
-    camouflageAtDay: -8
+    camouflageAtDark: 8
+    camouflageAtDay: 12
     spriteSheet: TAUFIREWARRIORPATHFINDERbattlePLAYER_GOG.PCK
     spriteInv: TAUPATHFINDERPLAYER
     customArmorPreviewIndex: 1381
@@ -728,8 +728,8 @@ armors:
     antiCamouflageAtDark: 10
     antiCamouflageAtDay: 10
     heatVision: 40
-    camouflageAtDark: -15 # tanith level camo
-    camouflageAtDay: -10 # in the daytime
+    camouflageAtDark: 8
+    camouflageAtDay: 12
     spriteSheet: TAUSTEALTHbattle.PCK
     spriteInv: TAUSTEALTHinv.PCK
     customArmorPreviewIndex: 1389

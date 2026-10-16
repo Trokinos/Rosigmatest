@@ -235,8 +235,8 @@ armors:
   - type: STR_DESERTER_SCOUT_FEMALE_ARMOR
     visibilityAtDay: 35
     visibilityAtDark: 20
-    camouflageAtDay: -15
-    camouflageAtDark: -8
+    camouflageAtDay: 15
+    camouflageAtDark: 12
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 6
     heatVision: 20
@@ -969,8 +969,8 @@ armors:
     visibilityAtDark: 35  # Superior NV + optics
     antiCamouflageAtDay: -10
     antiCamouflageAtDark: -10
-    camouflageAtDay: 10  # Alpha legion style active camo bodysuit
-    camouflageAtDark: 5
+    camouflageAtDay: 12
+    camouflageAtDark: 8
     heatVision: 40  # superior NV + optics
     spriteSheet: BLACKSTONE_ARMOR_SNIPER.PCK
     spriteInv: BLACKSTONE_SNIPER_INV
@@ -1107,8 +1107,8 @@ armors:
   - type: STR_TZEENTCH_TRAITORGUARD_SCOUT_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 20
-    camouflageAtDay: -15
-    camouflageAtDark: -8
+    camouflageAtDay: 15
+    camouflageAtDark: 12
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 6
     heatVision: 10
@@ -1145,8 +1145,8 @@ armors:
   - type: STR_TZEENTCH_TRAITORGUARD_COMMANDO_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 25
-    camouflageAtDay: -17
-    camouflageAtDark: -9
+    camouflageAtDay: 15
+    camouflageAtDark: 12
     antiCamouflageAtDay: 15
     antiCamouflageAtDark: 9
     heatVision: 20
@@ -1223,8 +1223,8 @@ armors:
     visibilityAtDark: 10
     antiCamouflageAtDay: 20
     antiCamouflageAtDark: 25
-    camouflageAtDay: -15
-    camouflageAtDark: -10
+    camouflageAtDay: 15
+    camouflageAtDark: 12
     heatVision: 6
     psiVision: 0
     loftempsSet: [3]
@@ -1266,8 +1266,8 @@ armors:
     visibilityAtDark: 10
     antiCamouflageAtDay: 20
     antiCamouflageAtDark: 25
-    camouflageAtDay: -15
-    camouflageAtDark: -10
+    camouflageAtDay: 15
+    camouflageAtDark: 12
     heatVision: 6
     psiVision: 0
     loftempsSet: [3]
@@ -1310,8 +1310,8 @@ armors:
     visibilityAtDark: 20
     antiCamouflageAtDay: 20
     antiCamouflageAtDark: 25
-    camouflageAtDay: -15
-    camouflageAtDark: -10
+    camouflageAtDay: 15
+    camouflageAtDark: 12
     heatVision: 6
     psiVision: 0
     loftempsSet: [3]
@@ -1354,8 +1354,8 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 20
     antiCamouflageAtDark: 25
-    camouflageAtDay: -15
-    camouflageAtDark: -10
+    camouflageAtDay: 12
+    camouflageAtDark: 8
     heatVision: 6
     psiVision: 0
     loftempsSet: [3]
