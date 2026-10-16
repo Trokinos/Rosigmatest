@@ -71,7 +71,7 @@ events:
     interruptResearch: STR_NOT_SLAANESHPATH
     spawnedPersons: 8
     spawnedCraftType: STR_TRUCKBASE_CHAOS
-    spawnedPersonType: STR_SLAANESHPATH_VICTUAL_CULTIST
+    spawnedPersonType: STR_SLAANESHPATH_VICTUAL_BROTHER
     everyMultiSoldierList:
-      STR_SLAANESHPATH_VICTUAL_CULTIST: 8
+      STR_SLAANESHPATH_VICTUAL_BROTHER: 8
       STR_SLAANESHPATH_JUICED_CULTIST: 2

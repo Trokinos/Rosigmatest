@@ -242,62 +242,64 @@ soldiers:
     rankBattleSprite: 4144 
     rankTinySprite: 4144
 
- #### SLAANESH BASIC CULTIST. More expensive than PLAYERCHAOS cultists, but have better scaling potential.
+ #### SLAANESH VICTUAL BROTHER. Essentially a steel legion guardsman.
 
-  - type: STR_SLAANESHPATH_VICTUAL_CULTIST 
-    costBuy: 12000
+  - type: STR_SLAANESHPATH_VICTUAL_BROTHER 
+    costBuy: 24000
     costSalary: 8000
     requires:
       - STR_SLAANESHPATH # PLACEHOLDER
-    minStats:
-      tu: 65
-      stamina: 45 # +5
-      health: 25
-      bravery: 30 # +10
-      reactions: 35
-      firing: 38 # +3 
-      throwing: 35
-      strength: 12 # +2 vs Flesh cultist
-      psiStrength: 10
-      psiSkill: 8
-      melee: 35 # +10
-    maxStats:
-      tu: 80
-      stamina: 70
-      health: 35 # +5 vs flesh cultist
-      bravery: 60 # +10 
-      reactions: 60 # +5
-      firing: 60 # + 5
-      throwing: 60
-      strength: 22 # +4
-      psiStrength: 40
-      psiSkill: 8
-      melee: 60
-    statCaps:
-      tu: 115
-      stamina: 120
-      health: 90
-      bravery: 110
-      reactions: 115
-      firing: 125
-      throwing: 120
-      strength: 90
-      psiStrength: 100
-      psiSkill: 100
-      melee: 135
-    trainingStatCaps:
-      tu: 70
-      stamina: 70 # + 10
-      health: 40 # + 15
+    minStats:  # Steel legion stat equivalents, more expensive.
+      tu: 55 # +5 
+      stamina: 50
+      health: 35
       bravery: 40
-      reactions: 55
-      firing: 65 # +5
-      throwing: 55
-      strength: 40 # + 20
-      psiStrength: 30
-      psiSkill: 100
+      reactions: 40
+      firing: 45
+      throwing: 45
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      melee: 25
+      mana: 0
+    maxStats:
+      tu: 65 # +5
+      stamina: 70
+      health: 40
+      bravery: 70
+      reactions: 60
+      firing: 70
+      throwing: 65
+      strength: 25
+      psiStrength: 100
+      psiSkill: 6
       melee: 60
-    armor: STR_SLAANESHPATH_VICTUAL_CULTIST_ARMOR
+      mana: 0
+    statCaps:
+      tu: 85  # Slaanesh influence
+      stamina: 90
+      health: 55  # was 45
+      bravery: 110  # was 100
+      reactions: 80  # was 60
+      firing: 100  # was 100
+      throwing: 70
+      strength: 65  # was 60
+      psiStrength: 100
+      psiSkill: 50
+      melee: 90
+      mana: 0
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 30
+      firing: 70
+      throwing: 65
+      strength: 30
+      psiStrength: 100
+      psiSkill: 50
+      melee: 50
+      mana: 0
+    armor: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR
     standHeight: 21
     kneelHeight: 16
     deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]

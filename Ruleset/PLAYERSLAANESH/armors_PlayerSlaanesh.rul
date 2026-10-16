@@ -240,7 +240,7 @@ armors:
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
-  - type: STR_SLAANESHPATH_VICTUAL_CULTIST_ARMOR     # Basic cultist armor. Slightly more luxurious and better-performing.
+  - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR     # Basic cultist armor. Slightly more luxurious and better-performing.
     visibilityAtDay: 40
     visibilityAtDark: 20 
     forcedTorso: 0
@@ -279,7 +279,7 @@ armors:
       - 1.0  # MELTA
     loftempsSet: [2]
     units:
-      - STR_SLAANESHPATH_VICTUAL_CULTIST
+      - STR_SLAANESHPATH_VICTUAL_BROTHER
     spriteSheet: SLAANCULTIST_BS.PCK
     spriteInv: SLAANCULTIST_PLAYER_INV
     tags:

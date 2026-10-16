@@ -3,7 +3,7 @@ extended:
 
 items:
 
- #### SLAANESH LAS WEAPONS ####
+ #### SLAANESH LASCANNONS ####
 
   - type: STR_SLAANESHPATH_LASCANNON_HANDHELD  # 
     dropoff: 4  # heavy weapon platform, not a sniper weapon
@@ -28,6 +28,8 @@ items:
       REACTION_MULTIPLIER: 50
       REACTION_PENALTY_KNEELING_BYPASS: 1
 
+ #
+ #### LAS WEAPONS ####
   - type: STR_SLAANESHPATH_LAS_BATTLERIFLE
     dropoff: 3
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
@@ -103,6 +105,8 @@ items:
     tags:
       REACTION_MULTIPLIER: 200
 
+ #### LIGHT BOLTERS ####
+
   - type: STR_BOLTER_CANTUS_SLAAN  # Corrupted Cantus bolter. Low recoil, rapid fire, penetrating bolts.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
@@ -133,7 +137,7 @@ items:
     fireSound: 2137
     compatibleAmmo:
       - STR_CANTUS_BOLTER_AMMO
-      - STR_CANTUS_BOLTER_AMMO_SLAAN
+      - STR_CANTUS_BOLTER_AMMO_PENETRATOR
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -185,7 +189,7 @@ items:
       name: STR_SONIC_FIRE
 
 
-
+ #### AUX WEAPONS ####
   - type: AUX_CHIRURGEON_NEEDLER # LOOK AT ADEPTAS NEURAL WHIP FOR ALT FIRE IMPLEMENTATION
     weight: 0
     dropoff: 6 # Very inaccurate beyond close range

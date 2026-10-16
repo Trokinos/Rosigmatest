@@ -29,6 +29,8 @@ items:
         set subvoxel_drift 0;
         return;
 
+ #### SLAANESH LAS AMMO ####
+
   - &STR_SLAANESHPATH_LASGUN_MUNITION_STANDARD_TEMPLATE
     type: STR_SLAANESHPATH_LASGUN_CLIP_STANDARD
     categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
@@ -116,167 +118,6 @@ items:
       INFECTION_DAMAGE_PERCENT: 25  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
- #### Standard laslock ammo: intended to strike a balance between damage and armor damage.
-
-  - type: STR_SLAANESHPATH_LASLOCK_PISTOL_CLIP_STANDARD
-    refNode: *STR_SLAANESHPATH_LASGUN_MUNITION_STANDARD_TEMPLATE
-    fireSound: 3985
-    power: 95
-    damageType: 4 # AP, to be in line with rebalanced lasgun ammo
-    damageAlter:  # Da Slaanesh Handcannon
-      ToArmorPre: 0.55 # 0.2 -> 0.30 
-      ArmorEffectiveness: 0.7 # Penetrative power
-      toArmor: 0.2 # Ruins armor 
-      ToHealth: 0.7 # Worse at health damage. 
-      ToStun: 0.65
-      ToEnergy: 0.35 # Weakening
-      ToMorale: 0.35 # Weakening
-      toTime: 0.35 # Weakening
-    clipSize: 1 # You only get one shot.
-
-    type: STR_SLAANESHPATH_LASLOCK_PISTOL_CLIP_TAINTED
-    refNode: *STR_SLAANESHPATH_LASGUN_MUNITION_TAINTED_TEMPLATE
-    fireSound: 3985
-    power: 100
-    damageType: 4 # AP, to be in line with rebalanced lasgun ammo
-    damageAlter:  # Da Slaanesh CURSED handcannon
-      ToArmorPre: 1 # Melta equivalent 
-      ArmorEffectiveness: 0.7 # Penetrative power
-      toArmor: 0.2 # Ruins armor 
-      ToHealth: 0.5 # Worse at health damage. 
-      ToStun: 0.65
-      ToEnergy: 0.35 # Weakening
-      ToMorale: 0.35 # Weakening
-      toTime: 0.35 # Weakening
-    clipSize: 1 # You only get one shot.
-
-  - &STR_SLAANESHPATH_SONIC_MUNITION_TEMPLATE
-    type: STR_SLAANESHPATH_SONIC_GRENADE  # 4010
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
-    requiresBuy: # Placeholder
-    - STR_SLAANESHPATH
-    size: 0.1
-    costSell: 250
-    weight: 3
-    bigSprite: 2313
-    floorSprite: 2420
-    handSprite: 2390
-    power: 100
-    damageType: 3
-    damageAlter:  # DA Sound
-      ToHealth: 1.0
-      ToTime: 1.0
-      ToStun: 2.0
-      ToEnergy: 2.0
-      ToMorale: 2.0
-      ToArmorPre: 0.3
-      ToArmor: 0.0 #deals damage on the way in
-      ArmorEffectiveness: 0.7
-      ToTile: 0.75
-      ToItem: 0.75
-      RandomType: 6
-      FixRadius: 4
-    explosionHitSound: 2118  # Sonichit
-    hitAnimation: {mod: 40k, index: 96}
-    battleType: 4
-    recoveryPoints: 1
-    invWidth: 1
-    invHeight: 2
-    listOrder: 15300
-    throwRange: 16
-    tags:
-      DAMAGE_RESIST_PENETRATION_PERCENT: 75
-
-  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE
-    type: STR_SLAANESHPATH_CLIP_PENETRATOR  # SLAANESH ROUNDS          10460                      ToStun
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    size: 0.1
-    costSell: 150
-    weight: 3
-    bigSprite: 2318
-    floorSprite: {mod: 40k, index: 2}
-    handSprite: {mod: 40k, index: 464}
-    hitSound: {mod: 40k, index: 708}
-    hitAnimation: 26
-    damageAlter:  # DA BOLTER SLAAN
-      RandomType: 2 #50-150%
-      ToArmorPre: 0.3
-      ArmorEffectiveness: 0.75
-      ToArmor: 0.2
-      ToHealth: 0.7
-      ToStun: 0.35
-      ToEnergy: 0.3
-      ToMorale: 0.2
-    explosionSpeed: 5
-    power: 65
-    damageType: 1
-    clipSize: 20
-    battleType: 2
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    listOrder: 10460
-
-  - &STR_SLAANESHPATH_SHREDDER_TEMPLATE
-    type: STR_SLAANESHPATH_CLIP_SHREDDER  # SLAANESH ROUNDS          10460                      ToStun
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    size: 0.1
-    costSell: 150
-    weight: 3
-    bigSprite: 2318
-    floorSprite: {mod: 40k, index: 2}
-    handSprite: {mod: 40k, index: 464}
-    hitSound: {mod: 40k, index: 708}
-    hitAnimation: 26
-    damageAlter:  # DA BOLTER SLAAN
-      RandomType: 2 #50-150%
-      ToArmorPre: 0.3
-      ArmorEffectiveness: 0.75
-      ToArmor: 0.2
-      ToHealth: 0.7
-      ToStun: 0.35
-      ToEnergy: 0.3
-      ToMorale: 0.2
-    explosionSpeed: 5
-    power: 65
-    damageType: 1
-    clipSize: 20
-    battleType: 2
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    listOrder: 10460
-
-  - &STR_SLAANESHPATH_SOULTHIEF_TEMPLATE
-    type: STR_SLAANESHPATH_CLIP_SOULTHIEF  # SLAANESH ROUNDS          10460                      ToStun
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    size: 0.1
-    costSell: 150
-    weight: 3
-    bigSprite: 2318
-    floorSprite: {mod: 40k, index: 2}
-    handSprite: {mod: 40k, index: 464}
-    hitSound: {mod: 40k, index: 708}
-    hitAnimation: 26
-    damageAlter:  # DA BOLTER SLAAN
-      RandomType: 2 #50-150%
-      ToArmorPre: 0.3
-      ArmorEffectiveness: 0.75
-      ToArmor: 0.2
-      ToHealth: 0.7
-      ToStun: 0.35
-      ToEnergy: 0.3
-      ToMorale: 0.2
-    explosionSpeed: 5
-    power: 65
-    damageType: 1
-    clipSize: 20
-    battleType: 2
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    listOrder: 10460
-
   - type: STR_SLAANESHPATH_LASPISTOL_CLIP  # 4010
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     size: 0.05
@@ -319,64 +160,79 @@ items:
         set subvoxel_drift 0;
         return;
 
+ #### LASLOCK AMMO ####
 
-  - type: STR_CANTUS_BOLTER_AMMO_SLAAN # Penetrator bolts for the Cantus bolter.
-    categories: [STR_CAT_BOLTER]
+  - type: STR_SLAANESHPATH_LASLOCK_PISTOL_CLIP_STANDARD
+    refNode: *STR_SLAANESHPATH_LASGUN_MUNITION_STANDARD_TEMPLATE
+    fireSound: 3985
+    power: 95
+    damageType: 4 # AP, to be in line with rebalanced lasgun ammo
+    damageAlter:  # Da Slaanesh Handcannon
+      ToArmorPre: 0.55 # 0.2 -> 0.30 
+      ArmorEffectiveness: 0.7 # Penetrative power
+      toArmor: 0.2 # Ruins armor 
+      ToHealth: 0.7 # Worse at health damage. 
+      ToStun: 0.65
+      ToEnergy: 0.35 # Weakening
+      ToMorale: 0.35 # Weakening
+      toTime: 0.35 # Weakening
+    clipSize: 1 # You only get one shot.
+
+    type: STR_SLAANESHPATH_LASLOCK_PISTOL_CLIP_TAINTED
+    refNode: *STR_SLAANESHPATH_LASGUN_MUNITION_TAINTED_TEMPLATE
+    fireSound: 3985
+    power: 100
+    damageType: 4 # AP, to be in line with rebalanced lasgun ammo
+    damageAlter:  # Da Slaanesh CURSED handcannon
+      ToArmorPre: 1 # Melta equivalent 
+      ArmorEffectiveness: 0.7 # Penetrative power
+      toArmor: 0.2 # Ruins armor 
+      ToHealth: 0.5 # Worse at health damage. 
+      ToStun: 0.65
+      ToEnergy: 0.35 # Weakening
+      ToMorale: 0.35 # Weakening
+      toTime: 0.35 # Weakening
+    clipSize: 1 # You only get one shot.
+ ##### 
+
+ #### SONIC AMMO ####
+
+  - &STR_SLAANESHPATH_SONIC_MUNITION_TEMPLATE
+    type: STR_SLAANESHPATH_SONIC_GRENADE  # 4010
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    requiresBuy: # Placeholder
+    - STR_SLAANESHPATH
     size: 0.1
-    costSell: 150
+    costSell: 250
     weight: 3
-    bigSprite: 3230
-    floorSprite: {mod: 40k, index: 2}
-    handSprite: {mod: 40k, index: 464}
-    hitSound: {mod: 40k, index: 708}
-    hitAnimation: 26
-    damageAlter:  # DA LIGHT BOLTER SLAAN
-      RandomType: 2 #50-150%
-      ToArmorPre: 0.2 # Slightly nerfed
-      ArmorEffectiveness: 0.8
-      ToArmor: 0.2
-      ToHealth: 0.7
-      ToStun: 0.25
-      ToEnergy: 0.25
-      ToMorale: 0.2
-    explosionSpeed: 5
-    power: 55
-    damageType: 1
-    clipSize: 24
-    battleType: 2
-    armor: 30
+    bigSprite: 2313
+    floorSprite: 2420
+    handSprite: 2390
+    power: 100
+    damageType: 3
+    damageAlter:  # DA Sound
+      ToHealth: 1.0
+      ToTime: 1.0
+      ToStun: 2.0
+      ToEnergy: 2.0
+      ToMorale: 2.0
+      ToArmorPre: 0.3
+      ToArmor: 0.0 #deals damage on the way in
+      ArmorEffectiveness: 0.7
+      ToTile: 0.75
+      ToItem: 0.75
+      RandomType: 6
+      FixRadius: 4
+    explosionHitSound: 2118  # Sonichit
+    hitAnimation: {mod: 40k, index: 96}
+    battleType: 4
+    recoveryPoints: 1
     invWidth: 1
     invHeight: 2
-    listOrder: 10295
-
-  - type: STR_CANTUS_BOLTER_AMMO_SHRED # For now this is identical to penetrator ammo. Will amend later.
-    categories: [STR_CAT_BOLTER]
-    size: 0.1
-    costSell: 150
-    weight: 3
-    bigSprite: 3230
-    floorSprite: {mod: 40k, index: 2}
-    handSprite: {mod: 40k, index: 464}
-    hitSound: {mod: 40k, index: 708}
-    hitAnimation: 26
-    damageAlter:  # DA LIGHT BOLTER SLAAN
-      RandomType: 2 #50-150%
-      ToArmorPre: 0.15
-      ArmorEffectiveness: 0.8
-      ToArmor: 0.2
-      ToHealth: 0.7
-      ToStun: 0.25
-      ToEnergy: 0.25
-      ToMorale: 0.2
-    explosionSpeed: 5
-    power: 55
-    damageType: 1
-    clipSize: 24
-    battleType: 2
-    armor: 30
-    invWidth: 1
-    invHeight: 2
-    listOrder: 10295
+    listOrder: 15300
+    throwRange: 16
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 75
 
   - type: STR_NAIAD_SONIC_SHRIEKER_CHARGE
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
@@ -445,3 +301,155 @@ items:
     listOrder: 10460
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 50
+
+ #### LIGHT & STANDARD BOLTER AMMO
+
+  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE
+    type: STR_SLAANESHPATH_CLIP_PENETRATOR  # SLAANESH ROUNDS          10460                      ToStun
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.35
+      ToEnergy: 0.3
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 65
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+
+  - &STR_SLAANESHPATH_SHREDDER_TEMPLATE
+    type: STR_SLAANESHPATH_CLIP_SHREDDER  # SLAANESH ROUNDS          10460                      ToStun
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA SHRED
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.4 # Good at shredding armor.
+      ArmorEffectiveness: 1.5
+      ToArmor: 0.1
+      ToHealth: 1.5
+      ToStun: 0.6 # Extremely agonizing.
+      ToEnergy: 0.4 # Extremely agonizing.
+      ToMorale: 0.4 # Extremely agonizing.
+      ToWound: 0.4 # Shrapnel
+      RandomWound: false
+    explosionSpeed: 5
+    power: 65
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+
+  - &STR_SLAANESHPATH_SOULTHIEF_TEMPLATE
+    type: STR_SLAANESHPATH_CLIP_SOULTHIEF  # SLAANESH ROUNDS  Mastercraft equivalent. Warp damage.
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.7
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.35
+      ToEnergy: 0.3
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 65
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+
+  - type: STR_CANTUS_BOLTER_AMMO_PENETRATOR # Penetrator bolts for the Cantus bolter.
+    categories: [STR_CAT_BOLTER]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 3230
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA LIGHT BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.2 # Slightly nerfed
+      ArmorEffectiveness: 0.8
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.25
+      ToEnergy: 0.25
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 55
+    damageType: 1
+    clipSize: 24
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10295
+
+  - type: STR_CANTUS_BOLTER_AMMO_SHRED # For now this is identical to penetrator ammo. Will amend later.
+    categories: [STR_CAT_BOLTER]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 3230
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA LIGHT BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.15
+      ArmorEffectiveness: 0.8
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.25
+      ToEnergy: 0.25
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 55
+    damageType: 1
+    clipSize: 24
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10295

@@ -15069,7 +15069,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ## Slaanesh cultist armors
 
-  STR_SLAANESHPATH_VICTUAL_CULTIST_ARMOR: "Victual Brother Armor"
+  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Victual Brother Armor"
 
   ## Slaanesh cultist ranks
 
