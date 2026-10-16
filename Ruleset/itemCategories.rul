@@ -30,19 +30,13 @@ itemCategories:
     listOrder: 3000  # high offset because I don't know what things go into the categories
 
   - delete: STR_CAT_SCOUT # From 40k mod
-    hidden: true
 
   - delete: STR_CAT_TACTICAL # From 40k mod
-    hidden: true
 
   - delete: STR_CAT_DEVASTATOR # From 40k mod
-    hidden: true
 
   - delete: STR_CAT_ASSAULT # From 40k mod
-    hidden: true
 
   - delete: STR_CAT_TERMINATOR # From 40k mod
-    hidden: true
 
   - delete: STR_CRAFT_WEAPONS # From 40k mod; Armaments category already fills this for the purposes of dropdown organization
-    hidden: true
