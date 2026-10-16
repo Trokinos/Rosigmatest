@@ -356,7 +356,7 @@ items:
       ToMorale: 3.5  # even with high bravery this will fuck you up
       ArmorEffectiveness: 0.4
       RandomType: 2  # TFTD [50% - 150%]
-      FixRadius: 3
+      FixRadius: 4
     twoHanded: false
     recover: false
     fixedWeapon: true
@@ -366,7 +366,7 @@ items:
     clipSize: -1
     listOrder: 15300
     tags:
-      INFECTION_DAMAGE_PERCENT: 65  # inflicts % of damage dealt as infection damage
+      INFECTION_DAMAGE_PERCENT: 35  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
 

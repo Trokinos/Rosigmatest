@@ -220,7 +220,7 @@ soldiers:
       bravery: 20
       reactions: 35
       firing: 30
-    armor: STR_SLAANESHPATH_CHIRURGEON_ARMOR # Slightly improved Cantus Armor
+    armor: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR
     allowPiloting: false
     allowPromotion: true
     standHeight: 22

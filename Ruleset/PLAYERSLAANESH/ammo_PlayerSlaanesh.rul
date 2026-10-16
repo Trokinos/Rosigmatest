@@ -513,7 +513,7 @@ items:
       ToItem: 0.0  
       ToArmor: 0.0  
       ToEnergy: 0.5 
-      ToStun: 1.1
+      ToStun: 1.2
       ToTime: 0.5  
       ArmorEffectiveness: 0.4
       FixRadius: 4

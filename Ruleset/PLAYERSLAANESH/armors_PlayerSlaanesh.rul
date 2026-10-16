@@ -7,7 +7,7 @@ armors:
     visibilityAtDark: 22 # Heightened senses
     antiCamouflageAtDay: 2  # Heightened Senses
     antiCamouflageAtDark: 2 # Heightened Senses
-    heatVision: 10 # Heightened Senses
+    heatVision: 20 # Baseline for sister units.
     spriteSheet: HANDMAIDEN.PCK
     spriteInv: HNDM_33
     customArmorPreviewIndex: 1128
@@ -66,7 +66,7 @@ armors:
     visibilityAtDark: 25 # Minor mark of Slaanesh
     antiCamouflageAtDay: 5  # Minor mark of Slaanesh
     antiCamouflageAtDark: 5 # Minor mark of Slaanesh
-    heatVision: 20 # Minor mark of Slaanesh
+    heatVision: 26 # Improved heatvision
     spriteSheet: HANDMAIDEN.PCK # Fix later
     spriteInv: HNDM_33 # Fix later
     customArmorPreviewIndex: 1128 # Add later
@@ -180,14 +180,16 @@ armors:
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
 
-  - type: STR_SLAANESHPATH_CHIRURGEON_ARMOR # HEAVILY modified Medicae armor. A medicae-assassin hybrid.
-    visibilityAtDay: 40 # ADD SLAANESH NEEDLE RIFLE
+  - &STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
+    type: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR # HEAVILY modified Medicae armor. A medicae-assassin hybrid.
+    visibilityAtDay: 40
     visibilityAtDark: 26 # Heightened senses and modified medicae sensors.
     antiCamouflageAtDay: 7  # Heightened senses
     antiCamouflageAtDark: 7 # Heightened senses
-    heatVision: 30 # Heightened senses and modified medicae sensors.
+    heatVision: 30 # Heightened senses and modified medicae sensors. Basic Night Lord CSM level.
     spriteSheet: ADEPTASMEDICAE.PCK
     spriteInv: MED_33
+    storeItem: STR_NONE
     customArmorPreviewIndex: 140
     corpseBattle:
       - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
@@ -239,6 +241,10 @@ armors:
       DODGE_CHANCE: 30
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_CHIRURGEON_GAS_ARMOR
+    refNode: *STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
+    specialWeapon: AUX_CHIRURGEON_GAS_LAUNCHER
 
   - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR     # Basic cultist armor. Slightly more luxurious and better-performing.
     visibilityAtDay: 40
