@@ -4,6 +4,39 @@ extended:
 items:
 
 
+  - type: STR_SLAANESHPATH_DUELING_LASPISTOL  # Much more dangerous than the slaanesh laspistol.
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.1
+    dropoff: 4
+    costSell: 500
+    weight: 3
+    bigSprite: 2300
+    floorSprite: 2410
+    handSprite: 2300
+    bulletSprite: {mod: 40k, index: 13}
+    bulletSpeed: 50
+    fireSound: 2115
+    accuracySnap: 55
+    # accuracyAimed: 70
+    tuSnap: 18
+    confSnap:
+      shots: 2
+    snapRange: 10 # Very low range.
+    # tuAimed: 50
+    clipSize: 0
+    compatibleAmmo:
+      - STR_LASPISTOL_CLIP_SLAAN
+      - STR_LASPISTOL_CLIP
+      - STR_SLAANESHPATH_LASPISTOL_CLIP
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10820
+    inventoryMoveCost: # ULTRA quickdraw
+      basePercent: 40
+    tags:
+      REACTION_MULTIPLIER: 200
+
   - type: STR_BOLTER_CANTUS_SLAAN  # Corrupted Cantus bolter. Low recoil, rapid fire, penetrating bolts.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:

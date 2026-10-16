@@ -1,9 +1,12 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul 
+
 items:
 
   - &STR_SLAANESHPATH_SONIC_MUNITION_TEMPLATE
-    type: STR_SONIC_GRENADE  # 4010
+    type: STR_SLAANESHPATH_SONIC_GRENADE  # 4010
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
-    requires: # PLACEHOLDER
+    requires:
       - STR_SLAANESHPATH
     size: 0.1
     costSell: 250
@@ -37,6 +40,177 @@ items:
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 75
 
+  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE
+    type: STR_SLAANESHPATH_CLIP_PENETRATOR  # SLAANESH ROUNDS          10460                      ToStun
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.35
+      ToEnergy: 0.3
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 65
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+
+  - &STR_SLAANESHPATH_SHREDDER_TEMPLATE
+    type: STR_SLAANESHPATH_CLIP_SHREDDER  # SLAANESH ROUNDS          10460                      ToStun
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.35
+      ToEnergy: 0.3
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 65
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+
+  - &STR_SLAANESHPATH_SOULTHIEF_TEMPLATE
+    type: STR_SLAANESHPATH_CLIP_SOULTHIEF  # SLAANESH ROUNDS          10460                      ToStun
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.35
+      ToEnergy: 0.3
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 65
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+
+  - type: STR_SLAANESHPATH_LASPISTOL_CLIP  # 4010
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.05
+    costSell: 40
+    weight: 1
+    bigSprite: 2308
+    floorSprite: {mod: 40k, index: 130}
+    handSprite: {mod: 40k, index: 1144}
+    hitAnimation: 36
+    power: 50
+    damageType: 4
+    damageAlter:  #Da Las SLAAN v 2.0!!
+      RandomType: 2
+      ArmorEffectiveness: 0.8 # Extra penetration
+      ToArmorPre: 0.3
+      ToHealth: 0.8 # 0.5 > 0.8
+      ToArmor: 0.2
+      ToStun: 0.1
+      ToEnergy: 0.1
+      ToMorale: 0.1
+    clipSize: 12
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 70
+    vaporColor: 2
+    vaporDensity: 5
+    listOrder: 10850
+    # lasgun aesthetics
+    hitSound: 3986
+    fireSound: 3981
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 17  # purple laser
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+
+  - type: STR_SLAANESHPATH_LASGUN_CLIP
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    size: 0.1
+    costSell: 100
+    weight: 1
+    bigSprite: 2307
+    floorSprite: {mod: 40k, index: 1021}
+    handSprite: {mod: 40k, index: 1168}
+    hitAnimation: 36
+    power: 55
+    damageType: 4
+    damageAlter:  # LAS SLAANESH
+      ToArmorPre: 0.25
+      ArmorEffectiveness: 0.75
+      ToHealth: 0.75
+      ToArmor: 0.15
+      ToStun: 0.10
+      ToEnergy: 0.15
+      ToMorale: 0.15
+    clipSize: 20
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 70
+    listOrder: 11060
+    # lasgun aesthetics
+    hitSound: 3986
+    fireSound: 3981
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 17  # purple laser
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+
   - type: STR_CANTUS_BOLTER_AMMO_SLAAN # Penetrator bolts for the Cantus bolter.
     categories: [STR_CAT_BOLTER]
     size: 0.1
@@ -49,7 +223,7 @@ items:
     hitAnimation: 26
     damageAlter:  # DA LIGHT BOLTER SLAAN
       RandomType: 2 #50-150%
-      ToArmorPre: 0.15
+      ToArmorPre: 0.2 # Slightly nerfed
       ArmorEffectiveness: 0.8
       ToArmor: 0.2
       ToHealth: 0.7
@@ -96,7 +270,6 @@ items:
     listOrder: 10295
 
   - type: STR_NAIAD_SONIC_SHRIEKER_CHARGE
-    refNode: *STR_SLAANESHPATH_SONIC_MUNITION_TEMPLATE
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.1
     costSell: 150
@@ -113,9 +286,9 @@ items:
     damageAlter:  # DA Scream
       ToHealth: 0.2
       ToTime: 1.0
-      ToStun: 2.1
+      ToStun: 2.5
       ToEnergy: 2.0
-      ToMorale: 2.1
+      ToMorale: 2.5
       ToTile: 0.20
       ArmorEffectiveness: 0.6
       RandomType: 6
@@ -131,7 +304,6 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 60
 
   - type: STR_NAIAD_SONIC_SCREAMER_CHARGE
-    refNode: *STR_SLAANESHPATH_SONIC_MUNITION_TEMPLATE
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.1
     costSell: 150
