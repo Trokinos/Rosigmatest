@@ -341,6 +341,16 @@ extraSounds:
       1966: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Common_naughty/Naughty_piotrabonde2.wav
       1967: Resources/Sounds/SLAANESH/SLAANESH_DAEMONETTE/Common_naughty/Naughty_piotrabonde3.wav
 
+#SQUIG SOUNDS (mix of Kohala and pig sounds)
+      1968: Resources/Sounds/OrkSquig/annoyed/annoyed1.ogg
+      1969: Resources/Sounds/OrkSquig/annoyed/annoyed2.ogg
+      1970: Resources/Sounds/OrkSquig/death/death1.ogg
+      1971: Resources/Sounds/OrkSquig/select/select1.ogg
+      1972: Resources/Sounds/OrkSquig/select/select2.ogg
+      1973: Resources/Sounds/OrkSquig/selectWeapon/attackWeapon1.ogg
+      1974: Resources/Sounds/OrkSquig/selectWeapon/attackWeapon2.ogg
+      1975: Resources/Sounds/OrkSquig/startMoving/moving1.ogg
+      1976: Resources/Sounds/OrkSquig/startMoving/moving2.ogg
 # CallidusSuitSoundEffects
 # Selection
 # StarTMoving
@@ -3085,7 +3095,7 @@ extraSounds:
 
 # Remaining Indexes: (Thanks Theron!)
 
-# 1968 - 1999
+# 1977 - 1999
 # 2173 - 2199
 # 2445 - 2499
 # 2557 - 2599
