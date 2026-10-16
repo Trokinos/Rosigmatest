@@ -29,6 +29,49 @@ items:
         set subvoxel_drift 0;
         return;
 
+ #### SLAANESH PLASMA AMMO ####
+ 
+  - &STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
+    type: STR_SLAANESHPATH_PLASMA_SPRAY_CLIP
+    bigSprite: {mod: 40k, index: 34}
+    floorSprite: {mod: 40k, index: 33}
+    handSprite: {mod: 40k, index: 440}
+    hitSound: {mod: 40k, index: 19}
+    hitAnimation: 60
+    power: 70  # Spraygun power 
+    damageType: 5
+    damageAlter:  # DA PLASMA SLAAN
+      RandomType: 2
+      ToHealth: 0.5  # Slightly worse
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.5  # Slaan melt
+      ToArmor: 0.2
+      ToEnergy: 0.2
+      ToMorale: 0.25
+      ToStun: 0.2 # Added
+    powerRangeReduction: 5
+    powerRangeThreshold: 20.0  # plasma decoheres at longer ranges
+    vaporColorSurface: 17
+    vaporDensitySurface: 6
+    vaporProbabilitySurface: 18
+    size: 0.1
+    costSell: 4000
+    weight: 3
+    clipSize: 12
+    battleType: 2
+    recoveryPoints: 1
+    listOrder: 11310
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+    tags:
+      ITEM_IS_PALETTE_SWAP: 1
+      ITEM_BASE_COLOR: 0
+      ITEM_SWAP_BASE_COLOR: 12
+
+  - type: STR_SLAANESHPATH_PLASMA_RIFLE_CLIP
+    refNode: *STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
+    power: 100
+
  #### SLAANESH LAS AMMO ####
 
   - &STR_SLAANESHPATH_LASGUN_MUNITION_STANDARD_TEMPLATE
