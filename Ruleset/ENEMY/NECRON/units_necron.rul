@@ -903,7 +903,7 @@ armors:
     heatVision: 50  # smoke is only a minor impairment to Deathmark snipers
     antiCamouflageAtDark: 15
     antiCamouflageAtDay: 15
-    camouflageAtDark: 5 # blends in to the dark
+    camouflageAtDark: 2 # blends in to the dark
     camouflageAtDay: 5 # largely because it's a deep strike unit that can't just phase in wherever
     frontArmor: 60
     sideArmor: 50
@@ -934,7 +934,7 @@ armors:
     heatVision: 50  # smoke is only a minor impairment to Deathmark snipers
     antiCamouflageAtDark: 15
     antiCamouflageAtDay: 15
-    camouflageAtDark: 8  # blends in to the dark
+    camouflageAtDark: 5  # blends in to the dark
     camouflageAtDay: 8  # largely because it's a deep strike unit that can't just phase in wherever
     bleedImmune: true
     fearImmune: true

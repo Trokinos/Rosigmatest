@@ -1560,7 +1560,7 @@ armors:
   - type: STR_HRUD_VERMINKIN_ARMOR
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
-    camouflageAtDay: 20
+    camouflageAtDay: 15
     camouflageAtDark: 12
     antiCamouflageAtDay: 3
     antiCamouflageAtDark: 6
@@ -1602,7 +1602,7 @@ armors:
   - type: STR_HRUD_FESTERKIN_ARMOR
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
-    camouflageAtDay: 20
+    camouflageAtDay: 15
     camouflageAtDark: 12
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 7
@@ -1644,7 +1644,7 @@ armors:
   - type: STR_HRUD_WARRIOR_ARMOR
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
-    camouflageAtDay: 20
+    camouflageAtDay: 15
     camouflageAtDark: 12
     antiCamouflageAtDay: 3
     antiCamouflageAtDark: 5
