@@ -631,8 +631,8 @@ armors:
 
   - &STR_REPRISALIA_ARMOR
     type: STR_REPRISALIA_ARMOR
-    camouflageAtDay: 5
-    camouflageAtDark: 2
+    camouflageAtDay: 8
+    camouflageAtDark: 5
     visibilityAtDay: 40
     visibilityAtDark: 25  # Between assassin and stormtrooper
     heatVision: 30  # Inq

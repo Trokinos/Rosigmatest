@@ -1544,7 +1544,7 @@ armors:
     visibilityAtDark: 35  # Nightlords have superior night vision
     antiCamouflageAtDark: 10  # Nightlords have superior night detection
     camouflageAtDark: 5  # Nightlords have superior night camo
-    camouflageAtDay: 12
+    camouflageAtDay: 15
     heatVision: 40  # Nightlords have superior heat vision
     spriteSheet: raptor_nightlords_bs.PCK
     spriteInv: raptor_nightlord_inv.SPK
@@ -1628,7 +1628,7 @@ armors:
     antiCamouflageAtDark: 10  # Nightlords have superior night detection
     antiCamouflageAtDay: 5  # Nightlords have superior night detection
     camouflageAtDark: 2
-    camouflageAtDay: 5
+    camouflageAtDay: 8
     heatVision: 40  # Nightlords have superior heat vision
     spriteSheet: warptalon_nightlord_bs.PCK
     spriteInv: warptalon_nightlord_inv.SPK

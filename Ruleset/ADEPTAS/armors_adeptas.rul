@@ -638,8 +638,8 @@ armors:
 
   - &STR_DEATH_CULT_ASSASSIN_TEMPLATE
     type: STR_DEATHCULT_ASSASSIN_ARMOR    # ADEPTAS Death cult ASSASIN
-    camouflageAtDay: 8
-    camouflageAtDark: 5
+    camouflageAtDay: 5
+    camouflageAtDark: 2
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 7
@@ -701,8 +701,8 @@ armors:
 
   - type: STR_DEATHCULT_ASSASSIN_ARMOR_NPC  # enhanced armor for AI NPCS
     refNode: *STR_DEATH_CULT_ASSASSIN_TEMPLATE
-    camouflageAtDay: 8
-    camouflageAtDark: 5
+    camouflageAtDay: 5
+    camouflageAtDark: 2
     heatVision: 40
     builtInWeapons:
       - INV_NULL_3X3
@@ -720,8 +720,8 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 4
 
   - type: STR_ADEPTAS_ARMORB_UC    # ADEPTAS ASSASIN
-    camouflageAtDay: 5
-    camouflageAtDark: 2
+    camouflageAtDay: 8
+    camouflageAtDark: 5
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 7
@@ -788,8 +788,8 @@ armors:
 
   - &STR_FEMSUIT_ASSASSIN_TEMPLATE
     type: STR_ASSASSINNEUTRAL_FEMSUIT    # IMPERIAL ASSASSIN SUIT
-    camouflageAtDay: 8
-    camouflageAtDark: 5
+    camouflageAtDay: 5
+    camouflageAtDark: 2
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 7
@@ -855,8 +855,8 @@ armors:
 
   - type: STR_ASSASSINNEUTRAL_FEMSUIT_NPC  # enhanced armor for AI NPCS
     refNode: *STR_FEMSUIT_ASSASSIN_TEMPLATE
-    camouflageAtDay: 8
-    camouflageAtDark: 5
+    camouflageAtDay: 5
+    camouflageAtDark: 2
     heatVision: 40
     storeItem: ""
     specialWeapon: STR_POWER_SWORD

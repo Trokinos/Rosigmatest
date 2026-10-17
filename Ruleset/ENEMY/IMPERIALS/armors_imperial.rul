@@ -1514,7 +1514,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15 #worse at sneaky
+    camouflageAtDay: 22 #worse at sneaky
     camouflageAtDark: 12 #worse at sneaky
     heatVision: 25
     spriteSheet: BLACKTEMPLARSCOUTbattle.PCK
@@ -1874,7 +1874,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: SPACEWOLVESSCOUTbattle.PCK
@@ -2273,7 +2273,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: CRIMSONFISTSCOUTbattle.PCK
@@ -2997,7 +2997,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: SALAMANDERscoutbattle.PCK
@@ -4806,7 +4806,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: DARKANGELSCOUTbattle.PCK

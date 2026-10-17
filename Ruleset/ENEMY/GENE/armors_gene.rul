@@ -431,7 +431,7 @@ armors:
   - type: STR_GSC_ABERRANT_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 30  # darkvision boost from Infection
-    camouflageAtDay: 35  # Visible at 35 tiles without anticamo
+    camouflageAtDay: 25  # Visible at 25 tiles without anticamo
     camouflageAtDark: 15  # Visible at 15 tiles without anticamo
     antiCamouflageAtDark: 5
     antiCamouflageAtDay: 5
@@ -519,8 +519,8 @@ armors:
   - type: STR_GENE_HYBRID_ACOLYTE_LEADER_ARMOR    # GENE HYBRID ACOLYTE ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 30  # Them Genes
-    camouflageAtDay: 20  # Visible at 20 tiles without anticamo
-    camouflageAtDark: 12  # Visible at 12 tiles without anticamo
+    camouflageAtDay: 20  # Visible at 25 tiles without anticamo
+    camouflageAtDark: 12  # Visible at 15 tiles without anticamo
     antiCamouflageAtDark: 7
     antiCamouflageAtDay: 5
     heatVision: 30
@@ -2197,8 +2197,8 @@ armors:
   - type: STR_GSC_PDF_MEDIC_ARMOR  # female infector
     visibilityAtDay: 40
     visibilityAtDark: 25  # darkvision boost from Infection
-    camouflageAtDay: 25  # Visible at 25 tiles without anticamo
-    camouflageAtDark: 15  # Visible at 15 tiles without anticamo
+    camouflageAtDay: 20  # Visible at 15 tiles without anticamo
+    camouflageAtDark: 12  # Visible at 7 tiles without anticamo
     spriteSheet: GSC_PDM_BS.PCK
     spriteInv: GSC_INFECTOR_MEDIC_INV.SPK
     forcedTorso: 2  # female
@@ -2518,8 +2518,8 @@ armors:
   - type: STR_GSC_GUARD_MEDIC_ARMOR  # female infector
     visibilityAtDay: 40
     visibilityAtDark: 25  # darkvision boost from Infection
-    camouflageAtDay: 25  # Visible at 25 tiles without anticamo
-    camouflageAtDark: 15 # Visible at 15 tiles without anticamo
+    camouflageAtDay: 20  # Visible at 20 tiles without anticamo
+    camouflageAtDark: 12 # Visible at 12 tiles without anticamo
     spriteSheet: GSC_GUARD_MEDIC_BS.PCK
     spriteInv: GSC_INFECTED_GUARD_MEDIC_INV.SPK
     corpseBattle:

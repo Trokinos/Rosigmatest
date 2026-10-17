@@ -1311,7 +1311,7 @@ armors:
     antiCamouflageAtDay: 20
     antiCamouflageAtDark: 25
     camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDark: 12
     heatVision: 6
     psiVision: 0
     loftempsSet: [3]

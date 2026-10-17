@@ -6949,7 +6949,7 @@ armors:
     antiCamouflageAtDay: 7  # keen eyes
     antiCamouflageAtDark: 7
     camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDark: 12
     frontArmor: 40  # 10 more armor everywhere for vet catachan
     sideArmor: 30
     rearArmor: 25
@@ -6993,7 +6993,7 @@ armors:
     antiCamouflageAtDay: 7  # keen eyes
     antiCamouflageAtDark: 7
     camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDark: 12
     frontArmor: 40  # 10 more armor everywhere for vet catachan
     sideArmor: 30
     rearArmor: 25
@@ -7173,7 +7173,7 @@ armors:
     visibilityAtDark: 40
     antiCamouflageAtDay: 25
     antiCamouflageAtDark: 30
-    camouflageAtDay: 2
+    camouflageAtDay: 5
     camouflageAtDark: 2
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     heatVision: 10
@@ -7229,7 +7229,7 @@ armors:
     visibilityAtDark: 40
     antiCamouflageAtDay: 25
     antiCamouflageAtDark: 30
-    camouflageAtDay: 2
+    camouflageAtDay: 5
     camouflageAtDark: 2
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     heatVision: 10
@@ -7285,7 +7285,7 @@ armors:
     visibilityAtDark: 40
     antiCamouflageAtDay: 25
     antiCamouflageAtDark: 30
-    camouflageAtDay: 2
+    camouflageAtDay: 5
     camouflageAtDark: 2
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     heatVision: 10

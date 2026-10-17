@@ -1049,8 +1049,8 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_SLAANESH: 1
-    camouflageAtDay: 8
-    camouflageAtDark: 5
+    camouflageAtDay: 2
+    camouflageAtDark: 2
     visibilityAtDay: 40
     visibilityAtDark: 35
     antiCamouflageAtDay: 6
