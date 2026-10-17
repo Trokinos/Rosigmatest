@@ -14,7 +14,7 @@ armors:
     spriteInv: TAUFIREWARRIORSARMOR.PCK
     corpseBattle:
       - STR_TAUFIREWARRIOR_AICORPSE
-    frontArmor: 70 # +10 vs basic Guard Carapace
+    frontArmor: 80 # +10 vs basic Guard Carapace
     sideArmor: 70
     rearArmor: 50
     underArmor: 70
@@ -56,7 +56,7 @@ armors:
     spriteInv: TAUFIREWARRIORSPATHFINDERARMOR.PCK
     corpseBattle:
       - STR_TAUFIREWARRIORPATHFINDER_AICORPSE
-    frontArmor: 60 # slightly less protective than standard Fire Warrior armor
+    frontArmor: 70 # slightly less protective than standard Fire Warrior armor
     sideArmor: 60
     rearArmor: 40
     underArmor: 60
@@ -153,7 +153,7 @@ armors:
       - STR_TAUFIREWARRIORLEADER_AICORPSE
     standHeight: 22
     kneelHeight: 14
-    frontArmor: 80 # +20 vs basic Guard Carapace; artificer quality
+    frontArmor: 90 # +20 vs basic Guard Carapace; artificer quality
     sideArmor: 80
     rearArmor: 60
     underArmor: 80
@@ -196,7 +196,7 @@ armors:
       - STR_TAUFIREWARRIORCAPTAIN_AICORPSE
     standHeight: 22
     kneelHeight: 14
-    frontArmor: 90
+    frontArmor: 100
     sideArmor: 90
     rearArmor: 70
     underArmor: 90
@@ -238,7 +238,7 @@ armors:
     spriteFaceColor: [164, 164, 96, 96, 160, 160, 96, 96, 164, 164, 96, 96, 160, 160, 96, 96, 164, 164, 96, 96, 160, 160, 96, 96]
     corpseBattle:
       - STR_TAUGUEVESA_AICORPSE
-    frontArmor: 30
+    frontArmor: 40
     sideArmor: 30
     rearArmor: 20
     underArmor: 30
@@ -276,7 +276,7 @@ armors:
     spriteInv: TAUGUEVESALV2ARMOR.PCK
     corpseBattle:
       - STR_TAUGUEVESA_AICORPSE
-    frontArmor: 70 # +10 vs basic Guard Carapace
+    frontArmor: 80 # +10 vs basic Guard Carapace
     sideArmor: 70
     rearArmor: 50
     underArmor: 70
@@ -350,7 +350,7 @@ armors:
     allowInv: true
     corpseBattle:
       - STR_GREYKROOT_WARRIORAI_CORPSE
-    frontArmor: 45
+    frontArmor: 40
     sideArmor: 35
     rearArmor: 25
     underArmor: 25
@@ -385,7 +385,7 @@ armors:
     allowInv: true
     corpseBattle:
       - STR_GREYKROOT_BERSERKERAI_CORPSE
-    frontArmor: 45
+    frontArmor: 40
     sideArmor: 35
     rearArmor: 25
     underArmor: 25
@@ -566,7 +566,7 @@ armors:
     allowInv: true
     corpseBattle:
       - STR_GREENKROOT_WARRIORAI_CORPSE
-    frontArmor: 45
+    frontArmor: 40
     sideArmor: 35
     rearArmor: 25
     underArmor: 25
@@ -601,7 +601,7 @@ armors:
     allowInv: true
     corpseBattle:
       - STR_GREENKROOT_BERSERKERAI_CORPSE
-    frontArmor: 45
+    frontArmor: 40
     sideArmor: 35
     rearArmor: 25
     underArmor: 25

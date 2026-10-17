@@ -42,7 +42,7 @@ armors:
   - type: STR_GSC_MINER_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 25 #GSC darkvision
-    camouflageAtDay: 25 #GSC stealthy lives
+    camouflageAtDay: 35  #GSC stealthy lives
     camouflageAtDark: 15  #GSC stealthy lives
     spriteSheet: GSC_MINER.PCK
     spriteInv: GSC_MINER.SPK
