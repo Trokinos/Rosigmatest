@@ -414,7 +414,7 @@ armors:
   - type: STR_GREYKROOT_SNIPERAI_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 25
-    camouflageAtDay: 15
+    camouflageAtDay: 12
     camouflageAtDark: 8
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5

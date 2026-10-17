@@ -4909,7 +4909,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 25  # Darkvision
     camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDark: 8
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
     heatVision: 20
