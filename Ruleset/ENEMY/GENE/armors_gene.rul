@@ -43,7 +43,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 25 #GSC darkvision
     camouflageAtDay: 35  #GSC stealthy lives
-    camouflageAtDark: 15  #GSC stealthy lives
+    camouflageAtDark: 25  #GSC stealthy lives
     spriteSheet: GSC_MINER.PCK
     spriteInv: GSC_MINER.SPK
     corpseBattle:
@@ -181,7 +181,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30  # GSC BONUS
     camouflageAtDay: 12  # Visible at 12 tiles without anticamo
-    camouflageAtDark: 8  # Visible at 8 tiles without anticamo
+    camouflageAtDark: 7  # Visible at 7 tiles without anticamo
     antiCamouflageAtDark: 5
     antiCamouflageAtDay: 5
     heatVision: 20
@@ -221,8 +221,8 @@ armors:
   - type: STR_GSC_KELER_ARMOR  # KELERMORPH ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 30  # GSC BONUS
-    camouflageAtDay: 12  # Visible at 12 tiles without anticamo
-    camouflageAtDark: 8  # Visible at 8 tiles without anticamo
+    camouflageAtDay: 14  # Visible at 14 tiles without anticamo
+    camouflageAtDark: 10  # Visible at 10 tiles without anticamo
     antiCamouflageAtDark: 5
     antiCamouflageAtDay: 5
     heatVision: 30  # real good eyes
@@ -262,8 +262,8 @@ armors:
   - type: STR_LOCUS_CLOAKED #magus bodyguards who wield debuff weapons
     visibilityAtDay: 40
     visibilityAtDark: 30  # GSC BONUS
-    camouflageAtDay: 12  # Visible at 12 tiles without anticamo
-    camouflageAtDark: 5  # Visible at 5 tiles without anticamo
+    camouflageAtDay: 10  # Visible at 12 tiles without anticamo
+    camouflageAtDark: 6  # Visible at 7 tiles without anticamo
     antiCamouflageAtDark: 7
     antiCamouflageAtDay: 7
     heatVision: 25
@@ -307,7 +307,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30  # GSC BONUS
     camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDark: 10
     antiCamouflageAtDark: 7
     antiCamouflageAtDay: 7
     heatVision: 25
@@ -347,8 +347,8 @@ armors:
   - type: STR_GSC_MAGUS #Just locus clone for now #change
     visibilityAtDay: 40
     visibilityAtDark: 30  # GSC BONUS
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: 15
+    camouflageAtDark: 10
     antiCamouflageAtDark: 7
     antiCamouflageAtDay: 7
     heatVision: 25
@@ -389,8 +389,8 @@ armors:
   - type: STR_GSC_PRIMUS #Just locus clone for now #change
     visibilityAtDay: 40
     visibilityAtDark: 30  # GSC BONUS
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: 15
+    camouflageAtDark: 10
     antiCamouflageAtDark: 7
     antiCamouflageAtDay: 7
     heatVision: 25
@@ -953,8 +953,8 @@ armors:
     visibilityAtDark: 1  # Good night vision
     antiCamouflageAtDay: 1
     antiCamouflageAtDark: 1
-    camouflageAtDark: 5
-    camouflageAtDay: 5
+    camouflageAtDark: 3
+    camouflageAtDay: 3
     heatVision: 33  # Basic bio-heatvision
     psiVision: 10
     loftempsSet: [1]  # very small targets
@@ -1624,7 +1624,7 @@ armors:
     visibilityAtDay: 30
     visibilityAtDark: 25
     camouflageAtDay: 15  # Visible at 15 tiles without anticamo
-    camouflageAtDark: 12  # Visible at 8 tiles without anticamo
+    camouflageAtDark: 8  # Visible at 8 tiles without anticamo
     spriteSheet: GSC_ENFORCER_MEDIC_BS.PCK
     spriteInv: GSC_ENFORCER_MEDIC_INV.SPK
     corpseBattle:
@@ -1815,7 +1815,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     camouflageAtDay: 15  # Visible at 15 tiles without anticamo
-    camouflageAtDark: 12  # Visible at 8 tiles without anticamo
+    camouflageAtDark: 8  # Visible at 8 tiles without anticamo
     antiCamouflageAtDark: 10
     antiCamouflageAtDay: 10
     heatVision: 30
@@ -2197,8 +2197,8 @@ armors:
   - type: STR_GSC_PDF_MEDIC_ARMOR  # female infector
     visibilityAtDay: 40
     visibilityAtDark: 25  # darkvision boost from Infection
-    camouflageAtDay: 20  # Visible at 15 tiles without anticamo
-    camouflageAtDark: 12  # Visible at 7 tiles without anticamo
+    camouflageAtDay: 15  # Visible at 15 tiles without anticamo
+    camouflageAtDark: 7  # Visible at 7 tiles without anticamo
     spriteSheet: GSC_PDM_BS.PCK
     spriteInv: GSC_INFECTOR_MEDIC_INV.SPK
     forcedTorso: 2  # female
@@ -2518,8 +2518,8 @@ armors:
   - type: STR_GSC_GUARD_MEDIC_ARMOR  # female infector
     visibilityAtDay: 40
     visibilityAtDark: 25  # darkvision boost from Infection
-    camouflageAtDay: 20  # Visible at 20 tiles without anticamo
-    camouflageAtDark: 12 # Visible at 12 tiles without anticamo
+    camouflageAtDay: 15  # Visible at 15 tiles without anticamo
+    camouflageAtDark: 8  # Visible at 8 tiles without anticamo
     spriteSheet: GSC_GUARD_MEDIC_BS.PCK
     spriteInv: GSC_INFECTED_GUARD_MEDIC_INV.SPK
     corpseBattle:
@@ -3151,8 +3151,8 @@ armors:
 
   - type: STR_HULKERGENE_ARMOR4
     refNode: *STR_SPECIAL_GENESTEALER_REF
-    camouflageAtDay: 8  # Visible at 8 tiles without anticamo
-    camouflageAtDark: 5  # Visible at 5 tiles without anticamo
+    camouflageAtDay: 6  # Visible at 6 tiles without anticamo
+    camouflageAtDark: 3  # Visible at 3 tiles without anticamo
     spriteSheet: HULKERGENE4.PCK
     spriteInv: HULKERTYR4
     corpseBattle:
@@ -3160,8 +3160,8 @@ armors:
 
   - type: STR_HULKERGENE_ARMOR4a
     refNode: *STR_SPECIAL_GENESTEALER_REF
-    camouflageAtDay: 8 # Visible at 8 tiles without anticamo
-    camouflageAtDark: 5  # Visible at 5 tiles without anticamo
+    camouflageAtDay: 5  # Visible at 5 tiles without anticamo
+    camouflageAtDark: 2  # Visible at 2 tiles without anticamo
     spriteSheet: HULKERGENE4a.PCK
     drawingRoutine: 4
     spriteInv: HULKERTYR4
@@ -3186,8 +3186,8 @@ armors:
 
   - type: STR_HULKERGENE_ARMOR6
     refNode: *STR_SPECIAL_GENESTEALER_REF
-    camouflageAtDay: 8  # Visible at 8 tiles without anticamo
-    camouflageAtDark: 5  # Visible at 5 tiles without anticamo
+    camouflageAtDay: 9  # Visible at 9 tiles without anticamo
+    camouflageAtDark: 6  # Visible at 6 tiles without anticamo
     spriteSheet: HULKERGENE6.PCK
     drawingRoutine: 4
     spriteInv: HULKERTYR6
@@ -3210,8 +3210,8 @@ armors:
 
   - type: STR_HULKERGENE_ARMOR6a
     refNode: *STR_SPECIAL_GENESTEALER_REF
-    camouflageAtDay: 8  # Visible at 9 tiles without anticamo
-    camouflageAtDark: 5  # Visible at 6 tiles without anticamo
+    camouflageAtDay: 9  # Visible at 9 tiles without anticamo
+    camouflageAtDark: 6  # Visible at 6 tiles without anticamo
     spriteSheet: HULKERGENE6a.PCK
     drawingRoutine: 4
     spriteInv: HULKERTYR6a
@@ -3238,7 +3238,7 @@ armors:
   - type: TYRANID_GENESTEALER_ARMOR
     refNode: *STR_SPECIAL_GENESTEALER_REF
     camouflageAtDay: 20
-    camouflageAtDark: 8
+    camouflageAtDark: 12
     spriteSheet: HULKERGENE6.PCK
     drawingRoutine: 4
     spriteInv: HULKERTYR6a
@@ -3322,8 +3322,8 @@ armors:
   - type: STR_BROODLORD_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 40
-    camouflageAtDay: 12  # Visible at 12 tiles without anticamo
-    camouflageAtDark: 8  # Visible at 8 tiles without anticamo
+    camouflageAtDay: 9  # Visible at 9 tiles without anticamo
+    camouflageAtDark: 6  # Visible at 6 tiles without anticamo
     antiCamouflageAtDark: 10
     antiCamouflageAtDay: 10
     spriteSheet: BROODLORD.PCK
@@ -3375,8 +3375,8 @@ armors:
   - type: STR_PATRIARCHREAL_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 40
-    camouflageAtDay: 12  # Visible at 9 tiles without anticamo
-    camouflageAtDark: 8  # Visible at 6 tiles without anticamo
+    camouflageAtDay: 9  # Visible at 9 tiles without anticamo
+    camouflageAtDark: 6  # Visible at 6 tiles without anticamo
     heatVision: 40
     antiCamouflageAtDark: 10
     antiCamouflageAtDay: 10
@@ -3535,8 +3535,8 @@ armors:
 
   - type: STR_BROODHUNTER_ARMOR
     refNode: *STR_SPECIAL_GENESTEALER_REF
-    camouflageAtDay: 8  # Visible at 9 tiles without anticamo
-    camouflageAtDark: 5  # Visible at 6 tiles without anticamo
+    camouflageAtDay: 9  # Visible at 9 tiles without anticamo
+    camouflageAtDark: 6  # Visible at 6 tiles without anticamo
     spriteSheet: BROODHUNTERbattle.PCK
     drawingRoutine: 4
     spriteInv: BROODHUNTERinv

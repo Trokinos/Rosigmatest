@@ -50,8 +50,8 @@ armors:
     antiCamouflageAtDark: 10
     antiCamouflageAtDay: 10
     heatVision: 40
-    camouflageAtDark: 12
-    camouflageAtDay: 15
+    camouflageAtDark: -10 #minor camo
+    camouflageAtDay: -5
     spriteSheet: TAUFIREWARRIORPATHFINDERbattle_GOG.PCK
     spriteInv: TAUFIREWARRIORSPATHFINDERARMOR.PCK
     corpseBattle:
@@ -414,8 +414,8 @@ armors:
   - type: STR_GREYKROOT_SNIPERAI_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 25
-    camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDay: -15
+    camouflageAtDark: -8
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
     heatVision: 10
@@ -630,8 +630,8 @@ armors:
   - type: STR_GREENKROOT_SNIPERAI_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 25
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: -15
+    camouflageAtDark: -8
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
     heatVision: 10

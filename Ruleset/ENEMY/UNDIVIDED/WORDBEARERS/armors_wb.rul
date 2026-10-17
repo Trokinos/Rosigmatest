@@ -308,8 +308,8 @@ armors:
     heatVision: 35
     antiCamouflageAtDark: 5 #minor spotting
     antiCamouflageAtDay: 5
-    camouflageAtDark: 8 #minor camo
-    camouflageAtDay: 12
+    camouflageAtDark: -5 #minor camo
+    camouflageAtDay: -10
     spriteSheet: WORDBEARERscoutbattle.PCK
     spriteInv: WORDBEARERscoutinvent.SPK
     corpseBattle:

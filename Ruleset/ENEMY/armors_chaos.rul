@@ -961,8 +961,8 @@ armors:
     type: STR_ALPHA_ARMOR  # REGULAR
     visibilityAtDay: 40
     visibilityAtDark: 32
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: 10
+    camouflageAtDark: 5
     antiCamouflageAtDay: 15
     antiCamouflageAtDark: 10
     heatVision: 30
@@ -1040,8 +1040,8 @@ armors:
     visibilityAtDark: 40  #
     antiCamouflageAtDay: 10  # advanced sensors; AL counterintel
     antiCamouflageAtDark: 10
-    camouflageAtDark: 12
-    camouflageAtDay: 15
+    camouflageAtDark: 12  # Alpha Legion active camo; less effective due to size of terminator Armor
+    camouflageAtDay: 8
     heatVision: 40  # terminator sensor equivalent; Nightlords have superior heat vision
     loftempsSet: [5]
     spriteInv: ALPHAterminatorinvent.PCK
@@ -1091,8 +1091,8 @@ armors:
     type: STR_ALPHA_CORVUS_ARMOR  # Beakie
     visibilityAtDay: 40
     visibilityAtDark: 32
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: 10
+    camouflageAtDark: 5
     antiCamouflageAtDay: 15
     antiCamouflageAtDark: 10
     heatVision: 30
@@ -1223,8 +1223,8 @@ armors:
   - type: STR_ALPHA_SCOUT_ARMOR_ULTRA  # Ultramarine scout disguise
     visibilityAtDay: 40
     visibilityAtDark: 30
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: 10
+    camouflageAtDark: 5
     antiCamouflageAtDay: 20
     antiCamouflageAtDark: 10
     heatVision: 30
@@ -1385,7 +1385,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDark: 5
     antiCamouflageAtDay: 15
     antiCamouflageAtDark: 10
     heatVision: 30
@@ -1426,8 +1426,8 @@ armors:
   - type: STR_ALPHA_ARMOR_DAEMONETTE_RITUALIST     # FAKE RITUALIST
     visibilityAtDay: 40
     visibilityAtDark: 30
-    camouflageAtDay: 8
-    camouflageAtDark: 5
+    camouflageAtDay: 6
+    camouflageAtDark: 2
     antiCamouflageAtDay: 15
     antiCamouflageAtDark: 10
     heatVision: 30
@@ -1470,8 +1470,8 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 35  # Nightlords have superior night vision
     antiCamouflageAtDark: 10  # Nightlords have superior night detection
-    camouflageAtDark: 8
-    camouflageAtDay: 8
+    camouflageAtDark: 4  # Nightlords have superior night camo
+    camouflageAtDay: 20
     heatVision: 35  # Nightlords have superior heat vision
     spriteSheet: NIGHTLORDS_CSM_BS.PCK
     spriteInv: NIGHTLORD_CSM_SOLDIER_INV.SPK
@@ -1507,8 +1507,8 @@ armors:
     visibilityAtDark: 40  # Nightlords have superior night vision + officer armor
     antiCamouflageAtDark: 15  # Nightlords have superior night detection + officer
     antiCamouflageAtDay: 5
-    camouflageAtDark: 5
-    camouflageAtDay: 5
+    camouflageAtDark: 1  # Nightlords have superior night camo
+    camouflageAtDay: 15
     heatVision: 45  # Nightlords have superior heat vision + officer
     spriteSheet: NIGHTLORDS_CSM_LEADER_BS.PCK
     spriteInv: NIGHTLORD_CSM_LEADER_INV.SPK
@@ -1543,7 +1543,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 35  # Nightlords have superior night vision
     antiCamouflageAtDark: 10  # Nightlords have superior night detection
-    camouflageAtDark: 5  # Nightlords have superior night camo
+    camouflageAtDark: 3  # Nightlords have superior night camo
     camouflageAtDay: 20
     heatVision: 40  # Nightlords have superior heat vision
     spriteSheet: raptor_nightlords_bs.PCK
@@ -1585,7 +1585,7 @@ armors:
     visibilityAtDark: 40  # Nightlords have superior night vision + officer armor
     antiCamouflageAtDark: 15  # Nightlords have superior night detection + officer
     antiCamouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDark: 1  # Nightlords have superior night camo
     camouflageAtDay: 15
     heatVision: 50  # Nightlords have superior heat vision + officer
     spriteSheet: raptor_nightlords_com_bs.PCK
@@ -1627,8 +1627,8 @@ armors:
     visibilityAtDark: 35  # Nightlords have superior night vision
     antiCamouflageAtDark: 10  # Nightlords have superior night detection
     antiCamouflageAtDay: 5  # Nightlords have superior night detection
-    camouflageAtDark: 5
-    camouflageAtDay: 8
+    camouflageAtDark: 3  # Nightlords have superior night camo
+    camouflageAtDay: 18
     heatVision: 40  # Nightlords have superior heat vision
     spriteSheet: warptalon_nightlord_bs.PCK
     spriteInv: warptalon_nightlord_inv.SPK
@@ -1670,8 +1670,8 @@ armors:
     visibilityAtDark: 40  # Nightlords have superior night vision
     antiCamouflageAtDay: 5  # advanced sensors
     antiCamouflageAtDark: 15  # Nightlords have superior night detection
-    camouflageAtDark: 8
-    camouflageAtDay: 12
+    camouflageAtDark: 5  # Nightlords have superior night camo
+    camouflageAtDay: 30
     heatVision: 50  # terminator sensor equivalent; Nightlords have superior heat vision
     loftempsSet: [5]
     spriteInv: NIGHTLORDterminatorinvent.PCK
@@ -1718,8 +1718,8 @@ armors:
     visibilityAtDark: 40  # Nightlords have superior night vision
     antiCamouflageAtDay: 5  # advanced sensors
     antiCamouflageAtDark: 15  # Nightlords have superior night detection
-    camouflageAtDark: 8
-    camouflageAtDay: 12
+    camouflageAtDark: 5  # Nightlords have superior night camo
+    camouflageAtDay: 30
     heatVision: 50  # terminator sensor equivalent; Nightlords have superior heat vision
     loftempsSet: [5]
     spriteInv: NIGHTLORDcataphractinvent.PCK
@@ -1809,8 +1809,8 @@ armors:
     visibilityAtDark: 40  # advanced sensors
     antiCamouflageAtDay: 10  # advanced sensors; AL counterintel
     antiCamouflageAtDark: 10
-    camouflageAtDark: 8
-    camouflageAtDay: 12
+    camouflageAtDark: 12  # Alpha Legion active camo; less effective due to size of Cataphract Armor
+    camouflageAtDay: 8
     heatVision: 40  # terminator heat vision + AL counter intel
     loftempsSet: [5]
     spriteInv: ALPHAcataphractinvent.PCK
@@ -2230,10 +2230,10 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 30
     heatVision: 35
-    antiCamouflageAtDark: 8
-    antiCamouflageAtDay: 8
-    camouflageAtDark: 8
-    camouflageAtDay: 12
+    antiCamouflageAtDark: 5 #minor spotting
+    antiCamouflageAtDay: 5
+    camouflageAtDark: -5 #minor camo
+    camouflageAtDay: -10
     spriteSheet: WORDBEARERscoutbattle.PCK
     spriteInv: WORDBEARERscoutinvent.SPK
     corpseBattle:

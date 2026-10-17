@@ -1395,8 +1395,8 @@ armors:
     type: STR_TANITH_CAMO_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 20 #basic NV
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: -15
+    camouflageAtDark: -8
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
     frontArmor: 20
@@ -4107,7 +4107,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
-    camouflageAtDay: 8
+    camouflageAtDay: 5
     camouflageAtDark: 5
     heatVision: 20
     allowInv: true
@@ -4510,8 +4510,8 @@ armors:
     sideArmor: 100
     rearArmor: 100
     underArmor: 100
-    camouflageAtDay: 30 # we have actual armor instead of camo; also potentially unlimited ammo means we need to not have super camo or we abuse the AI
-    camouflageAtDark: 25
+    camouflageAtDay: -1  # we have actual armor instead of camo; also potentially unlimited ammo means we need to not have super camo or we abuse the AI
+    camouflageAtDark: -1
     tags:
       INFECTION_RESIST: 100  # infection immune
       INTIMIDATION_RESISTANCE: 100  # intimidation immune
@@ -4533,8 +4533,8 @@ armors:
     sideArmor: 100
     rearArmor: 100
     underArmor: 100
-    camouflageAtDay: 30
-    camouflageAtDark: 25
+    camouflageAtDay: -1
+    camouflageAtDark: -1
     personalLight: 0  #
     allowsKneeling: false  #
     allowsRunning: false  #
@@ -4583,8 +4583,8 @@ armors:
     sideArmor: 100
     rearArmor: 100
     underArmor: 100
-    camouflageAtDay: 30
-    camouflageAtDark: 25
+    camouflageAtDay: -1
+    camouflageAtDark: -1
     personalLight: 0  #
     allowsKneeling: false  #
     allowsRunning: false  #
@@ -6820,8 +6820,8 @@ armors:
     visibilityAtDark: 40
     antiCamouflageAtDay: 25
     antiCamouflageAtDark: 30
-    camouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDay: -30
+    camouflageAtDark: -25
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     heatVision: 10
     psiVision: 5  # Marbo Sense tingling
@@ -6886,8 +6886,8 @@ armors:
     visibilityAtDark: 15  # better unassisted NV than normal humans
     antiCamouflageAtDay: 5  # keen eyes
     antiCamouflageAtDark: 5
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: -15
+    camouflageAtDark: -10
     heatVision: 0
     psiVision: 0
     loftempsSet: [3]
@@ -6948,8 +6948,8 @@ armors:
     visibilityAtDark: 17  # better unassisted NV than normal humans
     antiCamouflageAtDay: 7  # keen eyes
     antiCamouflageAtDark: 7
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: -18
+    camouflageAtDark: -12
     frontArmor: 40  # 10 more armor everywhere for vet catachan
     sideArmor: 30
     rearArmor: 25
@@ -6992,8 +6992,8 @@ armors:
     visibilityAtDark: 17  # better unassisted NV than normal humans
     antiCamouflageAtDay: 7  # keen eyes
     antiCamouflageAtDark: 7
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: -18
+    camouflageAtDark: -12
     frontArmor: 40  # 10 more armor everywhere for vet catachan
     sideArmor: 30
     rearArmor: 25
@@ -7036,8 +7036,8 @@ armors:
     visibilityAtDark: 20  # better unassisted NV than normal humans
     antiCamouflageAtDay: 10  # keen eyes
     antiCamouflageAtDark: 10
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: -20
+    camouflageAtDark: -15
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     frontArmor: 50  # 10 more armor everywhere for vet officer
     sideArmor: 40
@@ -7081,8 +7081,8 @@ armors:
     visibilityAtDark: 20  # better unassisted NV than normal humans
     antiCamouflageAtDay: 10  # keen eyes
     antiCamouflageAtDark: 10
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: -20
+    camouflageAtDark: -15
     frontArmor: 50  # 10 more armor everywhere for vet officer
     sideArmor: 40
     rearArmor: 35
@@ -7117,8 +7117,8 @@ armors:
     visibilityAtDark: 40
     antiCamouflageAtDay: 25
     antiCamouflageAtDark: 30
-    camouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDay: -30
+    camouflageAtDark: -25
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     heatVision: 10
     psiVision: 5  # preternatural senses
@@ -7173,8 +7173,8 @@ armors:
     visibilityAtDark: 40
     antiCamouflageAtDay: 25
     antiCamouflageAtDark: 30
-    camouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDay: -30
+    camouflageAtDark: -25
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     heatVision: 10
     psiVision: 5  # preternatural senses
@@ -7229,8 +7229,8 @@ armors:
     visibilityAtDark: 40
     antiCamouflageAtDay: 25
     antiCamouflageAtDark: 30
-    camouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDay: -30
+    camouflageAtDark: -25
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     heatVision: 10
     psiVision: 5  # preternatural senses
@@ -7285,8 +7285,8 @@ armors:
     visibilityAtDark: 40
     antiCamouflageAtDay: 25
     antiCamouflageAtDark: 30
-    camouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDay: -30
+    camouflageAtDark: -25
     psiCamouflage: 1  # can only be detected by psy while adjacent; mainly so infiltrator can work
     heatVision: 10
     psiVision: 5  # preternatural senses
@@ -7466,8 +7466,8 @@ armors:
     visibilityAtDark: 25
     antiCamouflageAtDay: 5 # keen eyed
     antiCamouflageAtDark: 5
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: -18
+    camouflageAtDark: -12
     frontArmor: 10
     sideArmor: 8
     rearArmor: 5
@@ -7512,8 +7512,8 @@ armors:
     antiCamouflageAtDay: 10 # keen eyed + NV/Thermal/sensor suite goggles
     antiCamouflageAtDark: 10
     heatVision: 30
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: -20
+    camouflageAtDark: -15
     weight: 5 # camo cloak, light flak vest + NV/Thermal/sensor suite goggles
     frontArmor: 20
     sideArmor: 15

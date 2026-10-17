@@ -638,8 +638,8 @@ armors:
 
   - &STR_DEATH_CULT_ASSASSIN_TEMPLATE
     type: STR_DEATHCULT_ASSASSIN_ARMOR    # ADEPTAS Death cult ASSASIN
-    camouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDay: -22  # you need to be 8 tiles closer than max vision range to see this unit in the light
+    camouflageAtDark: -14  # you need to be 6 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 7
@@ -720,8 +720,8 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 4
 
   - type: STR_ADEPTAS_ARMORB_UC    # ADEPTAS ASSASIN
-    camouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDay: -22  # you need to be 8 tiles closer than max vision range to see this unit in the light
+    camouflageAtDark: -14  # you need to be 6 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 7
@@ -788,8 +788,8 @@ armors:
 
   - &STR_FEMSUIT_ASSASSIN_TEMPLATE
     type: STR_ASSASSINNEUTRAL_FEMSUIT    # IMPERIAL ASSASSIN SUIT
-    camouflageAtDay: 5
-    camouflageAtDark: 5
+    camouflageAtDay: -22  # you need to be 8 tiles closer than max vision range to see this unit in the light
+    camouflageAtDark: -14  # you need to be 6 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 7
@@ -2599,8 +2599,8 @@ armors:
       UNIT_TYPE_LIVING: 1
 
   - type: STR_ADEPTAS_ASSASSIN_ZOMBIE_ARMOR    # ADEPTAS ASSASIN ZOMBIE ARMOR
-    camouflageAtDay: 8
-    camouflageAtDark: 5
+    camouflageAtDay: -20  # you need to be 10 tiles closer than max vision range to see this unit in the light
+    camouflageAtDark: -12  # you need to be 8 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 40
     visibilityAtDark: 25
     antiCamouflageAtDay: 5
