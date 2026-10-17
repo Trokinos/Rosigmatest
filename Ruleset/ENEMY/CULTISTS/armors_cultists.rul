@@ -132,7 +132,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDark: 7
     spriteSheet: DARKDISCIPLE_BS.PCK
     spriteInv: DARKDISCIPLE_INV
     corpseBattle:
@@ -164,7 +164,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDark: 7
     heatVision: 20
     spriteSheet: ALPHABEAKIE_TRANSFORM_DARKDISCIPLE_BS.PCK
     spriteInv: DARKDISCIPLE_INV
@@ -201,7 +201,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDark: 7
     heatVision: 20
     spriteSheet: DARKDISCIPLE_INTO_DAEMONETTE_BS.PCK
     spriteInv: DARKDISCIPLE_INV
@@ -234,7 +234,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDark: 7
     heatVision: 20
     spriteSheet: DARKDISCIPLE_INTO_NEVERBORN_BS.PCK
     spriteInv: DARKDISCIPLE_INV
@@ -271,7 +271,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDark: 7
     heatVision: 20
     spriteSheet: DARKDISCIPLE_INTO_NEVERBORN_BS.PCK
     spriteInv: DARKDISCIPLE_INV
@@ -301,7 +301,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDark: 7
     heatVision: 20
     spriteSheet: ALPHA_DARKAPOSTLE_TRANSFORM_BS.PCK
     spriteInv: CULTI4
@@ -338,7 +338,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 20
     camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDark: 7
     heatVision: 20
     spriteSheet: ALPHA_DARKAPOSTLE_TRANSFORM_BS.PCK
     spriteInv: CULTI4

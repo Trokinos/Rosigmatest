@@ -893,8 +893,8 @@ armors:
     type: STR_TANITH_CAMO_ARMOR_OPFOR
     visibilityAtDay: 40
     visibilityAtDark: 20 #basic NV
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: -15
+    camouflageAtDark: -8
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
     frontArmor: 20
@@ -950,7 +950,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: XCOM_0.PCK
@@ -990,8 +990,8 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 10 # higher tech
     antiCamouflageAtDark: 10 # higher tech
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: 15
+    camouflageAtDark: 5
     heatVision: 30 # higher tech
     spriteSheet: SPACEMARINEADVscoutbattle.PCK
     spriteInv: SPACEMARINEARMOR_ADVSCOUT.PCK
@@ -1514,8 +1514,8 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15 #worse at sneaky
-    camouflageAtDark: 12 #worse at sneaky
+    camouflageAtDay: 22 #worse at sneaky
+    camouflageAtDark: 10 #worse at sneaky
     heatVision: 25
     spriteSheet: BLACKTEMPLARSCOUTbattle.PCK
     spriteInv: BLACKTEMPLARARMOR_SCOUT.PCK
@@ -1874,7 +1874,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: SPACEWOLVESSCOUTbattle.PCK
@@ -1915,7 +1915,7 @@ armors:
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
     camouflageAtDay: 25
-    camouflageAtDark: 12
+    camouflageAtDark: 15
     heatVision: 20
     spriteSheet: SPACEWOLVESASSbattle.PCK
     spriteInv: SPACEWOLVESARMOR_ASS.PCK
@@ -2273,7 +2273,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: CRIMSONFISTSCOUTbattle.PCK
@@ -2997,7 +2997,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: SALAMANDERscoutbattle.PCK
@@ -3037,8 +3037,8 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 10 # higher tech
     antiCamouflageAtDark: 10 # higher tech
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: 15
+    camouflageAtDark: 5
     heatVision: 30 # higher tech
     spriteSheet: SALAMANDERADVscoutbattle.PCK
     spriteInv: SALAMANDERARMOR_ADVSCOUT.PCK
@@ -4806,7 +4806,7 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDay: 20
     camouflageAtDark: 8
     heatVision: 25
     spriteSheet: DARKANGELSCOUTbattle.PCK
@@ -5469,10 +5469,10 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
 
   - type: STR_REPRISALIA_ARMOR_AI
-    camouflageAtDay: 8
+    camouflageAtDay: 15
     camouflageAtDark: 5
-    visibilityAtDay: 15
-    visibilityAtDark: 12
+    visibilityAtDay: 40
+    visibilityAtDark: 25  # Between assassin and stormtrooper
     heatVision: 30  # Inq
     antiCamouflageAtDay: 5  # +1 Inq
     antiCamouflageAtDark: 5  # +1 Inq

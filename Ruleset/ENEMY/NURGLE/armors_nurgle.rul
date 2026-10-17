@@ -863,8 +863,8 @@ armors:
     antiCamouflageAtDay: 5  # assassin optics
     antiCamouflageAtDark: 5
     heatVision: 30  # assassin thermals
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: 12
+    camouflageAtDark: 7
     spriteSheet: XCOM_58.PCK
     spriteInv: AASSN.SPK
     customArmorPreviewIndex: 63
@@ -1517,7 +1517,7 @@ armors:
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
     camouflageAtDay: 20
-    camouflageAtDark: 12
+    camouflageAtDark: 8
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 7
     spriteSheet: VERMIN_MONK_BS.PCK  # Vermin-ified Nurgle follower
@@ -1560,8 +1560,8 @@ armors:
   - type: STR_HRUD_VERMINKIN_ARMOR
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: 20
+    camouflageAtDark: 8
     antiCamouflageAtDay: 3
     antiCamouflageAtDark: 6
     spriteSheet: VERMINKIN_BS.PCK  # HRUD VERMINKIN NURGLE BASIC SKAVEN
@@ -1602,8 +1602,8 @@ armors:
   - type: STR_HRUD_FESTERKIN_ARMOR
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: 20
+    camouflageAtDark: 8
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 7
     spriteSheet: FESTERKIN_BS.PCK  # HRUD FESTERKIN NURGLE BLESSED SKAVEN
@@ -1644,8 +1644,8 @@ armors:
   - type: STR_HRUD_WARRIOR_ARMOR
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: 20
+    camouflageAtDark: 8
     antiCamouflageAtDay: 3
     antiCamouflageAtDark: 5
     spriteSheet: SKAVEN_BS.PCK  # HRUD_WARRIOR basic
@@ -1684,7 +1684,7 @@ armors:
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
     camouflageAtDay: 20
-    camouflageAtDark: 12
+    camouflageAtDark: 8
     antiCamouflageAtDay: 3
     antiCamouflageAtDark: 5
     spriteSheet: ARMOREDSKAVEN_BS.PCK  # HRUD_ARMORED_WARRIOR
@@ -1722,8 +1722,8 @@ armors:
   - type: STR_HRUD_SNIPER_ARMOR
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: 15
+    camouflageAtDark: 5
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 6
     spriteSheet: CLOAKEDSKAVEN_BS.PCK  # HRUD_SNIPER

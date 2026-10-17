@@ -31,8 +31,8 @@ armors:
       UNIT_TYPE_KHORNE: 1
 
   - type: STR_KHORNE_REVENGEANCE_SUIT    # KHORNE Sister of Reveangance
-    camouflageAtDay: 20
-    camouflageAtDark: 12
+    camouflageAtDay: 12
+    camouflageAtDark: 7
     visibilityAtDay: 30
     visibilityAtDark: 20
     antiCamouflageAtDay: 10

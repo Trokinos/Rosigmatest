@@ -660,8 +660,8 @@ armors:
     visibilityAtDark: 35  # +5
     antiCamouflageAtDay: 8  # Slightly worse than Alpha
     antiCamouflageAtDark: 6  # Slightly worse than Alpha
-    camouflageAtDark: 12
-    camouflageAtDay: 8
+    camouflageAtDark: -15
+    camouflageAtDay: -5
     heatVision: 20
     spriteSheet: NIGHTLORDS_CSM_BS.PCK
     spriteInv: NIGHTLORD_CSM_SOLDIER_INV.SPK
@@ -2156,8 +2156,8 @@ armors:
     requires: STR_CONTACT_CHAOS_SISTERS
     visibilityAtDay: 40
     visibilityAtDark: 20
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: -5
+    camouflageAtDark: -5
     spriteSheet: DARKDISCIPLE_BS.PCK
     spriteInv: DARKDISCIPLE_INV
     forcedTorso: 1
@@ -2458,8 +2458,8 @@ armors:
     visibilityAtDark: 30
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
-    # camouflageAtDay: 12  # Worse than NL CSM
-    # camouflageAtDark: 8  # Worse than NL CSM
+    # camouflageAtDay: 10  # Worse than NL CSM
+    # camouflageAtDark: 5  # Worse than NL CSM
     spriteSheet: NIGHTLORDS_SISTER_BS.PCK
     spriteInv: NIGHTLORDS_SISTER_INV.SPK
     customArmorPreviewIndex: 1219
@@ -4041,7 +4041,7 @@ armors:
     visibilityAtDay: 30
     visibilityAtDark: 30
     camouflageAtDay: 20
-    camouflageAtDark: 12
+    camouflageAtDark: 8
     antiCamouflageAtDay: 3
     antiCamouflageAtDark: 5
     spriteSheet: ARMOREDSKAVEN_BS.PCK  # HRUD_ARMORED_WARRIOR
@@ -4125,7 +4125,7 @@ armors:
     visibilityAtDay: 30  # weak eyes at day
     visibilityAtDark: 30  # perfect night vision
     camouflageAtDay: 20
-    camouflageAtDark: 12
+    camouflageAtDark: 8
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 7
     spriteSheet: VERMIN_MONK_BS.PCK  # Vermin-ified Nurgle follower
@@ -4861,8 +4861,8 @@ armors:
   - type: STR_BLACKSTONE_ARMOR_PLAYER
     visibilityAtDay: 40
     visibilityAtDark: 35  # Superior NV + optics
-    camouflageAtDay: 15
-    camouflageAtDark: 12
+    camouflageAtDay: -10
+    camouflageAtDark: -15
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
     heatVision: 40  # superior NV + optics
@@ -4908,8 +4908,8 @@ armors:
     type: STR_BLACKSTONE_STORMTROOPER_ARMOR_PLAYER
     visibilityAtDay: 40
     visibilityAtDark: 25  # Darkvision
-    camouflageAtDay: 15
-    camouflageAtDark: 8
+    camouflageAtDay: -5
+    camouflageAtDark: -5
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
     heatVision: 20
@@ -4998,8 +4998,8 @@ armors:
     movementType: 0
     visibilityAtDay: 40  # scout recon flyer
     visibilityAtDark: 30
-    camouflageAtDay: 12
-    camouflageAtDark: 8
+    camouflageAtDay: -5
+    camouflageAtDark: -5
     antiCamouflageAtDay: 15
     antiCamouflageAtDark: 10
     heatVision: 25
