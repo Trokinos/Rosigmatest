@@ -203,40 +203,6 @@ items:
         set subvoxel_drift 0;
         return;
 
- #### LASLOCK AMMO ####
-
-  - type: STR_SLAANESHPATH_LASLOCK_PISTOL_CLIP_STANDARD
-    refNode: *STR_SLAANESHPATH_LASGUN_MUNITION_STANDARD_TEMPLATE
-    fireSound: 3985
-    power: 95
-    damageType: 4 # AP, to be in line with rebalanced lasgun ammo
-    damageAlter:  # Da Slaanesh Handcannon
-      ToArmorPre: 0.55 # 0.2 -> 0.30 
-      ArmorEffectiveness: 0.7 # Penetrative power
-      toArmor: 0.2 # Ruins armor 
-      ToHealth: 0.7 # Worse at health damage. 
-      ToStun: 0.65
-      ToEnergy: 0.35 # Weakening
-      ToMorale: 0.35 # Weakening
-      toTime: 0.35 # Weakening
-    clipSize: 1 # You only get one shot.
-
-    type: STR_SLAANESHPATH_LASLOCK_PISTOL_CLIP_TAINTED
-    refNode: *STR_SLAANESHPATH_LASGUN_MUNITION_TAINTED_TEMPLATE
-    fireSound: 3985
-    power: 100
-    damageType: 4 # AP, to be in line with rebalanced lasgun ammo
-    damageAlter:  # Da Slaanesh CURSED handcannon
-      ToArmorPre: 1 # Melta equivalent 
-      ArmorEffectiveness: 0.7 # Penetrative power
-      toArmor: 0.2 # Ruins armor 
-      ToHealth: 0.5 # Worse at health damage. 
-      ToStun: 0.65
-      ToEnergy: 0.35 # Weakening
-      ToMorale: 0.35 # Weakening
-      toTime: 0.35 # Weakening
-    clipSize: 1 # You only get one shot.
- ##### 
 
  #### SONIC AMMO ####
 
@@ -497,9 +463,9 @@ items:
     invHeight: 2
     listOrder: 10295
 
- #### EXPLOSIVES AND GRENADES
+ #### 40MM GRENADES
 
-  - type: STR_SLAANESHPATH_HALLUCINOGEN_40MM  # multipurpose purpose smoke/morale/debuff weapon
+  - type: STR_SLAANESHPATH_HALLUCINOGEN_40MM  # multipurpose smoke/morale/debuff/corruption
     bigSprite: 2055
     floorSprite: 2060
     handSprite: {mod: 40k, index: 336}  # Needs new
@@ -535,7 +501,7 @@ items:
       INFECTION_TYPE: 3
     clipSize: 2
 
-  - type: STR_SLAANESHPATH_KNOCKOUT_40MM  # Slaanesh photon grenades
+  - type: STR_SLAANESHPATH_KNOCKOUT_40MM  # Non-damaging stun gas.
     bigSprite: 2055
     floorSprite: 2060
     handSprite: {mod: 40k, index: 336}  # Needs new
@@ -560,8 +526,47 @@ items:
       ToTime: 0.5  
       ArmorEffectiveness: 0.4
       FixRadius: 4
-      SmokeThreshold: 0  # Still creates smoke
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 50
       ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
     clipSize: 2
+
+  - type: STR_SLAANESHPATH_SHARD_40MM  # Cursed, armor-piercing fragments: wounds + corruption.
+    bigSprite: 2055
+    floorSprite: 2060
+    handSprite: {mod: 40k, index: 336}  # Needs new
+    battleType: 2  # 4 is Grenade, but these are not primed
+    invWidth: 1  # smaller
+    invHeight: 1
+    explosionHitSound: {mod: 40k, index: 776}  # 776: Resources/Sounds/SPELLFAIL.wav
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    listOrder: 10331
+    power: 90 # Rare & expensive.
+    damageType: 3
+    damageAlter:  # DA WARP SHARDS
+      RandomType: 1
+      ToHealth: 0.25 # Tiny armor piercing fragments
+      ToWound: 0.6 # Cursed fragments will quickly kill or mutate those afflicted.
+      RandomWound: false
+      ToTile: 0.1 
+      ToItem: 0.2  
+      ToArmor: 0.05   
+      ToEnergy: 0.7  
+      ToStun: 0.7 
+      ToTime: 0.5
+      ToMorale: 6.0 # EXTREMELY debilitating.  
+      ArmorEffectiveness: 0.7 # Some shards will likely get through.
+      FixRadius: 5
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 25
+      INFECTION_DAMAGE_PERCENT: 65  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+    clipSize: 2
+
+  - type: STR_SLAANESHPATH_SONIC_40MM # Direct damage: scaled-down sonic grenades
+
+  - type: STR_SLAANESHPATH_BALEFIRE_40MM # multipurpose: armor melt/incendiary/morale damage
+
+  - type: STR_SLAANESHPATH_AMPUTATOR_40MM # Rippershot; high damage and stun vs unarmored, direct-fire only
+
+  - type: STR_SLAANESHPATH_FLECHETTE_40MM # Toxic armor-piercing flechettes; direct-fire only. 

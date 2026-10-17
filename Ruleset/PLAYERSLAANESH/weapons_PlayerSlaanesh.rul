@@ -105,6 +105,44 @@ items:
     tags:
       REACTION_MULTIPLIER: 200
 
+ #### LAUNCHERS ###
+
+  - type: STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE # Small, break-open GL for utility grenades. Accurate.
+
+    weight: 11 # Stubcannon -3
+    bigSprite: 247 # Stubcannon sprites, placeholder
+    floorSprite: 262
+    handSprite: 668
+    bulletSprite: {mod: 40k, index: 6}
+    fireSound: {mod: 40k, index: 707}
+
+    armor: 200
+    dropoff: 4
+    autoRange: 0
+    snapRange: 18 # GL -3
+    aimRange: 0
+
+    accuracyAuto: 0
+    accuracySnap: 75 # GL +3
+    accuracyAimed: 0
+    tuAuto: 0
+    tuSnap: 35 # GL - 10
+    tuAimed: 0
+
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    arcingShot: true
+
+    compatibleAmmo: # Cannot use direct-fire grenades.
+      - STR_SLAANESHPATH_KNOCKOUT_40MM
+      - STR_SLAANESHPATH_HALLUCINOGEN_40MM
+      # STR_SLAANESHPATH_SONIC_40MM
+      # STR_SLAANESHPATH_SHARD_40MM
+
+
  #### LIGHT BOLTERS ####
 
   - type: STR_BOLTER_CANTUS_SLAAN  # Corrupted Cantus bolter. Low recoil, rapid fire, penetrating bolts.
