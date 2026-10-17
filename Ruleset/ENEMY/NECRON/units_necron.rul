@@ -904,7 +904,7 @@ armors:
     antiCamouflageAtDark: 15
     antiCamouflageAtDay: 15
     camouflageAtDark: 5 # blends in to the dark
-    camouflageAtDay: 5 # largely because it's a deep strike unit that can't just phase in wherever
+    camouflageAtDay: 8 # largely because it's a deep strike unit that can't just phase in wherever
     frontArmor: 60
     sideArmor: 50
     rearArmor: 40
@@ -1571,7 +1571,7 @@ armors:
     antiCamouflageAtDark: 15
     antiCamouflageAtDay: 15
     camouflageAtDay: 5  # active camo level stealth
-    camouflageAtDark: 2
+    camouflageAtDark: 5
     heatVision: 40
     psiVision: 10  # bloodhunt/sense the living
     frontArmor: 110

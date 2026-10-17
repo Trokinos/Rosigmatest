@@ -953,8 +953,8 @@ armors:
     visibilityAtDark: 1  # Good night vision
     antiCamouflageAtDay: 1
     antiCamouflageAtDark: 1
-    camouflageAtDark: 8
-    camouflageAtDay: 15
+    camouflageAtDark: 5
+    camouflageAtDay: 5
     heatVision: 33  # Basic bio-heatvision
     psiVision: 10
     loftempsSet: [1]  # very small targets
@@ -1814,8 +1814,8 @@ armors:
   - type: STR_GSC_ARBITOR_ARMOR  # WARDEN ARBITOR
     visibilityAtDay: 40
     visibilityAtDark: 30
-    camouflageAtDay: 25  # Visible at 25 tiles without anticamo
-    camouflageAtDark: 15  # Visible at 15 tiles without anticamo
+    camouflageAtDay: 15  # Visible at 15 tiles without anticamo
+    camouflageAtDark: 12  # Visible at 8 tiles without anticamo
     antiCamouflageAtDark: 10
     antiCamouflageAtDay: 10
     heatVision: 30
@@ -2675,7 +2675,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 25  # darkvision boost from Infection
     camouflageAtDay: 12  # Visible at 12 tiles without anticamo
-    camouflageAtDark: 8  # Visible at 8 tiles without anticamo
+    camouflageAtDark: 5  # Visible at 5 tiles without anticamo
     antiCamouflageAtDark: 5
     antiCamouflageAtDay: 5
     heatVision: 10

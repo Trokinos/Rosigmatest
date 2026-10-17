@@ -730,7 +730,7 @@ armors:
     visibilityAtDay: 40
     visibilityAtDark: 40  # daemons have perfect night vision
     camouflageAtDay: 30  # relatively easy to spot in daylight
-    camouflageAtDark: 2  # almost completely invisible in darkness - made of shadows
+    camouflageAtDark: 5  # almost completely invisible in darkness - made of shadows
     antiCamouflageAtDay: 15
     antiCamouflageAtDark: 10
     heatVision: 33  # daemons have 33% heat vision as standard

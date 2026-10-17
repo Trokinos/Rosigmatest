@@ -7,8 +7,8 @@ armors:
 
   - &STR_CALLIDUS_ASSASSIN_UNARMED
     type: STR_CALLIDUS_ASSASSIN_UNARMED    # ADEPTAS ASSASIN CALLIDUS Top Tier Assassin Armor
-    camouflageAtDay: 2
-    camouflageAtDark: 2
+    camouflageAtDay: 5
+    camouflageAtDark: 5
     visibilityAtDay: 40
     visibilityAtDark: 35
     antiCamouflageAtDay: 15
@@ -226,8 +226,8 @@ armors:
 
   - &STR_CULEXUS_ASSASSIN_UNARMED
     type: STR_CULEXUS_ASSASSIN_UNARMED
-    camouflageAtDay: 2
-    camouflageAtDark: 2
+    camouflageAtDay: 5
+    camouflageAtDark: 5
     visibilityAtDay: 40
     visibilityAtDark: 35
     antiCamouflageAtDay: 20 # animus speculum includes advanced optics, and psychic cloaking effects don't work.
@@ -551,8 +551,8 @@ armors:
     corpseBattle:
       - STR_VANUS_ASSASSIN_CORPSE
     loftempsSet: [3]
-    camouflageAtDay: 2
-    camouflageAtDark: 2
+    camouflageAtDay: 5
+    camouflageAtDark: 5
     visibilityAtDay: 40
     visibilityAtDark: 35  # best possible Imperium night vision
     antiCamouflageAtDay: 15  # Good Imperium anti-camo
@@ -632,7 +632,7 @@ armors:
   - &STR_REPRISALIA_ARMOR
     type: STR_REPRISALIA_ARMOR
     camouflageAtDay: 8
-    camouflageAtDark: 5
+    camouflageAtDark: 8
     visibilityAtDay: 40
     visibilityAtDark: 25  # Between assassin and stormtrooper
     heatVision: 30  # Inq

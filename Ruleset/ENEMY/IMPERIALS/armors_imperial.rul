@@ -5469,7 +5469,7 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
 
   - type: STR_REPRISALIA_ARMOR_AI
-    camouflageAtDay: 8
+    camouflageAtDay: 15
     camouflageAtDark: 5
     visibilityAtDay: 15
     visibilityAtDark: 12
