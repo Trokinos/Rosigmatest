@@ -555,62 +555,6 @@ items:
     recover: false
     hiddenOnMinimap: true
 
-  # XENOTECH
-  - type: STR_TRIPLE_GAUSS_CANNON
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-  - type: STR_HYPERPHASESWORD
-    recoveryTransformations:
-      STR_HYPERPHASESWORD_REMNANT: [1]
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-  - type: STR_GAUSS_CANNON
-    recoveryTransformations:
-      STR_GAUSS_CANNON_REMNANT: [1]
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-  - type: STR_GAUSS_FLAYER
-    recoveryTransformations:
-      STR_GAUSS_FLAYER_REMNANT: [1]
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-  - type: STR_SYNAPTIC_DISINTEGRATOR
-    recoveryTransformations:
-      STR_SYNAPTIC_DISINTEGRATOR_REMNANT: [1]
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-  - type: STR_GAUSS_BLASTER
-    recoveryTransformations:
-      STR_GAUSS_BLASTER_REMNANT: [1]
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-  - type: STR_GAUSS_REAPER
-    recoveryTransformations:
-      STR_GAUSS_REAPER_REMNANT: [1]
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-  - type: STR_STAFF_OF_LIGHT
-    recoveryTransformations:
-      STR_STAFF_OF_LIGHT_REMNANT: [1]
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-  - type: STR_NECRON_WARSCYTHE
-    recoveryTransformations:
-      STR_NECRON_WARSCYTHE_REMNANT: [1]
-    requires:
-      - STR_NECRONTECH_RESEARCH
-
-
-
-
   - type: STR_ELECTRO_FLARE
     weight: 2  # 3
 
@@ -1000,6 +944,18 @@ items:
     hiddenOnMinimap: true
     specialType: 8
 
+  - type: STR_MARBO_CLUE4
+    listOrder: 50
+    size: 0.0
+    costBuy: 0
+    costSell: 0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+    specialType: 8
+
   # chaos thunderhawk turret
 
   - type: CHAOSLTT_ARMOR
@@ -1122,6 +1078,25 @@ items:
     listOrder: 6650
 
   - type: STR_SPACEWOLVES_WULFEN_TERMIPLAYER
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6661
+
+  # krieg truck turret item armor and spawner
+
+
+  - type: STR_KRIEGTRUCKTURRET_SPAWNER
+    liveAlien: false
+    recover: true
+    spawnUnit: STR_KRIEGTRUCK_SMALL_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+
+  - type: STR_KRIEGTRUCK_SMALL_TURRET_ARMOR
     size: 0.2
     costBuy: 0
     costSell: 0

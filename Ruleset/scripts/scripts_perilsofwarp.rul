@@ -7,7 +7,7 @@ extended:
     BattleUnit:
       UNIT_PERILS_MODIFIER: int  # our cumulative increase to perils of the warp
       CURRENT_INFECTION_DAMAGE: int  # current amount of infection the unit has
-      CURRENT_INFECTION_TYPE: int  # type of infection the unit has. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh
+      CURRENT_INFECTION_TYPE: int  # type of infection the unit has. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
       CURRENT_INFECTION_FACTION: int  # faction source of the infection
     BattleItem:
       ITEM_PSYCHIC_POWER_CHECKED: int  # have we checked this item?

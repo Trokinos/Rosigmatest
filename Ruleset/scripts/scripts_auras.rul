@@ -1,0 +1,664 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+  tags:
+    RuleArmor:
+      UNIT_HAS_AURA: int # does this unit have an aura?
+      AURA_ID: int # mainly used to prevent stacking where applicable; TBD
+      AURA_DOES_NOT_STACK: int # 1 = doesn't stack with other aura effects; TBD
+      AURA_TILE_RADIUS_XY: int # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: int # aura's horizontal radius in height; if 9+ we ignore height
+      AURA_INFLICTS_CORRUPTION: int # does this aura inflict corruption? if so how much. Negative values cleanse corruption
+      AURA_CORRUPTION_TYPE: int # what type of corruption does the aura inflict? 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_IGNITES: int # does this aura ignite? positive value = yes, null = no, negative value = it extinguishes as if you'd ever have a unit with an extinguishing aura, lol
+      AURA_DEALS_DAMAGE: int # does this aura deal damage. Negative values remove damage instead.
+      AURA_EFFECT_RANDOM: int # aura deals flat damage/corruption if not defined; 1 = Gaussian damage rolling 0-half max damage twice and adding them. 2 = 0-2x the aura's base value
+      AURA_DAMAGE_TYPE: int # if this aura deals damage, what damage resistance is it affected by?
+      AURA_DAMAGE_APPLY_RESISTANCE: int # do we apply damage resistance to aura damage?
+      AURA_DAMAGE_HEALTH: int # if true, this aura damages health
+      AURA_DAMAGE_MORALE: int # if true, this aura damages morale
+      AURA_DAMAGE_MORALE_BRAVERY_RESIST: int # if true, morale damage inflicted by this aura is affected by Bravery
+      AURA_DAMAGE_STUN: int # if true, this aura damages stun
+      AURA_DAMAGE_ENERGY: int # if true, this aura damages energy
+      AURA_DAMAGE_TIME: int # if true, this aura damages TU
+      AURA_DAMAGE_ARMOR: int # if true, this aura damages armor
+      AURA_FACTION_TYPE: int # Which factions does this aura effect? If it affects all units if unspecified; 1 = Player 2 = Enemy 3 = Neutral 4 = Player & Enemy 5 = Player & Neutral 6 = Enemy & Neutral
+      AURA_REQUIRES_SIGHT: int # ONLY DETECTS WHETHER UNITS ARE PLAYER VISIBLE ATM. Do we need to see the target for the aura to affect it?
+      AURA_FACTION_TURN: int # Does the aura trigger at the start of the PLAYER (1) HOSTILE (2) or NEUTRAL (3) turn? If unspecified, it will match the user's faction.
+      AURA_RESPECT_HIGH_WATERMARK: int # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+    BattleUnit:
+      AURA_HIGH_WATERMARK_DAMAGE: int # highest power aura in damage a unit has thus far been affected with; if subject to an aura of lower strength, don't bother
+      AURA_HIGH_WATERMARK_CORRUPTION: int # highest power aura in corruption a unit has thus far been affected with; if subject to an aura of lower strength, don't bother
+      AURA_LOW_WATERMARK_DAMAGE: int # for 'curative' auras; lowest power aura in damage a unit has thus far been affected with; if subject to an aura of higher strength, don't bother
+      AURA_LOW_WATERMARK_CORRUPTION: int # for 'curative' auras; lower power aura in corruption a unit has thus far been affected with; if subject to an aura of higher strength, don't bother
+      AURA_UNIT_SUBJECT_TO_HOSTILE_AURA: int # were we subject to a hostile aura?
+      AURA_UNIT_SUBJECT_TO_FRIENDLY_AURA: int # were we subject to a friendly aura?
+      AURA_REMOVE_HOSTILE_FRIENDLY_STATUS: int # are we flagged to remove our status of being affected by a hostile/friendly aura for the purposes of the visual indicator?
+
+  scripts:
+    newTurnUnit:
+      - new: ROSIGMA_nTU_aura_effect
+        offset: -1
+        code: |
+          var int temp;
+          var int temp2;
+          var int rangeVoxel;         # maximum distance between soldier and target in voxels
+          var ptr Tile actorTile;     # tile pointer under the soldier
+          var ptr Tile targetTile;    # tile pointer under the target
+          var int posX;               # tile coordinates
+          var int posY;
+          var int PosZ;
+          var int targetPosZ;
+          var int targetFaction;      # game faction of the target
+          var int auraRadiusXY;       # horizontal radius of the aura in tiles
+          var int auraFaction;        # which factions this aura affects
+          var int auraSight;          # do you have to see the target for your aura to affect it?
+          var int auraRadiusZ;        # vertical radius of the aura in tiles; 9+ = ignore height
+          var int auraIgnites;        # does the aura ignite?
+          var int auraDamage;         # does the aura deal damage? Initial aura damage.
+          var int auraDamageNet;      # does the aura deal damage? Aura damage after modifiers.
+          var int auraEffectRandom;   # does the aura flat or gaussian random damage?
+          var int auraDamageResist;   # do we apply resistances to this aura damage?
+          var int auraDamageType;     # type of aura damage
+          var int auraDamageHealth;   # does the aura damage health?
+          var int auraDamageMorale;   # does the aura damage morale?
+          var int auraDamageMoraleBraveryResists; # does bravery help against morale damage?
+          var int auraDamageEnergy;   # does the aura damage energy?
+          var int auraDamageTime;     # does the aura damage TU?
+          var int auraDamageStun;     # does the aura damage stun?
+          var int auraDamageArmor;    # does the aura damage armor?
+          var int auraCorruption;     # does the aura inflict corruption? Initial aura corruption.
+          var int auraCorruptionNet;     # does the aura inflict corruption? Aura corruption after modifiers.
+          var int auraCorruptionType; # what type of corruption does this aura inflict?
+          var int auraCorruptionRemove; # if evaluated to equal 1, will remove corruption
+          var int auraType; # 1 = aura is hostile, 2 = aura is friendly
+          var int auraRespectWatermark; # does this aura respect the high/low watermarks?
+          var int targetCorruptionResist; # target's corruption resistance
+          var int targetCorruptionResistType; # type of target's corruption resistance
+          var int targetCorruptionReduction; # target corruption reduction
+          var int loopCriteriaFail;   # did a target unit fail loop criterion?
+          var int tileDistance;       # current distance between soldier and target in voxels
+          var ptr BattleUnit bUnit;
+          var ptr RuleArmor unitArmor;
+          var ptr RuleArmor targetArmor;
+
+          unit.getRuleArmor unitArmor;
+          unitArmor.getTag temp Tag.UNIT_HAS_AURA;
+          if lt temp 1; # abort if we don't have an aura
+            # debug_log "ROSIGMA_nTU_aura; UNIT_HAS_AURA is null. Aborting." temp;
+            return;
+          end;
+
+          unit.getHealth temp;
+          if lt temp 1; # abort if we're dead
+            # debug_log "ROSIGMA_nTU_aura; Unit is dead. Aborting." temp;
+            return;
+          end;
+
+          unitArmor.getTag temp Tag.AURA_FACTION_TURN;
+          sub temp 1; # offset
+          if lt temp 0; # if AURA_FACTION_TURN is undefined, default to matching the turn of the unit
+            unit.getFaction temp;
+            if neq side temp; # if it's not our turn and AURA_FACTION_TURN is null, abort
+              # debug_log "ROSIGMA_nTU_aura; if it's not our turn and AURA_FACTION_TURN is null. Aborting." temp;
+              return;
+            end;
+          else neq side temp; # if AURA_FACTION_TURN doesn't match the current faction turn, abort
+            # debug_log "ROSIGMA_nTU_aura; AURA_FACTION_TURN does not match the current turn. Aborting." temp;
+            return;
+          end;
+
+          # Set our varibles
+          unitArmor.getTag auraFaction Tag.AURA_FACTION_TYPE;
+          unitArmor.getTag auraSight Tag.AURA_REQUIRES_SIGHT;
+          unitArmor.getTag auraRadiusZ Tag.AURA_TILE_RADIUS_Z;
+          unitArmor.getTag auraIgnites Tag.AURA_IGNITES;
+          unitArmor.getTag auraDamage Tag.AURA_DEALS_DAMAGE;
+          unitArmor.getTag auraDamageType Tag.AURA_DAMAGE_TYPE;
+          unitArmor.getTag auraEffectRandom Tag.AURA_EFFECT_RANDOM;
+          unitArmor.getTag auraDamageResist Tag.AURA_DAMAGE_APPLY_RESISTANCE;
+          unitArmor.getTag auraDamageHealth Tag.AURA_DAMAGE_HEALTH;
+          unitArmor.getTag auraDamageMorale Tag.AURA_DAMAGE_MORALE;
+          unitArmor.getTag auraDamageMoraleBraveryResists Tag.AURA_DAMAGE_MORALE_BRAVERY_RESIST;
+          unitArmor.getTag auraDamageStun Tag.AURA_DAMAGE_STUN;
+          unitArmor.getTag auraDamageEnergy Tag.AURA_DAMAGE_ENERGY;
+          unitArmor.getTag auraDamageTime Tag.AURA_DAMAGE_TIME;
+          unitArmor.getTag auraDamageArmor Tag.AURA_DAMAGE_ARMOR;
+          unitArmor.getTag auraCorruption Tag.AURA_INFLICTS_CORRUPTION;
+          unitArmor.getTag auraCorruptionType Tag.AURA_CORRUPTION_TYPE;
+          unitArmor.getTag auraRespectWatermark Tag.AURA_RESPECT_HIGH_WATERMARK;
+          set auraDamageNet auraDamage;
+          set auraCorruptionNet auraCorruption;
+
+          # debug_log "ROSIGMA_nTU_aura; Name of unit with aura:" unit;
+
+          # Find the tile where the soldier who activated the script is located:
+          unit.getPosition.getX posX;
+          unit.getPosition.getY posY;
+          unit.getPosition.getZ PosZ;
+          battle_game.getTile actorTile posX posY PosZ;
+          # Determine the radius of the skill in voxels from the found tile:
+          unitArmor.getTag auraRadiusXY Tag.AURA_TILE_RADIUS_XY;
+          set rangeVoxel auraRadiusXY;
+          mul rangeVoxel 16;
+          add rangeVoxel 8; #half tile buffer for max distance
+          # Checking every unit that exists on the map:
+          # debug_log "ROSIGMA_nTU_aura; Check units around" actor "(position:" posX "," posY "," PosZ ") within" rangeVoxel "voxels:";
+          loop var targetUnit battle_game.getUnits.list;
+
+            targetUnit.getFaction targetFaction;
+            if and gt auraFaction 0 lt loopCriteriaFail 1;
+              if eq targetFaction FACTION_PLAYER;
+                if and neq auraFaction 1 neq auraFaction 4 neq auraFaction 5;
+                  set loopCriteriaFail 1;
+                end;
+              else eq targetFaction FACTION_HOSTILE;
+                if and neq auraFaction 2 neq auraFaction 4 neq auraFaction 6;
+                  set loopCriteriaFail 1;
+                end;
+              else;
+                if and neq auraFaction 3 neq auraFaction 5 neq auraFaction 6;
+                  set loopCriteriaFail 1;
+                end;
+              end;
+            end;
+
+            # Check if visibility is necessary
+            if gt auraSight 0;
+              # debug_log "ROSIGMA_nTU_aura; Aura respects visibility.";
+              targetUnit.isVisible temp;
+              if lt temp 1;
+                # debug_log "ROSIGMA_nTU_aura; Target unit is not visible to aura source faction.";
+                set loopCriteriaFail 1;
+              end;
+            end;
+
+            if lt loopCriteriaFail 1;
+              # Determine target unit tile:
+              targetUnit.getPosition.getX posX;
+              targetUnit.getPosition.getY posY;
+              targetUnit.getPosition.getZ targetPosZ;
+              if lt auraRadiusZ 9; #don't bother with this if our Z radius is 9+
+                set temp targetPosZ;
+                sub temp PosZ;
+                if lt temp 0; # convert negative differentials into positive ones
+                  mul temp -1;
+                end;
+              end;
+              if or gt auraRadiusZ 8 eq targetPosZ PosZ le temp auraRadiusZ; #check our Z distance, and whether it matters
+                # Determine voxel distance between the soldier's tile and the target's tile:
+                battle_game.getTile targetTile posX posY targetPosZ;
+                actorTile.getDistanceVoxel tileDistance targetTile;
+                # If this distance is less than the maximum aura range, apply effects to the target:
+                if and gt tileDistance 0 lt tileDistance rangeVoxel;
+                  targetUnit.getRuleArmor targetArmor;
+                  set bUnit targetUnit; # set the read only for pulling tag data
+                  # debug_log "ROSIGMA_nTU_aura; found" targetUnit "(position:" posX "," posY "," PosZ ") within" tileDistance "voxels";
+                  if gt auraIgnites 0; # do we ignite or extinguish?
+                    targetUnit.setFire 1;
+                    set auraType 1;
+                  else lt auraIgnites 0; # in case anyone wants an extinguishing aura, lol
+                    targetUnit.setFire 0;
+                  end;
+
+                  if gt auraRespectWatermark 0;
+                    if gt auraDamageNet 0; # apply diminishing returns
+                      bUnit.getTag temp Tag.AURA_HIGH_WATERMARK_DAMAGE;
+                      sub auraDamageNet temp;
+                      limit_lower auraDamageNet 0;
+                      # debug_log "ROSIGMA_nTU_aura; Damage post-watermark reduction:" auraDamageNet;
+                    else lt auraDamageNet 0;
+                      bUnit.getTag temp Tag.AURA_LOW_WATERMARK_DAMAGE;
+                      sub auraDamageNet temp;
+                      limit_upper auraDamageNet 0;
+                      # debug_log "ROSIGMA_nTU_aura; Negative Damage post-watermark reduction:" auraDamageNet;
+                    end;
+                  end;
+
+                  if neq auraDamageNet 0; # do we do damage/grant a benefit?
+                    # debug_log "ROSIGMA_nTU_aura; Damage pre-random:" auraDamageNet;
+                    if gt auraEffectRandom 0; # does the aura do random or flat damage?
+                      if eq auraEffectRandom 1;
+                        battle_game.randomRange temp 0 auraDamageNet; # Gaussian
+                        battle_game.randomRange temp2 0 auraDamageNet;
+                        add temp temp2;
+                        set auraDamageNet temp;
+                      else;
+                        set temp2 auraDamageNet;
+                        mul temp2 2;
+                        battle_game.randomRange temp 0 temp2; # Even distribution
+                        set auraDamageNet temp;
+                      end;
+                    end;
+                    # debug_log "ROSIGMA_nTU_aura; auraDamageNet post-random:" auraDamageNet;
+                    if and gt auraDamageResist 0 gt auraDamageType 0; # if we reduce damage by resistance
+                      targetUnit.reduceByResistance temp auraDamageType;
+                    end;
+                    # debug_log "ROSIGMA_nTU_aura; Damage post-resistance:" auraDamageNet;
+                    if gt auraDamageStun 0;
+                      targetUnit.addStun auraDamageNet;
+                      # debug_log "ROSIGMA_nTU_aura; Damage Stun:" auraDamageNet;
+                    end;
+                    mul auraDamageNet -1; # invert so we actually do damage.
+                    if gt auraDamageHealth 0;
+                      targetUnit.addHealthWithOverkill auraDamageNet;
+                      # debug_log "ROSIGMA_nTU_aura; Damage Health:" auraDamageNet;
+                    end;
+                    if gt auraDamageMorale 0;
+                      if gt auraDamageMoraleBraveryResists 0;
+                        set temp auraDamageNet;
+                        targetUnit.reduceByBravery temp;
+                        targetUnit.addMorale temp;
+                        # debug_log "ROSIGMA_nTU_aura; Damage Morale post-Bravery reduction:" auraDamageNet;
+                      else;
+                        targetUnit.addMorale auraDamageNet;
+                        # debug_log "ROSIGMA_nTU_aura; Damage Morale:" auraDamageNet;
+                      end;
+                    end;
+                    if gt auraDamageEnergy 0;
+                      targetUnit.addEnergy auraDamageNet;
+                      # debug_log "ROSIGMA_nTU_aura; Damage Energy:" auraDamageNet;
+                    end;
+                    if gt auraDamageTime 0;
+                      targetUnit.addTimeUnits auraDamageNet;
+                      # debug_log "ROSIGMA_nTU_aura; Damage TU:" auraDamageNet;
+                    end;
+                    if gt auraDamageArmor 0; # decays random armor facing
+                      battle_game.randomRange temp2 1 6;
+                      targetUnit.addArmor temp2 auraDamageNet;
+                      # debug_log "ROSIGMA_nTU_aura; Damage Armor:" auraDamageNet;
+                    end;
+                    mul auraDamageNet -1;
+                  end;
+
+                  if gt auraRespectWatermark 0;
+                    if gt auraCorruptionNet 0; # apply diminishing returns
+                      bUnit.getTag temp Tag.AURA_HIGH_WATERMARK_CORRUPTION;
+                      # debug_log "ROSIGMA_nTU_aura; AURA_HIGH_WATERMARK_CORRUPTION:" temp;
+                      sub auraCorruptionNet temp;
+                      limit_lower auraCorruptionNet 0;
+                      # debug_log "ROSIGMA_nTU_aura; auraCorruptionNet post-AURA_HIGH_WATERMARK_CORRUPTION:" auraCorruptionNet;
+                    else lt auraCorruptionNet 0;
+                      bUnit.getTag temp Tag.AURA_LOW_WATERMARK_CORRUPTION;
+                      # debug_log "ROSIGMA_nTU_aura; AURA_LOW_WATERMARK_CORRUPTION:" temp;
+                      sub auraCorruptionNet temp;
+                      limit_upper auraCorruptionNet 0;
+                      # debug_log "ROSIGMA_nTU_aura; post-AURA_LOW_WATERMARK_CORRUPTION:" auraCorruptionNet;
+                    end;
+                  end;
+
+                  if neq auraCorruptionNet 0; # do we do corruption?
+                    # debug_log "ROSIGMA_nTU_aura; Corruption Pre-Random:" auraCorruptionNet;
+                    if gt auraEffectRandom 0; # does the aura do random or flat damage?
+                      if eq auraEffectRandom 1;
+                        battle_game.randomRange temp 0 auraCorruptionNet; # Gaussian
+                        battle_game.randomRange temp2 0 auraCorruptionNet;
+                        add temp temp2;
+                        set auraCorruptionNet temp;
+                      else;
+                        set temp2 auraCorruptionNet;
+                        mul temp2 2;
+                        battle_game.randomRange temp 0 temp2; # Even distribution
+                        set auraCorruptionNet temp;
+                      end;
+                    end;
+
+                    # debug_log "ROSIGMA_nTU_aura; Corruption Post-Random:" auraCorruptionNet;
+
+                    targetArmor.getTag targetCorruptionResistType Tag.INFECTION_RESIST_TYPE; # if our infection resist is 100% and applies to all infection types we're immune; abort
+                    if gt auraCorruptionNet 0;
+                      targetArmor.getTag targetCorruptionResist Tag.INFECTION_RESIST;
+                      targetArmor.getTag targetCorruptionReduction Tag.INFECTION_REDUCTION;
+                      if and gt auraCorruptionNet 0 ge targetCorruptionResist 100 le targetCorruptionResistType 0;
+                        # debug_log "ROSIGMA_nTU_aura; Unit Is Corruption Immune.";
+                        set auraCorruptionNet 0;
+                      else gt targetCorruptionResist 0;
+                        # if our infection is specific to a type, define that check if our infection resistance type applies
+                        if gt targetCorruptionResistType 0;
+                          set temp 0; # reset the temp var
+                          if eq auraCorruptionType 1; # check Nurgle typing
+                            if or eq targetCorruptionResistType 1 eq targetCorruptionResistType 3 eq targetCorruptionResistType 5 eq targetCorruptionResistType 9;
+                              set temp 1;
+                              # debug_log "ROSIGMA_nTU_aura; Nurgle infection resisted:" targetCorruptionResistType;
+                            else or eq targetCorruptionResistType 7 eq targetCorruptionResistType 11 eq targetCorruptionResistType 13;
+                              set temp 1;
+                              # debug_log "ROSIGMA_nTU_aura; Nurgle infection resisted:" targetCorruptionResistType;
+                            end;
+                          else eq auraCorruptionType 2; # check GSC typing
+                            if or eq targetCorruptionResistType 2 eq targetCorruptionResistType 3 eq targetCorruptionResistType 6 eq targetCorruptionResistType 10;
+                              set temp 1;
+                              # debug_log "ROSIGMA_nTU_aura; GSC infection resisted:" targetCorruptionResistType;
+                            else or eq targetCorruptionResistType 7 eq targetCorruptionResistType 11 eq targetCorruptionResistType 14;
+                              set temp 1;
+                              # debug_log "ROSIGMA_nTU_aura; GSC infection resisted:" targetCorruptionResistType;
+                            end;
+                          else eq auraCorruptionType 3; # check Slaanesh typing
+                            if or eq targetCorruptionResistType 4 eq targetCorruptionResistType 5 eq targetCorruptionResistType 6 eq targetCorruptionResistType 12;
+                              set temp 1;
+                              # debug_log "ROSIGMA_nTU_aura; Slaanesh infection resisted:" targetCorruptionResistType;
+                            else or eq targetCorruptionResistType 7 eq targetCorruptionResistType 13 eq targetCorruptionResistType 14;
+                              set temp 1;
+                              # debug_log "ROSIGMA_nTU_aura; Slaanesh infection resisted:" targetCorruptionResistType;
+                            end;
+                          else eq auraCorruptionType 4; # check Tzeentch typing
+                            if or eq targetCorruptionResistType 8 eq targetCorruptionResistType 9 eq targetCorruptionResistType 10 eq targetCorruptionResistType 12;
+                              set temp 1;
+                              # debug_log "ROSIGMA_nTU_aura; Tzeentch infection resisted:" targetCorruptionResistType;
+                            else or eq targetCorruptionResistType 11 eq targetCorruptionResistType 13 eq targetCorruptionResistType 14;
+                              set temp 1;
+                              # debug_log "ROSIGMA_nTU_aura; Tzeentch infection resisted:" targetCorruptionResistType;
+                            end;
+                          end;
+                          # after checking our infection resist types, zero out infection resist/reduction if temp is false; i.e. we don't resist this particular infection type
+                          if neq temp 1;
+                            set targetCorruptionResist 0;
+                            set targetCorruptionReduction 0;
+                          end;
+                        end;
+
+
+                        if gt targetCorruptionReduction 0;
+                          # debug_log "ROSIGMA_nTU_aura; Corruption Final Reduction:" temp2;
+                          sub auraCorruptionNet targetCorruptionReduction;
+                          limit_lower auraCorruptionNet 0; # cannot go lower than 0
+                          # debug_log "ROSIGMA_nTU_aura; Corruption Post-Reduction:" temp;
+                        end;
+
+                        if gt targetCorruptionResist 0;
+                          # debug_log "ROSIGMA_nTU_aura; Corruption Final Resistance:" targetCorruptionResist;
+                          limit_lower targetCorruptionResist 0; # cannot go lower than 0
+                          limit_upper targetCorruptionResist 100; # cannot go higher than 100
+                          sub targetCorruptionResist 100; # invert targetCorruptionResist
+                          mul targetCorruptionResist -1; # invert targetCorruptionResist
+                          muldiv auraCorruptionNet targetCorruptionResist 100;
+                          # debug_log "ROSIGMA_nTU_aura; Corruption Post-Resistance:" temp;
+                        end;
+
+                        bUnit.getTag temp Tag.CURRENT_INFECTION_TYPE;
+                        if neq temp 2; # Devotion and Bless only protects against Chaos Corruption, not GSC infections.
+                          bUnit.Stats.getPsiSkill temp;
+                          if gt temp 50; # we only start getting the Emprah's protection from Chaos with Devotion above 50.
+                            sub temp 50;
+                            div temp 2;
+                            if ge temp 100; # abort if we get 100+% infection resistance
+                              # debug_log "Infection Scripts; damageUnit, offset 22: Aborting. Infection resistance from Devotion at 100%" temp;
+                              return;
+                            end;
+                            sub temp 100; # invert
+                            mul temp -1;
+                            muldiv auraCorruptionNet temp 100;
+                            # debug_log "ROSIGMA_nTU_aura; Corruption post-Devotion:" auraCorruptionNet;
+                          end;
+
+                          bUnit.getTag temp Tag.SOLDIER_BLESS_CORRUPTION_RESISTANCE; # now apply Chaos corruption resistance from Bless
+                          if gt temp 0;
+                            if ge temp 100; # abort if we get 100+% infection resistance
+                              # debug_log "Infection Scripts; damageUnit, offset 22: Aborting. Infection resistance from Bless at 100%" temp;
+                              return;
+                            end;
+                            sub temp 100; # invert
+                            mul temp -1;
+                            muldiv auraCorruptionNet temp 100;
+                            # debug_log "ROSIGMA_nTU_aura; Corruption post-Bless:" auraCorruptionNet;
+                          end;
+                        end;
+                      end;
+                    else;
+                      bUnit.getTag targetCorruptionResistType Tag.CURRENT_INFECTION_TYPE; # see if we dispel any infection of our current infection type
+                      if eq targetCorruptionResistType 1; # check Nurgle typing
+                        if or eq auraCorruptionType 1 eq auraCorruptionType 3 eq auraCorruptionType 5 eq auraCorruptionType 9;
+                          set auraCorruptionRemove 1;
+                          # debug_log "ROSIGMA_nTU_aura; Nurgle infection resisted:" targetCorruptionResistType;
+                        else or eq auraCorruptionType 7 eq auraCorruptionType 11 eq auraCorruptionType 13;
+                          set auraCorruptionRemove 1;
+                          # debug_log "ROSIGMA_nTU_aura; Nurgle infection resisted:" targetCorruptionResistType;
+                        end;
+                      else eq targetCorruptionResistType 2; # check GSC typing
+                        if or eq auraCorruptionType 2 eq auraCorruptionType 3 eq auraCorruptionType 6 eq auraCorruptionType 10;
+                          set auraCorruptionRemove 1;
+                          # debug_log "ROSIGMA_nTU_aura; GSC infection resisted:" targetCorruptionResistType;
+                        else or eq auraCorruptionType 7 eq auraCorruptionType 11 eq auraCorruptionType 14;
+                          set auraCorruptionRemove 1;
+                          # debug_log "ROSIGMA_nTU_aura; GSC infection resisted:" targetCorruptionResistType;
+                        end;
+                      else eq targetCorruptionResistType 3; # check Slaanesh typing
+                        if or eq auraCorruptionType 4 eq auraCorruptionType 5 eq auraCorruptionType 6 eq auraCorruptionType 12;
+                          set auraCorruptionRemove 1;
+                          # debug_log "ROSIGMA_nTU_aura; Slaanesh infection resisted:" targetCorruptionResistType;
+                        else or eq auraCorruptionType 7 eq auraCorruptionType 13 eq auraCorruptionType 14;
+                          set auraCorruptionRemove 1;
+                          # debug_log "ROSIGMA_nTU_aura; Slaanesh infection resisted:" targetCorruptionResistType;
+                        end;
+                      else eq targetCorruptionResistType 4; # check Tzeentch typing
+                        if or eq auraCorruptionType 8 eq auraCorruptionType 9 eq auraCorruptionType 10 eq auraCorruptionType 12;
+                          set auraCorruptionRemove 1;
+                          # debug_log "ROSIGMA_nTU_aura; Tzeentch infection resisted:" targetCorruptionResistType;
+                        else or eq auraCorruptionType 11 eq auraCorruptionType 13 eq auraCorruptionType 14;
+                          set auraCorruptionRemove 1;
+                          # debug_log "ROSIGMA_nTU_aura; Tzeentch infection resisted:" targetCorruptionResistType;
+                        end;
+                      end;
+                    end;
+
+                    bUnit.getTag temp Tag.CURRENT_INFECTION_TYPE;
+                    if and gt temp 0 neq auraCorruptionType temp lt auraCorruptionRemove 1; # if we have existing corruption of a different type, and if we're not removing corruption, the highest applies
+                      bUnit.getTag temp Tag.CURRENT_INFECTION_DAMAGE;
+                      # debug_log "ROSIGMA_nTU_aura; Existing Corruption:" temp;
+                      # debug_log "ROSIGMA_nTU_aura; Pending Net Corruption:" auraCorruptionNet;
+                      if gt temp auraCorruptionNet;
+                        unit.getFaction temp2; # assign the faction of the infection
+                        targetUnit.setTag Tag.CURRENT_INFECTION_FACTION temp2;
+                        targetUnit.setTag Tag.CURRENT_INFECTION_TYPE auraCorruptionType;
+                        targetUnit.setTag Tag.CURRENT_INFECTION_DAMAGE auraCorruptionNet;
+                        # debug_log "ROSIGMA_nTU_aura; Corruption final, override existing corruption:" temp;
+                      else;
+                        set auraCorruptionNet 0; # effectively zero out corruption for the purposes of the high water mark
+                        # debug_log "ROSIGMA_nTU_aura; Corruption final, not high enough to override existing corruption:" temp;
+                      end;
+                    else;
+                      bUnit.getTag temp Tag.CURRENT_INFECTION_DAMAGE;
+                      # debug_log "ROSIGMA_nTU_aura; Existing Corruption:" temp;
+                      # debug_log "ROSIGMA_nTU_aura; Pending Net Corruption:" auraCorruptionNet;
+                      set temp2 auraCorruptionNet;
+                      add temp temp2;
+                      limit_lower temp 0;
+                      unit.getFaction temp2; # assign the faction of the infection
+                      targetUnit.setTag Tag.CURRENT_INFECTION_FACTION temp2;
+                      targetUnit.setTag Tag.CURRENT_INFECTION_DAMAGE temp;
+                      targetUnit.setTag Tag.CURRENT_INFECTION_TYPE auraCorruptionType;
+                      # debug_log "ROSIGMA_nTU_aura; Corruption final:" auraCorruptionNet;
+                    end;
+
+                  end;
+                  # set our watermarks; highest/lowest of auraDamageNet and auraCorruptionNet vs existing watermarks
+                  if gt auraDamageNet 0;
+                    bUnit.getTag temp Tag.AURA_HIGH_WATERMARK_DAMAGE;
+                    if gt auraDamageNet temp;
+                      targetUnit.setTag Tag.AURA_HIGH_WATERMARK_DAMAGE auraDamageNet;
+                      set auraType 1;
+                      # debug_log "ROSIGMA_nTU_aura; new aura damage high watermark:" auraDamageNet;
+                    end;
+                  else lt auraDamageNet 0; # negative damage/damage removal
+                    bUnit.getTag temp Tag.AURA_LOW_WATERMARK_DAMAGE;
+                    if lt auraDamageNet temp;
+                      targetUnit.setTag Tag.AURA_LOW_WATERMARK_DAMAGE auraDamageNet;
+                      set auraType 2;
+                      # debug_log "ROSIGMA_nTU_aura; new aura damage low watermark:" auraDamageNet;
+                    end;
+                  end;
+
+                  if gt auraCorruptionNet 0;
+                    bUnit.getTag temp Tag.AURA_HIGH_WATERMARK_CORRUPTION;
+                    if gt auraCorruptionNet temp;
+                      targetUnit.setTag Tag.AURA_HIGH_WATERMARK_CORRUPTION auraCorruptionNet;
+                      set auraType 1;
+                      # debug_log "ROSIGMA_nTU_aura; new corruption damage high watermark:" auraCorruptionNet;
+                    end;
+                  else lt auraCorruptionNet 0; # negative corruption/corruption removal
+                    bUnit.getTag temp Tag.AURA_LOW_WATERMARK_CORRUPTION;
+                    if lt auraCorruptionNet temp;
+                      targetUnit.setTag Tag.AURA_LOW_WATERMARK_CORRUPTION auraCorruptionNet;
+                      set auraType 2;
+                      # debug_log "ROSIGMA_nTU_aura; new corruption damage low watermark:" auraCorruptionNet;
+                    end;
+                  end;
+
+                if eq targetFaction FACTION_PLAYER;
+                  if eq auraType 1;
+                    battle_game.flashMessage "STR_AURA_HOSTILE_NOTIFICATION";
+                    targetUnit.setTag Tag.AURA_UNIT_SUBJECT_TO_HOSTILE_AURA 1;
+                  else eq auraType 2;
+                    battle_game.flashMessage "STR_AURA_FRIENDLY_NOTIFICATION";
+                    targetUnit.setTag Tag.AURA_UNIT_SUBJECT_TO_FRIENDLY_AURA 1;
+                  end;
+                end;
+
+                end;
+              end;
+            end;
+          end;
+          return;
+
+      - new: ROSIGMA_nTU_aura_remove_watermark
+        offset: 99
+        code: |
+          var int temp;
+
+          unit.getFaction temp;
+          if neq side temp; # reset our high water mark if it's our turn
+            # debug_log "ROSIGMA_nTU_aura_remove_watermark; if it's not our turn and AURA_FACTION_TURN is null. Aborting." temp;
+            return;
+          end;
+
+          if neq temp FACTION_PLAYER; #debug conditionality; comment this out when done debugging
+            return;
+          end;
+
+          # DEBUG ONLY BEGINS; COMMENT OUT AFTER DEBUG IS COMPLETED
+          # debug_log "ROSIGMA_nTU_aura_remove_watermark; Current Unit:" unit;
+          unit.getTag temp Tag.AURA_HIGH_WATERMARK_CORRUPTION;
+          if gt temp 0; # must be greater than 0 to avoid cluttering log
+            # debug_log "ROSIGMA_nTU_aura_remove_watermark; AURA_HIGH_WATERMARK_CORRUPTION:" temp;
+          end;
+          unit.getTag temp Tag.AURA_HIGH_WATERMARK_DAMAGE;
+          if gt temp 0; # must be greater than 0 to avoid cluttering log
+            # debug_log "ROSIGMA_nTU_aura_remove_watermark; AURA_HIGH_WATERMARK_DAMAGE:" temp;
+          end;
+          unit.getTag temp Tag.AURA_LOW_WATERMARK_CORRUPTION;
+          if lt temp 0; # must be lower than 0 to avoid cluttering log
+            # debug_log "ROSIGMA_nTU_aura_remove_watermark; AURA_LOW_WATERMARK_CORRUPTION:" temp;
+          end;
+          unit.getTag temp Tag.AURA_LOW_WATERMARK_DAMAGE;
+          if lt temp 0; # must be lower than 0 to avoid cluttering log
+            # debug_log "ROSIGMA_nTU_aura_remove_watermark; AURA_LOW_WATERMARK_DAMAGE:" temp;
+          end;
+          # DEBUG ONLY ENDS; COMMENT OUT AFTER DEBUG IS COMPLETED
+
+          unit.setTag Tag.AURA_HIGH_WATERMARK_CORRUPTION 0;
+          unit.setTag Tag.AURA_HIGH_WATERMARK_DAMAGE 0;
+          unit.setTag Tag.AURA_LOW_WATERMARK_CORRUPTION 0;
+          unit.setTag Tag.AURA_LOW_WATERMARK_DAMAGE 0;
+          if eq temp FACTION_PLAYER;
+            unit.setTag Tag.AURA_REMOVE_HOSTILE_FRIENDLY_STATUS 1;
+          end;
+          # debug_log "ROSIGMA_nTU_aura_remove_watermark; aura corruption and damage watermarks reset!";
+          return;
+
+      - new: ROSIGMA_nTU_aura_remove_aura_visuals
+        offset: -2
+        code: |
+          var int temp;
+
+            unit.getTag temp Tag.AURA_REMOVE_HOSTILE_FRIENDLY_STATUS;
+            if lt temp 1; # if we're not earmarked for removing our aura status, abort
+              return;
+            end;
+
+            unit.setTag Tag.AURA_UNIT_SUBJECT_TO_HOSTILE_AURA 0;
+            unit.setTag Tag.AURA_UNIT_SUBJECT_TO_FRIENDLY_AURA 0;
+            unit.setTag Tag.AURA_REMOVE_HOSTILE_FRIENDLY_STATUS 0;
+
+            return;
+
+    recolorUnitSprite:
+      - new: ROSIGMA_rUS_aura_script_recolor
+        offset: 30  # while shift is pressed we can see who has been affected by an aura
+        code: |
+          var int temp;
+          var int frame;
+          var int frameLength;
+          var int recolorPeriod;
+          var int animFrame;
+          var int color;
+          var int newShade;
+
+          battle_game.isShiftPressed temp; #we'll key it to shift for now
+          if eq temp 1;
+          # only bother highlighting player units
+            unit.getFaction temp;
+            if neq temp FACTION_PLAYER;
+              # debug_log "ROSIGMA_rUS_aura_script_recolor, offset 30: Aborting; target is non-player. temp:" temp;
+              return new_pixel;
+            end;
+
+            #check if we were subject to an aura
+            unit.getTag temp Tag.AURA_UNIT_SUBJECT_TO_HOSTILE_AURA;
+            if lt temp 1;
+              unit.getTag temp Tag.AURA_UNIT_SUBJECT_TO_FRIENDLY_AURA;
+              if lt temp 1;
+                # debug_log "ROSIGMA_rUS_aura_script_recolor, offset 30: Aborting; target not subject to friendly or hostile aura:" temp;
+                return new_pixel;
+              else;
+                set_color new_pixel COLOR_X1_GREEN0; # for friendly aura exposure
+                # debug_log "ROSIGMA_rUS_aura_script_recolor, offset 30: Target subject to friendly aura. new_pixel:" new_pixel;
+              end;
+            else;
+              set_color new_pixel COLOR_X1_RED; # for hostile aura exposure
+              # debug_log "ROSIGMA_rUS_aura_script_recolor, offset 30: Target subject to hostile aura. new_pixel:" new_pixel;
+            end;
+
+            set animFrame anim_frame; #set up frame timer
+            if gt animFrame 60;
+              set temp animFrame;
+              muldiv temp 1 60;
+              mul temp 60;
+              sub animFrame temp;
+              if lt animFrame 0;
+                add animFrame 60;
+              end;
+            end;
+
+            if le animFrame 11;
+              get_shade newShade old_pixel;
+              add newShade animFrame;
+              add newShade 2;
+              set_shade new_pixel newShade;
+            else le animFrame 21;
+              get_shade newShade old_pixel;
+              add newShade animFrame;
+              add newShade 2;
+              set_shade new_pixel newShade;
+            else le animFrame 31;
+              get_shade newShade old_pixel;
+              add newShade animFrame;
+              add newShade 2;
+              set_shade new_pixel newShade;
+            else le animFrame 41;
+              get_shade newShade old_pixel;
+              sub newShade animFrame;
+              sub newShade 2;
+              set_shade new_pixel newShade;
+            else le animFrame 51;
+              get_shade newShade old_pixel;
+              sub newShade animFrame;
+              sub newShade 2;
+              set_shade new_pixel newShade;
+            else;
+              get_shade newShade old_pixel;
+              sub newShade animFrame;
+              sub newShade 2;
+              set_shade new_pixel newShade;
+            end;
+          end;
+
+          return new_pixel;

@@ -1032,9 +1032,7 @@ items:
       ToItem: 1.0
       ToArmorPre: 0.3  # destroys armor on the way in
       ArmorEffectiveness: 0.3
-      # FixRadius: 1 #just has to be close
       IgnoreOverKill: false
-      # RadiusReduction: 100  #still deals a lot of damage if it gets close, but it may be survivable
     clipSize: 2
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 75 # 200 power is plenty . . .

@@ -108,41 +108,33 @@ events:
     everyMultiSoldierList:
       STR_GUARDSM_KRIEG: 18
       STR_GUARD_KRIEG_GRENADIER: 2 #Placeholder, needs officer type
-    spawnedPersons: 18
-    spawnedPersonType: STR_GUARDSM_KRIEG
     timer: 780
     timerRandom: 0
     researchList: [STR_KRIEG_STRATEGY]
     interruptResearch: STR_NOT_KRIEG_STRATEGY
     everyMultiItemList:
-      STR_CHIMERASL_TOKEN: 1 #placeholder
-      STR_LIGHTNING_SL_TOKEN: 1 #placeholder
+      STR_TRUCKSTARTER_KRIEG_TOKEN: 1
       STR_GUARD_ARMORS_MEDIC: 2
-      STR_LASCARBINE_STEEL_LEGION: 6 #placeholder
-      STR_LASGUN_STEEL_LEGION: 6 #placeholder
-      STR_LASGUN_CLIP: 24
+      STR_LASER_RIFLE_KRIEG_TIER1: 20
+      STR_LASGUN_CLIP: 40
       STR_FLAMETHROWER: 2 #placeholder
       STR_FLAMETHROWER_CLIP: 6
-      STR_SHOTGUN: 2 #placeholder
+      STR_TRENCHGUN_LUCIUS: 2
       STR_SHOTGUN_SHELLS: 4
       STR_STUN_SHELLS: 2
       STR_STUN_GAS_SHELLS: 2
       STR_CHAINSWORD_STEEL_LEGION: 2 #placeholder
       STR_DISPOSABLE_LAUNCHER_KRAK: 6
-      STR_GRENADE_LAUNCHER_STEEL_LEGION: 2 #placeholder
-      STR_FRAG_GRENADE_DRUM: 4
-      STR_KRAK_GRENADE_DRUM: 4
-      STR_INCENDIARY_GRENADE_DRUM: 2
-      STR_BOLTER_LIGHT_LMG: 1  #placeholder
-      STR_LIGHT_BOLTER_AMMO_BELT: 4 #placeholder
-      STR_CHIMERASL_MULTILAS_TURRET: 2 #placeholder
-      STR_CHIMERASL_TWIN_HB_TURRET: 1 #placeholder
-      STR_CHIMERASL_HULL_BOLTER: 3 #placeholder
+      STR_GRENADELAUNCHER_LUCIUS_T1: 2
+      STR_INCENDIARY_GRENADE40: 8
+      STR_KRAK_GRENADE40: 8
+      STR_HEAVY_STUBBER_KRIEG: 4
+      STR_HEAVY_STUBBER_CLIP_KRIEG: 12
       STR_OFFICERS_CHAIN_SWORD: 2
       STR_AUTOPISTOL: 2
       STR_AUTOPISTOL_CLIP: 8
 
-  - name: STR_RECRUITS_VALHALLAN_STRATEGY_IG
+  - name: STR_RECRUITS_VALHALLA_STRATEGY_IG
     adhocMissionScriptTags: ["gameStart", "gameStartOrkVL"]
     description: STR_RECRUITS_VALHALLA_STRATEGY_IG_DESCRIPTION
     background: VALHALLANICEWARRIORSBG.SCR

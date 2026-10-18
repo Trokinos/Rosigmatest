@@ -1290,7 +1290,7 @@ mapScripts:
           - type: middle
             blocks: [0]
             size: [1, 1, 6]
-            terrain: HIDRACHAOS
+            terrain: ACULTASNOW  # HIDRACHAOS is not a terrain cant be used there
       - type: addUFO                # BOMBARDMENT UFO
         terrain: ACULTASNOW
         size: 1

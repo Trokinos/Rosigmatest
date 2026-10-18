@@ -542,7 +542,7 @@ items:
 
   - &STR_PUMP
     type: STR_PUMP_SHOTGUN  # Used by GSC, civvies, arbites etc                        10605
-    categories: [STR_CAT_SHOTGUN, STR_CAT_CHAOS]
+    categories: [STR_CAT_SHOTGUN]
     requiresBuy:
       - STR_LASER_WEAPONS
       - STR_IMPERIAL_WEAPONS

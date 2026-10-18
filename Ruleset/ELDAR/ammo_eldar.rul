@@ -49,6 +49,7 @@ items:
       #Avenger Research
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
       # Avenger Research
     weight: 5
     #requiresBuyBaseFunc: [ELDAROUT]
@@ -319,21 +320,12 @@ items:
     costBuy: 5000
     costSell: 500
     weight: 3
-    power: 60 # +10 to Imperial las (Eldar has Str 4 over Str 3 lasguns)
-    damageType: 1  # AP instead of LAS
-    damageAlter:
-      ToArmorPre: 0.2
-      ToHealth: 1.0
-      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
-      ToStun: 0.3  # painful las burns
-      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
-      RandomWound: false
     clipSize: 30
     # lasblaster aesthetics
     hitSound: 3986
     hitAnimation: 2220
     bulletSprite: {mod: 40k, index: 22}
-    fireSound: 3981
+    fireSound: [1899, 1900, 1901]
     vaporColorSurface: 4  # red laser
     vaporDensitySurface: 2
     vaporProbabilitySurface: 100
@@ -353,13 +345,28 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 300
+    # Damage stats
+    power: 60 # +10 to Imperial las (Eldar has Str 4 over Str 3 lasguns)
+    damageType: 1  # AP instead of LAS
+    damageAlter:
+      RandomType: 2 # Consistent damage, lower crits less effective against high armor.
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
+      ToStun: 0.3  # painful las burns
+      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
+      RandomWound: false
 
   - type: STR_HAWKSTALON_CHARGE
     refNode: *HAWK_LAS_AMMO_TEMPLATE
+    requires:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
     costBuy: 10000
     costSell: 1000
     power: 85 # STR 6
     damageAlter:
+      RandomType: 2 # Consistent damage, lower crits less effective against high armor.
       ToArmorPre: 0.2
       ToHealth: 1.0
       ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
@@ -383,6 +390,9 @@ items:
 
   - type: STR_HAWK_SCATTERLASER_CHARGE
     refNode: *HAWK_LAS_AMMO_TEMPLATE
+    requires:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
     costBuy: 10000
     costSell: 1000
     weight: 5
@@ -468,12 +478,6 @@ items:
 
   - type: STR_SHURIKEN_CANNON_MAG  #                 16200
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
-    damageAlter:  # DA SHURIKEN
-      ToArmorPre: 0.1  # was ToArmor, i.e doesn't damage high armor it can't pen, making certain units invincible.
-      RandomType: 2  # TFTD [50% - 150%]
-      ToHealth: 0.5
-      ToStun: 0.2
-      ArmorEffectiveness: 0.3
     requires:
       - STR_ELDAR_ONLY
     requiresBuy:
@@ -492,6 +496,12 @@ items:
     explosionSpeed: 5
     power: 50
     damageType: 1
+    damageAlter:  # DA SHURIKEN
+      ToArmorPre: 0.1  # was ToArmor, i.e doesn't damage high armor it can't pen, making certain units invincible.
+      RandomType: 2  # TFTD [50% - 150%]
+      ToHealth: 0.5
+      ToStun: 0.2
+      ArmorEffectiveness: 0.3
     clipSize: 200
     battleType: 2
     armor: 30
@@ -570,3 +580,48 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 50
     listOrder: 16902
 
+  ### HWP WEAPONS
+  - &HWP_AML_AMMO_TEMPLATE
+    type: STR_HWP_STARSWARM_AMMO
+    categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
+    requires:
+      - STR_ELDAR_HWP_AML_ARMOR_RESEARCH
+    battleType: 2
+    bulletSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    clipSize: -1
+    recover: false
+    # Damage profile
+    power: 90 # FRAG
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.3 # +.1 for AP-1
+      ToArmor: 0.0
+      RandomType: 6
+      ArmorEffectiveness: 0.8  # -.1 for AP-1
+      ToStun: 0.5  # concussive
+      ToEnergy: 0.3  # concussive
+      ToTime: 0.2  # concussive
+      ToTile: 0.75  # high explosive
+      ToItem: 0.75  # high explosive
+      FixRadius: 6
+
+  - type: STR_HWP_STARSHOT_AMMO
+    refNode: *HWP_AML_AMMO_TEMPLATE
+    # Damage profile
+    power: 125  # +15 for +1 Strength over Imperium
+    powerForAnimation: 16  # 5 / 5 = 1
+    damageType: 3
+    damageAlter:
+      ResistType: 1
+      RandomType: 6  # gaussian
+      ToHealth: 0.8
+      ToArmorPre: 0.3
+      ToArmor: 0.3
+      ToTile: 1.0
+      ToItem: 1.0
+      ArmorEffectiveness: 0.5
+      FixRadius: 1  # 1 for hand grenade version
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50

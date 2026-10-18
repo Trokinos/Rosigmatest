@@ -210,6 +210,22 @@ adhocScripts:
     startDelay: 4320  # 3 days
     randomDelay: 4320  # additional random 0 to 3 days
 
+  - type: VLcultistbase
+    missionWeights:
+      0:
+        STR_VLCULTISTBASE: 100
+    startDelay: 3000
+    randomDelay: 4320  # additional random 0 to 3 days
+    adhocMissionScriptTags: ["gocultbase4VL"]
+
+  - type: VLtraitorguardbase
+    missionWeights:
+      0:
+        STR_VLTRAITORGUARDBASE: 100
+    startDelay: 3000
+    randomDelay: 4320  # additional random 0 to 3 days
+    adhocMissionScriptTags: ["gotraitorguardbase4VL"]
+
 
 
 missionScripts:
@@ -1823,27 +1839,6 @@ missionScripts:
       STR_STEEL_LEGION_STRATEGY: true
       STR_EVEN_HARDER_MISSIONS: false
 
-  - type: gameStartCultist_VL #Valhallan
-    # For SL/VL, the Cultist/TraitorGuard base is on top of adhoc gameStartOrkSL, but shows up later.
-    executionOdds: 33
-    firstMonth: 2  # Cultist base could arrive early than gameStartTraitorGuard_SL in month 4
-    lastMonth: 3
-    missionWeights:
-      0:
-        STR_CULTIST_BASE_START: 100
-    targetBaseOdds: 100
-    raceWeights:
-      0:
-        STR_SLAANESH_CULT_EARLY: 33  #Traitor's Hand
-        STR_SLAANGOR_MIXED: 10
-        STR_CULTIST_SQUATS: 15 #Porretta campaign
-    startDelay: 3000
-    randomDelay: 4320  # additional random 0 to 3 days
-    label: 100
-    researchTriggers:
-      STR_VALHALLAN_STRATEGY: true
-      STR_EVEN_HARDER_MISSIONS: false
-
   # Rebels
   - &STR_DESERTER_HIDEOUT
     type: deserterHideout
@@ -1969,29 +1964,6 @@ missionScripts:
     label: 101
     researchTriggers:
       STR_STEEL_LEGION_STRATEGY: true
-      STR_EVEN_HARDER_MISSIONS: false
-
-  - type: gameStartTraitorGuard_VL #Traitor's Hand slaanesh tilt
-    # For SL/VL, the Cultist/TraitorGuard base is on top of gameStartOrkSL, but shows up later, and not in home region.
-    executionOdds: 100  # 100% b/c this is the last option/variant for VL/SL
-    firstMonth: 4  # delayed to month 4, since VL also starts against a guaranteed Ork Base (adhoc gameStartOrkVL)
-    lastMonth: 4
-    conditionals: [-100]  # Note: Exclusive w/ gameStartCultist_VL
-    missionWeights:
-      0:
-        STR_TRAITOR_GUARD_BASE_START: 100
-    targetBaseOdds: 100
-    raceWeights:
-      0:
-        STR_SNAKEMAN: 5
-        STR_SLAANESH_TRAITOR_GUARD_MID: 50
-        STR_TRAITOR_SQUATS: 40
-        STR_HRUD_WARRIOR_FORCE: 5
-    startDelay: 3000
-    randomDelay: 4320  # additional random 0 to 3 days
-    label: 101
-    researchTriggers:
-      STR_VALHALLAN_STRATEGY: true
       STR_EVEN_HARDER_MISSIONS: false
 
   - type: gameStartTraitorGuardExtraHard # high end traitor guard. Probably easier than the word bearers
@@ -2968,6 +2940,7 @@ missionScripts:
       0:
         REGION_HULK_SITES: 100
     firstMonth: 2  # delay 1 more month for balancing other mission of the chain will follow it anyways
+    lastMonth: 6 # this to make it rare
     startDelay: 1440  # 1 day
     randomDelay: 4320  # additional random 0 to 3 days
     useTable: false

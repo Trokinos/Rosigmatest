@@ -101,6 +101,19 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_TZEENTCH: 1
       UNIT_TYPE_PSYKER: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # swingy Tzeentch
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 15
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 15
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 9 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 2 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_ADEPTAS_TZEENTCHNASSASSINARMOR    # TZEENTCH ASSASIN and FemCultists
     camouflageAtDay: 8
@@ -230,6 +243,19 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_TZEENTCH: 1
       UNIT_TYPE_PSYKER: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # swingy Tzeentch
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 2 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_ADEPTAS_TZEENTCH_TWISTED_ARMOR     # ADEPTAS Tzeentch basic low tier
     visibilityAtDay: 40
@@ -438,6 +464,19 @@ armors:
       UNIT_TYPE_PSYKER: 1
       DODGE_CHANCE: 100
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # swingy Tzeentch
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 9 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: MUTON_ARMORTZSLORD # TZEENTCH SORCERER LORD armor
     visibilityAtDay: 40
@@ -490,6 +529,19 @@ armors:
       UNIT_TYPE_PSYKER: 1
       DODGE_CHANCE: 100
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 2 # swingy Tzeentch
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 30
+      AURA_CORRUPTION_TYPE: 4 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 30
+      AURA_DAMAGE_TYPE: 5 # plasma damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_STUN: 1
+      AURA_TILE_RADIUS_XY: 10 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 2 # aura's vertical radius in z levels; if 9+ we ignore height
+
 
   - type: MUTON_ARMORHAVOCT  # HAVOC                                # TZEENTCH
     visibilityAtDay: 40

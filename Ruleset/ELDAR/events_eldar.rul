@@ -75,6 +75,7 @@ events:
     spawnedPersonType: STR_ELDAR_GUARDIAN_PLAYER
     spawnedCraftType: STR_WAVESERPENT
     everyMultiItemList: # todo: review list of equipment
+      STR_ELDAR_CITIZEN: 250
       STR_AELDARI_FLAMER: 2
       STR_AELDARI_FLAMER_FUEL: 6
       #STR_SHOTGUN: 5
@@ -98,6 +99,22 @@ events:
       STR_TRAUMA_PACK: 5
       STR_CRATED_HORNET: 1
     researchList: [STR_ELDAR_ASURYANI_CAMPAING_LETTER_RECEIVED]
+
+  - name: STR_ELDAR_MIDTIER_REINFORCEMENTS
+    description: STR_ELDAR_MIDTIER_REINFORCEMENTS_DESCRIPTION #Temporary
+    background: ELDAR_GUARDIAN_ASSAULTING.SCR # Temporary
+    spawnedPersons: 1
+    spawnedPersonType: STR_ENGINEER
+    everyMultiItemList:
+      STR_ELDAR_CITIZEN: 125
+
+  - name: STR_ELDAR_HIGHTIER_REINFORCEMENTS
+    description: STR_ELDAR_HIGHTIER_REINFORCEMENTS_DESCRIPTION #Temporary
+    background: ELDAR_GUARDIAN_ASSAULTING.SCR # Temporary
+    spawnedPersons: 1
+    spawnedPersonType: STR_ENGINEER
+    everyMultiItemList:
+      STR_ELDAR_CITIZEN: 125
 
   - name: STR_SLAANESH_PALACE_ACTIVITY_DETECTED
     description: STR_SLAANESH_PALACE_ACTIVITY_DETECTED_DESCRIPTION

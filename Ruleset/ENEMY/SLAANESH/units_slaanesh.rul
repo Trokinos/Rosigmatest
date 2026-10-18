@@ -2395,7 +2395,7 @@ units:
       melee: 80
     armor: STR_CHRYSSALID_ARMOR
     deathSound: [2014, 2015, 2016, 2017, 2018, 2021, 2022]
-    aggroSound: 2125
+    aggroSound: [2125, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1966]
     intelligence: 4
     canPanic: false
     canBeMindControlled: false
@@ -2435,6 +2435,7 @@ units:
     moraleLossWhenKilled: 50  # expected to die in droves
     value: 25
     deathSound: [2014, 2015, 2016, 2017, 2018, 2021, 2022]
+    aggroSound: [1947, 1948, 1949, 1950, 1951, 1952, 1953, 1966]
     intelligence: 3
     aggression: 3
     energyRecovery: 40
@@ -2457,7 +2458,7 @@ units:
       psiSkill: 0
       melee: 90
     armor: STR_CHRYSSALID_ARMOR_DIRE
-    aggroSound: 2141
+    aggroSound: [2141, 1961, 1962, 1963, 1964, 1965, 1967]
     standHeight: 21
     kneelHeight: 16
     canPanic: false

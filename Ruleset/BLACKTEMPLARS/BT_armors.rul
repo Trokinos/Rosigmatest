@@ -133,7 +133,7 @@ armors:
     refNode: *STR_BTMARINE_BASEARMOR
     storeItem: STR_BTMARINEARMOR_PLAYER
     ufopediaType: STR_BTMARINEARMOR_PLAYER
-    requires: STR_MIDTIER_PREREQ
+    requires: STR_BTMARINE_MIDTIER
     builtInWeapons:
       - STR_PLASMA_RIFLE_BT
       - STR_PLASMA_RIFLE_CLIP
@@ -143,7 +143,7 @@ armors:
     refNode: *STR_BTMARINE_BASEARMOR
     storeItem: STR_BTMARINEARMOR_PLAYER
     ufopediaType: STR_BTMARINEARMOR_PLAYER
-    requires: STR_HIGHTIER_PREREQ
+    requires: STR_BTMARINE_HIGHTIER
     builtInWeapons:
       - STR_BLASTER_LAUNCHER_BT
       - STR_BLASTER_BOMB
@@ -216,7 +216,7 @@ armors:
     refNode: *STR_BTASSAULT_BASEARMOR
     storeItem: STR_BTMARINEASSAULTARMOR_PLAYER
     ufopediaType: STR_BTMARINEASSAULTARMOR_PLAYER
-    requires: STR_MIDTIER_PREREQ
+    requires: STR_BTMARINEASSAULT_MIDTIER
     builtInWeapons:
       - STR_PISTOLH_BT
       - STR_PISTOL_CLIP_MC
@@ -409,7 +409,7 @@ armors:
   - type: STR_BTTECHGRAVARMOR_PLAYER  # BT TECHMARINE GRAVGUN
     refNode: *STR_BTTECH_BASEARMOR
     storeItem: STR_BTTECHARMOR_PLAYER
-    requires: STR_HIGHTIER_PREREQ
+    requires: STR_BTTECH_HIGHTIER
     builtInWeapons:
       - STR_SMALL_LAUNCHER_TERRAN_BT
       - STR_STUN_BOMB
@@ -520,7 +520,7 @@ armors:
       tu: 0  # AC heavy
       stamina: 20
       firing: 10
-      health: 0
+      health: 1
       bravery: 10
       reactions: -10
       throwing: 30
@@ -571,14 +571,13 @@ armors:
     stats:
       tu: 15
       stamina: 20
-      firing: 0
-      health: 0
+      firing: 1
+      health: 1
       bravery: 10
       reactions: -10
-      throwing: 0
+      throwing: 1
       strength: 100
       psiStrength: 5
-      psiSkill: 0
       melee: 15
     frontArmor: 180  # shield
     rearArmor: 100
@@ -593,14 +592,12 @@ armors:
       tu: 5  # SB less heavy than AC
       stamina: 20
       firing: 15  # SB less heavy than AC
-      health: 0
+      health: 1
       bravery: 10
       reactions: -10
       throwing: 30
       strength: 100
-      psiStrength: 0
-      psiSkill: 0
-      melee: 0
+      psiStrength: 1
     builtInWeapons:
       - STR_HB_BT
       - STR_HB_CLIP
@@ -868,7 +865,7 @@ armors:
     spriteSheet: BTDREAD2BS.PCK
     customArmorPreviewIndex: [1341, 1343, 1345]
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_PLASMA
       - AUX_DREAD_FLAMER
@@ -885,7 +882,7 @@ armors:
     spriteSheet: SWDREAD3BS.PCK
     customArmorPreviewIndex: [1339, 1343, 1345]
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_LAUNCHER
       - AUX_DREAD_FLAMER
@@ -902,7 +899,7 @@ armors:
     spriteSheet: BTDREAD4BS.PCK
     customArmorPreviewIndex: [1340, 1343, 1345]
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_LASER
       - AUX_DREAD_FLAMER

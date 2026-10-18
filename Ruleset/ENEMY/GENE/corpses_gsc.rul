@@ -118,6 +118,46 @@ items:
       ITEM_BASE_COLOR: 6
       ITEM_SWAP_BASE_COLOR: 11
 
+# gsc sentinel opfor corpses
+  - type: 10_SENT1_AI
+    name: STR_CENT_CORPSE
+    weight: 200
+    armor: 100
+    floorSprite: {mod: 40k, index: 628}
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true #need to be true to recover the wreck at end of battle
+  - type: 10_SENT2
+    weight: 200
+    armor: 100
+    floorSprite: {mod: 40k, index: 629}
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: 10_SENT3
+    weight: 200
+    armor: 100
+    floorSprite: {mod: 40k, index: 630}
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: 10_SENT4
+    weight: 200
+    armor: 100
+    floorSprite: {mod: 40k, index: 631}
+    invWidth: 0
+    invHeight: 0
+    recover: false
+#sentinel GSC geoscape corpse
+  - type: STR_GSC_SENTINELPD_CORPSE
+    recoveryPoints: 8
+    battleType: 11
+    size: 0.5
+    weight: 400
+    armor: 200
+    recover: true
+
   - type: 11_BIKE1
     name: STR_BIKE_CORPSE
     weight: 200

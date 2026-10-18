@@ -40,6 +40,18 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_DAEMONIC: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 20
+      AURA_CORRUPTION_TYPE: 3 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 20
+      AURA_DAMAGE_TYPE: 6 # stun damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_ENERGY: 1
+      AURA_TILE_RADIUS_XY: 10 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
     builtInWeapons:
       - STR_COMBILAS
       - STR_FIXED_SONIC_CANNON
@@ -95,6 +107,19 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_DAEMONIC: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 3 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 6 # stun damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_ENERGY: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
     builtInWeapons:
       - STR_COMBILAS
       - STR_FIXED_SONIC_CANNON
@@ -134,8 +159,22 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_SLAANESH: 1
+      UNIT_TYPE_DAEMONIC: 1
       DODGE_CHANCE: 20
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 5
+      AURA_CORRUPTION_TYPE: 3 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 5
+      AURA_DAMAGE_TYPE: 6 # stun damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_ENERGY: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
     builtInWeapons:
       - STR_SLAANESH_LESSER_SPAWN_WEAPON
 
@@ -735,6 +774,18 @@ armors:
       UNIT_TYPE_SLAANESH: 1
       UNIT_TYPE_DAEMONIC: 1
       UNIT_TYPE_PSYKER: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 30
+      AURA_CORRUPTION_TYPE: 3 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 30
+      AURA_DAMAGE_TYPE: 6 # stun damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_ENERGY: 1
+      AURA_TILE_RADIUS_XY: 10 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 2 # aura's vertical radius in z levels; if 9+ we ignore height
     bleedImmune: true
     painImmune: true
     zombiImmune: true
@@ -1879,6 +1930,19 @@ armors:
       UNIT_TYPE_SLAANESH: 1
       UNIT_TYPE_DAEMONIC: 1
       INFECTION_RESIST: 100  # daemonic
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 3 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 6 # stun damage
+      AURA_DAMAGE_MORALE: 1
+      AURA_DAMAGE_ENERGY: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_SLAANGOR_FIENDGOR_ARMOR   # SLAANESH FIENDGOR terror unit
     visibilityAtDay: 40

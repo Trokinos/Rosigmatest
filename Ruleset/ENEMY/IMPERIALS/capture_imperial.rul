@@ -71,6 +71,13 @@ items:
     costSell: 4500
     listOrder: 20400
 
+  - type: STR_GUARDS_MOUNTED_BOLTER_AI
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 5000
+    listOrder: 20400
+
   - type: STR_IGCOMM_M_LV3_AI
     size: 0.0
     recover: true

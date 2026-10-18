@@ -49,6 +49,7 @@ soldierTransformation:
       psiSkill: 0
       melee: 0
     soldierBonusType: STR_RUNE_OF_COMMAND_START
+    lowerBoundAtMinStats: false
 
 #TIER2.transformations #transformation from tier 1 to tier 2 (path of the warrior)
 
@@ -118,6 +119,7 @@ soldierTransformation:
       psiSkill: 0
       melee: 20
     soldierBonusType: STR_RUNE_OF_VIGOR
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_SCORPION_AUTARCH
     refNode: *ELDAR_TRANSFORMATION_SCORPION
@@ -186,6 +188,7 @@ soldierTransformation:
       psiSkill: 0
       melee: 30
     soldierBonusType: STR_RUNE_OF_FLEETNESS
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_BANSHEE_AUTARCH
     refNode: *ELDAR_TRANSFORMATION_BANSHEE
@@ -255,6 +258,7 @@ soldierTransformation:
       psiSkill: 10
       melee: -20
     soldierBonusType: STR_RUNE_OF_REAPING
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_REAPER_AUTARCH
     refNode: *ELDAR_TRANSFORMATION_REAPER
@@ -325,6 +329,7 @@ soldierTransformation:
       psiSkill: 0
       melee: 0
     soldierBonusType: STR_RUNE_OF_WAR
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_DIREAVENGER_AUTARCH
     refNode: *ELDAR_TRANSFORMATION_DIREAVENGER
@@ -357,6 +362,7 @@ soldierTransformation:
       psiStrength: 0
       psiSkill: 0
       melee: 0
+
 
   - &ELDAR_TRANSFORMATION_DRAGON
     name: STR_PROMOTE_TO_DRAGON
@@ -394,6 +400,7 @@ soldierTransformation:
       psiSkill: 0
       melee: 0
     soldierBonusType: STR_RUNE_OF_THE_DRAGON
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_DRAGON_AUTARCH
     refNode: *ELDAR_TRANSFORMATION_DRAGON
@@ -461,6 +468,7 @@ soldierTransformation:
       psiStrength: 0
       psiSkill: 0
       melee: 0
+    lowerBoundAtMinStats: false
 
   - &ELDAR_TRANSFORMATION_SPIDER
     name: STR_PROMOTE_TO_SPIDER
@@ -499,6 +507,7 @@ soldierTransformation:
       psiSkill: 0
       melee: 20
     soldierBonusType: STR_RUNE_OF_THE_SPIDER
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_SPIDER_AUTARCH
     refNode: *ELDAR_TRANSFORMATION_SPIDER
@@ -566,6 +575,7 @@ soldierTransformation:
       psiSkill: 10
       melee: 0
     soldierBonusType: STR_RUNE_OF_WARDING
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_AUTARCH
     # FIXME: requiresBuyBaseFunc: [ASPECT]
@@ -613,12 +623,12 @@ soldierTransformation:
       psiSkill: 5
       melee: 5
     soldierBonusType: STR_RUNE_OF_COMMAND_AUTARCH
+    lowerBoundAtMinStats: false
 
-#Balanced placeholder for when scorpion exarch are implemented
   - name: STR_PROMOTE_TO_SCORPION_EXARCH
     requires:
       - STR_HIGHTIER_PREREQ
-       # Scorpion Exarch Research
+      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
     cost: 50000
   #   minRank: 1
     producedSoldierType: STR_ELDAR_SCORPIONEX_P #to change once scorpion exarch are here
@@ -646,6 +656,7 @@ soldierTransformation:
       psiSkill: 0
       melee: 15
     soldierBonusType: STR_RUNE_OF_WARDING
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_BANSHEE_EXARCH
     # requiresBuyBaseFunc: [PSI]
@@ -681,6 +692,7 @@ soldierTransformation:
       psiSkill: 20
       melee: 20
     soldierBonusType: STR_RUNE_OF_WARDING
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_REAPER_EXARCH
     # FIXME: requiresBuyBaseFunc: [ASPECT]
@@ -714,6 +726,7 @@ soldierTransformation:
       psiSkill: 10
       melee: 0
     soldierBonusType: STR_RUNE_OF_WARDING
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_DRAGON_EXARCH
     # FIXME: requiresBuyBaseFunc: [ASPECT]
@@ -746,13 +759,13 @@ soldierTransformation:
       psiSkill: 10
       melee: 0
     soldierBonusType: STR_RUNE_OF_WARDING
+    lowerBoundAtMinStats: false
 
   - name: STR_PROMOTE_TO_HAWK_EXARCH
     # FIXME: requiresBuyBaseFunc: [ASPECT]
     requires:
       - STR_ELDAR_ASPECT_RESEARCH
-      - STR_ELDAR_HAWK_RESEARCH
-      # ELDAR HAWK EXARCH RESEARCH
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
     cost: 50000
     #TESTING minRank: 1
     producedSoldierType: STR_ELDAR_HAWKEX_P
@@ -780,6 +793,7 @@ soldierTransformation:
       psiStrength: 0
       psiSkill: 0
       melee: 0
+    lowerBoundAtMinStats: false
     # soldierBonusType: STR_RUNE_OF_WAR
 
   - name: STR_PROMOTE_TO_SPIDER_EXARCH
@@ -815,6 +829,7 @@ soldierTransformation:
       psiSkill: 10
       melee: 0
     soldierBonusType: STR_RUNE_OF_WARDING
+    lowerBoundAtMinStats: false
 
 #TIER4.transformations
 #TIER2.PSI.Transformations #transformation from tier 1 to tier 2 for PSI unit (path of the psyker)
@@ -877,6 +892,7 @@ soldierTransformation:
       psiSkill: 15
       melee: 5
     soldierBonusType: STR_RUNE_OF_FATE
+    lowerBoundAtMinStats: false
 
 #TIER3.PSI.transformations
 
@@ -892,8 +908,7 @@ soldierTransformation:
   - name: STR_PROMOTE_TO_ELDAR_WARLOCK
     # FIXME: requiresBuyBaseFunc: [ASPECT]
     requires:
-      - STR_ELDAR_PATH
-      - STR_ELDAR_ASPECT_RESEARCH
+      - STR_ELDAR_WARLOCK_PATH_RESEARCH
     cost: 50000
     minRank: 1
     producedSoldierType: STR_ELDAR_WARLOCK_PLAYER
@@ -929,6 +944,7 @@ soldierTransformation:
       psiSkill: 20
       melee: 0
     soldierBonusType: STR_RUNE_OF_BATTLE
+    lowerBoundAtMinStats: false
 
 #NOTIER.resurrections #resurrection to wraithguard
 
@@ -988,12 +1004,15 @@ soldierTransformation:
       - STR_ELDAR_F
       - STR_ELDAR_GUARDIAN_PLAYER
       - STR_ELDAR_SCORPION_M
+      - STR_ELDAR_SCORPIONEX_P
       - STR_ELDAR_SEER_F
       - STR_ELDAR_BANSHEE_F
       - STR_ELDAR_AVANGER_MF
       - STR_ELDAR_REAPER_M
       - STR_ELDAR_DRAGON_MF
       - STR_ELDAR_SPIDER_PLAYER
+      - STR_ELDAR_HAWK_P
+      - STR_ELDAR_HAWKEX_P
       - STR_ELDAR_AUTARCH_PLAYER
       - STR_ELDAR_REAPER_EXARCH_M
       - STR_ELDAR_DRAGON_EXARCH_SOLDIER

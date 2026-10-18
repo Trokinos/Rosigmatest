@@ -718,6 +718,34 @@ armors:
   - type: STR_ELDAR_DRAGONEX_ARMOR_P
     refNode: *STR_ELDAR_DRAGON_ARMOR_VOICE
 
+  # BANSHEE
+  - &STR_ELDAR_BANSHEE_ARMOR_VOICE
+    type: STR_ELDAR_ARMOR2_P
+    selectUnitMale:     [{mod: 40k, index: 1363}, {mod: 40k, index: 1364}, {mod: 40k, index: 1365}, {mod: 40k, index: 1366}, {mod: 40k, index: 1367}]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [{mod: 40k, index: 1363}, {mod: 40k, index: 1364}, {mod: 40k, index: 1365}, {mod: 40k, index: 1366}, {mod: 40k, index: 1367}]  # yamllint disable-line rule:colons
+    startMovingMale:    [{mod: 40k, index: 1358}, {mod: 40k, index: 1359}, {mod: 40k, index: 1360}, {mod: 40k, index: 1361}, {mod: 40k, index: 1362}]  # yamllint disable-line rule:colons
+    startMovingFemale:  [{mod: 40k, index: 1358}, {mod: 40k, index: 1359}, {mod: 40k, index: 1360}, {mod: 40k, index: 1361}, {mod: 40k, index: 1362}]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [{mod: 40k, index: 1353}, {mod: 40k, index: 1354}, {mod: 40k, index: 1355}, {mod: 40k, index: 1356}, {mod: 40k, index: 1357}]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [{mod: 40k, index: 1353}, {mod: 40k, index: 1354}, {mod: 40k, index: 1355}, {mod: 40k, index: 1356}, {mod: 40k, index: 1357}]  # yamllint disable-line rule:colons
+    annoyedMale:        [{mod: 40k, index: 1368}, {mod: 40k, index: 1369}, {mod: 40k, index: 1370}, {mod: 40k, index: 1371}, {mod: 40k, index: 1372}]  # yamllint disable-line rule:colons
+    annoyedFemale:      [{mod: 40k, index: 1368}, {mod: 40k, index: 1369}, {mod: 40k, index: 1370}, {mod: 40k, index: 1371}, {mod: 40k, index: 1372}]  # yamllint disable-line rule:colons
+    deathMale:     [{mod: 40k, index: 1373}, {mod: 40k, index: 1374}, {mod: 40k, index: 1375}]  # yamllint disable-line rule:colons
+    deathFemale:   [{mod: 40k, index: 1373}, {mod: 40k, index: 1374}, {mod: 40k, index: 1375}]  # yamllint disable-line rule:colons
+  - type: STR_ELDAR_BANSHEEEX_ARMOR_P
+    refNode: *STR_ELDAR_BANSHEE_ARMOR_VOICE
+
+  # SCORPION
+  - type: STR_ELDAR_ARMOR5_P
+    refNode: *STR_ELDAR_GENERIC_ASPECT_ARMOR_VOICE
+  - type: STR_ELDAR_SCORPIONEX_ARMOR_P
+    refNode: *STR_ELDAR_GENERIC_ASPECT_ARMOR_VOICE
+
+  # HAWK
+  - type: STR_ELDAR_HAWK_ARMOR_P
+    refNode: *STR_ELDAR_GENERIC_ASPECT_ARMOR_VOICE
+  - type: STR_ELDAR_HAWKEX_ARMOR_P
+    refNode: *STR_ELDAR_GENERIC_ASPECT_ARMOR_VOICE
+
   #- &STR_ELDAR_SPIDER_VOICE          INEXPLICABLY I CANNOT GET THE REFNODES TO WORK HERE DESPITE IT WORKING FOR THE DRAGON EXARCH, TEST TO SEE IF IT WORKS INGAME
   - type: STR_ELDAR_SPIDER_ARMOR_P
     selectUnitMale:       [3117, 3118, 3119, 3120, 3121]  # yamllint disable-line rule:colons

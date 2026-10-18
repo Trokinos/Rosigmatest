@@ -29,6 +29,35 @@ items:
       ITEM_STEALTH_CLOAK_MOVEMENT_COST_MULTIPLIER: 500
       ITEM_IS_NOT_MEDIKIT: 1
 
+  - type: STR_STEALTH_SUIT_CLOAK_GV
+    medikitTargetMatrix: 0
+    medikitType: 0
+    medikitActionName: STR_TOGGLE_STEALTH_CLOAK
+    medikitTargetSelf: true
+    medikitBackground: STEALTH_SUIT_CLOAK_INTERFACE
+    painKillerActionName: STR_NULL_STRING
+    stimulantActionName: STR_NULL_STRING
+    healActionName: STR_NULL_STRING
+    woundRecovery: 0
+    healthRecovery: 0
+    stunRecovery: 0
+    energyRecovery: 0
+    painKillerRecovery: 0
+    heal: 999
+    stimulant: 1
+    painKiller: 10
+    battleType: 6  # not used as medikit
+    tuUse: 1
+    flatRate: true
+    fixedWeapon: true
+    specialIconSprite: 221
+    specialUseEmptyHand: true
+    tags:
+      ITEM_IS_STEALTH_SUIT_CLOAK: 1
+      ITEM_STEALTH_CLOAK_DURATION: 20
+      ITEM_STEALTH_CLOAK_MOVEMENT_COST_MULTIPLIER: 120
+      ITEM_IS_NOT_MEDIKIT: 1
+
 extended:
   tagsFile: Ruleset/tags_ROSIGMA.rul
 
@@ -429,6 +458,116 @@ extended:
           end;
 
           return;
+
+      - new: ROSIGMA_healU_stealth_suit_cloak_toggle
+        offset: 1
+        code: |
+          var int temp;
+          var int temp2;
+          var int stealthActive;
+          var ptr RuleArmor myRuleArmor;
+
+          # Check to see if we're using the Stealth Suit skill
+          item.getTag temp Tag.ITEM_IS_STEALTH_SUIT_CLOAK;
+          if neq temp 1;
+            # debug_log "newTurnUnit | ROSIGMA_healU_stealth_suit_cloak_toggle | offset: 1 | Not using ITEM_IS_STEALTH_SUIT_CLOAK. Aborting.";
+            return;
+          end;
+
+          # Check our counter
+          actor.getRuleArmor myRuleArmor;
+          myRuleArmor.getTag temp Tag.ARMOR_RESTEALTH_TURN_REQUIREMENT; # get the number of turns required
+          if lt temp 1;
+            battle_game.flashMessage "STR_SKILL_INFILTRATION_CHECK_NO_RESTEALTH" temp;
+            debug_log "skillUseUnit | ROSIGMA_sUU_infiltration_stealth_suit_cloak | offset: 1 | Unit cannot regain infiltration. Aborting.";
+          end;
+          actor.getTag temp2 Tag.UNIT_STEALTH_CHARGE_TURN_COUNTER;
+          sub temp temp2; # calculate turns remaining
+          limit_lower temp 0; # negatives look ugly when displayed.
+
+          actor.getTag stealthActive Tag.UNIT_STEALTH_IS_ACTIVE; # check if stealth is active
+          if eq medikit_action_type medikit_action_stimulant;
+            if gt stealthActive 0;
+              battle_game.flashMessage "STR_SCRIPT_CAMO_CLOAK_ACTIVE" temp;
+              return;
+            end;
+
+            actor.getTimeUnitsMax temp;
+            muldiv temp 10 100;
+            actor.getTimeUnits temp2;
+            if gt temp temp2;
+              sub temp temp2;
+              battle_game.flashMessage "STR_NOT_ENOUGH_TU_TO_GHOSTSHROUD" temp;
+              return;
+            end;
+            mul temp -1;
+            actor.addTimeUnits temp; # ghostshroud takes all remaining TU in the turn for stealths to instantly return to stealth mode
+            # debug_log "newTurnUnit | ROSIGMA_sUU_infiltration_stealth_suit_camo_cloak | offset: 1 | GHOSTSHROUD!: UNIT_STEALTH_IS_ACTIVE. temp." temp;
+            item.getTag temp Tag.ITEM_STEALTH_CLOAK_DURATION;
+            actor.setTag Tag.UNIT_STEALTH_IS_ACTIVE temp; # activate stealth
+            # debug_log "newTurnUnit | ROSIGMA_sUU_infiltration_stealth_suit_camo_cloak | offset: 1 | GHOSTSHROUD!: UNIT_STEALTH_IS_ACTIVE. temp." temp;
+            actor.setTag Tag.UNIT_STEALTH_CHARGE_TURN_COUNTER 0; # reset this counter
+            battle_game.flashMessage "STR_SKILL_CAMO_CLOAK_ACTIVATED" temp;
+            item.getTag temp2 Tag.ITEM_STEALTH_CLOAK_MOVEMENT_COST_MULTIPLIER;
+            actor.setTag Tag.UNIT_CAMO_CLOAK_MOVE_COST_MULTIPLIER temp2; # set the multiplier for dig in compatibility
+            actor.MoveCost.getBaseTimePercent temp; #highest penalty applies
+            if lt temp temp2;
+              actor.MoveCost.setBaseNormalTimePercent temp2; #moving is more expensive
+            end;
+          end;
+
+          if eq medikit_action_type medikit_action_heal;
+            if gt stealthActive 0;
+              battle_game.flashMessage "STR_SCRIPT_INFILTRATION_TIME_REMAINING" stealthActive;
+            else;
+              if lt temp 1;
+                battle_game.flashMessage "STR_SCRIPT_INFILTRATION_RECHARGED";
+              else;
+                battle_game.flashMessage "STR_SCRIPT_INFILTRATION_RECHARGING" temp;
+              end;
+            end;
+            return;
+          end;
+
+          if neq medikit_action_type medikit_action_painkiller;
+            return;
+          end;
+
+          if gt stealthActive 0;
+            battle_game.flashMessage "STR_SCRIPT_CAMO_CLOAK_ACTIVE" temp;
+            return;
+          end;
+
+          if gt temp 0;
+            battle_game.flashMessage "STR_SCRIPT_INFILTRATION_RECHARGING" temp;
+            return;
+          end;
+
+          actor.getTimeUnitsMax temp;
+          muldiv temp 50 100;
+          actor.getTimeUnits temp2;
+          if gt temp temp2;
+            sub temp temp2;
+            battle_game.flashMessage "STR_NOT_ENOUGH_TU_TO_CLOAK" temp;
+            return;
+          end;
+          mul temp -1;
+          actor.addTimeUnits temp; # takes half turn for stealths to go back into stealth mode
+          # debug_log "newTurnUnit | ROSIGMA_sUU_infiltration_stealth_suit_camo_cloak | offset: 1 | Restealthing: UNIT_STEALTH_IS_ACTIVE. temp." temp;
+          item.getTag temp Tag.ITEM_STEALTH_CLOAK_DURATION;
+          actor.setTag Tag.UNIT_STEALTH_IS_ACTIVE temp; # activate stealth
+          # debug_log "newTurnUnit | ROSIGMA_sUU_infiltration_stealth_suit_camo_cloak | offset: 1 | Restealthing: UNIT_STEALTH_IS_ACTIVE. temp." temp;
+          actor.setTag Tag.UNIT_STEALTH_CHARGE_TURN_COUNTER 0; # reset this counter
+          battle_game.flashMessage "STR_SKILL_CAMO_CLOAK_ACTIVATED" temp;
+          item.getTag temp2 Tag.ITEM_STEALTH_CLOAK_MOVEMENT_COST_MULTIPLIER;
+          actor.setTag Tag.UNIT_CAMO_CLOAK_MOVE_COST_MULTIPLIER temp2; # set the multiplier for dig in compatibility
+          actor.MoveCost.getBaseTimePercent temp; #highest penalty applies
+          if lt temp temp2;
+            actor.MoveCost.setBaseNormalTimePercent temp2; #moving is more expensive
+          end;
+
+          return;
+
 
     skillUseUnit:
       - new: ROSIGMA_sUU_infiltration_shadow

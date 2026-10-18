@@ -25,6 +25,7 @@ events:
       STR_OFFICERS_SWORD: 1
     timer: 30
 
+#Steel Legion
   - name: STR_REINFORCEMENT_STEELLEGION_STORMTROOPERS
     description: STR_REINFORCEMENT_STEELLEGION_STORMTROOPERS_DESCRIPTION  # "High Command has taken note of your success in destroying an Ork Base and dispatched a fireteam of Stormtroopers to assist you."
     background: StormtroopersBG.SCR
@@ -71,6 +72,26 @@ events:
     music: GMGEO19  # Ground Control Briefing theme
     timer: 2440
     timerRandom: 770
+
+#Valhallan
+  - name: STR_VALHALLA_EVENT_INTRO
+    description: STR_VALHALLA_EVENT_INTRO_TEXT
+    background: VALHALLANSMARCHBG.SCR
+    music: GMGEO19  # Ground Control Briefing theme
+    timer: 2440
+    timerRandom: 770
+
+  - name: STR_CULTISTBASECHANCE_EVENT_VL
+    description: STR_VALHALLA_EVENT_CULT_SLAANESH_TEXT
+    background: ImperialNoblesBG2.SCR
+    music: DAYOFWRATH03 #waltz
+    adhocMissionScriptTags: ["gocultbase4VL"]
+
+  - name: STR_TRAITORGUARDBASECHANCE_EVENT_VL
+    description: STR_VALHALLA_EVENT_GUARD_SLAANESH_TEXT
+    background: RivalCommanderBG.SCR
+    music: DAYOFWRATH03 #waltz
+    adhocMissionScriptTags: ["gotraitorguardbase4VL"]
 
 # catachan
 

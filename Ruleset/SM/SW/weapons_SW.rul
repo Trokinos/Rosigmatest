@@ -590,7 +590,7 @@ items:
     autoRange: 12 #+3 vs pistol
     dropoff: 6 #high drop off, -1 from pistol version
     autoShots: 3
-    power: 90 #+30% damage bonus for aimed mode
+    power: 100 #+30% damage bonus for aimed mode
     damageType: 5
     damageAlter:  # DA HELFROST BEAM
       RandomType: 6
@@ -655,7 +655,7 @@ items:
     autoRange: 12 #+3 vs pistol
     dropoff: 6 #high drop off, -1 from pistol version
     autoShots: 4 #+1 autoShots
-    power: 115 #+40% damage bonus for aimed mode
+    power: 120 #+40% damage bonus for aimed mode
     damageType: 5
     damageAlter:  # DA HELFROST BEAM
       RandomType: 6

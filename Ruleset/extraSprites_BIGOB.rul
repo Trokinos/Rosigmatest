@@ -292,7 +292,7 @@ extraSprites:
 
       1101: Resources/Bigobs/BIGOB_NL_TERMIE_CLAW.png  # STR_NIGHTLORD_COMBICLAW
       1102: Resources/Bigobs/BIGOB_STIMM.gif  # STR_STIMM_AUTOINJECTOR
-      1103: Resources/Bigobs/BIGOB_MEDIPACK.gif  # STR_TRAUMA_PACK
+      1103: Resources/Bigobs/BIGOB_MEDIPACK.png  # STR_TRAUMA_PACK
       1104: Resources/Bigobs/lasgun_lucius_tier1.png  # STR_LASGUN_LUCIUS
       1105: Resources/Bigobs/BIGOB_CHAOS_GRAVPISTOL.png  # STR_CHAOS_GRAVPISTOL
       1106: Resources/Bigobs/BIGOB_CHAOS_MC_GRAVPISTOL.png
@@ -1021,6 +1021,7 @@ extraSprites:
       3134: Resources/Bigobs/gangerouscorpse.png
       3289: Resources/Bigobs/gangergoliathcorpse.png
       4003: Resources/Bigobs/bigob_gangers_shiv.gif
+      4046: Resources/Bigobs/gangerogryncorpse.png
 
   # gangers end
 
@@ -1347,6 +1348,13 @@ extraSprites:
       4908: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_bigObj.png
       4909: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_charge_bigObj.png
 
+      4943: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_leftleg.png
+      4944: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_belt.png
+      4945: Resources/Eldar/weapons/hwpscatterlaser_bigObj.png
+      4946: Resources/Eldar/weapons/hwpshurikencannon_bigObj.png
+      4947: Resources/Eldar/weapons/hwpaeldarimissilelauncher_bigObj.png
+      4948: Resources/Eldar/weapons/hwpstarcannon_bigObj.png
+      4949: Resources/Eldar/weapons/hwpbrightlance_bigObj.png
       4950: Resources/Eldar/weapons/Wraithguard_ghostaxe_bigObj.png
       4951: Resources/Eldar/weapons/fusion_gun_bigObj.png
       4952: Resources/Eldar/weapons/dragon_fusion_gun_bigObj.png
@@ -1365,6 +1373,7 @@ extraSprites:
       4965: Resources/Eldar/units/howling_banshee/eldar_banshee_corpse_bigObj.png
       4966: Resources/Eldar/units/howling_banshee_exarch/eldar_bansheeex_corpse_bigObj.png
       4967: Resources/Eldar/units/swooping_hawk/eldar_hawk_corpse_bigObj.png
+      4968: Resources/Eldar/units/swooping_hawk_exarch/eldar_hawkex_corpse_bigObj.png
 
 # All Free Indexes
 
@@ -1461,4 +1470,4 @@ extraSprites:
 # 3166
 # 3168 - 3170
 
-# 4046 - 4849
+# 4047 - 4849

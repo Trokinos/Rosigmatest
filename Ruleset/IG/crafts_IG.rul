@@ -646,7 +646,6 @@ crafts:
       - STR_NOT_STEEL_LEGION_STRATEGY
       - STR_NOT_VALHALLAN_STRATEGY
       - STR_NOT_CHAOSCULT
-      - STR_NOT_TAU_GUEVESA_GV
     soldiers: 19
     vehicles: 999
     maxLargeUnits: 1
@@ -1385,7 +1384,6 @@ crafts:
     listOrder: 240
 
   # krieg player truck
-
   - type: STR_TRUCKARMOR_KRIEG
     takeoffSound: -1
     selectSound: -1
@@ -1393,10 +1391,13 @@ crafts:
     requiresBuyBaseFunc: [HANGAR]
     requires:
       - STR_KRIEG_STRATEGY  # placeholder
-    sprite: 2301
+    costBuy: 700000
+    costRent: 400000
+    costSell: 400000
+    sprite: 2401
     fuelMax: 1500
     damageMax: 800
-    speedMax: 250
+    speedMax: 550 #slightly slower than Valk for interception purposes
     repairRate: 10
     vehicles: 999
     accel: 2
@@ -1410,7 +1411,6 @@ crafts:
     fixedWeapons: ["STR_CANNON_UC", "STR_CANNON_UC"]
     soldiers: 20
     maxLargeUnits: 2
-    costSell: 10000
     refuelRate: 1000
     transferTime: 45
     score: 100
@@ -1428,11 +1428,11 @@ crafts:
           width: 10
           length: 20
           items:
-            STR_CHAOSTRUCKTURRET_SPAWNERCHAOS:  # placeholder
+            STR_KRIEGTRUCKTURRET_SPAWNER:
               - [7, 16, 2]
               - [3, 7, 2]
           fuseTimers:
-            STR_CHAOSTRUCKTURRET_SPAWNERCHAOS: [0, 0]  # placeholder
+            STR_KRIEGTRUCKTURRET_SPAWNER: [0, 0]
     deployment:
       - [6, 15, 1, 0]  # truck1
       - [7, 15, 1, 0]  # truck1
@@ -1454,7 +1454,7 @@ crafts:
       - [3, 3, 1, 0]  # truck2
       - [2, 2, 1, 0]  # truck2
       - [3, 2, 1, 0]  # truck2
-    listOrder: 800
+    listOrder: 801
     spacecraft: false
 
 

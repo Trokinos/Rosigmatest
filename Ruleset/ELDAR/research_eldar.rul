@@ -24,7 +24,7 @@ research:
     lookup: STR_CHOSEN_ELDAR_STRATEGY
     unlocks:
       - STR_GUARD_BARRACKS
-      - STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE
+      #- STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE
       #- STR_PILOT_GUARDSMEN # TODO: understand how we want to manage Eldar pilots
       - STR_RECRUIT_ELDAR_T1
       #- STR_LASER_WEAPONS     # easiest way to activate heavy stubbers (???)
@@ -124,6 +124,30 @@ research:
     dependencies:
       - STR_ELDAR_STRATEGY
 
+  - name: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_RESEARCH # 1st Unlocks eldar Heavy Weapons Platform
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+  - name: STR_ELDAR_HWP_SCATTERLASER_ARMOR_RESEARCH
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+  - name: STR_ELDAR_HWP_AML_ARMOR_RESEARCH
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+  - name: STR_ELDAR_HWP_STARCANNON_ARMOR_RESEARCH
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+  - name: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_RESEARCH
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+
   ### Eldar Alliance imports
   - delete: STR_ELDAR_SHIELD
   - name: STR_ELDAR_SHIELD  # Eldar Personal Shield
@@ -171,6 +195,7 @@ research:
       - STR_MOTION_SCANNER
     unlocks:
       - STR_MIDTIER_PREREQ
+    spawnedEvent: STR_ELDAR_MIDTIER_REINFORCEMENTS
 
   - name: STR_ELDAR_ASPECT_RESEARCH  # Aspect Warrior Promotions
     cost: 100
@@ -282,6 +307,7 @@ research:
       - STR_ELDAR_ASURYANI_CAMPAING_SLAANESH_PALACE_DEFEATED # event to be completed
     unlocks:
       - STR_HIGHTIER_PREREQ
+    spawnedEvent: STR_ELDAR_HIGHTIER_REINFORCEMENTS
 
   - name: STR_ELDAR_AUTARCH_EXARCH_RESEARCH  # Promotions to exarch and autarch
     cost: 666 #slanesh lucky number
@@ -323,6 +349,13 @@ research:
     points: 0
     dependencies:
       - STR_ELDAR_BANSHEE_RESEARCH
+      - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
+
+  - name: STR_ELDAR_HAWK_EXARCH_RESEARCH
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ELDAR_HAWK_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
 
   - name: STR_ELDAR_SPIDER_EXARCH_RESEARCH

@@ -1964,9 +1964,9 @@ armors:
     spriteSheet: SENTPD.PCK  # Will this reference work or needs its own submod entry?
     spriteInv: GSC_SENTINEL_INV.SPK
     # customArmorPreviewIndex: [134, 135, 136]
-    corpseGeo: STR_GSC_ARBITOR_CORPSE
+    corpseGeo: STR_GSC_SENTINELPD_CORPSE
     corpseBattle:
-      - 10_SENT1  # will this fetch data from main mod or need its own entry?
+      - 10_SENT1_AI  # will this fetch data from main mod or need its own entry?
       - 10_SENT2
       - 10_SENT3
       - 10_SENT4

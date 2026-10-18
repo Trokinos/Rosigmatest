@@ -281,6 +281,19 @@ armors:
       UNIT_TYPE_DAEMONIC: 1
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_NURGLE: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 5
+      AURA_CORRUPTION_TYPE: 1 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 5
+      AURA_DAMAGE_TYPE: 8 # acid damage
+      AURA_DAMAGE_ARMOR: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
+
 
   - type: STR_NURGLE_BOOMER_ARMOR
     visibilityAtDay: 40
@@ -327,6 +340,19 @@ armors:
       UNIT_TYPE_DAEMONIC: 1
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_NURGLE: 1
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 10
+      AURA_CORRUPTION_TYPE: 1 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 10
+      AURA_DAMAGE_TYPE: 8 # acid damage
+      AURA_DAMAGE_ARMOR: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 10 # aura's horizontal radius in tiles; exceptional due to wafting pustules
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
+
 
   - type: STR_NURGLE_DAEMONETTE_ARMOR   # DAEMONETTE NURGLE ARMOR
     visibilityAtDay: 40
@@ -353,13 +379,13 @@ armors:
         healthCurrent: 0.2
     damageModifier:  # NAKED
       - 1.0  # NONE
-      - 0.9  # AP
+      - 0.8  # AP nurgle resilience
       - 1.5  # FLAMES
-      - 0.9  # HE
+      - 0.8  # HE nurgle resilience
       - 0.8  # LASCAN
       - 1.0  # PLASMA
-      - 0.8  # STUN
-      - 0.9  # MELEE
+      - 0.5  # STUN
+      - 0.8  # MELEE nurgle resilience
       - 0.1  # ACID
       - 0.0  # SMOKE
       - 1.0  # IMPACT
@@ -378,6 +404,18 @@ armors:
       DIEHARD_TEMP_MODIFIER_INCREMENT: -10  # a bit more fragile than other Nurgle Daemons
       DODGE_CHANCE: 20
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
+      # Aura parameters
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 20
+      AURA_CORRUPTION_TYPE: 1 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 20
+      AURA_DAMAGE_TYPE: 8 # acid damage
+      AURA_DAMAGE_ARMOR: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
 
   - type: STR_NURGLE_CULTIST_LIGHT_ARMOR     # NURGLE CULTIST ARMOR
     visibilityAtDay: 30
@@ -1941,3 +1979,38 @@ armors:
       UNIT_TYPE_NURGLE: 1
       UNIT_IS_DIEHARD: 1
       DIEHARD_TEMP_MODIFIER_INCREMENT: -40
+
+# trying to avoid an issue with some corpse inheritance
+
+  - type: ZOMBIE_ARMOR  # old UFO zombies giving it a nurgle zombie corpse to avoid issue
+    painImmune: true
+    spriteSheet: ZOMBIE.PCK
+    allowInv: false
+    corpseBattle:
+      - STR_NURGLE_ZOMBIE_CORPSE
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    drawingRoutine: 4
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.0
+      - 0.8
+      - 0.7
+      - 0.7
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [3]
+    deathFrames: 18
+    tags:
+      INFECTION_RESIST: 100  # infection immune
+      INTIMIDATION_RESISTANCE: 100
+      UNIT_IS_DIEHARD: 1
+      DIEHARD_TEMP_MODIFIER_INCREMENT: -5
+      UNIT_TYPE_DAEMONIC: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_NURGLE: 1

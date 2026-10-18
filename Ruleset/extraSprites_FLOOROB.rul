@@ -534,6 +534,7 @@ extraSprites:
       3135: Resources/Floorobs/floorob_gangerousdead.png
       3290: Resources/Floorobs/floorob_gangergoliathdead.png
       4003: Resources/Floorobs/floorob_gangers_shiv.gif
+      4046: Resources/Floorobs/floorob_gangerogryndead.png
 
   # gangers end
 
@@ -763,7 +764,7 @@ extraSprites:
       2961: Resources/NECRON/FLOOROB_flayedone.png  # STR_NECRON_FLAYED_ONE_CORPSE
       2970: Resources/Floorobs/floorob_bloodraven.png
       2971: Resources/Floorobs/FloorStimm.gif
-      2972: Resources/Floorobs/FloorMedipack.gif
+      2972: Resources/Floorobs/FloorMedipack.png
       2973: Resources/FOES/FLOOROB_BRIMSTONE_HORROR_CORPSE.png  # STR_BRIMSTONE_HORROR
       2974: Resources/FOES/FLOOROB_NURGLE_ZOMBIE_BS.png
       3024: Resources/TYRANID/floorob_termagant.png
@@ -1007,6 +1008,10 @@ extraSprites:
       4908: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_floorObj.png
       4909: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_charge_floorObj.png
 
+      4947: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_1_floorObj.png
+      4948: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_2_floorObj.png
+      4949: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_3_floorObj.png
+      4950: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_4_floorObj.png
       4951: Resources/Eldar/weapons/fusion_gun_floorObj.png
       4952: Resources/Eldar/weapons/dragon_fusion_gun_floorObj.png
       4953: Resources/Eldar/weapons/fusion_canister_floorObj.png
@@ -1024,6 +1029,7 @@ extraSprites:
       4965: Resources/Eldar/units/howling_banshee/eldar_banshee_corpse_floorObj.png
       4966: Resources/Eldar/units/howling_banshee_exarch/eldar_bansheeex_corpse_floorObj.png
       4967: Resources/Eldar/units/swooping_hawk/eldar_hawk_corpse_floorObj.png
+      4968: Resources/Eldar/units/swooping_hawk_exarch/eldar_hawkex_corpse_floorObj.png
 
 # Free Indexes
 
@@ -1235,4 +1241,4 @@ extraSprites:
 # 3906
 # 3908
 # 3912 - 3999
-# 4046 - 4849
+# 4047- 4849

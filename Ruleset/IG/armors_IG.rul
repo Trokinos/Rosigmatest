@@ -2835,19 +2835,6 @@ armors:
       stamina: -15
       reactions: -5
       melee: 5
-    layersDefaultPrefix: BULLGRYN_SLAB
-    layersSpecificPrefix:
-      0: BULLGRYN_SLAB
-    layersDefinition:
-      M0: ["BULLGRYN_SLABinvent"]
-      M1: ["BULLGRYN_SLABinvent"]
-      M2: ["BULLGRYN_SLABinvent"]
-      M3: ["BULLGRYN_SLABinvent"]
-      F0: ["BULLGRYN_SLABinvent"]
-      F1: ["BULLGRYN_SLABinvent"]
-      F2: ["BULLGRYN_SLABinvent"]
-      F3: ["BULLGRYN_SLABinvent"]
-
 
   - &STR_GUARD_ARMOR_BULLGRYN_BUCKLER  # DAMAGE + STATS
     type: STR_BULLGRYN_BUCKLER
@@ -2862,18 +2849,6 @@ armors:
     stats:
       stamina: -10
       melee: 10
-    layersDefaultPrefix: BULLGRYN_BUCKLER
-    layersSpecificPrefix:
-      0: BULLGRYN_BUCKLER
-    layersDefinition:
-      M0: ["BULLGRYN_BUCKLERinvent"]
-      M1: ["BULLGRYN_BUCKLERinvent"]
-      M2: ["BULLGRYN_BUCKLERinvent"]
-      M3: ["BULLGRYN_BUCKLERinvent"]
-      F0: ["BULLGRYN_BUCKLERinvent"]
-      F1: ["BULLGRYN_BUCKLERinvent"]
-      F2: ["BULLGRYN_BUCKLERinvent"]
-      F3: ["BULLGRYN_BUCKLERinvent"]
 
   # *** Ogryn armors for the riot suppression team allied units
   - type: STR_BULLGRYN_SLAB_RIOT
@@ -6085,7 +6060,7 @@ armors:
       - 0.0  # IMPACT
       - 1.2  # MELTA
     loftempsSet: [92, 89, 90, 91]
-    drawingRoutine: 5
+    drawingRoutine: 3 # was wrongly 5 as this specific turret does not use the 840 height battlesprite but the 320 height one
     allowsKneeling: false
     alwaysVisible: true
     allowsRunning: false
@@ -7477,7 +7452,7 @@ armors:
     storeItem: STR_NONE
     spriteSheet: RATLING_BS.PCK # PLACEHOLDER; TBD
     spriteInv: RATLING_ROBES_INDEX_ # PLACEHOLDER; TBD
-    customArmorPreviewIndex: 837 # PLACEHOLDER; TBD
+    customArmorPreviewIndex: 796 # PLACEHOLDER; TBD
     spriteFaceGroup: 6
     spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
     spriteHairGroup: 9
@@ -7530,7 +7505,7 @@ armors:
     storeItem: STR_RATLING_CAMO_CLOAK_ARMOR
     spriteSheet: RATLING_BS.PCK # PLACEHOLDER; TBD
     spriteInv: RATLING_ROBES_INDEX_ # PLACEHOLDER; TBD
-    customArmorPreviewIndex: 837 # PLACEHOLDER; TBD
+    customArmorPreviewIndex: 796 # PLACEHOLDER; TBD
     corpseBattle:
       - STR_GUARD_RATLING_CORPSE
     visibilityAtDark: 30
@@ -7572,3 +7547,44 @@ armors:
       ARMOR_ABILITY_SCOOT_AND_SHOOT: 30
       DODGE_CHANCE: 30 # 40-50 with Ratling Soldier bonuses
       ARMOR_MAX_SUCCESSFUL_DODGES: 3 # 4-5 with Ratling Soldier bonuses
+
+  # krieg truck turret armor
+
+  - type: STR_KRIEGTRUCK_SMALL_TURRET_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    spriteSheet: KRIEGTRUCK_SMALL_TURRET.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseGeo: STR_CHAOSTRUCK_SMALL_TURRET_CORPSE
+    corpseBattle:
+      - STR_KRIEGTRUCK_SMALL_TURRET_CORPSE
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 100
+    underArmor: 120
+    damageModifier: #VEHICLE ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.8 #FLAMES
+      - 1.0 #HE
+      - 1.4 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [4]
+    drawingRoutine: 19
+    allowsKneeling: false
+    allowsRunning: false
+    allowsMoving: false
+    specialWeapon: STR_TURRET_RELOAD
+    recovery:  # Manned turrets recover morale rapidly
+      morale:
+        flatHundred: 0.5

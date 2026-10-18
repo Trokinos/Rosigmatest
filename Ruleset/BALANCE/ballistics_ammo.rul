@@ -89,6 +89,7 @@ items:
       RandomType: 8 # 50-200 spread. No weak hits
     power: 80
     damageType: 1
+    costSell: 425
 
   - &STR_LIGHT_BOLTER_AMMO
     type: STR_LIGHT_BOLTPISTOL_AMMO

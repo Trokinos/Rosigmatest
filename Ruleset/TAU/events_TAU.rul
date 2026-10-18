@@ -210,6 +210,10 @@ events:
     description: STR_THE_COLD_TRADE_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
 
+  - name: STR_GUN_RUNNERS_EVENT_GV
+    description: STR_GUN_RUNNERS_CODEX_DESCRIPTION_GV
+    background: InquisitionBG.SCR
+
   - name: STR_TAU_PROPAGANDA_EVENT_GV
     description: STR_TAU_PROPAGANDA_CODEX_DESCRIPTION_GV
     background: HereticsvsSistersBG.SCR
@@ -259,10 +263,6 @@ events:
     description: STR_AUXILIARY_CADRE_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
 
-  - name: STR_COALITION_COMMAND_EVENT_GV
-    description: STR_COALITION_COMMAND_CODEX_DESCRIPTION_GV
-    background: InquisitionBG.SCR
-
   - name: STR_FIRE_OF_UNKNOWN_ORIGIN_EVENT_GV
     description: STR_FIRE_OF_UNKNOWN_ORIGIN_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
@@ -291,21 +291,46 @@ events:
     description: STR_ENGRAVED_ARMORS_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
 
+  - name: STR_ENGRAVED_BATTLESUITS_EVENT_GV
+    description: STR_ENGRAVED_BATTLESUITS_CODEX_DESCRIPTION_GV
+    background: InquisitionBG.SCR
+
   - name: STR_THE_SILVER_TOWER_EVENT_GV
     description: STR_THE_SILVER_TOWER_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
 
   - name: STR_RECUSANT_SISTERS_EVENT_GV
-    description: STR_PSI_LAB_BACKUP_CODEX_DESCRIPTION_GV
+    description: STR_RECUSANT_SISTERS_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
 
   - name: STR_PSI_LAB_BACKUP_EVENT_GV
-    description: STR_PSI_LAB_BACKUP_CODEX_DESCRIPTION_GV
+    description: STR_COOPT_ECCLESIARCHY_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
 
   - name: STR_TAU_FRONTIER_PSYCH_EVENT_GV
     description: STR_TAU_FRONTIER_PSYCH_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
+
+  - name: STR_COOPT_NAVY_PILOTS_EVENT_GV
+    description: STR_COOPT_NAVY_PILOTS_CODEX_DESCRIPTION_GV
+    background: InquisitionBG.SCR
+
+  - name: STR_STARSCYTHE_CRISIS_OPERATIONS_EVENT_GV
+    description: STR_STARSCYTHE_CRISIS_OPERATIONS_CODEX_DESCRIPTION_GV
+    background: InquisitionBG.SCR
+
+  - name: STR_STEALTH_SUIT_OPERATIONS_EVENT_GV
+    description: STR_STEALTH_SUIT_OPERATIONS_CODEX_DESCRIPTION_GV
+    background: InquisitionBG.SCR
+
+  - name: STR_DEVILFISH_TRANSPORTS_EVENT_GV
+    description: STR_DEVILFISH_TRANSPORTS_CODEX_DESCRIPTION_GV
+    background: InquisitionBG.SCR
+
+  - name: STR_ORCA_DROPSHIPS_EVENT_GV
+    description: STR_ORCA_DROPSHIPS_CODEX_DESCRIPTION_GV
+    background: InquisitionBG.SCR
+
 
 
   # turn off the GSC arrival events

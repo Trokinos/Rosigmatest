@@ -71,7 +71,7 @@ armors:
     spriteSheet: SWDREAD4BS.PCK
     customArmorPreviewIndex: [1341, 1343, 1345]
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_PLASMA
       - AUX_DREAD_FLAMER
@@ -88,7 +88,7 @@ armors:
     spriteSheet: SWDREAD2BS.PCK
     customArmorPreviewIndex: [1339, 1343, 1345]
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_LAUNCHER
       - AUX_DREAD_FLAMER
@@ -105,7 +105,7 @@ armors:
     spriteSheet: SWDREAD3BS.PCK
     customArmorPreviewIndex: [1340, 1343, 1345]
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_LASER
       - AUX_DREAD_FLAMER

@@ -641,3 +641,13 @@ items:
     battleType: 11
     recover: true
     recoverCorpse: false
+
+  # krieg truck turret corpse
+
+  - type: STR_KRIEGTRUCK_SMALL_TURRET_CORPSE
+    floorSprite: 3058
+    armor: 255
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false

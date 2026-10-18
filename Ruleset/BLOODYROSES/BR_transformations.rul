@@ -15,6 +15,6 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     requiredCommendations:
-      STR_PARDON_COMMENDATION: 0  # 5 kills, 2 wins requirement
+      STR_PARDON_COMMENDATION: 0  # 3 kills, 1 win requirement
     allowedSoldierTypes:
       - STR_REPENTIA_PLAYERBLOODYROSE

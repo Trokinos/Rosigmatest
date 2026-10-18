@@ -4,6 +4,7 @@ extended:
 soldiers:
 
   - type: STR_REPENTIA_PLAYERBLOODYROSE
+    value: 3  # dying for the emperor is their goal and they are melee troops that have low armor and so expect to have few survivors by mission
     requiresBuyBaseFunc: [BLOODYORDER]
     flagOffset: 21
     costBuy: 12000
@@ -73,7 +74,8 @@ soldiers:
     avatarOffsetY: 40
     soldierNames:
       - delete
-      - Names/adeptas_bloodyroses.nam
+      - Names/repentias_bloodyroses.nam
+    prefix: "REP. "
     deathMale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -157,6 +159,7 @@ soldiers:
     soldierNames:
       - delete
       - Names/adeptas_bloodyroses.nam
+    prefix: "SOB. "
     deathMale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:

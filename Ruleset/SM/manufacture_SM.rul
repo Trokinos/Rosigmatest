@@ -557,6 +557,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_PERSONAL_ARMOR
       - STR_NOT_SPACEWOLVES
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 50000
@@ -582,6 +583,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_MARINES_AND_DEATHWATCH
       - STR_MEDI_KIT_PREREQ
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 100000
@@ -596,6 +598,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_DEV_ARMOR
       - STR_NOT_SPACEWOLVES
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 75000
@@ -621,6 +624,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_ASS_ARMOR
       - STR_NOT_SPACEWOLVES
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 50000
@@ -646,6 +650,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_CHAP_ARMOR
       - STR_NOT_SPACEWOLVES  # no such armor for spacewolves for now
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 300000
@@ -658,6 +663,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_SARGENT_ARMOR
       - STR_NOT_DEATHWATCH
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 150000
@@ -669,6 +675,7 @@ manufacture:
       - STR_TEC_BAYR
       - STR_MARINES_AND_DEATHWATCH
       - STR_NOT_WORDBEARERS
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 30000
@@ -682,6 +689,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_HONOR_ARMOR
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 4000
@@ -694,6 +702,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_SCOUTH_RESEARCH
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 40000
@@ -706,6 +715,7 @@ manufacture:
     requires:
       - STR_SIGNAL_ARMOR_RESEARCH
       - STR_NOT_WORDBEARERS
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 40000
@@ -718,6 +728,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_HONOR_ARMOR_RESEARCH
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 40000
@@ -731,6 +742,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_TSARGENT
       - STR_NOT_SPACEWOLVES  # no such armor for spacewolves for now
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 16000
@@ -745,6 +757,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_PERSONAL_ARMOR
       - STR_PSI_AMP
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 16000
@@ -758,6 +771,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_POWER_SUIT
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 800
     cost: 20000
@@ -772,6 +786,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_CAPTAIN_SUIT
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 5000
     cost: 200000
@@ -787,6 +802,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_PERSONAL_ARMOR
       - STR_FLYING_SUIT
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 1200
     cost: 20000
@@ -801,6 +817,7 @@ manufacture:
     requires:
       - STR_CHAPTER_PURITY
       - STR_CENT_ARMORR
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 1200
     cost: 20000
@@ -819,6 +836,7 @@ manufacture:
       - STR_NOT_GK
       - STR_NOT_SPACEWOLVES
       - STR_NOT_WORDBEARERS
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 1200
     cost: 600000
@@ -836,6 +854,7 @@ manufacture:
       - STR_NOT_GK
       - STR_NOT_SPACEWOLVES
       - STR_NOT_WORDBEARERS
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 1200
     cost: 700000
@@ -853,6 +872,7 @@ manufacture:
       - STR_NOT_GK
       - STR_NOT_SPACEWOLVES
       - STR_NOT_WORDBEARERS
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 1200
     cost: 600000
@@ -872,6 +892,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_NOT_SPACEWOLVES
       - STR_NOT_WORDBEARERS
+      - STR_NOT_BLACKTEMPLARS
     space: 0
     time: 1200
     cost: 750000

@@ -39,3 +39,13 @@ items:
     invHeight: 3
     armor: 40
     battleType: 11
+
+  - type: STR_GANGERBASE_OGRYN_CORPSE
+    recover: true
+    weight: 50
+    bigSprite: 4046
+    floorSprite: 4046
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    battleType: 11
