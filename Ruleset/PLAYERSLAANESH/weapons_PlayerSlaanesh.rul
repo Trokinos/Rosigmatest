@@ -327,6 +327,144 @@ items:
       ammoSlot: 1  # Sonic
       name: STR_SONIC_FIRE
 
+ #### MELEE WEAPONS ####
+
+  - type: STR_SLAANESHPATH_LIGHT_CHAINSWORD # Light chainsword with slaanesh damage profile applied
+    requiresBuy:
+      - STR_SLAANESHPATH # Placeholder
+    categories: [STR_CAT_MELEE]
+    size: 0.2
+    costBuy: 4000 # P
+    costSell: 2000 # P
+    weight: 10
+    bigSprite: 295
+    floorSprite: 295
+    handSprite: 320
+    meleeSound: {mod: 40k, index: 753}
+    meleeHitSound: {mod: 40k, index: 709}
+    meleeAnimation: {mod: 40k, index: 44}
+    power: 45
+    damageAlter: # DA SLAANESH CHAIN
+      ToArmorPre: 0.5
+      ToHealth: 0.8
+      RandomType: 2  # TFTD [50% - 150%]
+      ToWound: 0.35
+      ToEnergy: 0.8
+      ToMorale: 0.2
+      ToStun: 0.1
+      RandomWound: false
+    damageType: 7
+    accuracyMelee: 100
+    costMelee:
+      time: 14
+      energy: 2  # light/medium melee
+    flatMelee:
+      time: true
+      energy: true
+    clipSize: -1
+    battleType: 3
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    skillApplied: true
+    meleeMultiplier:
+      melee: 0.8
+      reactions: 0.2
+      flatHundred: 0.0
+    damageBonus:
+      melee: 0.3
+      reactions: 0.1
+      strength: 0.1
+    experienceTrainingMode: 13
+    listOrder: 12360
+
+  - type: STR_SLAANESHPATH_GREATSWORD  # Non-power greatsword; a more accurate alternative to the eviscerator
+    categories: [STR_CAT_MELEE, STR_CAT_SCOUT]
+    size: 0.2
+    costSell: 250
+    weight: 16 # Evis is 20+ 
+    bigSprite: 2217
+    floorSprite: 2092
+    handSprite: 2800
+    meleeSound: {mod: 40k, index: 754}  # 754 knif miss
+    meleeHitSound: {mod: 40k, index: 773}  # 773 knif hit
+    meleeAnimation: 4
+    power: 90
+    damageType: 7
+    accuracyMelee: 110 # +30 vs evis
+    tuMelee: 16 # less than evis
+    costMelee: # Less
+      energy: 6
+      time: 16
+    damageBonus: # Skill rather than strength
+      strength: 0.2
+      melee: 0.3
+    damageAlter:  # SLAAN
+      RandomType: 2  # TFTD [50% - 150%]
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.25
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.3
+      ToWound: 0.45
+      ToEnergy: 0.7
+      ToMorale: 0.6
+    clipSize: -1
+    battleType: 3
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    skillApplied: true
+    meleeMultiplier:
+      melee: 1.0
+      flatHundred: 0.0
+    strengthApplied: false
+    attraction: 7
+    listOrder: 12900
+    experienceTrainingMode: 13
+
+  - type: STR_SLAANESHPATH_POWER_SWORD  # Slaanesh power sword - similar profile to banshee blade
+    categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
+    battleType: 3
+    damageType: 5
+    damageAlter:     # DA POWER SLAN
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.3
+      ToHealth: 0.7
+      ToMorale: 0.4
+      ToEnergy: 0.3
+      ToTime: 0.2
+      RandomType: 6
+    clipSize: -1
+    armor: 200
+    costMelee:
+      time: 14
+      energy: 2  # light melee weapon; light 1 energy, medium 2, heavy 4, very heavy 8
+    flatMelee: true
+    power: 80
+    damageBonus: # Slaanesh variant depends on reactions as well as melee skill
+      melee: 0.4
+      reactions: 0.2 
+    meleeMultiplier:
+      melee: 0.7
+      reactions: 0.4
+    accuracyMelee: 100
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 30  # was 60 in vanilla
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+    size: 0.2
+    weight: 10
+    bigSprite: 4899
+    floorSprite: 4899
+    handSprite: 1682
+    meleeAnimation: {mod: 40k, index: 4}
+    meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
+    meleeHitSound: {mod: 40k, index: 754} #744 Powerswrod hit
+    invWidth: 2
+    invHeight: 3
+    listOrder: 16301
+
 
  #### AUX WEAPONS ####
   - type: AUX_CHIRURGEON_NEEDLER # LOOK AT ADEPTAS NEURAL WHIP FOR ALT FIRE IMPLEMENTATION
