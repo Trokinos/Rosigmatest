@@ -1150,7 +1150,7 @@ items:
     tuAuto: 0
     tuSnap: 45
     tuAimed: 60
-    listOrder: 10775
+    listOrder: 10778
     tuLoad: 30
     accuracyMultiplier:  # sniper rifle accuracy
       firing: [0.5, 0.005]
@@ -1190,7 +1190,7 @@ items:
     tags:
       ITEM_AMMO_COLOR: 15
     power: 120
-    listOrder: 10777
+    listOrder: 10778
 
   - type: STR_HEAVY_SNIPER_RIFLEG_AMMO_PENETRATOR
     categories: [STR_CAT_SNIPER]
@@ -1219,7 +1219,7 @@ items:
       ToHealth: 0.7  # armor piercing
       ToArmor: 0.05  # armor piercing
     power: 130
-    listOrder: 10778
+    listOrder: 10779
     tags:
       ITEM_AMMO_COLOR: 2
 
@@ -1408,7 +1408,7 @@ items:
       spendPerShot: 2
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 2
-    listOrder: 10761
+    listOrder: 10772
     tags:
       ITEM_RECOIL: 45
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
@@ -1483,7 +1483,7 @@ items:
       arcing: false
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 3
-    listOrder: 10761
+    listOrder: 10773
     tags:
       ITEM_RECOIL: 45
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
@@ -1537,7 +1537,7 @@ items:
       spendPerShot: 2
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 2
-    listOrder: 10761
+    listOrder: 10772
     tags:
       ITEM_RECOIL: 45
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
@@ -1615,7 +1615,7 @@ items:
       arcing: false
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 3
-    listOrder: 10761
+    listOrder: 10773
     tags:
       ITEM_RECOIL: 45
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
@@ -1645,7 +1645,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 200
-    listOrder: 10771
+    listOrder: 10774
     tags:
       ITEM_AMMO_COLOR: 1
       ITEM_AMMO_SHADE: -3
@@ -1674,7 +1674,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 200
-    listOrder: 10771
+    listOrder: 10774
     tags:
       ITEM_AMMO_COLOR: 1
       ITEM_AMMO_SHADE: -3

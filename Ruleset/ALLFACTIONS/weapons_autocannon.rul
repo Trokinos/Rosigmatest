@@ -38,6 +38,7 @@ items:
 
   - type: STR_AUTOCANNON_HANDHELD_ANY  # Generic autocannon for use by any faction except IG as it is not really usable by them without bipods
     refNode: *STR_AUTOCANNON_TEMPLATE
+    categories: [STR_CAT_AUTO, STR_CAT_TRADE]
     requiresBuy:
       - STR_MIDTIER_PREREQ
       - STR_NOT_GUARD
@@ -103,7 +104,7 @@ items:
 
   - &STR_IW_AUTOCANNON
     type: STR_IW_AUTOCANNON  # Autocannon      #Kalibrax pattern                                                       # 13210; IRON WARRIOR AC is very slow firing but more powerful and accurate
-    categories: [STR_CAT_TERMINATOR]
+    categories: [STR_CAT_AUTO]
     size: 0.6
     costSell: 20000
     weight: 100
@@ -129,7 +130,7 @@ items:
     sprayWaypoints: 2
     bulletSpeed: 50
     attraction: 8
-    listOrder: 13210
+    listOrder: 10775
 
   - type: STR_IW_AUTOCANNON_MOUNTED
     refNode: *STR_IW_AUTOCANNON
@@ -137,7 +138,7 @@ items:
 
   - &STR_REAPER_AUTOCANNON_TEMPLATE
     type: STR_CASSC   #reaper autocannon, double firerate of standard autocannons
-    categories: [STR_CAT_TERMINATOR]
+    categories: [STR_CAT_AUTO]
     requires:
       - STR_ALIENS_ONLY
     size: 0.6
@@ -157,7 +158,7 @@ items:
     armor: 30
     bulletSpeed: 50
     attraction: 8
-    listOrder: 13210
+    listOrder: 10775
 
   - type: STR_IW_REAPER_AUTOCANNON
     refNode: *STR_REAPER_AUTOCANNON_TEMPLATE
@@ -168,7 +169,7 @@ items:
   # Assault Cannons, does not include Adeptas Galgalim Assault Cannon which is unique and weaker. See weapons_adeptas.rul
   - &STR_ASSAULTCANNON_TEMPLATE  #anti-light vehicle weapon
     type: STR_ASSC  # done
-    categories: [STR_CAT_TERMINATOR]
+    categories: [STR_CAT_AUTO]
     size: 0.6
     armor: 200
     costSell: 40000
@@ -192,7 +193,7 @@ items:
       ITEM_IS_HEAVY_WEAPON: 1
 
   - type: STR_CHAOS_ASSAULT_CANNON             #Chaos variant doesnt exist in game yet                                               # 13210
-    categories: [STR_CAT_TERMINATOR]
+    categories: [STR_CAT_AUTO]
     requires:
       - STR_ALIENS_ONLY
     size: 0.6
@@ -213,7 +214,7 @@ items:
     listOrder: 13210
 
   - type: STR_ASSCTZ  # TZEENTCH SOULREAPER ASSAULT CANNON
-    categories: [STR_CAT_TERMINATOR, STR_CAT_CHAOS, STR_CAT_TZEENTCH]
+    categories: [STR_CAT_AUTO, STR_CAT_CHAOS, STR_CAT_TZEENTCH]
     size: 0.6
     compatibleAmmo:
       - STR_ASSC_CLIP
