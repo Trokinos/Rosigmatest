@@ -30,6 +30,7 @@ items:
 
  #
  #### LAS WEAPONS ####
+
   - type: STR_SLAANESHPATH_LAS_BATTLERIFLE
     dropoff: 3
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
@@ -186,7 +187,7 @@ items:
     listOrder: 10286
     tags:
       ITEM_RECOIL: 20
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+      REACTION_MULTIPLIER: 150
 
   - type: STR_BOLTER_CANTUS_GL  # Corrupted Cantus with a grenade launcher attachment.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
@@ -291,15 +292,15 @@ items:
 
   - type: STR_SLAANESHPATH_BOLTER_NAIAD  # Corrupted Hellspite bolter with a sonic projector.
     dropoff: 5
-    autoRange: 8  # 4 Auto
-    snapRange: 12  # Double Tap
+    autoRange: 7  # 4 Auto
+    snapRange: 14
     aimRange: 14  # Sonic projector
 
     accuracyAuto: 70
     accuracySnap: 80
     accuracyAimed: 60
     tuAuto: 40
-    tuSnap: 25
+    tuSnap: 20
     tuAimed: 35
     compatibleAmmo: # PLACEHOLDER
       - STR_RIFLE_CLIP
@@ -318,11 +319,11 @@ items:
       ammoSlot: 0  # Bolter
       name: STR_AUTOFIRE
       arcing: false
-    confSnap:  # Double Shot
+    confSnap:  # Snap shot
       ammoSlot: 0  # Bolter
-      name: STR_BURST_SNAP_SHOT
+      name: STR_SNAP_SHOT
       arcing: false
-      shots: 2  # Double shot snap
+      shots: 1
     confAimed:  # Sonic projector
       ammoSlot: 1  # Sonic
       name: STR_SONIC_FIRE
@@ -335,7 +336,7 @@ items:
     accuracyAuto: 55 # -15 vs hellspite
     accuracySnap: 70 # -10 vs hellspite
     accuracyAimed: 0
-    tuAuto: 40 # Unchanged vs hellspite
+    tuAuto: 36
     tuSnap: 30
     autoShots: 6
 
@@ -346,6 +347,8 @@ items:
       name: STR_BURST_SNAP_SHOT
       arcing: false
       shots: 3  # TRIPLE shot snap
+    tags:
+      ITEM_RECOIL: 40
 
   - type: STR_SLAANESHPATH_BOLTER_TIAMAT # De'az kombi-plasma. 
 

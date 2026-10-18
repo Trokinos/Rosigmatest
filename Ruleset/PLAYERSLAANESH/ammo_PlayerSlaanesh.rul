@@ -158,7 +158,7 @@ items:
         set subvoxel_drift 0;
         return;
     tags: #Minor infection due to warp nature of ammo.
-      INFECTION_DAMAGE_PERCENT: 25  # inflicts % of damage dealt as infection damage
+      INFECTION_DAMAGE_PERCENT: 15  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
   - type: STR_SLAANESHPATH_LASPISTOL_CLIP  # 4010
@@ -257,13 +257,14 @@ items:
     hitAnimation: {mod: 40k, index: 96}
     power: 75
     damageType: 3
-    damageAlter:  # DA Scream
+    damageAlter:  # DA SHRIEK
       ToHealth: 0.2
       ToTime: 1.0
-      ToStun: 2.5
+      ToStun: 1.5
       ToEnergy: 2.0
       ToMorale: 2.5
-      ToTile: 0.20
+      ToWound: 0.05
+      ToTile: 0.1
       ArmorEffectiveness: 0.6
       RandomType: 6
       FixRadius: 4
@@ -275,7 +276,7 @@ items:
     invHeight: 2
     listOrder: 10460
     tags:
-      DAMAGE_RESIST_PENETRATION_PERCENT: 60
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
 
   - type: STR_NAIAD_SONIC_SCREAMER_CHARGE
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
@@ -297,10 +298,14 @@ items:
       ToStun: 2.0
       ToEnergy: 2.0
       ToMorale: 2.0
-      ToTile: 0.7
-      ArmorEffectiveness: 0.7
       RandomType: 6
       FixRadius: 3
+      ToArmorPre: 0.3
+      ToArmor: 0.0 #deals damage on the way in
+      ArmorEffectiveness: 0.7
+      ToTile: 0.75
+      ToItem: 0.75
+
     bulletSpeed: 80
     clipSize: 6
     battleType: 2
@@ -313,8 +318,8 @@ items:
 
  #### LIGHT & STANDARD BOLTER AMMO
 
-  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE
-    type: STR_SLAANESHPATH_CLIP_PENETRATOR  # SLAANESH ROUNDS          10460                      ToStun
+  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE 
+    type: STR_SLAANESHPATH_CLIP_PENETRATOR  # The standard Slaanesh ammunition. Penetration + armor shredding.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1
     costSell: 150
@@ -344,7 +349,7 @@ items:
     listOrder: 10460
 
   - &STR_SLAANESHPATH_SHREDDER_TEMPLATE
-    type: STR_SLAANESHPATH_CLIP_SHREDDER  # SLAANESH ROUNDS          10460                      ToStun
+    type: STR_SLAANESHPATH_CLIP_SHREDDER  # Shredder rounds ruin armor but have zero penetration.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1
     costSell: 150
@@ -354,16 +359,17 @@ items:
     handSprite: {mod: 40k, index: 464}
     hitSound: {mod: 40k, index: 708}
     hitAnimation: 26
+    damageType: 7 # Melee damage.
     damageAlter:  # DA SHRED
       RandomType: 2 #50-150%
       ToArmorPre: 0.4 # Good at shredding armor.
-      ArmorEffectiveness: 1.5
-      ToArmor: 0.1
+      ArmorEffectiveness: 1.4
+      ToArmor: 0.01 # Deals damage on the way in.
       ToHealth: 1.5
       ToStun: 0.6 # Extremely agonizing.
       ToEnergy: 0.4 # Extremely agonizing.
-      ToMorale: 0.4 # Extremely agonizing.
-      ToWound: 0.4 # Shrapnel
+      ToMorale: 2.0 # Extremely agonizing.
+      ToWound: 0.6 # Shrapnel
       RandomWound: false
     explosionSpeed: 5
     power: 65
@@ -375,8 +381,8 @@ items:
     invHeight: 2
     listOrder: 10460
 
-  - &STR_SLAANESHPATH_SOULTHIEF_TEMPLATE
-    type: STR_SLAANESHPATH_CLIP_SOULTHIEF  # SLAANESH ROUNDS  Mastercraft equivalent. Warp damage.
+  - &STR_SLAANESHPATH_SOULSTAIN_TEMPLATE # Soulstain bolts
+    type: STR_SLAANESHPATH_CLIP_SOULSTAIN  # Slaanesh-flavored Necromunda Warp bolts.  
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1
     costSell: 150
@@ -386,15 +392,19 @@ items:
     handSprite: {mod: 40k, index: 464}
     hitSound: {mod: 40k, index: 708}
     hitAnimation: 26
-    damageAlter:  # DA BOLTER SLAAN
+    damageType: 5 # Plasma damage
+    damageAlter:  # DA SLAAN CURSE
       RandomType: 2 #50-150%
-      ToArmorPre: 0.3
-      ArmorEffectiveness: 0.7
-      ToArmor: 0.2
-      ToHealth: 0.7
-      ToStun: 0.35
-      ToEnergy: 0.3
-      ToMorale: 0.2
+      ToArmorPre: 0.5
+      ArmorEffectiveness: 0.5
+      ToArmor: 0.1
+      ToWound: 0.4 # Targets start bleeding due to warp influence, not physical trauma.
+      ToHealth: 0.25 # Very low direct damage. Corrupting weapon.
+      ToStun: 0.6
+      ToEnergy: 1.0 # Drains a lot of energy.
+      ToMana: 0.6
+      ToMorale: 3.0
+      ToTime: 0.6
     explosionSpeed: 5
     power: 65
     damageType: 1
@@ -404,6 +414,10 @@ items:
     invWidth: 1
     invHeight: 2
     listOrder: 10460
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 25
+      INFECTION_DAMAGE_PERCENT: 30
+      INFECTION_TYPE: 3
 
   - type: STR_CANTUS_BOLTER_AMMO_PENETRATOR # Penetrator bolts for the Cantus bolter.
     categories: [STR_CAT_BOLTER]
@@ -511,11 +525,11 @@ items:
     damageAlter:  # DA CRAZY GAS
       ToArmorPre: 0.3 # Corrosive
       RandomType: 1  # Swingy; unpredictable response
-      ToHealth: 0.2 # Corrosive, toxic gas
+      ToHealth: 0.20 # Corrosive, toxic gas
       ToWound: 0.0
       RandomWound: false
       ToTile: 0.0
-      ToItem: 0.0  
+      ToItem: 0.3  
       ToArmor: 0.0  
       ToEnergy: 0.5 
       ToStun: 0.5
@@ -523,10 +537,10 @@ items:
       ToMorale: 2.0  
       ArmorEffectiveness: 0.4
       FixRadius: 5
-      RadiusReduction: 5.0
+      RadiusReduction: 6.0
       SmokeThreshold: 0  
     tags:
-      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+      DAMAGE_RESIST_PENETRATION_PERCENT: 25
       ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
       INFECTION_DAMAGE_PERCENT: 50
       INFECTION_TYPE: 3
@@ -575,7 +589,7 @@ items:
     power: 90 # Rare & expensive.
     damageType: 3
     damageAlter:  # DA WARP SHARDS
-      RandomType: 1
+      RandomType: 2
       ToHealth: 0.25 # Tiny armor piercing fragments
       ToWound: 0.6 # Cursed fragments will quickly kill or mutate those afflicted.
       RandomWound: false
@@ -585,12 +599,12 @@ items:
       ToEnergy: 0.7  
       ToStun: 0.7 
       ToTime: 0.5
-      ToMorale: 6.0 # EXTREMELY debilitating.  
+      ToMorale: 4.0 # EXTREMELY debilitating.  
       ArmorEffectiveness: 0.7 # Some shards will likely get through.
       FixRadius: 5
     tags:
-      DAMAGE_RESIST_PENETRATION_PERCENT: 25
-      INFECTION_DAMAGE_PERCENT: 65  # inflicts % of damage dealt as infection damage
+      DAMAGE_RESIST_PENETRATION_PERCENT: 20
+      INFECTION_DAMAGE_PERCENT: 50  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
     clipSize: 2
 

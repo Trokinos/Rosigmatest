@@ -164,6 +164,8 @@ soldiers:
     rankBattleSprite: 4148 
     rankTinySprite: 4148
 
+ #### TODO: GIVE EXALTED CHIRURGEONS ABILITY TO INSPECT ENEMIES AT RANGE A LA INQUISITORS/STORMTROOPERS
+
   - type: STR_SLAANESHPATH_CHIRURGEON  # Tier 1 ELITE units. A mix between Novitiate superiors, death cultists, and medicae. 
     flagOffset: 21 # !!! need to fix this later !!!
     costBuy: 20000  # Not meant to be purchased directly. 
