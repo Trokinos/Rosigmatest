@@ -145,7 +145,7 @@ items:
 
  #### LIGHT BOLTERS ####
 
-  - type: STR_BOLTER_CANTUS_SLAAN  # Corrupted Cantus bolter. Low recoil, rapid fire, penetrating bolts.
+  - type: STR_BOLTER_CANTUS_SLAAN  # Corrupted Cantus bolter. Has low recoil and high ROF. Foregrip attachment.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
       - STR_SLAANESHPATH
@@ -246,7 +246,7 @@ items:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-  - type: STR_SLAANESHPATH_BOLTER_NAGA 
+  - type: STR_SLAANESHPATH_BOLTER_NAGA # Corrupted Elohim with direct-fire grenade launcher attachment.
 
     dropoff: 5
     autoRange: 9
@@ -289,9 +289,9 @@ items:
       arcing: false
       name: STR_SONIC_FIRE
 
-  - type: STR_SLAANESHPATH_BOLTER_NAIAD  # Corrupted Mephisto bolter with a sonic projector.
+  - type: STR_SLAANESHPATH_BOLTER_NAIAD  # Corrupted Hellspite bolter with a sonic projector.
     dropoff: 5
-    autoRange: 7  # 4 Auto
+    autoRange: 8  # 4 Auto
     snapRange: 12  # Double Tap
     aimRange: 14  # Sonic projector
 
@@ -326,6 +326,28 @@ items:
     confAimed:  # Sonic projector
       ammoSlot: 1  # Sonic
       name: STR_SONIC_FIRE
+
+  - type: STR_SLAANESHPATH_BOLTER_KERES # Converted De'az bolter with canted foregrip. Extremely high RoF.
+    dropoff: 7 # You *really* don't want to fire this one at range.
+    autoRange: 6  # -2 vs hellspite
+    snapRange: 12  # -1 vs hellspite.
+
+    accuracyAuto: 55 # -15 vs hellspite
+    accuracySnap: 70 # -10 vs hellspite
+    accuracyAimed: 0
+    tuAuto: 40 # Unchanged vs hellspite
+    tuSnap: 30
+    autoShots: 6
+
+    confAuto:  # Bolter
+      name: STR_AUTOFIRE
+      arcing: false
+    confSnap:  # Triple Shot
+      name: STR_BURST_SNAP_SHOT
+      arcing: false
+      shots: 3  # TRIPLE shot snap
+
+  - type: STR_SLAANESHPATH_BOLTER_TIAMAT # De'az kombi-plasma. 
 
  #### MELEE WEAPONS ####
 
@@ -464,6 +486,34 @@ items:
     invWidth: 2
     invHeight: 3
     listOrder: 16301
+
+ #### WEB WEAPONS ####
+
+  - type: STR_SLAANESHPATH_CONSTRICTOR_PISTOL
+    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 8
+    weight: 10
+    blockBothHands: false
+    twoHanded: false
+    bigSprite: 2706
+    floorSprite: {mod: 40k, index: 615}
+    handSprite: 550
+    bulletSprite: {mod: 40k, index: 21}
+    fireSound: {mod: 40k, index: 802}
+    compatibleAmmo:
+      - STR_SLAANESHPATH_CONSTRICTOR_PISTOL_AMMO
+    accuracySnap: 60 # 5 more vs web pistol
+    tuSnap: 25
+    battleType: 1
+    invWidth: 2
+    invHeight: 1
+    recoveryPoints: 1
+    listOrder: 11805
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+    tags:
+      REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
 
  #### AUX WEAPONS ####
