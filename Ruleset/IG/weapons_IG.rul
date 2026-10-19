@@ -3,7 +3,7 @@ extended:
 
 items:
   - type: STR_HEAVY_STUBBER_HYBRID  # Earlier alternative to kombi-rotor cannon
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     requiresBuy:
       - STR_MIDTIER_PREREQ
       - STR_BASIC_BALLISTICS_DEP
@@ -620,7 +620,7 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
 
   - type: STR_STUBCANNON_GUARD
-    categories: [STR_CAT_GRENADES]
+    categories: [STR_CAT_GRENADES, STR_CAT_GRENADE40]
     dropoff: 5
     requiresBuy:
       - STR_MIDTIER_PREREQ
@@ -657,7 +657,7 @@ items:
     autoShots: 1
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10776 # Moved to 40mm Grenade Section, as that's the only ammo it can take.
     tags:
       ITEM_RECOIL: 35
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -859,7 +859,7 @@ items:
 
 
   - type: STR_AUTOGUN_HIGHGRADE  # sans underslung but with bayonetta
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     dropoff: 4  # -1 HG
     weight: 10  # +2 vs lasgun HG
     requiresBuy:
@@ -926,7 +926,7 @@ items:
       ITEM_ACCENT_COLOR: 1
 
   - type: STR_AUTOGUN_HIGHGRADE_UNDERSLUNG  # 40mm grenade launcher, no bayonetta
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     weight: 20  # +12 vs lasgun HG
     dropoff: 4  # -1 HG
     requiresBuy:
@@ -1150,7 +1150,7 @@ items:
     tuAuto: 0
     tuSnap: 45
     tuAimed: 60
-    listOrder: 10778
+    listOrder: 10785
     tuLoad: 30
     accuracyMultiplier:  # sniper rifle accuracy
       firing: [0.5, 0.005]
@@ -1190,7 +1190,7 @@ items:
     tags:
       ITEM_AMMO_COLOR: 15
     power: 120
-    listOrder: 10778
+    listOrder: 10786
 
   - type: STR_HEAVY_SNIPER_RIFLEG_AMMO_PENETRATOR
     categories: [STR_CAT_SNIPER]
@@ -1219,12 +1219,12 @@ items:
       ToHealth: 0.7  # armor piercing
       ToArmor: 0.05  # armor piercing
     power: 130
-    listOrder: 10779
+    listOrder: 10787
     tags:
       ITEM_AMMO_COLOR: 2
 
   - type: STR_KRAK_GRENADE40  # underslung grenade; krak munition
-    categories: [STR_CAT_GRENADES, STR_CAT_ADEPTAS]
+    categories: [STR_CAT_GRENADES, STR_CAT_ADEPTAS, STR_CAT_GRENADE40]
     size: 0.1
     weight: 3
     armor: 200
@@ -1252,7 +1252,7 @@ items:
     clipSize: 3
     invWidth: 1  # smaller
     invHeight: 1
-    listOrder: 10331
+    listOrder: 10777 # moved to 40mm grenade ammo section
 
   - &STR_HAND_MULTILASER_TEMPLATE
     type: STR_HAND_MULTILASER  # Black Handheld Version, Purchasable in Store
@@ -1293,7 +1293,7 @@ items:
     sprayWaypoints: 2
     recover: true
     fixedWeapon: false
-    listOrder: 10761
+    listOrder: 10755 # Seperate section from the Heavy Stubbers
     minRange: 5 # heavy weapon; cumbersome, not suited to CQC
     tags:
       ITEM_IS_HEAVY_WEAPON: 1
@@ -1318,7 +1318,7 @@ items:
     accuracyAuto: 50 # +15 MC bonus
     autoRange: 14 # Same Range as Inq. Multilaser, +2 MC Bonus
     snapRange: 18 # Same Range as Inq. Multilaser, +2 MC Bonus
-    listOrder: 10762
+    listOrder: 10756 # Seperate section from the Heavy Stubbers
     minRange: 3
 
 
@@ -1414,7 +1414,7 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
 
   - type: STR_ROTOR_CANNON_KOMBI
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     # requiresBuy:
     #   - STR_ROTOR_CANNON_KOMBI  # research topic unlocks manufacturing
     size: 0.5
@@ -1543,7 +1543,7 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
 
   - type: STR_ROTOR_CANNON_KOMBI_BLACK  # Imperial version
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     requiresBuy:
       - STR_CHAMBER_NOT_ARBITES
       - STR_MT_GK  # Midtier Inquisition
@@ -1674,13 +1674,13 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 200
-    listOrder: 10774
+    listOrder: 10775
     tags:
       ITEM_AMMO_COLOR: 1
       ITEM_AMMO_SHADE: -3
 
   - type: STR_ROTOR_KOMBI_BUCKSHOT40
-    categories: [STR_CAT_SHOTGUN]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_GRENADE40]
     weight: 3
     requiresBuy:
       - STR_40MM_AMMO_DEP
@@ -1707,10 +1707,10 @@ items:
       ArmorEffectiveness: 1.15  # armor is pretty effective
       ToStun: 0.3
       ToWound: 0.1
-    listOrder: 10790  # might need reviewing, due to kombi weapon
+    listOrder: 10779  # Moved with 40mm grenade ammo
 
   - type: STR_ROTOR_KOMBI_SLUG40
-    categories: [STR_CAT_SHOTGUN]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_GRENADE40]
     weight: 3
     requiresBuy:
       - STR_40MM_AMMO_DEP
@@ -1735,7 +1735,7 @@ items:
       ArmorEffectiveness: 0.85
       ToStun: 0.5
       ToWound: 0.1
-    listOrder: 10790  # might need reviewing, due to kombi weapon
+    listOrder: 10779  # Moved with 40mm grenade ammo
 
   - type: STR_MOUNTED_HEAVY_BOLTER  # gets 150 % accuracy and 75 % TU costfor being mounted
     bigSprite: {mod: 40k, index: 335}
@@ -4492,7 +4492,7 @@ items:
 
   - &UMBRA_GL
     type: STR_BOLTER_LIGHT_UMBRA_UNDERSLUNG
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CAT_BOLTER, STR_CAT_GRENADE40]
     requiresBuy:
       - STR_LIGHT_BOLTERS_MIDTIER
       - STR_MIDTIER_PREREQ
@@ -6323,6 +6323,7 @@ items:
       ITEM_BASE_COLOR: 4
       ITEM_GETS_ACCENT_RECOLOR: 1
       ITEM_ACCENT_COLOR: 1
+    listOrder: 10790
 
   - &STR_RIPPER_CLIP_DEFAULT
     type: STR_RIPPER_GUN_CLIP
@@ -6334,6 +6335,7 @@ items:
       ToTime: 0.3  # shotguns have impact shock; the Ripper especially so
       ToEnergy: 0.3  # impact shock
       ToStun: 0.5  # impact shock
+    listOrder: 10791
 
   - type: STR_RIPPER_GUN_CLIP_AP
     categories: [STR_CAT_SHOTGUN]
@@ -6368,7 +6370,7 @@ items:
     shotgunPellets: 6
     tags:
       ITEM_AMMO_COLOR: 3
-    listOrder: 10790
+    listOrder: 10793
 
   - type: STR_RIPPER_GUN_CLIP_INC
     categories: [STR_CAT_SHOTGUN]
@@ -6412,7 +6414,7 @@ items:
     shotgunPellets: 6
     tags:
       ITEM_AMMO_COLOR: 4
-    listOrder: 10790
+    listOrder: 10792
 
   - type: STR_LASGUN_CLIP  # LASGUN CLIP                 11010
     armor: 200

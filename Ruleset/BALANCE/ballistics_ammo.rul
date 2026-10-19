@@ -610,7 +610,7 @@ items:
     bulletSpeed: 50
     explosionSpeed: 5
     armor: 30
-    listOrder: 10776
+    listOrder: 10781
 
   - type: STR_AUTOCANNON_CLIP  # Overwrites version from 40k mod
     refNode: *STR_AUTOCANNON_AMMO_TEMPLATE
@@ -631,7 +631,7 @@ items:
     floorSprite: 3044
     handSprite: 3550
     clipSize: 30
-    listOrder: 10776
+    listOrder: 10781
 
   - type: STR_AUTOCANNON_HE_AMMO
     refNode: *STR_AUTOCANNON_AMMO_TEMPLATE
@@ -653,7 +653,7 @@ items:
       ToItem: 0.75  # high explosive
       FixRadius: 2
     powerForAnimation: 32
-    listOrder: 10777
+    listOrder: 10782
 
   - type: STR_AUTOCANNON_AP_AMMO
     refNode: *STR_AUTOCANNON_AMMO_TEMPLATE
@@ -668,7 +668,7 @@ items:
       ToArmor: 0.05
       ToHealth: 0.7
       ToStun: 0.25
-    listOrder: 10777
+    listOrder: 10782
 
   - &STR_ASSAULT_CANNON_AMMO
     type: STR_ASSC_CLIP

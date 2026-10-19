@@ -29,7 +29,7 @@ items:
     twoHanded: true
     blockBothHands: true
     kneelBonus: 150 #heavy weapon
-    listOrder: 10775
+    listOrder: 10780
     tags:
       REACTION_MULTIPLIER: 50
       REACTION_PENALTY_KNEELING_BYPASS: 1
@@ -88,7 +88,7 @@ items:
     invHeight: 3
     armor: 30
     bulletSpeed: 50
-    listOrder: 10775
+    listOrder: 10780
     tags:
       ITEM_IS_HEAVY_WEAPON: 1
       REACTION_MULTIPLIER: 50
@@ -100,7 +100,7 @@ items:
     bigSprite: 3094
     floorSprite: 3043
     handSprite: 3540
-    listOrder: 10775
+    listOrder: 10780
 
   - &STR_IW_AUTOCANNON
     type: STR_IW_AUTOCANNON  # Autocannon      #Kalibrax pattern                                                       # 13210; IRON WARRIOR AC is very slow firing but more powerful and accurate
@@ -130,7 +130,7 @@ items:
     sprayWaypoints: 2
     bulletSpeed: 50
     attraction: 8
-    listOrder: 10775
+    listOrder: 10780
 
   - type: STR_IW_AUTOCANNON_MOUNTED
     refNode: *STR_IW_AUTOCANNON
@@ -158,7 +158,7 @@ items:
     armor: 30
     bulletSpeed: 50
     attraction: 8
-    listOrder: 10775
+    listOrder: 10780
 
   - type: STR_IW_REAPER_AUTOCANNON
     refNode: *STR_REAPER_AUTOCANNON_TEMPLATE
