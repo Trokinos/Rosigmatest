@@ -15266,6 +15266,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
   STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
+  STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
 
   ## UNIT PROJECTS
 
@@ -15278,6 +15279,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
   STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
+  STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
  ### WEAPONS
   AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
   AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"

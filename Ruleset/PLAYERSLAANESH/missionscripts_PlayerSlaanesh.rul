@@ -1,0 +1,25 @@
+missionScripts:
+
+
+ # STR_IGOPFOR_ARMORYROOKIES
+ # STR_IMPERIAL_PDF_LIST
+ # STR_IGOPFOR_TIER0
+ # STR_IMPERIAL_INQUISITION_NOVICE_KILLTEAM_LIST
+ 
+
+
+ ### BASE GENERATION
+
+  - type: newBasesEarlySlaaneshpath
+    missionWeights:
+      0:
+        STR_TS_CULTIST_BASE_GV: 33
+        STR_KTS_TRAITOR_GUARD_BASE_GV: 33
+    firstMonth: 1
+    lastMonth: 2
+    startDelay: 120
+    randomDelay: 20160 # Up to 2 weeks random delay
+    executionOdds: 70
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: false
+      STR_SLAANESHPATH: true

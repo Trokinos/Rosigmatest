@@ -1,4 +1,4 @@
-#adhocScripts:
+adhocScripts:
 
  # 10040 minutes in a week
  # NOTE: Currently all items and units will have arrived at HQ on the 6th day of January.
@@ -16,9 +16,69 @@
  #
  #
  #
+
+### start adhocScript Mission
+ # Copied from TAU, readjust later. Triggers missions in player region.
+
+  - &STR_SLAANESHPATH_START_MISSION
+    type: adhocGameStartSlaaneshpath
+    # initial mission in player region
+    adhocMissionScriptTags: ["gameStartSlaaneshpath"]
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH: 10
+        STR_ALIEN_HARVEST: 10
+        STR_ALIEN_ABDUCTION: 30
+        STR_NURGLE_HARVEST: 8
+        STR_ALIEN_RESEARCH_TZEENTCH: 15
+        STR_ALIEN_HARVEST_TZEENTCH: 8
+    targetBaseOdds: 100
+    startDelay: 7200  # 5 days
+    randomDelay: 4320  # additional random 0 to 3 days
+    useTable: true
+    maxRuns: 1
+    varName: GameStartSlaaneshpath
+
+    type: adhocGameStartSlaaneshpathValkyrieCrash
+    # Triggers one crashed valkyrie in the player region
+    adhocMissionScriptTags: ["gameStartSlaaneshpath"]
+    missionWeights:
+      0:
+        STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: 10
+    targetBaseOdds: 100
+    startDelay: 21600  # 15 days
+    randomDelay: 4320  # additional random 0 to 3 days
+    useTable: false
+    maxRuns: 1
+    varName: GameStartSlaaneshpathValkyrieCrash
+
+  - type: adhocStarterBaseSlaaneshpath
+    missionWeights:
+      0:
+        STR_TS_CULTIST_BASE_GV: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 18
+        STR_ARCTIC: 4
+        STR_ANTARCTICA: 4
+        STR_SOUTH_AMERICA: 10
+        STR_EUROPE: 16
+        STR_NORTH_AFRICA: 12
+        STR_SOUTHERN_AFRICA: 8
+        STR_CENTRAL_ASIA: 12
+        STR_SOUTH_EAST_ASIA: 15
+        STR_SIBERIA: 10
+        STR_AUSTRALASIA: 10
+    useTable: false
+    startDelay: 20080  # 2-3 weeks
+    randomDelay: 10040
+    adhocMissionScriptTags: ["adhocStarterBaseSlaaneshpath"]
+
+
 events:
 
   - name: STR_SLAANESHPATH_CHOSEN_EVENT
+    adhocMissionScriptTags: ["gameStartSlaaneshpath", "adhocStarterBaseSlaaneshpath", "adhocGameStartSlaaneshpathValkyrieCrash"]
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: AdeptasAttackedBG.scr
     timer: 300

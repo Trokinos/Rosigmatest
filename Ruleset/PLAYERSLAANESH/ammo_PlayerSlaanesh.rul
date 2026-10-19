@@ -129,7 +129,7 @@ items:
     handSprite: {mod: 40k, index: 1168}
     hitAnimation: 36
     power: 60 # +5
-    damageType: 4 # AP, to be in line with rebalanced lasgun ammo
+    damageType: 4
     damageAlter:  # LAS SLAANESH
       ToArmorPre: 0.5 # BIG armor damage! 
       ArmorEffectiveness: 0.7 # HIGH Penetrative power! 

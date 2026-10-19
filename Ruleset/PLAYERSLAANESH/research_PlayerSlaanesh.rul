@@ -21,10 +21,6 @@ research:
      #lookup: STR_CHOSEN_SLAANESHPATH
     unlocks:
       - STR_ALIENS_ONLY # Chaos corruption
-      #- STR_LASER_WEAPONS     # easiest way to activate heavy stubbers (???)
-      #- STR_IMPERIAL_WEAPONS  # Flamer/Shotgun/Guard Laspistol/Guard Lasgun
-      #- STR_GUARD_AND_ARBITES # easiest way to activate stub rifles
-      #- STR_NOT_STEEL_LEGION_STRATEGY # needed to activate normal chimeras (???)
       - STR_NOT_IMPERIUM
       - STR_NOT_CHAOSCULT
       - STR_NOT_THE_IMPERIAL_LAW
@@ -33,10 +29,8 @@ research:
       #- STR_GSC_ARBITES_SPAWNED   # prevent GSC arbites spawn
       - STR_SLAANESHPATH_SELECTED
     disables:
-     # - STR_ARBITES
       - STR_NOT_SLAANESHPATH
       - STR_GENESTEALERS_ACTIVE
-      - STR_CHAOS_PATH
       - STR_CHAOS_STRATEGY_ARBITES
       - STR_CHAOS_STRATEGY
       - STR_ELDAR_STRATEGY
@@ -46,25 +40,26 @@ research:
       # STR_PSI_LAB
       # STR_PSI_AMP
       - STR_THE_MARTIAN_SOLUTION
-      #- STR_DEFAULT_CAMPAIGN
       - STR_DIFFICULTY_OPTIONS    # does not have harder missions
+      - STR_DEFAULT_CAMPAIGN
 
-     ############## SECTION FOR DISABLED GENERIC TECHS ###############
+     ############## DISABLED GENERIC TECHS GO HERE ###############
       - STR_SMOKE
       - STR_MOTION_SCANNER
-      - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, a lobotimized soldier who cannot feel anything ruins the entire point of combat.
+      - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, lobotomizing soldiers ruins all the fun.
 
-     ############## SECTION FOR DISABLED CHAOS-RELATED TECHS #########
+     ############## DISABLED CHAOS-RELATED TECHS GO HERE #########
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_ORIGINS # Followers of Slaanesh do not need to research chaos implements normally
       - STR_CHAOS_PATH # Already on the only TRUE chaos path!
       - STR_CHAOS_SORCERY
      ###################################################
-    spawnedEvent: STR_SLAANESHPATH_CHOSEN_EVENT
+
+    spawnedEvent: STR_SLAANESHPATH_CHOSEN_EVENT # Lost and Alone. Triggers adhocscript.
 
  ##################### SECTION FOR INTRO-RELATED TECHS ######################
-
+ ### ALL THESE TECHS ARE REQUIRED TO ACCESS THE REAL TECH TREE ###
   - name: STR_SLAANESHPATH_INTRO_BUNKER
     cost: 5
     points: 0

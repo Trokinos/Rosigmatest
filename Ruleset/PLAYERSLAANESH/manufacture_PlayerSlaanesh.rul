@@ -28,6 +28,27 @@ manufacture:
       STR_ALIEN_SURGERY: 6
     points: 10
 
+  - name: STR_CONVERT_MINOR_MISSION_BOUNTY # Random reward for minor missions.
+    category: STR_RITUALS_OF_EXCESS
+    requires:
+    - STR_RITUALS_OF_WORSHIP
+    space: 5
+    time: 60
+    cost: 6000
+    requiredItems:
+      STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: 1
+    producedItems: # Roughly 90K worth of piety + warpstones; minor randomized weapon rewards on top.
+      STR_ALIEN_FOOD: 5
+      STR_SLAANESHPATH_PIETY: 45
+    randomProducedItems: # PLACEHOLDER, WILL GIVE SLAANESH WEAPONS AND EXOTIC AMMO
+      - [10, {STR_TAU_PULSE_RIFLE: 1}]
+      - [20, {STR_TAU_PULSE_CARBINE: 1, STR_TAU_PHOTON_GRENADE_CARBINE: 5}]
+      - [10, {STR_TAU_PULSE_BLASTER: 1, STR_TAU_PULSE_BLASTER_MAG: 5}]
+      - [20, {STR_TAU_PULSE_PISTOL: 2}]
+      - [5, {STR_TAU_RAIL_RIFLE: 1, STR_TAU_RAIL_MAG: 5}]
+      - [25, {STR_TAU_PHOTON_GRENADE: 10, STR_TAU_FUSION_GRENADE: 5, STR_TAU_EMP_GRENADE: 5}]
+      - [70, {STR_TAU_PULSE_MAG: 25}]
+    points: 10
 
 #### RITUALS OF PAIN - CHAOS SACRIFICE PREPARATION & GENERATION
 
