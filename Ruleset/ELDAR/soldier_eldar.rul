@@ -168,7 +168,7 @@ soldiers:
     soldierNames:
       - delete
       - Names/eldar.nam
-    prefix: "Gd. "
+    prefix: "Gdn. "
 
   - type: STR_ELDAR_RANGER_PLAYER # Eldar Ranger
     requires:
@@ -237,7 +237,7 @@ soldiers:
     soldierNames:
       - delete
       - Names/eldar.nam
-    prefix: "Rg. "
+    prefix: "Rgr. "
 
 # DEPRECATED. in future version (3.4 onward) please add - delete: name to keep rosigma clean
 
@@ -1362,6 +1362,82 @@ soldiers:
     prefix: "Wlk. "
 
 # ELDAR.WRAITHGUARD # special units (example: avatar of khaine)
+  - &WRAITHGUARD_TEMPLATE
+    type: STR_ELDAR_WRAITHGUARD_P
+    standHeight: 22
+    kneelHeight: 14
+    avatarOffsetX: 68
+    avatarOffsetY: 12
+    armor: STR_ELDAR_WRAITHGUARD_WRAITHCANNON_ARMOR_P
+    costSalary: 20000
+    allowPromotion: true
+    allowPiloting: false
+    flagOffset: 100
+    rankStrings:
+      - STR_ELDAR_WRAITHGUARD_RANK_0
+    minStats:
+      tu: 50
+      stamina: 50
+      health: 80
+      bravery: 100
+      reactions: 50
+      firing: 50
+      throwing: 60
+      strength: 40
+      psiStrength: 110
+      psiSkill: 10
+      melee: 50
+    maxStats:
+      tu: 80  # +10
+      stamina: 80
+      health: 100  # +10
+      bravery: 110  # +10
+      reactions: 70
+      firing: 70
+      throwing: 70
+      strength: 90  # +10
+      psiStrength: 110
+      psiSkill: 20
+      melee: 80
+    trainingStatCaps: # cannot be trained
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    statCaps:
+      tu: 90
+      stamina: 130
+      health: 150  # +50
+      bravery: 120
+      reactions: 80
+      firing: 100
+      throwing: 80
+      strength: 110
+      psiStrength: 110
+      psiSkill: 30
+      melee: 80
+    soldierNames:
+      - delete
+      - Names/eldar.nam
+    prefix: "Wg. "
+
+  - type: STR_ELDAR_WRAITHBLADE_P
+    refNode: *WRAITHGUARD_TEMPLATE
+    costSalary: 20000
+    armor: STR_ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_P
+    rankStrings:
+      - STR_ELDAR_WRAITHGUARD_RANK_0
+    soldierNames:
+      - delete
+      - Names/eldar.nam
+    prefix: "Wb. "
 
   - type: STR_ELDAR_FALLEN
     costSalary: 20000

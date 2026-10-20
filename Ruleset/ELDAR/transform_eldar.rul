@@ -946,24 +946,29 @@ soldierTransformation:
     soldierBonusType: STR_RUNE_OF_BATTLE
     lowerBoundAtMinStats: false
 
-#NOTIER.resurrections #resurrection to wraithguard
+#NOTIER.resurrections #resurrection to Wraithguard and Wraithblade
 
-  - name: STR_RESURRECT_ELDAR
+  - &WRAITHGUARD_TRANSFORMATION
+    name: STR_WRAITHGUARD_WRAITHCANNON_TRANSFORM
     requires:
-      - STR_ELDAR_FALLEN_RESURRECTION_RESEARCH
+      - STR_ELDAR_WRAITHGUARD_RESEARCH
     cost: 1000000
-    minRank: 0
-    producedSoldierType: STR_ELDAR_FALLEN
-    producedSoldierArmor: STR_WRAITHGUARD_ARMOR_P
+    producedSoldierType: STR_ELDAR_WRAITHGUARD_P
+    producedSoldierArmor: STR_ELDAR_WRAITHGUARD_WRAITHCANNON_ARMOR_P
     allowsDeadSoldiers: true
     allowsLiveSoldiers: false
     needsCorpseRecovered: true
+    requiredItems:
+      STR_WRAITHGUARD_ARMOR_ITEM: 1 # used for transformation
+      STR_WRAITHCANNON: 1
     # forbiddenPreviousTransformations:
     #   - STR_RESURRECT_ELDAR #no infinite resurrections
     allowedSoldierTypes:
       - STR_ELDAR_M
       - STR_ELDAR_F
       - STR_ELDAR_GUARDIAN_PLAYER
+      - STR_ELDAR_RANGER_PLAYER
+      - STR_ELDAR_AVENGER_P
       - STR_ELDAR_SCORPION_M
       - STR_ELDAR_SEER_F
       - STR_ELDAR_BANSHEE_F
@@ -971,15 +976,55 @@ soldierTransformation:
       - STR_ELDAR_REAPER_M
       - STR_ELDAR_DRAGON_MF
       - STR_ELDAR_SPIDER_PLAYER
+      - STR_ELDAR_HAWK_P
       - STR_ELDAR_AUTARCH_PLAYER
+      - STR_ELDAR_AVENGEREX_P
+      - STR_ELDAR_SCORPIONEX_P
       - STR_ELDAR_REAPER_EXARCH_M
       - STR_ELDAR_DRAGON_EXARCH_SOLDIER
+      - STR_ELDAR_HAWKEX_P
       - STR_ELDAR_SPIDEREX_PLAYER
       - STR_ELDAR_BANSHEE_EXARCH_PLAYER
+      - STR_ELDAR_PSYKER_PLAYER
       - STR_ELDAR_WARLOCK_PLAYER
     transferTime: 24
     recoveryTime: 0
     lowerBoundAtMinStats: true
+    upperBoundAtStatCaps: true
+
+  - name: STR_WRAITHGUARD_DSCYTHE_TRANSFORM
+    refNode: *WRAITHGUARD_TRANSFORMATION
+    requires:
+      - STR_ELDAR_WRAITHGUARD_RESEARCH
+    cost: 1000000
+    producedSoldierType: STR_ELDAR_WRAITHGUARD_P
+    producedSoldierArmor: STR_ELDAR_WRAITHGUARD_DSCYTHE_ARMOR_P
+    requiredItems:
+      STR_WRAITHGUARD_ARMOR_ITEM: 1 # used for transformation
+      STR_DSCYTHE: 1
+
+  - name: STR_WRAITHBLADE_GHOSTAXE_TRANSFORM
+    refNode: *WRAITHGUARD_TRANSFORMATION
+    requires:
+      - STR_ELDAR_WRAITHBLADE_RESEARCH
+    cost: 1000000
+    producedSoldierType: STR_ELDAR_WRAITHBLADE_P
+    producedSoldierArmor: STR_ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_P
+    requiredItems:
+      STR_WRAITHBLADE_ARMOR_ITEM: 1 # used for transformation
+      STR_GHOSTAXE: 1
+
+  - name: STR_WRAITHBLADE_GHOSTSWORD_TRANSFORM
+    refNode: *WRAITHGUARD_TRANSFORMATION
+    requires:
+      - STR_ELDAR_WRAITHBLADE_RESEARCH
+    cost: 1000000
+    producedSoldierType: STR_ELDAR_WRAITHBLADE_P
+    producedSoldierArmor: STR_ELDAR_WRAITHBLADE_GHOSTSWORD_ARMOR_P
+    requiredItems:
+      STR_WRAITHBLADE_ARMOR_ITEM: 1 # used for transformation
+      STR_GHOSTSWORD: 1
+
 
 # DIRESWORD CREATION
 
@@ -1019,3 +1064,37 @@ soldierTransformation:
       - STR_ELDAR_SPIDEREX_PLAYER
       - STR_ELDAR_BANSHEE_EXARCH_PLAYER
       - STR_ELDAR_WARLOCK_PLAYER
+
+# OLD WRAITHGUARD TRANSFORMATION
+  - name: STR_RESURRECT_ELDAR
+    requires:
+      - STR_ELDAR_FALLEN_RESURRECTION_RESEARCH
+    cost: 1000000
+    minRank: 0
+    producedSoldierType: STR_ELDAR_FALLEN
+    producedSoldierArmor: STR_WRAITHGUARD_ARMOR_P
+    allowsDeadSoldiers: true
+    allowsLiveSoldiers: false
+    needsCorpseRecovered: true
+    # forbiddenPreviousTransformations:
+    #   - STR_RESURRECT_ELDAR #no infinite resurrections
+    allowedSoldierTypes:
+      - STR_ELDAR_M
+      - STR_ELDAR_F
+      - STR_ELDAR_GUARDIAN_PLAYER
+      - STR_ELDAR_SCORPION_M
+      - STR_ELDAR_SEER_F
+      - STR_ELDAR_BANSHEE_F
+      - STR_ELDAR_AVANGER_MF
+      - STR_ELDAR_REAPER_M
+      - STR_ELDAR_DRAGON_MF
+      - STR_ELDAR_SPIDER_PLAYER
+      - STR_ELDAR_AUTARCH_PLAYER
+      - STR_ELDAR_REAPER_EXARCH_M
+      - STR_ELDAR_DRAGON_EXARCH_SOLDIER
+      - STR_ELDAR_SPIDEREX_PLAYER
+      - STR_ELDAR_BANSHEE_EXARCH_PLAYER
+      - STR_ELDAR_WARLOCK_PLAYER
+    transferTime: 24
+    recoveryTime: 0
+    lowerBoundAtMinStats: true
