@@ -7455,6 +7455,95 @@ extraSprites:
   - typeSingle: ELDARWARLOCK_ACCESSORY__3__ACCESSORY12
     fileSingle: Resources/Eldar/units/warlock/eldar_warlock_acc_12.png
 
+  # ELDAR WRAITHGUARD
+
+  - typeSingle: ELDARWRAITHGUARD__1__ELDAR
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_body.png
+  - typeSingle: ELDARWRAITHGUARD__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_bodyf.png
+
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_01.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_02.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET3
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_03.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET4
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_04.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET5
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_05.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET6
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_06.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET7
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_07.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET8
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_08.png
+  - typeSingle: WRAITHGUARD_HELMET__2__OPENHELMET_M1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_09.png
+  - typeSingle: WRAITHGUARD_HELMET__2__OPENHELMET_M2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_10.png
+  - typeSingle: WRAITHGUARD_HELMET__2__OPENHELMET_F1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_11.png
+  - typeSingle: WRAITHGUARD_HELMET__2__OPENHELMET_F2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_12.png
+
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_01.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_02.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY3
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_03.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY4
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_04.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY5
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_05.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY6
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_06.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY7
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_07.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY8
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_08.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY9
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_09.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY10
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_10.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY11
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_11.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY12
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_12.png
+
+      # ELDAR WRAITHBLADE
+
+  - typeSingle: ELDARWRAITHBLADE__1__ELDAR
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_body.png
+  - typeSingle: ELDARWRAITHBLADE__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_bodyf.png
+
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_01.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_02.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY3
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_03.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY4
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_04.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY5
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_05.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY6
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_06.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY7
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_07.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY8
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_08.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY9
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_09.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY10
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_10.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY11
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_11.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY12
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_12.png
+
   # ELDAR GUARDIAN HWP
   # SCATTERLASER HWP
 

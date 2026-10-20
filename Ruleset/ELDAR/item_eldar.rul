@@ -87,3 +87,12 @@ items:
     fixedWeapon: true
     recover: false
     defaultInventorySlot: STR_BELT
+
+  - type: STR_WRAITHGUARD_ARMOR_ITEM
+    requires:
+    - STR_ELDAR_WRAITHGUARD_RESEARCH
+    size: 6
+  - type: STR_WRAITHBLADE_ARMOR_ITEM
+    requires:
+    - STR_ELDAR_WRAITHBLADE_RESEARCH
+    size: 6
