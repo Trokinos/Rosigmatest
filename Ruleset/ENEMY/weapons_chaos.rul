@@ -359,7 +359,7 @@ items:
     tuMelee: 14
     flatMelee:
       time: true
-    listOrder: 10780
+    listOrder: 10790
 
   - type: STR_HEAVY_STUBBER_CHAOS
     categories: [STR_CAT_AUTO]
@@ -1438,7 +1438,7 @@ items:
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
   - type: STR_BOLTERN_LIGHT_GRENADELAUNCHER  # LIGHT BOLTER NURGLE CHAOS with grenade launcher
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_NURGLE]
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_NURGLE, STR_CAT_GRENADE40]
     refNode: *CHAOS_WEAPON
     requires:
       - STR_NURGLE_OPTIONS
@@ -1491,7 +1491,7 @@ items:
 
   - &STR_BLIGHT_GRENADE40
     type: STR_BLIGHT_GRENADE40  # STR_BOLTERN_LIGHT_GRENADELAUNCHER underslung grenade
-    categories: [STR_CAT_GRENADES, STR_CAT_NURGLE]
+    categories: [STR_CAT_GRENADES, STR_CAT_NURGLE, STR_CAT_GRENADE40]
     size: 0.1
     weight: 3
     requires:
@@ -1518,7 +1518,7 @@ items:
     hitAnimation: 1030  # was 1010 but doesn't exist
     clipSize: 3
     blastRadius: 3
-    listOrder: 10352
+    listOrder: 10778 # Moved to 40mm Grenade section, in case other weapons use this ammo in the future.
     tags:
       INFECTION_DAMAGE_PERCENT: 25  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
@@ -1534,7 +1534,7 @@ items:
 
   - &STR_ACIDRUST_GRENADE40
     type: STR_ACIDRUST_GRENADE40  # STR_BOLTERN_LIGHT_GRENADELAUNCHER underslung grenade
-    categories: [STR_CAT_GRENADES, STR_CAT_NURGLE, STR_CAT_TACTICAL]
+    categories: [STR_CAT_GRENADES, STR_CAT_NURGLE, STR_CAT_GRENADE40]
     size: 0.1
     weight: 3
     requires:
@@ -1563,7 +1563,7 @@ items:
     invHeight: 1
     clipSize: 3
     blastRadius: 4
-    listOrder: 10353
+    listOrder: 10778 # Moved to 40mm Grenade section, in case other weapons use this ammo in the future.
     tags:
       INFECTION_DAMAGE_PERCENT: 25  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch

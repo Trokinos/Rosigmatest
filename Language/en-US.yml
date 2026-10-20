@@ -2509,6 +2509,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_HALLEBARD_SNAPSHOT_LUNGE: "Lunge"
   STR_ELDAR_LIGHT_PLAYER: "Eldar Lightning"
 
+  STR_CAT_GRENADE40: "40mm Rounds"
   STR_INCENDIARY_GRENADE40: "40mm Incendiary Grenade"
   STR_PENITENCE_GRENADE40: "40mm Penitence Grenade"
   STR_MELTA_GRENADE40: "40mm Melta Grenade"
