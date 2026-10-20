@@ -169,7 +169,7 @@ items:
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_FIREDRAGON_RESEARCH
-    requiresBuy: []  # Already requires the eldar base service
+    requiresBuy: []
     size: 0.2
     costBuy: 10000 # expensive materials
     costSell: 5000
@@ -582,7 +582,7 @@ items:
 
   ### HWP WEAPONS
   - &HWP_AML_AMMO_TEMPLATE
-    type: STR_HWP_STARSWARM_AMMO
+    type: STR_HWP_SUNBURST_AMMO
     categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
     requires:
       - STR_ELDAR_HWP_AML_ARMOR_RESEARCH

@@ -585,7 +585,7 @@ items:
 
   - &STR_AUTOCANNON_AMMO_TEMPLATE
     type: STR_AUTOCANNON_AMMO
-    categories: [STR_CAT_AUXILIARY, STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO]
     size: 0.3
     costSell: 1000
     weight: 15
@@ -610,7 +610,7 @@ items:
     bulletSpeed: 50
     explosionSpeed: 5
     armor: 30
-    listOrder: 6930
+    listOrder: 10781
 
   - type: STR_AUTOCANNON_CLIP  # Overwrites version from 40k mod
     refNode: *STR_AUTOCANNON_AMMO_TEMPLATE
@@ -621,6 +621,7 @@ items:
 
   - type: STR_AUTOCANNON_BOX_AMMO # Only found on chaos previously, now also an expensive [TRADE] item.
     refNode: *STR_AUTOCANNON_AMMO_TEMPLATE
+    categories: [STR_CAT_AUTO, STR_CAT_TRADE]
     size: 0.3
     costBuy: 12500
     requiresBuyBaseFunc: [TRADE]
@@ -630,7 +631,7 @@ items:
     floorSprite: 3044
     handSprite: 3550
     clipSize: 30
-    listOrder: 6931
+    listOrder: 10781
 
   - type: STR_AUTOCANNON_HE_AMMO
     refNode: *STR_AUTOCANNON_AMMO_TEMPLATE
@@ -652,7 +653,7 @@ items:
       ToItem: 0.75  # high explosive
       FixRadius: 2
     powerForAnimation: 32
-    listOrder: 6932
+    listOrder: 10782
 
   - type: STR_AUTOCANNON_AP_AMMO
     refNode: *STR_AUTOCANNON_AMMO_TEMPLATE
@@ -667,7 +668,7 @@ items:
       ToArmor: 0.05
       ToHealth: 0.7
       ToStun: 0.25
-    listOrder: 6933
+    listOrder: 10782
 
   - &STR_ASSAULT_CANNON_AMMO
     type: STR_ASSC_CLIP

@@ -186,7 +186,7 @@ extraSprites:
       1472: Resources/Handobs/handob_lucius_hellgun.png
       1480: Resources/Handobs/handob_lucius_volleygun.png
 
-# ELDAR 1498-1800
+# ELDAR 1498-1850
       1498: Resources/Eldar/weapons/fusionpistols/fusion_pistol_handObj.png
       1506: Resources/Eldar/weapons/fusionpistols/dragon_fusion_pistol_handObj.png
       1514: Resources/Eldar/weapons/fusionpistols/fusion_pistol_canister_handObj.png
@@ -222,6 +222,10 @@ extraSprites:
       1754: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_handObj.png
       1762: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_charge_handObj.png
       1770: Resources/Eldar/weapons/hawkweapons/lasblaster_handObj.png
+      1778: Resources/Eldar/weapons/wraithcannon_handObj.png
+      1786: Resources/Eldar/weapons/dscythe_handObj.png
+      1794: Resources/Eldar/weapons/ghostaxe_handObj.png
+      1802: Resources/Eldar/weapons/ghostsword_handObj.png
 
 # Arbites; 1900-2000
       # Arbites' heavy stubber and ammo
@@ -491,4 +495,4 @@ extraSprites:
       4978: Resources/Eldar/weapons/spinneretrifle/spinneretrifle_spool_handObj.png
       4986: Resources/Eldar/weapons/dragon_fusion_gun_canister_handObj.png
 
-      # 1800-1899 free spaces here, make sure to double check
+      # 1850-1899 free spaces here, make sure to double check

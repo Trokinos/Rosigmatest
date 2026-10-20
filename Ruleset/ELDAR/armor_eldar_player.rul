@@ -122,8 +122,8 @@ armors:
     storeItem: STR_NONE
     visibilityAtDay: 40
     visibilityAtDark: 30
-    camouflageAtDay: 20  # you need to be 20 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: 15  # you need to be 10 tiles closer than max vision range (at night!) to see this unit in the dark
+    camouflageAtDay: 12
+    camouflageAtDark: 12
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
     heatVision: 20
@@ -201,6 +201,8 @@ armors:
     refNode: *RANGER_ARMOR
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
+    camouflageAtDay: 12
+    camouflageAtDark: 12
     units:
       - STR_ELDAR_RANGER_PLAYER
     stats: #stats for sniper
@@ -374,9 +376,9 @@ armors:
     storeItem: STR_NONE
     visibilityAtDay: 40
     visibilityAtDark: 30
-    camouflageAtDay: 20  # you need to be 20 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: 13  # you need to be 12 tiles closer than max vision range (at night!) to see this unit in the dark
-    antiCamouflageAtDay: 5
+    camouflageAtDay: 12
+    camouflageAtDark: 12
+    antiCamouflageAtDay: 8
     antiCamouflageAtDark: 8
     frontArmor: 100 #One of the stronger aspect armors 3+ Save
     sideArmor: 90
@@ -1197,8 +1199,8 @@ armors:
     storeItem: STR_NONE
     visibilityAtDay: 42
     visibilityAtDark: 30
-    camouflageAtDay: 20  # you need to be 20 tiles closer than max vision range to see this unit in the light
-    camouflageAtDark: 13  # you need to be 12 tiles closer than max vision range (at night!) to see this unit in the dark
+    camouflageAtDay: 12
+    camouflageAtDark: 12
     antiCamouflageAtDay: 8
     antiCamouflageAtDark: 11
     frontArmor: 120
@@ -1763,8 +1765,205 @@ armors:
       INTIMIDATION_RESISTANCE: 75
 
 # ELDAR.WRAITH
-
   - &WRAITHGUARD_ARMOR
+    type: STR_ELDAR_WRAITHGUARD_WRAITHCANNON_ARMOR_P
+    storeItem: STR_WRAITHCANNON
+    moveSound: {mod: 40k, index: 700}
+    antiCamouflageAtDay: 10
+    antiCamouflageAtDark: 10
+    psiVision: 10 # Wraith units rely on psiVision
+    visibilityAtDay: 10 # required against fearImmune enemies
+    visibilityAtDark: 10
+    heatVision: 100 # ignores smoke
+    allowsRunning: false  # Mechanical
+    allowsKneeling: false
+    instantWoundRecovery: true #similar to rubric marines
+    fearImmune: true
+    zombiImmune: true
+    bleedImmune: true
+    painImmune: true
+    frontArmor: 160  # +10
+    sideArmor: 150
+    rearArmor: 95
+    underArmor: 160
+    damageModifier:  # TERMINATOR ARMOR
+      - 1.0  # none
+      - 0.7  # AP;
+      - 0.3  # FLAMES;
+      - 0.6  # HE;
+      - 0.9  # LASCANON;
+      - 1.0  # PLASMA
+      - 0.8  # STUN
+      - 0.8  # MELEE;
+      - 0.8  # ACID;
+      - 0.0  # SMOKE
+      - 1.0  # IMPACT
+      - 1.0  # MELTA
+    spriteSheet: ELDAR_HAWK_EXARCH.SPK #Temp
+    corpseBattle:
+      - STR_ELDAR_HAWKEX_CORPSE_P
+    layersDefaultPrefix: "1"
+    layersSpecificPrefix:
+      1: ELDARWRAITHGUARD
+      2: WRAITHGUARD_HELMET
+      3: ELDARWRAITHGUARD_ACCESSORY
+    layersDefinition:
+      M0: ["", "ELDAR", "OPENHELMET_M1", "ACCESSORY1"]
+      M1: ["", "ELDAR", "OPENHELMET_M2", "ACCESSORY12"]
+      M2: ["", "ELDAR", "CLOSEDHELMET4", "ACCESSORY2"]
+      M3: ["", "ELDAR", "CLOSEDHELMET1", "ACCESSORY11"]
+      M4: ["", "ELDAR", "CLOSEDHELMET1", "ACCESSORY3"]
+      M5: ["", "ELDAR", "CLOSEDHELMET2", "ACCESSORY10"]
+      M6: ["", "ELDAR", "CLOSEDHELMET3", "ACCESSORY4"]
+      M7: ["", "ELDAR", "CLOSEDHELMET4", "ACCESSORY9"]
+      M8: ["", "ELDAR", "CLOSEDHELMET5", "ACCESSORY5"]
+      M9: ["", "ELDAR", "CLOSEDHELMET6", "ACCESSORY8"]
+      M10: ["", "ELDAR", "CLOSEDHELMET7", "ACCESSORY6"]
+      M11: ["", "ELDAR", "CLOSEDHELMET8", "ACCESSORY7"]
+      F0: ["", "ELDAR_F", "OPENHELMET_F1", "ACCESSORY4"]
+      F1: ["", "ELDAR_F", "OPENHELMET_F2", "ACCESSORY10"]
+      F2: ["", "ELDAR_F", "CLOSEDHELMET7", "ACCESSORY5"]
+      F3: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY11"]
+      F4: ["", "ELDAR_F", "CLOSEDHELMET1", "ACCESSORY6"]
+      F5: ["", "ELDAR_F", "CLOSEDHELMET2", "ACCESSORY12"]
+      F6: ["", "ELDAR_F", "CLOSEDHELMET3", "ACCESSORY7"]
+      F7: ["", "ELDAR_F", "CLOSEDHELMET4", "ACCESSORY1"]
+      F8: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY8"]
+      F9: ["", "ELDAR_F", "CLOSEDHELMET6", "ACCESSORY2"]
+      F10: ["", "ELDAR_F", "CLOSEDHELMET7", "ACCESSORY9"]
+      F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
+    customArmorPreviewIndex: 1360
+    size: 1
+    units:
+      - STR_ELDAR_WRAITHGUARD_P
+    loftempsSet: [5]
+    drawingRoutine: 0
+    builtInWeapons:
+      - STR_WRAITHCANNON
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+    tags:
+      INTIMIDATION_RESISTANCE: 100  # infection immune
+      INFECTION_RESIST: 100
+      UNIT_TYPE_XENO: 1
+      UNIT_TYPE_ELDAR: 1
+      UNIT_TYPE_MECHANICAL: 1
+
+  - type: STR_ELDAR_WRAITHGUARD_DSCYTHE_ARMOR_P
+    refNode: *WRAITHGUARD_ARMOR
+    storeItem: STR_DSCYTHE
+    builtInWeapons:
+      - STR_DSCYTHE
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+
+  - &WRAITHBLADE_ARMOR
+    type: STR_ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_P
+    storeItem: STR_GHOSTAXE
+    moveSound: {mod: 40k, index: 700}
+    antiCamouflageAtDay: 10
+    antiCamouflageAtDark: 10
+    psiVision: 10 # Wraith units rely on psiVision
+    visibilityAtDay: 10 # required for fearImmune units
+    visibilityAtDark: 10
+    heatVision: 100 # ignores smoke
+    allowsRunning: false  # Mechanical
+    allowsKneeling: false
+    instantWoundRecovery: true # similar to rubric Marines
+    fearImmune: true
+    zombiImmune: true
+    bleedImmune: true
+    painImmune: true
+    frontArmor: 170  # +20
+    sideArmor: 160  # +20
+    rearArmor: 115  # +20
+    underArmor: 160
+    damageModifier:  # TERMINATOR ARMOR
+      - 1.0  # none
+      - 0.7  # AP;
+      - 0.3  # FLAMES;
+      - 0.6  # HE;
+      - 0.9  # LASCANON;
+      - 1.0  # PLASMA
+      - 0.8  # STUN
+      - 0.5  # MELEE; -0.3 Wraithblade
+      - 0.8  # ACID;
+      - 0.0  # SMOKE
+      - 1.0  # IMPACT
+      - 1.0  # MELTA
+    spriteSheet: ELDAR_HAWK_EXARCH.SPK #Temp
+    corpseBattle:
+      - STR_ELDAR_HAWKEX_CORPSE_P
+    layersDefaultPrefix: "1"
+    layersSpecificPrefix:
+      1: ELDARWRAITHBLADE
+      2: WRAITHGUARD_HELMET
+      3: ELDARWRAITHBLADE_ACCESSORY
+    layersDefinition:
+      M0: ["", "ELDAR", "OPENHELMET_M1", "ACCESSORY1"]
+      M1: ["", "ELDAR", "OPENHELMET_M2", "ACCESSORY12"]
+      M2: ["", "ELDAR", "CLOSEDHELMET4", "ACCESSORY2"]
+      M3: ["", "ELDAR", "CLOSEDHELMET1", "ACCESSORY11"]
+      M4: ["", "ELDAR", "CLOSEDHELMET1", "ACCESSORY3"]
+      M5: ["", "ELDAR", "CLOSEDHELMET2", "ACCESSORY10"]
+      M6: ["", "ELDAR", "CLOSEDHELMET3", "ACCESSORY4"]
+      M7: ["", "ELDAR", "CLOSEDHELMET4", "ACCESSORY9"]
+      M8: ["", "ELDAR", "CLOSEDHELMET5", "ACCESSORY5"]
+      M9: ["", "ELDAR", "CLOSEDHELMET6", "ACCESSORY8"]
+      M10: ["", "ELDAR", "CLOSEDHELMET7", "ACCESSORY6"]
+      M11: ["", "ELDAR", "CLOSEDHELMET8", "ACCESSORY7"]
+      F0: ["", "ELDAR_F", "OPENHELMET_F1", "ACCESSORY4"]
+      F1: ["", "ELDAR_F", "OPENHELMET_F2", "ACCESSORY10"]
+      F2: ["", "ELDAR_F", "CLOSEDHELMET7", "ACCESSORY5"]
+      F3: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY11"]
+      F4: ["", "ELDAR_F", "CLOSEDHELMET1", "ACCESSORY6"]
+      F5: ["", "ELDAR_F", "CLOSEDHELMET2", "ACCESSORY12"]
+      F6: ["", "ELDAR_F", "CLOSEDHELMET3", "ACCESSORY7"]
+      F7: ["", "ELDAR_F", "CLOSEDHELMET4", "ACCESSORY1"]
+      F8: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY8"]
+      F9: ["", "ELDAR_F", "CLOSEDHELMET6", "ACCESSORY2"]
+      F10: ["", "ELDAR_F", "CLOSEDHELMET7", "ACCESSORY9"]
+      F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
+    customArmorPreviewIndex: 1360
+    size: 1
+    units:
+      - STR_ELDAR_WRAITHBLADE_P
+    loftempsSet: [5]
+    drawingRoutine: 0
+    builtInWeapons:
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+      - STR_GHOSTAXE
+      - AUX_ELDAR_SHIELD
+    tags:
+      UNIT_SIZE: 200 # HUGE
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_DECAY: 10
+      INFECTION_RESIST: 100
+      INTIMIDATION_RESISTANCE: 100
+      UNIT_TYPE_XENO: 1
+      UNIT_TYPE_ELDAR: 1
+      UNIT_TYPE_MECHANICAL: 1
+
+  - type: STR_ELDAR_WRAITHBLADE_GHOSTSWORD_ARMOR_P
+    refNode: *WRAITHBLADE_ARMOR
+    storeItem: STR_GHOSTSWORD
+    builtInWeapons:
+      - INV_NULL_3X3
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_4X2
+      - STR_GHOSTSWORD
+      - AUX_ELDAR_SHIELD
+
+### OLD Wraithguard armor 2x2
+  - &OLD_WRAITHLORD_ARMOR
     type: STR_WRAITHGUARD_ARMOR_P
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
@@ -1803,7 +2002,7 @@ armors:
       UNIT_TYPE_ELDAR: 1
       UNIT_TYPE_MECHANICAL: 1
   - type: STR_WRAITHGUARD_ARMOR_P_SHIELD
-    refNode: *WRAITHGUARD_ARMOR
+    refNode: *OLD_WRAITHLORD_ARMOR
     storeItem: STR_ELDAR_SHIELD
     frontArmor: 125
     sideArmor: 110
@@ -1864,17 +2063,11 @@ armors:
       F9: ["", "ELDAR_F", "CLOSEDHELMET4", "ACCESSORY4"]
       F10: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY12"]
       F11: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY8"]
-    bleedImmune: true
-    fearImmune: false
-    recovery:  # Manned turrets recover morale rapidly
-      morale:
-        flatHundred: 0.5
     frontArmor: 150 # balance these armor values
     sideArmor: 120  #
     rearArmor: 60 # Guardian Armor
     underArmor: 60
     drawingRoutine: 5
-    constantAnimation: false
     movementType: 0
     moveCost:
       baseNormalPercent: [150, 100] #move cost for ground
@@ -1929,9 +2122,10 @@ armors:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
       UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_LIVING: 1
       HAS_EXTENDED_FRONT_SHIELD: 1
     scripts:
-      selectUnitSprite: |
+      #selectUnitSprite: |
                         # FLOATING ANIMATION SCRIPT DRAWING ROUTINE 20 (Current sprite DR 5)
         #var int temp;
         #var int walking;
@@ -2003,7 +2197,7 @@ armors:
       2: GUARDIAN_HELMET
       3: ELDARG_ACCESSORY
     builtInWeapons:
-      - STR_HWP_STARSWARM_AMMO
+      - STR_HWP_SUNBURST_AMMO
       - STR_HWP_STARSHOT_AMMO
       - STR_ELDAR_HWP_AML
       #- INV_NULL_3X3

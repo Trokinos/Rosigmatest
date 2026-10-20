@@ -359,7 +359,7 @@ items:
     tuMelee: 14
     flatMelee:
       time: true
-    listOrder: 10780
+    listOrder: 10790
 
   - type: STR_HEAVY_STUBBER_CHAOS
     categories: [STR_CAT_AUTO]
@@ -1438,7 +1438,7 @@ items:
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
   - type: STR_BOLTERN_LIGHT_GRENADELAUNCHER  # LIGHT BOLTER NURGLE CHAOS with grenade launcher
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_NURGLE]
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_NURGLE, STR_CAT_GRENADE40]
     refNode: *CHAOS_WEAPON
     requires:
       - STR_NURGLE_OPTIONS
@@ -1491,7 +1491,7 @@ items:
 
   - &STR_BLIGHT_GRENADE40
     type: STR_BLIGHT_GRENADE40  # STR_BOLTERN_LIGHT_GRENADELAUNCHER underslung grenade
-    categories: [STR_CAT_GRENADES, STR_CAT_NURGLE]
+    categories: [STR_CAT_GRENADES, STR_CAT_NURGLE, STR_CAT_GRENADE40]
     size: 0.1
     weight: 3
     requires:
@@ -1518,7 +1518,7 @@ items:
     hitAnimation: 1030  # was 1010 but doesn't exist
     clipSize: 3
     blastRadius: 3
-    listOrder: 10352
+    listOrder: 10778 # Moved to 40mm Grenade section, in case other weapons use this ammo in the future.
     tags:
       INFECTION_DAMAGE_PERCENT: 25  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
@@ -1534,7 +1534,7 @@ items:
 
   - &STR_ACIDRUST_GRENADE40
     type: STR_ACIDRUST_GRENADE40  # STR_BOLTERN_LIGHT_GRENADELAUNCHER underslung grenade
-    categories: [STR_CAT_GRENADES, STR_CAT_NURGLE, STR_CAT_TACTICAL]
+    categories: [STR_CAT_GRENADES, STR_CAT_NURGLE, STR_CAT_GRENADE40]
     size: 0.1
     weight: 3
     requires:
@@ -1563,7 +1563,7 @@ items:
     invHeight: 1
     clipSize: 3
     blastRadius: 4
-    listOrder: 10353
+    listOrder: 10778 # Moved to 40mm Grenade section, in case other weapons use this ammo in the future.
     tags:
       INFECTION_DAMAGE_PERCENT: 25  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
@@ -2563,7 +2563,7 @@ items:
     dropoff: 3  # superior stabilization due to Dreadnought mount
     costSell: 20000
     weight: 100
-    bigSprite: {mod: 40k, index: 333}
+    bigSprite: {mod: 40k, index: 333} # to be replaced
     floorSprite: {mod: 40k, index: 196}
     handSprite: {mod: 40k, index: 648}
     bulletSprite: 6
@@ -2599,14 +2599,15 @@ items:
     bulletSpeed: 100
     attraction: 8
 
-  - type: STR_HEAVY_FLAMER_DREADNOUGHT
+  - &STR_HEAVY_FLAMER_DREADNOUGHT_TEMPLATE
+    type: STR_HEAVY_FLAMER_DREADNOUGHT
     categories: [STR_CAT_DEVASTATOR, STR_CAT_FLAMER]
     refNode: *CHAOS_WEAPON
     size: 1.0
     dropoff: 4
     costSell: 35000
     weight: 70
-    bigSprite: 937
+    bigSprite: 403
     vaporColorSurface: {mod: 40k, index: 0}
     vaporDensitySurface: 4
     vaporProbabilitySurface: 100
@@ -2658,6 +2659,10 @@ items:
     recover: false
     twoHanded: false
 
+  - type: STR_HEAVY_FLAMER_DREADNOUGHT_KHORNE
+    bigSprite: 404
+    refNode: *STR_HEAVY_FLAMER_DREADNOUGHT_TEMPLATE
+
   - type: STR_CHAOS_DREADNOUGHT_MULTIMELTA
     categories: [STR_CAT_MELTA, STR_CAT_DEVASTATOR]
     size: 0.3
@@ -2705,7 +2710,7 @@ items:
     categories: [STR_CAT_DEVASTATOR]
     size: 1.0
     weight: 90
-    bigSprite: {mod: 40k, index: 1081}
+    bigSprite: 406
     bulletSpeed: 100
     autoRange: 0
     snapRange: 25
@@ -4966,14 +4971,14 @@ items:
       INFECTION_TYPE: 1
 
   - &STR_KHORNE_DREADNOUGHT_CHAIN_FIST_TEMPLATE
-    type: STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L  # Khorne Dreadnought Chain fist
+    type: STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L  # single Khorne Dreadnought Chain fist, used for mixed weapon loadouts
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT, STR_CAT_KHORNE]
     refNode: *CHAOS_WEAPON
     size: 0.2
     weight: 30
-    bigSprite: 2971
+    bigSprite: 2972
     meleeSound: [{mod: 40k, index: 808}, 2136]  # 753 Powersword miss
-    meleeHitSound: [3963, 3964]  # super chain hit
+    meleeHitSound: 3963  # super chain hit
     meleeAnimation: {mod: 40k, index: 48}
     power: 88
     damageAlter:  # DA CHAIN; if you get hit with this you will fucking die
@@ -4987,8 +4992,8 @@ items:
       IgnoreSelfDestruct: false  # default true for HE, fire, smoke, stun, mel
       RandomWound: false
     damageBonus:
-      strength: 1
-      melee: 0.2
+      strength: 0.4
+      melee: 0.1
     damageType: 7
     accuracyMelee: 108
     tuMelee: 10
@@ -5002,7 +5007,7 @@ items:
     skillApplied: true
     strengthApplied: false
     meleeMultiplier:
-      melee: 1.0
+      melee: 0.4
       flatHundred: 0.0
     fixedWeapon: true
     tags:  # Khorne Berserker Chainaxe is vampiric, granting them power as they spill blood for Khorne
@@ -5019,8 +5024,25 @@ items:
       YTAG_DAMAGE_RETURNED_RESIST_TYPE: 0  # untyped damage so no modifications
       DAMAGE_RESIST_PENETRATION_PERCENT: 95
 
-  - type: STR_KHORNE_DREADNOUGHT_CHAIN_FIST_R  # Khorne Dreadnought Chain fist
-    bigSprite: 2972
+  - type: STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L_DUAL # Khorne Dreadnought dual armed chain fist, left
+    meleeHitSound: 3964
+    damageBonus:
+      strength: 1
+      melee: 0.2
+    meleeMultiplier:
+      melee: 1.0
+      flatHundred: 0.0
+    refNode: *STR_KHORNE_DREADNOUGHT_CHAIN_FIST_TEMPLATE
+
+  - type: STR_KHORNE_DREADNOUGHT_CHAIN_FIST_R  # Khorne Dreadnought dual armed chain fist, right
+    bigSprite: 2971
+    meleeHitSound: 3964
+    damageBonus:
+      strength: 1
+      melee: 0.2
+    meleeMultiplier:
+      melee: 1.0
+      flatHundred: 0.0
     refNode: *STR_KHORNE_DREADNOUGHT_CHAIN_FIST_TEMPLATE
 
   - type: STR_CHAOS_CROZIUS

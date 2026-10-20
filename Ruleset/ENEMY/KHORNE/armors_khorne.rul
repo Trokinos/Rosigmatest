@@ -1070,7 +1070,7 @@ armors:
       UNIT_TYPE_KHORNE: 1
 
 
-  - type: STR_KHORNE_DREADNOUGHT_ARMOR  # STR_KHORNE_DREADNOUGHT
+  - type: STR_KHORNE_DREADNOUGHT_ARMOR  # STR_KHORNE_DREADNOUGHT #version with dual chain fists
     visibilityAtDay: 40
     visibilityAtDark: 35  # dreadnought sensors
     antiCamouflageAtDay: 10  # dreadnought sensors
@@ -1079,15 +1079,13 @@ armors:
     psiVision: 8  # Bloodhunt
     allowInv: false
     spriteSheet: KHORNE_DREADNOUGHT_BATTLESPRITES.PCK
-    spriteInv: KHORNE_DREADNOUGHT_INV.SPK  # NURGLETANK_INV.png
+    spriteInv: KHORNE_DREADNOUGHT_INV.SPK
     corpseBattle:
       - STR_KHORNE_DREADNOUGHT_CORPSE_1
       - STR_KHORNE_DREADNOUGHT_CORPSE_2
       - STR_KHORNE_DREADNOUGHT_CORPSE_3
       - STR_KHORNE_DREADNOUGHT_CORPSE_4
     corpseGeo: STR_KHORNE_DREADNOUGHT_CORPSE_GEO  # "Wrecked Equipment"
-    deathMale: [{mod: 40k, index: 23}, {mod: 40k, index: 859}, {mod: 40k, index: 860}, 3969]
-    deathFemale: [{mod: 40k, index: 23}, {mod: 40k, index: 859}, {mod: 40k, index: 860}, 3969]
     frontArmor: 288
     sideArmor: 268
     rearArmor: 198
@@ -1128,6 +1126,121 @@ armors:
       UNIT_TYPE_MECHANICAL: 1
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_KHORNE: 1
+
+  - type: STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER_ARMOR  # STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
+    visibilityAtDay: 40
+    visibilityAtDark: 35  # dreadnought sensors
+    antiCamouflageAtDay: 10  # dreadnought sensors
+    antiCamouflageAtDark: 10  # dreadnought sensors
+    heatVision: 35  # dreadnought sensors
+    psiVision: 8  # Bloodhunt
+    allowInv: false
+    spriteSheet: KHORNE_DREADNOUGHT_HEAVY_FLAMER_BATTLESPRITES.PCK
+    spriteInv: KHORNE_DREADNOUGHT_HEAVY_FLAMER_INV.SPK
+    corpseBattle:
+      - STR_KHORNE_DREADNOUGHT_CORPSE_1
+      - STR_KHORNE_DREADNOUGHT_CORPSE_2
+      - STR_KHORNE_DREADNOUGHT_CORPSE_3
+      - STR_KHORNE_DREADNOUGHT_CORPSE_4
+    corpseGeo: STR_KHORNE_DREADNOUGHT_CORPSE_GEO  # "Wrecked Equipment"
+    frontArmor: 288
+    sideArmor: 268
+    rearArmor: 198
+    underArmor: 288
+    moveSound: 3960
+    drawingRoutine: 5
+    size: 2
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    psiDefence:
+      moraleCurrent: 1.0
+      flatHundred: 1.0  # Khorne protects against pitiful psykers
+    damageModifier:  # DREADNOUGHT ARMOR
+      - 1.0  # none
+      - 0.6  # AP; Khorne resistance -0.2
+      - 0.1  # FLAMES; Khorne resistance -0.1
+      - 0.7  # HE
+      - 1.1  # LASCANON
+      - 0.8  # PLASMA
+      - 0.0  # STUN
+      - 0.4  # MELEE; Khorne heavy resistance -0.3
+      - 0.8  # ACID
+      - 0.0  # SMOKE
+      - 0.0  # IMPACT
+      - 1.2  # MELTA
+    loftempsSet: [92, 89, 90, 91]
+    allowsRunning: false  # NPC limits for BAI
+    tags:
+      ARMOR_OVERWATCH_TU_RESTORED: 100
+      INTIMIDATION_RESISTANCE: 100  # too crazy to intimidate
+      INFECTION_RESIST: 100
+      UNIT_SIZE: 200 # HUGE
+      UNIT_TYPE_NULL: 1  # protected by Khorne
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_KHORNE: 1
+
+  - type: STR_KHORNE_DREADNOUGHT_AUTOCANNON_ARMOR  # STR_KHORNE_DREADNOUGHT_AUTOCANNON
+    visibilityAtDay: 40
+    visibilityAtDark: 35  # dreadnought sensors
+    antiCamouflageAtDay: 10  # dreadnought sensors
+    antiCamouflageAtDark: 10  # dreadnought sensors
+    heatVision: 35  # dreadnought sensors
+    psiVision: 8  # Bloodhunt
+    allowInv: false
+    spriteSheet: KHORNE_DREADNOUGHT_AUTOCANNON_BATTLESPRITES.PCK
+    spriteInv: KHORNE_DREADNOUGHT_AUTOCANNON_INV.SPK
+    corpseBattle:
+      - STR_KHORNE_DREADNOUGHT_CORPSE_1
+      - STR_KHORNE_DREADNOUGHT_CORPSE_2
+      - STR_KHORNE_DREADNOUGHT_CORPSE_3
+      - STR_KHORNE_DREADNOUGHT_CORPSE_4
+    corpseGeo: STR_KHORNE_DREADNOUGHT_CORPSE_GEO  # "Wrecked Equipment"
+    deathMale: [{mod: 40k, index: 23}, {mod: 40k, index: 859}, {mod: 40k, index: 860}, 3969]
+    deathFemale: [{mod: 40k, index: 23}, {mod: 40k, index: 859}, {mod: 40k, index: 860}, 3969]
+    frontArmor: 288
+    sideArmor: 268
+    rearArmor: 198
+    underArmor: 288
+    moveSound: 3960
+    drawingRoutine: 5
+    size: 2
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    psiDefence:
+      moraleCurrent: 1.0
+      flatHundred: 1.0  # Khorne protects against pitiful psykers
+    damageModifier:  # DREADNOUGHT ARMOR
+      - 1.0  # none
+      - 0.6  # AP; Khorne resistance -0.2
+      - 0.1  # FLAMES; Khorne resistance -0.1
+      - 0.7  # HE
+      - 1.1  # LASCANON
+      - 0.8  # PLASMA
+      - 0.0  # STUN
+      - 0.4  # MELEE; Khorne heavy resistance -0.3
+      - 0.8  # ACID
+      - 0.0  # SMOKE
+      - 0.0  # IMPACT
+      - 1.2  # MELTA
+    loftempsSet: [92, 89, 90, 91]
+    allowsRunning: false  # NPC limits for BAI
+    tags:
+      ARMOR_OVERWATCH_TU_RESTORED: 100
+      INTIMIDATION_RESISTANCE: 100  # too crazy to intimidate
+      INFECTION_RESIST: 100
+      UNIT_SIZE: 200 # HUGE
+      UNIT_TYPE_NULL: 1  # protected by Khorne
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_KHORNE: 1
+
 
   # dungeon specific end
 
