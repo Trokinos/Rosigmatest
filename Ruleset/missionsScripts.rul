@@ -2390,6 +2390,7 @@ missionScripts:
     researchTriggers:
       STR_NOT_CHAOSCULT: true
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_SLAANESHPATH: true
     firstMonth: 1
     lastMonth: 4
     startDelay: 16000
@@ -2432,6 +2433,7 @@ missionScripts:
       STR_NOT_CHAOSCULT: true
       STR_SPACEHULK_ORK: true
       STR_SPACEHULK_FIRST: false
+      STR_NOT_SLAANESHPATH: true
   - type: SPACEHULK_ORK_BASE_2
     refNode: *SPACEHULK_ORK_BASE
     missionWeights:

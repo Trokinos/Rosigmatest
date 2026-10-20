@@ -39,19 +39,6 @@ adhocScripts:
     maxRuns: 1
     varName: GameStartSlaanesh
 
-    type: adhocGameStartSlaaneshValkyrieCrash
-    # Triggers one crashed valkyrie in the player region
-    adhocMissionScriptTags: ["gameStartSlaaneshValkyrieCrash"]
-    missionWeights:
-      0:
-        STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: 10
-    targetBaseOdds: 100
-    startDelay: 21600  # 15 days
-    randomDelay: 4320  # additional random 0 to 3 days
-    useTable: false
-    maxRuns: 1
-    varName: GameStartSlaaneshpathValkyrieCrash
-
   - type: adhocStarterBaseSlaanesh
     missionWeights:
       0:
@@ -78,17 +65,17 @@ adhocScripts:
 events:
 
   - name: STR_SLAANESHPATH_CHOSEN_EVENT
-    adhocMissionScriptTags: ["gameStartSlaanesh", "adhocStarterBaseSlaanesh", "gameStartSlaaneshValkyrieCrash"]
+    adhocMissionScriptTags: ["gameStartSlaanesh", "adhocStarterBaseSlaanesh"]
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: AdeptasAttackedBG.scr
     timer: 300
   
   ###### INTRO EVENTS ######
-  - name: STR_SLAANESHPATH_INTRO_A_EVENT
-    description: STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION
-    background: UnrestBG.SCR
-    interruptResearch: STR_NOT_SLAANESHPATH
-    timer: 1560  # 26 hours
+#  - name: STR_SLAANESHPATH_INTRO_A_EVENT
+#    description: STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION
+#    background: UnrestBG.SCR
+#    interruptResearch: STR_NOT_SLAANESHPATH
+#    timer: 1560  # 26 hours
 
   - name: STR_SLAANESHPATH_INTRO_B_EVENT ### BUNKER EVENT, TRIGGERS SERVITOR TRANSFER
     description: STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION
@@ -101,11 +88,11 @@ events:
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTSISTERCORRUPTBG.SCR
 
-  - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Power failure event
-    description: STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION
-    background: ARMORYRAID.SCR
-    interruptResearch: STR_NOT_SLAANESHPATH
-    timer: 2880  # 48 hours
+#  - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Power failure event
+#    description: STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION
+#    background: ARMORYRAID.SCR
+#    interruptResearch: STR_NOT_SLAANESHPATH
+#    timer: 2880  # 48 hours
 
   - name: STR_SLAANESHPATH_GATE_EVENT # This is the event that gives you the sisters.
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION

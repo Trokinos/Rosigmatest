@@ -7,7 +7,7 @@ alienMissions:
 
 
 
-  - type: STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE # Valkyrie shootdown
+  - type: STR_SLAANESHPATH_VALKYRIE_MISSION # Valkyrie shootdown
     points: 10
     objective: 3
     spawnZone: 0
