@@ -23,3 +23,27 @@ missionScripts:
     researchTriggers:
       STR_DEFAULT_CAMPAIGN: false
       STR_SLAANESHPATH: true
+
+  - type: Slaaneshstrategy_MonthlyAdeptasMissions # Monthly script for sisters missions
+    missionWeights: # TODO: ADD MORE MISSIONS
+      0:
+        STR_SLAANESHPATH_CATACOMBS: 20
+        #STR_RESCUE_PDF_VALKYRIE_TAU: 40  # grounded valkyrie appears on radar, go to support to pick up some PDF, maybe an officer
+      2:
+        STR_CATACOMBS: 20        
+      4:
+        #STR_ALIEN_WAR_TAU: 50  # delays the WAR mission until month 5+
+        #STR_CATACOMBS: 10
+        #STR_ALIEN_ARTIFACT_TAU: 10
+        #STR_RESCUE_PDF_VALKYRIE_TAU: 20
+        STR_SUPPORT_PDF_ASSAULT: 20  # PDF assaulting chaos base of cult or traitor guard
+    regionWeights:
+      0:
+        REGION_HULK_SITES: 100
+    useTable: false
+    firstMonth: 1
+    executionOdds: 50
+    startDelay: 15000  # 10k = 7 days
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: false
+      STR_SLAANESHPATH: true
