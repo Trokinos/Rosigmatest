@@ -247,6 +247,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_HULKERARTIFACT_SITE: "MASSIVE ARTIFACT SITE"
   STR_HULKERARTIFACT_SITE_: "MASSIVE ARTIFACT SITE-{0}"
   STR_CATACOMBS_MARKERNAME: "Catacomb Assault"
+  STR_CATACOMBS_MARKERNAME_SLAANESH: "Strike Team Ambush"
   STR_CATACOMBS_MARKERNAME_: "Catacomb Assault-{0}"
   STR_CATACOMBS_HRUD_MARKERNAME: "Hrud Catacomb Reclamation"
   STR_CATACOMBS_HRUD_MARKERNAME_: "Hrud Catacomb Reclamation"
@@ -15242,9 +15243,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: "Raid Disabled PDF Valkyrie"
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_DESCRIPTION: "Poor maintenance or sabotage recently forced a PDF Valkyrie to make a crash landing in this sparsely populated region. Unfortunately for them, their desperate pleas for help on an open Vox frequency has led us right to them. Assault the craft and seize everything of value. The hapless crew would make a fine sacrifice to the Prince of Excess; try to bring some of them back alive, if at all possible."
 
-  STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Catacombs Ambush"
-  STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Through sordid subterfuge and sensuous subversion, our allies among the faithful have provided us an opportunity to murder two birds with one stone. A chaos cult dedicated to Khorne has been goaded into assaulting a poorly defended Ecclesiarchy catacomb complex; true to form, a loyalist Adeptas strike team is already on-site. Enter the catacombs and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}Should any of the Blood God's slaves manage to survive the battle, their souls would make a fine offering to Slaanesh."
-  STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Ambush"
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Strike Team Ambush"
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make fine offerings to Slaanesh."
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
   ### CODEX ENTRIES
 
 

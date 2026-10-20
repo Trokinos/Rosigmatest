@@ -4,9 +4,11 @@ missionScripts:
  #TODO: Adjust warp storm script to put higher weight on Khorne and Tzeentch, lower on Nurgle. 
  #TODO: Add more sister lists to warp storm.
 
+ #TODO: Add more appropriate flavor to the terror missions themselves. Right now they are just generic.
+
  ### BASE GENERATION
 
-  - type: newBasesEarlySlaaneshpath
+  - type: newBasesEarlySLAANESH
     missionWeights:
       0:
         STR_TS_CULTIST_BASE_GV: 33
@@ -19,6 +21,8 @@ missionScripts:
     researchTriggers:
       STR_DEFAULT_CAMPAIGN: false
       STR_SLAANESHPATH: true
+
+ ### WARP STORM ###
 
   - &STR_NORMAL_CHAOSMISSION_TABLESLAANESH # Warp storm. For now this is the chaos cult
     type: warpStormSLAANESH
@@ -225,6 +229,22 @@ missionScripts:
     refNode: *STR_HARD_CHAOSMISSION_TABLESLAANESH
     firstMonth: 6
     useTable: true
+
+ ### TERROR MISSION SCRIPT ###
+
+  - type: recurringTerrorCCULT
+    executionOdds: 80
+    startDelay: 8000  # 10k = 7 days
+    randomDelay: 4320  # additional random 0 to 3 days
+    firstMonth: 2
+    missionWeights:
+      0:
+        STR_ALIEN_TERRORCCULT: 70
+        STR_WARP_TERRORCCULT: 30
+    researchTriggers:
+      STR_SLAANESHPATH: true
+
+ ### MONTHLY MISSIONS
 
   - type: Slaaneshstrategy_MonthlyAdeptasMissions # Monthly script for sisters missions
     missionWeights: # TODO: ADD MORE MISSIONS

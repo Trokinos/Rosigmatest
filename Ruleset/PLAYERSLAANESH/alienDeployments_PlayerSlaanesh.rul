@@ -148,7 +148,7 @@ alienDeployments:
       title: STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE
     alert: STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE
     alertBackground: ChaosActivityBG3.SCR
-    markerName: STR_CATACOMBS_MARKERNAME
+    markerName: STR_CATACOMBS_MARKERNAME_SLAANESH
     duration: [420, 640]
     despawnPenalty: 100
     missionBountyItem: STR_KILLPOINT_TOKEN

@@ -21,9 +21,9 @@ adhocScripts:
  # Copied from TAU, readjust later. Triggers missions in player region.
 
   - &STR_SLAANESHPATH_START_MISSION
-    type: adhocGameStartSlaaneshpath
+    type: adhocGameStartSlaanesh
     # initial mission in player region
-    adhocMissionScriptTags: ["gameStartSlaaneshpath"]
+    adhocMissionScriptTags: ["gameStartSlaanesh"]
     missionWeights:
       0:
         STR_ALIEN_RESEARCH: 10
@@ -37,11 +37,11 @@ adhocScripts:
     randomDelay: 4320  # additional random 0 to 3 days
     useTable: true
     maxRuns: 1
-    varName: GameStartSlaaneshpath
+    varName: GameStartSlaanesh
 
-    type: adhocGameStartSlaaneshpathValkyrieCrash
+    type: adhocGameStartSlaaneshValkyrieCrash
     # Triggers one crashed valkyrie in the player region
-    adhocMissionScriptTags: ["gameStartSlaaneshpath"]
+    adhocMissionScriptTags: ["gameStartSlaaneshValkyrieCrash"]
     missionWeights:
       0:
         STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: 10
@@ -52,7 +52,7 @@ adhocScripts:
     maxRuns: 1
     varName: GameStartSlaaneshpathValkyrieCrash
 
-  - type: adhocStarterBaseSlaaneshpath
+  - type: adhocStarterBaseSlaanesh
     missionWeights:
       0:
         STR_TS_CULTIST_BASE_GV: 100
@@ -72,13 +72,13 @@ adhocScripts:
     useTable: false
     startDelay: 20080  # 2-3 weeks
     randomDelay: 10040
-    adhocMissionScriptTags: ["adhocStarterBaseSlaaneshpath"]
+    adhocMissionScriptTags: ["adhocStarterBaseSlaanesh"]
 
 
 events:
 
   - name: STR_SLAANESHPATH_CHOSEN_EVENT
-    adhocMissionScriptTags: ["gameStartSlaaneshpath", "adhocStarterBaseSlaaneshpath", "adhocGameStartSlaaneshpathValkyrieCrash"]
+    adhocMissionScriptTags: ["gameStartSlaanesh", "adhocStarterBaseSlaanesh", "gameStartSlaaneshValkyrieCrash"]
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: AdeptasAttackedBG.scr
     timer: 300
