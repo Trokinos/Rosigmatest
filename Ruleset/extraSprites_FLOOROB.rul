@@ -767,9 +767,14 @@ extraSprites:
       2972: Resources/Floorobs/FloorMedipack.png
       2973: Resources/FOES/FLOOROB_BRIMSTONE_HORROR_CORPSE.png  # STR_BRIMSTONE_HORROR
       2974: Resources/FOES/FLOOROB_NURGLE_ZOMBIE_BS.png
+      3000: Resources/TYRANID/floorob_rippers_x1.png
+      3002: Resources/TYRANID/floorob_rippers_x1B.png
+      3003: Resources/TYRANID/floorob_rippers_x2.png
+      3004: Resources/TYRANID/floorob_rippers_x3.png
+      #3006: Resources/TYRANID/floorob_rippers_x1.png
       3024: Resources/TYRANID/floorob_termagant.png
       3025: Resources/TYRANID/floorob_warrior.png
-      3026: Resources/TYRANID/floorob_ripperswarm.png
+      3026: Resources/TYRANID/floorob_ripperswarm.png # x2B - gibs
       3027: Resources/TYRANID/floorob_spore_acid.png
       3028: Resources/TYRANID/floorob_spore_frag.png
       3029: Resources/TYRANID/floorob_spore_poison.png
@@ -1114,15 +1119,12 @@ extraSprites:
 # 2994
 # 2996
 # 2998
-# 3000
-# 3002 - 3004
-# 3006
 # 3009 - 3010
 # 3012
 # 3014
 # 3016 - 3020
 # 3022
-# 3035
+# 3035 #reserved
 # 3050
 # 3052
 # 3054

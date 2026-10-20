@@ -167,6 +167,11 @@ extraSprites:
 
       # 800: Resources/Support/800.png  # 40k 030 bug fix
 
+      403: Resources/CHAOS/bigob_chdread_hflamer.png
+      404: Resources/CHAOS/WORLDEATERS/bigob_khdread_hflamer.png
+      405: Resources/CHAOS/THOUSANDSONS/bigob_tzdread_hflamer.png
+      406: Resources/CHAOS/bigob_chdread_lascannon.png
+      407: Resources/CHAOS/WORLDEATERS/bigob_khdread_autocannon.png
       900: Resources/Bigobs/ROTORCANNON_BIGOB.png
       901: Resources/Bigobs/ROTORCANNON_KOMBI_G_BIGOB.png
       902: Resources/Bigobs/ROTOR_CANNON_AMMO_BACKPACK_BIGOB.png
@@ -1378,7 +1383,7 @@ extraSprites:
       4967: Resources/Eldar/units/swooping_hawk/eldar_hawk_corpse_bigObj.png
       4968: Resources/Eldar/units/swooping_hawk_exarch/eldar_hawkex_corpse_bigObj.png
 
-# All Free Indexes
+# All Free Indexes (Dont forget to edit these afterwards ! :) )
 
 # 403 - 899
 # 918 - 919

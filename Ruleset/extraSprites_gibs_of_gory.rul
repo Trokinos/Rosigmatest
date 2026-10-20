@@ -1347,3 +1347,28 @@ extraSprites:
       328: Resources/Gibs_of_Gory/UnitSprites/gibs_chaos_dark_disciple.png
       336: Resources/Gibs_of_Gory/UnitSprites/Xom126/human_to_ash_inc3_xom.png
       344: Resources/Gibs_of_Gory/UnitSprites/Xom126/human_to_ash_gauss3_xom.png
+
+#TYRANIDS
+#RIPPERSWARM
+
+  - type: RIPPERSWARM_1_BS.PCK  # DR4
+    width: 512
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TYRANID/BS_ripperswarm1.png
+  - type: RIPPERSWARM_2_BS.PCK  # DR4
+    width: 512
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TYRANID/BS_ripperswarm2.png
+  - type: RIPPERSWARM_4_BS.PCK  # DR4
+    width: 512
+    height: 200
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/TYRANID/BS_ripperswarm4.png
