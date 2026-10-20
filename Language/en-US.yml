@@ -1369,7 +1369,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_FORGE_DIRESWORD_VESSEL_RESEARCH: "Ease Soulstone Weapon Restrictions"
   STR_FORGE_DIRESWORD_VESSEL_RESEARCH_CODEX_TITLE: "Diresword Creation Authorized"
   STR_FORGE_DIRESWORD_VESSEL_RESEARCH_CODEX: " The Seer Council has foreseen the use of Direswords will shift the war into our favor. However be warned, disinterring the souls of Aeldari warriors from their resting place will be unpopular with the warhost.{NEWLINE}{NEWLINE}{ALT} Diresword Vessels must first be manufactured, then ensouled with the Spirit of a fallen Aeldari Warrior (80 melee) through the transformation menu at the bottom left of the soldiers tab.{NEWLINE}{NEWLINE} Alternatively a soul from the Infinity circuit can be used in the manufacturing tab at a high cost.{ALT}"
-
+  STR_ELDAR_WRAITHGUARD_RESEARCH: "Wraithguard Construct Unlock"
+  STR_ELDAR_WRAITHBLADE_RESEARCH: "Wraithblade Construct Unlock"
 # Eldar Manufacturing
   STR_ELDAR_CITIZEN_TO_SCIENTIST: "Citizen to Scientist(Adept)"
   STR_ELDAR_CITIZEN_TO_ENGINEER: "Citizen to Bonesinger(Servitor)"
@@ -1462,6 +1463,14 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_ARMOR_EXARCH: "Eldar Reaper Exarch"
   STR_ELDAR_REAPER_EXARCH_CORPSE: "Eldar Reaper Exarch Corpse"
   STR_ELDAR_REAPER_EXARCH_CORPSE_P: "Reaper Exarch Corpse"
+  STR_ELDAR_WRAITHGUARD_P: "Wraithguard Construct"
+  STR_WRAITHGUARD_ARMOR_ITEM: "Wraithguard Armor"
+  STR_ELDAR_WRAITHGUARD_WRAITHCANNON_ARMOR_P: "Wraithguard Wraithcannon Armor"
+  STR_ELDAR_WRAITHGUARD_DSCYTHE_ARMOR_P: "Wraithguard D-scythe Armor"
+  STR_ELDAR_WRAITHBLADE_P: "Wraithblade Construct"
+  STR_WRAITHBLADE_ARMOR_ITEM: "Wraithblade Armor"
+  STR_ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_P: "Wraithblade Ghostaxe Armor"
+  STR_ELDAR_WRAITHBLADE_GHOSTSWORD_ARMOR_P: "Wraithblade Ghostsword Armor"
   STR_ELDAR_SEER_ARMOR_P: "Seer Armor"
   STR_ELDAR_SEER_CORPSE_P: "Seer Corpse"
 
@@ -1515,7 +1524,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_PROMOTE_TO_SEER: "Path of the Seer"
   STR_PROMOTE_TO_ELDAR_WARLOCK: "Path of the Warlock"
   STR_RESURRECT_ELDAR: "Wraithguard Spirit Stone Infusion"
-
+  STR_WRAITHGUARD_WRAITHCANNON_TRANSFORM: "Wraithguard Wraithcannon Possession"
+  STR_WRAITHGUARD_DSCYTHE_TRANSFORM: "Wraithguard D-scythe Possession"
+  STR_WRAITHBLADE_GHOSTAXE_TRANSFORM: "Wraithblade Ghostaxe Possession"
+  STR_WRAITHBLADE_GHOSTSWORD_TRANSFORM: "Wraithblade Ghostsword Possession"
 #Eldar Boons (bonuses) - lore friendly runes
   STR_RUNE_OF_BATTLE: "Rune of Battle"
   # Runes of Deception
@@ -1605,11 +1617,15 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BITING_BLADE: "Biting Blade"
   STR_SCORPIONS_CLAW: "Scorpion's Claw (Rhand)"
   STR_SCORPIONS_CLAW_MELEE: "Claw Crush"
+  STR_WRAITHCANNON: "Wraithcannon"
+  STR_DSCYTHE: "D-scythe"
+  STR_GHOSTAXE: "Ghostaxe"
+  STR_GHOSTSWORD: "Ghostsword"
   STR_ELDAR_HWP_SHURIKENCANNON: "Shuriken Cannon(HWP)"
   STR_ELDAR_HWP_AML: "Aeldari Missile Launcher(HWP)"
-  STR_HWP_STARSWARM_AMMO: "Starswarm Missiles"
+  STR_HWP_SUNBURST_AMMO: "Sunburst Missiles"
   STR_HWP_STARSHOT_AMMO: "Starshot Missiles"
-  STR_HWP_STARSWARM_SHOT: "Starswarm"
+  STR_HWP_SUNBURST_SHOT: "Sunburst"
   STR_HWP_STARSHOT_SHOT: "Starshot"
   STR_ELDAR_HWP_BRIGHTLANCE: "Bright Lance(HWP)"
   STR_ELDAR_HWP_SCATTERLASER: "Scatter Laser(HWP)"
@@ -1712,7 +1728,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SINGING_SPEAR_CODEX: "{NEWLINE} A silver spear formed of unknown materials and when held by a psyker emits a constant low hum. This weapon is essentially a Witchblade that can be thrown a short distance, automatically returning to the user's hand after each throw and is thus both a melee and a limited ranged weapon."
   STR_WITCH_STAFF_CODEX: "{NEWLINE} The Witch Staff is an Eldar Force Weapon, containing a helix-shaped crystalline psychic matrix embedded with runes to channel and focus a wielders psychic energies. Those struck by the psychically imbued weapon risk having their very souls set aflame, even if their bodies are not broken."
   STR_ELDAR_HWP_SHURIKENCANNON_CODEX: "{NEWLINE} The Shuriken Cannon is a much larger version of the shuriken catapult. While it works in a similar way to smaller shuriken weaponry, it includes a number of additional features, such as an elongated ammunition coil, a triple accelerator field, and a stabilizing gyroscopes. These allow it to fire more devastating barrages of shurikens."
-  STR_ELDAR_HWP_AML_CODEX: "{NEWLINE} The Eldar Missile Launcher is the standard missile weapon for Eldar ground forces. Instead of the primitive launching-tubes favoured by the Imperium, they use complex chambered pods designed to contain several types of ammo such as starshot (krak) and sunburst (frag) warheads, greatly decreasing the need to reload. The ammunition held in its internal magazines is in fact so compact that they can fit scores of ordinance inside a single launcher."
+  STR_ELDAR_HWP_AML_CODEX: "{NEWLINE} The Eldar Missile Launcher is the standard missile weapon for Eldar ground forces. Instead of the primitive launching-tubes favoured by the Imperium, they use complex chambered pods designed to contain several types of ammo such as Starshot (Krak) and Sunburst (Frag) warheads, greatly decreasing the need to reload. The ammunition held in its internal magazines is in fact so compact that they can fit scores of ordinance inside a single launcher."
   STR_ELDAR_HWP_BRIGHTLANCE_CODEX: "{NEWLINE} The Bright Lance is an Eldar laser weapon and the equivalent of the Imperium's lascannon. It operates the same way, firing a concentrated laser blast, but the weapon is far more efficient thanks in part to the use of psychically grown crystals. Whilst lacking the extreme range of the lascannon it emits more consistent power , making armour below a certain thickness moot."
   STR_ELDAR_HWP_SCATTERLASER_CODEX: "{NEWLINE} The weapon is comprised of six separate laser chambers which can be fired simultaneously or in bursts, at either the same or different targets, and uses crystalline power cells to store energy. It is similar in some respects to the Imperium Multi-laser, but far more refined and energy-efficient."
   STR_ELDAR_HWP_STARCANNON_CODEX: "{NEWLINE} A plasma weapon designed by the Eldar, using sophisticated electromagnetic pulses to guide bolts of destructive plasma to a target. Though its plasma core produces the incandescent heat of a star, unlike its crude and clumsy Imperial counterparts the Starcannon uses containment fields to not only prevent the weapon overheating but keep it cool to the touch. That humanity uses a weapon which could maim or kill the wielder is seen by the Eldar as a testament to their idiocy"
@@ -1841,6 +1857,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_SEER_RANK_3: Disciple
   STR_ELDAR_SEER_RANK_4: Scholar
   STR_ELDAR_SEER_RANK_5: Adept
+  STR_ELDAR_WRAITHGUARD_RANK_0: Ghost Warrior
 
   # ELDAR CRAFTS
   STR_WAVESERPENT: "WAVE SERPENT TRANSPORT"

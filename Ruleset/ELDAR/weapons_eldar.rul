@@ -1133,6 +1133,151 @@ items:
       ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
       RandomWound: false
 
+### WRAITHGUARD WEAPONS
+  - type: STR_WRAITHCANNON #WRAITH PLASMA
+    weight: 3
+    bigSprite: 4910
+    handSprite: 1778
+    bulletSprite: -1  # no bullet
+    fireSound: [1905, 1906, 1907]
+    explosionHitSound: {mod: 40k, index: 790}  # vortexpull
+    #hitSound: {mod: 40k, index: 858}
+    hitAnimation: 2220 #150 Teleport hit
+    powerForAnimation: 1
+    twoHanded: true
+    blockBothHands: true
+    experienceTrainingMode: 5 # 50% firing, 32 -> No Experience
+    noLOSAccuracyPenalty: 75 # Short range penalized too heavily
+    power: 250 # Str 14 hits HARD
+    damageType: 5
+    accuracySnap: 70
+    tuSnap: 35
+    snapRange: 15
+    confSnap:
+      followProjectiles: false
+    maxRange: 15
+    powerRangeThreshold: 15
+    powerRangeReduction: 99
+    battleType: 1
+    damageAlter: #DA PLASMA
+      RandomType: 6 # gaussian 0-200
+      ArmorEffectiveness: 0.0 # -4 AP
+      ToArmorPre: 1.0
+      ToHealth: 1.0
+      ToMorale: 2.0
+      ToItem: 1 # Destroys Items
+      FixRadius: 1 # small blast
+      RadiusReduction: 100 # large reduction in power for blast area
+      FireThreshold: 99999
+      SmokeThreshold: 99999
+    fixedWeapon: true
+    fixedWeaponShow: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+#    tags:
+#      REACTION_MULTIPLIER: 50
+
+  - type: STR_DSCYTHE # Wraithguard flamer
+    categories: [STR_CAT_ELDAR, STR_CAT_FLAMER]
+    battleType: 1
+    weight: 10
+    # AESTHETICS
+    invWidth: 2
+    invHeight: 3
+    bigSprite: 4911
+    handSprite: 1786
+    bulletSprite: -1 # no bullets
+    hitAnimation: 2330
+    #powerForAnimation: 1
+    fireSound: [1902, 1903, 1904]
+    hitSound: -1
+    fixedWeapon: true
+    fixedWeaponShow: true
+    # Weapon Handling Stats
+    damageType: 1 # MUST NOT OVERKILL
+    twoHanded: true
+    blockBothHands: true
+    experienceTrainingMode: 6 # 33% firing, 32 -> No Experience
+    arcingShot: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    clipSize: -1
+    accuracySnap: 60
+    tuSnap: 30
+    snapRange: 10 # very short range
+    confSnap:
+      shots: 6
+      followProjectiles: false
+    maxRange: 10
+    powerRangeThreshold: 10
+    powerRangeReduction: 99
+    # Damage Stats
+    power: 100
+    damageAlter:
+      IgnoreOverKill: true # always leaves a corpse
+      # IgnoreSelfDestruct: false
+      IgnoreDirection: false
+      #FixRadius: 2
+      ToHealth: 1
+      ToMorale: 5.0
+      ToTime: 0.5  # severe psychological/spiritual damage, leaves surviviors comatosed.
+      RandomType: 6  # Gaussian
+      ArmorEffectiveness: 0.3 # must be effective against the most heavily armored enemies
+      ToArmorPre: 0 # Deals no damage to Armor
+      ToArmor: 0
+      ToItem: 0 # Deals no Damage to Items
+      FireThreshold: 99999
+      SmokeThreshold: 99999
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 75 # Dealing with AP RESIST
+      #ITEM_DOESNT_HURT_USER: 1 # Temple Assassins are too skilled to shoot themselves. Staying in flames can be bad though.
+
+  - &WRAITHBLADE_GHOSTWEAPON
+    type: STR_GHOSTAXE
+    categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_AUXILIARY]
+    weight: 3
+    bigSprite: 4950
+    handSprite: 1794
+    meleeAnimation: 4
+    meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
+    meleeHitSound: {mod: 40k, index: 754} #754 Powerswrod hit
+    experienceTrainingMode: 2 # 50% melee, 32 -> No Experience
+    power: 140
+    damageAlter:     #DA POWER
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.2
+      ToHealth: 0.9
+      RandomType: 2
+    damageType: 5
+    clipSize: -1
+    strengthApplied: false
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    fixedWeaponShow: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+
+  - type: STR_GHOSTSWORD # faster weaker strikes
+    refNode: *WRAITHBLADE_GHOSTWEAPON
+    bigSprite: 4912
+    handSprite: 1802
+    meleeAnimation: 4
+    meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
+    meleeHitSound: {mod: 40k, index: 754} #754 Powerswrod hit
+    power: 100 # -40
+    damageAlter:     #DA POWER
+      ArmorEffectiveness: 0.7 # + 0.1 worse against armor
+      ToArmorPre: 0.2
+      ToHealth: 0.9
+      RandomType: 2
+    tuMelee: 12 # faster melee swings
+
+### HWP WEAPONS
   - type: STR_ELDAR_HWP_SHURIKENCANNON
     refNode: *ELDAR_HWP_WEAPON_TEMPLATE
   # Aesthetics
@@ -1183,7 +1328,7 @@ items:
     snapRange: 32  #48" range
     aimRange: 32
     confAimed:
-      name: STR_HWP_STARSWARM_SHOT
+      name: STR_HWP_SUNBURST_SHOT
       ammoSlot: 0
     confSnap:
       name: STR_HWP_STARSHOT_SHOT
@@ -1191,7 +1336,7 @@ items:
     ammo:
       0:
         compatibleAmmo:
-          - STR_HWP_STARSWARM_AMMO
+          - STR_HWP_SUNBURST_AMMO
       1:
         compatibleAmmo:
           - STR_HWP_STARSHOT_AMMO
@@ -1843,7 +1988,7 @@ items:
     listOrder: 16497
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
-    experienceTrainingMode: 32 # train nothing, powerful weapon but ruins development of soldier (3 train melee 33% chance, alternative)
+    experienceTrainingMode: 3 # train melee 33%, powerful weapon but hard to develop melee of soldier (32 train train nothing, alternative)
     damageType: 5
     damageAlter:     # DA POWER
       ArmorEffectiveness: 0.7

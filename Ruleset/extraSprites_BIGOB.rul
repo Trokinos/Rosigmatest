@@ -1347,6 +1347,9 @@ extraSprites:
       4907: Resources/Eldar/weapons/hawkweapons/sunpistol_charge_bigObj.png
       4908: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_bigObj.png
       4909: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_charge_bigObj.png
+      4910: Resources/Eldar/weapons/wraithcannon_bigObj.png
+      4911: Resources/Eldar/weapons/dscythe_bigObj.png
+      4912: Resources/Eldar/weapons/ghostsword_bigObj.png
 
       4943: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_leftleg.png
       4944: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_belt.png
