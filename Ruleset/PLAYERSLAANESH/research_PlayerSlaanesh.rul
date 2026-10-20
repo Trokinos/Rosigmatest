@@ -1,7 +1,7 @@
 ###
 
 research:
-  
+
   - name: STR_SLAANESHPATH_SELECTED        # (Slaanesh strategy skillfully selected)
     dependencies:
       - STR_GENERALLOCK
@@ -65,7 +65,7 @@ research:
     points: 0
     dependencies:
       - STR_SLAANESHPATH
-    unlocks: 
+    unlocks:
       - STR_SLAANESHPATH_INTRO_CALLING
     spawnedEvent: STR_SLAANESHPATH_INTRO_B_EVENT
 
@@ -74,7 +74,7 @@ research:
     points: 0
     dependencies:
       - STR_GENERALLOCK
-    unlocks: 
+    unlocks:
       - STR_SLAANESHPATH_GATE
     spawnedEvent: STR_SLAANESHPATH_INTRO_C_EVENT
 
@@ -110,7 +110,7 @@ research:
   ################### END OF SECTION ##################
 
   ################### SECTION FOR EARLY GAME PROGRESSION TECHS #############
-  
+
   - name: STR_SLAANESHPATH_RESTORING_THE_ALTAR
     cost: 5
     points: 0

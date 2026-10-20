@@ -1033,7 +1033,7 @@ units:
       - - STR_KHORNE_DREADNOUGHT_CHAIN_FIST_R
         - STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L_DUAL
 
-    # weightedBuiltInWeaponSets: 
+    # weightedBuiltInWeaponSets:
     # removed until can be properly implemented; see rosigma 40K.rul file # DREADNOUGHT WEAPONSETS
      # -   Tier 1
         # KHORNE_DREADNOUGHT_MELEE_ONLY: 50
@@ -1061,21 +1061,21 @@ units:
         # KHORNE_DREADNOUGHT_HEAVY_PLASMA: 12
 
   - type: STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
-    refNode: *KHORNE_DREADNOUGHT 
+    refNode: *KHORNE_DREADNOUGHT
     armor: STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER_ARMOR
     builtInWeaponSets:
       - - STR_HEAVY_FLAMER_DREADNOUGHT_KHORNE
         - STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L
 
   - type: STR_KHORNE_DREADNOUGHT_LASCANNON
-    refNode: *KHORNE_DREADNOUGHT  
+    refNode: *KHORNE_DREADNOUGHT
     armor: STR_KHORNE_DREADNOUGHT_ARMOR #needs unique art #not in racelists yet
     builtInWeaponSets:
       - - STR_TWIN_LINK_LASCANNON_CHAOS_DREADNOUGHT
         - STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L
 
   - type: STR_KHORNE_DREADNOUGHT_AUTOCANNON
-    refNode: *KHORNE_DREADNOUGHT 
+    refNode: *KHORNE_DREADNOUGHT
     armor: STR_KHORNE_DREADNOUGHT_AUTOCANNON_ARMOR
     builtInWeaponSets:
       - - STR_REAPER_AUTOCANNON_DREADNOUGHT

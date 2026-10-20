@@ -5,7 +5,7 @@ items:
 
  #### SLAANESH LASCANNONS ####
 
-  - type: STR_SLAANESHPATH_LASCANNON_HANDHELD  # 
+  - type: STR_SLAANESHPATH_LASCANNON_HANDHELD  #
     dropoff: 4  # heavy weapon platform, not a sniper weapon
     autoRange: 0
     snapRange: 20
@@ -37,7 +37,7 @@ items:
     size: 0.3
     costBuy: 16000 # More expensive - should this be buyable?
     requiresBuy: # Placeholder
-    - STR_SLAANESHPATH
+      - STR_SLAANESHPATH
     costSell: 4000
     weight: 8
     bigSprite: 205
@@ -50,9 +50,9 @@ items:
     autoRange: 11 # 1 More
     snapRange: 18
     aimRange: 22
-    accuracyAuto: 55 
-    accuracySnap: 80  
-    accuracyAimed: 90 
+    accuracyAuto: 55
+    accuracySnap: 80
+    accuracyAimed: 90
     tuAuto: 35  # Better at autofire than stock battle rifles
     tuSnap: 33
     tuAimed: 45 # 5 tu less
@@ -151,7 +151,7 @@ items:
     requiresBuy:
       - STR_SLAANESHPATH
     dropoff: 5
-    autoRange: 7 
+    autoRange: 7
     snapRange: 12 # -2 vs Cantus, Slaanesh weapon profile
     aimRange: 0
 
@@ -194,7 +194,7 @@ items:
     requiresBuy:
       - STR_SLAANESHPATH
     dropoff: 5
-    autoRange: 7 
+    autoRange: 7
     snapRange: 12
     aimRange: 0
     accuracyAuto: 55
@@ -234,7 +234,7 @@ items:
       ammoSlot: 1  # Grenades
       name: STR_LAUNCH_GRENADE
       shortName: STR_LAUNCH_GRENADE_SHORT
-      arcing: true     
+      arcing: true
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -350,7 +350,7 @@ items:
     tags:
       ITEM_RECOIL: 40
 
-  - type: STR_SLAANESHPATH_BOLTER_TIAMAT # De'az kombi-plasma. 
+  - type: STR_SLAANESHPATH_BOLTER_TIAMAT # De'az kombi-plasma.
 
  #### MELEE WEAPONS ####
 
@@ -407,7 +407,7 @@ items:
     categories: [STR_CAT_MELEE, STR_CAT_SCOUT]
     size: 0.2
     costSell: 250
-    weight: 16 # Evis is 20+ 
+    weight: 16 # Evis is 20+
     bigSprite: 2217
     floorSprite: 2092
     handSprite: 2800
@@ -470,7 +470,7 @@ items:
     power: 80
     damageBonus: # Slaanesh variant depends on reactions as well as melee skill
       melee: 0.4
-      reactions: 0.2 
+      reactions: 0.2
     meleeMultiplier:
       melee: 0.7
       reactions: 0.4
@@ -545,7 +545,7 @@ items:
 
     damageBonus: # Not a sniper weapon unlike most other needlers. Gains a bonus from reactions.
       reactions: 0.15
-      firing: 0.15     
+      firing: 0.15
     damageType: 8  # acid
     damageAlter:  # Hallucinogenic, warp-tainted chems.
       ArmorEffectiveness: 0.5  # low power but high penetration
@@ -609,7 +609,7 @@ items:
     hitAnimation: 1020  # X1 Pink skullsplosion
     power: 70
 
-    accuracySnap: 60 
+    accuracySnap: 60
     accuracyMultiplier:
       firing: 0.15
       reactions: 0.25
@@ -634,7 +634,6 @@ items:
     fixedWeapon: true
     specialIconSprite: 2778
     specialUseEmptyHand: false
-    battleType: 4
     clipSize: -1
     listOrder: 15300
     tags:

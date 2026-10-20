@@ -622,7 +622,7 @@ weaponSets:  # these can be re-used for any unit
     weapons: [STR_RIPPER_PISTOL, STR_RIPPER_PISTOL_AMMO, STR_RIPPER_PISTOL_AMMO, STR_RIPPER_PISTOL_AMMO, STR_RIPPER_PISTOL_AMMO, STR_CHB, STR_HB_CLIP_MC, STR_HB, STR_MGRENADE, STR_MGRENADE]
   - type: CATACHAN_GRAVPISTOL_KHORNE_SPEAR_WITH_MELTA_GRENADE_SET
     weapons: [STR_KHORNE_VALKIA_WEAPON, STR_CHAOS_GRAVPISTOL, STR_GRAVPISTOL_AMMO, STR_GRAVPISTOL_AMMO, STR_GRAVPISTOL_AMMO, STR_MGRENADE, STR_MGRENADE]
-# DREADNOUGHT WEAPONSETS:  # Replaced with bespoke units of each loadout so to allow inventory and battlescape sprites to reflect the units weaponry; temporary/permanent until a better solution appears.  
+# DREADNOUGHT WEAPONSETS:  # Replaced with bespoke units of each loadout so to allow inventory and battlescape sprites to reflect the units weaponry; temporary/permanent until a better solution appears.
   # Khorne
   #- type: KHORNE_DREADNOUGHT_MELEE_ONLY
   #  weapons: [STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L, STR_KHORNE_DREADNOUGHT_CHAIN_FIST_R]

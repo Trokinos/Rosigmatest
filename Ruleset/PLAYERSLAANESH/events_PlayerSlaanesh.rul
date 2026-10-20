@@ -69,7 +69,7 @@ events:
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: AdeptasAttackedBG.scr
     timer: 300
-  
+
   ###### INTRO EVENTS ######
   - name: STR_SLAANESHPATH_INTRO_A_EVENT
     description: STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION

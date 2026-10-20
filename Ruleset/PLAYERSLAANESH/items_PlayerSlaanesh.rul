@@ -5,7 +5,7 @@
 items:
   - type: STR_SLAANESHPATH_PIETY
     size: 0.0
-    
+
   - type: STR_SLAANESHPATH_WARPSTONE_TRIBUTE
     size: 0.0
 
@@ -24,4 +24,3 @@ items:
     hiddenOnMinimap: true
 ############### STORY PROGRESSION TOKENS ############
 
-  

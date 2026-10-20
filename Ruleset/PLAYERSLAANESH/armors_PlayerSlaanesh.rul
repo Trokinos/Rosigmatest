@@ -149,7 +149,7 @@ armors:
     storeItem: STR_ADEPTAS_MEDICAE_ARMORSTORE
     frontArmor: 75 # 15 less than sororitas armor
     sideArmor: 70 # 10 less than sororitas armor
-    rearArmor: 55 # 5 less than sororitas armor 
+    rearArmor: 55 # 5 less than sororitas armor
     underArmor: 75 # 5 less than sororitas armor
     damageModifier:  # MARINE ARMOR
       - 1.0  # none
@@ -171,7 +171,7 @@ armors:
       - AUX_MEDICAE_MEDI_KIT
     loftempsSet: [3] # Less agile than handmaidens
     tags:
-      INFECTION_RESIST: 35 # Slaanesh protection + medicae armor 
+      INFECTION_RESIST: 35 # Slaanesh protection + medicae armor
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -199,7 +199,7 @@ armors:
       health: 15 # Combat drugs, medicae armor
       bravery: 10  # always multiples of 10
       reactions: 15 # Combat drugs
-      firing: 0  
+      firing: 0
       throwing: 0
       strength: 5
       psiStrength: 0
@@ -208,7 +208,7 @@ armors:
       mana: 20 # Auxilliary ammo/energy reserve
     frontArmor: 50 # 40 less than sororitas armor
     sideArmor: 50 # 30 less than sororitas armor
-    rearArmor: 50 # 10 less than sororitas armor 
+    rearArmor: 50 # 10 less than sororitas armor
     underArmor: 65 # Agility
     damageModifier:  # MARINE ARMOR
       - 1.0  # none
@@ -231,7 +231,7 @@ armors:
       - AUX_CHIRURGEON_MEDI_KIT
     loftempsSet: [2] # Agile and dodgy!
     tags:
-      INFECTION_RESIST: 55 # Slaanesh protection + serial drug abuse 
+      INFECTION_RESIST: 55 # Slaanesh protection + serial drug abuse
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -248,7 +248,7 @@ armors:
 
   - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR     # Basic cultist armor. Slightly more luxurious and better-performing.
     visibilityAtDay: 40
-    visibilityAtDark: 20 
+    visibilityAtDark: 20
     forcedTorso: 0
     customArmorPreviewIndex: 1121
     corpseBattle:
@@ -298,7 +298,7 @@ armors:
 
   - type: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR     # Work in progress. For now this is identical to normal cultists.
     visibilityAtDay: 40
-    visibilityAtDark: 20 
+    visibilityAtDark: 20
     forcedTorso: 0
     customArmorPreviewIndex: 1121
     corpseBattle:

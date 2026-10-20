@@ -17958,7 +17958,7 @@ extraSprites:
     fileSingle: Resources/FOES/Inventory/KhRepenLightInv.png
   - typeSingle: ARepentiaInvK.SPK  # INV Repentia Khorne Sister
     fileSingle: Resources/FOES/Inventory/KhorneRepentiaInv.png
-    
+
     #KHORNE DREADNOUGHTS
 
   - typeSingle: KHORNE_DREADNOUGHT_INV.SPK  # STR_KHORNE_DREADNOUGHT #dual chainfists version
