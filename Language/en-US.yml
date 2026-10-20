@@ -15280,6 +15280,15 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
   STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
 
+
+ #################### UNITS #########################
+
+ #### ENEMY UNITS
+  STR_SLAANESHPATH_CATACOMB_CULTIST_LEADER: "Cultist Leader"
+  STR_SLAANESHPATH_CATACOMB_ASPIRING_CHAMPION: "Aspiring Champion"
+  STR_SLAANESHPATH_CATACOMB_CULTIST: "Khorne Cultist"
+  STR_SLAANESHPATH_CATACOMB_CHORF: "Squat Cultist"
+
   ## UNIT PROJECTS
 
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"

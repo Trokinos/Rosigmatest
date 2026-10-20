@@ -2107,7 +2107,7 @@ missionScripts:
         STR_CIVILIAN_TERROR: 70
         STR_CIVILIAN_TERROR_GSC: 30
     useTable: false
-    startDelay: 3000
+    startDelay: 7000
     researchTriggers:
       STR_STEEL_LEGION_STRATEGY: false
       STR_VALHALLAN_STRATEGY: false
