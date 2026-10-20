@@ -94,5 +94,5 @@ items:
     size: 6
   - type: STR_WRAITHBLADE_ARMOR_ITEM
     requires:
-       - STR_ELDAR_WRAITHBLADE_RESEARCH
+      - STR_ELDAR_WRAITHBLADE_RESEARCH
     size: 6

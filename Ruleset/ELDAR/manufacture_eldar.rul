@@ -119,7 +119,7 @@ manufacture:
   - name: STR_GHOSTAXE
     category: STR_ELDAR_SOULTECH_CATEGORY
     requires:
-       - STR_ELDAR_WRAITHBLADE_RESEARCH
+      - STR_ELDAR_WRAITHBLADE_RESEARCH
     space: 0
     time: 200
     cost: 100000
