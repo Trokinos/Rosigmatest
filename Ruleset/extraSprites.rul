@@ -17958,8 +17958,44 @@ extraSprites:
     fileSingle: Resources/FOES/Inventory/KhRepenLightInv.png
   - typeSingle: ARepentiaInvK.SPK  # INV Repentia Khorne Sister
     fileSingle: Resources/FOES/Inventory/KhorneRepentiaInv.png
-  - typeSingle: KHORNE_DREADNOUGHT_INV.SPK  # STR_KHORNE_DREADNOUGHT
+    
+    #KHORNE DREADNOUGHTS
+
+  - typeSingle: KHORNE_DREADNOUGHT_INV.SPK  # STR_KHORNE_DREADNOUGHT #dual chainfists version
     fileSingle: Resources/FOES/Inventory/KHORNE_DREADNOUGHT_INVENTORY.png
+
+  - type: KHORNE_DREADNOUGHT_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/FOES/Battlesprites/KHORNE_DREADNOUGHT_BATTLESPRITES.png
+
+  - typeSingle: KHORNE_DREADNOUGHT_HEAVY_FLAMER_INV.SPK  # STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
+    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_hflamer.png
+
+  - type: KHORNE_DREADNOUGHT_HEAVY_FLAMER_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/CHAOS/WORLDEATERS/bs_khdread_hflamer.png
+
+#  - typeSingle: KHORNE_DREADNOUGHT_LASCANNON_INV.SPK  # STR_KHORNE_DREADNOUGHT_LASCANNON
+#    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_lascannon.png
+
+  - typeSingle: KHORNE_DREADNOUGHT_AUTOCANNON_INV.SPK  # STR_KHORNE_DREADNOUGHT_AUTOCANNON
+    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_autocannon.png
+
+  - type: KHORNE_DREADNOUGHT_AUTOCANNON_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT_AUTOCANNON
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/CHAOS/WORLDEATERS/bs_khdread_autocannon.png
 
     # KHORNE WORLD EATER LEADER
   - type: WORLDEATER_LEADER_BS.PCK
@@ -17975,9 +18011,6 @@ extraSprites:
     fileSingle: Resources/FOESPEDIAADEPTAS/ORIGINS_WORLDEATER_LEADER.png
   - typeSingle: WORLDEATER_LEADER_ARMOR_CODEX.SPK
     fileSingle: Resources/FOESPEDIAADEPTAS/ORIGINS_WORLDEATER_LEADER.png #change
-
-  - typeSingle: KHORNE_DREADNOUGHT_INV.SPK  # STR_KHORNE_DREADNOUGHT
-    fileSingle: Resources/FOES/Inventory/KHORNE_DREADNOUGHT_INVENTORY.png
 
   - typeSingle: ATwistedSisT.SPK  # INV TWisted Sister Tzeentch
     fileSingle: Resources/FOES/Inventory/TzeentchTwistedSisterInv.png
@@ -18518,15 +18551,6 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Adeptas/battlesprite/DemiBloodletterinSuperior.png
-  - type: KHORNE_DREADNOUGHT_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT
-    subX: 32
-    subY: 40
-    width: 256
-    height: 840
-    files:
-      0: Resources/FOES/Battlesprites/KHORNE_DREADNOUGHT_BATTLESPRITES.png
-
-
 
   - type: ADEPTASTZEENTCHBASIC.PCK  # Tzeentch Twisted Sister
     width: 512
