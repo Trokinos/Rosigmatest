@@ -3,6 +3,51 @@ extended:
 
 items:
 
+ #### BLACK MARKET AMMO ####
+  - &STR_BM_BOLTER_AMMO
+    type: STR_CANTUS_BOLTER_AMMO_BM  # Low-grade, unreliable light bolts bought at unreasonable prices.
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
+    requiresBuy:
+      - STR_BLACK_MARKET_AMMUNITION
+      - STR_BLACK_MARKET_AMMO_TRADE
+    size: 0.1
+    costBuy: 1000 # way too expensive
+    costSell: 100
+    weight: 2
+    bigSprite: 3230
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: {mod: 40k, index: 26}
+    explosionSpeed: 5
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10287
+    damageAlter:  # DA ILLEGAL PIRATE COPY BOLTER
+      ToArmorPre: 0.15
+      ArmorEffectiveness: 1.0 # worse
+      ToArmor: 0.2
+      ToHealth: 1.0 # worse
+      ToStun: 0.4 # worse
+      ToEnergy: 0.3
+      ToWound: 0.3
+      RandomWound: false
+      RandomType: 2 # 50-150 spread. No weak hits
+    power: 47 # Worse
+    damageType: 1
+    clipSize: 30
+    tags:
+      ITEM_AMMO_COLOR: 0
+      ITEM_IS_PALETTE_SWAP: 1
+      ITEM_GETS_ACCENT_RECOLOR: 1
+      ITEM_BASE_COLOR: 14
+      ITEM_ACCENT_COLOR: 1
+      ITEM_SWAP_BASE_COLOR: 8
+      ITEM_SWAP_ACCENT_COLOR: 6
+
+
   - type: STR_SLAANESHPATH_LASCANNON_CLIP_SMALL  # LASCANNON CLIP
     power: 120 # Significantly less power per shot!
     damageAlter:  # DA SLAANESH LAS

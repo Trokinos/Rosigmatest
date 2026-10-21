@@ -87,7 +87,6 @@ research:
       - STR_GENERALLOCK
     unlocks:
       - STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE
-      - STR_RITUALS_OF_EXCESS
       - STR_RITUALS_OF_WORSHIP
     # - STR_CHAOS_ARMORY_EXAM_SLAANESH (This should be moved to later in the tree)
     spawnedEvent: STR_SLAANESHPATH_GATE_EVENT
@@ -120,6 +119,21 @@ research:
     points: 20
     dependencies:
       - STR_ALTAR_OF_SLAANESH
+      - STR_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_PLEASURE_CHAMBERS
+    cost: 10
+    dependencies:
+      - STR_SLAANESHPATH_GATE
+    unlocks:
+    - STR_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_ALTAR_OF_SLAANESH
+    cost: 10
+    dependencies:
+    - STR_SLAANESHPATH_GATE
+    unlocks:
+    - STR_IMPLEMENTS_OF_TORTURE
 
   - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
     cost: 20
@@ -127,26 +141,30 @@ research:
       - STR_SLAANESHPATH_GATE
     reenables:
       - STR_SMOKE 
+
+  - name: STR_BLACK_MARKET_AMMUNITION
+    cost: 20
+    dependencies:
+      - STR_CONTACT_ARMS_SMUGGLERS
+    unlocks:
+      - STR_BLACK_MARKET_AMMO_TRADE
+
+  - name: STR_BLACK_MARKET_AMMO_TRADE # Tech that enables buying black market ammo. Disabled later.
+    cost: 0
+    dependencies:
+      - STR_GENERALLOCK
   
   - name: STR_CONTACT_HERETEKS # Codex entry. This project unlocks a project requiring warp stones.
     cost: 20
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
       - STR_PROCURE_TRANSPORTATION
+      - STR_BLACK_MARKET_AMMUNITION
 
  ###################################
  ##### PIETY & RITUAL RESEARCH #####
  ###################################
 
-  - name: STR_PLEASURE_CHAMBERS
-    cost: 10
-    dependencies:
-      - STR_SLAANESHPATH_GATE
-
-  - name: STR_ALTAR_OF_SLAANESH
-    cost: 10
-    dependencies:
-    - STR_SLAANESHPATH_GATE
 
 
  ### TIER 1 PIETY PROJECTS
@@ -190,12 +208,11 @@ research:
 
 ### TIER 1 TERROR PROJECTS
  #BASIC TECHS
-  - name: STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE # Terror weapon gateway tech.
+  - name: STR_IMPLEMENTS_OF_TORTURE # Terror weapon gateway tech.
     cost: 50
     points: 10
     dependencies:
-    - STR_RITUALS_OF_EXCESS
-    - STR_CONTACT_ARMS_SMUGGLERS
+    - STR_GENERALLOCK
     unlocks:
     - STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
     - STR_CHOKE_GAS_GRENADES
@@ -204,19 +221,19 @@ research:
   - name: STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
     cost: 20
     dependencies:
-    - STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE
+    - STR_IMPLEMENTS_OF_TORTURE
 
   - name: STR_CHOKE_GAS_GRENADES
     cost: 20
     dependencies:
-    - STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE
+    - STR_IMPLEMENTS_OF_TORTURE
     getOneFree:
     - STR_SMOKE
 
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
     cost: 20
     dependencies:
-    - STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE
+    - STR_IMPLEMENTS_OF_TORTURE
     - STR_CHOKE_GAS_GRENADES
     - STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
 
@@ -251,7 +268,7 @@ research:
   - name: STR_CRUEL_MELEE_WEAPONRY
     cost: 20
     dependencies:
-    - STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE
+    - STR_IMPLEMENTS_OF_TORTURE
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
     cost: 20

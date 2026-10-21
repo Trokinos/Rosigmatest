@@ -15263,9 +15263,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CORRUPT_ADEPTAS_WEAPONRY: "Corrupt Adeptas Weaponry"
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Tier 1 Weapon Corruption)"
   STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launchers"
-  STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE: "Implements of Torture"
+  STR_IMPLEMENTS_OF_TORTURE: "Implements of Torture"
   STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Pistols"
   STR_CHOKE_GAS_GRENADES: "Choke Gas Grenades"
+  STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
   ### MANUFACTURE DEFINITIONS
 
   STR_RITES_OF_EXCESS: "Rites of Excess"
@@ -15320,8 +15321,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   ### AMMO
   STR_CANTUS_BOLTER_AMMO_SLAAN: "Cantus Penetrator Ammo"
   STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Ammo"
-  STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Bolt Mag"
-  STR_LIGHT_BOLTER_AMMO_BM: "Black Market Light Bolt Mag"
+  STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Mag"
+  STR_LIGHT_BOLTER_AMMO_BM: "Black Market Bolt Mag"
   #SOLDIER BONUSES
 
   STR_SEEKER_MARK: "Mark of the Seeker"
