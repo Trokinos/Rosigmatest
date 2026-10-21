@@ -113,8 +113,13 @@ research:
     cost: 20
     points: 20
     dependencies:
-      - STR_SLAANESHPATH_GATE
+      - STR_ALTAR_OF_SLAANESH
 
+  - name: STR_SOULS_FOR_SLAANESH # Unlocks sacrifices.
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_ALTAR_OF_SLAANESH
 
   - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
     cost: 20
@@ -122,8 +127,6 @@ research:
       - STR_SLAANESHPATH_GATE
     reenables:
       - STR_SMOKE 
-    getOneFree:
-      - STR_SMOKE
   
   - name: STR_CONTACT_HERETEKS # Codex entry. This project unlocks a project requiring warp stones.
     cost: 20
@@ -134,7 +137,18 @@ research:
  ###################################
  ##### PIETY & RITUAL RESEARCH #####
  ###################################
- 
+
+  - name: STR_PLEASURE_CHAMBERS
+    cost: 10
+    dependencies:
+      - STR_SLAANESHPATH_GATE
+
+  - name: STR_ALTAR_OF_SLAANESH
+    cost: 10
+    dependencies:
+    - STR_SLAANESHPATH_GATE
+
+
  ### TIER 1 PIETY PROJECTS
  
   # Gives a manufacturing project for corrupted cantus bolters.
@@ -144,9 +158,9 @@ research:
  ### WEAPON TECH LEVEL RESEARCH ####
  ###################################
  
- ### TIER 1 WEAPON TECH LEVEL PROJECTS
+### -<TIER 1 WEAPON TECH LEVEL PROJECTS>- ###
 
-  # Basic bolter weaponry conversion tech.
+ # Basic bolter weaponry conversion tech.
   - name: STR_CORRUPT_ADEPTAS_WEAPONRY 
     cost: 50
     points: 10
@@ -161,7 +175,7 @@ research:
     points: 0
     dependencies:
     - STR_CORRUPT_ADEPTAS_WEAPONRY
-
+  #Disabler for basic weapon corruption. Once you have this tech it's faster and cheaper to buy them.
   - name: STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1
     cost: 0
     points: 0
@@ -174,23 +188,77 @@ research:
  ##### TERROR WEAPON RESEARCH #####
  ##################################
 
- ### TIER 1 TERROR PROJECTS
-
+### TIER 1 TERROR PROJECTS
+ #BASIC TECHS
   - name: STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE # Terror weapon gateway tech.
     cost: 50
     points: 10
     dependencies:
-      - STR_RITUALS_OF_EXCESS
-      - STR_CONTACT_ARMS_SMUGGLERS
-  #  unlocks:
-    #  - STR_LIGHT_GRENADE_LAUNCHERS
-    #  - STR_CONSTRICTOR_WEBBER_PISTOLS
-    #  - STR_CHOKE_GAS_GRENADES
-    #  - STR_HALLUCINOGEN_GRENADES
-    #  - STR_NEEDLER_PISTOLS
-    #  - STR_SONIC_WEAPONRY
+    - STR_RITUALS_OF_EXCESS
+    - STR_CONTACT_ARMS_SMUGGLERS
+    unlocks:
+    - STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
+    - STR_CHOKE_GAS_GRENADES
+    - STR_CRUEL_MELEE_WEAPONRY
+
+  - name: STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
+    cost: 20
+    dependencies:
+    - STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_CHOKE_GAS_GRENADES
+    cost: 20
+    dependencies:
+    - STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE
     getOneFree:
-      - STR_SMOKE
+    - STR_SMOKE
+
+  - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
+    cost: 20
+    dependencies:
+    - STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE
+    - STR_CHOKE_GAS_GRENADES
+    - STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
+
+  - name: STR_TERROR_GRENADES 
+    cost: 20
+    dependencies:
+    - STR_TERROR_WEAPONRY
+    getOneFree:
+    - STR_HALLUCINOGEN_GRENADES
+    - STR_SHARD_GRENADES
+    - STR_SONIC_GRENADES
+    - STR_BALEFIRE_GRENADES
+
+ ####40MM terror grenade flavors. All must be unlocked to advance the tech tree.#####  
+  - name: STR_HALLUCINOGEN_GRENADES
+    cost: 0
+    dependencies:
+    - STR_GENERALLOCK  
+  - name: STR_SHARD_GRENADES
+    cost: 0
+    dependencies:
+    - STR_GENERALLOCK  
+  - name: STR_SONIC_GRENADES
+    cost: 0
+    dependencies:
+    - STR_GENERALLOCK
+  - name: STR_BALEFIRE_GRENADES
+    cost: 0
+    dependencies:
+    - STR_GENERALLOCK  
+
+  - name: STR_CRUEL_MELEE_WEAPONRY
+    cost: 20
+    dependencies:
+    - STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_CONSTRICTOR_WEBBER_PISTOLS
+    cost: 20
+    dependencies:
+    - STR_TERROR_WEAPONRY
+    getOneFree:
+    - STR_IMPERIAL_WEBBER_DEP1
 
   - name: STR_PROCURE_TRANSPORTATION # Codex entry.
     cost: 20
@@ -198,9 +266,3 @@ research:
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
     #spawnedEvent:
-
-  - name: STR_THE_PATH_FORWARD
-    cost: 20
-    points: 10
-    dependencies:
-      - STR_CONTACT_ARMS_SMUGGLERS #placeholder

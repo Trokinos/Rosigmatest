@@ -89,6 +89,20 @@ manufacture:
       STR_SLAANESHPATH_PIETY: 40
     points: 0
 
+  - name: STR_ATTACH_GL_TO_CANTUS
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+    space: 0
+    time: 80
+    cost: 2000
+    producedItems:
+      STR_BOLTER_CANTUS_GL: 1
+    requiredItems:
+      STR_BOLTER_CANTUS_SLAAN: 1
+      STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE: 1
+    points: 0
+
 
 
 #### RITUALS OF PERFECTION - HIGH TIER UNIT PROMOTION
