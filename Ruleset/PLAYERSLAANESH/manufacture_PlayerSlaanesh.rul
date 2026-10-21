@@ -59,14 +59,36 @@ manufacture:
     requires:
     - STR_RITUALS_OF_WORSHIP
     space: 0
-    time: 260
-    cost: 30000
+    time: 500
+    cost: 45000
     producedItems: {}
     spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
-      STR_SLAANESHPATH_PIETY: 75
+      STR_SLAANESHPATH_PIETY: 130
     points: 0
 
 #### RITUALS OF DECADENCE ####
+
+#############################################################
+######## RITUALS OF CORRUPTION - WEAPON CONVERSIONS #########
+############################################################# 
+
+ # TIER 1 CONVERSIONS
+
+  - name: STR_CORRUPT_CANTUS_BOLTER
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+    space: 0
+    time: 100
+    cost: 5000
+    producedItems:
+      STR_BOLTER_CANTUS_SLAAN: 1
+    requiredItems:
+      STR_BOLTER_CANTUS: 1
+      STR_SLAANESHPATH_PIETY: 40
+    points: 0
+
+
 
 #### RITUALS OF PERFECTION - HIGH TIER UNIT PROMOTION

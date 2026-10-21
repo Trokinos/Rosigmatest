@@ -15260,7 +15260,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_GATE: "The Angel's Voice"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
   STR_RITUALS_OF_EXCESS: "Rituals of Excess"
-
+  STR_CORRUPT_ADEPTAS_WEAPONRY: "Corrupt Adeptas Weaponry"
+  STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Tier 1 Weapon Corruption)"
   ### MANUFACTURE DEFINITIONS
 
   STR_RITES_OF_EXCESS: "Rites of Excess"
@@ -15268,7 +15269,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_RITES_OF_PAIN: "Rites of Pain"
   STR_RITES_OF_DECADENCE: "Rites of Decadence"
   STR_RITES_OF_SUBVERSION: "Rites of Subversion"
-
+  STR_RITES_OF_CORRUPTION: "Rites of Corruption"
+  
   ### MANUFACTURING PROJECTS - PROGRESSION
 
   STR_SLAANESH_PDF_TOKEN_MANUFACTURE: "Infiltrate Local PDF Regiments"

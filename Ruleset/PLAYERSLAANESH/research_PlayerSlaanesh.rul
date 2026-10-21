@@ -137,14 +137,38 @@ research:
  
  ### TIER 1 PIETY PROJECTS
  
- # Gives a manufacturing project for corrupted cantus bolters.
- # Disables once Hereteks are capable of manufacturing. 
+  # Gives a manufacturing project for corrupted cantus bolters.
+  # Disables once Hereteks are capable of manufacturing. 
 
+ ###################################
+ ### WEAPON TECH LEVEL RESEARCH ####
+ ###################################
+ 
+ ### TIER 1 WEAPON TECH LEVEL PROJECTS
+
+  # Basic bolter weaponry conversion tech.
   - name: STR_CORRUPT_ADEPTAS_WEAPONRY 
     cost: 50
     points: 10
     dependencies:
       - STR_RITUALS_OF_EXCESS
+    unlocks:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+  #Tech that gives access to weapon conversions through piety.
+  #Gets disabled once the ability to manufacture these weapons is unlocked. 
+  - name: STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+    cost: 0
+    points: 0
+    dependencies:
+    - STR_CORRUPT_ADEPTAS_WEAPONRY
+
+  - name: STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1
+    cost: 0
+    points: 0
+    dependencies:
+    - STR_GENERALLOCK
+    disables:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
 
  ##################################
  ##### TERROR WEAPON RESEARCH #####
