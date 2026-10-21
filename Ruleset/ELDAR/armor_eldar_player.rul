@@ -847,11 +847,12 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
       INTIMIDATION_RESISTANCE: 50
 
-  - delete: STR_ELDAR_ARMOR6_P
+  - delete: STR_ELDAR_ARMOR6_P # REAPER AML ARMOR
   - &REAPER_ARMOR
     type: STR_ELDAR_ARMOR6_P       # REAPER
     requires: STR_ELDAR_REAPER_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_NONE # AML comes as standard for Reapers
+    ufopediaType: STR_ELDAR_ARMOR6_P
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 5
@@ -924,7 +925,8 @@ armors:
     units:
       - STR_ELDAR_REAPER_M
       - STR_ELDAR_ASPECT_WARRIOR_PLAYER
-    #builtInWeapons:
+    builtInWeapons:
+      - STR_REAPER_AML
     stats: #reaper have decent bonus to accuracy, but better armor, less bonus stat for them
       tu: 5
       stamina: 5
@@ -943,21 +945,39 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
       INTIMIDATION_RESISTANCE: 50
 
-  - type: STR_ELDAR_ARMOR6_P_SHIELD
-    refNode: *REAPER_ARMOR
-    storeItem: STR_ELDAR_SHIELD
-    spriteSheet: ELDAR_REAPER_SP.SPK
-    customArmorPreviewIndex: 252
-    builtInWeapons:
-      - AUX_ELDAR_SHIELD
-    tags:
-      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 10
-      ARMOR_ENERGY_SHIELD_DECAY: 10
-      UNIT_TYPE_XENO: 1
-      UNIT_TYPE_ELDAR: 1
-      UNIT_TYPE_LIVING: 1
-      DODGE_CHANCE: 15
-      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+  -  type: STR_ELDAR_REAPER_REAPERLAUNCHER_ARMOR_P
+     refNode: *REAPER_ARMOR
+     storeItem: STR_REAPER_LAUNCHER_ITEM
+     builtInWeapons:
+      - STR_REAPER_LAUNCHER
+
+  -  type: STR_ELDAR_REAPER_TEMPESTLAUNCHER_ARMOR_P
+     refNode: *REAPER_ARMOR
+     storeItem: STR_TEMPEST_LAUNCHER_ITEM
+     builtInWeapons:
+      - STR_ELDAR_TEMPEST_LAUNCHER
+
+  -  type: STR_ELDAR_REAPER_SHURIKENCANNON_ARMOR_P
+     refNode: *REAPER_ARMOR
+     storeItem: STR_SHURIKEN_CANNON_ITEM
+     builtInWeapons:
+      - STR_SHURIKEN_CANNON
+
+  #- type: STR_ELDAR_ARMOR6_P_SHIELD
+  #  refNode: *REAPER_ARMOR
+  #  storeItem: STR_ELDAR_SHIELD
+  #  spriteSheet: ELDAR_REAPER_SP.SPK
+  #  customArmorPreviewIndex: 252
+  #  builtInWeapons:
+  #    - AUX_ELDAR_SHIELD
+  #  tags:
+  #    ARMOR_ENERGY_SHIELD_HP_PER_TURN: 10
+  #    ARMOR_ENERGY_SHIELD_DECAY: 10
+  #    UNIT_TYPE_XENO: 1
+  #    UNIT_TYPE_ELDAR: 1
+  #    UNIT_TYPE_LIVING: 1
+  #    DODGE_CHANCE: 15
+  #    ARMOR_MAX_SUCCESSFUL_DODGES: 1
 
 # DEPRECATED. in future version (3.4 onward) please add - delete: name to keep rosigma clean
 
@@ -1056,9 +1076,10 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
       INTIMIDATION_RESISTANCE: 100
 
-  - type: STR_ELDAR_ARMOR_EXARCH_P # REAPER EXARCH ARMOR
-    refNode: *REAPER_ARMOR
+  - &REAPER_EXARCH_ARMOR
+    type: STR_ELDAR_ARMOR_EXARCH_P # REAPER EXARCH ARMOR
     requires: STR_ELDAR_REAPER_EXARCH_RESEARCH
+    ufopediaType: STR_ELDAR_ARMOR_EXARCH_P
     visibilityAtDay: 44
     visibilityAtDark: 30
     antiCamouflageAtDay: 7
@@ -1067,6 +1088,7 @@ armors:
     sideArmor: 110
     rearArmor: 100
     underArmor: 95
+    loftempsSet: [3]
     layersDefaultPrefix: "1"
     layersSpecificPrefix:
       1: ELDAR
@@ -1117,6 +1139,8 @@ armors:
       - 0.0  # SMOKE
       - 1.0  # IMPACT
       - 1.0  # MELTA
+    builtInWeapons:
+      - STR_REAPER_AML
     tags:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
@@ -1124,6 +1148,22 @@ armors:
       DODGE_CHANCE: 20 #+5
       ARMOR_MAX_SUCCESSFUL_DODGES: 2 #+1
       INTIMIDATION_RESISTANCE: 100
+
+  -  type: STR_ELDAR_REAPEREX_REAPERLAUNCHER_ARMOR_P
+     refNode: *REAPER_EXARCH_ARMOR
+     storeItem: STR_REAPER_LAUNCHER_ITEM
+     builtInWeapons:
+      - STR_REAPER_LAUNCHER
+  -  type: STR_ELDAR_REAPEREX_TEMPESTLAUNCHER_ARMOR_P
+     refNode: *REAPER_EXARCH_ARMOR
+     storeItem: STR_TEMPEST_LAUNCHER_ITEM
+     builtInWeapons:
+      - STR_ELDAR_TEMPEST_LAUNCHER
+  -  type: STR_ELDAR_REAPEREX_SHURIKENCANNON_ARMOR_P
+     refNode: *REAPER_EXARCH_ARMOR
+     storeItem: STR_SHURIKEN_CANNON_ITEM
+     builtInWeapons:
+      - STR_SHURIKEN_CANNON
 
   - type: STR_ELDAR_DRAGONEX_ARMOR_P
     refNode: *DRAGON_ARMOR
@@ -1801,7 +1841,7 @@ armors:
       - 1.0  # MELTA
     spriteSheet: ELDAR_HAWK_EXARCH.SPK #Temp
     corpseBattle:
-      - STR_ELDAR_HAWKEX_CORPSE_P
+      - STR_ELDAR_WRAITHGUARD_CORPSE_P
     layersDefaultPrefix: "1"
     layersSpecificPrefix:
       1: ELDARWRAITHGUARD
@@ -1832,7 +1872,7 @@ armors:
       F9: ["", "ELDAR_F", "CLOSEDHELMET6", "ACCESSORY2"]
       F10: ["", "ELDAR_F", "CLOSEDHELMET7", "ACCESSORY9"]
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
-    customArmorPreviewIndex: 1360
+    customArmorPreviewIndex: 1361
     size: 1
     units:
       - STR_ELDAR_WRAITHGUARD_P
@@ -1844,6 +1884,7 @@ armors:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
       - INV_NULL_4X2
+      - INV_NULL_HAND_L
     tags:
       INTIMIDATION_RESISTANCE: 100  # infection immune
       INFECTION_RESIST: 100
@@ -1854,12 +1895,14 @@ armors:
   - type: STR_ELDAR_WRAITHGUARD_DSCYTHE_ARMOR_P
     refNode: *WRAITHGUARD_ARMOR
     storeItem: STR_DSCYTHE
+    customArmorPreviewIndex: 1362
     builtInWeapons:
       - STR_DSCYTHE
       - INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
       - INV_NULL_4X2
+      - INV_NULL_HAND_L
 
   - &WRAITHBLADE_ARMOR
     type: STR_ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_P
@@ -1897,7 +1940,7 @@ armors:
       - 1.0  # MELTA
     spriteSheet: ELDAR_HAWK_EXARCH.SPK #Temp
     corpseBattle:
-      - STR_ELDAR_HAWKEX_CORPSE_P
+      - STR_ELDAR_WRAITHBLADE_CORPSE_P
     layersDefaultPrefix: "1"
     layersSpecificPrefix:
       1: ELDARWRAITHBLADE
@@ -1928,7 +1971,7 @@ armors:
       F9: ["", "ELDAR_F", "CLOSEDHELMET6", "ACCESSORY2"]
       F10: ["", "ELDAR_F", "CLOSEDHELMET7", "ACCESSORY9"]
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
-    customArmorPreviewIndex: 1360
+    customArmorPreviewIndex: 1363
     size: 1
     units:
       - STR_ELDAR_WRAITHBLADE_P
@@ -1954,6 +1997,7 @@ armors:
   - type: STR_ELDAR_WRAITHBLADE_GHOSTSWORD_ARMOR_P
     refNode: *WRAITHBLADE_ARMOR
     storeItem: STR_GHOSTSWORD
+    customArmorPreviewIndex: 1364
     builtInWeapons:
       - INV_NULL_3X3
       - INV_NULL_2X1_RL

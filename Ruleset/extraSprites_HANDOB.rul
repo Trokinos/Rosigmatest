@@ -226,6 +226,7 @@ extraSprites:
       1786: Resources/Eldar/weapons/dscythe_handObj.png
       1794: Resources/Eldar/weapons/ghostaxe_handObj.png
       1802: Resources/Eldar/weapons/ghostsword_handObj.png
+      1810: Resources/Eldar/weapons/Reaper_launcher_handObj.png
 
 # Arbites; 1900-2000
       # Arbites' heavy stubber and ammo
@@ -476,7 +477,7 @@ extraSprites:
       4826: Resources/Eldar/weapons/flamers/aeldari_flamer_handObj.png
       4834: Resources/Eldar/weapons/flamers/dragon_breath_flamer_handObj.png
       4842: Resources/Eldar/weapons/firepike_canister_handObj.png
-      4850: Resources/Eldar/weapons/Reaper_launcher_handObj.png #reaper launcher
+      4850: Resources/Eldar/weapons/reaper_aml_handObj.png #STR_ELDAR_LAUNCHER
       4858: Resources/Eldar/weapons/ranger_longrifle_handObj.png
       4866: Resources/Eldar/weapons/ranger_longriflescoped_handObj.png
       4874: Resources/Eldar/weapons/ranger_longrifle_mag_handObj.png

@@ -417,19 +417,19 @@ items:
     tags:
       REACTION_MULTIPLIER: 60 # -40 Sniper Malus
 
-  - type: STR_SHURIKEN_CANNON
+  - type: STR_SHURIKEN_CANNON # REAPER SHURIKEN CANNON
     refNode: *ELDAR_SHURIKEN_WEAPON_TEMPLATE
     requires:
-      - STR_ELDAR_ONLY
-    requiresBuy:
-      - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_MIDTIER_PREREQ
+      - STR_ELDAR_REAPER_RESEARCH
     requiresBuyBaseFunc: []
     weight: 50
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
     size: 0.3
-    costBuy: 50000
-    costSell: 20000
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false # Fixed to armor
+    costBuy: 0 # Cannot be bought
+    costSell: 0
     bigSprite: 4861
     floorSprite: 4861
     handSprite: 4890
@@ -462,46 +462,103 @@ items:
     experienceTrainingMode: 5 # 50% firing exp, may need to go down to 33%
     listOrder: 16930 # either with reaper/heavy weapons or shuriken
 
-  - delete: STR_ELDAR_LAUNCHER
   - &STR_ELDAR_LAUNCHER_REF
-    type: STR_ELDAR_LAUNCHER
+    type: STR_REAPER_AML
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
     requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_REAPER_RESEARCH
     size: 0.4
-    dropoff: 5
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false # Fixed to armor
+    costBuy: 0 # Cannot be bought
+    costSell: 0
+    dropoff: 4
     weight: 25
     bigSprite: 4850
     floorSprite: 4850
     handSprite: 4850
     bulletSprite: 0
     fireSound: {mod: 40k, index: 52}
-    clipSize: 1
-    #power: 100
-    compatibleAmmo:
-      - STR_LARGE_ROCKET_ELDAR
-    #damageType: 3
-    accuracySnap: 70
-    accuracyAimed: 115
-    accuracyAuto: 0
+    ammo:
+      0:
+        compatibleAmmo:
+          - STR_LARGE_ROCKET_ELDAR
+      1:
+        compatibleAmmo:
+          - STR_SMALL_ROCKET_ELDAR
+    accuracyAimed: 80
+    accuracySnap: 80
+    tuAimed: 55
     tuSnap: 55
-    tuAimed: 85
-    tuAuto: 0
-    snapRange: 20
     aimRange: 30
+    snapRange: 30
+    minRange: 15
+    confAimed:
+     name: STR_HWP_STARSHOT_SHOT
+     ammoSlot: 0
+    confSnap:
+     name:  STR_HWP_SUNBURST_SHOT
+     ammoSlot: 1
     battleType: 1
     twoHanded: true
     blockBothHands: true
     invWidth: 2
     invHeight: 3
-    recover: true
+    listOrder: 16901
+    tags:
+      REACTION_MULTIPLIER: 50 # Rocket Long Range Weapon
+
+  - type: STR_REAPER_LAUNCHER
+    #refNode: *STR_ELDAR_LAUNCHER_REF
+    categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+    size: 0.4
+    weight: 25
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false # Fixed to armor
+    costBuy: 0 # Cannot be bought
+    bigSprite: 4914
+    floorSprite: 4914
+    handSprite: 1810
+    bulletSprite: 0
+    fireSound: {mod: 40k, index: 52}
+    bulletSpeed: 10
+    compatibleAmmo:
+      - STR_REAPER_LAUNCHER_AMMO
+    #damageType: 3
+    accuracySnap: 90
+    accuracyAimed: 90
+    tuSnap: 30
+    tuAimed: 40
+    aimRange: 30
+    snapRange: 30
+    minRange: 15 # required because of high accuracy
+    dropoff: 4
+    confAimed:
+     name: STR_HWP_STARSHOT_SHOT
+     shots: 1
+     followProjectiles: false
+     spendPerShot: 3
+    confSnap:
+     name: STR_STARSWARM_SHOT
+     shots: 2
+     followProjectiles: false
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
     listOrder: 16900
-    costBuy: 15000
-    costSell: 4000
+    tags:
+      ITEM_AIMED_FLAT_POWER_BONUS: 50 # Starshot
+      REACTION_MULTIPLIER: 75
 
   - type: STR_ELDAR_TEMPEST_LAUNCHER              #INITIAL IMPLEMENT FIX ME
-    refNode: *STR_ELDAR_LAUNCHER_REF
+    #refNode: *STR_ELDAR_LAUNCHER_REF
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
     requiresBuyBaseFunc: []
     requires:
@@ -510,17 +567,17 @@ items:
     size: 0.4
     dropoff: 5
     weight: 25
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false # Fixed to armor
+    costBuy: 0 # Cannot be bought
     bigSprite: 4866
     floorSprite: 4866
     handSprite: 4954
     bulletSprite: 0
     fireSound: {mod: 40k, index: 52}
-    #clipSize: 1
-    #power: 100
     compatibleAmmo:
       - STR_SMALL_ROCKET_TEMPEST_ELDAR
-    #damageType: 3
-    #accuracySnap: 70
     confSnap:
       shots: 3
       name: STR_ELDAR_TEMPEST_LAUNCHER_SNAPSHOT
@@ -538,6 +595,7 @@ items:
     snapRange: 30
     #aimRange: 30
     autoRange: 30
+    minRange: 15
     arcingShot: true
     noLOSAccuracyPenalty: 75  # indirect fire weapon
     battleType: 1
@@ -548,20 +606,8 @@ items:
     recover: true
     experienceTrainingMode: 6
     listOrder: 16920
-    costBuy: 50000
-    costSell: 4000
     tags:
       REACTION_MULTIPLIER: 50 # Indirect Long Range Weapon
-
-  # DEPRECATED
-  - type: STR_ELDAR_LAUNCHER_FIXED # Fixed weapon version for use on player armor.
-    ufopediaType: STR_ELDAR_LAUNCHER # link to the same ufopedia page as normal STR_ELDAR_LAUNCHER.
-    refNode: *STR_ELDAR_LAUNCHER_REF
-    fixedWeapon: true
-    fixedWeaponShow: true
-    recover: false
-    costBuy: 0
-    costSell: 0
 
   - type: STR_AELDARI_FLAMER #STR_FLAMETHROWER stats REWORK NEEDED
     categories: [STR_CAT_FLAMER, STR_CAT_TACTICAL, STR_CAT_ELDAR]
@@ -1170,13 +1216,15 @@ items:
       RadiusReduction: 100 # large reduction in power for blast area
       FireThreshold: 99999
       SmokeThreshold: 99999
+      IgnoreSelfDestruct: true # victims are teleported away into the warp
+      IgnoreOverKill: false
     fixedWeapon: true
     fixedWeaponShow: true
     invWidth: 2
     invHeight: 3
     clipSize: -1
     recover: false
-#    tags:
+    #tags:
 #      REACTION_MULTIPLIER: 50
 
   - type: STR_DSCYTHE # Wraithguard flamer
@@ -1230,6 +1278,7 @@ items:
       FireThreshold: 99999
       SmokeThreshold: 99999
     tags:
+      ITEM_DENY_TRANSFORM: 1 # severs soul of target from body
       DAMAGE_RESIST_PENETRATION_PERCENT: 75 # Dealing with AP RESIST
       #ITEM_DOESNT_HURT_USER: 1 # Temple Assassins are too skilled to shoot themselves. Staying in flames can be bad though.
 
@@ -2661,3 +2710,49 @@ items:
       INTIMIDATION_TU_DAMAGE_MULTIPLIER: 40
       INTIMIDATION_MORALE_DAMAGE_MULTIPLIER: 40
       ITEM_DOESNT_HURT_FRIENDS: 1
+
+      # DEPRECATED
+
+  - delete: STR_ELDAR_LAUNCHER # OLD REAPER LAUNCHER, Used for enemies keep for now
+  - &ELDAR_LAUNCHER_REF
+    type: STR_ELDAR_LAUNCHER
+    categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
+    requiresBuyBaseFunc: []
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+    size: 0.4
+    dropoff: 5
+    weight: 25
+    bigSprite: 4850
+    floorSprite: 4850
+    handSprite: 4850
+    bulletSprite: 0
+    fireSound: {mod: 40k, index: 52}
+    clipSize: 1
+    #power: 100
+    compatibleAmmo:
+      - STR_LARGE_ROCKET_ELDAR
+    #damageType: 3
+    accuracySnap: 70
+    accuracyAimed: 115
+    accuracyAuto: 0
+    tuSnap: 55
+    tuAimed: 85
+    tuAuto: 0
+    snapRange: 20
+    aimRange: 30
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    recover: true
+
+  - type: STR_ELDAR_LAUNCHER_FIXED # Fixed weapon version for use on player armor.
+    ufopediaType: STR_ELDAR_LAUNCHER # link to the same ufopedia page as normal STR_ELDAR_LAUNCHER.
+    refNode: *ELDAR_LAUNCHER_REF
+    fixedWeapon: true
+    fixedWeaponShow: true
+    recover: false
+    costBuy: 0
+    costSell: 0
