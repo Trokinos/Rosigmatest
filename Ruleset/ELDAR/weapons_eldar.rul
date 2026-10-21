@@ -496,11 +496,11 @@ items:
     snapRange: 30
     minRange: 15
     confAimed:
-     name: STR_HWP_STARSHOT_SHOT
-     ammoSlot: 0
+      name: STR_HWP_STARSHOT_SHOT
+      ammoSlot: 0
     confSnap:
-     name:  STR_HWP_SUNBURST_SHOT
-     ammoSlot: 1
+      name: STR_HWP_SUNBURST_SHOT
+      ammoSlot: 1
     battleType: 1
     twoHanded: true
     blockBothHands: true
@@ -539,14 +539,14 @@ items:
     minRange: 15 # required because of high accuracy
     dropoff: 4
     confAimed:
-     name: STR_HWP_STARSHOT_SHOT
-     shots: 1
-     followProjectiles: false
-     spendPerShot: 3
+      name: STR_HWP_STARSHOT_SHOT
+      shots: 1
+      followProjectiles: false
+      spendPerShot: 3
     confSnap:
-     name: STR_STARSWARM_SHOT
-     shots: 2
-     followProjectiles: false
+      name: STR_STARSWARM_SHOT
+      shots: 2
+      followProjectiles: false
     battleType: 1
     twoHanded: true
     blockBothHands: true
@@ -603,7 +603,6 @@ items:
     blockBothHands: true
     invWidth: 2
     invHeight: 3
-    recover: true
     experienceTrainingMode: 6
     listOrder: 16920
     tags:
