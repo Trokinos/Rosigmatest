@@ -1375,6 +1375,9 @@ soldiers:
     flagOffset: 100
     rankStrings:
       - STR_ELDAR_WRAITHGUARD_RANK_0
+    rankSprite: 4102
+    rankBattleSprite: 4102
+    rankTinySprite: 4102
     minStats:
       tu: 50
       stamina: 50
@@ -1433,7 +1436,10 @@ soldiers:
     costSalary: 20000
     armor: STR_ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_P
     rankStrings:
-      - STR_ELDAR_WRAITHGUARD_RANK_0
+      - STR_ELDAR_WRAITHBLADE_RANK_0
+    rankSprite: 4103
+    rankBattleSprite: 4103
+    rankTinySprite: 4103
     soldierNames:
       - delete
       - Names/eldar.nam

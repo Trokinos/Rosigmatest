@@ -182,6 +182,24 @@ items:
     battleType: 11
     recover: false
     armor: 80 # +20
+  - type: STR_ELDAR_WRAITHGUARD_CORPSE_P
+    weight: 30
+    bigSprite: 4969
+    floorSprite: 4969
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 80
+  - type: STR_ELDAR_WRAITHBLADE_CORPSE_P
+    weight: 30
+    bigSprite: 4970
+    floorSprite: 4970
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    armor: 80
 
   - delete: STR_PLAT_CORPSE_P
   - type: STR_PLAT_CORPSE_P                  #ELDAR
