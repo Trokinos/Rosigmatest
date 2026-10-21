@@ -371,7 +371,7 @@ items:
     invHeight: 2
     listOrder: 10460
 
-  - type: STR_TZ_LIGHT_BOLTER_AMMO_R  
+  - type: STR_TZ_LIGHT_BOLTER_AMMO_R
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_TZEENTCH]
     size: 0.1
     costSell: 150
