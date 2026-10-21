@@ -15323,6 +15323,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
   STR_SLAANESHPATH_MORBIDANGEL: "Morbid Angel"
   STR_SLAANESHPATH_EXALTEDANGEL: "Exalted Morbid Angel"
+  STR_SLAANESHPATH_VEILED_ONE: "Veiled One"
 
   ## Slaanesh Adeptas Armors
 

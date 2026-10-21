@@ -143,6 +143,54 @@ items:
       # STR_SLAANESHPATH_SONIC_40MM
       # STR_SLAANESHPATH_SHARD_40MM
 
+ #### BALLISTIC WEAPONS ####
+
+  - type: STR_SLAANESHPATH_HEARTBREAKER_SNIPER_RIFLE  #
+    categories: [STR_CAT_SNIPER]
+    dropoff: 3  # light sniper weapon
+    weight: 24  # +4 added weight vs repressor
+    size: 0.4
+    costSell: 9000
+    bigSprite: 3481
+    floorSprite: 3401
+    handSprite: 4200
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 25
+    fireSound: {mod: 40k, index: 4}
+    compatibleAmmo:
+      - STR_HEARTBREAKER_AMMO
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 200
+    autoRange: 12
+    snapRange: 18
+    aimRange: 30
+    accuracySnap: 65
+    accuracyAimed: 80
+    accuracyAuto: 45
+    tuAuto: 40
+    tuSnap: 32
+    tuAimed: 85
+    confAuto:
+      shots: 4
+    confSnap:  # Double Shot
+      shots: 2
+    confAimed:  # Called Precision Shot to emphasize the added lethality
+      name: STR_PRECISION_SHOT
+    listOrder: 11897
+    kneelBonus: 140  # light sniper rifle
+    minRange: 7  # light sniper rifle
+    accuracyMultiplier:
+      firing: [0.5, 0.005]
+    tags:
+      REACTION_MULTIPLIER: 70
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_RECOIL: 30
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 75
+      ITEM_HAS_BIPOD: 1
 
  #### LIGHT BOLTERS ####
 
