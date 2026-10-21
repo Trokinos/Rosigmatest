@@ -217,7 +217,7 @@ items:
     costBuy: 5000
     costSell: 1500
     weight: 10
-    bigSprite: 2006
+    bigSprite: 4080
     floorSprite: {mod: 40k, index: 1}
     handSprite: {mod: 40k, index: 1496}
     bulletSprite: {mod: 40k, index: 6}
@@ -256,7 +256,7 @@ items:
     costBuy: 5000
     costSell: 1500
     weight: 13 # Heavier
-    bigSprite: 2006
+    bigSprite: 4081
     floorSprite: {mod: 40k, index: 1}
     handSprite: {mod: 40k, index: 1496}
     bulletSprite: {mod: 40k, index: 6}
@@ -682,7 +682,6 @@ items:
     fixedWeapon: true
     specialIconSprite: 2778
     specialUseEmptyHand: false
-    battleType: 4
     clipSize: -1
     listOrder: 15300
     tags:

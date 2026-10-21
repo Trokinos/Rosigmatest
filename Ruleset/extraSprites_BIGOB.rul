@@ -1286,6 +1286,11 @@ extraSprites:
       3945: Resources/Bigobs/greenkrootelite_corpse.png
       3946: Resources/Bigobs/greenkrootleader_corpse.png
 
+# Slaanesh strategy
+
+      4080: Resources/PLAYERSLAANESH/weapons/cantus/bolter_cantus_slaan.png
+      4081: Resources/PLAYERSLAANESH/weapons/cantus/bolter_cantus_slaan_gl.png
+
 # Eldars
       4850: Resources/Eldar/weapons/Reaper_launcher_bigObj.png #reaper launcher
       4851: Resources/Eldar/units/dark_reaper/eldar_reaper_corpse_bigObj.png
