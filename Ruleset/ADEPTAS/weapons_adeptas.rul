@@ -470,7 +470,7 @@ items:
     armor: 200
     bulletSpeed: 50
     attraction: 8
-    listOrder: 10328
+    listOrder: 10295
 
   - type: STR_HAND_FLAMETHROWER
     categories: [STR_CAT_FLAMER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
@@ -520,7 +520,7 @@ items:
     attraction: 7
     listOrder: 10496
 
-  - type: STR_LIGHT_FLAMETHROWER_CLIP  # MEPHISTO FLAMER                     10520
+  - type: STR_LIGHT_FLAMETHROWER_CLIP  # MEPHISTO FLAMER
     categories: [STR_CAT_FLAMER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
     size: 0.2
     requiresBuy:
@@ -543,7 +543,7 @@ items:
     explosionSpeed: 10
     armor: 15
     attraction: 7
-    listOrder: 10329
+    listOrder: 10299
 
   - type: STR_BOLTER_HELLSPITE  # SoB Adeptas Hellspite Underslung Grenade launcher kombi bolter ROSEMOD
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS, STR_CAT_GRENADE40]
@@ -583,7 +583,7 @@ items:
     armor: 300
     bulletSpeed: 50
     attraction: 8
-    listOrder: 10330
+    listOrder: 10294
     tags:
       ITEM_RECOIL: 30
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -702,6 +702,7 @@ items:
       - STR_LIGHT_BOLTER_AMMO_INF
       - STR_LIGHT_BOLTER_AMMO_PEN
       - STR_LIGHT_BOLTER_AMMO_EX
+    listOrder: 10292
 
   - type: STR_MC_BOLTER_DEAZ
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
@@ -712,6 +713,7 @@ items:
       - STR_LIGHT_BOLTER_AMMO_INF
       - STR_LIGHT_BOLTER_AMMO_PEN
       - STR_LIGHT_BOLTER_AMMO_EX
+    listOrder: 10296
     tags:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
@@ -874,7 +876,7 @@ items:
       ITEM_SWAP_BASE_COLOR: 8
       ITEM_SWAP_ACCENT_COLOR: 6
 
-  - type: STR_LIGHT_BOLTER_AMMO_INF  #         10430     INFERNO FLAME        ToStun
+  - type: STR_LIGHT_BOLTER_AMMO_INF  # Light Bolter Inferno Magazine
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
     requiresBuy:
       - STR_LIGHT_BOLTERS_LOWTIER_ADEPTAS
@@ -892,7 +894,7 @@ items:
     armor: 30
     invWidth: 1
     invHeight: 2
-    listOrder: 10298
+    listOrder: 10299
     tags:
       ITEM_IS_PALETTE_SWAP: 1
       ITEM_GETS_ACCENT_RECOLOR: 1
