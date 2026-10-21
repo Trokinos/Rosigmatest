@@ -3,7 +3,7 @@ manufacture:
 #### RITUALS OF EXCESS - PIETY GENERATION
 
   - name: STR_PROPITIATE_SLAANESH
-    category: STR_RITUALS_OF_EXCESS
+    category: STR_RITES_OF_EXCESS
     requires:
     - STR_RITUALS_OF_WORSHIP
     space: 15
@@ -16,7 +16,7 @@ manufacture:
     points: 10
 
   - name: STR_SACRIFICE_TO_SLAANESH
-    category: STR_RITUALS_OF_EXCESS
+    category: STR_RITES_OF_EXCESS
     requires:
     - STR_RITUALS_OF_WORSHIP
     space: 15
@@ -29,7 +29,7 @@ manufacture:
     points: 10
 
   - name: STR_CONVERT_MINOR_MISSION_BOUNTY # Random reward for minor missions.
-    category: STR_RITUALS_OF_EXCESS
+    category: STR_RITES_OF_EXCESS
     requires:
     - STR_RITUALS_OF_WORSHIP
     space: 5
@@ -55,7 +55,7 @@ manufacture:
 #### RITUALS OF DEPRAVITY - UNIT RECRUITMENT, UNIT CONVERSIONS
 
   - name: STR_RECRUIT_HANDMAIDEN
-    category: STR_RITUALS_OF_DEPRAVITY
+    category: STR_RITES_OF_DEPRAVITY
     requires:
     - STR_RITUALS_OF_WORSHIP
     space: 0

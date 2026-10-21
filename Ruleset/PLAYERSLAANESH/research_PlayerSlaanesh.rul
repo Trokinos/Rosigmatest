@@ -1,24 +1,24 @@
 ###
 
 research:
-  
-  - name: STR_SLAANESHPATH_SELECTED        # (Slaanesh strategy skillfully selected)
-    dependencies:
-      - STR_GENERALLOCK
-
-  # Blocker tech
-  - name: STR_NOT_SLAANESHPATH        # (Not a supple servant of Slaanesh)
 
   ### The Slaanesh condition is
   ### STR_ARBITES: true
   ### STR_NOT_CHAOSCULT: true
+
+  - name: STR_SLAANESHPATH_SELECTED        # (Slaanesh strategy skillfully selected)
+    dependencies:
+      - STR_GENERALLOCK
+  - name: STR_NOT_SLAANESHPATH        # (Not a supple servant of Slaanesh)
+
+
 
   - name: STR_SLAANESHPATH
     points: 0
     cost: 5
     dependencies:
       - STR_ARBITES
-     #lookup: STR_CHOSEN_SLAANESHPATH
+     #lookup: STR_SLAANESHPATH_SELECTED
     unlocks:
       - STR_ALIENS_ONLY # Chaos corruption
       - STR_NOT_IMPERIUM
@@ -40,14 +40,16 @@ research:
       # STR_PSI_LAB
       # STR_PSI_AMP
       - STR_THE_MARTIAN_SOLUTION
-      - STR_DIFFICULTY_OPTIONS    # does not have harder missions
+      - STR_DIFFICULTY_OPTIONS    # does not have harder missions yet
       - STR_DEFAULT_CAMPAIGN
 
      ############## DISABLED GENERIC TECHS GO HERE ###############
-      - STR_SMOKE
+      - STR_SMOKE # Reaquired later.
       - STR_MOTION_SCANNER
       - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, lobotomizing soldiers ruins all the fun.
-
+      - STR_ALIEN_ALLOYS # Re-enabled later.
+      - STR_ELERIUM_115 # Re-enabled later.
+      - STR_PHOSPHOR_GRENADE # Not available to the strategy.
      ############## DISABLED CHAOS-RELATED TECHS GO HERE #########
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
@@ -85,6 +87,7 @@ research:
       - STR_GENERALLOCK
     unlocks:
       - STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE
+      - STR_RITUALS_OF_EXCESS
       - STR_RITUALS_OF_WORSHIP
     # - STR_CHAOS_ARMORY_EXAM_SLAANESH (This should be moved to later in the tree)
     spawnedEvent: STR_SLAANESHPATH_GATE_EVENT
@@ -102,24 +105,78 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
-  - name: STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_GENERALLOCK
   ################### END OF SECTION ##################
 
   ################### SECTION FOR EARLY GAME PROGRESSION TECHS #############
   
-  - name: STR_SLAANESHPATH_RESTORING_THE_ALTAR
-    cost: 5
-    points: 0
+  - name: STR_RITUALS_OF_EXCESS # Codex entry.
+    cost: 20
+    points: 20
     dependencies:
       - STR_SLAANESHPATH_GATE
 
-  - name: STR_SLAANESHPATH_IMPLEMENTS_OF_FAITH
-    cost: 5
-    points: 0
+
+  - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
+    cost: 20
     dependencies:
       - STR_SLAANESHPATH_GATE
+    reenables:
+      - STR_SMOKE 
+    getOneFree:
+      - STR_SMOKE
+  
+  - name: STR_CONTACT_HERETEKS # Codex entry. This project unlocks a project requiring warp stones.
+    cost: 20
+    dependencies:
+      - STR_CONTACT_ARMS_SMUGGLERS
+      - STR_PROCURE_TRANSPORTATION
+
+ ###################################
+ ##### PIETY & RITUAL RESEARCH #####
+ ###################################
+ 
+ ### TIER 1 PIETY PROJECTS
+ 
+ # Gives a manufacturing project for corrupted cantus bolters.
+ # Disables once Hereteks are capable of manufacturing. 
+
+  - name: STR_CORRUPT_ADEPTAS_WEAPONRY 
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_RITUALS_OF_EXCESS
+
+ ##################################
+ ##### TERROR WEAPON RESEARCH #####
+ ##################################
+
+ ### TIER 1 TERROR PROJECTS
+
+  - name: STR_SLAANESHPATH_IMPLEMENTS_OF_TORTURE # Terror weapon gateway tech.
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_RITUALS_OF_EXCESS
+      - STR_CONTACT_ARMS_SMUGGLERS
+  #  unlocks:
+    #  - STR_LIGHT_GRENADE_LAUNCHERS
+    #  - STR_CONSTRICTOR_WEBBER_PISTOLS
+    #  - STR_CHOKE_GAS_GRENADES
+    #  - STR_HALLUCINOGEN_GRENADES
+    #  - STR_NEEDLER_PISTOLS
+    #  - STR_SONIC_WEAPONRY
+    getOneFree:
+      - STR_SMOKE
+
+  - name: STR_PROCURE_TRANSPORTATION # Codex entry.
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_CONTACT_ARMS_SMUGGLERS
     #spawnedEvent:
+
+  - name: STR_THE_PATH_FORWARD
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_CONTACT_ARMS_SMUGGLERS #placeholder

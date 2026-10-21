@@ -15241,10 +15241,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT: "We have detected a PDF distress signal!"
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT_DESCRIPTION: "A disabled PDF Valkyrie is broadcasting an urgent call for assistance. Assault it before loyalist help can arrive."
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: "Raid Disabled PDF Valkyrie"
-  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_DESCRIPTION: "Poor maintenance or sabotage recently forced a PDF Valkyrie to make a crash landing in this sparsely populated region. Unfortunately for them, their desperate pleas for help on an open Vox frequency has led us right to them. Assault the craft and seize everything of value. The hapless crew would make a fine sacrifice to the Prince of Excess; try to bring some of them back alive, if at all possible."
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_DESCRIPTION: "Poor maintenance or sabotage recently forced a PDF Valkyrie to make a crash landing in this sparsely populated region. Unfortunately for them, their desperate pleas for help on an open Vox frequency has led us right to them. Assault the craft and seize everything of value. Kill or capture the crew if possible, Slaanesh desires more suffering!"
 
   STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Strike Team Ambush"
-  STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make fine offerings to Slaanesh."
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make a fine offering to Slaanesh."
   STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
   ### CODEX ENTRIES
 
@@ -15257,18 +15257,17 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
   STR_SLAANESHPATH_INTRO_BUNKER: "The Abandoned Bunker"
   STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
-  STR_SLAANESHPATH_GATE: "The Voices Of Angels"
+  STR_SLAANESHPATH_GATE: "The Angel's Voice"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
-  STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION: "(Handmaiden Indoctrination)"
-  STR_SLAANESHPATH_RESTORING_THE_ALTAR: "Restoring The Altar"
+  STR_RITUALS_OF_EXCESS: "Rituals of Excess"
 
   ### MANUFACTURE DEFINITIONS
 
-  STR_RITUALS_OF_EXCESS: "Rites of Excess"
-  STR_RITUALS_OF_DEPRAVITY: "Rites of Depravity"
-  STR_RITUALS_OF_PAIN: "Rites of Pain"
-  STR_RITUALS_OF_DECADENCE: "Rites of Decadence"
-  STR_RITUALS_OF_SUBVERSION: "Rites of Subversion"
+  STR_RITES_OF_EXCESS: "Rites of Excess"
+  STR_RITES_OF_DEPRAVITY: "Rites of Depravity"
+  STR_RITES_OF_PAIN: "Rites of Pain"
+  STR_RITES_OF_DECADENCE: "Rites of Decadence"
+  STR_RITES_OF_SUBVERSION: "Rites of Subversion"
 
   ### MANUFACTURING PROJECTS - PROGRESSION
 
@@ -15359,7 +15358,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ## Slaanesh cultist armors
 
-  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Victual Brother Armor"
+  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Brotherhood Mesh Armor"
 
   ## Slaanesh cultist ranks
 
