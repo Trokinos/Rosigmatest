@@ -11,7 +11,7 @@ items:
       - STR_BLACK_MARKET_AMMUNITION
       - STR_BLACK_MARKET_AMMO_TRADE
     size: 0.1
-    costBuy: 1000 # way too expensive
+    costBuy: 1500 # way too expensive
     costSell: 100
     weight: 2
     bigSprite: 3230

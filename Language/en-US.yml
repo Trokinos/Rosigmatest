@@ -15317,7 +15317,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BOLTER_CANTUS_GL: "Slaanesh Cantus Bolter /GL"
   AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
   AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
-  STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE: "Gorge Pattern 40MM Grenade Launcher"
+  STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE: "Gorge Pattern Grenade Launcher"
   ### AMMO
   STR_CANTUS_BOLTER_AMMO_SLAAN: "Cantus Penetrator Ammo"
   STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Ammo"

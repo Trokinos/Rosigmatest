@@ -737,3 +737,7 @@ items:
       reactions: 0.25
       melee: 0.75
     defaultInventorySlot: STR_LEFT_HAND
+
+# - type: AUX_FELINIDFATALE_STORM_NEEDLER
+
+# - type: AUX_FELINIDFATALE_SLAANESH_HELLPISTOL
