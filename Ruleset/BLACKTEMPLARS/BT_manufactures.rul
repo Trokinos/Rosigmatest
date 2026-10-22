@@ -214,6 +214,78 @@ manufacture:
 
 ###################
 
+  - name: STR_BTDREAD_ARMOR_PLAYER2
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_MARINE
+      - STR_HEAVY_PLASMA_DEP1
+      - STR_UFO_CONSTRUCTION
+      - STR_NOT_GK
+      - STR_MT_BTBR
+    space: 0
+    time: 1200
+    cost: 600000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 25
+      STR_ELERIUM_115: 10
+      STR_KILLPOINT_TOKEN: 60
+      # STR_ALIEN_HABITAT: 1
+
+  - name: STR_BTDREAD_ARMOR_PLAYER3
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_MARINE
+      - STR_FUSION_MISSILE
+      - STR_UFO_CONSTRUCTION
+      - STR_NOT_GK
+      - STR_MT_BTBR
+    space: 0
+    time: 1200
+    cost: 700000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 10
+      STR_KILLPOINT_TOKEN: 60
+      # STR_ALIEN_HABITAT: 1
+
+  - name: STR_BTDREAD_ARMOR_PLAYER4
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_MARINE
+      - STR_LASCAN_TECH
+      - STR_UFO_CONSTRUCTION
+      - STR_NOT_GK
+      - STR_MT_BTBR
+    space: 0
+    time: 1200
+    cost: 600000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 10
+      STR_KILLPOINT_TOKEN: 60
+      # STR_ALIEN_HABITAT: 1
+
+  - name: STR_BTDREAD_ARMOR_PLAYER5
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DREADNOUGHT_MARINE
+      - STR_CASS_R
+      - STR_UFO_CONSTRUCTION
+      - STR_VETERAN
+      - STR_NOT_GK
+      - STR_CHAPTER_PURITY
+      - STR_MT_BTBR  # will be changed to high tier when available
+    space: 0
+    time: 1200
+    cost: 750000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 30
+      STR_ELERIUM_115: 10
+      STR_KILLPOINT_TOKEN: 300
+      # STR_ALIEN_HABITAT: 5
+
+###################
+
   # Vehicles
 
   - name: STR_CRATED_BTDROPPODS
