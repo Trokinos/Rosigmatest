@@ -190,6 +190,7 @@ items:
     refNode: *STR_LIGHT_BOLTER_AMMO
     power: 65
     bigSprite: 3230
+    listOrder: 10297
     tags:
       ITEM_IS_PALETTE_SWAP: 1
       ITEM_GETS_ACCENT_RECOLOR: 1
@@ -203,6 +204,7 @@ items:
     refNode: *STR_BOLTER_AMMO_MC
     power: 80
     bigSprite: 3230
+    listOrder: 10301
     tags:
       ITEM_IS_PALETTE_SWAP: 1
       ITEM_BASE_COLOR: 14

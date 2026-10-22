@@ -249,7 +249,7 @@ items:
     confSnap:
       shots: 2
       name: STR_BURST_SNAP_SHOT
-
+    listOrder: 10292
     compatibleAmmo:
       - STR_LIGHT_BOLTER_AMMO
       - STR_LIGHT_BOLTER_AMMO_MC
@@ -272,7 +272,7 @@ items:
 
     autoShots: 4  # 40k 3  # ROSIGMA 1.06Beta2 4
     sprayWaypoints: 2
-
+    listOrder: 10292
     compatibleAmmo:
       - STR_LIGHT_BOLTER_AMMO
       - STR_LIGHT_BOLTER_AMMO_MC

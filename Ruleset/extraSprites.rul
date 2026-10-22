@@ -6091,6 +6091,16 @@ extraSprites:
     fileSingle: Resources/Eldar/warlock_autopsy_codex.png
   - typeSingle: ELDAR_WARLOCK_ARMOR_CODEX.SPK
     fileSingle: Resources/Eldar/warlock_armor_codex.png
+  - typeSingle: ELDAR_WRAITHGUARD_WRAITHCANNON_ARMOR_CODEX.SPK
+    fileSingle: Resources/Eldar/wraithguard_wraithcannon_armor_codex.png
+  - typeSingle: ELDAR_WRAITHGUARD_DSCYTHE_ARMOR_CODEX.SPK
+    fileSingle: Resources/Eldar/wraithguard_dscythe_armor_codex.png
+  - typeSingle: ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_CODEX.SPK
+    fileSingle: Resources/Eldar/wraithblade_ghostaxe_armor_codex.png
+  - typeSingle: ELDAR_WRAITHBLADE_GHOSTSWORD_ARMOR_CODEX.SPK
+    fileSingle: Resources/Eldar/wraithblade_ghostsword_armor_codex.png
+
+
   - typeSingle: ELDAR_HWP_SHURIKENCANNON_ARMOR_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_hwp_shurikencannon_armor_codex.png
   - typeSingle: ELDAR_HWP_AML_ARMOR_CODEX.SPK
@@ -6188,6 +6198,8 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_deathspinner_codex.png
   - typeSingle: ELDAR_POWER_BLADE_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_powerblade_codex.png
+  - typeSingle: ELDAR_AELDARI_MISSILE_LAUNCHER_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_aeldarimissilelauncher_codex.png
   - typeSingle: ELDAR_TEMPEST_LAUNCHER_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_tempestlauncher_codex.png
   - typeSingle: ELDAR_SPINNERET_RIFLE_CODEX.SPK
@@ -6212,6 +6224,14 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_witchstaff_codex.png
   - typeSingle: ELDAR_SINGING_SPEAR_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_singingspear_codex.png
+  - typeSingle: ELDAR_WRAITHCANNON_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_wraithcannon_codex.png
+  - typeSingle: ELDAR_DSCYTHE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_dscythe_codex.png
+  - typeSingle: ELDAR_GHOSTAXE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_ghostaxe_codex.png
+  - typeSingle: ELDAR_GHOSTSWORD_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_ghostsword_codex.png
   - typeSingle: ELDAR_HWP_SHURIKENCANNON_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_hwp_shurikencannon_codex.png
   - typeSingle: ELDAR_HWP_AML_CODEX.SPK
