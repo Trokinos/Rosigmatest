@@ -612,6 +612,7 @@ items:
       INFECTION_DAMAGE_PERCENT: 50
       INFECTION_TYPE: 3
     clipSize: 2
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
 
   - type: STR_SLAANESHPATH_CHOKE_40MM  # Non-damaging stun gas.
     bigSprite: 4082
@@ -642,6 +643,7 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 50
       ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
     clipSize: 2
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
 
   - type: STR_SLAANESHPATH_SHARD_40MM  # Cursed, armor-piercing fragments: wounds + corruption.
     bigSprite: 2055
@@ -669,6 +671,7 @@ items:
       ToMorale: 4.0 # EXTREMELY debilitating.  
       ArmorEffectiveness: 0.7 # Some shards will likely get through.
       FixRadius: 5
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 20
       INFECTION_DAMAGE_PERCENT: 50  # inflicts % of damage dealt as infection damage
@@ -704,6 +707,7 @@ items:
     invHeight: 1
     hitSound: {mod: 40k, index: 0}
     listOrder: 10331
+    noLOSAccuracyPenalty: 75
     recoveryPoints: 1
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 65 # Slightly nerfed.
