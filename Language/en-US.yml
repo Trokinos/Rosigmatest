@@ -15236,7 +15236,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_D_EVENT: "Encroaching Shadows"
   STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the base.{NEWLINE}{NEWLINE}The generators are working, so it might be a breaker fault. You've no reason to feel fear at a little darkness...{NEWLINE}{NEWLINE}...But you still do. For hours you've felt a headache building; urges and obscene emotions you scarcely recognize as your own. Something about this place is *wrong*. At least the damn cogitator is finally working. Soon, you'll be able to leave."
   STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
-  STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But we forgive you. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}Panicked, you raise your bolter. From behind comes the prick of a needle, and then the hungry darkness swallows you up."
+  STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But we forgive you. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}Panicked, you raise your bolter. From behind comes the prick of a needle, and then the hungry darkness swallows you up."
 
   ### MISSIONS
 
