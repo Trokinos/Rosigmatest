@@ -218,7 +218,7 @@ items:
     costSell: 1500
     weight: 10
     bigSprite: 4080
-    floorSprite: {mod: 40k, index: 1}
+    floorSprite: 2111
     handSprite: 5100
     bulletSprite: {mod: 40k, index: 6}
     fireSound: 2137
@@ -258,7 +258,7 @@ items:
     costSell: 1500
     weight: 15 # Heavier
     bigSprite: 5100
-    floorSprite: {mod: 40k, index: 1}
+    floorSprite: 2112
     handSprite: 5116
     bulletSprite: {mod: 40k, index: 6}
     fireSound: 2137
