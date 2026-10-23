@@ -1288,8 +1288,10 @@ extraSprites:
 
 # Slaanesh strategy
 
-      4080: Resources/PLAYERSLAANESH/weapons/cantus/bolter_cantus_slaan.png
-      4081: Resources/PLAYERSLAANESH/weapons/cantus/bolter_cantus_slaan_gl.png
+      4080: Resources/PLAYERSLAANESH/Weapons/Cantus/bolter_cantus_slaan.png
+      4081: Resources/PLAYERSLAANESH/Weapons/Cantus/bolter_cantus_slaan_gl.png
+      4082: Resources/PLAYERSLAANESH/Weapons/Grenades/40mm_choke.png
+      4083: Resources/PLAYERSLAANESH/Weapons/Grenades/40mm_sonic.png
 
 # Eldars
       4850: Resources/Eldar/weapons/Reaper_launcher_bigObj.png #reaper launcher

@@ -15323,6 +15323,13 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Ammo"
   STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Mag"
   STR_LIGHT_BOLTER_AMMO_BM: "Black Market Bolt Mag"
+  STR_SLAANESHPATH_CHOKE_40MM: "40MM Choke Gas Grenade"
+  STR_SLAANESHPATH_SONIC_40MM: "40MM Sonic Grenade"
+  STR_SLAANESHPATH_BALEFIRE_40MM: "40MM Balefire Grenade"
+  STR_SLAANESHPATH_SHARD_40MM: "40MM Shard Grenade"
+  STR_SLAANESHPATH_HALLUCINOGEN_40MM: "40MM Hallucinogen Grenade"
+  STR_SLAANESHPATH_AMPUTATOR_40MM: "40MM Amputator Round"
+  STR_SLAANESHPATH_FLECHETTE_40MM: "40MM Flechette Round"
   #SOLDIER BONUSES
 
   STR_SEEKER_MARK: "Mark of the Seeker"

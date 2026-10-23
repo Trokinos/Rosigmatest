@@ -2385,3 +2385,23 @@ armors:
     annoyedFemale:      [{mod: 40k, index: 336}, {mod: 40k, index: 337}, {mod: 40k, index: 338}, {mod: 40k, index: 339}, {mod: 40k, index: 340}]  # yamllint disable-line rule:colons
     deathMale:          [{mod: 40k, index: 385}, {mod: 40k, index: 386}, {mod: 40k, index: 387}, {mod: 40k, index: 388}]  # yamllint disable-line rule:colons
     deathFemale:        [{mod: 40k, index: 389}, {mod: 40k, index: 390}, {mod: 40k, index: 392}, {mod: 40k, index: 392}, {mod: 40k, index: 393}]  # yamllint disable-line rule:colons
+
+
+#### SLAANESH STRATEGY
+
+ # Handmaiden
+  - &STR_HANDMAIDEN_NODE
+    type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR #Placeholder
+    selectUnitMale:     [2446, 2447, 2448, 2449, 2457, 2458, 2459]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [2446, 2447, 2448, 2449, 2457, 2458, 2459]  # yamllint disable-line rule:colons
+    startMovingMale:    [2460, 2461, 2462, 2463, 2464]  # yamllint disable-line rule:colons
+    startMovingFemale:  [2460, 2461, 2462, 2463, 2464]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [2465, 2466, 2467, 2468, 2469, 2470]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [2465, 2466, 2467, 2468, 2469, 2470]  # yamllint disable-line rule:colons
+    annoyedMale:        [2472, 2473]  # yamllint disable-line rule:colons
+    annoyedFemale:      [2472, 2473]  # yamllint disable-line rule:colons
+    deathMale:          [2471]  # yamllint disable-line rule:colons
+    deathFemale:        [2471]  # yamllint disable-line rule:colons
+
+  - type: STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR
+    refNode: *STR_HANDMAIDEN_NODE

@@ -491,4 +491,11 @@ extraSprites:
       4978: Resources/Eldar/weapons/spinneretrifle/spinneretrifle_spool_handObj.png
       4986: Resources/Eldar/weapons/dragon_fusion_gun_canister_handObj.png
 
+
+# Slaanesh strategy weapons
+
+      5100: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_hand.png
+      5108: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_fire.png
+      5116: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_gl.png
+
       # 1800-1899 free spaces here, make sure to double check
