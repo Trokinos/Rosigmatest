@@ -4648,7 +4648,7 @@ items:
     armor: 200
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19150
+    listOrder: 10091
     tags:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4957,7 +4957,7 @@ items:
     bigSprite: {mod: 40k, index: 353}
     floorSprite: {mod: 40k, index: 4}
     clipSize: 10
-    listOrder: 19160
+    listOrder: 10096
     armor: 200
     tags:
       ITEM_AMMO_COLOR: 1
@@ -4965,7 +4965,7 @@ items:
   - type: STR_LIGHT_BOLTPISTOL_AMMO_EX
     refNode: *STR_LIGHT_BOLTPISTOL_CLIP_AP
     bigSprite: {mod: 40k, index: 354}
-    listOrder: 19161
+    listOrder: 10096
     armor: 200
     tags:
       ITEM_AMMO_COLOR: 2

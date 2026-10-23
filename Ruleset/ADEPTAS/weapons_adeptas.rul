@@ -1908,6 +1908,7 @@ items:
       - STR_LIGHT_BOLTPISTOL_AMMO_EX
     inventoryMoveCost: #quickdraw
       basePercent: 50
+    listOrder: 10092
     tags:
       REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
