@@ -5,12 +5,23 @@
 items:
   - type: STR_SLAANESHPATH_PIETY
     size: 0.0
+    
   - type: STR_SLAANESHPATH_WARPSTONE_TRIBUTE
     size: 0.0
+
   - type: STR_SLAANESHPATH_SORORITAS_TOKEN
     size: 0.0
+
   - type: STR_SLAANESHPATH_PDF_TOKEN
     size: 0.0
+
+  - type: STR_SLAANESHPATH_MINOR_MISSION_BOUNTY
+    size: 0.0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
 ############### STORY PROGRESSION TOKENS ############
 
   

@@ -3096,11 +3096,43 @@ extraSounds:
       # PANIC and BERSERK
       # DEATH
 
+# SLAANESH STRATEGY SECTION
+
+      # UNIT SECTION
+      # Handmaidens & Exalted Handmaidens
+      
+      # Select Unit
+      2446: Resources/PLAYERSLAANESH/Sounds/handmaiden/temple.wav
+      2447: Resources/PLAYERSLAANESH/Sounds/handmaiden/thirstforblood.wav
+      2448: Resources/PLAYERSLAANESH/Sounds/handmaiden/toolong.wav
+      2449: Resources/PLAYERSLAANESH/Sounds/handmaiden/yourdesire.wav
+      2457: Resources/PLAYERSLAANESH/Sounds/handmaiden/sacrificeneeded.wav
+      2458: Resources/PLAYERSLAANESH/Sounds/handmaiden/landisripe.wav
+      2459: Resources/PLAYERSLAANESH/Sounds/handmaiden/ourblades.wav
+      # Move order
+      2460: Resources/PLAYERSLAANESH/Sounds/handmaiden/moveswiftly.wav
+      2461: Resources/PLAYERSLAANESH/Sounds/handmaiden/movewithhaste.wav
+      2462: Resources/PLAYERSLAANESH/Sounds/handmaiden/onwardsmysisters.wav
+      2463: Resources/PLAYERSLAANESH/Sounds/handmaiden/deathstalks.wav
+      2464: Resources/PLAYERSLAANESH/Sounds/handmaiden/wemovequickly.wav
+      # Attack order
+      2465: Resources/PLAYERSLAANESH/Sounds/handmaiden/rushofthekill.wav
+      2466: Resources/PLAYERSLAANESH/Sounds/handmaiden/killthem1.wav
+      2467: Resources/PLAYERSLAANESH/Sounds/handmaiden/nothroat.wav
+      2468: Resources/PLAYERSLAANESH/Sounds/handmaiden/bloodletting.wav
+      2469: Resources/PLAYERSLAANESH/Sounds/handmaiden/batheinblood.wav
+      2470: Resources/PLAYERSLAANESH/Sounds/handmaiden/riversrunred.wav
+      # Death
+      2471: Resources/PLAYERSLAANESH/Sounds/handmaiden/death1.wav
+      # Annoyed
+      2472: Resources/PLAYERSLAANESH/Sounds/handmaiden/doasyouwish.wav
+      2473: Resources/PLAYERSLAANESH/Sounds/handmaiden/touchme.wav
+
 # Remaining Indexes: (Thanks Theron!)
 
 # 1977 - 1999
 # 2173 - 2199
-# 2445 - 2499
+# 2445 - 2499 - taken by slaanesh temporarily
 # 2557 - 2599
 # 2691 - 2699
 # 2794 - 2799

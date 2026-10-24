@@ -1,0 +1,158 @@
+alienDeployments:
+
+ #### MISSION TYPES:
+ # ATTACK GANGERS
+ # DEFEND TRAITOR GUARD (SIMILAR SETUP TO DEFENDING GUARD OUTPOSTS)
+ # ASSAULT PDF TROOPS (WITH SLAANESH GUARD RATHER THAN CHAOS GUARD SUPPORT)
+ # BAIT SISTERS OF BATTLE
+ # AMBUSH ENFORCER PATROL
+ # ATTACK SISTERS OF BATTLE HOSPITAL
+ # VALKYRIE CRASH RAID - Done?
+ # DEFEND CULTISTS AGAINST ENFORCERS/SISTERS OF BATTLE
+
+
+  - type: STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE
+    alert: STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT
+    alertBackground: VALKCRASHBG.SCR
+    alertDescription: STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT_DESCRIPTION
+    duration: [48, 96]
+    despawnPenalty: 150
+    markerName: STR_INTERCEPTED_PDF_VALKYRIE_SITE
+    briefing:
+      title: STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE
+      palette: 4
+      desc: STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_DESCRIPTION
+      music: gmstory2
+      showCraft: true
+      showTarget: true
+      background: VALKCRASHBG2.SCR
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 4
+        dQty: 5
+        percentageOutsideUfo: 100
+        itemSets: &emptyItemSets
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1
+        dQty: 3
+        percentageOutsideUfo: 100
+        itemSets: *emptyItemSets
+      - alienRank: 3
+        lowQty: 0
+        highQty: 0
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: *emptyItemSets
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: *emptyItemSets
+      - alienRank: 1
+        lowQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *emptyItemSets
+      - alienRank: 0
+        lowQty: 0
+        highQty: 0
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *emptyItemSets
+    script: VALKYRIE_INTERCEPT
+    terrains:
+      - JUNGLE
+    width: 50
+    length: 50
+    height: 9
+    missionBountyItem: STR_SLAANESHPATH_MINOR_MISSION_BOUNTY
+
+  - type: STR_SLAANESHPATH_CATACOMBS_AMBUSH #TODO: SET UP APPROPRIATE ALIEN LISTS
+    markerIcon: 54
+    script: CATACOMB_SCRIPT
+    terrains:
+      - CATACOMB
+    data:
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *emptyItemSets
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *emptyItemSets
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: *emptyItemSets
+      - alienRank: 3
+        lowQty: 2
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: *emptyItemSets
+      - alienRank: 4
+        lowQty: 2
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: *emptyItemSets
+      - alienRank: 5
+        lowQty: 10
+        highQty: 10
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: *emptyItemSets
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *emptyItemSets
+      - alienRank: 7
+        lowQty: 1
+        highQty: 1
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: *emptyItemSets
+    civiliansByType: # REPLACE THESE WITH KHORNE-ALIGNED "CIVILIAN" CULTISTS LATER
+      STR_SLAANESHPATH_CATACOMB_ASPIRING_CHAMPION: 2
+      STR_SLAANESHPATH_CATACOMB_CULTIST: 4
+      STR_CHAOSCULT_PRIESTM_LV1_AI: 1
+      STR_SLAANESHPATH_CATACOMB_CHORF: 1
+
+    shade: 6
+    width: 50
+    length: 50
+    height: 4
+    briefing:
+      desc: STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION
+      music: GMGEO19
+      background: SistersPositiveBG.SCR
+      title: STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE
+    alert: STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE
+    alertBackground: ChaosActivityBG3.SCR
+    markerName: STR_CATACOMBS_MARKERNAME_SLAANESH
+    duration: [220, 440]
+    despawnPenalty: 300
+    missionBountyItem: STR_KILLPOINT_TOKEN # PLACEHOLDER
+    missionBountyItemCount: 300
+
+
+    # - MAKE AMBUSH ARBITES MISSION HIVE_SCRIPT

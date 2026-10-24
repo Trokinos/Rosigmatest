@@ -1291,6 +1291,13 @@ extraSprites:
       3945: Resources/Bigobs/greenkrootelite_corpse.png
       3946: Resources/Bigobs/greenkrootleader_corpse.png
 
+# Slaanesh strategy
+
+      4080: Resources/PLAYERSLAANESH/Weapons/Cantus/bolter_cantus_slaan.png
+      4081: Resources/PLAYERSLAANESH/Weapons/Cantus/bolter_cantus_slaan_gl.png
+      4082: Resources/PLAYERSLAANESH/Weapons/Grenades/40mm_choke.png
+      4083: Resources/PLAYERSLAANESH/Weapons/Grenades/40mm_sonic.png
+
 # Eldars
       4850: Resources/Eldar/weapons/reaper_aml_bigObj.png #reaper launcher
       4851: Resources/Eldar/units/dark_reaper/eldar_reaper_corpse_bigObj.png
@@ -1484,4 +1491,4 @@ extraSprites:
 # 3166
 # 3168 - 3170
 
-# 4047 - 4849
+# 4047 - 4849 - starting from 4080 for Slaanesh - tink

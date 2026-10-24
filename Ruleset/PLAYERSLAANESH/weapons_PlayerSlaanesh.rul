@@ -138,11 +138,59 @@ items:
     arcingShot: true
 
     compatibleAmmo: # Cannot use direct-fire grenades.
-      - STR_SLAANESHPATH_KNOCKOUT_40MM
+      - STR_SLAANESHPATH_CHOKE_40MM
       - STR_SLAANESHPATH_HALLUCINOGEN_40MM
-      # STR_SLAANESHPATH_SONIC_40MM
-      # STR_SLAANESHPATH_SHARD_40MM
+      - STR_SLAANESHPATH_SONIC_40MM
+      - STR_SLAANESHPATH_SHARD_40MM
 
+ #### BALLISTIC WEAPONS ####
+
+  - type: STR_SLAANESHPATH_HEARTBREAKER_SNIPER_RIFLE  #
+    categories: [STR_CAT_SNIPER]
+    dropoff: 3  # light sniper weapon
+    weight: 24  # +4 added weight vs repressor
+    size: 0.4
+    costSell: 9000
+    bigSprite: 3481
+    floorSprite: 3401
+    handSprite: 4200
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 25
+    fireSound: {mod: 40k, index: 4}
+    compatibleAmmo:
+      - STR_HEARTBREAKER_AMMO
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 200
+    autoRange: 12
+    snapRange: 18
+    aimRange: 30
+    accuracySnap: 65
+    accuracyAimed: 80
+    accuracyAuto: 45
+    tuAuto: 40
+    tuSnap: 32
+    tuAimed: 85
+    confAuto:
+      shots: 4
+    confSnap:  # Double Shot
+      shots: 2
+    confAimed:  # Called Precision Shot to emphasize the added lethality
+      name: STR_PRECISION_SHOT
+    listOrder: 11897
+    kneelBonus: 140  # light sniper rifle
+    minRange: 7  # light sniper rifle
+    accuracyMultiplier:
+      firing: [0.5, 0.005]
+    tags:
+      REACTION_MULTIPLIER: 70
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_RECOIL: 30
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 75
+      ITEM_HAS_BIPOD: 1
 
  #### LIGHT BOLTERS ####
 
@@ -169,14 +217,15 @@ items:
     costBuy: 5000
     costSell: 1500
     weight: 10
-    bigSprite: 2006
-    floorSprite: {mod: 40k, index: 1}
-    handSprite: {mod: 40k, index: 1496}
+    bigSprite: 4080
+    floorSprite: 2111
+    handSprite: 1800
     bulletSprite: {mod: 40k, index: 6}
     fireSound: 2137
     compatibleAmmo:
       - STR_CANTUS_BOLTER_AMMO
       - STR_CANTUS_BOLTER_AMMO_PENETRATOR
+      - STR_CANTUS_BOLTER_AMMO_BM
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -186,6 +235,7 @@ items:
     attraction: 1
     listOrder: 10286
     tags:
+      ITEM_FIRING_SPRITE: 1808
       ITEM_RECOIL: 20
       REACTION_MULTIPLIER: 150
 
@@ -196,31 +246,40 @@ items:
     dropoff: 5
     autoRange: 7 
     snapRange: 12
-    aimRange: 0
+    aimRange: 14 # -2 vs hellspite.
     accuracyAuto: 55
     accuracySnap: 85
-    accuracyAimed: 0
+    accuracyAimed: 60
     tuAuto: 30
     tuSnap: 20
-    tuAimed: 0
+    tuAimed: 37
     autoShots: 3
     size: 0.3
     costBuy: 5000
     costSell: 1500
-    weight: 13 # Heavier
-    bigSprite: 2006
-    floorSprite: {mod: 40k, index: 1}
-    handSprite: {mod: 40k, index: 1496}
+    weight: 15 # Heavier
+    bigSprite: 4081
+    floorSprite: 2112
+    handSprite: 1816
     bulletSprite: {mod: 40k, index: 6}
     fireSound: 2137
     compatibleAmmo:
       - STR_CANTUS_BOLTER_AMMO_PENETRATOR
+      - STR_CANTUS_BOLTER_AMMO
+      - STR_CANTUS_BOLTER_AMMO_BM
       - STR_MELTA_GRENADE40
+      - STR_SLAANESHPATH_SHARD_40MM
+      - STR_SLAANESHPATH_CHOKE_40MM
+      - STR_SLAANESHPATH_HALLUCINOGEN_40MM
+   #   - STR_SLAANESHPATH_SONIC_40MM
+   #   - STR_SLAANESHPATH_BALEFIRE_40MM
+   #   - STR_SLAANESHPATH_AMPUTATOR_40MM
+   #   - STR_SLAANESHPATH_FLECHETTE_40MM
     ammo: # PLACEHOLDER
       0:
-        compatibleAmmo: [STR_CANTUS_BOLTER_AMMO_PENETRATOR]
+        compatibleAmmo: [STR_CANTUS_BOLTER_AMMO_PENETRATOR, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO_BM]
       1:
-        compatibleAmmo: [STR_MELTA_GRENADE40]
+        compatibleAmmo: [STR_MELTA_GRENADE40, STR_SLAANESHPATH_SHARD_40MM, STR_SLAANESHPATH_CHOKE_40MM, STR_SLAANESHPATH_HALLUCINOGEN_40MM]
     confAuto:  # Bolter
       ammoSlot: 0  # Bolter
       name: STR_AUTOFIRE
@@ -230,11 +289,11 @@ items:
       name: STR_BURST_SNAP_SHOT
       arcing: false
       shots: 2  # Double shot snap
-    confAimed:  # Grenade launcher 40mm
+    confAimed:  # Grenade launcher 40mm, direct fire only.
       ammoSlot: 1  # Grenades
       name: STR_LAUNCH_GRENADE
       shortName: STR_LAUNCH_GRENADE_SHORT
-      arcing: true     
+      arcing: false     
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -634,7 +693,6 @@ items:
     fixedWeapon: true
     specialIconSprite: 2778
     specialUseEmptyHand: false
-    battleType: 4
     clipSize: -1
     listOrder: 15300
     tags:
@@ -690,3 +748,7 @@ items:
       reactions: 0.25
       melee: 0.75
     defaultInventorySlot: STR_LEFT_HAND
+
+# - type: AUX_FELINIDFATALE_STORM_NEEDLER
+
+# - type: AUX_FELINIDFATALE_SLAANESH_HELLPISTOL

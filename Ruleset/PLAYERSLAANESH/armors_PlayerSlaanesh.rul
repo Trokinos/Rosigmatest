@@ -246,29 +246,76 @@ armors:
     refNode: *STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
     specialWeapon: AUX_CHIRURGEON_GAS_LAUNCHER
 
-  - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR     # Basic cultist armor. Slightly more luxurious and better-performing.
+  - type: STR_SLAANESHPATH_VEILED_ONE_ARMOR
+    camouflageAtDay: -12  # Half Assassin Camo
+    camouflageAtDark: -9
+    visibilityAtDay: 40
+    visibilityAtDark: 28  # + 3 vs reprisalia
+    heatVision: 35  # +5 vs reprisalia
+    antiCamouflageAtDay: 8  # +3 vs reprisalia
+    antiCamouflageAtDark: 8  # +3 vs reprisalia
+    spriteSheet: ADEPTAS_REPRISALIA_BS.PCK
+    spriteInv: REPRI_51
+    drawingRoutine: 0
+    customArmorPreviewIndex: 81
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_REPRISALIA_CORPSE # FIX LATER
+    frontArmor: 70 # -5
+    sideArmor: 55 # -5
+    rearArmor: 45
+    underArmor: 75 # +15
+    damageModifier:  # GUARD/MARINE HYBRID ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.7  # FLAMES
+      - 0.9  # HE
+      - 0.8  # LASCANON
+      - 0.9  # PLASMA
+      - 1.0  # STUN
+      - 0.8  # MELEE 
+      - 0.9  # ACID INQ prepped
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT; droppod proof
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_VEILED_ONE
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [3]
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      INFECTION_RESIST: 40  # infection resistant
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 30
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR     # Decent-quality, custom mesh armor. 
     visibilityAtDay: 40
     visibilityAtDark: 20 
     forcedTorso: 0
     customArmorPreviewIndex: 1121
     corpseBattle:
       - STR_SLAANESH_CULTIST_CORPSE_PLAYER
-    frontArmor: 25 # +5
-    sideArmor: 15
-    rearArmor: 15
-    underArmor: 25 # + 10
+    frontArmor: 40 # Mesh armor
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 35 # + 10
     stats:
-      tu: 0
+      tu: 5
       stamina: 0
       health: 0
-      bravery: 0  # always multiples of 10
-      reactions: 0  # Slightly better reactions
+      bravery: 0  
+      reactions: 5 
       firing: 0
       throwing: 0
-      strength: 0 # No extra strength
+      strength: 0 
       psiStrength: 0
       psiSkill: 0
-      melee: 0 # Slightly better melee
+      melee: 0
     storeItem: STR_NONE
     damageModifier:  # CULTIST ARMOR
       - 1.0  # none
@@ -293,7 +340,7 @@ armors:
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_SLAANESH: 1
-      DODGE_CHANCE: 20
+      DODGE_CHANCE: 15
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
 
   - type: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR     # Work in progress. For now this is identical to normal cultists.

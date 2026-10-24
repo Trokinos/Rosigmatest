@@ -1,0 +1,8 @@
+#facilities:
+
+#  - type: STR_ALTAR_OF_EXCESS
+#    refundValue: 325000
+#    destroyedFacility: STR_CORRIDOR
+#    sickBayAbsoluteBonus: 0.0
+#    sickBayRelativeBonus: 1.0
+#    psiLabs: 10

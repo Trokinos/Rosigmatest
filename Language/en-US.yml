@@ -247,6 +247,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_HULKERARTIFACT_SITE: "MASSIVE ARTIFACT SITE"
   STR_HULKERARTIFACT_SITE_: "MASSIVE ARTIFACT SITE-{0}"
   STR_CATACOMBS_MARKERNAME: "Catacomb Assault"
+  STR_CATACOMBS_MARKERNAME_SLAANESH: "Strike Team Ambush"
   STR_CATACOMBS_MARKERNAME_: "Catacomb Assault-{0}"
   STR_CATACOMBS_HRUD_MARKERNAME: "Hrud Catacomb Reclamation"
   STR_CATACOMBS_HRUD_MARKERNAME_: "Hrud Catacomb Reclamation"
@@ -15281,12 +15282,25 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
   STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you stand as the most senior member of the Order of the Sacred Rose left on this Throne-cursed world."
   STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"
-  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "A few heretic groups pursue you, leading to pitched battles throughout the night.{NEWLINE}{NEWLINE}Even so, your sisters are in good spirits: they fire and maneuver in perfect unison, their hymns mingling with the roar of your bolters.{NEWLINE}{NEWLINE}As their impromptu leader, you take pains not to show the novices even a hint of doubt or worry. Yet, you can't help but feel strangely ill at ease."
-  STR_SLAANESHPATH_GATE_EVENT: "The Voices Of Angels"
-  STR_SLAANESHPATH_INTRO_B_EVENT: "The Bunker"
-  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The entrance to the command bunker is well-hidden; you'd never have found it if not for three of your sisters receiving a guiding vision from the Emperor.{NEWLINE}{NEWLINE}Inside, you find died blood and shell casings, but no dead bodies. Unfortunately, the Vox array is broken and non-functional.{NEWLINE}{NEWLINE}Thankfully, The Emperor helps those who help themselves. Finding a few servitors in a semi-functional state, you set about repairing the array."
-  STR_SLAANESHPATH_INTRO_D_EVENT: "Shadows And Whispers"
-  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of power failure just disabled all the lumens in most sections of the base. Not wishing to take any chances, you order the doors to those sections jammed shut."
+  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Two of the younger novices claim to have seen a vision from the Emperor Himself, of an old command bunker with an intact Vox array.{NEWLINE}{NEWLINE}Shamefully, your relief at this blessed news comes with a tiny pang of envy. You vow to seek penance in the blood of the next heretic you encounter."
+  STR_SLAANESHPATH_GATE_EVENT: "The Voice of the Angel"
+  STR_SLAANESHPATH_INTRO_B_EVENT: "The Old Bunker"
+  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker is well-hidden; you wouldn't have found it if you didn't know where to look.{NEWLINE}{NEWLINE}Unfortunately, the Vox equipment is old and non-functional. Still, maintenance drills in the snow were a favored punishment back at your Schola; you're confident you can manage the repairs. As an old hateful Drill-Abbess put it to you: the Emperor only helps those who know to help themselves."
+  STR_SLAANESHPATH_INTRO_D_EVENT: "Encroaching Shadows"
+  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the base.{NEWLINE}{NEWLINE}The generators are working, so it might be a breaker fault. You've no reason to feel fear at a little darkness...{NEWLINE}{NEWLINE}...But you still do. For hours you've felt a headache building; urges and obscene emotions you scarcely recognize as your own. Something about this place is *wrong*. At least the damn cogitator is finally working. Soon, you'll be able to leave."
+  STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
+  STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But we forgive you. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}Panicked, you raise your bolter. From behind comes the prick of a needle, and then the hungry darkness swallows you up."
+
+  ### MISSIONS
+
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT: "We have detected a PDF distress signal!"
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT_DESCRIPTION: "A disabled PDF Valkyrie is broadcasting an urgent call for assistance. Assault it before loyalist help can arrive."
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: "Raid Disabled PDF Valkyrie"
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_DESCRIPTION: "Poor maintenance or sabotage recently forced a PDF Valkyrie to make a crash landing in this sparsely populated region. Unfortunately for them, their desperate pleas for help on an open Vox frequency has led us right to them. Assault the craft and seize everything of value. Kill or capture the crew if possible, Slaanesh desires more suffering!"
+
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Strike Team Ambush"
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make a fine offering to Slaanesh."
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
   ### CODEX ENTRIES
 
 
@@ -15298,46 +15312,79 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
   STR_SLAANESHPATH_INTRO_BUNKER: "The Abandoned Bunker"
   STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
-  STR_SLAANESHPATH_GATE: "The Voices Of Angels"
+  STR_SLAANESHPATH_GATE: "The Angel's Voice"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
-  STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION: "(Handmaiden Indoctrination)"
-  STR_SLAANESHPATH_RESTORING_THE_ALTAR: "Restoring The Altar"
-
+  STR_RITUALS_OF_EXCESS: "Rituals of Excess"
+  STR_CORRUPT_ADEPTAS_WEAPONRY: "Corrupt Adeptas Weaponry"
+  STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Tier 1 Weapon Corruption)"
+  STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launchers"
+  STR_IMPLEMENTS_OF_TORTURE: "Implements of Torture"
+  STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Pistols"
+  STR_CHOKE_GAS_GRENADES: "Choke Gas Grenades"
+  STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
   ### MANUFACTURE DEFINITIONS
 
-  STR_RITUALS_OF_EXCESS: "Rites of Excess"
-  STR_RITUALS_OF_DEPRAVITY: "Rites of Depravity"
-  STR_RITUALS_OF_PAIN: "Rites of Pain"
-  STR_RITUALS_OF_DECADENCE: "Rites of Decadence"
-  STR_RITUALS_OF_SUBVERSION: "Rites of Subversion"
+  STR_RITES_OF_EXCESS: "Rites of Excess"
+  STR_RITES_OF_DEPRAVITY: "Rites of Depravity"
+  STR_RITES_OF_PAIN: "Rites of Pain"
+  STR_RITES_OF_DECADENCE: "Rites of Decadence"
+  STR_RITES_OF_SUBVERSION: "Rites of Subversion"
+  STR_RITES_OF_CORRUPTION: "Rites of Corruption"
 
   ### MANUFACTURING PROJECTS - PROGRESSION
 
   STR_SLAANESH_PDF_TOKEN_MANUFACTURE: "Infiltrate Local PDF Regiments"
-
-  ### MANUFACTURING PROJECTS - PIETY & WARPSTONES
-
+ ###################################
+ #### MANUFACTURING PROJECTS #######
+ ###################################  
+ #Piety projects
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
   STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
+  STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
 
+#Weapon conversions
+  STR_CORRUPT_CANTUS_BOLTER: "Corrupt Cantus Bolter"
+  STR_ATTACH_GL_TO_CANTUS: "Create Cantus Combi-bolter"
   ## UNIT PROJECTS
 
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
 
-  #ITEM DEFINITIONS
-  ### PLOT ITEMS AND TOKENS
+ #################### UNITS #########################
 
+ #### ENEMY UNITS
+  STR_SLAANESHPATH_CATACOMB_CULTIST_LEADER: "Cultist Leader"
+  STR_SLAANESHPATH_CATACOMB_ASPIRING_CHAMPION: "Aspiring Champion"
+  STR_SLAANESHPATH_CATACOMB_CULTIST: "Khorne Cultist"
+  STR_SLAANESHPATH_CATACOMB_CHORF: "Squat Cultist"
+
+  ##############################
+  ##### ITEM DEFINITIONS #######
+  ##############################
+
+#PLOT ITEMS AND TOKENS
   STR_SLAANESHPATH_PIETY: "Piety"
   STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
   STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
- ### WEAPONS
+  STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
+#WEAPONS
+  STR_BOLTER_CANTUS_SLAAN: "Slaanesh Cantus Bolter"
+  STR_BOLTER_CANTUS_GL: "Slaanesh Cantus Bolter /GL"
   AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
   AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
-
+  STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE: "Gorge Pattern Grenade Launcher"
   ### AMMO
-  STR_CANTUS_BOLTER_AMMO_SLAAN: "Cantus Penetrator Ammo"
-  STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Ammo"
+  STR_CANTUS_BOLTER_AMMO_PENETRATOR: "Cantus Penetrator Magazine"
+  STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Magazine"
+  STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Magazine"
+  STR_LIGHT_BOLTER_AMMO_BM: "Black Market Bolt Magazine"
+  STR_SLAANESHPATH_CHOKE_40MM: "40mm Choke Gas Grenade"
+  STR_SLAANESHPATH_SONIC_40MM: "40mm Sonic Grenade"
+  STR_SLAANESHPATH_BALEFIRE_40MM: "40mm Balefire Grenade"
+  STR_SLAANESHPATH_SHARD_40MM: "40mm Shard Grenade"
+  STR_SLAANESHPATH_HALLUCINOGEN_40MM: "40mm Hallucinogen Grenade"
+  STR_SLAANESHPATH_AMPUTATOR_40MM: "40mm Amputator Round"
+  STR_SLAANESHPATH_FLECHETTE_40MM: "40mm Flechette Round"
   #SOLDIER BONUSES
 
   STR_SEEKER_MARK: "Mark of the Seeker"
@@ -15353,6 +15400,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
   STR_SLAANESHPATH_MORBIDANGEL: "Morbid Angel"
   STR_SLAANESHPATH_EXALTEDANGEL: "Exalted Morbid Angel"
+  STR_SLAANESHPATH_VEILED_ONE: "Veiled One"
 
   ## Slaanesh Adeptas Armors
 
@@ -15388,7 +15436,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ## Slaanesh cultist armors
 
-  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Victual Brother Armor"
+  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Brotherhood Mesh Armor"
 
   ## Slaanesh cultist ranks
 

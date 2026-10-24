@@ -1,30 +1,26 @@
 ###
 
 research:
-  
-  - name: STR_SLAANESHPATH_SELECTED        # (Slaanesh strategy skillfully selected)
-    dependencies:
-      - STR_GENERALLOCK
-
-  # Blocker tech
-  - name: STR_NOT_SLAANESHPATH        # (Not a supple servant of Slaanesh)
 
   ### The Slaanesh condition is
   ### STR_ARBITES: true
   ### STR_NOT_CHAOSCULT: true
+
+  - name: STR_SLAANESHPATH_SELECTED        # (Slaanesh strategy skillfully selected)
+    dependencies:
+      - STR_GENERALLOCK
+  - name: STR_NOT_SLAANESHPATH        # (Not a supple servant of Slaanesh)
+
+
 
   - name: STR_SLAANESHPATH
     points: 0
     cost: 5
     dependencies:
       - STR_ARBITES
-     #lookup: STR_CHOSEN_SLAANESHPATH
+     #lookup: STR_SLAANESHPATH_SELECTED
     unlocks:
       - STR_ALIENS_ONLY # Chaos corruption
-      #- STR_LASER_WEAPONS     # easiest way to activate heavy stubbers (???)
-      #- STR_IMPERIAL_WEAPONS  # Flamer/Shotgun/Guard Laspistol/Guard Lasgun
-      #- STR_GUARD_AND_ARBITES # easiest way to activate stub rifles
-      #- STR_NOT_STEEL_LEGION_STRATEGY # needed to activate normal chimeras (???)
       - STR_NOT_IMPERIUM
       - STR_NOT_CHAOSCULT
       - STR_NOT_THE_IMPERIAL_LAW
@@ -33,10 +29,8 @@ research:
       #- STR_GSC_ARBITES_SPAWNED   # prevent GSC arbites spawn
       - STR_SLAANESHPATH_SELECTED
     disables:
-     # - STR_ARBITES
       - STR_NOT_SLAANESHPATH
       - STR_GENESTEALERS_ACTIVE
-      - STR_CHAOS_PATH
       - STR_CHAOS_STRATEGY_ARBITES
       - STR_CHAOS_STRATEGY
       - STR_ELDAR_STRATEGY
@@ -46,25 +40,28 @@ research:
       # STR_PSI_LAB
       # STR_PSI_AMP
       - STR_THE_MARTIAN_SOLUTION
-      #- STR_DEFAULT_CAMPAIGN
-      - STR_DIFFICULTY_OPTIONS    # does not have harder missions
+      - STR_DIFFICULTY_OPTIONS    # does not have harder missions yet
+      - STR_DEFAULT_CAMPAIGN
 
-     ############## SECTION FOR DISABLED GENERIC TECHS ###############
-      - STR_SMOKE
+     ############## DISABLED GENERIC TECHS GO HERE ###############
+      - STR_SMOKE # Reaquired later.
       - STR_MOTION_SCANNER
-      - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, a lobotimized soldier who cannot feel anything ruins the entire point of combat.
-
-     ############## SECTION FOR DISABLED CHAOS-RELATED TECHS #########
+      - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, lobotomizing soldiers ruins all the fun.
+      - STR_ALIEN_ALLOYS # Re-enabled later.
+      - STR_ELERIUM_115 # Re-enabled later.
+      - STR_PHOSPHOR_GRENADE # Not available to the strategy.
+     ############## DISABLED CHAOS-RELATED TECHS GO HERE #########
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_ORIGINS # Followers of Slaanesh do not need to research chaos implements normally
       - STR_CHAOS_PATH # Already on the only TRUE chaos path!
       - STR_CHAOS_SORCERY
      ###################################################
-    spawnedEvent: STR_SLAANESHPATH_CHOSEN_EVENT
+
+    spawnedEvent: STR_SLAANESHPATH_CHOSEN_EVENT # Lost and Alone. Triggers adhocscript.
 
  ##################### SECTION FOR INTRO-RELATED TECHS ######################
-
+ ### ALL THESE TECHS ARE REQUIRED TO ACCESS THE REAL TECH TREE ###
   - name: STR_SLAANESHPATH_INTRO_BUNKER
     cost: 5
     points: 0
@@ -107,24 +104,182 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
-  - name: STR_SLAANESHPATH_HANDMAIDEN_INDOCTRINATION
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_GENERALLOCK
   ################### END OF SECTION ##################
 
   ################### SECTION FOR EARLY GAME PROGRESSION TECHS #############
   
-  - name: STR_SLAANESHPATH_RESTORING_THE_ALTAR
-    cost: 5
-    points: 0
+  - name: STR_RITUALS_OF_EXCESS # Codex entry.
+    cost: 20
+    points: 20
     dependencies:
-      - STR_SLAANESHPATH_GATE
+      - STR_ALTAR_OF_SLAANESH
 
-  - name: STR_SLAANESHPATH_IMPLEMENTS_OF_FAITH
-    cost: 5
-    points: 0
+  - name: STR_SOULS_FOR_SLAANESH # Unlocks sacrifices.
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_ALTAR_OF_SLAANESH
+      - STR_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_PLEASURE_CHAMBERS
+    cost: 10
     dependencies:
       - STR_SLAANESHPATH_GATE
+    unlocks:
+    - STR_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_ALTAR_OF_SLAANESH
+    cost: 10
+    dependencies:
+    - STR_SLAANESHPATH_GATE
+    unlocks:
+    - STR_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
+    cost: 20
+    dependencies:
+      - STR_SLAANESHPATH_GATE
+    reenables:
+      - STR_SMOKE 
+
+  - name: STR_BLACK_MARKET_AMMUNITION
+    cost: 20
+    dependencies:
+      - STR_CONTACT_ARMS_SMUGGLERS
+    unlocks:
+      - STR_BLACK_MARKET_AMMO_TRADE
+
+  - name: STR_BLACK_MARKET_AMMO_TRADE # Tech that enables buying black market ammo. Disabled later.
+    cost: 0
+    dependencies:
+      - STR_GENERALLOCK
+  
+  - name: STR_CONTACT_HERETEKS # Codex entry. This project unlocks a project requiring warp stones.
+    cost: 20
+    dependencies:
+      - STR_CONTACT_ARMS_SMUGGLERS
+      - STR_PROCURE_TRANSPORTATION
+      - STR_BLACK_MARKET_AMMUNITION
+
+ ###################################
+ ##### PIETY & RITUAL RESEARCH #####
+ ###################################
+
+
+
+ ### TIER 1 PIETY PROJECTS
+ 
+  # Gives a manufacturing project for corrupted cantus bolters.
+  # Disables once Hereteks are capable of manufacturing. 
+
+ ###################################
+ ### WEAPON TECH LEVEL RESEARCH ####
+ ###################################
+ 
+### -<TIER 1 WEAPON TECH LEVEL PROJECTS>- ###
+
+ # Basic bolter weaponry conversion tech.
+  - name: STR_CORRUPT_ADEPTAS_WEAPONRY 
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_RITUALS_OF_EXCESS
+    unlocks:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+  #Tech that gives access to weapon conversions through piety.
+  #Gets disabled once the ability to manufacture these weapons is unlocked. 
+  - name: STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+    cost: 0
+    points: 0
+    dependencies:
+    - STR_CORRUPT_ADEPTAS_WEAPONRY
+  #Disabler for basic weapon corruption. Once you have this tech it's faster and cheaper to buy them.
+  - name: STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1
+    cost: 0
+    points: 0
+    dependencies:
+    - STR_GENERALLOCK
+    disables:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+
+ ##################################
+ ##### TERROR WEAPON RESEARCH #####
+ ##################################
+
+### TIER 1 TERROR PROJECTS
+ #BASIC TECHS
+  - name: STR_IMPLEMENTS_OF_TORTURE # Terror weapon gateway tech.
+    cost: 50
+    points: 10
+    dependencies:
+    - STR_GENERALLOCK
+    unlocks:
+    - STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
+    - STR_CHOKE_GAS_GRENADES
+    - STR_CRUEL_MELEE_WEAPONRY
+
+  - name: STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
+    cost: 20
+    dependencies:
+    - STR_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_CHOKE_GAS_GRENADES
+    cost: 20
+    dependencies:
+    - STR_IMPLEMENTS_OF_TORTURE
+    getOneFree:
+    - STR_SMOKE
+
+  - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
+    cost: 20
+    dependencies:
+    - STR_IMPLEMENTS_OF_TORTURE
+    - STR_CHOKE_GAS_GRENADES
+    - STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
+
+  - name: STR_TERROR_GRENADES 
+    cost: 20
+    dependencies:
+    - STR_TERROR_WEAPONRY
+    getOneFree:
+    - STR_HALLUCINOGEN_GRENADES
+    - STR_SHARD_GRENADES
+    - STR_SONIC_GRENADES
+    - STR_BALEFIRE_GRENADES
+
+ ####40MM terror grenade flavors. All must be unlocked to advance the tech tree.#####  
+  - name: STR_HALLUCINOGEN_GRENADES
+    cost: 0
+    dependencies:
+    - STR_GENERALLOCK  
+  - name: STR_SHARD_GRENADES
+    cost: 0
+    dependencies:
+    - STR_GENERALLOCK  
+  - name: STR_SONIC_GRENADES
+    cost: 0
+    dependencies:
+    - STR_GENERALLOCK
+  - name: STR_BALEFIRE_GRENADES
+    cost: 0
+    dependencies:
+    - STR_GENERALLOCK  
+
+  - name: STR_CRUEL_MELEE_WEAPONRY
+    cost: 20
+    dependencies:
+    - STR_IMPLEMENTS_OF_TORTURE
+
+  - name: STR_CONSTRICTOR_WEBBER_PISTOLS
+    cost: 20
+    dependencies:
+    - STR_TERROR_WEAPONRY
+    getOneFree:
+    - STR_IMPERIAL_WEBBER_DEP1
+
+  - name: STR_PROCURE_TRANSPORTATION # Codex entry.
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_CONTACT_ARMS_SMUGGLERS
     #spawnedEvent:

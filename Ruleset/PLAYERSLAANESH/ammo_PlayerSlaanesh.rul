@@ -3,6 +3,51 @@ extended:
 
 items:
 
+ #### BLACK MARKET AMMO ####
+  - &STR_BM_BOLTER_AMMO
+    type: STR_CANTUS_BOLTER_AMMO_BM  # Low-grade, unreliable light bolts bought at unreasonable prices.
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
+    requiresBuy:
+      - STR_BLACK_MARKET_AMMUNITION
+      - STR_BLACK_MARKET_AMMO_TRADE
+    size: 0.1
+    costBuy: 1500 # way too expensive
+    costSell: 100
+    weight: 2
+    bigSprite: 3230
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: {mod: 40k, index: 26}
+    explosionSpeed: 5
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10287
+    damageAlter:  # DA ILLEGAL PIRATE COPY BOLTER
+      ToArmorPre: 0.15
+      ArmorEffectiveness: 1.0 # worse
+      ToArmor: 0.2
+      ToHealth: 1.0 # worse
+      ToStun: 0.4 # worse
+      ToEnergy: 0.3
+      ToWound: 0.3
+      RandomWound: false
+      RandomType: 2 # 50-150 spread. No weak hits
+    power: 47 # Worse
+    damageType: 1
+    clipSize: 30
+    tags:
+      ITEM_AMMO_COLOR: 0
+      ITEM_IS_PALETTE_SWAP: 1
+      ITEM_GETS_ACCENT_RECOLOR: 1
+      ITEM_BASE_COLOR: 14
+      ITEM_ACCENT_COLOR: 1
+      ITEM_SWAP_BASE_COLOR: 8
+      ITEM_SWAP_ACCENT_COLOR: 6
+
+
   - type: STR_SLAANESHPATH_LASCANNON_CLIP_SMALL  # LASCANNON CLIP
     power: 120 # Significantly less power per shot!
     damageAlter:  # DA SLAANESH LAS
@@ -129,7 +174,7 @@ items:
     handSprite: {mod: 40k, index: 1168}
     hitAnimation: 36
     power: 60 # +5
-    damageType: 4 # AP, to be in line with rebalanced lasgun ammo
+    damageType: 4
     damageAlter:  # LAS SLAANESH
       ToArmorPre: 0.5 # BIG armor damage! 
       ArmorEffectiveness: 0.7 # HIGH Penetrative power! 
@@ -203,14 +248,38 @@ items:
         set subvoxel_drift 0;
         return;
 
+ #### SLAANESH BALLISTIC AMMO ####
+
+  - type: STR_HEARTBREAKER_AMMO
+    categories: [STR_CAT_SNIPER]
+    size: 0.1
+    costSell: 500
+    weight: 6
+    bigSprite: 1002
+    floorSprite: {mod: 40k, index: 1118}
+    handSprite: {mod: 40k, index: 1896}
+    hitSound: {mod: 40k, index: 22}
+    hitAnimation: {mod: 40k, index: 26}
+    explosionSpeed: 5
+    power: 55
+    damageType: 1
+    damageAlter:
+      ToArmorPre: 0.02
+      ArmorEffectiveness: 0.5 # Semi AP
+      ToHealth: 0.8
+    clipSize: 16
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 200
+    listOrder: 11898
+
 
  #### SONIC AMMO ####
 
   - &STR_SLAANESHPATH_SONIC_MUNITION_TEMPLATE
     type: STR_SLAANESHPATH_SONIC_GRENADE  # 4010
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
-    requiresBuy: # Placeholder
-    - STR_SLAANESHPATH
     size: 0.1
     costSell: 250
     weight: 3
@@ -373,7 +442,6 @@ items:
       RandomWound: false
     explosionSpeed: 5
     power: 65
-    damageType: 1
     clipSize: 20
     battleType: 2
     armor: 30
@@ -407,7 +475,6 @@ items:
       ToTime: 0.6
     explosionSpeed: 5
     power: 65
-    damageType: 1
     clipSize: 20
     battleType: 2
     armor: 30
@@ -545,9 +612,10 @@ items:
       INFECTION_DAMAGE_PERCENT: 50
       INFECTION_TYPE: 3
     clipSize: 2
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
 
-  - type: STR_SLAANESHPATH_KNOCKOUT_40MM  # Non-damaging stun gas.
-    bigSprite: 2055
+  - type: STR_SLAANESHPATH_CHOKE_40MM  # Non-damaging stun gas.
+    bigSprite: 4082
     floorSprite: 2060
     handSprite: {mod: 40k, index: 336}  # Needs new
     battleType: 2  # 4 is Grenade, but these are not primed
@@ -575,6 +643,7 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 50
       ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
     clipSize: 2
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
 
   - type: STR_SLAANESHPATH_SHARD_40MM  # Cursed, armor-piercing fragments: wounds + corruption.
     bigSprite: 2055
@@ -602,6 +671,7 @@ items:
       ToMorale: 4.0 # EXTREMELY debilitating.  
       ArmorEffectiveness: 0.7 # Some shards will likely get through.
       FixRadius: 5
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 20
       INFECTION_DAMAGE_PERCENT: 50  # inflicts % of damage dealt as infection damage
@@ -609,6 +679,38 @@ items:
     clipSize: 2
 
   - type: STR_SLAANESHPATH_SONIC_40MM # Direct damage: scaled-down sonic grenades
+    size: 0.1
+    costSell: 250
+    weight: 2
+    bigSprite: 4083
+    floorSprite: 2060
+    handSprite: 2390
+    power: 75
+    damageType: 3
+    damageAlter:  # DA Sound
+      ToHealth: 1.0
+      ToTime: 1.0
+      ToStun: 2.0
+      ToEnergy: 2.0
+      ToMorale: 2.0
+      ToArmorPre: 0.3
+      ToArmor: 0.0 #deals damage on the way in
+      ArmorEffectiveness: 0.7
+      ToTile: 0.75
+      ToItem: 0.75
+      RandomType: 6
+      FixRadius: 3
+    explosionHitSound: 2118  # Sonichit
+    hitAnimation: {mod: 40k, index: 96}
+    battleType: 2
+    invWidth: 1  # smaller
+    invHeight: 1
+    hitSound: {mod: 40k, index: 0}
+    listOrder: 10331
+    noLOSAccuracyPenalty: 75
+    recoveryPoints: 1
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 65 # Slightly nerfed.
 
   - type: STR_SLAANESHPATH_BALEFIRE_40MM # multipurpose: armor melt/incendiary/morale damage
 
