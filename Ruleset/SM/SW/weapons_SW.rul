@@ -284,7 +284,7 @@ items:
     attraction: 1
     invWidth: 1
     invHeight: 1
-    listOrder: 10210
+    listOrder: 10206
 
   - type: STR_BOLTPISTOL_HELFROST_CLIP_MC # Space Wolves Boltpistol Frosty MC Ammo
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
@@ -315,7 +315,7 @@ items:
     attraction: 1
     invWidth: 1
     invHeight: 1
-    listOrder: 10220
+    listOrder: 10212
 
 
 #SW Bolters
