@@ -21,6 +21,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_XCOM_AGENTS_HAVE_LOCATED_AN_ALIEN_BASE_IN_REGION: "We have detected a enemy presence on the planet"
 
   STR_HWP_CAPACITY: " "  # uncomment to check for HWP: -1  # SpeedC is an exception
+  STR_OCEAN_INDICATOR: " " #to fix issue with ocean indicator, details here https://openxcom.org/forum/index.php?topic=12617.0
+  STR_OCEAN_INDICATOR_RNG: " " #to fix issue with ocean indicator, details here https://openxcom.org/forum/index.php?topic=12617.0
   STR_COUNTRY_HAS_SIGNED_A_SECRET_PACT: "{0} has fallen to Chaos and become corrupted. Destroy the Chaos hold there and reclaim the sector!"
   STR_COUNTRIES_HAVE_SIGNED_A_SECRET_PACT: "{0} have fallen to Chaos and become corrupted. Expect no more requisition points from them until they are reclaimed."
 
