@@ -2950,14 +2950,14 @@ items:
     requiresBuyBaseFunc: [TRADE]
     costBuy: 7000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10220
+    listOrder: 10209
 
   - type: STR_PISTOL_CLIP_EX  # Metal Storm Frag
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 7000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10230
+    listOrder: 10209
 
   - type: STR_RIFLED
     # requiresBuyBaseFunc: [TRADE]
