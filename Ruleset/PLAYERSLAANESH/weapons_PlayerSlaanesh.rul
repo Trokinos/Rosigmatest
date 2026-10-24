@@ -219,12 +219,13 @@ items:
     weight: 10
     bigSprite: 4080
     floorSprite: 2111
-    handSprite: 5100
+    handSprite: 1800
     bulletSprite: {mod: 40k, index: 6}
     fireSound: 2137
     compatibleAmmo:
       - STR_CANTUS_BOLTER_AMMO
       - STR_CANTUS_BOLTER_AMMO_PENETRATOR
+      - STR_CANTUS_BOLTER_AMMO_BM
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -234,7 +235,7 @@ items:
     attraction: 1
     listOrder: 10286
     tags:
-      ITEM_FIRING_SPRITE: 5108
+      ITEM_FIRING_SPRITE: 1808
       ITEM_RECOIL: 20
       REACTION_MULTIPLIER: 150
 
@@ -245,26 +246,27 @@ items:
     dropoff: 5
     autoRange: 7 
     snapRange: 12
-    aimRange: 0
+    aimRange: 14 # -2 vs hellspite.
     accuracyAuto: 55
     accuracySnap: 85
-    accuracyAimed: 0
+    accuracyAimed: 60
     tuAuto: 30
     tuSnap: 20
-    tuAimed: 0
+    tuAimed: 37
     autoShots: 3
     size: 0.3
     costBuy: 5000
     costSell: 1500
     weight: 15 # Heavier
-    bigSprite: 5100
+    bigSprite: 4081
     floorSprite: 2112
-    handSprite: 5116
+    handSprite: 1816
     bulletSprite: {mod: 40k, index: 6}
     fireSound: 2137
     compatibleAmmo:
       - STR_CANTUS_BOLTER_AMMO_PENETRATOR
       - STR_CANTUS_BOLTER_AMMO
+      - STR_CANTUS_BOLTER_AMMO_BM
       - STR_MELTA_GRENADE40
       - STR_SLAANESHPATH_SHARD_40MM
       - STR_SLAANESHPATH_CHOKE_40MM
@@ -275,7 +277,7 @@ items:
    #   - STR_SLAANESHPATH_FLECHETTE_40MM
     ammo: # PLACEHOLDER
       0:
-        compatibleAmmo: [STR_CANTUS_BOLTER_AMMO_PENETRATOR, STR_CANTUS_BOLTER_AMMO]
+        compatibleAmmo: [STR_CANTUS_BOLTER_AMMO_PENETRATOR, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO_BM]
       1:
         compatibleAmmo: [STR_MELTA_GRENADE40, STR_SLAANESHPATH_SHARD_40MM, STR_SLAANESHPATH_CHOKE_40MM, STR_SLAANESHPATH_HALLUCINOGEN_40MM]
     confAuto:  # Bolter
@@ -287,11 +289,11 @@ items:
       name: STR_BURST_SNAP_SHOT
       arcing: false
       shots: 2  # Double shot snap
-    confAimed:  # Grenade launcher 40mm
+    confAimed:  # Grenade launcher 40mm, direct fire only.
       ammoSlot: 1  # Grenades
       name: STR_LAUNCH_GRENADE
       shortName: STR_LAUNCH_GRENADE_SHORT
-      arcing: true     
+      arcing: false     
     battleType: 1
     twoHanded: true
     invWidth: 2
