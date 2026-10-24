@@ -6229,6 +6229,13 @@ ufopaedia:
     text: STR_ELDAR_ASPECT_HELPER_SPIDER
     requires:
       - STR_ELDAR_SPIDER_RESEARCH
+  - id: STR_PROMOTE_TO_SEER
+    type_id: 10
+    section: STR_SOLDIERS_UC
+    image_id: ELDAR_SEER_ARMOR_CODEX.SPK # SEER ARMOR CODEX IMAGE
+    text: STR_ELDAR_ASPECT_HELPER_SEER
+    requires:
+      - STR_ELDAR_PSYKER_RESEARCH
   - id: STR_PROMOTE_TO_AUTARCH
     type_id: 10
     section: STR_SOLDIERS_UC
