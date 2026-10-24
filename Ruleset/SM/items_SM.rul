@@ -117,12 +117,13 @@ items:
       ITEM_GETS_ACCENT_RECOLOR: 1
       ITEM_ACCENT_COLOR: 1
 
-  - type: STR_RIFLE  # BOLTER  #         10300
+  - type: STR_RIFLE  # BOLTER  # From 10300 to 10308. Preparing Light Bolter listOrder changes.
     armor: 200
     requiresBuy:
       - STR_MARINE_BOLTERS
       - STR_IMPERIAL_WEAPONS
     costBuy: 10000
+    listOrder: 10308
 
   - type: STR_RIFLEA  # BOLTER ARTIFEX DEATHWATCH
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
@@ -151,7 +152,7 @@ items:
     autoShots: 3
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10305
+    listOrder: 10309 # From 10305 to 10309.
     tags:
       ITEM_RECOIL: 40
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -1621,7 +1622,7 @@ items:
 
   - type: STR_PRIMARIS_CAWL_UNDERSLUNG  # BOLTER  #        10330  TYPE RIFLE
     refNode: *STR_PRIMARIS_RIFLE_TEMPLATE
-    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE, STR_CAT_GRENADE40]
     requiresBuyBaseFunc: [TRADE]
     requiresBuy:
       - STR_PRIMARIS

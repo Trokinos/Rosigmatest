@@ -767,9 +767,14 @@ extraSprites:
       2972: Resources/Floorobs/FloorMedipack.png
       2973: Resources/FOES/FLOOROB_BRIMSTONE_HORROR_CORPSE.png  # STR_BRIMSTONE_HORROR
       2974: Resources/FOES/FLOOROB_NURGLE_ZOMBIE_BS.png
+      3000: Resources/TYRANID/floorob_rippers_x1.png
+      3002: Resources/TYRANID/floorob_rippers_x1B.png
+      3003: Resources/TYRANID/floorob_rippers_x2.png
+      3004: Resources/TYRANID/floorob_rippers_x3.png
+      #3006: Resources/TYRANID/floorob_rippers_x1.png
       3024: Resources/TYRANID/floorob_termagant.png
       3025: Resources/TYRANID/floorob_warrior.png
-      3026: Resources/TYRANID/floorob_ripperswarm.png
+      3026: Resources/TYRANID/floorob_ripperswarm.png # x2B - gibs
       3027: Resources/TYRANID/floorob_spore_acid.png
       3028: Resources/TYRANID/floorob_spore_frag.png
       3029: Resources/TYRANID/floorob_spore_poison.png
@@ -947,12 +952,12 @@ extraSprites:
       4045: Resources/Floorobs/floorob_fhcanondead.png
 
 # Eldars
-      4850: Resources/Eldar/weapons/Reaper_launcher_floorObj.png #reaper launcher
+      4850: Resources/Eldar/weapons/reaper_aml_floorObj.png
       4851: Resources/Eldar/units/dark_reaper/eldar_reaper_corpse_floorObj.png
       4852: Resources/Eldar/units/dark_reaper_exarch/Dark_Reaper_Ex_corpse_floorOb.png
       4853: Resources/Eldar/units/fire_dragon/eldar_dragon_corpse_floorObj.png
       4854: Resources/Eldar/units/fire_dragon_exarch/eldar_dragon_ex_corpse_floorObj.png
-      4855: Resources/Eldar/weapons/Reaper_rocket_floorObj.png
+      4855: Resources/Eldar/weapons/reaper_aml_starshotpod_floorObj.png
       #4856: Resources/Eldar/weapons/tempest_rocketPack_floorObj.png # TODO
       4857: Resources/Eldar/weapons/ranger_longrifle_floorObj.png
       4858: Resources/Eldar/weapons/ranger_longriflescoped_floorObj.png
@@ -1008,6 +1013,10 @@ extraSprites:
       4908: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_floorObj.png
       4909: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_charge_floorObj.png
 
+      4913: Resources/Eldar/weapons/reaper_aml_sunburstpod_floorObj.png
+      4914: Resources/Eldar/weapons/Reaper_launcher_floorObj.png
+      4915: Resources/Eldar/weapons/Reaper_launcher_starswarmpod_floorObj.png
+
       4947: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_1_floorObj.png
       4948: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_2_floorObj.png
       4949: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_3_floorObj.png
@@ -1030,7 +1039,8 @@ extraSprites:
       4966: Resources/Eldar/units/howling_banshee_exarch/eldar_bansheeex_corpse_floorObj.png
       4967: Resources/Eldar/units/swooping_hawk/eldar_hawk_corpse_floorObj.png
       4968: Resources/Eldar/units/swooping_hawk_exarch/eldar_hawkex_corpse_floorObj.png
-
+      4969: Resources/Eldar/units/wraithguard/eldar_wraithguard_corpse_floorObj.png
+      4970: Resources/Eldar/units/wraithguard/eldar_wraithblade_corpse_floorObj.png
 # Free Indexes
 
 # 204 - 209
@@ -1114,15 +1124,12 @@ extraSprites:
 # 2994
 # 2996
 # 2998
-# 3000
-# 3002 - 3004
-# 3006
 # 3009 - 3010
 # 3012
 # 3014
 # 3016 - 3020
 # 3022
-# 3035
+# 3035 #reserved
 # 3050
 # 3052
 # 3054

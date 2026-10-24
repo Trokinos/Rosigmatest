@@ -82,6 +82,41 @@ items:
     transferTime: 10
     listOrder: 6681
 
+  - type: STR_BTDREAD_ARMOR_PLAYER
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+  - type: STR_BTDREAD_ARMOR_PLAYER2
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+  - type: STR_BTDREAD_ARMOR_PLAYER3
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+  - type: STR_BTDREAD_ARMOR_PLAYER4
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+
+  - type: STR_BTDREAD_ARMOR_PLAYER5
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
 
   # other items
 
@@ -159,4 +194,6 @@ items:
     recover: true
     hiddenOnMinimap: true
     specialType: 8
+
+
 

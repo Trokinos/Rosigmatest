@@ -710,3 +710,42 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+
+  # storeitem SW dread
+
+  - type: SWDREAD_ARMOR_UC
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+  - type: SWDREAD_ARMOR2_UC
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+  - type: SWDREAD_ARMOR3_UC
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+  - type: SWDREAD_ARMOR4_UC
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+  - type: SWDREAD_ARMOR5_UC
+    size: 0.2
+    costBuy: 0
+    costSell: 0
+    transferTime: 10
+    listOrder: 6681
+
+
