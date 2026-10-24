@@ -20127,6 +20127,10 @@ extraSprites:
   - typeSingle: RESEARCH_PIPS.SPK
     fileSingle: Resources/CODEX/RESEARCH_PIPS_CODEX.png
 
+  # Help page - Combined interception
+  - typeSingle: COMBINED_INTERCEPTION_CODEX.SPK
+    fileSingle: Resources/CODEX/COMBINED_INTERCEPTION_CODEX.png
+
   # Arbites Heavy Stubber
   - typeSingle: ARBITES_HEAVY_STUB_CODEX.SPK
     fileSingle: Resources/CODEX/ARBITES_HEAVY_STUBBER_CODEX.png
