@@ -45,6 +45,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_TOOLS_AND_RESOURCES: "TOOLS AND RESOURCES"
   STR_SOLDIERS_UC: "SOLDIERS"
 
+
   STR_CODEX_ARMOR_DETAIL: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
 
   STR_ALIEN_RESEARCH: "Warp Amplification"
@@ -5449,6 +5450,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_LONGLAS_TANITH_CODEX: "{NEWLINE} Longlas variant of the Tanith Lasgun. Highly accurate for long ranged sniping."
   STR_LAS_BATTLERIFLE: "Las Battle Rifle"
   STR_LAS_BATTLERIFLE_CODEX: "{NEWLINE} A marksman variant of the tried and true Kantriel pattern Cadian lasgun design, this is an inexpensive mass produced battle rifle that compensates for its bulk, weight and slower firing capacitators with notable accuracy, stability and effective range."
+
+  STR_HELP3: "Combined Interception"
+  STR_HELP_CRAFT: "{NEWLINE} Enemy craft are being deployed across the planet! In order to take them down we must launch interceptors of our own.{NEWLINE}{NEWLINE} To perform a combined interception, once the first craft catches the enemy vessel, press the minimize the window button to order your craft to tail the enemy UFO and wait for more craft to join in the interception. Each minimized window is represented by its icon in the top right, click it to expand it again to order your craft to join the current interception"
 
   STR_HELP_ROSIGMA: "ASSISTANCE (ROSIGMA)"
   STR_HELP_ARMOR_ABILITIES: "Armor Abilities"

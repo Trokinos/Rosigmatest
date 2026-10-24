@@ -493,7 +493,7 @@ ufopaedia:
   - id: STR_HELP3
     type_id: 10
     section: STR_HELP_CAMPAIGN
-    image_id: 3CRAFT.SPK
+    image_id: COMBINED_INTERCEPTION_CODEX.SPK #3CRAFT.SPK
     text: STR_HELP_CRAFT
 
   - delete: STR_HELP4
