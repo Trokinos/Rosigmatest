@@ -75,6 +75,7 @@
 # #AT.ORKZ#           Da Emprah's Greenest
 # #AT.TAU#            The greater good strategy
 # #AT.ELDAR#          Eldar Strategy
+# #AT.SLAAN#          Slaanesh Strategy
 # #SOB#             Adeptas
 # #SOB.REP#           Repentia Strategy
 # #SOB.NOV#           Novice Strategy
@@ -1746,6 +1747,14 @@ ufopaedia:
       - STR_ELDAR_STRATEGY
     image_id: ELDAR_HWP_STARCANNON_ARMOR_CODEX.SPK
     text: STR_ELDAR_HWP_STARCANNON_ARMOR_CODEX
+
+## #AT.SLAAN# SLAANESH STRATEGY SECTION
+
+#  - id: STR_SLAANESHPATH_GATE
+#    type_id: 10
+#    image_id: SlaaneshSisterOrigins.SPK
+#    text: STR_SLAANESHPATH_GATE_CODEX 
+#    section: STR_MISSIONPEDIA
 
 ## #STRATEGY.SOB#
   - delete: STR_CHOSEN_ADEPTAS

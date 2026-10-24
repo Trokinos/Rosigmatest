@@ -15227,14 +15227,14 @@ en-US:  #  yamllint disable-line rule:empty-values
   ### EVENTS
 
   STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
-  STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you stand as the most senior member of the Order of the Sacred Rose left on this Throne-cursed world."
+  STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you are left as the most senior member of the Order of the Sacred Rose on this Throne-cursed world."
   STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"
-  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Two of the younger novices claim to have seen a vision from the Emperor Himself, of an old command bunker with an intact Vox array.{NEWLINE}{NEWLINE}Shamefully, your relief at this blessed news comes with a tiny pang of envy. You vow to seek penance in the blood of the next heretic you encounter."
+  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Two of the younger novices claim seeing a vision from the Emperor Himself, of an old command bunker with an intact Vox array.{NEWLINE}{NEWLINE}Shamefully, your joy at this news comes bundled with a pang of envy. You swear to seek your penance in the blood of the next heretic you encounter."
   STR_SLAANESHPATH_GATE_EVENT: "The Voice of the Angel"
   STR_SLAANESHPATH_INTRO_B_EVENT: "The Old Bunker"
-  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker is well-hidden; you wouldn't have found it if you didn't know where to look.{NEWLINE}{NEWLINE}Unfortunately, the Vox equipment is old and non-functional. Still, maintenance drills in the snow were a favored punishment back at your Schola; you're confident you can manage the repairs. As an old hateful Drill-Abbess put it to you: the Emperor only helps those who know to help themselves."
+  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker is well-hidden; you wouldn't have found it if you didn't know where to look.{NEWLINE}{NEWLINE}Unfortunately, the Vox equipment is old and non-functional. But maintenance drills in the snow were a favored punishment back at your Schola; you're confident you can manage the repairs. As a particularly spiteful Drill-Abbess once put it to you: the Emperor only helps those who help themselves."
   STR_SLAANESHPATH_INTRO_D_EVENT: "Encroaching Shadows"
-  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the base.{NEWLINE}{NEWLINE}The generators are working, so it might be a breaker fault. You've no reason to feel fear at a little darkness...{NEWLINE}{NEWLINE}...But you still do. For hours you've felt a headache building; urges and obscene emotions you scarcely recognize as your own. Something about this place is *wrong*. At least the damn cogitator is finally working. Soon, you'll be able to leave."
+  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the base.{NEWLINE}{NEWLINE}The generators are working, so it might be a breaker fault. You've no reason to feel fear at a bit of darkness...{NEWLINE}{NEWLINE}...But you do. For hours you've felt a headache building; urges and obscene emotions you scarcely recognize as your own. Something about this place is *wrong*. At least the damned array cogitator is finally working. Soon, you'll be able to leave."
   STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
   STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But we forgive you. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}Panicked, you raise your bolter. From behind comes the prick of a needle, and then the hungry darkness swallows you up."
 
@@ -15347,7 +15347,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
   STR_SLAANESHPATH_MORBIDANGEL: "Morbid Angel"
   STR_SLAANESHPATH_EXALTEDANGEL: "Exalted Morbid Angel"
-  STR_SLAANESHPATH_VEILED_ONE: "Veiled One"
+  STR_SLAANESHPATH_HEARTBREAKER: "Heartbreaker"
 
   ## Slaanesh Adeptas Armors
 

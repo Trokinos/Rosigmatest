@@ -145,12 +145,12 @@ items:
 
  #### BALLISTIC WEAPONS ####
 
-  - type: STR_SLAANESHPATH_HEARTBREAKER_SNIPER_RIFLE  #
+  - type: STR_SLAANESHPATH_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
     dropoff: 3  # light sniper weapon
-    weight: 24  # +4 added weight vs repressor
+    weight: 16  # -4 weight vs repressor
     size: 0.4
-    costSell: 9000
+    costSell: 200000
     bigSprite: 3481
     floorSprite: 3401
     handSprite: 4200
@@ -165,24 +165,19 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 200
-    autoRange: 12
     snapRange: 18
     aimRange: 30
     accuracySnap: 65
     accuracyAimed: 80
-    accuracyAuto: 45
-    tuAuto: 40
     tuSnap: 32
     tuAimed: 85
-    confAuto:
-      shots: 4
     confSnap:  # Double Shot
       shots: 2
     confAimed:  # Called Precision Shot to emphasize the added lethality
       name: STR_PRECISION_SHOT
     listOrder: 11897
     kneelBonus: 140  # light sniper rifle
-    minRange: 7  # light sniper rifle
+    minRange: 4  # Reduced minimum range due to bullpup construction
     accuracyMultiplier:
       firing: [0.5, 0.005]
     tags:
@@ -305,6 +300,61 @@ items:
     tags:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
+
+#  - type: STR_BOLTER_DEAZ_SLAAN 
+#    dropoff: 5
+#    autoRange: 7
+#    snapRange: 14
+#    aimRange: 0
+
+#    accuracyAuto: 66  # 40k 66  # ROSIGMA 1.06Beta2 65
+#    accuracySnap: 80  # 40k 80  # ROSIGMA 1.06Beta2 88
+#    accuracyAimed: 0
+
+#    tuSnap: 20
+#    tuAuto: 35  # 40k 40  # ROSIGMA 1.06Beta2 35
+#    tuAimed: 0
+#    size: 0.3
+#    dropoff: 5
+#    costBuy: 5000
+#    costSell: 2750
+#    weight: 18
+#    bigSprite: 550
+#    floorSprite: 1
+#    handSprite: 1496
+#    bulletSprite: 6
+#    fireSound: 707
+#    compatibleAmmo:
+#      - STR_LIGHT_BOLTER_AMMO
+#      - STR_LIGHT_BOLTER_AMMO_MC
+#    battleType: 1
+#    twoHanded: true
+#    invWidth: 2
+#    invHeight: 3
+#    armor: 60
+#    autoShots: 3
+#    bulletSpeed: 30
+#    attraction: 1
+#    listOrder: 10290
+    #*** Melee bayonet
+#    meleeHitSound: 101
+#    meleeAnimation: 0
+#    meleeType: 7
+#    meleePower: 40
+#    meleeBonus:
+#      strength: 0.2
+#      melee: 0.2
+#    meleeAlter:
+#      ArmorEffectiveness: 0.9
+#    accuracyMelee: 110
+#    meleeMultiplier:
+#      flatHundred: 0.5
+#      melee: 0.5
+#    tuMelee: 14
+#    flatMelee:
+#      time: true
+
+  - type: STR_BOLTER_DEAZ_ARACHNE # COMBI WEBBER DEAZ
 
   - type: STR_SLAANESHPATH_BOLTER_NAGA # Corrupted Elohim with direct-fire grenade launcher attachment.
 

@@ -246,7 +246,7 @@ armors:
     refNode: *STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
     specialWeapon: AUX_CHIRURGEON_GAS_LAUNCHER
 
-  - type: STR_SLAANESHPATH_VEILED_ONE_ARMOR
+  - type: STR_SLAANESHPATH_HEARTBREAKER_ARMOR
     camouflageAtDay: -12  # Half Assassin Camo
     camouflageAtDark: -9
     visibilityAtDay: 40

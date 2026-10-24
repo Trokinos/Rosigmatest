@@ -1,8 +1,42 @@
 #facilities:
 
-#  - type: STR_ALTAR_OF_EXCESS
+#  - type: STR_SLAANESH_SHRINE
 #    refundValue: 325000
 #    destroyedFacility: STR_CORRIDOR
 #    sickBayAbsoluteBonus: 0.0
 #    sickBayRelativeBonus: 1.0
 #    psiLabs: 10
+#    placeSound: 98
+#    requiresBaseFunc: [BASE]
+#    requires:
+#      - STR_ALTAR_OF_SLAANESH
+#    spriteShape: 1
+#    spriteFacility: 36
+#    rightClickActionType: 5
+#    buildCost: 100000
+#    buildTime: 10
+#    monthlyCost: 16000
+#    provideBaseFunc: [CHAOS]
+#    mapName: XBASE_49
+#    listOrder: 850
+
+#  - type: STR_PLEASURECHAMBER
+#    placeSound: 98
+#    requiresBaseFunc: [BASE]
+#    requires:
+#      - STR_PLEASURE_CHAMBERS
+#    spriteShape: 1
+#    spriteFacility: 344
+#    buildCost: 500000
+#    buildTime: 20
+#    monthlyCost: 25000
+#    aliens: 10
+#    personnel: 20
+#    provideBaseFunc: [PRISION]
+#    mapName: XBASE_36
+
+#  - type: STR_HERETEK_FORGE
+#
+#
+#
+#

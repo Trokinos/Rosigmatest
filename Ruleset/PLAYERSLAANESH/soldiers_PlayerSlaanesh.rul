@@ -244,7 +244,7 @@ soldiers:
     rankBattleSprite: 4144 
     rankTinySprite: 4144
 
-  - type: STR_SLAANESHPATH_VEILED_ONE # A corrupted represalia. Extremely elite, extremely expensive.
+  - type: STR_SLAANESHPATH_HEARTBREAKER # A corrupted represalia. Extremely elite, extremely expensive.
     flagOffset: 21
     costSalary: 70000 # Twice the cost of a normal reprisalia.
     minStats:
@@ -297,7 +297,7 @@ soldiers:
       bravery: 10
       reactions: 30
       firing: 25
-    armor: STR_SLAANESHPATH_VEILED_ONE_ARMOR
+    armor: STR_SLAANESHPATH_HEARTBREAKER_ARMOR
     allowPiloting: true
     allowPromotion: true
     standHeight: 22
