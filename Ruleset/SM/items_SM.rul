@@ -1681,6 +1681,7 @@ items:
     invHeight: 2
     twoHanded: false
     kneelBonus: 110
+    listOrder: 10105
     tags:
       ITEM_RECOIL: 40
       REACTION_MULTIPLIER: 200  # multiplies base reaction score by this amount divided by 100
@@ -1718,6 +1719,7 @@ items:
     invHeight: 2
     twoHanded: false
     kneelBonus: 110
+    listOrder: 10115
     tags:
       ITEM_RECOIL: 50
       REACTION_MULTIPLIER: 200  # multiplies base reaction score by this amount divided by 100
