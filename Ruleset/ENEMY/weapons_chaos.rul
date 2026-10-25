@@ -181,7 +181,7 @@ items:
     autoShots: 4
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10290
+    listOrder: 10292
     # *** Melee bayonet
     meleeHitSound: {mod: 40k, index: 101}
     meleeAnimation: 0
@@ -240,7 +240,7 @@ items:
     autoShots: 4
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10290
+    listOrder: 10292
     tags:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -1387,7 +1387,7 @@ items:
     battleType: 2
     armor: 30
     attraction: 1
-    listOrder: 10142
+    listOrder: 10207
     tags:
       INFECTION_DAMAGE_PERCENT: 25  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
@@ -1430,7 +1430,7 @@ items:
     autoShots: 2  # only two shots
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10350
+    listOrder: 10293
     tags:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -1484,7 +1484,7 @@ items:
     armor: 100
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10351
+    listOrder: 10294
     tags:
       INFECTION_DAMAGE_PERCENT: 10  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
@@ -1605,14 +1605,14 @@ items:
       ToWound: 0.05  # debilitates and infects instead of wounds
       RandomWound: false
     explosionSpeed: 5
-    power: 50
+    power: 55 # -10 from other bolters due to infection effects
     damageType: 1
     clipSize: 30
     battleType: 2
     armor: 30
     invWidth: 1
     invHeight: 2
-    listOrder: 10295
+    listOrder: 10298
     tags:
       INFECTION_DAMAGE_PERCENT: 25  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch

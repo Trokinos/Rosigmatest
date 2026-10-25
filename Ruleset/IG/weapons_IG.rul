@@ -668,7 +668,7 @@ items:
       ITEM_ACCENT_COLOR: 1
 
   - type: STR_GRENADELAUNCHER_LUCIUS_T1 #KRIEG
-    categories: [STR_CAT_GRENADES]
+    categories: [STR_CAT_GRENADES, STR_CAT_GRENADE40]
     dropoff: 6
     requiresBuy:
       - STR_KRIEG_STRATEGY
@@ -704,7 +704,7 @@ items:
     autoShots: 1
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10776 # Moved to 40mm Grenade section alongside the Stubcannon.
     tags:
       ITEM_RECOIL: 35
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -715,7 +715,7 @@ items:
       ITEM_ACCENT_COLOR: 1
 
   - type: STR_GRENADELAUNCHER_LUCIUS_T2 #KRIEG tier 2
-    categories: [STR_CAT_GRENADES]
+    categories: [STR_CAT_GRENADES, STR_CAT_GRENADE40]
     dropoff: 5 #-1
     requiresBuy:
       - STR_KRIEG_STRATEGY
@@ -755,7 +755,7 @@ items:
     autoShots: 1
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10776 # Moved to 40mm Grenade Section alongside the Stubcannon.
     tags:
       ITEM_RECOIL: 35
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -2950,14 +2950,14 @@ items:
     requiresBuyBaseFunc: [TRADE]
     costBuy: 7000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10220
+    listOrder: 10209
 
   - type: STR_PISTOL_CLIP_EX  # Metal Storm Frag
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 7000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10230
+    listOrder: 10209
 
   - type: STR_RIFLED
     # requiresBuyBaseFunc: [TRADE]
@@ -4485,7 +4485,7 @@ items:
     autoShots: 4
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10293
     tags:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -4563,7 +4563,7 @@ items:
     armor: 200
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10294
     tags:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -4574,6 +4574,7 @@ items:
       ITEM_BASE_COLOR: 4
       ITEM_GETS_ACCENT_RECOLOR: 1
       ITEM_ACCENT_COLOR: 1
+
   - type: STR_MC_UMBRA_GL
     refNode: *UMBRA_GL
     requiresBuy:
@@ -4584,6 +4585,7 @@ items:
     autoShots: 5  # +1
     accuracySnap: 85  # +5
     accuracyAimed: 55  # +5
+    listOrder: 10296
 
   - type: STR_BOLTER_LIGHT_ULTRA  # early access light bolter with market place
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
@@ -4615,7 +4617,7 @@ items:
     autoShots: 3
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10294
     tags:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -4646,7 +4648,7 @@ items:
     armor: 200
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19150
+    listOrder: 10091
     tags:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4677,7 +4679,7 @@ items:
     # autoShots: 2  # maybe give the basic solo some rapid shots vs the DMR version to keep it useful aside for price?
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10288
     tags:
       ITEM_RECOIL: 20  # slightly lower recoil due to single shot and human sized
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4712,7 +4714,7 @@ items:
     # autoShots: 3
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10289
     tags:
       ITEM_RECOIL: 20  # slightly lower recoil due to single shot and human sized
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4746,7 +4748,7 @@ items:
     # autoShots: 3
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10288
     tags:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4765,7 +4767,7 @@ items:
     size: 0.3
     costBuy: 100000  # Should be a fair bit pricier than both lasguns and heavy stubber, not a general purpose rifle unless bathing in cash
     costSell: 5000
-    weight: 30  # heavy
+    weight: 20  # Heavy compared to other Solo Bolters
     bigSprite: 243
     floorSprite: 221
     handSprite: 566
@@ -4801,7 +4803,7 @@ items:
     armor: 200
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19171
+    listOrder: 10289
     tags:
       ITEM_RECOIL: 20  # slightly lower recoil due to single shot and human sized
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4831,7 +4833,7 @@ items:
     armor: 100
     invWidth: 1
     invHeight: 1
-    listOrder: 19180
+    listOrder: 10290
     tags:
       ITEM_AMMO_COLOR: 5
 
@@ -4843,7 +4845,7 @@ items:
     costBuy: 7000  # costs less due to 10 rounds less
     costSell: 300
     bigSprite: 288
-    listOrder: 19181
+    listOrder: 10291
     armor: 200
     tags:
       ITEM_AMMO_COLOR: 1
@@ -4923,7 +4925,7 @@ items:
     armor: 200
     invWidth: 1
     invHeight: 2
-    listOrder: 19180
+    listOrder: 10300
     tags:
       ITEM_IS_PALETTE_SWAP: 1
       ITEM_BASE_COLOR: 14
@@ -4934,7 +4936,7 @@ items:
     refNode: *STR_LIGHT_BOLTER_CLIP_AP
     bigSprite: 3230
     armor: 200
-    listOrder: 19181
+    listOrder: 10300
     hitAnimation: 0
     tags:
       ITEM_IS_PALETTE_SWAP: 1
@@ -4955,7 +4957,7 @@ items:
     bigSprite: {mod: 40k, index: 353}
     floorSprite: {mod: 40k, index: 4}
     clipSize: 10
-    listOrder: 19160
+    listOrder: 10096
     armor: 200
     tags:
       ITEM_AMMO_COLOR: 1
@@ -4963,7 +4965,7 @@ items:
   - type: STR_LIGHT_BOLTPISTOL_AMMO_EX
     refNode: *STR_LIGHT_BOLTPISTOL_CLIP_AP
     bigSprite: {mod: 40k, index: 354}
-    listOrder: 19161
+    listOrder: 10096
     armor: 200
     tags:
       ITEM_AMMO_COLOR: 2

@@ -1175,7 +1175,7 @@ items:
       ITEM_RECOIL: 40
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-  - type: STR_LIGHT_BOLTERSLAAN  # BOLTER SLAANESH  10340
+  - type: STR_LIGHT_BOLTERSLAAN  # LIGHT BOLTER SLAANESH 10293
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.3
     dropoff: 5
@@ -1207,7 +1207,7 @@ items:
     autoShots: 3
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10340
+    listOrder: 10293
     # *** Melee bayonet
     meleeHitSound: {mod: 40k, index: 101}
     meleeAnimation: 0
@@ -1336,7 +1336,7 @@ items:
     autoShots: 3
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10340
+    listOrder: 10141
     tags:
       ITEM_RECOIL: 35
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -1455,7 +1455,7 @@ items:
     armor: 30
     invWidth: 1
     invHeight: 2
-    listOrder: 10341
+    listOrder: 10207
 
   - type: STR_LIGHT_BOLTER_AMMO_SLAAN
     categories: [STR_CAT_BOLTER]
@@ -1484,7 +1484,7 @@ items:
     armor: 30
     invWidth: 1
     invHeight: 2
-    listOrder: 10295
+    listOrder: 10298
 
 
   - type: STR_SLAANESH_ROCKET_LAUNCHER  # MICROMISSILES                 12110
