@@ -3075,7 +3075,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_SQUIG: "Squig"
   STR_SQUIG_ARMOR: "Squig"
-  STR_SQUIG_ARMOR_BOMB: "Bomb Squig"  # ORKMOD
+  STR_SQUIG_ARMOR_BOMB: "Squig Bommarz"  # ORKMOD
   STR_SQUIG_CORPSE: "Squig Corpse"  # ORKMOD
 
   STR_PLAYER_GROT: "Gretchin"
