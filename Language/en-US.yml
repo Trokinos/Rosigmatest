@@ -26,6 +26,13 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_COUNTRY_HAS_SIGNED_A_SECRET_PACT: "{0} has fallen to Chaos and become corrupted. Destroy the Chaos hold there and reclaim the sector!"
   STR_COUNTRIES_HAVE_SIGNED_A_SECRET_PACT: "{0} have fallen to Chaos and become corrupted. Expect no more requisition points from them until they are reclaimed."
 
+  #*** Bounties ***
+  STR_REQUISITION_BOUNTY_50K: "Requisition Bounty: $50,000"
+  STR_REQUISITION_BOUNTY_100K: "Requisition Bounty: $100,000"
+  STR_REQUISITION_BOUNTY_250K: "Requisition Bounty: $250,000"
+  STR_REQUISITION_BOUNTY_500K: "Requisition Bounty: $500,000"
+  STR_REQUISITION_BOUNTY_1M: "Requisition Bounty: $1,000,000"
+
   STR_BASIC_BALLISTICS_DEP: "(Basic Ballistic Weapons)"
   STR_40MM_AMMO_DEP: "(40mm Grenade Ammo)"
 
@@ -3068,7 +3075,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_SQUIG: "Squig"
   STR_SQUIG_ARMOR: "Squig"
-  STR_SQUIG_ARMOR_BOMB: "Bomb Squig"  # ORKMOD
+  STR_SQUIG_ARMOR_BOMB: "Squig Bommarz"  # ORKMOD
   STR_SQUIG_CORPSE: "Squig Corpse"  # ORKMOD
 
   STR_PLAYER_GROT: "Gretchin"
@@ -7918,6 +7925,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ALPHA_LEGION_CORPSE: "Alpha Legionnaire Corpse"
   STR_ALPHA_SOLDIER_AUTOPSY: "Alpha Legionnaire Origins"
   STR_ALPHA_SOLDIER_AUTOPSY_UFOPEDIA: "{NEWLINE}Our intel is very limited on the Alpha Legion, as they have been entirely exterminated. Over three times. Alpha Legionnaires are expert infiltrators and covert operatives that work in small cells known as harrows or cohorts. The Alpha Legion's role in spreading heretical cults has earned them the loathing of the Inquisition."
+
 
   STR_ALPHA_LEGION_CORPSE_DECOY: "Alpha Legion Decoy Corpse"
   STR_ALPHA_LEGION_CORVUS_DECOY_CORPSE: "Alpha Legion Corvus Decoy Corpse"
