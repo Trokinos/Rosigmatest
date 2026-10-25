@@ -1098,7 +1098,7 @@ items:
       STR_ALPHAOFF_LEGION_CORPSE: [1]
 
   - &STR_ALPHA_LEGION_DECOY_CORPSE_TRANSFORM_TEMPLATE
-    type: STR_ALPHA_LEGION_DECOY_CORPSE #you don't recover these; they're facades
+    type: STR_ALPHA_LEGION_CORPSE_DECOY #you don't recover these; they're facades
     costSell: 100
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [1]
