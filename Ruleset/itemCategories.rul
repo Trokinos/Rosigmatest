@@ -17,8 +17,29 @@ itemCategories:
   - type: STR_CAT_SPELL
     listOrder: 208
 
+  - type: STR_CAT_GRENADES # 40k intended to have Grenades category near the bottom of the list, but there was a typo.
+    listOrder: 155
+
+  - type: STR_CAT_GRENADE40 # 40mm Rounds Category, includes standard and chaos 40mm rounds and the weapons that use them.
+    listOrder: 156
+
+  - type: STR_CAT_TRADE # Trade Equipment
+    listOrder: 300 # Near bottom of list for now
+
   - type: STR_CAT_ASSASSINORUM
     listOrder: 500
 
   - type: STR_GSC_FACTION_TRUE
     listOrder: 3000  # high offset because I don't know what things go into the categories
+
+  - delete: STR_CAT_SCOUT # From 40k mod
+
+  - delete: STR_CAT_TACTICAL # From 40k mod
+
+  - delete: STR_CAT_DEVASTATOR # From 40k mod
+
+  - delete: STR_CAT_ASSAULT # From 40k mod
+
+  - delete: STR_CAT_TERMINATOR # From 40k mod
+
+  - delete: STR_CRAFT_WEAPONS # From 40k mod; Armaments category already fills this for the purposes of dropdown organization

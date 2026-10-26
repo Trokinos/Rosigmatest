@@ -3,7 +3,7 @@ extended:
 
 items:
   - type: STR_HEAVY_STUBBER_HYBRID  # Earlier alternative to kombi-rotor cannon
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     requiresBuy:
       - STR_MIDTIER_PREREQ
       - STR_BASIC_BALLISTICS_DEP
@@ -242,7 +242,7 @@ items:
       ITEM_RECOIL: 40
 
   - type: STR_AUTOSHOTGUN  #                               10600
-    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_TRADE]
     size: 0.2
     costBuy: 40000  # 4x standard shotgun. Probably still too high.
     requiresBuyBaseFunc: [TRADE]  # Market exclusive but available from the moment you get the market
@@ -279,7 +279,7 @@ items:
       ITEM_RECOIL: 40
 
   - type: STR_SHOTGUN_DRUM
-    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_TRADE]
     shotgunBehavior: 1   # *** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
     size: 0.1
@@ -334,7 +334,7 @@ items:
     listOrder: 12650  # don't know if this works
 
   - type: STR_LASGUN_ESCHER
-    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     size: 0.2
     weight: 7  # lightish weight
     requiresBuyBaseFunc: [TRADE]
@@ -620,7 +620,7 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
 
   - type: STR_STUBCANNON_GUARD
-    categories: [STR_CAT_GRENADES]
+    categories: [STR_CAT_GRENADES, STR_CAT_GRENADE40]
     dropoff: 5
     requiresBuy:
       - STR_MIDTIER_PREREQ
@@ -657,7 +657,7 @@ items:
     autoShots: 1
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10776 # Moved to 40mm Grenade Section, as that's the only ammo it can take.
     tags:
       ITEM_RECOIL: 35
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -668,7 +668,7 @@ items:
       ITEM_ACCENT_COLOR: 1
 
   - type: STR_GRENADELAUNCHER_LUCIUS_T1 #KRIEG
-    categories: [STR_CAT_GRENADES]
+    categories: [STR_CAT_GRENADES, STR_CAT_GRENADE40]
     dropoff: 6
     requiresBuy:
       - STR_KRIEG_STRATEGY
@@ -704,7 +704,7 @@ items:
     autoShots: 1
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10776 # Moved to 40mm Grenade section alongside the Stubcannon.
     tags:
       ITEM_RECOIL: 35
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -715,7 +715,7 @@ items:
       ITEM_ACCENT_COLOR: 1
 
   - type: STR_GRENADELAUNCHER_LUCIUS_T2 #KRIEG tier 2
-    categories: [STR_CAT_GRENADES]
+    categories: [STR_CAT_GRENADES, STR_CAT_GRENADE40]
     dropoff: 5 #-1
     requiresBuy:
       - STR_KRIEG_STRATEGY
@@ -755,7 +755,7 @@ items:
     autoShots: 1
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10776 # Moved to 40mm Grenade Section alongside the Stubcannon.
     tags:
       ITEM_RECOIL: 35
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -859,7 +859,7 @@ items:
 
 
   - type: STR_AUTOGUN_HIGHGRADE  # sans underslung but with bayonetta
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     dropoff: 4  # -1 HG
     weight: 10  # +2 vs lasgun HG
     requiresBuy:
@@ -926,7 +926,7 @@ items:
       ITEM_ACCENT_COLOR: 1
 
   - type: STR_AUTOGUN_HIGHGRADE_UNDERSLUNG  # 40mm grenade launcher, no bayonetta
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     weight: 20  # +12 vs lasgun HG
     dropoff: 4  # -1 HG
     requiresBuy:
@@ -1150,7 +1150,7 @@ items:
     tuAuto: 0
     tuSnap: 45
     tuAimed: 60
-    listOrder: 10775
+    listOrder: 10785
     tuLoad: 30
     accuracyMultiplier:  # sniper rifle accuracy
       firing: [0.5, 0.005]
@@ -1190,7 +1190,7 @@ items:
     tags:
       ITEM_AMMO_COLOR: 15
     power: 120
-    listOrder: 10777
+    listOrder: 10786
 
   - type: STR_HEAVY_SNIPER_RIFLEG_AMMO_PENETRATOR
     categories: [STR_CAT_SNIPER]
@@ -1219,12 +1219,12 @@ items:
       ToHealth: 0.7  # armor piercing
       ToArmor: 0.05  # armor piercing
     power: 130
-    listOrder: 10778
+    listOrder: 10787
     tags:
       ITEM_AMMO_COLOR: 2
 
   - type: STR_KRAK_GRENADE40  # underslung grenade; krak munition
-    categories: [STR_CAT_GRENADES, STR_CAT_ADEPTAS]
+    categories: [STR_CAT_GRENADES, STR_CAT_ADEPTAS, STR_CAT_GRENADE40]
     size: 0.1
     weight: 3
     armor: 200
@@ -1252,7 +1252,7 @@ items:
     clipSize: 3
     invWidth: 1  # smaller
     invHeight: 1
-    listOrder: 10331
+    listOrder: 10777 # moved to 40mm grenade ammo section
 
   - &STR_HAND_MULTILASER_TEMPLATE
     type: STR_HAND_MULTILASER  # Black Handheld Version, Purchasable in Store
@@ -1293,7 +1293,7 @@ items:
     sprayWaypoints: 2
     recover: true
     fixedWeapon: false
-    listOrder: 10761
+    listOrder: 10755 # Seperate section from the Heavy Stubbers
     minRange: 5 # heavy weapon; cumbersome, not suited to CQC
     tags:
       ITEM_IS_HEAVY_WEAPON: 1
@@ -1318,7 +1318,7 @@ items:
     accuracyAuto: 50 # +15 MC bonus
     autoRange: 14 # Same Range as Inq. Multilaser, +2 MC Bonus
     snapRange: 18 # Same Range as Inq. Multilaser, +2 MC Bonus
-    listOrder: 10762
+    listOrder: 10756 # Seperate section from the Heavy Stubbers
     minRange: 3
 
 
@@ -1408,13 +1408,13 @@ items:
       spendPerShot: 2
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 2
-    listOrder: 10761
+    listOrder: 10772
     tags:
       ITEM_RECOIL: 45
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
 
   - type: STR_ROTOR_CANNON_KOMBI
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     # requiresBuy:
     #   - STR_ROTOR_CANNON_KOMBI  # research topic unlocks manufacturing
     size: 0.5
@@ -1483,7 +1483,7 @@ items:
       arcing: false
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 3
-    listOrder: 10761
+    listOrder: 10773
     tags:
       ITEM_RECOIL: 45
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
@@ -1537,13 +1537,13 @@ items:
       spendPerShot: 2
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 2
-    listOrder: 10761
+    listOrder: 10772
     tags:
       ITEM_RECOIL: 45
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
 
   - type: STR_ROTOR_CANNON_KOMBI_BLACK  # Imperial version
-    categories: [STR_CAT_AUTO]
+    categories: [STR_CAT_AUTO, STR_CAT_GRENADE40]
     requiresBuy:
       - STR_CHAMBER_NOT_ARBITES
       - STR_MT_GK  # Midtier Inquisition
@@ -1615,7 +1615,7 @@ items:
       arcing: false
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 3
-    listOrder: 10761
+    listOrder: 10773
     tags:
       ITEM_RECOIL: 45
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
@@ -1645,7 +1645,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 200
-    listOrder: 10771
+    listOrder: 10774
     tags:
       ITEM_AMMO_COLOR: 1
       ITEM_AMMO_SHADE: -3
@@ -1674,13 +1674,13 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 200
-    listOrder: 10771
+    listOrder: 10775
     tags:
       ITEM_AMMO_COLOR: 1
       ITEM_AMMO_SHADE: -3
 
   - type: STR_ROTOR_KOMBI_BUCKSHOT40
-    categories: [STR_CAT_SHOTGUN]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_GRENADE40]
     weight: 3
     requiresBuy:
       - STR_40MM_AMMO_DEP
@@ -1707,10 +1707,10 @@ items:
       ArmorEffectiveness: 1.15  # armor is pretty effective
       ToStun: 0.3
       ToWound: 0.1
-    listOrder: 10790  # might need reviewing, due to kombi weapon
+    listOrder: 10779  # Moved with 40mm grenade ammo
 
   - type: STR_ROTOR_KOMBI_SLUG40
-    categories: [STR_CAT_SHOTGUN]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_GRENADE40]
     weight: 3
     requiresBuy:
       - STR_40MM_AMMO_DEP
@@ -1735,7 +1735,7 @@ items:
       ArmorEffectiveness: 0.85
       ToStun: 0.5
       ToWound: 0.1
-    listOrder: 10790  # might need reviewing, due to kombi weapon
+    listOrder: 10779  # Moved with 40mm grenade ammo
 
   - type: STR_MOUNTED_HEAVY_BOLTER  # gets 150 % accuracy and 75 % TU costfor being mounted
     bigSprite: {mod: 40k, index: 335}
@@ -2633,6 +2633,7 @@ items:
 
   - type: STR_LASGUN_ACCATRAN
     requiresBuyBaseFunc: [TRADE]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     costBuy: 50000  # made cheaper for balance
     listOrder: 19101
     armor: 200  # to avoid item pile destruction
@@ -2653,12 +2654,14 @@ items:
 
   - type: STR_LASGUN_VOSS  # no bayonet
     requiresBuyBaseFunc: [TRADE]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     costBuy: 7500
     armor: 200  # to avoid item pile destruction
     listOrder: 19102
 
   - type: STR_LASGUN_VOSTROYA
     requiresBuyBaseFunc: [TRADE]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     costBuy: 150000
     listOrder: 19103
     compatibleAmmo:
@@ -2691,6 +2694,7 @@ items:
 
   - type: STR_LASGUN_LUCIUS #for non-Krieg Strats
     requiresBuyBaseFunc: [TRADE]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     requiresBuy:
       - STR_NOT_KRIEG_STRATEGY #added, Krieg gets T1 version instead without TRADE
     bigSprite: 1104
@@ -2831,7 +2835,7 @@ items:
         return;
 
   - type: STR_SHOTLAS
-    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_LASGUN, STR_CAT_TRADE]
     size: 0.3
     requiresBuyBaseFunc: [TRADE]
     requiresBuy:
@@ -2921,34 +2925,39 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 14
 
   - type: STR_PISTOLB
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     armor: 200  # to avoid item pile destruction
     costBuy: 150000
     listOrder: 10110
 
   - type: STR_PISTOLS
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 150000
     armor: 200  # to avoid item pile destruction
     listOrder: 10120
 
   - type: STR_PISTOLH
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 150000
     armor: 200  # to avoid item pile destruction
     listOrder: 10130
 
   - type: STR_PISTOL_CLIP_AP  # Kraken Penetrator
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 7000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10220
+    listOrder: 10209
 
   - type: STR_PISTOL_CLIP_EX  # Metal Storm Frag
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 7000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10230
+    listOrder: 10209
 
   - type: STR_RIFLED
     # requiresBuyBaseFunc: [TRADE]
@@ -2957,12 +2966,14 @@ items:
     listOrder: 10330
 
   - type: STR_RIFLE_CLIP_AP  # Kraken Penetrator
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 15000
     armor: 200  # to avoid item pile destruction
     listOrder: 10420
 
   - type: STR_RIFLE_CLIP_EX  # Metal Storm Frag
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 15000
     armor: 200  # to avoid item pile destruction
@@ -4474,14 +4485,14 @@ items:
     autoShots: 4
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10293
     tags:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
   - &UMBRA_GL
     type: STR_BOLTER_LIGHT_UMBRA_UNDERSLUNG
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CAT_BOLTER, STR_CAT_GRENADE40]
     requiresBuy:
       - STR_LIGHT_BOLTERS_MIDTIER
       - STR_MIDTIER_PREREQ
@@ -4552,7 +4563,7 @@ items:
     armor: 200
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10294
     tags:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -4563,6 +4574,7 @@ items:
       ITEM_BASE_COLOR: 4
       ITEM_GETS_ACCENT_RECOLOR: 1
       ITEM_ACCENT_COLOR: 1
+
   - type: STR_MC_UMBRA_GL
     refNode: *UMBRA_GL
     requiresBuy:
@@ -4573,9 +4585,10 @@ items:
     autoShots: 5  # +1
     accuracySnap: 85  # +5
     accuracyAimed: 55  # +5
+    listOrder: 10296
 
   - type: STR_BOLTER_LIGHT_ULTRA  # early access light bolter with market place
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuy:
       - STR_LIGHT_BOLTERS
       - STR_IMPERIAL_WEAPONS
@@ -4604,13 +4617,13 @@ items:
     autoShots: 3
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10294
     tags:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
   - type: STR_BOLTPISTOL_LIGHT_ULTRA
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuy:
       - STR_LIGHT_BOLTERS
     size: 0.2
@@ -4635,7 +4648,7 @@ items:
     armor: 200
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19150
+    listOrder: 10091
     tags:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4666,7 +4679,7 @@ items:
     # autoShots: 2  # maybe give the basic solo some rapid shots vs the DMR version to keep it useful aside for price?
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10288
     tags:
       ITEM_RECOIL: 20  # slightly lower recoil due to single shot and human sized
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4701,7 +4714,7 @@ items:
     # autoShots: 3
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10289
     tags:
       ITEM_RECOIL: 20  # slightly lower recoil due to single shot and human sized
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4735,7 +4748,7 @@ items:
     # autoShots: 3
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10288
     tags:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4754,7 +4767,7 @@ items:
     size: 0.3
     costBuy: 100000  # Should be a fair bit pricier than both lasguns and heavy stubber, not a general purpose rifle unless bathing in cash
     costSell: 5000
-    weight: 30  # heavy
+    weight: 20  # Heavy compared to other Solo Bolters
     bigSprite: 243
     floorSprite: 221
     handSprite: 566
@@ -4790,7 +4803,7 @@ items:
     armor: 200
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19171
+    listOrder: 10289
     tags:
       ITEM_RECOIL: 20  # slightly lower recoil due to single shot and human sized
       ITEM_COLOR_CHANGES_WITH_AMMO: 14
@@ -4820,7 +4833,7 @@ items:
     armor: 100
     invWidth: 1
     invHeight: 1
-    listOrder: 19180
+    listOrder: 10290
     tags:
       ITEM_AMMO_COLOR: 5
 
@@ -4832,7 +4845,7 @@ items:
     costBuy: 7000  # costs less due to 10 rounds less
     costSell: 300
     bigSprite: 288
-    listOrder: 19181
+    listOrder: 10291
     armor: 200
     tags:
       ITEM_AMMO_COLOR: 1
@@ -4893,7 +4906,7 @@ items:
 
   - &STR_LIGHT_BOLTER_CLIP_AP
     type: STR_LIGHT_BOLTER_AMMO_PEN
-    categories: [STR_CAT_BOLTER]
+    categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuy:
       - STR_LIGHT_BOLTERS
     size: 0.1
@@ -4912,7 +4925,7 @@ items:
     armor: 200
     invWidth: 1
     invHeight: 2
-    listOrder: 19180
+    listOrder: 10300
     tags:
       ITEM_IS_PALETTE_SWAP: 1
       ITEM_BASE_COLOR: 14
@@ -4923,7 +4936,7 @@ items:
     refNode: *STR_LIGHT_BOLTER_CLIP_AP
     bigSprite: 3230
     armor: 200
-    listOrder: 19181
+    listOrder: 10300
     hitAnimation: 0
     tags:
       ITEM_IS_PALETTE_SWAP: 1
@@ -4944,7 +4957,7 @@ items:
     bigSprite: {mod: 40k, index: 353}
     floorSprite: {mod: 40k, index: 4}
     clipSize: 10
-    listOrder: 19160
+    listOrder: 10096
     armor: 200
     tags:
       ITEM_AMMO_COLOR: 1
@@ -4952,7 +4965,7 @@ items:
   - type: STR_LIGHT_BOLTPISTOL_AMMO_EX
     refNode: *STR_LIGHT_BOLTPISTOL_CLIP_AP
     bigSprite: {mod: 40k, index: 354}
-    listOrder: 19161
+    listOrder: 10096
     armor: 200
     tags:
       ITEM_AMMO_COLOR: 2
@@ -6312,6 +6325,7 @@ items:
       ITEM_BASE_COLOR: 4
       ITEM_GETS_ACCENT_RECOLOR: 1
       ITEM_ACCENT_COLOR: 1
+    listOrder: 10790
 
   - &STR_RIPPER_CLIP_DEFAULT
     type: STR_RIPPER_GUN_CLIP
@@ -6323,8 +6337,10 @@ items:
       ToTime: 0.3  # shotguns have impact shock; the Ripper especially so
       ToEnergy: 0.3  # impact shock
       ToStun: 0.5  # impact shock
+    listOrder: 10791
 
   - type: STR_RIPPER_GUN_CLIP_AP
+    categories: [STR_CAT_SHOTGUN]
     costBuy: 6000
     costSell: 1000
     requiresBuy:
@@ -6356,9 +6372,10 @@ items:
     shotgunPellets: 6
     tags:
       ITEM_AMMO_COLOR: 3
-    listOrder: 10790
+    listOrder: 10793
 
   - type: STR_RIPPER_GUN_CLIP_INC
+    categories: [STR_CAT_SHOTGUN]
     costBuy: 3000
     costSell: 800
     requiresBuy:
@@ -6399,7 +6416,7 @@ items:
     shotgunPellets: 6
     tags:
       ITEM_AMMO_COLOR: 4
-    listOrder: 10790
+    listOrder: 10792
 
   - type: STR_LASGUN_CLIP  # LASGUN CLIP                 11010
     armor: 200
@@ -6573,6 +6590,7 @@ items:
     medikitTargetImmune: true
 
   - type: STR_STIMM_AUTOINJECTOR
+    categories: [STR_CAT_EQUIPMENT]
     costBuy: 1000
     costSell: 200
     bigSprite: 1102
@@ -6616,6 +6634,7 @@ items:
       ITEM_IS_NOT_MEDIKIT: 1
 
   - type: STR_TRAUMA_PACK
+    categories: [STR_CAT_EQUIPMENT]
     costBuy: 5000
     costSell: 1000
     bigSprite: 1103
@@ -7816,7 +7835,7 @@ items:
       spendPerShot: 2
 
   - type: STR_SATCHEL_CHARGE_HE  # remote det charge
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    categories: [STR_CAT_GRENADES, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     size: 0.2
     costBuy: 20000
@@ -7851,7 +7870,7 @@ items:
       ITEM_IS_REMOTE_DETONATED: 1
 
   - type: STR_SATCHEL_CHARGE_KRAK  # remote det charge
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    categories: [STR_CAT_GRENADES, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     size: 0.2
     costBuy: 5000
@@ -7886,7 +7905,7 @@ items:
       ITEM_IS_REMOTE_DETONATED: 1
 
   - type: STR_SATCHEL_DETONATOR
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    categories: [STR_CAT_GRENADES, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 500
     costSell: 100

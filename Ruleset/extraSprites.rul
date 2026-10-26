@@ -5260,6 +5260,41 @@ extraSprites:
   - typeSingle: ORK_HEAD_FLAK_HELMET__12__ORK_BODY_04_FLAK_HELMET_03
     fileSingle: Resources/ORK/Paperdolls/ORK_FLAK/ORK_BODY_04_FLAK_HELMET_03.png
 
+  # Player ORK KARAPACE
+  - typeSingle: ORK_PANTS_KARAPACE_PANTSACCESSORY__3__ORK_BODY_01_02_ORK_PANTS_KARAPACE_PANTSACCESSORY_01
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_01_02_KARAPACE_SHINGUARD_01.png
+  - typeSingle: ORK_PANTS_KARAPACE_PANTSACCESSORY__3__ORK_BODY_01_02_ORK_PANTS_KARAPACE_PANTSACCESSORY_02
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_01_02_KARAPACE_SHINGUARD_02.png
+  - typeSingle: ORK_PANTS_KARAPACE_PANTSACCESSORY__3__ORK_BODY_03_04_ORK_PANTS_KARAPACE_PANTSACCESSORY_01
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_03_04_KARAPACE_SHINGUARD_01.png
+  - typeSingle: ORK_PANTS_KARAPACE_PANTSACCESSORY__3__ORK_BODY_03_04_ORK_PANTS_KARAPACE_PANTSACCESSORY_02
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_03_04_KARAPACE_SHINGUARD_02.png
+
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_01_KARAPACE_ARMOR_01
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_01_KARAPACE_ARMOR_01.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_01_KARAPACE_ARMOR_02
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_01_KARAPACE_ARMOR_02.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_01_KARAPACE_ARMOR_03
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_01_KARAPACE_ARMOR_03.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_02_KARAPACE_ARMOR_01
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_02_KARAPACE_ARMOR_01.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_02_KARAPACE_ARMOR_02
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_02_KARAPACE_ARMOR_02.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_02_KARAPACE_ARMOR_03
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_02_KARAPACE_ARMOR_03.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_03_KARAPACE_ARMOR_01
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_03_KARAPACE_ARMOR_01.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_03_KARAPACE_ARMOR_02
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_03_KARAPACE_ARMOR_02.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_03_KARAPACE_ARMOR_03
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_03_KARAPACE_ARMOR_03.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_04_KARAPACE_ARMOR_01
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_04_KARAPACE_ARMOR_01.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_04_KARAPACE_ARMOR_02
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_04_KARAPACE_ARMOR_02.png
+  - typeSingle: ORK_KARAPACE_ARMOR__6__ORK_BODY_04_KARAPACE_ARMOR_03
+    fileSingle: Resources/ORK/Paperdolls/ORK_KARAPACE/ORK_BODY_04_KARAPACE_ARMOR_03.png
+
   # Player ORK BURNA
 
   - typeSingle: ORK_PANTS_BURNA_PANTSACCESSORY__3__ORK_BODY_01_02_ORK_PANTS_BURNA_PANTSACCESSORY_01
@@ -6091,6 +6126,16 @@ extraSprites:
     fileSingle: Resources/Eldar/warlock_autopsy_codex.png
   - typeSingle: ELDAR_WARLOCK_ARMOR_CODEX.SPK
     fileSingle: Resources/Eldar/warlock_armor_codex.png
+  - typeSingle: ELDAR_WRAITHGUARD_WRAITHCANNON_ARMOR_CODEX.SPK
+    fileSingle: Resources/Eldar/wraithguard_wraithcannon_armor_codex.png
+  - typeSingle: ELDAR_WRAITHGUARD_DSCYTHE_ARMOR_CODEX.SPK
+    fileSingle: Resources/Eldar/wraithguard_dscythe_armor_codex.png
+  - typeSingle: ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_CODEX.SPK
+    fileSingle: Resources/Eldar/wraithblade_ghostaxe_armor_codex.png
+  - typeSingle: ELDAR_WRAITHBLADE_GHOSTSWORD_ARMOR_CODEX.SPK
+    fileSingle: Resources/Eldar/wraithblade_ghostsword_armor_codex.png
+
+
   - typeSingle: ELDAR_HWP_SHURIKENCANNON_ARMOR_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_hwp_shurikencannon_armor_codex.png
   - typeSingle: ELDAR_HWP_AML_ARMOR_CODEX.SPK
@@ -6188,6 +6233,8 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_deathspinner_codex.png
   - typeSingle: ELDAR_POWER_BLADE_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_powerblade_codex.png
+  - typeSingle: ELDAR_AELDARI_MISSILE_LAUNCHER_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_aeldarimissilelauncher_codex.png
   - typeSingle: ELDAR_TEMPEST_LAUNCHER_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_tempestlauncher_codex.png
   - typeSingle: ELDAR_SPINNERET_RIFLE_CODEX.SPK
@@ -6212,6 +6259,14 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_witchstaff_codex.png
   - typeSingle: ELDAR_SINGING_SPEAR_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_singingspear_codex.png
+  - typeSingle: ELDAR_WRAITHCANNON_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_wraithcannon_codex.png
+  - typeSingle: ELDAR_DSCYTHE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_dscythe_codex.png
+  - typeSingle: ELDAR_GHOSTAXE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_ghostaxe_codex.png
+  - typeSingle: ELDAR_GHOSTSWORD_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_ghostsword_codex.png
   - typeSingle: ELDAR_HWP_SHURIKENCANNON_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_hwp_shurikencannon_codex.png
   - typeSingle: ELDAR_HWP_AML_CODEX.SPK
@@ -7454,6 +7509,95 @@ extraSprites:
     fileSingle: Resources/Eldar/units/warlock/eldar_warlock_acc_11.png
   - typeSingle: ELDARWARLOCK_ACCESSORY__3__ACCESSORY12
     fileSingle: Resources/Eldar/units/warlock/eldar_warlock_acc_12.png
+
+  # ELDAR WRAITHGUARD
+
+  - typeSingle: ELDARWRAITHGUARD__1__ELDAR
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_body.png
+  - typeSingle: ELDARWRAITHGUARD__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_bodyf.png
+
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_01.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_02.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET3
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_03.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET4
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_04.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET5
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_05.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET6
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_06.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET7
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_07.png
+  - typeSingle: WRAITHGUARD_HELMET__2__CLOSEDHELMET8
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_08.png
+  - typeSingle: WRAITHGUARD_HELMET__2__OPENHELMET_M1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_09.png
+  - typeSingle: WRAITHGUARD_HELMET__2__OPENHELMET_M2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_10.png
+  - typeSingle: WRAITHGUARD_HELMET__2__OPENHELMET_F1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_11.png
+  - typeSingle: WRAITHGUARD_HELMET__2__OPENHELMET_F2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_head_12.png
+
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_01.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_02.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY3
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_03.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY4
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_04.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY5
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_05.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY6
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_06.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY7
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_07.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY8
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_08.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY9
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_09.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY10
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_10.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY11
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_11.png
+  - typeSingle: ELDARWRAITHGUARD_ACCESSORY__3__ACCESSORY12
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithguard_acc_12.png
+
+      # ELDAR WRAITHBLADE
+
+  - typeSingle: ELDARWRAITHBLADE__1__ELDAR
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_body.png
+  - typeSingle: ELDARWRAITHBLADE__1__ELDAR_F
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_bodyf.png
+
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY1
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_01.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY2
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_02.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY3
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_03.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY4
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_04.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY5
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_05.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY6
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_06.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY7
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_07.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY8
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_08.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY9
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_09.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY10
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_10.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY11
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_11.png
+  - typeSingle: ELDARWRAITHBLADE_ACCESSORY__3__ACCESSORY12
+    fileSingle: Resources/Eldar/units/wraithguard/eldar_wraithblade_acc_12.png
 
   # ELDAR GUARDIAN HWP
   # SCATTERLASER HWP
@@ -17707,7 +17851,7 @@ extraSprites:
     subX: 32
     subY: 40
     files:
-      0: Resources/TYRANID/BS_ripperswarm2.png #needs new
+      0: Resources/TYRANID/BS_ripperswarm1.png
   - type: RIPPERSWARM_2_BS.PCK  # DR4
     width: 512
     height: 200
@@ -17867,8 +18011,44 @@ extraSprites:
     fileSingle: Resources/FOES/Inventory/KhRepenLightInv.png
   - typeSingle: ARepentiaInvK.SPK  # INV Repentia Khorne Sister
     fileSingle: Resources/FOES/Inventory/KhorneRepentiaInv.png
-  - typeSingle: KHORNE_DREADNOUGHT_INV.SPK  # STR_KHORNE_DREADNOUGHT
+
+    #KHORNE DREADNOUGHTS
+
+  - typeSingle: KHORNE_DREADNOUGHT_INV.SPK  # STR_KHORNE_DREADNOUGHT #dual chainfists version
     fileSingle: Resources/FOES/Inventory/KHORNE_DREADNOUGHT_INVENTORY.png
+
+  - type: KHORNE_DREADNOUGHT_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/FOES/Battlesprites/KHORNE_DREADNOUGHT_BATTLESPRITES.png
+
+  - typeSingle: KHORNE_DREADNOUGHT_HEAVY_FLAMER_INV.SPK  # STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
+    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_hflamer.png
+
+  - type: KHORNE_DREADNOUGHT_HEAVY_FLAMER_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/CHAOS/WORLDEATERS/bs_khdread_hflamer.png
+
+#  - typeSingle: KHORNE_DREADNOUGHT_LASCANNON_INV.SPK  # STR_KHORNE_DREADNOUGHT_LASCANNON
+#    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_lascannon.png
+
+  - typeSingle: KHORNE_DREADNOUGHT_AUTOCANNON_INV.SPK  # STR_KHORNE_DREADNOUGHT_AUTOCANNON
+    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_autocannon.png
+
+  - type: KHORNE_DREADNOUGHT_AUTOCANNON_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT_AUTOCANNON
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/CHAOS/WORLDEATERS/bs_khdread_autocannon.png
 
     # KHORNE WORLD EATER LEADER
   - type: WORLDEATER_LEADER_BS.PCK
@@ -17884,9 +18064,6 @@ extraSprites:
     fileSingle: Resources/FOESPEDIAADEPTAS/ORIGINS_WORLDEATER_LEADER.png
   - typeSingle: WORLDEATER_LEADER_ARMOR_CODEX.SPK
     fileSingle: Resources/FOESPEDIAADEPTAS/ORIGINS_WORLDEATER_LEADER.png #change
-
-  - typeSingle: KHORNE_DREADNOUGHT_INV.SPK  # STR_KHORNE_DREADNOUGHT
-    fileSingle: Resources/FOES/Inventory/KHORNE_DREADNOUGHT_INVENTORY.png
 
   - typeSingle: ATwistedSisT.SPK  # INV TWisted Sister Tzeentch
     fileSingle: Resources/FOES/Inventory/TzeentchTwistedSisterInv.png
@@ -18427,15 +18604,6 @@ extraSprites:
     subY: 40
     files:
       0: Resources/Adeptas/battlesprite/DemiBloodletterinSuperior.png
-  - type: KHORNE_DREADNOUGHT_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT
-    subX: 32
-    subY: 40
-    width: 256
-    height: 840
-    files:
-      0: Resources/FOES/Battlesprites/KHORNE_DREADNOUGHT_BATTLESPRITES.png
-
-
 
   - type: ADEPTASTZEENTCHBASIC.PCK  # Tzeentch Twisted Sister
     width: 512
@@ -19958,6 +20126,10 @@ extraSprites:
 
   - typeSingle: RESEARCH_PIPS.SPK
     fileSingle: Resources/CODEX/RESEARCH_PIPS_CODEX.png
+
+  # Help page - Combined interception
+  - typeSingle: COMBINED_INTERCEPTION_CODEX.SPK
+    fileSingle: Resources/CODEX/COMBINED_INTERCEPTION_CODEX.png
 
   # Arbites Heavy Stubber
   - typeSingle: ARBITES_HEAVY_STUB_CODEX.SPK

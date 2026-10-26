@@ -130,10 +130,12 @@ research:
     dependencies:
       - STR_ELDAR_STRATEGY
   - name: STR_ELDAR_HWP_SCATTERLASER_ARMOR_RESEARCH
+    cost: 100
     points: 0
     dependencies:
       - STR_ELDAR_STRATEGY
   - name: STR_ELDAR_HWP_AML_ARMOR_RESEARCH
+    cost: 100
     points: 0
     dependencies:
       - STR_ELDAR_STRATEGY
@@ -271,12 +273,6 @@ research:
     dependencies:
       - STR_ELDAR_PSYKER_RESEARCH
 
-  - name: STR_ELDAR_FALLEN_RESURRECTION_RESEARCH  # eldar fallen resurrection
-    cost: 500
-    dependencies:
-      - STR_RECRUIT_ELDAR_T1
-      - STR_MIDTIER_PREREQ
-
   - name: STR_ELDAR_POWER_WEAPONS_ACQUISITION
     cost: 0
     points: 0
@@ -295,6 +291,11 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
+  - name: STR_ELDAR_FALLEN_RESURRECTION_RESEARCH  # eldar fallen resurrection
+    cost: 500
+    dependencies:
+      - STR_RECRUIT_ELDAR_T1
+      - STR_MIDTIER_PREREQ
 #------------------------------------------------------------------
 # TIER 3
   - name: STR_ELDAR_ASURYANI_CAMPAING_T3
@@ -393,6 +394,17 @@ research:
     dependencies:
       - STR_ELDAR_WARLOCK_PATH_RESEARCH
 
+  - name: STR_ELDAR_WRAITHGUARD_RESEARCH  # eldar fallen resurrection
+    cost: 500
+    dependencies:
+      - STR_ELDAR_ASURYANI_CAMPAING_T3
+      - STR_HIGHTIER_PREREQ
+
+  - name: STR_ELDAR_WRAITHBLADE_RESEARCH  # eldar fallen resurrection
+    cost: 500
+    dependencies:
+      - STR_ELDAR_ASURYANI_CAMPAING_T3
+      - STR_HIGHTIER_PREREQ
 #--------------------------------------------------------------------
 # TIER 4 # TODO: related to summoning the avatar of Khaine
   - name: STR_ELDAR_KHAINE_SUMMONING_RESEARCH  # Promotions Allow to summon the avatar

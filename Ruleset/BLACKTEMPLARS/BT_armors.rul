@@ -520,7 +520,7 @@ armors:
       tu: 0  # AC heavy
       stamina: 20
       firing: 10
-      health: 0
+      health: 1
       bravery: 10
       reactions: -10
       throwing: 30
@@ -571,14 +571,13 @@ armors:
     stats:
       tu: 15
       stamina: 20
-      firing: 0
-      health: 0
+      firing: 1
+      health: 1
       bravery: 10
       reactions: -10
-      throwing: 0
+      throwing: 1
       strength: 100
       psiStrength: 5
-      psiSkill: 0
       melee: 15
     frontArmor: 180  # shield
     rearArmor: 100
@@ -593,14 +592,12 @@ armors:
       tu: 5  # SB less heavy than AC
       stamina: 20
       firing: 15  # SB less heavy than AC
-      health: 0
+      health: 1
       bravery: 10
       reactions: -10
       throwing: 30
       strength: 100
-      psiStrength: 0
-      psiSkill: 0
-      melee: 0
+      psiStrength: 1
     builtInWeapons:
       - STR_HB_BT
       - STR_HB_CLIP
@@ -811,7 +808,7 @@ armors:
     instantWoundRecovery: true
     allowInv: true
     customArmorPreviewIndex: [1342, 1343, 1345]
-    storeItem: STR_NONE
+    storeItem: STR_BTDREAD_ARMOR_PLAYER
     corpseGeo: STR_BTDREAD_CORPSE
     corpseBattle:
       - BTDREAD_CORPSE1
@@ -867,8 +864,9 @@ armors:
     spriteInv: BTDREADINV2.SPK
     spriteSheet: BTDREAD2BS.PCK
     customArmorPreviewIndex: [1341, 1343, 1345]
+    storeItem: STR_BTDREAD_ARMOR_PLAYER2
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_PLASMA
       - AUX_DREAD_FLAMER
@@ -884,8 +882,9 @@ armors:
     spriteInv: SWDREADINV3.SPK
     spriteSheet: SWDREAD3BS.PCK
     customArmorPreviewIndex: [1339, 1343, 1345]
+    storeItem: STR_BTDREAD_ARMOR_PLAYER3
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_LAUNCHER
       - AUX_DREAD_FLAMER
@@ -901,8 +900,9 @@ armors:
     spriteInv: BTDREADINV4.SPK
     spriteSheet: BTDREAD4BS.PCK
     customArmorPreviewIndex: [1340, 1343, 1345]
+    storeItem: STR_BTDREAD_ARMOR_PLAYER4
     stats:
-      melee: 0
+      melee: 1
     builtInWeapons:
       - AUX_HOVERTANK_LASER
       - AUX_DREAD_FLAMER
@@ -918,6 +918,7 @@ armors:
     spriteInv: BTDREADINV5.SPK
     spriteSheet: BTDREAD5BS.PCK
     customArmorPreviewIndex: [1340, 1344, 1345]
+    storeItem: STR_BTDREAD_ARMOR_PLAYER5
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
     frontArmor: 260

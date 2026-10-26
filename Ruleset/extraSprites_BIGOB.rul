@@ -167,6 +167,11 @@ extraSprites:
 
       # 800: Resources/Support/800.png  # 40k 030 bug fix
 
+      403: Resources/CHAOS/bigob_chdread_hflamer.png
+      404: Resources/CHAOS/WORLDEATERS/bigob_khdread_hflamer.png
+      405: Resources/CHAOS/THOUSANDSONS/bigob_tzdread_hflamer.png
+      406: Resources/CHAOS/bigob_chdread_lascannon.png
+      407: Resources/CHAOS/WORLDEATERS/bigob_khdread_autocannon.png
       900: Resources/Bigobs/ROTORCANNON_BIGOB.png
       901: Resources/Bigobs/ROTORCANNON_KOMBI_G_BIGOB.png
       902: Resources/Bigobs/ROTOR_CANNON_AMMO_BACKPACK_BIGOB.png
@@ -1287,12 +1292,12 @@ extraSprites:
       3946: Resources/Bigobs/greenkrootleader_corpse.png
 
 # Eldars
-      4850: Resources/Eldar/weapons/Reaper_launcher_bigObj.png #reaper launcher
+      4850: Resources/Eldar/weapons/reaper_aml_bigObj.png #reaper launcher
       4851: Resources/Eldar/units/dark_reaper/eldar_reaper_corpse_bigObj.png
       4852: Resources/Eldar/units/dark_reaper_exarch/Dark_Reaper_Ex_Corpse_bigObj.png
       4853: Resources/Eldar/units/fire_dragon/eldar_dragon_corpse_bigObj.png
       4854: Resources/Eldar/units/fire_dragon_exarch/eldar_dragon_ex_corpse_bigObj.png
-      4855: Resources/Eldar/weapons/Reaper_rocket_bigObj.png
+      4855: Resources/Eldar/weapons/reaper_aml_starshotpod_bigObj.png
       #4856: Resources/Eldar/weapons/tempest_rocketPack_bigObj.png
       4857: Resources/Eldar/weapons/ranger_longrifle_bigObj.png
       4858: Resources/Eldar/weapons/ranger_longriflescoped_bigObj.png
@@ -1347,6 +1352,13 @@ extraSprites:
       4907: Resources/Eldar/weapons/hawkweapons/sunpistol_charge_bigObj.png
       4908: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_bigObj.png
       4909: Resources/Eldar/weapons/hawkweapons/hawkscatterlaser_charge_bigObj.png
+      4910: Resources/Eldar/weapons/wraithcannon_bigObj.png
+      4911: Resources/Eldar/weapons/dscythe_bigObj.png
+      4912: Resources/Eldar/weapons/ghostsword_bigObj.png
+      4913: Resources/Eldar/weapons/reaper_aml_sunburstpod_bigObj.png
+      4914: Resources/Eldar/weapons/Reaper_launcher_bigObj.png
+      4915: Resources/Eldar/weapons/Reaper_launcher_starswarmpod_bigObj.png
+
 
       4943: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_leftleg.png
       4944: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_belt.png
@@ -1374,8 +1386,10 @@ extraSprites:
       4966: Resources/Eldar/units/howling_banshee_exarch/eldar_bansheeex_corpse_bigObj.png
       4967: Resources/Eldar/units/swooping_hawk/eldar_hawk_corpse_bigObj.png
       4968: Resources/Eldar/units/swooping_hawk_exarch/eldar_hawkex_corpse_bigObj.png
+      4969: Resources/Eldar/units/wraithguard/eldar_wraithguard_corpse_bigObj.png
+      4970: Resources/Eldar/units/wraithguard/eldar_wraithblade_corpse_bigObj.png
 
-# All Free Indexes
+# All Free Indexes (Dont forget to edit these afterwards ! :) )
 
 # 403 - 899
 # 918 - 919
