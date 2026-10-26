@@ -31,6 +31,7 @@ items:
     fireSound: [{mod: 40k, index: 839}, {mod: 40k, index: 840}, {mod: 40k, index: 841}]
     compatibleAmmo:
       - STR_SHURIKEN_CLIP
+      - STR_AVENGER_SHURIKEN_CLIP
     accuracySnap: 80
     accuracyAuto: 66
     battleType: 1
@@ -50,7 +51,7 @@ items:
     confAuto:
       name: STR_SHURIKEN_WEAPON_AUTOSHOT
       followProjectiles: false
-    experienceTrainingMode: 6
+    experienceTrainingMode: 5
     tuSnap: 21
     tuAuto: 32
     flatRate: true
@@ -114,8 +115,14 @@ items:
       reactions: 0.7 # makes similar accuracy at lowest reactions, gives avengers extra accuracy at max cap
     invWidth: 2
     invHeight: 3
-    snapRange: 14
-    autoRange: 10
+    confSnap:
+      shots: 4
+      name: STR_SHURIKEN_WEAPON_SNAPSHOT
+      followProjectiles: false
+    confAuto:
+      name: STR_SHURIKEN_WEAPON_AUTOSHOT
+      followProjectiles: false
+    autoShots: 12
     listOrder: 16103
     tags:
       REACTION_MULTIPLIER: 120 # 20% Avenger Bonus
@@ -125,9 +132,9 @@ items:
     weight: 20
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH
-    costBuy: 15000
-    costSell: 5000
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+    costBuy: 50000
+    costSell: 20000
     bigSprite: 4885
     floorSprite: 4885
     handSprite: 1570
@@ -144,10 +151,19 @@ items:
     tuAimed: 40
     aimRange: 19
     accuracyAimed: 100
-    tuAuto: 0
+    tuAuto: 32
+    autoRange: 10
+    confSnap:
+      shots: 4
+      name: STR_SHURIKEN_WEAPON_SNAPSHOT
+      followProjectiles: false
+    confAuto:
+      name: STR_SHURIKEN_WEAPON_AUTOSHOT
+      followProjectiles: false
+    autoShots: 12
     confAimed:
       name: STR_HAWK_WEAPON_AIMEDSHOT
-      shots: 3
+      shots: 4
       followProjectiles: false
     listOrder: 16103
     tags:
@@ -173,6 +189,7 @@ items:
     fireSound: [{mod: 40k, index: 839}, {mod: 40k, index: 840}, {mod: 40k, index: 841}]
     compatibleAmmo:
       - STR_SHURIKEN_CLIP
+      - STR_AVENGER_SHURIKEN_CLIP
     accuracySnap: 75
     accuracyAuto: 60
 #    accuracyAimed: 100
@@ -190,7 +207,7 @@ items:
       name: STR_SHURIKEN_WEAPON_AUTOSHOT
       followProjectiles: false
     autoShots: 9
-    experienceTrainingMode: 6
+    experienceTrainingMode: 5
     battleType: 1
     twoHanded: false
     invWidth: 2
@@ -224,13 +241,14 @@ items:
       firing: 0.5
       reactions: 0.7 # slightly better accuracy at lowest reactions, gives avengers extra accuracy at max cap
     tuSnap: 19
+    confSnap:
+      shots: 4
+      name: STR_SHURIKEN_WEAPON_SNAPSHOT
+      followProjectiles: false
     tuAuto: 30
     flatRate: true
-    accuracySnap: 75
-    accuracyAuto: 60
-    snapRange: 11
-    autoRange: 9
-    autoShots: 9
+
+    autoShots: 12
     battleType: 1
     twoHanded: false
     invWidth: 2
@@ -250,7 +268,7 @@ items:
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
       #Avenger Research
     costBuy: 12000
@@ -266,14 +284,22 @@ items:
       reactions: 0.7 # makes similar accuracy at lowest reactions, gives avengers extra accuracy at max cap
     tuSnap: 19
     tuAimed: 40
-    tuAuto: 0
+    tuAuto: 30
     flatRate: true
-    accuracySnap: 75
     accuracyAimed: 100
     snapRange: 11
     aimRange: 16
+    autoRange: 9
+    confSnap:
+      shots: 4
+      name: STR_SHURIKEN_WEAPON_SNAPSHOT
+      followProjectiles: false
+    confAuto:
+      name: STR_SHURIKEN_WEAPON_AUTOSHOT
+      followProjectiles: false
+    autoShots: 12
     confAimed:
-      shots: 3
+      shots: 4
       name: STR_HAWK_WEAPON_AIMEDSHOT
       followProjectiles: false
     battleType: 1
@@ -524,8 +550,7 @@ items:
     bigSprite: 4914
     floorSprite: 4914
     handSprite: 1810
-    bulletSprite: 0
-    fireSound: {mod: 40k, index: 52}
+    fireSound: [1908, 1909, 1910]
     bulletSpeed: 10
     compatibleAmmo:
       - STR_REAPER_LAUNCHER_AMMO
@@ -1223,8 +1248,8 @@ items:
     invHeight: 3
     clipSize: -1
     recover: false
-    #tags:
-#      REACTION_MULTIPLIER: 50
+    tags:
+      REACTION_MULTIPLIER: 50 # Wraithguard have poor reactions. We nerf them here instead of statcaps so that soldier stats still have relevance.
 
   - type: STR_DSCYTHE # Wraithguard flamer
     categories: [STR_CAT_ELDAR, STR_CAT_FLAMER]
@@ -1263,7 +1288,7 @@ items:
     power: 100
     damageAlter:
       IgnoreOverKill: true # always leaves a corpse
-      # IgnoreSelfDestruct: false
+      # IgnoreSelfDestruct: false # Bombs can still trigger, weapon does not damage items
       IgnoreDirection: false
       #FixRadius: 2
       ToHealth: 1
@@ -1279,7 +1304,7 @@ items:
     tags:
       ITEM_DENY_TRANSFORM: 1 # severs soul of target from body
       DAMAGE_RESIST_PENETRATION_PERCENT: 75 # Dealing with AP RESIST
-      #ITEM_DOESNT_HURT_USER: 1 # Temple Assassins are too skilled to shoot themselves. Staying in flames can be bad though.
+      REACTION_MULTIPLIER: 50 # Wraithguard have poor reactions. We nerf them here instead of statcaps so that soldier stats still have relevance.
 
   - &WRAITHBLADE_GHOSTWEAPON
     type: STR_GHOSTAXE

@@ -16711,7 +16711,7 @@ extraSprites:
 
   - type: CustomArmorPreviews
     width: 360
-    height: 960
+    height: 980
     subX: 12
     subY: 20
     files:
