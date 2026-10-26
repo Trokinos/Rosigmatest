@@ -14287,7 +14287,6 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ORCA_DROPSHIPS_EVENT_GV: "Orca Dropships+"
   STR_ORCA_DROPSHIPS_CODEX_DESCRIPTION_GV: "This huge air transport can lift an entire Hunter Cadre at once. Its high cruise speed and stealth capabiliities render it a top-line rapid response craft. Many examples serving on the frontline have been refit to the uparmored Orca-V assault configuration, trading top speed and agility for survivability in the landing zone."
 
-
   # STR_BLESSED_NANOMEDICINES_GV: "Blessed Nanomedicines"
   # STR_BLESSED_NANOMEDICINES_EVENT_GV: "Blessed Nanomedicines"
   # STR_BLESSED_NANOMEDICINES_CODEX_DESCRIPTION_GV: "PLACEHOLDER."
@@ -14807,11 +14806,19 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ARGENT_DAWN_SUCCESS_GV: "(Sororitas Rescued)"
   STR_FREE_GUARDSMEN_DESCRIPTION_GV: "Guard loyalists on Pelega IV have suffered a comprehensive defeat and surviving forces are retreating towards the Imperial capital. Some deserters rounded up in your territory have accepted an offer to join your forces."
 
+  STR_PROM_PROMISE_GV: "Some Blood For Oil"
+  STR_PROM_PROMISE_GV_BRIEFING: "One of our contacts in the black market has experienced unacceptable business losses after treacherous Guardsmen occupied their promethium refinery.{NEWLINE}{NEWLINE}Our contact proposes a deal: the severed hands of the thieves in return for a large shipment of promethium."
+  STR_PROM_PROMISE_GV_ALERT: "TRAITORS CAPTURE PROMETHIUM REFINERY"
+  STR_PROM_PROMISE_GV_ALERT_DESCRIPTION: "One of our contacts in the black market has experienced unacceptable business losses stemming from unauthorized Guard occupation of a regional promethium refinery.{NEWLINE}{NEWLINE}Our contact proposes a deal: the severed hands of the thieves in return for a large shipment of promethium.{NEWLINE}{NEWLINE}The offer is open for the next four weeks."
+  # STR_PROM_PROMISE_GV_ALERT_DESCRIPTION: "PELEGA SHRINEWIRE -- MARKETS NEWS{NEWLINE}{NEWLINE}Eastern Suns Energy (PSE: ESE) fell 3% today on news of another refinery seizure by troops affiliated with the controversial Colonel Tenax. Although critics have leveled shocking allegations of heresy and bizarre acts against his forces, Tenax says his actions carry full Imperial sanction."
+  STR_PROM_PROMISE_GV_SITE: "TRAITOR REFINERY"
+  STR_PROM_PROMISE_GV_SUCCESS: "REFINERY SECURED"
+
   STR_FINAL_LANDING_GUEVESA_GV: "MONT'KA: SILVER TOWER LANDING"
   STR_FINAL_LANDING_GUEVESA_GV_: "MONT'KA: SILVER TOWER"
   STR_FINAL_LANDING_GUEVESA_GV_BRIEFING: "Reality shudders before you. The ancient stone of Pelega recoils, thrown back in furrowed heaps from its losing battle against the sliced angles of the Silver Tower. Ahead of you lies a massive trenchline crawling with daemons and horrors whispered of only in legend. Strike down the gates of this fell tower and prepare to save your world!{NEWLINE}{NEWLINE}TSUNAMI-GV//SEVERE WARP STRESS ALERT{NEWLINE}{NEWLINE}FAILURE IS NOT AN OPTION"
   STR_FINAL_ENTRANCE_GUEVESA_GV: "MONT'KA: SILVER TOWER ENTRANCE"
-  STR_FINAL_ENTRANCE_GUEVESA_GV_BRIEFING: "We have breached the walls of old Ravenna to discover a broken hellscape of twisted Imperial fortifications pierced through with jagged fangs, as if they had been caught in the maw of some vast daemonic beast. Betrayal lies before us, and the forces of evil close in behind. There is no time to consolidate. Our only hope is an immediate strike into the jaws of hell itself.{NEWLINE}{NEWLINE}TSUNAMI-GV//DIMENSIONAL FATIGUE WARNING{NEWLINE}{NEWLINE}FAILURE IS NOT AN OPTION"
+  STR_FINAL_ENTRANCE_GUEVESA_GV_BRIEFING: "We have breached the walls of old Ravenna to discover a broken hellscape of twisted Imperial fortifications pierced through with jagged fangs, as if they had been caught in the maw of some vast daemonic beast. Betrayal lies before us, and the forces of evil close in behind. There is no time to consolidate. Our only hope is an immediate strike into the jaws of hell itself.{NEWLINE}{NEWLINE}TSUNAMI-GV//SEVERE WARP STRESS ALERT{NEWLINE}{NEWLINE}FAILURE IS NOT AN OPTION"
   STR_FINAL_ASSAULT_GUEVESA_GV: "MONT'KA: SILVER TOWER ASSAULT"
   STR_FINAL_ASSAULT_GUEVESA_GV_BRIEFING: "By flamer, fusion, and pulse you have crossed the mangled fortifications and opened a way into the defiled heart of Imperial power on this world. The Silver Tower rears up in horrific majesty from the ruins of an Inquisitorial command bunker. Roiling waves of empyrean corruption wash across the surrounding wastes. Salvation lies within your grasp. Strike swiftly, Commander!{NEWLINE}{NEWLINE}TSUNAMI-GV//ETHERIC DISRUPTION CRITICAL{NEWLINE}{NEWLINE}FAILURE IS NOT AN OPTION"
 
