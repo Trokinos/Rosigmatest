@@ -9,7 +9,7 @@
 #    placeSound: 98
 #    requiresBaseFunc: [BASE]
 #    requires:
-#      - STR_ALTAR_OF_SLAANESH
+#      - STR_SLAANESHPATH
 #    spriteShape: 1
 #    spriteFacility: 36
 #    rightClickActionType: 5
@@ -20,11 +20,11 @@
 #    mapName: XBASE_49
 #    listOrder: 850
 
-#  - type: STR_PLEASURECHAMBER
+#  - type: STR_SLAANESHPRISON_TIER1
 #    placeSound: 98
 #    requiresBaseFunc: [BASE]
 #    requires:
-#      - STR_PLEASURE_CHAMBERS
+#      - STR_CHAMBERS_OF_AGONY
 #    spriteShape: 1
 #    spriteFacility: 344
 #    buildCost: 500000

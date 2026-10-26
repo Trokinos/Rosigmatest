@@ -117,6 +117,28 @@ items:
     refNode: *STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
     power: 100
 
+ #### SLAANESH PLASMA AMMO ####
+
+  - type: STR_LIGHT_MELTA_AMMO_SLAAN  # Slaanesh variant of meltagun ammo.
+    power: 10 # - 2 vs normal
+    damageType: 11
+    damageAlter:  # DA MELTA SLAN
+      RandomType: 6
+      ToArmorPre: 1.0
+      ToHealth: 1.0 # - 0.5 vs normal
+      ToTile: 6.5 # + 0.5 vs normal
+      ToWound: 0.2 # +0.15 vs normal
+      ToMorale: 0.2 # Slaanesh profile
+      ToEnergy: 0.2 # Slaanesh profile
+      RandomWound: false
+      TileDamageMethod: 2
+    shotgunBehavior: 1
+    shotgunPellets: 6
+    shotgunSpread: 0
+    powerRangeReduction: 1.5 # Slightly worse than normal melta
+    powerRangeThreshold: 8.0 # 
+    clipSize: 12 # +6
+
  #### SLAANESH LAS AMMO ####
 
   - &STR_SLAANESHPATH_LASGUN_MUNITION_STANDARD_TEMPLATE

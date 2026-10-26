@@ -44,12 +44,13 @@ research:
       - STR_DEFAULT_CAMPAIGN
 
      ############## DISABLED GENERIC TECHS GO HERE ###############
-      - STR_SMOKE # Reaquired later.
+      - STR_SMOKE # Alternative tech exists.
       - STR_MOTION_SCANNER
       - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, lobotomizing soldiers ruins all the fun.
       - STR_ALIEN_ALLOYS # Re-enabled later.
       - STR_ELERIUM_115 # Re-enabled later.
       - STR_PHOSPHOR_GRENADE # Not available to the strategy.
+      - STR_MELTAGUN_TECH # This faction gets its own alternative melta weaponry.
      ############## DISABLED CHAOS-RELATED TECHS GO HERE #########
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
@@ -107,42 +108,18 @@ research:
   ################### END OF SECTION ##################
 
   ################### SECTION FOR EARLY GAME PROGRESSION TECHS #############
-  
-  - name: STR_RITUALS_OF_EXCESS # Codex entry.
-    cost: 20
-    points: 20
-    dependencies:
-      - STR_ALTAR_OF_SLAANESH
 
-  - name: STR_SOULS_FOR_SLAANESH # Unlocks sacrifices.
-    cost: 20
-    points: 20
+  - name: STR_CHAMBERS_OF_AGONY
+    cost: 10
     dependencies:
-      - STR_ALTAR_OF_SLAANESH
       - STR_IMPLEMENTS_OF_TORTURE
-
-  - name: STR_PLEASURE_CHAMBERS
-    cost: 10
-    dependencies:
-      - STR_SLAANESHPATH_GATE
-    unlocks:
-    - STR_IMPLEMENTS_OF_TORTURE
-
-  - name: STR_ALTAR_OF_SLAANESH
-    cost: 10
-    dependencies:
-    - STR_SLAANESHPATH_GATE
-    unlocks:
-    - STR_IMPLEMENTS_OF_TORTURE
 
   - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
     cost: 20
     dependencies:
       - STR_SLAANESHPATH_GATE
-    reenables:
-      - STR_SMOKE 
 
-  - name: STR_BLACK_MARKET_AMMUNITION
+  - name: STR_BLACK_MARKET_AMMUNITION # Codex Entry. 
     cost: 20
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
@@ -165,6 +142,17 @@ research:
  ##### PIETY & RITUAL RESEARCH #####
  ###################################
 
+  - name: STR_SOULS_FOR_SLAANESH # Unlocks sacrifices. Codex Entry.
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_GIFTS_OF_SLAANESH
+
+  - name: STR_GIFTS_OF_SLAANESH # Gateway tech that also gives access to a few basic slaanesh-themed weapons.
+    cost: 20
+    dependencies:
+    - STR_SLAANESHPATH_GATE
+
 
 
  ### TIER 1 PIETY PROJECTS
@@ -178,12 +166,16 @@ research:
  
 ### -<TIER 1 WEAPON TECH LEVEL PROJECTS>- ###
 
+  - name: STR_MELTA_CARBINE_TECHNOLOGY
+    cost: 150
+
+
  # Basic bolter weaponry conversion tech.
-  - name: STR_CORRUPT_ADEPTAS_WEAPONRY 
+  - name: STR_CORRUPT_WEAPONRY 
     cost: 50
     points: 10
     dependencies:
-      - STR_RITUALS_OF_EXCESS
+      - STR_GIFTS_OF_SLAANESH
     unlocks:
     - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
   #Tech that gives access to weapon conversions through piety.
@@ -192,7 +184,7 @@ research:
     cost: 0
     points: 0
     dependencies:
-    - STR_CORRUPT_ADEPTAS_WEAPONRY
+    - STR_CORRUPT_WEAPONRY
   #Disabler for basic weapon corruption. Once you have this tech it's faster and cheaper to buy them.
   - name: STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1
     cost: 0
@@ -226,9 +218,7 @@ research:
   - name: STR_CHOKE_GAS_GRENADES
     cost: 20
     dependencies:
-    - STR_IMPLEMENTS_OF_TORTURE
-    getOneFree:
-    - STR_SMOKE
+    - STR_SLAANESHPATH_GATE
 
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
     cost: 20

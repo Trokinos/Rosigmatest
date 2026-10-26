@@ -261,7 +261,7 @@ armors:
     storeItem: STR_NONE
     corpseBattle:
       - STR_REPRISALIA_CORPSE # FIX LATER
-    frontArmor: 70 # -5
+    frontArmor: 65 # -5
     sideArmor: 55 # -5
     rearArmor: 45
     underArmor: 75 # +15
@@ -279,14 +279,14 @@ armors:
       - 0.2  # IMPACT; droppod proof
       - 1.0  # MELTA
     units:
-      - STR_SLAANESHPATH_VEILED_ONE
+      - STR_SLAANESHPATH_HEARTBREAKER
     builtInWeapons:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
     loftempsSet: [3]
     tags:
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
-      INFECTION_RESIST: 40  # infection resistant
+      INFECTION_RESIST: 50  # infection resistant
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_SLAANESH: 1

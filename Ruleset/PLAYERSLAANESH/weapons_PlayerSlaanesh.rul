@@ -106,6 +106,49 @@ items:
     tags:
       REACTION_MULTIPLIER: 200
 
+ #### MELTA WEAPONS ####
+ 
+  - type: STR_SLAANESHPATH_MELTA_CARBINE # Stolen & modified melta carbine technology. Expensive, but versatile.
+    categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
+    size: 0.3
+    costSell: 20000  # buy?
+    weight: 12  # lightweight melta
+    bigSprite: 920
+    floorSprite: 920
+    handSprite: 630
+    bulletSprite: {mod: 40k, index: 16}
+    bulletSpeed: 100
+    fireSound: {mod: 40k, index: 739}
+    compatibleAmmo:
+      - STR_LIGHT_MELTA_AMMO_SLAAN # Only 60 power vs. full sized melta's 100.
+    dropoff: 8  # 
+    maxRange: 16
+    autoRange: 6
+    snapRange: 7
+    aimedRange: 9
+    accuracyAuto: 60
+    accuracySnap: 80
+    accuracyAimed: 90
+    tuAuto: 55
+    tuSnap: 28
+    tuAimed: 35
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    listOrder: 11160
+    autoShots: 3
+    confAuto:
+      spendPerShot: 2  # Doubles ammo consumption; very high power up close.  
+      name: STR_SLAMFIRE
+    confAimed:  # More accurate and more ammo-efficient vs slamfire; lower damage per time unit.
+      spendPerShot: 2
+      name: STR_FOCUSED_SHOT
+    tags:
+      ITEM_AIMED_FLAT_POWER_BONUS_PERCENT: 60 # Slightly weaker than a full melta on focused setting.
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10 
+
  #### LAUNCHERS ###
 
   - type: STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE # Small, break-open GL for utility grenades. Accurate.
@@ -355,6 +398,8 @@ items:
 #      time: true
 
   - type: STR_BOLTER_DEAZ_ARACHNE # COMBI WEBBER DEAZ
+
+  - type: STR_BOLTER_ELOHIM_SLAAN
 
   - type: STR_SLAANESHPATH_BOLTER_NAGA # Corrupted Elohim with direct-fire grenade launcher attachment.
 

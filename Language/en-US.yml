@@ -15314,13 +15314,16 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
   STR_SLAANESHPATH_GATE: "The Angel's Voice"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
-  STR_RITUALS_OF_EXCESS: "Rituals of Excess"
-  STR_CORRUPT_ADEPTAS_WEAPONRY: "Corrupt Adeptas Weaponry"
-  STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Tier 1 Weapon Corruption)"
+  STR_THE_GIFTS_OF_SLAANESH: "The Gifts of Slaanesh"
+  STR_STR_SOULS_FOR_SLAANESH: "Souls for Slaanesh"  
+  STR_WEAPON_CORRUPTION: "Corrupted Weaponry"
+  STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
+  STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launchers"
   STR_IMPLEMENTS_OF_TORTURE: "Implements of Torture"
   STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Pistols"
   STR_CHOKE_GAS_GRENADES: "Choke Gas Grenades"
+  STR_BLACK_MARKET_AMMUNITION: "Black Market Ammo-Jacks"
   STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
   ### MANUFACTURE DEFINITIONS
 
@@ -15368,12 +15371,17 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
   STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
 #WEAPONS
+  STR_SLAANESHPATH_MELTA_CARBINE: "Slaanesh Melta Carbine"
+  STR_SLAMFIRE: "Slam-fire"
+  STR_FOCUSED_SHOT: "Focused Shot"
   STR_BOLTER_CANTUS_SLAAN: "Slaanesh Cantus Bolter"
   STR_BOLTER_CANTUS_GL: "Slaanesh Cantus Bolter /GL"
   AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
   AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
   STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE: "Gorge Pattern Grenade Launcher"
+
   ### AMMO
+  STR_LIGHT_MELTA_AMMO_SLAAN: "Slaanesh Light Melta Ammo"
   STR_CANTUS_BOLTER_AMMO_PENETRATOR: "Cantus Penetrator Magazine"
   STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Magazine"
   STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Magazine"
