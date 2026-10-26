@@ -85,6 +85,75 @@ manufacture:
     producedItems:
       STR_DIRESWORD: 1
 
+    ### WRAITHGUARD RECIPES
+
+  - name: STR_WRAITHGUARD_ARMOR_ITEM
+    category: STR_ELDAR_SOULTECH_CATEGORY
+    requires:
+      - STR_ELDAR_WRAITHGUARD_RESEARCH
+    space: 0
+    time: 600
+    cost: 900000
+  - name: STR_WRAITHCANNON
+    category: STR_ELDAR_SOULTECH_CATEGORY
+    requires:
+      - STR_ELDAR_WRAITHGUARD_RESEARCH
+    space: 0
+    time: 200
+    cost: 100000
+  - name: STR_DSCYTHE
+    category: STR_ELDAR_SOULTECH_CATEGORY
+    requires:
+      - STR_ELDAR_WRAITHGUARD_RESEARCH
+    space: 0
+    time: 200
+    cost: 100000
+
+  - name: STR_WRAITHBLADE_ARMOR_ITEM
+    category: STR_ELDAR_SOULTECH_CATEGORY
+    requires:
+      - STR_ELDAR_WRAITHBLADE_RESEARCH
+    space: 0
+    time: 600
+    cost: 900000
+  - name: STR_GHOSTAXE
+    category: STR_ELDAR_SOULTECH_CATEGORY
+    requires:
+      - STR_ELDAR_WRAITHBLADE_RESEARCH
+    space: 0
+    time: 200
+    cost: 100000
+  - name: STR_GHOSTSWORD
+    category: STR_ELDAR_SOULTECH_CATEGORY
+    requires:
+      - STR_ELDAR_WRAITHBLADE_RESEARCH
+    space: 0
+    time: 200
+    cost: 100000
+
+  - &ELDAR_REAPER_ITEM_MANUFACTURE
+    name: STR_REAPER_LAUNCHER_ITEM
+    category: STR_WEAPON
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+    space: 0
+    time: 600
+    cost: 50000
+  - name: STR_TEMPEST_LAUNCHER_ITEM
+    refNode: *ELDAR_REAPER_ITEM_MANUFACTURE
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+    # requiredItems:
+      # STR_ALIEN_ALLOYS: 80
+      # STR_ELERIUM_115: 30 # Swap if accessibility improved
+  - name: STR_SHURIKEN_CANNON_ITEM
+    refNode: *ELDAR_REAPER_ITEM_MANUFACTURE
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+    # requiredItems:
+      # STR_ALIEN_ALLOYS: 80
+      # STR_ELERIUM_115: 30 # Swap if accessibility improved
+
   - &ELDAR_HWP_ITEM_MANUFACTURE
     name: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_ITEM
     category: STR_PERSONAL_ARMOR

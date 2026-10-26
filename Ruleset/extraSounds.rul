@@ -1575,18 +1575,15 @@ extraSounds:
 # Khorne Dreadnought Sounds; STR_KHORNE_DREADNOUGHT
       # MOVEMENT; STOMPING
       3960: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/berserkdread_step1.wav
-      3961: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/berserkdread_step2.wav
-      3962: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/berserkdread_step3.wav
       # ATTACK SOUNDS; Chain Fist
       3963: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/chainblade1.wav
-      3964: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/chainblade2.wav
+      3964: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/doublechain.wav
       # Aggro SOUNDS;
       3965: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/chain_yell.wav
       3966: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/khorne_laugh.wav
-      3967: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/doublechain.wav
-      3968: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/laugh_death.wav
       # Death SOUNDS;
-      3969: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/berserkdread_louderdeath.wav
+      3968: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/laugh_death.wav
+      3969: Resources/Sounds/KHORNE/KHORNE DREADNOUGHT/berserkdread_death.wav
 
 # New Lasgun Sounds;
       # fireSound
@@ -3076,6 +3073,12 @@ extraSounds:
       1899: Resources/Eldar/Sounds/eldar_laser_1.ogg
       1900: Resources/Eldar/Sounds/eldar_laser_2.ogg
       1901: Resources/Eldar/Sounds/eldar_laser_3.ogg
+      1902: Resources/Eldar/Sounds/dscythe_1.ogg
+      1903: Resources/Eldar/Sounds/dscythe_2.ogg
+      1904: Resources/Eldar/Sounds/dscythe_3.ogg
+      1905: Resources/Eldar/Sounds/wraithcannon_1.ogg
+      1906: Resources/Eldar/Sounds/wraithcannon_2.ogg
+      1907: Resources/Eldar/Sounds/wraithcannon_3.ogg
 
 # rubric silence
       # SELECT UNIT
@@ -3138,6 +3141,10 @@ extraSounds:
 # 3322 - 3339
 # 3362 - 3399
 # 3471 - 3499
+
+# 3961:
+# 3962:
+# 3967:
 
 # 1892 - 1919 RESERVING FOR ELDAR
 

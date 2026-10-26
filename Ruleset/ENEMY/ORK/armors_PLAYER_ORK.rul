@@ -1371,10 +1371,10 @@ armors:
     constantAnimation: false
     deathMale: [1970]
     deathFemale: [1970]
-    selectUnitMale: [1971, 1972]
-    selectUnitFemale: [1971, 1972]
-    startMovingMale: [1975, 1976]
-    startMovingFemale: [1975, 1976]
+    selectUnitMale: [1971, 1972, 1973] # 1973 has been added here for variety
+    selectUnitFemale: [1971, 1972, 1973] # 1973 has been added here for variety
+    startMovingMale: [1974, 1975, 1976] # 1974 has been added here for variety
+    startMovingFemale: [1974, 1975, 1976] # 1974 has been added here for variety
     selectWeaponMale: [1973, 1974]
     selectWeaponFemale: [1973, 1974]
     annoyedMale: [1968, 1969]
@@ -1434,10 +1434,10 @@ armors:
     constantAnimation: false
     deathMale: [1970]
     deathFemale: [1970]
-    selectUnitMale: [1971, 1972]
-    selectUnitFemale: [1971, 1972]
-    startMovingMale: [1975, 1976]
-    startMovingFemale: [1975, 1976]
+    selectUnitMale: [1971, 1972, 1973] # 1973 has been added here for variety
+    selectUnitFemale: [1971, 1972, 1973] # 1973 has been added here for variety
+    startMovingMale: [1974, 1975, 1976] # 1974 has been added here for variety
+    startMovingFemale: [1974, 1975, 1976] # 1974 has been added here for variety
     selectWeaponMale: [1973, 1974]
     selectWeaponFemale: [1973, 1974]
     annoyedMale: [1968, 1969]

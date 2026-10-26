@@ -296,7 +296,7 @@ items:
     # autoShots: 1
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10288
     tags:
       ITEM_RECOIL: 20  # slightly lower recoil due to single shot and human sized
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -333,7 +333,7 @@ items:
     # autoShots: 3
     bulletSpeed: 30
     attraction: 1
-    listOrder: 19170
+    listOrder: 10289
     tags:
       ITEM_RECOIL: 20  # slightly lower recoil due to single shot and human sized
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
@@ -371,7 +371,7 @@ items:
     invHeight: 2
     listOrder: 10460
 
-  - type: STR_TZ_LIGHT_BOLTER_AMMO_R  #          10460                      ToStun
+  - type: STR_TZ_LIGHT_BOLTER_AMMO_R
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_TZEENTCH]
     size: 0.1
     costSell: 150
@@ -403,7 +403,7 @@ items:
     armor: 30
     invWidth: 1
     invHeight: 1
-    listOrder: 10460
+    listOrder: 10291
 
   - type: STR_SCREAMER_WEAPON
     accuracyMelee: 100

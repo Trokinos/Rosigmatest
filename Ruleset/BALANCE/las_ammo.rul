@@ -163,7 +163,7 @@ items:
     vaporColorSurface: 4  # red laser
     vaporDensitySurface: 2
     vaporProbabilitySurface: 100
-    listOrder: 10762
+    listOrder: 10757
     scripts:
       vaporParticleAmmo: |
         # noting
@@ -193,7 +193,7 @@ items:
     fireSound: 3983
     bulletSpeed: 50
     vaporDensitySurface: 3 # hotshot, but not lascannon thicc
-    listOrder: 10763
+    listOrder: 10758
     scripts:
       vaporParticleAmmo: |
         # noting
