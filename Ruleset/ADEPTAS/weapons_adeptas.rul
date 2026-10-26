@@ -985,7 +985,7 @@ items:
     tags:
       ITEM_RECOIL: 40
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
-  - type: STR_RIFLE_CLIP_DOM  # Dominion special rounds DETONATOR       10430     EXPLOSIVE        ToStun
+  - type: STR_RIFLE_CLIP_DOM  # Dominion special rounds DETONATOR       10416     EXPLOSIVE        ToStun
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
     size: 0.1
     requiresBuy:
@@ -1001,7 +1001,7 @@ items:
     armor: 30
     invWidth: 1
     invHeight: 2
-    listOrder: 10430
+    listOrder: 10416
 
   - type: STR_DOMINION_HALBERD  #              3008           DA POWER
     categories: [STR_CAT_MELEE, STR_CAT_ADEPTAS]

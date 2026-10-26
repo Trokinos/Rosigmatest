@@ -410,7 +410,7 @@ items:
 
 
   - type: STR_GSC_HEAVY_WEBBER  # Heavy Webber AOE
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
     requiresBuy:
@@ -438,7 +438,7 @@ items:
     listOrder: 11805
 
   - type: STR_HEAVY_WEBBER_AMMO
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
     requiresBuy:
@@ -475,7 +475,7 @@ items:
     listOrder: 11806
 
   - type: STR_GSC_WEBBER_PISTOL  # One handed
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
     requiresBuy:
@@ -508,7 +508,7 @@ items:
       REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
   - type: STR_PISTOL_WEBBER_AMMO
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
     requiresBuy:
