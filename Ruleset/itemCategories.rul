@@ -23,6 +23,9 @@ itemCategories:
   - type: STR_CAT_GRENADE40 # 40mm Rounds Category, includes standard and chaos 40mm rounds and the weapons that use them.
     listOrder: 156
 
+  - type: STR_CAT_STUN # Stun Weapons Category
+    listOrder: 160
+
   - type: STR_CAT_TRADE # Trade Equipment
     listOrder: 300 # Near bottom of list for now
 

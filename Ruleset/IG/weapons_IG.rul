@@ -2970,14 +2970,14 @@ items:
     requiresBuyBaseFunc: [TRADE]
     costBuy: 15000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10420
+    listOrder: 10418
 
   - type: STR_RIFLE_CLIP_EX  # Metal Storm Frag
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 15000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10430
+    listOrder: 10419
 
   - type: STR_FELINIED_CLAWS  # specialWeapon for Felinids
     weight: 0
@@ -3953,6 +3953,7 @@ items:
 
   - type: STR_MORTAR_AMMO_PHOTON  # photon munition
     refNode: *STR_MORTAR_AMMO_TEMPLATE
+    category: [STR_CAT_STUN]
     ufopediaType: STR_MORTAR_AMMO_PHOTON_EXPLOSION
     requiresBuy:  # what tech is required for the item to be visible in the Hire/Purchase screen.
       - STR_SMOKE
@@ -4177,6 +4178,7 @@ items:
 
   - type: STR_PHOTON_GRENADE_DRUM  # photon munition
     refNode: *STR_GRENADE_DRUM
+    category: [STR_CAT_STUN]
     requiresBuy:
       - STR_BASIC_BALLISTICS_DEP
       - STR_PHOTON_GRENADE_REQUISITION

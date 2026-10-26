@@ -5,7 +5,7 @@ itemCategories:
 items:
 
   - type: STR_CHAOSBOWL_STUNFIST            #12600
-    categories: [STR_CHAOSBOWLWEAPONBLOCKER]
+    categories: [STR_CHAOSBOWLWEAPONBLOCKER, STR_CAT_STUN]
     size: 0.1
     weight: 20
     bigSprite: 3220

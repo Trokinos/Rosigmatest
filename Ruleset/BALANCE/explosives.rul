@@ -799,6 +799,7 @@ items:
 ## STUN
 
   - type: STR_PHOTON_GRENADE  # photon munition
+    category: [STR_CAT_STUN, STR_CAT_GRENADES]
     costBuy: 1000
     costSell: 400
     primeSound: 2424

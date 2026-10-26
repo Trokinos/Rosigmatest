@@ -8247,6 +8247,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CAT_KHORNE: "Khorne"
   STR_CAT_NECRON: "Necron"
   STR_CAT_SPELL: "Sorcery"
+  STR_CAT_STUN: "Stun weapons"
   STR_CAT_TAU: "Tau"
 
 

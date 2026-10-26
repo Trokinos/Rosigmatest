@@ -363,7 +363,7 @@ items:
       FixRadius: 0
 
   - type: STR_STUN_SHELLS
-    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_STUN]
     shotgunBehavior: 1   # *** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
     size: 0.1
@@ -396,7 +396,7 @@ items:
     listOrder: 10710
 
   - type: STR_STUN_GAS_SHELLS  #                        10710
-    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_STUN]
     shotgunBehavior: 1   # *** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
     size: 0.1
@@ -1501,7 +1501,7 @@ items:
 # Primaris
 
   - &STR_PRIMARIS_CARBINE_TEMPLATE
-    type: STR_PRIMARIS_CARBINE  # BOLTER  #        10330  TYPE RIFLE
+    type: STR_PRIMARIS_CARBINE  # BOLTER  #        10327  TYPE RIFLE
     requiresBuy:
       - STR_PRIMARIS
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
@@ -1542,7 +1542,7 @@ items:
     autoShots: 5
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10330
+    listOrder: 10327
     tags:
       REACTION_MULTIPLIER: 150  # multiplies base reaction score by this amount divided by 100
       ITEM_RECOIL: 40
@@ -1569,13 +1569,14 @@ items:
     confSnap:
       name: STR_BURST_SNAP_SHOT
       shots: 2
+    listOrder: 10328
     tags:
       REACTION_MULTIPLIER: 150  # multiplies base reaction score by this amount divided by 100
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25  # battle rifle aimed shot bonus
       ITEM_RECOIL: 40
 
   - &STR_PRIMARIS_RIFLE_TEMPLATE
-    type: STR_RIFLED  # BOLTER  #        10330  TYPE RIFLE
+    type: STR_RIFLED  # BOLTER  #        10325  TYPE RIFLE
     requiresBuy:
       - STR_PRIMARIS
       - STR_IMPERIAL_WEAPONS
@@ -1613,7 +1614,7 @@ items:
     autoShots: 5
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10330
+    listOrder: 10325
     tags:
       ITEM_RECOIL: 40
       ITEM_GETS_FACTION_RECOLOR: 1
@@ -1621,7 +1622,7 @@ items:
       ITEM_GETS_ACCENT_RECOLOR: 1
       ITEM_ACCENT_COLOR: 1
 
-  - type: STR_PRIMARIS_CAWL_UNDERSLUNG  # BOLTER  #        10330  TYPE RIFLE
+  - type: STR_PRIMARIS_CAWL_UNDERSLUNG  # BOLTER  #        10332  TYPE RIFLE
     refNode: *STR_PRIMARIS_RIFLE_TEMPLATE
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE, STR_CAT_GRENADE40]
     requiresBuyBaseFunc: [TRADE]
@@ -1647,7 +1648,7 @@ items:
       name: STR_LAUNCH_GRENADE
       shortName: STR_LAUNCH_GRENADE_SHORT
       arcing: true
-    listOrder: 10331
+    listOrder: 10332
 
   - type: STR_PRIMARIS_HEAVY_BOLT_PISTOL
     refNode: *STR_PRIMARIS_RIFLE_TEMPLATE
@@ -1755,12 +1756,13 @@ items:
     oneHandedPenalty: 25
     kneelBonus: 130
     tuLoad: 30  # drummag feed; takes longer
+    listOrder: 10330
     tags:
       ITEM_RECOIL: 45
       ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10  # battle rifle aimed shot bonus
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25  # battle rifle aimed shot bonus
 
-  - type: STR_PRIMARIS_HEAVY_BOLT_RIFLE  # BOLTER  #        10330  TYPE RIFLE
+  - type: STR_PRIMARIS_HEAVY_BOLT_RIFLE  # BOLTER  #        10329  TYPE RIFLE
     refNode: *STR_PRIMARIS_RIFLE_TEMPLATE
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
@@ -1791,6 +1793,7 @@ items:
     oneHandedPenalty: 25
     kneelBonus: 130
     tuLoad: 30  # drummag feed; takes longer
+    listOrder: 10329
     tags:
       ITEM_RECOIL: 50
 
@@ -1817,12 +1820,13 @@ items:
     autoShots: 3
     oneHandedPenalty: 25
     kneelBonus: 130
+    listOrder: 10331
     tags:
       ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 15  # marksman rifle snap shot bonus
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 30  # marksman rifle aimed shot bonus
 
   - &STR_PRIMARIS_HEAVY_BOLT_RIFLE_DRUM_TEMPLATE
-    type: STR_PRIMARIS_HEAVY_BOLT_RIFLE_DRUM  #            10410                      ToStun
+    type: STR_PRIMARIS_HEAVY_BOLT_RIFLE_DRUM  #            10412                      ToStun
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     size: 0.1
@@ -1853,9 +1857,9 @@ items:
     armor: 100
     invWidth: 1
     invHeight: 2
-    listOrder: 10410
+    listOrder: 10412
 
-  - type: STR_PRIMARIS_HEAVY_BOLT_RIFLE_EX_DRUM  #         10430     EXPLOSIVE        ToStun
+  - type: STR_PRIMARIS_HEAVY_BOLT_RIFLE_EX_DRUM  #         10421     EXPLOSIVE        ToStun
     refNode: *STR_PRIMARIS_HEAVY_BOLT_RIFLE_DRUM_TEMPLATE
     costBuy: 3000
     costSell: 750
@@ -1875,9 +1879,9 @@ items:
       RandomWound: false
       FixRadius: 1
     blastRadius: 1
-    listOrder: 10430
+    listOrder: 10421
 
-  - type: STR_PRIMARIS_HEAVY_BOLT_RIFLE_AP_DRUM  #         10440     AP++++++++       ToStun
+  - type: STR_PRIMARIS_HEAVY_BOLT_RIFLE_AP_DRUM  #         10420     AP++++++++       ToStun
     refNode: *STR_PRIMARIS_HEAVY_BOLT_RIFLE_DRUM_TEMPLATE
     costBuy: 4000
     costSell: 1000
@@ -1889,10 +1893,10 @@ items:
       ToHealth: 0.9  # armor piercing; good penetration, much less stopping power
       ToStun: 0.3
       ToEnergy: 0.1
-    listOrder: 10440
+    listOrder: 10420
 
 
-  - type: STR_PRIMARIS_HEAVY_BOLT_RIFLE_MC_DRUM  #         10420     MCA              ToStun
+  - type: STR_PRIMARIS_HEAVY_BOLT_RIFLE_MC_DRUM  #         10425     MCA              ToStun
     refNode: *STR_PRIMARIS_HEAVY_BOLT_RIFLE_DRUM_TEMPLATE
     costBuy: 0  # gotta make these
     costSell: 2000
@@ -1909,7 +1913,7 @@ items:
       ToWound: 0.2
       RandomWound: false
     power: 85
-    listOrder: 10420
+    listOrder: 10425
 
   - type: STR_PRIMARIS_EXECUTOR_RIFLE_DRUM_MAG
     refNode: *STR_PRIMARIS_HEAVY_BOLT_RIFLE_DRUM_TEMPLATE
@@ -1930,7 +1934,7 @@ items:
       ToEnergy: 0.3
       ToWound: 0.2
       RandomWound: false
-    listOrder: 10430
+    listOrder: 10417
 
   - type: STR_PRIMARIS_MELTA_RIFLE  # MELTAGUN
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL]

@@ -79,7 +79,7 @@ items:
     attraction: 1
     invWidth: 1
     invHeight: 2
-    listOrder: 10408
+    listOrder: 10413
     vaporColorSurface: 16
     vaporDensitySurface: 1
 
@@ -293,7 +293,7 @@ items:
     attraction: 1
     invWidth: 1
     invHeight: 2
-    listOrder: 10407
+    listOrder: 10422
     vaporColorSurface: 16
     vaporDensitySurface: 5
 
