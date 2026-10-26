@@ -158,7 +158,7 @@ items:
     bulletSpeed: 25
     fireSound: {mod: 40k, index: 4}
     compatibleAmmo:
-      - STR_HEARTBREAKER_AMMO
+      - STR_HEARTBREAKER_AMMO_AP
     battleType: 1
     twoHanded: true
     blockBothHands: true

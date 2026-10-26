@@ -250,24 +250,30 @@ items:
 
  #### SLAANESH BALLISTIC AMMO ####
 
-  - type: STR_HEARTBREAKER_AMMO
+#  - type: STR_HEARTBREAKER_AMMO_BARBED
+
+#  - type: STR_HEARTBREAKER_AMMO_TERRORCHEM
+
+#  - type: STR_HEARTBREAKER_AMMO_AMPUTATOR
+
+  - type: STR_HEARTBREAKER_AMMO_AP
     categories: [STR_CAT_SNIPER]
     size: 0.1
-    costSell: 500
-    weight: 6
+    costSell: 4000
+    weight: 3
     bigSprite: 1002
     floorSprite: {mod: 40k, index: 1118}
     handSprite: {mod: 40k, index: 1896}
     hitSound: {mod: 40k, index: 22}
     hitAnimation: {mod: 40k, index: 26}
     explosionSpeed: 5
-    power: 55
+    power: 70
     damageType: 1
     damageAlter:
       ToArmorPre: 0.02
       ArmorEffectiveness: 0.5 # Semi AP
       ToHealth: 0.8
-    clipSize: 16
+    clipSize: 6
     battleType: 2
     invWidth: 1
     invHeight: 1
