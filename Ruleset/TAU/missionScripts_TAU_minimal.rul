@@ -610,3 +610,21 @@ missionScripts:
       STR_INQUISITION_ATTENTION_GV: true
       STR_IMPERIAL_CRUSADE_GV: true
       STR_HARDER_MISSIONS: true
+
+  # provide the player with a promethium supply
+  - type: promPromiseGV
+    firstMonth: 1
+    missionWeights:
+      0:
+        STR_PROM_PROMISE_MISSION_GV: 10
+    executionOdds: 100
+    startDelay: 1440
+    randomDelay: 7200
+    useTable: false
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: false
+      STR_TAU_GUEVESA_GV: true
+      STR_THE_COLD_TRADE_GV: true
+      STR_ALIEN_ALLOYS: true
+    maxRuns: 1
+    varName: promPromiseTau
