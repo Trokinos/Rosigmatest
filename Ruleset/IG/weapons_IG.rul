@@ -3953,7 +3953,7 @@ items:
 
   - type: STR_MORTAR_AMMO_PHOTON  # photon munition
     refNode: *STR_MORTAR_AMMO_TEMPLATE
-    category: [STR_CAT_STUN]
+    categories: [STR_CAT_STUN]
     ufopediaType: STR_MORTAR_AMMO_PHOTON_EXPLOSION
     requiresBuy:  # what tech is required for the item to be visible in the Hire/Purchase screen.
       - STR_SMOKE
@@ -4178,7 +4178,7 @@ items:
 
   - type: STR_PHOTON_GRENADE_DRUM  # photon munition
     refNode: *STR_GRENADE_DRUM
-    category: [STR_CAT_STUN]
+    categories: [STR_CAT_STUN]
     requiresBuy:
       - STR_BASIC_BALLISTICS_DEP
       - STR_PHOTON_GRENADE_REQUISITION
