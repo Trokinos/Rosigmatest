@@ -41,6 +41,13 @@ items:
     sellActionMessage: STR_ELDAR_CITIZEN_SELL_MESSAGE
     listOrder: 0
 
+  - type: STR_REAPER_LAUNCHER_ITEM
+    size: 0.4
+  - type: STR_TEMPEST_LAUNCHER_ITEM
+    size: 0.4
+  - type: STR_SHURIKEN_CANNON_ITEM
+    size: 0.4
+
   - type: STR_ELDAR_HWP_SCATTERLASER_ARMOR_ITEM
     requires:
       - STR_ELDAR_HWP_SCATTERLASER_ARMOR_RESEARCH
@@ -87,3 +94,12 @@ items:
     fixedWeapon: true
     recover: false
     defaultInventorySlot: STR_BELT
+
+  - type: STR_WRAITHGUARD_ARMOR_ITEM
+    requires:
+      - STR_ELDAR_WRAITHGUARD_RESEARCH
+    size: 6
+  - type: STR_WRAITHBLADE_ARMOR_ITEM
+    requires:
+      - STR_ELDAR_WRAITHBLADE_RESEARCH
+    size: 6

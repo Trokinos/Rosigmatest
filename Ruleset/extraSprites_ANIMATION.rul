@@ -91,6 +91,7 @@ extraSprites:
       2300: Resources/Sprites/Slaanfleshhitsmall.png
       2310: Resources/Sprites/Slaangashitsmall.png
       2320: Resources/Sprites/Slaanhitsmall.png
+      2330: Resources/Sprites/s_explosion_wraithcannon.gif # Dscythe Hit
 
 
   # kharn
@@ -255,4 +256,5 @@ extraSprites:
       2180: Resources/Sprites/warporb.png
       2200: Resources/Sprites/XGraviXom2.png
       2210: Resources/Sprites/ICEhitsmall.png
+      2220: Resources/Sprites/s_explosion_wraithcannon.gif # Wraithcannon
 

@@ -818,6 +818,7 @@ manufacture:
       - STR_CHAPTER_PURITY
       - STR_CENT_ARMORR
       - STR_NOT_BLACKTEMPLARS
+      - STR_NOT_SPACEWOLVES  # no such armor for spacewolves for now
     space: 0
     time: 1200
     cost: 20000

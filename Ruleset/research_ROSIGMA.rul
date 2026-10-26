@@ -8359,6 +8359,7 @@ research:
       - STR_MARINES_STRATEGY
       - STR_PERSONAL_ARMOR
       - STR_CHAPTER_PURITY
+      - STR_NOT_SPACEWOLVES  # no such armor for spacewolves for now
     disables:
       - STR_CENT_ARMORR_CHAOS
 

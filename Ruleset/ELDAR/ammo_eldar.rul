@@ -169,7 +169,7 @@ items:
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_FIREDRAGON_RESEARCH
-    requiresBuy: []  # Already requires the eldar base service
+    requiresBuy: []
     size: 0.2
     costBuy: 10000 # expensive materials
     costSell: 5000
@@ -544,13 +544,14 @@ items:
     invHeight: 2
     listOrder: 16922
 
-  - type: STR_LARGE_ROCKET_ELDAR  # Reaper Rocket
+  - type: STR_LARGE_ROCKET_ELDAR  # REAPER AML STARSHOT (KRAK)
     categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
     #requiresBuyBaseFunc: [ELDAROUT]
     #requiresBuy: []
     requires:
       - STR_ELDAR_REAPER_RESEARCH
-    power: 120  # +20 over krak rocket
+    power: 130  # +30 over krak rocket
+    powerForAnimation: 1
     size: 0.1
     battleType: 2
     invWidth: 2
@@ -560,11 +561,11 @@ items:
     costSell: 5000
     bigSprite: 4855
     floorSprite: 4855
-    handSprite: {mod: 40k, index: 448}  # todo: improvement needed
+    handSprite: {mod: 40k, index: 448}
     bulletSprite: 0
     hitSound: 0
     hitAnimation: 0
-    clipSize: 1
+    clipSize: 3 # pod containing smaller rockets think bolter
     damageType: 3
     damageAlter: # Krak
       ResistType: 1
@@ -580,9 +581,78 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 50
     listOrder: 16902
 
+  - type: STR_SMALL_ROCKET_ELDAR # REAPER AML SUNBURST (FRAG)
+    categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+    size: 0.1
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    weight: 5  # was 8
+    costBuy: 6000
+    costSell: 3000
+    bigSprite: 4913
+    floorSprite: 4913
+    handSprite: {mod: 40k, index: 448}
+    bulletSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    clipSize: 3 #pod containing smaller rockets think bolter
+    power: 100
+    damageType: 1
+    damageAlter:   # STR_SENTINEL_FRAG_MISSILES
+      FixRadius: 6
+      ToArmorPre: 0.2
+      ArmorEffectiveness: 0.9 # -1 AP
+      ToArmor: 0.2
+      ToHealth: 0.7  # much damage dealt in the form of debuffs
+      ToTime: 0.2  # painful
+      ToStun: 0.4  # painful
+      ToMorale: 0.5  # painful
+      ToEnergy: 0.4  # painful
+      ToWound: 0.4  # shrapnel
+      RandomWound: false
+      ToTile: 0.25  # it's shrapnel; deals relatively little damage to the terrain.
+    listOrder: 16902
+
+  - type: STR_REAPER_LAUNCHER_AMMO            # Heavy Bolter with -1 AP -1 D
+    categories: [STR_CAT_DEVASTATOR, STR_CAT_ELDAR]
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+    size: 0.1
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    weight: 5  # was 8
+    costBuy: 6000
+    costSell: 3000
+    bigSprite: 4915
+    floorSprite: 4915
+    # handSprite: {mod: 40k, index: 448} # Ammo doesnt need handobj
+    bulletSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    clipSize: 30 #pod containing smaller rockets think bolter
+    power: 85
+    damageType: 1
+    damageAlter:  # DA BOLTER
+      ToArmorPre: 0.3 # + 0.1 better AP
+      ArmorEffectiveness: 0.8 # - 0.1 better AP, Needs to be a viable endgame weapon
+      ToArmor: 0.3 # + 0.1 slightly better AP
+      ToHealth: .8 # -0.4 deals less damage
+      ToStun: 0.5
+      ToEnergy: 0.3
+      ToWound: 0.3
+      RandomWound: false
+      RandomType: 2 # 50-150 spread. No weak hits
+      #FixRadius: 1 # rocket weapon small explosion
+      #RadiusReduction: 45
+    listOrder: 16900
+
   ### HWP WEAPONS
   - &HWP_AML_AMMO_TEMPLATE
-    type: STR_HWP_STARSWARM_AMMO
+    type: STR_HWP_SUNBURST_AMMO
     categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
     requires:
       - STR_ELDAR_HWP_AML_ARMOR_RESEARCH
@@ -611,7 +681,7 @@ items:
     refNode: *HWP_AML_AMMO_TEMPLATE
     # Damage profile
     power: 125  # +15 for +1 Strength over Imperium
-    powerForAnimation: 16  # 5 / 5 = 1
+    powerForAnimation: 0  # 5 / 5 = 1
     damageType: 3
     damageAlter:
       ResistType: 1

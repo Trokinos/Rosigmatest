@@ -16,42 +16,50 @@ items:
 
   - type: STR_GSC_INFECTED_HUMAN_CORPSE
     refNode: *GSC_CORPSE_REF
+    recoveryPoints: 1
 
   - type: STR_GSC_CLOAKED_WOMAN_CORPSE
     refNode: *GSC_CORPSE_REF
     bigSprite: 2709
     floorSprite: 2709
     recoverCorpse: true #set all civilian infected corpses to be recoverable for now
+    recoveryPoints: 1
 
   - type: STR_GSC_CLOAKED_WOMAN2_CORPSE
     refNode: *GSC_CORPSE_REF
     bigSprite: 2710
     floorSprite: 2710
+    recoveryPoints: 1
 
   - type: STR_GSC_CLOAKED_WOMAN_ORANGE_CORPSE
     refNode: *GSC_CORPSE_REF
     bigSprite: 2711
     floorSprite: 2711
+    recoveryPoints: 1
 
   - type: STR_GSC_CIVILIAN_F0_CORPSE
     refNode: *GSC_CORPSE_REF
     bigSprite: {mod: 40k, index: 1303}
     floorSprite: {mod: 40k, index: 1303}
+    recoveryPoints: 1
 
   - type: STR_GSC_CIVILIAN_M0_CORPSE
     refNode: *GSC_CORPSE_REF
     bigSprite: {mod: 40k, index: 1304}
     floorSprite: {mod: 40k, index: 1304}
+    recoveryPoints: 1
 
   - type: STR_GSC_CIVILIAN_F1_CORPSE
     refNode: *GSC_CORPSE_REF
     bigSprite: {mod: 40k, index: 1305}
     floorSprite: {mod: 40k, index: 1305}
+    recoveryPoints: 1
 
   - type: STR_GSC_CIVILIAN_M1_CORPSE
     refNode: *GSC_CORPSE_REF
     bigSprite: {mod: 40k, index: 1306}
     floorSprite: {mod: 40k, index: 1306}
+    recoveryPoints: 1
 
   - type: STR_GSC_CIVILIAN_SPACER_CORPSE
     refNode: *GSC_CORPSE_REF

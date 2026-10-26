@@ -14,7 +14,7 @@ armors:
     instantWoundRecovery: true
     allowInv: true
     customArmorPreviewIndex: [1342, 1343, 1345]
-    storeItem: STR_NONE
+    storeItem: SWDREAD_ARMOR_UC
     corpseGeo: STR_SWDREAD_CORPSE
     corpseBattle:
       - SWDREAD_CORPSE1
@@ -70,6 +70,7 @@ armors:
     spriteInv: SWDREADINV4.SPK
     spriteSheet: SWDREAD4BS.PCK
     customArmorPreviewIndex: [1341, 1343, 1345]
+    storeItem: SWDREAD_ARMOR2_UC
     stats:
       melee: 1
     builtInWeapons:
@@ -87,6 +88,7 @@ armors:
     spriteInv: SWDREADINV2.SPK
     spriteSheet: SWDREAD2BS.PCK
     customArmorPreviewIndex: [1339, 1343, 1345]
+    storeItem: SWDREAD_ARMOR3_UC
     stats:
       melee: 1
     builtInWeapons:
@@ -104,6 +106,7 @@ armors:
     spriteInv: SWDREADINV3.SPK
     spriteSheet: SWDREAD3BS.PCK
     customArmorPreviewIndex: [1340, 1343, 1345]
+    storeItem: SWDREAD_ARMOR4_UC
     stats:
       melee: 1
     builtInWeapons:
@@ -121,6 +124,7 @@ armors:
     spriteInv: SWDREADINV5.SPK
     spriteSheet: SWDREAD5BS.PCK
     customArmorPreviewIndex: [1340, 1344, 1345]
+    storeItem: SWDREAD_ARMOR5_UC
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
     frontArmor: 260
