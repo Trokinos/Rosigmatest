@@ -164,36 +164,49 @@ research:
   # Disables once Hereteks are capable of manufacturing. 
 
  ###################################
- ### WEAPON TECH LEVEL RESEARCH ####
+ ##### MELTA & PLASMA RESEARCH #####
+ ###################################
+
+  - name: STR_MELTA_CARBINE_TECHNOLOGY
+    cost: 150
+    dependencies:
+      - STR_GENERALLOCK
+
+ ###################################
+ ### WEAPON CORRUPTION RESEARCH ####
  ###################################
  
 ### -<TIER 1 WEAPON TECH LEVEL PROJECTS>- ###
 
-  - name: STR_MELTA_CARBINE_TECHNOLOGY
-    cost: 150
+ # Basic Corruption tech. Unlocks cantus corruption and a codex entry explaining the concept.
 
-
- # Basic bolter weaponry conversion tech.
-  - name: STR_CORRUPT_WEAPONRY 
-    cost: 50
+  - name: STR_WEAPON_CORRUPTION 
+    cost: 10
     points: 10
     dependencies:
       - STR_GIFTS_OF_SLAANESH
     unlocks:
     - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+
+  - name: STR_CORRUPT_ADEPTAS_BOLTERS
+    cost: 50
+    dependencies:
+      - STR_WEAPON_CORRUPTION
+
   #Tech that gives access to weapon conversions through piety.
   #Gets disabled once the ability to manufacture these weapons is unlocked. 
   - name: STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
     cost: 0
     points: 0
     dependencies:
-    - STR_CORRUPT_WEAPONRY
-  #Disabler for basic weapon corruption. Once you have this tech it's faster and cheaper to buy them.
+    - STR_WEAPON_CORRUPTION
+
+  #Disabler for basic weapon corruption. Once you have this you can simply buy these weapons directly.
   - name: STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1
     cost: 0
     points: 0
     dependencies:
-    - STR_GENERALLOCK
+    - STR_GENERALLOCK # PLACEHOLDER
     disables:
     - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
 
@@ -209,12 +222,12 @@ research:
     dependencies:
     - STR_GENERALLOCK
     unlocks:
-    - STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
+    - STR_LIGHT_GRENADE_LAUNCHERS
     - STR_CHOKE_GAS_GRENADES
     - STR_CRUEL_MELEE_WEAPONRY
 
-  - name: STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
-    cost: 20
+  - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry. 
+    cost: 50
     dependencies:
     - STR_IMPLEMENTS_OF_TORTURE
 
@@ -228,7 +241,7 @@ research:
     dependencies:
     - STR_IMPLEMENTS_OF_TORTURE
     - STR_CHOKE_GAS_GRENADES
-    - STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS
+    - STR_LIGHT_GRENADE_LAUNCHERS
 
   - name: STR_TERROR_GRENADES 
     cost: 20

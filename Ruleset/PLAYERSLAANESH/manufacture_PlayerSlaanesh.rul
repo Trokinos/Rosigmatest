@@ -69,31 +69,34 @@ manufacture:
 
 #### RITUALS OF DECADENCE ####
 
-#############################################################
-######## RITUALS OF CORRUPTION - WEAPON CONVERSIONS #########
-############################################################# 
+####################################################################
+######## RITUALS OF CORRUPTION - WEAPON & ITEM CONVERSIONS #########
+#################################################################### 
 
- # TIER 1 CONVERSIONS
+ # TIER 1 WEAPON CONVERSIONS
 
   - name: STR_CORRUPT_CANTUS_BOLTER
     category: STR_RITES_OF_CORRUPTION
     requires:
     - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+    - STR_CORRUPT_ADEPTAS_BOLTERS
     space: 0
-    time: 100
-    cost: 5000
+    time: 160
+    cost: 10000
     producedItems:
       STR_BOLTER_CANTUS_SLAAN: 1
     requiredItems:
       STR_BOLTER_CANTUS: 1
-      STR_SLAANESHPATH_PIETY: 40
+      STR_SLAANESHPATH_PIETY: 30
     points: 0
 
   - name: STR_ATTACH_GL_TO_CANTUS
     category: STR_RITES_OF_CORRUPTION
     requires:
     - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-    space: 0
+    - STR_CORRUPT_ADEPTAS_BOLTERS
+    - STR_LIGHT_GRENADE_LAUNCHERS
+    space: 5
     time: 80
     cost: 2000
     producedItems:
@@ -103,6 +106,75 @@ manufacture:
       STR_GRENADE_LAUNCHER_GORGE: 1
     points: 0
 
+  - name: STR_CORRUPT_DEAZ_BOLTER
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+    - STR_CORRUPT_ADEPTAS_BOLTERS
+    space: 0
+    time: 160
+    cost: 5000 # +20K promethium
+    producedItems:
+      STR_BOLTER_DEAZ_SLAAN: 1
+    requiredItems:
+      STR_BOLTER_DEAZ: 1
+      STR_ELERIUM_115: 4
+      STR_SLAANESHPATH_PIETY: 35
+    points: 0
 
+  - name: STR_ATTACH_WEBBER_TO_DEAZ
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+    - STR_CONSTRICTOR_WEBBER_PISTOLS
+    - STR_CORRUPT_ADEPTAS_BOLTERS
+    space: 10
+    time: 140
+    cost: 5000
+    producedItems:
+      STR_BOLTER_ARACHNE: 1
+    requiredItems:
+      STR_BOLTER_DEAZ_SLAAN: 1
+      STR_CONSTRICTOR_PISTOL: 1
+    points: 0
 
+ # ARMOR CONVERSION
+
+  - name: STR_CORRUPT_ADEPTAS_ARMOR
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+    - STR_POWER_ARMOR_CORRUPTION
+    space: 20
+    time: 425 
+    cost: 12000 # Actual cost factoring in material sell value is 70K
+    producedItems:
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: 1
+      STR_SLAANESHPATH_PIETY: 50
+      STR_ELERIUM_115: 4
+    points: 0
+
+########################################################
+################ POWER ARMOR PRODUCTION ################
+########################################################
+
+  - name: STR_REPAIR_ADEPTAS_POWER_ARMOR
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+    - STR_POWER_ARMOR_CORRUPTION
+    space: 20
+    time: 850 
+    cost: 12000 # Adds a hefty cost and time requirement.
+    producedItems:
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+      STR_ALIEN_ALLOYS: 6
+      STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: 1
+      STR_SLAANESHPATH_PIETY: 50
+      STR_ELERIUM_115: 4
+    points: 0
+ 
 #### RITUALS OF PERFECTION - HIGH TIER UNIT PROMOTION

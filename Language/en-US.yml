@@ -15316,15 +15316,17 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
   STR_THE_GIFTS_OF_SLAANESH: "The Gifts of Slaanesh"
   STR_STR_SOULS_FOR_SLAANESH: "Souls for Slaanesh"  
-  STR_WEAPON_CORRUPTION: "Corrupted Weaponry"
+  STR_WEAPON_CORRUPTION: "Weapon Corruption Rites"
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
-  STR_SLAANESHPATH_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launchers"
+  STR__LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launchers"
   STR_IMPLEMENTS_OF_TORTURE: "Implements of Torture"
-  STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Pistols"
+  STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
   STR_CHOKE_GAS_GRENADES: "Choke Gas Grenades"
   STR_BLACK_MARKET_AMMUNITION: "Black Market Ammo-Jacks"
   STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
+  STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
+  STR_CORRUPT_ADEPTAS_BOLTERS: "Bolter Corruption Rites"
   ### MANUFACTURE DEFINITIONS
 
   STR_RITES_OF_EXCESS: "Rites of Excess"
@@ -15345,9 +15347,13 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
   STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
 
-#Weapon conversions
+#Weapon conversion, armor corruption, armor repair
   STR_CORRUPT_CANTUS_BOLTER: "Corrupt Cantus Bolter"
   STR_ATTACH_GL_TO_CANTUS: "Create Cantus Combi-bolter"
+  STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
+  STR_REPAIR_ADEPTAS_POWER_ARMOR: "Corrupt Damaged Adeptas Power Armor"
+  STR_CORRUPT_ADEPTAS_POWER_ARMOR: "Corrupt Adeptas Power Armor"
+
   ## UNIT PROJECTS
 
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
@@ -15370,6 +15376,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
   STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
+  STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: "Immaculate Power Armor"
+  STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Power Armor"
+  STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Power Armor"
+
 #WEAPONS
   STR_SLAMFIRE: "Slam-fire"
   STR_FOCUSED_SHOT: "Focused Shot"
@@ -15412,7 +15422,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   #UNIT DEFINITIONS
 
   STR_SLAANESHPATH_HANDMAIDEN: "Handmaiden"
-  STR_SLAANESHPATH_EXALTEDMAIDEN: "Exalted Handmaiden"
+  STR_SLAANESHPATH_EXALTEDMAIDEN: "Favored Handmaiden"
   STR_SLAANESHPATH_CHIRURGEON: "Chirurgeon"
   STR_SLAANESHPATH_IMMACULATE_SISTER: "Immaculate Sister"
   STR_SLAANESHPATH_EXALTEDSISTER: "Exalted Sister"
@@ -15435,13 +15445,13 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_HANDMAIDEN_RANK_1: "Sinful Seeker"
   STR_SLAANESHPATH_HANDMAIDEN_RANK_2: "Seeker Sincere"
   STR_SLAANESHPATH_HANDMAIDEN_RANK_3: "Seeker Sublime"
-  STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Seeker Superior"
+  STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Seeker Superlative"
 
   STR_SLAANESHPATH_SISTER_RANK_0: "Sister"
-  STR_SLAANESHPATH_SISTER_RANK_1: "Sumptuous Sister"
+  STR_SLAANESHPATH_SISTER_RANK_1: "Sinful Sister"
   STR_SLAANESHPATH_SISTER_RANK_2: "Sister Suggestive"
   STR_SLAANESHPATH_SISTER_RANK_3: "Sister Sensational"
-  STR_SLAANESHPATH_EXALTEDSISTER_RANK_0: "Sister Superlative"
+  STR_SLAANESHPATH_EXALTEDSISTER_RANK_0: "Sister Superior"
 
   STR_SLAANESHPATH_SORC_RANK_0: "Sorceress"
   STR_SLAANESHPATH_SORC_RANK_1: "Savvy Sorceress"
