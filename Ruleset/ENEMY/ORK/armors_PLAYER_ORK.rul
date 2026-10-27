@@ -1442,8 +1442,9 @@ armors:
     selectWeaponFemale: [1973, 1974]
     annoyedMale: [1968, 1969]
     annoyedFemale: [1968, 1969]
+    specab: 1
     corpseBattle: # TODO: CONFIGURE AS BOMB SQUIG
-      - STR_PLAYER_SQUIG_CORPSE # Needs to be finished
+      - STR_PLAYER_SQUIG_CORPSE
     stats:
       tu: -10 # weighted down
       stamina: -10 # weighted down
@@ -1454,7 +1455,7 @@ armors:
       - STR_CMAS # needs squig bite
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
-      - INV_NULL_3X3
+      - STR_TANKBUSTA_INVENTORY_BOMB # 3x3 space replaced with bomb
       - INV_NULL_4X2
     #specialWeapon: #TODO: setup
     frontArmor: 30  #
@@ -1476,6 +1477,7 @@ armors:
       - 1.0  # MELTA
     loftempsSet: [3]
     storeItem: STR_TANKBUSTA_BOMB
+    specialWeapon: STR_TANKBUSTA_BOMB_COLLAR
     units:
       - STR_SQUIG
     customArmorPreviewIndex: 838  # cyber mastiff. Needs new
@@ -1487,4 +1489,8 @@ armors:
       UNIT_TYPE_ORK: 1
       ARMOR_ALPHA_ATTACKER_BONUS_MODIFIER: 95 # substantially less likely to be alpha legion
       INTIMIDATION_RESISTANCE: 50
-      # TODO: add kamikaze tags
+      #add kamikaze tags
+      ARMOR_DISABLE_OVERKILL_SELF_DESTRUCT: 1
+      ARMOR_IS_EXPLODE_ON_DEATH: 1
+      ARMOR_IS_KAMIKAZI: 1
+      ARMOR_ALWAYS_OVERKILL: 1
