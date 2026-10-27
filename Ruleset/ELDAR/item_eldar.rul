@@ -41,6 +41,24 @@ items:
     sellActionMessage: STR_ELDAR_CITIZEN_SELL_MESSAGE
     listOrder: 0
 
+    ### ASPECT ARMOR
+
+  - type: STR_ELDAR_AVENGER_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_DRAGON_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_BANSHEE_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_SCORPION_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_HAWK_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_SPIDER_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_REAPER_ARMOR_ITEM
+    size: 0.2
+
+
   - type: STR_REAPER_LAUNCHER_ITEM
     size: 0.4
   - type: STR_TEMPEST_LAUNCHER_ITEM
@@ -98,8 +116,8 @@ items:
   - type: STR_WRAITHGUARD_ARMOR_ITEM
     requires:
       - STR_ELDAR_WRAITHGUARD_RESEARCH
-    size: 6
+    size: 3
   - type: STR_WRAITHBLADE_ARMOR_ITEM
     requires:
       - STR_ELDAR_WRAITHBLADE_RESEARCH
-    size: 6
+    size: 3

@@ -16,3 +16,9 @@ items:
     tuAuto: 0
     tuSnap: 40
     tuAimed: 0
+
+## Stun weapons
+
+  - type: STR_STUN_ROD # Shock Maul, from 40k mod
+    categories: [STR_CAT_MELEE, STR_CAT_STUN]
+    tuMelee: 25 # Lowered from 30% TU cost, otherwise unchanged

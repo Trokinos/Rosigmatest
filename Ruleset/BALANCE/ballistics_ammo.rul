@@ -151,6 +151,7 @@ items:
   - type: STR_RIFLE_CLIP_MC  # done
     refNode: *STR_BOLTER_AMMO_MC
     power: 90
+    listOrder: 10423
 
   - type: STR_RIFLE_CLIP_EX  # done
     refNode: *STR_BOLTER_AMMO_METAL_STORM
@@ -394,7 +395,7 @@ items:
     power: 60 # was 55
     clipSize: 12
 
-  - type: STR_RIFLE_CLIP_DOM  # Dominion special rounds DETONATOR       10430     EXPLOSIVE        ToStun
+  - type: STR_RIFLE_CLIP_DOM  # Dominion special rounds DETONATOR       10416     EXPLOSIVE        ToStun
     refNode: *STR_BOLTER_AMMO
     damageAlter:  # DA BOLTER
       ToArmorPre: 0.2
@@ -913,7 +914,7 @@ items:
       RandomWound: false
       ToMorale: 2.0  # incendiary
 
-  - type: STR_RIFLE_CLIP_R  #          10460                      ToStun
+  - type: STR_RIFLE_CLIP_R  #          10414                      ToStun
     power: 70
     refNode: *STR_BOLTER_AMMO
     damageAlter:  # DA BOLTER TZZ

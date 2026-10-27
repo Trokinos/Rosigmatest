@@ -309,6 +309,7 @@ items:
     tuAimed: 0
 
     autoShots: 5
+    listOrder: 10326
 
   - type: STR_MCRIFLE  # done  # MC
     armor: 200

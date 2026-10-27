@@ -1843,3 +1843,41 @@ mapScripts:
         rects:
           - [1, 2, 2, 2]
       - type: fillArea
+
+
+  - type: PROM_PROMISE_SCRIPT
+    commands:
+      - type: addCraft
+        rects:
+          - [0, 4, 1, 2]
+          - [5, 4, 1, 2]
+      - type: addBlock
+        size: 2
+        blocks: [33]
+        terrain: MUNDAINDUSTRIALURBANDIO
+        rects:
+          - [2, 1, 2, 2]
+        executions: 1
+      - type: addBlock
+        size: 2
+        executions: 4
+        terrain: REFINERY_DESTRUCTIBLE
+      # Add 3 of the sacrifices [40, 60, 67, 69]
+      - type: addBlock
+        terrain: MUNDAINDUSTRIALURBANDIO
+        blocks: [40, 60, 67, 69, 75, 77, 78, 80, 82]
+        maxUses: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        executions: 3
+      # And 4 of the decoys [39, 59, 66, 68]
+      - type: addBlock
+        terrain: MUNDAINDUSTRIALURBANDIO
+        blocks: [39, 59, 66, 68, 74, 76, 79, 81]
+        maxUses: [1, 1, 1, 1, 1, 1, 1, 1, 1]
+        executions: 4
+      - type: fillArea
+        blocks: [3, 4, 5, 6, 7, 8, 13, 14, 15, 16, 17]
+        freqs: [2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2]
+        maxUses: [1, 1, 1, 1, 1, 2, 1, 2, 2, 1, 2]
+        terrain: REFINERY_DESTRUCTIBLE
+      - type: fillArea
+        terrain: REFINERY_DESTRUCTIBLE

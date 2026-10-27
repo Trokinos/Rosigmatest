@@ -2357,7 +2357,7 @@ items:
       ITEM_IS_KAMIKAZI_TRIGGER: 2  # triggers self-destruct on melee
 
   - type: STR_ORK_STINKBOMB  # Stun grenade
-    categories: [STR_CAT_GRENADES, STR_CAT_ORK]
+    categories: [STR_CAT_GRENADES, STR_CAT_ORK, STR_CAT_STUN]
     requires:
       - STR_ORK_BASIC_WEAPONS
     costBuy: 20000 # stunning should be pricey

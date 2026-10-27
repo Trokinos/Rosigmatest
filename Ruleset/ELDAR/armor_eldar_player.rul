@@ -83,6 +83,7 @@ armors:
       F9: ["", "ELDAR_F", "CLOSEDHELMET4", "ACCESSORY4"]
       F10: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY12"]
       F11: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY8"]
+    moveSound: 1912
 
   - type: STR_ELDAR_ARMOR_GUARDIAN_SHIELD_PLAYER        # GUARDIAN
     refNode: *GUARDIAN_ARMOR
@@ -191,10 +192,12 @@ armors:
       F10: ["", "ELDAR_F", "CLOSEDHELMET4", "ACCESSORY2"]
       F11: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY1"]
       F12: ["", "ELDAR_F", "CLOSEDHELMET1", "ACCESSORY11"]
+    moveSound: 1912
     stats: #some stat changes for ranger
       firing: 5
     builtInWeapons:
       - STR_RANGER_LONG_RIFLE
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED
       - STR_RANGER_LONG_RIFLE_MAG_FIXED
 
   - type: STR_ELDAR_RANGER_SNIPER_ARMOR_P
@@ -203,12 +206,14 @@ armors:
     antiCamouflageAtDark: 5
     camouflageAtDay: 12
     camouflageAtDark: 12
+    customArmorPreviewIndex: 1365
     units:
       - STR_ELDAR_RANGER_PLAYER
     stats: #stats for sniper
       firing: 10
     builtInWeapons:
       - STR_RANGER_LONG_RIFLE_SCOPED
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED
       - STR_RANGER_LONG_RIFLE_MAG_FIXED
 
 # DEPRECATED. in future version (3.4 onward) please add - delete: name to keep rosigma clean
@@ -273,7 +278,7 @@ armors:
   - &AVENGER_ARMOR
     type: STR_ELDAR_ARMOR4_P       # DIRE AVANGER
     requires: STR_ELDAR_DIRE_AVENGER_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_AVENGER_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 3
@@ -317,6 +322,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 265
     drawingRoutine: 0
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 0.9  # AP
@@ -373,7 +379,7 @@ armors:
   - &SCORPION_ARMOR
     type: STR_ELDAR_ARMOR5_P       # SCORPION PLAYER
     requires: STR_ELDAR_SCORPION_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_SCORPION_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     camouflageAtDay: 12
@@ -419,6 +425,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 263
     drawingRoutine: 0
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 1.0  # AP
@@ -479,7 +486,7 @@ armors:
   - &BANSHEE_ARMOR
     type: STR_ELDAR_ARMOR2_P       # BANSHEE PLAYER
     requires: STR_ELDAR_BANSHEE_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_BANSHEE_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 5 # banshee bonus
@@ -523,6 +530,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 266
     drawingRoutine: 0
+    moveSound: 1912
     #forcedTorso: 1  # USE MALE
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
@@ -587,7 +595,7 @@ armors:
   - &DRAGON_ARMOR
     type: STR_ELDAR_DRAGON_ARMOR_P       # DRAGON ARMOR
     requires: STR_ELDAR_FIREDRAGON_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_DRAGON_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 3
@@ -634,6 +642,7 @@ armors:
     corpseBattle:
       - STR_ELDAR_DRAGON_CORPSE_P
     drawingRoutine: 0
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 0.9  # AP
@@ -672,7 +681,7 @@ armors:
 
   - type: STR_ELDAR_HAWK_ARMOR_P       # SWOOPING HAWK
     requires: STR_ELDAR_HAWK_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_HAWK_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 3
@@ -716,6 +725,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 1359
     drawingRoutine: 0
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 0.9  # AP
@@ -760,7 +770,7 @@ armors:
   - &SPIDER_ARMOR
     type: STR_ELDAR_SPIDER_ARMOR_P       # DRAGON ARMOR Copy Paste edit later
     #requires: STR_ELDAR_SPIDER_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_SPIDER_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 3
@@ -807,6 +817,7 @@ armors:
     corpseBattle:
       - STR_ELDAR_SPIDER_CORPSE_P
     drawingRoutine: 0
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 0.9  # AP
@@ -851,7 +862,7 @@ armors:
   - &REAPER_ARMOR
     type: STR_ELDAR_ARMOR6_P       # REAPER
     requires: STR_ELDAR_REAPER_RESEARCH
-    storeItem: STR_NONE # AML comes as standard for Reapers
+    storeItem: STR_ELDAR_REAPER_ARMOR_ITEM
     ufopediaType: STR_ELDAR_ARMOR6_P
     visibilityAtDay: 40
     visibilityAtDark: 30
@@ -894,7 +905,7 @@ armors:
       F9: ["", "ELDARR_F", "CLOSEDHELMET4", "ACCESSORY4"]
       F10: ["", "ELDARR_F", "CLOSEDHELMET5", "ACCESSORY12"]
       F11: ["", "ELDARR_F", "CLOSEDHELMET6", "ACCESSORY13"]
-    customArmorPreviewIndex: 264
+    customArmorPreviewIndex: 1440
     corpseBattle:
       - STR_ELDAR_REAPER_CORPSE_P
     selectUnitMale:       [{mod: 40k, index: 1413}, {mod: 40k, index: 1414}, {mod: 40k, index: 1415}, {mod: 40k, index: 1416}, {mod: 40k, index: 1417}]  # yamllint disable-line rule:colons
@@ -908,6 +919,7 @@ armors:
     deathMale:            [{mod: 40k, index: 1423}, {mod: 40k, index: 1424}, {mod: 40k, index: 1425}, {mod: 40k, index: 1426}]  # yamllint disable-line rule:colons
     deathFemale:          [{mod: 40k, index: 1423}, {mod: 40k, index: 1424}, {mod: 40k, index: 1425}, {mod: 40k, index: 1426}]  # yamllint disable-line rule:colons
     drawingRoutine: 0
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 0.9  # AP
@@ -945,23 +957,27 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
       INTIMIDATION_RESISTANCE: 50
 
-  - type: STR_ELDAR_REAPER_REAPERLAUNCHER_ARMOR_P
-    refNode: *REAPER_ARMOR
-    storeItem: STR_REAPER_LAUNCHER_ITEM
-    builtInWeapons:
-      - STR_REAPER_LAUNCHER
-
   - type: STR_ELDAR_REAPER_TEMPESTLAUNCHER_ARMOR_P
     refNode: *REAPER_ARMOR
     storeItem: STR_TEMPEST_LAUNCHER_ITEM
+    customArmorPreviewIndex: 1441
     builtInWeapons:
       - STR_ELDAR_TEMPEST_LAUNCHER
 
   - type: STR_ELDAR_REAPER_SHURIKENCANNON_ARMOR_P
     refNode: *REAPER_ARMOR
     storeItem: STR_SHURIKEN_CANNON_ITEM
+    customArmorPreviewIndex: 1442
     builtInWeapons:
       - STR_SHURIKEN_CANNON
+
+  - type: STR_ELDAR_REAPER_REAPERLAUNCHER_ARMOR_P
+    refNode: *REAPER_ARMOR
+    storeItem: STR_REAPER_LAUNCHER_ITEM
+    customArmorPreviewIndex: 1443
+    builtInWeapons:
+      - STR_REAPER_LAUNCHER
+
 
   #- type: STR_ELDAR_ARMOR6_P_SHIELD
   #  refNode: *REAPER_ARMOR
@@ -1066,6 +1082,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     spriteSheet: ELDAR_AVENGER_EXARCH.SPK
     customArmorPreviewIndex: 1356
+    moveSound: 1912
     corpseBattle:
       - STR_ELDAR_AVENGEREX_CORPSE_P
     tags:
@@ -1123,7 +1140,8 @@ armors:
     units:
       - STR_ELDAR_REAPER_EXARCH_M
       - STR_ELDAR_AUTARCH_PLAYER
-    customArmorPreviewIndex: 1350
+    customArmorPreviewIndex: 1444
+    moveSound: 1912
     corpseBattle:
       - STR_ELDAR_REAPER_EXARCH_CORPSE_P
     damageModifier:  # ELDAR ARMOR
@@ -1148,22 +1166,24 @@ armors:
       DODGE_CHANCE: 20 #+5
       ARMOR_MAX_SUCCESSFUL_DODGES: 2 #+1
       INTIMIDATION_RESISTANCE: 100
-
-  - type: STR_ELDAR_REAPEREX_REAPERLAUNCHER_ARMOR_P
-    refNode: *REAPER_EXARCH_ARMOR
-    storeItem: STR_REAPER_LAUNCHER_ITEM
-    builtInWeapons:
-      - STR_REAPER_LAUNCHER
   - type: STR_ELDAR_REAPEREX_TEMPESTLAUNCHER_ARMOR_P
     refNode: *REAPER_EXARCH_ARMOR
     storeItem: STR_TEMPEST_LAUNCHER_ITEM
+    customArmorPreviewIndex: 1445
     builtInWeapons:
       - STR_ELDAR_TEMPEST_LAUNCHER
   - type: STR_ELDAR_REAPEREX_SHURIKENCANNON_ARMOR_P
     refNode: *REAPER_EXARCH_ARMOR
     storeItem: STR_SHURIKEN_CANNON_ITEM
+    customArmorPreviewIndex: 1446
     builtInWeapons:
       - STR_SHURIKEN_CANNON
+  - type: STR_ELDAR_REAPEREX_REAPERLAUNCHER_ARMOR_P
+    refNode: *REAPER_EXARCH_ARMOR
+    storeItem: STR_REAPER_LAUNCHER_ITEM
+    customArmorPreviewIndex: 1447
+    builtInWeapons:
+      - STR_REAPER_LAUNCHER
 
   - type: STR_ELDAR_DRAGONEX_ARMOR_P
     refNode: *DRAGON_ARMOR
@@ -1211,6 +1231,7 @@ armors:
       - STR_ELDAR_DRAGON_EXARCH_SOLDIER
       - STR_ELDAR_AUTARCH_PLAYER
     customArmorPreviewIndex: 1352
+    moveSound: 1912
     corpseBattle:
       - STR_ELDAR_DRAGON_EXARCH_CORPSE_P
     damageModifier:  # ELDAR ARMOR
@@ -1282,6 +1303,7 @@ armors:
       F10: ["", "ELDAR_F", "CLOSEDHELMET7", "ACCESSORY9"]
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     drawingRoutine: 0
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 1.0  # AP
@@ -1366,6 +1388,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 1358
     drawingRoutine: 0
+    moveSound: 1912
     #forcedTorso: 1  # USE MALE
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
@@ -1456,6 +1479,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 1360
     drawingRoutine: 0
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 0.9  # AP
@@ -1695,6 +1719,7 @@ armors:
     drawingRoutine: 0
     spriteSheet: ELDAR_SEER.SPK
     customArmorPreviewIndex: 267
+    moveSound: 1912
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 1.0  # AP
@@ -1808,14 +1833,15 @@ armors:
   - &WRAITHGUARD_ARMOR
     type: STR_ELDAR_WRAITHGUARD_WRAITHCANNON_ARMOR_P
     storeItem: STR_WRAITHCANNON
-    moveSound: {mod: 40k, index: 700}
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
     psiVision: 10 # Wraith units rely on psiVision
     visibilityAtDay: 10 # required against fearImmune enemies
     visibilityAtDark: 10
     heatVision: 100 # ignores smoke
-    allowsRunning: false  # Mechanical
+    allowsRunning: true  # Allow players to use ctrl ignore stopping constantly due to psivision
+    moveCost:
+      runPercent: [100, 66] # same as walk
     allowsKneeling: false
     instantWoundRecovery: true #similar to rubric marines
     fearImmune: true
@@ -1873,6 +1899,7 @@ armors:
       F10: ["", "ELDAR_F", "CLOSEDHELMET7", "ACCESSORY9"]
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 1361
+    moveSound: 1911
     size: 1
     units:
       - STR_ELDAR_WRAITHGUARD_P
@@ -1907,14 +1934,16 @@ armors:
   - &WRAITHBLADE_ARMOR
     type: STR_ELDAR_WRAITHBLADE_GHOSTAXE_ARMOR_P
     storeItem: STR_GHOSTAXE
-    moveSound: {mod: 40k, index: 700}
+    moveSound: 1911
     antiCamouflageAtDay: 10
     antiCamouflageAtDark: 10
     psiVision: 10 # Wraith units rely on psiVision
     visibilityAtDay: 10 # required for fearImmune units
     visibilityAtDark: 10
     heatVision: 100 # ignores smoke
-    allowsRunning: false  # Mechanical
+    allowsRunning: true  # Allow players to use ctrl ignore stopping constantly due to psivision
+    moveCost:
+      runPercent: [100, 66] # same as walk
     allowsKneeling: false
     instantWoundRecovery: true # similar to rubric Marines
     fearImmune: true
