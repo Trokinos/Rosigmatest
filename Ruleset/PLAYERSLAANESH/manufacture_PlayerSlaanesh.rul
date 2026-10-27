@@ -88,7 +88,7 @@ manufacture:
     requiredItems:
       STR_BOLTER_CANTUS: 1
       STR_SLAANESHPATH_PIETY: 30
-    points: 0
+    points: 10
 
   - name: STR_ATTACH_GL_TO_CANTUS
     category: STR_RITES_OF_CORRUPTION
@@ -120,7 +120,7 @@ manufacture:
       STR_BOLTER_DEAZ: 1
       STR_ELERIUM_115: 4
       STR_SLAANESHPATH_PIETY: 35
-    points: 0
+    points: 12
 
   - name: STR_ATTACH_WEBBER_TO_DEAZ
     category: STR_RITES_OF_CORRUPTION
@@ -138,14 +138,29 @@ manufacture:
       STR_CONSTRICTOR_PISTOL: 1
     points: 0
 
+  - name: STR_CORRUPT_ELOHIM_BOLTER
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+    - STR_CORRUPT_ADEPTAS_BOLTERS
+    time: 160
+    cost: 9000 # +25K promethium
+    producedItems:
+      STR_BOLTER_ELOHIM_SLAAN: 1
+    requiredItems:
+      STR_BOLTER_ELOHIM: 1
+      STR_ELERIUM_115: 5
+      STR_SLAANESHPATH_PIETY: 35
+    points: 15
+
  # ARMOR CONVERSION
 
   - name: STR_CORRUPT_ADEPTAS_ARMOR
-    category: STR_RITES_OF_CORRUPTION
+    category: STR_ADVANCEMENT
     requires:
     - STR_POWER_ARMOR_CORRUPTION
     space: 20
-    time: 425 
+    time: 300 
     cost: 12000 # Actual cost factoring in material sell value is 70K
     producedItems:
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
@@ -154,14 +169,10 @@ manufacture:
       STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: 1
       STR_SLAANESHPATH_PIETY: 50
       STR_ELERIUM_115: 4
-    points: 0
-
-########################################################
-################ POWER ARMOR PRODUCTION ################
-########################################################
+    points: 20
 
   - name: STR_REPAIR_ADEPTAS_POWER_ARMOR
-    category: STR_RITES_OF_CORRUPTION
+    category: STR_ADVANCEMENT
     requires:
     - STR_POWER_ARMOR_CORRUPTION
     space: 20
@@ -175,6 +186,10 @@ manufacture:
       STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: 1
       STR_SLAANESHPATH_PIETY: 50
       STR_ELERIUM_115: 4
-    points: 0
+    points: 20
+
+########################################################
+################ POWER ARMOR PRODUCTION ################
+########################################################
  
 #### RITUALS OF PERFECTION - HIGH TIER UNIT PROMOTION

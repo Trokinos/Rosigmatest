@@ -281,6 +281,15 @@ items:
     armor: 200
     listOrder: 11898
 
+# - type: STR_AMPUTATOR_SHELLS
+
+# - type: STR_GLITTERSHELLS
+
+# - type: STR_SCATTERSCREAM_SHELLS
+
+# - type: CHEM_FLECHETTE_SHELLS
+
+
 
  #### SONIC AMMO ####
 

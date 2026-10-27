@@ -15349,6 +15349,8 @@ en-US:  #  yamllint disable-line rule:empty-values
 
 #Weapon conversion, armor corruption, armor repair
   STR_CORRUPT_CANTUS_BOLTER: "Corrupt Cantus Bolter"
+  STR_CORRUPT_DEAZ_BOLTER: "Corrupt Godwyn-De'az Bolter"
+  STR_CORRUPT_ELOHIM_BOLTER: "Corrupt Elohim Bolter"
   STR_ATTACH_GL_TO_CANTUS: "Create Cantus Combi-bolter"
   STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
   STR_REPAIR_ADEPTAS_POWER_ARMOR: "Corrupt Damaged Adeptas Power Armor"
@@ -15382,15 +15384,18 @@ en-US:  #  yamllint disable-line rule:empty-values
 
 #WEAPONS
   STR_SLAMFIRE: "Slam-fire"
-  STR_FOCUSED_SHOT: "Focused Shot"
+  STR_SNAP_SHOT: "Snap Shot"
+  STR_FIRE_SHOTGUN: "Fire Shotgun"
+  STR_FIRE_WEBBER: "Fire Webber"
   STR_PLASMA_BARRAGE: "Plasma Barrage"
   STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
-  STR_BOLTER_ARACHNE: "Immaculate Arachne Bolter"
+  STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
   STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
-  STR_BOLTER_KERES: "Immaculate Keres Bolter"
-  STR_BOLTER_NAIAD: "Immaculate Naiad Bolter"
-  STR_BOLTER_NAGA: "Immaculate Naga Bolter"
-  STR_BOLTER_TIAMAT: "Immaculate Tiamat Bolter"
+  STR_BOLTER_KERES: "Keres Combi-bolter"
+  STR_BOLTER_KELPIE: "Kelpie Combi-bolter"
+  STR_BOLTER_NAIAD: "Naiad Combi-bolter"
+  STR_BOLTER_NAGA: "Naga Combi-bolter"
+  STR_BOLTER_TIAMAT: "Tiamat Combi-bolter"
   STR_BOLTER_CANTUS_GL: "Immaculate Cantus Bolter /GL"
   STR_BOLTER_ELOHIM_SLAAN: "Immaculate Elohim Bolter"
   STR_PLASMA_CARBINE_SLAAN: "Immaculate Plasma Carbine"

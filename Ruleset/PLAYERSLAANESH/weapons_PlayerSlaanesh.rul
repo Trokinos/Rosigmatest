@@ -231,6 +231,7 @@ items:
 
  #### BALLISTIC WEAPONS ####
 
+
   - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
     requires:
@@ -428,32 +429,35 @@ items:
     type: STR_BOLTER_DEAZ_SLAAN
     dropoff: 5
     autoRange: 7
-    snapRange: 14
+    snapRange: 12
     aimRange: 0
 
-    accuracyAuto: 66  # 40k 66  # ROSIGMA 1.06Beta2 65
-    accuracySnap: 80  # 40k 80  # ROSIGMA 1.06Beta2 88
+    accuracyAuto: 65  
+    accuracySnap: 70
     accuracyAimed: 0
 
-    tuSnap: 20
-    tuAuto: 35  # 40k 40  # ROSIGMA 1.06Beta2 35
+    tuSnap: 26
+    tuAuto: 30
     tuAimed: 0
     size: 0.3
     dropoff: 5
-    costSell: 8000
+    costSell: 14000
     weight: 14 # - 4
 
-    bigSprite: 2007 # Elohim placeholder
-    floorSprite: 2050 # Elohim placeholder
-    handSprite: 2012 # Elohim placeholder
+    bigSprite: {mod: 40k, index: 550}
+    floorSprite: {mod: 40k, index: 1}
+    handSprite: {mod: 40k, index: 1496}
     bulletSprite: {mod: 40k, index: 6}
-    fireSound: 2137 # Elohim - fix this later?
+    fireSound: {mod: 40k, index: 707}
     compatibleAmmo:
       - STR_LIGHT_BOLTER_AMMO
       - STR_LIGHT_BOLTER_AMMO_MC
-      - STR_LIGHT_BOLTER_AMMO_INF
       - STR_LIGHT_BOLTER_AMMO_SLAAN
       - STR_LIGHT_BOLTER_AMMO_BM
+    confSnap:  # Double Shot
+      name: STR_BURST_SNAP_SHOT
+      arcing: false
+      shots: 2  # Double shot snap
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -482,6 +486,51 @@ items:
 #      time: true
 
   - type: STR_BOLTER_ARACHNE # COMBI WEBBER DEAZ
+    refnode: *SLAANESH_DEAZ_TEMPLATE
+    dropoff: 6
+    tuAimed: 25
+    accuracyAimed: 55
+    aimRange: 1
+    ammo:
+      0:
+        compatibleAmmo: [STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO_MC, STR_LIGHT_BOLTER_AMMO_SLAAN, STR_LIGHT_BOLTER_AMMO_BM]
+      1:
+        compatibleAmmo: [STR_CONSTRICTOR_PISTOL_AMMO]
+    confSnap:
+      ammoSlot: 0
+      name: STR_BURST_SNAP_SNOT
+      arcing: false
+      shots: 2
+    confAimed:
+      ammoSlot: 1
+      name: STR_FIRE_WEBBER
+      arcing: false
+
+  - type: STR_BOLTER_KELPIE # De'az with underslung shotgun. Has a DMR-like profile.
+    refnode: *SLAANESH_DEAZ_TEMPLATE
+    accuracySnap: 80
+    snapRange: 15
+    tuSnap: 24
+    accuracyAimed: 60
+    aimedRange: 6
+    tuAimed: 20
+    autoRange: 10
+    tuAuto: 35
+    autoShots: 2
+    ammo:
+      0:
+        compatibleAmmo: [STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO_MC, STR_LIGHT_BOLTER_AMMO_SLAAN, STR_LIGHT_BOLTER_AMMO_BM]
+      1:
+        compatibleAmmo: [STR_SHOTGUN_SHELLS] # PLACEHOLDER
+    confSnap:
+      ammoSlot: 0
+      name: STR_SNAP_SNOT
+      shots: 1
+      arcing: false
+    confAimed:
+      ammoSlot: 1
+      name: STR_FIRE_SHOTGUN
+      arcing: false
 
   - type: STR_BOLTER_ELOHIM_SLAAN
 
