@@ -28,14 +28,15 @@ items:
       REACTION_MULTIPLIER: 50
       REACTION_PENALTY_KNEELING_BYPASS: 1
 
- #
+
  #### LAS WEAPONS ####
 
   - type: STR_LAS_BATTLERIFLE_SLAAN
     dropoff: 3
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     size: 0.3
-    costBuy: 16000 # More expensive - should this be buyable?
+    requires:
+    - STR_ALIENS_ONLY
     requiresBuy: # Placeholder
     - STR_SLAANESHPATH
     costSell: 4000
@@ -75,6 +76,8 @@ items:
 
   - type: STR_HEAVY_LASPISTOL_SLAAN  # Accatran heavy. Takes normal lasgun cells.
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requires:
+    - STR_ALIENS_ONLY
     size: 0.1
     dropoff: 4
     costSell: 500
@@ -108,6 +111,8 @@ items:
  
   - type: STR_MELTA_CARBINE_SLAAN # Stolen & modified melta carbine technology. Expensive, but versatile.
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
+    requires:
+    - STR_ALIENS_ONLY
     size: 0.3
     costSell: 20000  # buy?
     weight: 12  # lightweight melta
@@ -146,6 +151,45 @@ items:
     tags:
       ITEM_AIMED_FLAT_POWER_BONUS_PERCENT: 60 # Slightly weaker than a full melta on focused setting.
       ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10 
+
+ #### PLASMA WEAPONS ####
+
+  - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az. lacks overcharge, but faster to fire.
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
+    requires:
+    - STR_ALIENS_ONLY
+    size: 0.2
+    costSell: 30000 # 50% more expensive
+    weight: 12 # -4 weight
+    bigSprite: 2086
+    handSprite: {mod: 40k, index: 48}
+    floorSprite: {mod: 40k, index: 30}
+    bulletSprite: {mod: 40k, index: 11}
+    fireSound: {mod: 40k, index: 18}
+    compatibleAmmo:
+      - STR_PLASMA_SPRAY_CLIP_SLAAN
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    attraction: 1
+    listOrder: 11400
+    dropoff: 6
+    autoRange: 10
+    snapRange: 14 # Slaanesh plasma specialization; 1/3 of the normal burst fire malus.
+    accuracyAuto: 55
+    accuracySnap: 65
+    tuAuto: 35
+    tuSnap: 25 # 
+    autoShots: 3
+    confSnap:
+      name: STR_BURST_SNAP_SHOT
+      shots: 2
+    compatibleAmmo:
+      - STR_PL
+    tags:
+      REACTION_MULTIPLIER: 150 #carbine
 
  #### LAUNCHERS ###
 
@@ -189,6 +233,8 @@ items:
 
   - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
+    requires:
+    - STR_ALIENS_ONLY
     dropoff: 3  # light sniper weapon
     weight: 16  # -4 weight vs repressor
     size: 0.4
@@ -229,12 +275,47 @@ items:
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 75
       ITEM_HAS_BIPOD: 1
 
+ #### BOLT PISTOLS ####
+
+  - type: STR_BOLTPISTOL_DEAZ_SLAAN
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    costSell: 4000
+    dropoff: 6
+    autoRange: 0
+    snapRange: 10
+    aimRange: 0
+    accuracyAuto: 0
+    accuracySnap: 60 
+    accuracyAimed: 0
+    tuAuto: 0
+    tuSnap: 26  # 40k 21  # ROSIGMA 1.06Beta2 16
+    tuAimed: 0
+    compatibleAmmo:
+      - STR_LIGHT_BOLTPISTOL_AMMO
+    confSnap:
+      name: STR_BURST_SNAP_SHOT
+      shots: 2  # Double shot snap
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+    battleType: 1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 30
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10090
+    tags:
+      REACTION_MULTIPLIER: 200
+
  #### LIGHT BOLTERS ####
 
   - type: STR_BOLTER_CANTUS_SLAAN # Done (Pending art asset rework)
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
       - STR_SLAANESHPATH
+    requires:
+    - STR_ALIENS_ONLY
     dropoff: 5
     autoRange: 7 
     snapRange: 12 # -2 vs Cantus, Slaanesh weapon profile
@@ -343,41 +424,45 @@ items:
       ITEM_RECOIL: 20
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-#  - type: STR_BOLTER_DEAZ_SLAAN 
-#    dropoff: 5
-#    autoRange: 7
-#    snapRange: 14
-#    aimRange: 0
+  - &SLAANESH_DEAZ_TEMPLATE
+    type: STR_BOLTER_DEAZ_SLAAN
+    dropoff: 5
+    autoRange: 7
+    snapRange: 14
+    aimRange: 0
 
-#    accuracyAuto: 66  # 40k 66  # ROSIGMA 1.06Beta2 65
-#    accuracySnap: 80  # 40k 80  # ROSIGMA 1.06Beta2 88
-#    accuracyAimed: 0
+    accuracyAuto: 66  # 40k 66  # ROSIGMA 1.06Beta2 65
+    accuracySnap: 80  # 40k 80  # ROSIGMA 1.06Beta2 88
+    accuracyAimed: 0
 
-#    tuSnap: 20
-#    tuAuto: 35  # 40k 40  # ROSIGMA 1.06Beta2 35
-#    tuAimed: 0
-#    size: 0.3
-#    dropoff: 5
-#    costBuy: 5000
-#    costSell: 2750
-#    weight: 18
-#    bigSprite: 550
-#    floorSprite: 1
-#    handSprite: 1496
-#    bulletSprite: 6
-#    fireSound: 707
-#    compatibleAmmo:
-#      - STR_LIGHT_BOLTER_AMMO
-#      - STR_LIGHT_BOLTER_AMMO_MC
-#    battleType: 1
-#    twoHanded: true
-#    invWidth: 2
-#    invHeight: 3
-#    armor: 60
-#    autoShots: 3
-#    bulletSpeed: 30
-#    attraction: 1
-#    listOrder: 10290
+    tuSnap: 20
+    tuAuto: 35  # 40k 40  # ROSIGMA 1.06Beta2 35
+    tuAimed: 0
+    size: 0.3
+    dropoff: 5
+    costSell: 8000
+    weight: 14 # - 4
+
+    bigSprite: 2007 # Elohim placeholder
+    floorSprite: 2050 # Elohim placeholder
+    handSprite: 2012 # Elohim placeholder
+    bulletSprite: {mod: 40k, index: 6}
+    fireSound: 2137 # Elohim - fix this later?
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_INF
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 150
+    autoShots: 3
+    bulletSpeed: 30
+    attraction: 1
+    listOrder: 10290
     #*** Melee bayonet
 #    meleeHitSound: 101
 #    meleeAnimation: 0
@@ -400,8 +485,9 @@ items:
 
   - type: STR_BOLTER_ELOHIM_SLAAN
 
-  - type: STR_BOLTER_NAGA # Corrupted Elohim with direct-fire grenade launcher attachment.
-
+  - type: STR_BOLTER_NAGA # Corrupted Elohim with plasma attachment.
+    requires:
+    - STR_ALIENS_ONLY
     dropoff: 5
     autoRange: 9
     snapRange: 16  # DMR
@@ -421,6 +507,7 @@ items:
       - STR_RIFLE_CLIP_MC
       - STR_RIFLE_CLIP_AP
       - STR_RIFLE_CLIP_EX
+      - STR_PLASMA_SPRAY_CLIP_SLAAN
     ammo: # PLACEHOLDER
       0:
         compatibleAmmo: [STR_RIFLE_CLIP_S, STR_RIFLE_CLIP, STR_RIFLE_CLIP_MC, STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX]
@@ -441,9 +528,13 @@ items:
       ammoSlot: 1  # Plasma barrage
       shots: 3
       arcing: false
-      name: STR_SONIC_FIRE
+      name: STR_PLASMA_BARRAGE
+    tags:
+    ITEM_AIMED_FLAT_POWER_BONUS: -5 # Lower power output.
 
   - type: STR_BOLTER_NAIAD  # Corrupted Hellspite bolter with a sonic projector.
+    requires:
+    - STR_ALIENS_ONLY
     dropoff: 5
     autoRange: 7  # 4 Auto
     snapRange: 14
@@ -482,6 +573,8 @@ items:
       name: STR_SONIC_FIRE
 
   - type: STR_BOLTER_KERES # Converted De'az bolter with canted foregrip. Extremely high RoF.
+    requires:
+    - STR_ALIENS_ONLY
     dropoff: 7 # You *really* don't want to fire this one at range.
     autoRange: 6  # -2 vs hellspite
     snapRange: 12  # -1 vs hellspite.

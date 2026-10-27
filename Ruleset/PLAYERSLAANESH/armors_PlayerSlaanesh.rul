@@ -180,13 +180,71 @@ armors:
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
 
-  - &STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
-    type: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR # HEAVILY modified Medicae armor. A medicae-assassin hybrid.
+
+  - type: STR_SLAANESHPATH_IMMACULATE_ARMOR     # Corrupted Adeptas Armor. Baseline armor full immaculate sisters.
     visibilityAtDay: 40
-    visibilityAtDark: 26 # Heightened senses and modified medicae sensors.
+    visibilityAtDark: 24 # +4 heightened senses.
+    antiCamouflageAtDay: 5  # Heightened senses
+    antiCamouflageAtDark: 5 # Heightened senses
+    heatVision: 20 # Heightened senses
+    spriteSheet: XCOM_33DRED.PCK # Fix later
+    spriteInv: MAN_33 # Fix later 
+    customArmorPreviewIndex: 60 # Fix later
+    corpseBattle:
+      - STR_ADEPTAS_CORPSE
+    stats:
+      tu: 10 # + 10 vs adeptas power armor
+      stamina: 20
+      health: 5
+      bravery: 0 # - 10 vs adeptas power armor 
+      reactions: 10 # + 5 vs adeptas power armor
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 0
+      psiSkill: 0 # -10 vs adeptas power armor
+      melee: 10 # + 10 vs adeptas power armor
+    storeItem: STR_NONE
+    frontArmor: 95 # -10
+    sideArmor: 85
+    rearArmor: 50
+    underArmor: 95 # + 10
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.8  # FLAMES - 0.2 malus vs adeptas power armor
+      - 0.8  # HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA - 0.1 bonus vs adeptas power armor.
+      - 0.7  # STUN - 0.3 bonus vs adeptas power armor.
+      - 0.8  # MELEE - 0.2 bonus vs Adeptas power armor
+      - 1.0  # ACID - 0.2 malus vs Adeptas power armor
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_HANDMAIDEN # Temporary until Immaculates are implemented
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [3]
+    tags:
+      INFECTION_RESIST: 35 # Slaanesh Immaculate baseline. 
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - &STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
+    type: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR # HEAVILY modified immaculate armor. A medicae-assassin hybrid.
+    visibilityAtDay: 40
+    visibilityAtDark: 27 # Heightened senses and modified medicae sensors.
     antiCamouflageAtDay: 7  # Heightened senses
     antiCamouflageAtDark: 7 # Heightened senses
-    heatVision: 30 # Heightened senses and modified medicae sensors. Basic Night Lord CSM level.
+    heatVision: 34 # Heightened senses and modified medicae sensors. Night Lord CSM level.
     spriteSheet: ADEPTASMEDICAE.PCK
     spriteInv: MED_33
     storeItem: STR_NONE
@@ -206,20 +264,20 @@ armors:
       psiSkill: 5
       melee: 15 # Combat drugs
       mana: 20 # Auxilliary ammo/energy reserve
-    frontArmor: 50 # 40 less than sororitas armor
-    sideArmor: 50 # 30 less than sororitas armor
-    rearArmor: 50 # 10 less than sororitas armor 
-    underArmor: 65 # Agility
+    frontArmor: 80 
+    sideArmor: 75
+    rearArmor: 65 
+    underArmor: 90 # Agility
     damageModifier:  # MARINE ARMOR
       - 1.0  # none
-      - 0.9  # Uncanny dodge
+      - 0.9  # AP - Uncanny dodge
       - 0.7  # FLAMES
       - 0.7  # Resistance to HE, uncanny dodge
       - 0.9  # LASCANON
       - 0.9  # PLASMA
       - 0.7  # STUN Further improved stun resistance
       - 0.7  # MELEE Uncanny dodge + combat drugs
-      - 0.7  # ACID
+      - 0.9  # ACID
       - 0.2  # SMOKE
       - 0.2  # IMPACT
       - 1.0  # MELTA
@@ -231,7 +289,7 @@ armors:
       - AUX_CHIRURGEON_MEDI_KIT
     loftempsSet: [2] # Agile and dodgy!
     tags:
-      INFECTION_RESIST: 55 # Slaanesh protection + serial drug abuse 
+      INFECTION_RESIST: 60 # Slaanesh immaculate blessing + medicae equipment.
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -292,6 +350,8 @@ armors:
       UNIT_TYPE_SLAANESH: 1
       DODGE_CHANCE: 30
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  
 
   - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR     # Decent-quality, custom mesh armor. 
     visibilityAtDay: 40

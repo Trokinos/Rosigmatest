@@ -153,7 +153,10 @@ research:
     dependencies:
     - STR_SLAANESHPATH_GATE
 
-
+  - name: STR_POWER_ARMOR_CORRUPTION # This is the tech that unlocks immaculate power armor.
+    cost: 150
+    dependencies:
+      - STR_GENERALLOCK # Placeholder
 
  ### TIER 1 PIETY PROJECTS
  

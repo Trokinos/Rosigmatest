@@ -4,7 +4,7 @@ extended:
 items:
 
  #### BLACK MARKET AMMO ####
-  - &STR_BM_BOLTER_AMMO
+  - &BM_BOLTER_AMMO_TEMPLATE
     type: STR_CANTUS_BOLTER_AMMO_BM  # Low-grade, unreliable light bolts bought at unreasonable prices.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
     requiresBuy:
@@ -46,6 +46,16 @@ items:
       ITEM_ACCENT_COLOR: 1
       ITEM_SWAP_BASE_COLOR: 8
       ITEM_SWAP_ACCENT_COLOR: 6
+
+  - type: STR_LIGHT_BOLTER_AMMO_BM
+    refnode: *BM_BOLTER_AMMO_TEMPLATE
+    power: 54
+    costBuy: 2400
+    costSell: 140
+    hitAnimation:
+      mod: 40k
+      index: 120
+    explosionSpeed: 3
 
  #### SLAANESH PLASMA AMMO ####
  
@@ -446,8 +456,8 @@ items:
     invHeight: 2
     listOrder: 10460
 
-  - &STR_SLAANESHPATH_SOULSTAIN_TEMPLATE # Soulstain bolts
-    type: STR_SLAANESHPATH_CLIP_SOULSTAIN  # Slaanesh-flavored Necromunda Warp bolts.  
+  - &STR_SLAANESHPATH_SOULBLIGHTER_TEMPLATE # Soulstain bolts
+    type: STR_SLAANESHPATH_CLIP_SOULBLIGHTER  # Slaanesh-flavored Necromunda Warp bolts.  
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1
     costSell: 150

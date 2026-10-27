@@ -15371,9 +15371,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
   STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
 #WEAPONS
-  STR_MELTA_CARBINE_SLAAN: "Slaanesh Melta Carbine"
   STR_SLAMFIRE: "Slam-fire"
   STR_FOCUSED_SHOT: "Focused Shot"
+  STR_PLASMA_BARRAGE: "Plasma Barrage"
   STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
   STR_BOLTER_ARACHNE: "Immaculate Arachne Bolter"
   STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
@@ -15383,6 +15383,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BOLTER_TIAMAT: "Immaculate Tiamat Bolter"
   STR_BOLTER_CANTUS_GL: "Immaculate Cantus Bolter /GL"
   STR_BOLTER_ELOHIM_SLAAN: "Immaculate Elohim Bolter"
+  STR_PLASMA_CARBINE_SLAAN: "Immaculate Plasma Carbine"
+  STR_MELTA_CARBINE_SLAAN: "Immaculate Melta Carbine"
   AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
   AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
   STR_GRENADE_LAUNCHER_GORGE: "Gorge Pattern Grenade Launcher"
@@ -15394,7 +15396,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CANTUS_BOLTER_AMMO_PENETRATOR: "Cantus Penetrator Magazine"
   STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Magazine"
   STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Magazine"
-  STR_LIGHT_BOLTER_AMMO_BM: "Black Market Bolt Magazine"
+  STR_LIGHT_BOLTER_AMMO_BM: "Black Market Light Bolter Magazine"
+  STR_LIGHT_BOLTER_AMMO_SB: "Light Bolter Soulblight Magazine"
   STR_CHOKE_GRENADE40: "40mm Choke Gas Grenade"
   STR_SONIC_GRENADE40: "40mm Sonic Grenade"
   STR_BALEFIRE_GRENADE40: "40mm Balefire Grenade"
@@ -15422,9 +15425,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   ## Slaanesh Adeptas Armors
 
   STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
-  STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR: "Exalted Handmaiden Armor"
+  STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR: "Favored Handmaiden Armor"
   STR_SLAANESHPATH_HANDMAIDEN_MEDICAE_ARMOR: "Handmaiden Medicae Armor"
-
+  STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
+  STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
   ## Slaanesh Adeptas Ranks
 
   STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"
