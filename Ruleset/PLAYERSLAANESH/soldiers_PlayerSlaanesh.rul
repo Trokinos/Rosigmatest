@@ -89,7 +89,7 @@ soldiers:
     rankBattleSprite: 4144 
     rankTinySprite: 4144
 
-  - type: STR_SLAANESHPATH_EXALTEDMAIDEN  # Exalted Handmaidens. Essentially the slaanesh cantus promotion.  
+  - type: STR_SLAANESHPATH_EXALTEDMAIDEN  # Favored Handmaidens.  
     flagOffset: 21 # !!! need to fix this later !!!
     costBuy: 20000  # Temporary. 
     costSalary: 18000 # Somewhat higher salary than base.
@@ -165,6 +165,81 @@ soldiers:
     rankTinySprite: 4148
 
  #### TODO: GIVE EXALTED CHIRURGEONS ABILITY TO INSPECT ENEMIES AT RANGE A LA INQUISITORS/STORMTROOPERS
+
+  - type: STR_SLAANESHPATH_IMMACULATE_SISTER  # Full Sisters. More elite than normal adeptas with higher stat caps.
+    flagOffset: 21 # !!! need to fix this later !!!
+    costSalary: 25000 # 10K more than normal Adeptas.
+    minStats:
+      tu: 55 # Slaanesh Influence
+      stamina: 60 # 5 Slaanesh influence
+      health: 35 # 5 More vs Adeptas
+      bravery: 60 # Followers of Slaanesh do not fear death
+      reactions: 40 # Slaanesh influence
+      firing: 45 # 10 More
+      throwing: 35 # 5 More
+      strength: 16
+      psiStrength: 25
+      psiSkill: 30
+      melee: 40 # Slaanesh Influence
+    maxStats:
+      tu: 70
+      stamina: 85
+      health: 60
+      bravery: 100
+      reactions: 75
+      firing: 75
+      throwing: 75
+      strength: 50
+      psiStrength: 100
+      psiSkill: 10
+      melee: 80
+    statCaps:
+      tu: 115 
+      stamina: 125 
+      health: 80 
+      bravery: 110
+      reactions: 130
+      firing: 110
+      throwing: 80
+      strength: 80
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    trainingStatCaps:
+      tu: 85 # 5 More
+      stamina: 80
+      health: 65
+      firing: 80 # 5 More
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80 # Slaanesh Influence
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_IMMACULATE_ARMOR
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 95
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/adeptas_novice.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_SISTER_RANK_0
+      - STR_SLAANESHPATH_SISTER_RANK_1
+      - STR_SLAANESHPATH_SISTER_RANK_2
+      - STR_SLAANESHPATH_SISTER_RANK_3
+    rankSprite: 4144
+    rankBattleSprite: 4144 
+    rankTinySprite: 4144
 
   - type: STR_SLAANESHPATH_CHIRURGEON  # Tier 1 ELITE units. A mix between Novitiate superiors, death cultists, and medicae. 
     flagOffset: 21 # !!! need to fix this later !!!

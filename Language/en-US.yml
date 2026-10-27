@@ -15359,7 +15359,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   ## UNIT PROJECTS
 
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
-
+  STR_EXALT_HANDMAIDEN: "Elevate Handmaiden"
+  STR_INDUCT_IMMACULATE_SISTER: "Induct Immaculate Sister"
+  STR_INDUCT_CHIRURGEON: "Induct Chirurgeon"
+  STR_INDUCT_SORCERESS: "Induct Sorceress"
  #################### UNITS #########################
 
  #### ENEMY UNITS

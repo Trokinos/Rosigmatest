@@ -8,15 +8,71 @@ soldierTransformation:
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
-    transferTime: 72
+    transferTime: 16
     allowedSoldierTypes:
       - STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 60
-      STR_ALIEN_SURGERY: 1
+      STR_SLAANESH_PIETY: 26
     #requiredCommendations:
     #  STR_BATTLE_TESTED: 0
     soldierBonusType: STR_SEEKER_MARK
+  
+  - name: STR_INDUCT_IMMACULATE_SISTER # TODO: Add stat requirement. Add basic commendation requirement.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    producedSoldierType: STR_SLAANESHPATH_IMMACULATE_SISTER
+    producedSoldierArmor: STR_SLAANESHPATH_IMMACULATE_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    transferTime: 66
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_HANDMAIDEN
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 26
+      STR_ELERIUM-115: 6
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+
+  - name: STR_INDUCT_CHIRURGEON # TODO: Add stat requirement. Add basic commendation requirement.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    producedSoldierType: STR_SLAANESHPATH_CHIRURGEON
+    producedSoldierArmor: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    transferTime: 266
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 66
+      STR_ELERIUM-115: 6
+      STR_ALIEN_ALLOYS: 6
+      STR_ALIEN_SURGERY: 3
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+
+  - name: STR_INDUCT_SORCERESS # TODO: Add stat requirement. Add basic commendation requirement.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    producedSoldierType: STR_SLAANESHPATH_CHIRURGEON #PLACEHOLDER
+    producedSoldierArmor: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR #PLACEHOLDER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    transferTime: 666
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 66
+      STR_ELERIUM-115: 6
+      STR_ALIEN_SURGERY: 6
+      STR_ALIEN_FOOD: 6
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+
+
+    #requiredCommendations:
+    #  STR_BATTLE_TESTED: 0
 
 
     #resetRank - use this for promoting handmaidens to sisters immaculate.
