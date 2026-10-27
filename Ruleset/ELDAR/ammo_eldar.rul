@@ -39,7 +39,7 @@ items:
   - type: STR_AVENGER_SHURIKEN_CLIP  #                 16200
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
     damageAlter:  # DA SHURIKEN
-      ToArmorPre: 0.1  # was ToArmor, i.e doesn't damage high armor it can't pen, making certain units invincible.
+      ToArmorPre: 0.3  # Endgame armor shredder, needs to be relevant
       RandomType: 2  # TFTD [50% - 150%]
       ToHealth: 0.5
       ToStun: 0.2
@@ -49,13 +49,13 @@ items:
       #Avenger Research
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
       # Avenger Research
     weight: 5
     #requiresBuyBaseFunc: [ELDAROUT]
     size: 0.1
-    costBuy: 1000
-    costSell: 500
+    costBuy: 3000
+    costSell: 1200
     bigSprite: 4888
     floorSprite: 4888
     handSprite: 1594
@@ -63,7 +63,7 @@ items:
     hitSound: 1874 #{mod: 40k, index: 708} old sound
     hitAnimation: {mod: 40k, index: 26}
     explosionSpeed: 5
-    power: 35 # +5 to standard catapult
+    power: 35 # 5 to standard shuriken
     #damageBonus:
     #  reactions: 0.1 # same as standard catapult for now
     damageType: 1
@@ -133,7 +133,7 @@ items:
     vaporColorSurface: {mod: 40k, index: 2}
     vaporDensitySurface: 3
     vaporProbabilitySurface: 50
-    costBuy: 4000
+    costBuy: 0 # 4000 Rangers provide their own ammo
     costSell: 1000
     scripts:
       vaporParticleAmmo: |
@@ -144,7 +144,7 @@ items:
     explosionSpeed: 10
     bulletSpeed: 25 # slow it down some
     battleType: 2
-    clipSize: 6
+    clipSize: 20
     power: 95
     damageType: 1 # was 5
     damageAlter:
@@ -629,10 +629,10 @@ items:
     costSell: 3000
     bigSprite: 4915
     floorSprite: 4915
+    bulletSprite: 25
     # handSprite: {mod: 40k, index: 448} # Ammo doesnt need handobj
-    bulletSprite: 0
-    hitSound: 0
-    hitAnimation: 0
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: {mod: 40k, index: 26}
     clipSize: 30 #pod containing smaller rockets think bolter
     power: 85
     damageType: 1

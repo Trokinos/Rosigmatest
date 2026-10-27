@@ -1316,7 +1316,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_EXARCH_AND_AUTARCH: "Path of Command, Autarch and Exarch"
   STR_ELDAR_EXARCH_AND_AUTARCH_PAGE1: "Not all eldar are made to lead, but all those who wish can test themself by embarking the path of command to become Autarchs. To become an Autarch the aspirant must experience all the aspect warrior path to understand the true nature of each, without being able to look back. Along the way they will gain experience in the form of Eldar Runes, granting powerfull boons but differently to specialized troops they will gain less powerfull bonuses when embracing an aspect. {NEWLINE}>>> Continued on next page >>>"
   STR_ELDAR_EXARCH_AND_AUTARCH_PAGE2: "For those who are not willing to embrace the Path of command they can become Exarchs, powerfull specialist in their field with great expertise and experience. The main difference between an Exarch and an Autarch lies in their potential and equipment flexibility. Exarch tend to reach their full potential only in a fiew caracteristics and will only be able to use their aspect armour, while Autarch can reach their full potential in all caracteristics and can freely switch between all the aspect warrior armours"
-  STR_RECRUIT_ELDAR_OUTCAST_CODEX: "Asuryani Outcasts, known as Anhrathe, are those rare members of the Aeldari species who have taken up the Path of the Outcast and left their home craftworld to wander the galaxy. They generally become Rangers, the scouts of their craftworlds, well-trained survivalists and marksmen. {NEWLINE}{NEWLINE}Outcasts are generally not welcomed in any Asuryan Society unless they decide to atone for any crime committed and abandon the Path of the Outcast. {ALT}Recruiting Outcast Rangers will displease All other Eldars (-50 points per recruit){ALT}"
+  STR_RECRUIT_ELDAR_OUTCAST_CODEX: "Asuryani Outcasts, known as Anhrathe, are those rare members of the Aeldari species who have taken up the Path of the Outcast and left their home craftworld to wander the galaxy. They generally become Rangers, the scouts of their craftworlds, well-trained survivalists and marksmen. {NEWLINE}{NEWLINE}Outcasts are generally not welcomed in any Asuryan Society unless they decide to atone for any crime committed and abandon the Path of the Outcast. {ALT}Recruiting Outcast Rangers will displease All other Eldars (-50 points per recruit){ALT} Rangers have 2 Armor loadouts available to them which can be changed freely "
   STR_ELDAR_MIDTIER_REINFORCEMENTS: "Eldar Reinforcements Arriving (MIDTIER)"
   STR_ELDAR_MIDTIER_REINFORCEMENTS_DESCRIPTION: "The webway has stabilized temporarily, reinforcements are being sent."
   STR_ELDAR_HIGHTIER_REINFORCEMENTS: "Eldar Reinforcements Arriving (HIGHTIER)"
@@ -1357,7 +1357,6 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH: "Dire Avenger Exarch unlock"
   STR_ELDAR_SCORPION_EXARCH_RESEARCH: "Scorpion Exarch unlock"
   STR_ELDAR_REAPER_EXARCH_RESEARCH: "Reaper Exarch unlock"
-  STR_ELDAR_REAPER_EXARCH_M: "Eldar Reaper"
   STR_ELDAR_HAWK_RESEARCH: "Hawk Unlock"
   STR_ELDAR_HAWK_EXARCH_RESEARCH: "Hawk Exarch Unlock"
   STR_ELDAR_SPIDER_RESEARCH: "Spider Unlock"
@@ -1389,16 +1388,45 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_SOULTECH_CATEGORY: "Eldar Soul Manipulation"
 
 # Player Eldar Buildings
+
   STR_ELDAR_LABORATORY: "Eldar Laboratory"
   STR_ELDAR_WORKSHOP: "Eldar Workshop"
+
+  AVENGER: "Avenger Shrine"
+  DRAGON: "Dragon Shrine"
+  SCORPION: "Scorpion Shrine"
+  BANSHEE: "Banshee Shrine"
+  HAWK: "Hawk Shrine"
+  SPIDER: "Spider Shrine"
+  REAPER: "Reaper Shrine"
   STR_ELDAR_ASPECT_PORTAL_UNDERGROUND: "Aspect Portal Underground (WIP)"
 
-# Player Eldar
-
+# Player Eldar Commendations
+  STR_COMMENDATION_MASTER_AVENGER_PATH: "Avenger Path Mastery"
+  STR_COMMENDATION_MASTER_AVENGER_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Avenger Path who have mastered the Avenger fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Avenger Path Weaponry."
+  STR_COMMENDATION_MASTER_DRAGON_PATH: "Dragon Path Mastery"
+  STR_COMMENDATION_MASTER_DRAGON_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Dragon Path who have mastered the Dragon fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Dragon Path Weaponry."
+  STR_COMMENDATION_MASTER_BANSHEE_PATH: "Banshee Path Mastery"
+  STR_COMMENDATION_MASTER_BANSHEE_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Banshee Path who have mastered the Banshee fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Banshee Path Weaponry."
+  STR_COMMENDATION_MASTER_SCORPION_PATH: "Scorpion Path Mastery"
+  STR_COMMENDATION_MASTER_SCORPION_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Scorpion Path who have mastered the Scorpion fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Scorpion Path Weaponry."
+  STR_COMMENDATION_MASTER_HAWK_PATH: "Hawk Path Mastery"
+  STR_COMMENDATION_MASTER_HAWK_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Hawk Path who have mastered the Hawk fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Hawk Path Weaponry."
+  STR_COMMENDATION_MASTER_SPIDER_PATH: "Spider Path Mastery"
+  STR_COMMENDATION_MASTER_SPIDER_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Spider Path who have mastered the Spider fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Spider Path Weaponry."
+  STR_COMMENDATION_MASTER_REAPER_PATH: "Reaper Path Mastery"
+  STR_COMMENDATION_MASTER_REAPER_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Reaper Path who have mastered the Reaper fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Reaper Path Weaponry."
 # Player Eldar Items
   AUX_ELDAR_KIT: "Eldar Medkit"
   AUX_WRAITHCANNON: "Wraithcannon"
   STR_ELDAR_CITIZEN: "Eldar Citizen"
+  STR_ELDAR_AVENGER_ARMOR_ITEM: "Avenger Armor"
+  STR_ELDAR_DRAGON_ARMOR_ITEM: "Dragon Armor"
+  STR_ELDAR_BANSHEE_ARMOR_ITEM: "Banshee Armor"
+  STR_ELDAR_SCORPION_ARMOR_ITEM: "Scorpion Armor"
+  STR_ELDAR_HAWK_ARMOR_ITEM: "Hawk Armor"
+  STR_ELDAR_SPIDER_ARMOR_ITEM: "Spider Armor"
+  STR_ELDAR_REAPER_ARMOR_ITEM: "Reaper Armor"
   STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_ITEM: "Shuriken Cannon HWP"
   STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_P: "Shuriken Cannon HWP"
   STR_ELDAR_HWP_SCATTERLASER_ARMOR_ITEM: "Scatter Laser HWP"
@@ -1473,7 +1501,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_REAPER_REAPERLAUNCHER_ARMOR_P: "Reaper Launcher Armor"
   STR_ELDAR_REAPER_TEMPESTLAUNCHER_ARMOR_P: "Tempest Launcher Armor"
   STR_ELDAR_REAPER_SHURIKENCANNON_ARMOR_P: "Shuriken Cannon Armor"
-  STR_ELDAR_REAPER: "Eldar Reaper Exarch"
+  STR_ELDAR_REAPEREX: "Eldar Reaper Exarch"
+  STR_ELDAR_REAPER_EXARCH_M: "Reaper Exarch" # Player Reaper Exarch
   STR_ELDAR_ARMOR_EXARCH_P: "Reaper Exarch Armor"
   STR_ELDAR_REAPEREX_REAPERLAUNCHER_ARMOR_P: "Reaper Launcher Armor"
   STR_ELDAR_REAPEREX_TEMPESTLAUNCHER_ARMOR_P: "Tempest Launcher Armor"
@@ -1502,12 +1531,12 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BANSHEE_INTIMIDATE_SPECIALWEAPON: "Psychic Scream"
 
   # ELDAR SOLDIER TRANSFORMATIONS CODEX (lore fluff plus transformation requirements)
-  STR_ELDAR_ASPECT_HELPER_SCORPIONS: "The Striking Scorpions are the form of Aspect Warriors focused on close combat, stealth, and assassination. They epitomise the deadly attributes of their namesake, which can sting and kill a creature many times its size. {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Scorpion are: Combat experience (rank 1 or higher) and {ALT}bravery: 70, melee: 50{ALT}" # The history of the Striking Scorpions is shrouded in infamy from their very beginning from the story of their founder, Phoenix Lord Arhra, Father of the Scorpions, now known as the Fallen Phoenix"
-  STR_ELDAR_ASPECT_HELPER_BANSHEE: "Howling Banshees are the form of Aspect Warriors that represents the fury of the Murder God as well as his cunning. According to Eldar mythology, Banshees are the harbingers of woe and death whose cry, it is said, heralds ill fate, calling forth dead spirits from the Warp and forewarning certain death. {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Banshee are: Combat experience (rank 1 or higher) and{ALT}bravery: 60, reactions: 65{ALT}"
-  STR_ELDAR_ASPECT_HELPER_REAPER: "Dark Reapers are the most sinister types of Eldar Aspect Warrior. They emulate Khaine in his aspect as \"the Destroyer\" and the harvester of souls. They are the most heavily equipped of all Aspect Warriors, they specialize in the use of destructive, long-range weaponry.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Reaper are: Combat experience (rank 1 or higher) and {ALT}firing: 65, strength: 40{ALT}"
-  STR_ELDAR_ASPECT_HELPER_AVENGER: "Dire Avengers, or Fian Dialcaman, are the form of Aspect Warriors representing Khaine's aspect of the noble and merciless warrior, who punishes the unworthy and shows true devotion to his own people. They are the most tactically flexible and numerous of all the Aspect Warriors.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Dire Avenger are: Combat experience (rank 1 or higher) and {ALT}firing: 60{ALT}"
-  STR_ELDAR_ASPECT_HELPER_DRAGON: "The Fire Dragons are the form of Aspect Warriors embodying the writhing, sinewy dragon of Eldar myths as well as the elemental destruction of Khaine. Fire Dragons are aggressive and warlike close combat fighters who utilized heat weapons to destroy enemy vehicles and strongpoints.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Fire Dragon are: Combat experience (rank 1 or higher) and {ALT}bravery: 70, health: 40{ALT}"
-  STR_ELDAR_ASPECT_HELPER_SPIDER: "The Warp Spiders epitomise the concept of an aggressive defence. They specialise in the use of a personal teleportation device built into their Aspect Armour to make a series of rapid jumps through the warp making nearly impossible to target them. {NEWLINE}Beware: {ALT}repeated usage of the personal teleportation device risk exposing the user to the dangerous energies of the warp{ALT} {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Warp Spider are: Combat experience (rank 1 or higher) and {ALT}health: 55, strength: 40, bravery: 70{ALT}"
+  STR_ELDAR_ASPECT_HELPER_SCORPIONS: "The Striking Scorpions are the form of Aspect Warriors focused on close combat, stealth, and assassination. They epitomise the deadly attributes of their namesake, which can sting and kill a creature many times its size. {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Scorpion are: Combat experience (rank 1 or higher) Scorpion Aspect Shrine and Scorpion Armor available at base." # The history of the Striking Scorpions is shrouded in infamy from their very beginning from the story of their founder, Phoenix Lord Arhra, Father of the Scorpions, now known as the Fallen Phoenix"
+  STR_ELDAR_ASPECT_HELPER_BANSHEE: "Howling Banshees are the form of Aspect Warriors that represents the fury of the Murder God as well as his cunning. According to Eldar mythology, Banshees are the harbingers of woe and death whose cry, it is said, heralds ill fate, calling forth dead spirits from the Warp and forewarning certain death. {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Banshee are: Combat experience (rank 1 or higher), Banshee Aspect Shrine and Banshee Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_REAPER: "Dark Reapers are the most sinister types of Eldar Aspect Warrior. They emulate Khaine in his aspect as \"the Destroyer\" and the harvester of souls. They are the most heavily equipped of all Aspect Warriors, they specialize in the use of destructive, long-range weaponry.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Reaper are: Combat experience (rank 1 or higher), Reaper Aspect Shrine and Reaper Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_AVENGER: "Dire Avengers, or Fian Dialcaman, are the form of Aspect Warriors representing Khaine's aspect of the noble and merciless warrior, who punishes the unworthy and shows true devotion to his own people. They are the most tactically flexible and numerous of all the Aspect Warriors.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Dire Avenger are: Combat experience (rank 1 or higher), Avenger Aspect Shrine and Avenger Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_DRAGON: "The Fire Dragons are the form of Aspect Warriors embodying the writhing, sinewy dragon of Eldar myths as well as the elemental destruction of Khaine. Fire Dragons are aggressive and warlike close combat fighters who utilized heat weapons to destroy enemy vehicles and strongpoints.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Fire Dragon are: Combat experience (rank 1 or higher), Dragon Aspect Shrine and Dragon Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_SPIDER: "The Warp Spiders epitomise the concept of an aggressive defence. They specialise in the use of a personal teleportation device built into their Aspect Armour to make a series of rapid jumps through the warp making nearly impossible to target them. {NEWLINE}Beware: {ALT}repeated usage of the personal teleportation device risk exposing the user to the dangerous energies of the warp{ALT} {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Warp Spider are: Combat experience (rank 1 or higher), Spider Aspect Shrine and Spider Armor available at base."
   STR_ELDAR_ASPECT_HELPER_SEER: "Seers are members of the Eldar race who have willingly developved their psychic power enough to confidently use their them without fear of attracting daemons or creating rifts within the warp. Such individuals are said to walk down the Witch Path or the Path of the Seer where they can gain further experience in the use of their natural psyker-based abilities.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Seer are: Combat experience (rank 1 or higher) and {ALT}psychic ability: 50, devotion: 50{ALT}"
   STR_ELDAR_ASPECT_HELPER_WARLOCK: "When a particularly gifted Eldar Warrior or Seer can to develop their power in a way that mix the deadly combination of Psychic power, Blade and Firepower, they can embark in the difficult path that is the Path of the Warlock, becoming some of the most respected among the Eldar ranks. Their psychic potency is only second to that of the Farseers.{NEWLINE}{NEWLINE}Requirement for an Eldar Warrior (Banshee, Dire Avenger, Scorpion, Reaper or Dragon) or Seer to be promoted to a Warlock are: Combat experience (rank 1 or higher) and {ALT}psychic ability: 50, devotion: 30, firing: 55, melee: 55{ALT}"
   STR_PROMOTE_BEGIN_AUTARCH_PATH_HELPER: "Any Eldar who wished to become an Autarch has to start by declaring and adopting its discipline and make their purpose to master the art of warcraft, command, and tactical supremacy. This declaration will move them toward their goal and will allow them to experience every aspect in the path of warrior. {NEWLINE}Walking the path of command will grand severely reduced bonuses when adopting a specific aspect compared to warriors who embrace that aspect for life. {NEWLINE}{NEWLINE}Requirement for a guardian to start the path of command are: Combat experience (rank 1 or higher) and {NEWLINE}{ALT}bravery: 70{ALT}"
@@ -1521,6 +1550,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   # eldar transformations
   #STR_PROMOTE_TO_ASPECT_WARRIOR: "Path of the Warrior" #(unused)
+  STR_RANGER_TO_GUARDIAN_PATH: "Return to Society"
   STR_PROMOTE_BEGIN_AUTARCH_PATH: "Walk the path of Command"
   STR_PROMOTE_TO_DRAGON: "Path of the Dragon"
   STR_PROMOTE_TO_DRAGON_AUTARCH: "Path of the Dragon (Path of Command)"
@@ -1603,7 +1633,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_RANGER_LONG_RIFLE: "Ranger Long Rifle"
   STR_RANGER_LONG_RIFLE_SCOPED: "Scoped Ranger Long Rifle"
   STR_RANGER_LONG_RIFLE_MAG: "Long Rifle Magazine"
-  STR_RANGER_LONG_RIFLE_MAG_FIXED: "Long Rifle Mag (Preloaded)"
+  STR_RANGER_LONG_RIFLE_MAG_FIXED: "Long Rifle Mag"
   STR_HAWK_WEAPON_SNAPSHOT: "Snap Burst"
   STR_HAWK_WEAPON_AIMEDSHOT: "Aimed Burst"
   STR_LASBLASTER: "Lasblaster"
