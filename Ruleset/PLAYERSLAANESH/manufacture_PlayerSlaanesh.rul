@@ -100,7 +100,7 @@ manufacture:
       STR_BOLTER_CANTUS_GL: 1
     requiredItems:
       STR_BOLTER_CANTUS_SLAAN: 1
-      STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE: 1
+      STR_GRENADE_LAUNCHER_GORGE: 1
     points: 0
 
 

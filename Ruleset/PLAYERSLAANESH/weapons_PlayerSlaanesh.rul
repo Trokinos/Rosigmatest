@@ -31,7 +31,7 @@ items:
  #
  #### LAS WEAPONS ####
 
-  - type: STR_SLAANESHPATH_LAS_BATTLERIFLE
+  - type: STR_LAS_BATTLERIFLE_SLAAN
     dropoff: 3
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     size: 0.3
@@ -73,7 +73,7 @@ items:
       ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25
 
-  - type: STR_SLAANESHPATH_DUELING_LASPISTOL  # Much more dangerous than the slaanesh laspistol.
+  - type: STR_HEAVY_LASPISTOL_SLAAN  # Accatran heavy. Takes normal lasgun cells.
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     size: 0.1
     dropoff: 4
@@ -94,9 +94,7 @@ items:
     # tuAimed: 50
     clipSize: 0
     compatibleAmmo:
-      - STR_LASPISTOL_CLIP_SLAAN
-      - STR_LASPISTOL_CLIP
-      - STR_SLAANESHPATH_LASPISTOL_CLIP
+      - STR_LASGUN_CLIP # Add others later.
     battleType: 1
     invWidth: 1
     invHeight: 2
@@ -108,7 +106,7 @@ items:
 
  #### MELTA WEAPONS ####
  
-  - type: STR_SLAANESHPATH_MELTA_CARBINE # Stolen & modified melta carbine technology. Expensive, but versatile.
+  - type: STR_MELTA_CARBINE_SLAAN # Stolen & modified melta carbine technology. Expensive, but versatile.
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
     size: 0.3
     costSell: 20000  # buy?
@@ -151,7 +149,7 @@ items:
 
  #### LAUNCHERS ###
 
-  - type: STR_SLAANESHPATH_GRENADE_LAUNCHER_GORGE # Small, break-open GL for utility grenades. Accurate.
+  - type: STR_GRENADE_LAUNCHER_GORGE # Small, break-open GL for utility grenades. Accurate.
 
     weight: 11 # Stubcannon -3
     bigSprite: 247 # Stubcannon sprites, placeholder
@@ -181,14 +179,15 @@ items:
     arcingShot: true
 
     compatibleAmmo: # Cannot use direct-fire grenades.
-      - STR_SLAANESHPATH_CHOKE_40MM
-      - STR_SLAANESHPATH_HALLUCINOGEN_40MM
-      - STR_SLAANESHPATH_SONIC_40MM
-      - STR_SLAANESHPATH_SHARD_40MM
+      - STR_CHOKE_GRENADE40
+      - STR_HALLUCINOGEN_GRENADE40
+      - STR_SONIC_GRENADE40
+      - STR_SHARD_GRENADE40
+      - STR_BALEFIRE_GRENADE40
 
  #### BALLISTIC WEAPONS ####
 
-  - type: STR_SLAANESHPATH_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
+  - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
     dropoff: 3  # light sniper weapon
     weight: 16  # -4 weight vs repressor
@@ -232,7 +231,7 @@ items:
 
  #### LIGHT BOLTERS ####
 
-  - type: STR_BOLTER_CANTUS_SLAAN  # Corrupted Cantus bolter. Has low recoil and high ROF. Foregrip attachment.
+  - type: STR_BOLTER_CANTUS_SLAAN # Done (Pending art asset rework)
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
       - STR_SLAANESHPATH
@@ -277,7 +276,7 @@ items:
       ITEM_RECOIL: 20
       REACTION_MULTIPLIER: 150
 
-  - type: STR_BOLTER_CANTUS_GL  # Corrupted Cantus with a grenade launcher attachment.
+  - type: STR_BOLTER_CANTUS_GL  # Done (Pending art asset rework)
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
       - STR_SLAANESHPATH
@@ -306,10 +305,10 @@ items:
       - STR_CANTUS_BOLTER_AMMO
       - STR_CANTUS_BOLTER_AMMO_BM
       - STR_MELTA_GRENADE40
-      - STR_SLAANESHPATH_SHARD_40MM
-      - STR_SLAANESHPATH_CHOKE_40MM
-      - STR_SLAANESHPATH_HALLUCINOGEN_40MM
-   #   - STR_SLAANESHPATH_SONIC_40MM
+      - STR_SHARD_GRENADE40
+      - STR_CHOKE_GRENADE40
+      - STR_HALLUCINOGEN_GRENADE40
+      - STR_SONIC_GRENADE40
    #   - STR_SLAANESHPATH_BALEFIRE_40MM
    #   - STR_SLAANESHPATH_AMPUTATOR_40MM
    #   - STR_SLAANESHPATH_FLECHETTE_40MM
@@ -317,7 +316,7 @@ items:
       0:
         compatibleAmmo: [STR_CANTUS_BOLTER_AMMO_PENETRATOR, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO_BM]
       1:
-        compatibleAmmo: [STR_MELTA_GRENADE40, STR_SLAANESHPATH_SHARD_40MM, STR_SLAANESHPATH_CHOKE_40MM, STR_SLAANESHPATH_HALLUCINOGEN_40MM]
+        compatibleAmmo: [STR_MELTA_GRENADE40, STR_SHARD_GRENADE40, STR_CHOKE_GRENADE40, STR_HALLUCINOGEN_GRENADE40]
     confAuto:  # Bolter
       ammoSlot: 0  # Bolter
       name: STR_AUTOFIRE
@@ -397,11 +396,11 @@ items:
 #    flatMelee:
 #      time: true
 
-  - type: STR_BOLTER_DEAZ_ARACHNE # COMBI WEBBER DEAZ
+  - type: STR_BOLTER_ARACHNE # COMBI WEBBER DEAZ
 
   - type: STR_BOLTER_ELOHIM_SLAAN
 
-  - type: STR_SLAANESHPATH_BOLTER_NAGA # Corrupted Elohim with direct-fire grenade launcher attachment.
+  - type: STR_BOLTER_NAGA # Corrupted Elohim with direct-fire grenade launcher attachment.
 
     dropoff: 5
     autoRange: 9
@@ -426,7 +425,7 @@ items:
       0:
         compatibleAmmo: [STR_RIFLE_CLIP_S, STR_RIFLE_CLIP, STR_RIFLE_CLIP_MC, STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX]
       1:
-        compatibleAmmo: [STR_SLAANESHPATH_PLASMA_SPRAY_CLIP]
+        compatibleAmmo: [STR_PLASMA_SPRAY_CLIP_SLAAN]
 
     confAuto:  # Bolter
       ammoSlot: 1  # Bolter
@@ -444,7 +443,7 @@ items:
       arcing: false
       name: STR_SONIC_FIRE
 
-  - type: STR_SLAANESHPATH_BOLTER_NAIAD  # Corrupted Hellspite bolter with a sonic projector.
+  - type: STR_BOLTER_NAIAD  # Corrupted Hellspite bolter with a sonic projector.
     dropoff: 5
     autoRange: 7  # 4 Auto
     snapRange: 14
@@ -482,7 +481,7 @@ items:
       ammoSlot: 1  # Sonic
       name: STR_SONIC_FIRE
 
-  - type: STR_SLAANESHPATH_BOLTER_KERES # Converted De'az bolter with canted foregrip. Extremely high RoF.
+  - type: STR_BOLTER_KERES # Converted De'az bolter with canted foregrip. Extremely high RoF.
     dropoff: 7 # You *really* don't want to fire this one at range.
     autoRange: 6  # -2 vs hellspite
     snapRange: 12  # -1 vs hellspite.
@@ -504,11 +503,11 @@ items:
     tags:
       ITEM_RECOIL: 40
 
-  - type: STR_SLAANESHPATH_BOLTER_TIAMAT # De'az kombi-plasma. 
+  - type: STR_BOLTER_TIAMAT # De'az kombi-plasma. 
 
  #### MELEE WEAPONS ####
 
-  - type: STR_SLAANESHPATH_LIGHT_CHAINSWORD # Light chainsword with slaanesh damage profile applied
+  - type: STR_LIGHT_CHAINSWORD_SLAAN # Light chainsword with slaanesh damage profile applied
     requiresBuy:
       - STR_SLAANESHPATH # Placeholder
     categories: [STR_CAT_MELEE]
@@ -557,53 +556,56 @@ items:
     experienceTrainingMode: 13
     listOrder: 12360
 
-  - type: STR_SLAANESHPATH_GREATSWORD  # Non-power greatsword; a more accurate alternative to the eviscerator
-    categories: [STR_CAT_MELEE, STR_CAT_SCOUT]
+        #### TODO: ADD WAY TO AQUIRE EVIS, ADD ART ASSETS
+
+  - type: STR_EVISCERATOR_SLAAN  # A lighter and more accurate eviscerator with superior penetration.
+    categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
     size: 0.2
-    costSell: 250
-    weight: 16 # Evis is 20+ 
-    bigSprite: 2217
-    floorSprite: 2092
-    handSprite: 2800
-    meleeSound: {mod: 40k, index: 754}  # 754 knif miss
-    meleeHitSound: {mod: 40k, index: 773}  # 773 knif hit
-    meleeAnimation: 4
-    power: 90
-    damageType: 7
-    accuracyMelee: 110 # +30 vs evis
-    tuMelee: 16 # less than evis
-    costMelee: # Less
-      energy: 6
-      time: 16
-    damageBonus: # Skill rather than strength
-      strength: 0.2
-      melee: 0.3
-    damageAlter:  # SLAAN
+    power: 66 # -14 vs BR Evis
+    costMelee:
+      energy: 10 # requires MORE energy due to finesse requirement.
+      time: 19 # Requires MORE time due to finesse requirement.
+    damageBonus:
+      strength: 0.2 # - 0.3
+      melee: 0.6 # + 0.4
+    damageAlter: # DA SLAANESH CHAIN
+      ToArmorPre: 0.5
+      ToArmor: 0.25 # Designed to pierce armor and ruin it.
+      ToHealth: 0.8
+      ArmorEffectiveness: 0.8 # This thing can actually thrust.
       RandomType: 2  # TFTD [50% - 150%]
-      ArmorEffectiveness: 0.7
-      ToArmorPre: 0.25
-      ToArmor: 0.2
-      ToHealth: 0.7
-      ToStun: 0.3
-      ToWound: 0.45
-      ToEnergy: 0.7
-      ToMorale: 0.6
+      ToWound: 0.35
+      ToEnergy: 0.8
+      ToMorale: 0.2
+      ToStun: 0.1
+      RandomWound: false
+    weight: 16  # -4 vs standard evis.
+    bigSprite: {mod: 40k, index: 620}
+    floorSprite: {mod: 40k, index: 610}
+    handSprite: {mod: 40k, index: 168}
+    meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
+    meleeHitSound: {mod: 40k, index: 709} #709 chainhit
+    meleeAnimation: {mod: 40k, index: 44}
+    damageType: 7
+    accuracyMelee: 85
+    tuMelee: 18
     clipSize: -1
     battleType: 3
     twoHanded: true
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
-    armor: 20
+    armor: 200
     skillApplied: true
+    damageBonus: 
+      melee: 0.05 
+      reactions: 0.15
     meleeMultiplier:
-      melee: 1.0
-      flatHundred: 0.0
-    strengthApplied: false
-    attraction: 7
-    listOrder: 12900
+      melee: 0.8 # - 0.2
+      reactions: 0.25 # Added
     experienceTrainingMode: 13
+    listOrder: 12410
 
-  - type: STR_SLAANESHPATH_POWER_SWORD  # Slaanesh power sword - similar profile to banshee blade
+  - type: STR_POWER_SWORD_SLAAN  # Slaanesh power sword - similar profile to banshee blade
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
     damageType: 5
@@ -646,7 +648,7 @@ items:
 
  #### WEB WEAPONS ####
 
-  - type: STR_SLAANESHPATH_CONSTRICTOR_PISTOL
+  - type: STR_CONSTRICTOR_PISTOL
     categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
     size: 0.2
     dropoff: 8
@@ -659,7 +661,7 @@ items:
     bulletSprite: {mod: 40k, index: 21}
     fireSound: {mod: 40k, index: 802}
     compatibleAmmo:
-      - STR_SLAANESHPATH_CONSTRICTOR_PISTOL_AMMO
+      - STR_CONSTRICTOR_PISTOL_AMMO
     accuracySnap: 60 # 5 more vs web pistol
     tuSnap: 25
     battleType: 1
