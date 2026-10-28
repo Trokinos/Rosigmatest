@@ -186,10 +186,12 @@ items:
       name: STR_INC_SHOT
       shortName: STR_INC_SHOT_SHORT
       ammoSlot: 2
+    listOrder: 10606
 
   - type: STR_MCSHOTGUNPD
     armor: 200
     refNode: *STR_LAWBRINGER
+    listOrder: 10610
 
   - type: STR_GUARDPD_MEDIC_ARMOR
     requiresBuy:

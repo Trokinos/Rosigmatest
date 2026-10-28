@@ -26,6 +26,60 @@ facilities:
     monthlyCost: 35000
     workshops: 50
     mapName: XBASE_03
+
+  - &ASPECT_SHRINE_FACILITY
+    type: STR_ELDAR_AVENGER_SHRINE
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+    buildOverFacilities:
+      - STR_GENERAL_STORES
+      - STR_GUARD_BARRACKS
+      - STR_LIVING_QUARTERS
+    provideBaseFunc: [AVENGER]
+    spriteShape: 1
+    spriteFacility: 742 #Temp
+    buildCost: 500000
+    refundValue: 250000
+    buildTime: 16
+    monthlyCost: 15000
+    personnel: 25
+    mapName: XBASE_01
+    trainingRooms: 10
+    storage: 25
+    canBeBuiltOver: true
+    destroyedFacility: STR_CORRIDOR
+  - type: STR_ELDAR_DRAGON_SHRINE
+    refNode: *ASPECT_SHRINE_FACILITY
+    requires:
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+    provideBaseFunc: [DRAGON]
+  - type: STR_ELDAR_SCORPION_SHRINE
+    refNode: *ASPECT_SHRINE_FACILITY
+    requires:
+      - STR_ELDAR_SCORPION_RESEARCH
+    provideBaseFunc: [SCORPION]
+  - type: STR_ELDAR_BANSHEE_SHRINE
+    refNode: *ASPECT_SHRINE_FACILITY
+    requires:
+      - STR_ELDAR_BANSHEE_RESEARCH
+    provideBaseFunc: [BANSHEE]
+  - type: STR_ELDAR_HAWK_SHRINE
+    refNode: *ASPECT_SHRINE_FACILITY
+    requires:
+      - STR_ELDAR_HAWK_RESEARCH
+    provideBaseFunc: [HAWK]
+  - type: STR_ELDAR_SPIDER_SHRINE
+    refNode: *ASPECT_SHRINE_FACILITY
+    requires:
+      - STR_ELDAR_SPIDER_RESEARCH
+    provideBaseFunc: [SPIDER]
+  - type: STR_ELDAR_REAPER_SHRINE
+    refNode: *ASPECT_SHRINE_FACILITY
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+    provideBaseFunc: [REAPER]
+
   - type: STR_ELDARWALLN
     requires:
       - STR_ELDAR_OUTPOST_BUILDING_RESEARCH

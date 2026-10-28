@@ -761,53 +761,73 @@ armors:
       UNIT_TYPE_ORK: 1
       INTIMIDATION_RESISTANCE: 66
 
-  - type: STR_SQUIG_TEST_ARMOR  # SQUIG TEST
+  - &SQUIG_ARMOR_TEMPLATE_AI
+    type: STR_SQUIG_ARMOR_AI  # SQUIG TEST
     visibilityAtDay: 40
-    visibilityAtDark: 20
+    visibilityAtDark: 30
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    drawingRoutine: 3
     heatVision: 30  # smell
+    allowInv: true
     spriteSheet: SQUIG_BS.PCK
-    spriteInv: MeganobINV.SPK
-    moveSound: {mod: 40k, index: 700}
+    spriteInv: ASSAULT_SQUIG_INV.SPK
     corpseBattle:
-      - STR_SQUIG_CORPSE
-    stats:
-      tu: 20
-      stamina: 30
-      health: 10
-      bravery: 20  # always multiples of 10
-      reactions: 10
-      firing: 15
-      throwing: 10
-      strength: 30
-      psiStrength: 0
-      psiSkill: 0
-      melee: 10
-    frontArmor: 10
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
-    drawingRoutine: 4
-    damageModifier:  # TERMINATOR ARMOR
+      - STR_SQUIG_CORPSE_AI #TODO
+    frontArmor: 30  # was 10
+    sideArmor: 25  # was 10
+    rearArmor: 20  # was 10
+    underArmor: 20  # was 10
+    damageModifier:  # same as cyber mastiff, seems ok. Tough muscly hide protects against most things, but is weak to flame.
       - 1.0  # none
-      - 1.3  # AP
+      - 0.9  # AP
       - 1.5  # FLAMES
-      - 0.8  # HE
-      - 1.0  # LASCANON
-      - 1.1  # PLASMA
-      - 1.0  # STUN
-      - 1.0  # MELEE
-      - 1.0  # ACID
+      - 0.9  # HE
+      - 0.9  # LASCANON
+      - 0.9  # PLASMA
+      - 0.9  # STUN
+      - 0.9  # MELEE
+      - 0.5  # ACID
       - 0.0  # SMOKE
-      - 0.2  # IMPACT
-      - 1.1  # MELTA
+      - 1.0  # IMPACT
+      - 1.0  # MELTA
     loftempsSet: [3]
+    builtInWeapons:
+      - STR_SQUIG_BITE
+      - STR_SQUIG_BITE
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_3X3
+      - INV_NULL_4X2
     allowsRunning: false  # NPC limits for BAI
     tags:
+      INFECTION_RESIST: 75  # infection/corruption resistant due to ORKY
       UNIT_SIZE: 50 # SMALL
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ORK: 1
       INTIMIDATION_RESISTANCE: 50
+
+  - type: STR_SQUIG_ARMOR_BOMB_AI
+    refNode: *SQUIG_ARMOR_TEMPLATE_AI
+    spriteInv: BOMB_SQUIG_INV.SPK
+    # spriteSheet: SQUIG_BS.PCK # TODO
+    specab: 0
+    builtInWeapons:
+      - STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI
+      - STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - STR_TANKBUSTA_INVENTORY_BOMB # 3x3 space replaced with bomb
+      - INV_NULL_4X2
+    corpseBattle:
+      - STR_SQUIG_CORPSE_EXPLOSIVE_AI #TODO
+    tags:
+      ARMOR_DISABLE_OVERKILL_SELF_DESTRUCT: 1
+      ARMOR_IS_EXPLODE_ON_DEATH: 1
+      ARMOR_IS_KAMIKAZI: 1
+      #ARMOR_ALWAYS_OVERKILL: 1
+      ARMOR_IS_EXPLODE_ON_DEATH_MELEE_BYPASS: 1
 
   - type: STR_WEIRDORK_ARMOR
     movementType: 0

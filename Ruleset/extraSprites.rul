@@ -157,6 +157,10 @@ extraSprites:
     fileSingle: Resources/ORK/SPARKY_POWER_FIELD_CODEX.png
   - typeSingle: ORK_CAPSULE.SPK
     fileSingle: Resources/ORK/ORK_CAPSULE.png
+  - typeSingle: SQUIG_ASSAULT.SPK
+    fileSingle: Resources/ORK/SquigCodexArmor.png
+  - typeSingle: SQUIG_BOMB.SPK
+    fileSingle: Resources/ORK/SquigBombOriginCodex.png
 
   - typeSingle: IMPERIAL_GENERIC.SPK
     fileSingle: Resources/CODEX/imperialgen.png
@@ -5414,9 +5418,10 @@ extraSprites:
     fileSingle: Resources/ORK/orksniperguncodex.png
 
 #Blood Axe Orks and Orky Guard
-
+  - typeSingle: ASSAULT_SQUIG_INV.SPK  # Assault Squig Inventory
+    fileSingle: Resources/ORK/OPFOR_ATTACK_SQUIG.png
   - typeSingle: BOMB_SQUIG_INV.SPK  # Bomb Squig Inventory
-    fileSingle: Resources/ORK/O6SquigInv.png
+    fileSingle: Resources/ORK/OPFOR_BOMB_SQUIG.png
 
   - typeSingle: ORKYGUARD_INV.SPK  #Flakguard Boy
     fileSingle: Resources/ORK/ORKYGUARD_INV.png
@@ -16711,7 +16716,7 @@ extraSprites:
 
   - type: CustomArmorPreviews
     width: 360
-    height: 960
+    height: 980
     subX: 12
     subY: 20
     files:
@@ -20126,6 +20131,10 @@ extraSprites:
 
   - typeSingle: RESEARCH_PIPS.SPK
     fileSingle: Resources/CODEX/RESEARCH_PIPS_CODEX.png
+
+  # Help page - Combined interception
+  - typeSingle: COMBINED_INTERCEPTION_CODEX.SPK
+    fileSingle: Resources/CODEX/COMBINED_INTERCEPTION_CODEX.png
 
   # Arbites Heavy Stubber
   - typeSingle: ARBITES_HEAVY_STUB_CODEX.SPK
