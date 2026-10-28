@@ -2342,6 +2342,35 @@ items:
       ITEM_IS_BOMB: 1
       ITEM_IS_BOMB_ON_DEATH: 1  # we blow this bomb up on death
 
+  - type: STR_SQUIG_BITE
+    requiresBuy:
+      - STR_GENERALLOCK
+    categories: [STR_CAT_AUXILIARY]
+    bigSprite: 2189
+    meleeHitSound: {mod: 40k, index: 48}
+    power: 95 #+10 over cmas
+    damageAlter: #DA CHAIN
+      ToArmorPre: 0.3
+      ToHealth: 0.9
+      RandomType: 2 #TFTD [50% - 150%]
+      ToWound: 0.3
+      ToEnergy: 0.5
+      IgnoreSelfDestruct: true
+      RandomWound: true
+    meleeAnimation: {mod: 40k, index: 76}
+    damageBonus:
+      strength: 0.3
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    clipSize: -1
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    flatRate: true
+    #listOrder: 2320
+
   - type: STR_TANKBUSTA_BOMB_COLLAR
     categories: [STR_CAT_TACTICAL, STR_CAT_ORK]
     battleType: 3

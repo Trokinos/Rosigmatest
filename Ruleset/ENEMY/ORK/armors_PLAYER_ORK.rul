@@ -1382,8 +1382,8 @@ armors:
     corpseBattle:
       - STR_PLAYER_SQUIG_CORPSE # Needs to be finished
     builtInWeapons:
-      - STR_CMAS # needs squig bite
-      - STR_CMAS # needs squig bite
+      - STR_SQUIG_BITE
+      - STR_SQUIG_BITE
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
       - INV_NULL_3X3
@@ -1451,8 +1451,8 @@ armors:
       health: 20 # tougher
       bravery: 20  # tougher
     builtInWeapons:
-      - STR_CMAS # needs squig bite
-      - STR_CMAS # needs squig bite
+      - STR_SQUIG_BITE
+      - STR_SQUIG_BITE
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
       - STR_TANKBUSTA_INVENTORY_BOMB # 3x3 space replaced with bomb
