@@ -2262,7 +2262,8 @@ items:
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 60
 
-  - type: STR_TANKBUSTA_BOMB  # ORK Krak Grenade  17100
+  - &TANKBUSTA_TEMPLATE
+    type: STR_TANKBUSTA_BOMB  # ORK Krak Grenade  17100
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ORK]
     size: 0.1
     requires:
@@ -2309,6 +2310,103 @@ items:
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 75
       ITEM_IGNORES_2X2_REDUCTION: 1 # Busts Tanks
+
+  - type: STR_TANKBUSTA_INVENTORY_BOMB
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ORK]
+    refNode: *TANKBUSTA_TEMPLATE
+    bigSprite: 2188
+    power: 180 #bit more oomph
+    fuseType: -1
+    blastRadius: 6
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.6
+      ToArmor: 0.6
+      ToHealth: 0.8
+      ToStun: 0.3
+      ToTime: 0.3
+      ResistType: 1
+    invWidth: 3
+    invHeight: 3
+    recover: false
+    tuThrow: 999  # only to be thrown via scripts
+    tuPrime: 999  # only to be thrown via scripts
+    throwRange: 1  # not meant to be thrown
+    fixedWeapon: true
+    explodeInventory: 2
+    hiddenOnMinimap: true
+    defaultInventorySlot: STR_BACK_PACK
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 75
+      ITEM_IGNORES_2X2_REDUCTION: 1 # Busts Tanks
+      ITEM_IS_BOMB: 1
+      ITEM_IS_KAMIKAZI_BOMB: 1
+      ITEM_IS_BOMB_ON_DEATH: 1  # we blow this bomb up on death
+
+
+  - &SQUIG_BITE_TEMPLATE
+    type: STR_SQUIG_BITE
+    requiresBuy:
+      - STR_GENERALLOCK
+    categories: [STR_CAT_AUXILIARY, STR_CAT_ORK]
+    bigSprite: 2189
+    meleeHitSound: {mod: 40k, index: 48}
+    power: 95 #+10 over cmas
+    damageAlter: #DA CHAIN
+      ToArmorPre: 0.3
+      ToHealth: 0.9
+      RandomType: 2 #TFTD [50% - 150%]
+      ToWound: 0.3
+      ToEnergy: 0.5
+      IgnoreSelfDestruct: true
+      RandomWound: true
+    meleeAnimation: {mod: 40k, index: 76}
+    damageBonus:
+      strength: 0.3
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    clipSize: -1
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    flatRate: true
+    #listOrder: 2320
+
+  - type: STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI
+    ufopediaType: STR_SQUIG_BITE
+    categories: [STR_CAT_AUXILIARY, STR_CAT_ORK]
+    refNode: *SQUIG_BITE_TEMPLATE
+    tags:
+      ITEM_IS_KAMIKAZI_TRIGGER: 1  # triggers self-destruct on melee
+
+
+  - type: STR_TANKBUSTA_BOMB_COLLAR
+    categories: [STR_CAT_TACTICAL, STR_CAT_ORK]
+    battleType: 3
+    clipSize: -1
+    fixedWeapon: true
+    weight: 0
+    specialUseEmptyHand: false  # no accidential blowups
+    meleeSound: 2424
+    specialIconSprite: 202 # todo: change
+    accuracyMelee: 200
+    costMelee:
+      time: 10
+      energy: 1
+    flatMelee: true
+    damageType: 3
+    power: 1
+    flatRate: false
+    recover: false
+    invWidth: 0
+    invHeight: 0
+    #listOrder: 17102
+    hiddenOnMinimap: true
+    tags:
+      ITEM_IS_KAMIKAZI_TRIGGER: 2  # triggers self-destruct on melee
 
   - type: STR_ORK_STINKBOMB  # Stun grenade
     categories: [STR_CAT_GRENADES, STR_CAT_ORK, STR_CAT_STUN]

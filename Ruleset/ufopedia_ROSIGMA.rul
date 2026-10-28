@@ -9208,6 +9208,23 @@ ufopaedia:
     image_id: UP134.SPK # will probably come up with something new later
     text: STR_PLAYER_GROTS_ARMOR_UFOPEDIA
 
+  - id: STR_SQUIG_ARMOR
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ORK_SQUIG_EXAM
+      - STR_GREENEST_ORKZ
+    image_id: SQUIG_ASSAULT.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_ARMOR_BOMB
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ORK_SQUIG_EXAM
+      - STR_GREENEST_ORKZ
+    image_id: SQUIG_BOMB.SPK
+    text: STR_NOT_DONE
+
   - id: STR_PLAYER_VINDI_GROT_ARMOR
     type_id: 15
     section: STR_ARMORPEDIA
@@ -13838,7 +13855,7 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: TWIN_CORE_CODEX.SPK
     requires:
-      - STR_PLASMA_GUN_TWINCORE
+      - STR_PLASMA_GUN_TWINCORE_DEKKER
     text: STR_PLASMA_GUN_TWINCORE_UFOPEDIA
 
   - id: STR_PLASMA_GUN_TWINCORE_ADEPTAS
@@ -17070,6 +17087,13 @@ ufopaedia:
     requires:
       - STR_ORK_WEAPONS_EXAM
     text: STR_TANKBUSTA_BOMB_UFOPEDIA
+  - id: STR_TANKBUSTA_INVENTORY_BOMB
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1OK4.SPK
+    requires:
+      - STR_ORK_WEAPONS_EXAM
+    text: STR_TANKBUSTA_INVENTORY_BOMB_CODEX
 
   - id: STR_ORK_KRAKSTIKKBOMB
     type_id: 14
@@ -17132,6 +17156,14 @@ ufopaedia:
     requires:
       - STR_ORK_WEAPONS_EXAM
     text: STR_CHOPPA_UFOPEDIA
+
+  - id: STR_SQUIG_BITE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: SQUIG_ASSAULT.SPK
+    requires:
+      - STR_ORK_SQUIG_EXAM
+    text: STR_SQUIG_BITE_CODEX
 
   - id: AUX_CHOPPA
     type_id: 14
@@ -23367,6 +23399,35 @@ ufopaedia:
     requires:
       - STR_GRETCHIN
     image_id: GretchinArmor.SPK
+    text: STR_NOT_DONE
+
+  - id: STR_SQUIG_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SQUIG_CORPSE_AI
+    image_id: SQUIG_ASSAULT.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_EXPLOSIVE_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SQUIG_CORPSE_EXPLOSIVE_AI
+    image_id: SQUIG_BOMB.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_ARMOR_AI
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ORK_SQUIG_EXAM
+    image_id: SQUIG_ASSAULT.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_ARMOR_BOMB_AI
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ORK_SQUIG_EXAM
+    image_id: SQUIG_BOMB.SPK
     text: STR_NOT_DONE
 
   - delete: STR_ORK_AUTOPSY
