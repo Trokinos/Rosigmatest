@@ -241,7 +241,7 @@ items:
     tags:
       ITEM_RECOIL: 40
 
-  - type: STR_AUTOSHOTGUN  #                               10600
+  - type: STR_AUTOSHOTGUN  #                               10608
     categories: [STR_CAT_SHOTGUN, STR_CAT_TRADE]
     size: 0.2
     costBuy: 40000  # 4x standard shotgun. Probably still too high.
@@ -269,7 +269,7 @@ items:
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    listOrder: 10605
+    listOrder: 10608
     autoShots: 4  # Can empty a standard mag in one turn
     sprayWaypoints: 2
     snapRange: 9
@@ -297,7 +297,7 @@ items:
     clipSize: 32
     armor: 200
     battleType: 2
-    listOrder: 10710
+    listOrder: 10651
     invWidth: 2
     invHeight: 1  # Same size as grenade drums. Smaller ammo, but more of it.
     shotgunPellets: 6
@@ -4422,7 +4422,7 @@ items:
     autoRange: 5
     snapRange: 7
     aimRange: 0
-    listOrder: 10851
+    listOrder: 10602
     compatibleAmmo:
       - STR_SHOTGUN_SHELLS  # maybe other ammo types too?
       - STR_STUN_SHELLS

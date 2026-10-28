@@ -541,7 +541,7 @@ items:
     listOrder: 11806
 
   - &STR_PUMP
-    type: STR_PUMP_SHOTGUN  # Used by GSC, civvies, arbites etc                        10605
+    type: STR_PUMP_SHOTGUN  # Used by GSC, civvies, arbites etc                        10603
     categories: [STR_CAT_SHOTGUN]
     requiresBuy:
       - STR_LASER_WEAPONS
@@ -567,7 +567,7 @@ items:
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    listOrder: 10605
+    listOrder: 10603
     aimRange: 14
     snapRange: 10  # better range
     dropoff: 5

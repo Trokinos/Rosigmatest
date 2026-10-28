@@ -324,6 +324,7 @@ items:
       - STR_SHOTGUN_SHELLS_INC
       - STR_STUN_SHELLS
       - STR_STUN_GAS_SHELLS
+    listOrder: 10609
 
   - type: STR_HC_AP_AMMO  # SNIPER AP                   11910
     costBuy: 4000  # far better than hotshot cells or AP Stub Rifle rounds, but half the clipsize so2x the cost
@@ -393,7 +394,7 @@ items:
     clipSize: 8
     battleType: 2
     armor: 200
-    listOrder: 10710
+    listOrder: 10652
 
   - type: STR_STUN_GAS_SHELLS  #                        10710
     categories: [STR_CAT_SHOTGUN, STR_CAT_STUN]
@@ -425,9 +426,9 @@ items:
     clipSize: 8
     battleType: 2
     armor: 200
-    listOrder: 10710
+    listOrder: 10653
 
-  - type: STR_SHOTGUN_SHELLS  #                        10710
+  - type: STR_SHOTGUN_SHELLS  #                        10650
     categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
     size: 0.1
     costBuy: 500
@@ -435,7 +436,7 @@ items:
     weight: 3
     battleType: 2
     armor: 200
-    listOrder: 10710
+    listOrder: 10650
 
   - type: STR_MELTA_AMMO  # MELTAGUN AMMO                2020
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL]
