@@ -2889,7 +2889,7 @@ items:
     refNode: *CHAOS_WEAPON
 
 
-  - type: STR_SHOTGUN_CHAOS  #                        10605
+  - type: STR_SHOTGUN_CHAOS  # 10601
     categories: [STR_CAT_SHOTGUN, STR_CAT_CHAOS]
     refNode: *CHAOS_WEAPON
     size: 0.2
@@ -2906,7 +2906,7 @@ items:
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    listOrder: 10605
+    listOrder: 10601
     ufopediaType: ""
 
   - type: STR_FLAMETHROWER_CHAOS  #                     10505
@@ -5565,6 +5565,7 @@ items:
   - type: STR_PUMP_SHOTGUN_CHAOS
     refNode: *CHAOS_WEAPON
     costBuy: 2000
+    listOrder: 10604
   - type: STR_AUTOGUN_CHAOS
     costBuy: 3500
     ufopediaType: ""
