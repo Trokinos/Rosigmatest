@@ -3107,6 +3107,11 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SQUIG_ARMOR: "Squig"
   STR_SQUIG_ARMOR_BOMB: "Squig Bommarz"  # ORKMOD
   STR_SQUIG_CORPSE: "Squig Corpse"  # ORKMOD
+  STR_PLAYER_SQUIG_CORPSE: "Squig Corpse"
+  STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE: "Squig Corpse"
+  STR_SQUIG_BITE: "Squig Chomp"
+  STR_TANKBUSTA_INVENTORY_BOMB: "Big Tankbusta Bomma"
+  STR_TANKBUSTA_BOMB_COLLAR: "Bomma Trigger Collar"
 
   STR_PLAYER_GROT: "Gretchin"
   STR_PLAYER_GROTS_ARMOR: "Gretchin Arma"
