@@ -2372,7 +2372,7 @@ alienRaces:
   - id: STR_SQUIG_HORDE  # WIP
     retaliationMissionWeights:
       0:
-       STR_ALIEN_RETALIATION: 100
+        STR_ALIEN_RETALIATION: 100
     membersRandom:
       - [STR_SQUIG_ASSAULT_AI]        # 0 COMMANDER
       - [STR_SQUIG_ASSAULT_AI]            # 1 LEADER
