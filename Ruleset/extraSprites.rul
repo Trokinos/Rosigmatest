@@ -157,6 +157,10 @@ extraSprites:
     fileSingle: Resources/ORK/SPARKY_POWER_FIELD_CODEX.png
   - typeSingle: ORK_CAPSULE.SPK
     fileSingle: Resources/ORK/ORK_CAPSULE.png
+  - typeSingle: SQUIG_ASSAULT.SPK
+    fileSingle: Resources/ORK/SquigCodexArmor.png
+  - typeSingle: SQUIG_BOMB.SPK
+    fileSingle: Resources/ORK/SquigBombOriginCodex.png
 
   - typeSingle: IMPERIAL_GENERIC.SPK
     fileSingle: Resources/CODEX/imperialgen.png

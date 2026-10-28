@@ -2312,6 +2312,7 @@ items:
       ITEM_IGNORES_2X2_REDUCTION: 1 # Busts Tanks
 
   - type: STR_TANKBUSTA_INVENTORY_BOMB
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ORK]
     refNode: *TANKBUSTA_TEMPLATE
     bigSprite: 2188
     power: 180 #bit more oomph
@@ -2340,12 +2341,15 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 75
       ITEM_IGNORES_2X2_REDUCTION: 1 # Busts Tanks
       ITEM_IS_BOMB: 1
+      ITEM_IS_KAMIKAZI_BOMB: 1
       ITEM_IS_BOMB_ON_DEATH: 1  # we blow this bomb up on death
 
-  - type: STR_SQUIG_BITE
+
+  - &SQUIG_BITE_TEMPLATE
+    type: STR_SQUIG_BITE
     requiresBuy:
       - STR_GENERALLOCK
-    categories: [STR_CAT_AUXILIARY]
+    categories: [STR_CAT_AUXILIARY, STR_CAT_ORK]
     bigSprite: 2189
     meleeHitSound: {mod: 40k, index: 48}
     power: 95 #+10 over cmas
@@ -2370,6 +2374,14 @@ items:
     invHeight: 3
     flatRate: true
     #listOrder: 2320
+
+  - type: STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI
+    ufopediaType: STR_SQUIG_BITE
+    categories: [STR_CAT_AUXILIARY, STR_CAT_ORK]
+    refNode: *SQUIG_BITE_TEMPLATE
+    tags:
+      ITEM_IS_KAMIKAZI_TRIGGER: 1  # triggers self-destruct on melee
+
 
   - type: STR_TANKBUSTA_BOMB_COLLAR
     categories: [STR_CAT_TACTICAL, STR_CAT_ORK]

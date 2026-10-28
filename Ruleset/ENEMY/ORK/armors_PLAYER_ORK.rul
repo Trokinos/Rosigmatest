@@ -1356,7 +1356,7 @@ armors:
 
 # Squigs
 
-  - type: STR_SQUIG_ARMOR # Copied from Cyber Mastiff for starting point
+  - type: STR_SQUIG_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 20
     antiCamouflageAtDay: 5 # Good sniffers
