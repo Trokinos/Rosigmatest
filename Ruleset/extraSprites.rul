@@ -5414,9 +5414,10 @@ extraSprites:
     fileSingle: Resources/ORK/orksniperguncodex.png
 
 #Blood Axe Orks and Orky Guard
-
+  - typeSingle: ASSAULT_SQUIG_INV.SPK  # Assault Squig Inventory
+    fileSingle: Resources/ORK/OPFOR_ATTACK_SQUIG.png
   - typeSingle: BOMB_SQUIG_INV.SPK  # Bomb Squig Inventory
-    fileSingle: Resources/ORK/O6SquigInv.png
+    fileSingle: Resources/ORK/OPFOR_BOMB_SQUIG.png
 
   - typeSingle: ORKYGUARD_INV.SPK  #Flakguard Boy
     fileSingle: Resources/ORK/ORKYGUARD_INV.png

@@ -2313,7 +2313,7 @@ items:
 
   - type: STR_TANKBUSTA_INVENTORY_BOMB
     refNode: *TANKBUSTA_TEMPLATE
-    bigSprite: 2187 # need bigger inventory bomb image
+    bigSprite: 2188
     power: 180 #bit more oomph
     fuseType: -1
     blastRadius: 6
