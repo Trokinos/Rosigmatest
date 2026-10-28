@@ -33,6 +33,25 @@ soldierTransformation:
       - STR_SOLDIER_JOAN
 
 ## PRIMARIS
+  - name: STR_MARINE_TO_PRIMARIS
+    requires:
+      - STR_PRIMARIS
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 50
+    producedSoldierType: STR_PRIMARISLV1
+    producedSoldierArmor: STR_MKX_TAC_LV1_UC
+    minRank: 1
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    needsCorpseRecovered: false
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    transferTime: 1
+    recoveryTime: 0
+    lowerBoundAtMinStats: true
+    rerollStats:
+      psiSkill: 1
 
   - name: STR_LV1_TO_LV2
     keepSoldierArmor: false
