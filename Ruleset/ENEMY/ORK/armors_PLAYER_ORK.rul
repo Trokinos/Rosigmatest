@@ -1416,7 +1416,7 @@ armors:
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ORK: 1
-      ARMOR_ALPHA_ATTACKER_BONUS_MODIFIER: 95 # substantially less likely to be alpha legion
+      ARMOR_ALPHA_ATTACKER_BONUS_MODIFIER: -1 # cant be alpha legion
       INTIMIDATION_RESISTANCE: 50
 
   - type: STR_SQUIG_ARMOR_BOMB
@@ -1443,8 +1443,8 @@ armors:
     annoyedMale: [1968, 1969]
     annoyedFemale: [1968, 1969]
     specab: 1
-    corpseBattle: # TODO: CONFIGURE AS BOMB SQUIG
-      - STR_PLAYER_SQUIG_CORPSE
+    corpseBattle:
+      - STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE
     stats:
       tu: -10 # weighted down
       stamina: -10 # weighted down
@@ -1457,11 +1457,10 @@ armors:
       - INV_NULL_2X1_LL
       - STR_TANKBUSTA_INVENTORY_BOMB # 3x3 space replaced with bomb
       - INV_NULL_4X2
-    #specialWeapon: #TODO: setup
     frontArmor: 30  #
-    sideArmor: 25  #
-    rearArmor: 50  # bomb is a bit resistant
-    underArmor: 50  # bomb offers some protection
+    sideArmor: 45  # bomb covers a bit
+    rearArmor: 50  # bomb covers a bit
+    underArmor: 20  # was 10
     damageModifier:  # same as cyber mastiff, seems ok. Tough muscly hide protects against most things, but is weak to flame.
       - 1.0  # none
       - 0.9  # AP
@@ -1487,10 +1486,11 @@ armors:
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ORK: 1
-      ARMOR_ALPHA_ATTACKER_BONUS_MODIFIER: 95 # substantially less likely to be alpha legion
+      ARMOR_ALPHA_ATTACKER_BONUS_MODIFIER: -1 # cant be alpha legion
       INTIMIDATION_RESISTANCE: 50
       #add kamikaze tags
       ARMOR_DISABLE_OVERKILL_SELF_DESTRUCT: 1
       ARMOR_IS_EXPLODE_ON_DEATH: 1
       ARMOR_IS_KAMIKAZI: 1
-      ARMOR_ALWAYS_OVERKILL: 1
+      #ARMOR_ALWAYS_OVERKILL: 1
+      ARMOR_IS_EXPLODE_ON_DEATH_MELEE_BYPASS: 1

@@ -2313,8 +2313,19 @@ items:
 
   - type: STR_TANKBUSTA_INVENTORY_BOMB
     refNode: *TANKBUSTA_TEMPLATE
+    bigSprite: 2187 # need bigger inventory bomb image
     power: 180 #bit more oomph
+    fuseType: -1
     blastRadius: 6
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.6
+      ToArmor: 0.6
+      ToHealth: 0.8
+      ToStun: 0.3
+      ToTime: 0.3
+      ResistType: 1
     invWidth: 3
     invHeight: 3
     recover: false
@@ -2332,7 +2343,7 @@ items:
       ITEM_IS_BOMB_ON_DEATH: 1  # we blow this bomb up on death
 
   - type: STR_TANKBUSTA_BOMB_COLLAR
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ORK]
+    categories: [STR_CAT_TACTICAL, STR_CAT_ORK]
     battleType: 3
     clipSize: -1
     fixedWeapon: true
