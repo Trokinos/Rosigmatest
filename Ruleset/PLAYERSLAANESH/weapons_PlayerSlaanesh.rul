@@ -3,33 +3,49 @@ extended:
 
 items:
 
- #### SLAANESH LASCANNONS ####
-
-  - type: STR_SLAANESHPATH_LASCANNON_HANDHELD  # 
-    dropoff: 4  # heavy weapon platform, not a sniper weapon
-    autoRange: 0
-    snapRange: 20
-    aimRange: 30  # sniper rifle range; not better than sniper rifle range
-
-    accuracyAuto: 0
-    accuracySnap: 55 # More accurate snap fire
-    accuracyAimed: 85
-    kneelBonus: 130  # heavy weapon, cumbersome and bulky, even if you have the strength to wield it standing; need to kneel to use this effectively
-    minRange: 7
-
-    tuAuto: 0
-    tuSnap: 35 # Much faster and lighter
-    tuAimed: 65 # Much faster and lighter
-
-    tuLoad: 40  # reloading this heavy weapon is a PITA
-    armor: 200
-
-    tags:
-      REACTION_MULTIPLIER: 50
-      REACTION_PENALTY_KNEELING_BYPASS: 1
-
-
  #### LAS WEAPONS ####
+
+  - type: STR_LASCANNON_HANDHELD_SLAAN
+    categories: [STR_CAT_LASGUN, STR_CAT_ADEPTAS]
+    requiresBuy:
+      - STR_GENERALLOCK # Placeholder.
+    size: 0.4
+    costBuy: 200000  # can be manufactured for half the cost but requires materials
+    costSell: 50000
+    weight: 35
+    bigSprite: 2080
+    floorSprite: 2057
+    handSprite: 2076
+    compatibleAmmo:
+      - STR_LASCANNON_CLIP_MALTHUS
+    clipSize: 0
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 200
+    listOrder: 12221
+    bulletSpeed: 100
+    # lasgun aesthetics
+    hitSound: 3986
+    fireSound: 3984
+    hitAnimation: 2230
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 4  # red laser
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+
+
+
+
+
 
   - type: STR_LAS_BATTLERIFLE_SLAAN
     dropoff: 3

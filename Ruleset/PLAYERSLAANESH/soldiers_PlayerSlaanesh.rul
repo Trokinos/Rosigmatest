@@ -241,6 +241,81 @@ soldiers:
     rankBattleSprite: 4144 
     rankTinySprite: 4144
 
+  - type: STR_SLAANESHPATH_SORCERESS  # Chaos sorceresses wearing full power armor. Very elite.
+    flagOffset: 21 # !!! need to fix this later !!!
+    costSalary: 66000 # 10K more than normal Adeptas.
+    minStats: # don't matter
+      tu: 55 
+      stamina: 60 
+      health: 35
+      bravery: 60 
+      reactions: 40 
+      firing: 45 
+      throwing: 35 
+      strength: 16
+      psiStrength: 25
+      psiSkill: 30
+      melee: 40
+    maxStats:
+      tu: 70
+      stamina: 85
+      health: 60
+      bravery: 100
+      reactions: 75
+      firing: 75
+      throwing: 75
+      strength: 50
+      psiStrength: 100
+      psiSkill: 10
+      melee: 80
+    statCaps:
+      tu: 115 
+      stamina: 125 
+      health: 80 
+      bravery: 110
+      reactions: 130
+      firing: 110
+      throwing: 80
+      strength: 80
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    trainingStatCaps:
+      tu: 85 # 5 More
+      stamina: 80
+      health: 65
+      firing: 80 # 5 More
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80 # Slaanesh Influence
+    dogfightExperience: 
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_SORCERESS_ARMOR
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 95
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/adeptas_novice.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_SORCERESS_RANK_0
+      - STR_SLAANESHPATH_SORCERESS_RANK_1
+      - STR_SLAANESHPATH_SORCERESS_RANK_2
+      - STR_SLAANESHPATH_SORCERESS_RANK_3
+    rankSprite: 4144
+    rankBattleSprite: 4144 
+    rankTinySprite: 4144
+
   - type: STR_SLAANESHPATH_CHIRURGEON  # Tier 1 ELITE units. A mix between Novitiate superiors, death cultists, and medicae. 
     flagOffset: 21 # !!! need to fix this later !!!
     costBuy: 20000  # Not meant to be purchased directly. 
@@ -561,3 +636,81 @@ soldiers:
       firing: 25
     moraleLossWhenKilled: 75  # no one cares about grunts
     value: 10
+
+#3 HERETEKS
+
+  - type: STR_SLAANESHPATH_HERETEK 
+    costSalary: 75000
+    requires:
+      - STR_GENERALLOCK
+    minStats:
+      tu: 60 # +10 vs normal enginseer
+      stamina: 60
+      health: 45
+      bravery: 50
+      reactions: 50
+      firing: 60
+      throwing: 50
+      strength: 30
+      psiStrength: 10 # min human
+      psiSkill: 0
+      melee: 50  # was 20
+    maxStats:
+      tu: 70 # +10 vs normal enginseer
+      stamina: 70
+      health: 60
+      bravery: 80
+      firing: 70
+      reactions: 60
+      melee: 60
+      throwing: 65
+      strength: 45
+      psiStrength: 40 # regular non-psionic human
+      psiSkill: 25
+    statCaps:
+      tu: 85 # bionic enhancement but bulky/ponderous
+      stamina: 140 # bionic enhancement
+      health: 80 # bionic enhancement
+      bravery: 110
+      firing: 110 # bionic enhancement/targeting
+      reactions: 80 # bionic enhancement but bulky/ponderous
+      melee: 110 # bionic enhancement/targeting
+      throwing: 80
+      strength: 80 # inbuilt bionics
+      psiStrength: 45
+      psiSkill: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 80
+      health: 60
+      firing: 80
+      throwing: 70
+      strength: 40
+      melee: 70
+      psiStrength: 45
+      psiSkill: 100
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    armor: STR_SLAANESHPATH_HERETEK_ARMOR
+    standHeight: 22
+    kneelHeight: 16
+    avatarOffsetX: 67
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/enginseer.nam
+    deathMale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}, {mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    value: 30
+    rankStrings:
+      - STR_TECH_ENGINSEER_RANK_0
+      - STR_TECH_ENGINSEER_RANK_0
+    rankSprite: {mod: 40k, index: 1000}
+    rankBattleSprite: {mod: 40k, index: 1000}
+    rankTinySprite: {mod: 40k, index: 1000}
+    flagOffset: 42 # guard kill flags
+    tags:
+      SOLDIER_WOUND_TIME_MULTIPLIER: 45 # inbuilt bionics + heretical, warp-based means of regeneration.

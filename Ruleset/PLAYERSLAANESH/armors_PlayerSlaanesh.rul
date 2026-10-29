@@ -229,7 +229,65 @@ armors:
       - INV_NULL_2X1_LL
     loftempsSet: [3]
     tags:
-      INFECTION_RESIST: 35 # Slaanesh Immaculate baseline. 
+      INFECTION_RESIST: 40 # Slaanesh Immaculate baseline. 
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_SORCERESS_ARMOR     # Higher quality immaculate armor.
+    visibilityAtDay: 40
+    visibilityAtDark: 30 # Bride of Tzeentch equivalent
+    antiCamouflageAtDay: 12  # Bride of Tzeentch equivalent
+    antiCamouflageAtDark: 12 # Bride of Tzeentch equivalent
+    psiVision: 5
+    heatVision: 40 # 
+    spriteSheet: XCOM_33DRED.PCK # Fix later
+    spriteInv: MAN_33 # Fix later 
+    customArmorPreviewIndex: 60 # Fix later
+    corpseBattle:
+      - STR_ADEPTAS_CORPSE
+    stats:
+      tu: 10 # + 10 vs adeptas power armor
+      stamina: 20
+      health: 10
+      bravery: 0 # - 10 vs adeptas power armor 
+      reactions: 10 # + 5 vs adeptas power armor
+      firing: 10
+      throwing: 5
+      strength: 5
+      psiStrength: 10
+      psiSkill: 10  
+      melee: 10 # + 10 vs adeptas power armor
+    storeItem: STR_NONE
+    frontArmor: 95 # -10
+    sideArmor: 85
+    rearArmor: 50
+    underArmor: 95 # + 10
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.8  # FLAMES - 0.2 malus vs adeptas power armor
+      - 0.8  # HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA - 0.1 bonus vs adeptas power armor.
+      - 0.7  # STUN - 0.3 bonus vs adeptas power armor.
+      - 0.8  # MELEE - 0.2 bonus vs Adeptas power armor
+      - 1.0  # ACID - 0.2 malus vs Adeptas power armor
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_HANDMAIDEN # Temporary until Immaculates are implemented
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [3]
+    tags:
+      INFECTION_RESIST: 60 # Baseline + soreress  
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -244,6 +302,7 @@ armors:
     visibilityAtDark: 27 # Heightened senses and modified medicae sensors.
     antiCamouflageAtDay: 7  # Heightened senses
     antiCamouflageAtDark: 7 # Heightened senses
+    psiVision: 5
     heatVision: 34 # Heightened senses and modified medicae sensors. Night Lord CSM level.
     spriteSheet: ADEPTASMEDICAE.PCK
     spriteInv: MED_33
@@ -289,7 +348,7 @@ armors:
       - AUX_CHIRURGEON_MEDI_KIT
     loftempsSet: [2] # Agile and dodgy!
     tags:
-      INFECTION_RESIST: 60 # Slaanesh immaculate blessing + medicae equipment.
+      INFECTION_RESIST: 70 # Slaanesh immaculate blessing + medicae equipment.
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -454,3 +513,49 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
       UNIT_IS_DIEHARD: 1
       DIEHARD_TEMP_MODIFIER_INCREMENT: -100  # they only get one second chance
+
+  - type: STR_SLAANESHPATH_HERETEK_ARMOR                # Enginseer
+    spriteSheet: ENGINSEER.PCK
+    spriteInv: ENGINSEER.SPK
+    customArmorPreviewIndex: 837
+    forcedTorso: 1
+    corpseBattle:
+      - STR_ENGINSEER_CORPSE
+    storeItem: STR_NONE
+    units:
+      - STR_ENGINSEER
+    visibilityAtDay: 40
+    visibilityAtDark: 25
+    heatVision: 20
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    painImmune: true
+    frontArmor: 90
+    sideArmor: 80
+    rearArmor: 60
+    underArmor: 80
+    weight: -15 # partially negate servo arm
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #SUPPORT
+      - 1.0 #AP
+      - 0.7 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID naturally resistant to contaminants
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [3]
+    builtInWeapons: # TO DO LATER: Change this weapon set to plasma-based long ranged weaponry. I.e. Heretek plasma caliver.
+      - STR_TECHPRIEST_SCANNER
+      - STR_TECHPRIEST_REPAIRTOOL
+      - STR_TECHPRIEST_POWERAXE
+      - STR_TECHPRIEST_LASPISTOL
+    tags:
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_CHAOS: 1

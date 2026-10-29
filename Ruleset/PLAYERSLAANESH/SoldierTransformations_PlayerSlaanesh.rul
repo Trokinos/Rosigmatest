@@ -49,14 +49,13 @@ soldierTransformation:
       STR_SLAANESH_PIETY: 66
       STR_ELERIUM-115: 6
       STR_ALIEN_ALLOYS: 6
-      STR_ALIEN_SURGERY: 3
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
   - name: STR_INDUCT_SORCERESS # TODO: Add stat requirement. Add basic commendation requirement.
     requires:
       - STR_POWER_ARMOR_CORRUPTION
-    producedSoldierType: STR_SLAANESHPATH_CHIRURGEON #PLACEHOLDER
-    producedSoldierArmor: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR #PLACEHOLDER
+    producedSoldierType: STR_SLAANESHPATH_sORCERESS #PLACEHOLDER
+    producedSoldierArmor: STR_SLAANESHPATH_SORCERESS_ARMOR #PLACEHOLDER
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true

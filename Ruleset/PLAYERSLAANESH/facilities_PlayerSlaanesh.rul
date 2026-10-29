@@ -1,24 +1,28 @@
-#facilities:
+facilities:
 
-#  - type: STR_SLAANESH_SHRINE
-#    refundValue: 325000
-#    destroyedFacility: STR_CORRIDOR
-#    sickBayAbsoluteBonus: 0.0
-#    sickBayRelativeBonus: 1.0
-#    psiLabs: 10
-#    placeSound: 98
-#    requiresBaseFunc: [BASE]
-#    requires:
-#      - STR_SLAANESHPATH
-#    spriteShape: 1
-#    spriteFacility: 36
-#    rightClickActionType: 5
-#    buildCost: 100000
-#    buildTime: 10
-#    monthlyCost: 16000
-#    provideBaseFunc: [CHAOS]
-#    mapName: XBASE_49
-#    listOrder: 850
+
+
+
+  - type: STR_SLAANESH_SHRINE
+    refundValue: 325000
+    destroyedFacility: STR_CORRIDOR
+    sickBayAbsoluteBonus: 0.0
+    sickBayRelativeBonus: 1.0
+    psiLabs: 10
+    placeSound: {mod: 40k, index: 98}
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_SLAANESHPATH_GATE
+    spriteShape: 1
+    spriteFacility: 36
+    rightClickActionType: 5
+    buildCost: 250000 # This building is meant to be cheap and provide passive money generation.
+    maxAllowedPerBase: 1
+    buildTime: 10
+    monthlyCost: -100000
+    provideBaseFunc: [ALTAR1]
+    mapName: XBASE_49
+    listOrder: 850
 
 #  - type: STR_SLAANESHPRISON_TIER1
 #    placeSound: 98
@@ -36,7 +40,49 @@
 #    mapName: XBASE_36
 
 #  - type: STR_HERETEK_FORGE
-#
-#
+
+  - type: STR_OUTPOST_SLAANESH # For now, this is copied from the chaos cult outpost.
+    requires:
+      - STR_SLAANESHPATH_GATE
+    placeSound: {mod: 40k, index: 98}
+    canBeBuiltOver: true
+    requiresBaseFunc: [OUTP]
+    provideBaseFunc: [OUTP, HANGAR, IMPERIUM]
+    maxAllowedPerBase: 1
+    monthlyCost: 300000
+    refundValue: 500000
+    connectorsDisabled: true
+    spriteShape: {mod: 40k, index: 600}
+    spriteFacility: {mod: 40k, index: 600}
+    size: 4
+    buildCost: 1000000
+    crafts: 1
+    buildTime: 10
+    personnel: 50
+    storage: 100
+    radarRange: 2577
+    radarChance: 20
+    mapName: XBASE_60
+    storageTiles:
+      - [24, 6, 1]
+      - [25, 6, 1]
+      - [27, 6, 1]
+      - [22, 4, 1]
+      - [34, 10, 1]
+      - [28, 3, 1]
+      - [27, 3, 2]
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        groups: [13]
+        size: [4, 4, 0]
+      - type: middle
+        blocks: [60] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [4, 4, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        size: [4, 4, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
+        terrain: VOSS4X4 # needs a 40x40 map to match the outpost
+        blocks: [0]
+    listOrder: 800
 #
 #

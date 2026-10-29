@@ -23,6 +23,11 @@ items:
     recover: true
     hiddenOnMinimap: true
 
+  - type: STR_HERETEK_TRIBUTE
+    size: 0.0
+
+
+
   - type: STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN
     size: 0.1
 

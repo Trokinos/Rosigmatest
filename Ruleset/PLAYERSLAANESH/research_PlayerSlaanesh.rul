@@ -131,13 +131,6 @@ research:
     dependencies:
       - STR_GENERALLOCK
   
-  - name: STR_CONTACT_HERETEKS # Codex entry. This project unlocks a project requiring warp stones.
-    cost: 20
-    dependencies:
-      - STR_CONTACT_ARMS_SMUGGLERS
-      - STR_PROCURE_TRANSPORTATION
-      - STR_BLACK_MARKET_AMMUNITION
-
  ###################################
  ##### PIETY & RITUAL RESEARCH #####
  ###################################
@@ -164,13 +157,48 @@ research:
   # Disables once Hereteks are capable of manufacturing. 
 
  ###################################
- ##### MELTA & PLASMA RESEARCH #####
+ ##### MELTA, PLASMA & LASCANNON RESEARCH #####
  ###################################
+
+  - name: STR_CONTACT_HERETEKS # Codex entry. Unlocks the ability to produce a tribute.
+    cost: 20
+    dependencies:
+      - STR_CONTACT_ARMS_SMUGGLERS
+      - STR_PROCURE_TRANSPORTATION
+      - STR_BLACK_MARKET_AMMUNITION
+    unlocks: 
+      - STR_HERETEK_TRIBUTE_PRODUCTION
+
+  - name: STR_HERETEK_TRIBUTE
+    cost: 30
+    dependencies:
+      - STR_CONTACT_HERETEKS
+    needItem: true
+    destroyItem: true
+    disables: 
+      - STR_HERETEK_TRIBUTE_PRODUCTION
+
+  - name: STR_HERETEK_TRIBUTE_PRODUCTION 
+    cost: 0
+    dependencies:
+      - STR_GENERALLOCK
+  #This is the tech that allows you to produce the tribute.
+  # Gets disabled once the tribute itself has been researched.
 
   - name: STR_MELTA_CARBINE_TECHNOLOGY
     cost: 150
     dependencies:
-      - STR_GENERALLOCK
+      - STR_CONTACT_HERETEKS
+
+  - name: STR_IMMACULATE_LASCANNON_TECHNOLOGY
+    cost: 150
+    dependencies:
+      - STR_CONTACT_HERETEKS
+
+  - name: STR_IMMACULATE_PLASMA_TECHNOLOGY
+    cost: 150
+    dependencies:
+      - STR_CONTACT_HERETEKS
 
  ###################################
  ### WEAPON CORRUPTION RESEARCH ####
@@ -220,31 +248,36 @@ research:
     cost: 50
     points: 10
     dependencies:
-    - STR_GENERALLOCK
+    - STR_GIFTS_OF_SLAANESH
     unlocks:
     - STR_LIGHT_GRENADE_LAUNCHERS
     - STR_CHOKE_GAS_GRENADES
     - STR_CRUEL_MELEE_WEAPONRY
 
   - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry. 
-    cost: 50
+    cost: 0
     dependencies:
-    - STR_IMPLEMENTS_OF_TORTURE
+    - STR_GENERALLOCK
 
   - name: STR_CHOKE_GAS_GRENADES
-    cost: 20
+    cost: 50
     dependencies:
     - STR_SLAANESHPATH_GATE
 
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
-    cost: 20
+    cost: 80
     dependencies:
-    - STR_IMPLEMENTS_OF_TORTURE
-    - STR_CHOKE_GAS_GRENADES
+    - STR_GIFTS_OF_SLAANESH
+    unlocks:
     - STR_LIGHT_GRENADE_LAUNCHERS
+    getOneFree:
+    - STR_HALLUCINOGEN_GRENADES
+    - STR_SHARD_GRENADES
+    - STR_SONIC_GRENADES
+    - STR_BALEFIRE_GRENADES
 
   - name: STR_TERROR_GRENADES 
-    cost: 20
+    cost: 70
     dependencies:
     - STR_TERROR_WEAPONRY
     getOneFree:
@@ -272,19 +305,19 @@ research:
     - STR_GENERALLOCK  
 
   - name: STR_CRUEL_MELEE_WEAPONRY
-    cost: 20
+    cost: 50
     dependencies:
-    - STR_IMPLEMENTS_OF_TORTURE
+    - STR_WEAPON_CORRUPTION
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
-    cost: 20
+    cost: 50
     dependencies:
     - STR_TERROR_WEAPONRY
     getOneFree:
     - STR_IMPERIAL_WEBBER_DEP1
 
   - name: STR_PROCURE_TRANSPORTATION # Codex entry.
-    cost: 20
+    cost: 50
     points: 10
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS

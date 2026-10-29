@@ -1,4 +1,20 @@
-#manufacture:
+manufacture:
+
+  - name: STR_PRODUCE_HERETEK_TRIBUTE
+    category: STR_RITES_OF_EXCESS
+    requires:
+    - STR_HERETEK_TRIBUTE_PRODUCTION
+    space: 15
+    time: 50
+    cost: 1000
+    producedItems:
+      STR_HERETEK_TRIBUTE: 1
+    requiredItems:
+      STR_ALIEN_SURGERY: 5
+      STR_ALIEN_ALLOYS: 150
+      STR_ELERIUM_115: 100
+    points: 200
+
 
 #  - name: STR_SLAANESHPATH_SORORITAS_TOKEN_MANUFACTURE
 #    category: STR_RITUALS_OF_SUBVERSION

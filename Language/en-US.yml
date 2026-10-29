@@ -15289,7 +15289,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_D_EVENT: "Encroaching Shadows"
   STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the base.{NEWLINE}{NEWLINE}The generators are working, so it might be a breaker fault. You've no reason to feel fear at a bit of darkness...{NEWLINE}{NEWLINE}...But you do. For hours you've felt a headache building; urges and obscene emotions you scarcely recognize as your own. Something about this place is *wrong*. At least the damned array cogitator is finally working. Soon, you'll be able to leave."
   STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
-  STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But we forgive you. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}Panicked, you raise your bolter. From behind comes the prick of a needle, and then the hungry darkness swallows you up."
+  STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But we forgive you. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}Panicked, you raise your bolter. From behind comes the prick of a needle, and then the darkness swallows you again."
 
   ### MISSIONS
 
@@ -15301,10 +15301,16 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Strike Team Ambush"
   STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make a fine offering to Slaanesh."
   STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
-  ### CODEX ENTRIES
+
+  ### UFOPEDIA ENTRIES
+
+  STR_CONTACT_HERETEKS_UFOPEDIA: "{NEWLINE}{NEWLINE}Through means both mundane and supernatural, contact has been established with the Dark Mechanicum's representatives on Pelega IV. As long as we can offer a suitable tribute of slaves and materials, they agree to a pact of cooperation between our forces. To this end, Arch-savant Arachus Theta-Rho has dispatched an emissary carrying a few “minor trinkets”; valuable datacrypts containing fabrication plans and esoteric weapon technologies." 
+  STR_BLACK_MARKET_AMMUNITION_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite what the Sacred Rose would tell you, faith alone has never won a war. And without ammunition, even the holiest bolter little more than a cold lump of metal. Thankfully, your new friends remain eager please: on your behalf, they have reached out to their underhive Ammo-jack contacts. Though the thought of using shoddy, handloaded bolts offends you, this is an acceptable stopgap."
+  STR_SECURE_TRANSPORTATION_UFOPEDIA: "{NEWLINE}{NEWLINE}The black market offers many things for sale, but military-grade vehicles aren't one of them. Yet on sale is something even better: information. Many local PDF depots have vehicles aplenty, all but begging to be liberated from the yoke of the corpse-emperor. And there are more deserters and malcontents willing to sell you military secrets on Pelega IV than you could shake a grox-prod at."
+  STR_WEAPON_CORRUPTION_UFOPEDIA: "{NEWLINE}{NEWLINE}The Dark Prince is nothing but generous, offering perversion to the faithful and the uninitiated alike. Through piety and arcane rituals, Slaanesh can grant us the power to transform the mundane weaponry of the Imperium and transform them into something far more pleasing to the senses. We only have to prove ourselves worthy."
 
 
-  ### RESEARCH DEFINITIONS
+###
 
   STR_SLAANESHPATH: "Slaanesh strategy [EARLY WIP]"
   STR_SLAANESHPATH_SELECTED: "(Slaanesh strategy selected)"
@@ -15314,9 +15320,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
   STR_SLAANESHPATH_GATE: "The Angel's Voice"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
-  STR_THE_GIFTS_OF_SLAANESH: "The Gifts of Slaanesh"
+  STR_THE_GIFTS_OF_SLAANESH: "The Power of Slaanesh"
   STR_STR_SOULS_FOR_SLAANESH: "Souls for Slaanesh"  
-  STR_WEAPON_CORRUPTION: "Weapon Corruption Rites"
+  STR_WEAPON_CORRUPTION: "Weapon Corruption Rites"a
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR__LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launchers"
@@ -15327,6 +15333,16 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
   STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
   STR_CORRUPT_ADEPTAS_BOLTERS: "Bolter Corruption Rites"
+  STR_CONTACT_HERETEKS: "Contact the True Mechanicus"
+  STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
+  STR_IMMACULATE_LASCANNON_TECHNOLOGY: "Light Lascannon Data-crypt"
+  STR_MELTA_CARBINES: "Melta Carbine Data-crypt"
+  STR_IMMACULATE_PLASMA_TECHNOLOGY: "Plasma Carbine Data-crypt"
+
+ ###################################
+ #### MANUFACTURING PROJECTS #######
+ ###################################  
+
   ### MANUFACTURE DEFINITIONS
 
   STR_RITES_OF_EXCESS: "Rites of Excess"
@@ -15339,13 +15355,12 @@ en-US:  #  yamllint disable-line rule:empty-values
   ### MANUFACTURING PROJECTS - PROGRESSION
 
   STR_SLAANESH_PDF_TOKEN_MANUFACTURE: "Infiltrate Local PDF Regiments"
- ###################################
- #### MANUFACTURING PROJECTS #######
- ###################################  
- #Piety projects
+
+ #Piety projects & progression projects
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
   STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
   STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
+  STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
 
 #Weapon conversion, armor corruption, armor repair
   STR_CORRUPT_CANTUS_BOLTER: "Corrupt Cantus Bolter"
@@ -15384,6 +15399,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: "Immaculate Power Armor"
   STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Power Armor"
   STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Power Armor"
+  STR_HERETEK_TRIBUTE: "Tribute to the Dark Mechanicum"
+
+
 
 #WEAPONS
   STR_SLAMFIRE: "Slam-fire"
@@ -15414,6 +15432,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CANTUS_BOLTER_AMMO_PENETRATOR: "Cantus Penetrator Magazine"
   STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Magazine"
   STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Magazine"
+  STR_LIGHT_BOLTPISTOL_AMMO_BM: "Black Market Boltpistol Clip"
   STR_LIGHT_BOLTER_AMMO_BM: "Black Market Light Bolter Magazine"
   STR_LIGHT_BOLTER_AMMO_SB: "Light Bolter Soulblight Magazine"
   STR_CHOKE_GRENADE40: "40mm Choke Gas Grenade"
@@ -15439,7 +15458,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_MORBIDANGEL: "Morbid Angel"
   STR_SLAANESHPATH_EXALTEDANGEL: "Exalted Morbid Angel"
   STR_SLAANESHPATH_HEARTBREAKER: "Heartbreaker"
-
+  STR_SLAANESHPATH_HERETEK: "Heretek Savant"
   ## Slaanesh Adeptas Armors
 
   STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
@@ -15475,7 +15494,7 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ## Slaanesh cultist armors
 
-  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Brotherhood Mesh Armor"
+  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Victualist Mesh Armor"
 
   ## Slaanesh cultist ranks
 
@@ -15488,3 +15507,6 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_SADIST_RANK_1: "Shrewd Sadist"
   STR_SLAANESHPATH_SADIST_RANK_2: "Sadist Scrupulous"
   STR_SLAANESHPATH_SADIST_RANK_3: "Sadist Sanguine"
+
+  STR_SLAANESHPATH_SAVANT_RANK_0: "Minoris Sigma-Nu"
+  STR_SLAANESHPATH_SAVANT_RANK_1: "Minoris Sigma-Lambda"
