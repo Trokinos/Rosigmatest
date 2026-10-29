@@ -4298,6 +4298,68 @@ ufopaedia:
     image_id: RHINO_NOTT.SPK  # placeholder
     text: STR_BTBRLANDRAIDER_CODEX
 
+## #CRAFTS.SM.SW#
+  - id: STR_SWDROPPODS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY  # should be base craft
+    image_id: DROPPOD.SPK
+    text: STR_SWDROPPODS_CODEX
+  - id: STR_SWRHINOS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY  # to update once there are more SW research
+    image_id: RHINO_NOTT.SPK  # placeholder
+    text: STR_SWRHINOS_CODEX
+  - id: STR_SWTHUNDERHAWK
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY
+      - STR_SWTHUNDERHAWK
+    image_id: THUNDERHAWK.SPK
+    text: STR_THUNDERHAWK_UFOPEDIA
+  - id: STR_SWTHUNDERHAWKGRAV
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY
+      - STR_SWTHUNDERHAWKGRAV
+    image_id: THUNDERHAWK.SPK
+    text: STR_THUNDERHAWK_GRAVDROP_UFOPEDIA
+  - id: STR_SWSTORMWOLF
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY
+      - STR_SPACEWOLVES_MIDTIER_RESEARCH
+    image_id: STORMWOLF_CODEX.SPK # Likely improvement candidate
+    text: STR_SWSTORMWOLF_CODEX
+  - id: STR_SWLANDRAIDER
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY
+      - STR_RESEARCH_SWLANDRAIDER  # research specific for it
+    image_id: RHINO_NOTT.SPK  # placeholder
+    text: STR_SWLANDRAIDER_CODEX
+  - id: STR_SWLEMANRUSS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY  # to update once there are more SW research
+      - STR_SPACEWOLVES_MIDTIER_RESEARCH
+    image_id: 2LEMON.SPK # needs new
+    text: STR_SWLEMANRUSS_CODEX
 ## #CRAFTS.SOB.BR#
 
   - id: STR_BRARVUS_ADEPTAS

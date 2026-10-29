@@ -13924,6 +13924,14 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SWLANDRAIDER: "SW LANDRAIDER"
   STR_SWLEMANRUSS: "SW LEMAN COLUMN"
 
+  STR_SWDROPPODS_CODEX: "{NEWLINE} Drop Pods are atmospheric assault transports primarily used by the Space Wolves for orbital insertion and planetary assaults. Use by non-Astartes units such as Imperial Guardsmen is not recommended."
+  STR_SWRHINOS_CODEX: "{NEWLINE} The Rhino are armoured personnel carriers widely used by the most elite Imperial forces. This Space Wolves variant is equipped with Razorback turrent with Hellfrost Twinlinked Bolters in order to fight the enemies of the Imperium for the greater glory of the Emperor."
+  STR_THUNDERHAWK_UFOPEDIA: "{NEWLINE} The Thunderhawk gunship is used by the Adeptus Astartes as the primary means of deploying forces into combat and as a reliable source of air support.{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}      BOMBARD>{ALT}1"
+  STR_THUNDERHAWK_GRAVDROP_UFOPEDIA: "{NEWLINE} The Thunderhawk gunship is used by the Adeptus Astartes as the primary means of deploying forces into combat and as a reliable source of air support.{NEWLINE}This variant is equipped for a low altitude assault drop, a first preemptive bombardment will be performed before air-dropping your soldiers into battle to clear the drop zone from hostiles. {NEWLINE}{NEWLINE}{NEWLINE}      BOMBARD>{ALT}1"
+  STR_SWSTORMWOLF_CODEX: "The Stormwolf Assault Boat, or simply the Stormwolf, is a specialised heavily armed assault transport used solely by the Space Wolves Chapter, granting them the ability to bring the fight to the enemy wherever they may be found."
+  STR_SWLANDRAIDER_CODEX: "The standard Land Raider, also known as the Land Raider Phobos, is an Imperial main battle tank and troop transport which serves as the main vehicle for Space Marines chapters."
+  STR_SWLEMANRUSS_CODEX: "This armored column is composed of two fully manned Leman Russ MBT and two small Land Raider transport. This formation as the Leman Russ battle tank themselves has proved to be a reliable and proven strategy to carry troops safely across large distances.{ALT}"
+
   STR_SWRAZORBACK_SPAWNER: "SW Razorback Spawner"
   STR_SWRAZORBACK_WITH_SMOKE: "SW Razorback Turret"
   SWRAZORBACK_ARMOR: "SW Razorback Wreck"
