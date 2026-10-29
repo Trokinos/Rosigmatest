@@ -114,8 +114,16 @@ crafts:
             STR_DROPPOD_DEPLOY_CHARGE: [1, 1]
             STR_STORMBOLTER_TURRET_SPAWNER: [1, 1]
 
-  - type: STR_DROPPODS
+  - type: STR_DROPPODS # Advanced drop pods disabled since they're the same as SM drop pods
     refNode: *STR_DROPPODS
+    requires:
+      - STR_NOT_SPACEWOLVES
+      - STR_NOT_PRIMARIS
+      - STR_MARINES_STRATEGY
+      - STR_NOT_WORDBEARERS
+      - STR_MARINESCHOICEDONE
+      - STR_NOT_BLACKTEMPLARS
+      - STR_GENERALLOCK # Advanced drop pods are DISABLED
 
   - type: STR_DROP # Single drop pod variant, disabled since we have bigger default crafts now
     requires:
