@@ -6229,6 +6229,13 @@ ufopaedia:
     text: STR_ELDAR_ASPECT_HELPER_SPIDER
     requires:
       - STR_ELDAR_SPIDER_RESEARCH
+  - id: STR_PROMOTE_TO_HAWK
+    type_id: 10
+    section: STR_SOLDIERS_UC
+    image_id: ELDAR_HAWK_ARMOR_CODEX.SPK # HAWK ARMOR CODEX IMAGE
+    text: STR_ELDAR_ASPECT_HELPER_HAWK
+    requires:
+      - STR_ELDAR_HAWK_RESEARCH
   - id: STR_PROMOTE_TO_SEER
     type_id: 10
     section: STR_SOLDIERS_UC
@@ -6286,6 +6293,13 @@ ufopaedia:
     text: STR_ELDAR_ASPECT_HELPER_SPIDER_EXARCH
     requires:
       - STR_ELDAR_SPIDER_EXARCH_RESEARCH
+  - id: STR_PROMOTE_TO_HAWK_EXARCH
+    type_id: 10
+    section: STR_SOLDIERS_UC
+    image_id: ELDAR_HAWKEX_ARMOR_CODEX.SPK # HAWK ARMOR CODEX IMAGE
+    text: STR_ELDAR_ASPECT_HELPER_HAWK_EXARCH
+    requires:
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
   # Eldar exarch/autarch
   # ELDAR psyker transf.
   #- id: STR_PROMOTE_TO_PSYKER
@@ -16230,6 +16244,14 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
 
+  - id: STR_FIREDRAGON_CORONA_SPECIALWEAPON
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_FIREDRAGONCORONA_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_FIREDRAGONCORONA_CODEX
+
   - id: STR_LASBLASTER
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -16288,6 +16310,9 @@ ufopaedia:
   - id: STR_SPINNER_SPOOL
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_WIREWEAVE_SPOOL
+    type_id: 4
+    section: STR_NOT_AVAILABLE
   - id: STR_SPINNERET_RIFLE
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -16298,6 +16323,13 @@ ufopaedia:
   - id: STR_SPINNERET_RIFLE_SPOOL
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_DEATHWEAVERS_SPECIALWEAPON
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_DEATHWEAVERS_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_DEATHWEAVERS_CODEX
 
   - id: STR_ELDAR_POWER_BLADE
     type_id: 14
@@ -16306,7 +16338,13 @@ ufopaedia:
     requires:
       - STR_ELDAR_ARMORY_EXAM
     text: STR_ELDAR_POWER_BLADE_CODEX
-
+  - id: STR_POWERBLADEARRAY_SPECIALWEAPON
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_POWERBLADEARRAY_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_POWERBLADEARRAY_CODEX
 
   - id: STR_SHURIKEN_CANNON
     type_id: 14
