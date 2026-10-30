@@ -13413,6 +13413,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ADV_DROPPODS: "Firestorm Drop Pods Requisition"
   STR_DROPPOD_ARMOR: "Firestorm Drop Pod"
 
+  STR_DROPPOD_UFOPEDIA: "{NEWLINE} Drop Pods are atmospheric assault transports primarily used by the Adeptus Astartes for orbital insertion and planetary assaults. Use by non-Astartes units such as Imperial Guardsmen is not recommended."
+  STR_DROPPOD_ADVANCED_UFOPEDIA: "{NEWLINE} Drop Pods are atmospheric assault transports primarily used by the Adeptus Astartes for orbital insertion and planetary assaults. Use by non-Astartes units such as Imperial Guardsmen is not recommended. {NEWLINE}{NEWLINE}Advanced Drop pods deployments are reinforced with an additional drop pod equipped with a firestorm rocket battery, scattered in the battlefield"
+
+
   STR_GAIN_500: "(+500 Score This Month)"
   STR_GAIN_250: "(+250 Score This Month)"
   STR_GAIN_100: "(+100 Score This Month)"
