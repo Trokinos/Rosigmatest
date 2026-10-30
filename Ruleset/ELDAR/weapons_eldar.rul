@@ -122,7 +122,7 @@ items:
     confAuto:
       name: STR_SHURIKEN_WEAPON_AUTOSHOT
       followProjectiles: false
-    autoShots: 12
+    autoShots: 9
     listOrder: 16103
     tags:
       REACTION_MULTIPLIER: 120 # 20% Avenger Bonus
@@ -160,7 +160,7 @@ items:
     confAuto:
       name: STR_SHURIKEN_WEAPON_AUTOSHOT
       followProjectiles: false
-    autoShots: 12
+    autoShots: 9
     confAimed:
       name: STR_HAWK_WEAPON_AIMEDSHOT
       shots: 4
@@ -247,8 +247,7 @@ items:
       followProjectiles: false
     tuAuto: 30
     flatRate: true
-
-    autoShots: 12
+    autoShots: 9
     battleType: 1
     twoHanded: false
     invWidth: 2
@@ -297,7 +296,7 @@ items:
     confAuto:
       name: STR_SHURIKEN_WEAPON_AUTOSHOT
       followProjectiles: false
-    autoShots: 12
+    autoShots: 9
     confAimed:
       shots: 4
       name: STR_HAWK_WEAPON_AIMEDSHOT
@@ -634,7 +633,7 @@ items:
       REACTION_MULTIPLIER: 50 # Indirect Long Range Weapon
 
   - type: STR_AELDARI_FLAMER #STR_FLAMETHROWER stats REWORK NEEDED
-    categories: [STR_CAT_FLAMER, STR_CAT_TACTICAL, STR_CAT_ELDAR]
+    categories: [STR_CAT_FLAMER, STR_CAT_ASSAULT, STR_CAT_ELDAR]
     listOrder: 16150
     requiresBuyBaseFunc: []
     requires:
@@ -667,13 +666,12 @@ items:
     attraction: 7
 
   - type: STR_DRAGON_BREATH_FLAMER # stats from STR_PURIFIER_FLAMER rework needed (very fun weapon haha)
-    categories: [STR_CAT_ELDAR, STR_CAT_FLAMER]
+    categories: [STR_CAT_ELDAR, STR_CAT_FLAMER, STR_CAT_ASSAULT]
     listOrder: 16530
     requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_FIREDRAGON_RESEARCH
-    requiresBuy: []  # Already requires the eldar base service
     costBuy: 50000
     costSell: 10000
     battleType: 1
@@ -714,12 +712,11 @@ items:
     #refNode: *ELDAR_WEAPON_TEMPLATE             #listOrder 16500
     listOrder: 16501
     weight: 15
-    categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL]
+    categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ASSAULT]
     requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
-    requiresBuy: []
     size: 0.3
     costBuy: 10000
     costSell: 3000
@@ -1079,19 +1076,17 @@ items:
     tags:
       REACTION_MULTIPLIER: 50 # multiplies base reaction score by this amount divided by 100
 
-
-  - type: STR_DEATH_SPINNER  # Chaos ripper gun stats temporary
-    categories: [STR_CAT_SHOTGUN, STR_CAT_ASSAULT, STR_CAT_ELDAR]
+  - type: STR_DEATH_SPINNER  # Flamer with -1 AP, add TU and Energy damage to tie in stun and spider lore
+    categories: [STR_CAT_FLAMER, STR_CAT_ASSAULT, STR_CAT_ELDAR]
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_SPIDER_RESEARCH
-    requiresBuyBaseFunc: []
-    requiresBuy: []
     size: 0.4
-    dropoff: 5
-    costBuy: 10000
-    costSell: 1000
+    costBuy: 20000
+    costSell: 10000
     weight: 30
+    invWidth: 2
+    invHeight: 3
     bigSprite: 4863
     floorSprite: 4863
     handSprite: 4930
@@ -1099,21 +1094,34 @@ items:
     fireSound: 1888
     compatibleAmmo:
       - STR_SPINNER_SPOOL
-    #accuracyAuto: 50         #Removed auto, damage output nerf and fits in with weapon description
-    #tuAuto: 30
+      - STR_WIREWEAVE_SPOOL
     accuracySnap: 65
+    accuracyAuto: 40
     tuSnap: 25
-    battleType: 1
+    tuAuto: 40
+    flatRate: true
+    snapRange: 14
+    autoRange: 10
+    maxRange: 14
+    dropoff: 5
+    confSnap:
+      followProjectiles: false
+      shots: 2
+      arcing: true
+    confAuto:
+      followProjectiles: false
+    autoShots: 4
     twoHanded: true
+    experienceTrainingMode: 5
+    arcingShot: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    attraction: 7
+    battleType: 1
     oneHandedPenalty: 75
-    invWidth: 2
-    invHeight: 3
     armor: 300
-    #autoRange: 8
-    snapRange: 12
     listOrder: 16600
 
-  - type: STR_SPINNERET_RIFLE  # T3 Deathspinner upgrade : Longer range, slightly less damage, TU damage increase, better AP
+  - type: STR_SPINNERET_RIFLE  # T3 Deathspinner upgrade : Longer range, slightly less damage, better AP
     categories: [STR_CAT_SHOTGUN, STR_CAT_ASSAULT, STR_CAT_ELDAR]
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
@@ -1122,7 +1130,7 @@ items:
     requiresBuy: []
     size: 0.4
     dropoff: 5
-    costBuy: 30000
+    costBuy: 50000
     costSell: 3000
     weight: 30
     bigSprite: 4868
@@ -1132,10 +1140,19 @@ items:
     fireSound: 1890
     compatibleAmmo:
       - STR_SPINNERET_RIFLE_SPOOL
+      - STR_WIREWEAVE_SPOOL
     accuracyAimed: 80         #Removed auto, damage output nerf and fits in with weapon description
     tuAimed: 40
     accuracySnap: 65
     tuSnap: 25
+    confSnap:
+      followProjectiles: false
+      shots: 1
+      arcing: true
+    confAimed:
+      followProjectiles: false
+      shots: 1
+      arcing: true
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 75
@@ -1252,7 +1269,7 @@ items:
       REACTION_MULTIPLIER: 50 # Wraithguard have poor reactions. We nerf them here instead of statcaps so that soldier stats still have relevance.
 
   - type: STR_DSCYTHE # Wraithguard flamer
-    categories: [STR_CAT_ELDAR, STR_CAT_FLAMER]
+    categories: [STR_CAT_ELDAR, STR_CAT_FLAMER, STR_CAT_ASSAULT]
     battleType: 1
     weight: 10
     # AESTHETICS
@@ -1261,7 +1278,7 @@ items:
     bigSprite: 4911
     handSprite: 1786
     bulletSprite: -1 # no bullets
-    hitAnimation: 2330
+    hitAnimation: 2330 # no hit Animation
     #powerForAnimation: 1
     fireSound: [1902, 1903, 1904]
     hitSound: -1
@@ -1692,8 +1709,8 @@ items:
   - type: STR_AELDARI_POWERSWORD  # Tier 1 Powerweapon
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-    requiresBuy: []
-      #- STR_ELDAR_POWER_WEAPONS_ACQUISITION testing
+    requiresBuy:
+      - STR_ELDAR_POWER_WEAPONS_ACQUISITION
     requiresBuyBaseFunc: []
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     size: 0.2
@@ -1741,7 +1758,7 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      # BANSHEE RESEARCH
+      - STR_ELDAR_BANSHEE_RESEARCH
     requiresBuyBaseFunc: []
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
@@ -1952,12 +1969,11 @@ items:
     tags:
       REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
-  - type: STR_ELDAR_POWER_BLADE  # STR_EPOWER_SWORD stats, REWORK required
+  - &POWERBLADE_TEMPLATE
+    type: STR_ELDAR_POWER_BLADE  # STR_EPOWER_SWORD stats, REWORK required
     requires:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
       - STR_ELDAR_SPIDER_RESEARCH
-    requiresBuy: []
-    requiresBuyBaseFunc: []
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
     damageType: 5
@@ -1993,7 +2009,6 @@ items:
     meleeAnimation: {mod: 40k, index: 4}
     meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
     meleeHitSound: {mod: 40k, index: 754} #744 Powerswrod hit
-    tuMelee: 10
     invWidth: 2
     invHeight: 3
     flatRate: true
@@ -2003,7 +2018,7 @@ items:
   - type: STR_DIRESWORD_VESSEL  # EMPTY DIRESWORD VESSEL, Weak
     requires:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      # AVENGER EXARCH RESEARCH
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
       # DIRESWORD RESEARCH
     requiresBuy: []
     requiresBuyBaseFunc: []
@@ -2054,7 +2069,7 @@ items:
   - type: STR_DIRESWORD  # T2 Avenger Nemesis FORCE weapon that depends on soul inside spiritstone not wielder.
     requires:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      # AVENGER RESEARCH
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
       # DIRESWORD RESEARCH
     requiresBuy: []
     requiresBuyBaseFunc: []
@@ -2251,8 +2266,8 @@ items:
   - type: STR_SCORPION_CHAINSWORD  # Tier2 Armor shredding strength based melee
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-    requiresBuy:
       - STR_ELDAR_SCORPION_RESEARCH
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
     requiresBuyBaseFunc: []
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT, STR_CAT_ELDAR]
@@ -2363,10 +2378,9 @@ items:
     requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-      # Scorpion Research
+      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
     size: 0.2
     dropoff: 5
     costBuy: 100000
@@ -2390,7 +2404,7 @@ items:
     autoRange: 8
     confSnap:
       shots: 4 # +1 (x2 shots on tabletop vs Shuriken Pistol)
-    autoShots: 12
+    autoShots: 9
         # melee profile
     meleeAnimation: {mod: 40k, index: 4}
     meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
@@ -2433,7 +2447,7 @@ items:
     type: STR_WITCHBLADE  # NEEDS REWORK (A LOT?)
     requires:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      #- STR ELDAR WARLOCK RESEARCH
+      - STR_ELDAR_WARLOCK_RESEARCH
     requiresBuy: []
     requiresBuyBaseFunc: []
     listOrder: 16995
@@ -2635,6 +2649,109 @@ items:
     flatRate: true
 
 #--- ELDAR.ARMOR_BUILTIN
+
+  - type: STR_FIREDRAGON_CORONA_SPECIALWEAPON # Pocket flame, try fire aura if bad
+    recover: false
+    hiddenOnMinimap: true
+    fixedWeapon: true
+    specialUseEmptyHand: true
+    vaporColorSurface: {mod: 40k, index: 0}
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    weight: 0
+    hitSound: {mod: 40k, index: 12}
+    hitAnimation: {mod: 40k, index: 88}
+    specialIconSprite: 254
+    power: 60
+    damageType: 2
+    damageAlter:
+      ToHealth: 1.2
+      ToMorale: 1.5 # flame terror
+      ToTime: 0.1  # debilitating pain
+      ToArmorPre: 0.1
+      ToItem: 0.5
+      ToTile: 1
+      FixRadius: 2
+      FireThreshold: 1
+      SmokeThreshold: 999
+      TileDamageLimit: 1
+    tuSnap: 5
+    confSnap:
+      name: STR_FIREDRAGON_CORONA_SPECIALWEAPON
+      spendPerShot: 9
+    snapRange: 0
+    maxRange: 0
+    clipSize: 10
+    battleType: 1
+    bulletSpeed: 50
+    explosionSpeed: 10
+    tags:
+      ITEM_CORONA_AMMO_TURN_COOLDOWN: 2 # use once per 3 turns
+      ITEM_DOESNT_HURT_USER: 1
+
+  - type: STR_DEATHWEAVERS_SPECIALWEAPON
+    costBuy: 0 # Cannot be bought
+    recover: false
+    hiddenOnMinimap: true
+    fixedWeapon: true
+    specialUseEmptyHand: true
+    twoHanded: false
+    invWidth: 2 #does not show technically
+    invHeight: 3 #does not show technically
+    bigSprite: 3098 #does not show technically
+    tuSnap: 0 # Auto Shot Only
+    specialIconSprite: 252
+    bulletSprite: {mod: 40k, index: 2}
+    fireSound: 1888
+    hitAnimation: 2220 # No ANIMATION 150=Teleport hit original={mod: 40k, index: 26}
+    powerForAnimation: 1
+    clipSize: -1
+    accuracyAuto: 40
+    tuAuto: 32
+    autoRange: 8
+    maxRange: 8 # 6" Range
+    dropoff: 5
+    flatRate: true
+    confAuto:
+      name: STR_DEATHWEAVERS_SPECIALWEAPON
+      followProjectiles: false
+    autoShots: 3
+    experienceTrainingMode: 5
+    arcingShot: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    attraction: 7
+    battleType: 1
+    shotgunBehavior: 1    # Twinlinked
+    shotgunSpread: 1
+    shotgunPellets: 2
+    power: 60
+    damageType: 1
+    damageAlter:
+      ArmorEffectiveness: 0.9 #Minor armor pen
+      ToHealth: 1.0
+      ToMorale: 0.5 #
+      ToTime: 0.3  # Tangled in Wire
+      ToArmorPre: 0.3 # -1 AP Wire cloud grates armor
+      ToItem: 0.5 # Indiscriminate targeting
+      FixRadius: 2 # Monomolecular Cloud
+
+  - type: STR_POWERBLADEARRAY_SPECIALWEAPON
+    refNode: *POWERBLADE_TEMPLATE
+    costBuy: 0 # Cannot be bought
+    costMelee:
+      time: 10 # -2 2 blades faster attacks
+      energy: 2  # light melee weapon; light 1 energy, medium 2, heavy 4, very heavy 8
+    confMelee:
+      name: STR_POWERBLADEARRAY_NAME
+    recover: false
+    hiddenOnMinimap: true
+    fixedWeapon: true
+    specialUseEmptyHand: true
+    twoHanded: false
+    invWidth: 2 #does not show technically
+    invHeight: 3 #does not show technically
+    bigSprite: 3098 #does not show technically
+    specialIconSprite: 253
 
   - &SKILL_TOKEN
     type: STR_PSI_AMP_TOKEN_ELDAR

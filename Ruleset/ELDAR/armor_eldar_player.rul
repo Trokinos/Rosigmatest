@@ -446,14 +446,14 @@ armors:
     #builtInWeapons:
     #  - INV_NULL_3X1_BACKPACK
     stats: #Scorpion armor get better bonus to melee
-      tu: 12
+      tu: 10
       stamina: 10
-      health: 5
-      bravery: 15 # in the face of danger
+      health: 10 # Secondary Stat
+      bravery: 0
       reactions: 0
       firing: -10
       throwing: -10
-      strength: 10
+      strength: 20 # Mainstat
       melee: 5
     tags:
       UNIT_TYPE_XENO: 1
@@ -556,13 +556,13 @@ armors:
       stamina: 5
       health: 0
       bravery: 0
-      reactions: 0
+      reactions: 10 # Secondary Stat
       firing: 0
       throwing: 0
       strength: 0
-      melee: 20
-      psiStrength: 5
-      psiSkill: 5
+      melee: 20 # Main Stat
+      psiStrength: 0
+      psiSkill: 0
     meleeDodge:
       melee: 0.1
     specialWeapon: STR_BANSHEE_INTIMIDATE_SPECIALWEAPON
@@ -598,6 +598,7 @@ armors:
     storeItem: STR_ELDAR_DRAGON_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
+    heatVision: 33 # Fire Specialist
     antiCamouflageAtDay: 3
     antiCamouflageAtDark: 3
     frontArmor: 110
@@ -940,15 +941,15 @@ armors:
     builtInWeapons:
       - STR_REAPER_AML
     stats: #reaper have decent bonus to accuracy, but better armor, less bonus stat for them
-      tu: 5
-      stamina: 5
-      health: 5
+      tu: -20 # Slower movenment speed but %TU uneffected.
+      stamina: 0
+      health: 10 # Heftier Suit
       bravery: 0
       reactions: 0
-      firing: 5
+      firing: 10 # Stabilizers and Tracking modules
       throwing: 0
-      strength: 5
-      melee: 0
+      strength: 10 # Suit Modified for heavy weapons
+      melee: -20 # Bad at melee but largely irrelevant
     tags:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
@@ -1012,7 +1013,7 @@ armors:
 
   - type: STR_ELDAR_AVENGEREX_ARMOR_P       # DIRE AVENGER
 #    refNode: *AVENGER_ARMOR
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_AVENGEREX_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 5
@@ -1091,10 +1092,11 @@ armors:
       UNIT_TYPE_LIVING: 1
       DODGE_CHANCE: 33
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
-      INTIMIDATION_RESISTANCE: 100
+      INTIMIDATION_RESISTANCE: 90
 
   - &REAPER_EXARCH_ARMOR
     type: STR_ELDAR_ARMOR_EXARCH_P # REAPER EXARCH ARMOR
+    storeItem: STR_ELDAR_REAPEREX_ARMOR_ITEM
     requires: STR_ELDAR_REAPER_EXARCH_RESEARCH
     ufopediaType: STR_ELDAR_ARMOR_EXARCH_P
     visibilityAtDay: 44
@@ -1165,7 +1167,7 @@ armors:
       UNIT_TYPE_LIVING: 1
       DODGE_CHANCE: 20 #+5
       ARMOR_MAX_SUCCESSFUL_DODGES: 2 #+1
-      INTIMIDATION_RESISTANCE: 100
+      INTIMIDATION_RESISTANCE: 90
   - type: STR_ELDAR_REAPEREX_TEMPESTLAUNCHER_ARMOR_P
     refNode: *REAPER_EXARCH_ARMOR
     storeItem: STR_TEMPEST_LAUNCHER_ITEM
@@ -1186,7 +1188,9 @@ armors:
       - STR_REAPER_LAUNCHER
 
   - type: STR_ELDAR_DRAGONEX_ARMOR_P
+    storeItem: STR_ELDAR_DRAGONEX_ARMOR_ITEM
     refNode: *DRAGON_ARMOR
+    heatVision: 50 # Fire specialist
     requires: STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
     layersDefaultPrefix: "1"
     layersSpecificPrefix:
@@ -1237,7 +1241,7 @@ armors:
     damageModifier:  # ELDAR ARMOR
       - 0.9  # none
       - 0.9  # AP
-      - 0.5  # FLAMES
+      - 0.3  # FLAMES incredibly fire resistant
       - 1.0  # HE
       - 0.7  # LASCANON
       - 0.7  # PLASMA
@@ -1247,17 +1251,18 @@ armors:
       - 0.0  # SMOKE
       - 1.0  # IMPACT
       - 1.0  # MELTA
+    specialWeapon: STR_FIREDRAGON_CORONA_SPECIALWEAPON
     tags:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
       UNIT_TYPE_LIVING: 1
       DODGE_CHANCE: 33
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
-      INTIMIDATION_RESISTANCE: 100
+      INTIMIDATION_RESISTANCE: 90
 
   - type: STR_ELDAR_SCORPIONEX_ARMOR_P       # SCORPION EXARCH PLAYER
     requires: STR_ELDAR_SCORPION_EXARCH_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_SCORPIONEX_ARMOR_ITEM
     visibilityAtDay: 42
     visibilityAtDark: 30
     camouflageAtDay: 12
@@ -1339,12 +1344,12 @@ armors:
       UNIT_SUSTAINED_HITS_CAPABLE: 1
       DODGE_CHANCE: 33
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
-      INTIMIDATION_RESISTANCE: 100
+      INTIMIDATION_RESISTANCE: 90
 
   - type: STR_ELDAR_BANSHEEEX_ARMOR_P       # BANSHEE EXARCH PLAYER
     refNode: *BANSHEE_ARMOR
     requires: STR_ELDAR_BANSHEE_EXARCH_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_BANSHEEEX_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 5 # banshee bonus
@@ -1431,11 +1436,11 @@ armors:
       UNIT_TYPE_LIVING: 1
       DODGE_CHANCE: 33
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
-      INTIMIDATION_RESISTANCE: 100
+      INTIMIDATION_RESISTANCE: 90
 
   - type: STR_ELDAR_HAWKEX_ARMOR_P       # SWOOPING EXARCH HAWK
     requires: STR_ELDAR_HAWK_EXARCH_RESEARCH
-    storeItem: STR_NONE
+    storeItem: STR_ELDAR_HAWKEX_ARMOR_ITEM
     visibilityAtDay: 40
     visibilityAtDark: 30
     antiCamouflageAtDay: 3
@@ -1519,10 +1524,11 @@ armors:
       DODGE_CHANCE: 20 # Vulnerable on the ground
       FLIGHT_DODGE_CHANCE: 50
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
-      INTIMIDATION_RESISTANCE: 100
+      INTIMIDATION_RESISTANCE: 90
 
   - type: STR_ELDAR_SPIDEREXDS_ARMOR_P # FIX LATER Stats from DragonEx
     refNode: *SPIDER_ARMOR
+    storeItem: STR_ELDAR_SPIDEREX_DS_ARMOR_ITEM
     #requires: #SPIDER EXARCH RESEARCH
     layersDefaultPrefix: "1"
     layersSpecificPrefix:
@@ -1565,7 +1571,6 @@ armors:
     underArmor: 100 #+30
     loftempsSet: [3]
     units:
-      - STR_ELDAR_ASPECT_WARRIOR_PLAYER #TESTING PURPOSES REMOVE
       - STR_ELDAR_SPIDEREX_PLAYER
       - STR_ELDAR_AUTARCH_PLAYER
     customArmorPreviewIndex: 1354
@@ -1584,6 +1589,7 @@ armors:
       - 0.0  # SMOKE
       - 1.0  # IMPACT
       - 1.0  # MELTA
+    specialWeapon: STR_DEATHWEAVERS_SPECIALWEAPON
     tags:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
@@ -1593,10 +1599,11 @@ armors:
       ARMOR_STEALTH_DETECTION_RANGE: 1  # in the warp, only pulled out in special circumstances
       DODGE_CHANCE: 20 #+5
       ARMOR_MAX_SUCCESSFUL_DODGES: 2 #+1
-      INTIMIDATION_RESISTANCE: 100
+      INTIMIDATION_RESISTANCE: 90
 
   - type: STR_ELDAR_SPIDEREXPB_ARMOR_P # FIX LATER Stats from DragonEx
     refNode: *SPIDER_ARMOR
+    storeItem: STR_ELDAR_SPIDEREX_PB_ARMOR_ITEM
     #requires: # SPIDER EXARCH RESEARCH
     layersDefaultPrefix: "1"
     layersSpecificPrefix:
@@ -1639,7 +1646,6 @@ armors:
     underArmor: 100 #+30
     loftempsSet: [3]
     units:
-      - STR_ELDAR_ASPECT_WARRIOR_PLAYER #TESTING PURPOSES REMOVE
       - STR_ELDAR_SPIDEREX_PLAYER
       - STR_ELDAR_AUTARCH_PLAYER
     customArmorPreviewIndex: 1355
@@ -1658,6 +1664,7 @@ armors:
       - 0.0  # SMOKE
       - 1.0  # IMPACT
       - 1.0  # MELTA
+    specialWeapon: STR_POWERBLADEARRAY_SPECIALWEAPON
     tags:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
@@ -1667,7 +1674,7 @@ armors:
       ARMOR_STEALTH_DETECTION_RANGE: 1  # in the warp, only pulled out in special circumstances
       DODGE_CHANCE: 20 #+5
       ARMOR_MAX_SUCCESSFUL_DODGES: 2 #+1
-      INTIMIDATION_RESISTANCE: 100
+      INTIMIDATION_RESISTANCE: 90
 
 
 # ELDAR.TIER2_PSY # PSY WARRIORS (path of the psyker)

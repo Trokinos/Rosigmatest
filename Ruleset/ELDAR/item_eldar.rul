@@ -58,6 +58,25 @@ items:
   - type: STR_ELDAR_REAPER_ARMOR_ITEM
     size: 0.2
 
+  # Exarch Armor
+  - type: STR_ELDAR_AVENGEREX_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_DRAGONEX_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_BANSHEEEX_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_SCORPIONEX_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_HAWKEX_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_SPIDEREX_DS_ARMOR_ITEM
+    size: 0.2
+  - type: STR_ELDAR_SPIDEREX_PB_ARMOR_ITEM # Powerblades weapon attachment
+    size: 0.2
+  - type: STR_ELDAR_REAPEREX_ARMOR_ITEM
+    size: 0.2
+
+
 
   - type: STR_REAPER_LAUNCHER_ITEM
     size: 0.4
