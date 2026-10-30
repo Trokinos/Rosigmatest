@@ -2963,7 +2963,7 @@ items:
     # requiresBuyBaseFunc: [TRADE]
     # costBuy: 300000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10330
+    listOrder: 10325
 
   - type: STR_RIFLE_CLIP_AP  # Kraken Penetrator
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
