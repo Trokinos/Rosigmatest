@@ -15444,6 +15444,11 @@ extraSprites:
       0: Resources/UnitSprites/SWsaturninebattle.png
 
 
+  # Space Wolves CRAFT codex art
+
+  - typeSingle: STORMWOLF_CODEX.SPK
+    fileSingle: Resources/CODEX/STORMWOLF_CODEX.png
+
   # crimson fist
 
   - typeSingle: CRIMSONFISTARMOR_SCOUT.PCK
