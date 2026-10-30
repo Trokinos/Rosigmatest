@@ -459,15 +459,16 @@ soldierTransformation:
       - STR_HIGHTIER_PREREQ
       - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
     cost: 50000
+    requiredCommendations:
+      STR_COMMENDATION_MASTER_AVENGER_PATH: 0
     minRank: 1
+    requiredItems:
+      STR_ELDAR_AVENGEREX_ARMOR_ITEM: 1
     producedSoldierType: STR_ELDAR_AVENGEREX_P
-    keepSoldierArmor: false
-    allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_ELDAR_AVANGER_MF
-    resetRank: true
     percentOverallStatChange:
       tu: 10
       stamina: 10
@@ -537,16 +538,17 @@ soldierTransformation:
       - STR_HIGHTIER_PREREQ
       - STR_ELDAR_SCORPION_EXARCH_RESEARCH
     cost: 50000
+    requiredCommendations:
+      STR_COMMENDATION_MASTER_SCORPION_PATH: 0
     minRank: 1
+    requiredItems:
+      STR_ELDAR_SCORPIONEX_ARMOR_ITEM: 1
     producedSoldierType: STR_ELDAR_SCORPIONEX_P #to change once scorpion exarch are here
-    keepSoldierArmor: false
-    allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_ELDAR_ASPECT_WARRIOR_PLAYER
       - STR_ELDAR_SCORPION_M
-    resetRank: true
     percentOverallStatChange:
       tu: 10
       stamina: 10
@@ -568,10 +570,12 @@ soldierTransformation:
       - STR_HIGHTIER_PREREQ
       - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
     cost: 50000
+    requiredCommendations:
+      STR_COMMENDATION_MASTER_BANSHEE_PATH: 0
     minRank: 1
+    requiredItems:
+      STR_ELDAR_BANSHEEEX_ARMOR_ITEM: 1
     producedSoldierType: STR_ELDAR_BANSHEE_EXARCH_PLAYER
-    keepSoldierArmor: false
-    allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
@@ -579,7 +583,6 @@ soldierTransformation:
       - STR_ELDAR_BANSHEE_F
     #TESTING requiredCommendations:
       #TESTING STR_VETERAN_COMMENDATION: 0
-    resetRank: true
     percentOverallStatChange:
       tu: 10
       stamina: 10
@@ -601,7 +604,11 @@ soldierTransformation:
       - STR_HIGHTIER_PREREQ
       - STR_ELDAR_REAPER_EXARCH_RESEARCH
     cost: 50000
+    requiredCommendations:
+      STR_COMMENDATION_MASTER_REAPER_PATH: 0
     minRank: 1
+    requiredItems:
+      STR_ELDAR_REAPEREX_ARMOR_ITEM: 1
     producedSoldierType: STR_ELDAR_REAPER_EXARCH_M
     keepSoldierArmor: false
     allowsDeadSoldiers: false
@@ -610,7 +617,6 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_ELDAR_REAPER_M
       - STR_ELDAR_ASPECT_WARRIOR_PLAYER
-    resetRank: true
     percentOverallStatChange:
       tu: 10
       stamina: 10
@@ -632,15 +638,16 @@ soldierTransformation:
       - STR_HIGHTIER_PREREQ
       - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
     cost: 50000
+    requiredCommendations:
+      STR_COMMENDATION_MASTER_DRAGON_PATH: 0
     minRank: 1
+    requiredItems:
+      STR_ELDAR_DRAGONEX_ARMOR_ITEM: 1
     producedSoldierType: STR_ELDAR_DRAGON_EXARCH_SOLDIER
-    keepSoldierArmor: false
-    allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_ELDAR_DRAGON_MF
-    resetRank: true
     percentOverallStatChange:
       tu: 10
       stamina: 10
@@ -662,10 +669,12 @@ soldierTransformation:
       - STR_ELDAR_ASPECT_RESEARCH
       - STR_ELDAR_HAWK_EXARCH_RESEARCH
     cost: 50000
+    requiredCommendations:
+      STR_COMMENDATION_MASTER_HAWK_PATH: 0
     minRank: 1
+    requiredItems:
+      STR_ELDAR_DRAGONEX_ARMOR_ITEM: 1
     producedSoldierType: STR_ELDAR_HAWKEX_P
-    keepSoldierArmor: false
-    allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
@@ -687,16 +696,19 @@ soldierTransformation:
     lowerBoundAtMinStats: false
     # soldierBonusType: STR_RUNE_OF_WAR
 
-  - name: STR_PROMOTE_TO_SPIDER_EXARCH
+  - &SPIDER_EXARCH_TRANSFORM
+    name: STR_PROMOTE_TO_SPIDER_EXARCH
     requiresBaseFunc: [SPIDER]
     requires:
       - STR_HIGHTIER_PREREQ
       - STR_ELDAR_SPIDER_EXARCH_RESEARCH
     cost: 50000
+    requiredCommendations:
+      STR_COMMENDATION_MASTER_SPIDER_PATH: 0
     minRank: 1
+    requiredItems:
+      STR_ELDAR_SPIDEREX_DS_ARMOR_ITEM: 1
     producedSoldierType: STR_ELDAR_SPIDEREX_PLAYER
-    keepSoldierArmor: false
-    allowsDeadSoldiers: false
     allowsWoundedSoldiers: true
     allowsLiveSoldiers: true
     allowedSoldierTypes:
@@ -716,6 +728,10 @@ soldierTransformation:
       melee: 0
     soldierBonusType: STR_RUNE_OF_WARDING
     lowerBoundAtMinStats: false
+
+  - name: STR_PROMOTE_TO_SPIDER_EXARCH_PB
+    refNode: *SPIDER_EXARCH_TRANSFORM
+    producedSoldierArmor: STR_ELDAR_SPIDEREXPB_ARMOR_P
 
 #TIER4.transformations
 #TIER2.PSI.Transformations #transformation from tier 1 to tier 2 for PSI unit (path of the psyker)
