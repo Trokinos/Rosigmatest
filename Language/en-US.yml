@@ -15402,8 +15402,15 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
   STR_EXALT_HANDMAIDEN: "Elevate Handmaiden"
   STR_INDUCT_IMMACULATE_SISTER: "Induct Immaculate Sister"
-  STR_INDUCT_CHIRURGEON: "Induct Chirurgeon"
-  STR_INDUCT_SORCERESS: "Induct Sorceress"
+  STR_INDUCT_CHIRURGEON: "Train Chirurgeon"
+  STR_INDUCT_SORCERESS: "Train Sorceress"
+  STR_INDUCT_HARBINGER: "Induct Harbinger of Slaanesh"
+  STR_ELEVATE_ANGEL: "Induct Angel into the Choir"
+  STR_ELEVATE_MYSTAGOGUE: "Catechize Mystagogue"
+  STR_ELEVATE_EXALTED_MYSTAGOGUE: "Elevate Mystagogue"
+  STR_EXALT_ARCHANGEL: "Elevate Angel of the Choir"
+
+
  #################### UNITS #########################
 
  #### ENEMY UNITS
@@ -15423,9 +15430,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
   STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
   STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: "Immaculate Power Armor"
-  STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Armor Components"
-  STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Armor Components"
-  STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
+  STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Armor Component"
+  STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Armor Component"
   STR_HERETEK_TRIBUTE: "Tribute to the Dark Mechanicum"
 
 
@@ -15487,7 +15493,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_EXALTEDSORC: "Exalted Sorceress of Slaanesh"
   STR_SLAANESHPATH_MORBIDANGEL: "Morbid Angel"
   STR_SLAANESHPATH_EXALTEDANGEL: "Exalted Morbid Angel"
-  STR_SLAANESHPATH_HEARTBREAKER: "Heartbreaker"
+  STR_SLAANESHPATH_HARVESTER: "Heartbreaker"
   STR_SLAANESHPATH_HERETEK: "Heretek Savant"
   ## Slaanesh Adeptas Armors
 
@@ -15497,6 +15503,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
   STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
   STR_SLAANESHPATH_SORCERESS_ARMOR: "Immaculate Sorceress Armor"
+  STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
+  STR_SLAANESHPATH_ANGEL_ARMOR: "Angelic Armor" 
   ## Slaanesh Adeptas Ranks
 
   STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"

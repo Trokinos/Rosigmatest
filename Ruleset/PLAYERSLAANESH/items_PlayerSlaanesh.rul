@@ -27,17 +27,34 @@ items:
     size: 0.0
 
 
+#PROMOTION ARMOR TOKENS
+  - type: STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN # PROMOTION ITEM
+    size: 0.1
+  - type: STR_SLAANESHPATH_HARBINGER_ARMOR_TOKEN # PROMOTION ITEM
+    size: 0.1
+  - type: STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN # PROMOTION ITEM
+    size: 0.1
+#ANGEL OF THE CHOIR ARMOR/WEAPON TOKENS
+#  - type: STR_SLAANESHPATH_ANGELIC_SONIC_CANNON
 
-  - type: STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN
+#    size: 0.1
+#ARCHANGEL OF THE CHOIR ARMOR/WEAPON TOKENS
+  - type: STR_SLAANESHPATH_KOKABIEL_STOREITEM # Kokabiel Heavy Assault Armor
+    size: 0.1
+  - type: STR_SLAANESHPATH_SHEMYAZA_STOREITEM # Shemyaza Heavy Oppressor Armor 
+    size: 0.1
+  - type: STR_SLAANESHPATH_SHAMSHIEL_STOREITEM # Shamshiel Heavy Catechizer Armor 
+    size: 0.1
+  - type: STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN # PROMOTION ITEM
     size: 0.1
 
-  - type: STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN
+#ARMOR COMPONENT TOKENS
+  - type: STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENT
     size: 0.1
-    costSell: 20000 # Gives you another good reason to capture sisters alive.
-
-  - type: STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN
+    costSell: 5000 # Subject to further balance changes.
+  - type: STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_COMPONENT
     size: 0.1
-    costSell: 2000 # Much less valuable.
+    costSell: 1000 # Much less valuable.
 
 
 

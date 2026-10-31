@@ -25,12 +25,13 @@ soldierTransformation:
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
+    resetRank: true
     transferTime: 66
     allowedSoldierTypes:
       - STR_SLAANESHPATH_HANDMAIDEN
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 26
+      STR_SLAANESH_PIETY: 10
       STR_ELERIUM-115: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
@@ -42,6 +43,7 @@ soldierTransformation:
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
+    resetRank: true
     transferTime: 266
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
@@ -59,6 +61,9 @@ soldierTransformation:
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
+    requiredMinStats:
+      - psiStrength: 85
+      - psiSkill: 85
     transferTime: 666
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
@@ -69,6 +74,25 @@ soldierTransformation:
       STR_ALIEN_FOOD: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
+  - name: STR_ELEVATE_MYSTAGOGUE # Essentially, a sister superior promotion.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION # PLACEHOLDER
+    producedSoldierType: STR_SLAANESHPATH_SORCERESS # PLACEHOLDER 
+    producedSoldierArmor: STR_SLAANESHPATH_SORCERESS_ARMOR # PLACEHOLDER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    upperBoundType: 1 # Remember to set the mystagogue psistrength to a decent number.
+    requiredMinStats:
+      - psiSkill: 100
+    transferTime: 266
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 200
+      STR_ELERIUM-115: 5
+      STR_ALIEN_FOOD: 2
+      STR_SLAANESHPATH_MYSTAGOGUE_ARMOR_TOKEN: 1
 
     #requiredCommendations:
     #  STR_BATTLE_TESTED: 0

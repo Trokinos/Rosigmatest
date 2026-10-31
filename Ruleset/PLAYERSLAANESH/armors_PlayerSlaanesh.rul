@@ -476,7 +476,7 @@ armors:
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
 
 
-  - type: STR_SLAANESHPATH_HEARTBREAKER_ARMOR
+  - type: STR_SLAANESHPATH_HARVESTER_ARMOR
     camouflageAtDay: -12  # Half Assassin Camo
     camouflageAtDark: -9
     visibilityAtDay: 40
@@ -509,7 +509,7 @@ armors:
       - 0.2  # IMPACT; droppod proof
       - 1.0  # MELTA
     units:
-      - STR_SLAANESHPATH_HEARTBREAKER
+      - STR_SLAANESHPATH_HARVESTER
     builtInWeapons:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
