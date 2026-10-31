@@ -2431,3 +2431,15 @@ armors:
     annoyedFemale:      [6060, 6062, 6040]  # yamllint disable-line rule:colons
     deathMale:          [6035, 6036]  # yamllint disable-line rule:colons
     deathFemale:        [6035, 6036]  # yamllint disable-line rule:colons
+
+  - type: STR_SLAANESHPATH_SORCERESS_ARMOR
+    selectUnitMale:     [6071, 6072, 6075, 6078, 6082, 6083, 6085, 6086, 6088]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [6071, 6072, 6075, 6078, 6082, 6083, 6085, 6086, 6088]  # yamllint disable-line rule:colons
+    startMovingMale:    [6068, 6069, 6073, 6074, 6084, 6089, 6091]  # yamllint disable-line rule:colons
+    startMovingFemale:  [6068, 6069, 6073, 6074, 6084, 6089, 6091]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [6079, 6080, 6081, 6090, 6087]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [6079, 6080, 6081, 6090, 6087]  # yamllint disable-line rule:colons
+    annoyedMale:        [6075, 6082]  # yamllint disable-line rule:colons
+    annoyedFemale:      [6075, 6082]  # yamllint disable-line rule:colons
+    deathMale:          [6070]  # yamllint disable-line rule:colons
+    deathFemale:        [6070]  # yamllint disable-line rule:colons

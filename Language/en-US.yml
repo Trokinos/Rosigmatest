@@ -15494,6 +15494,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_HANDMAIDEN_MEDICAE_ARMOR: "Handmaiden Medicae Armor"
   STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
   STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
+  STR_SLAANESHPATH_SORCERESS_ARMOR: "Immaculate Sorceress Armor"
   ## Slaanesh Adeptas Ranks
 
   STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"

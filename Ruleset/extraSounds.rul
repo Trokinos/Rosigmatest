@@ -3159,6 +3159,8 @@ extraSounds:
       6028: Resources/PLAYERSLAANESH/Sounds/sister/yesmaster.wav
       6029: Resources/PLAYERSLAANESH/Sounds/sister/yourwill.wav
 
+      # CHIRURGEON
+
       6031: Resources/PLAYERSLAANESH/Sounds/chirurgeon/appreciate1.wav
       6032: Resources/PLAYERSLAANESH/Sounds/chirurgeon/appreciate2.wav
       6033: Resources/PLAYERSLAANESH/Sounds/chirurgeon/crimson1.wav
@@ -3196,6 +3198,31 @@ extraSounds:
       6065: Resources/PLAYERSLAANESH/Sounds/chirurgeon/yourback1.wav
       6066: Resources/PLAYERSLAANESH/Sounds/chirurgeon/yourback2.wav
       6067: Resources/PLAYERSLAANESH/Sounds/chirurgeon/yourmind1.wav
+
+      # SORCERESS
+
+      6068: Resources/PLAYERSLAANESH/Sounds/sorceress/agonyawaits.wav
+      6069: Resources/PLAYERSLAANESH/Sounds/sorceress/asiwill.wav
+      6070: Resources/PLAYERSLAANESH/Sounds/sorceress/death1.wav
+      6071: Resources/PLAYERSLAANESH/Sounds/sorceress/ecstacyofagony.wav
+      6072: Resources/PLAYERSLAANESH/Sounds/sorceress/exquisiteagony.wav
+      6073: Resources/PLAYERSLAANESH/Sounds/sorceress/fasterthansound.wav
+      6074: Resources/PLAYERSLAANESH/Sounds/sorceress/forward.wav
+      6075: Resources/PLAYERSLAANESH/Sounds/sorceress/goodtobebad.wav
+      6078: Resources/PLAYERSLAANESH/Sounds/sorceress/loveastruggle.wav
+      6079: Resources/PLAYERSLAANESH/Sounds/sorceress/laugh1.wav
+      6080: Resources/PLAYERSLAANESH/Sounds/sorceress/laugh2.wav
+      6081: Resources/PLAYERSLAANESH/Sounds/sorceress/laugh3.wav
+      6082: Resources/PLAYERSLAANESH/Sounds/sorceress/lovemeanyway.wav
+      6083: Resources/PLAYERSLAANESH/Sounds/sorceress/miserylovescompany.wav
+      6084: Resources/PLAYERSLAANESH/Sounds/sorceress/ohyes.wav
+      6085: Resources/PLAYERSLAANESH/Sounds/sorceress/painisthebestteacher.wav
+      6086: Resources/PLAYERSLAANESH/Sounds/sorceress/painspecialist.wav
+      6087: Resources/PLAYERSLAANESH/Sounds/sorceress/setyoufree.wav
+      6088: Resources/PLAYERSLAANESH/Sounds/sorceress/sufferfools.wav
+      6089: Resources/PLAYERSLAANESH/Sounds/sorceress/swiftly.wav
+      6090: Resources/PLAYERSLAANESH/Sounds/sorceress/whenyouresist.wav
+      6091: Resources/PLAYERSLAANESH/Sounds/sorceress/wheresthepleasure.wav
 
 # Remaining Indexes: (Thanks Theron!)
 
