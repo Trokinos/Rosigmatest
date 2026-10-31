@@ -40,39 +40,42 @@ extended:
 #⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
 
-###################################### TABLE OF UNITS ################################################
+###################################### TABLE OF CONTENTS ################################################
 
-      # CORE IMMACULATES
+      # 1: CORE IMMACULATES
 
   #HM - HANDMAIDEN & FAVORED HANDMAIDEN
-    #IS - IMMACULATE SISTER
+    #SI - SISTER IMMACULATE
       #HB - HARBINGER OF SLAANESH
         #EH - EXALTED HARBINGER
-          #AC - ANGEL OF THE CHOIR
+          #AN - ANGEL OF THE CHOIR
             #AA - ARCHANGEL OF THE CHOIR 
               #MG - MYSTAGOGUE
                 #EM - EXALTED MYSTAGOGUE
 
-      # SPECIALIST UNITS
+      # 2: SPECIALIST SISTERS
 
    #CH - CHIRURGEON
      #AC - ASCENDED CHIRURGEON
        #SC - SORCERESS OF SLAANESH
-         #ES - EXALTED SORCERESS OF SLAANESH
-           #HS - HARVESTER OF SORROWS
+         #AS - ASCENDED SORCERESS OF SLAANESH
+           #JC - JUSTICAR
 
-      # DEMONIC SISTERS
+      # 3: POSSESSED SISTERS
 
-    #DD - DIVINE DAUGHTER
-      #AP - BRINGER OF MERCY
+    #DI - DAUGHTER IMMACULATE
+      #BA - BRINGER OF ABLUTION
+        #HS - HARVESTER OF SORROWS
+         #SS - SUBLIME SAINT OF SLAANESH 
 
-
-      # AUXILIARY FORCES
+      # 4: AUXILIARY FORCES
 
   #VB - VICTUAL BROTHER
-    #FF - FELINID FATALE
+    #PB - PLEASUREGUARD
+      #FF - FELINID FATALE
+        #HT - HERETEK SAVANT
 
-
+#########################################################################################################
 
 soldiers:
 
@@ -708,7 +711,7 @@ soldiers:
     moraleLossWhenKilled: 75  # no one cares about grunts
     value: 10
 
-#3 HERETEKS
+#HT
 
   - type: STR_SLAANESHPATH_HERETEK 
     costSalary: 75000
