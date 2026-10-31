@@ -2421,13 +2421,13 @@ armors:
 
   - &STR_CHIRURGEON_NODE
     type: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR 
-    selectUnitMale:     [2446, 2447, 2448, 2449, 2457, 2458, 2459]  # yamllint disable-line rule:colons
-    selectUnitFemale:   [2446, 2447, 2448, 2449, 2457, 2458, 2459]  # yamllint disable-line rule:colons
-    startMovingMale:    [2460, 2461, 2462, 2463, 2464]  # yamllint disable-line rule:colons
-    startMovingFemale:  [2460, 2461, 2462, 2463, 2464]  # yamllint disable-line rule:colons
-    selectWeaponMale:   [2465, 2466, 2467, 2468, 2469, 2470]  # yamllint disable-line rule:colons
-    selectWeaponFemale: [2465, 2466, 2467, 2468, 2469, 2470]  # yamllint disable-line rule:colons
-    annoyedMale:        [2472, 2473]  # yamllint disable-line rule:colons
-    annoyedFemale:      [2472, 2473]  # yamllint disable-line rule:colons
-    deathMale:          [2471]  # yamllint disable-line rule:colons
-    deathFemale:        [2471]  # yamllint disable-line rule:colons
+    selectUnitMale:     [6040, 6042, 6044, 6045, 6046, 6047, 6052, 6053, 6061, 6062, 6065, 6066, 6067]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [6040, 6042, 6044, 6045, 6046, 6047, 6052, 6053, 6061, 6062, 6065, 6066, 6067]  # yamllint disable-line rule:colons
+    startMovingMale:    [6031, 6032, 6037, 6038, 6039, 6041, 6043, 6048, 6049, 6050, 6051, 6056, 6057, 6060]  # yamllint disable-line rule:colons
+    startMovingFemale:  [6031, 6032, 6037, 6038, 6039, 6041, 6043, 6048, 6049, 6050, 6051, 6056, 6057, 6060]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [6033, 6034, 6054, 6055, 6058, 6059, 6063, 6064]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [6033, 6034, 6054, 6055, 6058, 6059, 6063, 6064]  # yamllint disable-line rule:colons
+    annoyedMale:        [6060, 6062, 6040]  # yamllint disable-line rule:colons
+    annoyedFemale:      [6060, 6062, 6040]  # yamllint disable-line rule:colons
+    deathMale:          [6035, 6036]  # yamllint disable-line rule:colons
+    deathFemale:        [6035, 6036]  # yamllint disable-line rule:colons
