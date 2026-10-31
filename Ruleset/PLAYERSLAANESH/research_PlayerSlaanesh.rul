@@ -161,7 +161,7 @@ research:
  ###################################
 
   - name: STR_CONTACT_HERETEKS # Codex entry. Unlocks the ability to produce a tribute.
-    cost: 20
+    cost: 50
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
       - STR_PROCURE_TRANSPORTATION
@@ -185,20 +185,26 @@ research:
   #This is the tech that allows you to produce the tribute.
   # Gets disabled once the tribute itself has been researched.
 
-  - name: STR_MELTA_CARBINE_TECHNOLOGY
-    cost: 150
+  - name: STR_MELTAGUN_DATACRYPT
+    cost: 100
     dependencies:
       - STR_CONTACT_HERETEKS
 
-  - name: STR_IMMACULATE_LASCANNON_TECHNOLOGY
-    cost: 150
+  - name: STR_LASCANNON_DATACRYPT
+    cost: 75
     dependencies:
       - STR_CONTACT_HERETEKS
 
   - name: STR_IMMACULATE_PLASMA_TECHNOLOGY
-    cost: 150
+    cost: 50
     dependencies:
       - STR_CONTACT_HERETEKS
+
+  - name: STR_IMMACULATE_LASGUN_TECHNOLOGY
+    cost: 25
+    dependencies:
+      - STR_CONTACT_HERETEKS
+
 
  ###################################
  ### WEAPON CORRUPTION RESEARCH ####
@@ -217,7 +223,7 @@ research:
     - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
 
   - name: STR_CORRUPT_ADEPTAS_BOLTERS
-    cost: 50
+    cost: 25
     dependencies:
       - STR_WEAPON_CORRUPTION
 
@@ -250,9 +256,8 @@ research:
     dependencies:
     - STR_GIFTS_OF_SLAANESH
     unlocks:
-    - STR_LIGHT_GRENADE_LAUNCHERS
     - STR_CHOKE_GAS_GRENADES
-    - STR_CRUEL_MELEE_WEAPONRY
+    - STR_IMMACULATE_CHAINBLADES
 
   - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry. 
     cost: 0
@@ -260,21 +265,18 @@ research:
     - STR_GENERALLOCK
 
   - name: STR_CHOKE_GAS_GRENADES
-    cost: 50
+    cost: 0
     dependencies:
     - STR_SLAANESHPATH_GATE
 
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
-    cost: 80
+    cost: 50
     dependencies:
     - STR_GIFTS_OF_SLAANESH
     unlocks:
     - STR_LIGHT_GRENADE_LAUNCHERS
     getOneFree:
-    - STR_HALLUCINOGEN_GRENADES
-    - STR_SHARD_GRENADES
     - STR_SONIC_GRENADES
-    - STR_BALEFIRE_GRENADES
 
   - name: STR_TERROR_GRENADES 
     cost: 70
@@ -283,28 +285,27 @@ research:
     getOneFree:
     - STR_HALLUCINOGEN_GRENADES
     - STR_SHARD_GRENADES
-    - STR_SONIC_GRENADES
     - STR_BALEFIRE_GRENADES
 
  ####40MM terror grenade flavors. All must be unlocked to advance the tech tree.#####  
   - name: STR_HALLUCINOGEN_GRENADES
-    cost: 0
+    cost: 50
     dependencies:
     - STR_GENERALLOCK  
   - name: STR_SHARD_GRENADES
-    cost: 0
+    cost: 50
     dependencies:
     - STR_GENERALLOCK  
   - name: STR_SONIC_GRENADES
-    cost: 0
+    cost: 50
     dependencies:
     - STR_GENERALLOCK
   - name: STR_BALEFIRE_GRENADES
-    cost: 0
+    cost: 50
     dependencies:
     - STR_GENERALLOCK  
 
-  - name: STR_CRUEL_MELEE_WEAPONRY
+  - name: STR_IMMACULATE_CHAINBLADES
     cost: 50
     dependencies:
     - STR_WEAPON_CORRUPTION

@@ -15291,6 +15291,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
   STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But we forgive you. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}Panicked, you raise your bolter. From behind comes the prick of a needle, and then the darkness swallows you again."
 
+  ######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
+
   ### MISSIONS
 
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT: "We have detected a PDF distress signal!"
@@ -15302,12 +15304,33 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make a fine offering to Slaanesh."
   STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
 
-  ### UFOPEDIA ENTRIES
+  #############################
+  ##### UFOPEDIA ENTRIES ######
+  #############################
 
-  STR_CONTACT_HERETEKS_UFOPEDIA: "{NEWLINE}{NEWLINE}Through means both mundane and supernatural, contact has been established with the Dark Mechanicum's representatives on Pelega IV. As long as we can offer a suitable tribute of slaves and materials, they agree to a pact of cooperation between our forces. To this end, Arch-savant Arachus Theta-Rho has dispatched an emissary carrying a few “minor trinkets”; valuable datacrypts containing fabrication plans and esoteric weapon technologies." 
-  STR_BLACK_MARKET_AMMUNITION_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite what the Sacred Rose would tell you, faith alone has never won a war. And without ammunition, even the holiest bolter little more than a cold lump of metal. Thankfully, your new friends remain eager please: on your behalf, they have reached out to their underhive Ammo-jack contacts. Though the thought of using shoddy, handloaded bolts offends you, this is an acceptable stopgap."
-  STR_SECURE_TRANSPORTATION_UFOPEDIA: "{NEWLINE}{NEWLINE}The black market offers many things for sale, but military-grade vehicles aren't one of them. Yet on sale is something even better: information. Many local PDF depots have vehicles aplenty, all but begging to be liberated from the yoke of the corpse-emperor. And there are more deserters and malcontents willing to sell you military secrets on Pelega IV than you could shake a grox-prod at."
+  STR_CONTACT_HERETEKS_UFOPEDIA: "{NEWLINE}{NEWLINE}Though it took some doing, we now have an open channel with one of the local sects of the Dark Mechanicum. In exchange for a suitably large tribute of slaves and materials, they will agree to a pact of cooperation between our forces. To this end, Arch-savant Valtiek Theta-Rho has dispatched an emissary carrying “some minor trinkets”; several datacrypts containing fabrication notes and plans for non-standard weapon modifications." 
+  STR_BLACK_MARKET_AMMUNITION_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite what the Sacred Rose would tell you, faith alone never wins wars. For without ammunition, even the holiest bolter is little more than a cold lump of metal. Thankfully, your new friends remain eager please: on your behalf, they have reached out to their underhive Ammo-jack contacts. The thought of using such shoddy, handloaded bolts offends you, but it is a temporary expedient. You have an inkling of a better, more permanent solution."
+  STR_SECURE_TRANSPORTATION_UFOPEDIA: "{NEWLINE}{NEWLINE}The black market offers many things for sale, but military-grade vehicles aren't one of them. Still, local PDF depots have all the vehicles you could ever need, just begging to be liberated from the yoke of the corpse-emperor. And, as it turns out, there are more deserters and malcontents willing to sell military secrets on Pelega IV than you could shake a grox-prod at."
   STR_WEAPON_CORRUPTION_UFOPEDIA: "{NEWLINE}{NEWLINE}The Dark Prince is nothing but generous, offering perversion to the faithful and the uninitiated alike. Through piety and arcane rituals, Slaanesh can grant us the power to transform the mundane weaponry of the Imperium and transform them into something far more pleasing to the senses. We only have to prove ourselves worthy."
+  STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it still took some time for us to understand the strange and haphazard layout of this data-crypt. It describes various more or less successful efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the warp. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
+  STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation, we now have a partial understanding of the heretek research notes on plasma weaponry. Though their tantalizing work on warp-infused hydrogen cells is far too esoteric for us to grasp at present, their simpler schematics are still of direct use. We should now be able to manufacture basic models of plasma carbines without outside assistance."
+
+
+  # WEAPON UFOPEDIA ENTRIES
+
+  STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, the internals of this plasma carbine are the result of extensive tech-heresy. Like other Slaaneshi plasma weapons, it carries little risk of overheating, but cannot be overcharged."
+  STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
+  STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, modified to have a much higher rate of fire than would normally be safe. Equipped with bolts more capable of penetrating armor, the Eliminator should not be taken lightly."
+  STR_BOLTER_CANTUS_GL_UFOPEDIA: "{NEWLINE}{NEWLINE}With the foregrip replaced by a compact, underslung grenade launcher, this combi-weapon trades a bit of ballistic performance for greatly improved tactical flexibility."
+  STR_BOLTER_DEAZ_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a corrupted Sororitas Godwyn-De'az bolter. Unlike many other so-called Immaculate weapons, the De'az retains most performance characteristics of the original."
+  STR_BOLTER_ARACHNE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Arachne is a modified Godwyn-De'az bolter with an attached constrictor web module. Though the module itself is no less powerful than a full web pistol, it is significantly less ammo-efficient."
+  STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. As a result, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
+  STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}A dark marvel of heretical engineering, this once holy De'az bolter has been possessed by an incredibly malign machine spirit. With a rate of fire close to a full squad of Battle Sisters, this bolter is both exceedingly deadly and nigh-uncontrollable."
+
+  STR_EVISCERATOR_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite its refined exterior, this heavily modfied eviscerator is an even more brutal weapon than before. Capable of delivering heavy thrusting strikes, the sheer bloody carnage this weapon causes belies its more graceful appearance."
+
+
+  STR_SLAANESHPATH_CHIRURGEON_ARMOR_UFOPEDIA: "{NEWLINE}{NEWLINE}All Hospitaliers are adepts both torture and healing, but the Chirurgeon is an undisputed master of only one craft. Drawing no distinction between most excruciating pain and the most efficacious of healing, the Chirurgeon's many custom-built medical tools are terrifying weapons in combat."
 
 
 ###
@@ -15322,7 +15345,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
   STR_THE_GIFTS_OF_SLAANESH: "The Power of Slaanesh"
   STR_STR_SOULS_FOR_SLAANESH: "Souls for Slaanesh"  
-  STR_WEAPON_CORRUPTION: "Weapon Corruption Rites"a
+  STR_WEAPON_CORRUPTION: "Weapon Corruption Rites"
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR__LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launchers"
@@ -15333,11 +15356,13 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
   STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
   STR_CORRUPT_ADEPTAS_BOLTERS: "Bolter Corruption Rites"
+  STR_IMMACULATE_CHAINBLADES: "Immaculate Chainblades"
   STR_CONTACT_HERETEKS: "Contact the True Mechanicus"
   STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
-  STR_IMMACULATE_LASCANNON_TECHNOLOGY: "Light Lascannon Data-crypt"
-  STR_MELTA_CARBINES: "Melta Carbine Data-crypt"
-  STR_IMMACULATE_PLASMA_TECHNOLOGY: "Plasma Carbine Data-crypt"
+  STR_LASCANNON_DATACRYPT: "Decode Lascannon Data-crypt"
+  STR_IMMACULATE_LASGUN_TECHNOLOGY: "Decode Lasgun Data-crypt"
+  STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
+  STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
 
  ###################################
  #### MANUFACTURING PROJECTS #######
@@ -15366,7 +15391,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CORRUPT_CANTUS_BOLTER: "Corrupt Cantus Bolter"
   STR_CORRUPT_DEAZ_BOLTER: "Corrupt Godwyn-De'az Bolter"
   STR_CORRUPT_ELOHIM_BOLTER: "Corrupt Elohim Bolter"
-  STR_ATTACH_GL_TO_CANTUS: "Create Cantus Combi-bolter"
+  STR_ATTACH_GL_TO_CANTUS: "Attach GL to Eliminator"
   STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
   STR_REPAIR_ADEPTAS_POWER_ARMOR: "Corrupt Damaged Adeptas Power Armor"
   STR_CORRUPT_ADEPTAS_POWER_ARMOR: "Corrupt Adeptas Power Armor"
@@ -15406,10 +15431,13 @@ en-US:  #  yamllint disable-line rule:empty-values
 #WEAPONS
   STR_SLAMFIRE: "Slam-fire"
   STR_SNAP_SHOT: "Snap Shot"
+  STR_LOW_POWER_MODE: "Low Power Mode"
+  STR_FULL_POWER_MODE: "Full Power Mode"
+  STR_SLAMFIRE_MODE: "Slamfire Mode"
   STR_FIRE_SHOTGUN: "Fire Shotgun"
   STR_FIRE_WEBBER: "Fire Webber"
   STR_PLASMA_BARRAGE: "Plasma Barrage"
-  STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
+  STR_BOLTER_CANTUS_SLAAN: "Eliminator Bolter"
   STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
   STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
   STR_BOLTER_KERES: "Keres Combi-bolter"
@@ -15417,7 +15445,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BOLTER_NAIAD: "Naiad Combi-bolter"
   STR_BOLTER_NAGA: "Naga Combi-bolter"
   STR_BOLTER_TIAMAT: "Tiamat Combi-bolter"
-  STR_BOLTER_CANTUS_GL: "Immaculate Cantus Bolter /GL"
+  STR_BOLTER_CANTUS_GL: "Eliminator Bolter /GL"
   STR_BOLTER_ELOHIM_SLAAN: "Immaculate Elohim Bolter"
   STR_PLASMA_CARBINE_SLAAN: "Immaculate Plasma Carbine"
   STR_MELTA_CARBINE_SLAAN: "Immaculate Melta Carbine"

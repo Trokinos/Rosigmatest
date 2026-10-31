@@ -130,7 +130,7 @@ items:
     requires:
     - STR_ALIENS_ONLY
     size: 0.3
-    costSell: 20000  # buy?
+    costSell: 40000 
     weight: 12  # lightweight melta
     bigSprite: 920
     floorSprite: 920
@@ -144,13 +144,13 @@ items:
     maxRange: 16
     autoRange: 6
     snapRange: 7
-    aimedRange: 9
+    aimedRange: 10
     accuracyAuto: 60
     accuracySnap: 80
     accuracyAimed: 90
     tuAuto: 55
     tuSnap: 28
-    tuAimed: 35
+    tuAimed: 36
     battleType: 1
     twoHanded: true
     invWidth: 1
@@ -158,14 +158,16 @@ items:
     armor: 200
     listOrder: 11160
     autoShots: 3
+    confSnap:
+      name: STR_LOW_POWER_MODE
     confAuto:
       spendPerShot: 2  # Doubles ammo consumption; very high power up close.  
-      name: STR_SLAMFIRE
+      name: STR_SLAMFIRE_MODE
     confAimed:  # More accurate and more ammo-efficient vs slamfire; lower damage per time unit.
       spendPerShot: 2
-      name: STR_FOCUSED_SHOT
+      name: STR_FULL_POWER_MODE
     tags:
-      ITEM_AIMED_FLAT_POWER_BONUS_PERCENT: 60 # Slightly weaker than a full melta on focused setting.
+      ITEM_AIMED_FLAT_POWER_BONUS_PERCENT: 55 # Slightly weaker than a full melta on focused setting.
       ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10 
 
  #### PLASMA WEAPONS ####
@@ -519,6 +521,7 @@ items:
       shots: 2
     confAimed:
       ammoSlot: 1
+      spendPerShot: 2
       name: STR_FIRE_WEBBER
       arcing: false
 
@@ -1007,3 +1010,5 @@ items:
 # - type: AUX_FELINIDFATALE_STORM_NEEDLER
 
 # - type: AUX_FELINIDFATALE_SLAANESH_HELLPISTOL
+
+# - type: AUX_CHIRURGEON_NEURAL_FLAYER

@@ -109,7 +109,7 @@ items:
     refNode: *STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
     power: 100
 
- #### SLAANESH PLASMA AMMO ####
+ #### SLAANESH MELTA AMMO ####
 
   - type: STR_LIGHT_MELTA_AMMO_SLAAN  # Slaanesh variant of meltagun ammo.
     power: 10 # - 2 vs normal
@@ -117,7 +117,7 @@ items:
     damageAlter:  # DA MELTA SLAN
       RandomType: 6
       ToArmorPre: 1.0
-      ToHealth: 1.0 # - 0.5 vs normal
+      ToHealth: 1.1 # - 0.5 vs normal
       ToTile: 6.5 # + 0.5 vs normal
       ToWound: 0.2 # +0.15 vs normal
       ToMorale: 0.2 # Slaanesh profile
@@ -587,9 +587,9 @@ items:
     handSprite: {mod: 40k, index: 616}
     hitSound: {mod: 40k, index: 790}
     hitAnimation: 160
-    power: 35 # -15 vs big constrictor.
+    power: 40 # -10 vs big constrictor.
     damageType: 1
-    clipSize: 4 # -2 vs big constrictor.
+    clipSize: 6
     battleType: 2
     recoveryPoints: 1
     damageAlter:  # SLAAN
