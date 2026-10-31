@@ -54,7 +54,7 @@ soldierTransformation:
   - name: STR_INDUCT_SORCERESS # TODO: Add stat requirement. Add basic commendation requirement.
     requires:
       - STR_POWER_ARMOR_CORRUPTION
-    producedSoldierType: STR_SLAANESHPATH_sORCERESS #PLACEHOLDER
+    producedSoldierType: STR_SLAANESHPATH_SORCERESS #PLACEHOLDER
     producedSoldierArmor: STR_SLAANESHPATH_SORCERESS_ARMOR #PLACEHOLDER
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
