@@ -15376,6 +15376,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_RITES_OF_DECADENCE: "Rites of Decadence"
   STR_RITES_OF_SUBVERSION: "Rites of Subversion"
   STR_RITES_OF_CORRUPTION: "Rites of Corruption"
+  STR_RITES_OF_CONSECRATION: "Rites of Consecration"
 
   ### MANUFACTURING PROJECTS - PROGRESSION
 
@@ -15393,8 +15394,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CORRUPT_ELOHIM_BOLTER: "Corrupt Elohim Bolter"
   STR_ATTACH_GL_TO_CANTUS: "Attach GL to Eliminator"
   STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
-  STR_REPAIR_ADEPTAS_POWER_ARMOR: "Corrupt Damaged Adeptas Power Armor"
-  STR_CORRUPT_ADEPTAS_POWER_ARMOR: "Corrupt Adeptas Power Armor"
+  STR_REPAIR_ADEPTAS_POWER_ARMOR: "Repair Adeptas Armor Components"
+  STR_CORRUPT_ADEPTAS_POWER_ARMOR: "Consecrate Immaculate Power Armor"
 
   ## UNIT PROJECTS
 
@@ -15422,8 +15423,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
   STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
   STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: "Immaculate Power Armor"
-  STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Power Armor"
-  STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Power Armor"
+  STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Armor Components"
+  STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Armor Components"
+  STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
   STR_HERETEK_TRIBUTE: "Tribute to the Dark Mechanicum"
 
 

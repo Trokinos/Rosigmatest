@@ -153,10 +153,14 @@ manufacture:
       STR_SLAANESHPATH_PIETY: 35
     points: 15
 
+########################################################
+################ POWER ARMOR PRODUCTION ################
+########################################################
+
  # ARMOR CONVERSION
 
-  - name: STR_CORRUPT_ADEPTAS_ARMOR
-    category: STR_ADVANCEMENT
+  - name: STR_CORRUPT_ADEPTAS_ARMOR # REBALANCE THIS IN ORDER TO MAKE IT MORE GRANULAR. ARMOR COMPONENTS ARE NOW A COMMODITY:
+    category: STR_RITES_OF_CONSECRATION
     requires:
     - STR_POWER_ARMOR_CORRUPTION
     space: 20
@@ -172,24 +176,18 @@ manufacture:
     points: 20
 
   - name: STR_REPAIR_ADEPTAS_POWER_ARMOR
-    category: STR_ADVANCEMENT
+    category: STR_RITES_OF_CONSECRATION
     requires:
     - STR_POWER_ARMOR_CORRUPTION
     space: 20
     time: 850 
-    cost: 12000 # Adds a hefty cost and time requirement.
+    cost: 1000 # Adds a hefty cost and time requirement.
     producedItems:
-      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 2
     requiredItems:
-      STR_ALIEN_SURGERY: 1
-      STR_ALIEN_ALLOYS: 6
-      STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: 1
-      STR_SLAANESHPATH_PIETY: 50
-      STR_ELERIUM_115: 4
-    points: 20
+      STR_ALIEN_ALLOYS: 2
+      STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: 3
+      STR_ELERIUM_115: 1
+    points: 0
 
-########################################################
-################ POWER ARMOR PRODUCTION ################
-########################################################
- 
 #### RITUALS OF PERFECTION - HIGH TIER UNIT PROMOTION
