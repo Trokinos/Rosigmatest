@@ -363,6 +363,119 @@ armors:
     refNode: *STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
     specialWeapon: AUX_CHIRURGEON_GAS_LAUNCHER
 
+  - type: STR_SLAANESHPATH_HARBINGER_ARMOR    # Slaanesh seraphim equivalent.
+    # group: 2
+    visibilityAtDay: 40
+    visibilityAtDark: 24
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    spriteSheet: BLOODYROSE_SERAPH_battle.PCK
+    customArmorPreviewIndex: 1427
+    corpseBattle:
+      - STR_BRSERAPH_CORPSE
+    stats:
+      tu: 10
+      stamina: 20
+      health: 10
+      bravery: 0  # always multiples of 10
+      reactions: 15
+      firing: 5
+      throwing: 0
+      strength: 10
+      psiStrength: 0
+      psiSkill: 15
+      melee: 15
+    storeItem: STR_SERAPHIM_ARMOR_BLOODYROSE
+    frontArmor: 80
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 80
+    movementType: 1
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.8  # FLAMES
+      - 1.0  # HE
+      - 0.9  # LASCANON
+      - 0.9  # PLASMA
+      - 0.8  # STUN
+      - 1.0  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_SORCERESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [2]
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 30
+      FLIGHT_DODGE_CHANCE: 30
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_CHOIR_ARMOR     # Baseline Immaculate heavy armor. Required to use most factional heavy weapons.
+    visibilityAtDay: 40
+    visibilityAtDark: 26 # High quality optics + heightened senses.
+    antiCamouflageAtDay: 6  # High quality optics + heightened senses.
+    antiCamouflageAtDark: 6 # High quality optics + heightened senses.
+    heatVision: 35 # High quality optics + heightened senses.
+    spriteSheet: XCOM_33DRED.PCK # Fix later
+    spriteInv: MAN_33 # Fix later 
+    customArmorPreviewIndex: 60 # Fix later
+    corpseBattle:
+      - STR_ADEPTAS_CORPSE
+    stats:
+      tu: 0
+      stamina: 10
+      health: 15
+      bravery: 20  
+      reactions: 15 
+      firing: 20
+      throwing: 5
+      strength: 5
+      psiStrength: 0
+      psiSkill: 0 # -10 vs adeptas power armor
+      melee: -10
+    storeItem: STR_NONE
+    frontArmor: 115
+    sideArmor: 100
+    rearArmor: 85
+    underArmor: 105 # + 10
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.1  # FLAMES
+      - 0.8  # HE
+      - 0.7  # LASCANON
+      - 0.9  # PLASMA - 0.1 bonus vs adeptas power armor.
+      - 0.7  # STUN - 0.3 bonus vs adeptas power armor.
+      - 1.0  # MELEE 
+      - 1.0  # ACID - 0.2 malus vs Adeptas power armor
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_SORCERESS # Temporary until Immaculates are implemented
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [3]
+    tags:
+      INFECTION_RESIST: 50 # Baseline + angelic blessing. 
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 15
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+
+
   - type: STR_SLAANESHPATH_HEARTBREAKER_ARMOR
     camouflageAtDay: -12  # Half Assassin Camo
     camouflageAtDark: -9
