@@ -199,6 +199,7 @@ items:
 
   - type: STR_STUB_RIFLE_CHAOS
     refNode: *STR_STUB_RIFLE
+    listOrder: 10708
 
   - &STR_AUTOGUN
     type: STR_AUTOGUN  # done

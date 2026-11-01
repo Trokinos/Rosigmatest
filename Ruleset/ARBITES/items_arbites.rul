@@ -27,11 +27,14 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 14
       ITEM_HAS_RANDOMIZED_SPRITES: 0
 
+  - type: STR_STUB_GUN
+    listOrder: 10700
 
   - type: STR_STUB_RIFLE
     refNode: *STR_STUBBERS
     armor: 200
     bigSprite: 1000
+    listOrder: 10707
     tags:
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 14
     requiresBuy:
@@ -60,10 +63,13 @@ items:
     tags:
       ITEM_AMMO_COLOR: 0
 
+  - type: STR_STUB_GUN_AMMO
+    listOrder: 10710
+
   - type: STR_STUB_GUN_AMMO_AP
     refNode: *STR_STUBBERS_AMMO
     bigSprite: 1003
-    listOrder: 10716
+    listOrder: 10714
     costBuy: 3000  # hotshot cells cost 4000, has 20 ammo capacity or 10 with aimed mode for longlas
     costSell: 250
     tags:
@@ -75,7 +81,7 @@ items:
   - type: STR_STUB_GUN_AMMO_WOUND
     refNode: *STR_STUBBERS_AMMO
     bigSprite: 1004
-    listOrder: 10717
+    listOrder: 10713
     costBuy: 2000
     costSell: 250
     tags:
@@ -87,7 +93,7 @@ items:
   - type: STR_STUB_GUN_AMMO_HP
     refNode: *STR_STUBBERS_AMMO
     bigSprite: 1005
-    listOrder: 10718
+    listOrder: 10715
     costBuy: 2000
     costSell: 250
     tags:
@@ -99,7 +105,7 @@ items:
   - type: STR_STUB_GUN_AMMO_INC
     refNode: *STR_STUBBERS_AMMO
     bigSprite: 1006
-    listOrder: 10719
+    listOrder: 10712
     costBuy: 500
     costSell: 125
     tags:
