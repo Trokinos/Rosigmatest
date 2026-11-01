@@ -52,7 +52,7 @@ armors:
     corpseBattle:
       - STR_ENFORCER_CORPSE
     drawingRoutine: 0
-    layersDefaultPrefix: 0
+    layersDefaultPrefix: "0"
     layersSpecificPrefix:
       1: ENF
     layersDefinition:
@@ -76,15 +76,15 @@ armors:
       F7: ["0", "EF", "F7_FACE"]
       F8: ["0", "EFC", "F8_FACE"]
       F9: ["0", "EFB", "F9_FACE"]
-    loftempsSet: [ 3 ]
+    loftempsSet: [3]
     specialWeapon: STR_BAYONET
     builtInWeapons:
-     - STR_SHOTGUN_MONKEIGH
-     - STR_SHOTGUN_SHELLS
-     - STR_SHOTGUN_SHELLS_AP
-     - STR_SHOTGUN_SHELLS_INC
-     - STR_GRENADE
-     - STR_KRAK_GRENADE
+      - STR_SHOTGUN_MONKEIGH
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_INC
+      - STR_GRENADE
+      - STR_KRAK_GRENADE
     tags:
       UNIT_TYPE_IMPERIUM: 1
       UNIT_TYPE_LIVING: 1

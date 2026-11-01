@@ -11,7 +11,7 @@ items:
 
   - type: STR_SHOTGUN_MONKEIGH #
     ufopediaType: STR_SHOTGUN
-    categories: [ STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
     size: 0.2
     costBuy: 0 # Can't be bought
     weight: 7
