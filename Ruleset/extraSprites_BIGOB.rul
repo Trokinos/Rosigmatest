@@ -1361,6 +1361,7 @@ extraSprites:
       4914: Resources/Eldar/weapons/Reaper_launcher_bigObj.png
       4915: Resources/Eldar/weapons/Reaper_launcher_starswarmpod_bigObj.png
       4916: Resources/Eldar/weapons/deathspinner/wireweave_spool_bigObj.png
+      4917: Resources/Eldar/weapons/grenades/wireweavenet_bigObj.png
 
       4943: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_leftleg.png
       4944: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_belt.png
@@ -1390,7 +1391,7 @@ extraSprites:
       4968: Resources/Eldar/units/swooping_hawk_exarch/eldar_hawkex_corpse_bigObj.png
       4969: Resources/Eldar/units/wraithguard/eldar_wraithguard_corpse_bigObj.png
       4970: Resources/Eldar/units/wraithguard/eldar_wraithblade_corpse_bigObj.png
-
+      4971: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_corpse_bigObj.png
 # All Free Indexes (Dont forget to edit these afterwards ! :) )
 
 # 403 - 899
