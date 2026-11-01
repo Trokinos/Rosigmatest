@@ -26,6 +26,8 @@ soldiers:
   - type: STR_MONKEIGH_COLLABORATOR
     requires:
       - STR_MONKEIGH_PACT
+    standHeight: 22
+    kneelHeight: 14
     avatarOffsetX: 68  # 66
     avatarOffsetY: 40  # 42
     minStats:
@@ -36,7 +38,7 @@ soldiers:
       reactions: 35
       firing: 45
       throwing: 40
-      strength: 15
+      strength: 20 # Strength for builtin weapons
       psiStrength: 0
       psiSkill: 0
       melee: 25
@@ -64,24 +66,26 @@ soldiers:
       psiStrength: 100
       psiSkill: 50
       melee: 90
-    trainingStatCaps:
-      tu: 60
-      stamina: 70
-      health: 30
-      firing: 70
-      throwing: 65
-      strength: 20
-      psiStrength: 100
-      psiSkill: 50
-      melee: 50
-    armor: STR_ENFORCER_ARMOR_UC
+    trainingStatCaps: # Eldar won't train them
+      tu: 0
+      stamina: 0
+      health: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    armor: STR_MONKEIGH_COLLABORATOR_ARMOR_P
     costBuy: 30000
-    costSalary: 10000
+    costSalary: 15000
     soldierNames:
       - delete
       - Names/arbites.nam
     allowPiloting: false
-    allowPromotion: false
+    rankStrings:
+      - STR_ELDAR_MONKEIGH_RANK_0
+
     value: 10                   # Biel Tan Eldar have very little respect for human life
     moraleLossWhenKilled: 50    # Biel Tan Eldar low effect for human deaths
 
@@ -187,7 +191,7 @@ soldiers:
     femaleFrequency: 50
     armor: STR_ELDAR_RANGER_ARMOR_P
     costBuy: 0 #eldar ranger are requested via recipe
-    costSalary: 15000
+    costSalary: 20000
     minStats:
       tu: 55
       stamina: 40
@@ -196,7 +200,7 @@ soldiers:
       reactions: 40
       firing: 65
       throwing: 30
-      strength: 20
+      strength: 25 # +5 From self sufficiency
       psiStrength: 15
       psiSkill: 20
       melee: 30
@@ -208,7 +212,7 @@ soldiers:
       reactions: 70
       firing: 80
       throwing: 40
-      strength: 25
+      strength: 30
       psiStrength: 100
       psiSkill: 20
       melee: 50

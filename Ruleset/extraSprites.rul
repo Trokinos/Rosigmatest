@@ -6292,6 +6292,8 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_hwp_scatterlaser_codex.png
   - typeSingle: ELDAR_HWP_STARCANNON_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_hwp_starcannon_codex.png
+  - typeSingle: ELDAR_WIREWEAVE_NET_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_wireweavenet_codex.png
   #older weapon codex from 40k mod
   - typeSingle: 1EL1.SPK
     fileSingle: Resources/Eldar/1EL1.png
@@ -6519,6 +6521,13 @@ extraSprites:
     files:
       0: Resources/Eldar/units/eldar_heavy_weapon_platform/split_eldar_hwp_starcannon_unitsprite.png
 
+  - type: ELDAR_WIREWEAVENET_DEPLOYED.SPK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 80
+    files:
+      0: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_unitsprite.png
   # ELDAR paperdoll images
 
   # ELDAR GUARDIAN
@@ -7641,6 +7650,10 @@ extraSprites:
     fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_starcannon_body.png
   - typeSingle: ELDARHWPSTARCANNON__1__ELDAR_F
     fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_starcannon_bodyf.png
+
+  # ELDAR OTHER
+  - typeSingle: ELDAR_WIREWEAVENET_DEPLOYED_INVENTORY
+    fileSingle: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_inventory.png
 
   # PLAYER CHAOS
   - typeSingle: ALPHAMARINE_INV.SPK

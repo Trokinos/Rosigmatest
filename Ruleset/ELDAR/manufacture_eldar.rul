@@ -35,6 +35,8 @@ manufacture:
     cost: 30000
     producedItems: {}
     spawnedPersonType: STR_ELDAR_GUARDIAN_PLAYER
+    requiredItems:
+      STR_ELDAR_CITIZEN: 1
     #requiredItems:
     #  STR_KILLPOINT_TOKEN: 10
     points: 0
@@ -287,6 +289,18 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 80
       STR_ELERIUM_115: 30
+
+    ## Weapon Manufacturing
+  - &ELDAR_GRENADE_MANUFACTURE
+    name: STR_ELDAR_WIREWEAVE_NET
+    category: STR_EQUIPMENT
+    requires:
+      - STR_RECRUIT_ELDAR_OUTCAST
+    space: 0
+    time: 200
+    cost: 25000
+    producedItems:
+      STR_ELDAR_WIREWEAVE_NET: 5
 
 
   - name: STR_CRATED_HORNET
