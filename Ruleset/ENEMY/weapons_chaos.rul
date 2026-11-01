@@ -1238,7 +1238,7 @@ items:
     twoHanded: true
     armor: 100
     experienceTrainingMode: 5
-    listOrder: 10741
+    listOrder: 10737
     # *** Melee bayonet
     meleeHitSound: 101
     meleeAnimation: 0
@@ -4870,7 +4870,7 @@ items:
     clipSize: 30
     battleType: 2
     armor: 60
-    listOrder: 10722
+    listOrder: 10726
     tags:
       INFECTION_DAMAGE_PERCENT: 25
       INFECTION_TYPE: 1
@@ -4907,7 +4907,7 @@ items:
     clipSize: 45
     battleType: 2
     armor: 60
-    listOrder: 10742
+    listOrder: 10746
     tags:
       INFECTION_DAMAGE_PERCENT: 25
       INFECTION_TYPE: 1
@@ -5568,6 +5568,7 @@ items:
     listOrder: 10604
   - type: STR_AUTOGUN_CHAOS
     costBuy: 3500
+    listOrder: 10736
     ufopediaType: ""
   - type: STR_AUTOPISTOL_CHAOS
     refNode: *CHAOS_WEAPON
@@ -5576,6 +5577,7 @@ items:
   - type: STR_STUB_GUN_CHAOS
     refNode: *CHAOS_WEAPON
     costBuy: 500
+    listOrder: 10701
     compatibleAmmo:
       - STR_STUB_GUN_AMMO
       - STR_STUB_GUN_AMMO_AP

@@ -803,7 +803,7 @@ items:
     attraction: 1
     experienceTrainingMode: 4
     armor: 200  # to avoid item pile destruction
-    listOrder: 10740
+    listOrder: 10722
     tags:
       ITEM_RECOIL: 25  # pistol, more recoil
       REACTION_MULTIPLIER: 200
@@ -852,7 +852,7 @@ items:
     # No bayonet at the moment. Might add it back
     experienceTrainingMode: 4
     armor: 200  # to avoid item pile destruction
-    listOrder: 10740
+    listOrder: 10741
     tags:
       ITEM_RECOIL: 20  # Worse recoil compensation, but slower firing rate
       REACTION_MULTIPLIER: 150
@@ -916,7 +916,7 @@ items:
       time: true
     experienceTrainingMode: 4
     armor: 200  # to avoid item pile destruction
-    listOrder: 10740
+    listOrder: 10742
     tags:
       ITEM_RECOIL: 20
       ITEM_GETS_FACTION_RECOLOR: 1
@@ -992,7 +992,7 @@ items:
     autoShots: 6  # +1
     attraction: 1
     experienceTrainingMode: 4
-    listOrder: 10740
+    listOrder: 10743
     armor: 200  # to avoid item pile destruction
     tags:
       ITEM_RECOIL: 20
@@ -1022,7 +1022,7 @@ items:
     clipSize: 40
     battleType: 2
     armor: 200
-    listOrder: 10750
+    listOrder: 10749
     tags:
       ITEM_GETS_FACTION_RECOLOR: 1
       ITEM_BASE_COLOR: 4
@@ -1052,7 +1052,7 @@ items:
     clipSize: 40
     battleType: 2
     armor: 200
-    listOrder: 10750
+    listOrder: 10748
     tags:
       ITEM_GETS_FACTION_RECOLOR: 1
       ITEM_BASE_COLOR: 4
@@ -5142,6 +5142,7 @@ items:
     requiresBuy:
       - STR_IMPERIAL_WEAPONS
       - STR_BASIC_BALLISTICS_DEP
+    listOrder: 10735
     tags:
       ITEM_GETS_FACTION_RECOLOR: 1
       ITEM_BASE_COLOR: 4
@@ -5166,6 +5167,7 @@ items:
       ITEM_ACCENT_COLOR: 1
 
   - type: STR_AUTOPISTOL_CLIP
+    listOrder: 10725
     requiresBuy:
       - STR_BASIC_BALLISTICS_DEP
 
@@ -5637,7 +5639,7 @@ items:
     attraction: 1
     experienceTrainingMode: 4
     armor: 200
-    listOrder: 10713
+    listOrder: 10706
     inventoryMoveCost: #quickdraw
       basePercent: 50
     tags:
@@ -7215,7 +7217,7 @@ items:
       shots: 1
     confAimed:  # Called Precision Shot to emphasize the added lethality
       name: STR_PRECISION_SHOT
-    listOrder: 11897
+    listOrder: 10709
     kneelBonus: 125  # bolt action rifle
     minRange: 5  # bolt action rifle
     accuracyMultiplier:
@@ -7283,7 +7285,7 @@ items:
       shots: 4
     snapRange: 10
     autoRange: 7
-    listOrder: 11898
+    listOrder: 10704
     attraction: 1
     tags:
       ITEM_RECOIL: 33
@@ -7325,7 +7327,7 @@ items:
       shots: 3 #-1 vs autogun
     confSnap:
       shots: 1
-    listOrder: 11897
+    listOrder: 10740
     kneelBonus: 115 #DMR
     attraction: 1
     tags:
@@ -7402,7 +7404,7 @@ items:
     invHeight: 1
     armor: 30
     attraction: 1
-    listOrder: 11899
+    listOrder: 10716
 
   - type: STR_STUB_GUN_AMMO_DRUM_AP #Valhallan Autostubber SMG
     categories: [STR_CAT_AUTO]
@@ -7432,7 +7434,7 @@ items:
     invHeight: 1
     armor: 30
     attraction: 1
-    listOrder: 11899
+    listOrder: 10717
 
   - type: STR_AUTOGUN_CLIP_KRAKEN
     categories: [STR_CAT_AUTO]
@@ -7459,7 +7461,7 @@ items:
     clipSize: 10
     battleType: 2
     armor: 200
-    listOrder: 11897
+    listOrder: 10747
     tags:
       ITEM_GETS_FACTION_RECOLOR: 1
       ITEM_BASE_COLOR: 4

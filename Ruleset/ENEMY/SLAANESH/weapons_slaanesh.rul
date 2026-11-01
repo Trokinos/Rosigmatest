@@ -901,7 +901,7 @@ items:
     twoHanded: true
     armor: 30
     experienceTrainingMode: 5
-    listOrder: 10741
+    listOrder: 10737
     # *** Melee bayonet
     meleeHitSound: {mod: 40k, index: 101}
     meleeAnimation: 0
@@ -949,7 +949,7 @@ items:
     clipSize: 30
     battleType: 2
     armor: 30
-    listOrder: 10750
+    listOrder: 10746
 
   - type: STR_PLASMA_PISTOL_SLAAN  #                       11210
     categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_CHAOS]
