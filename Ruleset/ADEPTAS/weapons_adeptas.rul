@@ -101,7 +101,7 @@ items:
     twoHanded: true
     armor: 200
     experienceTrainingMode: 5
-    listOrder: 10741
+    listOrder: 10738
     # *** Melee bayonet
     meleeHitSound: {mod: 40k, index: 101}
     meleeAnimation: {mod: 40k, index: 0}
@@ -159,7 +159,7 @@ items:
     twoHanded: true
     armor: 200
     experienceTrainingMode: 5
-    listOrder: 10741
+    listOrder: 10739
 
   - type: STR_SENTINEL_MELTALANCE
     categories: [STR_CAT_MELTA, STR_CAT_ADEPTAS]
