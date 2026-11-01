@@ -227,6 +227,7 @@ extraSprites:
       1794: Resources/Eldar/weapons/ghostaxe_handObj.png
       1802: Resources/Eldar/weapons/ghostsword_handObj.png
       1810: Resources/Eldar/weapons/Reaper_launcher_handObj.png
+      1818: Resources/Eldar/weapons/grenades/wireweavenet_handObj.png
 
 # Arbites; 1900-2000
       # Arbites' heavy stubber and ammo

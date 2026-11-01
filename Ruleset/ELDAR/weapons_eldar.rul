@@ -9,6 +9,42 @@ items:
 #--- ELDAR.ARMOR_BUILTIN
 #---------------------
 
+  - type: STR_SHOTGUN_MONKEIGH #
+    ufopediaType: STR_SHOTGUN
+    categories: [STR_CAT_SHOTGUN, STR_CAT_SCOUT]
+    size: 0.2
+    costBuy: 0 # Can't be bought
+    weight: 7
+    bigSprite: {mod: 40k, index: 235}
+    floorSprite: {mod: 40k, index: 118}
+    handSprite: {mod: 40k, index: 328}
+    bulletSprite: {mod: 40k, index: 2}
+    fireSound: {mod: 40k, index: 755}
+    fixedWeapon: true     # Mercenary's bring their own Weapon
+    fixedWeaponShow: true
+    recover: false # Fixed to armor
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_INC
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    listOrder: 16099
+    dropoff: 6
+    autoRange: 0
+    snapRange: 12
+    aimRange: 0
+    accuracyAuto: 0
+    accuracySnap: 65  # 40k 66  # ROSIGMA 1.06Beta2 75
+    accuracyAimed: 0  # 40k 80  # ROSIGMA 1.06Beta2 95
+    tuAuto: 0
+    tuSnap: 20  # 40k 25  # ROSIGMA 1.06Beta2 20
+    tuAimed: 0  # 40k 33  # ROSIGMA 1.06Beta2 35  # get rid of aimed
+    #tags:
+     # REACTION_MULTIPLIER: 150
+
 #--- ELDAR.WEAPONS ---
   - delete: STR_CATAPULT
   - &ELDAR_SHURIKEN_WEAPON_TEMPLATE
@@ -314,7 +350,8 @@ items:
     tags:
       REACTION_MULTIPLIER: 220 # +100 Pistol +20 Avenger
 
-  - type: STR_RANGER_LONG_RIFLE #TEMPORARY COPY STR_TAU_PULSE_RIFLE
+  - &RANGER_LONG_RIFLE_TEMPLATE
+    type: STR_RANGER_LONG_RIFLE
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
@@ -332,6 +369,8 @@ items:
     bigSprite: 4857
     floorSprite: 4857
     handSprite: 4858
+    invWidth: 2
+    invHeight: 3
     bulletSprite: {mod: 40k, index: 12}
     fireSound: [1875, 1876, 1877]
     hitSound: {mod: 40k, index: 19}
@@ -339,108 +378,47 @@ items:
     reloadSound: 1878
     explosionSpeed: 10
     bulletSpeed: 100
-    accuracyAuto: 70
-    accuracySnap: 90
-    accuracyAimed: 110
-    tuAimed: 70
+    # Weapon Stats
     tuAuto: 45
-    tuSnap: 30
-    autoShots: 3
-    #power: 95
-    #damageType: 1 # was 5
-    #damageAlter:  # DA PULSE
-    #  RandomType: 6
-    #  ToArmorPre: 0.2 # was 0.1 or 0.3, depending # melts some armor on the way in
+    tuSnap: 33
+    accuracyAuto: 60
+    accuracySnap: 80
+    autoRange: 14
+    snapRange: 20 # 36" range
+    dropoff: 4
+    minRange: 5
+    autoShots: 2
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 75
-    invWidth: 2
-    invHeight: 3
-    arcingShot: false
-    minRange: 5
-    aimRange: 25
-    snapRange: 20
-    autoRange: 14
-    dropoff: 3 #tau rifle has exceptional range
-    vaporColorSurface: {mod: 40k, index: 2}
-    vaporDensitySurface: 3
-    vaporProbabilitySurface: 50
     kneelBonus: 120
     compatibleAmmo:
       - STR_RANGER_LONG_RIFLE_MAG
       - STR_RANGER_LONG_RIFLE_MAG_FIXED
-    scripts:
-      vaporParticleAmmo: |
-        # noting
-        set particle_lifetime 20;
-        set subvoxel_drift 3;
-        return;
     listOrder: 16600
 
-  - type: STR_RANGER_LONG_RIFLE_SCOPED #TEMPORARY COPY STR_TAU_PULSE_RIFLE
-    requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-    requiresBuy:
-      - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_RECRUIT_ELDAR_OUTCAST
-    requiresBuyBaseFunc: []
+  - type: STR_RANGER_LONG_RIFLE_SCOPED
+    refNode: *RANGER_LONG_RIFLE_TEMPLATE
     weight: 20
-    categories: [STR_CAT_SNIPER, STR_CAT_ELDAR]
-    fixedWeapon: true
-    fixedWeaponShow: true
-    recover: false # Fixed to armor
-    costBuy: 0 # Cannot be bought only comes with Ranger
-    costSell: 0
-    size: 0.4
     bigSprite: 4858
     floorSprite: 4858
     handSprite: 4866
-    bulletSprite: {mod: 40k, index: 12}
-    fireSound: [1875, 1876, 1877]
-    hitSound: {mod: 40k, index: 19}
-    hitAnimation: {mod: 40k, index: 100}
-    reloadSound: 1878
-    explosionSpeed: 10
-    bulletSpeed: 100
-    accuracyAuto: 70
-    accuracySnap: 90
-    accuracyAimed: 110
-    tuAimed: 85
-    tuAuto: 60
-    tuSnap: 40
-    autoShots: 3
-    # power: 95
-    # damageType: 1 # was 5
-    # damageAlter:  # DA PULSE
-    #   RandomType: 6
-    #   ToArmorPre: 0.2 # was 0.1 or 0.3, depending # melts some armor on the way in
-    battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 75
-    invWidth: 2
-    invHeight: 3
-    arcingShot: false
     minRange: 10 # Scoped Sniper Rifle
-    aimRange: 40
-    snapRange: 20
-    autoRange: 14
-    dropoff: 3 #tau rifle has exceptional range
-    vaporColorSurface: {mod: 40k, index: 2}
-    vaporDensitySurface: 3
-    vaporProbabilitySurface: 50
-    kneelBonus: 120
-    compatibleAmmo:
-      - STR_RANGER_LONG_RIFLE_MAG
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
-    scripts:
-      vaporParticleAmmo: |
-        # noting
-        set particle_lifetime 20;
-        set subvoxel_drift 3;
-        return;
+    dropoff: 3 #sniper
+    accuracySnap: 80
+    accuracyAimed: 100
+    tuAuto: 0
+    tuAimed: 90
+    tuSnap: 40
+    aimRange: 30
+    snapRange: 25
+    confAimed:  # Called Precision Shot to emphasize the added lethality
+      name: STR_PRECISION_SHOT
     listOrder: 16610
     tags:
-      REACTION_MULTIPLIER: 60 # -40 Sniper Malus
+      ITEM_AIMED_FLAT_POWER_BONUS: 50  # Precision Shot Bonus
+      REACTION_MULTIPLIER: 50
+      REACTION_PENALTY_KNEELING_BYPASS: 1
 
   - type: STR_SHURIKEN_CANNON # REAPER SHURIKEN CANNON
     refNode: *ELDAR_SHURIKEN_WEAPON_TEMPLATE
@@ -652,7 +630,8 @@ items:
     compatibleAmmo:
       - STR_AELDARI_FLAMER_FUEL
     accuracyAuto: 35
-    tuAuto: 35
+    tuAuto: 21
+    flatRate: true
     battleType: 1
     twoHanded: true
     experienceTrainingMode: 6
@@ -682,16 +661,17 @@ items:
     bulletSprite: {mod: 40k, index: 5}
     fireSound: {mod: 40k, index: 706}
     compatibleAmmo:
+      - STR_AELDARI_FLAMER_FUEL
       - STR_DRAGON_BREATH_FLAMER_FUEL
     accuracySnap: 70
     accuracyAuto: 40
-    tuSnap: 20
-    tuAuto: 30
+    tuSnap: 21
+    tuAuto: 32
+    flatRate: true
     snapRange: 14
     autoRange: 12
-    aimRange: 0
-    confSnap:  # Double Shot
-      shots: 2
+    confSnap:  # Triple Shot
+      shots: 3
       arcing: true
     maxRange: 16
     dropoff: 5
@@ -708,8 +688,7 @@ items:
       #ITEM_DOESNT_HURT_USER: 1 # Temple Assassins are too skilled to shoot themselves. Staying in flames can be bad though.
 
 
-  - type: STR_FUSION_GUN
-    #refNode: *ELDAR_WEAPON_TEMPLATE             #listOrder 16500
+  - type: STR_FUSION_GUN            #listOrder 16500
     listOrder: 16501
     weight: 15
     categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ASSAULT]
@@ -729,19 +708,11 @@ items:
     compatibleAmmo:
       - STR_FUSION_AMMO
     dropoff: 6
-    autoRange: 0
     snapRange: 10 # Range between Light Melta and Meltagun
-    aimRange: 0
-    accuracyAuto: 0
-    accuracySnap: 70
-    accuracyAimed: 0
-    tuAuto: 0
+    accuracySnap: 80
     tuSnap: 30
-    tuAimed: 0
     flatRate: true
-    maxRange: 18
-    damageBonus:
-      flatHundred: 0.2
+    maxRange: 16 # deals no damage after this
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -749,10 +720,9 @@ items:
     armor: 300
 
 
-  - type: STR_DRAGON_FUSION_GUN                 #STR_HARMONIC_MELTAGUN stats
-    #refNode: *ELDAR_WEAPON_TEMPLATE             #listOrder 16510
+  - type: STR_DRAGON_FUSION_GUN
     weight: 20
-    categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL]
+    categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ASSAULT]
     requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_FIREDRAGON_RESEARCH
@@ -770,18 +740,13 @@ items:
     fireSound: [1879, 1880, 1881]
     compatibleAmmo:
       - STR_DRAGON_FUSION_AMMO
+      - STR_FUSION_AMMO
     dropoff: 6
-    autoRange: 0
     snapRange: 12
-    aimRange: 20
-    accuracyAuto: 0
-    accuracySnap: 60
-    accuracyAimed: 100
-    tuAuto: 0
+    accuracySnap: 80
     tuSnap: 30
-    tuAimed: 75
-    maxRange: 20
-    minRange: 5
+    flatRate: true
+    maxRange: 18
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -793,7 +758,7 @@ items:
     #refNode: *ELDAR_WEAPON_TEMPLATE             #listOrder 16500
     listOrder: 16490
     weight: 5
-    categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL]
+    categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ASSAULT]
     requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
@@ -811,19 +776,11 @@ items:
     compatibleAmmo:
       - STR_FUSION_PISTOL_AMMO
     dropoff: 6
-    autoRange: 0
     snapRange: 8 # -2 range vs fusion gun
-    aimRange: 0
-    accuracyAuto: 0
     accuracySnap: 70
-    accuracyAimed: 0
-    tuAuto: 0
-    tuSnap: 30
-    tuAimed: 0
+    tuSnap: 26
     flatRate: true
-    maxRange: 13
-    damageBonus:
-      flatHundred: 0.2
+    maxRange: 12 # Ammo deals 0 damage after this
     battleType: 1
     invWidth: 1
     invHeight: 3
@@ -837,7 +794,7 @@ items:
     listOrder: 16495
     requiresBuyBaseFunc: []
     requires:
-      - STR_ELDAR_FIREDRAGON_RESEARCH
+      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
     requiresBuy: []
@@ -852,18 +809,13 @@ items:
     fireSound: [1879, 1880, 1881]
     compatibleAmmo:
       - STR_DRAGON_FUSION_PISTOL_AMMO
+      - STR_FUSION_PISTOL_AMMO
     dropoff: 6
-    autoRange: 0
-    snapRange: 12
-    aimRange: 15
-    accuracyAuto: 0
-    accuracySnap: 60
-    accuracyAimed: 100
-    tuAuto: 0
-    tuSnap: 30
-    tuAimed: 75
-    maxRange: 15
-    minRange: 0
+    snapRange: 8
+    accuracySnap: 70
+    tuSnap: 26
+    flatRate: true
+    maxRange: 12
     battleType: 1
     invWidth: 1
     invHeight: 3
@@ -892,15 +844,15 @@ items:
       - STR_FIREPIKE_AMMO
     dropoff: 5 # -1 dropoff vs regular fusion guns
     autoRange: 0
-    snapRange: 17 # +5 range
-    aimRange: 25 # +5 range
+    snapRange: 16
+    aimRange: 20
     accuracyAuto: 0
-    accuracySnap: 60
-    accuracyAimed: 100
-    tuAuto: 0
-    tuSnap: 30
-    tuAimed: 75
-    maxRange: 25 # +5 range
+    accuracySnap: 80
+    accuracyAimed: 110
+    tuSnap: 35
+    tuAimed: 45 # Extreme range is not that effective due to damage dropoff
+    flatRate: true
+    maxRange: 25
     minRange: 5
     battleType: 1
     twoHanded: true
@@ -1499,6 +1451,59 @@ items:
       ToStun: 0.3
 
 #--- ELDAR.GRENADES ---
+
+  - type: STR_ELDAR_WIREWEAVE_NET
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_RECRUIT_ELDAR_OUTCAST
+    requiresBuyBaseFunc: []
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ELDAR]
+    weight: 4
+    size: 0.1
+    costBuy: 0
+    costSell: 0
+    bigSprite: 4917
+    floorSprite: 4917
+    handSprite: 1818
+    explosionHitSound: 1888
+    primeSound: 1878
+    hitAnimation: 1180
+    battleType: 4
+    invWidth: 2
+    invHeight: 1
+    throwRange: 12
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 10
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    power: 90
+    damageType: 6
+    damageAlter:
+      ArmorEffectiveness: 0.5
+      ToStun: 0.5  # was 0.2
+      ToTime: 1.0
+      ToEnergy: 0.5
+      RadiusReduction: 5.0
+      ToHealth: 0.05
+      ToWound: 0.00
+      RandomWound: false
+      FixRadius: 3
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    spawnUnit: STR_ELDAR_WIREWEAVE_NET_DEPLOYED
+    spawnUnitFaction: 0
+    listOrder: 16320
+    tags:
+      RemovesFlight: 1
 
   - delete: STR_ELDAR_GRENADE
   - type: STR_ELDAR_GRENADE  # Eldar Plasma Granade          16320
@@ -2218,7 +2223,7 @@ items:
   - type: STR_DRAGON_AXE  # eldar mirrorsword stats, REWORK required think fire damage
     requires:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_FIREDRAGON_RESEARCH
+      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
     requiresBuy: []
     requiresBuyBaseFunc: []
     listOrder: 16499
