@@ -56,17 +56,19 @@ extended:
       # 2: SPECIALIST SISTERS
 
    #CH - CHIRURGEON
-     #AC - ASCENDED CHIRURGEON
+     #EC - EXALTED CHIRURGEON
        #SC - SORCERESS OF SLAANESH
          #AS - ASCENDED SORCERESS OF SLAANESH
            #JC - JUSTICAR
+            #MS - MIRIAEL SABATHIEL 
 
       # 3: POSSESSED SISTERS
 
-    #DI - DAUGHTER IMMACULATE
+    #DI - DAUGHTER IMMACULATE 
       #BA - BRINGER OF ABLUTION
         #HS - HARVESTER OF SORROWS
-         #SS - SUBLIME SAINT OF SLAANESH 
+         #SS - SERENE SAINT OF SLAANESH 
+
 
       # 4: AUXILIARY FORCES
 
@@ -76,6 +78,13 @@ extended:
         #HT - HERETEK SAVANT
 
 #########################################################################################################
+#                # DEMON UNIT TRANSFORMATIONS#
+# EXALTED SISTER IMMACULATE -> DAUGHTER IMMACULATE
+# EXALTED HARBINGER OF SLAANESH -> BRINGER OF ABLUTION
+# EXALTED CHIRURGEON -> HARVESTER OF SORROWS
+# EXALTED MYSTAGOGUE -> SERENE SAINT OF SLAANESH
+##########################################################################################################
+
 
 soldiers:
 

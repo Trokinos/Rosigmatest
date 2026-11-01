@@ -35,7 +35,7 @@ soldierTransformation:
       STR_ELERIUM-115: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
-  - name: STR_INDUCT_CHIRURGEON # TODO: Add stat requirement. Add basic commendation requirement.
+  - name: STR_INDUCT_CHIRURGEON # Will 3 melee kills & favored status.
     requires:
       - STR_POWER_ARMOR_CORRUPTION
     producedSoldierType: STR_SLAANESHPATH_CHIRURGEON
@@ -53,7 +53,7 @@ soldierTransformation:
       STR_ALIEN_ALLOYS: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
-  - name: STR_INDUCT_SORCERESS # TODO: Add stat requirement. Add basic commendation requirement.
+  - name: STR_INDUCT_SORCERESS # Needs high psi stats and favored status.
     requires:
       - STR_POWER_ARMOR_CORRUPTION
     producedSoldierType: STR_SLAANESHPATH_SORCERESS 
@@ -74,7 +74,7 @@ soldierTransformation:
       STR_ALIEN_FOOD: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
-  - name: STR_ELEVATE_MYSTAGOGUE # Essentially, a sister superior promotion.
+  - name: STR_ELEVATE_MYSTAGOGUE # Requires an Exalted Sister Immaculate. 
     requires:
       - STR_POWER_ARMOR_CORRUPTION # PLACEHOLDER
     producedSoldierType: STR_SLAANESHPATH_SORCERESS # PLACEHOLDER 
