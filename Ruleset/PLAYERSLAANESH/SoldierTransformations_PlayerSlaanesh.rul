@@ -1,21 +1,50 @@
 soldierTransformation:
 
-  - name: STR_EXALT_HANDMAIDEN
+
+# A tier 1.5 promotion for Handmaidens. Opens access to non-standard promotions.
+# 
+# Meant to serve as a way to invest money into a handmaiden in order to power them up significantly.
+
+  - name: STR_EXALT_HANDMAIDEN 
     requires:
       - STR_RITUALS_OF_WORSHIP # Placeholder. Change later.
+    cost: 30000
     producedSoldierType: STR_SLAANESHPATH_EXALTEDMAIDEN
     producedSoldierArmor: STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
+    showMinMax: false
     transferTime: 16
+    percentGainedStatChange:
+      - firing: 35
+      - melee: 35
+      - reactions: 35
+      - throwing: 35
+    flatMin:
+      - tu: 1
+      - health: 1
+      - reactions: 3
+      - psiStrength: 1
+    flatMax:
+      - tu: 6
+      - health: 5
+      - reactions: 12
+      - psiStrength: 15
+    percentGainedMin:
+      - firing: 0
+      - melee: 0
+      - throwing: 5
+    percentGainedMax:
+      - firing: 10
+      - melee: 10
+      - throwing: 10
     allowedSoldierTypes:
       - STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 26
+      STR_SLAANESH_PIETY: 40
     #requiredCommendations:
     #  STR_BATTLE_TESTED: 0
-    soldierBonusType: STR_SEEKER_MARK
   
   - name: STR_INDUCT_IMMACULATE_SISTER # TODO: Add stat requirement. Add basic commendation requirement.
     requires:
@@ -35,7 +64,7 @@ soldierTransformation:
       STR_ELERIUM-115: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
-  - name: STR_INDUCT_CHIRURGEON # Will 3 melee kills & favored status.
+  - name: STR_TRAIN_CHIRURGEON # Will 3 melee kills & favored status.
     requires:
       - STR_POWER_ARMOR_CORRUPTION
     producedSoldierType: STR_SLAANESHPATH_CHIRURGEON
@@ -50,17 +79,35 @@ soldierTransformation:
     requiredItems:
       STR_SLAANESH_PIETY: 66
       STR_ELERIUM-115: 6
-      STR_ALIEN_ALLOYS: 6
+      STR_ALIEN_ALLOYS: 10
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
-  - name: STR_INDUCT_SORCERESS # Needs high psi stats and favored status.
+  - name: STR_TRAIN_HARBINGER # REQUIREMENTS TBD
     requires:
-      - STR_POWER_ARMOR_CORRUPTION
+      - STR_GENERALLOCK
+    producedSoldierType: STR_SLAANESHPATH_CHIRURGEON # PLACEHOLDER
+    producedSoldierArmor: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR #PLACEHOLDER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    transferTime: 366
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 66
+      STR_ELERIUM-115: 6
+      STR_SLAANESHPATH_HARBINGER_ARMOR_TOKEN: 1
+
+  - name: STR_TRAIN_SORCERESS # Needs high psi stats and favored status.
+    requires:
+      - STR_GENERALLOCK
     producedSoldierType: STR_SLAANESHPATH_SORCERESS 
     producedSoldierArmor: STR_SLAANESHPATH_SORCERESS_ARMOR
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
+    resetRank: true
     requiredMinStats:
       - psiStrength: 85
       - psiSkill: 85
@@ -74,7 +121,27 @@ soldierTransformation:
       STR_ALIEN_FOOD: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
-  - name: STR_ELEVATE_MYSTAGOGUE # Requires an Exalted Sister Immaculate. 
+  - name: STR_CATECHIZE_MYSTAGOGUE # Requires an Exalted Sister Immaculate. 
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION # PLACEHOLDER
+    producedSoldierType: STR_SLAANESHPATH_SORCERESS # PLACEHOLDER 
+    producedSoldierArmor: STR_SLAANESHPATH_SORCERESS_ARMOR # PLACEHOLDER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    upperBoundType: 1 # Remember to set the mystagogue psistrength to a decent number.
+    requiredMinStats:
+      - psiSkill: 60
+    transferTime: 666
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 200
+      STR_ELERIUM-115: 25
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+
+  - name: STR_ELEVATE_MYSTAGOGUE # Promotes a mystagogue from a sister. Much faster and cheaper.  
     requires:
       - STR_POWER_ARMOR_CORRUPTION # PLACEHOLDER
     producedSoldierType: STR_SLAANESHPATH_SORCERESS # PLACEHOLDER 
@@ -85,17 +152,33 @@ soldierTransformation:
     upperBoundType: 1 # Remember to set the mystagogue psistrength to a decent number.
     requiredMinStats:
       - psiSkill: 100
-    transferTime: 266
+    transferTime: 166
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 200
+      STR_SLAANESH_PIETY: 50
       STR_ELERIUM-115: 5
       STR_ALIEN_FOOD: 2
-      STR_SLAANESHPATH_MYSTAGOGUE_ARMOR_TOKEN: 1
 
     #requiredCommendations:
     #  STR_BATTLE_TESTED: 0
 
+
+  - name: STR_ELEVATE_ANGEL # TODO: Add stat requirement. Add basic commendation requirement.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    producedSoldierType: STR_SLAANESHPATH_IMMACULATE_SISTER
+    producedSoldierArmor: STR_SLAANESHPATH_IMMACULATE_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    transferTime: 66
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_IMMACULATE_SISTER
+    requiredItems:
+      STR_SLAANESH_PIETY: 10
+      STR_ELERIUM-115: 5
+      STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
 
     #resetRank - use this for promoting handmaidens to sisters immaculate.

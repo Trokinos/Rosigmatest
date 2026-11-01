@@ -249,6 +249,40 @@ items:
 
  #### BALLISTIC WEAPONS ####
 
+  - type: STR_AUTOGUN_ADEPTAS_SLAAN
+    categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
+    requiresBuy:
+      - STR_CONTACT_ARMS_SMUGGLERS
+    size: 0.2
+    dropoff: 5
+    costBuy: 7500
+    costSell: 2000
+    weight: 9
+    bigSprite: 4084  # Agripinaa T3 without scope.
+    floorSprite: {mod: 40k, index: 1016}
+    handSprite: {mod: 40k, index: 1128}
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 35
+    fireSound: {mod: 40k, index: 4}
+    compatibleAmmo:
+      - STR_AUTOGUN_CLIP
+    accuracySnap: 85  # Top-quality autogun.
+    tuSnap: 25
+    confSnap:
+      shots: 2
+    snapRange: 17
+    autoRange: 0
+    aimRange: 0
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    experienceTrainingMode: 5
+    listOrder: 10741
+    tags:
+      - ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10 # DMR-like rifle, a la Darktide.
+
 
   - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
@@ -1008,6 +1042,8 @@ items:
     defaultInventorySlot: STR_LEFT_HAND
 
 # - type: ARAKIEL_MISSILE_LAUNCHER
+
+# - type: AUX_ANGELIC_ASSAULT_GRENADE_LAUNCHER
 
 # - type: SHAMSIEL_ANGELIC_PROJECTOR
 

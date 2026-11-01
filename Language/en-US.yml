@@ -15404,13 +15404,15 @@ en-US:  #  yamllint disable-line rule:empty-values
   ## UNIT PROJECTS
 
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
-  STR_EXALT_HANDMAIDEN: "Elevate Handmaiden"
+  STR_EXALT_HANDMAIDEN: "Recognize Promising Handmaiden"
   STR_INDUCT_IMMACULATE_SISTER: "Induct Immaculate Sister"
-  STR_INDUCT_CHIRURGEON: "Train Chirurgeon"
-  STR_INDUCT_SORCERESS: "Train Sorceress"
+  STR_TRAIN_CHIRURGEON: "Train Chirurgeon"
+  STR_TRAIN_SORCERESS: "Train Sorceress"
+  STR_TRAIN_HARBINGER: "Train Harbinger"
   STR_INDUCT_HARBINGER: "Induct Harbinger of Slaanesh"
   STR_ELEVATE_ANGEL: "Induct Angel into the Choir"
-  STR_ELEVATE_MYSTAGOGUE: "Catechize Mystagogue"
+  STR_Catechize_MYSTAGOGUE: "Catechize Mystagogue"
+  STR_ELEVATE_MYSTAGOGUE: "Elevate Mystagogue"
   STR_ELEVATE_EXALTED_MYSTAGOGUE: "Elevate Mystagogue"
   STR_EXALT_ARCHANGEL: "Elevate Angel of the Choir"
 
@@ -15449,6 +15451,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_FIRE_SHOTGUN: "Fire Shotgun"
   STR_FIRE_WEBBER: "Fire Webber"
   STR_PLASMA_BARRAGE: "Plasma Barrage"
+
+  STR_AUTOGUN_ADEPTAS_SLAAN: "Agripinaa Mk. IX Autogun"
+
   STR_BOLTER_CANTUS_SLAAN: "Eliminator Bolter"
   STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
   STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
