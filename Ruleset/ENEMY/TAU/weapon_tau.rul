@@ -498,7 +498,7 @@ items:
     noLOSAccuracyPenalty: 75  # indirect fire weapon
 
   - type: STR_TAU_PHOTON_GRENADE  # photon munition
-    categories: [STR_CAT_TACTICAL, STR_CAT_TAU]
+    categories: [STR_CAT_STUN, STR_CAT_TAU]
     size: 0.1
     weight: 1 # Light grenade
     invWidth: 1

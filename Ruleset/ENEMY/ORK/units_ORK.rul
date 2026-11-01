@@ -977,34 +977,41 @@ units:
         - STR_AMMO_TWINBIT50
         - STR_ORK_COMBI_RL  # Needs new KOMBISHOOTA
         - STR_POWER_KLAW2
-  - type: STR_SQUIG_TEST  # Squig test                      RANK 5 weapons done
+
+  - &SQUIG_TEMPLATE
+    type: STR_SQUIG_ASSAULT_AI
     race: STR_ORK
     rank: STR_LIVE_SOLDIER
-    stats:
-      tu: 70
-      stamina: 96
-      health: 120
-      bravery: 90
-      reactions: 60
-      firing: 60
-      throwing: 70
-      strength: 70
-      psiStrength: 40
+    stats: #slightly weaker than fenris wolfes for AI
+      tu: 100
+      stamina: 90
+      health: 70
+      bravery: 80
+      reactions: 90
+      firing: 0
+      throwing: 0
+      strength: 50
+      psiStrength: 70
       psiSkill: 0
       melee: 70
-    armor: STR_SQUIG_TEST_ARMOR
-    standHeight: 20
-    kneelHeight: 15
+    armor: STR_SQUIG_ARMOR_AI
+    standHeight: 14
+    kneelHeight: 14
     value: 20
-    deathSound: [{mod: 40k, index: 879}, {mod: 40k, index: 880}, {mod: 40k, index: 881}]
+    deathSound: [1970]
+    aggroSound: [1971, 1972, 1973, 1974, 1975, 1976, 1978, 1979] #random among squig noises
     intelligence: 0
     livingWeapon: true
     aggression: 8
-    spotter: 2
-    energyRecovery: 50
-    builtInWeaponSets:
-      - - STR_KILLA_MELEE_WEAPON  # Killa Saw
-        - STR_KILLA_MELEE_WEAPON  # Killa Saw
+    spotter: 0
+    energyRecovery: 70
+
+  - type: STR_SQUIG_BOMBA_AI
+    refNode: *SQUIG_TEMPLATE
+    armor: STR_SQUIG_ARMOR_BOMB_AI
+    aggression: 12
+    isLeeroyJenkins: true
+
   - type: STR_WEIRDBOYZ  # STR_WEIRDORK_ARMOR                      RANK 5 weapons done
     race: STR_ORK
     rank: STR_LIVE_LEADER

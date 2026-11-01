@@ -241,7 +241,7 @@ items:
     tags:
       ITEM_RECOIL: 40
 
-  - type: STR_AUTOSHOTGUN  #                               10600
+  - type: STR_AUTOSHOTGUN  #                               10608
     categories: [STR_CAT_SHOTGUN, STR_CAT_TRADE]
     size: 0.2
     costBuy: 40000  # 4x standard shotgun. Probably still too high.
@@ -269,7 +269,7 @@ items:
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    listOrder: 10605
+    listOrder: 10608
     autoShots: 4  # Can empty a standard mag in one turn
     sprayWaypoints: 2
     snapRange: 9
@@ -297,7 +297,7 @@ items:
     clipSize: 32
     armor: 200
     battleType: 2
-    listOrder: 10710
+    listOrder: 10651
     invWidth: 2
     invHeight: 1  # Same size as grenade drums. Smaller ammo, but more of it.
     shotgunPellets: 6
@@ -2963,21 +2963,21 @@ items:
     # requiresBuyBaseFunc: [TRADE]
     # costBuy: 300000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10330
+    listOrder: 10325
 
   - type: STR_RIFLE_CLIP_AP  # Kraken Penetrator
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 15000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10420
+    listOrder: 10418
 
   - type: STR_RIFLE_CLIP_EX  # Metal Storm Frag
     categories: [STR_CAT_BOLTER, STR_CAT_TRADE]
     requiresBuyBaseFunc: [TRADE]
     costBuy: 15000
     armor: 200  # to avoid item pile destruction
-    listOrder: 10430
+    listOrder: 10419
 
   - type: STR_FELINIED_CLAWS  # specialWeapon for Felinids
     weight: 0
@@ -3953,6 +3953,7 @@ items:
 
   - type: STR_MORTAR_AMMO_PHOTON  # photon munition
     refNode: *STR_MORTAR_AMMO_TEMPLATE
+    categories: [STR_CAT_STUN]
     ufopediaType: STR_MORTAR_AMMO_PHOTON_EXPLOSION
     requiresBuy:  # what tech is required for the item to be visible in the Hire/Purchase screen.
       - STR_SMOKE
@@ -4177,6 +4178,7 @@ items:
 
   - type: STR_PHOTON_GRENADE_DRUM  # photon munition
     refNode: *STR_GRENADE_DRUM
+    categories: [STR_CAT_STUN]
     requiresBuy:
       - STR_BASIC_BALLISTICS_DEP
       - STR_PHOTON_GRENADE_REQUISITION
@@ -4420,7 +4422,7 @@ items:
     autoRange: 5
     snapRange: 7
     aimRange: 0
-    listOrder: 10851
+    listOrder: 10602
     compatibleAmmo:
       - STR_SHOTGUN_SHELLS  # maybe other ammo types too?
       - STR_STUN_SHELLS

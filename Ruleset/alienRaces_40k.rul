@@ -2369,19 +2369,19 @@ alienRaces:
       - STR_ORK_DEFFKOPTER
       - STR_ORK_DEFFKOPTER
 
-#  - id: STR_SQUIG_TEST  # WIP
-#    retaliationMissionWeights:
-#      0:
-#        STR_ALIEN_RETALIATION: 100
-#    members:
-#      - STR_SQUIG        # 0 COMMANDER
-#      - STR_SQUIG            # 1 LEADER
-#      - STR_SQUIG            # 2 ENGINEER/HEAVY
-#      - STR_SQUIG            # 3 MEDIC
-#      - STR_SQUIG         # 4 NAVIGATOR/SHARPSHOOTER
-#      - STR_SQUIG              # 5 SOLDIER
-#      - STR_SQUIG
-#      - STR_SQUIG
+  - id: STR_SQUIG_HORDE  # WIP
+    retaliationMissionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
+    membersRandom:
+      - [STR_SQUIG_ASSAULT_AI]        # 0 COMMANDER
+      - [STR_SQUIG_ASSAULT_AI]            # 1 LEADER
+      - [STR_SQUIG_ASSAULT_AI, STR_SQUIG_ASSAULT_AI, STR_SQUIG_BOMBA_AI]            # 2 ENGINEER/HEAVY
+      - [STR_SQUIG_ASSAULT_AI, STR_SQUIG_ASSAULT_AI, STR_SQUIG_BOMBA_AI]            # 3 MEDIC
+      - [STR_SQUIG_ASSAULT_AI, STR_SQUIG_ASSAULT_AI, STR_SQUIG_BOMBA_AI]         # 4 NAVIGATOR/SHARPSHOOTER
+      - [STR_SQUIG_ASSAULT_AI, STR_SQUIG_ASSAULT_AI, STR_SQUIG_BOMBA_AI]             # 5 SOLDIER
+      - [STR_SQUIG_ASSAULT_AI, STR_SQUIG_ASSAULT_AI, STR_SQUIG_BOMBA_AI]
+      - [STR_SQUIG_ASSAULT_AI, STR_SQUIG_BOMBA_AI, STR_SQUIG_BOMBA_AI]
 
   - id: STR_ORK_WARBIKER_MOB  # WIP
     retaliationMissionWeights:

@@ -39,7 +39,7 @@ items:
   - type: STR_AVENGER_SHURIKEN_CLIP  #                 16200
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
     damageAlter:  # DA SHURIKEN
-      ToArmorPre: 0.1  # was ToArmor, i.e doesn't damage high armor it can't pen, making certain units invincible.
+      ToArmorPre: 0.3  # Endgame armor shredder, needs to be relevant
       RandomType: 2  # TFTD [50% - 150%]
       ToHealth: 0.5
       ToStun: 0.2
@@ -49,13 +49,13 @@ items:
       #Avenger Research
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
       # Avenger Research
     weight: 5
     #requiresBuyBaseFunc: [ELDAROUT]
     size: 0.1
-    costBuy: 1000
-    costSell: 500
+    costBuy: 3000
+    costSell: 1200
     bigSprite: 4888
     floorSprite: 4888
     handSprite: 1594
@@ -63,7 +63,7 @@ items:
     hitSound: 1874 #{mod: 40k, index: 708} old sound
     hitAnimation: {mod: 40k, index: 26}
     explosionSpeed: 5
-    power: 35 # +5 to standard catapult
+    power: 35 # 5 to standard shuriken
     #damageBonus:
     #  reactions: 0.1 # same as standard catapult for now
     damageType: 1
@@ -102,7 +102,7 @@ items:
       ToArmorPre: 0.1
       ToItem: 0.5
       ToTile: 0.5
-    blastRadius: 2
+      FixRadius: 2
     clipSize: 20
     battleType: 2
     invWidth: 1
@@ -133,7 +133,7 @@ items:
     vaporColorSurface: {mod: 40k, index: 2}
     vaporDensitySurface: 3
     vaporProbabilitySurface: 50
-    costBuy: 4000
+    costBuy: 0 # 4000 Rangers provide their own ammo
     costSell: 1000
     scripts:
       vaporParticleAmmo: |
@@ -144,7 +144,7 @@ items:
     explosionSpeed: 10
     bulletSpeed: 25 # slow it down some
     battleType: 2
-    clipSize: 6
+    clipSize: 20
     power: 95
     damageType: 1 # was 5
     damageAlter:
@@ -405,15 +405,14 @@ items:
     invWidth: 2
     invHeight: 1
 
-
-  - type: STR_SPINNER_SPOOL  #STR_RIPPER_GUN_CLIP_AP stats temporary
+  - &SPOOL_AMMO_TEMPLATE
+    type: STR_SPINNER_SPOOL  # -1 AP Flamer
     costBuy: 6000
-    costSell: 1000
+    costSell: 2000
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_SPIDER_RESEARCH
     requiresBuyBaseFunc: []
-    requiresBuy: []
     armor: 200
     size: 0.3
     weight: 10
@@ -421,29 +420,53 @@ items:
     floorSprite: 4864
     handSprite: 4938
     hitSound: 1889
-    hitAnimation: {mod: 40k, index: 26}
-    invWidth: 1
-    invHeight: 2
-    clipSize: 12
+    hitAnimation: 2220 # No ANIMATION 150=Teleport hit original={mod: 40k, index: 26}
+    powerForAnimation: 1
+    invWidth: 2
+    invHeight: 1
+    clipSize: 24
     battleType: 2
-    power: 50
+    power: 60
     damageType: 1
     damageAlter:
-      ToArmorPre: 0.02  # AP ammo; small armor ablation
-      ToArmor: 0.02  # AP ammo; small armor damage
-      ArmorEffectiveness: 0.5  # has significant armor penetration
-      ToHealth: 0.7  # AP weapon features reduced health damage
-      ToTime: 0.05  # shotguns have impact shock; the Ripper especially so; reduced due to AP ammo
-      ToEnergy: 0.05  # impact shock; reduced due to AP ammo
-      ToStun: 0.25  # impact shock; reduced due to AP ammo
-    shotgunBehavior: 1
-    shotgunSpread: 20  # these flechettes are more aerodynamic and have improved grouping
-    shotgunPellets: 6
+      RandomType: 1 # Unpredictable damage
+      ArmorEffectiveness: 0.9 #Minor armor pen
+      ToHealth: 1.0
+      ToMorale: 0.5 #
+      ToTime: 0.3  # Tangled in Wire
+      ToArmorPre: 0.3 # -1 AP Wire cloud grates armor
+      ToItem: 0.5 # Indiscriminate targeting
+      FixRadius: 2 # Monomolecular Cloud
     listOrder: 16610
+
+  - type: STR_WIREWEAVE_SPOOL
+    refNode: *SPOOL_AMMO_TEMPLATE
+    #requires:
+    #  - STR_ELDAR_WEAPONS_ACQUISITION
+    #  - STR_ELDAR_SPIDER_RESEARCH
+    #  - STR_ WIREWEAVE_AMMO
+    bigSprite: 4916
+    floorSprite: 4916
+    costBuy: 6000
+    costSell: 2000
+    hitAnimation: 1180 # No ANIMATION 150=Teleport hit
+    powerForAnimation: 1
+    power: 30
+    damageAlter:
+      RandomType: 1 # Unpredictable damage
+      ArmorEffectiveness: 0.1
+      ToArmorPre: 0.1
+      ToHealth: 0.1
+      ToStun: 0.5
+      ToWound: 0.1
+      ToEnergy: 1.5  # between pistol and heavy webber
+      ToTime: 1.0
+      ToMorale: 0.5
+      FixRadius: 2 # Monomolecular Cloud
 
   - type: STR_SPINNERET_RIFLE_SPOOL  #T3 of spinner spool, testing and balance needed
     costBuy: 12000
-    costSell: 2000
+    costSell: 4000
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_SPIDER_EXARCH_RESEARCH
@@ -457,23 +480,25 @@ items:
     handSprite: 4978
     hitSound: 1889
     hitAnimation: {mod: 40k, index: 26}
-    invWidth: 1
-    invHeight: 2
+    invWidth: 2
+    invHeight: 1
     clipSize: 12
     battleType: 2
     power: 50
     damageType: 1
     damageAlter:
+      RandomType: 1 # Unpredictable damage
       ToArmorPre: 0.02  # AP ammo; small armor ablation
       ToArmor: 0.02  # AP ammo; small armor damage
-      ArmorEffectiveness: 0.3  # Great armor Penetration monomolecular strand
-      ToHealth: 0.7  # AP weapon features reduced health damage
+      ArmorEffectiveness: 0.5  # Great armor Penetration monomolecular strand
+      ToHealth: 1.5  # Scrambles insides if it pierces
       ToTime: 0.2  # shoots a strong thread that can disrupt movement
       ToEnergy: 0.05  # impact shock; reduced due to AP ammo
       ToStun: 0.25  # impact shock; reduced due to AP ammo
+      FixRadius: 0 # Single Molecular Strand
     shotgunBehavior: 1
     shotgunSpread: 10  # fires a single strand that spirals on impact.
-    shotgunPellets: 4
+    shotgunPellets: 3
     listOrder: 16625
 
   - type: STR_SHURIKEN_CANNON_MAG  #                 16200
@@ -481,6 +506,7 @@ items:
     requires:
       - STR_ELDAR_ONLY
     requiresBuy:
+      - STR_ELDAR_REAPER_EXARCH_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_MIDTIER_PREREQ
     weight: 20
@@ -501,7 +527,7 @@ items:
       RandomType: 2  # TFTD [50% - 150%]
       ToHealth: 0.5
       ToStun: 0.2
-      ArmorEffectiveness: 0.3
+      ArmorEffectiveness: 0.5
     clipSize: 200
     battleType: 2
     armor: 30
@@ -629,10 +655,10 @@ items:
     costSell: 3000
     bigSprite: 4915
     floorSprite: 4915
+    bulletSprite: 25
     # handSprite: {mod: 40k, index: 448} # Ammo doesnt need handobj
-    bulletSprite: 0
-    hitSound: 0
-    hitAnimation: 0
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: {mod: 40k, index: 26}
     clipSize: 30 #pod containing smaller rockets think bolter
     power: 85
     damageType: 1

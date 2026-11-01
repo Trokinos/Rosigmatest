@@ -1018,7 +1018,7 @@ items:
       ITEM_SWAP_BASE_COLOR: 12
 
   - type: STR_SLAAN_CONSTRICTOR_WEBBER
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_ALIENS_ONLY
     size: 0.2
@@ -1040,8 +1040,9 @@ items:
     invHeight: 3
     recoveryPoints: 4
     listOrder: 11805
+
   - type: STR_CONSTRICTOR_WEBBER_AMMO
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_ALIENS_ONLY
     size: 0.1
@@ -1070,7 +1071,7 @@ items:
     listOrder: 11806
 
   - type: STR_SLAANESH_GRENADE  # pink gas               # 4010
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    categories: [STR_CAT_GRENADES, STR_CAT_STUN, STR_CAT_SLAANESH]
     vaporColorSurface: 18
     vaporDensitySurface: 6
     vaporProbabilitySurface: 18
@@ -1112,7 +1113,7 @@ items:
       INFECTION_DAMAGE_PERCENT: 100  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
-  - type: STR_BOLTERSLAAN  # BOLTER SLAANESH  10340
+  - type: STR_BOLTERSLAAN  # BOLTER SLAANESH  10341
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.3
     dropoff: 5
@@ -1145,7 +1146,7 @@ items:
     autoShots: 3
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10340
+    listOrder: 10341
     # *** Melee bayonet
     meleeHitSound: {mod: 40k, index: 101}
     meleeAnimation: 0
@@ -1237,7 +1238,7 @@ items:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-  - type: STR_BOLTERSLAAN_SCOPED  # BOLTER SLAANESH  10340
+  - type: STR_BOLTERSLAAN_SCOPED  # BOLTER SLAANESH  10345
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.3
     dropoff: 4
@@ -1273,7 +1274,7 @@ items:
     autoShots: 3
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10340
+    listOrder: 10345
     # *** Melee bayonet
     meleeHitSound: {mod: 40k, index: 101}
     meleeAnimation: 0
@@ -1342,7 +1343,7 @@ items:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
       REACTION_MULTIPLIER: 200  # multiplies base reaction score by this amount divided by 100
 
-  - type: STR_LARGE_KOMBIBOLTERSLAAN  # SONICBOLTER SLAANESH  10340
+  - type: STR_LARGE_KOMBIBOLTERSLAAN  # SONICBOLTER SLAANESH  10344
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.3
     dropoff: 4
@@ -1394,12 +1395,12 @@ items:
     armor: 30
     bulletSpeed: 50
     attraction: 8
-    listOrder: 10340
+    listOrder: 10344
     tags:
       ITEM_RECOIL: 40
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-  - type: STR_RIFLE_CLIP_S  # SLAANESH ROUNDS          10460                      ToStun
+  - type: STR_RIFLE_CLIP_S  # SLAANESH ROUNDS          10414                      ToStun
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1
     costSell: 150
@@ -1426,7 +1427,7 @@ items:
     armor: 30
     invWidth: 1
     invHeight: 2
-    listOrder: 10460
+    listOrder: 10414
 
   - type: STR_BOLTPISTOL_CLIP_S
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
@@ -1915,7 +1916,7 @@ items:
     armor: 30
     invWidth: 1
     invHeight: 2
-    listOrder: 10460
+    listOrder: 10415
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 50
 

@@ -116,8 +116,6 @@ crafts:
 
   - type: STR_DROPPODS
     refNode: *STR_DROPPODS
-
-  - type: STR_DROP
     requires:
       - STR_NOT_SPACEWOLVES
       - STR_NOT_PRIMARIS
@@ -125,6 +123,16 @@ crafts:
       - STR_NOT_WORDBEARERS
       - STR_MARINESCHOICEDONE
       - STR_NOT_BLACKTEMPLARS
+
+  - type: STR_DROP # Single drop pod variant, disabled since we have bigger default crafts now
+    requires:
+      - STR_NOT_SPACEWOLVES
+      - STR_NOT_PRIMARIS
+      - STR_MARINES_STRATEGY
+      - STR_NOT_WORDBEARERS
+      - STR_MARINESCHOICEDONE
+      - STR_NOT_BLACKTEMPLARS
+      - STR_GENERALLOCK #SINGLE DROP POS IS DISABLED
     fuelMax: 1300
     refuelRate: 20
     repairRate: 5  # was 1

@@ -26,6 +26,13 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_COUNTRY_HAS_SIGNED_A_SECRET_PACT: "{0} has fallen to Chaos and become corrupted. Destroy the Chaos hold there and reclaim the sector!"
   STR_COUNTRIES_HAVE_SIGNED_A_SECRET_PACT: "{0} have fallen to Chaos and become corrupted. Expect no more requisition points from them until they are reclaimed."
 
+  #*** Bounties ***
+  STR_REQUISITION_BOUNTY_50K: "Requisition Bounty: $50,000"
+  STR_REQUISITION_BOUNTY_100K: "Requisition Bounty: $100,000"
+  STR_REQUISITION_BOUNTY_250K: "Requisition Bounty: $250,000"
+  STR_REQUISITION_BOUNTY_500K: "Requisition Bounty: $500,000"
+  STR_REQUISITION_BOUNTY_1M: "Requisition Bounty: $1,000,000"
+
   STR_BASIC_BALLISTICS_DEP: "(Basic Ballistic Weapons)"
   STR_40MM_AMMO_DEP: "(40mm Grenade Ammo)"
 
@@ -1309,7 +1316,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_EXARCH_AND_AUTARCH: "Path of Command, Autarch and Exarch"
   STR_ELDAR_EXARCH_AND_AUTARCH_PAGE1: "Not all eldar are made to lead, but all those who wish can test themself by embarking the path of command to become Autarchs. To become an Autarch the aspirant must experience all the aspect warrior path to understand the true nature of each, without being able to look back. Along the way they will gain experience in the form of Eldar Runes, granting powerfull boons but differently to specialized troops they will gain less powerfull bonuses when embracing an aspect. {NEWLINE}>>> Continued on next page >>>"
   STR_ELDAR_EXARCH_AND_AUTARCH_PAGE2: "For those who are not willing to embrace the Path of command they can become Exarchs, powerfull specialist in their field with great expertise and experience. The main difference between an Exarch and an Autarch lies in their potential and equipment flexibility. Exarch tend to reach their full potential only in a fiew caracteristics and will only be able to use their aspect armour, while Autarch can reach their full potential in all caracteristics and can freely switch between all the aspect warrior armours"
-  STR_RECRUIT_ELDAR_OUTCAST_CODEX: "Asuryani Outcasts, known as Anhrathe, are those rare members of the Aeldari species who have taken up the Path of the Outcast and left their home craftworld to wander the galaxy. They generally become Rangers, the scouts of their craftworlds, well-trained survivalists and marksmen. {NEWLINE}{NEWLINE}Outcasts are generally not welcomed in any Asuryan Society unless they decide to atone for any crime committed and abandon the Path of the Outcast. {ALT}Recruiting Outcast Rangers will displease All other Eldars (-50 points per recruit){ALT}"
+  STR_RECRUIT_ELDAR_OUTCAST_CODEX: "Asuryani Outcasts, known as Anhrathe, are those rare members of the Aeldari species who have taken up the Path of the Outcast and left their home craftworld to wander the galaxy. They generally become Rangers, the scouts of their craftworlds, well-trained survivalists and marksmen. {NEWLINE}{NEWLINE}Outcasts are generally not welcomed in any Asuryan Society unless they decide to atone for any crime committed and abandon the Path of the Outcast. {ALT}Recruiting Outcast Rangers will displease All other Eldars (-50 points per recruit){ALT} Rangers have 2 Armor loadouts available to them which can be changed freely "
   STR_ELDAR_MIDTIER_REINFORCEMENTS: "Eldar Reinforcements Arriving (MIDTIER)"
   STR_ELDAR_MIDTIER_REINFORCEMENTS_DESCRIPTION: "The webway has stabilized temporarily, reinforcements are being sent."
   STR_ELDAR_HIGHTIER_REINFORCEMENTS: "Eldar Reinforcements Arriving (HIGHTIER)"
@@ -1350,7 +1357,6 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH: "Dire Avenger Exarch unlock"
   STR_ELDAR_SCORPION_EXARCH_RESEARCH: "Scorpion Exarch unlock"
   STR_ELDAR_REAPER_EXARCH_RESEARCH: "Reaper Exarch unlock"
-  STR_ELDAR_REAPER_EXARCH_M: "Eldar Reaper"
   STR_ELDAR_HAWK_RESEARCH: "Hawk Unlock"
   STR_ELDAR_HAWK_EXARCH_RESEARCH: "Hawk Exarch Unlock"
   STR_ELDAR_SPIDER_RESEARCH: "Spider Unlock"
@@ -1382,16 +1388,60 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_SOULTECH_CATEGORY: "Eldar Soul Manipulation"
 
 # Player Eldar Buildings
+
   STR_ELDAR_LABORATORY: "Eldar Laboratory"
   STR_ELDAR_WORKSHOP: "Eldar Workshop"
+
+  AVENGER: "Avenger Shrine"
+  DRAGON: "Dragon Shrine"
+  SCORPION: "Scorpion Shrine"
+  BANSHEE: "Banshee Shrine"
+  HAWK: "Hawk Shrine"
+  SPIDER: "Spider Shrine"
+  REAPER: "Reaper Shrine"
+  STR_ELDAR_AVENGER_SHRINE: "Avenger Shrine"
+  STR_ELDAR_DRAGON_SHRINE: "Dragon Shrine"
+  STR_ELDAR_SCORPION_SHRINE: "Scorpion Shrine"
+  STR_ELDAR_BANSHEE_SHRINE: "Banshee Shrine"
+  STR_ELDAR_HAWK_SHRINE: "Hawk Shrine"
+  STR_ELDAR_SPIDER_SHRINE: "Spider Shrine"
+  STR_ELDAR_REAPER_SHRINE: "Reaper Shrine"
   STR_ELDAR_ASPECT_PORTAL_UNDERGROUND: "Aspect Portal Underground (WIP)"
 
-# Player Eldar
-
+# Player Eldar Commendations
+  STR_COMMENDATION_MASTER_AVENGER_PATH: "Avenger Path Mastery"
+  STR_COMMENDATION_MASTER_AVENGER_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Avenger Path who have mastered the Avenger fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Avenger Path Weaponry."
+  STR_COMMENDATION_MASTER_DRAGON_PATH: "Dragon Path Mastery"
+  STR_COMMENDATION_MASTER_DRAGON_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Dragon Path who have mastered the Dragon fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Dragon Path Weaponry."
+  STR_COMMENDATION_MASTER_BANSHEE_PATH: "Banshee Path Mastery"
+  STR_COMMENDATION_MASTER_BANSHEE_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Banshee Path who have mastered the Banshee fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Banshee Path Weaponry."
+  STR_COMMENDATION_MASTER_SCORPION_PATH: "Scorpion Path Mastery"
+  STR_COMMENDATION_MASTER_SCORPION_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Scorpion Path who have mastered the Scorpion fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Scorpion Path Weaponry."
+  STR_COMMENDATION_MASTER_HAWK_PATH: "Hawk Path Mastery"
+  STR_COMMENDATION_MASTER_HAWK_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Hawk Path who have mastered the Hawk fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Hawk Path Weaponry."
+  STR_COMMENDATION_MASTER_SPIDER_PATH: "Spider Path Mastery"
+  STR_COMMENDATION_MASTER_SPIDER_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Spider Path who have mastered the Spider fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Spider Path Weaponry."
+  STR_COMMENDATION_MASTER_REAPER_PATH: "Reaper Path Mastery"
+  STR_COMMENDATION_MASTER_REAPER_PATH_DESCRIPTION: "{NEWLINE} Awarded to Aeldari on the Reaper Path who have mastered the Reaper fighting style. {NEWLINE}{NEWLINE} For this award, the soldier needs to have killed 30 enemies with Reaper Path Weaponry."
 # Player Eldar Items
   AUX_ELDAR_KIT: "Eldar Medkit"
   AUX_WRAITHCANNON: "Wraithcannon"
   STR_ELDAR_CITIZEN: "Eldar Citizen"
+  STR_ELDAR_AVENGER_ARMOR_ITEM: "Avenger Armor"
+  STR_ELDAR_DRAGON_ARMOR_ITEM: "Dragon Armor"
+  STR_ELDAR_BANSHEE_ARMOR_ITEM: "Banshee Armor"
+  STR_ELDAR_SCORPION_ARMOR_ITEM: "Scorpion Armor"
+  STR_ELDAR_HAWK_ARMOR_ITEM: "Hawk Armor"
+  STR_ELDAR_SPIDER_ARMOR_ITEM: "Spider Armor"
+  STR_ELDAR_REAPER_ARMOR_ITEM: "Reaper Armor"
+  STR_ELDAR_AVENGEREX_ARMOR_ITEM: "Avenger Exarch Armor"
+  STR_ELDAR_DRAGONEX_ARMOR_ITEM: "Dragon Exarch Armor"
+  STR_ELDAR_BANSHEEEX_ARMOR_ITEM: "Banshee Exarch Armor"
+  STR_ELDAR_SCORPIONEX_ARMOR_ITEM: "Scorpion Exarch Armor"
+  STR_ELDAR_HAWKEX_ARMOR_ITEM: "Hawk Exarch Armor"
+  STR_ELDAR_SPIDEREX_DS_ARMOR_ITEM: "Death Weaver Spider Exarch Armor"
+  STR_ELDAR_SPIDEREX_PB_ARMOR_ITEM: "Powerblade Array Spider Exarch Armor"
+  STR_ELDAR_REAPEREX_ARMOR_ITEM: "Reaper Exarch Armor"
   STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_ITEM: "Shuriken Cannon HWP"
   STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_P: "Shuriken Cannon HWP"
   STR_ELDAR_HWP_SCATTERLASER_ARMOR_ITEM: "Scatter Laser HWP"
@@ -1455,8 +1505,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_SPIDER_ARMOR_P: "Spider Armor"
   STR_ELDAR_SPIDER_CORPSE_P: "Warp Spider Corpse"
   STR_ELDAR_SPIDEREX_PLAYER: "Spider Exarch"
-  STR_ELDAR_SPIDEREXDS_ARMOR_P: "Spider Exarch Death Spinner Armor"
-  STR_ELDAR_SPIDEREXDS_CORPSE_P: "Spider Exarch Death Spinner Corpse"
+  STR_ELDAR_SPIDEREXDS_ARMOR_P: "Spider Exarch Deathweaver Armor"
+  STR_ELDAR_SPIDEREXDS_CORPSE_P: "Spider Exarch Deathweaver Corpse"
   STR_ELDAR_SPIDEREXPB_ARMOR_P: "Spider Exarch Power Blade Armor"
   STR_ELDAR_SPIDEREXPB_CORPSE_P: "Spider Exarch Power Blade Corpse"
   STR_ELDAR_ARMOR6_P: "Reaper Armor"
@@ -1466,7 +1516,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_REAPER_REAPERLAUNCHER_ARMOR_P: "Reaper Launcher Armor"
   STR_ELDAR_REAPER_TEMPESTLAUNCHER_ARMOR_P: "Tempest Launcher Armor"
   STR_ELDAR_REAPER_SHURIKENCANNON_ARMOR_P: "Shuriken Cannon Armor"
-  STR_ELDAR_REAPER: "Eldar Reaper Exarch"
+  STR_ELDAR_REAPEREX: "Eldar Reaper Exarch"
+  STR_ELDAR_REAPER_EXARCH_M: "Reaper Exarch" # Player Reaper Exarch
   STR_ELDAR_ARMOR_EXARCH_P: "Reaper Exarch Armor"
   STR_ELDAR_REAPEREX_REAPERLAUNCHER_ARMOR_P: "Reaper Launcher Armor"
   STR_ELDAR_REAPEREX_TEMPESTLAUNCHER_ARMOR_P: "Tempest Launcher Armor"
@@ -1489,31 +1540,38 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   # eldar skills
   STR_SKILL_WARPSPIDER_STEALTH_TELEPORT: "Warp-jump"
+  STR_DEATHWEAVERS_SPECIALWEAPON: "Death Weavers"
+  STR_POWERBLADEARRAY_SPECIALWEAPON: "Powerblade Array"
+  STR_POWERBLADEARRAY_NAME: "Powerblades"
+  STR_FIREDRAGON_CORONA_SPECIALWEAPON: "Flame Corona"
   STR_SKILL_BANSHEE_EXARCH_DASH: "Banshee Exarch Sprint"
   STR_SKILL_BANSHEE_DASH: "Banshee Sprint"
   STR_BANSHEE_MASK_INTIMIDATE: "Psychic Scream"
   STR_BANSHEE_INTIMIDATE_SPECIALWEAPON: "Psychic Scream"
 
   # ELDAR SOLDIER TRANSFORMATIONS CODEX (lore fluff plus transformation requirements)
-  STR_ELDAR_ASPECT_HELPER_SCORPIONS: "The Striking Scorpions are the form of Aspect Warriors focused on close combat, stealth, and assassination. They epitomise the deadly attributes of their namesake, which can sting and kill a creature many times its size. {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Scorpion are: Combat experience (rank 1 or higher) and {ALT}bravery: 70, melee: 50{ALT}" # The history of the Striking Scorpions is shrouded in infamy from their very beginning from the story of their founder, Phoenix Lord Arhra, Father of the Scorpions, now known as the Fallen Phoenix"
-  STR_ELDAR_ASPECT_HELPER_BANSHEE: "Howling Banshees are the form of Aspect Warriors that represents the fury of the Murder God as well as his cunning. According to Eldar mythology, Banshees are the harbingers of woe and death whose cry, it is said, heralds ill fate, calling forth dead spirits from the Warp and forewarning certain death. {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Banshee are: Combat experience (rank 1 or higher) and{ALT}bravery: 60, reactions: 65{ALT}"
-  STR_ELDAR_ASPECT_HELPER_REAPER: "Dark Reapers are the most sinister types of Eldar Aspect Warrior. They emulate Khaine in his aspect as \"the Destroyer\" and the harvester of souls. They are the most heavily equipped of all Aspect Warriors, they specialize in the use of destructive, long-range weaponry.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Reaper are: Combat experience (rank 1 or higher) and {ALT}firing: 65, strength: 40{ALT}"
-  STR_ELDAR_ASPECT_HELPER_AVENGER: "Dire Avengers, or Fian Dialcaman, are the form of Aspect Warriors representing Khaine's aspect of the noble and merciless warrior, who punishes the unworthy and shows true devotion to his own people. They are the most tactically flexible and numerous of all the Aspect Warriors.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Dire Avenger are: Combat experience (rank 1 or higher) and {ALT}firing: 60{ALT}"
-  STR_ELDAR_ASPECT_HELPER_DRAGON: "The Fire Dragons are the form of Aspect Warriors embodying the writhing, sinewy dragon of Eldar myths as well as the elemental destruction of Khaine. Fire Dragons are aggressive and warlike close combat fighters who utilized heat weapons to destroy enemy vehicles and strongpoints.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Fire Dragon are: Combat experience (rank 1 or higher) and {ALT}bravery: 70, health: 40{ALT}"
-  STR_ELDAR_ASPECT_HELPER_SPIDER: "The Warp Spiders epitomise the concept of an aggressive defence. They specialise in the use of a personal teleportation device built into their Aspect Armour to make a series of rapid jumps through the warp making nearly impossible to target them. {NEWLINE}Beware: {ALT}repeated usage of the personal teleportation device risk exposing the user to the dangerous energies of the warp{ALT} {NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Warp Spider are: Combat experience (rank 1 or higher) and {ALT}health: 55, strength: 40, bravery: 70{ALT}"
-  STR_ELDAR_ASPECT_HELPER_SEER: "Seers are members of the Eldar race who have willingly developved their psychic power enough to confidently use their them without fear of attracting daemons or creating rifts within the warp. Such individuals are said to walk down the Witch Path or the Path of the Seer where they can gain further experience in the use of their natural psyker-based abilities.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Seer are: Combat experience (rank 1 or higher) and {ALT}psychic ability: 50, devotion: 50{ALT}"
+  STR_ELDAR_ASPECT_HELPER_SCORPIONS: "{NEWLINE}{NEWLINE}Requirements for a Guardian to be promoted to a Striking Scorpion are: {NEWLINE} Rank 1 or higher {NEWLINE} Scorpion Aspect Shrine at base {NEWLINE} Scorpion Armor available at base." # The history of the Striking Scorpions is shrouded in infamy from their very beginning from the story of their founder, Phoenix Lord Arhra, Father of the Scorpions, now known as the Fallen Phoenix"
+  STR_ELDAR_ASPECT_HELPER_BANSHEE: "{NEWLINE}{NEWLINE}Requirements for a Guardian to be promoted to a Howling Banshee are: {NEWLINE} Rank 1 or higher {NEWLINE} Banshee Aspect Shrine at base {NEWLINE} Banshee Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_REAPER: "{NEWLINE}{NEWLINE}Requirements for a Guardian to be promoted to a Dark Reaper are: {NEWLINE} Rank 1 or higher {NEWLINE} Reaper Aspect Shrine at base {NEWLINE} Reaper Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_AVENGER: "{NEWLINE}{NEWLINE}Requirements for a Guardian to be promoted to a Dire Avenger are: {NEWLINE} Rank 1 or higher {NEWLINE} Avenger Aspect Shrine at base {NEWLINE} Avenger Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_DRAGON: "{NEWLINE}{NEWLINE}Requirements for a Guardian to be promoted to a Fire Dragon are: {NEWLINE} Rank 1 or higher {NEWLINE} Dragon Aspect Shrine at base {NEWLINE} Dragon Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_SPIDER: "{NEWLINE}{NEWLINE}Requirements for a Guardian to be promoted to a Warp Spider are: {NEWLINE} Rank 1 or higher {NEWLINE} Spider Aspect Shrine at base {NEWLINE} Spider Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_HAWK: "{NEWLINE}{NEWLINE}Requirements for a Guardian to be promoted to a Swooping Hawk are: {NEWLINE} Rank 1 or higher {NEWLINE} Hawk Aspect Shrine at base {NEWLINE} Hawk Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_SEER: "Seers are members of the Eldar race who have willingly developed their psychic power enough to confidently use their them without fear of attracting daemons or creating rifts within the warp. Such individuals are said to walk down the Witch Path or the Path of the Seer where they can gain further experience in the use of their natural psyker-based abilities.{NEWLINE}{NEWLINE}Requirement for a guardian to be promoted to a Seer are: Combat experience (rank 1 or higher) and {ALT}psychic ability: 50, devotion: 50{ALT}"
   STR_ELDAR_ASPECT_HELPER_WARLOCK: "When a particularly gifted Eldar Warrior or Seer can to develop their power in a way that mix the deadly combination of Psychic power, Blade and Firepower, they can embark in the difficult path that is the Path of the Warlock, becoming some of the most respected among the Eldar ranks. Their psychic potency is only second to that of the Farseers.{NEWLINE}{NEWLINE}Requirement for an Eldar Warrior (Banshee, Dire Avenger, Scorpion, Reaper or Dragon) or Seer to be promoted to a Warlock are: Combat experience (rank 1 or higher) and {ALT}psychic ability: 50, devotion: 30, firing: 55, melee: 55{ALT}"
   STR_PROMOTE_BEGIN_AUTARCH_PATH_HELPER: "Any Eldar who wished to become an Autarch has to start by declaring and adopting its discipline and make their purpose to master the art of warcraft, command, and tactical supremacy. This declaration will move them toward their goal and will allow them to experience every aspect in the path of warrior. {NEWLINE}Walking the path of command will grand severely reduced bonuses when adopting a specific aspect compared to warriors who embrace that aspect for life. {NEWLINE}{NEWLINE}Requirement for a guardian to start the path of command are: Combat experience (rank 1 or higher) and {NEWLINE}{ALT}bravery: 70{ALT}"
   STR_PROMOTE_TO_AUTARCH_HELPER: "When aspiring Autarchs Complete their journey, their knowledge allow them to coordinate disparate Aspect shrines and Guardian forces without losing control of the flow of battle, no matter what atrocities the enemy may commit. {NEWLINE}{NEWLINE}Requirement for an Aspiring Autarch to become a true autarch are: Combat experience (rank 1 or higher) in the current aspect and experience in all other aspect warrior paths{NEWLINE}{ALT}Striking Scorpion, Howling Banshee, Dark Reaper, Dire Avenger, Fire Dragon, Warp Spider{ALT}"
-  STR_ELDAR_ASPECT_HELPER_SCORPION_EXARCH: "Exarchs are regarded with both awe and revulsion by other Aeldari. Awe, because Exarchs single-mindedly pursue a side of their nature. Revulsion, because the Exarchs have become trapped in the Warrior Aspect and are destined for a life. Striking Scorpion Exarch usually cover the role of strike squad leaders and frontline commanders. {NEWLINE}{NEWLINE}Requirement for a Striking Scorpion to become an Exarch are: Combat experience (rank 1 or higher) and {NEWLINE}{ALT}bravery: 70{ALT}"
-  STR_ELDAR_ASPECT_HELPER_AVENGER_EXARCH: "Exarchs are regarded with both awe and revulsion by other Aeldari. Awe, because Exarchs single-mindedly pursue a side of their nature. Revulsion, because the Exarchs have become trapped in the Warrior Aspect and are destined for a life. Dire Avenger Exarch usually cover the role of infantry leaders, diplomats bodyguard and masters of ranged combact. {NEWLINE}{NEWLINE}Requirement for a Dire Avenger to become an Exarch are: Combat experience (rank 1 or higher) and {NEWLINE}{ALT}reactions: 85, firing: 90{ALT}"
-  STR_ELDAR_ASPECT_HELPER_DRAGON_EXARCH: "Exarchs are regarded with both awe and revulsion by other Aeldari. Awe, because Exarchs single-mindedly pursue a side of their nature. Revulsion, because the Exarchs have become trapped in the Warrior Aspect and are destined for a life. Fire Dragon Exarch usually cover the role of assault strike group, siege breakers and anti-heavy armor infantry, thanks to their array of long and short range melta weapons {NEWLINE}{NEWLINE}Requirement for a Fire Dragon to become an Exarch are: Combat experience (rank 1 or higher) and {NEWLINE}{ALT}bravery: 85, health: 65{ALT}"
-  STR_ELDAR_ASPECT_HELPER_REAPER_EXARCH: "Exarchs are regarded with both awe and revulsion by other Aeldari. Awe, because Exarchs single-mindedly pursue a side of their nature. Revulsion, because the Exarchs have become trapped in the Warrior Aspect and are destined for a life. Dark Reaper Exarch usually cover the role of heavy support leaders, preferring long range engagements where their heavy weapons and strong armour shines {NEWLINE}{NEWLINE}Requirement for a Dark Reaper to become an Exarch are: Combat experience (rank 1 or higher) and {NEWLINE}{ALT}firing: 85, strength: 50{ALT}"
-  STR_ELDAR_ASPECT_HELPER_SPIDER_EXARCH: "Exarchs are regarded with both awe and revulsion by other Aeldari. Awe, because Exarchs single-mindedly pursue a side of their nature. Revulsion, because the Exarchs have become trapped in the Warrior Aspect and are destined for a life. Warp Spider exarch usually become leaders of covert operation groups or solo operative in infiltration missions {NEWLINE}{NEWLINE}Requirement for a Warp Spider to become an Exarch are: Combat experience (rank 1 or higher) and {NEWLINE}{ALT}health: 55, strength: 40, bravery: 70{ALT}"
-  STR_ELDAR_ASPECT_HELPER_BANSHEE_EXARCH: "Exarchs are regarded with both awe and revulsion by other Aeldari. Awe, because Exarchs single-mindedly pursue a side of their nature. Revulsion, because the Exarchs have become trapped in the Warrior Aspect and are destined for a life. Howling Banshee exarch usually cover the role of leader of specialized melee infantry killteams, where their deadly grace in melee mixed with their psychosonic war shout delivered by their mask alow them to defeat enemy leaders and dangerous enemies. {NEWLINE}{NEWLINE}Requirement for a Howling Banshee to become an Exarch are: Combat experience (rank 1 or higher) and {NEWLINE}{ALT}bravery: 60, reactions: 65{ALT}"
+  STR_ELDAR_ASPECT_HELPER_SCORPION_EXARCH: "{NEWLINE}{NEWLINE}Requirements for a Striking Scorpion to become an Exarch are: {NEWLINE} 30 kills using Scorpion Aspect Weapons {NEWLINE} Rank 1 or higher {NEWLINE} Scorpion Aspect Shrine at base {NEWLINE} Scorpion Exarch Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_AVENGER_EXARCH: "{NEWLINE}{NEWLINE}Requirements for a Dire Avenger to become an Exarch are: {NEWLINE} 30 kills using Avenger Aspect Weapons {NEWLINE} rank 1 or higher {NEWLINE} Avenger Aspect Shrine at base {NEWLINE} Avenger Exarch Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_DRAGON_EXARCH: "{NEWLINE}{NEWLINE}Requirements for a Fire Dragon to become an Exarch are: {NEWLINE} 30 kills using Dragon Aspect Weapons {NEWLINE} Rank 1 or higher {NEWLINE} Dragon Aspect Shrine at base {NEWLINE} Dragon Exarch Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_REAPER_EXARCH: "{NEWLINE}{NEWLINE}Requirements for a Dark Reaper to become an Exarch are: {NEWLINE} 30 kills using Reaper Aspect Weapons {NEWLINE} Rank 1 or higher {NEWLINE} Reaper Aspect Shrine at base {NEWLINE} Reaper Exarch Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_SPIDER_EXARCH: "{NEWLINE}{NEWLINE}Requirements for a Warp Spider to become an Exarch are: {NEWLINE} 30 kills using Spider Aspect Weapons {NEWLINE} Rank 1 or higher {NEWLINE} Spider Aspect Shrine at base {NEWLINE} Spider Exarch Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_BANSHEE_EXARCH: "{NEWLINE}{NEWLINE}Requirements for a Howling Banshee to become an Exarch are: {NEWLINE} 30 kills using Banshee Aspect Weapons {NEWLINE} Rank 1 or higher {NEWLINE} Banshee Aspect Shrine at base {NEWLINE} Banshee Exarch Armor available at base."
+  STR_ELDAR_ASPECT_HELPER_HAWK_EXARCH: "{NEWLINE}{NEWLINE}Requirements for a Swooping Hawk to become an Exarch are: {NEWLINE} 30 kills using Hawk Aspect Weapons {NEWLINE} Rank 1 or higher {NEWLINE} Hawk Aspect Shrine at base {NEWLINE} Hawk Exarch Armor available at base."
 
   # eldar transformations
   #STR_PROMOTE_TO_ASPECT_WARRIOR: "Path of the Warrior" #(unused)
+  STR_RANGER_TO_GUARDIAN_PATH: "Return to Society"
   STR_PROMOTE_BEGIN_AUTARCH_PATH: "Walk the path of Command"
   STR_PROMOTE_TO_DRAGON: "Path of the Dragon"
   STR_PROMOTE_TO_DRAGON_AUTARCH: "Path of the Dragon (Path of Command)"
@@ -1535,6 +1593,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_PROMOTE_TO_REAPER_EXARCH: "Shrouded by the Reaper Path"
   STR_PROMOTE_TO_HAWK_EXARCH: "Devoured by the Hawk Path"
   STR_PROMOTE_TO_SPIDER_EXARCH: "Ensnared by the Spider Path"
+  STR_PROMOTE_TO_SPIDER_EXARCH_PB: "Ensnared by the Spider Path (PB)"
   STR_PROMOTE_TO_BANSHEE_EXARCH: "Bewitched by the Banshee Path"
   #STR_PROMOTE_TO_PSYKER: "Path of the Psyker" #(unused)
   STR_PROMOTE_TO_SEER: "Path of the Seer"
@@ -1596,7 +1655,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_RANGER_LONG_RIFLE: "Ranger Long Rifle"
   STR_RANGER_LONG_RIFLE_SCOPED: "Scoped Ranger Long Rifle"
   STR_RANGER_LONG_RIFLE_MAG: "Long Rifle Magazine"
-  STR_RANGER_LONG_RIFLE_MAG_FIXED: "Long Rifle Mag (Preloaded)"
+  STR_RANGER_LONG_RIFLE_MAG_FIXED: "Long Rifle Mag"
   STR_HAWK_WEAPON_SNAPSHOT: "Snap Burst"
   STR_HAWK_WEAPON_AIMEDSHOT: "Aimed Burst"
   STR_LASBLASTER: "Lasblaster"
@@ -1610,6 +1669,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_HAWK_SCATTERLASER_CHARGE: "Hawk Scatter Laser Charge"
   STR_DEATH_SPINNER: "Death Spinner"
   STR_SPINNER_SPOOL: "Spinner Spool Ammo"
+  STR_WIREWEAVE_SPOOL: "Wireweave Spool Ammo"
   STR_ELDAR_POWER_BLADE: "Power Blade (LHand)"
   STR_REAPER_LAUNCHER: "Reaper Launcher"
   STR_REAPER_LAUNCHER_AMMO: "Reaper Launcher Pod"
@@ -1694,7 +1754,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ELDAR_SPIDER_ARMOR_CODEX: "{NEWLINE} Warp Spider Aspect Armour is much bulkier compared to that worn by other Aspect Warriors, making the Warp Spiders more heavily armoured than average but also among the slowest of the usually highly mobile Asuryani Aspects. While this would be more constricting for the movements of other Aeldari warriors, the Warp Spiders' unique teleportation abilities negate this disadvantage. Warp Spider Aspect Armour is also further warded to allow for safer travel through the Warp, which provides some protection against psychic powers when in realspace."
   STR_ELDAR_SPIDEREX_AUTOPSY: "Eldar Spider Exarch Origin"
   STR_ELDAR_SPIDEREX_AUTOPSY_CODEX: "{NEWLINE} Taking their name from the arachnoid creatures who protect the Infinity Circuits the Exarchs of the Warp Spider shrines have honed their deadly skills as ambushers to a high degree. Passing on this knowledge to the Warp Spider squads that they personally lead, they are experts in surprise assaults. They teleport onto the battlefield in a storm of crackling psychic lightning, but also know when it is prudent to withdraw from combat and regroup preparing for further guerrilla attacks."
-  STR_ELDAR_SPIDEREXDS_ARMOR_CODEX: "{NEWLINE} Some Exarchs will go into battle with two armor mounted Death Spinners, wielding them as ably as they would a single weapon. These weapons eject a mass of rigid molecular wire strands that slices through armour and mutilates whatever is within."
+  STR_ELDAR_SPIDEREXDS_ARMOR_CODEX: "{NEWLINE} Some Exarchs will go into battle with two armor mounted Deathweavers, wielding them as ably as they would a single weapon. These weapons eject a mass of rigid molecular wire strands that slices through armour and mutilates whatever is within."
   STR_ELDAR_SPIDEREXPB_ARMOR_CODEX: "{NEWLINE} In addition to ranged weaponry, some Warp Spider Exarch armor will also be equipped with Powerblades, a form of Asuryani Power Weapons usually only available to Warp Spider Exarchs. They are also mounted on the forearm or retrofitted to the vambrace of the Warp Spider's Exarch Armour rather than being hand-held."
   STR_ELDAR_SEER_AUTOPSY: "Eldar Seer Origin"
   STR_ELDAR_SEER_AUTOPSY_CODEX: "{NEWLINE} Eldar that walk down the Path of the Seer gain proper training and experience in the use of their natural psyker-based abilities. Each Seer explores their potential in their own way, some learning to move objects through kinetic forces , create living symphonies of shape and movement. Others use their empathic powers for healing purposes or to counsel others The range of abilities is vast and largely depends on the paths the Seer has explored previously."
@@ -1740,13 +1800,16 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SUNPISTOL_CODEX: "{NEWLINE} The pistol counterpart of lasblasters, these are rapid-fire one handed laser weapons."
   STR_SUNPISTOL_SCOPED_CODEX: "{NEWLINE} Scoped variant of the Sunpistol, allowing their wielder to take precise shots from a relatively long distance."
   STR_DEATH_SPINNER_CODEX: "{NEWLINE}  A Death Spinner is the ritual armament of the Warp Spiders Aspect that extrudes a thick cloud of razor-sharp monofilament wire. The spinner's magnetic containment field spools the wire together and hurls it toward the enemy. The wire's own tension causes it to writhe and lash, and where it touches flesh, slices through the victim's body, causing an agonising, messy death."
+  STR_DEATHWEAVERS_CODEX: "{NEWLINE} Death Weavers are a type of Monofilament Weapon used by Warp Spiders. They are twin-linked shorter ranged versions of standard Death Spinners and are mounted in pairs on the waist of Warp Spider Exarchs."
   STR_ELDAR_POWER_BLADE_CODEX: "{NEWLINE} Power Blades are Eldar power weapons commonly wielded by Warp Spider Exarchs. A blade is fixed to the forearm and can be skillfully used to slash at the enemy."
+  STR_POWERBLADEARRAY_CODEX: "{NEWLINE} Powerblades attached in a pair to Spider Exarch armor, they are able to strike faster at enemies in close range whilst also freeing up the hands of their wielder."
   STR_ELDAR_LAUNCHER_UFOPEDIA: "{NEWLINE} The Aeldar Missile Launcher is the standard missile weapon for Eldar ground forces. Instead of the primitive launching-tubes favoured by the Imperium, they use complex chambered pods designed to contain several types of ammo such as Starshot(Krak) and Sunburst(frag) warheads, greatly decreasing the need to reload."
   STR_ELDAR_REAPER_LAUNCHER_CODEX: "{NEWLINE} A fast firing heavy weapon which launches a barrage of armour-piercing missiles to devastate the enemy. The Reaper Launcher utilizes a number of complex chambered pods containing a variety of ammunition types. These pods allow the firer to perform a number of support duties such as anti-tank or anti-infantry, and all but eliminate the need to reload."
   STR_ELDAR_TEMPEST_LAUNCHER_CODEX: "{NEWLINE} The Tempest Launcher is an advanced Eldar Missile Launcher used by Exarchs of the Dark Reaper Warrior Aspect. These ancient versions of the Dark Reapers' Reaper Launchers fire clusters of small reaper missiles in a much greater arc. They are able to affect a larger target area and be used in an indirect fire role."
   STR_SPINNERET_RIFLE_CODEX: "{NEWLINE} Spinneret Rifles operate by ejecting a single, rigid strand of monomolecular wire that punches through armour, before recoiling in a tight spiral. Spinneret Rifles have a more consistent armour penetration ability than standard Death Spinners, and a longer range. However, they will usually only affect a single target at a time."
   STR_AELDARI_FLAMER_CODEX: "{NEWLINE} Aeldari Flamers are a type of Flamethrower used by the Craftworld Eldar which works similar to their Imperial counterparts. These flamers unleash a stream of highly refined and adhesive fuel, which ignites upon leaving the barrel of the weapon."
   STR_DRAGON_BREATH_FLAMER_CODEX: "{NEWLINE} Aeldari master-crafted Flamer weapons are sometimes used by Fire Dragons if there is a high chance of encountering swarms of enemies during anti armor and tank operations. They unleash a raging inferno upon nearby foes and block enemy movement."
+  STR_FIREDRAGONCORONA_CODEX: "{NEWLINE} It is said that Fire Dragon Exarchs generate a corona of lambent flame around themselves when the battle lust is upon them."
   STR_AELDARI_SWORD_CODEX: "{NEWLINE} Skillfully crafted with perfect balance and a razor edge, even the least experienced of Eldar Guardians will wield these swords with finesse in close quarters combat. Whether these weapons can penetrate the protection of a heavily armored foe is a different matter."
   STR_AELDARI_CHAINSWORD_CODEX: "{NEWLINE} Despite the brute strength required to handle these weapons, it is not uncommon to see Eldar Guardians wielding chainswords in melee combat. Their swiftly-cycling rows of mono-edged teeth shred armor causing considerable damage to any creature in their path."
   STR_AELDARI_POWERSWORD_CODEX: "{NEWLINE} There is perhaps nothing so dangerous as a skilled swordsman wielding one of these deadly alien blades. Impossibly slender yet strong, shimmering with field energies, and studded with mysterious glowing gems, an Aeldari power sword is a premier status symbol for anyone lucky enough to wield one."
@@ -2839,6 +2902,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ORK_KRAKSTIKKBOMB_UFOPEDIA: "{NEWLINE} Heavy Ork Krak Stikkbombs, lower throwing range but highly capable against armored targets."
   STR_TANKBUSTA_BOMB: "Tankbusta bomb"  # ORKMOD
   STR_TANKBUSTA_BOMB_UFOPEDIA: "{NEWLINE} Ork Tankbusta bombs are a mix of heavily loaded explosive, krak and melta grenades, none configured the same, but all mass-destructive."
+  STR_TANKBUSTA_INVENTORY_BOMB_CODEX: "{NEWLINE} When Ork squig hearder wants something blow up, they strap on multiple bombs on a squig, this is the messy result of Orks thinking VERY hard that there isn't enough explosive in a Tankbusta bomb strapped to a squig and add some more "
   STR_ORK_STORMBOY: "Stormboy"  # ORKMOD
   STR_ORK_STORMBOYZ_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_ORK_STORMBOY_CORPSE: "Stormboy Corpse"  # ORKMOD
@@ -3063,13 +3127,29 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   STR_ORK_ARMOR_TRAIN: "Kwa-li-tee o' Loif Trainin' Arma"
 
-  STR_SQUIG_TEST: "Squig TEST"
-  STR_SQUIG_TEST_ARMOR: "Squig TEST armor"
+  STR_SQUIG_ASSAULT_AI: "Azzault Squig"
+  STR_SQUIG_ARMOR_AI: "Azzault Squig Arma"
+  STR_SQUIG_BOMBA_AI: "Squig Bommarz"  # ORKMOD
+  STR_SQUIG_ARMOR_BOMB_AI: "Squig Bommarz Arma"  # ORKMOD
 
   STR_SQUIG: "Squig"
-  STR_SQUIG_ARMOR: "Squig"
-  STR_SQUIG_ARMOR_BOMB: "Bomb Squig"  # ORKMOD
+  STR_SQUIG_HORDE: "RunAway Squigs Horde"
+  STR_SQUIG_ARMOR: "Azzault Squig Arma"
+  STR_SQUIG_ARMOR_BOMB: "Squig Bommarz Arma"  # ORKMOD
   STR_SQUIG_CORPSE: "Squig Corpse"  # ORKMOD
+  STR_PLAYER_SQUIG_CORPSE: "Squig Corpse"
+  STR_SQUIG_CORPSE_AI: "Squig Corpse"
+  STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE: "Stuffed Squig Corpse"
+  STR_SQUIG_CORPSE_EXPLOSIVE_AI: "Stuffed Squig Corpse"
+  STR_SQUIG_BITE: "Squig Chomp"
+  STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI: "Squig Chomp" #to be used by AI bomb squig only
+  STR_TANKBUSTA_INVENTORY_BOMB: "Big Tankbusta Bomma"
+  STR_TANKBUSTA_BOMB_COLLAR: "Bomma Trigger Collar"
+
+  STR_ORK_SQUIG_EXAM: "Ork Squig Examination"
+  STR_SQUIG_BITE_CODEX: "Don't look inside da gifta squig mouth. Really. Don't."
+  STR_SQUIG_AUTOPSY: "Squig Origin"
+  STR_SQUIG_EXPLOSIVE_AUTOPSY: "Bommarz Squig Origin"
 
   STR_PLAYER_GROT: "Gretchin"
   STR_PLAYER_GROTS_ARMOR: "Gretchin Arma"
@@ -7919,6 +7999,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ALPHA_SOLDIER_AUTOPSY: "Alpha Legionnaire Origins"
   STR_ALPHA_SOLDIER_AUTOPSY_UFOPEDIA: "{NEWLINE}Our intel is very limited on the Alpha Legion, as they have been entirely exterminated. Over three times. Alpha Legionnaires are expert infiltrators and covert operatives that work in small cells known as harrows or cohorts. The Alpha Legion's role in spreading heretical cults has earned them the loathing of the Inquisition."
 
+
   STR_ALPHA_LEGION_CORPSE_DECOY: "Alpha Legion Decoy Corpse"
   STR_ALPHA_LEGION_CORVUS_DECOY_CORPSE: "Alpha Legion Corvus Decoy Corpse"
   STR_ALPHA_LEGION_TERMINATOR_DECOY_CORPSE: "Alpha Legion Terminator Decoy Corpse"
@@ -8239,6 +8320,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_CAT_KHORNE: "Khorne"
   STR_CAT_NECRON: "Necron"
   STR_CAT_SPELL: "Sorcery"
+  STR_CAT_STUN: "Stun weapons"
   STR_CAT_TAU: "Tau"
 
 
@@ -10095,6 +10177,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SKILL_SPRINT_REVEALED: "Your sprinting unit is now visible!"
   # ** SUSTAINED HITS SCRIPT **
   STR_SCRIPT_SUSTAINED_HIT_NOTICE: "Your unit does additional damage due to his melee mastery!"
+  # ** FIREDRAGON CORONA COOLDOWN SCRIPT **
+  STR_SCRIPT_FIREDRAGON_CORONA_RELOAD_RECHARGING: "Flame Corona Recharging. Turns left: {0}"
+  STR_SCRIPT_FIREDRAGON_CORONA_RELOAD_RECHARGED: "Flame Corona Ready For Use"
   # ** ENVIRONMENTAL SCRIPTS
 
   STR_DAEMON_PURGE_STRONG_ENVIRONMENTAL_TOKEN: "Strong Daemonic Purge Environmental Token"
@@ -11535,16 +11620,16 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_MARBO3_LOCK_RESEARCH: "Marbo Lock 3"
   STR_MARBO4_LOCK_RESEARCH: "Marbo Lock 4"
 
-  STR_ULTRA_CATAPHRACT_AI: "Space Marine Cataphractii"
-  STR_ULTRAcataphract_ARMOR_AI: "Space Marine Cataphractii Armor"
-  STR_ULTRAcataphract_ARMOR: "Space Marine Cataphractii Armor"
-  STR_ULTRAcataphract_CORPSE: "Space Marine Cataphractii Corpse"
-  STR_ULTRAcataphract_CORPSE_GEO: "Space Marine Cataphractii Corpse"
+  STR_ULTRA_CATAPHRACT_AI: "Ultramarine Cataphractii"
+  STR_ULTRAcataphract_ARMOR_AI: "Ultramarine Cataphractii Armor"
+  STR_ULTRAcataphract_ARMOR: "Ultramarine Cataphractii Armor"
+  STR_ULTRAcataphract_CORPSE: "Ultramarine Cataphractii Corpse"
+  STR_ULTRAcataphract_CORPSE_GEO: "Ultramarine Cataphractii Corpse"
 
-  STR_ULTRA_SATURNINE_AI: "Space Marine Saturnine"
-  STR_ULTRAsaturnine_ARMOR: "Space Marine Saturnine Armor"
-  STR_ULTRAsaturnine_CORPSE: "Space Marine Saturnine Corpse"
-  STR_ULTRAsaturnine_CORPSE_GEO: "Space Marine Saturnine Corpse"
+  STR_ULTRA_SATURNINE_AI: "Ultramarine Saturnine"
+  STR_ULTRAsaturnine_ARMOR: "Ultramarine Saturnine Armor"
+  STR_ULTRAsaturnine_CORPSE: "Ultramarine Saturnine Corpse"
+  STR_ULTRAsaturnine_CORPSE_GEO: "Ultramarine Saturnine Corpse"
 
   STR_CATAMARINE_ASSAULT: "Support Battle-Brothers"
   STR_CATAMARINE_ASSAULT_SITE: "Chaos Outpost"
@@ -13357,6 +13442,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ADV_DROPPODS: "Firestorm Drop Pods Requisition"
   STR_DROPPOD_ARMOR: "Firestorm Drop Pod"
 
+  STR_DROPPOD_UFOPEDIA: "{NEWLINE} Drop Pods are atmospheric assault transports primarily used by the Adeptus Astartes for orbital insertion and planetary assaults. Use by non-Astartes units such as Imperial Guardsmen is not recommended."
+  STR_DROPPOD_ADVANCED_UFOPEDIA: "{NEWLINE} Drop Pods are atmospheric assault transports primarily used by the Adeptus Astartes for orbital insertion and planetary assaults. Use by non-Astartes units such as Imperial Guardsmen is not recommended. {NEWLINE}{NEWLINE}Advanced Drop pods deployments are reinforced with an additional drop pod equipped with a firestorm rocket battery, scattered in the battlefield"
+
+
   STR_GAIN_500: "(+500 Score This Month)"
   STR_GAIN_250: "(+250 Score This Month)"
   STR_GAIN_100: "(+100 Score This Month)"
@@ -13868,6 +13957,14 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SWLANDRAIDER: "SW LANDRAIDER"
   STR_SWLEMANRUSS: "SW LEMAN COLUMN"
 
+  STR_SWDROPPODS_CODEX: "{NEWLINE} Drop Pods are atmospheric assault transports primarily used by the Space Wolves for orbital insertion and planetary assaults. Use by non-Astartes units such as Imperial Guardsmen is not recommended."
+  STR_SWRHINOS_CODEX: "{NEWLINE} The Rhino are armoured personnel carriers widely used by the most elite Imperial forces. This Space Wolves variant is equipped with Razorback turrent with Hellfrost Twinlinked Bolters in order to fight the enemies of the Imperium for the greater glory of the Emperor."
+  STR_THUNDERHAWK_UFOPEDIA: "{NEWLINE} The Thunderhawk gunship is used by the Adeptus Astartes as the primary means of deploying forces into combat and as a reliable source of air support.{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}      BOMBARD>{ALT}1"
+  STR_THUNDERHAWK_GRAVDROP_UFOPEDIA: "{NEWLINE} The Thunderhawk gunship is used by the Adeptus Astartes as the primary means of deploying forces into combat and as a reliable source of air support.{NEWLINE}This variant is equipped for a low altitude assault drop, a first preemptive bombardment will be performed before air-dropping your soldiers into battle to clear the drop zone from hostiles. {NEWLINE}{NEWLINE}{NEWLINE}      BOMBARD>{ALT}1"
+  STR_SWSTORMWOLF_CODEX: "The Stormwolf Assault Boat, or simply the Stormwolf, is a specialised heavily armed assault transport used solely by the Space Wolves Chapter, granting them the ability to bring the fight to the enemy wherever they may be found."
+  STR_SWLANDRAIDER_CODEX: "The standard Land Raider, also known as the Land Raider Phobos, is an Imperial main battle tank and troop transport which serves as the main vehicle for Space Marines chapters."
+  STR_SWLEMANRUSS_CODEX: "This armored column is composed of two fully manned Leman Russ MBT and two small Land Raider transport. This formation as the Leman Russ battle tank themselves has proved to be a reliable and proven strategy to carry troops safely across large distances.{ALT}"
+
   STR_SWRAZORBACK_SPAWNER: "SW Razorback Spawner"
   STR_SWRAZORBACK_WITH_SMOKE: "SW Razorback Turret"
   SWRAZORBACK_ARMOR: "SW Razorback Wreck"
@@ -14347,7 +14444,6 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ORCA_DROPSHIPS_GV: "Orca Dropships+"
   STR_ORCA_DROPSHIPS_EVENT_GV: "Orca Dropships+"
   STR_ORCA_DROPSHIPS_CODEX_DESCRIPTION_GV: "This huge air transport can lift an entire Hunter Cadre at once. Its high cruise speed and stealth capabiliities render it a top-line rapid response craft. Many examples serving on the frontline have been refit to the uparmored Orca-V assault configuration, trading top speed and agility for survivability in the landing zone."
-
 
   # STR_BLESSED_NANOMEDICINES_GV: "Blessed Nanomedicines"
   # STR_BLESSED_NANOMEDICINES_EVENT_GV: "Blessed Nanomedicines"
@@ -14870,11 +14966,19 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ARGENT_DAWN_SUCCESS_GV: "(Sororitas Rescued)"
   STR_FREE_GUARDSMEN_DESCRIPTION_GV: "Guard loyalists on Pelega IV have suffered a comprehensive defeat and surviving forces are retreating towards the Imperial capital. Some deserters rounded up in your territory have accepted an offer to join your forces."
 
+  STR_PROM_PROMISE_GV: "Some Blood For Oil"
+  STR_PROM_PROMISE_GV_BRIEFING: "One of our contacts in the black market has experienced unacceptable business losses after treacherous Guardsmen occupied their promethium refinery.{NEWLINE}{NEWLINE}Our contact proposes a deal: the severed hands of the thieves in return for a large shipment of promethium."
+  STR_PROM_PROMISE_GV_ALERT: "TRAITORS CAPTURE PROMETHIUM REFINERY"
+  STR_PROM_PROMISE_GV_ALERT_DESCRIPTION: "One of our contacts in the black market has experienced unacceptable business losses stemming from unauthorized Guard occupation of a regional promethium refinery.{NEWLINE}{NEWLINE}Our contact proposes a deal: the severed hands of the thieves in return for a large shipment of promethium.{NEWLINE}{NEWLINE}The offer is open for the next four weeks."
+  # STR_PROM_PROMISE_GV_ALERT_DESCRIPTION: "PELEGA SHRINEWIRE -- MARKETS NEWS{NEWLINE}{NEWLINE}Eastern Suns Energy (PSE: ESE) fell 3% today on news of another refinery seizure by troops affiliated with the controversial Colonel Tenax. Although critics have leveled shocking allegations of heresy and bizarre acts against his forces, Tenax says his actions carry full Imperial sanction."
+  STR_PROM_PROMISE_GV_SITE: "TRAITOR REFINERY"
+  STR_PROM_PROMISE_GV_SUCCESS: "REFINERY SECURED"
+
   STR_FINAL_LANDING_GUEVESA_GV: "MONT'KA: SILVER TOWER LANDING"
   STR_FINAL_LANDING_GUEVESA_GV_: "MONT'KA: SILVER TOWER"
   STR_FINAL_LANDING_GUEVESA_GV_BRIEFING: "Reality shudders before you. The ancient stone of Pelega recoils, thrown back in furrowed heaps from its losing battle against the sliced angles of the Silver Tower. Ahead of you lies a massive trenchline crawling with daemons and horrors whispered of only in legend. Strike down the gates of this fell tower and prepare to save your world!{NEWLINE}{NEWLINE}TSUNAMI-GV//SEVERE WARP STRESS ALERT{NEWLINE}{NEWLINE}FAILURE IS NOT AN OPTION"
   STR_FINAL_ENTRANCE_GUEVESA_GV: "MONT'KA: SILVER TOWER ENTRANCE"
-  STR_FINAL_ENTRANCE_GUEVESA_GV_BRIEFING: "We have breached the walls of old Ravenna to discover a broken hellscape of twisted Imperial fortifications pierced through with jagged fangs, as if they had been caught in the maw of some vast daemonic beast. Betrayal lies before us, and the forces of evil close in behind. There is no time to consolidate. Our only hope is an immediate strike into the jaws of hell itself.{NEWLINE}{NEWLINE}TSUNAMI-GV//DIMENSIONAL FATIGUE WARNING{NEWLINE}{NEWLINE}FAILURE IS NOT AN OPTION"
+  STR_FINAL_ENTRANCE_GUEVESA_GV_BRIEFING: "We have breached the walls of old Ravenna to discover a broken hellscape of twisted Imperial fortifications pierced through with jagged fangs, as if they had been caught in the maw of some vast daemonic beast. Betrayal lies before us, and the forces of evil close in behind. There is no time to consolidate. Our only hope is an immediate strike into the jaws of hell itself.{NEWLINE}{NEWLINE}TSUNAMI-GV//SEVERE WARP STRESS ALERT{NEWLINE}{NEWLINE}FAILURE IS NOT AN OPTION"
   STR_FINAL_ASSAULT_GUEVESA_GV: "MONT'KA: SILVER TOWER ASSAULT"
   STR_FINAL_ASSAULT_GUEVESA_GV_BRIEFING: "By flamer, fusion, and pulse you have crossed the mangled fortifications and opened a way into the defiled heart of Imperial power on this world. The Silver Tower rears up in horrific majesty from the ruins of an Inquisitorial command bunker. Roiling waves of empyrean corruption wash across the surrounding wastes. Salvation lies within your grasp. Strike swiftly, Commander!{NEWLINE}{NEWLINE}TSUNAMI-GV//ETHERIC DISRUPTION CRITICAL{NEWLINE}{NEWLINE}FAILURE IS NOT AN OPTION"
 

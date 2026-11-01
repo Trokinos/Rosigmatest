@@ -31,7 +31,7 @@ manufacture:
       - STR_ELDAR_STRATEGY
       - STR_RECRUIT_ELDAR_T1
     space: 0
-    time: 100
+    time: 1 # low stops annoying individual transfers when manufacturing larger quantities
     cost: 30000
     producedItems: {}
     spawnedPersonType: STR_ELDAR_GUARDIAN_PLAYER
@@ -44,7 +44,8 @@ manufacture:
     requires:
       - STR_RECRUIT_ELDAR_OUTCAST
     space: 0
-    time: 200
+    time: 1 # low stops annoying individual transfers when manufacturing larger quantities
+    transferTimes: [72] # Rangers take a few days to get to your base.
     cost: 35000
     producedItems: {}
     spawnedPersonType: STR_ELDAR_RANGER_PLAYER
@@ -131,25 +132,118 @@ manufacture:
     time: 200
     cost: 100000
 
+    ### Aspect Armour
+
+  - &ASPECT_ARMOR_ITEM_MANUFACTURE
+    name: STR_ELDAR_AVENGER_ARMOR_ITEM
+    category: STR_PERSONAL_ARMOR
+    requiresBaseFunc: [AVENGER]
+    requires:
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+    space: 0
+    time: 300
+    cost: 50000
+  - name: STR_ELDAR_DRAGON_ARMOR_ITEM
+    refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [DRAGON]
+    requires:
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+  - name: STR_ELDAR_BANSHEE_ARMOR_ITEM
+    refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [BANSHEE]
+    requires:
+      - STR_ELDAR_BANSHEE_RESEARCH
+  - name: STR_ELDAR_SCORPION_ARMOR_ITEM
+    refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [SCORPION]
+    requires:
+      - STR_ELDAR_SCORPION_RESEARCH
+  - name: STR_ELDAR_HAWK_ARMOR_ITEM
+    refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [HAWK]
+    requires:
+      - STR_ELDAR_HAWK_RESEARCH
+  - name: STR_ELDAR_SPIDER_ARMOR_ITEM
+    refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [SPIDER]
+    requires:
+      - STR_ELDAR_SPIDER_RESEARCH
+  - name: STR_ELDAR_REAPER_ARMOR_ITEM
+    refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [REAPER]
+    requires:
+      - STR_ELDAR_REAPER_RESEARCH
+
+  # Exarch Armor
+  - &EXARCH_ARMOR_ITEM_MANUFACTURE
+    name: STR_ELDAR_AVENGEREX_ARMOR_ITEM
+    category: STR_PERSONAL_ARMOR
+    requiresBaseFunc: [AVENGER]
+    requires:
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+    space: 0
+    time: 300
+    cost: 100000
+    requiredItems:
+      STR_KILLPOINT_TOKEN: 50
+      STR_ALIEN_ALLOYS: 10
+      #STR_ELERIUM_115: 20
+      #STR_UFO_CONSTRUCTION: 4
+      #STR_UFO_POWER_SOURCE: 1
+  - name: STR_ELDAR_DRAGONEX_ARMOR_ITEM
+    refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [DRAGON]
+    requires:
+      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+  - name: STR_ELDAR_BANSHEEEX_ARMOR_ITEM
+    refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [BANSHEE]
+    requires:
+      - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
+  - name: STR_ELDAR_SCORPIONEX_ARMOR_ITEM
+    refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [SCORPION]
+    requires:
+      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
+  - name: STR_ELDAR_HAWKEX_ARMOR_ITEM
+    refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [HAWK]
+    requires:
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+  - name: STR_ELDAR_SPIDEREX_DS_ARMOR_ITEM
+    refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [SPIDER]
+    requires:
+      - STR_ELDAR_SPIDER_RESEARCH
+  - name: STR_ELDAR_SPIDEREX_PB_ARMOR_ITEM
+    refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [SPIDER]
+    requires:
+      - STR_ELDAR_SPIDER_EXARCH_RESEARCH
+  - name: STR_ELDAR_REAPEREX_ARMOR_ITEM
+    refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
+    requiresBaseFunc: [REAPER]
+    requires:
+      - STR_ELDAR_REAPER_EXARCH_RESEARCH
+
+
   - &ELDAR_REAPER_ITEM_MANUFACTURE
     name: STR_REAPER_LAUNCHER_ITEM
     category: STR_WEAPON
     requires:
       - STR_ELDAR_REAPER_RESEARCH
+    requiresBaseFunc: [REAPER]
     space: 0
-    time: 600
+    time: 300
     cost: 50000
   - name: STR_TEMPEST_LAUNCHER_ITEM
     refNode: *ELDAR_REAPER_ITEM_MANUFACTURE
-    requires:
-      - STR_ELDAR_REAPER_RESEARCH
     # requiredItems:
       # STR_ALIEN_ALLOYS: 80
       # STR_ELERIUM_115: 30 # Swap if accessibility improved
   - name: STR_SHURIKEN_CANNON_ITEM
     refNode: *ELDAR_REAPER_ITEM_MANUFACTURE
-    requires:
-      - STR_ELDAR_REAPER_RESEARCH
+
     # requiredItems:
       # STR_ALIEN_ALLOYS: 80
       # STR_ELERIUM_115: 30 # Swap if accessibility improved

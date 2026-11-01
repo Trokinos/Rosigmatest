@@ -88,7 +88,7 @@ items:
     autoShots: 3
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10341
+    listOrder: 10342
 
   - type: STR_HEAVYBOLTER_WORDBEARER  # Warpfire Heavy Bolter
     categories: [STR_CAT_BOLTER, STR_CAT_CHAOS]
@@ -720,7 +720,7 @@ items:
     autoShots: 3
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10341
+    listOrder: 10342
     ignoreAmmoPower: true
     power: 70
     damageAlter:  # DA BOLTER
