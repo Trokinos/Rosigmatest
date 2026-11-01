@@ -15,6 +15,79 @@ extended:
 # ELDAR.WRAITHGUARD # Wraithguards
 
 armors:
+
+  - type: STR_MONKEIGH_COLLABORATOR_ARMOR_P
+    ufopediaType: STR_ENFORCER_ARMOR_UC
+    visibilityAtDay: 40
+    visibilityAtDark: 20  # was 9
+    antiCamouflageAtDay: 2
+    antiCamouflageAtDark: 2
+    frontArmor: 60  # was 40
+    sideArmor: 50  # was 40
+    rearArmor: 40  # was 40
+    underArmor: 40  # was 40
+    damageModifier:  # GUARD ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.2  # FLAMES
+      - 1.0  # HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 1.0  # STUN
+      - 1.1  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 1.0  # IMPACT
+      - 1.0  # MELTA
+    stats:
+      tu: -5
+      stamina: -10
+    spriteSheet: ENFORCER.PCK
+    customArmorPreviewIndex: {mod: 40k, index: 47}
+    forcedTorso: 1
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 96, 96, 96, 96, 160, 160, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 164, 164, 245, 245, 166, 166, 96, 164, 96, 96, 144, 144, 164, 164, 245, 245, 166, 166] #M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6 M7 F7 M8 F8 M9 F9
+    corpseBattle:
+      - STR_ENFORCER_CORPSE
+    drawingRoutine: 0
+    layersDefaultPrefix: "0"
+    layersSpecificPrefix:
+      1: ENF
+    layersDefinition:
+      M0: ["0", "EM", "M0_FACE"]
+      M1: ["0", "EM", "M1_FACE"]
+      M2: ["0", "EMC", "M2_FACE"]
+      M3: ["0", "EMB", "M3_FACE"]
+      M4: ["0", "EM", "M4_FACE"]
+      M5: ["0", "EM", "M5_FACE"]
+      M6: ["0", "EM", "M6_FACE"]
+      M7: ["0", "EM", "M7_FACE"]
+      M8: ["0", "EMC", "M8_FACE"]
+      M9: ["0", "EMB", "M9_FACE"]
+      F0: ["0", "EF", "F0_FACE"]
+      F1: ["0", "EF", "F1_FACE"]
+      F2: ["0", "EFC", "F2_FACE"]
+      F3: ["0", "EFB", "F3_FACE"]
+      F4: ["0", "EF", "F4_FACE"]
+      F5: ["0", "EF", "F5_FACE"]
+      F6: ["0", "EF", "F6_FACE"]
+      F7: ["0", "EF", "F7_FACE"]
+      F8: ["0", "EFC", "F8_FACE"]
+      F9: ["0", "EFB", "F9_FACE"]
+    loftempsSet: [3]
+    specialWeapon: STR_BAYONET
+    builtInWeapons:
+      - STR_SHOTGUN_MONKEIGH
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_INC
+      - STR_GRENADE
+      - STR_KRAK_GRENADE
+    tags:
+      UNIT_TYPE_IMPERIUM: 1
+      UNIT_TYPE_LIVING: 1
 # ELDAR.TIER1 # GUARDIANS
 
   - &GUARDIAN_ARMOR
@@ -199,6 +272,7 @@ armors:
       - STR_RANGER_LONG_RIFLE
       - STR_RANGER_LONG_RIFLE_MAG_FIXED
       - STR_RANGER_LONG_RIFLE_MAG_FIXED
+      - STR_ELDAR_WIREWEAVE_NET
 
   - type: STR_ELDAR_RANGER_SNIPER_ARMOR_P
     refNode: *RANGER_ARMOR
@@ -2316,6 +2390,7 @@ armors:
       - INV_NULL_2X1_RL
       - INV_NULL_ELDARHWP_2x1_LL
       - INV_NULL_ELDARHWP_BELT
+
 # ELDAR.OTHER
 
   - type: STR_ELDAR_PLAT_ARMOR_P   # GRAV PLATFORM ITEM#TODO-import remaining values from 40k mod
@@ -2421,3 +2496,59 @@ armors:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
       UNIT_TYPE_MECHANICAL: 1
+
+  - type: STR_ELDAR_WIREWEAVE_NET_DEPLOYED_ARMOR
+    visibilityAtDay: 0
+    visibilityAtDark: 0
+    camouflageAtDay: 1 # Low priority target, ignored by enemies
+    camouflageAtDark: 1
+    spriteSheet: ELDAR_WIREWEAVENET_DEPLOYED.SPK
+    spriteInv: ELDAR_WIREWEAVENET_DEPLOYED_INVENTORY
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseBattle:
+      - STR_ELDAR_WIREWEAVE_NET_DEPLOYED_CORPSE
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    size: 1
+    damageModifier: #TARGET ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [1]
+    drawingRoutine: 16
+    constantAnimation: true
+    movementType: 2
+    allowsMoving: false
+    tags:
+      INFECTION_RESIST: 100  # infection immune
+      INTIMIDATION_RESISTANCE: 100  # intimidation immune
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_XENO: 1
+      UNIT_TYPE_ELDAR: 1
+      UNIT_TURNS_UNTIL_DEATH: 9 # vanish after 3 turns
+      # Aura Tags
+      UNIT_HAS_AURA: 1
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 6 # affects enemies and neutrals
+      AURA_DAMAGE_TYPE: 6 # Stun damage
+      AURA_DEALS_DAMAGE: 50
+      AURA_DAMAGE_ENERGY: 1 # if true, this aura damages energy
+      AURA_DAMAGE_TIME: 1 # if true, this aura damages TU
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 3 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height

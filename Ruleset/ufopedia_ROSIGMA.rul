@@ -16611,6 +16611,13 @@ ufopaedia:
   - id: STR_SHURIKEN_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_ELDAR_WIREWEAVE_NET
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_WIREWEAVE_NET_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_WIREWEAVE_NET_CODEX
   - delete: STR_ELDAR_GRENADE
   - id: STR_ELDAR_GRENADE
     type_id: 14
