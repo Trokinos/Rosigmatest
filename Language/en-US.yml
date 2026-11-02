@@ -1,4 +1,4 @@
-en-US:  #  yamllint disable-line rule:empty-values
+en-US: #  yamllint disable-line rule:empty-values
 #
 # INDEX
 # PLEASE MANTAIN THIS STRUCTURE WHEREVER POSSIBLE
@@ -1684,7 +1684,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ALIEN_BASE_ASSAULT2: "ENEMY BASE PURGE"
   STR_ALIEN_BASE_ASSAULT_BRIEFING: "The air is thick with corruption, but do not falter Commander! We must find entrance to the foul Chaos base, for that is the Emperor's will, let none stop us in this quest. Service to the Imperium!"
   STR_ALIEN_BASE_ASSAULT2_BRIEFING: "Your troops have gained entrance to an enemy base. The control center must be destroyed to render the base inoperative. The mission will terminate when all enemies are eliminated, or when your troops have returned to the green exit area (click on the 'abort mission' icon to escape)."
-  STR_TERROR_MISSION_CULTISTS_MARINES: "TERROR MISSION - Cultists"#unused
+  STR_TERROR_MISSION_CULTISTS_MARINES: "TERROR MISSION - Cultists" #unused
   STR_TERROR_MISSION_BRIEFING: "An Imperial position is under attack, Guard troops are in disarray. Your orders are to retake the outpost and fortify your position by eliminating all threats in the area. The outpost must not fall or we shall lose support from this sector! Service to the Imperium"
   STR_SABOTAGE_MISSION: "IMPERIAL PROTECTION"
   STR_ALIENS_SABOTAGE: "SABOTAGE AT SECTOR MUNITORUM DETECTED"
@@ -3483,7 +3483,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   SECTOPOD_ARMOR2: "Chaos Dreadnought" #D
   STR_SILACOID_ARMORT: "Chaos Daemon" #D
 #UFOPEDIA
-  STR_FEAR_IMMUNE_UFOPEDIA:  "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
+  STR_FEAR_IMMUNE_UFOPEDIA: "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
   STR_BEHEMOTH_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_NURGLE_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_KILLA_UFOPEDIA: "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
@@ -3493,23 +3493,23 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SORCERER_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
  # STR_PRIEST_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_BERSERKER_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_XENO_SOLDIER_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_CARNI_TERRORIST_UFOPEDIA:  "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
-  STR_OBLITERATOR_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_PREDATORSIDE_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_WARPTALON_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_PREDATOR_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_SNAKEMAN_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_SECTOID_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_ETHEREAL_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_MUTON_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_FLOATER_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_XENO_SOLDIER_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_CARNI_TERRORIST_UFOPEDIA: "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
+  STR_OBLITERATOR_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_PREDATORSIDE_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_WARPTALON_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_PREDATOR_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_SNAKEMAN_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_SECTOID_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_ETHEREAL_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_MUTON_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_FLOATER_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_CELATID_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_SILACOID_UFOPEDIA:  "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-  STR_CHRYSSALID_UFOPEDIA:  "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
-  STR_REAPER_UFOPEDIA:  "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
-  STR_SECTOPOD_UFOPEDIA:  "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
-  STR_CYBERDISC_UFOPEDIA:  "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
+  STR_SILACOID_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+  STR_CHRYSSALID_UFOPEDIA: "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
+  STR_REAPER_UFOPEDIA: "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
+  STR_SECTOPOD_UFOPEDIA: "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
+  STR_CYBERDISC_UFOPEDIA: "{NEWLINE} Reports show this enemy is Fear Immune {NEWLINE} CODEX ARMOR DETAIL"
   STR_SECTOID_AUTOPSY_UFOPEDIA: "{NEWLINE} Chaos Cults are the most dangerous of all the organisations that plot to overthrow the rule of the Imperium of Man from within. All planets and civilisations belonging to the Imperium can harbour Chaotic organisations, which themselves are as diverse in practice and membership as is imaginable. From the blood-soaked sacrificial cults of Feral Worlds to the philosophical secret societies of more advanced planets, the temptations of Chaos can capture all."
   STR_SNAKEMAN_AUTOPSY_UFOPEDIA: "{NEWLINE} Traitor Guard is a term given to the vast majority of disloyal mortals who have left the Imperial Guard in order to fight for Chaos. They are not a single coherent force, but rather a faction of the infinite collection of warbands and hosts under the leadership of Chaos Champions and part of the The Lost and the Damned."
   STR_ETHEREAL_AUTOPSY_UFOPEDIA: "During the Horus Heresy, the terrible Imperial civil war that pitted the Battle-Brothers of the 18 known Space Marine Legions against one another, there were two factions. These were the Loyalist Space Marines who continued to serve the Imperium and the Emperor of Mankind and the Chaos Space Marines of the Traitor Legions who betrayed the Emperor and pledged their souls to the service of the four Ruinous Powers of Chaos."
