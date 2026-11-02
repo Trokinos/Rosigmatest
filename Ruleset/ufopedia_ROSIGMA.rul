@@ -24765,6 +24765,70 @@ ufopaedia:
       - STR_GENE_HYBRID_ACOLYTE_LEADER
     image_id: GSC_HYBRID_ACOLYTE_LEADER_ARMOR_CODEX.SPK
     text: STR_GENE_HYBRID_ACOLYTE_LEADER_ARMOR_UFOPEDIA
+  - id: STR_ABERRANT_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_ABERRANT_CORPSE
+    image_id: ORIGINS_ABERRANT.SPK
+    text: STR_ABERRANT_AUTOPSY_CODEX
+  - id: STR_GSC_ABERRANT_ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_ABERRANT
+    image_id: ARMOR_ABERRANT.SPK
+    text: STR_ABERRANT_AUTOPSY_CODEX
+  - id: STR_LOCUS_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_CORPSE
+    image_id: ORIGINS_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_CLOAKED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_FRENZIED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+
+  - id: STR_MINER_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_CORPSE
+    image_id: ORIGINS_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_CLOAKED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_GSC_MINER_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_MINER_CORPSE
+    image_id: UP0160.SPK #PLACEHOLDER
+    text: STR_GENE_CULTIST_UFOPEDIA #PLACEHOLDER
+  - id: STR_GSC_MINER_ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_MINER
+    image_id: UP0160.SPK #PLACEHOLDER
+    text: STR_GENE_CULTIST_UFOPEDIA #PLACEHOLDER
 
 #FOES.XENO.TAU#        Tau
   - id: STR_TAU_DRONEAI # STR_TAU_DRONEAI; PLACEHOLDER

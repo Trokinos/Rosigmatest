@@ -1285,7 +1285,15 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_NECRON_LYCHGUARD_UFOPEDIA: "{NEWLINE} Elite protectors and emissaries of the Necron nobility. In order to serve as a bulwark against those who would harm their charge, gifted with the highest quality of living metal bodies, equal in resilience and power to those inhabited by the Lords and Overlords they protect. In addition to serving as wardens, Lychguards often act as messengers and envoys for their masters. In order to better serve in this capacity, the personality and intellect of the Lychguards was preserved through the process of bio-transference."
   STR_NECRON_DESTROYER_UFOPEDIA: "{NEWLINE} Necron Destroyers are deranged agents of annihilation whose sole reason for existence is centred around an unshakeable yearning to quench the flames of life. A Destroyer cares not for borders or dynasty allegiance, nor does he make any distinction between the innocent and the damned, all life is his enemy, and all living creatures are his prey."
   STR_NECRON_SCARAB_UFOPEDIA: "{NEWLINE} A small, silver, beetle-like Necron construct. These robotic scarabs are the most numerous and diverse of the Necrons' Canoptek machine servants. They are designed to break down organic and non-organic matter into raw energy, which can then be woven into fresh construct forms at the direction of the scarabs' controller.."
-
+#FOE.GENE #GENESTEALER CULTS
+  STR_GENE_CULTIST_AUTOPSY: "Brood Brother Origin"
+  STR_GENE_SAB_AUTOPSY: "Reductus Saboteur Origin"
+  STR_ABERRANT_AUTOPSY: "Aberrant Origin"
+  STR_LOCUS_AUTOPSY: "Locus Origin"
+  STR_LOCUS_AUTOPSY_CODEX: "A Locus is a specialized Genestealer hybrid who serves as a bodyguard for a Magus and other senior leaders of a Genestealer Cult hierarchy. They often act their leader's mouths, eyes and ears as well as their blades."
+  STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
+  STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
+  STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
 #########################
 # 03. PLAYER FACTIONS #
 #########################
@@ -3655,12 +3663,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GREYKNIGHT_AUTOPSY_UFOPEDIA: "The Ordo Malleus assumes our chapter wields the corruption of the Chaos Gods, so they have sent this mysterious Loyalist Chapter to eliminate our forces."
   STR_FLAMER_AUTOPSY_UFOPEDIA: "Flamers excel at leading assaults on defensive positions, since there is no fortification that can offer protection against their magical fire. They attack by unleashing roaring gouts of alchemical fire from their arms."                                               #
   STR_SCREAMER_AUTOPSY_UFOPEDIA: "Screamers are very agile due to their ability of flight and possess a feral but cunning intellect. Though they are able to use magic-based attacks, their greatest weapons are their so-called Warp Jaws which allow them to chew through all kinds of solid matter, even the armoured hide of a space ship. In a direct confrontation there are few that can withstand their jaws or outrun their wings"                                               #
-
-#GENESTEALER CULTS
-  STR_GENE_CULTIST_AUTOPSY: "Brood Brother Origin"
-  STR_GENE_SAB_AUTOPSY: "Reductus Saboteur Origin"
-  STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
-  STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
 #ELDAR UFOPEDIA AUTOPSY
   STR_GUARDIAN_AUTOPSY: "Eldar Guardian Origin"
   STR_BANSHEE_AUTOPSY: "Eldar Banshee Origin"
