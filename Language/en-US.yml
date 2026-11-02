@@ -1290,8 +1290,10 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GENE_SAB_AUTOPSY: "Reductus Saboteur Origin"
   STR_ABERRANT_AUTOPSY: "Aberrant Origin"
   STR_LOCUS_AUTOPSY: "Locus Origin"
+  STR_GSC_MINER_AUTOPSY: "Brood Neophyte Origin"
   STR_LOCUS_AUTOPSY_CODEX: "A Locus is a specialized Genestealer hybrid who serves as a bodyguard for a Magus and other senior leaders of a Genestealer Cult hierarchy. They often act their leader's mouths, eyes and ears as well as their blades."
   STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
+
   STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
   STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
 #########################
@@ -2134,6 +2136,13 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GK_SOLDIER_ADEPTAS: "Grey Knight"
   STR_GK_SOLDIER_BA: "Brunus Antonius"
   STR_GK_SOLDIER_NS: "Hartimax Ottonius"
+# #FOE.GENE
+#units
+  STR_GSC_ABERRANT: "Aberrant"
+  STR_GSC_MINER: "Brood Neophyte"
+#Armors
+  STR_GSC_MINER_ARMOR: "Brood Neophyte"
+  STR_GSC_ABERRANT_ARMOR: "Aberrant"
 #GK Corpse-------------------------------------------------
   STR_GREYK_CORPSE: "Grey Knight Corpse"
   STR_GREYK_CORPSE_ADEPTAS: "Grey Knight Corpse"
@@ -13102,8 +13111,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GENE_HYBRID_ACOLYTE_LEADER_ARMOR_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_GENE_HYBRID_ACOLYTE_LEADER_AUTOPSY: "Hybrid Leader Origins"
   STR_GENE_HYBRID_ACOLYTE_LEADER_AUTOPSY_UFOPEDIA: "{NEWLINE} The Acolyte Hybrid Leaders is a Genestealer hybrid born of the first or second generation following infestation of a Human host organism by the Genestealer Patriarch. Recognized for their leadership abilities, they lead other hybrids into battle."
-  STR_GSC_ABERRANT: "Aberrant"
-  STR_GSC_MINER: "Brood Neophyte"
+
 
   #GSC weapons
 
