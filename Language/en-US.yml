@@ -2410,7 +2410,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_GRAV_AMMO: "Graviton Induction Core"
   STR_LAS_AMMO_UFOPEDIA: "{NEWLINE} Laser Weapon Power Cell damage details: {NEWLINE} Armor damage: 20% {NEWLINE} Health damage: 100% {NEWLINE} Stun damage: 0% {NEWLINE} Armor damage after piercing: 0%"
   STR_MC_AMMO_UFOPEDIA: "{NEWLINE} Master crafted bolt ammo damage details: {NEWLINE} Armor damage: 10% {NEWLINE} Ignores armor: 20% {NEWLINE} Stun damage: 50% {NEWLINE} Increased power over standard bolts."
-  STR_DOUBLE_AMMO_UFOPEDIA: "{NEWLINE} Double-Barrelled bolter damage details: {NEWLINE} Armor Damage: 20% {NEWLINE} Ignores armor: 10%"  STR_MELTA_AMMO_UFOPEDIA: "{NEWLINE} Melta Charge damage details: {NEWLINE} Armor damage: 100% {NEWLINE} Health damage: 160% {NEWLINE} Dropoff: 10%/tile beyond 8 tiles. {NEWLINE} {NEWLINE} Multimelta Charge damage details: {NEWLINE} Armor damage: 100% {NEWLINE} Health damage: 160% {NEWLINE} Dropoff: 5%/tile beyond 16 tiles." #D
+  STR_DOUBLE_AMMO_UFOPEDIA: "{NEWLINE} Double-Barrelled bolter damage details: {NEWLINE} Armor Damage: 20% {NEWLINE} Ignores armor: 10%"
+  STR_MELTA_AMMO_UFOPEDIA: "{NEWLINE} Melta Charge damage details: {NEWLINE} Armor damage: 100% {NEWLINE} Health damage: 160% {NEWLINE} Dropoff: 10%/tile beyond 8 tiles. {NEWLINE} {NEWLINE} Multimelta Charge damage details: {NEWLINE} Armor damage: 100% {NEWLINE} Health damage: 160% {NEWLINE} Dropoff: 5%/tile beyond 16 tiles." #D
   STR_PLASMA_AMMO_UFOPEDIA: "{NEWLINE} Plasma Flask damage details: {NEWLINE} Ignores armor: 25% {NEWLINE} Health damage: 100% {NEWLINE} Armor damage after piercing: 20%" #D
   STR_GRAV_AMMO_UFOPEDIA: "{NEWLINE} Graviton Induction Core damage details: {NEWLINE} Ignores armor: 100%" #D
   STR_BOLTER_AMMO_UFOPEDIA: "{NEWLINE} Bolt ammo damage details: {NEWLINE} Armor damage: 5% {NEWLINE} Ignores armor: 10% {NEWLINE} Stun damage: 50%" #D
