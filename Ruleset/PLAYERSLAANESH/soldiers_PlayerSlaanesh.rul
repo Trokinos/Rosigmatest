@@ -47,19 +47,20 @@ extended:
   #HM - HANDMAIDEN & FAVORED HANDMAIDEN
     #SI - SISTER IMMACULATE
       #HB - HARBINGER OF SLAANESH
-        #EH - EXALTED HARBINGER
+        #EH - EXALTED HARBINGER OF SLAANESH
           #AN - ANGEL OF THE CHOIR
             #AA - ARCHANGEL OF THE CHOIR 
               #MG - MYSTAGOGUE
                 #EM - EXALTED MYSTAGOGUE
+                  #AI - APOSTLE IMMACULATE
 
       # 2: SPECIALIST SISTERS
 
    #CH - CHIRURGEON
-     #AC - ASCENDED CHIRURGEON
+     #EC - EXALTED CHIRURGEON
        #SC - SORCERESS OF SLAANESH
          #AS - ASCENDED SORCERESS OF SLAANESH
-           #JC - JUSTICAR
+           #HB - HEARTBREAKER OF SLAANESH
 
       # 3: POSSESSED SISTERS
 
@@ -76,6 +77,27 @@ extended:
         #HT - HERETEK SAVANT
 
 #########################################################################################################
+# 
+#   <NOTE ON PROMOTION MECHANICS>
+#
+# Unlike normal Adeptas, Immaculates follow a branching, armor-based promotion system. 
+# 
+# HANDMAIDEN - > FAVORED HANDMAIDEN (6 missions and 6 kills) 
+# HANDMAIDEN - > SISTER IMMACULATE (3 missions and 3 kills)
+#
+# FAVORED HANDMAIDEN - > HARBINGER OF SLAANESH (PsiStrength & Bravery requirement)
+# FAVORED HANDMAIDEN - > CHIRURGEON (3 kills with melee damage)
+# FAVORED HANDMAIDEN - > SORCERESSES (PsiStrength requirement)
+# FAVORED HANDMAIDEN - > MYSTAGOGUE (PsiSkill, Long & costly training time requirement)
+#
+# SISTER IMMACULATE - > EXALTED SISTER IMMACULATE (Kill & service time requirement)
+# SISTER IMMACULATE - > ANGEL OF THE CHOIR (Armor investment & training time requirement)
+#
+# ANGEL OF THE CHOIR - > ARCHANGEL OF THE CHOIR (Armor investment & service time requirement)
+#
+# EXALTED SISTER IMMACUALTE - > MYSTAGOGUE (PsiSkill & low training time requirement)
+# 
+###########################################################################################################
 
 soldiers:
 
