@@ -1786,6 +1786,22 @@ ufopaedia:
 #    text: STR_SLAANESHPATH_GATE_CODEX 
 #    section: STR_MISSIONPEDIA
 
+  - id: STR_SLAANESHPATH_GATE
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: SlaaneshSisterOrigins.SPK
+    requires:
+      - STR_SLAANESHPATH_GATE
+    text: STR_SLAANESHPATH_GATE_UFOPEDIA_DESCRIPTION
+
+  - id: STR_PROCURE_TRANSPORTATION
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: STR_TAU_GUEVESA_MARKET_CODEX.SPK
+    requires:
+      - STR_PROCURE_TRANSPORTATION
+    text: STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION
+
 ## #STRATEGY.SOB#
   - delete: STR_CHOSEN_ADEPTAS
   - id: STR_CHOSEN_ADEPTAS

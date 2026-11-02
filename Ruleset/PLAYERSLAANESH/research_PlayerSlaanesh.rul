@@ -220,7 +220,7 @@ research:
 
  # Basic Corruption tech. Unlocks cantus corruption and a codex entry explaining the concept.
 
-  - name: STR_WEAPON_CORRUPTION 
+  - name: STR_WEAPON_CONSECRATION 
     cost: 10
     points: 10
     dependencies:
@@ -231,7 +231,7 @@ research:
   - name: STR_CORRUPT_ADEPTAS_BOLTERS
     cost: 25
     dependencies:
-      - STR_WEAPON_CORRUPTION
+      - STR_WEAPON_CONSECRATION
 
   #Tech that gives access to weapon conversions through piety.
   #Gets disabled once the ability to manufacture these weapons is unlocked. 
@@ -239,7 +239,7 @@ research:
     cost: 0
     points: 0
     dependencies:
-    - STR_WEAPON_CORRUPTION
+    - STR_WEAPON_CONSECRATION
 
   #Disabler for basic weapon corruption. Once you have this you can simply buy these weapons directly.
   - name: STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1
@@ -314,7 +314,7 @@ research:
   - name: STR_IMMACULATE_CHAINBLADES
     cost: 50
     dependencies:
-    - STR_WEAPON_CORRUPTION
+    - STR_WEAPON_CONSECRATION
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
     cost: 50
