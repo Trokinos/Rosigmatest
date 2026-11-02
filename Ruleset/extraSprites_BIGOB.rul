@@ -1297,6 +1297,8 @@ extraSprites:
       4081: Resources/PLAYERSLAANESH/Weapons/Cantus/bolter_cantus_slaan_gl.png
       4082: Resources/PLAYERSLAANESH/Weapons/Grenades/40mm_choke.png
       4083: Resources/PLAYERSLAANESH/Weapons/Grenades/40mm_sonic.png
+#      4084: Resources/Bigobs/AutogunsExpanded/AUTOGUN_AGRIPINAA_T3_101.png
+#      4085: Resources/Bigobs/AutogunsExpanded/AUTOGUN_AGRIPINAA_T3B_101.png
 
 # Eldars
       4850: Resources/Eldar/weapons/reaper_aml_bigObj.png #reaper launcher

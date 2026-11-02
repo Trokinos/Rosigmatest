@@ -183,15 +183,15 @@ commendations:
 
 ### SLAANESH COMMENDATIONS
 
-#  - type: STR_HANDMAIDEN_COMMENDATION
-#    description: STR_PARDON_COMMENDATION_DESCRIPTION # Fix this later !
-#    sprite: 5
-#    criteria:
-#      killsWithCriteriaCareer: [3, 6, 12]
-#      totalWins: [3, 6, 12]
-#    killCriteria:
-#      -
-#        - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
-#    units:
-#      - STR_SLAANESH_HANDMAIDEN
-#      - STR_SLAANESH_EXALTEDMAIDEN
+  - type: STR_HANDMAIDEN_COMMENDATION
+    description: STR_PARDON_COMMENDATION_DESCRIPTION # Fix this later !
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [3, 3, 6, 6, 6, 9, 9, 9]
+      totalWins: [3, 3, 6, 6, 6, 9, 9, 9]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+    units:
+      - STR_SLAANESHPATH_HANDMAIDEN
+      - STR_SLAANESHPATH_EXALTEDMAIDEN

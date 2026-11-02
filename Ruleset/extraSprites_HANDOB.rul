@@ -497,10 +497,12 @@ extraSprites:
       4986: Resources/Eldar/weapons/dragon_fusion_gun_canister_handObj.png
 
 
-# Slaanesh strategy weapons - using 1800+ temporarily until index is expanded.
+# Slaanesh strategy weapons
 
-      1800: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_hand.png
-      1808: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_fire.png
-      1816: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_gl.png
+      6000: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_hand.png
+      6001: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_fire.png
+      6002: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_gl.png
+      6003: Resources/HandObs/AutogunsExpanded/handob_autogun_agripinaa_t3.png
+      6004: Resources/HandObs/AutogunsExpanded/handob_autogun_agripinaa_t3b.png
 
       # 1850-1899 free spaces here, make sure to double check
