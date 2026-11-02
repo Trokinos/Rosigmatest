@@ -2262,7 +2262,6 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_HFLAMER: "Heavy Flamer"
   STR_HFLAMER_UFOPEDIA: "{NEWLINE} A Heavy Flamer is a larger, more powerful version of the standard Flamer, capable of projecting hotter and denser flames. This means that Heavy Flamers possess better armor-piercing capabilities than standard Flamers.{NEWLINE}{NEWLINE}Recoil: {ALT}100"
   STR_HFLAMER_CLIP: "Heavy Flamer Fuel"
- # STR_MASTER_CRAFTING_AMMO: "Master Crafted Ammo"
   STR_RIFLE_CLIP_MC: "Master Crafted Bolter Clip"
   STR_PISTOL_CLIP_MC: "Master Crafted Boltpistol Clip"
   STR_AC_MC_AMMO: "Master Crafted Heavy Bolter Ammo"
@@ -2283,7 +2282,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_LASCAN_DW: "Artifex Lascannon"
   STR_LASCAN_UFOPEDIA: "{NEWLINE} The Lascannon is the most formidable type of laser weapons, producing an energetic shot of coherent light capable of penetrating most armored vehicles. The Mark VII Mars Pattern is the variant most commonly seen in Space Marine Devastator squads.{NEWLINE}{NEWLINE}Recoil: {ALT}60"
   STR_LASCAN_CLIP: "Lascannon Charge"
- # STR_MASTER_CRAFTING: "Master Crafting"
+  STR_MASTER_CRAFTING: "High-tier Master Crafting"
+  STR_MASTER_CRAFTING_AMMO: "Mid-tier Master Crafting"
  # STR_HELLPISTOL: "Hellpistol"
   STR_LASPISTOL_CLIP_HOTSHOT: "Hotshot Laspistol Cell"
   STR_MCLASER_RIFLE: "Master Crafted Lasgun"
@@ -13425,9 +13425,6 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_GK_HB_CODEX: "The Bolt Gauntlet family of weapons consists of a Power Fist with built-in Bolter, inspired in form and function by Roboute Guilliman's famed weapon Hand of Dominion. This version used by Grey knighs features a build-in Storm Bolter and it's capable of using bolts infused with psychic energy. Its lethality at close range its undisputed."
   STR_GK_HB_MC: "Master Crafted Storm Bolter Gauntlet"
 ## Gun Specials
-
-  STR_MASTER_CRAFTING: "High-tier Master Crafting"
-  STR_MASTER_CRAFTING_AMMO: "Mid-tier Master Crafting"
 
   STR_LASGUN_LUCIUS_SPECIAL_UFOPEDIA: >
     {NEWLINE}Abilities:
