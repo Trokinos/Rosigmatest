@@ -15452,7 +15452,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_FIRE_WEBBER: "Fire Webber"
   STR_PLASMA_BARRAGE: "Plasma Barrage"
 
-  STR_AUTOGUN_ADEPTAS_SLAAN: "Agripinaa Mk. IX Autogun"
+  STR_AUTOGUN_ADEPTAS_MKIX: "Agripinaa Mk. IX Autogun"
+  STR_AUTOGUNSCOPED_ADEPTAS_MKIXB: "Agripinaa Mk. IXb Autogun"
 
   STR_BOLTER_CANTUS_SLAAN: "Eliminator Bolter"
   STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
