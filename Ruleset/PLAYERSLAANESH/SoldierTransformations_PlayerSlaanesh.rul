@@ -15,12 +15,14 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     showMinMax: false
+    requiredCommendations:
+      STR_HANDMAIDEN_COMMENDATION: 3 # Handmaiden Silver star. 6 kills, 6 missions.
     transferTime: 16
-    percentGainedStatChange:
+    percentGainedStatChange: # This promotion is particularly for those who have already improved their skills.
       - firing: 35
       - melee: 35
-      - reactions: 35
-      - throwing: 35
+      - reactions: 45
+      - throwing: 45
     flatMin:
       - tu: 1
       - health: 1
@@ -55,12 +57,14 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     resetRank: true
+    requiredCommendations:
+      STR_HANDMAIDEN_COMMENDATION: 1 # Handmaiden bronze star. 3 kills, 3 missions.
     transferTime: 66
     allowedSoldierTypes:
       - STR_SLAANESHPATH_HANDMAIDEN
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 10
+      STR_SLAANESH_PIETY: 20
       STR_ELERIUM-115: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
