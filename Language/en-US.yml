@@ -15277,6 +15277,11 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ########## SLAANESH STRATEGY SECTION ################
 
+  ### COMMENDATIONS
+  STR_HANDMAIDEN_COMMENDATION: "Mark of Promise"
+  STR_HANDMAIDEN_COMMENDATION_DESCRIPTION: "{NEWLINE}This Handmaiden has displayed promise and initiative and is now allowed to continue her advance along Slaanesh's path to perfection."
+
+
   ### EVENTS
 
   STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
@@ -15404,15 +15409,20 @@ en-US:  #  yamllint disable-line rule:empty-values
   ## UNIT PROJECTS
 
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
-  STR_EXALT_HANDMAIDEN: "Recognize Promising Handmaiden"
+  STR_ELEVATE_PROMISING_HANDMAIDEN: "Recognize Promising Handmaiden"
+
+  STR_NOMINATE_VIVISECTIONIST: "Nominate Handmaiden-Vivisectionist"
+  STR_NOMINATE_ANATHEMANT: Nominate Handmaiden-Anathemant"
+  STR_NOMINATE_MILITANT: "Nominate Handmaiden-Militant"
+  STR_NOMINATE_MYSTES: "Nominate Handmaiden-Mystes"
+
   STR_INDUCT_IMMACULATE_SISTER: "Induct Immaculate Sister"
-  STR_TRAIN_CHIRURGEON: "Train Chirurgeon"
-  STR_TRAIN_SORCERESS: "Train Sorceress"
-  STR_TRAIN_HARBINGER: "Train Harbinger"
-  STR_INDUCT_HARBINGER: "Induct Harbinger of Slaanesh"
-  STR_ELEVATE_ANGEL: "Induct Angel into the Choir"
-  STR_Catechize_MYSTAGOGUE: "Catechize Mystagogue"
-  STR_ELEVATE_MYSTAGOGUE: "Elevate Mystagogue"
+  STR_INDUCT_CHIRURGEON: "Induct Immaculate Chirurgeon"
+  STR_INDUCT_SORCERESS: "Induct Immaculate Sorceress"
+  STR_INDUCT_MYSTAGOGUE: "Induct Immaculate Mystagogue"
+
+  STR_INDUCT_HARBINGER:  "Proclaim Harbinger of Slaanesh"
+  STR_INDUCT_ANGEL: "Welcome Angel into the Choir"
   STR_ELEVATE_EXALTED_MYSTAGOGUE: "Elevate Mystagogue"
   STR_EXALT_ARCHANGEL: "Elevate Angel of the Choir"
 
@@ -15436,6 +15446,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
   STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
   STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: "Immaculate Power Armor"
+  STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: "Immaculate Angelic Amor"
   STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Armor Component"
   STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Armor Component"
   STR_HERETEK_TRIBUTE: "Tribute to the Dark Mechanicum"
@@ -15508,8 +15519,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   ## Slaanesh Adeptas Armors
 
   STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
-  STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR: "Favored Handmaiden Armor"
-  STR_SLAANESHPATH_HANDMAIDEN_MEDICAE_ARMOR: "Handmaiden Medicae Armor"
+  STR_SLAANESHPATH_MYSTES_ARMOR: "Favored Handmaiden Armor"
+  STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR: "Handmaiden Medicae Armor"
   STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
   STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
   STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"

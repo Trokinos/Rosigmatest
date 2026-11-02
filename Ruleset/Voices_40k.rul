@@ -2403,7 +2403,7 @@ armors:
     deathMale:          [2471]  # yamllint disable-line rule:colons
     deathFemale:        [2471]  # yamllint disable-line rule:colons
 
-  - type: STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR
+  - type: STR_SLAANESHPATH_MYSTES_ARMOR
     refNode: *STR_HANDMAIDEN_NODE
 
   - &STR_IMMACULATEARMOR_NODE
