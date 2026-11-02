@@ -1051,9 +1051,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_TOOLS_AND_RESOURCES: "TOOLS AND RESOURCES"
   STR_XCOM_CRAFT_ARMAMENT: "CRAFTS AND ARMAMENT"
   STR_HEAVY_WEAPONS_PLATFORMS: "MECHANICUS AND SUPPORT"
-  STR_MECHANICUSO : "Mechanicus and Support Overview"
-  STR_MECHANICUSOB : "Mechanicus and Support Overview"
-  STR_MECHANICUSOC : "Mechanicus and Support Overview"
+  STR_MECHANICUSO: "Mechanicus and Support Overview"
+  STR_MECHANICUSOB: "Mechanicus and Support Overview"
+  STR_MECHANICUSOC: "Mechanicus and Support Overview"
   STR_MECHANICUS_UFOPEDIA: "{NEWLINE}This section of the codex contains information the auxiliary support unit's for the Imperium."
   STR_WEAPONS_AND_EQUIPMENT: "WEAPONS"
   STR_ALIEN_ARTIFACTS: "RESOURCES AND TAINTED WEAPONS"
@@ -2184,7 +2184,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   AUX_HOVERTANK_LAUNCHER: "Hellfire Missile Launcher"
   AUX_DW_DREAD_LAUNCHER: "Hellfire Missile Launcher"
   AUX_DREAD_ASSC: "Assault Cannon"
-  AUX_DW_DREAD_ASSC : "Assault Cannon"
+  AUX_DW_DREAD_ASSC: "Assault Cannon"
   AUX_DREAD_FLAMER: "Flamer Fist"
   AUX_DW_DREAD_FLAMER: "Flamer Fist"
   AUX_PROBE: "Analyzer"
@@ -2567,8 +2567,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_JUDGE_ARMOR_UC: "Judge Armor"
   STR_ARBITOR_ARMOR_UC: "Arbitor Armor"
   STR_MARSHAL_ARMOR_UC: "Marshal Armor"
-  STR_JUDGE_BIKE_ARMOR : "Outrider Bike"
-  STR_JUDGE_BIKE_ARMOR_UC : "Outrider Bike"
+  STR_JUDGE_BIKE_ARMOR: "Outrider Bike"
+  STR_JUDGE_BIKE_ARMOR_UC: "Outrider Bike"
   STR_GUARDPD_MEDIC_ARMOR: "Flak/Medic"
   STR_GUARDPDMEDIC_ARMOR_UC: "Flak/Medic"
 
@@ -3364,7 +3364,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_HAVOCN_CORPSE: "Plague Havoc Corpse"
   STR_MUTONN_CORPSE: "Plague Terminator Corpse"
   STR_MUTONNC_CORPSE: "Nurgle Champion Corpse"
-  STR_HAVOCTZ_CORPSE : "Rubric Havoc Corpse"
+  STR_HAVOCTZ_CORPSE: "Rubric Havoc Corpse"
   STR_TZEENTCH_CORPSE: "Rubric Marine Corpse"
   STR_TZEENTCHS_CORPSE: "Tzeentch Sorcerer Corpse"
   STR_NURGLES_CORPSE: "Plague Marine Corpse"
@@ -3412,9 +3412,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_ORK_ARMORM: "Ork 'ard Boy"
   STR_ORK_ARMORH: "Ork Nob"
   STR_ORK_KILLA_ARMOR: "Killa Kan"
-  STR_WRAITHGUARD_ARMOR_P : "Eldar Wraithguard Armor" #D
-  STR_WRAITHGUARD_ARMOR_P_SHIELD : "FS Eldar Wraithguard Armor" #D
-  STR_WRAITHGUARD_ARMOR : "Eldar Wraithguard" #D
+  STR_WRAITHGUARD_ARMOR_P: "Eldar Wraithguard Armor" #D
+  STR_WRAITHGUARD_ARMOR_P_SHIELD: "FS Eldar Wraithguard Armor" #D
+  STR_WRAITHGUARD_ARMOR: "Eldar Wraithguard" #D
   STR_ELDAR_SHIELD: "Eldar Personal Shield" #D
   STR_ELDAR_ARMOR: "Eldar Guardian" #D
   STR_ELDAR_ARMOR2: "Eldar Banshee" #D
@@ -3556,8 +3556,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_BANSHEE_AUTOPSY: "Eldar Banshee Origin"
   STR_DAVENGER_AUTOPSY: "Eldar Dire Avenger Origin"
   STR_SCORPION_AUTOPSY: "Eldar Scorpion Origin"
-  STR_ELDAR_REAPER_AUTOPSY : "Eldar Reaper Origin"
-  STR_WRAITHGUARD_AUTOPSY : "Eldar Wraithguard Origin"
+  STR_ELDAR_REAPER_AUTOPSY: "Eldar Reaper Origin"
+  STR_WRAITHGUARD_AUTOPSY: "Eldar Wraithguard Origin"
   STR_SCORPION_AUTOPSY_UFOPEDIA: "{NEWLINE} The Warrior Aspect of the Striking Scorpion epitomises the deadly attributes of their namesake, and they are the most potent of all the close assault aspects. They are merciless killers without exception, revelling in the hunt and the kill. When they launch their attack, they use shuriken pistols and scorpion chainswords."
   STR_DAVENGER_AUTOPSY_UFOPEDIA: "{NEWLINE} The Dire Avengers are first amongst the Aspect Warriors of the Eldar. They represent the War God's unending thirst for vengeance upon a galaxy of woe, and as such they are merciless to their foes and unstinting in their devotion to their people."
   STR_ELDAR_REAPER_AUTOPSY_UFOPEDIA: "{NEWLINE} The Dark Reapers are the most menacing of the Aeldari Aspect Warriors. They exemplify the Aeldari War God Kaela Mensha Khaine in his aspect as the Destroyer, and their skull-masked costume echoes that of their founder and Phoenix Lord, the Harvester of Souls, Maugan Ra. They specialise in the use of highly-destructive, long-range heavy weaponry."
@@ -4638,10 +4638,10 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   #STR_IMPERIAL_GUARD_OPERATIONS: "Imperial Guard Strategy"
   STR_STRATEGY: "STRATEGY"
-  STR_STRATEGY_INTRO : "Strategy Overview"
-  STR_STRATEGY_INTROG : "Strategy Overview"
-  STR_STRATEGY_INTROA : "Strategy Overview"
-  STR_STRATEGY_INTROPD : "Strategy Overview"
+  STR_STRATEGY_INTRO: "Strategy Overview"
+  STR_STRATEGY_INTROG: "Strategy Overview"
+  STR_STRATEGY_INTROA: "Strategy Overview"
+  STR_STRATEGY_INTROPD: "Strategy Overview"
   STR_STRATEGY_TEXT_INTRO: "{NEWLINE} This section of the Codex displays and details all strategies our forces can follow. {NEWLINE} Once one is chosen, our efforts will be focused on the goal of that specific strategy and the others will not be available."
   STR_TATICAL_TEXT: "{NEWLINE} Being prepared for all situations is a key factor in the campaign.  {NEWLINE} Our units will have well balanced gear, suitable for all situations."
   STR_ASSAULT_TEXT: "{NEWLINE} Strike with all our might so we can leave the enemy without response.  {NEWLINE} Main focus on melee combat weapons and high mobility armor for direct assault."
