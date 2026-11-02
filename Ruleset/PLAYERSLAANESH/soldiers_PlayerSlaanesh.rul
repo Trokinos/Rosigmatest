@@ -270,21 +270,21 @@ soldiers:
     requires: ### >Remove this later.< ###
     - STR_SLAANESHPATH_GATE
     minStats:  
-      tu: 55 
-      stamina: 60
-      health: 35 
+      tu: 60 
+      stamina: 65
+      health: 40 
       bravery: 60 
-      reactions: 40 
-      firing: 55 
+      reactions: 60 
+      firing: 58 
       throwing: 35 
       strength: 25
       psiStrength: 25
       psiSkill: 30
-      melee: 55 
+      melee: 58 
     maxStats: # Higher min & max stats. Lower-tier captured Sororitas are given at this level.
       tu: 75 
       stamina: 80 
-      health: 45
+      health: 50
       bravery: 100 
       reactions: 80 
       firing: 70 # 
