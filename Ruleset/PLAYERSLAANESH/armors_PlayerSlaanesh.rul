@@ -232,7 +232,7 @@ armors:
     units:
       - STR_SLAANESHPATH_VIVISECTIONIST
     builtInWeapons:
-      - AUX_MEDICAE_MEDI_KIT
+      - AUX_VIVISECTIONIST_MEDI_KIT
       - INV_NULL_2X3_BACKPACK
     loftempsSet: [2] # Handmaidens are lithe and hard to hit
     tags: # Handmaidens are now using flak rather than power armor, but they get increased dodge as a consolation prize.

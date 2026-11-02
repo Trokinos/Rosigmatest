@@ -59,8 +59,8 @@ soldierTransformation:
 #NH
   - name: STR_ELEVATE_PROMISING_HANDMAIDEN 
     requires:
-      - STR_RITUALS_OF_WORSHIP # Placeholder. Change later.
-    cost: 10000
+      - STR_PATH_OF_PERFECTION # Placeholder. Change later.
+    cost: 6000
     producedSoldierType: STR_SLAANESHPATH_EXALTEDMAIDEN
     keepSoldierArmor: true
     allowsDeadSoldiers: false
@@ -96,7 +96,7 @@ soldierTransformation:
  #NV
   - name: STR_NOMINATE_VIVISECTIONIST # Turns a Handmaiden into an apprentice Chirurgeon. 
     requires:
-      - STR_RITUALS_OF_WORSHIP # Placeholder. Change later.
+      - STR_PATH_OF_PERFECTION
     cost: 50000 # Expensive; this is a powerful unit.
     producedSoldierType: STR_SLAANESHPATH_MYSTES
     producedSoldierArmor: STR_SLAANESHPATH_MYSTES_ARMOR
@@ -124,7 +124,7 @@ soldierTransformation:
  #NM
   - name: STR_NOMINATE_MILITANT # Turns a handmaiden into a handmaiden-militant.
     requires:
-      - STR_RITUALS_OF_WORSHIP # Placeholder. Change later.
+      - STR_PATH_OF_PERFECTION
     cost: 10000 # Relatively cheap.
     producedSoldierType: STR_SLAANESHPATH_MILITANT
     keepSoldierArmor: true
@@ -132,7 +132,7 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     showMinMax: true
-    transferTime: 72 # Three days of training time.
+    transferTime: 144 # Six days of training time.
     flatMin:
       - tu: 1
       - health: 1
@@ -156,7 +156,7 @@ soldierTransformation:
  #NY   # TODO: ADD STAT REQUIREMENTS FOR PSISKILL & PSISTRENGTH
   - name: STR_NOMINATE_MYSTES # Turns a Handmaiden into an apprentice Mystagogue. 
     requires:
-      - STR_RITUALS_OF_WORSHIP # Placeholder. Change later.
+      - STR_PATH_OF_PERFECTION
     cost: 50000 # Expensive; this is a powerful unit.
     producedSoldierType: STR_SLAANESHPATH_MYSTES
     producedSoldierArmor: STR_SLAANESHPATH_MYSTES_ARMOR
@@ -164,7 +164,7 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
     showMinMax: false
-    transferTime: 336 # Two weeks of training time.
+    transferTime: 288 # Twelve days of training time.
     flatMin:
       - tu: 1
       - health: 6
@@ -190,15 +190,15 @@ soldierTransformation:
  #NA
   - name: STR_NOMINATE_ANATHEMANT # Turns a Handmaiden into an apprentice Sorceress. 
     requires:
-      - STR_RITUALS_OF_WORSHIP # Placeholder. Change later.
-    cost: 66000 # Expensive; this is a powerful unit.
+      - STR_PATH_OF_PERFECTION
+    cost: 66600 # Expensive; this is a powerful unit.
     producedSoldierType: STR_SLAANESHPATH_ANATHEMANT
     producedSoldierArmor: STR_SLAANESHPATH_ANATHEMANT_ARMOR
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
-    showMinMax: false
-    transferTime: 336 # Two weeks of training time.
+    showMinMax: true
+    transferTime: 288 # Twelve days of training time.
     flatMin:
       - tu: 1
       - health: 6
@@ -215,13 +215,13 @@ soldierTransformation:
       - melee: 4
       - firing: 7
       - strength: 4
-      - psiStrength: 10
-      - psiSkill: 10
+      - psiStrength: 20
+      - psiSkill: 20
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
       STR_ALIEN_SURGERY: 3 # Requires sacrifical blood.
-      STR_SLAANESH_PIETY: 100 # Very expensive in terms of piety.
+      STR_SLAANESH_PIETY: 66 # Expensive in terms of piety.
 
 #### INDUCTIONS
 #IS

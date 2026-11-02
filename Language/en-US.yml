@@ -15295,6 +15295,8 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the base.{NEWLINE}{NEWLINE}The generators are working, so it might be a breaker fault. You've no reason to feel fear at a bit of darkness...{NEWLINE}{NEWLINE}...But you do. For hours you've felt a headache building; urges and obscene emotions you scarcely recognize as your own. Something about this place is *wrong*. At least the damned array cogitator is finally working. Soon, you'll be able to leave."
   STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
   STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But we forgive you. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}Panicked, you raise your bolter. From behind comes the prick of a needle, and then the darkness swallows you again."
+  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT: "Unenlightened Interlopers"
+  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION: "With the auspex grid still down, the intruders almost make it to your sanctum unnoticed.{NEWLINE}{NEWLINE}Almost.{NEWLINE}{NEWLINE}What follows is barely even a firefight. Examining the kneeling survivors, your nose twitches in disgust: Hive-gangers. Scavengers. *Gutter-rats*. Yet you feel as if it would be a waste to kill them. With the right... encouragement... these men and their vehicle can serve a much greater cause."
 
   ######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
 
@@ -15310,7 +15312,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
 
   #############################
-  ##### UFOPEDIA ENTRIES ######
+  ##### CODEX    ENTRIES ######
   #############################
 
   STR_CONTACT_HERETEKS_UFOPEDIA: "{NEWLINE}{NEWLINE}Though it took some doing, we now have an open channel with one of the local sects of the Dark Mechanicum. In exchange for a suitably large tribute of slaves and materials, they will agree to a pact of cooperation between our forces. To this end, Arch-savant Valtiek Theta-Rho has dispatched an emissary carrying “some minor trinkets”; several datacrypts containing fabrication notes and plans for non-standard weapon modifications." 
@@ -15319,9 +15321,9 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_WEAPON_CORRUPTION_UFOPEDIA: "{NEWLINE}{NEWLINE}The Dark Prince is nothing but generous, offering perversion to the faithful and the uninitiated alike. Through piety and arcane rituals, Slaanesh can grant us the power to transform the mundane weaponry of the Imperium and transform them into something far more pleasing to the senses. We only have to prove ourselves worthy."
   STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it still took some time for us to understand the strange and haphazard layout of this data-crypt. It describes various more or less successful efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the warp. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
   STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation, we now have a partial understanding of the heretek research notes on plasma weaponry. Though their tantalizing work on warp-infused hydrogen cells is far too esoteric for us to grasp at present, their simpler schematics are still of direct use. We should now be able to manufacture basic models of plasma carbines without outside assistance."
+  STR_PATH_TO_PERFECTION_UFOPEDIA: "{NEWLINE}{NEWLINE}CODEX DESCRIPTION"
 
-
-  # WEAPON UFOPEDIA ENTRIES
+  ## CODEX WEAPON ENTRIES
 
   STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, the internals of this plasma carbine are the result of extensive tech-heresy. Like other Slaaneshi plasma weapons, it carries little risk of overheating, but cannot be overcharged."
   STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
@@ -15348,9 +15350,10 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
   STR_SLAANESHPATH_GATE: "The Angel's Voice"
   STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
-  STR_THE_GIFTS_OF_SLAANESH: "The Power of Slaanesh"
+  STR_PATH_OF_PERFECTION: "The Path of Perfection"
   STR_STR_SOULS_FOR_SLAANESH: "Souls for Slaanesh"  
   STR_WEAPON_CORRUPTION: "Weapon Corruption Rites"
+  STR_PROCURE_TRANSPORTATION: "Securing Transportation"
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR__LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launchers"
@@ -15530,17 +15533,20 @@ en-US:  #  yamllint disable-line rule:empty-values
   ## Slaanesh Adeptas Ranks
 
   STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"
-  STR_SLAANESHPATH_HANDMAIDEN_RANK_1: "Sinful Seeker"
-  STR_SLAANESHPATH_HANDMAIDEN_RANK_2: "Seeker Sincere"
-  STR_SLAANESHPATH_HANDMAIDEN_RANK_3: "Seeker Severe"
-  STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Seeker Superlative"
+  STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Solicitous Seeker"
+  STR_SLAANESHPATH_MILITANT_RANK_0: "Slayer"
+  STR_SLAANESHPATH_MILITANT_RANK_1: "Supple Slayer"
+  STR_SLAANESHPATH_MILITANT_RANK_2: "Sister Speculative"
 
   STR_SLAANESHPATH_SISTER_RANK_0: "Sister"
-  STR_SLAANESHPATH_SISTER_RANK_1: "Sensuous Sister"
+  STR_SLAANESHPATH_SISTER_RANK_1: "Scrumptious Sister"
   STR_SLAANESHPATH_SISTER_RANK_2: "Sister Suggestive"
   STR_SLAANESHPATH_SISTER_RANK_3: "Sister Sensational"
   STR_SLAANESHPATH_EXALTEDSISTER_RANK_0: "Sister Spectacular"
 
+  STR_SLAANESHPATH_ANATHEMANT_RANK_0: "Seeress"
+  STR_SLAANESHPATH_ANATHEMANT_RANK_1: "Sultry Seeress"
+  STR_SLAANESHPATH_ANATHEMANT_RANK_2: "Sorceress Speculative"
   STR_SLAANESHPATH_SORC_RANK_0: "Sorceress"
   STR_SLAANESHPATH_SORC_RANK_1: "Smart Sorceress"
   STR_SLAANESHPATH_SORC_RANK_2: "Sorceress Suave"
@@ -15553,12 +15559,18 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CHOIR_ANGEL_RANK_3: "Songstress Subversive"
   STR_SLAANESHPATH_CHOIR_ARCHANGEL_RANK_0: "Songstress Sacrilegious"
 
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_0: "Stitcher"
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_1: "Sinful Sticher"
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_2: "Surgeon Speculative"
   STR_SLAANESHPATH_CHIRURGEON_RANK_0: "Surgeon"
   STR_SLAANESHPATH_CHIRURGEON_RANK_1: "Stygian Surgeon"
   STR_SLAANESHPATH_CHIRURGEON_RANK_2: "Surgeon Systematic"
   STR_SLAANESHPATH_CHIRURGEON_RANK_3: "Surgeon Sadistic"
   STR_SLAANESHPATH_EXALTEDCHIRURGEON_RANK_0: "Surgeon Sanguine" 
 
+  STR_SLAANESHPATH_MYSTES_RANK_0: "Shepherd"
+  STR_SLAANESHPATH_MYSTES_RANK_1: "Scrupulous Shepherd"
+  STR_SLAANESHPATH_MYSTES_RANK_2: "Sibyl Speculative"
   STR_SLAANESHPATH_MYSTAGOGUE_RANK_0: "Sibyl"
   STR_SLAANESHPATH_MYSTAGOGUE_RANK_1: "Stirring Sibyl"
   STR_SLAANESHPATH_MYSTAGOGUE_RANK_2: "Sibyl Stimulating"

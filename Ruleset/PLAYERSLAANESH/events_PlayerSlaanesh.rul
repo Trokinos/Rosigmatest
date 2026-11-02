@@ -121,9 +121,9 @@ events:
 
 
   - name: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT 
-    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+    description: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTDRAFTBG.SCR
-    timer: 5700  # 95 hours
+    timer: 6600  # 110 hours
     interruptResearch: STR_NOT_SLAANESHPATH
     spawnedPersons: 8
     spawnedCraftType: STR_TRUCKBASE_CHAOS

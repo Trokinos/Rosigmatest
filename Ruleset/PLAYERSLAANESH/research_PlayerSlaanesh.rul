@@ -139,12 +139,18 @@ research:
     cost: 20
     points: 20
     dependencies:
-      - STR_GIFTS_OF_SLAANESH
+      - STR_PATH_OF_PERFECTION
 
-  - name: STR_GIFTS_OF_SLAANESH # Gateway tech that also gives access to a few basic slaanesh-themed weapons.
+  - name: STR_PATH_OF_PERFECTION # Gateway tech that also gives access to handmaiden training.
     cost: 20
     dependencies:
     - STR_SLAANESHPATH_GATE
+    #TODO: MAKE THIS TECH GIVE 200 PIETY
+ 
+  # - name: Soulstain Sorcery
+  # - name: HANDMAIDEN_POWER_ARMOR
+
+
 
   - name: STR_POWER_ARMOR_CORRUPTION # This is the tech that unlocks immaculate power armor.
     cost: 150
@@ -218,7 +224,7 @@ research:
     cost: 10
     points: 10
     dependencies:
-      - STR_GIFTS_OF_SLAANESH
+      - STR_PATH_OF_PERFECTION
     unlocks:
     - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
 
@@ -254,7 +260,7 @@ research:
     cost: 50
     points: 10
     dependencies:
-    - STR_GIFTS_OF_SLAANESH
+    - STR_PATH_OF_PERFECTION
     unlocks:
     - STR_CHOKE_GAS_GRENADES
     - STR_IMMACULATE_CHAINBLADES
@@ -272,7 +278,7 @@ research:
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
     cost: 50
     dependencies:
-    - STR_GIFTS_OF_SLAANESH
+    - STR_PATH_OF_PERFECTION
     unlocks:
     - STR_LIGHT_GRENADE_LAUNCHERS
     getOneFree:
@@ -317,9 +323,9 @@ research:
     getOneFree:
     - STR_IMPERIAL_WEBBER_DEP1
 
-  - name: STR_PROCURE_TRANSPORTATION # Codex entry.
-    cost: 50
+  - name: STR_PROCURE_TRANSPORTATION # Codex entry. # TODO: Add the ability to buy chimeras on the black market later.
+    cost: 30
     points: 10
     dependencies:
-      - STR_CONTACT_ARMS_SMUGGLERS
+      - STR_SLAANESHPATH_GATE
     #spawnedEvent:

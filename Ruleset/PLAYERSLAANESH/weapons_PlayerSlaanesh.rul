@@ -1030,8 +1030,8 @@ items:
       INFECTION_DAMAGE_PERCENT: 35  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
-
-  - type: AUX_CHIRURGEON_MEDI_KIT      # A modified medicae kit. More killy, with better stimulants.
+  - &CHIRURGEON_MEDIKIT_TEMPLATE
+    type: AUX_CHIRURGEON_MEDI_KIT      # A modified medicae kit. More killy, with better stimulants.
     medikitTargetImmune: true
     size: 0.1
     costSell: 50
@@ -1041,8 +1041,8 @@ items:
     battleType: 6
     invWidth: 2
     invHeight: 3
-    painKiller: 10
-    heal: 15
+    painKiller: 15
+    heal: 20
     stimulant: 20
     woundRecovery: 1
     healthRecovery: 3
@@ -1079,6 +1079,10 @@ items:
       reactions: 0.25
       melee: 0.75
     defaultInventorySlot: STR_LEFT_HAND
+
+  - type: AUX_VIVISECTIONIST_MEDI_KIT
+    refnode: *CHIRURGEON_MEDIKIT_TEMPLATE
+    meleePower: 45
 
 # - type: ARAKIEL_MISSILE_LAUNCHER
 
