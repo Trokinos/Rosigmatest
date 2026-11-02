@@ -311,6 +311,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_DAMAGE_NONE: "SUPPORT"
   STR_DAMAGE_10: "IMPACT SHOCK"
   STR_DAMAGE_11: "MELTA"
+  STR_DAMAGE_12: "GRAV"
 
 # #ROSIGMA_DEFAULTS.PLACEHOLDERS
   STR_CODEX_ARMOR_DETAIL: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
@@ -1182,6 +1183,7 @@ en-US: #  yamllint disable-line rule:empty-values
 # AT#              The Alien and the Heretic
 # AT.CULT#           Chaos Cult
 # AT.ORKS#
+  STR_ORK_DEAL_UFOPEDIA: "{NEWLINE} With the arms deal between us and the Orks secured, we are now able to purchase orkish weaponry through our trade outposts. Defeating more powerful groups of Orks will expand the access of goods we're able to purchase {NEWLINE}{NEWLINE}Defeat a Tier 3 ork base to gain access to ork mercenaries, and a Tier 5 base to unlock the purchase of all orkish weapons available for trade."
 # AT.ORKS.Items
   STR_ORK_RL_UFOPEDIA: "{NEWLINE} Crude but easy to manufacture, the Ork Rokkit Launcha is a stout tube with a simple trigger mechanism that allows the Ork at the safe end to fire a dodgy-looking Rokkit in the general vicinity of the enemy. Can be used on the move with no noticeable loss of accuracy. Its simplicity makes it very easy to wield and common as a Ork special weapon."
   STR_CHOPPA_UFOPEDIA: "{NEWLINE} Choppa is a term applied to a multitude of basic Ork close-combat weapons. This category of weapon consists of a bewildering variety of bladed, spiked, serrated, jagged, barbed, and notched hand weapons, ranging from the proverbial blunt instrument to whirring two-handed monstrosities."
@@ -1195,7 +1197,20 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ORK_GORKFAUST_UFOPEDIA: "{NEWLINE} The Tank Busta Rokkitstikk is a single use disposable rocket launcher, favored by tank hunter Orks."
   STR_ORK_KRAKSTIKKBOMB_UFOPEDIA: "{NEWLINE} Heavy Ork Krak Stikkbombs, lower throwing range but highly capable against armored targets."
   STR_TANKBUSTA_BOMB_UFOPEDIA: "{NEWLINE} Ork Tankbusta bombs are a mix of heavily loaded explosive, krak and melta grenades, none configured the same, but all mass-destructive."
-  STR_TANKBUSTA_INVENTORY_BOMB_CODEX: "{NEWLINE} When Ork squig hearder wants something blow up, they strap on multiple bombs on a squig, this is the messy result of Orks thinking VERY hard that there isn't enough explosive in a Tankbusta bomb strapped to a squig and add some more "
+  STR_TANKBUSTA_INVENTORY_BOMB_CODEX: "{NEWLINE} When Ork squig hearder wants something blow up, they strap on multiple bombs on a squig, this is the messy result of Orks thinking VERY hard that there isn't enough explosive in a Tankbusta bomb strapped to a squig and add some more"
+  STR_SQUIG_BITE_CODEX: "Don't look inside da gifta squig mouth. Really. Don't."
+# AT.ORKS.PlayerArmors
+  STR_BLOODAXE_CAPFLAK_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Da Standard izzue arma' of Da Emprah's Greenest. Dis 'ere flakk will sometimes aktually stop dakka from pokin' 'oles in da boyz."
+  STR_BLOODAXE_KARAPACE_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Karapace arma' costs more teef, but kan be wirf it ta keep da boyz alive longa."
+  STR_BLOODAXE_ARDBOY_KARAPACE_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} When da boys get bigga, an' 'ave proven demselves in fightin, dey are promoted to 'Ardboyz, an' given dis ere karapace to 'elp em get even bigga."
+  STR_BLOODAXE_NOB_ARMOR_PLAYER_UFOPEDIA: "{NEWLINE} Da biggest boyz iz kalled Nobs, and dey av even betta arma' dan da Ardboyz. Nobz is betta at fightin too."
+  STR_BLOODAXE_MEGANOB_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Da Mekboyz kan make speshul arma' for da Nobs to wear, to make em even 'arder dan before."
+  STR_ASSAULT_MEGA_ARMOR_UFOPEDIA: "{NEWLINE} Dis 'ere Mega-Arma 'az gunz an' powa klaws stukk ta da armz, so da nobs wearin' it kan be even killier."
+  STR_ASSAULT_MEGA_ARMOR_BURNA_UFOPEDIA: "{NEWLINE} Wun o' da best bitz 'bout wearin' ded-ard arma iz dat it getz lotz 'arder ta blowz yerself up. Dis ere arma' 'az a burna stukk to it 'stead o' da gunz, but itz made tuff soze it don' burna da git uzin' it."
+  STR_BLOODAXE_STORM_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Ya eva' see da rokkitz flyin, and fink 'dat looks loik fun?' Well boss, Stormboyz do, so dey strap da rokkits to dere baks, an' fly at da enemies. I kud neva' figure out 'ow ta not blow up meself, but da Stormboyz seem ta be alright."
+# AT.ORKS.Transformations
+  STR_BLOODAXE_ARDBOY_PROMOTION_CODEX: "An 'Ardboy (or 'Ard Boy) iz an elite speciualist ork 'oo iz betta armoured an' more skilled 'n kombat due ta his long 'perience kompared ta a runty ork. Dese orkz have zurvived many scraps an equip demselves wit' a karapace, da propa ork version uv 'perial karapace arma. Dey boldly charge forward throo hails uv enemy fire ta kome ta grips wit' 'da foe 'n close kombat. {NEWLINE}{NEWLINE} Ta promote an Ork ta 'Ardboy dey must have 'da follow'n prerequizites: {ALT}strength: 70{ALT}" # An 'Ardboy (or 'Ard Boy) is an elite specialist Ork who is better armoured and more skilled in combat due to his long experience compared to a runty ork. These Ork warriors have survived many battles and equip themselves with a Karapace, the proper Ork version of imperial Carapace armour. They boldly charge forward through hails of enemy fire to come to grips with the foe in close combat. {NEWLINE}{NEWLINE}To promote an Ork to 'Ardboy they must have the following prerequisites: {ALT}strength: 70{ALT}
+  STR_BLOODAXE_NOB_PROMOTION_CODEX: "A Nob iz an even bigga an stronga ork 'oo 'as access ta 'da best armors 'n 'da ork arsenal an 'as kilt way more enemiez dan 'e iz will'n ta kount. neva ask a nob if 'e 'as krumped enough enemiez as yer will become da next, so don't be a git. {NEWLINE}{NEWLINE} ta promote an 'Ardboy ta Nob dey must have 'da follow'n prerequisites: {ALT}strength: 100, commendations: Veteran{ALT}" #A Nob is an even bigger and stronger Ork who has access to the best armors in the ork arsenal and has killed way more enemies than he is willing to count. never ask a nob if he has crumped enough enemies as you will become the next, so don't be an idiot. {NEWLINE}{NEWLINE}To promote an 'Ardboy to Nob they must have the following prerequisites: {ALT}strength: 100, commendations: Veteran{ALT}
 # AT.ELDAR#
 # AT.ELDAR.Craft
   STR_ELDAR_HEMLOCK_UFO_UFOPEDIA: "{NEWLINE} The Hemlock Wraithfighter is a Craftworld Eldar psychically-empowered fighter aircraft. The Hemlock blends the psychic abilities of its Spiritseer pilot with the sinister gestalt energies of the Craftworld Eldar dead."
@@ -1232,18 +1247,45 @@ en-US: #  yamllint disable-line rule:empty-values
 # IG.KRIEG#          Krieg Strategy
 # IG.VALHALLA#       Valhallan Strategy
 # FOE.ORK
+  #ORK UFOPEDIA AUTOPSY
+  STR_GRETCHIN_AUTOPSY: "Gretchin Origin"
+  STR_ORK_AUTOPSY: "Ork Boy Origin"
+  STR_ORKARDBOY_AUTOPSY: "Ork 'ard Boy Origin"
+  STR_ORKNOBBOY_AUTOPSY: "Ork Nob Origin"
+  STR_ORK_DREAD_AUTOPSY: "Ork Dread Origin"
+  STR_KILLA_AUTOPSY: "Ork Killa Kan Origin"
+  STR_GRETCHIN_AUTOPSY_UFOPEDIA: "{NEWLINE} Gretchin or Grotz are basically a smaller subspecies of Orks, who are more cowardly than normal Orks and are usually used as living shields, to clear mine fields, are stepped on to get through difficult terrain, and sometimes even as emergency rations."
+  STR_ORK_AUTOPSY_UFOPEDIA: "{NEWLINE} Orks are savage, warlike and crude, but they are one of the most successful species in the Milky Way, outnumbering possibly every other intelligent race, including Mankind. However, the power of the Ork race as a whole is limited due to the fact that they are split into hundreds of tiny empires, klanz and tribes, which are more often warring between themselves than not."
+  STR_ORKARDBOY_AUTOPSY_UFOPEDIA: "{NEWLINE} Elite specialist Ork Boy who is better armored and more skilled in combat due to his long experience compared to a standard Greenskin. These Ork warriors have survived many battles and equip themselves with a Karapace, the Ork version of Carapace Armor. These well-protected warriors often form the center of an Ork army."
+  STR_ORKNOBBOY_AUTOPSY_UFOPEDIA: "{NEWLINE} Serving as a crude Greenskin ruling class, the Nobz are never above reminding the Boyz who's in charge by making a few bloody examples. This could involve hacking up some suitably impressive foes, or knocking a few fractious Boyz's blocks off. The Nobz aren't too fussy, just so long as it gets the message across."
+  STR_ORK_DREAD_AUTOPSY_AUTOPSY_UFOPEDIA: "{NEWLINE} Grav Platforms are Eldar anti-gravitational platforms mounting heavy weapons crewed by a pair of Guardians. The advanced gravity-defying technology on the platforms allows the Eldar to rapidly and effortlessly move heavy weapons across the field of battle regardless of terrain."
+  STR_KILLA_AUTOPSY_UFOPEDIA: "{NEWLINE} Killa Kans are essentially giant metal canisters on piston-driven legs that sport lethal close combat attachments and heavy-duty weaponry. One of their limbs usually ends in deadly-looking power shears or a great blood-encrusted buzz saw, whilst the other is a large calibre weapon welded to the opposite side. "
   STR_ORK_TANKBUSTAZ_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"  # ORKMOD
   STR_TANKBUSTAZ_INTERROGATION_UFOPEDIA: "{NEWLINE} Dedicated anti armor Orks that see themselves as big game hunters, they are equipped with specialized greenskin anti-armor weaponry, the Tankhammer, Krak grenades, mines and effective, if inaccurate, Gorkfaust rokkit launchas."
   STR_ORK_TANKBUSTAZ_AUTOPSY: "Ork Tankbustaz Origin"
   STR_TANKBUSTAZ_AUTOPSY_UFOPEDIA: "{NEWLINE} Equipped to hunt armor, these Orks double as effective anti-Power Armor units. Destroy them at range, as most of their weapons are short ranged. Beware, some have been spotted deploying homing Bomb Squigs."
-# RESEARCH #      Generic Progression Research
-  STR_BASIC_BALLISTICS_DEP: "(Basic Ballistic Weapons)"
-  STR_40MM_AMMO_DEP: "(40mm Grenade Ammo)"
-  STR_STRATIG_DONE: "IG Strategy Selected"
-  STR_TRAINFACILITYR: "Soldier Improvement"
-  STR_STEELMILLR: "Advanced Ceramics Requisition"
-  STR_TEC_BAYR: "Techmarine Bay Requisition"
-  STR_TEC_BAY_CHAMBER_R: "Techmarine Bay Requisition"
+  STR_GUARD_ORK_BOY_AUTOPSY: "Ork Boy Origins"
+  STR_SQUIG_AUTOPSY: "Squig Origin"
+  STR_SQUIG_EXPLOSIVE_AUTOPSY: "Bommarz Squig Origin"
+#FOE.ORK.Craft
+  STR_TRUKK_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
+  STR_WAGGON_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
+  STR_WAGGON_CONVOY_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
+  STR_ORK_MIG_UFO_UFOPEDIA: "{NEWLINE} Fightas are built for speed and firepower, typically carrying Big Shootas and a small wing of bombs and rockets. Despite its crude design, a Fighta is easily a match for any Imperial Navy fighter and its engine is remarkably effective, capable of producing a huge amount of thrust. Ork Fighta Pilots love nothing more then to fly in close to enemy aircraft and tear it apart with hail of dakka."
+#FOE.NECRON #NECRON UFOPEDIA AUTOPSY
+  STR_NECRON_WARRIOR_AUTOPSY: "Necron Warrior Origin"
+  STR_NECRON_IMORTAL_AUTOPSY: "Necron Immortal Origin"
+  STR_NECRON_DEATHMARK_AUTOPSY: "Necron Deathmark Origin"
+  STR_NECRON_LYCHGUARD_AUTOPSY: "Necron Lychguard Origin"
+  STR_NECRON_DESTROYER_AUTOPSY: "Necron Destroyer Origin"
+  STR_NECRON_SCARAB_AUTOPSY: "Canoptek Scarab Origin"
+  STR_NECRON_WARRIOR_UFOPEDIA: "{NEWLINE} Necron Warriors are the primary infantry troops of the soulless, robotic Necrons. They were created from the majority of the Necrontyr people who agreed to be bound to the will of their Star Gods, the terrible entities known as the C'tan. The Necrontyr's consciousnesses were transferred into robotic bodies made of the living metal called Necrodermis. Over a long period of time, the new unliving bodies dulled the Necrontyr's minds and their abilities to feel emotion or pleasure."
+  STR_NECRON_IMORTAL_UFOPEDIA: "{NEWLINE} The Necron Immortals are those favoured Necrontyr who were among the first to give up their flesh and embrace the necrodermis and their C'tan gods. For this, they were rewarded by being turned into Immortals. In life, Immortals were the professional soldiery of the Necrontyr empire. In death, they surpass the Warriors in nearly every way."
+  STR_NECRON_DEATHMARK_UFOPEDIA: "{NEWLINE} Highly-skilled snipers and assassins of the Necron forces, appearing from apparently nowhere and striking with terrible precision. The name is fitting: once given the hunter's mark, a Deathmark's targets are almost certain to meet their deaths scant moments later. Like most Necrons, the Deathmarks' technology lies far beyond the realm of human comprehension and they can effectively phase in and out of normal space-time at will."
+  STR_NECRON_LYCHGUARD_UFOPEDIA: "{NEWLINE} Elite protectors and emissaries of the Necron nobility. In order to serve as a bulwark against those who would harm their charge, gifted with the highest quality of living metal bodies, equal in resilience and power to those inhabited by the Lords and Overlords they protect. In addition to serving as wardens, Lychguards often act as messengers and envoys for their masters. In order to better serve in this capacity, the personality and intellect of the Lychguards was preserved through the process of bio-transference."
+  STR_NECRON_DESTROYER_UFOPEDIA: "{NEWLINE} Necron Destroyers are deranged agents of annihilation whose sole reason for existence is centred around an unshakeable yearning to quench the flames of life. A Destroyer cares not for borders or dynasty allegiance, nor does he make any distinction between the innocent and the damned, all life is his enemy, and all living creatures are his prey."
+  STR_NECRON_SCARAB_UFOPEDIA: "{NEWLINE} A small, silver, beetle-like Necron construct. These robotic scarabs are the most numerous and diverse of the Necrons' Canoptek machine servants. They are designed to break down organic and non-organic matter into raw energy, which can then be woven into fresh construct forms at the direction of the scarabs' controller.."
+
 #########################
 # 03. PLAYER FACTIONS #
 #########################
@@ -1251,6 +1293,14 @@ en-US: #  yamllint disable-line rule:empty-values
 # specific order is left to the developvers.
 # if an item is BOTH for opfor and enemy please specify in the PLAYER faction
 # MULT (multifaction or common)
+# MULT.Research #Generic Progression Research
+  STR_BASIC_BALLISTICS_DEP: "(Basic Ballistic Weapons)"
+  STR_40MM_AMMO_DEP: "(40mm Grenade Ammo)"
+  STR_STRATIG_DONE: "IG Strategy Selected"
+  STR_TRAINFACILITYR: "Soldier Improvement"
+  STR_STEELMILLR: "Advanced Ceramics Requisition"
+  STR_TEC_BAYR: "Techmarine Bay Requisition"
+  STR_TEC_BAY_CHAMBER_R: "Techmarine Bay Requisition"
 # MULT.ITEMSCATEGORIES # ITEM CATEGORIES
   STR_CAT_AUXILIARY: "Auxiliary"
   STR_CAT_BOLTER: "Bolt Weapons"
@@ -1354,13 +1404,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TEC_BAY: "Techmarine Bay"
   STR_LIBRARY: "Librarium"
   STR_ARMORY: "Chapter Armory"
-
 #*** FACILITIES ***************************************************************
   STR_POWERG: "Plasma Generator"
   STR_OUTPOST: "Outpost"
   STR_OUTPOST_MARINES: "Outpost"
   STR_OUTPOST_GUARD: "Outpost"
-
 # #SM#              Space Marines
 # #SM.UM#             Common ultramarine items
 # #SM.UM.Troops
@@ -1379,7 +1427,6 @@ en-US: #  yamllint disable-line rule:empty-values
 # #SM.UM.Manufacturing
   STR_PROMOTE_JOAN: "Promote Joan"
 # #SM.UM.Researchs
-
 # #SM.UM.ASS#         Assault Strategy
 # #SM.UM.DEV#         Devastator Strategy
 # #SM.UM.SCOUT#       Scout Strategy
@@ -1428,6 +1475,24 @@ en-US: #  yamllint disable-line rule:empty-values
 # #AT#              The Alien and the Heretic
 # #AT.CULT#           Chaos Cult
 # #AT.ORKS#
+# #AT.ORKS.Research #ork specific research
+  STR_ORK_LEADER_INTERROGATED: "Ork Boss Interrogation"
+  STR_ORK_DEAL: "Ork Arms Trade"
+  STR_ORK_MERCENARIES: "Ork Mercenaries"
+  STR_ORK_RESPECT: "Respect of the Orks"
+  STR_ORK_ONLY: "Dakka"
+  STR_ORK_SQUIG_EXAM: "Ork Squig Examination"
+# #AT.ORKS.Soldiers
+  STR_GROTS_ARMOR: "Gretchin"
+  STR_ORK_ARMORL: "Ork Boy"
+  STR_ORK_ARMORM: "Ork 'ard Boy"
+  STR_ORK_ARMORH: "Ork Nob"
+  STR_ORK_KILLA_ARMOR: "Killa Kan"
+  STR_SQUIG: "Squig"
+  # Orks mercenaries
+  STR_BLOOD_AXE_ORK_BOY: "Blood Axe Ork Boy"
+  STR_GUARD_ORK_ARDBOY: "Blood Axe 'ardboy"
+  STR_GUARD_ORK_NOB: "Blood Axe Nob"
 # #AT.ORKS.Items
   STR_KILLA_MELEE_WEAPON: "Killa Kan Saw"
   STR_ORK_KILLA_WEAPON: "Big Big Shootas"
@@ -1453,6 +1518,48 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TANKBUSTA_BOMB: "Tankbusta bomb"  # ORKMOD
   STR_TANKBUSTA_INVENTORY_BOMB: "Big Tankbusta Bomma"
   STR_TANKBUSTA_BOMB_COLLAR: "Bomma Trigger Collar"
+  STR_ORK_TURRET: "Ork Kannon Turret"
+  STR_ORK_TURRET2: "Ork Shoota Turret"
+  STR_SQUIG_BITE: "Squig Chomp"
+# #AT.ORKS.Transformations
+  STR_BLOODAXE_ARDBOY_PROMOTION: "Ork 'ardboy Promotion"
+  STR_BLOODAXE_NOB_PROMOTION: "Ork Nob Promotion"
+# #AT.ORKS.Armors
+  STR_BLOODAXE_CAPFLAK_PLAYER_ARMOR: "Ork Flakk Armor"
+  STR_BLOODAXE_KARAPACE_PLAYER_ARMOR: "Ork Karapace Armor"
+  STR_BLOODAXE_ARDBOY_KARAPACE_PLAYER_ARMOR: "'ardboy Karapace Armor"
+  STR_BLOODAXE_NOB_ARMOR_PLAYER: "Nob Karapace Armor"
+  STR_BLOODAXE_STORM_PLAYER_ARMOR: "Stormboy Armor"
+  STR_BLOODAXE_MEGANOB_PLAYER_ARMOR: "Meganob Armor"
+  STR_ASSAULT_MEGA_ARMOR: "Azzault Mega-Arma"
+  STR_ASSAULT_MEGA_ARMOR_BURNA: "Azzault Mega-Arma wif Burna"
+  STR_KARAPACE_ARMOR: "Ork Karapace Armor"
+  STR_STORMBOY_ARMOR: "Stormboy Armor"
+  STR_MEGANOB_ARMOR: "Meganob Armor"
+  STR_ASSAULT_MEGANOB_ARMOR: "Azzault Mega-Arma"
+  STR_SQUIG_ARMOR: "Azzault Squig Arma"
+  STR_SQUIG_ARMOR_BOMB: "Squig Bommarz Arma"  # ORKMOD
+# #AT.ORKS.Ranks
+  STR_ORK_BOY_RANK_0: "Boy"
+  STR_ORK_BOY_RANK_1: "Greener Boy"
+  STR_ORK_BOY_RANK_2: "Greenest Boy"
+  STR_ARDBOY_RANK_0: "'ardboy"
+  STR_ARDBOY_RANK_1: "'arderboy"
+  STR_ARDBOY_RANK_2: "'ardass"
+  STR_ARDBOY_RANK_3: "'ardestboy"
+  STR_NOB_RANK_0: "Nob"
+  STR_NOB_RANK_1: "Boss Nob"
+  STR_NOB_RANK_2: "Big Boss Nob"
+  STR_NOB_RANK_3: "Bigger Boss Nob"
+  STR_NOB_RANK_4: "Biggest Boss Nob"
+# #AT.ORKS.Events
+  STR_ORK_LEADER_INTERROGATION: "The Ork Proposes a Deal?"
+  STR_ORK_LEADER_INTERROGATION_DESCRIPTION: "During interrogation, the Ork we captured was surprisingly talkative. He stated that we ''Gave 'im and da boyz a good propa scrap'' and kept going on about how he was ''Sumtin' of a big deal wit da boyz'' It claims that, if we release it, he can work out a deal and buy guns from them because 'Surely ya value sum good proppa dakka'. We could pursue this commander, but have are we really going to stoop so far as to use Ork weapons?"
+# #AT.ORKS.Corpses
+  STR_GUARD_ORK_BOY_CORPSE: "Ork Corpse"
+  STR_SQUIG_CORPSE: "Squig Corpse" #for compatibility
+  STR_PLAYER_SQUIG_CORPSE: "Squig Corpse"
+  STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE: "Stuffed Squig Corpse"
 # #AT.ELDAR#
 # #AT.ELDAR.Troops
   STR_ELDAR_SEER_F: "Eldar Psyker"
@@ -1512,12 +1619,6 @@ en-US: #  yamllint disable-line rule:empty-values
 # #IG.STEEL#          Steel Legion Strategy
 # #IG.KRIEG#          Krieg Strategy
 # #IG.VALHALLA#       Valhallan Strategy
-# #FOE.NECRON
-# #FOE.NECRON.Items
-  STR_GAUSS_FLAYER_UFOPEDIA: "{NEWLINE} An Necron Gauss Weapon that can strip a target down to nothing molecule by molecule, reducing it to its constituent atoms in a matter of seconds. Gauss Flayers are rifle-like weapons consisting of a stock, a transparent tube containing the unholy and unknown viridian energy the weapon fires."
-  STR_SYNAPTIC_DISINTEGRATOR_UFOPEDIA: "{NEWLINE} An advanced sniper weapon utilised only by Necron Deathmark assassins as their favoured weapon to deliver death from afar. These cruel long-barrelled rifles fire compressed leptonic beams of sub-atomic particles which destroy neural and synaptic tissue."
-  STR_GAUSS_BLASTER_UFOPEDIA: "{NEWLINE} A Gauss Blaster is a type of horrifying Necron Gauss Weapon that can strip a target down molecule by molecule, reducing it to its constituent atoms in a matter of seconds."
-  STR_HYPERPHASESWORD_UFOPEDIA: "{NEWLINE} A Hyperphase Sword is a Necron melee weapon whose energy blade vibrates across dimensional states and can easily slice through armour and flesh to sever the vital organs within. A Hyperphase Sword can be considered an advanced type of Power Weapon."
 #########################
 # 04. ENEMY FACTIONS (OPFOR) #
 #########################
@@ -1914,7 +2015,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_OUTPOST_FINAL_ALERT: "Outpost for Showcase"
   STR_OUTPOST_FINAL_DESCRIPTION: "Map to display all units at service of the Imperium"
   STR_OUTPOST_FINAL_SITE_SITE: "Outpost Showcase Site"
-
+# ORK
+  STR_SQUIG_HORDE: "RunAway Squigs Horde"
 # FOE.MARKERS
     # Map mission markers names with numbers
   STR_ENEMY_OUTPOST: "ENEMY OUTPOST"
@@ -2018,7 +2120,84 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_FINAL_TOMB_: "TOMB OF THE ARCHITECT"
   STR_INQ_BASE: "Inquisition Main Base"
   STR_INQ_BASE_: "Inquisition Main Base"
+# #FOE.GK
+# Units
+  STR_GK_SOLDIER: "Grey Knight"
+  STR_GK_SOLDIER_ADEPTAS: "Grey Knight"
+  STR_GK_SOLDIER_BA: "Brunus Antonius"
+  STR_GK_SOLDIER_NS: "Hartimax Ottonius"
+#GK Corpse-------------------------------------------------
+  STR_GREYK_CORPSE: "Grey Knight Corpse"
+  STR_GREYK_CORPSE_ADEPTAS: "Grey Knight Corpse"
+  STR_GREYK_CORPSE_I: "Grey Knight Inquisitor"
+# #FOE.NECRON
+# #FOE.NECRON.Items
+  STR_GAUSS_FLAYER_UFOPEDIA: "{NEWLINE} An Necron Gauss Weapon that can strip a target down to nothing molecule by molecule, reducing it to its constituent atoms in a matter of seconds. Gauss Flayers are rifle-like weapons consisting of a stock, a transparent tube containing the unholy and unknown viridian energy the weapon fires."
+  STR_SYNAPTIC_DISINTEGRATOR_UFOPEDIA: "{NEWLINE} An advanced sniper weapon utilised only by Necron Deathmark assassins as their favoured weapon to deliver death from afar. These cruel long-barrelled rifles fire compressed leptonic beams of sub-atomic particles which destroy neural and synaptic tissue."
+  STR_GAUSS_BLASTER_UFOPEDIA: "{NEWLINE} A Gauss Blaster is a type of horrifying Necron Gauss Weapon that can strip a target down molecule by molecule, reducing it to its constituent atoms in a matter of seconds."
+  STR_HYPERPHASESWORD_UFOPEDIA: "{NEWLINE} A Hyperphase Sword is a Necron melee weapon whose energy blade vibrates across dimensional states and can easily slice through armour and flesh to sever the vital organs within. A Hyperphase Sword can be considered an advanced type of Power Weapon."
+# #FOE.NECRON.Units
+  STR_NECRON_WARRIOR: "Necron Warrior"
+  STR_NECRON_IMORTAL: "Necron Immortal"
+  STR_NECRON_DEATHMARK: "Necron Deathmark"
+  STR_NECRON_LYCHGUARD: "Necron Lychguard"
+  STR_NECRON_DESTROYER: "Necron Destroyer"
+  STR_NECRON_ARCHITECT: "Necron Architect"
+  STR_NECRON_SCARAB5: "Canoptek Scarab"
+  STR_NECRON_SCARAB3: "Canoptek Scarab"
+  STR_NECRON_SCARAB1: "Canoptek Scarab"
+  STR_MONO_N: "Monolith Turret"
+  STR_MONO_W: "Monolith Turret"
+  STR_MONO_S: "Monolith Turret"
+  STR_MONO_E: "Monolith Turret"
+# #FOE.NECRON.Armors
+  STR_NECRON_WARRIOR_ARMOR: "Necron Warrior"
+  STR_NECRON_IMORTAL_ARMOR: "Necron Immortal"
+  STR_NECRON_DEATHMARK_ARMOR: "Necron Deathmark"
+  STR_NECRON_LYCHGUARD_ARMOR: "Necron Lychguard"
+  STR_DESTROYER_ARMOR: "Necron Destroyer"
+  STR_NECRON_SCARAB_ARMOR1: "Canoptek Scarab"
+  STR_NECRON_SCARAB_ARMOR3: "Canoptek Scarab"
+  STR_NECRON_SCARAB_ARMOR5: "Canoptek Scarab"
+# #FOE.NECRON.Corpse
+  STR_NECRON_WARRIOR_CORPSE: "Necron Warrior Corpse"
+  STR_NECRON_IMORTAL_CORPSE: "Necron Immortal Corpse"
+  STR_NECRON_DEATHMARK_CORPSE: "Necron Deathmark Corpse"
+  STR_NECRON_LYCHGUARD_CORPSE: "Necron Lychguard Corpse"
+  STR_NECRON_ARCHITECT_CORPSE: "Necron Architect Corpse"
+  STR_DESTROYER_CORPSE: "Necron Destroyer Corpse"
+  STR_NECRON_SCARAB_CORPSE: "Canoptek Scarab Corpse"
+# #FOE.ORK
+#Craft
+  STR_TRUKK_UFO: "Ork Expedition"
+  STR_WAGGON_UFO: "Ork Waggon"
+  STR_WAGGON_CONVOY_UFO: "Ork Waggon Convoy"
+  STR_ORK_MIG_UFO: "Ork Fighta"
+#Items
+  STR_WAGGON_CONVOY_UFO_DATA: "Ork Waggon Convoy Scan Data"
+  STR_TRUKK_UFO_DATA: "Ork Expedition Scan Data"
+  STR_WAGGON_UFO_DATA: "Ork Waggon Scan Data"
+  STR_ORK_MIG_UFO_DATA: "Ork Fighta Scan Data"
 
+  STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI: "Squig Chomp" #to be used by AI bomb squig only
+#EnemyUnits
+  STR_GRETCHIN: "Gretchin"
+  STR_MEKBOYZ: "Mek Boy"
+  STR_SQUIG_ASSAULT_AI: "Azzault Squig"
+  STR_SQUIG_BOMBA_AI: "Squig Bommarz"
+#Enemy Units Armors
+  STR_SQUIG_ARMOR_AI: "Azzault Squig Arma"
+  STR_SQUIG_ARMOR_BOMB_AI: "Squig Bommarz Arma"
+#ORK OPFOR Corpses
+  STR_GRETCHIN_CORPSE: "Ork Gretchin Corpse"
+  STR_ORKBOY_CORPSE: "Ork Boy Corpse"
+  STR_ORKARDBOY_CORPSE: "Ork 'ard Boy Corpse"
+  STR_ORKNOBBOY_CORPSE: "Ork Nob Corpse"
+  STR_ORKTURRET_CORPSE: "Wrecked Kannon Turret"
+  STR_ORKTURRET2_CORPSE: "Wrecked Shoota Turret"
+  STR_KILLA_CORPSE: "Wrecked Killa kan"
+  STR_SQUIG_CORPSE_AI: "Squig Corpse"
+  STR_SQUIG_CORPSE_EXPLOSIVE_AI: "Stuffed Squig Corpse"
 #########################
 # 05. MAP AND ASSETS # everything map related
 #########################
@@ -2366,7 +2545,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_POWER_SWORD_CM: "Power Sword"
  # STR_POWER_SWORD_SUP: "Master Crafted Power Sword"
   STR_POWER_SWORD_MC: "Master Crafted Power Sword"
- # STR_POWER_SWORD_MC_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon.{NEWLINE}{NEWLINE}Strength required: {ALT}100"
   STR_HAMMER: "Thunder Hammer"
   STR_HAMMER_MC: "Master Crafted Thunder Hammer"
   STR_KNIF: "Combat Knife"
@@ -3208,25 +3386,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_MONK1: "Civilian"
   STR_MONK2: "Civilian"
 #ALIENS Ranks---------------------------------------------------
-  STR_GK_SOLDIER: "Grey Knight"
-  STR_GK_SOLDIER_ADEPTAS: "Grey Knight"
-  STR_GK_SOLDIER_BA: "Brunus Antonius"
-  STR_GK_SOLDIER_NS: "Hartimax Ottonius"
-  STR_NECRON_WARRIOR: "Necron Warrior"
-  STR_NECRON_IMORTAL: "Necron Immortal"
-  STR_NECRON_DEATHMARK: "Necron Deathmark"
-  STR_NECRON_LYCHGUARD: "Necron Lychguard"
-  STR_NECRON_DESTROYER: "Necron Destroyer"
-  STR_NECRON_ARCHITECT: "Necron Architect"
-  STR_NECRON_SCARAB5: "Canoptek Scarab"
-  STR_NECRON_SCARAB3: "Canoptek Scarab"
-  STR_NECRON_SCARAB1: "Canoptek Scarab"
-  STR_MONO_N: "Monolith Turret"
-  STR_MONO_W: "Monolith Turret"
-  STR_MONO_S: "Monolith Turret"
-  STR_MONO_E: "Monolith Turret"
-  STR_GRETCHIN: "Gretchin"
-  STR_MEKBOYZ: "Mek Boy"
+
   STR_ELDAR_TURRET: "Eldar Wave Serpent"
   STR_ELDAR_WRAITHGUARD: "Eldar Wraithguard" #D
   STR_ELDAR_SCORPION: "Eldar Scorpion" #D
@@ -3248,8 +3408,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TARGET_LEADER: "Target Beacon"
   STR_PRED_TURRET: "Chaos Predator Main Turret"
   STR_SIDE_TURRET: "Chaos Predator Heavy Bolter"
-  STR_ORK_TURRET: "Ork Kannon Turret"
-  STR_ORK_TURRET2: "Ork Shoota Turret"
   STR_OBLITERATOR_COMMANDER: "Obliterator Master"
   STR_OBLITERATOR_SOLDIER: "Obliterator"
   STR_CELESTIAN_ZOMBIE: "Fallen Sister"
@@ -3308,27 +3466,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BW3_CORPSE: "Brood Brother Corpse"
   STR_SOB_CORPSE: "Reductus Saboteur Corpse"
   STR_GENEBUG_CORPSE: "Wrecked Equipment"
-
-#GK Corpse-------------------------------------------------
-  STR_GREYK_CORPSE: "Grey Knight Corpse"
-  STR_GREYK_CORPSE_ADEPTAS: "Grey Knight Corpse"
-  STR_GREYK_CORPSE_I: "Grey Knight Inquisitor"
-#NECRON Corpse-------------------------------------------------
-  STR_NECRON_WARRIOR_CORPSE: "Necron Warrior Corpse"
-  STR_NECRON_IMORTAL_CORPSE: "Necron Immortal Corpse"
-  STR_NECRON_DEATHMARK_CORPSE: "Necron Deathmark Corpse"
-  STR_NECRON_LYCHGUARD_CORPSE: "Necron Lychguard Corpse"
-  STR_NECRON_ARCHITECT_CORPSE: "Necron Architect Corpse"
-  STR_DESTROYER_CORPSE: "Necron Destroyer Corpse"
-  STR_NECRON_SCARAB_CORPSE: "Canoptek Scarab Corpse"
-#ORK Corpse-------------------------------------------------
-  STR_GRETCHIN_CORPSE: "Ork Gretchin Corpse"
-  STR_ORKBOY_CORPSE: "Ork Boy Corpse"
-  STR_ORKARDBOY_CORPSE: "Ork 'ard Boy Corpse"
-  STR_ORKNOBBOY_CORPSE: "Ork Nob Corpse"
-  STR_ORKTURRET_CORPSE: "Wrecked Kannon Turret"
-  STR_ORKTURRET2_CORPSE: "Wrecked Shoota Turret"
-  STR_KILLA_CORPSE: "Wrecked Killa kan"
 #ELDAR Corpse-------------------------------------------------
   STR_GUARDIAN_CORPSE: "Eldar Guardian Corpse"
   STR_GUARDIANP_CORPSE: "Eldar Guardian Corpse"
@@ -3396,22 +3533,9 @@ en-US: #  yamllint disable-line rule:empty-values
 #RESEARCH
   STR_INTERROGATION_COMPLETED: "(Live Captive Researched)"
 #ARMOR FOES
-  STR_NECRON_WARRIOR_ARMOR: "Necron Warrior"
-  STR_NECRON_IMORTAL_ARMOR: "Necron Immortal"
-  STR_NECRON_DEATHMARK_ARMOR: "Necron Deathmark"
-  STR_NECRON_LYCHGUARD_ARMOR: "Necron Lychguard"
-  STR_DESTROYER_ARMOR: "Necron Destroyer"
-  STR_NECRON_SCARAB_ARMOR1: "Canoptek Scarab"
-  STR_NECRON_SCARAB_ARMOR3: "Canoptek Scarab"
-  STR_NECRON_SCARAB_ARMOR5: "Canoptek Scarab"
   STR_GREYKNIGHT_ARMOR: "Grey Knight"
   STR_GREYKNIGHT_ADEPTAS_ARMOR: "Grey Knight Armor"
   STR_GREYKNIGHT_UC: "Grey Knight Armor"
-  STR_GROTS_ARMOR: "Gretchin"
-  STR_ORK_ARMORL: "Ork Boy"
-  STR_ORK_ARMORM: "Ork 'ard Boy"
-  STR_ORK_ARMORH: "Ork Nob"
-  STR_ORK_KILLA_ARMOR: "Killa Kan"
   STR_WRAITHGUARD_ARMOR_P: "Eldar Wraithguard Armor" #D
   STR_WRAITHGUARD_ARMOR_P_SHIELD: "FS Eldar Wraithguard Armor" #D
   STR_WRAITHGUARD_ARMOR: "Eldar Wraithguard" #D
@@ -3537,20 +3661,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GENE_SAB_AUTOPSY: "Reductus Saboteur Origin"
   STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
   STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
-
-#NECRON UFOPEDIA AUTOPSY
-  STR_NECRON_WARRIOR_AUTOPSY: "Necron Warrior Origin"
-  STR_NECRON_IMORTAL_AUTOPSY: "Necron Immortal Origin"
-  STR_NECRON_DEATHMARK_AUTOPSY: "Necron Deathmark Origin"
-  STR_NECRON_LYCHGUARD_AUTOPSY: "Necron Lychguard Origin"
-  STR_NECRON_DESTROYER_AUTOPSY: "Necron Destroyer Origin"
-  STR_NECRON_SCARAB_AUTOPSY: "Canoptek Scarab Origin"
-  STR_NECRON_WARRIOR_UFOPEDIA: "{NEWLINE} Necron Warriors are the primary infantry troops of the soulless, robotic Necrons. They were created from the majority of the Necrontyr people who agreed to be bound to the will of their Star Gods, the terrible entities known as the C'tan. The Necrontyr's consciousnesses were transferred into robotic bodies made of the living metal called Necrodermis. Over a long period of time, the new unliving bodies dulled the Necrontyr's minds and their abilities to feel emotion or pleasure."
-  STR_NECRON_IMORTAL_UFOPEDIA: "{NEWLINE} The Necron Immortals are those favoured Necrontyr who were among the first to give up their flesh and embrace the necrodermis and their C'tan gods. For this, they were rewarded by being turned into Immortals. In life, Immortals were the professional soldiery of the Necrontyr empire. In death, they surpass the Warriors in nearly every way."
-  STR_NECRON_DEATHMARK_UFOPEDIA: "{NEWLINE} Highly-skilled snipers and assassins of the Necron forces, appearing from apparently nowhere and striking with terrible precision. The name is fitting: once given the hunter's mark, a Deathmark's targets are almost certain to meet their deaths scant moments later. Like most Necrons, the Deathmarks' technology lies far beyond the realm of human comprehension and they can effectively phase in and out of normal space-time at will."
-  STR_NECRON_LYCHGUARD_UFOPEDIA: "{NEWLINE} Elite protectors and emissaries of the Necron nobility. In order to serve as a bulwark against those who would harm their charge, gifted with the highest quality of living metal bodies, equal in resilience and power to those inhabited by the Lords and Overlords they protect. In addition to serving as wardens, Lychguards often act as messengers and envoys for their masters. In order to better serve in this capacity, the personality and intellect of the Lychguards was preserved through the process of bio-transference."
-  STR_NECRON_DESTROYER_UFOPEDIA: "{NEWLINE} Necron Destroyers are deranged agents of annihilation whose sole reason for existence is centred around an unshakeable yearning to quench the flames of life. A Destroyer cares not for borders or dynasty allegiance, nor does he make any distinction between the innocent and the damned, all life is his enemy, and all living creatures are his prey."
-  STR_NECRON_SCARAB_UFOPEDIA: "{NEWLINE} A small, silver, beetle-like Necron construct. These robotic scarabs are the most numerous and diverse of the Necrons' Canoptek machine servants. They are designed to break down organic and non-organic matter into raw energy, which can then be woven into fresh construct forms at the direction of the scarabs' controller.."
 #ELDAR UFOPEDIA AUTOPSY
   STR_GUARDIAN_AUTOPSY: "Eldar Guardian Origin"
   STR_BANSHEE_AUTOPSY: "Eldar Banshee Origin"
@@ -3568,20 +3678,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BANSHEE_AUTOPSY_UFOPEDIA: "{NEWLINE} The Howling Banshees are the all-female Eldar Aspect Warriors who specialise in highly mobile melee combat and represent the Eldar War God Khaela Mensha Khaine's ability to instill fear in his foes. The banshee is a harbinger of woe and death in Eldar Mythology. Their cry is said to herald ill fate and can even wrench a soul from its Spirit Stone"
   STR_SEER_AUTOPSY_UFOPEDIA: "{NEWLINE} A Seer is a member of the Craftworld Eldar race who is currently following the Path of the Eldar dedicated to the development and extensive use of the Eldar's potent psychic powers beyond the innate psychic ability possessed by every Eldar."
   STR_ELDAR_PLAT_AUTOPSY_UFOPEDIA: "{NEWLINE} Grav Platforms are Eldar anti-gravitational platforms mounting heavy weapons crewed by a pair of Guardians. The advanced gravity-defying technology on the platforms allows the Eldar to rapidly and effortlessly move heavy weapons across the field of battle regardless of terrain."
-#ORK UFOPEDIA AUTOPSY
-  STR_GRETCHIN_AUTOPSY: "Gretchin Origin"
-  STR_ORK_AUTOPSY: "Ork Boy Origin"
-  STR_ORKARDBOY_AUTOPSY: "Ork 'ard Boy Origin"
-  STR_ORKNOBBOY_AUTOPSY: "Ork Nob Origin"
-  STR_ORK_DREAD_AUTOPSY: "Ork Dread Origin"
-  STR_KILLA_AUTOPSY: "Ork Killa Kan Origin"
-
-  STR_GRETCHIN_AUTOPSY_UFOPEDIA: "{NEWLINE} Gretchin or Grotz are basically a smaller subspecies of Orks, who are more cowardly than normal Orks and are usually used as living shields, to clear mine fields, are stepped on to get through difficult terrain, and sometimes even as emergency rations."
-  STR_ORK_AUTOPSY_UFOPEDIA: "{NEWLINE} Orks are savage, warlike and crude, but they are one of the most successful species in the Milky Way, outnumbering possibly every other intelligent race, including Mankind. However, the power of the Ork race as a whole is limited due to the fact that they are split into hundreds of tiny empires, klanz and tribes, which are more often warring between themselves than not."
-  STR_ORKARDBOY_AUTOPSY_UFOPEDIA: "{NEWLINE} Elite specialist Ork Boy who is better armored and more skilled in combat due to his long experience compared to a standard Greenskin. These Ork warriors have survived many battles and equip themselves with a Karapace, the Ork version of Carapace Armor. These well-protected warriors often form the center of an Ork army."
-  STR_ORKNOBBOY_AUTOPSY_UFOPEDIA: "{NEWLINE} Serving as a crude Greenskin ruling class, the Nobz are never above reminding the Boyz who's in charge by making a few bloody examples. This could involve hacking up some suitably impressive foes, or knocking a few fractious Boyz's blocks off. The Nobz aren't too fussy, just so long as it gets the message across."
-  STR_ORK_DREAD_AUTOPSY_AUTOPSY_UFOPEDIA: "{NEWLINE} Grav Platforms are Eldar anti-gravitational platforms mounting heavy weapons crewed by a pair of Guardians. The advanced gravity-defying technology on the platforms allows the Eldar to rapidly and effortlessly move heavy weapons across the field of battle regardless of terrain."
-  STR_KILLA_AUTOPSY_UFOPEDIA: "{NEWLINE} Killa Kans are essentially giant metal canisters on piston-driven legs that sport lethal close combat attachments and heavy-duty weaponry. One of their limbs usually ends in deadly-looking power shears or a great blood-encrusted buzz saw, whilst the other is a large calibre weapon welded to the opposite side. "
 
 #UFOPEDIA AUTOPSY
   STR_GREYKNIGHT_AUTOPSY: "Grey Knight Origin"
@@ -4693,18 +4789,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GOLIATH_UFO_DATA: "Goliath Truck Scan Data"
   STR_GOLIATH_UFO_UFOPEDIA: "{NEWLINE}  Infinitely adaptable, hard-wearing and rugged, the Goliath Truck is a mainstay of the Genestealer Cults. Fast and manoeuvrable, it bounces around the battlefield laying down walls of gunfire, heavy stubbers and autocannons ablaze. Once dedicated to the shadows, proudly emblazoned with insignia of the Cult "
 
-  STR_TRUKK_UFO: "Ork Expedition"
-  STR_TRUKK_UFO_DATA: "Ork Expedition Scan Data"
-  STR_TRUKK_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
-  STR_WAGGON_UFO: "Ork Waggon"
-  STR_WAGGON_UFO_DATA: "Ork Waggon Scan Data"
-  STR_WAGGON_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
-  STR_WAGGON_CONVOY_UFO: "Ork Waggon Convoy"
-  STR_WAGGON_CONVOY_UFO_DATA: "Ork Waggon Convoy Scan Data"
-  STR_WAGGON_CONVOY_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
-  STR_ORK_MIG_UFO: "Ork Fighta"
-  STR_ORK_MIG_UFO_DATA: "Ork Fighta Scan Data"
-  STR_ORK_MIG_UFO_UFOPEDIA: "{NEWLINE} Fightas are built for speed and firepower, typically carrying Big Shootas and a small wing of bombs and rockets. Despite its crude design, a Fighta is easily a match for any Imperial Navy fighter and its engine is remarkably effective, capable of producing a huge amount of thrust. Ork Fighta Pilots love nothing more then to fly in close to enemy aircraft and tear it apart with hail of dakka."
   STR_PREDATOR_UFO: "Traitor Guard Lightning"
   STR_STORMRAVEN_UFO: "Inquisition Stormraven"
   STR_STORMRAVEN_UFO_UFOPEDIA: "{NEWLINE} A Stormraven Gunship of the Grey Knights Chapter."
@@ -5820,61 +5904,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_NECRON_REMNANTS_CODEX: "{NEWLINE} Fragments, shards and other residual bits of Necron technology that are left behind due to battle damage, malfunction, flaws, and errors with their phase out protocols; something that the prevailing Warp Storm has greatly contributed to. With enough willingness to blaspheme, engage in brute force trial and error and reverse engineering, sufficiently talented and equipped Adepts might learn how to reassemble these remnants into viable weaponry."
 
   STR_XENO_LEADER_INTERROGATED: "(Xeno Leader Interrogation)"
-
-  STR_ORK_LEADER_INTERROGATED: "Ork Boss Interrogation"
-  STR_ORK_LEADER_INTERROGATION: "The Ork Proposes a Deal?"
-  STR_ORK_LEADER_INTERROGATION_DESCRIPTION: "During interrogation, the Ork we captured was surprisingly talkative. He stated that we ''Gave 'im and da boyz a good propa scrap'' and kept going on about how he was ''Sumtin' of a big deal wit da boyz'' It claims that, if we release it, he can work out a deal and buy guns from them because 'Surely ya value sum good proppa dakka'. We could pursue this commander, but have are we really going to stoop so far as to use Ork weapons?"
-  STR_ORK_ONLY: "Dakka"
-  STR_ORK_DEAL: "Ork Arms Trade"
-  STR_ORK_DEAL_UFOPEDIA: "{NEWLINE} With the arms deal between us and the Orks secured, we are now able to purchase orkish weaponry through our trade outposts. Defeating more powerful groups of Orks will expand the access of goods we're able to purchase {NEWLINE}{NEWLINE}Defeat a Tier 3 ork base to gain access to ork mercenaries, and a Tier 5 base to unlock the purchase of all orkish weapons available for trade."
-  STR_ORK_MERCENARIES: "Ork Mercenaries"
-  STR_ORK_RESPECT: "Respect of the Orks"
-  STR_BLOOD_AXE_ORK_BOY: "Blood Axe Ork Boy"
-  STR_GUARD_ORK_BOY_AUTOPSY: "Ork Boy Origins"
-  STR_GUARD_ORK_BOY_CORPSE: "Ork Corpse"
-  STR_GUARD_ORK_ARDBOY: "Blood Axe 'ardboy"
-  STR_GUARD_ORK_NOB: "Blood Axe Nob"
-
-  STR_BLOODAXE_ARDBOY_PROMOTION: "Ork 'ardboy Promotion"
-  STR_BLOODAXE_ARDBOY_PROMOTION_CODEX: "An 'Ardboy (or 'Ard Boy) iz an elite speciualist ork 'oo iz betta armoured an' more skilled 'n kombat due ta his long 'perience kompared ta a runty ork. Dese orkz have zurvived many scraps an equip demselves wit' a karapace, da propa ork version uv 'perial karapace arma. Dey boldly charge forward throo hails uv enemy fire ta kome ta grips wit' 'da foe 'n close kombat. {NEWLINE}{NEWLINE} Ta promote an Ork ta 'Ardboy dey must have 'da follow'n prerequizites: {ALT}strength: 70{ALT}" # An 'Ardboy (or 'Ard Boy) is an elite specialist Ork who is better armoured and more skilled in combat due to his long experience compared to a runty ork. These Ork warriors have survived many battles and equip themselves with a Karapace, the proper Ork version of imperial Carapace armour. They boldly charge forward through hails of enemy fire to come to grips with the foe in close combat. {NEWLINE}{NEWLINE}To promote an Ork to 'Ardboy they must have the following prerequisites: {ALT}strength: 70{ALT}
-  STR_BLOODAXE_NOB_PROMOTION: "Ork Nob Promotion"
-  STR_BLOODAXE_NOB_PROMOTION_CODEX: "A Nob iz an even bigga an stronga ork 'oo 'as access ta 'da best armors 'n 'da ork arsenal an 'as kilt way more enemiez dan 'e iz will'n ta kount. neva ask a nob if 'e 'as krumped enough enemiez as yer will become da next, so don't be a git. {NEWLINE}{NEWLINE} ta promote an 'Ardboy ta Nob dey must have 'da follow'n prerequisites: {ALT}strength: 100, commendations: Veteran{ALT}" #A Nob is an even bigger and stronger Ork who has access to the best armors in the ork arsenal and has killed way more enemies than he is willing to count. never ask a nob if he has crumped enough enemies as you will become the next, so don't be an idiot. {NEWLINE}{NEWLINE}To promote an 'Ardboy to Nob they must have the following prerequisites: {ALT}strength: 100, commendations: Veteran{ALT}
-
-  STR_BLOODAXE_CAPFLAK_PLAYER_ARMOR: "Ork Flakk Armor"
-  STR_BLOODAXE_KARAPACE_PLAYER_ARMOR: "Ork Karapace Armor"
-  STR_BLOODAXE_ARDBOY_KARAPACE_PLAYER_ARMOR: "'ardboy Karapace Armor"
-  STR_BLOODAXE_NOB_ARMOR_PLAYER: "Nob Karapace Armor"
-  STR_BLOODAXE_STORM_PLAYER_ARMOR: "Stormboy Armor"
-  STR_BLOODAXE_MEGANOB_PLAYER_ARMOR: "Meganob Armor"
-  STR_ASSAULT_MEGA_ARMOR: "Azzault Mega-Arma"
-  STR_ASSAULT_MEGA_ARMOR_BURNA: "Azzault Mega-Arma wif Burna"
-
-  STR_BLOODAXE_CAPFLAK_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Da Standard izzue arma' of Da Emprah's Greenest. Dis 'ere flakk will sometimes aktually stop dakka from pokin' 'oles in da boyz."
-  STR_BLOODAXE_KARAPACE_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Karapace arma' costs more teef, but kan be wirf it ta keep da boyz alive longa."
-  STR_BLOODAXE_ARDBOY_KARAPACE_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} When da boys get bigga, an' 'ave proven demselves in fightin, dey are promoted to 'Ardboyz, an' given dis ere karapace to 'elp em get even bigga."
-  STR_BLOODAXE_NOB_ARMOR_PLAYER_UFOPEDIA: "{NEWLINE} Da biggest boyz iz kalled Nobs, and dey av even betta arma' dan da Ardboyz. Nobz is betta at fightin too."
-  STR_BLOODAXE_MEGANOB_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Da Mekboyz kan make speshul arma' for da Nobs to wear, to make em even 'arder dan before."
-  STR_ASSAULT_MEGA_ARMOR_UFOPEDIA: "{NEWLINE} Dis 'ere Mega-Arma 'az gunz an' powa klaws stukk ta da armz, so da nobs wearin' it kan be even killier."
-  STR_ASSAULT_MEGA_ARMOR_BURNA_UFOPEDIA: "{NEWLINE} Wun o' da best bitz 'bout wearin' ded-ard arma iz dat it getz lotz 'arder ta blowz yerself up. Dis ere arma' 'az a burna stukk to it 'stead o' da gunz, but itz made tuff soze it don' burna da git uzin' it."
-  STR_BLOODAXE_STORM_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Ya eva' see da rokkitz flyin, and fink 'dat looks loik fun?' Well boss, Stormboyz do, so dey strap da rokkits to dere baks, an' fly at da enemies. I kud neva' figure out 'ow ta not blow up meself, but da Stormboyz seem ta be alright."
-
-  STR_KARAPACE_ARMOR: "Ork Karapace Armor"
-  STR_STORMBOY_ARMOR: "Stormboy Armor"
-  STR_MEGANOB_ARMOR: "Meganob Armor"
-  STR_ASSAULT_MEGANOB_ARMOR: "Azzault Mega-Arma"
-
-  STR_ORK_BOY_RANK_0: "Boy"
-  STR_ORK_BOY_RANK_1: "Greener Boy"
-  STR_ORK_BOY_RANK_2: "Greenest Boy"
-  STR_ARDBOY_RANK_0: "'ardboy"
-  STR_ARDBOY_RANK_1: "'arderboy"
-  STR_ARDBOY_RANK_2: "'ardass"
-  STR_ARDBOY_RANK_3: "'ardestboy"
-  STR_NOB_RANK_0: "Nob"
-  STR_NOB_RANK_1: "Boss Nob"
-  STR_NOB_RANK_2: "Big Boss Nob"
-  STR_NOB_RANK_3: "Bigger Boss Nob"
-  STR_NOB_RANK_4: "Biggest Boss Nob"
 
 # inquisition eldar alliance Eldar
   STR_ELDAR_LEADER_INTERROGATED: "Eldar Leader Interrogation"
@@ -7676,29 +7705,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ORK_FORGE_SHIELD_UFOPEDIA: "{NEWLINE} Dat 'ard stuf makah iz 'spensive, Boss. Weze shood protekt it soze it don' get boomed.{NEWLINE}{NEWLINE}Immune to Bombardment and destruction.{NEWLINE}{NEWLINE}Can only be built over an existing 'Ard Stufz Makah."
 
   STR_ORK_ARMOR_TRAIN: "Kwa-li-tee o' Loif Trainin' Arma"
-
-  STR_SQUIG_ASSAULT_AI: "Azzault Squig"
-  STR_SQUIG_ARMOR_AI: "Azzault Squig Arma"
-  STR_SQUIG_BOMBA_AI: "Squig Bommarz"  # ORKMOD
-  STR_SQUIG_ARMOR_BOMB_AI: "Squig Bommarz Arma"  # ORKMOD
-
-  STR_SQUIG: "Squig"
-  STR_SQUIG_HORDE: "RunAway Squigs Horde"
-  STR_SQUIG_ARMOR: "Azzault Squig Arma"
-  STR_SQUIG_ARMOR_BOMB: "Squig Bommarz Arma"  # ORKMOD
-  STR_SQUIG_CORPSE: "Squig Corpse"  # ORKMOD
-  STR_PLAYER_SQUIG_CORPSE: "Squig Corpse"
-  STR_SQUIG_CORPSE_AI: "Squig Corpse"
-  STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE: "Stuffed Squig Corpse"
-  STR_SQUIG_CORPSE_EXPLOSIVE_AI: "Stuffed Squig Corpse"
-  STR_SQUIG_BITE: "Squig Chomp"
-  STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI: "Squig Chomp" #to be used by AI bomb squig only
-
-
-  STR_ORK_SQUIG_EXAM: "Ork Squig Examination"
-  STR_SQUIG_BITE_CODEX: "Don't look inside da gifta squig mouth. Really. Don't."
-  STR_SQUIG_AUTOPSY: "Squig Origin"
-  STR_SQUIG_EXPLOSIVE_AUTOPSY: "Bommarz Squig Origin"
 
   STR_PLAYER_GROT: "Gretchin"
   STR_PLAYER_GROTS_ARMOR: "Gretchin Arma"
@@ -15526,9 +15532,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_EXPULSUM_CORPSE_GEO: "Expulsum Corpse"
   STR_SATURNINE_CORPSE_GEO: "Saturnine Corpse"
   STR_SATURNINEGK_CORPSE_GEO: "Saturnine Corpse"
-
-# Grav damage type
-  STR_DAMAGE_12: "GRAV"
 
 # Unique
   STR_SLY_MARBO: "Sly Marbo"
