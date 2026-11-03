@@ -210,7 +210,7 @@ armors:
       strength: 0 # No extra strength
       psiStrength: 0
       psiSkill: 0
-      melee: 5
+      melee: 10
     storeItem: STR_NONE
     frontArmor: 65
     sideArmor: 60

@@ -1780,19 +1780,17 @@ ufopaedia:
 
 ## #AT.SLAAN# SLAANESH STRATEGY SECTION
 
-#  - id: STR_SLAANESHPATH_GATE
-#    type_id: 10
-#    image_id: SlaaneshSisterOrigins.SPK
-#    text: STR_SLAANESHPATH_GATE_CODEX 
-#    section: STR_MISSIONPEDIA
-
   - id: STR_SLAANESHPATH_GATE
     type_id: 10
     section: STR_STRATEGY
-    image_id: SlaaneshSisterOrigins.SPK
+    image_id: CHAOSSHRINECULT.SPK
     requires:
       - STR_SLAANESHPATH_GATE
-    text: STR_SLAANESHPATH_GATE_UFOPEDIA_DESCRIPTION
+    pages:
+      - title: STR_VOICE_UFOPEDIA_TITLE
+        text: STR_SLAANESHPATH_GATE_UFOPEDIA_P1
+      - title: STR_VOICE_UFOPEDIA_TITLE
+        text: STR_SLAANESHPATH_GATE_UFOPEDIA_P2
 
   - id: STR_PROCURE_TRANSPORTATION
     type_id: 10

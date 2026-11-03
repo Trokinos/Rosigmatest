@@ -420,7 +420,6 @@ items:
       - STR_SHARD_GRENADE40
       - STR_BALEFIRE_GRENADE40
 
-<<<<<<< HEAD
  #### BALLISTIC WEAPONS ####
 
   - type: STR_AUTOGUN_ADEPTAS_MKIX # Agripinaa Mk. IX Autogun.
@@ -539,8 +538,6 @@ items:
       ITEM_RECOIL: 30
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 75
       ITEM_HAS_BIPOD: 1
-=======
->>>>>>> e277d30a16504e3784bf5f10cb262737528c0759
 
  #### BOLT PISTOLS ####
 
@@ -580,7 +577,7 @@ items:
   - type: STR_BOLTER_CANTUS_SLAAN # Done (Pending art asset rework)
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
-      - STR_SLAANESHPATH
+      - STR_GENERALLOCK
     requires:
     - STR_ALIENS_ONLY
     dropoff: 5
@@ -599,7 +596,7 @@ items:
       shots: 2  # Double shot snap
     autoShots: 4 # foregrip
     size: 0.3
-    costBuy: 5000
+    costBuy: 20000
     costSell: 1500
     weight: 10
     bigSprite: 4080
@@ -627,7 +624,7 @@ items:
   - type: STR_BOLTER_CANTUS_GL  # Done (Pending art asset rework)
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
     requiresBuy:
-      - STR_SLAANESHPATH
+      - STR_GENERALLOCK
     dropoff: 5
     autoRange: 7 
     snapRange: 12
@@ -640,7 +637,7 @@ items:
     tuAimed: 37
     autoShots: 3
     size: 0.3
-    costBuy: 5000
+    costBuy: 25000
     costSell: 1500
     weight: 15 # Heavier
     bigSprite: 4081
@@ -919,7 +916,7 @@ items:
 
   - type: STR_LIGHT_CHAINSWORD_SLAAN # Light chainsword with slaanesh damage profile applied
     requiresBuy:
-      - STR_SLAANESHPATH # Placeholder
+      - STR_GENERALLOCK # Placeholder
     categories: [STR_CAT_MELEE]
     size: 0.2
     costBuy: 4000 # P
