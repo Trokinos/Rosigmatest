@@ -40,7 +40,7 @@ extended:
 #⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
 
-###################################### TABLE OF CONTENTS ################################################
+###################################### TABLE OF CONTENTS #############################################
 
       # 1: BALLISTIC WEAPONS
 
@@ -73,7 +73,7 @@ items:
     costBuy: 9000
     costSell: 2000
     weight: 9
-    bigSprite: 2008  # TODO: CONVERT BIGOB TO 8 BIT
+    bigSprite: 4084
     floorSprite: {mod: 40k, index: 1016}
     handSprite: 6003
     bulletSprite: {mod: 40k, index: 2}
@@ -106,7 +106,7 @@ items:
     costBuy: 12000
     costSell: 2000
     weight: 11
-    bigSprite: 2008  # Agripinaa T3 with scope.
+    bigSprite: 4085  # Agripinaa T3 with scope.
     floorSprite: {mod: 40k, index: 1016}
     handSprite: 6004
     bulletSprite: {mod: 40k, index: 2}
