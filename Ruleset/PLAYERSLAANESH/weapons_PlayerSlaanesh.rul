@@ -50,8 +50,8 @@ extended:
 
       # 2: LIGHT BOLTERS
 
-  #C1 - Eliminator
-    #C2 - Eliminator with GL
+  #C1 - Immaculate Cantus
+    #C2 - Immaculate Cantus with GL
   
 
       # X: Auxiliary weapons
@@ -221,11 +221,6 @@ items:
         set particle_lifetime 1;
         set subvoxel_drift 0;
         return;
-
-
-
-
-
 
   - type: STR_LAS_BATTLERIFLE_SLAAN
     dropoff: 3

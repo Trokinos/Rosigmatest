@@ -212,9 +212,9 @@ armors:
       psiSkill: 0
       melee: 5
     storeItem: STR_NONE
-    frontArmor: 55
-    sideArmor: 40
-    rearArmor: 40
+    frontArmor: 65
+    sideArmor: 60
+    rearArmor: 50
     underArmor: 65
     damageModifier:  # MARINE ARMOR
       - 1.0  # none
