@@ -1488,11 +1488,11 @@ items:
       time: 5
     unprimeActionName: STR_UNPRIME_GRENADE
     flatThrow:
-      time: true
-      energy: false
+      time: false
+      energy: true
     flatPrime:
-      time: true
-      energy: false
+      time: false
+      energy: true
     # Damage Stats
     power: 80
     damageType: 1
