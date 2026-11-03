@@ -2,12 +2,14 @@ extended:
   tagsFile: Ruleset/tags_ROSIGMA.rul
 
 armors:
-  - type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR     # Corrupted Cantus Armor, with minor Chaos blessings.
+
+#HA
+  - type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR 
     visibilityAtDay: 40
-    visibilityAtDark: 22 # Heightened senses
-    antiCamouflageAtDay: 2  # Heightened Senses
-    antiCamouflageAtDark: 2 # Heightened Senses
-    heatVision: 20 # Baseline for sister units.
+    visibilityAtDark: 21 # Very slightly improved senses
+    antiCamouflageAtDay: 1  # Very slightly improved senses
+    antiCamouflageAtDark: 1 # Very slightly improved senses
+    heatVision: 5 # Very slightly improved senses
     spriteSheet: HANDMAIDEN.PCK
     spriteInv: HNDM_33
     customArmorPreviewIndex: 1128
@@ -16,57 +18,60 @@ armors:
     corpseBattle:
       - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
     stats:
-      tu: 10
-      stamina: 10
+      tu: 5
+      stamina: 0
       health: 0
-      bravery: 10  # always multiples of 10
+      bravery: 10
       reactions: 10  # Slightly better reactions
       firing: 5
       throwing: 5
       strength: 0 # No extra strength
       psiStrength: 0
-      psiSkill: 10
-      melee: 10 # Slightly better melee
+      psiSkill: 0
+      melee: 5
     storeItem: STR_NONE
-    frontArmor: 85
-    sideArmor: 70
-    rearArmor: 45
-    underArmor: 70
+    frontArmor: 55
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 65
     damageModifier:  # MARINE ARMOR
       - 1.0  # none
       - 1.0  # AP
       - 1.0  # FLAMES
-      - 1.0  # HE - Weakness to HE
+      - 0.8  # HE - Weakness to HE
       - 0.8  # LASCANON
       - 1.0  # PLASMA
       - 0.8  # STUN - Improved stun resistance
-      - 0.9  # MELEE - Improved melee resistance; turns hits into glancing blows
+      - 0.8  # MELEE - Improved melee resistance; turns hits into glancing blows
       - 1.2  # ACID
       - 0.0  # SMOKE
       - 0.2  # IMPACT
       - 1.0  # MELTA
     units:
       - STR_SLAANESHPATH_HANDMAIDEN
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
     builtInWeapons:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
+      - INV_NULL_2X3_BACKPACK
     loftempsSet: [2] # Handmaidens are lithe and hard to hit
-    tags:
+    tags: # Handmaidens are now using flak rather than power armor, but they get increased dodge as a consolation prize.
       INFECTION_RESIST: 25 # Slaanesh protection
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_SLAANESH: 1
-      DODGE_CHANCE: 15
+      DODGE_CHANCE: 25
       FLIGHT_DODGE_CHANCE: 0
-      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
-  - type: STR_SLAANESHPATH_EXALTEDMAIDEN_ARMOR     # Exalted Handmaidens have better vision and are more evasive.
+#HM
+  - type: STR_SLAANESHPATH_MYSTES_ARMOR  # Armor for Mystagogues in training. Allows for wielding of Slaaneshi relics.
     visibilityAtDay: 40
-    visibilityAtDark: 25 # Minor mark of Slaanesh
-    antiCamouflageAtDay: 5  # Minor mark of Slaanesh
-    antiCamouflageAtDark: 5 # Minor mark of Slaanesh
-    heatVision: 26 # Improved heatvision
+    visibilityAtDark: 24 # Minor mark of Slaanesh
+    antiCamouflageAtDay: 4  # Minor mark of Slaanesh
+    antiCamouflageAtDark: 4 # Minor mark of Slaanesh
+    heatVision: 20 # Improved heatvision
     spriteSheet: HANDMAIDEN.PCK # Fix later
     spriteInv: HNDM_33 # Fix later
     customArmorPreviewIndex: 1128 # Add later
@@ -87,9 +92,9 @@ armors:
       psiSkill: 10
       melee: 10 # Slightly better melee
     storeItem: STR_NONE
-    frontArmor: 85
-    sideArmor: 70
-    rearArmor: 45
+    frontArmor: 60
+    sideArmor: 55
+    rearArmor: 50
     underArmor: 70
     damageModifier:  # MARINE ARMOR
       - 1.0  # none
@@ -105,7 +110,7 @@ armors:
       - 0.2  # IMPACT
       - 1.0  # MELTA
     units:
-      - STR_SLAANESHPATH_EXALTEDMAIDEN
+      - STR_SLAANESHPATH_MYSTES
     builtInWeapons:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
@@ -117,68 +122,128 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_SLAANESH: 1
-      DODGE_CHANCE: 22
+      DODGE_CHANCE: 25
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
-    #### MEDICAE ARMOR ###
-
-  - type: STR_SLAANESHPATH_HANDMAIDEN_MEDICAE_ARMOR    # Handmaiden Medicae armor, with less protection but better stats
+  - type: STR_SLAANESHPATH_ANATHEMANT_ARMOR  # Armor for Sorceresses in training. Comes with psychic powers.
     visibilityAtDay: 40
-    visibilityAtDark: 22
-    antiCamouflageAtDay: 6  # Heightened senses
-    antiCamouflageAtDark: 6 # Heightened senses
-    heatVision: 15 # Heightened senses
+    visibilityAtDark: 26 # Minor mark of Slaanesh
+    antiCamouflageAtDay: 6  # Minor mark of Slaanesh
+    antiCamouflageAtDark: 6 # Minor mark of Slaanesh
+    PsiVision: 5 # Novice sorceress.
+    heatVision: 30 # Improved heatvision
+    spriteSheet: HANDMAIDEN.PCK # Fix later
+    spriteInv: HNDM_33 # Fix later
+    customArmorPreviewIndex: 1128 # Add later
+    spriteFaceGroup: 6
+    spriteFaceColor: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 10
+      stamina: 10
+      health: 5 # +5 vs HM
+      bravery: 10  # always multiples of 10
+      reactions: 10  # Slightly better reactions
+      firing: 0 # +5 vs HM
+      throwing: 7
+      strength: 5 # +5 vs HM
+      psiStrength: 5
+      psiSkill: 10
+      melee: 0 # Slightly better melee
+    storeItem: STR_NONE
+    frontArmor: 60
+    sideArmor: 55
+    rearArmor: 50
+    underArmor: 70
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 0.9  # AP - Evasive
+      - 1.0  # FLAMES
+      - 1.1  # HE - Further weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Even further improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_ANATHEMANT
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags:
+      INFECTION_RESIST: 35 # Exalted Slaanesh protection
+      INTIMIDATION_RESISTANCE: 25 # Exalted Slaanesh protection
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 25
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+
+#HC
+  - type: STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR    # Armor for aspiring Chirurgeons. 
+    visibilityAtDay: 40
+    visibilityAtDark: 24
+    antiCamouflageAtDay: 5  # Heightened senses
+    antiCamouflageAtDark: 5 # Heightened senses
+    heatVision: 20 # Heightened senses
     spriteSheet: ADEPTASMEDICAE.PCK
     spriteInv: MED_33
     customArmorPreviewIndex: 140
     corpseBattle:
       - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
     stats:
-      tu: 5 # Less bulky than standard medicae armor
-      stamina: 10
-      health: 10
-      bravery: 0  # always multiples of 10
-      reactions: -5 # Significantly improved performance due to lighter armor
-      firing: -5 # Significantly improved performance due to lighter armor
-      throwing: 0
-      strength: 5
+      tu: 5
+      stamina: 5
+      health: 5
+      bravery: 10
+      reactions: 10  # Slightly better reactions
+      throwing: 5
+      strength: 0 # No extra strength
       psiStrength: 0
-      psiSkill: 5
-      melee: 0 # Significantly improved performance due to lighter armor
-    storeItem: STR_ADEPTAS_MEDICAE_ARMORSTORE
-    frontArmor: 75 # 15 less than sororitas armor
-    sideArmor: 70 # 10 less than sororitas armor
-    rearArmor: 55 # 5 less than sororitas armor 
-    underArmor: 75 # 5 less than sororitas armor
+      psiSkill: 0
+      melee: 5
+    storeItem: STR_NONE
+    frontArmor: 65
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 65
     damageModifier:  # MARINE ARMOR
       - 1.0  # none
       - 1.0  # AP
-      - 0.7  # FLAMES
-      - 0.9  # HE - Slight weakness to HE
-      - 0.9  # LASCANON
-      - 0.9  # PLASMA
-      - 0.7  # STUN Further improved stun resistance
-      - 1.0  # MELEE Slightly improved melee resistance
-      - 0.7  # ACID
-      - 0.2  # SMOKE
+      - 1.0  # FLAMES
+      - 0.8  # HE - Weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
       - 0.2  # IMPACT
       - 1.0  # MELTA
     units:
-      - STR_SLAANESHPATH_HANDMAIDEN
+      - STR_SLAANESHPATH_VIVISECTIONIST
     builtInWeapons:
-      - INV_NULL_3X3
-      - AUX_MEDICAE_MEDI_KIT
-    loftempsSet: [3] # Less agile than handmaidens
-    tags:
-      INFECTION_RESIST: 35 # Slaanesh protection + medicae armor 
+      - AUX_VIVISECTIONIST_MEDI_KIT
+      - INV_NULL_2X3_BACKPACK
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags: # Handmaidens are now using flak rather than power armor, but they get increased dodge as a consolation prize.
+      INFECTION_RESIST: 45 # Slaanesh protection + Chirurgeon.
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_SLAANESH: 1
-      DODGE_CHANCE: 10
+      DODGE_CHANCE: 30
       FLIGHT_DODGE_CHANCE: 0
-      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
 
   - type: STR_SLAANESHPATH_IMMACULATE_ARMOR     # Corrupted Adeptas Armor. Baseline armor full immaculate sisters.

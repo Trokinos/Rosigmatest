@@ -109,10 +109,10 @@ research:
 
   ################### SECTION FOR EARLY GAME PROGRESSION TECHS #############
 
-  - name: STR_CHAMBERS_OF_AGONY
-    cost: 10
+  - name: STR_HALLS_OF_DELECTATION_RESEARCH
+    cost: 0
     dependencies:
-      - STR_IMPLEMENTS_OF_TORTURE
+      - STR_GENERALLOCK
 
   - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
     cost: 20
@@ -139,12 +139,26 @@ research:
     cost: 20
     points: 20
     dependencies:
-      - STR_GIFTS_OF_SLAANESH
+      - STR_PATH_OF_PERFECTION
+    unlocks:
+      - STR_HALLS_OF_DELECTATION_RESEARCH
 
-  - name: STR_GIFTS_OF_SLAANESH # Gateway tech that also gives access to a few basic slaanesh-themed weapons.
+  - name: STR_PATH_OF_PERFECTION # Gateway tech that also gives access to handmaiden training.
     cost: 20
     dependencies:
     - STR_SLAANESHPATH_GATE
+    spawnedItem: STR_SLAANESHPATH_PIETY
+    spawnedItemCount: 200
+    points: 20
+
+    #TODO: MAKE THIS TECH GIVE 200 PIETY
+ 
+  - name: STR_SOULSTAIN_SORCERY
+    cost: 40
+    points: 20
+    dependencies:
+      - STR_SOULS_FOR_SLAANESH
+
 
   - name: STR_POWER_ARMOR_CORRUPTION # This is the tech that unlocks immaculate power armor.
     cost: 150
@@ -214,18 +228,18 @@ research:
 
  # Basic Corruption tech. Unlocks cantus corruption and a codex entry explaining the concept.
 
-  - name: STR_WEAPON_CORRUPTION 
-    cost: 10
+  - name: STR_WEAPON_CONSECRATION 
+    cost: 30
     points: 10
     dependencies:
-      - STR_GIFTS_OF_SLAANESH
+      - STR_PATH_OF_PERFECTION
     unlocks:
     - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
 
   - name: STR_CORRUPT_ADEPTAS_BOLTERS
     cost: 25
     dependencies:
-      - STR_WEAPON_CORRUPTION
+      - STR_WEAPON_CONSECRATION
 
   #Tech that gives access to weapon conversions through piety.
   #Gets disabled once the ability to manufacture these weapons is unlocked. 
@@ -233,7 +247,7 @@ research:
     cost: 0
     points: 0
     dependencies:
-    - STR_WEAPON_CORRUPTION
+    - STR_WEAPON_CONSECRATION
 
   #Disabler for basic weapon corruption. Once you have this you can simply buy these weapons directly.
   - name: STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1
@@ -254,10 +268,9 @@ research:
     cost: 50
     points: 10
     dependencies:
-    - STR_GIFTS_OF_SLAANESH
+    - STR_PATH_OF_PERFECTION
     unlocks:
     - STR_CHOKE_GAS_GRENADES
-    - STR_IMMACULATE_CHAINBLADES
 
   - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry. 
     cost: 0
@@ -267,19 +280,19 @@ research:
   - name: STR_CHOKE_GAS_GRENADES
     cost: 0
     dependencies:
-    - STR_SLAANESHPATH_GATE
+    - STR_GENERALLOCK
 
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
     cost: 50
     dependencies:
-    - STR_GIFTS_OF_SLAANESH
+    - STR_PATH_OF_PERFECTION
     unlocks:
     - STR_LIGHT_GRENADE_LAUNCHERS
     getOneFree:
     - STR_SONIC_GRENADES
 
   - name: STR_TERROR_GRENADES 
-    cost: 70
+    cost: 40
     dependencies:
     - STR_TERROR_WEAPONRY
     getOneFree:
@@ -306,20 +319,21 @@ research:
     - STR_GENERALLOCK  
 
   - name: STR_IMMACULATE_CHAINBLADES
-    cost: 50
+    cost: 0
     dependencies:
-    - STR_WEAPON_CORRUPTION
+    - STR_WEAPON_CONSECRATION
+    - STR_IMPLEMENTS_OF_TORTURE
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
-    cost: 50
+    cost: 30
     dependencies:
-    - STR_TERROR_WEAPONRY
+    - STR_PATH_OF_PERFECTION
     getOneFree:
     - STR_IMPERIAL_WEBBER_DEP1
 
-  - name: STR_PROCURE_TRANSPORTATION # Codex entry.
-    cost: 50
+  - name: STR_PROCURE_TRANSPORTATION # Codex entry. # TODO: Add the ability to buy chimeras on the black market later.
+    cost: 10
     points: 10
     dependencies:
-      - STR_CONTACT_ARMS_SMUGGLERS
+      - STR_SLAANESHPATH_GATE
     #spawnedEvent:

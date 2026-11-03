@@ -42,11 +42,6 @@ items:
         set subvoxel_drift 0;
         return;
 
-
-
-
-
-
   - type: STR_LAS_BATTLERIFLE_SLAAN
     dropoff: 3
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
@@ -65,7 +60,7 @@ items:
     hitSound: {mod: 40k, index: 19}
     hitAnimation: {mod: 40k, index: 36}
     autoRange: 11 # 1 More
-    snapRange: 18
+    snapRange: 17
     aimRange: 22
     accuracyAuto: 55 
     accuracySnap: 80  
@@ -1024,8 +1019,8 @@ items:
       INFECTION_DAMAGE_PERCENT: 35  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
-
-  - type: AUX_CHIRURGEON_MEDI_KIT      # A modified medicae kit. More killy, with better stimulants.
+  - &CHIRURGEON_MEDIKIT_TEMPLATE
+    type: AUX_CHIRURGEON_MEDI_KIT      # A modified medicae kit. More killy, with better stimulants.
     medikitTargetImmune: true
     size: 0.1
     costSell: 50
@@ -1035,8 +1030,8 @@ items:
     battleType: 6
     invWidth: 2
     invHeight: 3
-    painKiller: 10
-    heal: 15
+    painKiller: 15
+    heal: 20
     stimulant: 20
     woundRecovery: 1
     healthRecovery: 3
