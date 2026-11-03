@@ -20262,6 +20262,6 @@ extraSprites:
 # Slaanesh strategy codex art
 
   - typeSingle: SLAANESH_CONVERSION_EVENT_CODEX.SPK
-  - fileSingle: Resources/CODEX/SLAANESH_CONVERSION_EVENT_CODEX.png
+    fileSingle: Resources/CODEX/SLAANESH_CONVERSION_EVENT_CODEX.png
   - typeSingle: SLAANESHUNDERCONSTRUCTIONCODEX.SPK
-  - fileSingle: Resources/CODEX/SLAANESHUNDERCONSTRUCTIONCODEX.png
+    fileSingle: Resources/CODEX/SLAANESHUNDERCONSTRUCTIONCODEX.png
