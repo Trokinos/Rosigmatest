@@ -298,7 +298,7 @@ items:
     tags:
       REACTION_MULTIPLIER: 200
 
- #### MELTA WEAPONS ####
+#### MELTA WEAPONS ####
  
   - type: STR_MELTA_CARBINE_SLAAN # Stolen & modified melta carbine technology. Expensive, but versatile.
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
@@ -345,7 +345,7 @@ items:
       ITEM_AIMED_FLAT_POWER_BONUS_PERCENT: 55 # Slightly weaker than a full melta on focused setting.
       ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10 
 
- #### PLASMA WEAPONS ####
+#### PLASMA WEAPONS ####
 
   - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az. lacks overcharge, but faster to fire.
     categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
@@ -379,8 +379,6 @@ items:
     confSnap:
       name: STR_BURST_SNAP_SHOT
       shots: 2
-    compatibleAmmo:
-      - STR_PL
     tags:
       REACTION_MULTIPLIER: 150 #carbine
 
@@ -422,6 +420,127 @@ items:
       - STR_SHARD_GRENADE40
       - STR_BALEFIRE_GRENADE40
 
+<<<<<<< HEAD
+ #### BALLISTIC WEAPONS ####
+
+  - type: STR_AUTOGUN_ADEPTAS_MKIX # Agripinaa Mk. IX Autogun.
+    categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
+    requiresBuy:
+      - STR_CONTACT_ARMS_SMUGGLERS
+    size: 0.2
+    dropoff: 5
+    costBuy: 9000
+    costSell: 2000
+    weight: 9
+    bigSprite: 2008  # TODO: CONVERT BIGOB TO 8 BIT
+    floorSprite: {mod: 40k, index: 1016}
+    handSprite: 6003
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 35
+    fireSound: {mod: 40k, index: 875} # Meatier shoota sound.
+    compatibleAmmo:
+      - STR_AUTOGUN_CLIP
+    accuracySnap: 85  # Top-quality autogun.
+    tuSnap: 25
+    confSnap:
+      shots: 2
+    snapRange: 18
+    autoRange: 0
+    aimRange: 0
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    listOrder: 10741
+    tags:
+      ITEM_SNAP_AIMED_POWER_BONUS_PERCENT: 10 # DMR-like rifle, a la Darktide implementation.
+
+  - type: STR_AUTOGUN_ADEPTAS_MKIXB
+    categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
+    requiresBuy:
+      - STR_CONTACT_ARMS_SMUGGLERS
+    size: 0.2
+    dropoff: 5
+    costBuy: 12000
+    costSell: 2000
+    weight: 11
+    bigSprite: 2008  # Agripinaa T3 with scope.
+    floorSprite: {mod: 40k, index: 1016}
+    handSprite: 6004
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 35
+    fireSound: {mod: 40k, index: 875}
+    compatibleAmmo:
+      - STR_AUTOGUN_CLIP
+    accuracySnap: 85  # Top-quality autogun.
+    accuracyAimed: 95
+    tuSnap: 30
+    tuAimed: 60
+    confSnap:
+      shots: 2
+    confAimed:
+      shots: 2
+    snapRange: 16
+    autoRange: 0
+    aimRange: 21
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    listOrder: 10742
+    tags:
+      ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 35 # DMR-like rifle, a la Darktide implementation.
+
+
+
+  - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
+    categories: [STR_CAT_SNIPER]
+    requires:
+    - STR_ALIENS_ONLY
+    dropoff: 3  # light sniper weapon
+    weight: 16  # -4 weight vs repressor
+    size: 0.4
+    costSell: 200000
+    bigSprite: 3481
+    floorSprite: 3401
+    handSprite: 4200
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 25
+    fireSound: {mod: 40k, index: 4}
+    compatibleAmmo:
+      - STR_HEARTBREAKER_AMMO_AP
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 200
+    snapRange: 18
+    aimRange: 30
+    accuracySnap: 65
+    accuracyAimed: 80
+    tuSnap: 32
+    tuAimed: 85
+    confSnap:  # Double Shot
+      shots: 2
+    confAimed:  # Called Precision Shot to emphasize the added lethality
+      name: STR_PRECISION_SHOT
+    listOrder: 11897
+    kneelBonus: 140  # light sniper rifle
+    minRange: 4  # Reduced minimum range due to bullpup construction
+    accuracyMultiplier:
+      firing: [0.5, 0.005]
+    tags:
+      REACTION_MULTIPLIER: 70
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_RECOIL: 30
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 75
+      ITEM_HAS_BIPOD: 1
+=======
+>>>>>>> e277d30a16504e3784bf5f10cb262737528c0759
 
  #### BOLT PISTOLS ####
 
@@ -588,7 +707,6 @@ items:
     tuAuto: 30
     tuAimed: 0
     size: 0.3
-    dropoff: 5
     costSell: 14000
     weight: 14 # - 4
 
@@ -664,6 +782,7 @@ items:
     aimedRange: 6
     tuAimed: 20
     autoRange: 10
+    accuracyAuto: 75
     tuAuto: 35
     autoShots: 2
     ammo:
@@ -728,7 +847,7 @@ items:
       arcing: false
       name: STR_PLASMA_BARRAGE
     tags:
-    ITEM_AIMED_FLAT_POWER_BONUS: -5 # Lower power output.
+      ITEM_AIMED_FLAT_POWER_BONUS: -5 # Lower power output.
 
   - type: STR_BOLTER_NAIAD  # Corrupted Hellspite bolter with a sonic projector.
     requires:
@@ -856,19 +975,16 @@ items:
     costMelee:
       energy: 10 # requires MORE energy due to finesse requirement.
       time: 19 # Requires MORE time due to finesse requirement.
-    damageBonus:
-      strength: 0.2 # - 0.3
-      melee: 0.6 # + 0.4
     damageAlter: # DA SLAANESH CHAIN
       ToArmorPre: 0.5
       ToArmor: 0.25 # Designed to pierce armor and ruin it.
       ToHealth: 0.8
-      ArmorEffectiveness: 0.8 # This thing can actually thrust.
+      ArmorEffectiveness: 0.75 # This thing can actually thrust.
       RandomType: 2  # TFTD [50% - 150%]
       ToWound: 0.35
       ToEnergy: 0.8
       ToMorale: 0.2
-      ToStun: 0.1
+      ToStun: 0.2
       RandomWound: false
     weight: 16  # -4 vs standard evis.
     bigSprite: {mod: 40k, index: 620}
@@ -879,7 +995,6 @@ items:
     meleeAnimation: {mod: 40k, index: 44}
     damageType: 7
     accuracyMelee: 85
-    tuMelee: 18
     clipSize: -1
     battleType: 3
     twoHanded: true
