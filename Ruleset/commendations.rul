@@ -179,10 +179,140 @@ commendations:
     units:
       - STR_REPENTIA_PLAYERBLOODYROSE
 
-
+  # Eldar
+    # ASPECT PATH COMMENDATIONS
+  - type: STR_COMMENDATION_MASTER_AVENGER_PATH
+    description: STR_COMMENDATION_MASTER_AVENGER_PATH_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [30]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_AVENGER_CATAPULT"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_AVENGER_PISTOL"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_AVENGER_CATAPULT_SCOPED"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_AVENGER_PISTOL_SCOPED"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_ELDAR_POWER_GLAIVE"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_DIRESWORD"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_DIRESWORD_VESSEL"]]
+    units:
+      - STR_ELDAR_AVANGER_MF
+  # Dragon
+  - type: STR_COMMENDATION_MASTER_DRAGON_PATH
+    description: STR_COMMENDATION_MASTER_DRAGON_PATH_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [30]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_DRAGON_BREATH_FLAMER"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_DRAGON_FUSION_GUN"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_DRAGON_FUSION_PISTOL"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_FIREPIKE"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_DRAGON_AXE"]]
+    units:
+      - STR_ELDAR_DRAGON_MF
+  # Banshee
+  - type: STR_COMMENDATION_MASTER_BANSHEE_PATH
+    description: STR_COMMENDATION_MASTER_BANSHEE_PATH_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [30]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_EPOWER_SWORD"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_TRISKELE"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_BANSHEE_EXECUTIONER"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_BANSHEE_INTIMIDATE_SPECIALWEAPON"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_CATAPULT_PISTOL"]]
+    units:
+      - STR_ELDAR_BANSHEE_F
+  # Scorpion
+  - type: STR_COMMENDATION_MASTER_SCORPION_PATH_DESCRIPTION
+    description: STR_COMMENDATION_MASTER_SCORPION_PATH_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [30]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_SCORPION_CHAINSWORD"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_BITING_BLADE"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_SCORPIONS_CLAW"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_CATAPULT_PISTOL"]]
+    units:
+      - STR_ELDAR_SCORPION_M
+  # Hawk
+  - type: STR_COMMENDATION_MASTER_HAWK_PATH
+    description: STR_COMMENDATION_MASTER_HAWK_PATH_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [30]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_LASBLASTER"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_HAWKSTALON"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_SUNPISTOL"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_SUNPISTOL_SCOPED"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_HAWK_SCATTERLASER"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "BT_GRENADE"]]
+    units:
+      - STR_ELDAR_HAWK_P
+  # Spider
+  - type: STR_COMMENDATION_MASTER_SPIDER_PATH
+    description: STR_COMMENDATION_MASTER_SPIDER_PATH_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [30]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_DEATH_SPINNER"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_SPINNERET_RIFLE"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_ELDAR_POWER_BLADE"]]
+    units:
+      - STR_ELDAR_SPIDER_PLAYER
+  # Reaper
+  - type: STR_COMMENDATION_MASTER_REAPER_PATH
+    description: STR_COMMENDATION_MASTER_REAPER_PATH_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [30]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_REAPER_AML"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_SHURIKEN_CANNON"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_ELDAR_TEMPEST_LAUNCHER"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_REAPER_LAUNCHER"]]
+    units:
+      - STR_ELDAR_REAPER_M
 
 ### SLAANESH COMMENDATIONS
-
 
   - type: STR_HANDMAIDEN_COMMENDATION
     description: STR_HANDMAIDEN_COMMENDATION_DESCRIPTION

@@ -290,8 +290,9 @@ items:
   - type: STR_SISTERSUPERIOR_HONOR
     size: 0.0
     costSell: 0
+
   - type: STR_WEBBER  # WEBBER                         11805
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires: []
     requiresBuy:
       - STR_IMPERIAL_WEBBER_DEP1
@@ -307,8 +308,9 @@ items:
     invHeight: 3
     recoveryPoints: 4
     listOrder: 11805
+
   - type: STR_WEBBER_AMMO  # WEBBER                              11806
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires: []
     requiresBuy:
       - STR_IMPERIAL_WEBBER_DEP1

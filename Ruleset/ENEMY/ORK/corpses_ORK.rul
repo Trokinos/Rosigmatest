@@ -348,15 +348,37 @@ items:
 
 #Player Ork Corpses
 
-  - type: STR_PLAYER_SQUIG_CORPSE              # ORK 19990
+  - &ASSAULT_SQUIG_CORPSE
+    type: STR_PLAYER_SQUIG_CORPSE
     recover: false
     weight: 70
-    bigSprite: 2100  # needs squig big
+    bigSprite: 2100  # needs squig bits
     floorSprite: 2108
     invWidth: 2
     invHeight: 3
     battleType: 11
     armor: 100
+
+  - type: STR_SQUIG_CORPSE_AI
+    refNode: *ASSAULT_SQUIG_CORPSE
+    recover: true
+
+  - &EXPLOSIVE_SQUIG_CORPSE
+    type: STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE
+    recover: false #if it even survives....
+    weight: 70
+    bigSprite: 2100  # needs squig bits with bomba
+    floorSprite: 2108
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 100
+    power: 180
+    blastRadius: 6
+
+  - type: STR_SQUIG_CORPSE_EXPLOSIVE_AI
+    refNode: *EXPLOSIVE_SQUIG_CORPSE
+    recover: true #if it even survives....
 
   - type: STR_PLAYER_GRETCHIN_CORPSE                 #ORK 19970
     weight: 10

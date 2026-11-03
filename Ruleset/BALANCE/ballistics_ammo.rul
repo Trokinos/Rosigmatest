@@ -11,6 +11,7 @@ items:
     requiresBuyBaseFunc: [IMPERIUM]
     requiresBuy: !remove
       - STR_GUARD_AND_ARBITES
+    listOrder: 10745
 
   - &STR_BOLTER_AMMO
     type: STR_PISTOL_CLIP  # done
@@ -30,9 +31,11 @@ items:
       mod: 40k
       index: 120
     explosionSpeed: 3
+
   - type: STR_PISTOL_CLIP
     requiresBuy:
       - STR_BOLTER_AMMO_PREREQ
+    listOrder: 10205
 
   - &STR_BOLTER_AMMO_METAL_STORM
     type: STR_PISTOL_CLIP_EX  # done
@@ -91,6 +94,9 @@ items:
     damageType: 1
     costSell: 425
 
+  - type: STR_PISTOL_CLIP_MC
+    listOrder: 10211
+
   - &STR_LIGHT_BOLTER_AMMO
     type: STR_LIGHT_BOLTPISTOL_AMMO
     damageAlter:  # DA BOLTER
@@ -146,6 +152,7 @@ items:
   - type: STR_RIFLE_CLIP_MC  # done
     refNode: *STR_BOLTER_AMMO_MC
     power: 90
+    listOrder: 10423
 
   - type: STR_RIFLE_CLIP_EX  # done
     refNode: *STR_BOLTER_AMMO_METAL_STORM
@@ -389,7 +396,7 @@ items:
     power: 60 # was 55
     clipSize: 12
 
-  - type: STR_RIFLE_CLIP_DOM  # Dominion special rounds DETONATOR       10430     EXPLOSIVE        ToStun
+  - type: STR_RIFLE_CLIP_DOM  # Dominion special rounds DETONATOR       10416     EXPLOSIVE        ToStun
     refNode: *STR_BOLTER_AMMO
     damageAlter:  # DA BOLTER
       ToArmorPre: 0.2
@@ -480,7 +487,7 @@ items:
     shotgunPellets: 6
 
   - &STR_SHOTGUN_AMMO_TEMPLATE
-    type: STR_SHOTGUN_SHELLS  #                        10710
+    type: STR_SHOTGUN_SHELLS  #
     shotgunBehavior: 1   # *** makes the shotgun a bit more useful at range bit tightening the spread ***
     shotgunSpread: 25
     shotgunPellets: 6
@@ -501,10 +508,12 @@ items:
     requiresBuy: !remove
       - STR_ARBITES
     requiresBuyBaseFunc: [TRADE]
+    listOrder: 10654
 
   - type: STR_SHOTGUN_SHELLS_MC
     refNode: *STR_SHOTGUN_AMMO_TEMPLATE
     power: 60
+    listOrder: 10660
 
   - type: STR_SHOTGUN_SHELLS_INC
     # remove buy research reqs but require TRADE, similar to the drum
@@ -535,6 +544,7 @@ items:
       #FixRadius: 1
     #explosiveDamageRange: 1 #single tile, not a grenade
     #powerForAnimation: 1
+    listOrder: 10655
 
   - type: STR_AC_AP_ADEPTAS_AMMO  # HEAVYBOLTER adeptas ap belt                 12010                           ToStun
     refNode: *STR_BOLTER_AMMO
@@ -908,7 +918,7 @@ items:
       RandomWound: false
       ToMorale: 2.0  # incendiary
 
-  - type: STR_RIFLE_CLIP_R  #          10460                      ToStun
+  - type: STR_RIFLE_CLIP_R  #          10414                      ToStun
     power: 70
     refNode: *STR_BOLTER_AMMO
     damageAlter:  # DA BOLTER TZZ

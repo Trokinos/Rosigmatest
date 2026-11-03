@@ -9426,6 +9426,7 @@
       - name: MUNDAINDUSTRIALURBANCULTDIO19  # empty w/tires
         width: 10
         length: 10
+        ### number 33
       - name: MUNDAINDUSTRIALURBANCULT20  # 2x2 temple
         width: 20
         length: 20
@@ -9451,6 +9452,7 @@
       - name: MUNDAINDUSTRIALURBANCULT30  # new 2-story warehouse
         width: 10
         length: 10
+      ## number 40
       - name: MUNDAINDUSTRIALURBANCULT30A  # with cult icons
         width: 10
         length: 10
@@ -10038,6 +10040,7 @@
       - name: MUNDAINDUSTRIALURBANCULT33B  # wood-fence-surrounded warehouse with Iron
         width: 10
         length: 10
+      ### number 69
       - name: MUNDAINDUSTRIALURBANCULT33C  # with altar
         width: 10
         length: 10
@@ -10128,6 +10131,7 @@
       - name: MUNDAINDUSTRIALURBANCULT34  # two small metal buildings
         width: 10
         length: 10
+      # number 74
       - name: MUNDAINDUSTRIALURBANCULT34A  # with altar
         width: 10
         length: 10
@@ -16023,11 +16027,14 @@
       - name: TAU_MOUNT13  #   # id 13 terrain to drop the walled base on
         width: 30
         length: 30
-      - name: TAU_MOUNT14  #   # id 14 terrain to drop the bunker system on
+      - name: TAU_MOUNT14  #   # id 14 terrain to drop the bunker base on
+        width: 30
+        length: 30
+      - name: TAU_MOUNT15  #   # id 15 terrain to drop the lander base on
         width: 30
         length: 30
 
-  # TAU Base to add the the TAU_MOUNT13 mapblock as vertical level
+  # TAU Base to add to the TAU_MOUNT13 , 14 and 15 mapblock as vertical level
 
   - name: TAUBASE_SET
     mapDataSets:
@@ -16041,5 +16048,20 @@
         length: 30
 
       - name: TAUBASE_01  # id 1 # bunker base
+        width: 30
+        length: 30
+
+      - name: TAUBASE_02  # id 1 # lander base
+        width: 30
+        length: 30
+
+  - name: TAUSHIPDECO  # only used as decoration on the tau lander base
+    mapDataSets:
+      - BLANKS
+      - ORCAINT1
+      - ORCAINT2
+      - TAUDEVILFUFO
+    mapBlocks:
+      - name: ORCAINTDECO
         width: 30
         length: 30

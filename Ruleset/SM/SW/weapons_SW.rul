@@ -284,7 +284,7 @@ items:
     attraction: 1
     invWidth: 1
     invHeight: 1
-    listOrder: 10210
+    listOrder: 10206
 
   - type: STR_BOLTPISTOL_HELFROST_CLIP_MC # Space Wolves Boltpistol Frosty MC Ammo
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
@@ -315,7 +315,7 @@ items:
     attraction: 1
     invWidth: 1
     invHeight: 1
-    listOrder: 10220
+    listOrder: 10212
 
 
 #SW Bolters
@@ -346,7 +346,7 @@ items:
     armor: 300
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10310
+    listOrder: 10309
     tags:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
       ITEM_RECOIL: 50 #SW enjoy higher recoil, lore less Bloodclaw use
@@ -375,7 +375,7 @@ items:
     armor: 300
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10410
+    listOrder: 10401
     tags:
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
       ITEM_RECOIL: 40
@@ -415,7 +415,7 @@ items:
     attraction: 1
     invWidth: 1
     invHeight: 2
-    listOrder: 10311
+    listOrder: 10411
 
   - type: STR_BOLTER_HELFROST_CLIP_MC # Space Wolves Boltgun Frosty MC Ammo
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
@@ -446,7 +446,7 @@ items:
     attraction: 1
     invWidth: 1
     invHeight: 2
-    listOrder: 10420
+    listOrder: 10424
 
   - type: STR_HEAVYBOLTER_SW_MC #HEAVYBOLTER ASGAL PATTERN MASTER CRAFTED
     categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR]

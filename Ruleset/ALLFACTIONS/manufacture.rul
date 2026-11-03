@@ -411,6 +411,7 @@ manufacture:
   # adding the previously missing barrage plasma ammo manufacture
 
   - name: STR_BARRAGE_PLASMA_CLIP
+    category: STR_AMMUNITION
     requires:
       - STR_HEAVY_PLASMA_DEP1
     space: 0

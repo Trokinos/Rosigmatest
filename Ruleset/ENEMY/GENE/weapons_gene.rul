@@ -39,6 +39,7 @@ items:
     attraction: 1
     inventoryMoveCost: #quickdraw
       basePercent: 50
+    listOrder: 10705
     tags:
       REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
@@ -75,6 +76,7 @@ items:
     attraction: 1
     inventoryMoveCost: #quickdraw
       basePercent: 50
+    listOrder: 10705
     tags:
       REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
@@ -109,6 +111,7 @@ items:
     invHeight: 1
     armor: 30
     attraction: 1
+    listOrder: 10719
 
   - type: STR_AUTOSTUB_AMMO
     categories: [STR_CAT_AUTO]
@@ -139,6 +142,7 @@ items:
     invHeight: 1
     armor: 30
     attraction: 1
+    listOrder: 10718
 
   - type: STR_GSC_NEEDLER_RIFLE
     categories: [STR_CAT_SNIPER]
@@ -410,7 +414,7 @@ items:
 
 
   - type: STR_GSC_HEAVY_WEBBER  # Heavy Webber AOE
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
     requiresBuy:
@@ -438,7 +442,7 @@ items:
     listOrder: 11805
 
   - type: STR_HEAVY_WEBBER_AMMO
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
     requiresBuy:
@@ -475,7 +479,7 @@ items:
     listOrder: 11806
 
   - type: STR_GSC_WEBBER_PISTOL  # One handed
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
     requiresBuy:
@@ -508,7 +512,7 @@ items:
       REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
   - type: STR_PISTOL_WEBBER_AMMO
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    categories: [STR_CAT_STUN]
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
     requiresBuy:
@@ -541,7 +545,7 @@ items:
     listOrder: 11806
 
   - &STR_PUMP
-    type: STR_PUMP_SHOTGUN  # Used by GSC, civvies, arbites etc                        10605
+    type: STR_PUMP_SHOTGUN  # Used by GSC, civvies, arbites etc                        10603
     categories: [STR_CAT_SHOTGUN]
     requiresBuy:
       - STR_LASER_WEAPONS
@@ -567,7 +571,7 @@ items:
     twoHanded: true
     invWidth: 1
     invHeight: 3
-    listOrder: 10605
+    listOrder: 10603
     aimRange: 14
     snapRange: 10  # better range
     dropoff: 5
@@ -627,7 +631,7 @@ items:
     armor: 30
     bulletSpeed: 50
     attraction: 1
-    listOrder: 10712
+    listOrder: 10702
     inventoryMoveCost: #quickdraw
       basePercent: 50
     tags:
@@ -636,6 +640,7 @@ items:
   # Note this definition is split; further details in weapons_chaos.rul
   - type: STR_SMG_STUB_GUN_CHAOS
     refNode: *STR_SMG_STUB
+    listOrder: 10703
     bigSprite: 2713
     floorSprite: {mod: 40k, index: 1114}
     handSprite: {mod: 40k, index: 1888}
@@ -665,7 +670,7 @@ items:
     invHeight: 1
     armor: 30
     attraction: 1
-    listOrder: 10715
+    listOrder: 10711
 
 ### Kept around to avoid breaking saves where it exists
 ### Remove on future major patch
