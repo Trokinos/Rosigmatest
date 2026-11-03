@@ -1,18 +1,22 @@
 facilities:
 
 
+# One of the main benefits on the strategy is that the buildings are relatively inexpensive 
+# and provide various benefits. This is meant to defray the often ruinous costs of
+# items and promotions compared to many other factions.
 
-
-  - type: STR_SLAANESH_SHRINE
-    refundValue: 325000
+  - type: STR_SLAANESH_ALTAR 
+    refundValue: 125000
     destroyedFacility: STR_CORRIDOR
     sickBayAbsoluteBonus: 0.0
-    sickBayRelativeBonus: 1.0
+    sickBayRelativeBonus: 1.0 # Chaos Shrine effect.
     psiLabs: 10
+    aliens: 2
+    labs: 10
     placeSound: {mod: 40k, index: 98}
     requiresBaseFunc: [BASE]
     requires:
-      - STR_SLAANESHPATH_GATE
+      - STR_PATH_OF_PERFECTION
     spriteShape: 1
     spriteFacility: 36
     rightClickActionType: 5
@@ -20,24 +24,28 @@ facilities:
     maxAllowedPerBase: 1
     buildTime: 10
     monthlyCost: -100000
-    provideBaseFunc: [ALTAR1]
+    provideBaseFunc: [SLAAN]
     mapName: XBASE_49
     listOrder: 850
 
-#  - type: STR_SLAANESHPRISON_TIER1
-#    placeSound: 98
-#    requiresBaseFunc: [BASE]
-#    requires:
-#      - STR_CHAMBERS_OF_AGONY
-#    spriteShape: 1
-#    spriteFacility: 344
-#    buildCost: 500000
-#    buildTime: 20
-#    monthlyCost: 25000
-#    aliens: 10
-#    personnel: 20
-#    provideBaseFunc: [PRISION]
-#    mapName: XBASE_36
+  - type: STR_HALLS_OF_DELECTATION
+    placeSound: {mod: 40k, index: 98}
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_HALLS_OF_DELECTATION_RESEARCH
+    spriteShape: 1
+    spriteFacility: {mod: 40k, index: 444}
+    buildCost: 400000
+    refundValue: 200000
+    buildTime: 14
+    monthlyCost: 25000
+    aliens: 10
+    trainingRooms: 15
+    destroyedFacility: STR_CORRIDOR
+    maxAllowedPerBase: 1 
+    provideBaseFunc: [PRISION] # Remove this?
+    mapName: XBASE_36
+    maxAllowedPerBase: 1
 
 #  - type: STR_HERETEK_FORGE
 

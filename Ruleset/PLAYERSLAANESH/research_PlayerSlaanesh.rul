@@ -109,10 +109,10 @@ research:
 
   ################### SECTION FOR EARLY GAME PROGRESSION TECHS #############
 
-  - name: STR_CHAMBERS_OF_AGONY
-    cost: 10
+  - name: STR_HALLS_OF_DELECTATION_RESEARCH
+    cost: 0
     dependencies:
-      - STR_IMPLEMENTS_OF_TORTURE
+      - STR_GENERALLOCK
 
   - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
     cost: 20
@@ -140,11 +140,15 @@ research:
     points: 20
     dependencies:
       - STR_PATH_OF_PERFECTION
+    unlocks:
+      - STR_HALLS_OF_DELECTATION_RESEARCH
 
   - name: STR_PATH_OF_PERFECTION # Gateway tech that also gives access to handmaiden training.
     cost: 20
     dependencies:
     - STR_SLAANESHPATH_GATE
+    spawnedItem: STR_SLAANESHPATH_PIETY
+    spawnedItemCount: 200
     #TODO: MAKE THIS TECH GIVE 200 PIETY
  
   # - name: Soulstain Sorcery
@@ -221,7 +225,7 @@ research:
  # Basic Corruption tech. Unlocks cantus corruption and a codex entry explaining the concept.
 
   - name: STR_WEAPON_CONSECRATION 
-    cost: 10
+    cost: 30
     points: 10
     dependencies:
       - STR_PATH_OF_PERFECTION
@@ -263,7 +267,6 @@ research:
     - STR_PATH_OF_PERFECTION
     unlocks:
     - STR_CHOKE_GAS_GRENADES
-    - STR_IMMACULATE_CHAINBLADES
 
   - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry. 
     cost: 0
@@ -273,7 +276,7 @@ research:
   - name: STR_CHOKE_GAS_GRENADES
     cost: 0
     dependencies:
-    - STR_SLAANESHPATH_GATE
+    - STR_GENERALLOCK
 
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
     cost: 50
@@ -285,7 +288,7 @@ research:
     - STR_SONIC_GRENADES
 
   - name: STR_TERROR_GRENADES 
-    cost: 70
+    cost: 40
     dependencies:
     - STR_TERROR_WEAPONRY
     getOneFree:
@@ -312,19 +315,20 @@ research:
     - STR_GENERALLOCK  
 
   - name: STR_IMMACULATE_CHAINBLADES
-    cost: 50
+    cost: 0
     dependencies:
     - STR_WEAPON_CONSECRATION
+    - STR_IMPLEMENTS_OF_TORTURE
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
-    cost: 50
+    cost: 30
     dependencies:
-    - STR_TERROR_WEAPONRY
+    - STR_PATH_OF_PERFECTION
     getOneFree:
     - STR_IMPERIAL_WEBBER_DEP1
 
   - name: STR_PROCURE_TRANSPORTATION # Codex entry. # TODO: Add the ability to buy chimeras on the black market later.
-    cost: 30
+    cost: 10
     points: 10
     dependencies:
       - STR_SLAANESHPATH_GATE

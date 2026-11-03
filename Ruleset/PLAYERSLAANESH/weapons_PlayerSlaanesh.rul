@@ -85,7 +85,7 @@ items:
     tuSnap: 25
     confSnap:
       shots: 2
-    snapRange: 15
+    snapRange: 16
     autoRange: 0
     aimRange: 0
     battleType: 1
@@ -122,7 +122,7 @@ items:
       shots: 2
     confAimed:
       shots: 2
-    snapRange: 15
+    snapRange: 16
     autoRange: 0
     aimRange: 21
     battleType: 1
@@ -240,7 +240,7 @@ items:
     hitSound: {mod: 40k, index: 19}
     hitAnimation: {mod: 40k, index: 36}
     autoRange: 11 # 1 More
-    snapRange: 18
+    snapRange: 17
     aimRange: 22
     accuracyAuto: 55 
     accuracySnap: 80  
