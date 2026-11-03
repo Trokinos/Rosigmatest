@@ -16246,6 +16246,9 @@ ufopaedia:
   - id: STR_RANGER_LONG_RIFLE_MAG_FIXED
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_RANGER_LONG_RIFLE_MAG_FIXED2
+    type_id: 4
+    section: STR_NOT_AVAILABLE
 
   - id: STR_AELDARI_FLAMER
     type_id: 14
@@ -16611,6 +16614,45 @@ ufopaedia:
   - id: STR_SHURIKEN_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
+
+
+  - id: STR_ELDAR_SUNBURST_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_SUNBURST_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_SUNBURST_GRENADE_CODEX
+  - id: STR_ELDAR_STARSHOT_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_STARSHOT_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_STARSHOT_GRENADE_CODEX
+  - id: STR_ELDAR_FUSION_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_FUSION_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_FUSION_GRENADE_CODEX
+  - id: STR_ELDAR_HAYWIRE_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_HAYWIRE_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_HAYWIRE_GRENADE_CODEX
+
+  - delete: STR_ELDAR_GRENADE
+  - id: STR_ELDAR_GRENADE   # ELDAR PLASMA GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_PLASMA_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_PLASMA_GRENADE_CODEX
   - id: STR_ELDAR_WIREWEAVE_NET
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -16618,14 +16660,6 @@ ufopaedia:
     requires:
       - STR_ELDAR_ARMORY_EXAM
     text: STR_ELDAR_WIREWEAVE_NET_CODEX
-  - delete: STR_ELDAR_GRENADE
-  - id: STR_ELDAR_GRENADE
-    type_id: 14
-    section: STR_WEAPONS_AND_EQUIPMENT
-    image_id: 1EL4.SPK
-    requires:
-      - STR_ELDAR_ARMORY_EXAM
-    text: STR_ELDAR_GRENADE_UFOPEDIA
   - delete: STR_ELDAR_MGRENADE
   - id: STR_ELDAR_MGRENADE
     type_id: 14
@@ -24765,6 +24799,70 @@ ufopaedia:
       - STR_GENE_HYBRID_ACOLYTE_LEADER
     image_id: GSC_HYBRID_ACOLYTE_LEADER_ARMOR_CODEX.SPK
     text: STR_GENE_HYBRID_ACOLYTE_LEADER_ARMOR_UFOPEDIA
+  - id: STR_ABERRANT_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_ABERRANT_CORPSE
+    image_id: ORIGINS_ABERRANT.SPK
+    text: STR_ABERRANT_AUTOPSY_CODEX
+  - id: STR_GSC_ABERRANT_ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_ABERRANT
+    image_id: ARMOR_ABERRANT.SPK
+    text: STR_ABERRANT_AUTOPSY_CODEX
+  - id: STR_LOCUS_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_CORPSE
+    image_id: ORIGINS_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_CLOAKED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_FRENZIED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+
+  - id: STR_MINER_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_CORPSE
+    image_id: ORIGINS_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_CLOAKED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_GSC_MINER_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_MINER_CORPSE
+    image_id: UP0160.SPK #PLACEHOLDER
+    text: STR_GENE_CULTIST_UFOPEDIA #PLACEHOLDER
+  - id: STR_GSC_MINER_ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_MINER
+    image_id: UP0160.SPK #PLACEHOLDER
+    text: STR_GENE_CULTIST_UFOPEDIA #PLACEHOLDER
 
 #FOES.XENO.TAU#        Tau
   - id: STR_TAU_DRONEAI # STR_TAU_DRONEAI; PLACEHOLDER

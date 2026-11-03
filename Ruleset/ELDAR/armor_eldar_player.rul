@@ -81,6 +81,7 @@ armors:
     builtInWeapons:
       - STR_SHOTGUN_MONKEIGH
       - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SHELLS
       - STR_SHOTGUN_SHELLS_AP
       - STR_SHOTGUN_SHELLS_INC
       - STR_GRENADE
@@ -270,8 +271,9 @@ armors:
       firing: 5
     builtInWeapons:
       - STR_RANGER_LONG_RIFLE
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED # one for loading
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED # one for inventory
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED2 # another for inventory
       - STR_ELDAR_WIREWEAVE_NET
 
   - type: STR_ELDAR_RANGER_SNIPER_ARMOR_P
@@ -287,8 +289,9 @@ armors:
       firing: 10
     builtInWeapons:
       - STR_RANGER_LONG_RIFLE_SCOPED
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED # one for loading
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED # one for inventory
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED2 # another for inventory
 
 # DEPRECATED. in future version (3.4 onward) please add - delete: name to keep rosigma clean
 
@@ -2498,8 +2501,8 @@ armors:
       UNIT_TYPE_MECHANICAL: 1
 
   - type: STR_ELDAR_WIREWEAVE_NET_DEPLOYED_ARMOR
-    visibilityAtDay: 0
-    visibilityAtDark: 0
+    visibilityAtDay: 1
+    visibilityAtDark: 1
     camouflageAtDay: 1 # Low priority target, ignored by enemies
     camouflageAtDark: 1
     spriteSheet: ELDAR_WIREWEAVENET_DEPLOYED.SPK
