@@ -1,5 +1,5 @@
 extended:
-  tagsFile: Ruleset/tags_ROSIGMA.rul 
+  tagsFile: Ruleset/tags_ROSIGMA.rul
 
 
 
@@ -76,7 +76,7 @@ items:
     explosionSpeed: 3
 
  #### SLAANESH PLASMA AMMO ####
- 
+
   - &STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
     type: STR_PLASMA_SPRAY_CLIP_SLAAN
     bigSprite: {mod: 40k, index: 34}
@@ -84,7 +84,7 @@ items:
     handSprite: {mod: 40k, index: 440}
     hitSound: {mod: 40k, index: 19}
     hitAnimation: 60
-    power: 70  # Spraygun power 
+    power: 70  # Spraygun power
     damageType: 5
     damageAlter:  # DA PLASMA SLAAN
       RandomType: 2
@@ -133,7 +133,7 @@ items:
     shotgunPellets: 6
     shotgunSpread: 0
     powerRangeReduction: 1.5 # Slightly worse than normal melta
-    powerRangeThreshold: 8.0 # 
+    powerRangeThreshold: 8.0 #
     clipSize: 12 # +6
 
  #### SLAANESH LAS AMMO ####
@@ -154,8 +154,8 @@ items:
     damageType: 1 # AP, to be in line with rebalanced lasgun ammo
     damageAlter:  # LAS SLAANESH
       ToArmorPre: 0.30 # 0.2 -> 0.30 
-      ArmorEffectiveness: 0.9 # Penetrative power 
-      ToHealth: 0.7 # Worse at health damage. 
+      ArmorEffectiveness: 0.9 # Penetrative power
+      ToHealth: 0.7 # Worse at health damage.
       ToStun: 0.45 # 0.3 -> 0.35
       ToEnergy: 0.1 # Weakening
       ToMorale: 0.1 # Weakening
@@ -195,9 +195,9 @@ items:
     power: 60 # +5
     damageType: 4
     damageAlter:  # LAS SLAANESH
-      ToArmorPre: 0.5 # BIG armor damage! 
-      ArmorEffectiveness: 0.7 # HIGH Penetrative power! 
-      ToHealth: 0.30 # TERRIBLE health damage! 
+      ToArmorPre: 0.5 # BIG armor damage!
+      ArmorEffectiveness: 0.7 # HIGH Penetrative power!
+      ToHealth: 0.30 # TERRIBLE health damage!
       ToStun: 0.35 # 0.3 -> 0.35
       ToEnergy: 0.25 # Weakening
       ToMorale: 0.25 # Weakening
@@ -421,7 +421,7 @@ items:
 
  #### LIGHT & STANDARD BOLTER AMMO
 
-  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE 
+  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE
     type: STR_SLAANESHPATH_CLIP_PENETRATOR  # The standard Slaanesh ammunition. Penetration + armor shredding.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1

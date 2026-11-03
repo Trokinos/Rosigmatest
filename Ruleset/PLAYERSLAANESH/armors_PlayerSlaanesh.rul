@@ -4,7 +4,7 @@ extended:
 armors:
 
 #HA
-  - type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR 
+  - type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 21 # Very slightly improved senses
     antiCamouflageAtDay: 1  # Very slightly improved senses
