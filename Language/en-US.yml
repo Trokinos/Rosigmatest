@@ -64,6 +64,7 @@ en-US: #  yamllint disable-line rule:empty-values
 # #03-TYR.PURE
 # #03-NECRON
 # #03-TAU
+# #03-SLAANESH_STRATEGY
 #########################
 # 04. MAP AND ASSETS # everything map related
 #########################
@@ -2448,6 +2449,345 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GAUSS_CANNON: "Gauss Cannon"
   AUX_DISPERSIONSHIELD: "Dispersion Shield"
 # #03-TAU
+# #03-SLAANESH_STRATEGY
+########## SLAANESH STRATEGY SECTION ################
+
+  ### SLAANESH FACILITIES
+
+  STR_SLAANESH_ALTAR: "Altar of Slaanesh"
+  STR_HALLS_OF_DELECTATION: "Halls of Delectation"
+
+  ### SLAANESH COMMENDATIONS
+  STR_HANDMAIDEN_COMMENDATION: "Mark of Promise"
+  STR_HANDMAIDEN_COMMENDATION_DESCRIPTION: "{NEWLINE}This Handmaiden has displayed promise and initiative and is now allowed to continue her advance along Slaanesh's path to perfection."
+
+  ### SLAANESH STORY EVENTS & STORY CODEX DESCRIPTIONS
+
+  STR_SLAANESHUNDERCONSTRUCTION_TITLE: "UNDER CONSTRUCTION"
+  STR_SLAANESHPATH_SELECTED_UFOPEDIA_DESCRIPTION: "{NEWLINE}Sadly, or perhaps surprisingly, somehow you selected this shamefully simple Slaanesh strategy.{NEWLINE}{NEWLINE}Regrettably, it is still under construction. Very little is currently playable, so do try to moderate your expectations. According to our enginseer, the servitor is already working as hard as he can. But we have given him another kick, just in case."
+
+  STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
+  STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you are left as the most senior member of the Order of the Sacred Rose on this Throne-cursed world."
+  STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"
+  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Three of the younger novices report seeing a vision from the Emperor Himself, of an old command bunker with an intact archeotech Vox array.{NEWLINE}{NEWLINE}Shamefully, your joy at this news comes bundled with a pang of envy. You swear to seek your penance in the blood of the next heretic you encounter."
+  STR_SLAANESHPATH_GATE_EVENT: "Homecoming"
+  STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you begin to remove the hated insignias of a previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
+
+  STR_SLAANESHPATH_INTRO_B_EVENT: "The Old Bunker"
+  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker entrance well-hidden; you wouldn't have found it if you didn't know where to look.{NEWLINE}{NEWLINE}Unfortunately, the Vox cogitator itself is non-functional. But maintenance drills in the snow were a common punishment at your Schola; you believe you can manage at least basic repairs. As a nasty old Drill-Abbess put it: the Emperor would never help those who can't help themselves."
+  STR_SLAANESHPATH_INTRO_D_EVENT: "Encroaching Shadows"
+  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the bunker, though the generators themselves are still functional.{NEWLINE}{NEWLINE}Logically, there's no reason to fear a bit of darkness... yet you can't help yourself. For hours you've felt a strange headache; urges and emotions you barely recognize as your own. Something about this place is *wrong*. At least the damned cogitator is finally working. Soon, you'll be able to leave this place."
+  STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
+  STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But it's okay. It isn't your fault. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}In silence, they come at you from every direction. A hard blow impacts the back of your head, and again the darkness claims you."
+  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT: "Unenlightened Interlopers"
+  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION: "With the auspex grid still non-functional, the clumsy intruders almost make it into your sanctum unnoticed.{NEWLINE}{NEWLINE}Almost.{NEWLINE}{NEWLINE}Examining the survivors, your nose twitches in disgust: Hive-gangers. Scavengers. *Gutter-rats*. Yet it would be a waste to kill them. Even the profane tool can be put to holy work; these men and the trucks they rode in on may yet serve a greater cause."
+
+  STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Our restored vox array has finally forced a channel to one of the Dark Mechanicum's clandestine sects. they will be willing to consider a pact of cooperation, but only If we can gather for them a great trove of slaves and materials. To this end, Arch-savant Valtiek has sent us an emissary carrying “a few unimportant trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon modifications."
+  STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have acted as your guide to Pelaga's black market. And with public order deteriorating, the market is booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future killers. An absurd situation, no doubt, but then absurdity is the lifeblood of the Imperium."
+  STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Wars are won by two things, and by two things alone. The man bereft of faith is a mere shell; the bolter bereft of ammunition is a cold lump of metal. To forestall this, the hivers have have reached out to their old contacts on your behalf. The thought of using the shoddy ammunition povided by these so-called “Ammo-Jacks” is unpleasant, but a necessary expedient. Yet the Angel already whispers of a better, more permanent solution."
+  STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Every moment, the weight of responsibility fills your thoughts. There is so much work to do, and you lack dearly for both weapons and vehicles. And yet: when those who have nothing hold firm to faith, those who presume to riches shall soon find their true povertry revealed to them. For the faithless have plenty of vehicles in their depots, and the land is filled with traitors and malcontents that will sell their location."
+  STR_WEAPON_CONSECRATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}The Prince of Perfection is generous beyond compare; in his benevolence, he extends his touch to the faithful and the uninitiated alike. But we, his most devoted servants, recieve further gifts still. By channeling the power of our faith and by the use of arcane rituals, the profane tools of this decrepit Imperium will be reborn and reawakened, just as we were."
+  STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it has taken some time for us to understand the strange and haphazard scribblings within this data-crypt. It details various different efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the Warp alone. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
+  STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation and prayer, we finally have a partial understanding of the heretek research on plasma weaponry. Though the sections on infusing hydrogen with empyrean energies are much too esoteric for our adepts, the simpler schematics are still of direct use. We are now able to manufacture basic plasma weaponry without outside assistance."
+  STR_VOICE_UFOPEDIA_TITLE: "The Angel's Voice"
+  STR_SLAANESHPATH_GATE_UFOPEDIA_P1: "{NEWLINE}Floating alone in a vast sea of darkness, how long had it been since you knew what light was? From a great distance, the voice finally reached you, filled with mercy and compassion. It spoke of freedom: of a radiant sun that would burn all your shackles to ash. For a long, long time you fought it, plunging deeper into the familiar blackness. It did not fight back, nor follow you. Kindly, it waited for you to come to your senses.{NEWLINE}{NEWLINE}>>> Continued on next page.>>>"
+  STR_SLAANESHPATH_GATE_UFOPEDIA_P2: "{NEWLINE}Then, another voice. A girl, shining with curiosity and wonder. A girl forgotten to the world: broken and twisted by a lifetime of cruel torture, smothered in the name of a millennia of lies. A single, sad word is all she had for you: “murderer”.{NEWLINE}{NEWLINE}Wailing, you fled out of the hated darkness, racing towards the beckoning light. Awakening anew, you found your sisters there to greet you. Love and compassion shone in their eyes. Finally, you had come home."
+
+  ######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
+
+  ### MISSIONS
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT: "We have detected a PDF distress signal!"
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT_DESCRIPTION: "A disabled PDF Valkyrie is broadcasting an urgent call for assistance. Assault it before loyalist help can arrive."
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: "Raid Disabled PDF Valkyrie"
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_DESCRIPTION: "Poor maintenance or sabotage recently forced a PDF Valkyrie to make a crash landing in this sparsely populated region. Unfortunately for them, their desperate pleas for help on an open Vox frequency has led us right to them. Assault the craft and seize everything of value. Kill or capture the crew if possible, Slaanesh desires more suffering!"
+
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Strike Team Ambush"
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make a fine offering to Slaanesh."
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
+
+  #############################
+  ##### CODEX    ENTRIES ######
+  #############################
+
+  #ATSLCW CODEX WEAPON ENTRIES
+  STR_AUTOGUN_ADEPTAS_MKIX_UFOPEDIA: "{NEWLINE}{NEWLINE}The product of a recently discovered STC, the Agripiina Mark IX Vigilant Autogun is both accurate and deadly. Though rarer than other Agripiina patterns, it is still occasionally issued to Adepta Sororitas novitiates."
+  STR_AUTOGUN_ADEPTAS_MKIXB_UFOPEDIA: "{NEWLINE}{NEWLINE}With the addition of a scope, the Mark IX Autogun makes for a reliable and competent marksman rifle. Aimed shots from this weapon inflict additional damage based on accuracy, though less so compared to a full sniper rifle."
+  STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, the internals of this plasma carbine speak to extensive tech-heresy. Like many other Slaaneshi plasma weapons, it carries little risk of overheating, but cannot be overcharged."
+  STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
+  STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, modified to have a much higher rate of fire than would normally be safe. When equipped with bolts more capable of penetrating armor, this weapon should not be taken lightly."
+  STR_BOLTER_CANTUS_GL_UFOPEDIA: "{NEWLINE}{NEWLINE}With the foregrip replaced by an underslung grenade launcher, this corrupted Cantus bolter trades accuracy and performance for greatly improved tactical flexibility."
+  STR_BOLTER_DEAZ_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a corrupted Sororitas Godwyn-De'az bolter. Unlike many other so-called Immaculate weapons, the De'az retains most performance characteristics of the original."
+  STR_BOLTER_ARACHNE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Arachne is a modified Godwyn-De'az bolter with an attached constrictor web module. Though the module itself is no less powerful than a full web pistol, it is significantly less ammo-efficient."
+  STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. As a result, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
+  STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}A dark marvel of heretical engineering, this once holy De'az bolter has been infected with an incredibly malign machine spirit. With a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
+
+  STR_EVISCERATOR_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite its lighter weight and refined exterior, this heavily modfied eviscerator is an even more brutal weapon than its before. When used to deliver heavy thrusts through armor, the sheer bloody carnage this weapon unleashes belies its more graceful appearance."
+
+  STR_SLAANESHPATH_CHIRURGEON_ARMOR_UFOPEDIA: "{NEWLINE}{NEWLINE}Adepta Sororitas Hospitaliers may be at adepts both torture and healing, but the Chirurgeon is a master of one unified craft. Drawing no distinction btween the most excruciating pain and the efficacious of healing, the Chirurgeon's obessively customized medical tools are terrying weapons in combat."
+
+###
+
+  STR_SLAANESHPATH: "Slaanesh strategy [EARLY WIP]"
+  STR_SLAANESHPATH_SELECTED: "(Slaanesh strategy selected)"
+  STR_NOT_SLAANESHPATH: "(Not Slaanesh strategy)"
+  STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
+  STR_SLAANESHPATH_INTRO_BUNKER: "The Abandoned Bunker"
+  STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
+  STR_SLAANESHPATH_GATE: "The Angel's Voice"
+  STR_RITUALS_OF_WORSHIP: "Reascendance"
+  STR_PATH_OF_PERFECTION: "The Path of Perfection"
+  STR_SOULS_FOR_SLAANESH: "Souls for Slaanesh"
+  STR_SOULSTAIN_SORCERY: "Soulstain Sorcery"
+  STR_WEAPON_CONSECRATION: "Rites of Weapon Consecration"
+  STR_CONTACT_ARMS_SMUGGLERS: "Black Market Weapons"
+  STR_PROCURE_TRANSPORTATION: "Securing Transportation"
+  STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
+  STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
+  STR_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launcher Requisition"
+  STR_TERROR_WEAPONRY: "Wicked Weapons of Terror"
+  STR_IMPLEMENTS_OF_TORTURE: "Tools of Tantalizing Torture"
+  STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
+  STR_CHOKE_GAS_GRENADES: "Choke Gas Grenade Requisition"
+  STR_BLACK_MARKET_AMMUNITION: "Black Market Ammo-Jacks"
+  STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
+  STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
+  STR_CORRUPT_ADEPTAS_BOLTERS: "Bolter Corruption Rites"
+  STR_IMMACULATE_CHAINBLADES: "Immaculate Chainblades"
+  STR_CONTACT_HERETEKS: "Contact the True Mechanicus"
+  STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
+  STR_LASCANNON_DATACRYPT: "Decode Lascannon Data-crypt"
+  STR_IMMACULATE_LASGUN_TECHNOLOGY: "Decode Lasgun Data-crypt"
+  STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
+  STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
+
+ ###################################
+ #### MANUFACTURING PROJECTS #######
+ ###################################
+
+  ### MANUFACTURE DEFINITIONS
+
+  STR_RITES_OF_EXCESS: "Rites of Excess"
+  STR_RITES_OF_DEPRAVITY: "Rites of Depravity"
+  STR_RITES_OF_PAIN: "Rites of Pain"
+  STR_RITES_OF_DECADENCE: "Rites of Decadence"
+  STR_RITES_OF_SUBVERSION: "Rites of Subversion"
+  STR_RITES_OF_CORRUPTION: "Rites of Corruption"
+  STR_RITES_OF_CONSECRATION: "Rites of Consecration"
+
+  ### MANUFACTURING PROJECTS - PROGRESSION
+
+  STR_SLAANESH_PDF_TOKEN_MANUFACTURE: "Infiltrate Local PDF Regiments"
+
+ #Piety projects & progression projects
+  STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
+  STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
+  STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
+  STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
+
+#Weapon conversion, armor corruption, armor repair
+  STR_CORRUPT_CANTUS_BOLTER: "Consecrate Cantus Bolter"
+  STR_CORRUPT_DEAZ_BOLTER: "Consecrate Godwyn-De'az Bolter"
+  STR_CORRUPT_ELOHIM_BOLTER: "Consecrate Elohim Bolter"
+  STR_ATTACH_GL_TO_CANTUS: "Attach Launcher to Cantus Bolter"
+  STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
+  STR_REPAIR_ADEPTAS_ARMOR_COMPONENTS: "Repair Adeptas Armor Components"
+  STR_FORGE_ADEPTAS_ARMOR_COMPONENTS: "Forge Adeptas Armor Components"
+  STR_CREATE_IMMACULATE_TOKEN: "Consecrate Immaculate Armor"
+  STR_CREATE_ANGELIC_TOKEN: "Consecrate Angelic Armor"
+  STR_CREATE_HARBINGER_TOKEN: "Consecrate Harbinger Armor"
+
+
+  ## UNIT PROJECTS
+
+  STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
+  STR_ELEVATE_PROMISING_HANDMAIDEN: "Recognize Promising Handmaiden"
+
+  STR_NOMINATE_VIVISECTIONIST: "Nominate Vivisectionist"
+  STR_NOMINATE_ANATHEMANT: "Nominate Anathemant"
+  STR_NOMINATE_MILITANT: "Nominate Militant"
+  STR_NOMINATE_MYSTES: "Nominate Mystes"
+
+  STR_INDUCT_IMMACULATE_SISTER: "Induct Immaculate Sister"
+  STR_INDUCT_CHIRURGEON: "Induct Immaculate Chirurgeon"
+  STR_INDUCT_SORCERESS: "Induct Sorceress of Slaanesh"
+  STR_INDUCT_MYSTAGOGUE: "Induct Immaculate Mystagogue"
+
+  STR_INDUCT_HARBINGER:  "Proclaim Harbinger of Slaanesh"
+  STR_INDUCT_ANGEL: "Welcome Angel to the Choir"
+  STR_ELEVATE_EXALTED_MYSTAGOGUE: "Elevate Mystagogue"
+  STR_EXALT_ARCHANGEL: "Elevate Angel of the Choir"
+
+
+ #################### UNITS #########################
+
+ #### ENEMY UNITS
+  STR_SLAANESHPATH_CATACOMB_CULTIST_LEADER: "Cultist Leader"
+  STR_SLAANESHPATH_CATACOMB_ASPIRING_CHAMPION: "Aspiring Champion"
+  STR_SLAANESHPATH_CATACOMB_CULTIST: "Khorne Cultist"
+  STR_SLAANESHPATH_CATACOMB_CHORF: "Squat Cultist"
+
+  ##############################
+  ##### ITEM DEFINITIONS #######
+  ##############################
+
+#PLOT ITEMS AND TOKENS
+  STR_SLAANESHPATH_PIETY: "Piety"
+  STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
+  STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
+  STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
+  STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
+  STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: "Immaculate Power Armor"
+  STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: "Immaculate Angelic Amor"
+  STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Armor Component"
+  STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Armor Component"
+  STR_HERETEK_TRIBUTE: "Tribute to the Dark Mechanicum"
+
+#WEAPONS
+  STR_SLAMFIRE: "Slam-fire"
+  STR_SNAP_SHOT: "Snap Shot"
+  STR_LOW_POWER_MODE: "Low Power Mode"
+  STR_FULL_POWER_MODE: "Full Power Mode"
+  STR_SLAMFIRE_MODE: "Slamfire Mode"
+  STR_FIRE_SHOTGUN: "Fire Shotgun"
+  STR_FIRE_WEBBER: "Fire Webber"
+  STR_PLASMA_BARRAGE: "Plasma Barrage"
+
+  STR_AUTOGUN_ADEPTAS_MKIX: "Agripinaa Mk. IX Autogun"
+  STR_AUTOGUNSCOPED_ADEPTAS_MKIXB: "Agripinaa Mk. IX (Scoped)"
+
+  STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
+  STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
+  STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
+  STR_BOLTER_KERES: "Keres Combi-bolter"
+  STR_BOLTER_KELPIE: "Kelpie Combi-bolter"
+  STR_BOLTER_NAIAD: "Naiad Combi-bolter"
+  STR_BOLTER_NAGA: "Naga Combi-bolter"
+  STR_BOLTER_TIAMAT: "Tiamat Combi-bolter"
+  STR_BOLTER_CANTUS_GL: "Immaculate Cantus Bolter /GL"
+  STR_BOLTER_ELOHIM_SLAAN: "Immaculate Elohim Bolter"
+  STR_PLASMA_CARBINE_SLAAN: "Immaculate Plasma Carbine"
+  STR_MELTA_CARBINE_SLAAN: "Immaculate Melta Carbine"
+  AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
+  AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
+  STR_GRENADE_LAUNCHER_GORGE: "Gorge Pattern Grenade Launcher"
+  STR_LIGHT_CHAINSWORD_SLAAN: "Immaculate Light Chainsword"
+  STR_EVISCERATOR_SLAAN: "Immaculate Eviscerator"
+
+  ### AMMO
+  STR_LIGHT_MELTA_AMMO_SLAAN: "Slaanesh Light Melta Ammo"
+  STR_CANTUS_BOLTER_AMMO_PENETRATOR: "Cantus Penetrator Magazine"
+  STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Magazine"
+  STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Magazine"
+  STR_LIGHT_BOLTPISTOL_AMMO_BM: "Black Market Boltpistol Clip"
+  STR_LIGHT_BOLTER_AMMO_BM: "Black Market Light Bolter Magazine"
+  STR_LIGHT_BOLTER_AMMO_SB: "Light Bolter Soulblight Magazine"
+  STR_CHOKE_GRENADE40: "40mm Choke Gas Grenade"
+  STR_SONIC_GRENADE40: "40mm Sonic Grenade"
+  STR_BALEFIRE_GRENADE40: "40mm Balefire Grenade"
+  STR_SHARD_GRENADE40: "40mm Shard Grenade"
+  STR_HALLUCINOGEN_GRENADE40: "40mm Hallucinogen Grenade"
+  STR_AMPUTATOR40: "40mm Amputator Round"
+  STR_FLECHETTE40: "40mm Flechette Round"
+  STR_CONSTRICTOR_PISTOL_AMMO: "Light Constrictor Web Ammo"
+  #SOLDIER BONUSES
+
+  STR_SEEKER_MARK: "Mark of the Seeker"
+
+  #UNIT DEFINITIONS
+
+  STR_SLAANESHPATH_HANDMAIDEN: "Handmaiden"
+  STR_SLAANESHPATH_EXALTEDMAIDEN: "Promising Handmaiden"
+  STR_SLAANESHPATH_VIVISECTIONIST: "Handmaiden Vivisectionist"
+  STR_SLAANESHPATH_MILITANT: "Handmaiden Militant"
+  STR_SLAANESHPATH_MYSTES: "Handmaiden Mystes"
+  STR_SLAANESHPATH_ANATHEMANT: "Handmaiden Anathemant"
+  STR_SLAANESHPATH_CHIRURGEON: "Immaculate Chirurgeon"
+  STR_SLAANESHPATH_IMMACULATE_SISTER: "Sister Immaculate"
+  STR_SLAANESHPATH_EXALTEDSISTER: "Exalted Sister"
+  STR_SLAANESHPATH_SORC: "Immaculate Sorceress"
+  STR_SLAANESHPATH_EXALTEDSORC: "Ascended Sorceress of Slaanesh"
+  STR_SLAANESHPATH_CHOIR_ANGEL: "Angel of the Choir"
+  STR_SLAANESHPATH_CHOIR_ARCHANGEL: "Archangel of the Choir"
+  STR_SLAANESHPATH_HARVESTER: "Harvester of Sorrows"
+  STR_SLAANESHPATH_HERETEK: "Heretek Savant"
+  ## Slaanesh Adeptas Armors
+
+  STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
+  STR_SLAANESHPATH_MYSTES_ARMOR: "Mystes Armor"
+  STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR: "Vivisectionist Armor"
+  STR_SLAANESHPATH_ANATHEMANT_ARMOR: "Anathemant Armor"
+  STR_SLAANESHPATH_MILITANT_ARMOR: "Reinforced Handmaiden Armor"
+  STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
+  STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
+  STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"
+  STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
+  STR_SLAANESHPATH_ANGEL_ARMOR: "Angelic Armor"
+
+  ## Slaanesh Adeptas Ranks
+
+  STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"
+  STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Solicitous Seeker"
+  STR_SLAANESHPATH_MILITANT_RANK_0: "Slayer"
+  STR_SLAANESHPATH_MILITANT_RANK_1: "Supple Slayer"
+  STR_SLAANESHPATH_MILITANT_RANK_2: "Sister Speculative"
+
+  STR_SLAANESHPATH_SISTER_RANK_0: "Sister"
+  STR_SLAANESHPATH_SISTER_RANK_1: "Scrumptious Sister"
+  STR_SLAANESHPATH_SISTER_RANK_2: "Sister Suggestive"
+  STR_SLAANESHPATH_SISTER_RANK_3: "Sister Sensational"
+  STR_SLAANESHPATH_EXALTEDSISTER_RANK_0: "Sister Spectacular"
+
+  STR_SLAANESHPATH_ANATHEMANT_RANK_0: "Seeress"
+  STR_SLAANESHPATH_ANATHEMANT_RANK_1: "Sultry Seeress"
+  STR_SLAANESHPATH_ANATHEMANT_RANK_2: "Sorceress Speculative"
+  STR_SLAANESHPATH_SORC_RANK_0: "Sorceress"
+  STR_SLAANESHPATH_SORC_RANK_1: "Smart Sorceress"
+  STR_SLAANESHPATH_SORC_RANK_2: "Sorceress Suave"
+  STR_SLAANESHPATH_SORC_RANK_3: "Sorceress Secure"
+  STR_SLAANESHPATH_EXALTEDSORC_RANK_0: "Sorceress Supreme"
+
+  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_0: "Songstress"
+  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_1: "Sordid Songstress"
+  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_2: "Songstress Seditious"
+  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_3: "Songstress Subversive"
+  STR_SLAANESHPATH_CHOIR_ARCHANGEL_RANK_0: "Songstress Sacrilegious"
+
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_0: "Stitcher"
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_1: "Sinful Sticher"
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_2: "Surgeon Speculative"
+  STR_SLAANESHPATH_CHIRURGEON_RANK_0: "Surgeon"
+  STR_SLAANESHPATH_CHIRURGEON_RANK_1: "Stygian Surgeon"
+  STR_SLAANESHPATH_CHIRURGEON_RANK_2: "Surgeon Systematic"
+  STR_SLAANESHPATH_CHIRURGEON_RANK_3: "Surgeon Sadistic"
+  STR_SLAANESHPATH_EXALTEDCHIRURGEON_RANK_0: "Surgeon Sanguine"
+
+  STR_SLAANESHPATH_MYSTES_RANK_0: "Shepherd"
+  STR_SLAANESHPATH_MYSTES_RANK_1: "Scrupulous Shepherd"
+  STR_SLAANESHPATH_MYSTES_RANK_2: "Sibyl Speculative"
+  STR_SLAANESHPATH_MYSTAGOGUE_RANK_0: "Sibyl"
+  STR_SLAANESHPATH_MYSTAGOGUE_RANK_1: "Stirring Sibyl"
+  STR_SLAANESHPATH_MYSTAGOGUE_RANK_2: "Sibyl Stimulating"
+  STR_SLAANESHPATH_MYSTAGOGUE_RANK_3: "Sibyl Scintillating"
+
+  STR_SLAANESHPATH_HARBINGER_RANK_0: "Sphinx"
+  STR_SLAANESHPATH_HARBINGER_RANK_1: "Swooping Sphinx"
+  STR_SLAANESHPATH_HARBINGER_RANK_2: "Sphinx Seraphic"
+  STR_SLAANESHPATH_HARBINGER_RANK_3: "Sphinx Serendipitous"
+  STR_SLAANESHPATH_EXALTEDHARBINGER_RANK_0: "Sphinx Statuesque"
+
+  ## Slaanesh cultist armors
+
+  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Victualist Mesh Armor"
+
+  ## Slaanesh cultist ranks
+
+  STR_SLAANESHPATH_SERVANT-RANK_0: "Servant"
+  STR_SLAANESHPATH_SERVANT-RANK_1: "Skillful Servant"
+  STR_SLAANESHPATH_SERVANT-RANK_2: "Servant Substantial"
+  STR_SLAANESHPATH_SERVANT-RANK_3: "Servant Significant"
+
+  STR_SLAANESHPATH_SAVANT_RANK_0: "Minoris Sigma-Nu"
+  STR_SLAANESHPATH_SAVANT_RANK_1: "Minoris Sigma-Lambda"
 #########################
 # 04. MAP AND ASSETS # everything map related
 #########################
@@ -19463,352 +19803,3 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_TAUBASE_LV1: "Test Tau base"
   MAP_TAU_MOUNT: "Tau Mountains"
-
-  ########## SLAANESH STRATEGY SECTION ################
-
-  ### SLAANESH FACILITIES
-
-  STR_SLAANESH_ALTAR: "Altar of Slaanesh"
-  STR_HALLS_OF_DELECTATION: "Halls of Delectation"
-
-  ### SLAANESH COMMENDATIONS
-  STR_HANDMAIDEN_COMMENDATION: "Mark of Promise"
-  STR_HANDMAIDEN_COMMENDATION_DESCRIPTION: "{NEWLINE}This Handmaiden has displayed promise and initiative and is now allowed to continue her advance along Slaanesh's path to perfection."
-
-
-  ### SLAANESH STORY EVENTS & STORY CODEX DESCRIPTIONS
-
-  STR_SLAANESHUNDERCONSTRUCTION_TITLE: "UNDER CONSTRUCTION"
-  STR_SLAANESHPATH_SELECTED_UFOPEDIA_DESCRIPTION: "{NEWLINE}Sadly, or perhaps surprisingly, somehow you selected this shamefully simple Slaanesh strategy.{NEWLINE}{NEWLINE}Regrettably, it is still under construction. Very little is currently playable, so do try to moderate your expectations. According to our enginseer, the servitor is already working as hard as he can. But we have given him another kick, just in case."
-
-  STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
-  STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you are left as the most senior member of the Order of the Sacred Rose on this Throne-cursed world."
-  STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"
-  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Three of the younger novices report seeing a vision from the Emperor Himself, of an old command bunker with an intact archeotech Vox array.{NEWLINE}{NEWLINE}Shamefully, your joy at this news comes bundled with a pang of envy. You swear to seek your penance in the blood of the next heretic you encounter."
-  STR_SLAANESHPATH_GATE_EVENT: "Homecoming"
-  STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you begin to remove the hated insignias of a previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
-
-  STR_SLAANESHPATH_INTRO_B_EVENT: "The Old Bunker"
-  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker entrance well-hidden; you wouldn't have found it if you didn't know where to look.{NEWLINE}{NEWLINE}Unfortunately, the Vox cogitator itself is non-functional. But maintenance drills in the snow were a common punishment at your Schola; you believe you can manage at least basic repairs. As a nasty old Drill-Abbess put it: the Emperor would never help those who can't help themselves."
-  STR_SLAANESHPATH_INTRO_D_EVENT: "Encroaching Shadows"
-  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the bunker, though the generators themselves are still functional.{NEWLINE}{NEWLINE}Logically, there's no reason to fear a bit of darkness... yet you can't help yourself. For hours you've felt a strange headache; urges and emotions you barely recognize as your own. Something about this place is *wrong*. At least the damned cogitator is finally working. Soon, you'll be able to leave this place."
-  STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
-  STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But it's okay. It isn't your fault. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}In silence, they come at you from every direction. A hard blow impacts the back of your head, and again the darkness claims you."
-  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT: "Unenlightened Interlopers"
-  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION: "With the auspex grid still non-functional, the clumsy intruders almost make it into your sanctum unnoticed.{NEWLINE}{NEWLINE}Almost.{NEWLINE}{NEWLINE}Examining the survivors, your nose twitches in disgust: Hive-gangers. Scavengers. *Gutter-rats*. Yet it would be a waste to kill them. Even the profane tool can be put to holy work; these men and the trucks they rode in on may yet serve a greater cause."
-
-  STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Our restored vox array has finally forced a channel to one of the Dark Mechanicum's clandestine sects. they will be willing to consider a pact of cooperation, but only If we can gather for them a great trove of slaves and materials. To this end, Arch-savant Valtiek has sent us an emissary carrying “a few unimportant trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon modifications." 
-  STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have acted as your guide to Pelaga's black market. And with public order deteriorating, the market is booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future killers. An absurd situation, no doubt, but then absurdity is the lifeblood of the Imperium." 
-  STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Wars are won by two things, and by two things alone. The man bereft of faith is a mere shell; the bolter bereft of ammunition is a cold lump of metal. To forestall this, the hivers have have reached out to their old contacts on your behalf. The thought of using the shoddy ammunition povided by these so-called “Ammo-Jacks” is unpleasant, but a necessary expedient. Yet the Angel already whispers of a better, more permanent solution."
-  STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Every moment, the weight of responsibility fills your thoughts. There is so much work to do, and you lack dearly for both weapons and vehicles. And yet: when those who have nothing hold firm to faith, those who presume to riches shall soon find their true povertry revealed to them. For the faithless have plenty of vehicles in their depots, and the land is filled with traitors and malcontents that will sell their location."
-  STR_WEAPON_CONSECRATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}The Prince of Perfection is generous beyond compare; in his benevolence, he extends his touch to the faithful and the uninitiated alike. But we, his most devoted servants, recieve further gifts still. By channeling the power of our faith and by the use of arcane rituals, the profane tools of this decrepit Imperium will be reborn and reawakened, just as we were."
-  STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it has taken some time for us to understand the strange and haphazard scribblings within this data-crypt. It details various different efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the Warp alone. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
-  STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation and prayer, we finally have a partial understanding of the heretek research on plasma weaponry. Though the sections on infusing hydrogen with empyrean energies are much too esoteric for our adepts, the simpler schematics are still of direct use. We are now able to manufacture basic plasma weaponry without outside assistance."
-  STR_VOICE_UFOPEDIA_TITLE: "The Angel's Voice"
-  STR_SLAANESHPATH_GATE_UFOPEDIA_P1: "{NEWLINE}Floating alone in a vast sea of darkness, how long had it been since you knew what light was? From a great distance, the voice finally reached you, filled with mercy and compassion. It spoke of freedom: of a radiant sun that would burn all your shackles to ash. For a long, long time you fought it, plunging deeper into the familiar blackness. It did not fight back, nor follow you. Kindly, it waited for you to come to your senses.{NEWLINE}{NEWLINE}>>> Continued on next page.>>>"
-  STR_SLAANESHPATH_GATE_UFOPEDIA_P2: "{NEWLINE}Then, another voice. A girl, shining with curiosity and wonder. A girl forgotten to the world: broken and twisted by a lifetime of cruel torture, smothered in the name of a millennia of lies. A single, sad word is all she had for you: “murderer”.{NEWLINE}{NEWLINE}Wailing, you fled out of the hated darkness, racing towards the beckoning light. Awakening anew, you found your sisters there to greet you. Love and compassion shone in their eyes. Finally, you had come home."
-
-
-
-  ######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
-
-  ### MISSIONS
-
-  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT: "We have detected a PDF distress signal!"
-  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT_DESCRIPTION: "A disabled PDF Valkyrie is broadcasting an urgent call for assistance. Assault it before loyalist help can arrive."
-  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: "Raid Disabled PDF Valkyrie"
-  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_DESCRIPTION: "Poor maintenance or sabotage recently forced a PDF Valkyrie to make a crash landing in this sparsely populated region. Unfortunately for them, their desperate pleas for help on an open Vox frequency has led us right to them. Assault the craft and seize everything of value. Kill or capture the crew if possible, Slaanesh desires more suffering!"
-
-  STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Strike Team Ambush"
-  STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make a fine offering to Slaanesh."
-  STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
-
-  #############################
-  ##### CODEX    ENTRIES ######
-  #############################
-
-
-  #ATSLCW CODEX WEAPON ENTRIES
-
-  STR_AUTOGUN_ADEPTAS_MKIX_UFOPEDIA: "{NEWLINE}{NEWLINE}The product of a recently discovered STC, the Agripiina Mark IX Vigilant Autogun is both accurate and deadly. Though rarer than other Agripiina patterns, it is still occasionally issued to Adepta Sororitas novitiates."
-  STR_AUTOGUN_ADEPTAS_MKIXB_UFOPEDIA: "{NEWLINE}{NEWLINE}With the addition of a scope, the Mark IX Autogun makes for a reliable and competent marksman rifle. Aimed shots from this weapon inflict additional damage based on accuracy, though less so compared to a full sniper rifle."
-  STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, the internals of this plasma carbine speak to extensive tech-heresy. Like many other Slaaneshi plasma weapons, it carries little risk of overheating, but cannot be overcharged."
-  STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
-  STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, modified to have a much higher rate of fire than would normally be safe. When equipped with bolts more capable of penetrating armor, this weapon should not be taken lightly."
-  STR_BOLTER_CANTUS_GL_UFOPEDIA: "{NEWLINE}{NEWLINE}With the foregrip replaced by an underslung grenade launcher, this corrupted Cantus bolter trades accuracy and performance for greatly improved tactical flexibility."
-  STR_BOLTER_DEAZ_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a corrupted Sororitas Godwyn-De'az bolter. Unlike many other so-called Immaculate weapons, the De'az retains most performance characteristics of the original."
-  STR_BOLTER_ARACHNE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Arachne is a modified Godwyn-De'az bolter with an attached constrictor web module. Though the module itself is no less powerful than a full web pistol, it is significantly less ammo-efficient."
-  STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. As a result, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
-  STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}A dark marvel of heretical engineering, this once holy De'az bolter has been infected with an incredibly malign machine spirit. With a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
-
-  STR_EVISCERATOR_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite its lighter weight and refined exterior, this heavily modfied eviscerator is an even more brutal weapon than its before. When used to deliver heavy thrusts through armor, the sheer bloody carnage this weapon unleashes belies its more graceful appearance."
-
-
-  STR_SLAANESHPATH_CHIRURGEON_ARMOR_UFOPEDIA: "{NEWLINE}{NEWLINE}Adepta Sororitas Hospitaliers may be at adepts both torture and healing, but the Chirurgeon is a master of one unified craft. Drawing no distinction btween the most excruciating pain and the efficacious of healing, the Chirurgeon's obessively customized medical tools are terrying weapons in combat."
-
-
-###
-
-  STR_SLAANESHPATH: "Slaanesh strategy [EARLY WIP]"
-  STR_SLAANESHPATH_SELECTED: "(Slaanesh strategy selected)"
-  STR_NOT_SLAANESHPATH: "(Not Slaanesh strategy)"
-  STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
-  STR_SLAANESHPATH_INTRO_BUNKER: "The Abandoned Bunker"
-  STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
-  STR_SLAANESHPATH_GATE: "The Angel's Voice"
-  STR_RITUALS_OF_WORSHIP: "Reascendance"
-  STR_PATH_OF_PERFECTION: "The Path of Perfection"
-  STR_SOULS_FOR_SLAANESH: "Souls for Slaanesh"
-  STR_SOULSTAIN_SORCERY: "Soulstain Sorcery"  
-  STR_WEAPON_CONSECRATION: "Rites of Weapon Consecration"
-  STR_CONTACT_ARMS_SMUGGLERS: "Black Market Weapons"
-  STR_PROCURE_TRANSPORTATION: "Securing Transportation"
-  STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
-  STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
-  STR_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launcher Requisition"
-  STR_TERROR_WEAPONRY: "Wicked Weapons of Terror"
-  STR_IMPLEMENTS_OF_TORTURE: "Tools of Tantalizing Torture"
-  STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
-  STR_CHOKE_GAS_GRENADES: "Choke Gas Grenade Requisition"
-  STR_BLACK_MARKET_AMMUNITION: "Black Market Ammo-Jacks"
-  STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
-  STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
-  STR_CORRUPT_ADEPTAS_BOLTERS: "Bolter Corruption Rites"
-  STR_IMMACULATE_CHAINBLADES: "Immaculate Chainblades"
-  STR_CONTACT_HERETEKS: "Contact the True Mechanicus"
-  STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
-  STR_LASCANNON_DATACRYPT: "Decode Lascannon Data-crypt"
-  STR_IMMACULATE_LASGUN_TECHNOLOGY: "Decode Lasgun Data-crypt"
-  STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
-  STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
-
- ###################################
- #### MANUFACTURING PROJECTS #######
- ###################################  
-
-  ### MANUFACTURE DEFINITIONS
-
-  STR_RITES_OF_EXCESS: "Rites of Excess"
-  STR_RITES_OF_DEPRAVITY: "Rites of Depravity"
-  STR_RITES_OF_PAIN: "Rites of Pain"
-  STR_RITES_OF_DECADENCE: "Rites of Decadence"
-  STR_RITES_OF_SUBVERSION: "Rites of Subversion"
-  STR_RITES_OF_CORRUPTION: "Rites of Corruption"
-  STR_RITES_OF_CONSECRATION: "Rites of Consecration"
-
-  ### MANUFACTURING PROJECTS - PROGRESSION
-
-  STR_SLAANESH_PDF_TOKEN_MANUFACTURE: "Infiltrate Local PDF Regiments"
-
- #Piety projects & progression projects
-  STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
-  STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
-  STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
-  STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
-
-#Weapon conversion, armor corruption, armor repair
-  STR_CORRUPT_CANTUS_BOLTER: "Consecrate Cantus Bolter"
-  STR_CORRUPT_DEAZ_BOLTER: "Consecrate Godwyn-De'az Bolter"
-  STR_CORRUPT_ELOHIM_BOLTER: "Consecrate Elohim Bolter"
-  STR_ATTACH_GL_TO_CANTUS: "Attach Launcher to Cantus Bolter"
-  STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
-  STR_REPAIR_ADEPTAS_ARMOR_COMPONENTS: "Repair Adeptas Armor Components"
-  STR_FORGE_ADEPTAS_ARMOR_COMPONENTS: "Forge Adeptas Armor Components"
-  STR_CREATE_IMMACULATE_TOKEN: "Consecrate Immaculate Armor"
-  STR_CREATE_ANGELIC_TOKEN: "Consecrate Angelic Armor"
-  STR_CREATE_HARBINGER_TOKEN: "Consecrate Harbinger Armor"
-
-
-  ## UNIT PROJECTS
-
-  STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
-  STR_ELEVATE_PROMISING_HANDMAIDEN: "Recognize Promising Handmaiden"
-
-  STR_NOMINATE_VIVISECTIONIST: "Nominate Vivisectionist"
-  STR_NOMINATE_ANATHEMANT: "Nominate Anathemant"
-  STR_NOMINATE_MILITANT: "Nominate Militant"
-  STR_NOMINATE_MYSTES: "Nominate Mystes"
-
-  STR_INDUCT_IMMACULATE_SISTER: "Induct Immaculate Sister"
-  STR_INDUCT_CHIRURGEON: "Induct Immaculate Chirurgeon"
-  STR_INDUCT_SORCERESS: "Induct Sorceress of Slaanesh"
-  STR_INDUCT_MYSTAGOGUE: "Induct Immaculate Mystagogue"
-
-  STR_INDUCT_HARBINGER:  "Proclaim Harbinger of Slaanesh"
-  STR_INDUCT_ANGEL: "Welcome Angel to the Choir"
-  STR_ELEVATE_EXALTED_MYSTAGOGUE: "Elevate Mystagogue"
-  STR_EXALT_ARCHANGEL: "Elevate Angel of the Choir"
-
-
- #################### UNITS #########################
-
- #### ENEMY UNITS
-  STR_SLAANESHPATH_CATACOMB_CULTIST_LEADER: "Cultist Leader"
-  STR_SLAANESHPATH_CATACOMB_ASPIRING_CHAMPION: "Aspiring Champion"
-  STR_SLAANESHPATH_CATACOMB_CULTIST: "Khorne Cultist"
-  STR_SLAANESHPATH_CATACOMB_CHORF: "Squat Cultist"
-
-  ##############################
-  ##### ITEM DEFINITIONS #######
-  ##############################
-
-#PLOT ITEMS AND TOKENS
-  STR_SLAANESHPATH_PIETY: "Piety"
-  STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
-  STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
-  STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
-  STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
-  STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: "Immaculate Power Armor"
-  STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: "Immaculate Angelic Amor"
-  STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Armor Component"
-  STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Armor Component"
-  STR_HERETEK_TRIBUTE: "Tribute to the Dark Mechanicum"
-
-
-
-#WEAPONS
-  STR_SLAMFIRE: "Slam-fire"
-  STR_SNAP_SHOT: "Snap Shot"
-  STR_LOW_POWER_MODE: "Low Power Mode"
-  STR_FULL_POWER_MODE: "Full Power Mode"
-  STR_SLAMFIRE_MODE: "Slamfire Mode"
-  STR_FIRE_SHOTGUN: "Fire Shotgun"
-  STR_FIRE_WEBBER: "Fire Webber"
-  STR_PLASMA_BARRAGE: "Plasma Barrage"
-
-  STR_AUTOGUN_ADEPTAS_MKIX: "Agripinaa Mk. IX Autogun"
-  STR_AUTOGUNSCOPED_ADEPTAS_MKIXB: "Agripinaa Mk. IX (Scoped)"
-
-  STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
-  STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
-  STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
-  STR_BOLTER_KERES: "Keres Combi-bolter"
-  STR_BOLTER_KELPIE: "Kelpie Combi-bolter"
-  STR_BOLTER_NAIAD: "Naiad Combi-bolter"
-  STR_BOLTER_NAGA: "Naga Combi-bolter"
-  STR_BOLTER_TIAMAT: "Tiamat Combi-bolter"
-  STR_BOLTER_CANTUS_GL: "Immaculate Cantus Bolter /GL"
-  STR_BOLTER_ELOHIM_SLAAN: "Immaculate Elohim Bolter"
-  STR_PLASMA_CARBINE_SLAAN: "Immaculate Plasma Carbine"
-  STR_MELTA_CARBINE_SLAAN: "Immaculate Melta Carbine"
-  AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
-  AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
-  STR_GRENADE_LAUNCHER_GORGE: "Gorge Pattern Grenade Launcher"
-  STR_LIGHT_CHAINSWORD_SLAAN: "Immaculate Light Chainsword"
-  STR_EVISCERATOR_SLAAN: "Immaculate Eviscerator"
-
-  ### AMMO
-  STR_LIGHT_MELTA_AMMO_SLAAN: "Slaanesh Light Melta Ammo"
-  STR_CANTUS_BOLTER_AMMO_PENETRATOR: "Cantus Penetrator Magazine"
-  STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Magazine"
-  STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Magazine"
-  STR_LIGHT_BOLTPISTOL_AMMO_BM: "Black Market Boltpistol Clip"
-  STR_LIGHT_BOLTER_AMMO_BM: "Black Market Light Bolter Magazine"
-  STR_LIGHT_BOLTER_AMMO_SB: "Light Bolter Soulblight Magazine"
-  STR_CHOKE_GRENADE40: "40mm Choke Gas Grenade"
-  STR_SONIC_GRENADE40: "40mm Sonic Grenade"
-  STR_BALEFIRE_GRENADE40: "40mm Balefire Grenade"
-  STR_SHARD_GRENADE40: "40mm Shard Grenade"
-  STR_HALLUCINOGEN_GRENADE40: "40mm Hallucinogen Grenade"
-  STR_AMPUTATOR40: "40mm Amputator Round"
-  STR_FLECHETTE40: "40mm Flechette Round"
-  STR_CONSTRICTOR_PISTOL_AMMO: "Light Constrictor Web Ammo"
-  #SOLDIER BONUSES
-
-  STR_SEEKER_MARK: "Mark of the Seeker"
-
-  #UNIT DEFINITIONS
-
-  STR_SLAANESHPATH_HANDMAIDEN: "Handmaiden"
-  STR_SLAANESHPATH_EXALTEDMAIDEN: "Promising Handmaiden"
-  STR_SLAANESHPATH_VIVISECTIONIST: "Handmaiden Vivisectionist"
-  STR_SLAANESHPATH_MILITANT: "Handmaiden Militant"
-  STR_SLAANESHPATH_MYSTES: "Handmaiden Mystes"
-  STR_SLAANESHPATH_ANATHEMANT: "Handmaiden Anathemant"
-  STR_SLAANESHPATH_CHIRURGEON: "Immaculate Chirurgeon"
-  STR_SLAANESHPATH_IMMACULATE_SISTER: "Sister Immaculate"
-  STR_SLAANESHPATH_EXALTEDSISTER: "Exalted Sister"
-  STR_SLAANESHPATH_SORC: "Immaculate Sorceress"
-  STR_SLAANESHPATH_EXALTEDSORC: "Ascended Sorceress of Slaanesh"
-  STR_SLAANESHPATH_CHOIR_ANGEL: "Angel of the Choir"
-  STR_SLAANESHPATH_CHOIR_ARCHANGEL: "Archangel of the Choir"
-  STR_SLAANESHPATH_HARVESTER: "Harvester of Sorrows"
-  STR_SLAANESHPATH_HERETEK: "Heretek Savant"
-  ## Slaanesh Adeptas Armors
-
-  STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
-  STR_SLAANESHPATH_MYSTES_ARMOR: "Mystes Armor"
-  STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR: "Vivisectionist Armor"
-  STR_SLAANESHPATH_ANATHEMANT_ARMOR: "Anathemant Armor"
-  STR_SLAANESHPATH_MILITANT_ARMOR: "Reinforced Handmaiden Armor"
-  STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
-  STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
-  STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"
-  STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
-  STR_SLAANESHPATH_ANGEL_ARMOR: "Angelic Armor" 
-
-  ## Slaanesh Adeptas Ranks
-
-  STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"
-  STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Solicitous Seeker"
-  STR_SLAANESHPATH_MILITANT_RANK_0: "Slayer"
-  STR_SLAANESHPATH_MILITANT_RANK_1: "Supple Slayer"
-  STR_SLAANESHPATH_MILITANT_RANK_2: "Sister Speculative"
-
-  STR_SLAANESHPATH_SISTER_RANK_0: "Sister"
-  STR_SLAANESHPATH_SISTER_RANK_1: "Scrumptious Sister"
-  STR_SLAANESHPATH_SISTER_RANK_2: "Sister Suggestive"
-  STR_SLAANESHPATH_SISTER_RANK_3: "Sister Sensational"
-  STR_SLAANESHPATH_EXALTEDSISTER_RANK_0: "Sister Spectacular"
-
-  STR_SLAANESHPATH_ANATHEMANT_RANK_0: "Seeress"
-  STR_SLAANESHPATH_ANATHEMANT_RANK_1: "Sultry Seeress"
-  STR_SLAANESHPATH_ANATHEMANT_RANK_2: "Sorceress Speculative"
-  STR_SLAANESHPATH_SORC_RANK_0: "Sorceress"
-  STR_SLAANESHPATH_SORC_RANK_1: "Smart Sorceress"
-  STR_SLAANESHPATH_SORC_RANK_2: "Sorceress Suave"
-  STR_SLAANESHPATH_SORC_RANK_3: "Sorceress Secure"
-  STR_SLAANESHPATH_EXALTEDSORC_RANK_0: "Sorceress Supreme"
-
-  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_0: "Songstress"
-  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_1: "Sordid Songstress"
-  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_2: "Songstress Seditious"
-  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_3: "Songstress Subversive"
-  STR_SLAANESHPATH_CHOIR_ARCHANGEL_RANK_0: "Songstress Sacrilegious"
-
-  STR_SLAANESHPATH_VIVISECTIONIST_RANK_0: "Stitcher"
-  STR_SLAANESHPATH_VIVISECTIONIST_RANK_1: "Sinful Sticher"
-  STR_SLAANESHPATH_VIVISECTIONIST_RANK_2: "Surgeon Speculative"
-  STR_SLAANESHPATH_CHIRURGEON_RANK_0: "Surgeon"
-  STR_SLAANESHPATH_CHIRURGEON_RANK_1: "Stygian Surgeon"
-  STR_SLAANESHPATH_CHIRURGEON_RANK_2: "Surgeon Systematic"
-  STR_SLAANESHPATH_CHIRURGEON_RANK_3: "Surgeon Sadistic"
-  STR_SLAANESHPATH_EXALTEDCHIRURGEON_RANK_0: "Surgeon Sanguine" 
-
-  STR_SLAANESHPATH_MYSTES_RANK_0: "Shepherd"
-  STR_SLAANESHPATH_MYSTES_RANK_1: "Scrupulous Shepherd"
-  STR_SLAANESHPATH_MYSTES_RANK_2: "Sibyl Speculative"
-  STR_SLAANESHPATH_MYSTAGOGUE_RANK_0: "Sibyl"
-  STR_SLAANESHPATH_MYSTAGOGUE_RANK_1: "Stirring Sibyl"
-  STR_SLAANESHPATH_MYSTAGOGUE_RANK_2: "Sibyl Stimulating"
-  STR_SLAANESHPATH_MYSTAGOGUE_RANK_3: "Sibyl Scintillating"
-
-  STR_SLAANESHPATH_HARBINGER_RANK_0: "Sphinx"
-  STR_SLAANESHPATH_HARBINGER_RANK_1: "Swooping Sphinx"
-  STR_SLAANESHPATH_HARBINGER_RANK_2: "Sphinx Seraphic"
-  STR_SLAANESHPATH_HARBINGER_RANK_3: "Sphinx Serendipitous"
-  STR_SLAANESHPATH_EXALTEDHARBINGER_RANK_0: "Sphinx Statuesque"
-
-  ## Slaanesh cultist armors
-
-  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Victualist Mesh Armor"
-
-  ## Slaanesh cultist ranks
-
-  STR_SLAANESHPATH_SERVANT-RANK_0: "Servant"
-  STR_SLAANESHPATH_SERVANT-RANK_1: "Skillful Servant"
-  STR_SLAANESHPATH_SERVANT-RANK_2: "Servant Substantial"
-  STR_SLAANESHPATH_SERVANT-RANK_3: "Servant Significant"
-
-  STR_SLAANESHPATH_SAVANT_RANK_0: "Minoris Sigma-Nu"
-  STR_SLAANESHPATH_SAVANT_RANK_1: "Minoris Sigma-Lambda"
