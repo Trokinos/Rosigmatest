@@ -4,120 +4,106 @@ en-US: #  yamllint disable-line rule:empty-values
 # PLEASE MANTAIN THIS STRUCTURE WHEREVER POSSIBLE
 #
 # Sections:
-
 #########################
 # 01. GENERIC GAME STRINGS #
 #########################
-# #OXCE-Unclassified             override of default OXCE strings
-# #ROSIGMA_DEFAULTS # ROSIGMA Defaults and placeholders used for development
-# #ROSIGMA_DEFAULTS.PLACEHOLDERS
-
-# #Avatars          # used by maxLookVariant - number of avatars = (value + 1) * 8
-# #MENU             Menu and options windows items and selections
-# #GEOSCAPE#        Geoscape strings
-# #BATTLESCAPE      Battlescape strings
-# #INVENTORYSCAPE   Inventory scrings
-# #BASESCAPE        Base strings (note: NOT building names, menu strings)
-# #MENUSCAPE        Research Diary and summaries strings (kill list, performance, game results)
+# #01-OXCE-Unclassified             override of default OXCE strings
+# #01-ROSIGMA_DEFAULTS # ROSIGMA Defaults and placeholders used for development
+##ROSIGMA_DEFAULTS.PLACEHOLDERS
+# #01-Avatars          # used by maxLookVariant - number of avatars = (value + 1) * 8
+# #01-MENU             Menu and options windows items and selections
+# #01-GEOSCAPE#        Geoscape strings
+# #01-BATTLESCAPE      Battlescape strings
+# #01-INVENTORYSCAPE   Inventory scrings
+# #01-BASESCAPE        Base strings (note: NOT building names, menu strings)
+# #01-MENUSCAPE        Research Diary and summaries strings (kill list, performance, game results)
 #########################
 # 02. CODEX and Progression #
 #########################
 # this section is dedicated to the COMMON codex entries.
-# CATEGORIES      codex categories
-# HELP            help codex
-# DIFFICULTY      difficulty options
-# STRATEGY        Faction and Strategy Selection Research and codex
-# RESEARCH #      Generic Progression Research
+# #02-CATEGORIES      codex categories
+# #02-HELP            help codex
+# #02-DIFFICULTY      difficulty options
 #########################
-# 03. PLAYER FACTIONS #
+# 03. Faction Asset - FACTIONS #
 #########################
 # this section will follow this convention: Faction.object types.
 # specific order is left to the developvers.
 # if an item is BOTH for opfor and enemy please specify in the PLAYER faction
-# MULT (multifaction or common)
-# MULT.ITEMSCATEGORIES
-# MULT.ITEMS
-# MULT.EVENTS
-# MULT.FACILITIES
+# MULT (multifaction or common Example)
 # SM (Ultramarines) (example)
 #########################
-# 04. ENEMY FACTIONS (OPFOR) #
-#########################
-# this section will follow this convention: Faction.object types.
-# specific order is left to the developvers
-# FOE.MISSIONS
-# FOE.MARKERS
-# FOE.XXXX (item and assets for a faction)
-#########################
-# 05. MAP AND ASSETS # everything map related
+# 04. MAP AND ASSETS # everything map related
 #########################
 
 #########################
-# 06. UNCATEGORIZED # everything that needs a category to be created or needs to be reorganized in the future needs to go here
+# 05. UNCATEGORIZED # everything that needs a category to be created or needs to be reorganized in the future needs to go here
 #########################
 
 # Player Factions list for reference:
-# #MULT#            Multifaction Research
-# #SM#              Space Marines
-# #SM.UM#             Common ultramarine items
-# #SM.UM.ASS#         Assault Strategy
-# #SM.UM.DEV#         Devastator Strategy
-# #SM.UM.SCOUT#       Scout Strategy
-# #SM.UM.TAC#         Tactical Strategy
-# #SM.UM.PRIM#        Primaris Strategy
-# #SM.WOLF#           Space Wolf Strategy
-# #SM.BT#             Black Templars Strategy
-# #SOB.BR#            Bloody Rose Strategy
-# #SM.WB#             Word Bearers Strategy
-# #CM#              Chamber Militant
-# #CM.DW#             Deathwatch
-# #CM.GK#             Grey Knights
-# #CM.RAD#            The Radical Road
-# #CM.OA#             Officio Assassinorum
-# #CM.LAW#            The Imperial Law Strategy
-# #AT#              The Alien and the Heretic
-# #AT.CULT#           Chaos Cult
-# #SOB#             Adeptas
-# #SOB.REP#           Repentia Strategy
-# #SOB.NOV#           Novice Strategy
-# #SOB.BAT#           Battle Sister Strategy
-# #SOB.DOM#           Dominion Strategy
-# #IG#              Imperial Guard
-# #IG.GUARD#          Guardsman Strategy
-# #IG.SCION#          Scion Strategy
-# #IG.ABHUMAN#        Abhuman Strategy
-# #IG.STEEL#          Steel Legion Strategy
-# #IG.KRIEG#          Krieg Strategy
-# #IG.VALHALLA#       Valhallan Strategy
+# MULT#            Multifaction Research
+# SM#              Space Marines
+# SM.UM#             Common ultramarine items
+# SM.UM.ASS#         Assault Strategy
+# SM.UM.DEV#         Devastator Strategy
+# SM.UM.SCOUT#       Scout Strategy
+# SM.UM.TAC#         Tactical Strategy
+# SM.UM.PRIM#        Primaris Strategy
+# SM.WOLF#           Space Wolf Strategy
+# SM.BT#             Black Templars Strategy
+# SOB.BR#            Bloody Rose Strategy
+# SM.WB#             Word Bearers Strategy
+# CM#              Chamber Militant
+# CM.DW#             Deathwatch
+# CM.GK#             Grey Knights
+# CM.RAD#            The Radical Road
+# CM.OA#             Officio Assassinorum
+# CM.LAW#            The Imperial Law Strategy
+# AT#              The Alien and the Heretic
+# AT.CULT#           Chaos Cult
+# SOB#             Adeptas
+# SOB.REP#           Repentia Strategy
+# SOB.NOV#           Novice Strategy
+# SOB.BAT#           Battle Sister Strategy
+# SOB.DOM#           Dominion Strategy
+# IG#              Imperial Guard
+# IG.GUARD#          Guardsman Strategy
+# IG.SCION#          Scion Strategy
+# IG.ABHUMAN#        Abhuman Strategy
+# IG.STEEL#          Steel Legion Strategy
+# IG.KRIEG#          Krieg Strategy
+# IG.VALHALLA#       Valhallan Strategy
 #
 # Foe Factions for reference:
 # (Entries within chaos subsections should be presented in the order of affiliation: Undivided, Khorne, Nurgle, Slaanesh, Tzeentch)
 #
-# #FOES.CIV#             Civilian Units
-# #FOES.SM#              Space Marines Units
-# #FOES.CM#              Chamber Militant Units
-# #FOES.GK#             Grey Knights
-# #FOES.SOB#             Adeptas Units
-# #FOES.IG#              Imperial Guard Units
-# #FOE.CHAOS#          Chaos
-# #FOE.CHAOS.CULT#       Cultists and Mutants
-# #FOE.CHAOS.TG#         Traitor Guard
-# #FOE.CHAOS.SIS#        Heretic Sisters
-# #FOE.CHAOS.CSM#         Chaos Marines
-# #FOE.CHAOS.DAE#        Daemons
-# #FOE.CHAOS.HRUD#       Hrud
-# #FOE.RENE#           Renegades
-# #FOE.RENE.DESERT#      Deserters and Instigators
-# #FOE#           Xenos
-# #FOE.ELDAR#         Eldar
-# #FOE.NECRO#       Necron
-# #FOE.ORK#         ORK
-# #FOE.TYR#       Tyranids
-# #FOE.TYR.PURE#    Purestrain
-# #FOE.TYR.GENE#    Genestealer
-# #FOE.TAU#       Tau
+# FOES.CIV#             Civilian Units
+# FOES.SM#              Space Marines Units
+# FOES.CM#              Chamber Militant Units
+# FOES.GK#             Grey Knights
+# FOES.SOB#             Adeptas Units
+# FOES.IG#              Imperial Guard Units
+# FOE.CHAOS#          Chaos
+# FOE.CHAOS.CULT#       Cultists and Mutants
+# FOE.CHAOS.TG#         Traitor Guard
+# FOE.CHAOS.SIS#        Heretic Sisters
+# FOE.CHAOS.CSM#         Chaos Marines
+# FOE.CHAOS.DAE#        Daemons
+# FOE.CHAOS.HRUD#       Hrud
+# FOE.RENE#           Renegades
+# FOE.RENE.DESERT#      Deserters and Instigators
+# FOE.ELDAR#         Eldar
+# FOE.NECRO#       Necron
+# FOE.ORK#         ORK
+# FOE.TYR#       Tyranids
+# FOE.TYR.PURE#    Purestrain
+# FOE.TYR.GENE#    Genestealer
+# FOE.TAU#       Tau
 
-# #OXCE-Unclassified             override of default OXCE strings
+#########################
+# 01. GENERIC GAME STRINGS #
+#########################
+# #01-OXCE-Unclassified             override of default OXCE strings
   STR_OPENXCOM: "40000 - ROSIGMA 3.3"
   STR_OXCE: "Extended"
   STR_DIRECT_DEPENDENCIES: "Needed for Manufacturing:"
@@ -307,19 +293,20 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ENGINEERS: "Servitors"
   STR_SOLDIERS: "Imperials"
   STR_ALIEN_ARTIFACT: "Tainted Artifact"
-# #ROSIGMA_DEFAULTS # Rosigma defined Defaults and placeholders used for development
+# #01-ROSIGMA_DEFAULTS # Rosigma defined Defaults and placeholders used for development
   STR_DAMAGE_NONE: "SUPPORT"
   STR_DAMAGE_10: "IMPACT SHOCK"
   STR_DAMAGE_11: "MELTA"
   STR_DAMAGE_12: "GRAV"
 
-# #ROSIGMA_DEFAULTS.PLACEHOLDERS
+## ROSIGMA_DEFAULTS.PLACEHOLDERS
   STR_CODEX_ARMOR_DETAIL: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_RESEARCHNOT_AVAILABLE: "Research Not Available"
   STR_ITEMNOT_AVAILABLE: "Item Not Available"
   STR_NOT_DONE: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
 
-## Avatars # used by maxLookVariant - number of avatars = (value + 1) * 8
+
+# #01-Avatars          # used by maxLookVariant - number of avatars = (value + 1) * 8
   STR_AVATAR_NAME_1: "M00"
   STR_AVATAR_NAME_2: "M01"
   STR_AVATAR_NAME_3: "M02"
@@ -497,7 +484,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_AVATAR_NAME_175: "F86"
   STR_AVATAR_NAME_176: "F87"
 
-# #MENU             Menu and options windows items and selections
+# #01-MENU             Menu and options windows items and selections
   STR_NEW_GAME: "New Game"
   STR_LOAD_SAVED_GAME: "Load Game"
   STR_SELECT_DIFFICULTY_LEVEL: "Select Campaign Faction:" #"Select Difficulty Level"
@@ -750,7 +737,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_DISABLED: "Disabled"
   STR_MAXIMIZE_INFO_SCREENS: "Maximize info screens"
   STR_MAXIMIZE_INFO_SCREENS_DESC: "Inventory and various other screens will be displayed at full screen, regardless of scale settings."
-# #GEOSCAPE#        Geoscape Setup (Controls Mission Scripts)
+
+# #01-GEOSCAPE#        Geoscape strings
   STR_ROTATE_LEFT: "Rotate Left"
   STR_ROTATE_RIGHT: "Rotate Right"
   STR_ROTATE_UP: "Rotate Up"
@@ -798,7 +786,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SOUTH_ATLANTIC: "Novus Ocean"
   STR_INDIAN_OCEAN: " Princeps Ocean"
 
-# #BATTLESCAPE
+
+# #01-BATTLESCAPE      Battlescape strings
   STR_UNIT_LEVEL_ABOVE: "Move Unit to Level Above"
   STR_UNIT_LEVEL_BELOW: "Move Unit to Level Below"
   STR_VIEW_LEVEL_ABOVE: "View Level Above"
@@ -835,7 +824,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_NO_TRAJECTORY: "It can not be done, Commander"
   STR_LINE_OF_SIGHT_REQUIRED: "No Line of sight, Force Commander"
 
-# #INVENTORYSCAPE
+# #01-INVENTORYSCAPE   Inventory scrings
   STR_CREATE_INVENTORY_TEMPLATE: "Create inventory template"
   STR_APPLY_INVENTORY_TEMPLATE: "Apply inventory template"
   STR_CLEAR_INVENTORY: "Clear inventory"
@@ -857,7 +846,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SAVE_EQUIPMENT_TEMPLATE: "SAVE EQUIPMENT TEMPLATE"
   STR_SAVE_UC: "SAVE"
 
-# #BASESCAPE
+# #01-BASESCAPE        Base strings (note: NOT building names, menu strings)
   STR_SELECT_BASE_1: "Select Base 1"
   STR_SELECT_BASE_2: "Select Base 2"
   STR_SELECT_BASE_3: "Select Base 3"
@@ -875,7 +864,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_OTHER_EMPLOYEES: "Other Staff & Inventory"
   STR_GO_TO_TRANSFERS: "Go To Transfers"
 
-# #MENUSCAPE
+# #01-MENUSCAPE        Research Diary and summaries strings (kill list, performance, game results)
   STR_DIARY: "DIARY"
   STR_KILLED: "KILLED"
   STR_STUNNED: "STUNNED"
@@ -1042,7 +1031,7 @@ en-US: #  yamllint disable-line rule:empty-values
 # 02. CODEX and Progression #
 #########################
 # this section is dedicated to the COMMON codex entries.
-# CATEGORIES Redefining some ufopaedia categories
+# #02-CATEGORIES      codex categories
   STR_HELP: "UNDERSTANDING THE BATTLESCAPE"
   STR_HELP_CAMPAIGN: "THE DEFENSE OF PELEGA IV"
   STR_ARMORPEDIA: "ARMOR"
@@ -1061,7 +1050,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BASE_FACILITIES: "BASE FACILITIES"
   STR_UFO_COMPONENTS: "COMPONENTS"
   STR_UFOS: "ENEMY CRAFT"
-# HELP            help codex
+# #02-HELP            help codex
   STR_UFOPAEDIA_UC: "CODEX"
   STR_UFOPAEDIA: "CODEX"
   STR_BOOKS: "SPELLS"
@@ -1085,217 +1074,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_PD: "Armor Overview"
   STR_A_UFOPEDIA: "{NEWLINE} Welcome to the Imperial Armory, Force Commander. Here you can study armors as they become available. Pay attention to strength requirements for specific armors and the stat altering features.{NEWLINE} Units with no armor will be assigned a standard outfit, such as a Marine's scout gear, or a Guardsman's flak armor."
   STR_SIDEOPERATIONS: "CHAPTER SIDEOPERATIONS"
-# MISSIONS UFOPEDIA
-  STR_M_1MISSION: "Mission 1"
-  STR_M_2MISSION: "Mission 2"
-  STR_M_3MISSION: "Mission 3"
-  STR_M_4MISSION: "Mission 4"
-  STR_M_5MISSION: "Mission 5"
-  STR_M_6MISSION: "Mission 6"
-  STR_M_7MISSION: "Mission 7"
-  STR_M_8MISSION: "Mission 8"
-  STR_M_9MISSION: "Mission 9"
-  STR_MISSION_INTRO: "SIDEMISSIONS OVERVIEW"
-  STR_MISSION_INTROG: "SIDEMISSIONS OVERVIEW"
-  STR_MISSION_INTROA: "SIDEMISSIONS OVERVIEW"
-  STR_MISSIONPEDIA_INTRO: "{NEWLINE} Force Commander, there are several missions that we might accept if we so wish. They will not affect our main campaign against the hostile forces on this planet, but can grant us more experience and new weapons for our forces."
-  STR_MISSIONPEDIA: "MISSIONS"
-  STR_MISSION1: "MISSION 1"
-  STR_MISSION1_TEXT: "{NEWLINE} Training Exercise {NEWLINE}A simple training exercise will be provided to our starting forces. This will be necessary to provide experience to your forces for the battles ahead. {NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all practice targets"
-  STR_MISSION2: "MISSION 2"
-  STR_MISSION2_TEXT: "{NEWLINE} Outpost Assault {NEWLINE}Several Chaos outposts have appeared on the radar. Our mission is to recover data from the outposts on further Chaos locations after destroying all hostiles at the mission sites. Combine three distinct data slates by manufacturing so we can research the information and proceed to the next mission. {NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Recover the three distinct outpost data slates"
-  STR_MISSION3: "MISSION 3"
-  STR_MISSION3_TEXT: "{NEWLINE} Outpost Rescue {NEWLINE}In retaliation to your raids on the Chaos outposts, their forces have attacked an allied emplacement. We have received a distress call from Sister Sergeant Joan Juno - intel indicates her squad was destroyed and are in urgent need of reinforcements before a second attack.{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Let not the battle sister fall and destroy the enemy presence"
-  STR_MISSION4: "MISSION 4"
-  STR_MISSION4_TEXT: "{NEWLINE} Relic Recovery {NEWLINE}With your Space Marines you will strike a Cathedrals of Chaos. Eliminate the forces guarding them. It is vital to seize and return all the relics found inside the Cathedrals.{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Recover the relic"
-  STR_MISSION5: "MISSION 5"
-  STR_MISSION5_TEXT: "{NEWLINE} Fortress Assault {NEWLINE}A Chaos firebase stands at this location that has been stalling allied advance in the sector and must be eliminated. It will be fiercely guarded, I have no doubt of that, and so I release a Whirlwind tank and a Stormtalon in your aid. With them you shall assault the fortress and destroy all foes.{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all Chaos forces"
-  STR_MISSION6: "MISSION 6"
-  STR_MISSION6_TEXT: "{NEWLINE} Tank Hunt {NEWLINE} A sector is in urgent need of heavy support - a Chaos tank column has been spotted. A Vindicator tank destroyer is being loaded onto a Thunderhawk transport for support on the field. Service to the Imperium!{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all chaos forces"
-  STR_MISSION7: "MISSION 7"
-  STR_MISSION7_TEXT: "{NEWLINE} Ship Investigation {NEWLINE} A civilian capital ship brought by the warp has appeared in orbit. Send a squad to investigate. Only craft capable of both void and atmospheric flight can go on this mission."
-  STR_MISSION8: "MISSION 8"
-  STR_MISSION8_TEXT: "{NEWLINE} Ship Take Over {NEWLINE} We now Know this ship is in a need of a purge, greenskin have seize it and use for proliferate their foul needs. Traveling across the stars ambushing those who cross in their path. The warp Bring then to us, Now is your divine task to end it. We need to head directly to the ship bridge so we can remove the xeno head and let the body crumble.{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all Xeno forces"
-  STR_MISSION9: "MISSION 9"
-  STR_MISSION9_TEXT: "{NEWLINE} Ship Bridge Purge {NEWLINE} Praise your sucess retriving the teleport frequency, even thought They used the ships teleport system against our forces, now We can and will use this mechanism against them! Rebord the ship. We will configure the teleport but with our coordinates! Take this Ship Down once and for all!{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all Xeno forces"
-  STR_ENDMISSION: "SIDEMISSIONS COMPLETED"
-  STR_ENDMISSION_TEXT: "{NEWLINE} Force Commander, your valiant efforts and accomplishments in service to the Imperium deserve reward. All side operations are completed... for now. {NEWLINE}{NEWLINE} As a result, our mechanicus have provided the chapter with new mastercrafted items in the arsenal that can be manufactured."
-# DIFFICULTY      difficulty options
-# STRATEGY        Faction and Strategy Selection Research and codex
-# MULT.Facilities
-  STR_POWERG_UFOPEDIA: "{NEWLINE} A building that provides power generating resources each month, but needs protection so it won't get destroyed"
-  STR_DIRT_UFOPEDIA: "{NEWLINE} Clear terrain is open space with no obstructions or constructions."
-  STR_EMPLACEMENT_UFOPEDIA: "{NEWLINE} Protect your outpost with a twin bolter gun emplacement."
-  STR_EMPLACEMENT_HEAVY_UFOPEDIA: "{NEWLINE} Protect your outpost with an heavy turret armed with a standard Battle Cannon"
-  STR_MINEFIELD_UFOPEDIA: "{NEWLINE}Protect your outpost with an area covered with land mines."
-  STR_OUTPOST_UFOPEDIA: "{NEWLINE} This large facility allows us to accommodate equipment and personnel, with an hangar present and an large detection system "
-  STR_TRAINCAMP_UFOPEDIA: "{NEWLINE} This large facility allows us to accommodate equipment and personnel and train up to 50 soldiers at a time."
-  STR_LIVING_QUARTERS_UFOPEDIA: "{NEWLINE} Each accommodation block provides for up to 50 personnel. The facility provides basic recreation, food and sleeping areas."
-  STR_LABORATORY_UFOPEDIA: "{NEWLINE} This facility allows for up to 25 adepts to conduct research, identify artifacts, and apply for requisitions."
-  STR_GENERAL_STORES_UFOPEDIA: "{NEWLINE} All equipment, weapons systems, munitions, recovered material and Heavy Weapons Platforms are placed in stores, including equipment assigned to craft in hangars. Has a capacity of 100 units."
-  STR_APOC_BAY_UFOPEDIA: "{NEWLINE} This facility is where Apothecary marines perform advanced biomedical and scientific tasks for the Imperium's forces. Apothecaries are charged with maintaining the bodily health of their Battle Brothers, whether this is monitoring their genetically engineered implants or administering medical attention on the field of battle. This facility improves wound recovery time at the base. Further, related knowledge of advanced medicae rituals improves the field efficiency of our Corruption removal."
-  STR_PSIONIC_LABORATORY_UFOPEDIA: "{NEWLINE} This facility is a Chapel to the Emperor in which our forces can pray and receive His blessings, thus increasing their Devotion. Moreover, heightened knowledge of the Imperial Cult's blessings significantly improves our ability to purge the despicable Corruption of our foe."
-  STR_ACCESS_OUTP_UFOPEDIA: "{NEWLINE} Claim required to setup your outpost site.{NEWLINE}{NEWLINE}{ALT}IMPORTANT - an Access Outpost can only be built after you have researched your Strategy."
-  STR_ACCESS_LIFT_UFOPEDIA: "{NEWLINE} The access lift allows equipment and personnel to be transferred into or out of an underground base. It is always the first facility to be constructed on a new site. The lift area is vulnerable to intrusion from any potential hostile force."
-  STR_WORKSHOP_UFOPEDIA: "{NEWLINE} A workshop contains all the equipment necessary to manufacture equipment based on designs from your adepts. Up to 50 servitors can occupy a workshop, although items under construction will also consume some space."
-  STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "{NEWLINE} A small detection system has an effective radar range of 300 nautical miles and is linked to satellite systems for ground search. Each system has a 10% chance of detecting an average sized object every 30 minutes."
-  STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "{NEWLINE} A large detection system has an effective range of 450 nautical miles and is linked to satellite systems for ground search. Each system has a 20% chance of detecting an average sized object every 30 minutes."
-  STR_MISSILE_DEFENSES_UFOPEDIA: "{NEWLINE} Missile defenses provide some protection against incursion by hostile craft which are attempting to land near the base."
-  STR_ALIEN_CONTAINMENT_UFOPEDIA: "{NEWLINE} Live xenos and agents of Chaos must be detained in secure cells prior to the completion of their interrogation. This facility provides 10 self-contained units for this purpose."
-  STR_GRAV_SHIELD_UFOPEDIA: "{NEWLINE} The Gravity shield repels hostile craft attempting to land near the base long enough for all defense systems to fire again. In practice this will double the effectiveness of any defense systems at your base."
-  STR_CORRIDOR_UFOPEDIA: "{NEWLINE} A simple passage that can connect parts of a base."
-  STR_DEFENSE_CORRIDOR_UFOPEDIA: "{NEWLINE} This facility establishes a defensive perimeter for our base, deploying four heavy bolter Tarantula Sentries."
-  STR_STEELMILL_UFOPEDIA: "{NEWLINE} This facility allows us to produce Adamantium; we will need promethium to fuel the forges."
-  STR_DEFENSE_HALL_UFOPEDIA: "{NEWLINE} This facility establishes a small defensive perimeter for our base, deploying one heavy bolter Tarantula Sentry."
-  STR_TRAINFACILITY_UFOPEDIA: "{NEWLINE} This facility allows us to train up to 20 soldiers at a time."
-  STR_HANGAR_UFOPEDIA: "{NEWLINE} Each hangar can accommodate one craft. It contains space for maintenance, refueling and repair of any type of craft. Each craft stationed at a base must have a free hangar assigned to it which cannot be used by other crafts, even if the assigned craft is out on a mission."
-  STR_PRISION_UFOPEDIA: "{NEWLINE} Prison Cells with more conditions design to acomodate the units of the Penal Legion"
-  STR_HYPER_WAVE_DECODER_UFOPEDIA: "{NEWLINE} This facility acts as a powerful energy sensor to detect enemy craft. It is able to decipher communications within its radius, giving additional information about a detected craft."
-  STR_COM_UFOPEDIA: "{NEWLINE} This facility is designed to establish direct communications with the Imperium's Navy in orbit of the planet, allowing for production of orbital bombardment beacons."
-  STR_LASER_DEFENSES_UFOPEDIA: "{NEWLINE} This facility is a heavy weapon emplacement, using dual aegis lascannons for anti-air defense purposes."
-  STR_PLASMA_DEFENSES_UFOPEDIA: "{NEWLINE} This facility is a heavy weapon emplacement, using dual plasma cannons for anti-air defense purposes."
-  STR_FUSION_BALL_DEFENSES_UFOPEDIA: "{NEWLINE} This facility is a heavy weapon emplacement, using Multi-Meltas for anti-air defense purposes. Drawing from the base's power grid, the guns have improved range and power over the craft-borne variant."
-  STR_MIND_SHIELD_UFOPEDIA: "{NEWLINE} As enemy craft rely on energy scanners to detect the presence of our forces, the most effective counter measure is to build a shroud cloaking our energy signatures. This facility will decrease the chance of the enemy detecting our base."
-  STR_TEC_BAY_UFOPEDIA: "{NEWLINE} This facility is where Techmarines perform the most critical of their tasks, operating, maintaining, and, if necessary, repairing the myriad of war machines used by the Space Marines. Every item of technology, from a simple round of ammunition to a Battle Barge, is revered as an instrument of the Emperor's divine will, and the Techmarine knows that to neglect such equipment is akin to dereliction of duty and blasphemy."
-  STR_LIBRARY_UFOPEDIA: "{NEWLINE} This vast sealed chamber known as the Librarium is filled from floor to ceiling with books, scrolls, and data crystals. The Librarium is the repository of all the Chapter's knowledge and history. The Librarians of the Astartes are expected to record the great deeds of their Chapter and maintain the Chapter's storehouse of ancient lore. This facility allows the production of the Librarian Armor."
-  STR_ARMORY_UFOPEDIA: "{NEWLINE} This facility is designed to store  blessed heavy  armor. We are required to build this facility in order to produce and store advanced armor."
-# SM.UM.Researchs
-# SM.UM.ASS#         Assault Strategy
-# SM.UM.DEV#         Devastator Strategy
-# SM.UM.SCOUT#       Scout Strategy
-# SM.UM.TAC#         Tactical Strategy
-# SM.UM.PRIM#        Primaris Strategy
-# SM.UM.PRIM.Troops
-# SM.WOLF#           Space Wolf Strategy
-# SM.BT#             Black Templars Strategy
-# SOB.BR#            Bloody Rose Strategy
-# SM.WB#             Word Bearers Strategy
-# CM#              Chamber Militant
-  STR_INQOFF_UFOPEDIA: "{NEWLINE} The Inquisition acts as the secret police force of the Imperium, hunting down any and all of the myriad threats to the stability of the God-Emperor's realm, from the corruption caused by the forces of Chaos, Heretics, mutants and rebels, to assaults from vicious alien species like the Tyranids, Orks or Drukhari.. This facility allows the production of the Inquisitior Armor."
-# CM.DW#             Deathwatch
-# CM.DW.Facilities
-  STR_DW_QUARTERS_UFOPEDIA: "{NEWLINE} Each accommodation block provides for up to 10 personnel. The facility provides basic recreation, food and sleeping areas for each specific chapter."
-# CM.GK#             Grey Knights
-# CM.RAD#            The Radical Road
-# CM.OA#             Officio Assassinorum
-# CM.LAW#            The Imperial Law Strategy
-  STR_ARMORY_ARBITES_UFOPEDIA: "{NEWLINE} This facility is designed to store blessed heavy armor. We are required to build this facility in order to produce High tier armor."
-# AT#              The Alien and the Heretic
-# AT.CULT#           Chaos Cult
-# AT.ORKS#
-  STR_ORK_DEAL_UFOPEDIA: "{NEWLINE} With the arms deal between us and the Orks secured, we are now able to purchase orkish weaponry through our trade outposts. Defeating more powerful groups of Orks will expand the access of goods we're able to purchase {NEWLINE}{NEWLINE}Defeat a Tier 3 ork base to gain access to ork mercenaries, and a Tier 5 base to unlock the purchase of all orkish weapons available for trade."
-# AT.ORKS.Items
-  STR_ORK_RL_UFOPEDIA: "{NEWLINE} Crude but easy to manufacture, the Ork Rokkit Launcha is a stout tube with a simple trigger mechanism that allows the Ork at the safe end to fire a dodgy-looking Rokkit in the general vicinity of the enemy. Can be used on the move with no noticeable loss of accuracy. Its simplicity makes it very easy to wield and common as a Ork special weapon."
-  STR_CHOPPA_UFOPEDIA: "{NEWLINE} Choppa is a term applied to a multitude of basic Ork close-combat weapons. This category of weapon consists of a bewildering variety of bladed, spiked, serrated, jagged, barbed, and notched hand weapons, ranging from the proverbial blunt instrument to whirring two-handed monstrosities."
-  STR_BIGCHOPPA_UFOPEDIA: "{NEWLINE} Enormous axes with jagged metal teeth, Big Choppas are chosen more for their sheer weight than subtlety. They are often wielded by Ork Nobz and Warbosses. Some Big Choppas are even outfitted with whirring chainsaw blades or circular saws instead of a standard axe blade."
-  STR_SLUGGA_UFOPEDIA: "{NEWLINE} A Slugga is the Ork equivalent of a Space Marine Bolt Pistol. Due to the ramshackle nature of Ork weaponry, every Slugga is different, but most if not all Sluggas are semi-automatic, large calibre side arms."
-  STR_SHOOTA_UFOPEDIA: "{NEWLINE} A Shoota is a kinetic, ballistic weapon used by the Orks, chosen not for its efficiency but for the amount of noise it makes and the amount of damage it can do. The best Shootas are deafening and deadly in equal measure. Like the Slugga, Shootas are not very accurate."
-  STR_BIG_SHOOTA_UFOPEDIA: "{NEWLINE} A Big Shoota is a loud, heavy, large-calibre machine gun that bucks and sparks when the trigger is pulled. Simply put it is a larger caliber Shoota, having a greater range and damage potential."
-  STR_ORK_GRENADE_UFOPEDIA: "{NEWLINE} This is an anti-infantry fragmentation grenade commonly utilized by Ork forces. Ork grenades are much bigger and heftier than those used by the other intelligent races, which makes good sense to an Ork because the bigger something is, the more dangerous it will be."
-  STR_ORK_TELEPORT_GUN_CODEX: "{NEWLINE} A Shokk attakk Cannon is one of the most bizarre weapons ever crafted. The Shokk attakk gun opens a local warp portal and draws in an item near the mek--sometimes this item can be an unfortunate grot--and teleports it inside the target causing massive damage to machinery and living flesh."
-  STR_TANKHAMMER_UFOPEDIA: "{NEWLINE} The Tank Busta Hummers are melee weapons, often loaded with explosives or krak shaped warheads designed to take out armor, be it tracked or walking.{NEWLINE}{NEWLINE} The bomb attached to the hammer can be detonated to deal a massive amount of damage, especially to large units.{NEWLINE}{NEWLINE} Only Tank Busta Boys can use this without harming themselves.{NEWLINE}"
-  STR_ORK_GORKFAUST_UFOPEDIA: "{NEWLINE} The Tank Busta Rokkitstikk is a single use disposable rocket launcher, favored by tank hunter Orks."
-  STR_ORK_KRAKSTIKKBOMB_UFOPEDIA: "{NEWLINE} Heavy Ork Krak Stikkbombs, lower throwing range but highly capable against armored targets."
-  STR_TANKBUSTA_BOMB_UFOPEDIA: "{NEWLINE} Ork Tankbusta bombs are a mix of heavily loaded explosive, krak and melta grenades, none configured the same, but all mass-destructive."
-  STR_TANKBUSTA_INVENTORY_BOMB_CODEX: "{NEWLINE} When Ork squig hearder wants something blow up, they strap on multiple bombs on a squig, this is the messy result of Orks thinking VERY hard that there isn't enough explosive in a Tankbusta bomb strapped to a squig and add some more"
-  STR_SQUIG_BITE_CODEX: "Don't look inside da gifta squig mouth. Really. Don't."
-# AT.ORKS.PlayerArmors
-  STR_BLOODAXE_CAPFLAK_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Da Standard izzue arma' of Da Emprah's Greenest. Dis 'ere flakk will sometimes aktually stop dakka from pokin' 'oles in da boyz."
-  STR_BLOODAXE_KARAPACE_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Karapace arma' costs more teef, but kan be wirf it ta keep da boyz alive longa."
-  STR_BLOODAXE_ARDBOY_KARAPACE_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} When da boys get bigga, an' 'ave proven demselves in fightin, dey are promoted to 'Ardboyz, an' given dis ere karapace to 'elp em get even bigga."
-  STR_BLOODAXE_NOB_ARMOR_PLAYER_UFOPEDIA: "{NEWLINE} Da biggest boyz iz kalled Nobs, and dey av even betta arma' dan da Ardboyz. Nobz is betta at fightin too."
-  STR_BLOODAXE_MEGANOB_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Da Mekboyz kan make speshul arma' for da Nobs to wear, to make em even 'arder dan before."
-  STR_ASSAULT_MEGA_ARMOR_UFOPEDIA: "{NEWLINE} Dis 'ere Mega-Arma 'az gunz an' powa klaws stukk ta da armz, so da nobs wearin' it kan be even killier."
-  STR_ASSAULT_MEGA_ARMOR_BURNA_UFOPEDIA: "{NEWLINE} Wun o' da best bitz 'bout wearin' ded-ard arma iz dat it getz lotz 'arder ta blowz yerself up. Dis ere arma' 'az a burna stukk to it 'stead o' da gunz, but itz made tuff soze it don' burna da git uzin' it."
-  STR_BLOODAXE_STORM_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Ya eva' see da rokkitz flyin, and fink 'dat looks loik fun?' Well boss, Stormboyz do, so dey strap da rokkits to dere baks, an' fly at da enemies. I kud neva' figure out 'ow ta not blow up meself, but da Stormboyz seem ta be alright."
-# AT.ORKS.Transformations
-  STR_BLOODAXE_ARDBOY_PROMOTION_CODEX: "An 'Ardboy (or 'Ard Boy) iz an elite speciualist ork 'oo iz betta armoured an' more skilled 'n kombat due ta his long 'perience kompared ta a runty ork. Dese orkz have zurvived many scraps an equip demselves wit' a karapace, da propa ork version uv 'perial karapace arma. Dey boldly charge forward throo hails uv enemy fire ta kome ta grips wit' 'da foe 'n close kombat. {NEWLINE}{NEWLINE} Ta promote an Ork ta 'Ardboy dey must have 'da follow'n prerequizites: {ALT}strength: 70{ALT}" # An 'Ardboy (or 'Ard Boy) is an elite specialist Ork who is better armoured and more skilled in combat due to his long experience compared to a runty ork. These Ork warriors have survived many battles and equip themselves with a Karapace, the proper Ork version of imperial Carapace armour. They boldly charge forward through hails of enemy fire to come to grips with the foe in close combat. {NEWLINE}{NEWLINE}To promote an Ork to 'Ardboy they must have the following prerequisites: {ALT}strength: 70{ALT}
-  STR_BLOODAXE_NOB_PROMOTION_CODEX: "A Nob iz an even bigga an stronga ork 'oo 'as access ta 'da best armors 'n 'da ork arsenal an 'as kilt way more enemiez dan 'e iz will'n ta kount. neva ask a nob if 'e 'as krumped enough enemiez as yer will become da next, so don't be a git. {NEWLINE}{NEWLINE} ta promote an 'Ardboy ta Nob dey must have 'da follow'n prerequisites: {ALT}strength: 100, commendations: Veteran{ALT}" #A Nob is an even bigger and stronger Ork who has access to the best armors in the ork arsenal and has killed way more enemies than he is willing to count. never ask a nob if he has crumped enough enemies as you will become the next, so don't be an idiot. {NEWLINE}{NEWLINE}To promote an 'Ardboy to Nob they must have the following prerequisites: {ALT}strength: 100, commendations: Veteran{ALT}
-# AT.ELDAR#
-# AT.ELDAR.Craft
-  STR_ELDAR_HEMLOCK_UFO_UFOPEDIA: "{NEWLINE} The Hemlock Wraithfighter is a Craftworld Eldar psychically-empowered fighter aircraft. The Hemlock blends the psychic abilities of its Spiritseer pilot with the sinister gestalt energies of the Craftworld Eldar dead."
-  STR_ELDAR_WAVESERPENT_UFO_UFOPEDIA: "{NEWLINE} The Wave Serpent is the Craftworld Eldar's main troop transport. Based upon the Falcon grav-tank chassis, it uses powerful anti-gravitic engines to deliver its cargo to the battlefield"
-  STR_WAVESERPENT_CODEX: "In Aeldari mythology, the Cosmic Serpent or \"Saim\" is believed to be a cosmic creature that exists simultaneously in the material and psychic universe. Because of this duality, it is belived that it hold all past and present secrets. Because of this belief, the Aeldari word for the Cosmic Serpent is identical to the word for secret knowledge."
-  STR_HORNET_CODEX: "The Hornet is an Eldar single-seat attack craft used on reconnaissance missions and hit-and-run attacks. Operating ahead of the main Eldar forces, Hornets typically help spearhead armoured assaults."
-  STR_ELDAR_HORNET_UFO_UFOPEDIA: "{NEWLINE} Operating in squadrons of one to three craft, the Hornet epitomize the use of speed and concentration of force common to Eldar warfare. Star Engines combined with its aerodynamic structure give this craft amazing straight-line speed, and allow for limited short-range atmospheric flight."
-  STR_ELDAR_COBRA_UFO_UFOPEDIA: "{NEWLINE} The Cobra is a Craftworld eldar super-heavy grav-tank that supports the craftworlds heavy armour assaults. This huge vehicle can unleash potent firepower, and is broadly comparable to the Astra Militarum's super-heavy tanks."
-  STR_ELDAR_COBRA_UFOPEDIA: "{NEWLINE} A Craftworld eldar super-heavy grav-tank that supports the craftworlds heavy armour assaults. This huge vehicle can unleash potent firepower.{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}      BOMBARD>{ALT}3"
-  STR_ELDAR_SCORPION_UFOPEDIA: "{NEWLINE} An Eldar Engine of Vaul, a Super-Heavy Tank which combines the speed and grace of Eldar anti-grav technology with terrifying firepower.{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}      BOMBARD>{ALT}2"
-# AT.ELDAR.Facilities
-  STR_ELDARWALLN_UFOPEDIA: "{NEWLINE} A building that provides power generated walls that fire can't pass, comes with four variants for each side the enemy can aproach"
-  STR_ELDARHANGAR_UFOPEDIA: "{NEWLINE} The Portal allows the quick transportation of different craft's from the Craftworld. It contains space for maintenance, refueling and repair of any Eldar craft. Each craft stationed at a base must have a free portal assigned to it which cannot be used by other crafts, even if the assigned craft is out on a mission."
-  STR_ELDARPORTAL_UFOPEDIA: "{NEWLINE} A building that provides a webway link directly to the Craftworlds armoury, supplying the ground forces with more options. Can also detect enemy movements on the battlefield and decipher communications within its radius."
-  STR_ELDARPOD_UFOPEDIA: "{NEWLINE} The support pod are a sturdy base constructions option deployed when the Craftworlds need to remain on the planet's surface for extended periods of time. granting living conditions on this planet for the Eldar."
-  STR_ELDARACCESS_UFOPEDIA: "{NEWLINE} This field portal is weaker than the webway gates of old, but can provide basic travel acess so a base can be established across great distances. The Support Portal also process the ability to shroud the area around them, cloaking the base."
-# AT.ELDAR.Items
-  STR_ELDAR_SHIELD_UFOPEDIA: "{NEWLINE} A Forceshield is a personal protective device utilised by the Craftworld Eldar. The Forceshield, as its name implies, projects a powerful defensive force field around its user. To Equip use the Armor with the S(Shield) Tag "
-  STR_CATAPULT_PISTOL_UFOPEDIA: "{NEWLINE} Also known in the Eldar Lexicon as murekh, this is a smaller one-handed pistol version of the Shuriken Catapult. The shorter barrel length and smaller capacity reduces the weapon's efficiency and so limits the range, rate of fire, and power."
-  STR_CATAPULT_UFOPEDIA: "{NEWLINE} Also known as tuelean in the Eldar Lexicon, this is the primary infantry weapon of Eldar Guardians. Like much of the technology of the Eldar, shuriken catapults are grown from the same psychoactive Wraithbone that forms the physical shell of their Craftworlds."
-  STR_SHURIKEN_CLIP_UFOPEDIA: "{NEWLINE} Monomolecular Shuriken"
-  STR_ELDAR_GRENADE_UFOPEDIA: "{NEWLINE} The Eldar and Dark Eldar use plasma grenades similarly to the more crudely designed Frag Grenades in use by the Imperium. They are an ideal tool to stall the advance of enemy forces upon Eldar defensive positions."
-  STR_ELDAR_MGRENADE_UFOPEDIA: "{NEWLINE} An Eldar Variant of the melta bomb, but not belonging to the imperial melta design tree. Typical examples have dimensions analogous to that of a grenade, but may also be larger. When activated, they explode with intense thermal energy, 'melting' the target away."
-# SOB#             Adeptas
-# SOB.REP#           Repentia Strategy
-# SOB.NOV#           Novice Strategy
-# SOB.BAT#           Battle Sister Strategy
-# SOB.DOM#           Dominion Strategy
-# IG.  #Common IG codex
-# IG.GUARD#          Guardsman Strategy
-# IG.SCION#          Scion Strategy
-# IG.ABHUMAN#        Abhuman Strategy
-# IG.STEEL#          Steel Legion Strategy
-# IG.KRIEG#          Krieg Strategy
-# IG.VALHALLA#       Valhallan Strategy
-# FOE.ORK
-  #ORK UFOPEDIA AUTOPSY
-  STR_GRETCHIN_AUTOPSY: "Gretchin Origin"
-  STR_ORK_AUTOPSY: "Ork Boy Origin"
-  STR_ORKARDBOY_AUTOPSY: "Ork 'ard Boy Origin"
-  STR_ORKNOBBOY_AUTOPSY: "Ork Nob Origin"
-  STR_ORK_DREAD_AUTOPSY: "Ork Dread Origin"
-  STR_KILLA_AUTOPSY: "Ork Killa Kan Origin"
-  STR_GRETCHIN_AUTOPSY_UFOPEDIA: "{NEWLINE} Gretchin or Grotz are basically a smaller subspecies of Orks, who are more cowardly than normal Orks and are usually used as living shields, to clear mine fields, are stepped on to get through difficult terrain, and sometimes even as emergency rations."
-  STR_ORK_AUTOPSY_UFOPEDIA: "{NEWLINE} Orks are savage, warlike and crude, but they are one of the most successful species in the Milky Way, outnumbering possibly every other intelligent race, including Mankind. However, the power of the Ork race as a whole is limited due to the fact that they are split into hundreds of tiny empires, klanz and tribes, which are more often warring between themselves than not."
-  STR_ORKARDBOY_AUTOPSY_UFOPEDIA: "{NEWLINE} Elite specialist Ork Boy who is better armored and more skilled in combat due to his long experience compared to a standard Greenskin. These Ork warriors have survived many battles and equip themselves with a Karapace, the Ork version of Carapace Armor. These well-protected warriors often form the center of an Ork army."
-  STR_ORKNOBBOY_AUTOPSY_UFOPEDIA: "{NEWLINE} Serving as a crude Greenskin ruling class, the Nobz are never above reminding the Boyz who's in charge by making a few bloody examples. This could involve hacking up some suitably impressive foes, or knocking a few fractious Boyz's blocks off. The Nobz aren't too fussy, just so long as it gets the message across."
-  STR_ORK_DREAD_AUTOPSY_AUTOPSY_UFOPEDIA: "{NEWLINE} Grav Platforms are Eldar anti-gravitational platforms mounting heavy weapons crewed by a pair of Guardians. The advanced gravity-defying technology on the platforms allows the Eldar to rapidly and effortlessly move heavy weapons across the field of battle regardless of terrain."
-  STR_KILLA_AUTOPSY_UFOPEDIA: "{NEWLINE} Killa Kans are essentially giant metal canisters on piston-driven legs that sport lethal close combat attachments and heavy-duty weaponry. One of their limbs usually ends in deadly-looking power shears or a great blood-encrusted buzz saw, whilst the other is a large calibre weapon welded to the opposite side. "
-  STR_ORK_TANKBUSTAZ_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"  # ORKMOD
-  STR_TANKBUSTAZ_INTERROGATION_UFOPEDIA: "{NEWLINE} Dedicated anti armor Orks that see themselves as big game hunters, they are equipped with specialized greenskin anti-armor weaponry, the Tankhammer, Krak grenades, mines and effective, if inaccurate, Gorkfaust rokkit launchas."
-  STR_ORK_TANKBUSTAZ_AUTOPSY: "Ork Tankbustaz Origin"
-  STR_TANKBUSTAZ_AUTOPSY_UFOPEDIA: "{NEWLINE} Equipped to hunt armor, these Orks double as effective anti-Power Armor units. Destroy them at range, as most of their weapons are short ranged. Beware, some have been spotted deploying homing Bomb Squigs."
-  STR_GUARD_ORK_BOY_AUTOPSY: "Ork Boy Origins"
-  STR_SQUIG_AUTOPSY: "Squig Origin"
-  STR_SQUIG_EXPLOSIVE_AUTOPSY: "Bommarz Squig Origin"
-#FOE.ORK.Craft
-  STR_TRUKK_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
-  STR_WAGGON_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
-  STR_WAGGON_CONVOY_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
-  STR_ORK_MIG_UFO_UFOPEDIA: "{NEWLINE} Fightas are built for speed and firepower, typically carrying Big Shootas and a small wing of bombs and rockets. Despite its crude design, a Fighta is easily a match for any Imperial Navy fighter and its engine is remarkably effective, capable of producing a huge amount of thrust. Ork Fighta Pilots love nothing more then to fly in close to enemy aircraft and tear it apart with hail of dakka."
-#FOE.NECRON #NECRON UFOPEDIA AUTOPSY
-  STR_NECRON_WARRIOR_AUTOPSY: "Necron Warrior Origin"
-  STR_NECRON_IMORTAL_AUTOPSY: "Necron Immortal Origin"
-  STR_NECRON_DEATHMARK_AUTOPSY: "Necron Deathmark Origin"
-  STR_NECRON_LYCHGUARD_AUTOPSY: "Necron Lychguard Origin"
-  STR_NECRON_DESTROYER_AUTOPSY: "Necron Destroyer Origin"
-  STR_NECRON_SCARAB_AUTOPSY: "Canoptek Scarab Origin"
-  STR_NECRON_WARRIOR_UFOPEDIA: "{NEWLINE} Necron Warriors are the primary infantry troops of the soulless, robotic Necrons. They were created from the majority of the Necrontyr people who agreed to be bound to the will of their Star Gods, the terrible entities known as the C'tan. The Necrontyr's consciousnesses were transferred into robotic bodies made of the living metal called Necrodermis. Over a long period of time, the new unliving bodies dulled the Necrontyr's minds and their abilities to feel emotion or pleasure."
-  STR_NECRON_IMORTAL_UFOPEDIA: "{NEWLINE} The Necron Immortals are those favoured Necrontyr who were among the first to give up their flesh and embrace the necrodermis and their C'tan gods. For this, they were rewarded by being turned into Immortals. In life, Immortals were the professional soldiery of the Necrontyr empire. In death, they surpass the Warriors in nearly every way."
-  STR_NECRON_DEATHMARK_UFOPEDIA: "{NEWLINE} Highly-skilled snipers and assassins of the Necron forces, appearing from apparently nowhere and striking with terrible precision. The name is fitting: once given the hunter's mark, a Deathmark's targets are almost certain to meet their deaths scant moments later. Like most Necrons, the Deathmarks' technology lies far beyond the realm of human comprehension and they can effectively phase in and out of normal space-time at will."
-  STR_NECRON_LYCHGUARD_UFOPEDIA: "{NEWLINE} Elite protectors and emissaries of the Necron nobility. In order to serve as a bulwark against those who would harm their charge, gifted with the highest quality of living metal bodies, equal in resilience and power to those inhabited by the Lords and Overlords they protect. In addition to serving as wardens, Lychguards often act as messengers and envoys for their masters. In order to better serve in this capacity, the personality and intellect of the Lychguards was preserved through the process of bio-transference."
-  STR_NECRON_DESTROYER_UFOPEDIA: "{NEWLINE} Necron Destroyers are deranged agents of annihilation whose sole reason for existence is centred around an unshakeable yearning to quench the flames of life. A Destroyer cares not for borders or dynasty allegiance, nor does he make any distinction between the innocent and the damned, all life is his enemy, and all living creatures are his prey."
-  STR_NECRON_SCARAB_UFOPEDIA: "{NEWLINE} A small, silver, beetle-like Necron construct. These robotic scarabs are the most numerous and diverse of the Necrons' Canoptek machine servants. They are designed to break down organic and non-organic matter into raw energy, which can then be woven into fresh construct forms at the direction of the scarabs' controller.."
-#FOE.GENE #GENESTEALER CULTS
-  STR_GENE_CULTIST_AUTOPSY: "Brood Brother Origin"
-  STR_GENE_SAB_AUTOPSY: "Reductus Saboteur Origin"
-  STR_ABERRANT_AUTOPSY: "Aberrant Origin"
-  STR_LOCUS_AUTOPSY: "Locus Origin"
-  STR_GSC_MINER_AUTOPSY: "Brood Neophyte Origin"
-  STR_LOCUS_AUTOPSY_CODEX: "A Locus is a specialized Genestealer hybrid who serves as a bodyguard for a Magus and other senior leaders of a Genestealer Cult hierarchy. They often act their leader's mouths, eyes and ears as well as their blades."
-  STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
+# #02-DIFFICULTY      difficulty options
 
-  STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
-  STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
 #########################
 # 03. PLAYER FACTIONS #
 #########################
@@ -1303,7 +1083,7 @@ en-US: #  yamllint disable-line rule:empty-values
 # specific order is left to the developvers.
 # if an item is BOTH for opfor and enemy please specify in the PLAYER faction
 # MULT (multifaction or common)
-# MULT.Research #Generic Progression Research
+# #03-MULT.Research #Generic Progression Research
   STR_BASIC_BALLISTICS_DEP: "(Basic Ballistic Weapons)"
   STR_40MM_AMMO_DEP: "(40mm Grenade Ammo)"
   STR_STRATIG_DONE: "IG Strategy Selected"
@@ -1311,7 +1091,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_STEELMILLR: "Advanced Ceramics Requisition"
   STR_TEC_BAYR: "Techmarine Bay Requisition"
   STR_TEC_BAY_CHAMBER_R: "Techmarine Bay Requisition"
-# MULT.ITEMSCATEGORIES # ITEM CATEGORIES
+# #03-MULT.ITEMSCATEGORIES # ITEM CATEGORIES
   STR_CAT_AUXILIARY: "Auxiliary"
   STR_CAT_BOLTER: "Bolt Weapons"
   STR_CAT_PLASMA: "Plasma Weapons"
@@ -1346,14 +1126,14 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CAT_SPELL: "Sorcery"
   STR_CAT_STUN: "Stun weapons"
   STR_CAT_TAU: "Tau"
-# MULT.MANU_CATEGORIES
+# #03-MULT.MANU_CATEGORIES
   STR_ADVANCEMENT: "Promotions"
   STR_CAT_PENAL: "Induct Penal Legionnaire"  # To separate the abundant recipes that make Penitents
   STR_CAT_REEDUCATE: "Reeducate Heretics"
   STR_CAT_RECRUIT_HERETIC: "Recruit Heretics"
   STR_CAT_RECRUIT_HSIS: "Recruit Heretic Sisters"
   STR_CAT_RECRUIT_CSM: "Recruit Chaos Marines"
-# MULT.ITEMS
+# #03-MULT.ITEMS
   #*** Bounties ***
   STR_REQUISITION_BOUNTY_50K: "Requisition Bounty: $50,000"
   STR_REQUISITION_BOUNTY_100K: "Requisition Bounty: $100,000"
@@ -1361,7 +1141,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_REQUISITION_BOUNTY_500K: "Requisition Bounty: $500,000"
   STR_REQUISITION_BOUNTY_1M: "Requisition Bounty: $1,000,000"
   STR_PURITY_SEAL: "Purity Seal"
-# MULT.ITEMS.Actions # BATTLE Actions
+# #03-MULT.ITEMS.Actions # BATTLE Actions
   STR_REPAIR: "Repair"
   STR_GIVEMORAL: "Restore Moral"
   STR_GIVESPEED: "Speed touch"
@@ -1370,8 +1150,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_RAM: "Run Over"
   STR_STOMP: "Stomp"
   STR_USE_MEDI_KIT: "Apply treatment"
-# MULT.EVENTS
-# MULT.FACILITIES
+# #03-MULT.EVENTS
+# #03-MULT.FACILITIES
 # MULT.FACILITIES.Services
   IMPERIUM: "IMPERIUM"
   ARMO: "ARMORY"
@@ -1419,45 +1199,10 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_OUTPOST: "Outpost"
   STR_OUTPOST_MARINES: "Outpost"
   STR_OUTPOST_GUARD: "Outpost"
-# #SM#              Space Marines
-# #SM.UM#             Common ultramarine items
-# #SM.UM.Troops
-  STR_SOLDIER: "Space Marine"
-  STR_FALLEN: "Revived Unit"
-# #SM.UM.Ranks #SPACE MARINE Ranks
-  STR_MARINE: "Battle Brother" #rank 0
-  STR_ROOKIE: "Marine"
-  STR_SQUADDIE: "Brother Marine"
-  STR_SERGEANT: "Sergeant"
-  STR_CAPTAIN: "Veteran"
-  STR_COLONEL: "Hero"
-  STR_COMMANDER: "Captain"
-# #SM.UM.Corpses (player corpses)
-  STR_JARMOR_CORPSE: "Sergeant Joan's Corpse"
-# #SM.UM.Manufacturing
-  STR_PROMOTE_JOAN: "Promote Joan"
-# #SM.UM.Researchs
-# #SM.UM.ASS#         Assault Strategy
-# #SM.UM.DEV#         Devastator Strategy
-# #SM.UM.SCOUT#       Scout Strategy
-# #SM.UM.TAC#         Tactical Strategy
-# #SM.UM.PRIM#        Primaris Strategy
-# #SM.UM.PRIM.Troops
-  STR_PRIMARISLV1: "Space Marine Primaris"
-  STR_PRIMARISLV2: "Space Marine Primaris"
-  STR_PRIMARISLV3: "Space Marine Primaris"
-  STR_PRIMARISLV4: "Space Marine Primaris"
-  STR_PRIMARISLV5: "Space Marine Primaris"
-# #SM.WOLF#           Space Wolf Strategy
-# #SM.BT#             Black Templars Strategy
-# #SOB.BR#            Bloody Rose Strategy
-# #SM.WB#             Word Bearers Strategy
-# #CM#              Chamber Militant
-# #CM.Facilities
+# MULT.CM.Facilities
   STR_TEC_BAY_CHAMBER: "Techmarine Bay"
   STR_INQOFF: "Inquisition Office"
-# #CM.DW#             Deathwatch
-# #CM.DW.Facilities
+# MULT.CM.DW.Facilities #Deathwatch
   STR_DW_QUARTERS: "Chapter Quarters"
   STR_DW_QUARTERS_ULTRA: "Ultramarines Quarters"
   STR_DW_QUARTERS_IF: "Imperial Fists Quarters"
@@ -1468,31 +1213,149 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_DW_QUARTERS_SW: "Space Wolves Quarters"
   STR_DW_QUARTERS_DA: "Dark Angels Quarters"
   STR_DW_QUARTERS_CF: "Crimson Fists Quarters"
-# #CM.GK#             Grey Knights
-# #CM.GK.Troops
+# MULT.Facilities.ufopedia
+  STR_POWERG_UFOPEDIA: "{NEWLINE} A building that provides power generating resources each month, but needs protection so it won't get destroyed"
+  STR_DIRT_UFOPEDIA: "{NEWLINE} Clear terrain is open space with no obstructions or constructions."
+  STR_EMPLACEMENT_UFOPEDIA: "{NEWLINE} Protect your outpost with a twin bolter gun emplacement."
+  STR_EMPLACEMENT_HEAVY_UFOPEDIA: "{NEWLINE} Protect your outpost with an heavy turret armed with a standard Battle Cannon"
+  STR_MINEFIELD_UFOPEDIA: "{NEWLINE}Protect your outpost with an area covered with land mines."
+  STR_OUTPOST_UFOPEDIA: "{NEWLINE} This large facility allows us to accommodate equipment and personnel, with an hangar present and an large detection system "
+  STR_TRAINCAMP_UFOPEDIA: "{NEWLINE} This large facility allows us to accommodate equipment and personnel and train up to 50 soldiers at a time."
+  STR_LIVING_QUARTERS_UFOPEDIA: "{NEWLINE} Each accommodation block provides for up to 50 personnel. The facility provides basic recreation, food and sleeping areas."
+  STR_LABORATORY_UFOPEDIA: "{NEWLINE} This facility allows for up to 25 adepts to conduct research, identify artifacts, and apply for requisitions."
+  STR_GENERAL_STORES_UFOPEDIA: "{NEWLINE} All equipment, weapons systems, munitions, recovered material and Heavy Weapons Platforms are placed in stores, including equipment assigned to craft in hangars. Has a capacity of 100 units."
+  STR_APOC_BAY_UFOPEDIA: "{NEWLINE} This facility is where Apothecary marines perform advanced biomedical and scientific tasks for the Imperium's forces. Apothecaries are charged with maintaining the bodily health of their Battle Brothers, whether this is monitoring their genetically engineered implants or administering medical attention on the field of battle. This facility improves wound recovery time at the base. Further, related knowledge of advanced medicae rituals improves the field efficiency of our Corruption removal."
+  STR_PSIONIC_LABORATORY_UFOPEDIA: "{NEWLINE} This facility is a Chapel to the Emperor in which our forces can pray and receive His blessings, thus increasing their Devotion. Moreover, heightened knowledge of the Imperial Cult's blessings significantly improves our ability to purge the despicable Corruption of our foe."
+  STR_ACCESS_OUTP_UFOPEDIA: "{NEWLINE} Claim required to setup your outpost site.{NEWLINE}{NEWLINE}{ALT}IMPORTANT - an Access Outpost can only be built after you have researched your Strategy."
+  STR_ACCESS_LIFT_UFOPEDIA: "{NEWLINE} The access lift allows equipment and personnel to be transferred into or out of an underground base. It is always the first facility to be constructed on a new site. The lift area is vulnerable to intrusion from any potential hostile force."
+  STR_WORKSHOP_UFOPEDIA: "{NEWLINE} A workshop contains all the equipment necessary to manufacture equipment based on designs from your adepts. Up to 50 servitors can occupy a workshop, although items under construction will also consume some space."
+  STR_SMALL_RADAR_SYSTEM_UFOPEDIA: "{NEWLINE} A small detection system has an effective radar range of 300 nautical miles and is linked to satellite systems for ground search. Each system has a 10% chance of detecting an average sized object every 30 minutes."
+  STR_LARGE_RADAR_SYSTEM_UFOPEDIA: "{NEWLINE} A large detection system has an effective range of 450 nautical miles and is linked to satellite systems for ground search. Each system has a 20% chance of detecting an average sized object every 30 minutes."
+  STR_MISSILE_DEFENSES_UFOPEDIA: "{NEWLINE} Missile defenses provide some protection against incursion by hostile craft which are attempting to land near the base."
+  STR_ALIEN_CONTAINMENT_UFOPEDIA: "{NEWLINE} Live xenos and agents of Chaos must be detained in secure cells prior to the completion of their interrogation. This facility provides 10 self-contained units for this purpose."
+  STR_GRAV_SHIELD_UFOPEDIA: "{NEWLINE} The Gravity shield repels hostile craft attempting to land near the base long enough for all defense systems to fire again. In practice this will double the effectiveness of any defense systems at your base."
+  STR_CORRIDOR_UFOPEDIA: "{NEWLINE} A simple passage that can connect parts of a base."
+  STR_DEFENSE_CORRIDOR_UFOPEDIA: "{NEWLINE} This facility establishes a defensive perimeter for our base, deploying four heavy bolter Tarantula Sentries."
+  STR_STEELMILL_UFOPEDIA: "{NEWLINE} This facility allows us to produce Adamantium; we will need promethium to fuel the forges."
+  STR_DEFENSE_HALL_UFOPEDIA: "{NEWLINE} This facility establishes a small defensive perimeter for our base, deploying one heavy bolter Tarantula Sentry."
+  STR_TRAINFACILITY_UFOPEDIA: "{NEWLINE} This facility allows us to train up to 20 soldiers at a time."
+  STR_HANGAR_UFOPEDIA: "{NEWLINE} Each hangar can accommodate one craft. It contains space for maintenance, refueling and repair of any type of craft. Each craft stationed at a base must have a free hangar assigned to it which cannot be used by other crafts, even if the assigned craft is out on a mission."
+  STR_PRISION_UFOPEDIA: "{NEWLINE} Prison Cells with more conditions design to acomodate the units of the Penal Legion"
+  STR_HYPER_WAVE_DECODER_UFOPEDIA: "{NEWLINE} This facility acts as a powerful energy sensor to detect enemy craft. It is able to decipher communications within its radius, giving additional information about a detected craft."
+  STR_COM_UFOPEDIA: "{NEWLINE} This facility is designed to establish direct communications with the Imperium's Navy in orbit of the planet, allowing for production of orbital bombardment beacons."
+  STR_LASER_DEFENSES_UFOPEDIA: "{NEWLINE} This facility is a heavy weapon emplacement, using dual aegis lascannons for anti-air defense purposes."
+  STR_PLASMA_DEFENSES_UFOPEDIA: "{NEWLINE} This facility is a heavy weapon emplacement, using dual plasma cannons for anti-air defense purposes."
+  STR_FUSION_BALL_DEFENSES_UFOPEDIA: "{NEWLINE} This facility is a heavy weapon emplacement, using Multi-Meltas for anti-air defense purposes. Drawing from the base's power grid, the guns have improved range and power over the craft-borne variant."
+  STR_MIND_SHIELD_UFOPEDIA: "{NEWLINE} As enemy craft rely on energy scanners to detect the presence of our forces, the most effective counter measure is to build a shroud cloaking our energy signatures. This facility will decrease the chance of the enemy detecting our base."
+  STR_TEC_BAY_UFOPEDIA: "{NEWLINE} This facility is where Techmarines perform the most critical of their tasks, operating, maintaining, and, if necessary, repairing the myriad of war machines used by the Space Marines. Every item of technology, from a simple round of ammunition to a Battle Barge, is revered as an instrument of the Emperor's divine will, and the Techmarine knows that to neglect such equipment is akin to dereliction of duty and blasphemy."
+  STR_LIBRARY_UFOPEDIA: "{NEWLINE} This vast sealed chamber known as the Librarium is filled from floor to ceiling with books, scrolls, and data crystals. The Librarium is the repository of all the Chapter's knowledge and history. The Librarians of the Astartes are expected to record the great deeds of their Chapter and maintain the Chapter's storehouse of ancient lore. This facility allows the production of the Librarian Armor."
+  STR_ARMORY_UFOPEDIA: "{NEWLINE} This facility is designed to store  blessed heavy  armor. We are required to build this facility in order to produce and store advanced armor."
+# Facilities.Unsorted
+  STR_DW_QUARTERS_UFOPEDIA: "{NEWLINE} Each accommodation block provides for up to 10 personnel. The facility provides basic recreation, food and sleeping areas for each specific chapter."
+  STR_ARMORY_ARBITES_UFOPEDIA: "{NEWLINE} This facility is designed to store blessed heavy armor. We are required to build this facility in order to produce High tier armor."
+# SM#              Space Marines
+# #03-SM.UM#             Ultramarines
+# MISSIONS UFOPEDIA
+  STR_M_1MISSION: "Mission 1"
+  STR_M_2MISSION: "Mission 2"
+  STR_M_3MISSION: "Mission 3"
+  STR_M_4MISSION: "Mission 4"
+  STR_M_5MISSION: "Mission 5"
+  STR_M_6MISSION: "Mission 6"
+  STR_M_7MISSION: "Mission 7"
+  STR_M_8MISSION: "Mission 8"
+  STR_M_9MISSION: "Mission 9"
+  STR_MISSION_INTRO: "SIDEMISSIONS OVERVIEW"
+  STR_MISSION_INTROG: "SIDEMISSIONS OVERVIEW"
+  STR_MISSION_INTROA: "SIDEMISSIONS OVERVIEW"
+  STR_MISSIONPEDIA_INTRO: "{NEWLINE} Force Commander, there are several missions that we might accept if we so wish. They will not affect our main campaign against the hostile forces on this planet, but can grant us more experience and new weapons for our forces."
+  STR_MISSIONPEDIA: "MISSIONS"
+  STR_MISSION1: "MISSION 1"
+  STR_MISSION1_TEXT: "{NEWLINE} Training Exercise {NEWLINE}A simple training exercise will be provided to our starting forces. This will be necessary to provide experience to your forces for the battles ahead. {NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all practice targets"
+  STR_MISSION2: "MISSION 2"
+  STR_MISSION2_TEXT: "{NEWLINE} Outpost Assault {NEWLINE}Several Chaos outposts have appeared on the radar. Our mission is to recover data from the outposts on further Chaos locations after destroying all hostiles at the mission sites. Combine three distinct data slates by manufacturing so we can research the information and proceed to the next mission. {NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Recover the three distinct outpost data slates"
+  STR_MISSION3: "MISSION 3"
+  STR_MISSION3_TEXT: "{NEWLINE} Outpost Rescue {NEWLINE}In retaliation to your raids on the Chaos outposts, their forces have attacked an allied emplacement. We have received a distress call from Sister Sergeant Joan Juno - intel indicates her squad was destroyed and are in urgent need of reinforcements before a second attack.{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Let not the battle sister fall and destroy the enemy presence"
+  STR_MISSION4: "MISSION 4"
+  STR_MISSION4_TEXT: "{NEWLINE} Relic Recovery {NEWLINE}With your Space Marines you will strike a Cathedrals of Chaos. Eliminate the forces guarding them. It is vital to seize and return all the relics found inside the Cathedrals.{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Recover the relic"
+  STR_MISSION5: "MISSION 5"
+  STR_MISSION5_TEXT: "{NEWLINE} Fortress Assault {NEWLINE}A Chaos firebase stands at this location that has been stalling allied advance in the sector and must be eliminated. It will be fiercely guarded, I have no doubt of that, and so I release a Whirlwind tank and a Stormtalon in your aid. With them you shall assault the fortress and destroy all foes.{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all Chaos forces"
+  STR_MISSION6: "MISSION 6"
+  STR_MISSION6_TEXT: "{NEWLINE} Tank Hunt {NEWLINE} A sector is in urgent need of heavy support - a Chaos tank column has been spotted. A Vindicator tank destroyer is being loaded onto a Thunderhawk transport for support on the field. Service to the Imperium!{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all chaos forces"
+  STR_MISSION7: "MISSION 7"
+  STR_MISSION7_TEXT: "{NEWLINE} Ship Investigation {NEWLINE} A civilian capital ship brought by the warp has appeared in orbit. Send a squad to investigate. Only craft capable of both void and atmospheric flight can go on this mission."
+  STR_MISSION8: "MISSION 8"
+  STR_MISSION8_TEXT: "{NEWLINE} Ship Take Over {NEWLINE} We now Know this ship is in a need of a purge, greenskin have seize it and use for proliferate their foul needs. Traveling across the stars ambushing those who cross in their path. The warp Bring then to us, Now is your divine task to end it. We need to head directly to the ship bridge so we can remove the xeno head and let the body crumble.{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all Xeno forces"
+  STR_MISSION9: "MISSION 9"
+  STR_MISSION9_TEXT: "{NEWLINE} Ship Bridge Purge {NEWLINE} Praise your sucess retriving the teleport frequency, even thought They used the ships teleport system against our forces, now We can and will use this mechanism against them! Rebord the ship. We will configure the teleport but with our coordinates! Take this Ship Down once and for all!{NEWLINE}{NEWLINE} OBJECTIVE:{NEWLINE}Take down all Xeno forces"
+  STR_ENDMISSION: "SIDEMISSIONS COMPLETED"
+  STR_ENDMISSION_TEXT: "{NEWLINE} Force Commander, your valiant efforts and accomplishments in service to the Imperium deserve reward. All side operations are completed... for now. {NEWLINE}{NEWLINE} As a result, our mechanicus have provided the chapter with new mastercrafted items in the arsenal that can be manufactured."
+# SM.UM.Troops
+  STR_SOLDIER: "Space Marine"
+  STR_FALLEN: "Revived Unit"
+# SM.UM.Ranks #SPACE MARINE Ranks
+  STR_MARINE: "Battle Brother" #rank 0
+  STR_ROOKIE: "Marine"
+  STR_SQUADDIE: "Brother Marine"
+  STR_SERGEANT: "Sergeant"
+  STR_CAPTAIN: "Veteran"
+  STR_COLONEL: "Hero"
+  STR_COMMANDER: "Captain"
+# SM.UM.Corpses (player corpses)
+  STR_JARMOR_CORPSE: "Sergeant Joan's Corpse"
+# SM.UM.Manufacturing
+  STR_PROMOTE_JOAN: "Promote Joan"
+# #03-SM.UM.PRIM #Primaris Strategy
+# SM.UM.PRIM.Troops
+  STR_PRIMARISLV1: "Space Marine Primaris"
+  STR_PRIMARISLV2: "Space Marine Primaris"
+  STR_PRIMARISLV3: "Space Marine Primaris"
+  STR_PRIMARISLV4: "Space Marine Primaris"
+  STR_PRIMARISLV5: "Space Marine Primaris"
+# #03-SM.WOLF#           Space Wolf Strategy
+# #03-SM.BT#             Black Templars Strategy
+# #03-SOB.BR#            Bloody Rose Strategy
+# #03-SM.WB#             Word Bearers Strategy
+# CM#              Chamber Militant
+  STR_INQOFF_UFOPEDIA: "{NEWLINE} The Inquisition acts as the secret police force of the Imperium, hunting down any and all of the myriad threats to the stability of the God-Emperor's realm, from the corruption caused by the forces of Chaos, Heretics, mutants and rebels, to assaults from vicious alien species like the Tyranids, Orks or Drukhari.. This facility allows the production of the Inquisitior Armor."
+# #03-CM.GK#             Grey Knights
+# CM.GK.Troops
   STR_FALLEN_GK: "Revived Unit"
-# #CM.GK.Facilities
+# CM.GK.Facilities
   STR_LIBRARY_GK: "Librarium"
-# #CM.RAD#            The Radical Road
+# FOE.GK
+# Units
+  STR_GK_SOLDIER: "Grey Knight"
+  STR_GK_SOLDIER_ADEPTAS: "Grey Knight"
+  STR_GK_SOLDIER_BA: "Brunus Antonius"
+  STR_GK_SOLDIER_NS: "Hartimax Ottonius"
+#GK Corpse-------------------------------------------------
+  STR_GREYK_CORPSE: "Grey Knight Corpse"
+  STR_GREYK_CORPSE_ADEPTAS: "Grey Knight Corpse"
+  STR_GREYK_CORPSE_I: "Grey Knight Inquisitor"
   STR_RADICAL_HIGHTIER: "Inquisition High-tier Requisitions"
-# #CM.OA#             Officio Assassinorum
-# #CM.LAW#            The Imperial Law Strategy
-# #CM.LAW.Troops
+#GK Unsorted
+
+# #03-CM.RAD#            The Radical Road
+
+# #03-CM.OA#             Officio Assassinorum
+# #03-CM.LAW#            The Imperial Law Strategy
+# CM.LAW.Troops
   STR_GUARDPD: "Trooper"
   STR_JUDGE: "Arbitrator"
-# #CM.LAW.Facilities
+# CM.LAW.Facilities
   STR_ARMORY_ARBITES: "Precint Armory"
-# #AT#              The Alien and the Heretic
-# #AT.CULT#           Chaos Cult
-# #AT.ORKS#
-# #AT.ORKS.Research #ork specific research
+# XENOS
+# #03-CULT#           Chaos Cultists
+# #03-ORKS#
+# ORKS.Research #ork specific research
   STR_ORK_LEADER_INTERROGATED: "Ork Boss Interrogation"
   STR_ORK_DEAL: "Ork Arms Trade"
   STR_ORK_MERCENARIES: "Ork Mercenaries"
   STR_ORK_RESPECT: "Respect of the Orks"
   STR_ORK_ONLY: "Dakka"
   STR_ORK_SQUIG_EXAM: "Ork Squig Examination"
-# #AT.ORKS.Soldiers
+# ORKS.Soldiers
   STR_GROTS_ARMOR: "Gretchin"
   STR_ORK_ARMORL: "Ork Boy"
   STR_ORK_ARMORM: "Ork 'ard Boy"
@@ -1503,7 +1366,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BLOOD_AXE_ORK_BOY: "Blood Axe Ork Boy"
   STR_GUARD_ORK_ARDBOY: "Blood Axe 'ardboy"
   STR_GUARD_ORK_NOB: "Blood Axe Nob"
-# #AT.ORKS.Items
+# ORKS.Items
   STR_KILLA_MELEE_WEAPON: "Killa Kan Saw"
   STR_ORK_KILLA_WEAPON: "Big Big Shootas"
   STR_GRETCHIN_BLASTA: "Small Blasta"
@@ -1531,10 +1394,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ORK_TURRET: "Ork Kannon Turret"
   STR_ORK_TURRET2: "Ork Shoota Turret"
   STR_SQUIG_BITE: "Squig Chomp"
-# #AT.ORKS.Transformations
+  STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI: "Squig Chomp" #to be used by AI bomb squig only
+# ORKS.Transformations
   STR_BLOODAXE_ARDBOY_PROMOTION: "Ork 'ardboy Promotion"
   STR_BLOODAXE_NOB_PROMOTION: "Ork Nob Promotion"
-# #AT.ORKS.Armors
+# ORKS.Armors
   STR_BLOODAXE_CAPFLAK_PLAYER_ARMOR: "Ork Flakk Armor"
   STR_BLOODAXE_KARAPACE_PLAYER_ARMOR: "Ork Karapace Armor"
   STR_BLOODAXE_ARDBOY_KARAPACE_PLAYER_ARMOR: "'ardboy Karapace Armor"
@@ -1549,7 +1413,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ASSAULT_MEGANOB_ARMOR: "Azzault Mega-Arma"
   STR_SQUIG_ARMOR: "Azzault Squig Arma"
   STR_SQUIG_ARMOR_BOMB: "Squig Bommarz Arma"  # ORKMOD
-# #AT.ORKS.Ranks
+# ORKS.Ranks
   STR_ORK_BOY_RANK_0: "Boy"
   STR_ORK_BOY_RANK_1: "Greener Boy"
   STR_ORK_BOY_RANK_2: "Greenest Boy"
@@ -1562,22 +1426,108 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_NOB_RANK_2: "Big Boss Nob"
   STR_NOB_RANK_3: "Bigger Boss Nob"
   STR_NOB_RANK_4: "Biggest Boss Nob"
-# #AT.ORKS.Events
+# ORKS.Events
   STR_ORK_LEADER_INTERROGATION: "The Ork Proposes a Deal?"
   STR_ORK_LEADER_INTERROGATION_DESCRIPTION: "During interrogation, the Ork we captured was surprisingly talkative. He stated that we ''Gave 'im and da boyz a good propa scrap'' and kept going on about how he was ''Sumtin' of a big deal wit da boyz'' It claims that, if we release it, he can work out a deal and buy guns from them because 'Surely ya value sum good proppa dakka'. We could pursue this commander, but have are we really going to stoop so far as to use Ork weapons?"
-# #AT.ORKS.Corpses
+# ORKS.Corpses
   STR_GUARD_ORK_BOY_CORPSE: "Ork Corpse"
   STR_SQUIG_CORPSE: "Squig Corpse" #for compatibility
   STR_PLAYER_SQUIG_CORPSE: "Squig Corpse"
   STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE: "Stuffed Squig Corpse"
-# #AT.ELDAR#
-# #AT.ELDAR.Troops
+#ork ufopedia
+  STR_ORK_DEAL_UFOPEDIA: "{NEWLINE} With the arms deal between us and the Orks secured, we are now able to purchase orkish weaponry through our trade outposts. Defeating more powerful groups of Orks will expand the access of goods we're able to purchase {NEWLINE}{NEWLINE}Defeat a Tier 3 ork base to gain access to ork mercenaries, and a Tier 5 base to unlock the purchase of all orkish weapons available for trade."
+# ORKS.Items
+  STR_ORK_RL_UFOPEDIA: "{NEWLINE} Crude but easy to manufacture, the Ork Rokkit Launcha is a stout tube with a simple trigger mechanism that allows the Ork at the safe end to fire a dodgy-looking Rokkit in the general vicinity of the enemy. Can be used on the move with no noticeable loss of accuracy. Its simplicity makes it very easy to wield and common as a Ork special weapon."
+  STR_CHOPPA_UFOPEDIA: "{NEWLINE} Choppa is a term applied to a multitude of basic Ork close-combat weapons. This category of weapon consists of a bewildering variety of bladed, spiked, serrated, jagged, barbed, and notched hand weapons, ranging from the proverbial blunt instrument to whirring two-handed monstrosities."
+  STR_BIGCHOPPA_UFOPEDIA: "{NEWLINE} Enormous axes with jagged metal teeth, Big Choppas are chosen more for their sheer weight than subtlety. They are often wielded by Ork Nobz and Warbosses. Some Big Choppas are even outfitted with whirring chainsaw blades or circular saws instead of a standard axe blade."
+  STR_SLUGGA_UFOPEDIA: "{NEWLINE} A Slugga is the Ork equivalent of a Space Marine Bolt Pistol. Due to the ramshackle nature of Ork weaponry, every Slugga is different, but most if not all Sluggas are semi-automatic, large calibre side arms."
+  STR_SHOOTA_UFOPEDIA: "{NEWLINE} A Shoota is a kinetic, ballistic weapon used by the Orks, chosen not for its efficiency but for the amount of noise it makes and the amount of damage it can do. The best Shootas are deafening and deadly in equal measure. Like the Slugga, Shootas are not very accurate."
+  STR_BIG_SHOOTA_UFOPEDIA: "{NEWLINE} A Big Shoota is a loud, heavy, large-calibre machine gun that bucks and sparks when the trigger is pulled. Simply put it is a larger caliber Shoota, having a greater range and damage potential."
+  STR_ORK_GRENADE_UFOPEDIA: "{NEWLINE} This is an anti-infantry fragmentation grenade commonly utilized by Ork forces. Ork grenades are much bigger and heftier than those used by the other intelligent races, which makes good sense to an Ork because the bigger something is, the more dangerous it will be."
+  STR_ORK_TELEPORT_GUN_CODEX: "{NEWLINE} A Shokk attakk Cannon is one of the most bizarre weapons ever crafted. The Shokk attakk gun opens a local warp portal and draws in an item near the mek--sometimes this item can be an unfortunate grot--and teleports it inside the target causing massive damage to machinery and living flesh."
+  STR_TANKHAMMER_UFOPEDIA: "{NEWLINE} The Tank Busta Hummers are melee weapons, often loaded with explosives or krak shaped warheads designed to take out armor, be it tracked or walking.{NEWLINE}{NEWLINE} The bomb attached to the hammer can be detonated to deal a massive amount of damage, especially to large units.{NEWLINE}{NEWLINE} Only Tank Busta Boys can use this without harming themselves.{NEWLINE}"
+  STR_ORK_GORKFAUST_UFOPEDIA: "{NEWLINE} The Tank Busta Rokkitstikk is a single use disposable rocket launcher, favored by tank hunter Orks."
+  STR_ORK_KRAKSTIKKBOMB_UFOPEDIA: "{NEWLINE} Heavy Ork Krak Stikkbombs, lower throwing range but highly capable against armored targets."
+  STR_TANKBUSTA_BOMB_UFOPEDIA: "{NEWLINE} Ork Tankbusta bombs are a mix of heavily loaded explosive, krak and melta grenades, none configured the same, but all mass-destructive."
+  STR_TANKBUSTA_INVENTORY_BOMB_CODEX: "{NEWLINE} When Ork squig hearder wants something blow up, they strap on multiple bombs on a squig, this is the messy result of Orks thinking VERY hard that there isn't enough explosive in a Tankbusta bomb strapped to a squig and add some more"
+  STR_SQUIG_BITE_CODEX: "Don't look inside da gifta squig mouth. Really. Don't."
+# ORKS.PlayerArmors
+  STR_BLOODAXE_CAPFLAK_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Da Standard izzue arma' of Da Emprah's Greenest. Dis 'ere flakk will sometimes aktually stop dakka from pokin' 'oles in da boyz."
+  STR_BLOODAXE_KARAPACE_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Karapace arma' costs more teef, but kan be wirf it ta keep da boyz alive longa."
+  STR_BLOODAXE_ARDBOY_KARAPACE_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} When da boys get bigga, an' 'ave proven demselves in fightin, dey are promoted to 'Ardboyz, an' given dis ere karapace to 'elp em get even bigga."
+  STR_BLOODAXE_NOB_ARMOR_PLAYER_UFOPEDIA: "{NEWLINE} Da biggest boyz iz kalled Nobs, and dey av even betta arma' dan da Ardboyz. Nobz is betta at fightin too."
+  STR_BLOODAXE_MEGANOB_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Da Mekboyz kan make speshul arma' for da Nobs to wear, to make em even 'arder dan before."
+  STR_ASSAULT_MEGA_ARMOR_UFOPEDIA: "{NEWLINE} Dis 'ere Mega-Arma 'az gunz an' powa klaws stukk ta da armz, so da nobs wearin' it kan be even killier."
+  STR_ASSAULT_MEGA_ARMOR_BURNA_UFOPEDIA: "{NEWLINE} Wun o' da best bitz 'bout wearin' ded-ard arma iz dat it getz lotz 'arder ta blowz yerself up. Dis ere arma' 'az a burna stukk to it 'stead o' da gunz, but itz made tuff soze it don' burna da git uzin' it."
+  STR_BLOODAXE_STORM_PLAYER_ARMOR_UFOPEDIA: "{NEWLINE} Ya eva' see da rokkitz flyin, and fink 'dat looks loik fun?' Well boss, Stormboyz do, so dey strap da rokkits to dere baks, an' fly at da enemies. I kud neva' figure out 'ow ta not blow up meself, but da Stormboyz seem ta be alright."
+# ORKS.Transformations
+  STR_BLOODAXE_ARDBOY_PROMOTION_CODEX: "An 'Ardboy (or 'Ard Boy) iz an elite speciualist ork 'oo iz betta armoured an' more skilled 'n kombat due ta his long 'perience kompared ta a runty ork. Dese orkz have zurvived many scraps an equip demselves wit' a karapace, da propa ork version uv 'perial karapace arma. Dey boldly charge forward throo hails uv enemy fire ta kome ta grips wit' 'da foe 'n close kombat. {NEWLINE}{NEWLINE} Ta promote an Ork ta 'Ardboy dey must have 'da follow'n prerequizites: {ALT}strength: 70{ALT}" # An 'Ardboy (or 'Ard Boy) is an elite specialist Ork who is better armoured and more skilled in combat due to his long experience compared to a runty ork. These Ork warriors have survived many battles and equip themselves with a Karapace, the proper Ork version of imperial Carapace armour. They boldly charge forward through hails of enemy fire to come to grips with the foe in close combat. {NEWLINE}{NEWLINE}To promote an Ork to 'Ardboy they must have the following prerequisites: {ALT}strength: 70{ALT}
+  STR_BLOODAXE_NOB_PROMOTION_CODEX: "A Nob iz an even bigga an stronga ork 'oo 'as access ta 'da best armors 'n 'da ork arsenal an 'as kilt way more enemiez dan 'e iz will'n ta kount. neva ask a nob if 'e 'as krumped enough enemiez as yer will become da next, so don't be a git. {NEWLINE}{NEWLINE} ta promote an 'Ardboy ta Nob dey must have 'da follow'n prerequisites: {ALT}strength: 100, commendations: Veteran{ALT}" #A Nob is an even bigger and stronger Ork who has access to the best armors in the ork arsenal and has killed way more enemies than he is willing to count. never ask a nob if he has crumped enough enemies as you will become the next, so don't be an idiot. {NEWLINE}{NEWLINE}To promote an 'Ardboy to Nob they must have the following prerequisites: {ALT}strength: 100, commendations: Veteran{ALT}
+#Craft
+  STR_TRUKK_UFO: "Ork Expedition"
+  STR_WAGGON_UFO: "Ork Waggon"
+  STR_WAGGON_CONVOY_UFO: "Ork Waggon Convoy"
+  STR_ORK_MIG_UFO: "Ork Fighta"
+#Items
+  STR_WAGGON_CONVOY_UFO_DATA: "Ork Waggon Convoy Scan Data"
+  STR_TRUKK_UFO_DATA: "Ork Expedition Scan Data"
+  STR_WAGGON_UFO_DATA: "Ork Waggon Scan Data"
+  STR_ORK_MIG_UFO_DATA: "Ork Fighta Scan Data"
+# ORK EnemyUnits
+  STR_GRETCHIN: "Gretchin"
+  STR_MEKBOYZ: "Mek Boy"
+  STR_SQUIG_ASSAULT_AI: "Azzault Squig"
+  STR_SQUIG_BOMBA_AI: "Squig Bommarz"
+# Enemy Units Armors
+  STR_SQUIG_ARMOR_AI: "Azzault Squig Arma"
+  STR_SQUIG_ARMOR_BOMB_AI: "Squig Bommarz Arma"
+# ORK OPFOR Corpses
+  STR_GRETCHIN_CORPSE: "Ork Gretchin Corpse"
+  STR_ORKBOY_CORPSE: "Ork Boy Corpse"
+  STR_ORKARDBOY_CORPSE: "Ork 'ard Boy Corpse"
+  STR_ORKNOBBOY_CORPSE: "Ork Nob Corpse"
+  STR_ORKTURRET_CORPSE: "Wrecked Kannon Turret"
+  STR_ORKTURRET2_CORPSE: "Wrecked Shoota Turret"
+  STR_KILLA_CORPSE: "Wrecked Killa kan"
+  STR_SQUIG_CORPSE_AI: "Squig Corpse"
+  STR_SQUIG_CORPSE_EXPLOSIVE_AI: "Stuffed Squig Corpse"
+# FOE.ORK
+  STR_ORK_TANKBUSTAZ: "Tankbusta Boy"  # ORKMOD
+  STR_ORK_TANKBUSTA_ARMOR: "Ork Tankbusta"  # orkmod
+  STR_ORK_TANKBUSTAZ_CORPSE: "Tankbusta Corpse"  # ORKMOD
+  #ORK UFOPEDIA AUTOPSY
+  STR_GRETCHIN_AUTOPSY: "Gretchin Origin"
+  STR_ORK_AUTOPSY: "Ork Boy Origin"
+  STR_ORKARDBOY_AUTOPSY: "Ork 'ard Boy Origin"
+  STR_ORKNOBBOY_AUTOPSY: "Ork Nob Origin"
+  STR_ORK_DREAD_AUTOPSY: "Ork Dread Origin"
+  STR_KILLA_AUTOPSY: "Ork Killa Kan Origin"
+  STR_GRETCHIN_AUTOPSY_UFOPEDIA: "{NEWLINE} Gretchin or Grotz are basically a smaller subspecies of Orks, who are more cowardly than normal Orks and are usually used as living shields, to clear mine fields, are stepped on to get through difficult terrain, and sometimes even as emergency rations."
+  STR_ORK_AUTOPSY_UFOPEDIA: "{NEWLINE} Orks are savage, warlike and crude, but they are one of the most successful species in the Milky Way, outnumbering possibly every other intelligent race, including Mankind. However, the power of the Ork race as a whole is limited due to the fact that they are split into hundreds of tiny empires, klanz and tribes, which are more often warring between themselves than not."
+  STR_ORKARDBOY_AUTOPSY_UFOPEDIA: "{NEWLINE} Elite specialist Ork Boy who is better armored and more skilled in combat due to his long experience compared to a standard Greenskin. These Ork warriors have survived many battles and equip themselves with a Karapace, the Ork version of Carapace Armor. These well-protected warriors often form the center of an Ork army."
+  STR_ORKNOBBOY_AUTOPSY_UFOPEDIA: "{NEWLINE} Serving as a crude Greenskin ruling class, the Nobz are never above reminding the Boyz who's in charge by making a few bloody examples. This could involve hacking up some suitably impressive foes, or knocking a few fractious Boyz's blocks off. The Nobz aren't too fussy, just so long as it gets the message across."
+  STR_ORK_DREAD_AUTOPSY_AUTOPSY_UFOPEDIA: "{NEWLINE} Grav Platforms are Eldar anti-gravitational platforms mounting heavy weapons crewed by a pair of Guardians. The advanced gravity-defying technology on the platforms allows the Eldar to rapidly and effortlessly move heavy weapons across the field of battle regardless of terrain."
+  STR_KILLA_AUTOPSY_UFOPEDIA: "{NEWLINE} Killa Kans are essentially giant metal canisters on piston-driven legs that sport lethal close combat attachments and heavy-duty weaponry. One of their limbs usually ends in deadly-looking power shears or a great blood-encrusted buzz saw, whilst the other is a large calibre weapon welded to the opposite side. "
+  STR_ORK_TANKBUSTAZ_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"  # ORKMOD
+  STR_TANKBUSTAZ_INTERROGATION_UFOPEDIA: "{NEWLINE} Dedicated anti armor Orks that see themselves as big game hunters, they are equipped with specialized greenskin anti-armor weaponry, the Tankhammer, Krak grenades, mines and effective, if inaccurate, Gorkfaust rokkit launchas."
+  STR_ORK_TANKBUSTAZ_AUTOPSY: "Ork Tankbustaz Origin"
+  STR_TANKBUSTAZ_AUTOPSY_UFOPEDIA: "{NEWLINE} Equipped to hunt armor, these Orks double as effective anti-Power Armor units. Destroy them at range, as most of their weapons are short ranged. Beware, some have been spotted deploying homing Bomb Squigs."
+  STR_GUARD_ORK_BOY_AUTOPSY: "Ork Boy Origins"
+  STR_SQUIG_AUTOPSY: "Squig Origin"
+  STR_SQUIG_EXPLOSIVE_AUTOPSY: "Bommarz Squig Origin"
+# FOE.ORK.Craft
+  STR_TRUKK_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
+  STR_WAGGON_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
+  STR_WAGGON_CONVOY_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
+  STR_ORK_MIG_UFO_UFOPEDIA: "{NEWLINE} Fightas are built for speed and firepower, typically carrying Big Shootas and a small wing of bombs and rockets. Despite its crude design, a Fighta is easily a match for any Imperial Navy fighter and its engine is remarkably effective, capable of producing a huge amount of thrust. Ork Fighta Pilots love nothing more then to fly in close to enemy aircraft and tear it apart with hail of dakka."
+# #03-ELDAR#
+# ELDAR.Troops
   STR_ELDAR_SEER_F: "Eldar Psyker"
   STR_ELDAR_BANSHEE_F: "Aspect Warrior"
   STR_ELDAR_REAPER_M: "Aspect Warrior"
   STR_ELDAR_SCORPION_M: "Aspect Warrior"
   STR_ELDAR_FALLEN: "Wraithguard"
-# #AT.ELDAR.Facilities #ELDAR FACILITIES
+# ELDAR.Facilities #ELDAR FACILITIES
   STR_ELDARWALLN: "Eldar Forcewall N"
   STR_ELDARWALLS: "Eldar Forcewall S"
   STR_ELDARWALLE: "Eldar Forcewall E"
@@ -1587,7 +1537,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDARPOD: "Support Pod"
   STR_ELDARACCESS: "Support Portal"
   STR_ELDARDIRT: "Clear Terrain"
-# #AT.ELDAR.Craft
+# ELDAR.Craft
   STR_HEMLOCK: "HEMLOCK WRAITHFIGHTER"
   STR_ELDAR_HEMLOCK_UFO: "Hemlock Wraithfighter"
   STR_WAVESERPENT: "WAVE SERPENT TRANSPORT"
@@ -1598,7 +1548,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_COBRA_UFO: "Cobra Type I"
   STR_SCORPION: "SCORPION TYPE I"
   STR_ELDAR_SCORPION_UFO: "Scorpion Type I"
-# #AT.ELDAR.Items
+# ELDAR.Items
   STR_CRATED_HORNET: "Hornet requisition"
   STR_SCORPION_R: "Scorpion Requisition"
   AUX_ELDAR_SHIELD: "Force Shield"
@@ -1614,28 +1564,42 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_HORNET_UFO_DATA: "Hornet Scan Data"
   STR_ELDAR_COBRA_UFO_DATA: "Cobra Scan Data"
   STR_ELDAR_SCORPION_UFO_DATA: "Scorpion Scan Data"
-# #SOB#             Adeptas
-# #SOB.REP#           Repentia Strategy
-# #SOB.NOV#           Novice Strategy
-# #SOB.BAT#           Battle Sister Strategy
-# #SOB.DOM#           Dominion Strategy
-# #IG#              Imperial Guard
-# #IG.Common.Troops
+# ELDAR.Craft
+  STR_ELDAR_HEMLOCK_UFO_UFOPEDIA: "{NEWLINE} The Hemlock Wraithfighter is a Craftworld Eldar psychically-empowered fighter aircraft. The Hemlock blends the psychic abilities of its Spiritseer pilot with the sinister gestalt energies of the Craftworld Eldar dead."
+  STR_ELDAR_WAVESERPENT_UFO_UFOPEDIA: "{NEWLINE} The Wave Serpent is the Craftworld Eldar's main troop transport. Based upon the Falcon grav-tank chassis, it uses powerful anti-gravitic engines to deliver its cargo to the battlefield"
+  STR_WAVESERPENT_CODEX: "In Aeldari mythology, the Cosmic Serpent or \"Saim\" is believed to be a cosmic creature that exists simultaneously in the material and psychic universe. Because of this duality, it is belived that it hold all past and present secrets. Because of this belief, the Aeldari word for the Cosmic Serpent is identical to the word for secret knowledge."
+  STR_HORNET_CODEX: "The Hornet is an Eldar single-seat attack craft used on reconnaissance missions and hit-and-run attacks. Operating ahead of the main Eldar forces, Hornets typically help spearhead armoured assaults."
+  STR_ELDAR_HORNET_UFO_UFOPEDIA: "{NEWLINE} Operating in squadrons of one to three craft, the Hornet epitomize the use of speed and concentration of force common to Eldar warfare. Star Engines combined with its aerodynamic structure give this craft amazing straight-line speed, and allow for limited short-range atmospheric flight."
+  STR_ELDAR_COBRA_UFO_UFOPEDIA: "{NEWLINE} The Cobra is a Craftworld eldar super-heavy grav-tank that supports the craftworlds heavy armour assaults. This huge vehicle can unleash potent firepower, and is broadly comparable to the Astra Militarum's super-heavy tanks."
+  STR_ELDAR_COBRA_UFOPEDIA: "{NEWLINE} A Craftworld eldar super-heavy grav-tank that supports the craftworlds heavy armour assaults. This huge vehicle can unleash potent firepower.{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}      BOMBARD>{ALT}3"
+  STR_ELDAR_SCORPION_UFOPEDIA: "{NEWLINE} An Eldar Engine of Vaul, a Super-Heavy Tank which combines the speed and grace of Eldar anti-grav technology with terrifying firepower.{NEWLINE}{NEWLINE}{NEWLINE}{NEWLINE}      BOMBARD>{ALT}2"
+# ELDAR.Facilities
+  STR_ELDARWALLN_UFOPEDIA: "{NEWLINE} A building that provides power generated walls that fire can't pass, comes with four variants for each side the enemy can aproach"
+  STR_ELDARHANGAR_UFOPEDIA: "{NEWLINE} The Portal allows the quick transportation of different craft's from the Craftworld. It contains space for maintenance, refueling and repair of any Eldar craft. Each craft stationed at a base must have a free portal assigned to it which cannot be used by other crafts, even if the assigned craft is out on a mission."
+  STR_ELDARPORTAL_UFOPEDIA: "{NEWLINE} A building that provides a webway link directly to the Craftworlds armoury, supplying the ground forces with more options. Can also detect enemy movements on the battlefield and decipher communications within its radius."
+  STR_ELDARPOD_UFOPEDIA: "{NEWLINE} The support pod are a sturdy base constructions option deployed when the Craftworlds need to remain on the planet's surface for extended periods of time. granting living conditions on this planet for the Eldar."
+  STR_ELDARACCESS_UFOPEDIA: "{NEWLINE} This field portal is weaker than the webway gates of old, but can provide basic travel acess so a base can be established across great distances. The Support Portal also process the ability to shroud the area around them, cloaking the base."
+# ELDAR.Items
+  STR_ELDAR_SHIELD_UFOPEDIA: "{NEWLINE} A Forceshield is a personal protective device utilised by the Craftworld Eldar. The Forceshield, as its name implies, projects a powerful defensive force field around its user. To Equip use the Armor with the S(Shield) Tag "
+  STR_CATAPULT_PISTOL_UFOPEDIA: "{NEWLINE} Also known in the Eldar Lexicon as murekh, this is a smaller one-handed pistol version of the Shuriken Catapult. The shorter barrel length and smaller capacity reduces the weapon's efficiency and so limits the range, rate of fire, and power."
+  STR_CATAPULT_UFOPEDIA: "{NEWLINE} Also known as tuelean in the Eldar Lexicon, this is the primary infantry weapon of Eldar Guardians. Like much of the technology of the Eldar, shuriken catapults are grown from the same psychoactive Wraithbone that forms the physical shell of their Craftworlds."
+  STR_SHURIKEN_CLIP_UFOPEDIA: "{NEWLINE} Monomolecular Shuriken"
+  STR_ELDAR_GRENADE_UFOPEDIA: "{NEWLINE} The Eldar and Dark Eldar use plasma grenades similarly to the more crudely designed Frag Grenades in use by the Imperium. They are an ideal tool to stall the advance of enemy forces upon Eldar defensive positions."
+  STR_ELDAR_MGRENADE_UFOPEDIA: "{NEWLINE} An Eldar Variant of the melta bomb, but not belonging to the imperial melta design tree. Typical examples have dimensions analogous to that of a grenade, but may also be larger. When activated, they explode with intense thermal energy, 'melting' the target away."
+# #03-SOB#             Adeptas
+# IG#              Imperial Guard
+# #03-IG.GUARD#          Guardsman Strategy
+# IG.GUARD.Common.Troops
   STR_PENITENT: "Penitent"
   STR_GUARDSM: "Guardsman"
-# #IG.GUARD#          Guardsman Strategy
-# #IG.SCION#          Scion Strategy
-# #IG.ABHUMAN#        Abhuman Strategy
-# #IG.STEEL#          Steel Legion Strategy
-# #IG.KRIEG#          Krieg Strategy
-# #IG.VALHALLA#       Valhallan Strategy
-#########################
-# 04. ENEMY FACTIONS (OPFOR) #
-#########################
-# this section will follow this convention: Faction.object types.
-# specific order is left to the developvers
+
+# #03-IG.SCION#          Scion Strategy
+# #03-IG.ABHUMAN#        Abhuman Strategy
+# #03-IG.STEEL#          Steel Legion Strategy
+# #03-IG.KRIEG#          Krieg Strategy
+# #03-IG.VALHALLA#       Valhallan Strategy
 # FOE.MISSIONS
-# #Alien Missions & factions
+# #03-Alien Missions & factions
   STR_ALIEN_RESEARCH: "Warp Amplification"
   STR_ALIEN_RESEARCH_HARD: "Warp Amplification"
   STR_ALIEN_RESEARCH_EXTRA_HARD: "Warp Amplification"
@@ -2027,7 +1991,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_OUTPOST_FINAL_SITE_SITE: "Outpost Showcase Site"
 # ORK
   STR_SQUIG_HORDE: "RunAway Squigs Horde"
-# FOE.MARKERS
+# #03-MSSION.MARKERS
     # Map mission markers names with numbers
   STR_ENEMY_OUTPOST: "ENEMY OUTPOST"
   STR_ENEMY_OUTPOST_: "ENEMY OUTPOST-{0}"
@@ -2130,30 +2094,33 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_FINAL_TOMB_: "TOMB OF THE ARCHITECT"
   STR_INQ_BASE: "Inquisition Main Base"
   STR_INQ_BASE_: "Inquisition Main Base"
-# #FOE.GK
-# Units
-  STR_GK_SOLDIER: "Grey Knight"
-  STR_GK_SOLDIER_ADEPTAS: "Grey Knight"
-  STR_GK_SOLDIER_BA: "Brunus Antonius"
-  STR_GK_SOLDIER_NS: "Hartimax Ottonius"
-# #FOE.GENE
+
+# #03-TYR.GENE
 #units
   STR_GSC_ABERRANT: "Aberrant"
   STR_GSC_MINER: "Brood Neophyte"
 #Armors
   STR_GSC_MINER_ARMOR: "Brood Neophyte"
   STR_GSC_ABERRANT_ARMOR: "Aberrant"
-#GK Corpse-------------------------------------------------
-  STR_GREYK_CORPSE: "Grey Knight Corpse"
-  STR_GREYK_CORPSE_ADEPTAS: "Grey Knight Corpse"
-  STR_GREYK_CORPSE_I: "Grey Knight Inquisitor"
-# #FOE.NECRON
-# #FOE.NECRON.Items
+#Autopsies
+  STR_GENE_CULTIST_AUTOPSY: "Brood Brother Origin"
+  STR_GENE_SAB_AUTOPSY: "Reductus Saboteur Origin"
+  STR_ABERRANT_AUTOPSY: "Aberrant Origin"
+  STR_LOCUS_AUTOPSY: "Locus Origin"
+  STR_GSC_MINER_AUTOPSY: "Brood Neophyte Origin"
+  STR_LOCUS_AUTOPSY_CODEX: "A Locus is a specialized Genestealer hybrid who serves as a bodyguard for a Magus and other senior leaders of a Genestealer Cult hierarchy. They often act their leader's mouths, eyes and ears as well as their blades."
+  STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
+  STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
+  STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
+# #03-TYR.PURE
+
+# #03-NECRON
+# FOE.NECRON.Items
   STR_GAUSS_FLAYER_UFOPEDIA: "{NEWLINE} An Necron Gauss Weapon that can strip a target down to nothing molecule by molecule, reducing it to its constituent atoms in a matter of seconds. Gauss Flayers are rifle-like weapons consisting of a stock, a transparent tube containing the unholy and unknown viridian energy the weapon fires."
   STR_SYNAPTIC_DISINTEGRATOR_UFOPEDIA: "{NEWLINE} An advanced sniper weapon utilised only by Necron Deathmark assassins as their favoured weapon to deliver death from afar. These cruel long-barrelled rifles fire compressed leptonic beams of sub-atomic particles which destroy neural and synaptic tissue."
   STR_GAUSS_BLASTER_UFOPEDIA: "{NEWLINE} A Gauss Blaster is a type of horrifying Necron Gauss Weapon that can strip a target down molecule by molecule, reducing it to its constituent atoms in a matter of seconds."
   STR_HYPERPHASESWORD_UFOPEDIA: "{NEWLINE} A Hyperphase Sword is a Necron melee weapon whose energy blade vibrates across dimensional states and can easily slice through armour and flesh to sever the vital organs within. A Hyperphase Sword can be considered an advanced type of Power Weapon."
-# #FOE.NECRON.Units
+# FOE.NECRON.Units
   STR_NECRON_WARRIOR: "Necron Warrior"
   STR_NECRON_IMORTAL: "Necron Immortal"
   STR_NECRON_DEATHMARK: "Necron Deathmark"
@@ -2167,7 +2134,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_MONO_W: "Monolith Turret"
   STR_MONO_S: "Monolith Turret"
   STR_MONO_E: "Monolith Turret"
-# #FOE.NECRON.Armors
+# FOE.NECRON.Armors
   STR_NECRON_WARRIOR_ARMOR: "Necron Warrior"
   STR_NECRON_IMORTAL_ARMOR: "Necron Immortal"
   STR_NECRON_DEATHMARK_ARMOR: "Necron Deathmark"
@@ -2176,7 +2143,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_NECRON_SCARAB_ARMOR1: "Canoptek Scarab"
   STR_NECRON_SCARAB_ARMOR3: "Canoptek Scarab"
   STR_NECRON_SCARAB_ARMOR5: "Canoptek Scarab"
-# #FOE.NECRON.Corpse
+# FOE.NECRON.Corpse
   STR_NECRON_WARRIOR_CORPSE: "Necron Warrior Corpse"
   STR_NECRON_IMORTAL_CORPSE: "Necron Immortal Corpse"
   STR_NECRON_DEATHMARK_CORPSE: "Necron Deathmark Corpse"
@@ -2184,40 +2151,31 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_NECRON_ARCHITECT_CORPSE: "Necron Architect Corpse"
   STR_DESTROYER_CORPSE: "Necron Destroyer Corpse"
   STR_NECRON_SCARAB_CORPSE: "Canoptek Scarab Corpse"
-# #FOE.ORK
-#Craft
-  STR_TRUKK_UFO: "Ork Expedition"
-  STR_WAGGON_UFO: "Ork Waggon"
-  STR_WAGGON_CONVOY_UFO: "Ork Waggon Convoy"
-  STR_ORK_MIG_UFO: "Ork Fighta"
-#Items
-  STR_WAGGON_CONVOY_UFO_DATA: "Ork Waggon Convoy Scan Data"
-  STR_TRUKK_UFO_DATA: "Ork Expedition Scan Data"
-  STR_WAGGON_UFO_DATA: "Ork Waggon Scan Data"
-  STR_ORK_MIG_UFO_DATA: "Ork Fighta Scan Data"
-
-  STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI: "Squig Chomp" #to be used by AI bomb squig only
-#EnemyUnits
-  STR_GRETCHIN: "Gretchin"
-  STR_MEKBOYZ: "Mek Boy"
-  STR_SQUIG_ASSAULT_AI: "Azzault Squig"
-  STR_SQUIG_BOMBA_AI: "Squig Bommarz"
-#Enemy Units Armors
-  STR_SQUIG_ARMOR_AI: "Azzault Squig Arma"
-  STR_SQUIG_ARMOR_BOMB_AI: "Squig Bommarz Arma"
-#ORK OPFOR Corpses
-  STR_GRETCHIN_CORPSE: "Ork Gretchin Corpse"
-  STR_ORKBOY_CORPSE: "Ork Boy Corpse"
-  STR_ORKARDBOY_CORPSE: "Ork 'ard Boy Corpse"
-  STR_ORKNOBBOY_CORPSE: "Ork Nob Corpse"
-  STR_ORKTURRET_CORPSE: "Wrecked Kannon Turret"
-  STR_ORKTURRET2_CORPSE: "Wrecked Shoota Turret"
-  STR_KILLA_CORPSE: "Wrecked Killa kan"
-  STR_SQUIG_CORPSE_AI: "Squig Corpse"
-  STR_SQUIG_CORPSE_EXPLOSIVE_AI: "Stuffed Squig Corpse"
+# FOE.NECRON #NECRON UFOPEDIA AUTOPSY
+  STR_NECRON_WARRIOR_AUTOPSY: "Necron Warrior Origin"
+  STR_NECRON_IMORTAL_AUTOPSY: "Necron Immortal Origin"
+  STR_NECRON_DEATHMARK_AUTOPSY: "Necron Deathmark Origin"
+  STR_NECRON_LYCHGUARD_AUTOPSY: "Necron Lychguard Origin"
+  STR_NECRON_DESTROYER_AUTOPSY: "Necron Destroyer Origin"
+  STR_NECRON_SCARAB_AUTOPSY: "Canoptek Scarab Origin"
+  STR_NECRON_WARRIOR_UFOPEDIA: "{NEWLINE} Necron Warriors are the primary infantry troops of the soulless, robotic Necrons. They were created from the majority of the Necrontyr people who agreed to be bound to the will of their Star Gods, the terrible entities known as the C'tan. The Necrontyr's consciousnesses were transferred into robotic bodies made of the living metal called Necrodermis. Over a long period of time, the new unliving bodies dulled the Necrontyr's minds and their abilities to feel emotion or pleasure."
+  STR_NECRON_IMORTAL_UFOPEDIA: "{NEWLINE} The Necron Immortals are those favoured Necrontyr who were among the first to give up their flesh and embrace the necrodermis and their C'tan gods. For this, they were rewarded by being turned into Immortals. In life, Immortals were the professional soldiery of the Necrontyr empire. In death, they surpass the Warriors in nearly every way."
+  STR_NECRON_DEATHMARK_UFOPEDIA: "{NEWLINE} Highly-skilled snipers and assassins of the Necron forces, appearing from apparently nowhere and striking with terrible precision. The name is fitting: once given the hunter's mark, a Deathmark's targets are almost certain to meet their deaths scant moments later. Like most Necrons, the Deathmarks' technology lies far beyond the realm of human comprehension and they can effectively phase in and out of normal space-time at will."
+  STR_NECRON_LYCHGUARD_UFOPEDIA: "{NEWLINE} Elite protectors and emissaries of the Necron nobility. In order to serve as a bulwark against those who would harm their charge, gifted with the highest quality of living metal bodies, equal in resilience and power to those inhabited by the Lords and Overlords they protect. In addition to serving as wardens, Lychguards often act as messengers and envoys for their masters. In order to better serve in this capacity, the personality and intellect of the Lychguards was preserved through the process of bio-transference."
+  STR_NECRON_DESTROYER_UFOPEDIA: "{NEWLINE} Necron Destroyers are deranged agents of annihilation whose sole reason for existence is centred around an unshakeable yearning to quench the flames of life. A Destroyer cares not for borders or dynasty allegiance, nor does he make any distinction between the innocent and the damned, all life is his enemy, and all living creatures are his prey."
+  STR_NECRON_SCARAB_UFOPEDIA: "{NEWLINE} A small, silver, beetle-like Necron construct. These robotic scarabs are the most numerous and diverse of the Necrons' Canoptek machine servants. They are designed to break down organic and non-organic matter into raw energy, which can then be woven into fresh construct forms at the direction of the scarabs' controller.."
+# FOE.NECRON.Items
+  STR_GAUSS_FLAYER: "Gauss Flayer"
+  STR_SYNAPTIC_DISINTEGRATOR: "Synaptic Disintegrator"
+  STR_GAUSS_BLASTER: "Gauss Blaster"
+  STR_HYPERPHASESWORD: "Hyperphase Sword"
+  STR_TRIPLE_GAUSS_CANNON: "Gauss Cannon"
+  STR_GAUSS_CANNON: "Gauss Cannon"
+  AUX_DISPERSIONSHIELD: "Dispersion Shield"
 #########################
-# 05. MAP AND ASSETS # everything map related
+# 04. MAP AND ASSETS # everything map related
 #########################
+# #04-MAP AND ASSETS
   STR_IMPERIAL_INFRASTRUCTURE: "Imperial Infrastructure"
   INFRASTRUCTURE_CORPSE: "Destroyed Infrastructure"
   REFINERY_DESTRUCTIBLE: "Refinery"
@@ -2267,23 +2225,11 @@ en-US: #  yamllint disable-line rule:empty-values
   GLOBE_TEXTURE_21: "cultivate 21"
   GLOBE_TEXTURE_22: "Wasteland 22"
   GLOBE_TEXTURE_23: "Sand 23"
-# FOE.ORK
-  STR_ORK_TANKBUSTAZ: "Tankbusta Boy"  # ORKMOD
-  STR_ORK_TANKBUSTA_ARMOR: "Ork Tankbusta"  # orkmod
-  STR_ORK_TANKBUSTAZ_CORPSE: "Tankbusta Corpse"  # ORKMOD
-# FOE.NECRON
-# FOE.NECRON.Items
-  STR_GAUSS_FLAYER: "Gauss Flayer"
-  STR_SYNAPTIC_DISINTEGRATOR: "Synaptic Disintegrator"
-  STR_GAUSS_BLASTER: "Gauss Blaster"
-  STR_HYPERPHASESWORD: "Hyperphase Sword"
-  STR_TRIPLE_GAUSS_CANNON: "Gauss Cannon"
-  STR_GAUSS_CANNON: "Gauss Cannon"
-  AUX_DISPERSIONSHIELD: "Dispersion Shield"
-#########################
-# 06. UNCATEGORIZED # everything that needs a category to be created or needs to be reorganized in the future needs to go here
-#########################
 
+#########################
+# 05. UNCATEGORIZED # everything that needs a category to be created or needs to be reorganized in the future needs to go here
+#########################
+# #05-Uncategorized
   STR_SOLDIER_JOAN: "Characters"
 
   STR_CIVILIAN_SACRIFICE_F0: "Civilian"
