@@ -15321,7 +15321,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   #############################
 
   STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Our restored vox array has finally forced a channel to one of the Dark Mechanicum's clandestine sects. they will be willing to consider a pact of cooperation, but only If we can gather for them a great trove of slaves and materials. To this end, Arch-savant Valtiek has sent us an emissary carrying “a few unimportant trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon modifications." 
-  STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Serendipity comes in strange forms. As natives the planet's underworld, the hive gangers have acted as your guide to Pelaga's black market. And with public order deteriorating, the market is booming: every day, mutinous PDF soldiers ransack another armory, selling their very own weapons into the hands of their future killers. An absurd situation to be sure, but absurdity is the very lifeblood of the Imperium." 
+  STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have acted as your guide to Pelaga's black market. And with public order deteriorating, the market is booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future killers. An absurd situation, no doubt, but then absurdity is the lifeblood of the Imperium." 
   STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Wars are won by two things, and by two things alone. The man bereft of faith is a mere shell; the bolter bereft of ammunition is a cold lump of metal. To forestall this, the hivers have have reached out to their old contacts on your behalf. The thought of using the shoddy ammunition povided by these so-called “Ammo-Jacks” is unpleasant, but a necessary expedient. Yet the Angel already whispers of a better, more permanent solution."
   STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Every moment, the weight of responsibility fills your thoughts. There is so much work to do, and you lack dearly for both weapons and vehicles. And yet: when those who have nothing hold firm to faith, those who presume to riches shall soon find their true povertry revealed to them. For the faithless have plenty of vehicles in their depots, and the land is filled with traitors and malcontents that will sell their location."
   STR_WEAPON_CONSECRATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}The Prince of Perfection is generous beyond compare; in his benevolence, he extends his touch to the faithful and the uninitiated alike. But we, his most devoted servants, recieve further gifts still. By channeling the power of our faith and by the use of arcane rituals, the profane tools of this decrepit Imperium will be reborn and reawakened, just as we were."
@@ -15368,7 +15368,7 @@ en-US:  #  yamllint disable-line rule:empty-values
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launcher Requisition"
   STR_TERROR_WEAPONRY: "Wicked Weapons of Terror"
-  STR_IMPLEMENTS_OF_TORTURE: "Tantalizing Tools of Torture"
+  STR_IMPLEMENTS_OF_TORTURE: "Tools of Tantalizing Torture"
   STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
   STR_CHOKE_GAS_GRENADES: "Choke Gas Grenade Requisition"
   STR_BLACK_MARKET_AMMUNITION: "Black Market Ammo-Jacks"
