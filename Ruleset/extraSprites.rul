@@ -157,6 +157,10 @@ extraSprites:
     fileSingle: Resources/ORK/SPARKY_POWER_FIELD_CODEX.png
   - typeSingle: ORK_CAPSULE.SPK
     fileSingle: Resources/ORK/ORK_CAPSULE.png
+  - typeSingle: SQUIG_ASSAULT.SPK
+    fileSingle: Resources/ORK/SquigCodexArmor.png
+  - typeSingle: SQUIG_BOMB.SPK
+    fileSingle: Resources/ORK/SquigBombOriginCodex.png
 
   - typeSingle: IMPERIAL_GENERIC.SPK
     fileSingle: Resources/CODEX/imperialgen.png
@@ -2025,6 +2029,10 @@ extraSprites:
 
       250: Resources/Spicons/SPICON_SPRINT.png
       251: Resources/Spicons/SPICON_SCREAM.png
+      252: Resources/Spicons/SPICON_DEATHWEAVERS.png
+      253: Resources/Spicons/SPICON_POWERBLADES.png
+      254: Resources/Spicons/SPICON_CORONA.png
+
 
   - type: SPICONS.DAT
     files:
@@ -5415,9 +5423,10 @@ extraSprites:
     fileSingle: Resources/ORK/orksniperguncodex.png
 
 #Blood Axe Orks and Orky Guard
-
+  - typeSingle: ASSAULT_SQUIG_INV.SPK  # Assault Squig Inventory
+    fileSingle: Resources/ORK/OPFOR_ATTACK_SQUIG.png
   - typeSingle: BOMB_SQUIG_INV.SPK  # Bomb Squig Inventory
-    fileSingle: Resources/ORK/O6SquigInv.png
+    fileSingle: Resources/ORK/OPFOR_BOMB_SQUIG.png
 
   - typeSingle: ORKYGUARD_INV.SPK  #Flakguard Boy
     fileSingle: Resources/ORK/ORKYGUARD_INV.png
@@ -6208,6 +6217,8 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_dragonaxe_codex.png
   - typeSingle: ELDAR_FIREPIKE_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_firepike_codex.png
+  - typeSingle: ELDAR_FIREDRAGONCORONA_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_firedragoncorona_codex.png
   - typeSingle: ELDAR_SCORPION_CHAINSWORD_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_scorpionchainsword_codex.png
   - typeSingle: ELDAR_BITING_BLADE_CODEX.SPK
@@ -6234,6 +6245,10 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_deathspinner_codex.png
   - typeSingle: ELDAR_POWER_BLADE_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_powerblade_codex.png
+  - typeSingle: ELDAR_DEATHWEAVERS_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_deathweavers_codex.png
+  - typeSingle: ELDAR_POWERBLADEARRAY_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_powerbladearray_codex.png
   - typeSingle: ELDAR_AELDARI_MISSILE_LAUNCHER_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_aeldarimissilelauncher_codex.png
   - typeSingle: ELDAR_TEMPEST_LAUNCHER_CODEX.SPK
@@ -6278,6 +6293,8 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_hwp_scatterlaser_codex.png
   - typeSingle: ELDAR_HWP_STARCANNON_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_hwp_starcannon_codex.png
+  - typeSingle: ELDAR_WIREWEAVE_NET_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_wireweavenet_codex.png
   #older weapon codex from 40k mod
   - typeSingle: 1EL1.SPK
     fileSingle: Resources/Eldar/1EL1.png
@@ -6505,6 +6522,13 @@ extraSprites:
     files:
       0: Resources/Eldar/units/eldar_heavy_weapon_platform/split_eldar_hwp_starcannon_unitsprite.png
 
+  - type: ELDAR_WIREWEAVENET_DEPLOYED.SPK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 80
+    files:
+      0: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_unitsprite.png
   # ELDAR paperdoll images
 
   # ELDAR GUARDIAN
@@ -7627,6 +7651,10 @@ extraSprites:
     fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_starcannon_body.png
   - typeSingle: ELDARHWPSTARCANNON__1__ELDAR_F
     fileSingle: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_starcannon_bodyf.png
+
+  # ELDAR OTHER
+  - typeSingle: ELDAR_WIREWEAVENET_DEPLOYED_INVENTORY
+    fileSingle: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_inventory.png
 
   # PLAYER CHAOS
   - typeSingle: ALPHAMARINE_INV.SPK
@@ -15440,6 +15468,11 @@ extraSprites:
       0: Resources/UnitSprites/SWsaturninebattle.png
 
 
+  # Space Wolves CRAFT codex art
+
+  - typeSingle: STORMWOLF_CODEX.SPK
+    fileSingle: Resources/CODEX/STORMWOLF_CODEX.png
+
   # crimson fist
 
   - typeSingle: CRIMSONFISTARMOR_SCOUT.PCK
@@ -16713,7 +16746,7 @@ extraSprites:
 
   - type: CustomArmorPreviews
     width: 360
-    height: 960
+    height: 980
     subX: 12
     subY: 20
     files:
@@ -20133,6 +20166,10 @@ extraSprites:
 
   - typeSingle: RESEARCH_PIPS.SPK
     fileSingle: Resources/CODEX/RESEARCH_PIPS_CODEX.png
+
+  # Help page - Combined interception
+  - typeSingle: COMBINED_INTERCEPTION_CODEX.SPK
+    fileSingle: Resources/CODEX/COMBINED_INTERCEPTION_CODEX.png
 
   # Arbites Heavy Stubber
   - typeSingle: ARBITES_HEAVY_STUB_CODEX.SPK

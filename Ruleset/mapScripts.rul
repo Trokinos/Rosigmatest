@@ -4504,6 +4504,7 @@ mapScripts:
 
   # Tau base test
 
+  # note ground then ceiling are always made first by the engine
   - type: TAUBASESCRIPT1
     commands:
       - type: addCraft
@@ -4512,7 +4513,7 @@ mapScripts:
           - [10, 2, 1, 2]
       - type: addBlock
         executions: 1
-        blocks: [13]  # id 13 the block on which we will verticallevel the tau base
+        blocks: [13]  # id 13 the block on which we will verticallevel the tau walled base
         rects:
           - [1, 2, 3, 3]
         verticalLevels:
@@ -4526,7 +4527,7 @@ mapScripts:
             blocks: [0] # the id of the walled base
       - type: addBlock
         executions: 1
-        blocks: [13]  # id 13 the block on which we will verticallevel the tau base
+        blocks: [14]  # id 14 the block on which we will verticallevel the tau bunker base
         rects:
           - [5, 2, 3, 3]
         verticalLevels:
@@ -4537,7 +4538,26 @@ mapScripts:
           - type: ceiling
             size: [3, 3, 5]
             terrain: TAUBASE_SET
-            blocks: [1] # the id of the bunker system
+            blocks: [1] # the id of the bunker base
+      - type: addBlock
+        executions: 1
+        blocks: [15]  # id 15 the block on which we will verticallevel the tau lander base
+        rects:
+          - [5, 6, 3, 3]
+        verticalLevels:
+          - type: ground
+            terrain: TAU_MOUNT
+            blocks: [15]
+            size: [3, 3, 0]
+          - type: middle
+            size: [3, 3, 2]  # the map block is 5 high but the ships from the ceiling part will be dropped at the z level 2
+            terrain: TAUBASE_SET
+            blocks: [2] # the id of the lander base
+            maxRepeats: 1 # bizarro stuff happen without this
+          - type: ceiling
+            size: [3, 3, 4]  # this map block is 4 z levels high
+            terrain: TAUSHIPDECO
+            blocks: [0] # the id of the deco ships without that line it does not work for some reason despite there's only the block 0 in that terrain
       - type: fillArea
         terrain: TAU_MOUNT
         blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8]

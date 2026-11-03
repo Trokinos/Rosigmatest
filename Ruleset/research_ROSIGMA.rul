@@ -2478,6 +2478,7 @@ research:
       - STR_ORK_ONLY
       - STR_ORK_BASIC_WEAPONS
       - STR_ORK_WEAPONS_EXAM
+      - STR_ORK_SQUIG_EXAM
       - STR_ORK_SHOOTA_EXAM
       - STR_ORK_KOMBI_EXAM
       - STR_ORK_BIG_DAKKA_EXAM
@@ -3900,7 +3901,7 @@ research:
       - STR_GSC_ENFORCER_MEDIC
       - STR_GSC_MINER
       - STR_GSC_ABERRANT
-
+      - STR_LOCUS_PRISIONER
 
   - name: STR_GSC_DISCOVERY_INFECTION  # Xeno Taint Presence # 1B
     requires:
@@ -10141,6 +10142,8 @@ research:
     refNode: *STR_LOCKED
   - name: STR_ORK_BIG_DAKKA_EXAM
     refNode: *STR_LOCKED
+  - name: STR_ORK_SQUIG_EXAM
+    refNode: *STR_LOCKED
 
   - delete: STR_AMMO_BIT10  # Small Ammo Bit
   - delete: STR_AMMO_BIT20  # Ammo Bit
@@ -13614,13 +13617,18 @@ research:
       - STR_INTERROGATION_COMPLETED
       - STR_THREAT_ONE
     destroyItem: true
-  - name: STR_SQUIG_TEST  # Squig Farm
-    cost: 192
-    points: 50
+  - name: STR_SQUIG_ASSAULT_AI
+    cost: 50
+    points: 25
     needItem: true
     unlocks:
-      - STR_INTERROGATION_COMPLETED
-    destroyItem: true
+      - STR_ORK_SQUIG_EXAM
+  - name: STR_SQUIG_BOMBA_AI  # Squig Farm
+    cost: 50
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_ORK_SQUIG_EXAM
   - name: STR_ORK_MEGANOB  # Meganob
     cost: 192
     points: 50
@@ -14000,6 +14008,12 @@ research:
     unlocks:
       - STR_INTERROGATION_COMPLETED
   - name: STR_GSC_ABERRANT  # Aberrant
+    cost: 100
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+  - name: STR_LOCUS_PRISIONER  # Locus
     cost: 100
     points: 25
     needItem: true
@@ -15563,12 +15577,12 @@ research:
     refNode: *STR_CORPSE_BASIC
   - name: STR_GSC_ENFORCER_MEDIC_CORPSE
     refNode: *STR_CORPSE_BASIC
-#  - name: STR_GSC_MINER_CORPSE # they could be added as-is but they have no functionality attached right now
-#    refNode: *STR_CORPSE_BASIC
-#  - name: STR_GSC_ABERRANT_CORPSE
-#    refNode: *STR_CORPSE_BASIC
-#  - name: STR_LOCUS_CORPSE
-#    refNode: *STR_CORPSE_BASIC
+  - name: STR_GSC_MINER_CORPSE
+    refNode: *STR_CORPSE_BASIC
+  - name: STR_GSC_ABERRANT_CORPSE
+    refNode: *STR_CORPSE_BASIC
+  - name: STR_LOCUS_CORPSE
+    refNode: *STR_CORPSE_BASIC
   - name: STR_GSC_JUDGE_CORPSE
     refNode: *STR_CORPSE_BASIC
   - name: STR_GSC_ARBITOR_CORPSE
@@ -15641,8 +15655,14 @@ research:
     refNode: *STR_CORPSE_BASIC
   - name: STR_BURNABOYZ_CORPSE
     refNode: *STR_CORPSE_BASIC
-  - name: STR_SQUIG_CORPSE
+  - name: STR_SQUIG_CORPSE_AI
     refNode: *STR_CORPSE_BASIC
+    unlocks:
+      - STR_ORK_SQUIG_EXAM
+  - name: STR_SQUIG_CORPSE_EXPLOSIVE_AI
+    refNode: *STR_CORPSE_BASIC
+    unlocks:
+      - STR_ORK_SQUIG_EXAM
   - name: STR_ORK_MEGANOB_CORPSE
     refNode: *STR_CORPSE_BASIC
   - name: STR_ORK_WARBOSS_CORPSE

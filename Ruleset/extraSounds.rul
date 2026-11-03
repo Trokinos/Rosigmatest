@@ -3079,6 +3079,11 @@ extraSounds:
       1905: Resources/Eldar/Sounds/wraithcannon_1.ogg
       1906: Resources/Eldar/Sounds/wraithcannon_2.ogg
       1907: Resources/Eldar/Sounds/wraithcannon_3.ogg
+      1908: Resources/Eldar/Sounds/reaperlauncher_1.ogg
+      1909: Resources/Eldar/Sounds/reaperlauncher_2.ogg
+      1910: Resources/Eldar/Sounds/reaperlauncher_3.ogg
+      1911: Resources/Eldar/Sounds/wraith_walk.ogg
+      1912: Resources/Eldar/Sounds/eldar_walk.ogg
 
 # rubric silence
       # SELECT UNIT
@@ -3242,7 +3247,7 @@ extraSounds:
 # 3962:
 # 3967:
 
-# 1892 - 1919 RESERVING FOR ELDAR
+# 1911 - 1919 RESERVING FOR ELDAR
 
 # to prevent some log entry
 

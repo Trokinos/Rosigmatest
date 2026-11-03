@@ -494,7 +494,7 @@ ufopaedia:
   - id: STR_HELP3
     type_id: 10
     section: STR_HELP_CAMPAIGN
-    image_id: 3CRAFT.SPK
+    image_id: COMBINED_INTERCEPTION_CODEX.SPK #3CRAFT.SPK
     text: STR_HELP_CRAFT
 
   - delete: STR_HELP4
@@ -3989,10 +3989,13 @@ ufopaedia:
     section: STR_XCOM_CRAFT_ARMAMENT
     image_id: DROPPOD.SPK
     requires:
-      - STR_MARINES_STRATEGY
+      - STR_NOT_SPACEWOLVES
       - STR_NOT_PRIMARIS
+      - STR_MARINES_STRATEGY
       - STR_NOT_WORDBEARERS
+      - STR_MARINESCHOICEDONE
       - STR_NOT_BLACKTEMPLARS
+      - STR_GENERALLOCK #SINGLE DROP POS IS DISABLED
     text: STR_DROPPOD_UFOPEDIA
 
   - delete: STR_SKYRANGER  # DROPPODS
@@ -4006,6 +4009,19 @@ ufopaedia:
       - STR_NOT_WORDBEARERS
       - STR_NOT_BLACKTEMPLARS
     text: STR_DROPPOD_UFOPEDIA
+
+  - id: STR_DROPPODS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: DROPPOD.SPK
+    requires:
+      - STR_NOT_SPACEWOLVES
+      - STR_NOT_PRIMARIS
+      - STR_MARINES_STRATEGY
+      - STR_NOT_WORDBEARERS
+      - STR_MARINESCHOICEDONE
+      - STR_NOT_BLACKTEMPLARS
+    text: STR_DROPPOD_ADVANCED_UFOPEDIA
 
   - delete: STR_INTERCEPTOR  # STORMTALON
   - id: STR_INTERCEPTOR
@@ -4340,6 +4356,68 @@ ufopaedia:
     image_id: RHINO_NOTT.SPK  # placeholder
     text: STR_BTBRLANDRAIDER_CODEX
 
+## #CRAFTS.SM.SW#
+  - id: STR_SWDROPPODS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY  # should be base craft
+    image_id: DROPPOD.SPK
+    text: STR_SWDROPPODS_CODEX
+  - id: STR_SWRHINOS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY  # to update once there are more SW research
+    image_id: RHINO_NOTT.SPK  # placeholder
+    text: STR_SWRHINOS_CODEX
+  - id: STR_SWTHUNDERHAWK
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY
+      - STR_SWTHUNDERHAWK
+    image_id: THUNDERHAWK.SPK
+    text: STR_THUNDERHAWK_UFOPEDIA
+  - id: STR_SWTHUNDERHAWKGRAV
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY
+      - STR_SWTHUNDERHAWKGRAV
+    image_id: THUNDERHAWK.SPK
+    text: STR_THUNDERHAWK_GRAVDROP_UFOPEDIA
+  - id: STR_SWSTORMWOLF
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY
+      - STR_SPACEWOLVES_MIDTIER_RESEARCH
+    image_id: STORMWOLF_CODEX.SPK # Likely improvement candidate
+    text: STR_SWSTORMWOLF_CODEX
+  - id: STR_SWLANDRAIDER
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY
+      - STR_RESEARCH_SWLANDRAIDER  # research specific for it
+    image_id: RHINO_NOTT.SPK  # placeholder
+    text: STR_SWLANDRAIDER_CODEX
+  - id: STR_SWLEMANRUSS
+    type_id: 11
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_NOT_PRIMARIS
+      - STR_SPACEWOLVES_STRATEGY  # to update once there are more SW research
+      - STR_SPACEWOLVES_MIDTIER_RESEARCH
+    image_id: 2LEMON.SPK # needs new
+    text: STR_SWLEMANRUSS_CODEX
 ## #CRAFTS.SOB.BR#
 
   - id: STR_BRARVUS_ADEPTAS
@@ -6271,6 +6349,20 @@ ufopaedia:
     text: STR_ELDAR_ASPECT_HELPER_SPIDER
     requires:
       - STR_ELDAR_SPIDER_RESEARCH
+  - id: STR_PROMOTE_TO_HAWK
+    type_id: 10
+    section: STR_SOLDIERS_UC
+    image_id: ELDAR_HAWK_ARMOR_CODEX.SPK # HAWK ARMOR CODEX IMAGE
+    text: STR_ELDAR_ASPECT_HELPER_HAWK
+    requires:
+      - STR_ELDAR_HAWK_RESEARCH
+  - id: STR_PROMOTE_TO_SEER
+    type_id: 10
+    section: STR_SOLDIERS_UC
+    image_id: ELDAR_SEER_ARMOR_CODEX.SPK # SEER ARMOR CODEX IMAGE
+    text: STR_ELDAR_ASPECT_HELPER_SEER
+    requires:
+      - STR_ELDAR_PSYKER_RESEARCH
   - id: STR_PROMOTE_TO_AUTARCH
     type_id: 10
     section: STR_SOLDIERS_UC
@@ -6321,11 +6413,29 @@ ufopaedia:
     text: STR_ELDAR_ASPECT_HELPER_SPIDER_EXARCH
     requires:
       - STR_ELDAR_SPIDER_EXARCH_RESEARCH
+  - id: STR_PROMOTE_TO_HAWK_EXARCH
+    type_id: 10
+    section: STR_SOLDIERS_UC
+    image_id: ELDAR_HAWKEX_ARMOR_CODEX.SPK # HAWK ARMOR CODEX IMAGE
+    text: STR_ELDAR_ASPECT_HELPER_HAWK_EXARCH
+    requires:
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
   # Eldar exarch/autarch
   # ELDAR psyker transf.
   #- id: STR_PROMOTE_TO_PSYKER
-  #- id: STR_PROMOTE_TO_ELDAR_WARLOCK
+  - id: STR_PROMOTE_TO_ELDAR_WARLOCK
+    type_id: 10
+    section: STR_SOLDIERS_UC
+    image_id: ELDAR_WARLOCK_ARMOR_CODEX.SPK
+    text: STR_ELDAR_ASPECT_HELPER_WARLOCK
+    requires:
+      - STR_ELDAR_WARLOCK_PATH_RESEARCH
   # dead eldar
+  #- id: STR_WRAITHGUARD_WRAITHCANNON_TRANSFORM
+  #- id: STR_WRAITHGUARD_DSCYTHE_TRANSFORM
+  #- id: STR_WRAITHBLADE_GHOSTAXE_TRANSFORM
+  #- id: STR_WRAITHBLADE_GHOSTSWORD_TRANSFORM
+  #- id: STR_DIRESWORD_VESSEL_TRANSFORM
   #- id: STR_RESURRECT_ELDAR
 # #SOLDIERS.AT.ORKZ#
   - id: STR_BLOODAXE_ARDBOY_PROMOTION
@@ -9231,6 +9341,23 @@ ufopaedia:
       - STR_GREENEST_ORKZ
     image_id: UP134.SPK # will probably come up with something new later
     text: STR_PLAYER_GROTS_ARMOR_UFOPEDIA
+
+  - id: STR_SQUIG_ARMOR
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ORK_SQUIG_EXAM
+      - STR_GREENEST_ORKZ
+    image_id: SQUIG_ASSAULT.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_ARMOR_BOMB
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ORK_SQUIG_EXAM
+      - STR_GREENEST_ORKZ
+    image_id: SQUIG_BOMB.SPK
+    text: STR_NOT_DONE
 
   - id: STR_PLAYER_VINDI_GROT_ARMOR
     type_id: 15
@@ -13862,7 +13989,7 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: TWIN_CORE_CODEX.SPK
     requires:
-      - STR_PLASMA_GUN_TWINCORE
+      - STR_PLASMA_GUN_TWINCORE_DEKKER
     text: STR_PLASMA_GUN_TWINCORE_UFOPEDIA
 
   - id: STR_PLASMA_GUN_TWINCORE_ADEPTAS
@@ -16237,6 +16364,14 @@ ufopaedia:
     type_id: 4
     section: STR_NOT_AVAILABLE
 
+  - id: STR_FIREDRAGON_CORONA_SPECIALWEAPON
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_FIREDRAGONCORONA_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_FIREDRAGONCORONA_CODEX
+
   - id: STR_LASBLASTER
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -16295,6 +16430,9 @@ ufopaedia:
   - id: STR_SPINNER_SPOOL
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_WIREWEAVE_SPOOL
+    type_id: 4
+    section: STR_NOT_AVAILABLE
   - id: STR_SPINNERET_RIFLE
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -16305,6 +16443,13 @@ ufopaedia:
   - id: STR_SPINNERET_RIFLE_SPOOL
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_DEATHWEAVERS_SPECIALWEAPON
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_DEATHWEAVERS_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_DEATHWEAVERS_CODEX
 
   - id: STR_ELDAR_POWER_BLADE
     type_id: 14
@@ -16313,7 +16458,13 @@ ufopaedia:
     requires:
       - STR_ELDAR_ARMORY_EXAM
     text: STR_ELDAR_POWER_BLADE_CODEX
-
+  - id: STR_POWERBLADEARRAY_SPECIALWEAPON
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_POWERBLADEARRAY_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_POWERBLADEARRAY_CODEX
 
   - id: STR_SHURIKEN_CANNON
     type_id: 14
@@ -16502,6 +16653,13 @@ ufopaedia:
   - id: STR_SHURIKEN_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_ELDAR_WIREWEAVE_NET
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_WIREWEAVE_NET_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_WIREWEAVE_NET_CODEX
   - delete: STR_ELDAR_GRENADE
   - id: STR_ELDAR_GRENADE
     type_id: 14
@@ -17094,6 +17252,13 @@ ufopaedia:
     requires:
       - STR_ORK_WEAPONS_EXAM
     text: STR_TANKBUSTA_BOMB_UFOPEDIA
+  - id: STR_TANKBUSTA_INVENTORY_BOMB
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1OK4.SPK
+    requires:
+      - STR_ORK_WEAPONS_EXAM
+    text: STR_TANKBUSTA_INVENTORY_BOMB_CODEX
 
   - id: STR_ORK_KRAKSTIKKBOMB
     type_id: 14
@@ -17156,6 +17321,14 @@ ufopaedia:
     requires:
       - STR_ORK_WEAPONS_EXAM
     text: STR_CHOPPA_UFOPEDIA
+
+  - id: STR_SQUIG_BITE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: SQUIG_ASSAULT.SPK
+    requires:
+      - STR_ORK_SQUIG_EXAM
+    text: STR_SQUIG_BITE_CODEX
 
   - id: AUX_CHOPPA
     type_id: 14
@@ -23393,6 +23566,35 @@ ufopaedia:
     image_id: GretchinArmor.SPK
     text: STR_NOT_DONE
 
+  - id: STR_SQUIG_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SQUIG_CORPSE_AI
+    image_id: SQUIG_ASSAULT.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_EXPLOSIVE_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SQUIG_CORPSE_EXPLOSIVE_AI
+    image_id: SQUIG_BOMB.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_ARMOR_AI
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ORK_SQUIG_EXAM
+    image_id: SQUIG_ASSAULT.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_ARMOR_BOMB_AI
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ORK_SQUIG_EXAM
+    image_id: SQUIG_BOMB.SPK
+    text: STR_NOT_DONE
+
   - delete: STR_ORK_AUTOPSY
   - id: STR_ORK_AUTOPSY
     type_id: 10
@@ -24605,6 +24807,70 @@ ufopaedia:
       - STR_GENE_HYBRID_ACOLYTE_LEADER
     image_id: GSC_HYBRID_ACOLYTE_LEADER_ARMOR_CODEX.SPK
     text: STR_GENE_HYBRID_ACOLYTE_LEADER_ARMOR_UFOPEDIA
+  - id: STR_ABERRANT_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_ABERRANT_CORPSE
+    image_id: ORIGINS_ABERRANT.SPK
+    text: STR_ABERRANT_AUTOPSY_CODEX
+  - id: STR_GSC_ABERRANT_ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_ABERRANT
+    image_id: ARMOR_ABERRANT.SPK
+    text: STR_ABERRANT_AUTOPSY_CODEX
+  - id: STR_LOCUS_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_CORPSE
+    image_id: ORIGINS_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_CLOAKED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_FRENZIED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+
+  - id: STR_MINER_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_CORPSE
+    image_id: ORIGINS_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_LOCUS_CLOAKED
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_LOCUS_PRISIONER
+    image_id: ARMOR_LOCUS.SPK
+    text: STR_LOCUS_AUTOPSY_CODEX
+  - id: STR_GSC_MINER_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_MINER_CORPSE
+    image_id: UP0160.SPK #PLACEHOLDER
+    text: STR_GENE_CULTIST_UFOPEDIA #PLACEHOLDER
+  - id: STR_GSC_MINER_ARMOR
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_GSC_MINER
+    image_id: UP0160.SPK #PLACEHOLDER
+    text: STR_GENE_CULTIST_UFOPEDIA #PLACEHOLDER
 
 #FOES.XENO.TAU#        Tau
   - id: STR_TAU_DRONEAI # STR_TAU_DRONEAI; PLACEHOLDER
