@@ -149,11 +149,15 @@ research:
     - STR_SLAANESHPATH_GATE
     spawnedItem: STR_SLAANESHPATH_PIETY
     spawnedItemCount: 200
+    points: 20
+
     #TODO: MAKE THIS TECH GIVE 200 PIETY
  
-  # - name: Soulstain Sorcery
-  # - name: HANDMAIDEN_POWER_ARMOR
-
+  - name: STR_SOULSTAIN_SORCERY
+    cost: 40
+    points: 20
+    dependencies:
+      - STR_SOULS_FOR_SLAANESH
 
 
   - name: STR_POWER_ARMOR_CORRUPTION # This is the tech that unlocks immaculate power armor.
