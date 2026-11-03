@@ -2,6 +2,7 @@ en-US: #  yamllint disable-line rule:empty-values
 #
 # INDEX
 # PLEASE MANTAIN THIS STRUCTURE WHEREVER POSSIBLE
+# to Add a new category, add it in the section with "# #" before the name, as it will allow script and other automations
 #
 # Sections:
 #########################
@@ -9,7 +10,6 @@ en-US: #  yamllint disable-line rule:empty-values
 #########################
 # #01-OXCE-Unclassified             override of default OXCE strings
 # #01-ROSIGMA_DEFAULTS # ROSIGMA Defaults and placeholders used for development
-##ROSIGMA_DEFAULTS.PLACEHOLDERS
 # #01-Avatars          # used by maxLookVariant - number of avatars = (value + 1) * 8
 # #01-MENU             Menu and options windows items and selections
 # #01-GEOSCAPE#        Geoscape strings
@@ -30,75 +30,48 @@ en-US: #  yamllint disable-line rule:empty-values
 # this section will follow this convention: Faction.object types.
 # specific order is left to the developvers.
 # if an item is BOTH for opfor and enemy please specify in the PLAYER faction
-# MULT (multifaction or common Example)
-# SM (Ultramarines) (example)
+# #03-MULT.Research
+# #03-MULT.ITEMSCATEGORIES
+# #03-MULT.MANU_CATEGORIES
+# #03-MULT.ITEMS
+# #03-MULT.ITEMS.Actions
+# #03-MULT.EVENTS
+# #03-MULT.FACILITIES
+# #03-SM.UM
+# #03-MULT.CIVILIANS
+# #03-SM.UM.PRIM
+# #03-SM.WOLF
+# #03-SM.BT
+# #03-SOB.BR
+# #03-SM.WB
+# #03-CM.GK
+# #03-CM.RAD
+# #03-CM.OA
+# #03-CM.LAW
+# #03-CULT
+# #03-ORKS
+# #03-ELDAR
+# #03-SOB
+# #03-IG.GUARD
+# #03-IG.SCION
+# #03-IG.ABHUMAN
+# #03-IG.STEEL
+# #03-IG.KRIEG
+# #03-IG.VALHALLA
+# #03-Alien
+# #03-MSSION.MARKERS
+# #03-TYR.GENE
+# #03-TYR.PURE
+# #03-NECRON
+# #03-TAU
 #########################
 # 04. MAP AND ASSETS # everything map related
 #########################
-
+# #04-MAP
 #########################
 # 05. UNCATEGORIZED # everything that needs a category to be created or needs to be reorganized in the future needs to go here
 #########################
-
-# Player Factions list for reference:
-# MULT#            Multifaction Research
-# SM#              Space Marines
-# SM.UM#             Common ultramarine items
-# SM.UM.ASS#         Assault Strategy
-# SM.UM.DEV#         Devastator Strategy
-# SM.UM.SCOUT#       Scout Strategy
-# SM.UM.TAC#         Tactical Strategy
-# SM.UM.PRIM#        Primaris Strategy
-# SM.WOLF#           Space Wolf Strategy
-# SM.BT#             Black Templars Strategy
-# SOB.BR#            Bloody Rose Strategy
-# SM.WB#             Word Bearers Strategy
-# CM#              Chamber Militant
-# CM.DW#             Deathwatch
-# CM.GK#             Grey Knights
-# CM.RAD#            The Radical Road
-# CM.OA#             Officio Assassinorum
-# CM.LAW#            The Imperial Law Strategy
-# AT#              The Alien and the Heretic
-# AT.CULT#           Chaos Cult
-# SOB#             Adeptas
-# SOB.REP#           Repentia Strategy
-# SOB.NOV#           Novice Strategy
-# SOB.BAT#           Battle Sister Strategy
-# SOB.DOM#           Dominion Strategy
-# IG#              Imperial Guard
-# IG.GUARD#          Guardsman Strategy
-# IG.SCION#          Scion Strategy
-# IG.ABHUMAN#        Abhuman Strategy
-# IG.STEEL#          Steel Legion Strategy
-# IG.KRIEG#          Krieg Strategy
-# IG.VALHALLA#       Valhallan Strategy
-#
-# Foe Factions for reference:
-# (Entries within chaos subsections should be presented in the order of affiliation: Undivided, Khorne, Nurgle, Slaanesh, Tzeentch)
-#
-# FOES.CIV#             Civilian Units
-# FOES.SM#              Space Marines Units
-# FOES.CM#              Chamber Militant Units
-# FOES.GK#             Grey Knights
-# FOES.SOB#             Adeptas Units
-# FOES.IG#              Imperial Guard Units
-# FOE.CHAOS#          Chaos
-# FOE.CHAOS.CULT#       Cultists and Mutants
-# FOE.CHAOS.TG#         Traitor Guard
-# FOE.CHAOS.SIS#        Heretic Sisters
-# FOE.CHAOS.CSM#         Chaos Marines
-# FOE.CHAOS.DAE#        Daemons
-# FOE.CHAOS.HRUD#       Hrud
-# FOE.RENE#           Renegades
-# FOE.RENE.DESERT#      Deserters and Instigators
-# FOE.ELDAR#         Eldar
-# FOE.NECRO#       Necron
-# FOE.ORK#         ORK
-# FOE.TYR#       Tyranids
-# FOE.TYR.PURE#    Purestrain
-# FOE.TYR.GENE#    Genestealer
-# FOE.TAU#       Tau
+# #05-Uncategorized [UNCATEGORIZED]
 
 #########################
 # 01. GENERIC GAME STRINGS #
@@ -304,7 +277,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_RESEARCHNOT_AVAILABLE: "Research Not Available"
   STR_ITEMNOT_AVAILABLE: "Item Not Available"
   STR_NOT_DONE: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
-
 
 # #01-Avatars          # used by maxLookVariant - number of avatars = (value + 1) * 8
   STR_AVATAR_NAME_1: "M00"
@@ -864,6 +836,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_OTHER_EMPLOYEES: "Other Staff & Inventory"
   STR_GO_TO_TRANSFERS: "Go To Transfers"
 
+
+  STR_MANAGE_CONTAINMENT: "Manage Prison Cells"
 # #01-MENUSCAPE        Research Diary and summaries strings (kill list, performance, game results)
   STR_DIARY: "DIARY"
   STR_KILLED: "KILLED"
@@ -1031,6 +1005,14 @@ en-US: #  yamllint disable-line rule:empty-values
 # 02. CODEX and Progression #
 #########################
 # this section is dedicated to the COMMON codex entries.
+  STR_XCOM_OPERATIVES_RETIRED_THROUGH_INJURY: "SOLDIERS RETIRED THROUGH INJURY"
+  STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO PRISON CELLS FOR TRANSFER!{SMALLLINE}Live enemies need a prison facility in order to be contained."
+  STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY: "Captured enemy executed as there is no prison facility"
+  STR_CONTAINMENT_EXCEEDED: "PRISON CELL LIMITS EXCEEDED!{SMALLLINE}Insufficient prison space at {0}. You must remove excess captives from from the prison."
+  STR_BASE_EQUIPMENT: "Base Equipment"
+  STR_RADAR_EQUIPMENT: "Radar Equipment"
+  RADAR_ARMOR: "Radar Hull"
+  STR_RADAR_REPAIR: "Repair Radar"
 # #02-CATEGORIES      codex categories
   STR_HELP: "UNDERSTANDING THE BATTLESCAPE"
   STR_HELP_CAMPAIGN: "THE DEFENSE OF PELEGA IV"
@@ -1074,6 +1056,29 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_PD: "Armor Overview"
   STR_A_UFOPEDIA: "{NEWLINE} Welcome to the Imperial Armory, Force Commander. Here you can study armors as they become available. Pay attention to strength requirements for specific armors and the stat altering features.{NEWLINE} Units with no armor will be assigned a standard outfit, such as a Marine's scout gear, or a Guardsman's flak armor."
   STR_SIDEOPERATIONS: "CHAPTER SIDEOPERATIONS"
+  #####AMMO####---------------------------------------------------
+  STR_AMMO_TYPE: "AMMUNITION"
+  STR_AMMO_OVER: "Ammunition Overview"
+  STR_AMMO_OVERB: "Ammunition Overview"
+  STR_AMMO_OVERC: "Ammunition Overview"
+  STR_AMMO_TYPE_UFOPEDIA: "{NEWLINE} The Tech-priests of the Adeptus Mechanicus and the skilled Artificers of the Adeptus Astartes have developed many types of ammunition over the millennia for the different branches of the Imperial military. The most common variants are described in this section."
+  STR_AMMOB: "Special Bolts"
+  STR_BOLTER_AMMO: "Standard Bolts"
+  STR_MC_AMMO: "Mastercrafted Bolts"
+  STR_DOUBLE_AMMO: "Double-Barreled Bolters"
+  STR_MELTA_AMMO: "Melta Charge"
+  STR_MELTA_AMMO2: "Melta Charge"
+  STR_LAS_AMMO: "Power Cell"
+  STR_PLASMA_AMMO: "Plasma Flasks"
+  STR_GRAV_AMMO: "Graviton Induction Core"
+  STR_LAS_AMMO_UFOPEDIA: "{NEWLINE} Laser Weapon Power Cell damage details: {NEWLINE} Armor damage: 20% {NEWLINE} Health damage: 100% {NEWLINE} Stun damage: 0% {NEWLINE} Armor damage after piercing: 0%"
+  STR_MC_AMMO_UFOPEDIA: "{NEWLINE} Master crafted bolt ammo damage details: {NEWLINE} Armor damage: 10% {NEWLINE} Ignores armor: 20% {NEWLINE} Stun damage: 50% {NEWLINE} Increased power over standard bolts."
+  STR_DOUBLE_AMMO_UFOPEDIA: "{NEWLINE} Double-Barrelled bolter damage details: {NEWLINE} Armor Damage: 20% {NEWLINE} Ignores armor: 10%"
+  STR_MELTA_AMMO_UFOPEDIA: "{NEWLINE} Melta Charge damage details: {NEWLINE} Armor damage: 100% {NEWLINE} Health damage: 160% {NEWLINE} Dropoff: 10%/tile beyond 8 tiles. {NEWLINE} {NEWLINE} Multimelta Charge damage details: {NEWLINE} Armor damage: 100% {NEWLINE} Health damage: 160% {NEWLINE} Dropoff: 5%/tile beyond 16 tiles." #D
+  STR_PLASMA_AMMO_UFOPEDIA: "{NEWLINE} Plasma Flask damage details: {NEWLINE} Ignores armor: 25% {NEWLINE} Health damage: 100% {NEWLINE} Armor damage after piercing: 20%" #D
+  STR_GRAV_AMMO_UFOPEDIA: "{NEWLINE} Graviton Induction Core damage details: {NEWLINE} Ignores armor: 100%" #D
+  STR_BOLTER_AMMO_UFOPEDIA: "{NEWLINE} Bolt ammo damage details: {NEWLINE} Armor damage: 5% {NEWLINE} Ignores armor: 10% {NEWLINE} Stun damage: 50%" #D
+  STR_AMMOB_UFOPEDIA: "{NEWLINE} Metal Storm Frag Bolts are best used against multiple lightly-armored targets. They detonate before impact and spray shrapnel in a small radius. {NEWLINE}{NEWLINE} Kraken Penetrator Bolts are powerful armor-piercing rounds. The dense metallic core is replaced by a solid Adamantium core and uses a heavier main charge. Ignores 50% of armor, but does not damage it before piercing."
 # #02-DIFFICULTY      difficulty options
 
 #########################
@@ -1091,6 +1096,12 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_STEELMILLR: "Advanced Ceramics Requisition"
   STR_TEC_BAYR: "Techmarine Bay Requisition"
   STR_TEC_BAY_CHAMBER_R: "Techmarine Bay Requisition"
+  STR_MELTABOMB: "Melta Bomb Requisition"
+  STR_SMOKE: "Smoke Grenade Requisition"
+  STR_HFLAMERR: "Heavy Flamer Requisition"
+  STR_HFLAMER_FUEL_MANUFACTURING: "(Heavy Flamer Fuel pre-req.)"
+  STR_MASTER_CRAFTING: "High-tier Master Crafting"
+  STR_MASTER_CRAFTING_AMMO: "Mid-tier Master Crafting"
 # #03-MULT.ITEMSCATEGORIES # ITEM CATEGORIES
   STR_CAT_AUXILIARY: "Auxiliary"
   STR_CAT_BOLTER: "Bolt Weapons"
@@ -1133,6 +1144,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CAT_RECRUIT_HERETIC: "Recruit Heretics"
   STR_CAT_RECRUIT_HSIS: "Recruit Heretic Sisters"
   STR_CAT_RECRUIT_CSM: "Recruit Chaos Marines"
+
+#*** MANUFACTURING ************************************************************
+  STR_HWP_AMMUNITION: "HWP Ammunition"
 # #03-MULT.ITEMS
   #*** Bounties ***
   STR_REQUISITION_BOUNTY_50K: "Requisition Bounty: $50,000"
@@ -1141,6 +1155,75 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_REQUISITION_BOUNTY_500K: "Requisition Bounty: $500,000"
   STR_REQUISITION_BOUNTY_1M: "Requisition Bounty: $1,000,000"
   STR_PURITY_SEAL: "Purity Seal"
+##### EQUIPMENT #####
+  STR_IMPULSOR_SHIELD: "Shield dome"
+  STR_MUNITORIUM: "Imperial Cache"
+  STR_GATEDOWN: "Chaos Gate"
+  STR_GATEUP: "Chaos Gate"
+  STR_GATE: "Chaos Gate"
+  STR_FIELD_EQUIPMENT: "Field Interface Equipment"
+  FIELD_ARMOR: "Field Interface Table"
+  STR_FIELD_REPAIR: "Repair Field Interface"
+  STR_SHIELD_EQUIPMENT: "Shield Equipment"
+  SHIELD_ARMOR: "Shield Hull"
+  AUX_SENTINEL_STOMP: "Walker Foot"
+  AUX_CENTURION_GRAVGUN: "Grav-cannon"
+  AUX_CENT_ROCKET: "Missile Launcher"
+  AUX_SEDUCE: "Seduction"
+  AUX_AIRSTRIKE: "Airstrike"
+  AUX_PRIMARIS_OUTBOLTER: "Twin Heavy Bolters"
+  STR_SIGNAL_POSITION: "Call Strike"
+  STR_MFIST: "Power Fist"
+#ITEMS
+  STR_BLESS: "Emperor's Blessing"
+  STR_SHIELD_BLESS: "Shield Bless"
+  STR_HEALS: "Saint Hand"
+  STR_LAYHANDS: "Lay Hands"
+  STR_EVISCERATOR: "Eviscerator"
+  STR_EVISCERATOR_UFOPEDIA: "{NEWLINE} The Eviscerator is a massive version of the more common chainsword, capable of inflicting brutal wounds on the Emperor's foes and even shredding through hardened armor. The size of this weapon requires two-handed wielding by a strong warrior to be effective on the battlefield.{NEWLINE}{NEWLINE}Strength required: {ALT}35"
+  STR_SLASCAN: "Sentinel Lascannon"
+  AUX_TANK_CANNON: "Twin Heavy Bolters"
+  STR_HEAVY_PLASMA_MC: "Master Crafted Heavy Plasma"
+  STR_HEAVY_PLASMA_MCJ: "Master Crafted Heavy Plasma"
+  STR_CHAINSWORD_MC: "Master Crafted Chainsword"
+  STR_CHAINSWORD_MC_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon.{NEWLINE}{NEWLINE}Strength required: {ALT}25"
+  STR_CPUCORE: "CPU Core"
+  STR_FUELCORE: "Fuel Core"
+  STR_POWERCORE: "Power Core"
+  STR_COMBILAS: "Lascannon"
+  STR_STUN_ROD: "Shock Maul"
+  STR_STUN_ROD_UFOPEDIA: "{NEWLINE} A Shock Maul is a type of truncheon or club used by riot teams in the Adeptus Arbites. Upon contact it activates an electrical charge to magnify the force of the blow. Many have power settings with low power being used as a non-lethal stunning weapon."
+  STR_HAYWIRE_MINE: "Haywire Mine"
+  STR_HAYWIRE_MINE_UFOPEDIA: "{NEWLINE} A Haywire Mine is a powerful, heavy-duty Imperial explosive device that is often used to destroy or incapacitate enemy armoured vehicles."
+  #####TOMES####---------------------------------------------------
+  STR_SPELLS: "Spells"
+  STR_SPELLSR: "Chapter Teachings"
+  STR_MIND_PROBE: "Tome of the Vision"
+  STR_MIND_PROBE_UFOPEDIA: "{NEWLINE} Tome that allow a brother to read foes' characteristics"
+  STR_PATCHMORAL: "Tome of Morale"
+  STR_PATCHMORAL_UFOPEDIA: "{NEWLINE} Tome that restores other Brothers' morale. The casting Space Marine's bravery increases the effectiveness of the spell, inspiring the target into battle. Stun damage is a side effect of the spell."
+  STR_PATCHSPEED: "Tome of Speed"
+  STR_PATCHSPEED_UFOPEDIA: "{NEWLINE} Tome that reinvigorates other Brothers. The casting Space Marine's bravery increases the effectiveness of the spell, infuse the target with renewed vigor to act. Stun damage is a side effect of the spell."
+  STR_PATCHSMOKE: "Tome of Smoke"
+  STR_PATCHSMOKE_UFOPEDIA: "{NEWLINE} Tome that creates a smokescreen. The casting Space Marine's bravery increases the effectiveness of the spell, sewer confusion on the battlefield by shrouding it in smoke. Stun damage is a side effect of the spell."
+  STR_PSI_AMP: "Tome of the Mind"
+  STR_PSI_AMP_UFOPEDIA: "{NEWLINE} The Tome of the Mind allows a Brother Librarian to call forth the power of the Warp to manifest as spells to assist in battle. The marine may prepare a single spell from the available list before combat (assigned by the version of the Librarian armor chosen). {NEWLINE}{NEWLINE}Stun damage is a side effect of casting spells."
+  STR_CONFUSE_SPELL: "Confuse"
+  STR_LOCKDOWN_TOME: "Tome of the Mind (Lockdown)"
+  STR_LOCKDOWN_UFOPEDIA: "{NEWLINE} With the Lockdown spell, a Psyker weaves tendrils of the Warp around a target, holding it in place and preventing it from acting for a short time. As the spell wears off, the target becomes less encumbered."
+  STR_LOCKDOWN_SPELL: "Lockdown"
+  STR_MELEE_INSPIRE_TOME: "Tome of the Mind (Melee Inspire)"
+  STR_MELEE_INSPIRE_UFOPEDIA: "{NEWLINE} The Melee Inspire spell allows a Psyker to infuse their allies with holy fervor, quickening their strikes made in hand-to-hand combat. Inspired allies gain increased accuracy with their melee weapons and decreasing the chance for enemy melee attacks to hit them."
+  STR_MELEE_INSPIRE_SPELL: "Melee Inspire"
+  STR_SHIELD_TOME: "Tome of the Mind (Shield)"
+  STR_SHIELD_UFOPEDIA: "{NEWLINE} Focusing their will around an ally, a Psyker uses the Project Shield spell to protect them temporarily from incoming damage."
+  STR_SHIELD_SPELL: "Project Shield"
+  STR_SMITE_TOME: "Tome of the Mind (Smite)"
+  STR_SMITE_UFOPEDIA: "{NEWLINE} A Psyker may use the Smite spell to fire bolts of Warp energy as lightning from their fingertips, bypassing a target's armor to damage them with psychic energy."
+  STR_SMITE_SPELL: "Smite"
+  STR_STASIS_TOME: "Tome of the Mind (Stasis)"
+  STR_STASIS_UFOPEDIA: "{NEWLINE} Invoking the Stasis spell surrounds the Psyker's target with Warp energy, slowing time to a standstill temporarily. Units under Stasis cannot act but also cannot be damaged or affected in any way."
+  STR_STASIS_SPELL: "Stasis"
 # #03-MULT.ITEMS.Actions # BATTLE Actions
   STR_REPAIR: "Repair"
   STR_GIVEMORAL: "Restore Moral"
@@ -1150,6 +1233,14 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_RAM: "Run Over"
   STR_STOMP: "Stomp"
   STR_USE_MEDI_KIT: "Apply treatment"
+  STR_SHIELD_REPAIR: "Repair Shield"
+#AUXILIARY
+  AUX_RAM: "RAM"
+  AUX_REPAIR: "Servo-Arm"
+  STR_SLUG_SHOT: "Standard Shot"
+  STR_AP_SHOT: "AP Shot"
+  STR_INC_SHOT: "INC Shot"
+  STR_LAUNCH_SALVO: "Launch Salvo"
 # #03-MULT.EVENTS
 # #03-MULT.FACILITIES
 # MULT.FACILITIES.Services
@@ -1253,7 +1344,16 @@ en-US: #  yamllint disable-line rule:empty-values
 # Facilities.Unsorted
   STR_DW_QUARTERS_UFOPEDIA: "{NEWLINE} Each accommodation block provides for up to 10 personnel. The facility provides basic recreation, food and sleeping areas for each specific chapter."
   STR_ARMORY_ARBITES_UFOPEDIA: "{NEWLINE} This facility is designed to store blessed heavy armor. We are required to build this facility in order to produce High tier armor."
+# #03-MULT.CIVILIANS
+  STR_CIVILIAN_SACRIFICE_F0: "Civilian"
+  STR_CIVILIAN_SACRIFICE_M0: "Civilian"
+  STR_CIVILIAN_SACRIFICE_F1: "Civilian"
+  STR_CIVILIAN_SACRIFICE_M1: "Civilian"
+  STR_CULTIST_RITUALIST_SACRIFICES: "Cultist Ritualist"
+  STR_CULTIST_RITUALIST_SUMMONING: "Cultist Ritualist"
 # SM#              Space Marines
+  STR_GENERATOR_EQUIPMENT: "Generator"
+  STR_GENERATOR_CORPSE: "Generator Disposal Fee"
 # #03-SM.UM#             Ultramarines
 # MISSIONS UFOPEDIA
   STR_M_1MISSION: "Mission 1"
@@ -1305,6 +1405,86 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_JARMOR_CORPSE: "Sergeant Joan's Corpse"
 # SM.UM.Manufacturing
   STR_PROMOTE_JOAN: "Promote Joan"
+#*** TRANSFORMATIONS **********************************************************
+#PROMOTIONS
+  STR_JOAN_TO_SOLDIER: "Joan to Soldier" # Unused?
+  STR_PROMOTE_FALLEN_JOAN: "Revive Sergeant Joan" # Unused?
+
+  STR_PROMOTE_FALLEN_TERMINATOR: "Revive Fallen Terminator" # Unused?
+  STR_PROMOTE_FALLEN_TECH: "Revive Fallen Techmarine" # Unused?
+  STR_PROMOTE_FALLEN_CHAP: "Revive Fallen Chaplain" # Unused?
+  STR_PROMOTE_FALLEN_SARGENT: "Revive Fallen Sergeant" # Unused?
+  STR_PROMOTE_FALLEN_TSARGENT: "Revive Fallen Sergeant" # Unused?
+  STR_PROMOTE_FALLEN_CAPTAIN: "Revive Fallen Captain" # Unused?
+  STR_PROMOTE_FALLEN_LIB: "Revive Fallen Librarian" # Unused?
+  STR_DREAD_MELEE_WEAPON: "Dreadnought Fist"
+  STR_DREAD_MELEE_WEAPON_UFOPEDIA: "{NEWLINE} The Mark V Power Fist is the default close combat weapon used Dreadnoughts of both Imperial and Chaos affiliation. The weapon takes the form of a massive metal gauntlet and features four clamp-like fingers that can open and close."
+  DREAD_ARMOR_UC: "Assault Dreadnought Armor"
+  DREAD_ARMOR2_UC: "Dreadnought Armor (Plasma)"
+  DREAD_ARMOR3_UC: "Dreadnought Armor (Missile)"
+  DREAD_ARMOR4_UC: "Dreadnought Armor (Lascannon)"
+  DREAD_ARMOR5_UC: "Venerable Dreadnought Armor"
+  STR_DREAD_CORPSE: "Dreadnought Corpse"
+  AUX_HOVERTANK_LASER: "Twin-Linked Lascannons"
+  AUX_HOVERTANK_LAUNCHER: "Hellfire Missile Launcher"
+  AUX_DREAD_ASSC: "Assault Cannon"
+  AUX_DW_DREAD_ASSC: "Assault Cannon"
+  AUX_DREAD_FLAMER: "Flamer Fist"
+  AUX_DW_DREAD_FLAMER: "Flamer Fist"
+  STR_JOAN: "Sergeant Joan Juno"
+  STR_JOAN_MISSION: "Sergeant Joan Juno"
+  STR_HFLAMER: "Heavy Flamer"
+  STR_HFLAMER_UFOPEDIA: "{NEWLINE} A Heavy Flamer is a larger, more powerful version of the standard Flamer, capable of projecting hotter and denser flames. This means that Heavy Flamers possess better armor-piercing capabilities than standard Flamers.{NEWLINE}{NEWLINE}Recoil: {ALT}100"
+  STR_HFLAMER_CLIP: "Heavy Flamer Fuel"
+  STR_RIFLE_CLIP_MC: "Master Crafted Bolter Clip"
+  STR_PISTOL_CLIP_MC: "Master Crafted Boltpistol Clip"
+  STR_AC_MC_AMMO: "Master Crafted Heavy Bolter Ammo"
+  AUX_CROZIUS: "Crozius Arcanum"
+  STR_SMALL_LAUNCHER_TERRAN: "Graviton Gun"
+  STR_STUN_BOMB: "Graviton Gun Round"
+  STR_SMALL_LAUNCHER_UFOPEDIA: "{NEWLINE} The Grav-Gun, also known as a Graviton Gun, is a devastating weapon based on ancient and forgotten technology dating back to the time of the Dark Age of Technology. Manipulating the very nature of gravity itself, a Grav-Gun turns a target's mass against it, crushing it to pulp under its own weight."
+  STR_SMALL_LAUNCHER_TERRAN_UFOPEDIA: "{NEWLINE} The Grav-Gun, also known as a Graviton Gun, is a devastating weapon based on ancient and forgotten technology dating back to the time of the Dark Age of Technology. Manipulating the very nature of gravity itself, a Grav-Gun turns a target's mass against it, crushing it to pulp under its own weight."
+  STR_GRAVGUN_MC: "Master Crafted Grav-Gun"
+  STR_STUN_BOMB_UFOPEDIA: "{NEWLINE} Ammo used by graviton gun"
+  STR_LASCAN: "Lascannon"
+  STR_LASCAN_UFOPEDIA: "{NEWLINE} The Lascannon is the most formidable type of laser weapons, producing an energetic shot of coherent light capable of penetrating most armored vehicles. The Mark VII Mars Pattern is the variant most commonly seen in Space Marine Devastator squads.{NEWLINE}{NEWLINE}Recoil: {ALT}60"
+  STR_LASCAN_CLIP: "Lascannon Charge"
+  STR_MCPLASMA_RIFLE: "Master Crafted Plasma Rifle"
+  STR_MCPISTOL: "Master Crafted Bolter Pistol"
+  STR_MCRIFLE: "Master Crafted Bolter"
+  STR_MCPLASMA_PISTOL: "Master Crafted Plasma Pistol"
+  STR_MASTER_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon."
+  STR_MGRENADE: "Melta Grenade"
+  STR_HIGH_EXPLOSIVE: "Melta Bomb"
+  STR_MGRENADE_UFOPEDIA: "{NEWLINE} The Imperium's most powerful grenade is finally at our disposal, the melta grenade will bring destruction to our enemies."
+  STR_HIGH_EXPLOSIVE_UFOPEDIA: "{NEWLINE} The Melta Bomb is used by infantry in close combat, and is clamped directly onto vehicle hulls, or the surface of enemy bunkers, or even onto monstrous creatures such as the largest Tyranid bioforms."
+  AUX_SHIELD: "Storm Shield"
+  STR_ASSAULT_BOLTER: "Assault Bolter" #STR_AUTO_CANNON: "Heavy Bolter"
+  STR_ASSAULT_BOLTER_UFOPEDIA: "{NEWLINE} Essentially a hand-held pistol version of the conventional Heavy Bolter outfitted with a large box magazine and high-speed autoloader. Although short-ranged, its rate of fire and damage are considerable{NEWLINE}{NEWLINE}Recoil: {ALT}30"
+  STR_AUTO_CANNON: "Astartes Mk. IV Heavy Bolter" #STR_AUTO_CANNON: "Heavy Bolter"
+  STR_AUTO_CANNON_UFOPEDIA: "{NEWLINE} A Heavy Bolter is a powerful Bolt weapon that is used for anti-infantry and fire support roles. Unlike the Boltgun, it is relatively common in both Imperial Guard armies and Space Marine Chapters.{NEWLINE}{NEWLINE}Recoil: {ALT}60"
+  STR_LIBRARIAN_SPECIAL_WEAPON: "Librarian's Gauntlet"
+  STR_AC_AP_AMMO: "AP Case"
+  STR_AC_HE_AMMO: "HE Case"
+  STR_AC_I_AMMO: "I Case"
+  STR_CHAINSWORD: "Chainsword"
+  STR_POWER_SWORD: "Power Sword"
+ # STR_POWER_SWORD_SUP: "Master Crafted Power Sword"
+  STR_POWER_SWORD_MC: "Master Crafted Power Sword"
+  STR_HAMMER: "Thunder Hammer"
+  STR_HAMMER_MC: "Master Crafted Thunder Hammer"
+  STR_CLAWS: "Lightning Claws"
+  STR_CLAWS_UFOPEDIA: "{NEWLINE} A Terminator Sergeant's melee weapon, with damage increases based on by its user's strength and melee skill. {NEWLINE} Also ignores up to 30% of enemy armor."
+  STR_HAMMER_UFOPEDIA: "{NEWLINE} Thunder Hammers are primarily used by Space Marines clad in Terminator Armor. This large warhammer incorporates an energy field emitter within its head that activates only when the hammer strikes its target.{NEWLINE}{NEWLINE}Strength required: {ALT}120"
+  STR_HAMMER_MC_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon.{NEWLINE}{NEWLINE}Strength required: {ALT}120"
+  STR_CHAINSWORD_UFOPEDIA: "{NEWLINE} The Chainsword is the preferred close combat melee weapon of many of the military forces of the Imperium of Man. The Chainsword is essentially a sword with powered teeth that run along a single-edged blade like that of a chainsaw.{NEWLINE}{NEWLINE}Strength required: {ALT}25" # Most versions of the weapon make use of monomolecularly-edged or otherwise razor-sharp teeth.
+  STR_POWER_SWORD_UFOPEDIA: "{NEWLINE} A Power Sword is a Power Weapon that has been shaped into a sword of varying lengths and designs crafted from one of any number of different materials, though the most common is Adamantium. When its power cell is activated, the blade is sheathed in a lethal corona of disruptive energy.{NEWLINE}{NEWLINE}Strength required: {ALT}80"
+  STR_POWER_SWORD_MC_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon.{NEWLINE}{NEWLINE}Strength required: {ALT}70"
+  STR_POWERFIST: "Powerfist"
+  STR_POWERFIST_UFOPEDIA: "{NEWLINE} A Power Fist is essentially an over-sized, armored gauntlet that generates an energy field around it, one that is capable of violently disrupting any solid matter it touches.{NEWLINE}{NEWLINE}Strength required: {ALT}40"
+  STR_BANNER: "Chapter Banner"
+  STR_BANNER_UFOPEDIA: "{NEWLINE} Standards are ceremonial objects of the Space Marine Chapters, bearing the symbol of the Chapter and marked with sacred motifs and the battle honors gained in past wars. The bravest of banner bearers will revitalize their Brothers when calling a charge, increasing morale and inspiring greater action. Stun damage is a side effect of the push forward."
+
 # #03-SM.UM.PRIM #Primaris Strategy
 # SM.UM.PRIM.Troops
   STR_PRIMARISLV1: "Space Marine Primaris"
@@ -1312,12 +1492,44 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_PRIMARISLV3: "Space Marine Primaris"
   STR_PRIMARISLV4: "Space Marine Primaris"
   STR_PRIMARISLV5: "Space Marine Primaris"
+  STR_IMPULSOR_SHIELD_CW: "Shield Dome"
 # #03-SM.WOLF#           Space Wolf Strategy
 # #03-SM.BT#             Black Templars Strategy
 # #03-SOB.BR#            Bloody Rose Strategy
 # #03-SM.WB#             Word Bearers Strategy
 # CM#              Chamber Militant
   STR_INQOFF_UFOPEDIA: "{NEWLINE} The Inquisition acts as the secret police force of the Imperium, hunting down any and all of the myriad threats to the stability of the God-Emperor's realm, from the corruption caused by the forces of Chaos, Heretics, mutants and rebels, to assaults from vicious alien species like the Tyranids, Orks or Drukhari.. This facility allows the production of the Inquisitior Armor."
+# #03-SM.CHAOS
+##### DREADNOUGHT DREADNOUGHT #####
+  STR_CHAOS_DREAD_MELEE_WEAPON: "Chaos Dreadnought Fist"
+  STR_OBLITERATOR_MELEE_WEAPON: "Fused Fist"
+  STR_OBLITERATOR_WEAPON: "Fused Melta"
+  STR_FIXED_SONIC_CANON: "Sonic Canon"
+  STR_SONIC_CANON: "Sonic Blaster"
+  STR_SONIC_CANON_UFOPEDIA: "{NEWLINE} The Noise Marines are warriors whose senses are jaded and dulled by centuries of hedonistic excess. Only the most extreme sensations stir them, hence their use of Sonic Weapons. The louder and more discordant the noise, the more extreme the emotional reaction. These weapons use sonic waves to inflict deafeningly loud, psycho-sonically and pyrotechnically explosive blasts."
+  STR_CHAOS_CROZIUS: "Chaos Sorcerer's Staff"
+  STR_CHAOS_CROZIUS_UFOPEDIA: "{NEWLINE} The Sorcerer's Staff is a force weapon carried by Chaos Sorcerers. It is used to channel psychic energy and then unleash it in a burst greater than a single mind can control. {NEWLINE} Weapon Damage details {NEWLINE} To Moral: 40.0 {NEWLINE} To Health: 2.0"
+  STR_AXE: "Chaos Chain Axe"
+  STR_AXE_UFOPEDIA: "{NEWLINE} A Chainaxe is a brutal hand-to-hand chain weapon crafted in the form of a great one or two-handed axe which incorporates a powered chainsaw edge. The biting action of the monomolecular teeth means these weapons can hack through both flesh and armor with ease. It is the favorite weapon of the Khorn Berserkers.{NEWLINE}{NEWLINE}Strength required: {ALT}25"
+  STR_CPOWER_SWORD: "Chaos Power Sword"
+  STR_CPOWER_SWORD_UFOPEDIA: "{NEWLINE} Chaos Power Sword{NEWLINE}{NEWLINE}Strength required: {ALT}80"
+  STR_CPOWER_AXE: "Chaos Power Axe"
+  STR_CPOWER_AXE_UFOPEDIA: "{NEWLINE} Chaos Power Axe{NEWLINE}{NEWLINE}Strength required: {ALT}60"
+  STR_CPOWER_DAGGER: "Chaos Power Dagger"
+  STR_CPOWER_DAGGER_UFOPEDIA: "{NEWLINE} Chaos Power Dagger{NEWLINE}{NEWLINE}Strength required: {ALT}60"
+  STR_ASSCTZ: "Soulreaper Cannon"
+  STR_ASSCTZ_UFOPEDIA: "{NEWLINE} Soulreaper Cannon{NEWLINE}{NEWLINE}Recoil: {ALT}100"
+  STR_BOLTERN: Plague Bolter
+  STR_BOLTERR: "Rubric Inferno Bolter"
+  STR_RIFLE_CLIP_R: "Rubric Bolter Clip"
+  STR_BOLTERR_UFOPEDIA: "{NEWLINE} Inferno Bolter"
+  STR_BOLTERN_UFOPEDIA: "{NEWLINE} Plague Bolter "
+  STR_RIFLE_CLIP_N: "Plague Bolter Clip"
+  STR_BLIGHT_ROCKET: "Blight Rocket"
+  STR_SMALL_LAUNCHER: "Chaos Graviton Gun"
+  STR_CPOWER_SWORD_CODEX: "Power swords corrupted by Chaos retain their refined forms, but their energy fields become unstable and predatory. When activated, the energy field generated is jagged, disruptive and filled with chaos corruptive energies, resulting in cut that far resemble the clean precision of uncorrupted power swords."
+  STR_CPOWER_DAGGER_CODEX: "Power daggers touched by Chaos are compact instruments of silent slaughter, their energized blades flickering with chaos energy and murderous intent. Designed for close work, they excel at slipping through armour and flesh with lethal efficiency. Favoured by traitor Astartes special operatives, Chaos assassins, and dark preachers."
+  STR_CPOWER_AXE_CODEX: "Power axes tainted by Chaos emphasize raw brutality over finesse, their heavy blades surrounded by a crackling, unstable energy field. Each swing delivers devastating force, cleaving through armour with savage efficiency. Less precise than a power sword but far more punishing, these weapons are favoured by those who value overwhelming strength and destruction above all else."
 # #03-CM.GK#             Grey Knights
 # CM.GK.Troops
   STR_FALLEN_GK: "Revived Unit"
@@ -1336,8 +1548,35 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_RADICAL_HIGHTIER: "Inquisition High-tier Requisitions"
 #GK Unsorted
 
+  STR_DREAD_GK_ARMOR_UC: "Assault Dreadnought Armor ¬"
+  STR_DREAD1_ARMOR: "Dreadnought Armor"
+  STR_DREAD2_ARMOR: "Dreadnought Armor (Plasma)"
+  STR_DREAD3_ARMOR: "Dreadnought Armor (Missile)"
+  STR_DREAD4_ARMOR: "Dreadnought Armor (Lascannon)"
+  STR_DREAD5_ARMOR: "Venerable Dreadnought Armor"
+  STR_GK_SPAWNER: "Inquisition Support Beacon"
+  STR_ISB: "I. S. B."
+  STR_ISB_UFOPEDIA: "{NEWLINE} The Inquisition Support Beacon provides data for a teleport of one Grey Knight. For it's production it requires a presence of an orbital communications facility and an inquisition office."
+
+  STR_GRAV_AUTOC: "Boltstorm Gauntlet"
+  STR_GRAV_BOLTER: "Boltstorm Gauntlet"
+  STR_GRAV_FLAMER: "Flamestorm Gauntlet"
+# #03-CM.DW
+  STR_DW_DREAD_MELEE: "Dreadnought Fist"
+  STR_DREAD_DW_ARMOR_UC: "Assault Dreadnought Armor ¤"
+  STR_DREAD_DW_ARMOR2_UC: "Dreadnought Armor ¤ (Plasma)"
+  STR_DREAD_DW_ARMOR3_UC: "Dreadnought Armor ¤ (Missile)"
+  STR_DREAD_DW_ARMOR4_UC: "Dreadnought Armor ¤ (Lascannon)"
+  STR_DREAD_DW_ARMOR5_UC: "Venerable Dreadnought Armor ¬"
+  AUX_DW_DREAD_PLASMA: "Plasma Canon"
+  AUX_DW_DREAD_LASER: "Twin-Linked Lascannons"
+  AUX_DW_DREAD_LAUNCHER: "Hellfire Missile Launcher"
+  STR_GENESEED: "Geneseed Sample"
+  STR_LASCAN_DW: "Artifex Lascannon"
+  STR_AUTO_CANNON_DW: "Artifex Mk. IV Heavy Bolter" #STR_AUTO_CANNON: "Heavy Bolter"
 # #03-CM.RAD#            The Radical Road
 
+  STR_POWER_SWORD_CM: "Power Sword"
 # #03-CM.OA#             Officio Assassinorum
 # #03-CM.LAW#            The Imperial Law Strategy
 # CM.LAW.Troops
@@ -1346,7 +1585,18 @@ en-US: #  yamllint disable-line rule:empty-values
 # CM.LAW.Facilities
   STR_ARMORY_ARBITES: "Precint Armory"
 # XENOS
+  AUX_ARBITES_OUTBOLTER: "Double Bolters"
+  STR_WEBBER: "Imperial Webber"
+  STR_WEBBER_AMMO: "Webber Dark Mass"
+  STR_WEBBER_UFOPEDIA: "{NEWLINE} A Webber is an exotic, non-lethal weapon used to immobolise a target. It fires masses of filaments, which expand in the air to form a web of sticky, near-unbreakable material. Targets are quickly entangled in a painful embrace; if they attempt to struggle, the filaments constrict even more, further entrapping them."
+  STR_MCSHOTGUNPD: "Master Crafted Lawbringer"
+  STR_SHOTGUNPD: "Lawbringer"
+  AUX_SHIELDPD: "Riot Shield"
 # #03-CULT#           Chaos Cultists
+  STR_LASER_PISTOLC: "Chaos Laspistol"
+  STR_LASER_RIFLEC: "Chaos Lasgun"
+  STR_FLAMETHROWER_CHAOS: "Chaos Flamer"
+  STR_SHOTGUN_CHAOS: "Chaos Shotgun"
 # #03-ORKS#
 # ORKS.Research #ork specific research
   STR_ORK_LEADER_INTERROGATED: "Ork Boss Interrogation"
@@ -1588,11 +1838,35 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_MGRENADE_UFOPEDIA: "{NEWLINE} An Eldar Variant of the melta bomb, but not belonging to the imperial melta design tree. Typical examples have dimensions analogous to that of a grenade, but may also be larger. When activated, they explode with intense thermal energy, 'melting' the target away."
 # #03-SOB#             Adeptas
 # IG#              Imperial Guard
+  AUX_ADEPTAS_MEDI_KIT: "Hospitaller's Gear"
 # #03-IG.GUARD#          Guardsman Strategy
 # IG.GUARD.Common.Troops
   STR_PENITENT: "Penitent"
   STR_GUARDSM: "Guardsman"
 
+  STR_LASER_PISTOLG: "Guard Laspistol"
+  STR_LASER_RIFLEG: "Guard Lasgun"
+ # STR_HELLPISTOL: "Hellpistol"
+  STR_LASPISTOL_CLIP_HOTSHOT: "Hotshot Laspistol Cell"
+  STR_MCLASER_RIFLE: "Master Crafted Lasgun"
+  STR_MCSHOTGUN: "Master Crafted Shotgun"
+  STR_SHOTGUN: "Shotgun"
+  STR_GRENADE: "Frag Grenade"
+  STR_GRENADE_UFOPEDIA: "{NEWLINE} Frag Grenades are very simple in design and effect, consisting of a central explosive core with a fuse inserted, wrapped by iron or ceramic bands, and further covered by a sheathing. Upon detonation, irregular chunks of the casing and bands are propelled at high velocity into the nearby surrounding area."
+  STR_KRAK_GRENADE: "Krak Grenade"
+  STR_KRAK_GRENADE_UFOPEDIA: "{NEWLINE} Krak Grenade detonations create explosively formed penetrators capable of punching holes in armored targets such as heavy infantry, vehicles, or bunkers. The self-forging fragments launched by the grenade's explosion have a limited effective blast radius and successful use requires an accurate throwing arm."
+  STR_SHOTGUN_SHELLS: "Shotgun Shells"
+  STR_SHOTGUN_SHELLS_AP: "AP Shotgun Shells"
+  STR_SHOTGUN_SHELLS_INC: "Incendiary Shotgun Shells"
+  STR_SHOTGUN_SHELLS_MC: "Mastercrafted Shotgun Shells"
+ # STR_SHOTGUN_UFOPEDIA: "{NEWLINE} The Shotgun is an ancient Imperial weapon, firing solid slugs that burst into submunitions to spread out over a wider area. However the spread of the projectiles limits its effectiveness against tougher opponents at long ranges."
+  AUX_MEDI_KIT: "Narthecium"
+  STR_KNIF: "Combat Knife"
+  STR_KNIF_UFOPEDIA: "{NEWLINE} A Combat Knife is the ubiquitous back-up melee weapon for warriors all across the Imperium of Man, be they lowly hive city scum or the elite soldiers of a Planetary Governor."
+  STR_FLAMETHROWER: "Flamer"
+  STR_FLAMETHROWER_UFOPEDIA: "{NEWLINE} Flamers, also known as Flame Guns,  come in a wide variety of designs and patterns, but all are ideal for flushing out enemies in cover and putting groups of foes to the torch with projected flame."
+  STR_FLAMETHROWER_CLIP: "Flamer Chemical Fuel"
+  STR_FLAMETHROWER_PROMETHIUM_CLIP: "Flamer Promethium Fuel"
 # #03-IG.SCION#          Scion Strategy
 # #03-IG.ABHUMAN#        Abhuman Strategy
 # #03-IG.STEEL#          Steel Legion Strategy
@@ -2172,6 +2446,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TRIPLE_GAUSS_CANNON: "Gauss Cannon"
   STR_GAUSS_CANNON: "Gauss Cannon"
   AUX_DISPERSIONSHIELD: "Dispersion Shield"
+# #03-TAU
 #########################
 # 04. MAP AND ASSETS # everything map related
 #########################
@@ -2232,331 +2507,29 @@ en-US: #  yamllint disable-line rule:empty-values
 # #05-Uncategorized
   STR_SOLDIER_JOAN: "Characters"
 
-  STR_CIVILIAN_SACRIFICE_F0: "Civilian"
-  STR_CIVILIAN_SACRIFICE_M0: "Civilian"
-  STR_CIVILIAN_SACRIFICE_F1: "Civilian"
-  STR_CIVILIAN_SACRIFICE_M1: "Civilian"
-  STR_CULTIST_RITUALIST_SACRIFICES: "Cultist Ritualist"
-  STR_CULTIST_RITUALIST_SUMMONING: "Cultist Ritualist"
-
 # Graphs
   STR_UFO_COMPONENT: "Component"
-  STR_XCOM_OPERATIVES_RETIRED_THROUGH_INJURY: "SOLDIERS RETIRED THROUGH INJURY"
-
-  STR_MANAGE_CONTAINMENT: "Manage Prison Cells"
-  STR_NO_ALIEN_CONTAINMENT_FOR_TRANSFER: "NO PRISON CELLS FOR TRANSFER!{SMALLLINE}Live enemies need a prison facility in order to be contained."
-  STR_ALIEN_DIES_NO_ALIEN_CONTAINMENT_FACILITY: "Captured enemy executed as there is no prison facility"
-  STR_CONTAINMENT_EXCEEDED: "PRISON CELL LIMITS EXCEEDED!{SMALLLINE}Insufficient prison space at {0}. You must remove excess captives from from the prison."
-
-#*** MANUFACTURING ************************************************************
-  STR_HWP_AMMUNITION: "HWP Ammunition"
-
-#*** TRANSFORMATIONS **********************************************************
-#PROMOTIONS
-  STR_JOAN_TO_SOLDIER: "Joan to Soldier" # Unused?
-  STR_PROMOTE_FALLEN_JOAN: "Revive Sergeant Joan" # Unused?
-
-  STR_PROMOTE_FALLEN_TERMINATOR: "Revive Fallen Terminator" # Unused?
-  STR_PROMOTE_FALLEN_TECH: "Revive Fallen Techmarine" # Unused?
-  STR_PROMOTE_FALLEN_CHAP: "Revive Fallen Chaplain" # Unused?
-  STR_PROMOTE_FALLEN_SARGENT: "Revive Fallen Sergeant" # Unused?
-  STR_PROMOTE_FALLEN_TSARGENT: "Revive Fallen Sergeant" # Unused?
-  STR_PROMOTE_FALLEN_CAPTAIN: "Revive Fallen Captain" # Unused?
-  STR_PROMOTE_FALLEN_LIB: "Revive Fallen Librarian" # Unused?
-
-##### DREADNOUGHT DREADNOUGHT #####
-  STR_CHAOS_DREAD_MELEE_WEAPON: "Chaos Dreadnought Fist"
-  STR_DREAD_MELEE_WEAPON: "Dreadnought Fist"
-  STR_DW_DREAD_MELEE: "Dreadnought Fist"
-  STR_DREAD_MELEE_WEAPON_UFOPEDIA: "{NEWLINE} The Mark V Power Fist is the default close combat weapon used Dreadnoughts of both Imperial and Chaos affiliation. The weapon takes the form of a massive metal gauntlet and features four clamp-like fingers that can open and close."
   STR_DREAD_R: "Dreadnought Cyborganic Sarcophagus"
   STR_DREAD_R_GK: "Dreadnough Cyborganic Sarcophagus"
-  DREAD_ARMOR_UC: "Assault Dreadnought Armor"
-  DREAD_ARMOR2_UC: "Dreadnought Armor (Plasma)"
-  DREAD_ARMOR3_UC: "Dreadnought Armor (Missile)"
-  DREAD_ARMOR4_UC: "Dreadnought Armor (Lascannon)"
-  DREAD_ARMOR5_UC: "Venerable Dreadnought Armor"
-  STR_DREAD_GK_ARMOR_UC: "Assault Dreadnought Armor ¬"
-  STR_DREAD1_ARMOR: "Dreadnought Armor"
-  STR_DREAD2_ARMOR: "Dreadnought Armor (Plasma)"
-  STR_DREAD3_ARMOR: "Dreadnought Armor (Missile)"
-  STR_DREAD4_ARMOR: "Dreadnought Armor (Lascannon)"
-  STR_DREAD5_ARMOR: "Venerable Dreadnought Armor"
-  STR_DREAD_DW_ARMOR_UC: "Assault Dreadnought Armor ¤"
-  STR_DREAD_DW_ARMOR2_UC: "Dreadnought Armor ¤ (Plasma)"
-  STR_DREAD_DW_ARMOR3_UC: "Dreadnought Armor ¤ (Missile)"
-  STR_DREAD_DW_ARMOR4_UC: "Dreadnought Armor ¤ (Lascannon)"
-  STR_DREAD_DW_ARMOR5_UC: "Venerable Dreadnought Armor ¬"
   STR_HOVERTANK_PLASMA: "Castraferrum Dreadnought" #WHP
   STR_HOVERTANK_LASER: "Dreadnought" #WHP
   STR_HOVERTANK_LAUNCHER: "Hellfire Dreadnought" #WHP
-  STR_DREAD_CORPSE: "Dreadnought Corpse"
-
-##### EQUIPMENT #####
-  STR_IMPULSOR_SHIELD: "Shield dome"
-  STR_GENERATOR_EQUIPMENT: "Generator"
-  STR_GENERATOR_CORPSE: "Generator Disposal Fee"
-  STR_MUNITORIUM: "Imperial Cache"
-  STR_GK_SPAWNER: "Inquisition Support Beacon"
-  STR_ISB: "I. S. B."
-  STR_ISB_UFOPEDIA: "{NEWLINE} The Inquisition Support Beacon provides data for a teleport of one Grey Knight. For it's production it requires a presence of an orbital communications facility and an inquisition office."
-  STR_GATEDOWN: "Chaos Gate"
-  STR_GATEUP: "Chaos Gate"
-  STR_GATE: "Chaos Gate"
-  STR_BASE_EQUIPMENT: "Base Equipment"
-  STR_RADAR_EQUIPMENT: "Radar Equipment"
-  RADAR_ARMOR: "Radar Hull"
-  STR_RADAR_REPAIR: "Repair Radar"
-  STR_FIELD_EQUIPMENT: "Field Interface Equipment"
-  FIELD_ARMOR: "Field Interface Table"
-  STR_FIELD_REPAIR: "Repair Field Interface"
-  STR_SHIELD_EQUIPMENT: "Shield Equipment"
-  SHIELD_ARMOR: "Shield Hull"
-  STR_SHIELD_REPAIR: "Repair Shield"
-#AUXILIARY
-  AUX_RAM: "RAM"
-  AUX_SENTINEL_STOMP: "Walker Foot"
-  AUX_CENTURION_GRAVGUN: "Grav-cannon"
-  AUX_CENT_ROCKET: "Missile Launcher"
-  AUX_REPAIR: "Servo-Arm"
   AUX_HOVERTANK_PLASMA: "Plasma Canon"
-  AUX_DW_DREAD_PLASMA: "Plasma Canon"
-  AUX_HOVERTANK_LASER: "Twin-Linked Lascannons"
-  AUX_DW_DREAD_LASER: "Twin-Linked Lascannons"
-  AUX_HOVERTANK_LAUNCHER: "Hellfire Missile Launcher"
-  AUX_DW_DREAD_LAUNCHER: "Hellfire Missile Launcher"
-  AUX_DREAD_ASSC: "Assault Cannon"
-  AUX_DW_DREAD_ASSC: "Assault Cannon"
-  AUX_DREAD_FLAMER: "Flamer Fist"
-  AUX_DW_DREAD_FLAMER: "Flamer Fist"
   AUX_PROBE: "Analyzer"
   AUX_ADEPTAS_PROBE: "Analyzer"
-  AUX_SEDUCE: "Seduction"
-  AUX_AIRSTRIKE: "Airstrike"
-  AUX_PRIMARIS_OUTBOLTER: "Twin Heavy Bolters"
-  AUX_ARBITES_OUTBOLTER: "Double Bolters"
-  STR_SIGNAL_POSITION: "Call Strike"
-  STR_MFIST: "Power Fist"
-#ITEMS
-  STR_BLESS: "Emperor's Blessing"
-  STR_SHIELD_BLESS: "Shield Bless"
-  STR_HEALS: "Saint Hand"
-  STR_LAYHANDS: "Lay Hands"
-  STR_EVISCERATOR: "Eviscerator"
-  STR_EVISCERATOR_UFOPEDIA: "{NEWLINE} The Eviscerator is a massive version of the more common chainsword, capable of inflicting brutal wounds on the Emperor's foes and even shredding through hardened armor. The size of this weapon requires two-handed wielding by a strong warrior to be effective on the battlefield.{NEWLINE}{NEWLINE}Strength required: {ALT}35"
-  STR_MELTABOMB: "Melta Bomb Requisition"
-  STR_SMOKE: "Smoke Grenade Requisition"
-  STR_SLASCAN: "Sentinel Lascannon"
-  AUX_TANK_CANNON: "Twin Heavy Bolters"
-  STR_JOAN: "Sergeant Joan Juno"
-  STR_JOAN_MISSION: "Sergeant Joan Juno"
-  STR_HEAVY_PLASMA_MC: "Master Crafted Heavy Plasma"
-  STR_HEAVY_PLASMA_MCJ: "Master Crafted Heavy Plasma"
-  STR_CHAINSWORD_MC: "Master Crafted Chainsword"
-  STR_CHAINSWORD_MC_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon.{NEWLINE}{NEWLINE}Strength required: {ALT}25"
   STR_ALLIED: "Allied Unit"
   STR_RELICCASE: "Imperial Relic Case"
-  STR_CPUCORE: "CPU Core"
-  STR_FUELCORE: "Fuel Core"
-  STR_POWERCORE: "Power Core"
-  STR_GENESEED: "Geneseed Sample"
   STR_MAP1: "DATAMAP PART ONE"
   STR_MAP2: "DATAMAP PART TWO"
   STR_MAP3: "DATAMAP PART THREE"
   STR_DISTRESSDATA: "DISTRESS DATA"
   STR_TATICALTRAININFO: "Tactical Training Data"
   STR_RELIC: "Imperial Relic"
-  STR_LASER_PISTOLC: "Chaos Laspistol"
-  STR_LASER_PISTOLG: "Guard Laspistol"
-  STR_LASER_RIFLEC: "Chaos Lasgun"
-  STR_LASER_RIFLEG: "Guard Lasgun"
-  STR_OBLITERATOR_MELEE_WEAPON: "Fused Fist"
-  STR_OBLITERATOR_WEAPON: "Fused Melta"
-  STR_COMBILAS: "Lascannon"
-  STR_FIXED_SONIC_CANON: "Sonic Canon"
   STR_ENABLE_WEAPON: "Weapon Module"
   STR_DISABLEMODULE: "Disable Weapon Module"
   STR_SUPORTF: "Missile Command"
-  STR_SONIC_CANON: "Sonic Blaster"
-  STR_SONIC_CANON_UFOPEDIA: "{NEWLINE} The Noise Marines are warriors whose senses are jaded and dulled by centuries of hedonistic excess. Only the most extreme sensations stir them, hence their use of Sonic Weapons. The louder and more discordant the noise, the more extreme the emotional reaction. These weapons use sonic waves to inflict deafeningly loud, psycho-sonically and pyrotechnically explosive blasts."
-  STR_CHAOS_CROZIUS: "Chaos Sorcerer's Staff"
-  STR_CHAOS_CROZIUS_UFOPEDIA: "{NEWLINE} The Sorcerer's Staff is a force weapon carried by Chaos Sorcerers. It is used to channel psychic energy and then unleash it in a burst greater than a single mind can control. {NEWLINE} Weapon Damage details {NEWLINE} To Moral: 40.0 {NEWLINE} To Health: 2.0"
-  STR_AXE: "Chaos Chain Axe"
-  STR_AXE_UFOPEDIA: "{NEWLINE} A Chainaxe is a brutal hand-to-hand chain weapon crafted in the form of a great one or two-handed axe which incorporates a powered chainsaw edge. The biting action of the monomolecular teeth means these weapons can hack through both flesh and armor with ease. It is the favorite weapon of the Khorn Berserkers.{NEWLINE}{NEWLINE}Strength required: {ALT}25"
-  STR_CPOWER_SWORD: "Chaos Power Sword"
-  STR_CPOWER_SWORD_UFOPEDIA: "{NEWLINE} Chaos Power Sword{NEWLINE}{NEWLINE}Strength required: {ALT}80"
-  STR_CPOWER_AXE: "Chaos Power Axe"
-  STR_CPOWER_AXE_UFOPEDIA: "{NEWLINE} Chaos Power Axe{NEWLINE}{NEWLINE}Strength required: {ALT}60"
-  STR_CPOWER_DAGGER: "Chaos Power Dagger"
-  STR_CPOWER_DAGGER_UFOPEDIA: "{NEWLINE} Chaos Power Dagger{NEWLINE}{NEWLINE}Strength required: {ALT}60"
-  STR_ASSCTZ: "Soulreaper Cannon"
-  STR_ASSCTZ_UFOPEDIA: "{NEWLINE} Soulreaper Cannon{NEWLINE}{NEWLINE}Recoil: {ALT}100"
-  STR_FLAMETHROWER_CHAOS: "Chaos Flamer"
-  STR_BOLTERN: Plague Bolter
-  STR_BOLTERR: "Rubric Inferno Bolter"
-  STR_RIFLE_CLIP_R: "Rubric Bolter Clip"
-  STR_BOLTERR_UFOPEDIA: "{NEWLINE} Inferno Bolter"
-  STR_BOLTERN_UFOPEDIA: "{NEWLINE} Plague Bolter "
-  STR_RIFLE_CLIP_N: "Plague Bolter Clip"
-  STR_BLIGHT_ROCKET: "Blight Rocket"
-  STR_HFLAMERR: "Heavy Flamer Requisition"
-  STR_HFLAMER_FUEL_MANUFACTURING: "(Heavy Flamer Fuel pre-req.)"
-  STR_HFLAMER: "Heavy Flamer"
-  STR_HFLAMER_UFOPEDIA: "{NEWLINE} A Heavy Flamer is a larger, more powerful version of the standard Flamer, capable of projecting hotter and denser flames. This means that Heavy Flamers possess better armor-piercing capabilities than standard Flamers.{NEWLINE}{NEWLINE}Recoil: {ALT}100"
-  STR_HFLAMER_CLIP: "Heavy Flamer Fuel"
-  STR_RIFLE_CLIP_MC: "Master Crafted Bolter Clip"
-  STR_PISTOL_CLIP_MC: "Master Crafted Boltpistol Clip"
-  STR_AC_MC_AMMO: "Master Crafted Heavy Bolter Ammo"
-  AUX_CROZIUS: "Crozius Arcanum"
-  STR_STUN_ROD: "Shock Maul"
-  STR_STUN_ROD_UFOPEDIA: "{NEWLINE} A Shock Maul is a type of truncheon or club used by riot teams in the Adeptus Arbites. Upon contact it activates an electrical charge to magnify the force of the blow. Many have power settings with low power being used as a non-lethal stunning weapon."
-  STR_SMALL_LAUNCHER: "Chaos Graviton Gun"
-  STR_SMALL_LAUNCHER_TERRAN: "Graviton Gun"
-  STR_WEBBER: "Imperial Webber"
-  STR_WEBBER_AMMO: "Webber Dark Mass"
-  STR_WEBBER_UFOPEDIA: "{NEWLINE} A Webber is an exotic, non-lethal weapon used to immobolise a target. It fires masses of filaments, which expand in the air to form a web of sticky, near-unbreakable material. Targets are quickly entangled in a painful embrace; if they attempt to struggle, the filaments constrict even more, further entrapping them."
-  STR_STUN_BOMB: "Graviton Gun Round"
-  STR_SMALL_LAUNCHER_UFOPEDIA: "{NEWLINE} The Grav-Gun, also known as a Graviton Gun, is a devastating weapon based on ancient and forgotten technology dating back to the time of the Dark Age of Technology. Manipulating the very nature of gravity itself, a Grav-Gun turns a target's mass against it, crushing it to pulp under its own weight."
-  STR_SMALL_LAUNCHER_TERRAN_UFOPEDIA: "{NEWLINE} The Grav-Gun, also known as a Graviton Gun, is a devastating weapon based on ancient and forgotten technology dating back to the time of the Dark Age of Technology. Manipulating the very nature of gravity itself, a Grav-Gun turns a target's mass against it, crushing it to pulp under its own weight."
-  STR_GRAVGUN_MC: "Master Crafted Grav-Gun"
-  STR_STUN_BOMB_UFOPEDIA: "{NEWLINE} Ammo used by graviton gun"
-  STR_LASCAN: "Lascannon"
-  STR_LASCAN_DW: "Artifex Lascannon"
-  STR_LASCAN_UFOPEDIA: "{NEWLINE} The Lascannon is the most formidable type of laser weapons, producing an energetic shot of coherent light capable of penetrating most armored vehicles. The Mark VII Mars Pattern is the variant most commonly seen in Space Marine Devastator squads.{NEWLINE}{NEWLINE}Recoil: {ALT}60"
-  STR_LASCAN_CLIP: "Lascannon Charge"
-  STR_MASTER_CRAFTING: "High-tier Master Crafting"
-  STR_MASTER_CRAFTING_AMMO: "Mid-tier Master Crafting"
- # STR_HELLPISTOL: "Hellpistol"
-  STR_LASPISTOL_CLIP_HOTSHOT: "Hotshot Laspistol Cell"
-  STR_MCLASER_RIFLE: "Master Crafted Lasgun"
-  STR_MCPLASMA_RIFLE: "Master Crafted Plasma Rifle"
-  STR_MCPISTOL: "Master Crafted Bolter Pistol"
-  STR_MCRIFLE: "Master Crafted Bolter"
-  STR_MCSHOTGUN: "Master Crafted Shotgun"
-  STR_MCSHOTGUNPD: "Master Crafted Lawbringer"
-  STR_MCPLASMA_PISTOL: "Master Crafted Plasma Pistol"
-  STR_MASTER_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon."
-  STR_MGRENADE: "Melta Grenade"
-  STR_HIGH_EXPLOSIVE: "Melta Bomb"
-  STR_SHOTGUN: "Shotgun"
-  STR_SHOTGUNPD: "Lawbringer"
-  STR_SHOTGUN_CHAOS: "Chaos Shotgun"
-  STR_GRENADE: "Frag Grenade"
-  STR_GRENADE_UFOPEDIA: "{NEWLINE} Frag Grenades are very simple in design and effect, consisting of a central explosive core with a fuse inserted, wrapped by iron or ceramic bands, and further covered by a sheathing. Upon detonation, irregular chunks of the casing and bands are propelled at high velocity into the nearby surrounding area."
-  STR_KRAK_GRENADE: "Krak Grenade"
-  STR_KRAK_GRENADE_UFOPEDIA: "{NEWLINE} Krak Grenade detonations create explosively formed penetrators capable of punching holes in armored targets such as heavy infantry, vehicles, or bunkers. The self-forging fragments launched by the grenade's explosion have a limited effective blast radius and successful use requires an accurate throwing arm."
-  STR_SHOTGUN_SHELLS: "Shotgun Shells"
-  STR_SHOTGUN_SHELLS_AP: "AP Shotgun Shells"
-  STR_SHOTGUN_SHELLS_INC: "Incendiary Shotgun Shells"
-  STR_SHOTGUN_SHELLS_MC: "Mastercrafted Shotgun Shells"
-  STR_SLUG_SHOT: "Standard Shot"
-  STR_AP_SHOT: "AP Shot"
-  STR_INC_SHOT: "INC Shot"
-
-  STR_GRAV_AUTOC: "Boltstorm Gauntlet"
-  STR_GRAV_BOLTER: "Boltstorm Gauntlet"
-  STR_GRAV_FLAMER: "Flamestorm Gauntlet"
-  STR_MGRENADE_UFOPEDIA: "{NEWLINE} The Imperium's most powerful grenade is finally at our disposal, the melta grenade will bring destruction to our enemies."
-  STR_HIGH_EXPLOSIVE_UFOPEDIA: "{NEWLINE} The Melta Bomb is used by infantry in close combat, and is clamped directly onto vehicle hulls, or the surface of enemy bunkers, or even onto monstrous creatures such as the largest Tyranid bioforms."
- # STR_SHOTGUN_UFOPEDIA: "{NEWLINE} The Shotgun is an ancient Imperial weapon, firing solid slugs that burst into submunitions to spread out over a wider area. However the spread of the projectiles limits its effectiveness against tougher opponents at long ranges."
-  AUX_MEDI_KIT: "Narthecium"
-  AUX_ADEPTAS_MEDI_KIT: "Hospitaller's Gear"
-  AUX_SHIELD: "Storm Shield"
-  AUX_SHIELDPD: "Riot Shield"
-  STR_ASSAULT_BOLTER: "Assault Bolter" #STR_AUTO_CANNON: "Heavy Bolter"
-  STR_ASSAULT_BOLTER_UFOPEDIA: "{NEWLINE} Essentially a hand-held pistol version of the conventional Heavy Bolter outfitted with a large box magazine and high-speed autoloader. Although short-ranged, its rate of fire and damage are considerable{NEWLINE}{NEWLINE}Recoil: {ALT}30"
-  STR_AUTO_CANNON: "Astartes Mk. IV Heavy Bolter" #STR_AUTO_CANNON: "Heavy Bolter"
-  STR_AUTO_CANNON_DW: "Artifex Mk. IV Heavy Bolter" #STR_AUTO_CANNON: "Heavy Bolter"
-  STR_AUTO_CANNON_UFOPEDIA: "{NEWLINE} A Heavy Bolter is a powerful Bolt weapon that is used for anti-infantry and fire support roles. Unlike the Boltgun, it is relatively common in both Imperial Guard armies and Space Marine Chapters.{NEWLINE}{NEWLINE}Recoil: {ALT}60"
-  STR_HAYWIRE_MINE: "Haywire Mine"
-  STR_HAYWIRE_MINE_UFOPEDIA: "{NEWLINE} A Haywire Mine is a powerful, heavy-duty Imperial explosive device that is often used to destroy or incapacitate enemy armoured vehicles."
-#####TOMES####---------------------------------------------------
-  STR_SPELLS: "Spells"
-  STR_SPELLSR: "Chapter Teachings"
-  STR_MIND_PROBE: "Tome of the Vision"
-  STR_MIND_PROBE_UFOPEDIA: "{NEWLINE} Tome that allow a brother to read foes' characteristics"
-  STR_PATCHMORAL: "Tome of Morale"
-  STR_PATCHMORAL_UFOPEDIA: "{NEWLINE} Tome that restores other Brothers' morale. The casting Space Marine's bravery increases the effectiveness of the spell, inspiring the target into battle. Stun damage is a side effect of the spell."
-  STR_PATCHSPEED: "Tome of Speed"
-  STR_PATCHSPEED_UFOPEDIA: "{NEWLINE} Tome that reinvigorates other Brothers. The casting Space Marine's bravery increases the effectiveness of the spell, infuse the target with renewed vigor to act. Stun damage is a side effect of the spell."
-  STR_PATCHSMOKE: "Tome of Smoke"
-  STR_PATCHSMOKE_UFOPEDIA: "{NEWLINE} Tome that creates a smokescreen. The casting Space Marine's bravery increases the effectiveness of the spell, sewer confusion on the battlefield by shrouding it in smoke. Stun damage is a side effect of the spell."
-  STR_PSI_AMP: "Tome of the Mind"
-  STR_PSI_AMP_UFOPEDIA: "{NEWLINE} The Tome of the Mind allows a Brother Librarian to call forth the power of the Warp to manifest as spells to assist in battle. The marine may prepare a single spell from the available list before combat (assigned by the version of the Librarian armor chosen). {NEWLINE}{NEWLINE}Stun damage is a side effect of casting spells."
-  STR_LIBRARIAN_SPECIAL_WEAPON: "Librarian's Gauntlet"
-  STR_CONFUSE_SPELL: "Confuse"
-  STR_LOCKDOWN_TOME: "Tome of the Mind (Lockdown)"
-  STR_LOCKDOWN_UFOPEDIA: "{NEWLINE} With the Lockdown spell, a Psyker weaves tendrils of the Warp around a target, holding it in place and preventing it from acting for a short time. As the spell wears off, the target becomes less encumbered."
-  STR_LOCKDOWN_SPELL: "Lockdown"
-  STR_MELEE_INSPIRE_TOME: "Tome of the Mind (Melee Inspire)"
-  STR_MELEE_INSPIRE_UFOPEDIA: "{NEWLINE} The Melee Inspire spell allows a Psyker to infuse their allies with holy fervor, quickening their strikes made in hand-to-hand combat. Inspired allies gain increased accuracy with their melee weapons and decreasing the chance for enemy melee attacks to hit them."
-  STR_MELEE_INSPIRE_SPELL: "Melee Inspire"
-  STR_SHIELD_TOME: "Tome of the Mind (Shield)"
-  STR_SHIELD_UFOPEDIA: "{NEWLINE} Focusing their will around an ally, a Psyker uses the Project Shield spell to protect them temporarily from incoming damage."
-  STR_SHIELD_SPELL: "Project Shield"
-  STR_SMITE_TOME: "Tome of the Mind (Smite)"
-  STR_SMITE_UFOPEDIA: "{NEWLINE} A Psyker may use the Smite spell to fire bolts of Warp energy as lightning from their fingertips, bypassing a target's armor to damage them with psychic energy."
-  STR_SMITE_SPELL: "Smite"
-  STR_STASIS_TOME: "Tome of the Mind (Stasis)"
-  STR_STASIS_UFOPEDIA: "{NEWLINE} Invoking the Stasis spell surrounds the Psyker's target with Warp energy, slowing time to a standstill temporarily. Units under Stasis cannot act but also cannot be damaged or affected in any way."
-  STR_STASIS_SPELL: "Stasis"
-  STR_AC_AP_AMMO: "AP Case"
-  STR_AC_HE_AMMO: "HE Case"
-  STR_AC_I_AMMO: "I Case"
-  STR_CHAINSWORD: "Chainsword"
-  STR_POWER_SWORD: "Power Sword"
-  STR_POWER_SWORD_CM: "Power Sword"
- # STR_POWER_SWORD_SUP: "Master Crafted Power Sword"
-  STR_POWER_SWORD_MC: "Master Crafted Power Sword"
-  STR_HAMMER: "Thunder Hammer"
-  STR_HAMMER_MC: "Master Crafted Thunder Hammer"
-  STR_KNIF: "Combat Knife"
-  STR_CLAWS: "Lightning Claws"
-  STR_CLAWS_UFOPEDIA: "{NEWLINE} A Terminator Sergeant's melee weapon, with damage increases based on by its user's strength and melee skill. {NEWLINE} Also ignores up to 30% of enemy armor."
-  STR_HAMMER_UFOPEDIA: "{NEWLINE} Thunder Hammers are primarily used by Space Marines clad in Terminator Armor. This large warhammer incorporates an energy field emitter within its head that activates only when the hammer strikes its target.{NEWLINE}{NEWLINE}Strength required: {ALT}120"
-  STR_HAMMER_MC_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon.{NEWLINE}{NEWLINE}Strength required: {ALT}120"
-  STR_CHAINSWORD_UFOPEDIA: "{NEWLINE} The Chainsword is the preferred close combat melee weapon of many of the military forces of the Imperium of Man. The Chainsword is essentially a sword with powered teeth that run along a single-edged blade like that of a chainsaw.{NEWLINE}{NEWLINE}Strength required: {ALT}25" # Most versions of the weapon make use of monomolecularly-edged or otherwise razor-sharp teeth.
-  STR_POWER_SWORD_UFOPEDIA: "{NEWLINE} A Power Sword is a Power Weapon that has been shaped into a sword of varying lengths and designs crafted from one of any number of different materials, though the most common is Adamantium. When its power cell is activated, the blade is sheathed in a lethal corona of disruptive energy.{NEWLINE}{NEWLINE}Strength required: {ALT}80"
-  STR_POWER_SWORD_MC_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon.{NEWLINE}{NEWLINE}Strength required: {ALT}70"
-  STR_CPOWER_SWORD_CODEX: "Power swords corrupted by Chaos retain their refined forms, but their energy fields become unstable and predatory. When activated, the energy field generated is jagged, disruptive and filled with chaos corruptive energies, resulting in cut that far resemble the clean precision of uncorrupted power swords."
-  STR_CPOWER_DAGGER_CODEX: "Power daggers touched by Chaos are compact instruments of silent slaughter, their energized blades flickering with chaos energy and murderous intent. Designed for close work, they excel at slipping through armour and flesh with lethal efficiency. Favoured by traitor Astartes special operatives, Chaos assassins, and dark preachers."
-  STR_CPOWER_AXE_CODEX: "Power axes tainted by Chaos emphasize raw brutality over finesse, their heavy blades surrounded by a crackling, unstable energy field. Each swing delivers devastating force, cleaving through armour with savage efficiency. Less precise than a power sword but far more punishing, these weapons are favoured by those who value overwhelming strength and destruction above all else."
   AUX_MORTAR: "Cyclone Missile Launcher"
-  STR_LAUNCH_SALVO: "Launch Salvo"
   AUX_MORTAR_UFOPEDIA: "{NEWLINE} The Cyclone Missile Launcher is a specially designed Missile Launcher system used by Space Marines in Terminator Armor to provide heavy fire support. The extra firepower often proves necessary, since Terminator Squads are an elite force, called upon to undertake the toughest and most dangerous missions in the most hazardous conditions."
-  STR_KNIF_UFOPEDIA: "{NEWLINE} A Combat Knife is the ubiquitous back-up melee weapon for warriors all across the Imperium of Man, be they lowly hive city scum or the elite soldiers of a Planetary Governor."
-  STR_POWERFIST: "Powerfist"
-  STR_POWERFIST_UFOPEDIA: "{NEWLINE} A Power Fist is essentially an over-sized, armored gauntlet that generates an energy field around it, one that is capable of violently disrupting any solid matter it touches.{NEWLINE}{NEWLINE}Strength required: {ALT}40"
-  STR_BANNER: "Chapter Banner"
-  STR_BANNER_UFOPEDIA: "{NEWLINE} Standards are ceremonial objects of the Space Marine Chapters, bearing the symbol of the Chapter and marked with sacred motifs and the battle honors gained in past wars. The bravest of banner bearers will revitalize their Brothers when calling a charge, increasing morale and inspiring greater action. Stun damage is a side effect of the push forward."
-  STR_FLAMETHROWER: "Flamer"
-  STR_FLAMETHROWER_UFOPEDIA: "{NEWLINE} Flamers, also known as Flame Guns,  come in a wide variety of designs and patterns, but all are ideal for flushing out enemies in cover and putting groups of foes to the torch with projected flame."
-  STR_FLAMETHROWER_CLIP: "Flamer Chemical Fuel"
-  STR_FLAMETHROWER_PROMETHIUM_CLIP: "Flamer Promethium Fuel"
-  STR_IMPULSOR_SHIELD_CW: "Shield Dome"
-#####AMMO####---------------------------------------------------
-  STR_AMMO_TYPE: "AMMUNITION"
-  STR_AMMO_OVER: "Ammunition Overview"
-  STR_AMMO_OVERB: "Ammunition Overview"
-  STR_AMMO_OVERC: "Ammunition Overview"
-  STR_AMMO_TYPE_UFOPEDIA: "{NEWLINE} The Tech-priests of the Adeptus Mechanicus and the skilled Artificers of the Adeptus Astartes have developed many types of ammunition over the millennia for the different branches of the Imperial military. The most common variants are described in this section."
-  STR_AMMOB: "Special Bolts"
-  STR_BOLTER_AMMO: "Standard Bolts"
-  STR_MC_AMMO: "Mastercrafted Bolts"
-  STR_DOUBLE_AMMO: "Double-Barreled Bolters"
-  STR_MELTA_AMMO: "Melta Charge"
-  STR_MELTA_AMMO2: "Melta Charge"
-  STR_LAS_AMMO: "Power Cell"
-  STR_PLASMA_AMMO: "Plasma Flasks"
-  STR_GRAV_AMMO: "Graviton Induction Core"
-  STR_LAS_AMMO_UFOPEDIA: "{NEWLINE} Laser Weapon Power Cell damage details: {NEWLINE} Armor damage: 20% {NEWLINE} Health damage: 100% {NEWLINE} Stun damage: 0% {NEWLINE} Armor damage after piercing: 0%"
-  STR_MC_AMMO_UFOPEDIA: "{NEWLINE} Master crafted bolt ammo damage details: {NEWLINE} Armor damage: 10% {NEWLINE} Ignores armor: 20% {NEWLINE} Stun damage: 50% {NEWLINE} Increased power over standard bolts."
-  STR_DOUBLE_AMMO_UFOPEDIA: "{NEWLINE} Double-Barrelled bolter damage details: {NEWLINE} Armor Damage: 20% {NEWLINE} Ignores armor: 10%"
-  STR_MELTA_AMMO_UFOPEDIA: "{NEWLINE} Melta Charge damage details: {NEWLINE} Armor damage: 100% {NEWLINE} Health damage: 160% {NEWLINE} Dropoff: 10%/tile beyond 8 tiles. {NEWLINE} {NEWLINE} Multimelta Charge damage details: {NEWLINE} Armor damage: 100% {NEWLINE} Health damage: 160% {NEWLINE} Dropoff: 5%/tile beyond 16 tiles." #D
-  STR_PLASMA_AMMO_UFOPEDIA: "{NEWLINE} Plasma Flask damage details: {NEWLINE} Ignores armor: 25% {NEWLINE} Health damage: 100% {NEWLINE} Armor damage after piercing: 20%" #D
-  STR_GRAV_AMMO_UFOPEDIA: "{NEWLINE} Graviton Induction Core damage details: {NEWLINE} Ignores armor: 100%" #D
-  STR_BOLTER_AMMO_UFOPEDIA: "{NEWLINE} Bolt ammo damage details: {NEWLINE} Armor damage: 5% {NEWLINE} Ignores armor: 10% {NEWLINE} Stun damage: 50%" #D
-  STR_AMMOB_UFOPEDIA: "{NEWLINE} Metal Storm Frag Bolts are best used against multiple lightly-armored targets. They detonate before impact and spray shrapnel in a small radius. {NEWLINE}{NEWLINE} Kraken Penetrator Bolts are powerful armor-piercing rounds. The dense metallic core is replaced by a solid Adamantium core and uses a heavier main charge. Ignores 50% of armor, but does not damage it before piercing."
 #####BOLTERS####---------------------------------------------------
   STR_LIGHT_BOLTERS: "Human-Sized Bolters"
   STR_LIGHT_BOLTERS_LOWTIER: "Solo Bolters"
@@ -2564,9 +2537,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_MARINE_BOLTERS: "Astartes Bolters"
   STR_MARINE_BOLTERS_CHAOS: "Chaos Astartes Bolters"
   STR_BOLTER_AMMO_PREREQ: "Astartes Bolter Ammo"
- # STR_BOLTPISTOL_DEAZ: "Boltpistol Godwyn-De'az Pattern"
+  STR_BOLTPISTOL_DEAZ: "Light Boltpistol Godwyn-De'az"
   STR_BOLTPISTOL_DEAZ_UFOPEDIA: "{NEWLINE} A Bolt Pistol is a smaller version of the Bolter. Powerful and utilitarian side arms, Bolt Pistols have seen service within many of the Imperium's military forces since its inception in the 30th Millennium.{NEWLINE}{NEWLINE}Recoil: {ALT}20"
- # STR_MC_BOLTPISTOL_DEAZ: "Master Crafted Light Boltpistol"
+  STR_MC_BOLTPISTOL_DEAZ: "Master Crafted Light Boltpistol Godwyn-De'az"
   STR_MC_BOLTPISTOL_DEAZ_UFOPEDIA: "{NEWLINE} A Master crafted weapon is used by all of the Imperial armies and can be requisitioned by an exchange of foes' corpses. Any weapon may be master-crafted and due to the improved design of the weapon, it is more likely that a target will be hit by attacks from this weapon.{NEWLINE}{NEWLINE}Recoil: {ALT}20"
   STR_LIGHT_BOLTPISTOL_AMMO: "Light Boltpistol Clip"
   STR_LIGHT_BOLTPISTOL_AMMO_MC: "Master Crafted Light Boltpistol Clip"
@@ -2722,7 +2695,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ENFORCER_HEAVY_ARMOR_UFOPEDIA: "Reinforced Enforcer armor providing some extra protection for its user."
   STR_ENFORCER_SHIELD_ARMOR_UFOPEDIA: "Reinforced Enforcer with a large hall shield that can withstand a large amount of damage."
   STR_JUDGE_BIKE_ARMOR_UFOPEDIA: "Outriders are most commonly used to advance ahead of the main lines and to guard the flanks of larger formations. In battle, they perform lightning fast hit-and-run attacks on enemy strongholds, and are employed to chase down any who would seek to escape"
-
 
   STR_ADEPTAS_ARMOR: "Adeptas Advanced Armor"
   STR_ADEPTAS_ARMORA: "Hospitaller Armor"
@@ -7179,8 +7151,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BOLTER_LOCKE: "Light Bolter Locke"
   STR_BOLTER_ENFORCER: "Light Bolter Enforcer"
   STR_BOLTER_DEAZ: "Light Bolter Godwyn-De'az"
-  STR_BOLTPISTOL_DEAZ: "Light Boltpistol Godwyn-De'az"
-  STR_MC_BOLTPISTOL_DEAZ: "Master Crafted Light Boltpistol Godwyn-De'az"
   STR_AUTOFIRE: "Autofire"
   STR_FULL_AUTO: "Full Auto"
   STR_BURST_SNAP_SHOT: "Burst Fire"
