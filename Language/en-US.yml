@@ -6282,6 +6282,12 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_HWP_SCATTERLASER: "Scatter Laser(HWP)"
   STR_ELDAR_HWP_STARCANNON: "Starcannon(HWP)"
   STR_ELDAR_WIREWEAVE_NET: "Wireweave Net"
+  STR_ELDAR_SUNBURST_GRENADE: "Sunburst Grenade"
+  STR_ELDAR_STARSHOT_GRENADE: "Starshot Grenade"
+  STR_ELDAR_FUSION_GRENADE: "Eldar Fusion Grenade"
+  STR_ELDAR_HAYWIRE_GRENADE: "Eldar Haywire Grenade"
+  STR_ELDAR_FUSION_CHARGE: "Eldar Fusion Charge"
+  STR_ELDAR_MGRENADE: "Eldar Melta Bomb"
 
 #Eldar Units Codex Strings
   STR_ELDAR_GUARDIAN_AUTOPSY_CODEX: "{NEWLINE} Guardians are the militia of the Eldar Craftworlds. In times of peace the Guardians pursue their normal civilian roles, however, all Eldar are trained in warfare and can be called to arms if their Craftworld is threatened. Guardians in battle, form the bulk of the Eldar armies. That these citizen levies are capable of engaging and defeating other races' warriors is a testament to Eldar skill and technology."
@@ -6398,6 +6404,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_HWP_SCATTERLASER_CODEX: "{NEWLINE} The weapon is comprised of six separate laser chambers which can be fired simultaneously or in bursts, at either the same or different targets, and uses crystalline power cells to store energy. It is similar in some respects to the Imperium Multi-laser, but far more refined and energy-efficient."
   STR_ELDAR_HWP_STARCANNON_CODEX: "{NEWLINE} A plasma weapon designed by the Eldar, using sophisticated electromagnetic pulses to guide bolts of destructive plasma to a target. Though its plasma core produces the incandescent heat of a star, unlike its crude and clumsy Imperial counterparts the Starcannon uses containment fields to not only prevent the weapon overheating but keep it cool to the touch. That humanity uses a weapon which could maim or kill the wielder is seen by the Eldar as a testament to their idiocy"
   STR_ELDAR_WIREWEAVE_NET_CODEX: "{NEWLINE} Wireweave Nets are Monofilament throwable devices used by Eldar Rangers to ensnare enemies. After an initial stunning burst a mass of monofilament wires are deployed slowing and tangling enemies in a small area. The thin wires eventually disintegrate leaving only the spent shell of the device."
+  STR_ELDAR_SUNBURST_GRENADE_CODEX: "{NEWLINE} An accurate, lightweight anti-Infantry grenade that requires precise placement. Psychic activation mechanism completely prevents accidental detonations."
+  STR_ELDAR_STARSHOT_GRENADE_CODEX: "{NEWLINE} An accurate, lightweight anti-Armor grenade that requires precise placement. Psychic activation mechanism completely prevents accidental detonations."
+  STR_ELDAR_FUSION_GRENADE_CODEX: "{NEWLINE} The Aeldari analogue of Melta technology, these heat-based anti-tank and heavy-infantry explosives are effective against the most heavily armored foes. An accurate, lightweight grenade that requires precise placement. Psychic activation mechanism completely neutralizes accidental detonations."
+  STR_ELDAR_HAYWIRE_GRENADE_CODEX: "{NEWLINE} Used by the Eldar primarily for disabling enemy vehicles or similar electronic systems. They can have the additional effect of deafening and disorientating biological creatures near the grenade's explosion. An accurate, lightweight grenade that requires precise placement. Psychic activation mechanism completely neutralizes accidental detonations."
+  STR_ELDAR_PLASMA_GRENADE_CODEX: "{NEWLINE} The archetype Aeldari grenade, effective against more heavily armored infantry. An accurate, lightweight grenade that requires precise placement. Psychic activation mechanism completely prevents accidental detonations."
   # OLD OR DUPLICATE REQUIRES CONSOLIDATING OR REMOVAL
   STR_ELDAR_CHAINSWORD: "Eldar Chainsword"
   STR_ELDAR_CHAINSWORD_UFOPEDIA: "{NEWLINE} A deadly one-handed melee weapon whose vicious blade is comprised of diamond-toothed edges that mangle and tear flesh."

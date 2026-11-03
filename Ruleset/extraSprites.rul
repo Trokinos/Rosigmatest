@@ -6294,6 +6294,16 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_hwp_starcannon_codex.png
   - typeSingle: ELDAR_WIREWEAVE_NET_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_wireweavenet_codex.png
+  - typeSingle: ELDAR_SUNBURST_GRENADE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_sunburst_grenade_codex.png
+  - typeSingle: ELDAR_STARSHOT_GRENADE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_starshot_grenade_codex.png
+  - typeSingle: ELDAR_HAYWIRE_GRENADE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_haywire_grenade_codex.png
+  - typeSingle: ELDAR_FUSION_GRENADE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_fusion_grenade_codex.png
+  - typeSingle: ELDAR_PLASMA_GRENADE_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_plasma_grenade_codex.png
   #older weapon codex from 40k mod
   - typeSingle: 1EL1.SPK
     fileSingle: Resources/Eldar/1EL1.png
