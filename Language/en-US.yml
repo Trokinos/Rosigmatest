@@ -15289,6 +15289,9 @@ en-US:  #  yamllint disable-line rule:empty-values
 
   ### SLAANESH STORY EVENTS & STORY CODEX DESCRIPTIONS
 
+  STR_SLAANESHUNDERCONSTRUCTION_TITLE: "UNDER CONSTRUCTION"
+  STR_SLAANESHPATH_SELECTED_UFOPEDIA_DESCRIPTION: "{NEWLINE}Sadly, or perhaps surprisingly, somehow you selected this sadly simple Slaanesh strategy.{NEWLINE}Regrettably, it is still under construction. Very little is currently playable, so do try to moderate your expectations. According to our enginseer, the servitor we tasked with this project is already working as hard as he can. But we have given him another kick, just in case."
+
   STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
   STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you are left as the most senior member of the Order of the Sacred Rose on this Throne-cursed world."
   STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"

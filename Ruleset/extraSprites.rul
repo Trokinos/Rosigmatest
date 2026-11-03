@@ -17392,6 +17392,11 @@ extraSprites:
     fileSingle: Resources/Backgrounds/ELDAR_GUARDIAN_ASSAULTING.png
   - typeSingle: ELDAR_ASPECT_WARRIOR_ASSAULTING.SCR
     fileSingle: Resources/Backgrounds/ELDAR_ASPECT_WARRIOR_ASSAULTING.png
+
+  # Slaanesh strategy events
+  - typeSingle: SLAANESHBUNKERBG.SCR
+    fileSingle: Resources/Backgrounds/SLAANESHBUNKERBG.png
+
       #GENESTEALER CULT
 
 #zombie
@@ -20253,3 +20258,10 @@ extraSprites:
     fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m5.png
   - typeSingle: HNDM_33M6.SPK  # Handmaiden INV 33 M
     fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m6.png
+
+# Slaanesh strategy codex art
+
+  - typeSingle: SLAANESH_CONVERSION_EVENT_CODEX.SPK
+  - fileSingle: Resources/CODEX/SLAANESH_CONVERSION_EVENT_CODEX.png
+  - typeSingle: SLAANESHUNDERCONSTRUCTIONCODEX.SPK
+  - fileSingle: Resources/CODEX/SLAANESHUNDERCONSTRUCTIONCODEX.png

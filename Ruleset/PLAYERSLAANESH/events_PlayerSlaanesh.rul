@@ -33,7 +33,7 @@ adhocScripts:
         STR_ALIEN_RESEARCH_TZEENTCH: 15
         STR_ALIEN_HARVEST_TZEENTCH: 8
     targetBaseOdds: 100
-    startDelay: 7200  # 5 days
+    startDelay: 12960  # 9 days
     randomDelay: 4320  # additional random 0 to 3 days
     useTable: true
     maxRuns: 1
@@ -82,9 +82,10 @@ events:
 
   - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Power failure event
     description: STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION
-    background: ARMORYRAID.SCR
+    background: SLAANESHBUNKERBG.SCR
     interruptResearch: STR_NOT_SLAANESHPATH
     timer: 2880  # 48 hours
+    music: DEMONCHOIR
 
   - name: STR_SLAANESHPATH_GATE_EVENT # This is the event that gives you the sisters.
     description: STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION
