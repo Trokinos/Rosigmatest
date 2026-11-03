@@ -6287,7 +6287,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_FUSION_GRENADE: "Eldar Fusion Grenade"
   STR_ELDAR_HAYWIRE_GRENADE: "Eldar Haywire Grenade"
   STR_ELDAR_FUSION_CHARGE: "Eldar Fusion Charge"
-  STR_ELDAR_MGRENADE: "Eldar Melta Bomb"
 
 #Eldar Units Codex Strings
   STR_ELDAR_GUARDIAN_AUTOPSY_CODEX: "{NEWLINE} Guardians are the militia of the Eldar Craftworlds. In times of peace the Guardians pursue their normal civilian roles, however, all Eldar are trained in warfare and can be called to arms if their Craftworld is threatened. Guardians in battle, form the bulk of the Eldar armies. That these citizen levies are capable of engaging and defeating other races' warriors is a testament to Eldar skill and technology."
