@@ -1,5 +1,5 @@
 extended:
-  tagsFile: Ruleset/tags_ROSIGMA.rul 
+  tagsFile: Ruleset/tags_ROSIGMA.rul
 
 
 
@@ -53,7 +53,7 @@ items:
       ITEM_SWAP_ACCENT_COLOR: 6
 
   - type: STR_LIGHT_BOLTER_AMMO_BM
-    refnode: *BM_BOLTER_AMMO_TEMPLATE
+    refNode: *BM_BOLTER_AMMO_TEMPLATE
     power: 54
     costBuy: 2400
     costSell: 140
@@ -63,7 +63,7 @@ items:
     explosionSpeed: 3
 
   - type: STR_LIGHT_BOLTPISTOL_AMMO_BM
-    refnode: *BM_BOLTER_AMMO_TEMPLATE
+    refNode: *BM_BOLTER_AMMO_TEMPLATE
     bigSprite: {mod: 40k, index: 4}
     floorSprite: {mod: 40k, index: 4}
     handSprite: {mod: 40k, index: 464}
@@ -76,7 +76,7 @@ items:
     explosionSpeed: 3
 
  #### SLAANESH PLASMA AMMO ####
- 
+
   - &STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
     type: STR_PLASMA_SPRAY_CLIP_SLAAN
     bigSprite: {mod: 40k, index: 34}
@@ -84,7 +84,7 @@ items:
     handSprite: {mod: 40k, index: 440}
     hitSound: {mod: 40k, index: 19}
     hitAnimation: 60
-    power: 70  # Spraygun power 
+    power: 70 # Spraygun power
     damageType: 5
     damageAlter:  # DA PLASMA SLAAN
       RandomType: 2
@@ -133,7 +133,7 @@ items:
     shotgunPellets: 6
     shotgunSpread: 0
     powerRangeReduction: 1.5 # Slightly worse than normal melta
-    powerRangeThreshold: 8.0 # 
+    powerRangeThreshold: 8.0 #
     clipSize: 12 # +6
 
  #### SLAANESH LAS AMMO ####
@@ -142,7 +142,7 @@ items:
     type: STR_SLAANESHPATH_LASGUN_CLIP_STANDARD
     categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
     requiresBuy: # Placeholder
-    - STR_SLAANESHPATH
+      - STR_SLAANESHPATH
     size: 0.1
     costSell: 200
     weight: 1
@@ -153,13 +153,13 @@ items:
     power: 55
     damageType: 1 # AP, to be in line with rebalanced lasgun ammo
     damageAlter:  # LAS SLAANESH
-      ToArmorPre: 0.30 # 0.2 -> 0.30 
-      ArmorEffectiveness: 0.9 # Penetrative power 
-      ToHealth: 0.7 # Worse at health damage. 
+      ToArmorPre: 0.30 # 0.2 -> 0.30
+      ArmorEffectiveness: 0.9 # Penetrative power
+      ToHealth: 0.7 # Worse at health damage.
       ToStun: 0.45 # 0.3 -> 0.35
       ToEnergy: 0.1 # Weakening
       ToMorale: 0.1 # Weakening
-      toTime: 0.1 # Weakening
+      ToTime: 0.1 # Weakening
     clipSize: 30 # Half the clip size of a normal lasgun clip.
     battleType: 2
     invWidth: 1
@@ -184,7 +184,7 @@ items:
     type: STR_SLAANESHPATH_LASGUN_CLIP_TAINTED
     categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
     requiresBuy: # Placeholder
-    - STR_SLAANESHPATH
+      - STR_SLAANESHPATH
     size: 0.1
     costSell: 400
     weight: 1
@@ -195,13 +195,13 @@ items:
     power: 60 # +5
     damageType: 4
     damageAlter:  # LAS SLAANESH
-      ToArmorPre: 0.5 # BIG armor damage! 
-      ArmorEffectiveness: 0.7 # HIGH Penetrative power! 
-      ToHealth: 0.30 # TERRIBLE health damage! 
+      ToArmorPre: 0.5 # BIG armor damage!
+      ArmorEffectiveness: 0.7 # HIGH Penetrative power!
+      ToHealth: 0.30 # TERRIBLE health damage!
       ToStun: 0.35 # 0.3 -> 0.35
       ToEnergy: 0.25 # Weakening
       ToMorale: 0.25 # Weakening
-      toTime: 0.25 # Weakening
+      ToTime: 0.25 # Weakening
     clipSize: 15 # only 15 shots!
     battleType: 2
     invWidth: 1
@@ -421,7 +421,7 @@ items:
 
  #### LIGHT & STANDARD BOLTER AMMO
 
-  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE 
+  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE
     type: STR_SLAANESHPATH_CLIP_PENETRATOR  # The standard Slaanesh ammunition. Penetration + armor shredding.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1
@@ -484,7 +484,7 @@ items:
     listOrder: 10460
 
   - &STR_SLAANESHPATH_SOULBLIGHTER_TEMPLATE # Soulstain bolts
-    type: STR_SLAANESHPATH_CLIP_SOULBLIGHTER  # Slaanesh-flavored Necromunda Warp bolts.  
+    type: STR_SLAANESHPATH_CLIP_SOULBLIGHTER # Slaanesh-flavored Necromunda Warp bolts.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1
     costSell: 150
@@ -630,16 +630,16 @@ items:
       ToWound: 0.0
       RandomWound: false
       ToTile: 0.0
-      ToItem: 0.3  
-      ToArmor: 0.0  
-      ToEnergy: 0.5 
+      ToItem: 0.3
+      ToArmor: 0.0
+      ToEnergy: 0.5
       ToStun: 0.5
       ToTime: 0.5
-      ToMorale: 2.0  
+      ToMorale: 2.0
       ArmorEffectiveness: 0.4
       FixRadius: 5
       RadiusReduction: 6.0
-      SmokeThreshold: 0  
+      SmokeThreshold: 0
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 25
       ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
@@ -666,11 +666,11 @@ items:
       ToWound: 0.0
       RandomWound: false
       ToTile: 0.0
-      ToItem: 0.0  
-      ToArmor: 0.0  
-      ToEnergy: 0.5 
+      ToItem: 0.0
+      ToArmor: 0.0
+      ToEnergy: 0.5
       ToStun: 1.2
-      ToTime: 0.5  
+      ToTime: 0.5
       ArmorEffectiveness: 0.4
       FixRadius: 4
     tags:
@@ -696,13 +696,13 @@ items:
       ToHealth: 0.25 # Tiny armor piercing fragments
       ToWound: 0.6 # Cursed fragments will quickly kill or mutate those afflicted.
       RandomWound: false
-      ToTile: 0.1 
-      ToItem: 0.2  
-      ToArmor: 0.05   
-      ToEnergy: 0.7  
-      ToStun: 0.7 
+      ToTile: 0.1
+      ToItem: 0.2
+      ToArmor: 0.05
+      ToEnergy: 0.7
+      ToStun: 0.7
       ToTime: 0.5
-      ToMorale: 4.0 # EXTREMELY debilitating.  
+      ToMorale: 4.0 # EXTREMELY debilitating.
       ArmorEffectiveness: 0.7 # Some shards will likely get through.
       FixRadius: 5
     noLOSAccuracyPenalty: 75 # Indirect fire weapon.
@@ -750,4 +750,4 @@ items:
 
   - type: STR_AMPUTATOR40 # Rippershot; high damage and stun vs unarmored, direct-fire only
 
-  - type: STR_FLECHETTE40 # Toxic armor-piercing flechettes; direct-fire only. 
+  - type: STR_FLECHETTE40 # Toxic armor-piercing flechettes; direct-fire only.

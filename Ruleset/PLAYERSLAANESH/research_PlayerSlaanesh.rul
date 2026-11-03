@@ -83,7 +83,7 @@ research:
       - STR_DIFFICULTY_OPTIONS    # does not have harder missions yet
       - STR_DEFAULT_CAMPAIGN
 
-     ############## DISABLED GENERIC TECHS GO HERE ###############
+    ############## DISABLED GENERIC TECHS GO HERE ###############
       - STR_SMOKE # Alternative tech exists.
       - STR_MOTION_SCANNER
       - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, lobotomizing soldiers ruins all the fun.
@@ -91,13 +91,13 @@ research:
       - STR_ELERIUM_115 # Re-enabled later.
       - STR_PHOSPHOR_GRENADE # Not available to the strategy.
       - STR_MELTAGUN_TECH # This faction gets its own alternative melta weaponry.
-     ############## DISABLED CHAOS-RELATED TECHS GO HERE #########
+    ############## DISABLED CHAOS-RELATED TECHS GO HERE #########
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_ORIGINS # Followers of Slaanesh do not need to research chaos implements normally
       - STR_CHAOS_PATH # Already on the only TRUE chaos path!
       - STR_CHAOS_SORCERY
-     ###################################################
+    ###################################################
 
     spawnedEvent: STR_SLAANESHPATH_CHOSEN_EVENT # Lost and Alone. Triggers adhocscript.
 
@@ -113,7 +113,7 @@ research:
     points: 0
     dependencies:
       - STR_SLAANESHPATH
-    unlocks: 
+    unlocks:
       - STR_SLAANESHPATH_INTRO_CALLING
     spawnedEvent: STR_SLAANESHPATH_INTRO_B_EVENT
 
@@ -122,7 +122,7 @@ research:
     points: 0
     dependencies:
       - STR_GENERALLOCK
-    unlocks: 
+    unlocks:
       - STR_SLAANESHPATH_GATE
     spawnedEvent: STR_SLAANESHPATH_INTRO_C_EVENT
 
@@ -160,7 +160,7 @@ research:
     dependencies:
       - STR_SLAANESHPATH_GATE
 
-  - name: STR_BLACK_MARKET_AMMUNITION # Codex Entry. 
+  - name: STR_BLACK_MARKET_AMMUNITION # Codex Entry.
     cost: 20
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
@@ -171,10 +171,10 @@ research:
     cost: 0
     dependencies:
       - STR_GENERALLOCK
-  
- ###################################
- ##### PIETY & RITUAL RESEARCH #####
- ###################################
+
+###################################
+##### PIETY & RITUAL RESEARCH #####
+###################################
 
   - name: STR_SOULS_FOR_SLAANESH # Unlocks sacrifices. Codex Entry.
     cost: 20
@@ -185,13 +185,13 @@ research:
   - name: STR_PATH_OF_PERFECTION # Gateway tech that also gives access to handmaiden training.
     cost: 20
     dependencies:
-    - STR_SLAANESHPATH_GATE
+      - STR_SLAANESHPATH_GATE
     spawnedItem: STR_SLAANESHPATH_PIETY
     spawnedItemCount: 200
     points: 20
 
     #TODO: MAKE THIS TECH GIVE 200 PIETY
- 
+
   - name: STR_SOULSTAIN_SORCERY
     cost: 40
     points: 20
@@ -205,9 +205,9 @@ research:
       - STR_GENERALLOCK # Placeholder
 
  ### TIER 1 PIETY PROJECTS
- 
+
   # Gives a manufacturing project for corrupted cantus bolters.
-  # Disables once Hereteks are capable of manufacturing. 
+  # Disables once Hereteks are capable of manufacturing.
 
  ###################################
  ##### MELTA, PLASMA & LASCANNON RESEARCH #####
@@ -219,7 +219,7 @@ research:
       - STR_CONTACT_ARMS_SMUGGLERS
       - STR_PROCURE_TRANSPORTATION
       - STR_BLACK_MARKET_AMMUNITION
-    unlocks: 
+    unlocks:
       - STR_HERETEK_TRIBUTE_PRODUCTION
 
   - name: STR_HERETEK_TRIBUTE
@@ -228,10 +228,10 @@ research:
       - STR_CONTACT_HERETEKS
     needItem: true
     destroyItem: true
-    disables: 
+    disables:
       - STR_HERETEK_TRIBUTE_PRODUCTION
 
-  - name: STR_HERETEK_TRIBUTE_PRODUCTION 
+  - name: STR_HERETEK_TRIBUTE_PRODUCTION
     cost: 0
     dependencies:
       - STR_GENERALLOCK
@@ -262,18 +262,18 @@ research:
  ###################################
  ### WEAPON CORRUPTION RESEARCH ####
  ###################################
- 
+
 ### -<TIER 1 WEAPON TECH LEVEL PROJECTS>- ###
 
  # Basic Corruption tech. Unlocks cantus corruption and a codex entry explaining the concept.
 
-  - name: STR_WEAPON_CONSECRATION 
+  - name: STR_WEAPON_CONSECRATION
     cost: 30
     points: 10
     dependencies:
       - STR_PATH_OF_PERFECTION
     unlocks:
-    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
 
   - name: STR_CORRUPT_ADEPTAS_BOLTERS
     cost: 25
@@ -281,21 +281,21 @@ research:
       - STR_WEAPON_CONSECRATION
 
   #Tech that gives access to weapon conversions through piety.
-  #Gets disabled once the ability to manufacture these weapons is unlocked. 
+  #Gets disabled once the ability to manufacture these weapons is unlocked.
   - name: STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
     cost: 0
     points: 0
     dependencies:
-    - STR_WEAPON_CONSECRATION
+      - STR_WEAPON_CONSECRATION
 
   #Disabler for basic weapon corruption. Once you have this you can simply buy these weapons directly.
   - name: STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1
     cost: 0
     points: 0
     dependencies:
-    - STR_GENERALLOCK # PLACEHOLDER
+      - STR_GENERALLOCK # PLACEHOLDER
     disables:
-    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
 
  ##################################
  ##### TERROR WEAPON RESEARCH #####
@@ -307,68 +307,68 @@ research:
     cost: 50
     points: 10
     dependencies:
-    - STR_PATH_OF_PERFECTION
+      - STR_PATH_OF_PERFECTION
     unlocks:
-    - STR_CHOKE_GAS_GRENADES
+      - STR_CHOKE_GAS_GRENADES
 
-  - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry. 
+  - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry.
     cost: 0
     dependencies:
-    - STR_GENERALLOCK
+      - STR_GENERALLOCK
 
   - name: STR_CHOKE_GAS_GRENADES
     cost: 0
     dependencies:
-    - STR_GENERALLOCK
+      - STR_GENERALLOCK
 
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
     cost: 50
     dependencies:
-    - STR_PATH_OF_PERFECTION
+      - STR_PATH_OF_PERFECTION
     unlocks:
-    - STR_LIGHT_GRENADE_LAUNCHERS
+      - STR_LIGHT_GRENADE_LAUNCHERS
     getOneFree:
-    - STR_SONIC_GRENADES
+      - STR_SONIC_GRENADES
 
-  - name: STR_TERROR_GRENADES 
+  - name: STR_TERROR_GRENADES
     cost: 40
     dependencies:
-    - STR_TERROR_WEAPONRY
+      - STR_TERROR_WEAPONRY
     getOneFree:
-    - STR_HALLUCINOGEN_GRENADES
-    - STR_SHARD_GRENADES
-    - STR_BALEFIRE_GRENADES
+      - STR_HALLUCINOGEN_GRENADES
+      - STR_SHARD_GRENADES
+      - STR_BALEFIRE_GRENADES
 
- ####40MM terror grenade flavors. All must be unlocked to advance the tech tree.#####  
+ ####40MM terror grenade flavors. All must be unlocked to advance the tech tree.#####
   - name: STR_HALLUCINOGEN_GRENADES
     cost: 50
     dependencies:
-    - STR_GENERALLOCK  
+      - STR_GENERALLOCK
   - name: STR_SHARD_GRENADES
     cost: 50
     dependencies:
-    - STR_GENERALLOCK  
+      - STR_GENERALLOCK
   - name: STR_SONIC_GRENADES
     cost: 50
     dependencies:
-    - STR_GENERALLOCK
+      - STR_GENERALLOCK
   - name: STR_BALEFIRE_GRENADES
     cost: 50
     dependencies:
-    - STR_GENERALLOCK  
+      - STR_GENERALLOCK
 
   - name: STR_IMMACULATE_CHAINBLADES
     cost: 0
     dependencies:
-    - STR_WEAPON_CONSECRATION
-    - STR_IMPLEMENTS_OF_TORTURE
+      - STR_WEAPON_CONSECRATION
+      - STR_IMPLEMENTS_OF_TORTURE
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
     cost: 30
     dependencies:
-    - STR_PATH_OF_PERFECTION
+      - STR_PATH_OF_PERFECTION
     getOneFree:
-    - STR_IMPERIAL_WEBBER_DEP1
+      - STR_IMPERIAL_WEBBER_DEP1
 
   - name: STR_PROCURE_TRANSPORTATION # Codex entry. # TODO: Add the ability to buy chimeras on the black market later.
     cost: 10

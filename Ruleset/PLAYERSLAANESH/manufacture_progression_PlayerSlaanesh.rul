@@ -3,7 +3,7 @@ manufacture:
   - name: STR_PRODUCE_HERETEK_TRIBUTE
     category: STR_RITES_OF_EXCESS
     requires:
-    - STR_HERETEK_TRIBUTE_PRODUCTION
+      - STR_HERETEK_TRIBUTE_PRODUCTION
     space: 15
     time: 50
     cost: 1000

@@ -5,7 +5,7 @@
 items:
   - type: STR_SLAANESHPATH_PIETY
     size: 0.0
-    
+
   - type: STR_SLAANESHPATH_WARPSTONE_TRIBUTE
     size: 0.0
 
@@ -47,16 +47,16 @@ items:
 
 #  - type: STR_SLAANESHPATH_ANGELIC_HEAVYBOLTER_STOREITEM
 
-#  - type: STR_SLAANESHPATH_ANGELIC_PLASMA_STOREITEM 
+#  - type: STR_SLAANESHPATH_ANGELIC_PLASMA_STOREITEM
 
 
 #    size: 0.1
 #ARCHANGEL OF THE CHOIR ARMOR/WEAPON TOKENS
   - type: STR_SLAANESHPATH_KOKABIEL_STOREITEM # Kokabiel Heavy Assault Armor
     size: 0.1
-  - type: STR_SLAANESHPATH_SHEMYAZA_STOREITEM # Shemyaza Anathemant Armor 
+  - type: STR_SLAANESHPATH_SHEMYAZA_STOREITEM # Shemyaza Anathemant Armor
     size: 0.1
-  - type: STR_SLAANESHPATH_SHAMSHIEL_STOREITEM # Shamshiel Catechizer Armor 
+  - type: STR_SLAANESHPATH_SHAMSHIEL_STOREITEM # Shamshiel Catechizer Armor
     size: 0.1
 
 #ARMOR COMPONENT TOKENS
@@ -72,4 +72,3 @@ items:
 
 ############### STORY PROGRESSION TOKENS ############
 
-  

@@ -2612,7 +2612,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_INDUCT_SORCERESS: "Induct Sorceress of Slaanesh"
   STR_INDUCT_MYSTAGOGUE: "Induct Immaculate Mystagogue"
 
-  STR_INDUCT_HARBINGER:  "Proclaim Harbinger of Slaanesh"
+  STR_INDUCT_HARBINGER: "Proclaim Harbinger of Slaanesh"
   STR_INDUCT_ANGEL: "Welcome Angel to the Choir"
   STR_ELEVATE_EXALTED_MYSTAGOGUE: "Elevate Mystagogue"
   STR_EXALT_ARCHANGEL: "Elevate Angel of the Choir"

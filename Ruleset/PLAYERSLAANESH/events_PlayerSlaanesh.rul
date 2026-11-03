@@ -68,7 +68,7 @@ events:
     adhocMissionScriptTags: ["gameStartSlaanesh", "adhocStarterBaseSlaanesh"]
     description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
     background: AdeptasAttackedBG.scr
-  
+
   ###### INTRO EVENTS ######
   - name: STR_SLAANESHPATH_INTRO_A_EVENT
     description: STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION
@@ -103,7 +103,7 @@ events:
     everyMultiItemList:
       STR_BOLTER_DEAZ: 2
       STR_LIGHT_BOLTER_AMMO: 6
-      STR_BOLTER_CANTUS: 4      
+      STR_BOLTER_CANTUS: 4
       STR_CANTUS_BOLTER_AMMO: 22
       STR_BOLTPISTOL_DEAZ: 2
       STR_LIGHT_BOLTPISTOL_AMMO: 6
@@ -118,7 +118,7 @@ events:
 
 
 
-  - name: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT 
+  - name: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT
     description: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTDRAFTBG.SCR
     timer: 6600  # 110 hours
@@ -128,7 +128,7 @@ events:
     spawnedPersonType: STR_SLAANESHPATH_VICTUAL_BROTHER
     everyMultiSoldierList:
       STR_SLAANESHPATH_VICTUAL_BROTHER: 6
-    everyMultiItemList:
+    #everyMultiItemList:
 
 ######## TO DO: EVENT FOR DISCOVERING THE PDF DEPOT.
 

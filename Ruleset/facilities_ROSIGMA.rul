@@ -253,8 +253,8 @@ facilities:
 
   - type: STR_CHAOS_SHRINE
     requires:
-    - STR_ALIENS_ONLY
-    - STR_NOT_SLAANESHPATH # Slaanesh has his own shrines!
+      - STR_ALIENS_ONLY
+      - STR_NOT_SLAANESHPATH # Slaanesh has his own shrines!
     refundValue: 325000
     destroyedFacility: STR_CORRIDOR
     sickBayAbsoluteBonus: 0.0

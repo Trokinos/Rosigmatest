@@ -1,7 +1,7 @@
 missionScripts:
 
 
- #TODO: Adjust warp storm script to put higher weight on Khorne and Tzeentch, lower on Nurgle. 
+ #TODO: Adjust warp storm script to put higher weight on Khorne and Tzeentch, lower on Nurgle.
  #TODO: Add more sister lists to warp storm.
 
  #TODO: Add more appropriate flavor to the terror missions themselves. Right now they are just generic.
@@ -219,7 +219,7 @@ missionScripts:
     researchTriggers:
       STR_HARDER_MISSIONS: true
       STR_SLAANESHPATH: true
-    
+
   - type: warpStormBuildingHardSLAANESH
     refNode: *STR_HARD_CHAOSMISSION_TABLESLAANESH
     firstMonth: 3
@@ -253,7 +253,7 @@ missionScripts:
         STR_SLAANESHPATH_CATACOMBS: 20
         #STR_RESCUE_PDF_VALKYRIE_TAU: 40  # grounded valkyrie appears on radar, go to support to pick up some PDF, maybe an officer
       2:
-        STR_CATACOMBS: 20        
+        STR_CATACOMBS: 20
       4:
         #STR_ALIEN_WAR_TAU: 50  # delays the WAR mission until month 5+
         #STR_CATACOMBS: 10
@@ -277,7 +277,7 @@ missionScripts:
         STR_SLAANESHPATH_VALKYRIE_MISSION: 20
         #STR_RESCUE_PDF_VALKYRIE_TAU: 40  # grounded valkyrie appears on radar, go to support to pick up some PDF, maybe an officer
       2:
-        STR_CATACOMBS: 20        
+        STR_CATACOMBS: 20
       4:
         #STR_ALIEN_WAR_TAU: 50  # delays the WAR mission until month 5+
         #STR_CATACOMBS: 10

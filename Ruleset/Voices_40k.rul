@@ -2391,7 +2391,7 @@ armors:
 
  # Handmaiden
   - &STR_HANDMAIDEN_NODE
-    type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR 
+    type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR
     selectUnitMale:     [2446, 2447, 2448, 2449, 2457, 2458, 2459]  # yamllint disable-line rule:colons
     selectUnitFemale:   [2446, 2447, 2448, 2449, 2457, 2458, 2459]  # yamllint disable-line rule:colons
     startMovingMale:    [2460, 2461, 2462, 2463, 2464]  # yamllint disable-line rule:colons
@@ -2407,7 +2407,7 @@ armors:
     refNode: *STR_HANDMAIDEN_NODE
 
   - &STR_IMMACULATEARMOR_NODE
-    type: STR_SLAANESHPATH_IMMACULATE_ARMOR 
+    type: STR_SLAANESHPATH_IMMACULATE_ARMOR
     selectUnitMale:     [6004, 6006, 6013, 6016, 6020, 6021, 6009, 6029, 6024, 6016, 6025, 6001]  # yamllint disable-line rule:colons
     selectUnitFemale:   [6004, 6006, 6013, 6016, 6020, 6021, 6009, 6029, 6024, 6016, 6025, 6001]  # yamllint disable-line rule:colons
     startMovingMale:    [6000, 6002, 6003, 6007, 6011, 6012, 6014, 6017, 6018, 6023, 6028, 6022]  # yamllint disable-line rule:colons
@@ -2420,7 +2420,7 @@ armors:
     deathFemale:        [2471]  # yamllint disable-line rule:colons
 
   - &STR_CHIRURGEON_NODE
-    type: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR 
+    type: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR
     selectUnitMale:     [6040, 6042, 6044, 6045, 6046, 6047, 6052, 6053, 6061, 6062, 6065, 6066, 6067]  # yamllint disable-line rule:colons
     selectUnitFemale:   [6040, 6042, 6044, 6045, 6046, 6047, 6052, 6053, 6061, 6062, 6065, 6066, 6067]  # yamllint disable-line rule:colons
     startMovingMale:    [6031, 6032, 6037, 6038, 6039, 6041, 6043, 6048, 6049, 6050, 6051, 6056, 6057, 6060]  # yamllint disable-line rule:colons
@@ -2433,7 +2433,7 @@ armors:
     deathFemale:        [6035, 6036]  # yamllint disable-line rule:colons
 
   - type: STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR
-    refnode: *STR_CHIRURGEON_NODE
+    refNode: *STR_CHIRURGEON_NODE
 
   - &STR_SORCERESS_NODE
     type: STR_SLAANESHPATH_SORCERESS_ARMOR
@@ -2449,4 +2449,4 @@ armors:
     deathFemale:        [6070]  # yamllint disable-line rule:colons
 
   - type: STR_SLAANESHPATH_ANATHEMANT_ARMOR
-    refnode: *STR_SORCERESS_NODE
+    refNode: *STR_SORCERESS_NODE

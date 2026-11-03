@@ -52,10 +52,10 @@ extended:
 
   #C1 - Immaculate Cantus
     #C2 - Immaculate Cantus with GL
-  
+
 
       # X: Auxiliary weapons
-  
+
 
 items:
 
@@ -95,7 +95,7 @@ items:
     armor: 200
     listOrder: 10741
     tags:
-      - ITEM_SNAP_AIMED_POWER_BONUS_PERCENT: 10 # DMR-like rifle, a la Darktide.
+      ITEM_SNAP_AIMED_POWER_BONUS_PERCENT: 10 # DMR-like rifle, a la Darktide.
  #A2
   - type: STR_AUTOGUN_ADEPTAS_MKIXB
     categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
@@ -132,15 +132,15 @@ items:
     armor: 200
     listOrder: 10742
     tags:
-      - ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10
-      - ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 35 # DMR-like rifle, a la Darktide.
+      ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 35 # DMR-like rifle, a la Darktide.
 
 
 
   - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     dropoff: 3  # light sniper weapon
     weight: 16  # -4 weight vs repressor
     size: 0.4
@@ -227,9 +227,9 @@ items:
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     size: 0.3
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     requiresBuy: # Placeholder
-    - STR_SLAANESHPATH
+      - STR_SLAANESHPATH
     costSell: 4000
     weight: 8
     bigSprite: 205
@@ -242,9 +242,9 @@ items:
     autoRange: 11 # 1 More
     snapRange: 17
     aimRange: 22
-    accuracyAuto: 55 
-    accuracySnap: 80  
-    accuracyAimed: 90 
+    accuracyAuto: 55
+    accuracySnap: 80
+    accuracyAimed: 90
     tuAuto: 35  # Better at autofire than stock battle rifles
     tuSnap: 33
     tuAimed: 45 # 5 tu less
@@ -268,7 +268,7 @@ items:
   - type: STR_HEAVY_LASPISTOL_SLAAN  # Accatran heavy. Takes normal lasgun cells.
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.1
     dropoff: 4
     costSell: 500
@@ -299,13 +299,13 @@ items:
       REACTION_MULTIPLIER: 200
 
 #### MELTA WEAPONS ####
- 
+
   - type: STR_MELTA_CARBINE_SLAAN # Stolen & modified melta carbine technology. Expensive, but versatile.
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.3
-    costSell: 40000 
+    costSell: 40000
     weight: 12  # lightweight melta
     bigSprite: 920
     floorSprite: 920
@@ -315,11 +315,11 @@ items:
     fireSound: {mod: 40k, index: 739}
     compatibleAmmo:
       - STR_LIGHT_MELTA_AMMO_SLAAN # Only 60 power vs. full sized melta's 100.
-    dropoff: 8  # 
+    dropoff: 8  #
     maxRange: 16
     autoRange: 6
     snapRange: 7
-    aimedRange: 10
+    aimRange: 10
     accuracyAuto: 60
     accuracySnap: 80
     accuracyAimed: 90
@@ -336,21 +336,21 @@ items:
     confSnap:
       name: STR_LOW_POWER_MODE
     confAuto:
-      spendPerShot: 2  # Doubles ammo consumption; very high power up close.  
+      spendPerShot: 2  # Doubles ammo consumption; very high power up close.
       name: STR_SLAMFIRE_MODE
     confAimed:  # More accurate and more ammo-efficient vs slamfire; lower damage per time unit.
       spendPerShot: 2
       name: STR_FULL_POWER_MODE
     tags:
       ITEM_AIMED_FLAT_POWER_BONUS_PERCENT: 55 # Slightly weaker than a full melta on focused setting.
-      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10 
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
 
 #### PLASMA WEAPONS ####
 
   - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az. lacks overcharge, but faster to fire.
     categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     size: 0.2
     costSell: 30000 # 50% more expensive
     weight: 12 # -4 weight
@@ -374,7 +374,7 @@ items:
     accuracyAuto: 55
     accuracySnap: 65
     tuAuto: 35
-    tuSnap: 25 # 
+    tuSnap: 25 #
     autoShots: 3
     confSnap:
       name: STR_BURST_SNAP_SHOT
@@ -498,7 +498,7 @@ items:
   - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     dropoff: 3  # light sniper weapon
     weight: 16  # -4 weight vs repressor
     size: 0.4
@@ -549,7 +549,7 @@ items:
     snapRange: 10
     aimRange: 0
     accuracyAuto: 0
-    accuracySnap: 60 
+    accuracySnap: 60
     accuracyAimed: 0
     tuAuto: 0
     tuSnap: 26  # 40k 21  # ROSIGMA 1.06Beta2 16
@@ -579,9 +579,9 @@ items:
     requiresBuy:
       - STR_GENERALLOCK
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     dropoff: 5
-    autoRange: 7 
+    autoRange: 7
     snapRange: 12 # -2 vs Cantus, Slaanesh weapon profile
     aimRange: 0
 
@@ -626,7 +626,7 @@ items:
     requiresBuy:
       - STR_GENERALLOCK
     dropoff: 5
-    autoRange: 7 
+    autoRange: 7
     snapRange: 12
     aimRange: 14 # -2 vs hellspite.
     accuracyAuto: 55
@@ -675,7 +675,7 @@ items:
       ammoSlot: 1  # Grenades
       name: STR_LAUNCH_GRENADE
       shortName: STR_LAUNCH_GRENADE_SHORT
-      arcing: false     
+      arcing: false
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -696,7 +696,7 @@ items:
     snapRange: 12
     aimRange: 0
 
-    accuracyAuto: 65  
+    accuracyAuto: 65
     accuracySnap: 70
     accuracyAimed: 0
 
@@ -749,7 +749,7 @@ items:
 #      time: true
 
   - type: STR_BOLTER_ARACHNE # COMBI WEBBER DEAZ
-    refnode: *SLAANESH_DEAZ_TEMPLATE
+    refNode: *SLAANESH_DEAZ_TEMPLATE
     dropoff: 6
     tuAimed: 25
     accuracyAimed: 55
@@ -771,12 +771,12 @@ items:
       arcing: false
 
   - type: STR_BOLTER_KELPIE # De'az with underslung shotgun. Has a DMR-like profile.
-    refnode: *SLAANESH_DEAZ_TEMPLATE
+    refNode: *SLAANESH_DEAZ_TEMPLATE
     accuracySnap: 80
     snapRange: 15
     tuSnap: 24
     accuracyAimed: 60
-    aimedRange: 6
+    aimRange: 6
     tuAimed: 20
     autoRange: 10
     accuracyAuto: 75
@@ -801,7 +801,7 @@ items:
 
   - type: STR_BOLTER_NAGA # Corrupted Elohim with plasma attachment.
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     dropoff: 5
     autoRange: 9
     snapRange: 16  # DMR
@@ -848,7 +848,7 @@ items:
 
   - type: STR_BOLTER_NAIAD  # Corrupted Hellspite bolter with a sonic projector.
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     dropoff: 5
     autoRange: 7  # 4 Auto
     snapRange: 14
@@ -888,7 +888,7 @@ items:
 
   - type: STR_BOLTER_KERES # Converted De'az bolter with canted foregrip. Extremely high RoF.
     requires:
-    - STR_ALIENS_ONLY
+      - STR_ALIENS_ONLY
     dropoff: 7 # You *really* don't want to fire this one at range.
     autoRange: 6  # -2 vs hellspite
     snapRange: 12  # -1 vs hellspite.
@@ -910,7 +910,7 @@ items:
     tags:
       ITEM_RECOIL: 40
 
-  - type: STR_BOLTER_TIAMAT # De'az kombi-plasma. 
+  - type: STR_BOLTER_TIAMAT # De'az kombi-plasma.
 
  #### MELEE WEAPONS ####
 
@@ -999,8 +999,8 @@ items:
     invHeight: 3
     armor: 200
     skillApplied: true
-    damageBonus: 
-      melee: 0.05 
+    damageBonus:
+      melee: 0.05
       reactions: 0.15
     meleeMultiplier:
       melee: 0.8 # - 0.2
@@ -1029,7 +1029,7 @@ items:
     power: 80
     damageBonus: # Slaanesh variant depends on reactions as well as melee skill
       melee: 0.4
-      reactions: 0.2 
+      reactions: 0.2
     meleeMultiplier:
       melee: 0.7
       reactions: 0.4
@@ -1104,7 +1104,7 @@ items:
 
     damageBonus: # Not a sniper weapon unlike most other needlers. Gains a bonus from reactions.
       reactions: 0.15
-      firing: 0.15     
+      firing: 0.15
     damageType: 8  # acid
     damageAlter:  # Hallucinogenic, warp-tainted chems.
       ArmorEffectiveness: 0.5  # low power but high penetration
@@ -1168,7 +1168,7 @@ items:
     hitAnimation: 1020  # X1 Pink skullsplosion
     power: 70
 
-    accuracySnap: 60 
+    accuracySnap: 60
     accuracyMultiplier:
       firing: 0.15
       reactions: 0.25
@@ -1250,7 +1250,7 @@ items:
     defaultInventorySlot: STR_LEFT_HAND
 
   - type: AUX_VIVISECTIONIST_MEDI_KIT
-    refnode: *CHIRURGEON_MEDIKIT_TEMPLATE
+    refNode: *CHIRURGEON_MEDIKIT_TEMPLATE
     meleePower: 45
 
 # - type: ARAKIEL_MISSILE_LAUNCHER
@@ -1274,4 +1274,4 @@ items:
 
 
 
-# 
+#

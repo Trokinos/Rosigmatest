@@ -4,7 +4,7 @@ extended:
 armors:
 
 #HA
-  - type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR 
+  - type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 21 # Very slightly improved senses
     antiCamouflageAtDay: 1  # Very slightly improved senses
@@ -131,7 +131,7 @@ armors:
     visibilityAtDark: 26 # Minor mark of Slaanesh
     antiCamouflageAtDay: 6  # Minor mark of Slaanesh
     antiCamouflageAtDark: 6 # Minor mark of Slaanesh
-    PsiVision: 5 # Novice sorceress.
+    psiVision: 5 # Novice sorceress.
     heatVision: 30 # Improved heatvision
     spriteSheet: HANDMAIDEN.PCK # Fix later
     spriteInv: HNDM_33 # Fix later
@@ -189,7 +189,7 @@ armors:
 
 
 #HC
-  - type: STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR    # Armor for aspiring Chirurgeons. 
+  - type: STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR # Armor for aspiring Chirurgeons.
     visibilityAtDay: 40
     visibilityAtDark: 24
     antiCamouflageAtDay: 5  # Heightened senses
@@ -253,7 +253,7 @@ armors:
     antiCamouflageAtDark: 5 # Heightened senses
     heatVision: 20 # Heightened senses
     spriteSheet: XCOM_33DRED.PCK # Fix later
-    spriteInv: MAN_33 # Fix later 
+    spriteInv: MAN_33 # Fix later
     customArmorPreviewIndex: 60 # Fix later
     corpseBattle:
       - STR_ADEPTAS_CORPSE
@@ -261,7 +261,7 @@ armors:
       tu: 10 # + 10 vs adeptas power armor
       stamina: 20
       health: 5
-      bravery: 0 # - 10 vs adeptas power armor 
+      bravery: 0 # - 10 vs adeptas power armor
       reactions: 10 # + 5 vs adeptas power armor
       firing: 5
       throwing: 5
@@ -294,7 +294,7 @@ armors:
       - INV_NULL_2X1_LL
     loftempsSet: [3]
     tags:
-      INFECTION_RESIST: 40 # Slaanesh Immaculate baseline. 
+      INFECTION_RESIST: 40 # Slaanesh Immaculate baseline.
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -309,9 +309,9 @@ armors:
     antiCamouflageAtDay: 12  # Bride of Tzeentch equivalent
     antiCamouflageAtDark: 12 # Bride of Tzeentch equivalent
     psiVision: 5
-    heatVision: 40 # 
+    heatVision: 40 #
     spriteSheet: XCOM_33DRED.PCK # Fix later
-    spriteInv: MAN_33 # Fix later 
+    spriteInv: MAN_33 # Fix later
     customArmorPreviewIndex: 60 # Fix later
     corpseBattle:
       - STR_ADEPTAS_CORPSE
@@ -319,13 +319,13 @@ armors:
       tu: 10 # + 10 vs adeptas power armor
       stamina: 20
       health: 10
-      bravery: 0 # - 10 vs adeptas power armor 
+      bravery: 0 # - 10 vs adeptas power armor
       reactions: 10 # + 5 vs adeptas power armor
       firing: 10
       throwing: 5
       strength: 5
       psiStrength: 10
-      psiSkill: 10  
+      psiSkill: 10
       melee: 10 # + 10 vs adeptas power armor
     storeItem: STR_NONE
     frontArmor: 95 # -10
@@ -352,7 +352,7 @@ armors:
       - INV_NULL_2X1_LL
     loftempsSet: [3]
     tags:
-      INFECTION_RESIST: 60 # Baseline + soreress  
+      INFECTION_RESIST: 60 # Baseline + soreress
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -381,16 +381,16 @@ armors:
       health: 15 # Combat drugs, medicae armor
       bravery: 10  # always multiples of 10
       reactions: 15 # Combat drugs
-      firing: 0  
+      firing: 0
       throwing: 0
       strength: 5
       psiStrength: 0
       psiSkill: 5
       melee: 15 # Combat drugs
       mana: 20 # Auxilliary ammo/energy reserve
-    frontArmor: 80 
+    frontArmor: 80
     sideArmor: 75
-    rearArmor: 65 
+    rearArmor: 65
     underArmor: 90 # Agility
     damageModifier:  # MARINE ARMOR
       - 1.0  # none
@@ -428,7 +428,7 @@ armors:
     refNode: *STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
     specialWeapon: AUX_CHIRURGEON_GAS_LAUNCHER
 
-  - type: STR_SLAANESHPATH_HARBINGER_ARMOR    # Slaanesh seraphim equivalent.
+  - type: STR_SLAANESHPATH_HARBINGER_ARMOR # Slaanesh seraphim equivalent.
     # group: 2
     visibilityAtDay: 40
     visibilityAtDark: 24
@@ -483,14 +483,14 @@ armors:
       FLIGHT_DODGE_CHANCE: 30
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
-  - type: STR_SLAANESHPATH_CHOIR_ARMOR     # Baseline Immaculate heavy armor. Required to use most factional heavy weapons.
+  - type: STR_SLAANESHPATH_CHOIR_ARMOR # Baseline Immaculate heavy armor. Required to use most factional heavy weapons.
     visibilityAtDay: 40
     visibilityAtDark: 26 # High quality optics + heightened senses.
     antiCamouflageAtDay: 6  # High quality optics + heightened senses.
     antiCamouflageAtDark: 6 # High quality optics + heightened senses.
     heatVision: 35 # High quality optics + heightened senses.
     spriteSheet: XCOM_33DRED.PCK # Fix later
-    spriteInv: MAN_33 # Fix later 
+    spriteInv: MAN_33 # Fix later
     customArmorPreviewIndex: 60 # Fix later
     corpseBattle:
       - STR_ADEPTAS_CORPSE
@@ -498,8 +498,8 @@ armors:
       tu: 0
       stamina: 10
       health: 15
-      bravery: 20  
-      reactions: 15 
+      bravery: 20
+      reactions: 15
       firing: 20
       throwing: 5
       strength: 5
@@ -519,7 +519,7 @@ armors:
       - 0.7  # LASCANON
       - 0.9  # PLASMA - 0.1 bonus vs adeptas power armor.
       - 0.7  # STUN - 0.3 bonus vs adeptas power armor.
-      - 1.0  # MELEE 
+      - 1.0  # MELEE
       - 1.0  # ACID - 0.2 malus vs Adeptas power armor
       - 0.0  # SMOKE
       - 0.2  # IMPACT
@@ -531,7 +531,7 @@ armors:
       - INV_NULL_2X1_LL
     loftempsSet: [3]
     tags:
-      INFECTION_RESIST: 50 # Baseline + angelic blessing. 
+      INFECTION_RESIST: 50 # Baseline + angelic blessing.
       ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
@@ -568,7 +568,7 @@ armors:
       - 0.8  # LASCANON
       - 0.9  # PLASMA
       - 1.0  # STUN
-      - 0.8  # MELEE 
+      - 0.8  # MELEE
       - 0.9  # ACID INQ prepped
       - 0.0  # SMOKE
       - 0.2  # IMPACT; droppod proof
@@ -588,11 +588,11 @@ armors:
       DODGE_CHANCE: 30
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
-  
 
-  - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR     # Decent-quality, custom mesh armor. 
+
+  - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR # Decent-quality, custom mesh armor.
     visibilityAtDay: 40
-    visibilityAtDark: 20 
+    visibilityAtDark: 20
     forcedTorso: 0
     customArmorPreviewIndex: 1121
     corpseBattle:
@@ -605,11 +605,11 @@ armors:
       tu: 5
       stamina: 0
       health: 0
-      bravery: 0  
-      reactions: 5 
+      bravery: 0
+      reactions: 5
       firing: 0
       throwing: 0
-      strength: 0 
+      strength: 0
       psiStrength: 0
       psiSkill: 0
       melee: 0
@@ -640,9 +640,9 @@ armors:
       DODGE_CHANCE: 15
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
 
-  - type: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR     # Work in progress. For now this is identical to normal cultists.
+  - type: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR # Work in progress. For now this is identical to normal cultists.
     visibilityAtDay: 40
-    visibilityAtDark: 20 
+    visibilityAtDark: 20
     forcedTorso: 0
     customArmorPreviewIndex: 1121
     corpseBattle:
@@ -692,7 +692,7 @@ armors:
       UNIT_IS_DIEHARD: 1
       DIEHARD_TEMP_MODIFIER_INCREMENT: -100  # they only get one second chance
 
-  - type: STR_SLAANESHPATH_HERETEK_ARMOR                # Enginseer
+  - type: STR_SLAANESHPATH_HERETEK_ARMOR # Enginseer
     spriteSheet: ENGINSEER.PCK
     spriteInv: ENGINSEER.SPK
     customArmorPreviewIndex: 837

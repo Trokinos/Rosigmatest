@@ -54,7 +54,7 @@ manufacture:
   - name: STR_PROPITIATE_SLAANESH
     category: STR_RITES_OF_EXCESS
     requires:
-    - STR_RITUALS_OF_WORSHIP
+      - STR_RITUALS_OF_WORSHIP
     space: 15
     time: 200
     cost: 6000
@@ -67,7 +67,7 @@ manufacture:
   - name: STR_SACRIFICE_TO_SLAANESH
     category: STR_RITES_OF_EXCESS
     requires:
-    - STR_RITUALS_OF_WORSHIP
+      - STR_RITUALS_OF_WORSHIP
     space: 15
     time: 200
     cost: 2000
@@ -80,7 +80,7 @@ manufacture:
   - name: STR_CONVERT_MINOR_MISSION_BOUNTY # Random reward for minor missions.
     category: STR_RITES_OF_EXCESS
     requires:
-    - STR_RITUALS_OF_WORSHIP
+      - STR_RITUALS_OF_WORSHIP
     space: 5
     time: 60
     cost: 6000
@@ -106,7 +106,7 @@ manufacture:
   - name: STR_RECRUIT_HANDMAIDEN
     category: STR_RITES_OF_DEPRAVITY
     requires:
-    - STR_RITUALS_OF_WORSHIP
+      - STR_RITUALS_OF_WORSHIP
     space: 0
     time: 500
     cost: 45000
@@ -120,15 +120,15 @@ manufacture:
 
 ####################################################################
 ######## RITUALS OF CORRUPTION - WEAPON & ITEM CONVERSIONS #########
-#################################################################### 
+####################################################################
 
  # TIER 1 WEAPON CONVERSIONS
 
   - name: STR_CORRUPT_CANTUS_BOLTER
     category: STR_RITES_OF_CORRUPTION
     requires:
-    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-    - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
     space: 0
     time: 160
     cost: 10000
@@ -142,9 +142,9 @@ manufacture:
   - name: STR_ATTACH_GL_TO_CANTUS
     category: STR_RITES_OF_CORRUPTION
     requires:
-    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-    - STR_CORRUPT_ADEPTAS_BOLTERS
-    - STR_LIGHT_GRENADE_LAUNCHERS
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_LIGHT_GRENADE_LAUNCHERS
     space: 5
     time: 80
     cost: 2000
@@ -158,8 +158,8 @@ manufacture:
   - name: STR_CORRUPT_DEAZ_BOLTER
     category: STR_RITES_OF_CORRUPTION
     requires:
-    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-    - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
     space: 0
     time: 160
     cost: 5000 # +20K promethium
@@ -174,9 +174,9 @@ manufacture:
   - name: STR_ATTACH_WEBBER_TO_DEAZ
     category: STR_RITES_OF_CORRUPTION
     requires:
-    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-    - STR_CONSTRICTOR_WEBBER_PISTOLS
-    - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CONSTRICTOR_WEBBER_PISTOLS
+      - STR_CORRUPT_ADEPTAS_BOLTERS
     space: 10
     time: 140
     cost: 5000
@@ -190,8 +190,8 @@ manufacture:
   - name: STR_CORRUPT_ELOHIM_BOLTER
     category: STR_RITES_OF_CORRUPTION
     requires:
-    - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-    - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
     time: 160
     cost: 9000 # +25K promethium
     producedItems:
@@ -210,9 +210,9 @@ manufacture:
   - name: STR_CREATE_IMMACULATE_TOKEN # REBALANCE THIS
     category: STR_RITES_OF_CONSECRATION
     requires:
-    - STR_POWER_ARMOR_CORRUPTION
+      - STR_POWER_ARMOR_CORRUPTION
     space: 20
-    time: 300 
+    time: 300
     cost: 12000 # Actual cost factoring in material sell value is 70K
     producedItems:
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
@@ -223,12 +223,12 @@ manufacture:
       STR_ELERIUM_115: 4
     points: 20
 
-  - name: STR_CREATE_ANGELIC_TOKEN # BALANCE TBD 
+  - name: STR_CREATE_ANGELIC_TOKEN # BALANCE TBD
     category: STR_RITES_OF_CONSECRATION
     requires:
-    - STR_GENERALLOCK # PLACEHOLDER
+      - STR_GENERALLOCK # PLACEHOLDER
     space: 20
-    time: 300 
+    time: 300
     cost: 1200 # BALANCE TBD
     producedItems:
       STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
@@ -239,12 +239,12 @@ manufacture:
       STR_ELERIUM_115: 4
     points: 20
 
-  - name: STR_CREATE_HARBINGER_TOKEN # BALANCE TBD 
+  - name: STR_CREATE_HARBINGER_TOKEN # BALANCE TBD
     category: STR_RITES_OF_CONSECRATION
     requires:
-    - STR_GENERALLOCK # PLACEHOLDER
+      - STR_GENERALLOCK # PLACEHOLDER
     space: 20
-    time: 300 
+    time: 300
     cost: 1200 # BALANCE TBD
     producedItems:
       STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
@@ -255,12 +255,12 @@ manufacture:
       STR_ELERIUM_115: 4
     points: 20
 
-  - name: STR_CREATE_ARCHANGEL_TOKEN # BALANCE TBD 
+  - name: STR_CREATE_ARCHANGEL_TOKEN # BALANCE TBD
     category: STR_RITES_OF_CONSECRATION
     requires:
-    - STR_GENERALLOCK # PLACEHOLDER
+      - STR_GENERALLOCK # PLACEHOLDER
     space: 20
-    time: 300 
+    time: 300
     cost: 1200 # BALANCE TBD
     producedItems:
       STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
@@ -275,9 +275,9 @@ manufacture:
   - name: STR_REPAIR_ADEPTAS_ARMOR_COMPONENT
     category: STR_PERSONAL_ARMOR
     requires:
-    - STR_POWER_ARMOR_CORRUPTION
+      - STR_POWER_ARMOR_CORRUPTION
     space: 20
-    time: 200 
+    time: 200
     cost: 1000 # Adds a hefty cost and time requirement.
     producedItems:
       STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
@@ -289,9 +289,9 @@ manufacture:
   - name: STR_FORGE_ADEPTAS_ARMOR_COMPONENT
     category: STR_PERSONAL_ARMOR
     requires:
-    - STR_POWER_ARMOR_CORRUPTION
+      - STR_POWER_ARMOR_CORRUPTION
     space: 20
-    time: 200 
+    time: 200
     cost: 1000 # Adds a hefty cost and time requirement.
     producedItems:
       STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
