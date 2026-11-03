@@ -1018,6 +1018,11 @@ extraSprites:
       4915: Resources/Eldar/weapons/Reaper_launcher_starswarmpod_floorObj.png
       4916: Resources/Eldar/weapons/deathspinner/wireweave_spool_floorObj.png
       4917: Resources/Eldar/weapons/grenades/wireweavenet_floorObj.png
+      4918: Resources/Eldar/weapons/grenades/sunburst_grenade_floorObj.png
+      4919: Resources/Eldar/weapons/grenades/starshot_grenade_floorObj.png
+      4920: Resources/Eldar/weapons/grenades/eldarfusion_grenade_floorObj.png
+      4921: Resources/Eldar/weapons/grenades/eldarhaywire_grenade_floorObj.png
+      4922: Resources/Eldar/weapons/grenades/eldarplasma_grenade_floorObj.png
 
       4947: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_1_floorObj.png
       4948: Resources/Eldar/units/eldar_heavy_weapon_platform/eldar_hwp_2_floorObj.png
