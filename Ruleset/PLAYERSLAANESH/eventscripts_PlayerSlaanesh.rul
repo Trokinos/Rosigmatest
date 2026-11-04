@@ -30,3 +30,12 @@ eventScripts:
     executionOdds: 100
     researchTriggers:
       STR_ARBITES: true
+
+  - type: STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENTSCRIPT
+    oneTimeSequentialEvents:
+      - STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT
+    firstMonth: 1
+    lastMonth: 1
+    executionOdds: 100
+    researchTriggers:
+      STR_ARBITES: true

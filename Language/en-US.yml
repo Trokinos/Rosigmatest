@@ -2456,10 +2456,11 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_SLAANESH_ALTAR: "Altar of Slaanesh"
   STR_HALLS_OF_DELECTATION: "Halls of Delectation"
+  STR_OUTPOST_SLAANESH: "Immaculate Outpost"
 
   ### SLAANESH COMMENDATIONS
   STR_HANDMAIDEN_COMMENDATION: "Mark of Promise"
-  STR_HANDMAIDEN_COMMENDATION_DESCRIPTION: "{NEWLINE}This Handmaiden has displayed promise and initiative and is now allowed to continue her advance along Slaanesh's path to perfection."
+  STR_HANDMAIDEN_COMMENDATION_DESCRIPTION: "{NEWLINE}This Handmaiden has displayed promise and initiative and is now allowed to continue her advance along the Path of Perfection."
 
   ### SLAANESH STORY EVENTS & STORY CODEX DESCRIPTIONS
 
@@ -2481,6 +2482,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But it's okay. It isn't your fault. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}In silence, they come at you from every direction. A hard blow impacts the back of your head, and again the darkness claims you."
   STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT: "Unenlightened Interlopers"
   STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION: "With the auspex grid still non-functional, the clumsy intruders almost make it into your sanctum unnoticed.{NEWLINE}{NEWLINE}Almost.{NEWLINE}{NEWLINE}Examining the survivors, your nose twitches in disgust: Hive-gangers. Scavengers. *Gutter-rats*. Yet it would be a waste to kill them. Even the profane tool can be put to holy work; these men and the trucks they rode in on may yet serve a greater cause."
+  STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT: "Wave of Despair"
+  STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION: "With the divine warp storm only intensifying, many PDF regiments are now hitting their breaking point.{NEWLINE}{NEWLINE}Buckling under tidal waves of delicious despair, local forces are now turning traitor or abandoning their outposts en masse. Provided we have the money, we will now be able to purchase PDF vehicles directly."
 
   STR_TERROR_WEAPONRY_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}For all their faults, our sisters knew how to bask in the fear and terror of heretics. But flamers are primitive and tawdry weapons; as boring and predictable as the sisters who wield them. With toxin needlers, gas, and sonic weaponry, we  "
   STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Our restored vox array has finally forced a channel to one of the Dark Mechanicum's clandestine sects. They are willing to consider a pact of cooperation, but only if we first gather for them a great trove of slaves and materials. Arch-savant Valtiek has sent us an emissary carrying “a few unimportant trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon modifications."
@@ -2560,6 +2563,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_IMMACULATE_LASGUN_TECHNOLOGY: "Decode Lasgun Data-crypt"
   STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
   STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
+  STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
 
  ###################################
  #### MANUFACTURING PROJECTS #######
