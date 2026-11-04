@@ -64,8 +64,9 @@ items:
 #### BALLISTIC WEAPONS ####
 
  #A1
-  - type: STR_AUTOGUN_ADEPTAS_MKIX # Agripinaa Mk. IX Autogun.
-    categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
+
+  - type: STR_AGRIPINAAMKIX # Agripinaa Mk. IX Autogun.
+    categories: [STR_CAT_AUTO]
     requiresBuy:
       - STR_CONTACT_ARMS_SMUGGLERS
     size: 0.2
@@ -96,9 +97,11 @@ items:
     listOrder: 10741
     tags:
       ITEM_SNAP_AIMED_POWER_BONUS_PERCENT: 10 # DMR-like rifle, a la Darktide.
+
  #A2
-  - type: STR_AUTOGUN_ADEPTAS_MKIXB
-    categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
+
+  - type: STR_AGRIPINAAMKIXB
+    categories: [STR_CAT_AUTO]
     requiresBuy:
       - STR_CONTACT_ARMS_SMUGGLERS
     size: 0.2
@@ -134,7 +137,6 @@ items:
     tags:
       ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 35 # DMR-like rifle, a la Darktide.
-
 
 
   - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
