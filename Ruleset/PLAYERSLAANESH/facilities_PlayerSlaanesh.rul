@@ -32,7 +32,7 @@ facilities:
     placeSound: {mod: 40k, index: 98}
     requiresBaseFunc: [BASE]
     requires:
-      - STR_IMPLEMENTS_OF_TORTURE
+      - ADORATION_THROUGH_AGONY
     spriteShape: 1
     spriteFacility: {mod: 40k, index: 444}
     buildCost: 400000

@@ -156,7 +156,7 @@ soldierTransformation:
  #NY   # TODO: ADD STAT REQUIREMENTS FOR PSISKILL & PSISTRENGTH
   - name: STR_NOMINATE_MYSTES # Turns a Handmaiden into an apprentice Mystagogue.
     requires:
-      - STR_SOULS_FOR_SLAANESH
+      - STR_SACRIFICIAL_RITUALS
     cost: 50000 # Expensive; this is a powerful unit.
     producedSoldierType: STR_SLAANESHPATH_MYSTES
     producedSoldierArmor: STR_SLAANESHPATH_MYSTES_ARMOR
@@ -190,7 +190,7 @@ soldierTransformation:
  #NA
   - name: STR_NOMINATE_ANATHEMANT # Turns a Handmaiden into an apprentice Sorceress.
     requires:
-      - STR_SOULSTAIN_SORCERY # Placeholder. Will be moved to soulstain sorcery.
+      - STR_SOULSTAIN_SORCERY
     cost: 66600 # Expensive; this is a powerful unit.
     producedSoldierType: STR_SLAANESHPATH_ANATHEMANT
     producedSoldierArmor: STR_SLAANESHPATH_ANATHEMANT_ARMOR

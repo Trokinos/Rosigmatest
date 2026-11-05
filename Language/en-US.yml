@@ -2483,7 +2483,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT: "Unenlightened Interlopers"
   STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION: "With the auspex grid still non-functional, the clumsy intruders almost make it into your sanctum unnoticed.{NEWLINE}{NEWLINE}Almost.{NEWLINE}{NEWLINE}Examining the survivors, your nose twitches in disgust: Hive-gangers. Scavengers. *Gutter-rats*. Yet it would be a waste to kill them. Even the profane tool can be put to holy work; these men and the trucks they rode in on may yet serve a greater cause."
   STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT: "Wave of Despair"
-  STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION: "With the divine warp storm only intensifying, many PDF regiments are now hitting their breaking point.{NEWLINE}{NEWLINE}Buckling under tidal waves of delicious despair, local forces are now turning traitor or abandoning their outposts en masse. Provided we have the money, we will now be able to purchase PDF vehicles directly."
+  STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION: "With the divine warp storm only intensifying, the weak Planetary Defense Force has hit its breaking point.{NEWLINE}{NEWLINE}En masse, soldiers are giving in to fear and despair. Local forces are turning traitor or abandoning their outposts in ever-greater number, offering us a delicious opportunity to attain their equipment. Provided we have the money, we will now be able to purchase black market PDF vehicles directly."
 
   STR_TERROR_WEAPONRY_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}For all their faults, our sisters knew how to bask in the fear and terror of heretics. But flamers are primitive and tawdry weapons; as boring and predictable as the sisters who wield them. With toxin needlers, gas, and sonic weaponry, we  "
   STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Our restored vox array has finally forced a channel to one of the Dark Mechanicum's clandestine sects. They are willing to consider a pact of cooperation, but only if we first gather for them a great trove of slaves and materials. Arch-savant Valtiek has sent us an emissary carrying “a few unimportant trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon modifications."
@@ -2540,7 +2540,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_GATE: "The Angel's Voice"
   STR_RITUALS_OF_WORSHIP: "Reascendance"
   STR_PATH_OF_PERFECTION: "The Path of Perfection"
-  STR_SOULS_FOR_SLAANESH: "Souls for Slaanesh"
+  STR_SACRIFICIAL_RITUALS: "Sacrificial Rituals"
   STR_SOULSTAIN_SORCERY: "Soulstain Sorcery"
   STR_WEAPON_CONSECRATION: "Rites of Weapon Consecration"
   STR_CONTACT_ARMS_SMUGGLERS: "Black Market Weapons"
@@ -2548,8 +2548,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launcher Requisition"
-  STR_TERROR_WEAPONRY: "Wicked Weapons of Terror"
-  STR_IMPLEMENTS_OF_TORTURE: "Tools of Tantalizing Torture"
+  STR_TERROR_WEAPONRY: "Blessed Weapons of Terror"
+  ADORATION_THROUGH_AGONY: "Adoration through Agony"
   STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
   STR_CHOKE_GAS_GRENADES: "Choke Gas Grenade Requisition"
   STR_BLACK_MARKET_AMMUNITION: "Black Market Ammo-Jacks"
@@ -2565,9 +2565,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
   STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
 
- ###################################
- #### MANUFACTURING PROJECTS #######
- ###################################
+ ###############################################
+ ####### SLAANESH MANUFACTURING PROJECTS #######
+ ###############################################
 
   ### MANUFACTURE DEFINITIONS
 
@@ -2588,8 +2588,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
   STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
   STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
+  STR_CAPTURE_CHAOS_SACRIFICES: "Capture Sacrificial Victims"
 
 #Weapon conversion, armor corruption, armor repair
+  STR_CREATE_IMMACULATE_EVISCERATOR: "Consecrate Eviscerator"
+  STR_CREATE_IMMACULATE_CHAINSWORD: "Consecrate Chainsword"
   STR_CORRUPT_CANTUS_BOLTER: "Consecrate Cantus Bolter"
   STR_CORRUPT_DEAZ_BOLTER: "Consecrate Godwyn-De'az Bolter"
   STR_CORRUPT_ELOHIM_BOLTER: "Consecrate Elohim Bolter"
@@ -2597,9 +2600,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
   STR_REPAIR_ADEPTAS_ARMOR_COMPONENTS: "Repair Adeptas Armor Components"
   STR_FORGE_ADEPTAS_ARMOR_COMPONENTS: "Forge Adeptas Armor Components"
-  STR_CREATE_IMMACULATE_TOKEN: "Consecrate Immaculate Armor"
-  STR_CREATE_ANGELIC_TOKEN: "Consecrate Angelic Armor"
-  STR_CREATE_HARBINGER_TOKEN: "Consecrate Harbinger Armor"
+  STR_CREATE_IMMACULATE_TOKEN: "Create Immaculate Armor"
+  STR_CREATE_ANGELIC_TOKEN: "Create Angelic Armor"
+  STR_CREATE_HARBINGER_TOKEN: "Create Harbinger Armor"
 
 
   ## UNIT PROJECTS
@@ -2634,6 +2637,12 @@ en-US: #  yamllint disable-line rule:empty-values
   ##############################
   ##### ITEM DEFINITIONS #######
   ##############################
+
+#Slaanesh crafts
+
+  STR_CHIMERA_LIGHT_SLAANESH: "Immaculate Light Chimera"
+  STR_LIGHTNING_INTERCEPTOR_SLAANESH: "Immaculate Lightning Interceptor"
+  STR_VALKYRIE_SLAANESH: "Immaculate Valkyrie"
 
 #PLOT ITEMS AND TOKENS
   STR_SLAANESHPATH_PIETY: "Piety"

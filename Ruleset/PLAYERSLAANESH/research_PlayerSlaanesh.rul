@@ -89,7 +89,7 @@ research:
       - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, lobotomizing soldiers ruins all the fun.
       - STR_ALIEN_ALLOYS # Re-enabled later.
       - STR_ELERIUM_115 # Re-enabled later.
-      - STR_PHOSPHOR_GRENADE # Not available to the strategy.
+      - STR_PHOSPHOR_GRENADE # Replaced by balefire grenades.
       - STR_MELTAGUN_TECH # This faction gets its own alternative melta weaponry.
     ############## DISABLED CHAOS-RELATED TECHS GO HERE #########
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
@@ -154,7 +154,7 @@ research:
     cost: 0
     points: 0
     dependencies:
-      - STR_GENERALLLOCK
+      - STR_GENERALLOCK
 
   ################### END OF SECTION ##################
 
@@ -182,8 +182,8 @@ research:
 ##### PIETY & RITUAL RESEARCH #####
 ###################################
 
-  - name: STR_SOULS_FOR_SLAANESH # Unlocks sacrifices. Codex Entry.
-    cost: 20
+  - name: STR_SACRIFICIAL_RITUALS # Unlocks sacrifices. Codex Entry.
+    cost: 50
     points: 20
     dependencies:
       - STR_PATH_OF_PERFECTION
@@ -199,10 +199,10 @@ research:
     #TODO: MAKE THIS TECH GIVE 200 PIETY
 
   - name: STR_SOULSTAIN_SORCERY
-    cost: 40
+    cost: 50
     points: 20
     dependencies:
-      - STR_SOULS_FOR_SLAANESH
+      - STR_SACRIFICIAL_RITUALS
 
 
   - name: STR_POWER_ARMOR_CORRUPTION # This is the tech that unlocks immaculate power armor.
@@ -253,11 +253,13 @@ research:
     cost: 75
     dependencies:
       - STR_CONTACT_HERETEKS
+      - STR_IMMACULATE_LASGUN_TECHNOLOGY
 
   - name: STR_IMMACULATE_PLASMA_TECHNOLOGY
     cost: 50
     dependencies:
       - STR_CONTACT_HERETEKS
+      - STR_PATH_OF_PERFECTION
 
   - name: STR_IMMACULATE_LASGUN_TECHNOLOGY
     cost: 25
@@ -309,13 +311,19 @@ research:
 
 ### TIER 1 TERROR PROJECTS
  #BASIC TECHS
-  - name: STR_IMPLEMENTS_OF_TORTURE # Grants access to Halls of Delectation
+  - name: ADORATION_THROUGH_AGONY #The gateway tech for pain and torture-related weapons and facilities.
     cost: 50
     points: 10
     dependencies:
       - STR_PATH_OF_PERFECTION
     unlocks:
       - STR_CHOKE_GAS_GRENADES
+
+  - name: STR_IMMACULATE_CHAINBLADES
+    cost: 0
+    dependencies:
+      - STR_WEAPON_CONSECRATION
+      - ADORATION_THROUGH_AGONY
 
   - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry.
     cost: 0
@@ -342,8 +350,6 @@ research:
       - STR_TERROR_WEAPONRY
     getOneFree:
       - STR_HALLUCINOGEN_GRENADES
-      - STR_SHARD_GRENADES
-      - STR_BALEFIRE_GRENADES
 
  ####40MM terror grenade flavors. All must be unlocked to advance the tech tree.#####
   - name: STR_HALLUCINOGEN_GRENADES
@@ -353,7 +359,7 @@ research:
   - name: STR_SHARD_GRENADES
     cost: 50
     dependencies:
-      - STR_GENERALLOCK
+      - ADORATION_THROUGH_AGONY
   - name: STR_SONIC_GRENADES
     cost: 50
     dependencies:
@@ -363,11 +369,7 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
-  - name: STR_IMMACULATE_CHAINBLADES
-    cost: 0
-    dependencies:
-      - STR_WEAPON_CONSECRATION
-      - STR_IMPLEMENTS_OF_TORTURE
+
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
     cost: 30

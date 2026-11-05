@@ -137,7 +137,7 @@ events:
     background: CHAOSCULTDRAFTBG.SCR
     timer: 13200  # 220 hours
     interruptResearch: STR_NOT_SLAANESHPATH
-
+    researchList: [STR_BLACK_MARKET_CRAFT_AVAILABLE]
 
 ######## TO DO: EVENT FOR DISCOVERING THE PDF DEPOT.
 
