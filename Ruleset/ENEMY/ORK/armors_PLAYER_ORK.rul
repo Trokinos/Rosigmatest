@@ -1410,6 +1410,7 @@ armors:
     units:
       - STR_SQUIG
     customArmorPreviewIndex: 838  # cyber mastiff. Needs new
+    allowsKneeling: false
     tags:
       INFECTION_RESIST: 75  # infection/corruption resistant due to ORKY
       UNIT_TYPE_IMPERIUM: 1
@@ -1480,6 +1481,7 @@ armors:
     units:
       - STR_SQUIG
     customArmorPreviewIndex: 838  # cyber mastiff. Needs new
+    allowsKneeling: false
     tags:
       INFECTION_RESIST: 75  # infection/corruption resistant due to ORKY
       UNIT_TYPE_IMPERIUM: 1
