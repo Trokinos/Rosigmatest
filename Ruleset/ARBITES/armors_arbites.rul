@@ -271,6 +271,7 @@ armors:
     corpseBattle:
       - STR_CMAS_CORPSE
     customArmorPreviewIndex: 838  # 600
+    allowsKneeling: false
     tags:
       UNIT_TYPE_IMPERIUM: 1
       UNIT_TYPE_LIVING: 1

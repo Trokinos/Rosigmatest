@@ -378,6 +378,7 @@ armors:
       baseNormalPercent: [50, 50]  # halved movement costs
     movementType: 1
     specab: 3
+    allowsKneeling: false
     tags:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_MECHANICAL: 1
@@ -3513,6 +3514,7 @@ armors:
       - INV_NULL_3X3
       - STR_HWP_CANNON_SHELLS
       - STR_HWP_CANNON_SHELLS
+    allowsKneeling: false
     moveCost:
       baseNormalPercent: [50, 50]  # halved movement costs
   - type: STR_KHORNECHAOSBIKE_GUARDARMORPLAYER
