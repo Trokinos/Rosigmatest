@@ -156,7 +156,8 @@ research:
     cost: 200
     points: 50
     dependencies:
-      - STR_ELDAR_STRATEGY # todo: change dependency
+      - STR_ELDAR_ASURYANI_CAMPAING_T3
+      - STR_HIGHTIER_PREREQ
 
  ### Early Game Imperium Pact
   - name: STR_MONKEIGH_PACT # Allows recruitment of Imperial meatshield unit

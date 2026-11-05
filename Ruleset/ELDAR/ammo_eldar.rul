@@ -133,8 +133,8 @@ items:
     vaporColorSurface: {mod: 40k, index: 2}
     vaporDensitySurface: 3
     vaporProbabilitySurface: 50
-    costBuy: 4000 #
-    costSell: 1000
+    costBuy: 0 # 4000 Rangers provide their own Ammo
+    costSell: 0 # 1000
     scripts:
       vaporParticleAmmo: |
         # noting
@@ -144,7 +144,7 @@ items:
     explosionSpeed: 10
     bulletSpeed: 25
     battleType: 2
-    clipSize: 25
+    clipSize: 20
     power: 70
     damageType: 1 # was 5
     damageAlter:
@@ -159,6 +159,12 @@ items:
 
   - type: STR_RANGER_LONG_RIFLE_MAG_FIXED # Comes with weapon
     refNode: *LONG_RIFLE_MAG_TEMPLATE
+    recover: false
+    costBuy: 0
+    costSell: 0
+  - type: STR_RANGER_LONG_RIFLE_MAG_FIXED2 # Multiples of the same Ammo will not appear
+    refNode: *LONG_RIFLE_MAG_TEMPLATE
+    name: STR_RANGER_LONG_RIFLE_MAG_FIXED
     recover: false
     costBuy: 0
     costSell: 0
@@ -259,7 +265,7 @@ items:
     armor: 300
 
 
-  - type: STR_DRAGON_FUSION_AMMO             # Slightly better power but stronger at point blank
+  - type: STR_DRAGON_FUSION_AMMO             # Slightly better power but 0 powerRangeThreshold
     refNode: *FUSION_AMMO_TEMPLATE
     requires:
       - STR_ELDAR_WEAPONS_ACQUISITION
