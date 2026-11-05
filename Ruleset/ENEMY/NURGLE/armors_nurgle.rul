@@ -2059,7 +2059,6 @@ armors:
       - 0.2  # IMPACT
       - 1.0  # MELTA
     loftempsSet: [92, 89, 90, 91]
-    spawnChance: 
     allowsRunning: false  # NPC limits for BAI
     tags:
       INFECTION_RESIST: 100  # infection immune
@@ -2070,7 +2069,7 @@ armors:
       UNIT_TYPE_NURGLE: 1
       UNIT_IS_DIEHARD: 1
       DIEHARD_TEMP_MODIFIER_INCREMENT: -10
-      UNIT_HAS_AURA: 1 
+      UNIT_HAS_AURA: 1
       AURA_EFFECT_RANDOM: 1 # gaussian
       AURA_FACTION_TYPE: 5 # affects players and neutrals
       AURA_INFLICTS_CORRUPTION: 20

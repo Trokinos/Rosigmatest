@@ -13156,8 +13156,6 @@ research:
       - STR_THREAT_ONE
     destroyItem: true
 
-   
-
   # Slaanesh
   - name: STR_CHRYSSALID_TERRORIST  # Slaanesh Daemonette
     cost: 170

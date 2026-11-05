@@ -9879,7 +9879,6 @@ extraSprites:
     fileSingle: Resources/NURGLE/codex_nurgdread.png
   - typeSingle: NURGLE_DREADNOUGHT_ARMOR_CODEX.SPK #shared codex by all types
     fileSingle: Resources/NURGLE/armor_nurgdread.png
-  
   - typeSingle: NURGLE_DREADNOUGHT_BOLTER_INV.SPK #twin-linked heavy bolter and nurgle power claw
     fileSingle: Resources/NURGLE/inv_nurgdread_bolter.png
 
@@ -11001,7 +11000,6 @@ extraSprites:
     fileSingle: Resources/TZEENTCH/codex_tzdread.png
   - typeSingle: TZEENTCH_DREADNOUGHT_ARMOR_CODEX.SPK #shared codex by all types
     fileSingle: Resources/TZEENTCH/armor_tzdread.png
-  
   - typeSingle: TZEENTCH_DREADNOUGHT_LASCANNON.SPK #twin-linked lascannon and helfire missile launcher
     fileSingle: Resources/TZEENTCH/inv_tzdread_lascannon.png
 
