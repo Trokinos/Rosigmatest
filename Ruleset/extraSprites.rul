@@ -9873,6 +9873,24 @@ extraSprites:
     files:
       0: Resources/FOES/Battlesprites/NURGLE_PUTRIFIER_BS.png
 
+  # Nurgle Dreadnought
+
+  - typeSingle: NURGLE_DREADNOUGHT_ORIGIN_CODEX.SPK #shared codex by all types
+    fileSingle: Resources/NURGLE/codex_nurgdread.png
+  - typeSingle: NURGLE_DREADNOUGHT_ARMOR_CODEX.SPK #shared codex by all types
+    fileSingle: Resources/NURGLE/armor_nurgdread.png
+  
+  - typeSingle: NURGLE_DREADNOUGHT_BOLTER_INV.SPK #twin-linked heavy bolter and nurgle power claw
+    fileSingle: Resources/NURGLE/inv_nurgdread_bolter.png
+
+  - type: NURGLE_DREADNOUGHT_BOLTER_BS.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/NURGLE/bs_nurgdread_bolter.png
+
     # Pestigor
   - type: PESTIGOR_BS.PCK
     width: 512
@@ -9996,12 +10014,6 @@ extraSprites:
     fileSingle: Resources/FOESPEDIAADEPTAS/UPKHORNERetributorsArmor.png
   - typeSingle: UPKhorneRetributorsOrigins.SPK
     fileSingle: Resources/FOESPEDIAADEPTAS/KhorneRetributorsOrigin.png
-
-  - typeSingle: KHORNE_DREADNOUGHT_ORIGIN_CODEX.SPK
-    fileSingle: Resources/FOESPEDIAADEPTAS/KHORNE_DREADNOUGHT_ORIGIN_CODEX.png
-
-  - typeSingle: KHORNE_DREADNOUGHT_ARMOR_CODEX.SPK
-    fileSingle: Resources/FOESPEDIAADEPTAS/KHORNE_DREADNOUGHT_ARMOR_CODEX.png
 
   - typeSingle: SuperiorPromotion.SPK
     fileSingle: Resources/CODEX/PromotetoSuperior.png
@@ -10983,6 +10995,45 @@ extraSprites:
   - typeSingle: TZEENTCH_CSM_CODEX.SPK
     fileSingle: Resources/FOESPEDIAADEPTAS/TZEENTCH_CSM_CODEX.png
 
+  # Tzeentch Dreadnought
+
+  - typeSingle: TZEENTCH_DREADNOUGHT_ORIGIN_CODEX.SPK #shared codex by all types
+    fileSingle: Resources/TZEENTCH/codex_tzdread.png
+  - typeSingle: TZEENTCH_DREADNOUGHT_ARMOR_CODEX.SPK #shared codex by all types
+    fileSingle: Resources/TZEENTCH/armor_tzdread.png
+  
+  - typeSingle: TZEENTCH_DREADNOUGHT_LASCANNON.SPK #twin-linked lascannon and helfire missile launcher
+    fileSingle: Resources/TZEENTCH/inv_tzdread_lascannon.png
+
+  - type: TZEENTCH_DREADNOUGHT_BS_LASCANNON.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/TZEENTCH/bs_tzdread_lascannon.png
+
+  - typeSingle: TZEENTCH_DREADNOUGHT_AUTOCANNON.SPK #twin-linked autocannon and helfire missile launcher
+    fileSingle: Resources/TZEENTCH/inv_tzdread_autocannon.png
+
+  - type: TZEENTCH_DREADNOUGHT_BS_AUTOCANNON.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/TZEENTCH/bs_tzdread_autocannon.png
+
+  - typeSingle: TZEENTCH_DREADNOUGHT_HFLAMER.SPK #heavy flamer and helfire missile launcher
+    fileSingle: Resources/TZEENTCH/inv_tzdread_hflamer.png
+
+  - type: TZEENTCH_DREADNOUGHT_BS_HFLAMER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/TZEENTCH/bs_tzdread_lascannon.png
 
   # undivided
   - typeSingle: UP024.SPK  # sectoid V
@@ -18059,7 +18110,7 @@ extraSprites:
       0: Resources/FOES/Battlesprites/KHORNE_DREADNOUGHT_BATTLESPRITES.png
 
   - typeSingle: KHORNE_DREADNOUGHT_HEAVY_FLAMER_INV.SPK  # STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
-    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_hflamer.png
+    fileSingle: Resources/KHORNE/inv_khdread_hflamer.png
 
   - type: KHORNE_DREADNOUGHT_HEAVY_FLAMER_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
     subX: 32
@@ -18067,13 +18118,13 @@ extraSprites:
     width: 256
     height: 840
     files:
-      0: Resources/CHAOS/WORLDEATERS/bs_khdread_hflamer.png
+      0: Resources/KHORNE/bs_khdread_hflamer.png
 
 #  - typeSingle: KHORNE_DREADNOUGHT_LASCANNON_INV.SPK  # STR_KHORNE_DREADNOUGHT_LASCANNON
-#    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_lascannon.png
+#    fileSingle: Resources/KHORNE/inv_khdread_lascannon.png
 
   - typeSingle: KHORNE_DREADNOUGHT_AUTOCANNON_INV.SPK  # STR_KHORNE_DREADNOUGHT_AUTOCANNON
-    fileSingle: Resources/CHAOS/WORLDEATERS/inv_khdread_autocannon.png
+    fileSingle: Resources/KHORNE/inv_khdread_autocannon.png
 
   - type: KHORNE_DREADNOUGHT_AUTOCANNON_BATTLESPRITES.PCK  # STR_KHORNE_DREADNOUGHT_AUTOCANNON
     subX: 32
@@ -18081,7 +18132,12 @@ extraSprites:
     width: 256
     height: 840
     files:
-      0: Resources/CHAOS/WORLDEATERS/bs_khdread_autocannon.png
+      0: Resources/KHORNE/bs_khdread_autocannon.png
+
+  - typeSingle: KHORNE_DREADNOUGHT_ORIGIN_CODEX.SPK
+    fileSingle: Resources/FOESPEDIAADEPTAS/KHORNE_DREADNOUGHT_ORIGIN_CODEX.png
+  - typeSingle: KHORNE_DREADNOUGHT_ARMOR_CODEX.SPK
+    fileSingle: Resources/FOESPEDIAADEPTAS/KHORNE_DREADNOUGHT_ARMOR_CODEX.png
 
     # KHORNE WORLD EATER LEADER
   - type: WORLDEATER_LEADER_BS.PCK

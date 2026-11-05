@@ -1742,6 +1742,9 @@ items:
 
   - type: STR_NURGLcataphract_CORPSE_GEO
     costSell: 30000
+    size: 10
+    battleType: 11
+    recover: true
     recoveryTransformations:
       STR_KILLPOINT_TOKEN: [15]
       STR_ALIEN_ALLOYS: [4]
@@ -1755,6 +1758,22 @@ items:
       STR_ALIEN_ALLOYS: [5]
       STR_UFO_CONSTRUCTION: [1]
       STR_KHORNE_DREADNOUGHT_CORPSE_GEO: [1]
+
+  - type: STR_NURGLE_DREADNOUGHT_CORPSE_GEO
+    costSell: 35000
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [20]
+      STR_ALIEN_ALLOYS: [5]
+      STR_UFO_CONSTRUCTION: [1]
+      STR_NURGLE_DREADNOUGHT_CORPSE_GEO: [1]
+
+  - type: STR_TZEENTCH_DREADNOUGHT_CORPSE_GEO
+    costSell: 35000
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [20]
+      STR_ALIEN_ALLOYS: [5]
+      STR_UFO_CONSTRUCTION: [1]
+      STR_TZEENTCH_DREADNOUGHT_CORPSE_GEO: [1]
 
   - type: STR_NIGHTLORDterminator_CORPSE_GEO
     costSell: 25000

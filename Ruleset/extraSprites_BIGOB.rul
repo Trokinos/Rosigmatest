@@ -167,11 +167,11 @@ extraSprites:
 
       # 800: Resources/Support/800.png  # 40k 030 bug fix
 
-      403: Resources/CHAOS/bigob_chdread_hflamer.png
-      404: Resources/CHAOS/WORLDEATERS/bigob_khdread_hflamer.png
-      405: Resources/CHAOS/THOUSANDSONS/bigob_tzdread_hflamer.png
-      406: Resources/CHAOS/bigob_chdread_lascannon.png
-      407: Resources/CHAOS/WORLDEATERS/bigob_khdread_autocannon.png
+      403: Resources/UNDIVIDED/bigob_chdread_hflamer.png
+      404: Resources/KHORNE/bigob_khdread_hflamer.png
+      405: Resources/TZEENTCH/bigob_tzdread_hflamer.png
+      406: Resources/UNDIVIDED/bigob_chdread_lascannon.png
+      407: Resources/KHORNE/bigob_khdread_autocannon.png
       900: Resources/Bigobs/ROTORCANNON_BIGOB.png
       901: Resources/Bigobs/ROTORCANNON_KOMBI_G_BIGOB.png
       902: Resources/Bigobs/ROTOR_CANNON_AMMO_BACKPACK_BIGOB.png

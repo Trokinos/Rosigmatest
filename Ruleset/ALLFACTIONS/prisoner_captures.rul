@@ -393,6 +393,21 @@ items:  # Geoscape items representing genericized live aliens
     recover: true
     liveAlien: true
     costSell: 50000
+  - type: STR_KHORNE_DREADNOUGHT
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 50000
+  - type: STR_NURGLE_DREADNOUGHT
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 50000
+  - type: STR_TZEENTCH_DREADNOUGHT
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 50000
   - type: STR_NURGLE_ROTBEARER
     size: 0.0
     recover: true
@@ -1389,6 +1404,32 @@ units:
   - type: STR_GUARD_CARAPACE_OGRYN_AI
     liveAlien: STR_LIVE_CAPTURE_TG_OGRYN # Same as Traitor Guard
 
+##Chaos Dreadnoughts
+    #Undivided
+
+    #Khorne
+  - type: STR_KHORNE_DREADNOUGHT
+    liveAlien: STR_KHORNE_DREADNOUGHT
+  - type: STR_KHORNE_DREADNOUGHT_HEAVY_FLAMER
+    liveAlien: STR_KHORNE_DREADNOUGHT
+  - type: STR_KHORNE_DREADNOUGHT_AUTOCANNON
+    liveAlien: STR_KHORNE_DREADNOUGHT
+  - type: STR_KHORNE_DREADNOUGHT_LASCANNON
+    liveAlien: STR_KHORNE_DREADNOUGHT
+
+    #Tzeentch
+  - type: STR_TZEENTCH_DREADNOUGHT_LASCANNON
+    liveAlien: STR_TZEENTCH_DREADNOUGHT
+  - type: STR_TZEENTCH_DREADNOUGHT_AUTOCANNON
+    liveAlien: STR_TZEENTCH_DREADNOUGHT
+  - type: STR_TZEENTCH_DREADNOUGHT_HFLAMER
+    liveAlien: STR_TZEENTCH_DREADNOUGHT
+
+    #Nurgle
+  - type: STR_NURGLE_DREADNOUGHT_BOLTER
+    liveAlien: STR_NURGLE_DREADNOUGHT
+
+
 ##GSC
   - type: STR_GENE_CULTIST
   - type: STR_GSC_MINER
@@ -1490,13 +1531,24 @@ units:
 
   - type: STR_GENESTEALER
 
-  - type: STR_TYRANID_WARRIOR
-  - type: STR_TYRANID_WARRIOR_CLAWS
-  - type: STR_TYRANID_WARRIOR_SWORD
 
+  - type: STR_TYRANID_WARRIOR_DUMMY
+    liveAlien: STR_TYRANID_WARRIOR
+  - type: STR_TYRANID_WARRIOR
+    liveAlien: STR_TYRANID_WARRIOR
+  - type: STR_TYRANID_WARRIOR_CLAWS
+    liveAlien: STR_TYRANID_WARRIOR
+  - type: STR_TYRANID_WARRIOR_SWORD
+    liveAlien: STR_TYRANID_WARRIOR
+
+  - type: STR_TYRANID_PRIME_DUMMY
+    liveAlien: STR_TYRANID_PRIME
   - type: STR_TYRANID_PRIME
+    liveAlien: STR_TYRANID_PRIME
   - type: STR_TYRANID_PRIME_CLAWS
+    liveAlien: STR_TYRANID_PRIME
   - type: STR_TYRANID_PRIME_SWORD
+    liveAlien: STR_TYRANID_PRIME
 
   - type: STR_RIPPERSWARM
 

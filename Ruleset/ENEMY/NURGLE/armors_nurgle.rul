@@ -2014,3 +2014,70 @@ armors:
       UNIT_TYPE_DAEMONIC: 1
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_NURGLE: 1
+
+  - type: STR_NURGLE_DREADNOUGHT_BOLTER_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 35  # dreadnought sensors
+    antiCamouflageAtDay: 10  # dreadnought sensors
+    antiCamouflageAtDark: 10  # dreadnought sensors
+    heatVision: 35  # dreadnought sensors
+    psiVision: 5
+    allowInv: false
+    spriteSheet: NURGLE_DREADNOUGHT_BOLTER_BS.PCK
+    spriteInv: NURGLE_DREADNOUGHT_BOLTER_INV.SPK
+    corpseBattle:
+      - STR_NURGLE_DREADNOUGHT_CORPSE_1
+      - STR_NURGLE_DREADNOUGHT_CORPSE_2
+      - STR_NURGLE_DREADNOUGHT_CORPSE_3
+      - STR_NURGLE_DREADNOUGHT_CORPSE_4
+    corpseGeo: STR_NURGLE_DREADNOUGHT_CORPSE_GEO
+    frontArmor: 270 # slighty worse and more vulnerable dreadnought armor
+    sideArmor: 237
+    rearArmor: 177
+    underArmor: 207
+    moveSound: 3960
+    drawingRoutine: 5
+    size: 2
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    recovery:  # Nurgle Blessed slowly regenerate health
+      health:
+        healthCurrent: 0.2
+    damageModifier:  # TERMINATOR ARMOR; heightened resistances due to being Nurgle Champion
+      - 1.0  # none
+      - 0.4  # AP
+      - 0.5  # FLAMES
+      - 0.4  # HE
+      - 0.7  # LASCANON
+      - 1.0  # PLASMA
+      - 0.4  # STUN
+      - 0.6  # MELEE
+      - 0.0  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    loftempsSet: [92, 89, 90, 91]
+    spawnChance: 
+    allowsRunning: false  # NPC limits for BAI
+    tags:
+      INFECTION_RESIST: 100  # infection immune
+      UNIT_SIZE: 200 # HUGE
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_NURGLE: 1
+      UNIT_IS_DIEHARD: 1
+      DIEHARD_TEMP_MODIFIER_INCREMENT: -10
+      UNIT_HAS_AURA: 1 
+      AURA_EFFECT_RANDOM: 1 # gaussian
+      AURA_FACTION_TYPE: 5 # affects players and neutrals
+      AURA_INFLICTS_CORRUPTION: 20
+      AURA_CORRUPTION_TYPE: 1 # 1: Nurgle, 2: GSC 3: Slaanesh 4: Tzeentch
+      AURA_DEALS_DAMAGE: 20
+      AURA_DAMAGE_TYPE: 8 # acid damage
+      AURA_DAMAGE_ARMOR: 1
+      AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
+      AURA_TILE_RADIUS_XY: 5 # aura's horizontal radius in tiles
+      AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
