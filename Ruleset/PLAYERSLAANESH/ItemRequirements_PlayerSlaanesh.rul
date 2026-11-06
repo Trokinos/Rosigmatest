@@ -14,14 +14,17 @@ items:
 
   - type: STR_IMMACULATE_SONIC_GRENADE
     refNode: *IMMACULATE_WEAPON
-    costSell: 350
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
     costBuy: 2600
+    costSell: 350
     requiresBuy:
       - STR_TERROR_WEAPONRY
     listOrder: 15300
 
   - type: STR_AGRIPINAAMKIX
     categories: [STR_CAT_AUTO]
+    size: 0.2
     costBuy: 9000
     costSell: 2000
     requiresBuy:
@@ -30,7 +33,60 @@ items:
 
   - type: STR_AGRIPINAAMKIXB
     categories: [STR_CAT_AUTO]
+    size: 0.2
+    costBuy: 12000
+    costSell: 2600
     requiresBuy:
       - STR_CONTACT_ARMS_SMUGGLERS
-    costBuy: 12000
-    costSell: 2000
+    listOrder: 10742
+
+  - type: STR_MELTA_CARBINE_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costSell: 40000
+    listOrder: 11160
+
+  - type: STR_PLASMA_CARBINE_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
+    size: 0.2
+    costSell: 22000
+    listOrder: 11400
+
+  - type: STR_BOLTPISTOL_DEAZ_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.2
+    costSell: 4000
+    listOrder: 10090
+
+  - type: STR_BOLTER_CANTUS_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.3
+    costBuy: 20000
+    costSell: 3500
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10286
+
+  - type: STR_BOLTER_CANTUS_GL
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.3
+    costBuy: 30000
+    costSell: 6000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10287
+
+  - type: STR_BOLTER_DEAZ_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.3
+    costBuy: 23000
+    costSell: 4000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10288

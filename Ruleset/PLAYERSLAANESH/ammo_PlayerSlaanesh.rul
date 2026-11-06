@@ -612,13 +612,11 @@ items:
  #### GRENADES
 
     type: STR_IMMACUALTE_SONIC_GRENADE # Smaller versions of the Slaanesh Sonic Grenade.
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     bigSprite: 2313
     floorSprite: 2420
     handSprite: 2390
     explosionHitSound: 2118  # Sonichit
     hitAnimation: {mod: 40k, index: 96}
-    size: 0.1
     throwRange: 18 # +2
     primeSound: 2424
     weight: 2

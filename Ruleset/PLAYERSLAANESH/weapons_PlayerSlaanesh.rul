@@ -66,7 +66,6 @@ items:
  #A1
 
   - type: STR_AGRIPINAAMKIX # Agripinaa Mk. IX Autogun.
-    size: 0.2
     dropoff: 5
     weight: 9
     bigSprite: 4084
@@ -95,7 +94,6 @@ items:
  #A2
 
   - type: STR_AGRIPINAAMKIXB
-    size: 0.2
     dropoff: 5
     weight: 11
     bigSprite: 4085  # Agripinaa T3 with scope.
@@ -130,8 +128,6 @@ items:
 
   - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
-    requires:
-      - STR_ALIENS_ONLY
     dropoff: 3  # light sniper weapon
     weight: 16  # -4 weight vs repressor
     size: 0.4
@@ -292,11 +288,6 @@ items:
 #### MELTA WEAPONS ####
 
   - type: STR_MELTA_CARBINE_SLAAN # Stolen & modified melta carbine technology. Expensive, but versatile.
-    categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
-    requires:
-      - STR_ALIENS_ONLY
-    size: 0.3
-    costSell: 40000
     weight: 12  # lightweight melta
     bigSprite: 920
     floorSprite: 920
@@ -322,7 +313,6 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 200
-    listOrder: 11160
     autoShots: 3
     confSnap:
       name: STR_LOW_POWER_MODE
@@ -340,11 +330,7 @@ items:
 
   - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az. lacks overcharge, but faster to fire.
     categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
-    requires:
-      - STR_ALIENS_ONLY
-    size: 0.2
-    costSell: 30000 # 50% more expensive
-    weight: 12 # -4 weight
+    weight: 14 # -2 weight
     bigSprite: 2086
     handSprite: {mod: 40k, index: 48}
     floorSprite: {mod: 40k, index: 30}
@@ -358,7 +344,6 @@ items:
     invHeight: 3
     armor: 200
     attraction: 1
-    listOrder: 11400
     dropoff: 6
     autoRange: 10
     snapRange: 14 # Slaanesh plasma specialization; 1/3 of the normal burst fire malus.
@@ -411,130 +396,9 @@ items:
       - STR_SHARD_GRENADE40
       - STR_BALEFIRE_GRENADE40
 
- #### BALLISTIC WEAPONS ####
-
-  - type: STR_AUTOGUN_ADEPTAS_MKIX # Agripinaa Mk. IX Autogun.
-    categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
-    requiresBuy:
-      - STR_CONTACT_ARMS_SMUGGLERS
-    size: 0.2
-    dropoff: 5
-    costBuy: 9000
-    costSell: 2000
-    weight: 9
-    bigSprite: 2008  # TODO: CONVERT BIGOB TO 8 BIT
-    floorSprite: {mod: 40k, index: 1016}
-    handSprite: 6003
-    bulletSprite: {mod: 40k, index: 2}
-    bulletSpeed: 35
-    fireSound: {mod: 40k, index: 875} # Meatier shoota sound.
-    compatibleAmmo:
-      - STR_AUTOGUN_CLIP
-    accuracySnap: 85  # Top-quality autogun.
-    tuSnap: 25
-    confSnap:
-      shots: 2
-    snapRange: 18
-    autoRange: 0
-    aimRange: 0
-    battleType: 1
-    invWidth: 1
-    invHeight: 3
-    twoHanded: true
-    armor: 200
-    listOrder: 10741
-    tags:
-      ITEM_SNAP_ACCURACY_POWER_BONUS: 10 # DMR-like rifle, a la Darktide implementation.
-
-  - type: STR_AUTOGUN_ADEPTAS_MKIXB
-    categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
-    requiresBuy:
-      - STR_CONTACT_ARMS_SMUGGLERS
-    size: 0.2
-    dropoff: 5
-    costBuy: 12000
-    costSell: 2000
-    weight: 11
-    bigSprite: 2008  # Agripinaa T3 with scope.
-    floorSprite: {mod: 40k, index: 1016}
-    handSprite: 6004
-    bulletSprite: {mod: 40k, index: 2}
-    bulletSpeed: 35
-    fireSound: {mod: 40k, index: 875}
-    compatibleAmmo:
-      - STR_AUTOGUN_CLIP
-    accuracySnap: 85  # Top-quality autogun.
-    accuracyAimed: 95
-    tuSnap: 30
-    tuAimed: 60
-    confSnap:
-      shots: 2
-    confAimed:
-      shots: 2
-    snapRange: 16
-    autoRange: 0
-    aimRange: 21
-    battleType: 1
-    invWidth: 1
-    invHeight: 3
-    twoHanded: true
-    armor: 200
-    listOrder: 10742
-    tags:
-      ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10
-      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 35 # DMR-like rifle, a la Darktide implementation.
-
-
-
-  - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
-    categories: [STR_CAT_SNIPER]
-    requires:
-      - STR_ALIENS_ONLY
-    dropoff: 3  # light sniper weapon
-    weight: 16  # -4 weight vs repressor
-    size: 0.4
-    costSell: 200000
-    bigSprite: 3481
-    floorSprite: 3401
-    handSprite: 4200
-    bulletSprite: {mod: 40k, index: 2}
-    bulletSpeed: 25
-    fireSound: {mod: 40k, index: 4}
-    compatibleAmmo:
-      - STR_HEARTBREAKER_AMMO_AP
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    invWidth: 2
-    invHeight: 3
-    armor: 200
-    snapRange: 18
-    aimRange: 30
-    accuracySnap: 65
-    accuracyAimed: 80
-    tuSnap: 32
-    tuAimed: 85
-    confSnap:  # Double Shot
-      shots: 2
-    confAimed:  # Called Precision Shot to emphasize the added lethality
-      name: STR_PRECISION_SHOT
-    listOrder: 11897
-    kneelBonus: 140  # light sniper rifle
-    minRange: 4  # Reduced minimum range due to bullpup construction
-    accuracyMultiplier:
-      firing: [0.5, 0.005]
-    tags:
-      REACTION_MULTIPLIER: 70
-      REACTION_PENALTY_KNEELING_BYPASS: 1
-      ITEM_RECOIL: 30
-      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 75
-      ITEM_HAS_BIPOD: 1
-
  #### BOLT PISTOLS ####
 
   - type: STR_BOLTPISTOL_DEAZ_SLAAN
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
-    costSell: 4000
     dropoff: 6
     autoRange: 0
     snapRange: 10
@@ -556,26 +420,19 @@ items:
     twoHanded: false
     invWidth: 2
     invHeight: 2
-    armor: 30
+    armor: 90
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10090
     tags:
       REACTION_MULTIPLIER: 200
 
  #### LIGHT BOLTERS ####
 
   - type: STR_BOLTER_CANTUS_SLAAN # Done (Pending art asset rework)
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
-    requiresBuy:
-      - STR_GENERALLOCK
-    requires:
-      - STR_ALIENS_ONLY
     dropoff: 5
     autoRange: 7
     snapRange: 12 # -2 vs Cantus, Slaanesh weapon profile
     aimRange: 0
-
     accuracyAuto: 55
     accuracySnap: 85
     accuracyAimed: 0
@@ -586,9 +443,6 @@ items:
       name: STR_BURST_SNAP_SHOT
       shots: 2  # Double shot snap
     autoShots: 4 # foregrip
-    size: 0.3
-    costBuy: 20000
-    costSell: 1500
     weight: 10
     bigSprite: 4080
     floorSprite: 2111
@@ -606,16 +460,12 @@ items:
     armor: 300
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10286
     tags:
       ITEM_FIRING_SPRITE: 6001
       ITEM_RECOIL: 20
       REACTION_MULTIPLIER: 150
 
   - type: STR_BOLTER_CANTUS_GL  # Done (Pending art asset rework)
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL] # Placeholder?
-    requiresBuy:
-      - STR_GENERALLOCK
     dropoff: 5
     autoRange: 7
     snapRange: 12
@@ -627,9 +477,6 @@ items:
     tuSnap: 20
     tuAimed: 37
     autoShots: 3
-    size: 0.3
-    costBuy: 25000
-    costSell: 1500
     weight: 15 # Heavier
     bigSprite: 4081
     floorSprite: 2112
@@ -674,7 +521,6 @@ items:
     armor: 300
     bulletSpeed: 30
     attraction: 1
-    listOrder: 10286
     tags:
       ITEM_FIRING_SPRITE: 6001
       ITEM_RECOIL: 20
@@ -694,9 +540,7 @@ items:
     tuSnap: 26
     tuAuto: 30
     tuAimed: 0
-    size: 0.3
-    costSell: 14000
-    weight: 14 # - 4
+    weight: 15 # - 3
 
     bigSprite: {mod: 40k, index: 550}
     floorSprite: {mod: 40k, index: 1}
