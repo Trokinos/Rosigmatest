@@ -2551,19 +2551,25 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TERROR_WEAPONRY: "Blessed Weapons of Terror"
   ADORATION_THROUGH_AGONY: "Adoration through Agony"
   STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
-  STR_CHOKE_GAS_GRENADES: "Choke Gas Grenade Requisition"
-  STR_BLACK_MARKET_AMMUNITION: "Black Market Ammo-Jacks"
-  STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
+  STR_BLACK_MARKET_AMMUNITION: "Underhive Ammo-Jacks"
+  STR_BLACK_MARKET_AMMO_TRADE: "(Underhive Ammo Trade)"
   STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
   STR_CORRUPT_ADEPTAS_BOLTERS: "Adeptas Bolter Consecration"
   STR_IMMACULATE_CHAINBLADES: "Immaculate Chainblades"
-  STR_CONTACT_HERETEKS: "Contact the True Mechanicus"
+  STR_CONTACT_HERETEKS: "Contact the True Mechanicum"
   STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
   STR_LASCANNON_DATACRYPT: "Decode Lascannon Data-crypt"
   STR_IMMACULATE_LASGUN_TECHNOLOGY: "Decode Lasgun Data-crypt"
   STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
   STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
   STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
+
+  STR_CHOKE_GAS_GRENADES: "Choke Gas Grenades"
+  STR_SONIC_GRENADES: "Immaculate Sonic Grenades"
+  STR_HALLUCINOGEN_GRENADES: "Hallucinogen Grenades"
+  STR_SHARD_GRENADES: "Shard Grenades"
+  STR_BALEFIRE_GRENADES: "Balefire Grenades"
+
 
  ###############################################
  ####### SLAANESH MANUFACTURING PROJECTS #######

@@ -658,6 +658,56 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 75
 
 
+  - type: STR_CHOKE_GRENADE # Stun gas/smoke grenade combo.
+    bigSprite: 2955 # PLACEHOLDER
+    floorSprite: 2955 # PLACEHOLDER
+    handSprite: 2750 # PLACEHOLDER
+    handSprite: {mod: 40k, index: 336}  # Needs new
+    explosionHitSound: {mod: 40k, index: 792}
+    hitAnimation: {mod: 40k, index: 104}
+    throwRange: 20
+    primeSound: 2424
+    weight: 2
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    battleType: 4
+    invWidth: 1
+    invHeight: 2
+    power: 70
+    damageType: 8
+    damageAlter:  # DA STUN GAS
+      RandomType: 2  # Less swingy
+      ToHealth: 0.01
+      ToWound: 0.0
+      RandomWound: false
+      ToTile: 0.0
+      ToItem: 0.0
+      ToArmor: 0.0
+      ToEnergy: 0.5
+      ToStun: 1.2
+      ToTime: 0.5
+      ArmorEffectiveness: 0.4
+      FixRadius: 5
+      SmokeThreshold: 0  # Slaanesh smoke grenades are NOT safe for children.
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+      ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
+
+
  #### 40MM GRENADES
 
   - type: STR_HALLUCINOGEN_GRENADE40  # multipurpose smoke/morale/debuff/corruption
@@ -701,13 +751,13 @@ items:
     bigSprite: 4082
     floorSprite: 2060
     handSprite: {mod: 40k, index: 336}  # Needs new
+    explosionHitSound: {mod: 40k, index: 792}
+    hitAnimation: {mod: 40k, index: 104}
     battleType: 2  # 4 is Grenade, but these are not primed
     invWidth: 1  # smaller
     invHeight: 1
-    explosionHitSound: {mod: 40k, index: 776}  # 776: Resources/Sounds/SPELLFAIL.wav
-    hitAnimation: 1020  # X1 Pink skullsplosion
     listOrder: 10331
-    power: 75
+    power: 60
     damageType: 8
     damageAlter:  # DA STUN GAS
       RandomType: 2  # Less swingy
@@ -737,9 +787,8 @@ items:
     invHeight: 1
     explosionHitSound: {mod: 40k, index: 776}  # 776: Resources/Sounds/SPELLFAIL.wav
     hitAnimation: 1020  # X1 Pink skullsplosion
-    listOrder: 10331
     power: 90 # Rare & expensive.
-    damageType: 3
+    damageType: 2 # Armor piercing
     damageAlter:  # DA WARP SHARDS
       RandomType: 2
       ToHealth: 0.25 # Tiny armor piercing fragments
@@ -762,25 +811,23 @@ items:
     clipSize: 2
 
   - type: STR_SONIC_GRENADE40 # Direct damage: scaled-down sonic grenades
-    size: 0.1
-    costSell: 250
     weight: 2
     bigSprite: 4083
     floorSprite: 2060
     handSprite: 2390
-    power: 75
+    power: 70
     damageType: 3
-    damageAlter:  # DA Sound
-      ToHealth: 1.0
-      ToTime: 1.0
-      ToStun: 2.0
-      ToEnergy: 2.0
-      ToMorale: 2.0
-      ToArmorPre: 0.3
+    damageAlter:  # DA Sound slightly nerfed
+      ToHealth: 0.85 # -0.15 vs normal sonic grenades
+      ToTime: 1.2 # +0.2
+      ToStun: 2.2 # +0.2
+      ToEnergy: 2.2 # +0.2
+      ToMorale: 2.2
+      ToArmorPre: 0.4 # +0.1
       ToArmor: 0.0 #deals damage on the way in
       ArmorEffectiveness: 0.7
-      ToTile: 0.75
-      ToItem: 0.75
+      ToTile: 0.45 # -0.3
+      ToItem: 0.45 # -0.3
       RandomType: 6
       FixRadius: 3
     explosionHitSound: 2118  # Sonichit
@@ -789,9 +836,9 @@ items:
     invWidth: 1  # smaller
     invHeight: 1
     hitSound: {mod: 40k, index: 0}
-    listOrder: 10331
     noLOSAccuracyPenalty: 75
     recoveryPoints: 1
+    clipSize: 2
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 65 # Slightly nerfed.
 

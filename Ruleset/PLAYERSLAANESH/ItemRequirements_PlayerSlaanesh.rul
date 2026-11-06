@@ -7,20 +7,12 @@ extended:
 
 items:
 
+##### WEAPONS
+
   - &IMMACULATE_WEAPON # RefNode for chaos weapon use requirements.
     type: STR_HEARTBREAKER_SNIPER_RIFLE
     requires:
       - STR_CHAOS_WEAPON_USE_DEP
-
-  - type: STR_IMMACULATE_SONIC_GRENADE
-    refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
-    size: 0.1
-    costBuy: 2600
-    costSell: 350
-    requiresBuy:
-      - STR_TERROR_WEAPONRY
-    listOrder: 15300
 
   - type: STR_AGRIPINAAMKIX
     categories: [STR_CAT_AUTO]
@@ -90,3 +82,59 @@ items:
     requiresBuy:
       - STR_GENERALLOCK
     listOrder: 10288
+
+
+#### GRENADES
+
+
+  - type: STR_CHOKE_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 2000
+    costSell: 200
+    requiresBuy:
+      - STR_CHOKE_GAS_GRENADES
+    listOrder: 15298
+
+  - type: STR_CHOKE_GRENADE40
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 3000
+    costSell: 250
+    requiresBuy:
+      - STR_CHOKE_GAS_GRENADES
+    listOrder: 15299
+
+  - type: STR_IMMACULATE_SONIC_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 2600
+    costSell: 350
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15300
+
+  - type: STR_SONIC_GRENADE40
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 4500
+    costSell: 500
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15301
+
+# - type: STR_SHARD_GRENADE
+
+  - type: STR_SHARD_GRENADE40
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 5500
+    costSell: 550
+    requiresBuy:
+      - STR_SHARD_GRENADES
+    listOrder: 15304

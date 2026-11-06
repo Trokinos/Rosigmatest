@@ -317,6 +317,8 @@ research:
     dependencies:
       - STR_PATH_OF_PERFECTION
     unlocks:
+      - STR_LIGHT_GRENADE_LAUNCHERS
+    getOneFree:
       - STR_CHOKE_GAS_GRENADES
 
   - name: STR_IMMACULATE_CHAINBLADES
@@ -331,7 +333,7 @@ research:
       - STR_GENERALLOCK
 
   - name: STR_CHOKE_GAS_GRENADES
-    cost: 0
+    cost: 50
     dependencies:
       - STR_GENERALLOCK
 
@@ -353,22 +355,22 @@ research:
 
  ####40MM terror grenade flavors. All must be unlocked to advance the tech tree.#####
   - name: STR_HALLUCINOGEN_GRENADES
-    cost: 50
+    cost: 60
     dependencies:
-      - STR_GENERALLOCK
+      - STR_TERROR_WEAPONRY
+
   - name: STR_SHARD_GRENADES
-    cost: 50
+    cost: 60
     dependencies:
       - ADORATION_THROUGH_AGONY
   - name: STR_SONIC_GRENADES
-    cost: 50
+    cost: 60
     dependencies:
       - STR_GENERALLOCK
   - name: STR_BALEFIRE_GRENADES
-    cost: 50
+    cost: 60
     dependencies:
-      - STR_GENERALLOCK
-
+      - ADORATION_THROUGH_AGONY
 
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
