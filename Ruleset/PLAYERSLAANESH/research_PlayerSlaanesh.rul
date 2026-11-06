@@ -319,7 +319,7 @@ research:
     unlocks:
       - STR_LIGHT_GRENADE_LAUNCHERS
     getOneFree:
-      - STR_CHOKE_GAS_GRENADES
+      - STR_STRANGLER_GRENADES
 
   - name: STR_IMMACULATE_CHAINBLADES
     cost: 0
@@ -332,7 +332,7 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
-  - name: STR_CHOKE_GAS_GRENADES
+  - name: STR_STRANGLER_GRENADES
     cost: 50
     dependencies:
       - STR_GENERALLOCK

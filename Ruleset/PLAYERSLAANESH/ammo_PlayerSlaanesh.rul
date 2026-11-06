@@ -611,7 +611,7 @@ items:
 
  #### GRENADES
 
-    type: STR_IMMACUALTE_SONIC_GRENADE # Smaller versions of the Slaanesh Sonic Grenade.
+    type: STR_SCREAMER_GRENADE # Smaller versions of the Slaanesh Sonic Grenade.
     bigSprite: 2313
     floorSprite: 2420
     handSprite: 2390
@@ -747,7 +747,7 @@ items:
     clipSize: 2
     noLOSAccuracyPenalty: 75 # Indirect fire weapon.
 
-  - type: STR_CHOKE_GRENADE40  # Non-damaging stun gas.
+  - type: STR_STRANGLER_GRENADE40  # Non-damaging stun gas.
     bigSprite: 4082
     floorSprite: 2060
     handSprite: {mod: 40k, index: 336}  # Needs new
@@ -810,7 +810,7 @@ items:
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
     clipSize: 2
 
-  - type: STR_SONIC_GRENADE40 # Direct damage: scaled-down sonic grenades
+  - type: STR_SCREAMER_GRENADE40 # Direct damage: scaled-down sonic grenades
     weight: 2
     bigSprite: 4083
     floorSprite: 2060

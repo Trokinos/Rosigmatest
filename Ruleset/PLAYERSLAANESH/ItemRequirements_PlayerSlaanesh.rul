@@ -94,20 +94,20 @@ items:
     costBuy: 2000
     costSell: 200
     requiresBuy:
-      - STR_CHOKE_GAS_GRENADES
+      - STR_STRANGLER_GRENADES
     listOrder: 15298
 
-  - type: STR_CHOKE_GRENADE40
+  - type: STR_STRANGLER_GRENADE40
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.1
     costBuy: 3000
     costSell: 250
     requiresBuy:
-      - STR_CHOKE_GAS_GRENADES
+      - STR_STRANGLER_GRENADES
     listOrder: 15299
 
-  - type: STR_IMMACULATE_SONIC_GRENADE
+  - type: STR_SCREAMER_GRENADE
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.1
@@ -117,7 +117,7 @@ items:
       - STR_TERROR_WEAPONRY
     listOrder: 15300
 
-  - type: STR_SONIC_GRENADE40
+  - type: STR_SCREAMER_GRENADE40
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.1
