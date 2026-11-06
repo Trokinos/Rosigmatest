@@ -534,9 +534,6 @@ items:
     invHeight: 0
     battleType: 11
     recover: true
-    spawnUnit: STR_LESSER_ROTFLY
-    spawnunitFaction: 1
-    spawnunitChance: 37
   - type: STR_NURGLE_DREADNOUGHT_CORPSE_2
     weight: 200
     armor: 200
