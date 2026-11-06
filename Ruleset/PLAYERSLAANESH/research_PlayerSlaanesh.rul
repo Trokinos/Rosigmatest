@@ -284,7 +284,7 @@ research:
       - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
 
   - name: STR_CORRUPT_ADEPTAS_BOLTERS
-    cost: 25
+    cost: 40
     dependencies:
       - STR_WEAPON_CONSECRATION
 

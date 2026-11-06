@@ -2516,14 +2516,14 @@ en-US: #  yamllint disable-line rule:empty-values
   #ATSLCW CODEX WEAPON ENTRIES
   STR_AUTOGUN_ADEPTAS_MKIX_UFOPEDIA: "{NEWLINE}{NEWLINE}The product of a recently discovered STC, the Agripiina Mark IX Vigilant Autogun is both accurate and deadly. Though rarer than other Agripiina patterns, it is still occasionally issued to Adepta Sororitas novitiates."
   STR_AUTOGUN_ADEPTAS_MKIXB_UFOPEDIA: "{NEWLINE}{NEWLINE}With the addition of a scope, the Mark IX Autogun makes for a reliable and competent marksman rifle. Aimed shots from this weapon inflict additional damage based on accuracy, though less so compared to a full sniper rifle."
-  STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, the internals of this plasma carbine speak to extensive tech-heresy. Like many other Slaaneshi plasma weapons, it carries little risk of overheating, but cannot be overcharged."
+  STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, this plasma weapon has been imbued with the power of Slaanesh. Like many other such plasma weapons, it carries little risk of overheating, but cannot be overcharged."
   STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
-  STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, modified to have a much higher rate of fire than would normally be safe. When equipped with bolts more capable of penetrating armor, this weapon should not be taken lightly."
+  STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, twisted to have much higher rate of fire than would normally be safe. When equipped with bolts more capable of penetrating armor, this weapon should not be taken lightly."
   STR_BOLTER_CANTUS_GL_UFOPEDIA: "{NEWLINE}{NEWLINE}With the foregrip replaced by an underslung grenade launcher, this corrupted Cantus bolter trades accuracy and performance for greatly improved tactical flexibility."
-  STR_BOLTER_DEAZ_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a corrupted Sororitas Godwyn-De'az bolter. Unlike many other so-called Immaculate weapons, the De'az retains most performance characteristics of the original."
+  STR_BOLTER_DEAZ_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a corrupted Sororitas Godwyn-De'az bolter, twisted by the power of Slaanesh. Unlike many other so-called Immaculate weapons, the De'az still retains most performance characteristics of the original."
   STR_BOLTER_ARACHNE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Arachne is a modified Godwyn-De'az bolter with an attached constrictor web module. Though the module itself is no less powerful than a full web pistol, it is significantly less ammo-efficient."
-  STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. As a result, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
-  STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}A dark marvel of heretical engineering, this once holy De'az bolter has been infected with an incredibly malign machine spirit. With a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
+  STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. In addition, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
+  STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}This once holy De'az bolter has been afflicted with an incredibly malign machine spirit. Sporting a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
 
   STR_EVISCERATOR_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite its lighter weight and refined exterior, this heavily modfied eviscerator is an even more brutal weapon than its before. When used to deliver heavy thrusts through armor, the sheer bloody carnage this weapon unleashes belies its more graceful appearance."
 
@@ -2555,7 +2555,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BLACK_MARKET_AMMUNITION: "Black Market Ammo-Jacks"
   STR_BLACK_MARKET_AMMO_TRADE: "(Black Market Ammo Trade)"
   STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
-  STR_CORRUPT_ADEPTAS_BOLTERS: "Bolter Corruption Rites"
+  STR_CORRUPT_ADEPTAS_BOLTERS: "Adeptas Bolter Consecration"
   STR_IMMACULATE_CHAINBLADES: "Immaculate Chainblades"
   STR_CONTACT_HERETEKS: "Contact the True Mechanicus"
   STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
