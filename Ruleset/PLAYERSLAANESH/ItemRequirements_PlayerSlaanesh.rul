@@ -41,21 +41,21 @@ items:
 
   - type: STR_PLASMA_CARBINE_SLAAN
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL]
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.2
     costSell: 22000
     listOrder: 11400
 
   - type: STR_BOLTPISTOL_DEAZ_SLAAN
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.2
     costSell: 4000
     listOrder: 10090
 
   - type: STR_BOLTER_CANTUS_SLAAN
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.3
     costBuy: 20000
     costSell: 3500
@@ -65,7 +65,7 @@ items:
 
   - type: STR_BOLTER_CANTUS_GL
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.3
     costBuy: 30000
     costSell: 6000
@@ -75,7 +75,7 @@ items:
 
   - type: STR_BOLTER_DEAZ_SLAAN
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.3
     costBuy: 23000
     costSell: 4000
@@ -83,11 +83,42 @@ items:
       - STR_GENERALLOCK
     listOrder: 10288
 
+  - type: STR_BOLTER_ARACHNE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 23000
+    costSell: 9000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10289
+
+  - type: STR_BOLTER_KELPIE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 23000
+    costSell: 9000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10230
+
+
+  - type: STR_BOLTER_KERES
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 23000
+    costSell: 12000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10235 # PLACEHOLDER?
+
 
 #### GRENADES
 
 
-  - type: STR_CHOKE_GRENADE
+  - type: STR_STRANGLER_GRENADE
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.1

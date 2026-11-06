@@ -380,9 +380,8 @@ items:
     twoHanded: false
     invWidth: 2
     invHeight: 2
-    armor: 90
+    armor: 120
 
-    attraction: 1
     compatibleAmmo:
       - STR_LIGHT_BOLTPISTOL_AMMO
 
@@ -399,31 +398,24 @@ items:
     invWidth: 2
     invHeight: 3
     twoHanded: true
-    armor: 300
-    attraction: 1
+    armor: 150
     compatibleAmmo:
       - STR_CANTUS_BOLTER_AMMO
       - STR_CANTUS_BOLTER_AMMO_PENETRATOR
       - STR_CANTUS_BOLTER_AMMO_BM
 
   - type: STR_BOLTER_CANTUS_GL  # Done (Pending art asset rework)
-    dropoff: 5
-    autoRange: 7
-    snapRange: 12
-    aimRange: 14 # -2 vs hellspite.
-    accuracyAuto: 55
-    accuracySnap: 85
-    accuracyAimed: 60
-    tuAuto: 30
-    tuSnap: 20
-    tuAimed: 37
-    autoShots: 3
-    weight: 15 # Heavier
+    battleType: 1
     bigSprite: 4081
     floorSprite: 2112
     handSprite: 6002
-    bulletSprite: {mod: 40k, index: 6}
     fireSound: 2137
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 150
     compatibleAmmo:
       - STR_CANTUS_BOLTER_AMMO_PENETRATOR
       - STR_CANTUS_BOLTER_AMMO
@@ -436,142 +428,79 @@ items:
    #   - STR_SLAANESHPATH_BALEFIRE_40MM
    #   - STR_SLAANESHPATH_AMPUTATOR_40MM
    #   - STR_SLAANESHPATH_FLECHETTE_40MM
-    ammo: # PLACEHOLDER
+    ammo:
       0:
         compatibleAmmo: [STR_CANTUS_BOLTER_AMMO_PENETRATOR, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO_BM]
       1:
         compatibleAmmo: [STR_MELTA_GRENADE40, STR_SHARD_GRENADE40, STR_STRANGLER_GRENADE40, STR_HALLUCINOGEN_GRENADE40]
-    confAuto:  # Bolter
-      ammoSlot: 0  # Bolter
-      name: STR_AUTOFIRE
-      arcing: false
-    confSnap:  # Double Shot
-      ammoSlot: 0  # Bolter
-      name: STR_BURST_SNAP_SHOT
-      arcing: false
-      shots: 2  # Double shot snap
-    confAimed:  # Grenade launcher 40mm, direct fire only.
-      ammoSlot: 1  # Grenades
-      name: STR_LAUNCH_GRENADE
-      shortName: STR_LAUNCH_GRENADE_SHORT
-      arcing: false
-    battleType: 1
-    twoHanded: true
-    invWidth: 2
-    invHeight: 3
-    armor: 300
-    bulletSpeed: 30
-    attraction: 1
-    tags:
-      ITEM_FIRING_SPRITE: 6001
-      ITEM_RECOIL: 20
-      ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-  - &SLAANESH_DEAZ_TEMPLATE
     type: STR_BOLTER_DEAZ_SLAAN
-    dropoff: 5
-    autoRange: 7
-    snapRange: 12
-    aimRange: 0
-
-    accuracyAuto: 65
-    accuracySnap: 70
-    accuracyAimed: 0
-
-    tuSnap: 26
-    tuAuto: 30
-    tuAimed: 0
-    weight: 15 # - 3
-
+    battleType: 1
     bigSprite: {mod: 40k, index: 550}
     floorSprite: {mod: 40k, index: 1}
     handSprite: {mod: 40k, index: 1496}
-    bulletSprite: {mod: 40k, index: 6}
     fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 150
     compatibleAmmo:
       - STR_LIGHT_BOLTER_AMMO
       - STR_LIGHT_BOLTER_AMMO_MC
       - STR_LIGHT_BOLTER_AMMO_SLAAN
       - STR_LIGHT_BOLTER_AMMO_BM
-    confSnap:  # Double Shot
-      name: STR_BURST_SNAP_SHOT
-      arcing: false
-      shots: 2  # Double shot snap
+
+  - type: STR_BOLTER_ARACHNE # COMBI WEBBER DEAZ - FIX ART ASSETS
     battleType: 1
-    twoHanded: true
+    bigSprite: {mod: 40k, index: 550}
+    handSprite: {mod: 40k, index: 1496}
+    floorSprite: {mod: 40k, index: 1}
+    fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
     invWidth: 2
     invHeight: 3
+    twoHanded: true
     armor: 150
-    autoShots: 3
-    bulletSpeed: 30
-    attraction: 1
-    listOrder: 10290
-    #*** Melee bayonet
-#    meleeHitSound: 101
-#    meleeAnimation: 0
-#    meleeType: 7
-#    meleePower: 40
-#    meleeBonus:
-#      strength: 0.2
-#      melee: 0.2
-#    meleeAlter:
-#      ArmorEffectiveness: 0.9
-#    accuracyMelee: 110
-#    meleeMultiplier:
-#      flatHundred: 0.5
-#      melee: 0.5
-#    tuMelee: 14
-#    flatMelee:
-#      time: true
-
-  - type: STR_BOLTER_ARACHNE # COMBI WEBBER DEAZ
-    refNode: *SLAANESH_DEAZ_TEMPLATE
-    dropoff: 6
-    tuAimed: 25
-    accuracyAimed: 55
-    aimRange: 1
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
+      - STR_CONSTRICTOR_PISTOL_AMMO
     ammo:
       0:
         compatibleAmmo: [STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO_MC, STR_LIGHT_BOLTER_AMMO_SLAAN, STR_LIGHT_BOLTER_AMMO_BM]
       1:
         compatibleAmmo: [STR_CONSTRICTOR_PISTOL_AMMO]
-    confSnap:
-      ammoSlot: 0
-      name: STR_BURST_SNAP_SNOT
-      arcing: false
-      shots: 2
-    confAimed:
-      ammoSlot: 1
-      spendPerShot: 2
-      name: STR_FIRE_WEBBER
-      arcing: false
 
-  - type: STR_BOLTER_KELPIE # De'az with underslung shotgun. Has a DMR-like profile.
-    refNode: *SLAANESH_DEAZ_TEMPLATE
-    accuracySnap: 80
-    snapRange: 15
-    tuSnap: 24
-    accuracyAimed: 60
-    aimRange: 6
-    tuAimed: 20
-    autoRange: 10
-    accuracyAuto: 75
-    tuAuto: 35
-    autoShots: 2
+
+  - type: STR_BOLTER_KELPIE # SHOTGUN + DMR DE'AZ. PLACEHOLDER ART ASSETS.
+    battleType: 1
+    bigSprite: {mod: 40k, index: 550}
+    handSprite: {mod: 40k, index: 1496}
+    floorSprite: {mod: 40k, index: 1}
+    fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 120
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
+      - STR_SHOTGUN_SHELLS
     ammo:
       0:
         compatibleAmmo: [STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO_MC, STR_LIGHT_BOLTER_AMMO_SLAAN, STR_LIGHT_BOLTER_AMMO_BM]
       1:
         compatibleAmmo: [STR_SHOTGUN_SHELLS] # PLACEHOLDER
-    confSnap:
-      ammoSlot: 0
-      name: STR_SNAP_SNOT
-      shots: 1
-      arcing: false
-    confAimed:
-      ammoSlot: 1
-      name: STR_FIRE_SHOTGUN
-      arcing: false
+
 
   - type: STR_BOLTER_ELOHIM_SLAAN
 
@@ -636,7 +565,7 @@ items:
     tuAuto: 40
     tuSnap: 20
     tuAimed: 35
-    compatibleAmmo: # PLACEHOLDER
+    compatibleAmmo: # PLACEHOLDER, CHANGE TO LIGHT BOLTS LATER
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_S
       - STR_RIFLE_CLIP_MC
@@ -662,29 +591,24 @@ items:
       ammoSlot: 1  # Sonic
       name: STR_SONIC_FIRE
 
-  - type: STR_BOLTER_KERES # Converted De'az bolter with canted foregrip. Extremely high RoF.
-    requires:
-      - STR_ALIENS_ONLY
-    dropoff: 7 # You *really* don't want to fire this one at range.
-    autoRange: 6  # -2 vs hellspite
-    snapRange: 12  # -1 vs hellspite.
+  - type: STR_BOLTER_KERES # Possessed De'az bolter with canted foregrip. Extremely high RoF.
+    battleType: 1
+    bigSprite: {mod: 40k, index: 550}
+    handSprite: {mod: 40k, index: 1496}
+    floorSprite: {mod: 40k, index: 1}
+    fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 50 # Gotta go fast!
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 300
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
 
-    accuracyAuto: 55 # -15 vs hellspite
-    accuracySnap: 70 # -10 vs hellspite
-    accuracyAimed: 0
-    tuAuto: 36
-    tuSnap: 30
-    autoShots: 6
-
-    confAuto:  # Bolter
-      name: STR_AUTOFIRE
-      arcing: false
-    confSnap:  # Triple Shot
-      name: STR_BURST_SNAP_SHOT
-      arcing: false
-      shots: 3  # TRIPLE shot snap
-    tags:
-      ITEM_RECOIL: 40
 
   - type: STR_BOLTER_TIAMAT # De'az kombi-plasma.
 

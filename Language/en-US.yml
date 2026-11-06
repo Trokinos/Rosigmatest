@@ -2591,7 +2591,7 @@ en-US: #  yamllint disable-line rule:empty-values
 
  #Piety projects & progression projects
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
-  STR_SACRIFICE_TO_SLAANESH: "Sacrifice to Slaanesh"
+  STR_SACRIFICE_TO_SLAANESH: "Offer Souls to Slaanesh"
   STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
   STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
   STR_CAPTURE_CHAOS_SACRIFICES: "Capture Sacrificial Victims"
@@ -2672,6 +2672,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_FIRE_WEBBER: "Fire Webber"
   STR_PLASMA_BARRAGE: "Plasma Barrage"
   STR_BURST_DOUBLE_TAP: "Double Tap"
+  STR_BURST_TRIPLE_TAP: "Triple Tap"
 
   STR_AGRIPINAAMKIX: "Agripinaa Mk. IX Autogun"
   STR_AGRIPINAAMKIXB: "Agripinaa Mk. IX (Scoped)"
@@ -2703,14 +2704,17 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_LIGHT_BOLTER_AMMO_BM: "Black Market Light Bolter Magazine"
   STR_LIGHT_BOLTER_AMMO_SB: "Light Bolter Soulblight Magazine"
   STR_STRANGLER_GRENADE40: "40mm Strangler Grenade"
+  STR_STRANGLER_GRENADE: "Strangler Grenade"
   STR_SCREAMER_GRENADE40: "40mm Screamer Grenade"
+  STR_SCREAMER_GRENADE: "Screamer Grenade"
   STR_BALEFIRE_GRENADE40: "40mm Balefire Grenade"
+  STR_BALEFIRE_GRENADE: "Balefire Grenade"
   STR_SHARD_GRENADE40: "40mm Shard Grenade"
+  STR_SHARD_GRENADE: "Shard Grenade"
   STR_HALLUCINOGEN_GRENADE40: "40mm Hallucinogen Grenade"
+  STR_HALLUCINOGEN_GRENADE: "Hallucinogen Grenade"
   STR_AMPUTATOR40: "40mm Amputator Round"
   STR_FLECHETTE40: "40mm Flechette Round"
-  STR_SCREAMER_GRENADE: "Screamer Grenade"
-  STR_IMMACULATE_BALEFIRE_GRENADE: "Immaculate Balefire Grenade"
   STR_CONSTRICTOR_PISTOL_AMMO: "Light Constrictor Web Ammo"
   #SOLDIER BONUSES
 

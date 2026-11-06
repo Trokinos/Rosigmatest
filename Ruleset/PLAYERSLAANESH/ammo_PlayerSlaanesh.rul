@@ -658,7 +658,7 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 75
 
 
-  - type: STR_CHOKE_GRENADE # Stun gas/smoke grenade combo.
+  - type: STR_STRANGLER_GRENADE # Stun gas/smoke grenade combo.
     bigSprite: 2955 # PLACEHOLDER
     floorSprite: 2955 # PLACEHOLDER
     handSprite: 2750 # PLACEHOLDER
