@@ -1474,7 +1474,6 @@ items:
     size: 0.1
     listOrder: 16310
     fuseType: -2
-    explodeInventory: 0 # High tech, Primed grenades do not explode on death.
     ### Throwing Stats
     accuracyThrow: 120 # +20% accuracy for eldar grenades
     noLOSAccuracyPenalty: 75  # indirect fire weapon
@@ -1570,9 +1569,13 @@ items:
 
   - type: STR_ELDAR_HAYWIRE_GRENADE #STR_TAU_EMP_GRENADE
     refNode: *ELDAR_GRENADE_TEMPLATE
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_MIDTIER_PREREQ
+    costBuy: 4000
+    costSell: 2000
     bigSprite: 4921
     floorSprite: 4921
     handSprite: 1850
@@ -1630,7 +1633,7 @@ items:
       FixRadius: 3 #-2 Eldar
     listOrder: 16320
 
-  - type: STR_ELDAR_FUSION_CHARGE  # eldar planted melta bomb
+  - type: STR_ELDAR_FUSION_CHARGE  # eldar planted melta bomb. Used for spawning the actual bomb
     refNode: *ELDAR_GRENADE_TEMPLATE
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
@@ -1642,19 +1645,22 @@ items:
     size: 0.1
     costBuy: 50000
     costSell: 15000
-    bigSprite: {mod: 40k, index: 398}
-    floorSprite: {mod: 40k, index: 253}
-    handSprite: {mod: 40k, index: 896}
+    explosionHitSound: 1878 # deploy sound
+    bigSprite: 4923
+    floorSprite: 4923
+    handSprite: 1866
     invWidth: 2
     invHeight: 2
     listOrder: 16310
     # Throwing stats
-    throwRange: 12 # -3
+    throwRange: 1 # Placed on ground not thrown
     costThrow:
       time: 55 # -5
-      energy: 20
+      energy: 5 # Doesnt take a lot of energy to set up
+    costUnprime:
+      time: 0
     # Damage stats
-    power: 140
+    power: 0 # Used for spawning only #180 # +40 needs testing
     damageType: 11
     damageAlter:
       RandomType: 6
@@ -1667,7 +1673,9 @@ items:
       RadiusReduction: 15 # melta explosions decay at twice the normal rate; coheres somewhat better than Imperium melta
       RandomWound: false
       FireThreshold: 0
-      FixRadius: 4
+      FixRadius: 0 # Very big blast
+    spawnUnit: STR_ELDAR_FUSION_CHARGE_DEPLOYED
+    spawnUnitFaction: -1 # Same faction as user, (0 for player)
 
   - type: STR_ELDAR_WIREWEAVE_NET
     requires:
@@ -2865,6 +2873,66 @@ items:
       ITEM_CORONA_AMMO_TURN_COOLDOWN: 2 # use once per 3 turns
       ITEM_DOESNT_HURT_USER: 1
 
+  - type: STR_HAWK_GRENADE_PACK # Functions as a short ranged explosive launcher
+    costBuy: 0 # Cannot be bought
+    recover: false
+    fixedWeapon: true
+    fixedWeaponShow: true
+    twoHanded: false
+    defaultInventorySlot: STR_BELT
+    defaultInvSlotX: 2
+    invWidth: 2
+    invHeight: 2
+    bigSprite: 4929 #does not show technically
+    bulletSprite: {mod: 40k, index: 2}
+    fireSound: [1908, 1909, 1910]
+    hitAnimation: 2220 # No ANIMATION 150=Teleport hit original={mod: 40k, index: 26}
+    battleType: 1
+    accuracySnap: 40
+    tuLoad: 33 # Slow to load, fast to fire
+    tuSnap: 5 # Fast release, very little aiming needed
+    snapRange: 0
+    maxRange: 2 # Drops grenades vertically
+    confSnap:
+      name: STR_SKILL_HAWK_GRENADE_DROP
+    experienceTrainingMode: 7 # train throwing
+    arcingShot: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    compatibleAmmo:
+      - STR_HAWK_SUNBURST_GRENADES
+      - STR_HAWK_STARSHOT_GRENADES
+      - STR_HAWK_HAYWIRE_GRENADES
+      - STR_HAWK_PLASMA_GRENADES
+      - STR_HAWK_FUSION_GRENADES
+    scripts:
+      selectItemSprite:
+        var ptr BattleItem ammoItem;
+        var int ammoMax;
+        var int ammoCurrent;
+        var ptr RuleItem ammoRuleset;
+        var int skipBigobs;
+        var int ammoDiff;
+
+        item.getAmmoItem ammoItem;
+        ammoItem.getRuleItem ammoRuleset;
+        ammoRuleset.getTag skipBigobs Tag.ITEM_AMMO_SKIP_BIGOBS;
+
+        if and gt skipBigobs 0 eq blit_part blit_item_big;
+          add sprite_index skipBigobs;
+        end;
+
+        item.getAmmoItem ammoItem;
+        ammoItem.getAmmoQuantity ammoCurrent;
+        ammoItem.getAmmoQuantityMax ammoMax;
+
+        set ammoDiff ammoMax;
+        sub ammoDiff ammoCurrent;
+        if gt ammoDiff 0;
+          sub sprite_index ammoDiff;
+        end;
+
+        return sprite_index;
+
   - type: STR_DEATHWEAVERS_SPECIALWEAPON
     costBuy: 0 # Cannot be bought
     recover: false
@@ -3028,6 +3096,49 @@ items:
       INTIMIDATION_MORALE_DAMAGE_MULTIPLIER: 40
       ITEM_DOESNT_HURT_FRIENDS: 1
 
+  - type: STR_ELDAR_FUSION_CHARGE_DETONATOR #
+    bigSprite: 4975
+    invWidth: 2
+    invHeight: 2
+    recover: false
+    hiddenOnMinimap: true
+    fixedWeapon: true
+   #specialUseEmptyHand: true
+    vaporColorSurface: {mod: 40k, index: 0}
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    weight: 0
+    hitSound: {mod: 40k, index: 12}
+    hitAnimation: {mod: 40k, index: 88}
+    #specialIconSprite: 254
+    # Weapon Stats
+    explodeInventory: 2
+    defaultInventorySlot: STR_RIGHT_HAND
+    fuseType: 0
+    battleType: 4
+    tuPrime: 100
+    tuThrow: 999 # explodes in inventory
+    throwRange: 0
+    maxRange: 0
+    # Damage stats
+    power: 180 # +40 needs testing
+    damageType: 11
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 1.0  # it's a melta grenade; it will melt armor
+      ToTile: 1.0
+      ToItem: 1.0
+      ToArmor: 0.0
+      ToHealth: 0.7
+      ToWound: 0.05
+      RadiusReduction: 15 # melta explosions decay at twice the normal rate; coheres somewhat better than Imperium melta
+      RandomWound: false
+      FireThreshold: 0
+      FixRadius: 14 # Very big blast
+    tags:
+      ITEM_IS_BOMB: 1
+      ITEM_IS_BOMB_ON_DEATH: 1
+      ITEM_IS_KAMIKAZI_BOMB: 1
       # DEPRECATED
 
   - delete: STR_ELDAR_LAUNCHER # OLD REAPER LAUNCHER, Used for enemies keep for now

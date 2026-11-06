@@ -2031,6 +2031,7 @@ extraSprites:
       252: Resources/Spicons/SPICON_DEATHWEAVERS.png
       253: Resources/Spicons/SPICON_POWERBLADES.png
       254: Resources/Spicons/SPICON_CORONA.png
+      255: Resources/Spicons/SPICON_drop.png
 
 
   - type: SPICONS.DAT
@@ -6304,6 +6305,8 @@ extraSprites:
     fileSingle: Resources/Eldar/eldar_fusion_grenade_codex.png
   - typeSingle: ELDAR_PLASMA_GRENADE_CODEX.SPK
     fileSingle: Resources/Eldar/eldar_plasma_grenade_codex.png
+  - typeSingle: ELDAR_HAWK_GRENADE_PACK_CODEX.SPK
+    fileSingle: Resources/Eldar/eldar_hawkgrenadepack_codex.png
   #older weapon codex from 40k mod
   - typeSingle: 1EL1.SPK
     fileSingle: Resources/Eldar/1EL1.png
@@ -6538,6 +6541,14 @@ extraSprites:
     height: 80
     files:
       0: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_unitsprite.png
+
+  - type: ELDAR_FUSIONCHARGE_DEPLOYED.SPK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 80
+    files:
+      0: Resources/Eldar/units/fusion_charge_deployed/eldar_fusioncharge_deployed_unitsprite.png
   # ELDAR paperdoll images
 
   # ELDAR GUARDIAN
@@ -7664,6 +7675,9 @@ extraSprites:
   # ELDAR OTHER
   - typeSingle: ELDAR_WIREWEAVENET_DEPLOYED_INVENTORY
     fileSingle: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_inventory.png
+
+  - typeSingle: ELDAR_FUSIONCHARGE_DEPLOYED_INVENTORY
+    fileSingle: Resources/Eldar/units/fusion_charge_deployed/eldar_fusioncharge_deployed_inventory.png
 
   # PLAYER CHAOS
   - typeSingle: ALPHAMARINE_INV.SPK

@@ -70,6 +70,13 @@ skills:
   #   checkHandsOnly: false
   #   battleType: 1
 
+  - type: STR_SKILL_HAWK_GRENADE_DROP  # Drops Grenades from Hawk Grenade Pack
+    targetMode: 8
+    compatibleWeapons: [STR_HAWK_GRENADE_PACK]
+    checkHandsOnly: false
+    costUse:
+      time: 5 # Just need to be usable
+
 soldiers:
   - type: STR_ELDAR_SPIDER_PLAYER
     skillIconSprite: 221  #
@@ -90,3 +97,13 @@ soldiers:
     skillIconSprite: 250 # TODO: change to generic banshee
     skills:
       - STR_SKILL_BANSHEE_DASH
+
+  - type: STR_ELDAR_HAWKEX_P
+    skillIconSprite: 255
+    skills:
+      - STR_SKILL_HAWK_GRENADE_DROP
+
+  - type: STR_ELDAR_HAWK_P
+    skillIconSprite: 255
+    skills:
+      - STR_SKILL_HAWK_GRENADE_DROP

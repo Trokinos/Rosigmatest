@@ -297,3 +297,27 @@ items:
     armor: 300
     recover: false
     battleType: 11
+
+  - type: STR_ELDAR_FUSION_CHARGE_DEPLOYED_CORPSE
+    weight: 4
+    bigSprite: 4972
+    floorSprite: 4972
+    invWidth: 2
+    invHeight: 2
+    armor: 300
+    recover: false
+    battleType: 11
+    power: 140 # -40
+    damageType: 11
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 1.0  # it's a melta grenade; it will melt armor
+      ToTile: 1.0
+      ToItem: 1.0
+      ToArmor: 0.0
+      ToHealth: 0.7
+      ToWound: 0.05
+      RadiusReduction: 15 # melta explosions decay at twice the normal rate; coheres somewhat better than Imperium melta
+      RandomWound: false
+      FireThreshold: 0
+      FixRadius: 8 # -6

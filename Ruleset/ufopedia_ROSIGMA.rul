@@ -16380,6 +16380,28 @@ ufopaedia:
   - id: STR_SUNPISTOL_CHARGE
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_GRENADE_PACK
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_HAWK_GRENADE_PACK_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_HAWK_GRENADE_PACK_CODEX
+  - id: STR_HAWK_SUNBURST_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_STARSHOT_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_FUSION_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_HAYWIRE_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_PLASMA_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
 
   - id: STR_DEATH_SPINNER
     type_id: 14
@@ -16653,6 +16675,20 @@ ufopaedia:
     requires:
       - STR_ELDAR_ARMORY_EXAM
     text: STR_ELDAR_PLASMA_GRENADE_CODEX
+  - id: STR_ELDAR_FUSION_CHARGE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1EL5.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_FUSION_CHARGE_CODEX
+  - id: STR_ELDAR_FUSION_CHARGE_DETONATOR
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1EL5.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_FUSION_CHARGE_DETONATOR_CODEX
   - id: STR_ELDAR_WIREWEAVE_NET
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
