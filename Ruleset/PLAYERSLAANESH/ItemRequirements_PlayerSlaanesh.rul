@@ -1,0 +1,36 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+
+
+
+
+items:
+
+  - &IMMACULATE_WEAPON # RefNode for chaos weapon use requirements.
+    type: STR_HEARTBREAKER_SNIPER_RIFLE
+    requires:
+      - STR_CHAOS_WEAPON_USE_DEP
+
+  - type: STR_IMMACULATE_SONIC_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    costSell: 350
+    costBuy: 2600
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15300
+
+  - type: STR_AGRIPINAAMKIX
+    categories: [STR_CAT_AUTO]
+    costBuy: 9000
+    costSell: 2000
+    requiresBuy:
+      - STR_CONTACT_ARMS_SMUGGLERS
+    listOrder: 10741
+
+  - type: STR_AGRIPINAAMKIXB
+    categories: [STR_CAT_AUTO]
+    requiresBuy:
+      - STR_CONTACT_ARMS_SMUGGLERS
+    costBuy: 12000
+    costSell: 2000

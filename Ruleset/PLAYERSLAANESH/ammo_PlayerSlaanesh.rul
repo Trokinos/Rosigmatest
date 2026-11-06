@@ -609,6 +609,57 @@ items:
       ToMorale: 1.0
     listOrder: 11806
 
+ #### GRENADES
+
+    type: STR_IMMACUALTE_SONIC_GRENADE # Smaller versions of the Slaanesh Sonic Grenade.
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    bigSprite: 2313
+    floorSprite: 2420
+    handSprite: 2390
+    explosionHitSound: 2118  # Sonichit
+    hitAnimation: {mod: 40k, index: 96}
+    size: 0.1
+    throwRange: 18 # +2
+    primeSound: 2424
+    weight: 2
+    invWidth: 1
+    invHeight: 2
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    power: 80 # - 20 power.
+    damageType: 3
+    damageAlter:  # DA Sound
+      ToHealth: 0.85 # -0.15 vs normal sonic grenades
+      ToTime: 1.2 # +0.2
+      ToStun: 2.2 # +0.2
+      ToEnergy: 2.2 # +0.2
+      ToMorale: 2.2
+      ToArmorPre: 0.4 # +0.1
+      ToArmor: 0.0 #deals damage on the way in
+      ArmorEffectiveness: 0.7
+      ToTile: 0.45 # -0.3
+      ToItem: 0.45 # -0.3
+      RandomType: 6
+      FixRadius: 4
+    battleType: 4
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 75
+
+
  #### 40MM GRENADES
 
   - type: STR_HALLUCINOGEN_GRENADE40  # multipurpose smoke/morale/debuff/corruption

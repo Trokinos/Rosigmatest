@@ -66,13 +66,8 @@ items:
  #A1
 
   - type: STR_AGRIPINAAMKIX # Agripinaa Mk. IX Autogun.
-    categories: [STR_CAT_AUTO]
-    requiresBuy:
-      - STR_CONTACT_ARMS_SMUGGLERS
     size: 0.2
     dropoff: 5
-    costBuy: 9000
-    costSell: 2000
     weight: 9
     bigSprite: 4084
     floorSprite: {mod: 40k, index: 1016}
@@ -94,20 +89,14 @@ items:
     invHeight: 3
     twoHanded: true
     armor: 200
-    listOrder: 10741
     tags:
-      ITEM_SNAP_AIMED_POWER_BONUS_PERCENT: 10 # DMR-like rifle, a la Darktide.
+      ITEM_SNAP_ACCURACY_POWER_BONUS: 10 # DMR-like rifle, a la Darktide.
 
  #A2
 
   - type: STR_AGRIPINAAMKIXB
-    categories: [STR_CAT_AUTO]
-    requiresBuy:
-      - STR_CONTACT_ARMS_SMUGGLERS
     size: 0.2
     dropoff: 5
-    costBuy: 12000
-    costSell: 2000
     weight: 11
     bigSprite: 4085  # Agripinaa T3 with scope.
     floorSprite: {mod: 40k, index: 1016}
@@ -455,7 +444,7 @@ items:
     armor: 200
     listOrder: 10741
     tags:
-      ITEM_SNAP_AIMED_POWER_BONUS_PERCENT: 10 # DMR-like rifle, a la Darktide implementation.
+      ITEM_SNAP_ACCURACY_POWER_BONUS: 10 # DMR-like rifle, a la Darktide implementation.
 
   - type: STR_AUTOGUN_ADEPTAS_MKIXB
     categories: [STR_CAT_AUTO, STR_CAT_ADEPTAS]
@@ -1078,6 +1067,7 @@ items:
       basePercent: 50
     tags:
       REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
+
 
 
  #### AUX WEAPONS ####

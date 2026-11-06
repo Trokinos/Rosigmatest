@@ -2702,6 +2702,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_HALLUCINOGEN_GRENADE40: "40mm Hallucinogen Grenade"
   STR_AMPUTATOR40: "40mm Amputator Round"
   STR_FLECHETTE40: "40mm Flechette Round"
+  STR_IMMACULATE_SONIC_GRENADE: "Immaculate Sonic Grenade"
+  STR_IMMACULATE_BALEFIRE_GRENADE: "Immaculate Balefire Grenade"
   STR_CONSTRICTOR_PISTOL_AMMO: "Light Constrictor Web Ammo"
   #SOLDIER BONUSES
 

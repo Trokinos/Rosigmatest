@@ -93,8 +93,6 @@ events:
   - name: STR_SLAANESHPATH_GATE_EVENT # This is the event that gives you the sisters.
     description: STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTTEMPLEADEPTASBG.SCR
-    spawnedPersons: 18
-    spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     everyMultiSoldierList:
       STR_SLAANESHPATH_HANDMAIDEN: 12
       STR_SLAANESHPATH_EXALTEDMAIDEN: 4
