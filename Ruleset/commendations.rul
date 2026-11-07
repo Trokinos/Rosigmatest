@@ -277,6 +277,8 @@ commendations:
         - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_HAWK_SCATTERLASER"]]
       -
         - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "BT_GRENADE"]]
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_HAWK_GRENADE_PACK"]]
     units:
       - STR_ELDAR_HAWK_P
   # Spider

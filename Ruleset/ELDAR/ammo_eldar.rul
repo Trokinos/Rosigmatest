@@ -451,6 +451,160 @@ items:
     invWidth: 2
     invHeight: 1
 
+  - &HAWK_GRENADE_AMMO_TEMPLATE
+    type: STR_HAWK_SUNBURST_GRENADES # same profile as imperial las but +1 Str
+    categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_GRENADES]
+    requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_HAWK_RESEARCH
+    costBuy: 2000
+    costSell: 1000
+    listOrder: 16558
+    bigSprite: 4924
+    floorSprite: 4924
+    #handSprite: 1826
+    invWidth: 2
+    invHeight: 1
+    hitAnimation: {mod: 40k, index: 104}
+    battleType: 2
+    weight: 3 # Test
+    size: 0.1
+    clipSize: 3
+    # Damage Stats
+    power: 80
+    damageType: 1
+    damageAlter:
+      FixRadius: 8 # +5 vs Eldar Grenades
+      ToArmorPre: 0.05  # small ablation
+      ArmorEffectiveness: 1.1  # concussive + shrapnel everywhere
+      ToHealth: 0.7  # much damage dealt in the form of debuffs
+      ToTime: 0.2  # painful
+      ToStun: 0.4  # painful
+      ToMorale: 0.5  # painful
+      ToEnergy: 0.4  # painful
+      ToWound: 0.4  # shrapnel
+      RandomWound: false
+      ToTile: 0.25  # it's shrapnel; deals relatively little damage to the terrain.
+      ToItem: 0.25
+    tags:
+      ITEM_AMMO_SKIP_BIGOBS: 3
+  - type: STR_HAWK_STARSHOT_GRENADES
+    refNode: *HAWK_GRENADE_AMMO_TEMPLATE
+    costBuy: 8000
+    costSell: 2000
+    bigSprite: 4925
+    floorSprite: 4925
+        ### Damage Stats
+    power: 100
+    damageType: 3
+    damageAlter:
+      ResistType: 1
+      RandomType: 6  # gaussian
+      ToHealth: 0.8
+      ToArmorPre: 0.2
+      ToArmor: 0.2
+      ArmorEffectiveness: 0.5
+      ToTile: 1.0
+      ToItem: 1.0
+      FixRadius: 3  # +2 vs eldar grenade
+    powerForAnimation: 16  # 5 / 5 = 1
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+      ITEM_AMMO_SKIP_BIGOBS: 6
+  - type: STR_HAWK_FUSION_GRENADES
+    refNode: *HAWK_GRENADE_AMMO_TEMPLATE
+    bigSprite: 4926
+    floorSprite: 4926
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+    requiresBuy:
+      - STR_ELDAR_HAWK_RESEARCH
+      - STR_FUSION_TECH_RESEARCH
+      - STR_MIDTIER_PREREQ
+    costBuy: 40000
+    costSell: 10000
+        ### Damage Stats
+    power: 110
+    damageType: 11
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 1.0  # it's a melta grenade; it will melt armor
+      ToArmor: 0.0  # melts armor on the way in
+      ToTile: 1.0
+      ToItem: 1.0
+      ToHealth: 0.7
+      ToWound: 0.05
+      RadiusReduction: 15 # -5 than melta
+      RandomWound: false
+      FireThreshold: 0
+      FixRadius: 7 # +5 vs Eldar grenade
+    tags:
+      ITEM_AMMO_SKIP_BIGOBS: 9
+  - type: STR_HAWK_HAYWIRE_GRENADES
+    refNode: *HAWK_GRENADE_AMMO_TEMPLATE
+    requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_MIDTIER_PREREQ
+      - STR_ELDAR_HAWK_RESEARCH
+    costBuy: 8000
+    costSell: 2000
+    bigSprite: 4927
+    floorSprite: 4927
+    bulletSprite: {mod: 40k, index: 21}
+    explosionHitSound: {mod: 40k, index: 803}
+    hitAnimation: 2070
+        ### Damage Stats
+    power: 150
+    damageType: 5 #EMP
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 0.1
+      ToTime: 0.2
+      ToStun: 0.2
+      ToEnergy: 0.2
+      ToMorale: 0.2
+      ToTile: 0.0
+      ToItem: 0.0
+      ToArmor: 0.0
+      ToHealth: 0.1
+      ToWound: 0.0
+      FixRadius: 5 # -2 Eldar
+      RandomWound: false
+      IgnoreOverKill: true # it's an EMP; we don't disintegrate
+    tags:
+      DAMAGE_BONUS_PERCENT_MECHANICAL: 1000
+      DAMAGE_RESIST_PENETRATION_PERCENT: 99
+      ITEM_ENERGY_SHIELD_REDUCTION_PERCENT: 100 #annihilates shields
+      ITEM_AMMO_SKIP_BIGOBS: 12
+  - type: STR_HAWK_PLASMA_GRENADES
+    refNode: *HAWK_GRENADE_AMMO_TEMPLATE
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_MIDTIER_PREREQ
+    costBuy: 40000
+    costSell: 10000
+    bigSprite: 4928
+    floorSprite: 4928
+    explosionHitSound: {mod: 40k, index: 690}
+    hitAnimation: {mod: 40k, index: 112} #XPLASMA
+    ### Damage Stats
+    damageType: 5
+    power: 90
+    damageAlter: # DA PLASMA
+      RandomType: 6
+      ToArmorPre: 0.2  # melts some armor on the way in
+      ArmorEffectiveness: 0.75  # *** PLASMA rebalance
+      FireThreshold: 70  # can ignite at high damage
+      FixRadius: 8 #+5 vs Eldar
+    tags:
+      ITEM_AMMO_SKIP_BIGOBS: 15
+
   - &SPOOL_AMMO_TEMPLATE
     type: STR_SPINNER_SPOOL  # -1 AP Flamer
     costBuy: 6000
