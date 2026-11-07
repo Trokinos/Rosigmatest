@@ -223,7 +223,6 @@ research:
     cost: 50
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
-      - STR_PROCURE_TRANSPORTATION
       - STR_BLACK_MARKET_AMMUNITION
     unlocks:
       - STR_HERETEK_TRIBUTE_PRODUCTION
@@ -415,5 +414,39 @@ research:
     cost: 10
     points: 10
     dependencies:
-      - STR_SLAANESHPATH_GATE
+      - STR_OUR_HOLY_MISSION
     #spawnedEvent:
+
+  - name: STR_OUR_HOLY_MISSION # CODEX ENTRY ON CAMPAIGN GOALS
+    cost: 80
+    points: 30
+    dependencies: # GATEWAY TECH TO MISSION GENERATION
+      - STR_GENRALLOCK
+    #  - STR_SLAANESHPATH_GATE
+
+  - name: STR_AGAINST_THE_UNDERHIVERS
+    cost: 80
+    points: 30
+    dependencies:
+      - STR_OUR_HOLY_MISSION
+
+  - name: STR_AGAINST_THE_ECCLESIARCHY
+    cost: 80
+    points: 30
+    dependencies:
+      - STR_OUR_HOLY_MISSION
+
+  - name: STR_AGAINST_THE_ENFORCERS
+    cost: 80
+    points: 30
+    dependencies:
+      - STR_OUR_HOLY_MISSION
+
+  - name: STR_AGAINST_THE_ECCLESIARCHY
+
+
+  - name: STR_SPREADING_THE_FAITH
+    cost: 80
+    points: 30
+    dependencies:
+      - STR_OUR_HOLY_MISSION
