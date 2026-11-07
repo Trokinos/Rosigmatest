@@ -1053,6 +1053,46 @@ items:
     bulletSprite: {mod: 40k, index: 17}
     recover: false
 
+  - type: STR_LESSER_ROTFLY_SPAWNER
+    categories: [STR_CAT_GRENADES]
+    invHeight: 0
+    invWidth: 0
+    hitAnimation: 2130 #needs unique
+    power: 0
+    damageType: 2
+    damageAlter:
+      RandomType: 1
+      IgnoreOverKill: false
+      FireBlastCalc: false
+      FixRadius: 0
+      ToHealth: 0.0
+      ToTime: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      ToMana: 0.0
+      ToEnergy: 0.0
+      ToMorale: 0.0
+      ArmorEffectiveness: 0.0
+      ToItem: 0.0
+      ToTile: 0.0
+    battleType: 4  # grenade
+    recover: false
+    tuThrow: 999  # only to be thrown via scripts
+    tuPrime: 999  # only to be thrown via scripts
+    throwRange: 1  # not meant to be thrown
+    armor: 999
+    fixedWeapon: false  # has to be false so kamikazi tag and scripts work properly
+    explodeInventory: 2
+    hiddenOnMinimap: false
+    powerForAnimation: 1
+    spawnUnit: STR_LESSER_ROTFLY
+    spawnUnitFaction: 1
+    spawnUnitChance: 37
+    tags:
+      ITEM_IS_BOMB: 1
+      ITEM_IS_BOMB_ON_DEATH: 1  # we blow this bomb up on death
+      ITEM_IS_KAMIKAZI_BOMB: 1
+
   - type: PREDSIDE_WEAPON  # Chaos Dread BOLTER
     weight: 60
     power: 60
@@ -1082,6 +1122,7 @@ items:
     bulletSpeed: 50
     hitAnimation: {mod: 40k, index: 26}
     recover: false
+
   - type: STR_OBLITERATOR_WEAPON  # OBLITERATOR MELTA
     weight: 20
     power: 110
@@ -1653,6 +1694,56 @@ items:
     listOrder: 10341
     tags:
       INFECTION_DAMAGE_PERCENT: 10  # Inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+
+  - type: STR_TWINLINKED_HEAVY_BOLTER_NURGLE_DREAD
+    categories: [STR_CAT_BOLTER, STR_CAT_DEVASTATOR, STR_CAT_NURGLE]
+    refNode: *CHAOS_ASTARTES_BOLTERS
+    requires:
+      - STR_NURGLE_OPTIONS
+    requiresBuy: !add
+      - STR_NURGLE_OPTIONS  # Favor of Nurgle
+    size: 0.3
+    dropoff: 4  # heavy weapon drop off
+    costBuy: 22000
+    costSell: 1000  # rotted and disgusting; no one wants this
+    weight: 50
+    bigSprite: 2601
+    floorSprite: 2600
+    handSprite: 2510
+    bulletSprite: {mod: 40k, index: 6}
+    fireSound: 2138
+    compatibleAmmo:
+      - STR_AC_AP_AMMO
+      - STR_AC_MC_AMMO
+      - STR_AC_HE_AMMO
+      - STR_AC_I_AMMO
+      - STR_AC_N_AMMO
+    accuracyAimed: 0
+    accuracySnap: 85
+    accuracyAuto: 70
+    tuAimed: 0
+    tuSnap: 33
+    tuAuto: 35
+    kneelBonus: 133
+    snapRange: 18
+    autoRange: 13
+    battleType: 1
+    confSnap:
+      name: STR_BURST_SNAP_SHOT
+      arcing: false
+      shots: 6 # twin-linked
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 2
+    invHeight: 3
+    armor: 100
+    autoShots: 12 # twin-linked
+    bulletSpeed: 75
+    attraction: 8
+    listOrder: 10529
+    tags:
+      INFECTION_DAMAGE_PERCENT: 10  # inflicts % of damage dealt as infection damage
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
   - type: STR_HEAVY_BOLTER_CHAOSNURGLE     # CHAOS NURGLE HBOLTER ROSEMOD

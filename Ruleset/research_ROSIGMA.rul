@@ -1396,6 +1396,7 @@ research:
       - STR_PRIMARIS_AND_ADEPTAS
       - STR_HARDER_MISSIONS
       - STR_MARINESCHOICEDONE
+      - STR_BIKEAMMO
     disables:
       - STR_NOT_PRIMARIS
       - STR_PERSONAL_ARMOR
@@ -12579,6 +12580,16 @@ research:
       - STR_SILACOID_TERRORIST
     destroyItem: true
 
+  - name: STR_KHORNE_DREADNOUGHT  # Khorne Dreadnought
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+      - STR_ALIEN_ORIGINS
+      - STR_THREAT_ONE
+
   # Wordbearers
   - name: STR_WORDBEARER_DEMONLORD  # Word Bearer Transcendent
     cost: 192
@@ -12727,66 +12738,7 @@ research:
   # Nurgle
   - delete: STR_NURGLE_SOLDIER
 
-  - name: STR_BIOVORE
-    cost: 50
-    points: 10
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_INTERROGATION_COMPLETED
-
-  - name: STR_SPOREMINE
-    cost: 50
-    points: 10
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_INTERROGATION_COMPLETED
-
-  - name: STR_TERMAGANT
-    cost: 50
-    points: 10
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_INTERROGATION_COMPLETED
-
-  - name: STR_DEVOURER_TERMAGANT
-    cost: 50
-    points: 10
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_INTERROGATION_COMPLETED
-
-  - name: STR_RIPPERSWARM
-    cost: 50
-    points: 10
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_INTERROGATION_COMPLETED
-
-  - name: STR_TYRANID_WARRIOR
-    cost: 192
-    points: 50
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_INTERROGATION_COMPLETED
-      - STR_ALIEN_ORIGINS
-
-  - name: STR_TYRANID_PRIME
-    cost: 192
-    points: 50
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_INTERROGATION_COMPLETED
-      - STR_ALIEN_ORIGINS
-      - STR_THREAT_ONE
-
-  - name: STR_LIVE_CAPTURE_NURGLE_MARINE  # Plauge Marine
+  - name: STR_LIVE_CAPTURE_NURGLE_MARINE  # Plague Marine
     cost: 192
     points: 50
     needItem: true
@@ -12810,6 +12762,16 @@ research:
     getOneFree:
       - STR_LIVE_CAPTURE_NURGLE_MARINE
     destroyItem: true
+
+  - name: STR_NURGLE_DREADNOUGHT  # Nurgle Dreadnought
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+      - STR_ALIEN_ORIGINS
+      - STR_THREAT_ONE
 
   - name: STR_NURGLE_CORRUPTION_RESEARCH  # Commander corruption research
     cost: 150
@@ -12925,6 +12887,16 @@ research:
       - STR_LIVE_CAPTURE_TZEENTCH_MARINE
       - STR_LIVE_CAPTURE_CHAOS_ASSASSIN
       - STR_TZEENTCHS_SISTERCHAMP
+
+  - name: STR_TZEENTCH_DREADNOUGHT  # Tzeentch Dreadnought
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+      - STR_ALIEN_ORIGINS
+      - STR_THREAT_ONE
 
   # Alpha Legion
   - name: STR_LIVE_CAPTURE_ALPHA_MARINE  # Alpha Legion Operative
@@ -13802,12 +13774,72 @@ research:
     points: 50
     needItem: true
     destroyItem: true
+
   - delete: STR_CARNI_TERRORIST
   - name: STR_CARNI_TERRORIST  # Carnifex
     cost: 150
     points: 50
     needItem: true
     destroyItem: true
+
+  - name: STR_BIOVORE
+    cost: 50
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+
+  - name: STR_SPOREMINE
+    cost: 50
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+
+  - name: STR_TERMAGANT
+    cost: 50
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+
+  - name: STR_DEVOURER_TERMAGANT
+    cost: 50
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+
+  - name: STR_RIPPERSWARM
+    cost: 50
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+
+  - name: STR_TYRANID_WARRIOR
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+      - STR_ALIEN_ORIGINS
+
+  - name: STR_TYRANID_PRIME
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+      - STR_ALIEN_ORIGINS
+      - STR_THREAT_ONE
 
 #### Genestealer #CAPTIVES.FOE.XENO.TYR.GENE#
   - delete: STR_XENO_SOLDIER
@@ -15074,6 +15106,10 @@ research:
   - name: STR_KHORNE_SISTERASS_CORPSE
     refNode: *STR_CORPSE_BASIC
   - name: STR_KHORNE_DREADNOUGHT_CORPSE_GEO
+    refNode: *STR_CORPSE_BASIC
+  - name: STR_NURGLE_DREADNOUGHT_CORPSE_GEO
+    refNode: *STR_CORPSE_BASIC
+  - name: STR_TZEENTCH_DREADNOUGHT_CORPSE_GEO
     refNode: *STR_CORPSE_BASIC
   - name: STR_SLAANESH_SISTERPALATINE_CORPSE
     refNode: *STR_CORPSE_BASIC

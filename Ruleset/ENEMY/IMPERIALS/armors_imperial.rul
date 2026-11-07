@@ -2057,6 +2057,7 @@ armors:
       - 1.0  # IMPACT
       - 1.0  # MELTA
     loftempsSet: [3]
+    allowsKneeling: false
     tags:
       UNIT_SIZE: 150 # LARGE
       UNIT_TYPE_IMPERIUM: 1

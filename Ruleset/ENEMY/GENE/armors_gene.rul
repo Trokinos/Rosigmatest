@@ -1946,6 +1946,7 @@ armors:
       - INV_NULL_3X3
       - INV_NULL_4X2
     allowsRunning: false  # NPC limits for BAI
+    allowsKneeling: false
     tags:
       INFECTION_RESIST: 100
       INFECTION_RESIST_TYPE: 2  # immune to GSC infection

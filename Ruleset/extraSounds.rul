@@ -3084,7 +3084,6 @@ extraSounds:
       1910: Resources/Eldar/Sounds/reaperlauncher_3.ogg
       1911: Resources/Eldar/Sounds/wraith_walk.ogg
       1912: Resources/Eldar/Sounds/eldar_walk.ogg
-
 # rubric silence
       # SELECT UNIT
       3733: Resources/Sounds/Tzeentch/rubricselect1.wav

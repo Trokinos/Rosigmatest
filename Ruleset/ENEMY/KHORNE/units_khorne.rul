@@ -1019,6 +1019,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     spotter: 1
+    sniper: 30
     canPanic: false
     value: 30
     canBeMindControlled: false
@@ -1069,7 +1070,7 @@ units:
 
   - type: STR_KHORNE_DREADNOUGHT_LASCANNON
     refNode: *KHORNE_DREADNOUGHT
-    armor: STR_KHORNE_DREADNOUGHT_ARMOR #needs unique art #not in racelists yet
+    armor: STR_KHORNE_DREADNOUGHT_LASCANNON_ARMOR #needs unique art #not in racelists yet
     builtInWeaponSets:
       - - STR_TWIN_LINK_LASCANNON_CHAOS_DREADNOUGHT
         - STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L

@@ -116,7 +116,7 @@ items:
   #  recover: false
   #  defaultInventorySlot: STR_BACK_PACK
   - type: INV_NULL_ELDARHWP_2x1_LL
-    bigSprite: 4943
+    bigSprite: 4973
     invWidth: 2
     invHeight: 1
     weight: 0
@@ -124,7 +124,7 @@ items:
     recover: false
     defaultInventorySlot: STR_LEFT_LEG
   - type: INV_NULL_ELDARHWP_BELT
-    bigSprite: 4944
+    bigSprite: 4974
     invWidth: 4
     invHeight: 3
     weight: 0

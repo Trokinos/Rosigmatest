@@ -233,6 +233,7 @@ extraSprites:
       1842: Resources/Eldar/weapons/grenades/eldarfusion_grenade_handObj.png
       1850: Resources/Eldar/weapons/grenades/eldarhaywire_grenade_handObj.png
       1858: Resources/Eldar/weapons/grenades/eldarplasma_grenade_handObj.png
+      1866: Resources/Eldar/weapons/grenades/eldar_fusioncharge_handObj.png
 # Arbites; 1900-2000
       # Arbites' heavy stubber and ammo
       1900: Resources/Handobs/handob_handheld_heavy_stubber.png  # STR_HEAVY_STUBBER_HANDHELD replacement

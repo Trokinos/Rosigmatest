@@ -2196,3 +2196,40 @@ units:
       #   - STR_GRAVPISTOL_AMMO
       #   - STR_GRAVPISTOL_AMMO
       #   - STR_PLAGUE_KNIFE
+
+  - &NURGLE_DREADNOUGHT
+    type: STR_NURGLE_DREADNOUGHT_BOLTER #twin-linked heavy bolter and nurgle power claw
+    race: STR_NURGLE
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 67 # slower than most dreadnoughts
+      stamina: 307 # nurgle infatiguable
+      health: 477 # yes
+      bravery: 110
+      reactions: 37
+      firing: 87  # lower firing accuracy than normal terminators
+      throwing: 0
+      strength: 277  # grotesque strength
+      psiStrength: 107
+      psiSkill: 0
+      melee: 117
+    armor: STR_NURGLE_DREADNOUGHT_BOLTER_ARMOR
+    avoidsFire: false  # doesn't really care
+    intelligence: 3
+    aggression: 8
+    isLeeroyJenkins: true
+    spotter: 1
+    sniper: 30
+    canPanic: false
+    value: 30
+    canBeMindControlled: false
+    energyRecovery: 100
+    livingWeapon: true
+    standHeight: 21
+    moveSound: 3960
+    aggroSound: [3965, 3966]
+    deathSound: [3968, 3969]
+    builtInWeaponSets:
+      - - STR_KHORNE_DREADNOUGHT_CHAIN_FIST_R
+        - STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L_DUAL
+        - STR_LESSER_ROTFLY_SPAWNER

@@ -167,11 +167,11 @@ extraSprites:
 
       # 800: Resources/Support/800.png  # 40k 030 bug fix
 
-      403: Resources/CHAOS/bigob_chdread_hflamer.png
-      404: Resources/CHAOS/WORLDEATERS/bigob_khdread_hflamer.png
-      405: Resources/CHAOS/THOUSANDSONS/bigob_tzdread_hflamer.png
-      406: Resources/CHAOS/bigob_chdread_lascannon.png
-      407: Resources/CHAOS/WORLDEATERS/bigob_khdread_autocannon.png
+      403: Resources/UNDIVIDED/bigob_chdread_hflamer.png
+      404: Resources/KHORNE/bigob_khdread_hflamer.png
+      405: Resources/TZEENTCH/bigob_tzdread_hflamer.png
+      406: Resources/UNDIVIDED/bigob_chdread_lascannon.png
+      407: Resources/KHORNE/bigob_khdread_autocannon.png
       900: Resources/Bigobs/ROTORCANNON_BIGOB.png
       901: Resources/Bigobs/ROTORCANNON_KOMBI_G_BIGOB.png
       902: Resources/Bigobs/ROTOR_CANNON_AMMO_BACKPACK_BIGOB.png
@@ -1367,9 +1367,28 @@ extraSprites:
       4920: Resources/Eldar/weapons/grenades/eldarfusion_grenade_bigObj.png
       4921: Resources/Eldar/weapons/grenades/eldarhaywire_grenade_bigObj.png
       4922: Resources/Eldar/weapons/grenades/eldarplasma_grenade_bigObj.png
-
-      4943: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_leftleg.png
-      4944: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_belt.png
+      4923: Resources/Eldar/weapons/grenades/eldar_fusioncharge_bigObj.png
+      4924: Resources/Eldar/weapons/hawkgrenades/eldar_hawksunburstgrenades_bigObj.png
+      4925: Resources/Eldar/weapons/hawkgrenades/eldar_hawkstarshotgrenades_bigObj.png
+      4926: Resources/Eldar/weapons/hawkgrenades/eldar_hawkfusiongrenades_bigObj.png
+      4927: Resources/Eldar/weapons/hawkgrenades/eldar_hawkhaywiregrenades_bigObj.png
+      4928: Resources/Eldar/weapons/hawkgrenades/eldar_hawkplasmagrenades_bigObj.png
+      4929: Resources/Eldar/weapons/hawkgrenades/eldar_hawkgrenadepack_bigObj.png
+      4930: Resources/Eldar/weapons/hawkgrenades/eldar_hawksunburstgrenadepack1_bigObj.png
+      4931: Resources/Eldar/weapons/hawkgrenades/eldar_hawksunburstgrenadepack2_bigObj.png
+      4932: Resources/Eldar/weapons/hawkgrenades/eldar_hawksunburstgrenadepack_bigObj.png
+      4933: Resources/Eldar/weapons/hawkgrenades/eldar_hawkstarshotgrenadepack1_bigObj.png
+      4934: Resources/Eldar/weapons/hawkgrenades/eldar_hawkstarshotgrenadepack2_bigObj.png
+      4935: Resources/Eldar/weapons/hawkgrenades/eldar_hawkstarshotgrenadepack_bigObj.png
+      4936: Resources/Eldar/weapons/hawkgrenades/eldar_hawkfusiongrenadepack1_bigObj.png
+      4937: Resources/Eldar/weapons/hawkgrenades/eldar_hawkfusiongrenadepack2_bigObj.png
+      4938: Resources/Eldar/weapons/hawkgrenades/eldar_hawkfusiongrenadepack_bigObj.png
+      4939: Resources/Eldar/weapons/hawkgrenades/eldar_hawkhaywiregrenadepack1_bigObj.png
+      4940: Resources/Eldar/weapons/hawkgrenades/eldar_hawkhaywiregrenadepack2_bigObj.png
+      4941: Resources/Eldar/weapons/hawkgrenades/eldar_hawkhaywiregrenadepack_bigObj.png
+      4942: Resources/Eldar/weapons/hawkgrenades/eldar_hawkplasmagrenadepack1_bigObj.png
+      4943: Resources/Eldar/weapons/hawkgrenades/eldar_hawkplasmagrenadepack2_bigObj.png
+      4944: Resources/Eldar/weapons/hawkgrenades/eldar_hawkplasmagrenadepack_bigObj.png
       4945: Resources/Eldar/weapons/hwpscatterlaser_bigObj.png
       4946: Resources/Eldar/weapons/hwpshurikencannon_bigObj.png
       4947: Resources/Eldar/weapons/hwpaeldarimissilelauncher_bigObj.png
@@ -1397,6 +1416,10 @@ extraSprites:
       4969: Resources/Eldar/units/wraithguard/eldar_wraithguard_corpse_bigObj.png
       4970: Resources/Eldar/units/wraithguard/eldar_wraithblade_corpse_bigObj.png
       4971: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_corpse_bigObj.png
+      4972: Resources/Eldar/units/fusion_charge_deployed/eldar_fusioncharge_deployed_corpse_bigObj.png
+      4973: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_leftleg.png
+      4974: Resources/Eldar/units/eldar_heavy_weapon_platform/null_eldarhwp_belt.png
+      4975: Resources/Eldar/weapons/grenades/eldar_fusionchargedetonator_bigObj.png
 # All Free Indexes (Dont forget to edit these afterwards ! :) )
 
 # 403 - 899

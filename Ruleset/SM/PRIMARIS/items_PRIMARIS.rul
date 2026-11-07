@@ -1,0 +1,13 @@
+items:
+  - type: STR_MKX_BIKE_ARMOR                #5459
+    requires:
+      - STR_PRIMARIS
+      - STR_MARINES_STRATEGY
+      - STR_CHAPTER_PURITY
+    size: 2
+    requiresBuyBaseFunc: [IMPERIUM]
+    costBuy: 300000
+    costSell: 140000
+    transferTime: 50
+    listOrder: 5459
+    ufopediaType: STR_MKX_BIKE_UC
