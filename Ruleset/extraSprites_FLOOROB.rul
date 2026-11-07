@@ -392,6 +392,14 @@ extraSprites:
       2711: Resources/FOES/floorob_cloaked_woman_orange.png
       2712: Resources/GENE/FLOOROB_TURNED.png
       2713: Resources/GENE/FLOOROB_LIBERATOR_AUTOSTUB.png
+      2714: Resources/NURGLE/floorob_nurgdread1.png
+      2715: Resources/NURGLE/floorob_nurgdread2.png
+      2716: Resources/NURGLE/floorob_nurgdread3.png
+      2717: Resources/NURGLE/floorob_nurgdread4.png
+      2718: Resources/TZEENTCH/floorob_tzdread1.png
+      2719: Resources/TZEENTCH/floorob_tzdread2.png
+      2720: Resources/TZEENTCH/floorob_tzdread3.png
+      2721: Resources/TZEENTCH/floorob_tzdread4.png
       2723: Resources/GENE/GSC_MAGUS_FLOOROB.png
       #2724: Resources/GENE/GSC_PRIMUS_FLOOROB.png
       2725: Resources/GENE/GSC_HYBRID_ACOLYTE_FLOOROB.png
@@ -1089,7 +1097,7 @@ extraSprites:
 # 2604 - 2608
 # 2634 - 2639
 # 2648 - 2699
-# 2714 - 2724
+# 2722
 # 2731 - 2732
 # 2734 - 2737
 # 2746

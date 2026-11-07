@@ -1436,4 +1436,68 @@ armors:
       UNIT_TYPE_TZEENTCH: 1
       UNIT_SIZE: 200 # HUGE
 
+  - &STR_TZEENTCH_DREADNOUGHT
+    type: STR_TZEENTCH_DREADNOUGHT_LASCANNON_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 35  # dreadnought sensors
+    antiCamouflageAtDay: 10  # dreadnought sensors
+    antiCamouflageAtDark: 10  # dreadnought sensors
+    heatVision: 35  # dreadnought sensors
+    psiVision: 5
+    allowInv: false
+    spriteSheet: TZEENTCH_DREADNOUGHT_LASCANNON_BS.PCK
+    spriteInv: TZEENTCH_DREADNOUOGHT_LASCANNON_INV.SPK
+    corpseBattle:
+      - STR_TZEENTCH_DREADNOUGHT_CORPSE_1
+      - STR_TZEENTCH_DREADNOUGHT_CORPSE_2
+      - STR_TZEENTCH_DREADNOUGHT_CORPSE_3
+      - STR_TZEENTCH_DREADNOUGHT_CORPSE_4
+    corpseGeo: STR_TZEENTCH_DREADNOUGHT_CORPSE_GEO
+    frontArmor: 280
+    sideArmor: 260
+    rearArmor: 200
+    underArmor: 260
+    moveSound: 3960
+    drawingRoutine: 5
+    size: 2
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    damageModifier:  # TERMINATOR ARMOR
+      - 1.0  # none
+      - 0.7  # AP
+      - 0.1  # FLAMES  # Tzeentch has additional fire resistance: -0.2
+      - 0.6  # HE
+      - 0.9  # LASCANON
+      - 0.7  # PLASMA  # Tzeentch has additional plasma resistance: -0.3
+      - 0.0  # STUN
+      - 1.0  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    loftempsSet: [92, 89, 90, 91]
+    allowsRunning: false  # NPC limits for BAI
+    tags:
+      INTIMIDATION_RESISTANCE: 100
+      ARMOR_ENERGY_SHIELD_HP_PER_TURN: 80
+      ARMOR_ENERGY_SHIELD_DECAY: 20
+      UNIT_SIZE: 200 # HUGE
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_TZEENTCH: 1
+
+  - type: STR_TZEENTCH_DREADNOUGHT_AUTOCANNON_ARMOR
+    refNode: *STR_TZEENTCH_DREADNOUGHT
+    spriteSheet: TZEENTCH_DREADNOUGHT_AUTOCANNON_BS.PCK
+    spriteInv: TZEENTCH_DREADNOUOGHT_AUTOCANNON_INV.SPK
+
+  - type: STR_TZEENTCH_DREADNOUGHT_HFLAMER_ARMOR
+    refNode: *STR_TZEENTCH_DREADNOUGHT
+    spriteSheet: TZEENTCH_DREADNOUGHT_HFLAMER_BS.PCK
+    spriteInv: TZEENTCH_DREADNOUOGHT_HFLAMER_INV.SPK
+
+
 # dungeon specific end

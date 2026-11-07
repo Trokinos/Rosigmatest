@@ -520,3 +520,38 @@ items:
     recoveryPoints: 2
     battleType: 11
     armor: 50
+
+  - type: STR_NURGLE_DREADNOUGHT_CORPSE_GEO
+    size: 10
+    battleType: 11
+    recover: true
+
+  - type: STR_NURGLE_DREADNOUGHT_CORPSE_1
+    weight: 200
+    armor: 200
+    floorSprite: 2764
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+  - type: STR_NURGLE_DREADNOUGHT_CORPSE_2
+    weight: 200
+    armor: 200
+    floorSprite: 2765
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_NURGLE_DREADNOUGHT_CORPSE_3
+    weight: 200
+    armor: 200
+    floorSprite: 2766
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_NURGLE_DREADNOUGHT_CORPSE_4
+    weight: 200
+    armor: 200
+    floorSprite: 2767
+    invWidth: 0
+    invHeight: 0
+    recover: false
