@@ -591,10 +591,10 @@ items:
   #    size: 0.8
   #    costSell: 20000
   #    listOrder: 5711
-  - type: STR_ASSASSINNEUTRAL_FEM
-    size: 0.8
-    costSell: 10000
-    listOrder: 5712
+  # - type: STR_ASSASSINNEUTRAL_FEM
+  #   size: 0.8
+  #   costSell: 10000
+  #   listOrder: 5712
   - type: STR_ADEPTAS_ARMORA          # 5700
     size: 0.8
     costSell: 10000
