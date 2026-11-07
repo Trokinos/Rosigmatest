@@ -5,7 +5,7 @@ on:  # yamllint disable-line rule:truthy
 
 jobs:
   yaml_validator:
-    runs-on: codeberg-small
+    runs-on: codeberg-medium
 
     steps:
       # Step 1
