@@ -169,3 +169,52 @@ items:
     requiresBuy:
       - STR_SHARD_GRENADES
     listOrder: 15304
+
+
+#### AMMO
+
+  - type: STR_CANTUS_BOLTER_AMMO_BM
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costBuy: 1500 # way too expensive
+    costSell: 100
+    requiresBuy:
+      - STR_BLACK_MARKET_AMMUNITION
+      - STR_BLACK_MARKET_AMMO_TRADE
+    listOrder: 10287
+
+  - type: STR_LIGHT_BOLTER_AMMO_BM
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costBuy: 2000 # way too expensive
+    costSell: 100
+    requiresBuy:
+      - STR_BLACK_MARKET_AMMUNITION
+      - STR_BLACK_MARKET_AMMO_TRADE
+    listOrder: 10288
+
+  - type: STR_LIGHT_BOLTPISTOL_AMMO_BM
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costBuy: 1800 # way too expensive
+    costSell: 100
+    requiresBuy:
+      - STR_BLACK_MARKET_AMMUNITION
+      - STR_BLACK_MARKET_AMMO_TRADE
+    listOrder: 10289
+
+    type: STR_PLASMA_SPRAY_CLIP_SLAAN
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    refNode: *IMMACULATE_WEAPON
+    size: 0.1
+    costSell: 2000
+    listOrder: 11310
+    recoveryPoints: 1
+
+  - type: STR_PLASMA_RIFLE_CLIP_SLAAN
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    refNode: *IMMACULATE_WEAPON
+    size: 0.1
+    costSell: 3900
+    listOrder: 11311
+    recoveryPoints: 1

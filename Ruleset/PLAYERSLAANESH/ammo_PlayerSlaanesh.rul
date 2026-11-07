@@ -11,13 +11,6 @@ items:
  #### BLACK MARKET AMMO ####
   - &BM_BOLTER_AMMO_TEMPLATE
     type: STR_CANTUS_BOLTER_AMMO_BM  # Low-grade, unreliable light bolts bought at unreasonable prices.
-    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
-    requiresBuy:
-      - STR_BLACK_MARKET_AMMUNITION
-      - STR_BLACK_MARKET_AMMO_TRADE
-    size: 0.1
-    costBuy: 1500 # way too expensive
-    costSell: 100
     weight: 2
     bigSprite: 3230
     floorSprite: {mod: 40k, index: 2}
@@ -29,7 +22,6 @@ items:
     armor: 30
     invWidth: 1
     invHeight: 2
-    listOrder: 10287
     damageAlter:  # DA ILLEGAL PIRATE COPY BOLTER
       ToArmorPre: 0.15
       ArmorEffectiveness: 1.0 # worse
@@ -100,13 +92,10 @@ items:
     vaporColorSurface: 17
     vaporDensitySurface: 6
     vaporProbabilitySurface: 18
-    size: 0.1
-    costSell: 2000
+
     weight: 3
     clipSize: 12
     battleType: 2
-    recoveryPoints: 1
-    listOrder: 11310
     inventoryMoveCost: #quickdraw
       basePercent: 50
 
@@ -310,41 +299,6 @@ items:
 
 
  #### SONIC AMMO ####
-
-  - &STR_SLAANESHPATH_SONIC_MUNITION_TEMPLATE
-    type: STR_SLAANESHPATH_SONIC_GRENADE  # 4010
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
-    size: 0.1
-    costSell: 250
-    weight: 3
-    bigSprite: 2313
-    floorSprite: 2420
-    handSprite: 2390
-    power: 100
-    damageType: 3
-    damageAlter:  # DA Sound
-      ToHealth: 1.0
-      ToTime: 1.0
-      ToStun: 2.0
-      ToEnergy: 2.0
-      ToMorale: 2.0
-      ToArmorPre: 0.3
-      ToArmor: 0.0 #deals damage on the way in
-      ArmorEffectiveness: 0.7
-      ToTile: 0.75
-      ToItem: 0.75
-      RandomType: 6
-      FixRadius: 4
-    explosionHitSound: 2118  # Sonichit
-    hitAnimation: {mod: 40k, index: 96}
-    battleType: 4
-    recoveryPoints: 1
-    invWidth: 1
-    invHeight: 2
-    listOrder: 15300
-    throwRange: 16
-    tags:
-      DAMAGE_RESIST_PENETRATION_PERCENT: 75
 
   - type: STR_NAIAD_SONIC_SHRIEKER_CHARGE
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]

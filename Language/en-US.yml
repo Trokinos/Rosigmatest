@@ -15485,6 +15485,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SCRIPT_SNEAK_ATTACK: "Unit Sneak Attacked!"
   STR_SCRIPT_SPIRIT_OF_MARTYR: "Unit Saved by Spirit of the Martyr"
   STR_SCRIPT_REMAINING_SHIELD_POINTS: "Remaining Shield Points: {0}"
+  STR_SCRIPT_DARK_DEVOTION: "Unit Saved by Dark Devotion"
 
   # infection scripts
   STR_SCRIPT_INFECTION_HEAL_INCOMPLETE_LIGHT: "Corruption partially treated. Light contamination still present."

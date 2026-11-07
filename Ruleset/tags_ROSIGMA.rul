@@ -277,6 +277,8 @@ extended:
       DigIn: int
       # *** Sisters of Battle Miracles ***
       SKILL_MIRACLE_ID: int
+      # *** Slaanesh Dark Devotion
+      SKILL_DEVOTION_ID: int
       # *** Commissar Execution Scripts ***
       SKILL_COMMISSAR_EXECUTION_MODE_ID: int
       # *** Imperial Guard Command Scripts ***
@@ -387,6 +389,9 @@ extended:
       # *** Sisters of Battle Miracles ***
       SOLDIER_MIRACLE_POINTS: int
       SOLDIER_IS_SOB: int
+      # *** Slaanesh Dark Devotion
+      SOLDIER_DEVOTION_POINTS: int
+      SOLDIER_IS_IMMACULATE: int
       # *** Heretic Sisters ***
       SOLDIER_IS_HSIS: int
       # *** Commissar Execution Scripts ***
@@ -411,6 +416,11 @@ extended:
       CHOICE_ACTIVE_MIRACLE: int
       MIRACLE_POINTS: int
       TURN_SPIRIT_OF_MARTYR: int
+      # *** Sisters of Battle Miracles ***
+      TURN_ACTIVE_DEVOTION: int
+      CHOICE_ACTIVE_DEVOTION: int
+      DEVOTION_POINTS: int
+      TURN_DARK_DEVOTION: int
       # *** Infection/Corruption Scripts ***
       RESEARCH_LEVEL_CURE: int
       # *** Commissar Execution Scripts ***
