@@ -501,9 +501,10 @@ extraSprites:
 # Slaanesh strategy weapons
 
       6000: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_hand.png
-      6001: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_fire.png
-      6002: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_gl.png
-      6003: Resources/HandObs/AutogunsExpanded/handob_autogun_agripinaa_t3.png
-      6004: Resources/HandObs/AutogunsExpanded/handob_autogun_agripinaa_t3b.png
+      6008: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_fire.png
+      6016: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_gl.png
+      6024: Resources/HandObs/AutogunsExpanded/handob_autogun_agripinaa_t3.png
+      6032: Resources/HandObs/AutogunsExpanded/handob_autogun_agripinaa_t3b.png
+      6040: Resources/HandObs/AutogunsExpanded/handob_autogun_headhunter_scope.png
 
       # 1850-1899 free spaces here, make sure to double check

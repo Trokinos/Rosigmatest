@@ -35,11 +35,12 @@ items:
   - type: STR_GRAIA_MKVII
     categories: [STR_CAT_AUTO]
     size: 0.2
-    costBuy: 28000
-    costSell: 5000
+    costBuy: 32000
+    costSell: 6000
     requiresBuy:
       - STR_MARKSMAN_AUTOGUNS
     listOrder: 10743
+    recoveryPoints: 2
 
   - type: STR_MELTA_CARBINE_SLAAN
     refNode: *IMMACULATE_WEAPON
@@ -47,6 +48,7 @@ items:
     size: 0.3
     costSell: 40000
     listOrder: 11160
+    recoveryPoints: 3
 
   - type: STR_PLASMA_CARBINE_SLAAN
     refNode: *IMMACULATE_WEAPON
@@ -54,6 +56,7 @@ items:
     size: 0.2
     costSell: 22000
     listOrder: 11400
+    recoveryPoints: 1
 
   - type: STR_BOLTPISTOL_DEAZ_SLAAN
     refNode: *IMMACULATE_WEAPON

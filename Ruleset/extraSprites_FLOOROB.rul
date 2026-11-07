@@ -240,6 +240,9 @@ extraSprites:
      # Slaanesh
       2111: Resources/PLAYERSLAANESH/Weapons/Cantus/floorob_cantus.png
       2112: Resources/PLAYERSLAANESH/Weapons/Cantus/floorob_cantusgl.png
+      2113: Resources/Floorobs/AutogunsExpanded/floorob_autogun_agripinaa_t3.png
+      2114: Resources/Floorobs/AutogunsExpanded/floorob_autogun_agripinaa_t3b.png
+      2115: Resources/Floorobs/AutogunsExpanded/floorob_autogun_headhunterB.png
 
       2170: Resources/ORK/floorob_bloodaxe_boy.png
       2171: Resources/ORK/BLOODAXE_ARMED_MEGANOB_FLOOROB.png # bloodaxe meganob corpse

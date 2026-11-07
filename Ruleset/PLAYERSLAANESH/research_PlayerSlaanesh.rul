@@ -160,14 +160,17 @@ research:
 
 
   - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
-    cost: 20
+    cost: 40
+    points: 20
     dependencies:
       - STR_SLAANESHPATH_GATE
     unlocks:
       - STR_MARKSMAN_AUTOGUNS
+      - STR_BASIC_BALLISTICS_DEP
 
   - name: STR_BLACK_MARKET_AMMUNITION # Codex Entry.
-    cost: 20
+    cost: 40
+    points: 20
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
     unlocks:
@@ -183,20 +186,20 @@ research:
 ###################################
 
   - name: STR_SACRIFICIAL_RITUALS # Unlocks sacrifices. Codex Entry.
-    cost: 50
+    cost: 100
     points: 20
     dependencies:
       - STR_PATH_OF_PERFECTION
+    getOneFree:
+      - STR_ELERIUM_115
 
   - name: STR_PATH_OF_PERFECTION # Gateway tech that also gives access to handmaiden training.
-    cost: 20
+    cost: 30
     dependencies:
       - STR_SLAANESHPATH_GATE
     spawnedItem: STR_SLAANESHPATH_PIETY
     spawnedItemCount: 200
     points: 20
-
-    #TODO: MAKE THIS TECH GIVE 200 PIETY
 
   - name: STR_SOULSTAIN_SORCERY
     cost: 50
@@ -222,14 +225,15 @@ research:
  ###################################
 
   - name: STR_CONTACT_HERETEKS # Codex entry. Unlocks the ability to produce a tribute.
-    cost: 50
+    cost: 100
+    points: 30
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
       - STR_BLACK_MARKET_AMMUNITION
     unlocks:
       - STR_HERETEK_TRIBUTE_PRODUCTION
     getOneFree:
-      - STR_ELERIUM_115
+      - STR_ALIEN_ALLOYS
 
   - name: STR_HERETEK_TRIBUTE
     cost: 30
@@ -261,16 +265,19 @@ research:
 
   - name: STR_DEIMOS_RHINO_ACCESS
     cost: 100
+    points: 30
     dependencies:
       - STR_HERETEK_TRIBUTE # Placeholder
 
   - name: STR_IMMACULATE_CHERUBIM
-    cost: 100
+    cost: 200
+    points: 30
     dependencies:
       - STR_GENERALLOCK # Placeholder
 
   - name: STR_MELTAGUN_DATACRYPT
-    cost: 100
+    cost: 200
+    points: 30
     dependencies:
       - STR_CONTACT_HERETEKS
 
@@ -281,7 +288,8 @@ research:
       - STR_IMMACULATE_LASGUN_TECHNOLOGY
 
   - name: STR_IMMACULATE_PLASMA_TECHNOLOGY
-    cost: 50
+    cost: 150
+    points: 30
     dependencies:
       - STR_CONTACT_HERETEKS
       - STR_PATH_OF_PERFECTION
@@ -426,8 +434,8 @@ research:
       - STR_GENERALLOCK
     #  - STR_SLAANESHPATH_GATE
 
-  - name: STR_AGAINST_THE_UNDERHIVERS
-    cost: 80
+  - name: STR_WAR_FOR_THE_UNDERHIVE
+    cost: 50
     points: 30
     dependencies:
       - STR_OUR_HOLY_MISSION

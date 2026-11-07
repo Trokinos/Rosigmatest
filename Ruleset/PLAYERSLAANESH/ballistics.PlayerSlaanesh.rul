@@ -78,9 +78,9 @@ items:
     dropoff: 5
     accuracySnap: 85  # Top-quality autogun.
 
-    snapRange: 16
+    snapRange: 17
 
-    tuSnap: 25
+    tuSnap: 24
 
     confSnap:
       shots: 2
@@ -92,9 +92,9 @@ items:
   - type: STR_AGRIPINAA_MKIXB
     dropoff: 5
     accuracySnap: 85  # Top-quality autogun.
-    accuracyAimed: 95
+    accuracyAimed: 100
 
-    snapRange: 16
+    snapRange: 17
     aimRange: 21
 
     tuSnap: 30
@@ -121,10 +121,10 @@ items:
     tuSnap: 30
     tuAimed: 65 # -5
 
-    weight: 11
+    weight: 17 # Heavy
     tags:
       ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10 # Darktide-style DMR rifle.
-      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 30  # +5 vs Stub Rifle
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 35  # +10 vs Stub Rifle
       ITEM_RECOIL: 15  # +5 vs Stub Rifle
 
 

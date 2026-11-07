@@ -86,8 +86,8 @@ items:
   - type: STR_AGRIPINAA_MKIX # Agripinaa Mk. IX Autogun.
     battleType: 1
     bigSprite: 4084
-    handSprite: 6003
-    floorSprite: {mod: 40k, index: 1016}
+    handSprite: 6024
+    floorSprite: 2113
     fireSound: {mod: 40k, index: 875} # Meatier shoota sound.
     bulletSprite: {mod: 40k, index: 2}
     bulletSpeed: 35
@@ -103,8 +103,8 @@ items:
   - type: STR_AGRIPINAA_MKIXB
     battleType: 1
     bigSprite: 4085  # Agripinaa T3 with scope.
-    handSprite: 6004
-    floorSprite: {mod: 40k, index: 1016}
+    handSprite: 6032
+    floorSprite: 2114
     fireSound: {mod: 40k, index: 875}
     bulletSprite: {mod: 40k, index: 2}
     bulletSpeed: 35
@@ -114,6 +114,25 @@ items:
     armor: 200
     compatibleAmmo:
       - STR_AUTOGUN_CLIP
+
+  - type: STR_GRAIA_MKVII
+    battleType: 1
+    bigSprite: 4085 # PLACEHOLDER UNTIL BIGOB IS CONVERTED
+    handSprite: 6040 # Headhunter
+    floorSprite: 2115
+    fireSound: {mod: 40k, index: 875}
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 35
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    compatibleAmmo:
+      - STR_STUB_GUN_AMMO
+      - STR_STUB_GUN_AMMO_AP
+      - STR_STUB_GUN_AMMO_WOUND
+      - STR_STUB_GUN_AMMO_HP
+      - STR_STUB_GUN_AMMO_INC
 
   - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
     categories: [STR_CAT_SNIPER]
@@ -389,9 +408,9 @@ items:
 
   - type: STR_BOLTER_CANTUS_SLAAN # Done (Pending art asset rework)
     battleType: 1
-    bigSprite: 4080
-    handSprite: 6000
-    floorSprite: 2111
+    bigSprite: 4080 # Done
+    handSprite: 6000 # Done
+    floorSprite: 2111 # Done
     fireSound: 2137
     bulletSprite: {mod: 40k, index: 6}
     bulletSpeed: 30
@@ -406,9 +425,9 @@ items:
 
   - type: STR_BOLTER_CANTUS_GL  # Done (Pending art asset rework)
     battleType: 1
-    bigSprite: 4081
-    floorSprite: 2112
-    handSprite: 6002
+    bigSprite: 4081 # Done
+    floorSprite: 2112 # Done
+    handSprite: 6016 # Done
     fireSound: 2137
     bulletSprite: {mod: 40k, index: 6}
     bulletSpeed: 30

@@ -28,10 +28,14 @@ adhocScripts:
       0:
         STR_ALIEN_RESEARCH: 10
         STR_ALIEN_HARVEST: 10
-        STR_ALIEN_ABDUCTION: 30
+        STR_ALIEN_ABDUCTION: 20
         STR_NURGLE_HARVEST: 8
-        STR_ALIEN_RESEARCH_TZEENTCH: 15
-        STR_ALIEN_HARVEST_TZEENTCH: 8
+        STR_IMPERIALS_ABDUCTION: 10
+        STR_IMPERIALS_HARVEST: 10
+        STR_SISIMPERIALS_ABDUCTION: 10
+        STR_SISIMPERIALS_HARVEST: 10
+        STR_ALIEN_RESEARCH_TZEENTCH: 5
+        STR_ALIEN_HARVEST_TZEENTCH: 5
     targetBaseOdds: 100
     startDelay: 12960  # 9 days
     randomDelay: 4320  # additional random 0 to 3 days

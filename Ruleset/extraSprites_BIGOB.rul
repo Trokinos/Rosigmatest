@@ -1302,6 +1302,7 @@ extraSprites:
       4084: Resources/PLAYERSLAANESH/Weapons/Autoguns/MKIX.png
       4085: Resources/PLAYERSLAANESH/Weapons/Autoguns/MKIXb.png
       4086: Resources/PLAYERSLAANESH/Weapons/Grenades/STRANGLER_GRENADE_BIGOB.png
+#      4087: Resources/Bigobs/AutogunsExpanded/AUTOGUN_HEADHUNTER_B_101.png
 
 # Eldars
       4850: Resources/Eldar/weapons/reaper_aml_bigObj.png #reaper launcher
