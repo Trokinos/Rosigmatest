@@ -65,6 +65,66 @@ armors:
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
+  - type: STR_SLAANESHPATH_MILITANT_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 22 # Very slightly improved senses
+    antiCamouflageAtDay: 2  # Very slightly improved senses
+    antiCamouflageAtDark: 2 # Very slightly improved senses
+    heatVision: 15 # Very slightly improved senses
+    spriteSheet: HANDMAIDEN.PCK
+    spriteInv: HNDM_33
+    customArmorPreviewIndex: 1128
+    spriteFaceGroup: 6
+    spriteFaceColor: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 5
+      stamina: 5
+      health: 0
+      bravery: 10
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 0
+      psiSkill: 10
+      melee: 5
+    storeItem: STR_NONE
+    frontArmor: 80
+    sideArmor: 65
+    rearArmor: 60
+    underArmor: 85
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 1.1  # HE - Weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_MILITANT
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_2X3_BACKPACK
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags:
+      INFECTION_RESIST: 35 # Slaanesh protection
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
 #HM
   - type: STR_SLAANESHPATH_MYSTES_ARMOR  # Armor for Mystagogues in training. Allows for wielding of Slaaneshi relics.
     visibilityAtDay: 40
@@ -82,15 +142,15 @@ armors:
     stats:
       tu: 5
       stamina: 5
-      health: 5 # +5 vs HM
+      health: 5
       bravery: 10  # always multiples of 10
-      firing: 5 # +5 vs HM
-      strength: 5 # +5 vs HM
-      psiStrength: 0
+      firing: 5
+      strength: 5
+      psiStrength: 10
       psiSkill: 10
       melee: 5
     storeItem: STR_NONE
-    frontArmor: 80
+    frontArmor: 85
     sideArmor: 65
     rearArmor: 65
     underArmor: 70
@@ -120,7 +180,7 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_LIVING: 1
       UNIT_TYPE_SLAANESH: 1
-      DODGE_CHANCE: 25
+      DODGE_CHANCE: 20
       FLIGHT_DODGE_CHANCE: 0
       ARMOR_MAX_SUCCESSFUL_DODGES: 2
 
@@ -429,7 +489,7 @@ armors:
     visibilityAtDark: 24
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
-    spriteSheet: BLOODYROSE_SERAPH_battle.PCK
+    spriteSheet: BLOODYROSE_SERAPH_battle.PCK # PLACEHOLDER
     customArmorPreviewIndex: 1427
     corpseBattle:
       - STR_BRSERAPH_CORPSE
@@ -445,7 +505,7 @@ armors:
       psiStrength: 0
       psiSkill: 15
       melee: 15
-    storeItem: STR_SERAPHIM_ARMOR_BLOODYROSE
+    storeItem: STR_SERAPHIM_ARMOR_BLOODYROSE # PLACEHOLDER
     frontArmor: 80
     sideArmor: 70
     rearArmor: 60

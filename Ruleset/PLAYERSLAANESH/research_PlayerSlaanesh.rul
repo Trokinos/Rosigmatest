@@ -163,6 +163,8 @@ research:
     cost: 20
     dependencies:
       - STR_SLAANESHPATH_GATE
+    unlocks:
+      - STR_MARKSMAN_AUTOGUNS
 
   - name: STR_BLACK_MARKET_AMMUNITION # Codex Entry.
     cost: 20
@@ -265,7 +267,7 @@ research:
   - name: STR_IMMACULATE_CHERUBIM
     cost: 100
     dependencies:
-      - STR_GENERALLLOCK # Placeholder
+      - STR_GENERALLOCK # Placeholder
 
   - name: STR_MELTAGUN_DATACRYPT
     cost: 100
@@ -421,7 +423,7 @@ research:
     cost: 80
     points: 30
     dependencies: # GATEWAY TECH TO MISSION GENERATION
-      - STR_GENRALLOCK
+      - STR_GENERALLOCK
     #  - STR_SLAANESHPATH_GATE
 
   - name: STR_AGAINST_THE_UNDERHIVERS

@@ -2514,8 +2514,9 @@ en-US: #  yamllint disable-line rule:empty-values
   #############################
 
   #ATSLCW CODEX WEAPON ENTRIES
-  STR_AUTOGUN_ADEPTAS_MKIX_UFOPEDIA: "{NEWLINE}{NEWLINE}The product of a recently discovered STC, the Agripiina Mark IX Vigilant Autogun is both accurate and deadly. Though rarer than other Agripiina patterns, it is still occasionally issued to Adepta Sororitas novitiates."
-  STR_AUTOGUN_ADEPTAS_MKIXB_UFOPEDIA: "{NEWLINE}{NEWLINE}With the addition of a scope, the Mark IX Autogun makes for a reliable and competent marksman rifle. Aimed shots from this weapon inflict additional damage based on accuracy, though less so compared to a full sniper rifle."
+  STR_AGRIPINAA_MKIX_UFOPEDIA: "{NEWLINE}{NEWLINE}The product of a recently discovered STC, the Agripinaa Mark IX Vigilant Autogun is both accurate and deadly. Though rarer than other Agripiina patterns, it is still occasionally issued to Adepta Sororitas novitiates."
+  STR_AGRIPINAA_MKIXB_UFOPEDIA: "{NEWLINE}{NEWLINE}With the addition of a scope, the Mark IX Autogun makes for a reliable and competent marksman rifle. Aimed shots from this weapon inflict additional damage based on accuracy, though less so compared to a full sniper rifle."
+  STR_GRAIA_MKVII_UFOPEDIA: "An oddity among autoguns, the Graia Mk. VII has been heavily modified for counter-sniper duty during siege actions. Straddling the line between a marksman and a sniper rifle, the Mk. VII is a very deadly weapon in the right hands."
   STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, this plasma weapon has been imbued with the power of Slaanesh. Like many other such plasma weapons, it carries little risk of overheating, but cannot be overcharged."
   STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
   STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, twisted to have much higher rate of fire than would normally be safe. When equipped with bolts more capable of penetrating armor, this weapon should not be taken lightly."
@@ -2674,8 +2675,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BURST_DOUBLE_TAP: "Double Tap"
   STR_BURST_TRIPLE_TAP: "Triple Tap"
 
-  STR_AGRIPINAAMKIX: "Agripinaa Mk. IX Autogun"
-  STR_AGRIPINAAMKIXB: "Agripinaa Mk. IX (Scoped)"
+  STR_AGRIPINAA_MKIX: "Agripinaa Mk. IX Autogun"
+  STR_AGRIPINAA_MKIXB: "Agripinaa Mk. IX (Scoped)"
+  STR_GRAIA_MKVII: "Graia Mk. VII Headhunter Autogun"
 
   STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
   STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
@@ -2740,10 +2742,10 @@ en-US: #  yamllint disable-line rule:empty-values
   ## Slaanesh Adeptas Armors
 
   STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
-  STR_SLAANESHPATH_MYSTES_ARMOR: "Mystes Armor"
+  STR_SLAANESHPATH_MILITANT_ARMOR: "Handmaiden Militant Armor"
+  STR_SLAANESHPATH_MYSTES_ARMOR: "Handmaiden Mystes Armor"
   STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR: "Vivisectionist Armor"
-  STR_SLAANESHPATH_ANATHEMANT_ARMOR: "Anathemant Armor"
-  STR_SLAANESHPATH_MILITANT_ARMOR: "Reinforced Handmaiden Armor"
+  STR_SLAANESHPATH_ANATHEMANT_ARMOR: "Handmaiden Anathemant Armor"
   STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
   STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
   STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"
@@ -9751,6 +9753,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_STUBCANNON_GUARD: "Stubcannon"
   STR_STUBCANNON_GUARD_CODEX: "{NEWLINE}A House Orlock design, this multi-purpose stubcannon can fire a number of 40mm projectiles and grenades. Considered non-standard issue, this weapon nonetheless finds itself into the hands of veteran and abhuman guardsmen that desire the added firepower. {NEWLINE} RECOIL: {ALT} 35"
   STR_BALLISTIC_WEAPONS_HIGHGRADE: "High-Grade Ballistic Weapons"
+  STR_MARKSMAN_AUTOGUNS: "Marksman Autoguns"
   STR_AUTOGUN_HIGHGRADE: "High-Grade Autogun"
   STR_AUTOGUN_HIGHGRADE_UNDERSLUNG: "High-Grade Autogun w/ Launcher"
   STR_AUTOGUN_CLIP_DRUM: "Autogun Ammo Drum"

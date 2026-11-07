@@ -14,23 +14,32 @@ items:
     requires:
       - STR_CHAOS_WEAPON_USE_DEP
 
-  - type: STR_AGRIPINAAMKIX
+  - type: STR_AGRIPINAA_MKIX
     categories: [STR_CAT_AUTO]
     size: 0.2
-    costBuy: 9000
-    costSell: 2000
+    costBuy: 18000
+    costSell: 3500
     requiresBuy:
-      - STR_CONTACT_ARMS_SMUGGLERS
+      - STR_MARKSMAN_AUTOGUNS
     listOrder: 10741
 
-  - type: STR_AGRIPINAAMKIXB
+  - type: STR_AGRIPINAA_MKIXB
     categories: [STR_CAT_AUTO]
     size: 0.2
-    costBuy: 12000
+    costBuy: 22000
     costSell: 2600
     requiresBuy:
-      - STR_CONTACT_ARMS_SMUGGLERS
+      - STR_MARKSMAN_AUTOGUNS
     listOrder: 10742
+
+  - type: STR_GRAIA_MKVII
+    categories: [STR_CAT_AUTO]
+    size: 0.2
+    costBuy: 28000
+    costSell: 5000
+    requiresBuy:
+      - STR_MARKSMAN_AUTOGUNS
+    listOrder: 10743
 
   - type: STR_MELTA_CARBINE_SLAAN
     refNode: *IMMACULATE_WEAPON
@@ -122,8 +131,8 @@ items:
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.1
-    costBuy: 2000
-    costSell: 200
+    costBuy: 3000
+    costSell: 250
     requiresBuy:
       - STR_STRANGLER_GRENADES
     listOrder: 15298
@@ -132,7 +141,7 @@ items:
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.1
-    costBuy: 3000
+    costBuy: 4000
     costSell: 250
     requiresBuy:
       - STR_STRANGLER_GRENADES
@@ -158,7 +167,37 @@ items:
       - STR_TERROR_WEAPONRY
     listOrder: 15301
 
+  - type: STR_SHRIEKER_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 2600
+    costSell: 350
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15302
+
+  - type: STR_SHRIEKER_GRENADE40
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 4500
+    costSell: 500
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15301
+
 # - type: STR_SHARD_GRENADE
+
+  - type: STR_SHARD_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 3000
+    costSell: 450
+    requiresBuy:
+      - STR_SHARD_GRENADES
+    listOrder: 15303
 
   - type: STR_SHARD_GRENADE40
     refNode: *IMMACULATE_WEAPON

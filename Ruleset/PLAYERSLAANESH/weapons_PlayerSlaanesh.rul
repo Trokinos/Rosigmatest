@@ -83,7 +83,7 @@ items:
 
  #A1
 
-  - type: STR_AGRIPINAAMKIX # Agripinaa Mk. IX Autogun.
+  - type: STR_AGRIPINAA_MKIX # Agripinaa Mk. IX Autogun.
     battleType: 1
     bigSprite: 4084
     handSprite: 6003
@@ -100,7 +100,7 @@ items:
 
  #A2
 
-  - type: STR_AGRIPINAAMKIXB
+  - type: STR_AGRIPINAA_MKIXB
     battleType: 1
     bigSprite: 4085  # Agripinaa T3 with scope.
     handSprite: 6004

@@ -605,11 +605,57 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 75
 
 
-  - type: STR_STRANGLER_GRENADE # Stun gas/smoke grenade combo.
-    bigSprite: 2955 # PLACEHOLDER
-    floorSprite: 2955 # PLACEHOLDER
-    handSprite: 2750 # PLACEHOLDER
-    handSprite: {mod: 40k, index: 336}  # Needs new
+    type: STR_SHRIEKER_GRENADE # A sonic stun grenade.
+    bigSprite: 2313
+    floorSprite: 2420
+    handSprite: 2390
+    explosionHitSound: 2118  # Sonichit
+    hitAnimation: {mod: 40k, index: 96}
+    throwRange: 18 # +2
+    primeSound: 2424
+    weight: 2
+    invWidth: 1
+    invHeight: 2
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    power: 75 # - 20 power.
+    damageType: 3
+    damageAlter:  # DA SHRIEK
+      ToHealth: 0.15
+      ToTime: 1.5 # +0.2
+      ToStun: 2.2 # +0.2
+      ToEnergy: 2.2 # +0.2
+      ToMorale: 2.2
+      ToArmorPre: 0.20
+      ToArmor: 0.0
+      ArmorEffectiveness: 0.6
+      ToTile: 0.15
+      ToItem: 0.15
+      RandomType: 6
+      FixRadius: 5
+    battleType: 4
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 75
+
+
+  - type: STR_STRANGLER_GRENADE # Nerve gas/smoke grenade combo.
+    bigSprite: 4086 # Power of pink
+    floorSprite: 2955 # Scare gas grenade - fix later
+    handSprite: 2750 # Scare gas grenade - fix later
     explosionHitSound: {mod: 40k, index: 792}
     hitAnimation: {mod: 40k, index: 104}
     throwRange: 20
@@ -635,10 +681,10 @@ items:
     invHeight: 2
     power: 70
     damageType: 8
-    damageAlter:  # DA STUN GAS
+    damageAlter:  # DA NERVE GAS
       RandomType: 2  # Less swingy
-      ToHealth: 0.01
-      ToWound: 0.0
+      ToHealth: 0.2
+      ToWound: 0.01
       RandomWound: false
       ToTile: 0.0
       ToItem: 0.0
@@ -646,6 +692,7 @@ items:
       ToEnergy: 0.5
       ToStun: 1.2
       ToTime: 0.5
+      ToMorale: 0.5
       ArmorEffectiveness: 0.4
       FixRadius: 5
       SmokeThreshold: 0  # Slaanesh smoke grenades are NOT safe for children.
@@ -654,6 +701,53 @@ items:
       ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
     noLOSAccuracyPenalty: 75 # Indirect fire weapon.
 
+  - type: STR_SHARD_GRENADE  # Cursed, armor-piercing fragments: wounds + corruption.
+    bigSprite: {mod: 40k, index: 19} #TODO: MAKE A PINK FRAG GRENADE CASE
+    floorSprite: {mod: 40k, index: 19} #TODO: MAKE A PINK FRAG GRENADE CASE
+    handSprite: {mod: 40k, index: 336} #TODO: MAKE A PINK FRAG GRENADE CASE
+    battleType: 4
+    invWidth: 1
+    invHeight: 2
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    power: 80 # Rare & expensive.
+    throwRange: 20
+    primeSound: 2424
+    weight: 2
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    damageType: 2 # Armor piercing
+    damageAlter:  # DA WARP SHARDS
+      RandomType: 2
+      ToHealth: 0.25 # Tiny armor piercing fragments
+      ToWound: 0.6 # Cursed fragments will quickly kill or mutate those afflicted.
+      RandomWound: false
+      ToTile: 0.1
+      ToItem: 0.2
+      ToArmor: 0.05
+      ToEnergy: 0.7
+      ToStun: 0.7
+      ToTime: 0.5
+      ToMorale: 4.0 # EXTREMELY debilitating.
+      ArmorEffectiveness: 0.7 # Some shards will likely get through.
+      FixRadius: 5
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 25
+      INFECTION_DAMAGE_PERCENT: 50  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
  #### 40MM GRENADES
 
@@ -696,14 +790,13 @@ items:
 
   - type: STR_STRANGLER_GRENADE40  # Non-damaging stun gas.
     bigSprite: 4082
-    floorSprite: 2060
+    floorSprite: 2060 # Needs new
     handSprite: {mod: 40k, index: 336}  # Needs new
     explosionHitSound: {mod: 40k, index: 792}
     hitAnimation: {mod: 40k, index: 104}
     battleType: 2  # 4 is Grenade, but these are not primed
-    invWidth: 1  # smaller
+    invWidth: 1
     invHeight: 1
-    listOrder: 10331
     power: 60
     damageType: 8
     damageAlter:  # DA STUN GAS
