@@ -49,8 +49,22 @@ facilities:
     provideBaseFunc: [TORTURE]
     mapName: XBASE_36
 
-#  - type: STR_HERETEK_WORKSHOP
-
+  - type: STR_HERETEK_WORKSHOP
+    placeSound: {mod: 40k, index: 98}
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_HERETEK_MANUFACTURING_SUPPORT
+    spriteShape: 1
+    spriteFacility: {mod: 40k, index: 317}
+    buildCost: 450000
+    buildTime: 20
+    monthlyCost: 20000
+    refundValue: 250000
+    workshops: 40
+    storage: 25
+    mapName: XBASE_25
+    maxAllowedPerBase: 1
+    provideBaseFunc: [HERETEKS]
 
 
   - type: STR_OUTPOST_SLAANESH # For now, this is copied from the chaos cult outpost.

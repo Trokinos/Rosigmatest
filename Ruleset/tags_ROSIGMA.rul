@@ -416,7 +416,7 @@ extended:
       CHOICE_ACTIVE_MIRACLE: int
       MIRACLE_POINTS: int
       TURN_SPIRIT_OF_MARTYR: int
-      # *** Sisters of Battle Miracles ***
+      # *** Sisters of Slaanesh miracles ***
       TURN_ACTIVE_DEVOTION: int
       CHOICE_ACTIVE_DEVOTION: int
       DEVOTION_POINTS: int

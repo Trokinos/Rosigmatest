@@ -535,12 +535,6 @@ items:
  #### WEBBER AMMO
 
   - type: STR_CONSTRICTOR_PISTOL_AMMO
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
-    requires:
-      - STR_ALIENS_ONLY
-    size: 0.1
-    costSell: 300
-    weight: 3
     bigSprite: 2305
     floorSprite: 2414
     handSprite: {mod: 40k, index: 616}
@@ -550,7 +544,6 @@ items:
     damageType: 1
     clipSize: 6
     battleType: 2
-    recoveryPoints: 1
     damageAlter:  # SLAAN
       RandomType: 2  # TFTD [50% - 150%]
       ArmorEffectiveness: 0.1
@@ -561,7 +554,7 @@ items:
       ToWound: 0.5
       ToEnergy: 2.0
       ToMorale: 1.0
-    listOrder: 11806
+    weight: 3
 
  #### GRENADES
 

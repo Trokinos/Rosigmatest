@@ -218,3 +218,11 @@ items:
     costSell: 3900
     listOrder: 11311
     recoveryPoints: 1
+
+  - type: STR_CONSTRICTOR_PISTOL_AMMO
+    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    refNode: *IMMACULATE_WEAPON
+    size: 0.1
+    costSell: 300
+    listOrder: 11806
+    recoveryPoints: 1
