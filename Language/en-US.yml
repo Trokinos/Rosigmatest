@@ -2500,6 +2500,14 @@ en-US: #  yamllint disable-line rule:empty-values
   ######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
 
   ### MISSIONS
+
+  STR_SLAANESHPATH_PDF_VEHICLE_RAID_TITLE: "PDF Vehicle Depot"
+  STR_SLAANESHPATH_PDF_VEHICLE_RAID_DESC: "Our informants have given us the location of a weakly defended PDF motor pool, ripe for the slaughter. To access the underground vehicle storage level, it will be necessary to disable the base's security system. This can be done by destroying five control consoles on the upper levels. Be warned: nearby loyalists will no doubt scramble a relief force the moment your attack begins. You must finish the mission before they arrive."
+  STR_SLAANESHPATH_PDF_VEHICLE_RAID_DETECTED: "PDF Depot Raid"
+  STR_PDF_VEHICLE_RAID_MARKER: "Raid PDF Vehicle Depot"
+  STR_VEHICLE_RAID_FAILED: "Vehicles not secured"
+  STR_SLAANESH_CHIMERA_TOKEN: "Light Chimera Token"
+
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT: "We have detected a PDF distress signal!"
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT_DESCRIPTION: "A disabled PDF Valkyrie is broadcasting an urgent call for assistance. Assault it before loyalist help can arrive."
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: "Raid Disabled PDF Valkyrie"

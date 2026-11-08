@@ -26,6 +26,13 @@ items:
   - type: STR_HERETEK_TRIBUTE
     size: 0.0
 
+  - type: STR_SLAANESH_CHIMERA_TOKEN
+    size: 0.0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
 
 #PROMOTION ARMOR TOKENS
   - type: STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN # PROMOTION ITEM
