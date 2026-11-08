@@ -688,6 +688,7 @@ extraSprites:
       2739: Resources/Bigobs/le10corpse.png
       2740: Resources/Bigobs/ARle10corpse.png
       #2741: magus stav
+      2742: Resources/GENE/BIGOB_GSC_FLAMER.png
       2746: Resources/Bigobs/INTERITUScorpse.png
       2747: Resources/GENE/corpse_BW2.png
       2748: Resources/Bigobs/EXPULSUMcorpse.png
@@ -1436,7 +1437,8 @@ extraSprites:
 # 2583 - 2599
 # 2634 - 2639
 # 2653 - 2699
-# 2741 - 2745
+# 2741
+# 2743 - 2745
 
 # 2749
 # 2751
