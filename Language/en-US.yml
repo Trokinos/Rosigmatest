@@ -2526,6 +2526,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. In addition, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
   STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}This once holy De'az bolter has been afflicted with an incredibly malign machine spirit. Sporting a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
 
+  STR_STRANGLER_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Strangler carries a two part payload: a fast-acting nerve gas and a lingering cloud of smoke. The nerve gas is designed to disperse quickly, allowing the smoke cloud to be used as battlefield cover."
+
   STR_EVISCERATOR_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite its lighter weight and refined exterior, this heavily modfied eviscerator is an even more brutal weapon than its before. When used to deliver heavy thrusts through armor, the sheer bloody carnage this weapon unleashes belies its more graceful appearance."
 
   STR_SLAANESHPATH_CHIRURGEON_ARMOR_UFOPEDIA: "{NEWLINE}{NEWLINE}Adepta Sororitas Hospitaliers may be at adepts both torture and healing, but the Chirurgeon is a master of one unified craft. Drawing no distinction btween the most excruciating pain and the efficacious of healing, the Chirurgeon's obessively customized medical tools are terrying weapons in combat."
@@ -2545,6 +2547,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SOULSTAIN_SORCERY: "Soulstain Sorcery"
   STR_WEAPON_CONSECRATION: "Rites of Weapon Consecration"
   STR_CONTACT_ARMS_SMUGGLERS: "Black Market Weapons"
+  STR_CONTACT_ARMS_SMUGGLERS_TITLE: "Black Market Trade"
   STR_PROCURE_TRANSPORTATION: "Securing Transportation"
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"

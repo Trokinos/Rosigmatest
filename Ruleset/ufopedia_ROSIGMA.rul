@@ -1812,6 +1812,7 @@ ufopaedia:
     text: STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION
 
   - id: CONTACT_ARMS_SMUGGLERS
+    title: "STR_CONTACT_ARMS_SMUGGLERS_TITLE"
     type_id: 10
     section: STR_STRATEGY
     image_id: STR_TAU_GUEVESA_MARKET_CODEX.SPK
@@ -11463,6 +11464,28 @@ ufopaedia:
     image_id: AUTOGUN_HIGH_GRADE_UNDERSLUNG_CODEX.SPK
     text: STR_AUTOGUN_HIGHGRADE_UNDERSLUNG_CODEX
 
+  - id: STR_AGRIPINAA_MKIX
+    requires:
+      - STR_MARKSMAN_AUTOGUNS
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: AUTOGUN_HIGH_GRADE_CODEX.SPK #Placeholder for now
+    text: STR_AGRIPINAA_MKIX_UFOPEDIA
+  - id: STR_AGRIPINAA_MKIXB
+    requires:
+      - STR_MARKSMAN_AUTOGUNS
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: AUTOGUN_HIGH_GRADE_CODEX.SPK #Placeholder for now
+    text: STR_AGRIPINAA_MKIXB_UFOPEDIA
+  - id: STR_GRAIA_MKVII
+    requires:
+      - STR_MARKSMAN_AUTOGUNS
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: AUTOGUN_HIGH_GRADE_CODEX.SPK #Placeholder for now
+    text: STR_GRAIA_MKVII_UFOPEDIA
+
   - id: STR_VALHALLAN_STUBRIFLE
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -14688,6 +14711,12 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: 1SG2.SPK
     text: STR_SMOKE_GRENADE_UFOPEDIA
+
+  - id: STR_STRANGLER_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1SG2.SPK
+    text: STR_STRANGLER_GRENADE_UFOPEDIA
 
   - delete: STR_PROXIMITY_GRENADE
   - id: STR_PROXIMITY_GRENADE
