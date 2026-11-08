@@ -54,7 +54,8 @@ manufacture:
   - name: STR_PROPITIATE_SLAANESH
     category: STR_RITES_OF_EXCESS
     requires:
-      - STR_RITUALS_OF_WORSHIP
+      - STR_PATH_OF_PERFECTION
+    requiresBaseFunc: [ALTAR]
     space: 15
     time: 60
     cost: 6000
@@ -68,6 +69,7 @@ manufacture:
     category: STR_RITES_OF_EXCESS
     requires:
       - STR_SACRIFICIAL_RITUALS
+    requiresBaseFunc: [ALTAR]
     space: 15
     time: 200
     cost: 2000
@@ -107,9 +109,10 @@ manufacture:
       - STR_SACRIFICIAL_RITUALS
     space: 0
     time: 200
-    cost: 40000
+    cost: 50000
     producedItems:
       STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_PIETY: 5
 
 
 #### RITUALS OF SUBVERSION - UNIT RECRUITMENT
@@ -118,13 +121,14 @@ manufacture:
     category: STR_RITES_OF_SUBVERSION
     requires:
       - STR_PATH_OF_PERFECTION
+    requiresBaseFunc: [ALTAR]
     space: 0
-    time: 300
+    time: 200
     cost: 25000
     producedItems: {}
     spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
-      STR_SLAANESHPATH_PIETY: 70
+      STR_SLAANESHPATH_PIETY: 90
     points: 0
 
 #### RITUALS OF DECADENCE ####

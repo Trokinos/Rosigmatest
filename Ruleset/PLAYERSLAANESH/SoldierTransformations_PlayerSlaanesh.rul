@@ -118,7 +118,7 @@ soldierTransformation:
       reactions: 15
       melee: 12
       firing: -6
-      strength: 4
+      strength: 8
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
  #NM

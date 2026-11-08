@@ -94,37 +94,34 @@ soldiers:
 
   - type: STR_SLAANESHPATH_HANDMAIDEN
     flagOffset: 21 # FIX LATER
-    costBuy: 20000  # Placeholder - Not meant to be purchased directly.
     costSalary: 9000 # Nearly twice as expensive as a novice. Hedonist lifestyles.
-    requires: ### >Remove this later.< ###
-      - STR_SLAANESHPATH_GATE
     minStats:
       tu: 50 # Slaanesh Influence
-      stamina: 60 # 5 Slaanesh influence
+      stamina: 50 # 5 Slaanesh influence
       health: 35 # 5 More vs Adeptas
       bravery: 50 # Followers of Slaanesh do not fear death
-      reactions: 40 # Slaanesh influence
+      reactions: 35 # Slaanesh influence
       firing: 40
-      throwing: 35
-      strength: 18
+      throwing: 30
+      strength: 16
       psiStrength: 20
       psiSkill: 30
-      melee: 40 # Slaanesh Influence
+      melee: 35 # Slaanesh Influence
     maxStats:
       tu: 65
       stamina: 80
       health: 45
       bravery: 100
-      reactions: 70
-      firing: 65
-      throwing: 50
-      strength: 30
+      reactions: 62
+      firing: 57
+      throwing: 45
+      strength: 28
       psiStrength: 70 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
       psiSkill: 60
-      melee: 65
+      melee: 53
     statCaps:
-      tu: 90 # Slaanesh Influence
-      stamina: 95 # Slaanesh Influence
+      tu: 95 # Slaanesh Influence
+      stamina: 110 # Slaanesh Influence
       health: 70
       bravery: 110
       reactions: 110 # Slaanesh Influence
@@ -133,12 +130,12 @@ soldiers:
       strength: 65
       psiStrength: 100
       psiSkill: 100
-      melee: 100
+      melee: 120
     trainingStatCaps:
-      tu: 65 # 5 More
-      stamina: 65
+      tu: 75 # 5 More
+      stamina: 85
       health: 65
-      firing: 70
+      firing: 75
       throwing: 70
       strength: 50
       psiStrength: 60
@@ -174,32 +171,32 @@ soldiers:
     requires: ### >Remove this later.< ###
       - STR_SLAANESHPATH_GATE
     minStats:
-      tu: 55
-      stamina: 60
-      health: 35
-      bravery: 60
-      reactions: 40
-      firing: 55
-      throwing: 35
-      strength: 25
-      psiStrength: 25
+      tu: 55 # +5 vs base
+      stamina: 55 # +5 vs base
+      health: 40 # +5 vs base
+      bravery: 50
+      reactions: 35 # +5 vs base
+      firing: 45 # +5 vs base
+      throwing: 35 # +5 vs base
+      strength: 21 # +5 vs base
+      psiStrength: 20
       psiSkill: 30
-      melee: 55
-    maxStats: # Higher min & max stats. Lower-tier captured Sororitas are given at this level.
-      tu: 75
+      melee: 40 # +5 vs base
+    maxStats:
+      tu: 70 # +5 vs base
       stamina: 80
-      health: 45
+      health: 48 # +3 vs base
       bravery: 100
-      reactions: 80
-      firing: 70 #
-      throwing: 50
-      strength: 35
-      psiStrength: 70
+      reactions: 70 # +5 vs base
+      firing: 62 # +2 vs base
+      throwing: 45
+      strength: 30
+      psiStrength: 70 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
       psiSkill: 60
-      melee: 70
+      melee: 60 # +5 vs base
     statCaps:
-      tu: 90 # Slaanesh Influence
-      stamina: 95 # Slaanesh Influence
+      tu: 95 # Slaanesh Influence
+      stamina: 110 # Slaanesh Influence
       health: 70
       bravery: 110
       reactions: 110 # Slaanesh Influence
@@ -208,17 +205,17 @@ soldiers:
       strength: 65
       psiStrength: 100
       psiSkill: 100
-      melee: 100
+      melee: 120
     trainingStatCaps:
-      tu: 90 # +5
-      stamina: 85 # +5
-      health: 70 # +5
-      firing: 85 #  +5
+      tu: 75 # 5 More
+      stamina: 85
+      health: 65
+      firing: 75
       throwing: 70
-      strength: 55 # +5
+      strength: 50
       psiStrength: 60
       psiSkill: 100
-      melee: 85 # +5
+      melee: 80
     dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
       bravery: 20
       reactions: 35
@@ -245,7 +242,7 @@ soldiers:
  #MI
   - type: STR_SLAANESHPATH_MILITANT  # Handmaidens with militant training.
     flagOffset: 21 # !!! need to fix this later !!!
-    costSalary: 11000 # Somewhat higher salary than base.
+    costSalary: 14000 # Somewhat higher salary than base.
     requires: ### >Remove this later.< ###
       - STR_SLAANESHPATH_GATE
     minStats:
@@ -254,24 +251,24 @@ soldiers:
       health: 40
       bravery: 60
       reactions: 60
-      firing: 58
-      throwing: 35
+      firing: 52
+      throwing: 30
       strength: 25
       psiStrength: 25
       psiSkill: 30
-      melee: 58
+      melee: 50
     maxStats: # Higher min & max stats. Lower-tier captured Sororitas are given at this level.
-      tu: 75
-      stamina: 80
+      tu: 70
+      stamina: 70
       health: 50
       bravery: 100
-      reactions: 80
-      firing: 70 #
+      reactions: 65
+      firing: 65 #
       throwing: 50
       strength: 35
       psiStrength: 70
       psiSkill: 60
-      melee: 70
+      melee: 63
     statCaps:
       tu: 90 # Slaanesh Influence
       stamina: 95 # Slaanesh Influence
@@ -285,20 +282,20 @@ soldiers:
       psiSkill: 100
       melee: 100
     trainingStatCaps:
-      tu: 90 # +5
-      stamina: 85 # +5
-      health: 70 # +5
-      firing: 85 #  +5
+      tu: 75 # 5 More
+      stamina: 85
+      health: 65
+      firing: 75
       throwing: 70
-      strength: 55 # +5
+      strength: 50
       psiStrength: 60
       psiSkill: 100
-      melee: 85 # +5
+      melee: 80
     dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
       bravery: 20
       reactions: 35
       firing: 30
-    armor: STR_SLAANESHPATH_HANDMAIDEN_ARMOR
+    armor: STR_SLAANESHPATH_MILITANT_ARMOR
     allowPiloting: true
     allowPromotion: true
     standHeight: 22
@@ -333,10 +330,10 @@ soldiers:
       reactions: 40
       firing: 40
       throwing: 35
-      strength: 22
+      strength: 28
       psiStrength: 10
       psiSkill: 20
-      melee: 60
+      melee: 55
     maxStats:
       tu: 65
       stamina: 80
@@ -345,10 +342,10 @@ soldiers:
       reactions: 70
       firing: 55
       throwing: 50
-      strength: 35
+      strength: 38
       psiStrength: 60 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
       psiSkill: 70
-      melee: 75
+      melee: 65
     statCaps:
       tu: 100 # Slaanesh Influence
       stamina: 110 # Slaanesh Influence
@@ -867,10 +864,10 @@ soldiers:
 # 2. SLAANESH VICTUAL BROTHERS.
 
   - type: STR_SLAANESHPATH_VICTUAL_BROTHER
-    costBuy: 24000
-    costSalary: 8000
+    costBuy: 17000
+    costSalary: 5000
     requires:
-      - STR_SLAANESHPATH # PLACEHOLDER
+      - STR_WAR_FOR_THE_UNDERHIVE # PLACEHOLDER
     minStats:  # Steel legion stat equivalents, more expensive.
       tu: 55 # +5
       stamina: 50

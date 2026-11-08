@@ -213,6 +213,10 @@ research:
     dependencies:
       - STR_GENERALLOCK # Placeholder
 
+  - name: STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
+    cost: 30
+    needItem: true
+    destroyItem: false
 
 
  ### TIER 1 PIETY PROJECTS
@@ -386,21 +390,13 @@ research:
     getOneFree:
       - STR_SONIC_GRENADES
 
-  - name: STR_TERROR_GRENADES
-    cost: 40
-    dependencies:
-      - STR_TERROR_WEAPONRY
-    getOneFree:
-      - STR_HALLUCINOGEN_GRENADES
-
- ####40MM terror grenade flavors. All must be unlocked to advance the tech tree.#####
   - name: STR_HALLUCINOGEN_GRENADES
-    cost: 60
+    cost: 100
     dependencies:
       - STR_TERROR_WEAPONRY
 
   - name: STR_SHARD_GRENADES
-    cost: 60
+    cost: 100
     dependencies:
       - ADORATION_THROUGH_AGONY
   - name: STR_SONIC_GRENADES
@@ -408,15 +404,15 @@ research:
     dependencies:
       - STR_GENERALLOCK
   - name: STR_BALEFIRE_GRENADES
-    cost: 60
+    cost: 200
     dependencies:
       - ADORATION_THROUGH_AGONY
 
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
-    cost: 30
+    cost: 60
     dependencies:
-      - STR_PATH_OF_PERFECTION
+      - STR_TERROR_WEAPONRY
     getOneFree:
       - STR_IMPERIAL_WEBBER_DEP1
 
@@ -445,29 +441,54 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
+# THESE MISSIONS WILL REQUIRE DEPENDENCIY TECHS UNLOCKED THROUGH EVENTS THAT TRIGGER ONCE PER MONTH, MAKING THE SEQUENCE OF DEALING WITH THREATS SOMEWHAT RANDOM.
+
   - name: STR_WAR_FOR_THE_UNDERHIVE
     cost: 50
     points: 30
     dependencies:
       - STR_OUR_HOLY_MISSION
+      - STR_GENERALLOCK
+
+  - name: STR_SUFFER_NOT_THE_XENO
+    cost: 50
+    points: 30
+    dependencies:
+      - STR_WAR_FOR_THE_UNDERHIVE
+
+  - name: STR_BLEEDING_THE_BLOOD_GOD
+    cost: 50
+    points: 30
+    dependencies:
+      - STR_WAR_FOR_THE_UNDERHIVE
+
+  - name: BRINGING_THEM_TO_HEEL
+    cost: 50
+    points: 30
+    dependencies:
+      - STR_WAR_FOR_THE_UNDERHIVE
 
   - name: STR_AGAINST_THE_ECCLESIARCHY
     cost: 80
     points: 30
     dependencies:
       - STR_OUR_HOLY_MISSION
+      - STR_GENERALLOCK
 
-  - name: STR_AGAINST_THE_ENFORCERS
+  - name: STR_TOPPLE_THEIR_SHRINES
     cost: 80
     points: 30
     dependencies:
-      - STR_OUR_HOLY_MISSION
+      - STR_AGAINST_THE_ECCLESIARCHY
 
-  - name: STR_AGAINST_THE_ECCLESIARCHY
-
-
-  - name: STR_SPREADING_THE_FAITH
+  - name: STR_CAST_DOWN_THEIR_LIES
     cost: 80
     points: 30
     dependencies:
-      - STR_OUR_HOLY_MISSION
+      - STR_AGAINST_THE_ECCLESIARCHY
+
+  - name: STR_REDEEM_OUR_LOYALIST_SISTERS
+    cost: 80
+    points: 30
+    dependencies:
+      - STR_AGAINST_THE_ECCLESIARCHY
