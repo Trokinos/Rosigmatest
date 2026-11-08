@@ -20308,3 +20308,5 @@ extraSprites:
     fileSingle: AGAINST_THE_ECCLESIARCHY.png
   - typeSingle: UNDERHIVE_MARKET.SPK
     fileSingle: Resources/CODEX/UNDERHIVE_MARKET.png
+  - typeSingle: AMMO_JACKS.SPK
+    fileSingle: Resources/CODEX/AMMO_JACKS.png
