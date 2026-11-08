@@ -279,6 +279,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ADEPTAS_ARMORH: Sororitas Power Armor" #superseeded by STR_ADEPTAS_ARMOR_UC?
   STR_ADEPTAS_ARMORH_UC: "DEBUG_STOREITEM Sororitas Power Armor" #storeitem for STR_ADEPTAS_ARMORH
   STR_ADEPTAS_ARMORR: "DEBUG_STOREITEM Repentia Garb"
+  STR_DW_NOARMOR_UC: "DEBUG_STOREITEM (Deprecated) 40k Blood Angels Armor"
+  STR_GK_SUIT: "DEBUG_STOREITEM Grey Knight Armor"
 
 ## ROSIGMA_DEFAULTS.PLACEHOLDERS
   STR_CODEX_ARMOR_DETAIL: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
@@ -2382,6 +2384,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BLUE_HORROR_DEATH_GRENADE: "Blue Horror Death fireblast"
   STR_BRIMSTONE_HORROR_DEATH_GRENADE: "Brimstone Horror Death fireblast"
 # #03-TYR.GENE
+#Items
+  STR_GSC_FLAMETHROWER: "Industrial Flamethrower" #WIP - For anyone to improve and distribute to GSC troops
+  STR_GSC_CHEMICALTHROWER: "Improvised Flamethrower" #WIP - For anyone to improve and distribute to GSC troops
 #units
   STR_GSC_ABERRANT: "Aberrant"
   STR_GSC_MINER: "Brood Neophyte"
@@ -2398,6 +2403,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
   STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
   STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
+
 # #03-TYR.PURE
 
 # #03-NECRON
