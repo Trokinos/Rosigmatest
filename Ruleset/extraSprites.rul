@@ -20302,3 +20302,9 @@ extraSprites:
     fileSingle: Resources/CODEX/SLAANESH_CONVERSION_EVENT_CODEX.png
   - typeSingle: SLAANESHUNDERCONSTRUCTIONCODEX.SPK
     fileSingle: Resources/CODEX/SLAANESHUNDERCONSTRUCTIONCODEX.png
+  - typeSingle: CANTUSARMOR2.SPK
+    fileSingle: Resources/CODEX/CantusArmor2.png
+  - typeSingle: AGAINST_THE_ECCLESIARCHY.SPK
+    fileSingle: AGAINST_THE_ECCLESIARCHY.png
+  - typeSingle: UNDERHIVE_MARKET.SPK
+    fileSingle: Resources/CODEX/UNDERHIVE_MARKET.png
