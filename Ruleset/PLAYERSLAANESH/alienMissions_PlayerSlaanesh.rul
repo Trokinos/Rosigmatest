@@ -1,10 +1,24 @@
 alienMissions:
 
  #### EARLY GAME TODO:
- # 1: Ambush PDF training site
- # 2: Attack gangers
- # 3: Attack novices
+ # PDF Vehicle raid mission - done?
+ # Shrine attack mission vs frateris, redemptors, and novices
+ # Underhive missions
 
+  - type: STR_VEHICLE_RAID
+    points: 5
+    objective: 3
+    spawnZone: 6
+    siteType: STR_SLAANESHPATH_ARMORY_RAID_SITE
+    raceWeights:
+      0:
+        STR_IGOPFOR_ARMORYROOKIES: 100 # PLACEHOLDER, REPLACE WITH SLAANESH PDF LIST
+    waves:
+      - ufo: STR_ARMORY_RAID_TRICK
+        count: 1
+        trajectory: DIRECT_TO_MISSION_SITE_TRAJECTORY
+        timer: 0
+        objective: true
 
 
   - type: STR_SLAANESHPATH_VALKYRIE_MISSION # Valkyrie shootdown

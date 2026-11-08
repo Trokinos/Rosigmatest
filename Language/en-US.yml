@@ -2472,24 +2472,27 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"
   STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Three of the younger novices report seeing a vision from the Emperor Himself, of an old command bunker with an intact archeotech Vox array.{NEWLINE}{NEWLINE}Shamefully, your joy at this news comes bundled with a pang of envy. You swear to seek your penance in the blood of the next heretic you encounter."
   STR_SLAANESHPATH_GATE_EVENT: "Homecoming"
-  STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you begin to remove the hated insignias of a previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
+  STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you all begin to remove the hated insignias of your previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
 
   STR_SLAANESHPATH_INTRO_B_EVENT: "The Old Bunker"
-  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker entrance well-hidden; you wouldn't have found it if you didn't know where to look.{NEWLINE}{NEWLINE}Unfortunately, the Vox cogitator itself is non-functional. But maintenance drills in the snow were a common punishment at your Schola; you believe you can manage at least basic repairs. As a nasty old Drill-Abbess put it: the Emperor would never help those who can't help themselves."
+  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker entrance well-hidden; you wouldn't have found it if someone hadn't guided your steps.{NEWLINE}{NEWLINE}Unfortunately, while the Vox array is truly impressive, the interfacing cogitator is non-functional. But maintenance drills in the snow were a common punishment at your Schola; you think you can manage at least basic repairs. As your old Drill-Abbess put it: the Emperor will never deign to help those who can't help themselves."
   STR_SLAANESHPATH_INTRO_D_EVENT: "Encroaching Shadows"
   STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the bunker, though the generators themselves are still functional.{NEWLINE}{NEWLINE}Logically, there's no reason to fear a bit of darkness... yet you can't help yourself. For hours you've felt a strange headache; urges and emotions you barely recognize as your own. Something about this place is *wrong*. At least the damned cogitator is finally working. Soon, you'll be able to leave this place."
   STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
   STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But it's okay. It isn't your fault. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}In silence, they come at you from every direction. A hard blow impacts the back of your head, and again the darkness claims you."
   STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT: "Unenlightened Interlopers"
-  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION: "With the auspex grid still non-functional, the clumsy intruders almost make it into your sanctum unnoticed.{NEWLINE}{NEWLINE}Almost.{NEWLINE}{NEWLINE}Examining the survivors, your nose twitches in disgust: Hive-gangers. Scavengers. *Gutter-rats*. Yet it would be a waste to kill them. Even the profane tool can be put to holy work; these men and the trucks they rode in on may yet serve a greater cause."
+  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION: "With the auspex grid still awaiting repairs, the intruders almost make it into your sanctum unnoticed.{NEWLINE}{NEWLINE}Almost.{NEWLINE}{NEWLINE}Examining the bloodied survivors, your nose scrunches in disgust: Hive-gangers. Scavengers. Gutter-rats. Yet even the most profane of tools must occasionally be pressed into holy work. With the right education, these men and the trucks they rode in on can yet serve a greater cause."
   STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT: "Wave of Despair"
   STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION: "With the divine warp storm only intensifying, the weak Planetary Defense Force has hit its breaking point.{NEWLINE}{NEWLINE}En masse, soldiers are giving in to fear and despair. Local forces are turning traitor or abandoning their outposts in ever-greater number, offering us a delicious opportunity to attain their equipment. Provided we have the money, we will now be able to purchase black market PDF vehicles directly."
 
-  STR_TERROR_WEAPONRY_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Despite their blindness, the wayward sisters of the Adepta Sororitas know that to bathe in the fear and agony of the unbeliever is approach the Divine. Yet their vaunted flamers are primitive and predictable; far inferior to the exquisite tools we shall unleash upon them. With nerve gas, warpfire and sonic screamers, our enemies will learn the true meaning of terror."
-  STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Our restored vox array has finally forced a channel to one of the Dark Mechanicum's clandestine sects. They are willing to consider a pact of cooperation, but only if we first gather for them a great trove of slaves and materials. Arch-savant Valtiek has sent us an emissary carrying “a few unimportant trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon modifications."
-  STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have acted as your guide to Pelaga's black market. With public order deteriorating, that market is booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future executioners. An absurd situation, no doubt, but then absurdity is the lifeblood of the Imperium."
+  STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT: "PDF Captives"
+  STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION: "Over the last few days, your sisters have stalked and ambushed isolated PDF patrols, bringing in captives for interrogation and leaving no witnesses.{NEWLINE}{NEWLINE}You now have a good picture of which PDF installations are vulnerable to assault. Additionally, though most captives lacked the stamina to survive the tender ministrations of your sisters for more than a day or two, a few plucky survivors are still intact enough to be sacrificed."
+
+  STR_TERROR_WEAPONRY_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Despite their blindness, the Adepta Sororitas know that pain is worship, and that basking in the agony and terror of the unbeliever is approach the Divine. Yet their methods are laughable: flamers and meltaguns cannot ever hope to reach the sacred peaks of despair that we yearn for. With nerve gas, sonic weaponry and warp-tainted plasma, we claim the true conductor's baton in the divine orchestra of screams."
+  STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Through faith and good works, our vox array has forced open a channel to a clandestine sects of the Dark Mechanicum. The hereteks are oepn to a pact of cooperation, but only if we gather for them a great trove of slaves and materials. As a first step, Arch-savant Valtiek has relucantly agreed to lend us few of their “trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon schematics."
+  STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have guided you through Pelaga's black markets. With order deteriorating, those markets are booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future killers. An absurd situation, no doubt, but absurdity is the lifeblood of the Imperium."
   STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Wars are won by two things, and by two things alone. The man bereft of faith is a mere shell; the bolter bereft of ammunition is a cold lump of metal. To forestall this, the hivers have have reached out to their old contacts on your behalf. The thought of using the shoddy ammunition povided by these so-called “Ammo-Jacks” is unpleasant, but a necessary expedient. Yet the Angel already whispers of a better, more permanent solution."
-  STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Every moment, the weight of responsibility fills your thoughts. There is so much to do, and you lack dearly for both weapons and vehicles. But when those who have nothing hold firm to faith, those who presume to riches shall soon find their true povertry revealed to them. For the faithless have plenty of vehicles in their depots, and the land is filled with traitors and malcontents that will sell their location."
+  STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}“When those who have nothing hold firm to faith, those who hold riches soon find their true povertry revealed to them.”{NEWLINE}{NEWLINE}Though they were spoken to you in service of a lie, some words from past teachers still ring true. Today you may all lack for everything, including transportation. Yet your privation is joyful, even holy: for the faithless have plenty of vehicles in their depots, and your sisters are eager to take up their work."
   STR_PATH_TO_PERFECTION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}We cast aside our old garments, taking the firsts steps on the path Immaculate. The Angel used the last of his power to free us: trapped below the earth, he lacks the strength to forestall the coming calamities. We must do what He cannot. Thus, we pick up the sword and bolter: we vow to be the first rays of the coming dawn."
   STR_WEAPON_CONSECRATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}The Prince of Perfection is generous beyond compare; in his benevolence, he extends his touch to the faithful and the uninitiated alike. But we must strive to become ever more devoted servants, that we may one day be worthy of further gifts still. By channeling the power of our faith, the profane tools of this decrepit Imperium will one day be reborn and reawakened, just as we were."
   STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it has taken some time for us to understand the strange and haphazard scribblings within this data-crypt. It details various different efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the Warp alone. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
@@ -2502,11 +2505,12 @@ en-US: #  yamllint disable-line rule:empty-values
   ### MISSIONS
 
   STR_SLAANESHPATH_PDF_VEHICLE_RAID_TITLE: "PDF Vehicle Depot"
-  STR_SLAANESHPATH_PDF_VEHICLE_RAID_DESC: "Our informants have given us the location of a weakly defended PDF motor pool, ripe for the slaughter. To access the underground vehicle storage level, it will be necessary to disable the base's security system. This can be done by destroying five control consoles on the upper levels. Be warned: nearby loyalists will no doubt scramble a relief force the moment your attack begins. You must finish the mission before they arrive."
+  STR_SLAANESHPATH_PDF_VEHICLE_RAID_DESC: "Through torture of captured loyalists, we have ascertained that this PDF motor pool is ripe for assault. In order to access the underground vehicle storage, the security system must first be disabled: this can be done by destroying five large control cogitators on the upper levels. Be warned that nearby loyalists will attempt to scramble reinforcements once they learn of our intentions. You must finish the mission before they arrive."
   STR_SLAANESHPATH_PDF_VEHICLE_RAID_DETECTED: "PDF Depot Raid"
   STR_PDF_VEHICLE_RAID_MARKER: "Raid PDF Vehicle Depot"
   STR_VEHICLE_RAID_FAILED: "Vehicles not secured"
-  STR_SLAANESH_CHIMERA_TOKEN: "Light Chimera Token"
+  STR_SLAANESH_VEHICLE_TOKEN: "Looted PDF Vehicles"
+  STR_DEPOT_SUCCESSFULLY_RAIDED: "Depot Successfully Raided"
 
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT: "We have detected a PDF distress signal!"
   STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT_DESCRIPTION: "A disabled PDF Valkyrie is broadcasting an urgent call for assistance. Assault it before loyalist help can arrive."
@@ -2556,11 +2560,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_WEAPON_CONSECRATION: "Rites of Weapon Consecration"
   STR_CONTACT_ARMS_SMUGGLERS: "Black Market Weapons"
   STR_CONTACT_ARMS_SMUGGLERS_TITLE: "Black Market Trade"
-  STR_PROCURE_TRANSPORTATION: "Securing Transportation"
+  STR_PROCURE_TRANSPORTATION: "Procure Transports"
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launcher Requisition"
-  STR_TERROR_WEAPONRY: "Blessed Weapons of Terror"
+  STR_TERROR_WEAPONRY: "Devotion through Despair"
   ADORATION_THROUGH_AGONY: "Adoration through Agony"
   STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
   STR_BLACK_MARKET_AMMUNITION: "Underhive Ammo-Jacks"
@@ -2647,6 +2651,8 @@ en-US: #  yamllint disable-line rule:empty-values
  #################### UNITS #########################
 
  #### ENEMY UNITS
+  STR_PDFTROOPER_LVL0_SLP: "PDF Conscript"
+
   STR_SLAANESHPATH_CATACOMB_CULTIST_LEADER: "Cultist Leader"
   STR_SLAANESHPATH_CATACOMB_ASPIRING_CHAMPION: "Aspiring Champion"
   STR_SLAANESHPATH_CATACOMB_CULTIST: "Khorne Cultist"
@@ -2658,7 +2664,11 @@ en-US: #  yamllint disable-line rule:empty-values
 
 #Slaanesh crafts
 
-  STR_CHIMERA_LIGHT_SLAANESH: "Immaculate Light Chimera"
+  REPAINT_LOOTED_VALKYRIE: "Refurbish PDF Valkyrie"
+  REPAINT_LOOTED_CHIMERAS: "Refurbish PDF Light Chimeras"
+  REPAINT_LOOTED_LIGHTNING: "Refurbish PDF Lightning Interceptor"
+
+  STR_CHIMERA_LIGHT_SLAANESH: "Immaculate Light Chimeras"
   STR_LIGHTNING_INTERCEPTOR_SLAANESH: "Immaculate Lightning Interceptor"
   STR_VALKYRIE_SLAANESH: "Immaculate Valkyrie"
 

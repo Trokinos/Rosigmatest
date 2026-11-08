@@ -26,7 +26,7 @@ items:
   - type: STR_HERETEK_TRIBUTE
     size: 0.0
 
-  - type: STR_SLAANESH_CHIMERA_TOKEN
+  - type: STR_SLAANESH_VEHICLE_TOKEN
     size: 0.0
     invWidth: 0
     invHeight: 0

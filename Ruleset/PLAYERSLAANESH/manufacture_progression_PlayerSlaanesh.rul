@@ -15,6 +15,28 @@ manufacture:
       STR_ELERIUM_115: 100
     points: 200
 
+  - &STR_CRAFT_LOOTED
+    name: REPAINT_LOOTED_VALKYRIE
+    category: STR_CRAFT
+    requires:
+      - STR_DEPOT_SUCCESSFULLY_RAIDED
+    requiredItems:
+      STR_SLAANESH_VEHICLE_TOKEN: 1
+    space: 20
+    time: 200
+    cost: 20000
+    producedItems:
+      STR_VALKYRIE_SLAANESH: 1
+
+  - name: REPAINT_LOOTED_CHIMERAS
+    refNode: *STR_CRAFT_LOOTED
+    producedItems:
+      STR_CHIMERA_LIGHT_SLAANESH: 1
+
+  - name: REPAINT_LOOTED_LIGHTNING
+    refNode: *STR_CRAFT_LOOTED
+    producedItems:
+      STR_LIGHTNING_INTERCEPTOR_SLAANESH: 1
 
 #  - name: STR_SLAANESHPATH_SORORITAS_TOKEN_MANUFACTURE
 #    category: STR_RITUALS_OF_SUBVERSION

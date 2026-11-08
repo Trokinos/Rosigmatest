@@ -78,6 +78,7 @@ alienDeployments:
     missionBountyItem: STR_SLAANESHPATH_MINOR_MISSION_BOUNTY
 
   - type: STR_SLAANESHPATH_ARMORY_RAID_SITE # Armory raid, repurposed for the Slaanesh path.
+    shade: 2
     markerIcon: 8
     enviroEffects: STR_INSIDE_ENVIRO
     data:
@@ -102,39 +103,39 @@ alienDeployments:
       - alienRank: 3
         lowQty: 2
         highQty: 2
-        dQty: 2
+        dQty: 4
         percentageOutsideUfo: 0
         itemSets: [[], [], []]
       - alienRank: 4
         lowQty: 2
-        highQty: 2  # 2
-        dQty: 2  # 0
+        highQty: 2
+        dQty: 4
         percentageOutsideUfo: 0
         itemSets: [[], [], []]
       - alienRank: 5
-        lowQty: 3  # 4
-        highQty: 3  # 6
-        dQty: 2
+        lowQty: 3
+        highQty: 3
+        dQty: 4
         percentageOutsideUfo: 0
         itemSets: [[], [], []]
       - alienRank: 6
-        lowQty: 2  # 1
-        highQty: 2  # 3
+        lowQty: 2
+        highQty: 2
         dQty: 2
         percentageOutsideUfo: 0
         itemSets: [[], [], []]
       - alienRank: 7
-        lowQty: 2  # 1
-        highQty: 2  # 3
+        lowQty: 2
+        highQty: 2
         dQty: 2
         percentageOutsideUfo: 0
         itemSets: [[], [], []]
-    width: 30
-    length: 70
+    width: 50
+    length: 50
     height: 7
     terrains:
-      - ARMORYTERRAIN
-    script: ARMORYRAID_SCRIPT
+      - TUNNELBUNKDESERTTERRAIN
+    script: TUNNELBUNKDESERTSCRIPT
     briefing:
       cutscene: HULK1
       music: gmstory2
@@ -155,7 +156,9 @@ alienDeployments:
     objectiveFailed: [STR_VEHICLE_RAID_FAILED, -300]
     alienBase: true    # this is only to tell new battle mode what to do with this deployment
     abortPenalty: 150
-    missionBountyItem: STR_SLAANESH_CHIMERA_TOKEN  # item added after successful mission
+    missionBountyItem: STR_SLAANESH_VEHICLE_TOKEN  # item added after successful mission
+    missionBountyItemCount: 3
+    unlockedResearch: STR_DEPOT_SUCCESSFULLY_RAIDED
 
   - type: STR_SLAANESHPATH_CATACOMBS_AMBUSH #TODO: SET UP APPROPRIATE ALIEN LISTS
     markerIcon: 54

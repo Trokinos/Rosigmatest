@@ -66,6 +66,30 @@ adhocScripts:
     adhocMissionScriptTags: ["adhocStarterBaseSlaanesh"]
 
 
+  - type: adhocVehicleRaid
+    missionWeights:
+      0:
+        STR_VEHICLE_RAID: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 18
+        STR_ARCTIC: 4
+        STR_ANTARCTICA: 4
+        STR_SOUTH_AMERICA: 10
+        STR_EUROPE: 16
+        STR_NORTH_AFRICA: 12
+        STR_SOUTHERN_AFRICA: 8
+        STR_CENTRAL_ASIA: 12
+        STR_SOUTH_EAST_ASIA: 15
+        STR_SIBERIA: 10
+        STR_AUSTRALASIA: 10
+    useTable: false
+    startDelay: 1440 # 1 days
+    randomDelay: 7200 # 5 days
+    adhocMissionScriptTags: ["adhocVehicleRaidSlaanesh"]
+    maxRuns: 1
+    varName: VehicleRaidcount
+
 events:
 
   - name: STR_SLAANESHPATH_CHOSEN_EVENT
@@ -98,10 +122,8 @@ events:
     description: STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION
     background: CHAOSCULTTEMPLEADEPTASBG.SCR
     everyMultiSoldierList:
-      STR_SLAANESHPATH_HANDMAIDEN: 12
-      STR_SLAANESHPATH_EXALTEDMAIDEN: 4
+      STR_SLAANESHPATH_HANDMAIDEN: 13
       STR_SLAANESHPATH_VIVISECTIONIST: 1
-      STR_SLAANESHPATH_MYSTES: 1
     everyMultiItemList:
       STR_BOLTER_DEAZ: 1
       STR_EVISCERATOR: 2
@@ -111,7 +133,7 @@ events:
       STR_BOLTPISTOL_DEAZ: 2
       STR_LIGHT_BOLTPISTOL_AMMO: 8
       STR_AGRIPINAA_MKIX: 6
-      STR_AGRIPINAA_MKIXB: 3
+      STR_AGRIPINAA_MKIXB: 2
       STR_AUTOGUN_CLIP: 30
       STR_KRAK_GRENADE: 12
       STR_GRENADE: 12
@@ -126,11 +148,9 @@ events:
     background: CHAOSCULTDRAFTBG.SCR
     timer: 6600  # 110 hours
     interruptResearch: STR_NOT_SLAANESHPATH
-    spawnedPersons: 8
     spawnedCraftType: STR_TRUCKBASE_CHAOS
-    spawnedPersonType: STR_SLAANESHPATH_VICTUAL_BROTHER
     everyMultiSoldierList:
-      STR_SLAANESHPATH_VICTUAL_BROTHER: 6
+      STR_SLAANESHPATH_VICTUAL_BROTHER: 7
     #everyMultiItemList:
 
 
@@ -140,6 +160,24 @@ events:
     timer: 13200  # 220 hours
     interruptResearch: STR_NOT_SLAANESHPATH
     researchList: [STR_BLACK_MARKET_CRAFT_AVAILABLE]
+
+
+  - name: STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT
+    description: STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION
+    background: DesertionBG.SCR
+    timer: 2880
+    timerRandom: 4320 # 2-5 days of time.
+    adhocMissionScriptTags: ["adhocVehicleRaidSlaanesh"]
+    everyMultiItemList:
+      STR_ALIEN_SURGERY: 3
+      STR_SLAANESHPATH_PIETY: 50
+      STR_CHAINSWORD_GUARD: 2
+      STR_LAS_BATTLERIFLE: 4
+      STR_LASCARBINE: 3
+      STR_LASGUN_CLIP: 12
+      STR_KRAK_GRENADE: 3
+      STR_BOLTER_LIGHT_SOLO_SHORT: 1
+      STR_LIGHT_BOLTER_AMMO_SHORT: 4
 
 ######## TO DO: EVENT FOR DISCOVERING THE PDF DEPOT.
 

@@ -420,19 +420,30 @@ research:
     getOneFree:
       - STR_IMPERIAL_WEBBER_DEP1
 
-  - name: STR_PROCURE_TRANSPORTATION # Codex entry. # TODO: Add the ability to buy chimeras on the black market later.
+
+ ########################################
+ ##### MISSION & STORYLINE RESEARCH #####
+ ########################################
+
+
+  - name: STR_OUR_HOLY_MISSION # CODEX ENTRY ON CAMPAIGN GOALS
+    cost: 20
+    points: 20
+    dependencies: # GATEWAY TECH TO MISSION GENERATION
+      - STR_SLAANESHPATH_GATE
+
+  - name: STR_PROCURE_TRANSPORTATION
     cost: 10
     points: 10
     dependencies:
       - STR_OUR_HOLY_MISSION
-    #spawnedEvent:
+    spawnedEvent: STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT
 
-  - name: STR_OUR_HOLY_MISSION # CODEX ENTRY ON CAMPAIGN GOALS
-    cost: 80
+  - name: STR_DEPOT_SUCCESSFULLY_RAIDED
+    cost: 0
     points: 30
-    dependencies: # GATEWAY TECH TO MISSION GENERATION
+    dependencies:
       - STR_GENERALLOCK
-    #  - STR_SLAANESHPATH_GATE
 
   - name: STR_WAR_FOR_THE_UNDERHIVE
     cost: 50
