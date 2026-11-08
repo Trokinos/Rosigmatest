@@ -44,6 +44,7 @@ en-US: #  yamllint disable-line rule:empty-values
 # #03-SM.BT
 # #03-SOB.BR
 # #03-SM.WB
+# #03-SM.CHAOS
 # #03-CM.GK
 # #03-CM.RAD
 # #03-CM.OA
@@ -59,7 +60,8 @@ en-US: #  yamllint disable-line rule:empty-values
 # #03-IG.KRIEG
 # #03-IG.VALHALLA
 # #03-Alien
-# #03-MSSION.MARKERS
+# #03-MISSION.MARKERS
+# #03-CHAOS_DEMONS
 # #03-TYR.GENE
 # #03-TYR.PURE
 # #03-NECRON
@@ -271,12 +273,21 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_DAMAGE_10: "IMPACT SHOCK"
   STR_DAMAGE_11: "MELTA"
   STR_DAMAGE_12: "GRAV"
+## 40k unused definitions. string defined to avoid warning message
+  STR_JARMORH_ARMOR: "DEBUG_STOREITEM Joan Juno Custom MK7 Sergeant Armor" #Store item for the armor, string needed to not show warning message
+  STR_GK_ARMOR: "DEBUG_STOREITEM GK Armor" #storeitem for GK armor, unused AFAIK
+  STR_ADEPTAS_ARMORH: "Sororitas Power Armor" #superseeded by STR_ADEPTAS_ARMOR_UC?
+  STR_ADEPTAS_ARMORH_UC: "DEBUG_STOREITEM Sororitas Power Armor" #storeitem for STR_ADEPTAS_ARMORH
+  STR_ADEPTAS_ARMORR: "DEBUG_STOREITEM Repentia Garb"
+  STR_DW_NOARMOR_UC: "DEBUG_STOREITEM (Deprecated) 40k Blood Angels Armor"
+  STR_GK_SUIT: "DEBUG_STOREITEM Grey Knight Armor"
 
 ## ROSIGMA_DEFAULTS.PLACEHOLDERS
   STR_CODEX_ARMOR_DETAIL: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_RESEARCHNOT_AVAILABLE: "Research Not Available"
   STR_ITEMNOT_AVAILABLE: "Item Not Available"
   STR_NOT_DONE: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+
 
 # #01-Avatars          # used by maxLookVariant - number of avatars = (value + 1) * 8
   STR_AVATAR_NAME_1: "M00"
@@ -1547,7 +1558,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GREYK_CORPSE_I: "Grey Knight Inquisitor"
   STR_RADICAL_HIGHTIER: "Inquisition High-tier Requisitions"
 #GK Unsorted
-
   STR_DREAD_GK_ARMOR_UC: "Assault Dreadnought Armor ¬"
   STR_DREAD1_ARMOR: "Dreadnought Armor"
   STR_DREAD2_ARMOR: "Dreadnought Armor (Plasma)"
@@ -2265,7 +2275,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_OUTPOST_FINAL_SITE_SITE: "Outpost Showcase Site"
 # ORK
   STR_SQUIG_HORDE: "RunAway Squigs Horde"
-# #03-MSSION.MARKERS
+# #03-MISSION.MARKERS
     # Map mission markers names with numbers
   STR_ENEMY_OUTPOST: "ENEMY OUTPOST"
   STR_ENEMY_OUTPOST_: "ENEMY OUTPOST-{0}"
@@ -2369,7 +2379,14 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_INQ_BASE: "Inquisition Main Base"
   STR_INQ_BASE_: "Inquisition Main Base"
 
+# #03-CHAOS_DEMONS
+  STR_PINK_HORROR_DEATH_GRENADE: "Pink Horror Death fireblast"
+  STR_BLUE_HORROR_DEATH_GRENADE: "Blue Horror Death fireblast"
+  STR_BRIMSTONE_HORROR_DEATH_GRENADE: "Brimstone Horror Death fireblast"
 # #03-TYR.GENE
+#Items
+  STR_GSC_FLAMETHROWER: "Industrial Flamethrower" #WIP - For anyone to improve and distribute to GSC troops
+  STR_GSC_CHEMICALTHROWER: "Improvised Flamethrower" #WIP - For anyone to improve and distribute to GSC troops
 #units
   STR_GSC_ABERRANT: "Aberrant"
   STR_GSC_MINER: "Brood Neophyte"
@@ -2386,6 +2403,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
   STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
   STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
+
 # #03-TYR.PURE
 
 # #03-NECRON
@@ -2704,7 +2722,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ADEPTAS_ARMORD: "Dominion Armor"
   STR_ADEPTAS_ARMORSUP: "Celestine Superior Armor"
   STR_ADEPTAS_ARMOR_UC: "Sororitas Power Armor"
-  STR_ADEPTAS_ARMORH_UC: "Sororitas Power Armor"
   STR_ADEPTAS_ARMORA_UC: "Hospitaller Armor"
   STR_ADEPTAS_ARMORS_UC: "Seraphim Armor"
   STR_ADEPTAS_ARMORI_UC: "Inquisitor Armor"
@@ -3105,7 +3122,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BIKE_ARMOR: "Assault Bike"
   STR_BIKE_CORPSE: "Wrecked Bike"
   STR_SIGNAL_ARMOR_UC: "MK7 Sergeant Signum Armor"
-  STR_SIGNALFALSE_ARMOR_UC: "MK7 Sergeant Signum Armor"
+  STR_SIGNALFALSE_ARMOR_UC: "MK7 Sergeant Signum Armor" #transformation of the signum armor when inside or in spaces where bombardment is not accessible
+  STR_SIGNALFALSE_ARMOR: "MK7 Sergeant Signum Armor (Unpowered)" #Store item used to restrict STR_SIGNALFALSE_ARMOR_UC access to units.
   STR_SIGNAL_ARMOR_RESEARCH: "MK7 Sergeant Signum Armor Requisition"
   STR_SIGNAL_ARMOR: "MK7 Sergeant Signum Armor"
   STR_SIGNAL_ARMOR_UFOPEDIA: "{NEWLINE} MK7 Armor given to the Sargent of devatstor squads. Equipped with a Signum designed for enhancing weapon accuracy and designating targets for an airstrike."
@@ -3120,6 +3138,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SCOUTHR_UC: "Advanced Scout Armor Blood"
   STR_SCOUTHY_UC: "Advanced Scout Armor Desert"
   STR_SCOUTHG_UC: "Advanced Scout Armor Forest"
+  STR_SCOUTHW: "Advanced Scout Armor Snow" #StoreItem used to lock the respective Advanced scout armor variant
+  STR_SCOUTHB: "Advanced Scout Armor Urban" #StoreItem used to lock the respective Advanced scout armor variant
+  STR_SCOUTHR: "Advanced Scout Armor Blood" #StoreItem used to lock the respective Advanced scout armor variant
+  STR_SCOUTHY: "Advanced Scout Armor Desert" #StoreItem used to lock the respective Advanced scout armor variant
+  STR_SCOUTHG: "Advanced Scout Armor Forest" #StoreItem used to lock the respective Advanced scout armor variant
   STR_NONE_ARMOR_UFOPEDIA: "Scouts are the new recruits of a Space Marine chapter who have advanced far enough in the early stages of their training and biological transformation to take part in battle with the rest of the Chapter."
 #ARMOR -------------------------------------------------------------
   STR_FLYING_SUIT_UFOPEDIA: "The scarcity and expense to maintain Terminator suits means they are available only to the elite troops from the veteran companies of the Space Marine Chapters."
@@ -3822,6 +3845,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_COBRA_CANNON: "Distortion Cannon"
  # STR_DSTARCANNON_UC: "STAR CANNON"
   STR_DSTARCANNON: "Star Cannon"
+  STR_SCORPION_PULSAR: "PULSAR CANNON"
   STR_SCORPION_PULSAR_UC: "PULSAR CANNON"
  # STR_ELDAR_SHIELD_UC: "VOID SHIELDS"
 
