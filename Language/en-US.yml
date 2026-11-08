@@ -276,7 +276,7 @@ en-US: #  yamllint disable-line rule:empty-values
 ## 40k unused definitions. string defined to avoid warning message
   STR_JARMORH_ARMOR: "DEBUG_STOREITEM Joan Juno Custom MK7 Sergeant Armor" #Store item for the armor, string needed to not show warning message
   STR_GK_ARMOR: "DEBUG_STOREITEM GK Armor" #storeitem for GK armor, unused AFAIK
-  STR_ADEPTAS_ARMORH: Sororitas Power Armor" #superseeded by STR_ADEPTAS_ARMOR_UC?
+  STR_ADEPTAS_ARMORH: "Sororitas Power Armor" #superseeded by STR_ADEPTAS_ARMOR_UC?
   STR_ADEPTAS_ARMORH_UC: "DEBUG_STOREITEM Sororitas Power Armor" #storeitem for STR_ADEPTAS_ARMORH
   STR_ADEPTAS_ARMORR: "DEBUG_STOREITEM Repentia Garb"
   STR_DW_NOARMOR_UC: "DEBUG_STOREITEM (Deprecated) 40k Blood Angels Armor"
