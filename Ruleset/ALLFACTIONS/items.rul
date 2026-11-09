@@ -2,6 +2,22 @@ extended:
   tagsFile: Ruleset/tags_ROSIGMA.rul
 
 items:
+  # ship info dataslate, unused
+  - delete: STR_SHIPINFO1
+  - delete: STR_SHIPINFO2
+  - delete: STR_SHIPINFO3
+  - delete: STR_SHIPINFO4
+  - delete: STR_SHIPINFO5
+  - delete: STR_SHIPINFO6
+  - delete: STR_SHIPINFO7
+  - delete: STR_SHIPINFO8
+  - delete: STR_SHIPINFO9
+  - delete: STR_SHIPINFO10
+  - delete: STR_SHIPINFO11
+  - delete: STR_SHIPINFO13
+  #unused predator turret corpse
+  - delete: STR_PREDATORBASE_CORPSE
+
   # 60 tokens are one badge
   - type: STR_KILLPOINT_TOKEN
     size: 0
