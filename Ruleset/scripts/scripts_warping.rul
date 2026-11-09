@@ -139,12 +139,13 @@ extended:
           end;
 
           if gt currentTurn temp;
-                        # Pay tu costs
-            actor.getTimeUnitsMax maxTu;
-            skill.getTag warpTuCost Tag.SKILL_WARPING_TU_COST_PERCENTAGE;
-            muldiv maxTu warpTuCost 100;
-            mul maxTu -1;
-            actor.addTimeUnits maxTu; # tu cost subtracted here
+                        # Pay costs
+            set spend_tu 1;
+            #actor.getTimeUnitsMax maxTu;
+            #skill.getTag warpTuCost Tag.SKILL_WARPING_TU_COST_PERCENTAGE;
+            #muldiv maxTu warpTuCost 100;
+            #mul maxTu -1;
+            #actor.addTimeUnits maxTu; # tu cost subtracted here
 
             # Put unit in warp with duration
             actor.getRuleArmor myRuleArmor;

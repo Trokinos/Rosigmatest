@@ -77,20 +77,21 @@ extended:
             set continue_action 0;
             return;
           end;
-          # Pay tu costs
-          actor.getTimeUnitsMax maxTu;
-          skill.getTag sprintTuCost Tag.SKILL_SPRINTING_TU_COST_PERCENTAGE;
-          muldiv maxTu sprintTuCost 100;
-          mul maxTu -1;
-          actor.addTimeUnits maxTu; # tu cost subtracted here
+          # Pay skill costs
+          set spend_tu 1;
+          #  actor.getTimeUnitsMax maxTu;
+          #  skill.getTag sprintTuCost Tag.SKILL_SPRINTING_TU_COST_PERCENTAGE;
+          #  muldiv maxTu sprintTuCost 100;
+          #  mul maxTu -1;
+          #  actor.addTimeUnits maxTu; # tu cost subtracted here
           # Pay energy costs
-          skill.getTag sprintEnergyCost Tag.SKILL_SPRINTING_ENERGY_COST;
-          mul sprintEnergyCost -1;
-          actor.addEnergy sprintEnergyCost; # tu cost subtracted here
+          #  skill.getTag sprintEnergyCost Tag.SKILL_SPRINTING_ENERGY_COST;
+          #  mul sprintEnergyCost -1;
+          #  actor.addEnergy sprintEnergyCost; # tu cost subtracted here
           # Pay Stun cost
-          skill.getTag sprintStunCost Tag.SKILL_SPRINTING_STUN_COST;
-          mul sprintStunCost -1;
-          actor.addStun sprintStunCost; # tu cost subtracted here
+          #  skill.getTag sprintStunCost Tag.SKILL_SPRINTING_STUN_COST;
+          #  mul sprintStunCost -1;
+          #  actor.addStun sprintStunCost; # tu cost subtracted here
 
           actor.MoveCost.setBaseTimePercent sprintSkill_timepercent;
           actor.MoveCost.setBaseEnergyPercent sprintSkill_energypercent;
