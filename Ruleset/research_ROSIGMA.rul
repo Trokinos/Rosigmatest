@@ -12763,6 +12763,16 @@ research:
       - STR_LIVE_CAPTURE_NURGLE_MARINE
     destroyItem: true
 
+  - name: NURGLE_BLIGHT_HAULER_CORPSE
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+      - STR_ALIEN_ORIGINS
+      - STR_THREAT_ONE
+
   - name: STR_NURGLE_DREADNOUGHT  # Nurgle Dreadnought
     cost: 192
     points: 50
