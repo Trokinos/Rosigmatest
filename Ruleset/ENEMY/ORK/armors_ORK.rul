@@ -484,6 +484,7 @@ armors:
       - INV_NULL_2X1_ORK_BIKE_RL
       - INV_NULL_2X1_ORK_BIKE_LL
     allowsRunning: false  # NPC limits for BAI
+    allowsKneeling: false
     tags:
       INFECTION_RESIST: 75  # offsets being 4x hit
       UNIT_SIZE: 200 # HUGE

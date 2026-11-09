@@ -1128,6 +1128,7 @@ armors:
     builtInWeapons:
       - AUX_TANK_CANNON
       - INV_NULL_3X3
+    allowsKneeling: false
     tags:
       UNIT_TYPE_IMPERIUM: 1
       UNIT_TYPE_MECHANICAL: 1

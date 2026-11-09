@@ -417,6 +417,7 @@ armors:
     sideArmor: 120
     rearArmor: 85
     underArmor: 120
+    allowsKneeling: false
     tags:
       UNIT_TYPE_IMPERIUM: 1
       UNIT_TYPE_MECHANICAL: 1

@@ -4150,6 +4150,7 @@ armors:
       - INV_NULL_2X1_LL
       - INV_NULL_3X3
       - INV_NULL_4X2
+    allowsKneeling: false
     tags:
       UNIT_SIZE: 150 # LARGE
       UNIT_TYPE_IMPERIUM: 1

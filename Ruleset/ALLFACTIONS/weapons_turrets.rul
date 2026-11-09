@@ -578,6 +578,11 @@ items:
     tags:
       TURRET_RELOAD_TURNS: 2
 
+    # alt-twin-linked
+    # shotgunSpread: 1
+    # shotgunBehavior: 1
+    # shotgunPellets: 2
+
   - type: STR_AUTOCANNON_TAUROX
     refNode: *STR_TURRET_DEFAULT
     dropoff: 4

@@ -129,3 +129,48 @@ events:
     spawnedPersonType: STR_ELDAR_SEER_F
     researchList: [STR_ELDAR_ASURYANI_CAMPAING_SLAANESH_PALACE_DEFEATED]
 
+### intercept lone spawn events
+  - name: STR_CHAOS_LONE_SERVITOR_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_CHAOS_LONE_BEASTMAN_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_CHAOS_LONE_KHORNE_SISTER_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_CHAOS_PAIR_SLAANESH_NOVICES_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_CHAOS_LONE_HERETIC_SISTER_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_CHAOS_LONE_HERETIC_HOSPITALIER_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_FAILURE_CRAZED_PRIEST_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_LONESOME_VINDICARE_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_MYSTERIOUS_PSYKER_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_REINFORCEMENTS_DCA_LONE
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_FAILURE_OFFICER_VETERAN_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_LONE_SISTER_ZWEI_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_LONE_SISTER_SUPERIOR_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_LONE_SISTER_REPENTIA_EVENT
+    interruptResearch: STR_ELDAR_STRATEGY
+
+  - name: STR_REINFORCEMENTS_ADEPTAS_WANDERING_MEDICAE
+    interruptResearch: STR_ELDAR_STRATEGY

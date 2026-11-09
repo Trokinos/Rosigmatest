@@ -44,6 +44,7 @@ en-US: #  yamllint disable-line rule:empty-values
 # #03-SM.BT
 # #03-SOB.BR
 # #03-SM.WB
+# #03-SM.CHAOS
 # #03-CM.GK
 # #03-CM.RAD
 # #03-CM.OA
@@ -59,7 +60,8 @@ en-US: #  yamllint disable-line rule:empty-values
 # #03-IG.KRIEG
 # #03-IG.VALHALLA
 # #03-Alien
-# #03-MSSION.MARKERS
+# #03-MISSION.MARKERS
+# #03-CHAOS_DEMONS
 # #03-TYR.GENE
 # #03-TYR.PURE
 # #03-NECRON
@@ -272,12 +274,21 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_DAMAGE_10: "IMPACT SHOCK"
   STR_DAMAGE_11: "MELTA"
   STR_DAMAGE_12: "GRAV"
+## 40k unused definitions. string defined to avoid warning message
+  STR_JARMORH_ARMOR: "DEBUG_STOREITEM Joan Juno Custom MK7 Sergeant Armor" #Store item for the armor, string needed to not show warning message
+  STR_GK_ARMOR: "DEBUG_STOREITEM GK Armor" #storeitem for GK armor, unused AFAIK
+  STR_ADEPTAS_ARMORH: "Sororitas Power Armor" #superseeded by STR_ADEPTAS_ARMOR_UC?
+  STR_ADEPTAS_ARMORH_UC: "DEBUG_STOREITEM Sororitas Power Armor" #storeitem for STR_ADEPTAS_ARMORH
+  STR_ADEPTAS_ARMORR: "DEBUG_STOREITEM Repentia Garb"
+  STR_DW_NOARMOR_UC: "DEBUG_STOREITEM (Deprecated) 40k Blood Angels Armor"
+  STR_GK_SUIT: "DEBUG_STOREITEM Grey Knight Armor"
 
 ## ROSIGMA_DEFAULTS.PLACEHOLDERS
   STR_CODEX_ARMOR_DETAIL: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_RESEARCHNOT_AVAILABLE: "Research Not Available"
   STR_ITEMNOT_AVAILABLE: "Item Not Available"
   STR_NOT_DONE: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+
 
 # #01-Avatars          # used by maxLookVariant - number of avatars = (value + 1) * 8
   STR_AVATAR_NAME_1: "M00"
@@ -1548,7 +1559,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GREYK_CORPSE_I: "Grey Knight Inquisitor"
   STR_RADICAL_HIGHTIER: "Inquisition High-tier Requisitions"
 #GK Unsorted
-
   STR_DREAD_GK_ARMOR_UC: "Assault Dreadnought Armor ¬"
   STR_DREAD1_ARMOR: "Dreadnought Armor"
   STR_DREAD2_ARMOR: "Dreadnought Armor (Plasma)"
@@ -2266,7 +2276,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_OUTPOST_FINAL_SITE_SITE: "Outpost Showcase Site"
 # ORK
   STR_SQUIG_HORDE: "RunAway Squigs Horde"
-# #03-MSSION.MARKERS
+# #03-MISSION.MARKERS
     # Map mission markers names with numbers
   STR_ENEMY_OUTPOST: "ENEMY OUTPOST"
   STR_ENEMY_OUTPOST_: "ENEMY OUTPOST-{0}"
@@ -2371,7 +2381,14 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_INQ_BASE: "Inquisition Main Base"
   STR_INQ_BASE_: "Inquisition Main Base"
 
+# #03-CHAOS_DEMONS
+  STR_PINK_HORROR_DEATH_GRENADE: "Pink Horror Death fireblast"
+  STR_BLUE_HORROR_DEATH_GRENADE: "Blue Horror Death fireblast"
+  STR_BRIMSTONE_HORROR_DEATH_GRENADE: "Brimstone Horror Death fireblast"
 # #03-TYR.GENE
+#Items
+  STR_GSC_FLAMETHROWER: "Industrial Flamethrower" #WIP - For anyone to improve and distribute to GSC troops
+  STR_GSC_CHEMICALTHROWER: "Improvised Flamethrower" #WIP - For anyone to improve and distribute to GSC troops
 #units
   STR_GSC_ABERRANT: "Aberrant"
   STR_GSC_MINER: "Brood Neophyte"
@@ -2388,6 +2405,44 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
   STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
   STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
+# zombies expanded
+  # Marines zombies
+  STR_MARINE_ZOMBIE_TACTICAL_M: "Fallen Brother"
+  STR_MARINE_ZOMBIE_SCOUT_M: "Fallen Brother"
+  STR_MARINE_ZOMBIE_TER_M: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_TAC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_GRV: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_INC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_PHB: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_TAC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_GRV: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_INC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_PHB: "Fallen Brother"
+
+  # Guard zombies
+  STR_GUARD_SQUAT_FLAK_MALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_FLAK_FEMALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_CARA_MALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_CARA_FEMALE_ZOMBIE: "Traitor Squat"
+  STR_SQUAT_FLAK_ZOMBIE_MALE_ARMOR: "Traitor Squat"
+  STR_SQUAT_FLAK_ZOMBIE_FEM_ARMOR: "Traitor Squat"
+  STR_SQUAT_CARAPACE_ZOMBIE_MALE_ARMOR: "Traitor Squat"
+
+  # Adeptas Zombies
+  STR_ADEPTAS_ELOHIM_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_MEDICAE_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_PILOT_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_ASSASSIN_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_REPENTIA_ZOMBIE: "Traitor Repentia"
+  STR_ADEPTAS_NOVICE_ZOMBIE: "Traitor Novitiate"
+  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE: "Traitor Militia"
+  STR_ADEPTAS_ELOHIM_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_MEDICAE_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_ASSASSIN_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_REPENTIA_ZOMBIE_ARMOR: "Traitor Repentia"
+  STR_ADEPTAS_PILOT_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_NOVICE_ZOMBIE_ARMOR: "Traitor Novitiate"
+  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE_ARMOR: "Traitor Militia"
 # #03-TYR.PURE
 
 # #03-NECRON
@@ -3117,7 +3172,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ADEPTAS_ARMORD: "Dominion Armor"
   STR_ADEPTAS_ARMORSUP: "Celestine Superior Armor"
   STR_ADEPTAS_ARMOR_UC: "Sororitas Power Armor"
-  STR_ADEPTAS_ARMORH_UC: "Sororitas Power Armor"
   STR_ADEPTAS_ARMORA_UC: "Hospitaller Armor"
   STR_ADEPTAS_ARMORS_UC: "Seraphim Armor"
   STR_ADEPTAS_ARMORI_UC: "Inquisitor Armor"
@@ -3518,7 +3572,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BIKE_ARMOR: "Assault Bike"
   STR_BIKE_CORPSE: "Wrecked Bike"
   STR_SIGNAL_ARMOR_UC: "MK7 Sergeant Signum Armor"
-  STR_SIGNALFALSE_ARMOR_UC: "MK7 Sergeant Signum Armor"
+  STR_SIGNALFALSE_ARMOR_UC: "MK7 Sergeant Signum Armor" #transformation of the signum armor when inside or in spaces where bombardment is not accessible
+  STR_SIGNALFALSE_ARMOR: "MK7 Sergeant Signum Armor (Unpowered)" #Store item used to restrict STR_SIGNALFALSE_ARMOR_UC access to units.
   STR_SIGNAL_ARMOR_RESEARCH: "MK7 Sergeant Signum Armor Requisition"
   STR_SIGNAL_ARMOR: "MK7 Sergeant Signum Armor"
   STR_SIGNAL_ARMOR_UFOPEDIA: "{NEWLINE} MK7 Armor given to the Sargent of devatstor squads. Equipped with a Signum designed for enhancing weapon accuracy and designating targets for an airstrike."
@@ -3533,6 +3588,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SCOUTHR_UC: "Advanced Scout Armor Blood"
   STR_SCOUTHY_UC: "Advanced Scout Armor Desert"
   STR_SCOUTHG_UC: "Advanced Scout Armor Forest"
+  STR_SCOUTHW: "Advanced Scout Armor Snow" #StoreItem used to lock the respective Advanced scout armor variant
+  STR_SCOUTHB: "Advanced Scout Armor Urban" #StoreItem used to lock the respective Advanced scout armor variant
+  STR_SCOUTHR: "Advanced Scout Armor Blood" #StoreItem used to lock the respective Advanced scout armor variant
+  STR_SCOUTHY: "Advanced Scout Armor Desert" #StoreItem used to lock the respective Advanced scout armor variant
+  STR_SCOUTHG: "Advanced Scout Armor Forest" #StoreItem used to lock the respective Advanced scout armor variant
   STR_NONE_ARMOR_UFOPEDIA: "Scouts are the new recruits of a Space Marine chapter who have advanced far enough in the early stages of their training and biological transformation to take part in battle with the rest of the Chapter."
 #ARMOR -------------------------------------------------------------
   STR_FLYING_SUIT_UFOPEDIA: "The scarcity and expense to maintain Terminator suits means they are available only to the elite troops from the veteran companies of the Space Marine Chapters."
@@ -3667,6 +3727,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_STORMTALON: "Stormtalon"
   STR_LTS: "Missile Launcher System"
   STR_RTS: "Missile Launcher System"
+  STR_STORMTALON_CORPSE: "Stormtalon Wreck"
   STR_LTS_CORPSE: "Wrecked Launcher System"
   STR_RTS_CORPSE: "Wrecked Launcher System"
   STR_LTT: "Twin Linked Bolter"
@@ -4235,6 +4296,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_COBRA_CANNON: "Distortion Cannon"
  # STR_DSTARCANNON_UC: "STAR CANNON"
   STR_DSTARCANNON: "Star Cannon"
+  STR_SCORPION_PULSAR: "PULSAR CANNON"
   STR_SCORPION_PULSAR_UC: "PULSAR CANNON"
  # STR_ELDAR_SHIELD_UC: "VOID SHIELDS"
 
@@ -6518,9 +6580,11 @@ en-US: #  yamllint disable-line rule:empty-values
   # eldar units
   STR_ELDAR_WIREWEAVE_NET_DEPLOYED: "Deployed Wireweave Net"
   STR_ELDAR_WIREWEAVE_NET_DEPLOYED_CORPSE: "Expended Wireweave Net"
-
+  STR_ELDAR_FUSION_CHARGE_DEPLOYED: "Deployed Fusion Charge"
+  STR_ELDAR_FUSION_CHARGE_DEPLOYED_ARMOR: "Deployed Fusion Charge"
+  STR_ELDAR_FUSION_CHARGE_DEPLOYED_CORPSE: "Expended Fusion Charge"
   # eldar skills
-  STR_SKILL_WARPSPIDER_STEALTH_TELEPORT: "Warp-jump"
+  STR_SKILL_WARPSPIDER_STEALTH_TELEPORT: "Warp Jump"
   STR_DEATHWEAVERS_SPECIALWEAPON: "Death Weavers"
   STR_POWERBLADEARRAY_SPECIALWEAPON: "Powerblade Array"
   STR_POWERBLADEARRAY_NAME: "Powerblades"
@@ -6529,6 +6593,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SKILL_BANSHEE_DASH: "Banshee Sprint"
   STR_BANSHEE_MASK_INTIMIDATE: "Psychic Scream"
   STR_BANSHEE_INTIMIDATE_SPECIALWEAPON: "Psychic Scream"
+  STR_SKILL_HAWK_GRENADE_DROP: "Drop Hawk Grenade"
 
   # ELDAR SOLDIER TRANSFORMATIONS CODEX (lore fluff plus transformation requirements)
   STR_ELDAR_ASPECT_HELPER_SCORPIONS: "Striking Scorpions are Aspect Warriors focused on close combat, stealth, and assassination. They epitomise the deadly attributes of their namesake, which can sting and kill a creature many times its size. {NEWLINE}{NEWLINE}Requirements for a Guardian to be promoted to a Striking Scorpion are: {NEWLINE} Rank 1 or higher {NEWLINE} Scorpion Aspect Shrine at base {NEWLINE} Scorpion Armor available at base." # The history of the Striking Scorpions is shrouded in infamy from their very beginning from the story of their founder, Phoenix Lord Arhra, Father of the Scorpions, now known as the Fallen Phoenix"
@@ -6641,14 +6706,20 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_HAWK_WEAPON_SNAPSHOT: "Snap Burst"
   STR_HAWK_WEAPON_AIMEDSHOT: "Aimed Burst"
   STR_LASBLASTER: "Lasblaster"
-  STR_LASBLASTER_CHARGE: "Lasblaster Charge"
+  STR_LASBLASTER_CHARGE: "Lasblaster Cell"
   STR_HAWKSTALON: "Hawk's Talon"
-  STR_HAWKSTALON_CHARGE: "Hawk's Talon Charge"
+  STR_HAWKSTALON_CHARGE: "Hawk's Talon Cell"
   STR_SUNPISTOL: "Sunpistol"
   STR_SUNPISTOL_SCOPED: "Scoped Sunpistol"
-  STR_SUNPISTOL_CHARGE: "Sunpistol Charge"
+  STR_SUNPISTOL_CHARGE: "Sunpistol Cell"
   STR_HAWK_SCATTERLASER: "Hawk Scatter Laser"
-  STR_HAWK_SCATTERLASER_CHARGE: "Hawk Scatter Laser Charge"
+  STR_HAWK_SCATTERLASER_CHARGE: "Hawk Scatter Laser Cell"
+  STR_HAWK_GRENADE_PACK: "Hawk Grenade Pack"
+  STR_HAWK_SUNBURST_GRENADES: "Hawk Sunburst Grenades"
+  STR_HAWK_STARSHOT_GRENADES: "Hawk Starshot Grenades"
+  STR_HAWK_FUSION_GRENADES: "Hawk Fusion Grenades"
+  STR_HAWK_HAYWIRE_GRENADES: "Hawk Haywire Grenades"
+  STR_HAWK_PLASMA_GRENADES: "Hawk Plasma Grenades"
   STR_DEATH_SPINNER: "Death Spinner"
   STR_SPINNER_SPOOL: "Spinner Spool Ammo"
   STR_WIREWEAVE_SPOOL: "Wireweave Spool Ammo"
@@ -6695,6 +6766,12 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_HWP_SCATTERLASER: "Scatter Laser(HWP)"
   STR_ELDAR_HWP_STARCANNON: "Starcannon(HWP)"
   STR_ELDAR_WIREWEAVE_NET: "Wireweave Net"
+  STR_ELDAR_SUNBURST_GRENADE: "Sunburst Grenade"
+  STR_ELDAR_STARSHOT_GRENADE: "Starshot Grenade"
+  STR_ELDAR_FUSION_GRENADE: "Eldar Fusion Grenade"
+  STR_ELDAR_HAYWIRE_GRENADE: "Eldar Haywire Grenade"
+  STR_ELDAR_FUSION_CHARGE: "Eldar Fusion Charge"
+  STR_ELDAR_FUSION_CHARGE_DETONATOR: "Fusion Charge Detonator"
 
 #Eldar Units Codex Strings
   STR_ELDAR_GUARDIAN_AUTOPSY_CODEX: "{NEWLINE} Guardians are the militia of the Eldar Craftworlds. In times of peace the Guardians pursue their normal civilian roles, however, all Eldar are trained in warfare and can be called to arms if their Craftworld is threatened. Guardians in battle, form the bulk of the Eldar armies. That these citizen levies are capable of engaging and defeating other races' warriors is a testament to Eldar skill and technology."
@@ -6782,6 +6859,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_HAWK_SCATTERLASER_CODEX: "{NEWLINE} A handheld version of the mounted scatter laser. Delivering accurate bursts of laser at long range in a relatively compact heavy weapon. Their main drawback is weak performance against heavy armor."
   STR_SUNPISTOL_CODEX: "{NEWLINE} The pistol counterpart of lasblasters, these are rapid-fire one handed laser weapons."
   STR_SUNPISTOL_SCOPED_CODEX: "{NEWLINE} Scoped variant of the Sunpistol, allowing their wielder to take precise shots from a relatively long distance."
+  STR_HAWK_GRENADE_PACK_CODEX: "{NEWLINE} The Hawk Grenade Pack is an Eldar grenade launcher. Each of these launchers are strapped to a warrior's belt, and allows grenades to be released downwards as the warrior flies overhead. Various grenade types can be loaded for attacking different targets. {NEWLINE} {NEWLINE} {ALT} Note: Forcefire by holding CTRL, cannot be unloaded. {ALT}"
   STR_DEATH_SPINNER_CODEX: "{NEWLINE}  A Death Spinner is the ritual armament of the Warp Spiders Aspect that extrudes a thick cloud of razor-sharp monofilament wire. The spinner's magnetic containment field spools the wire together and hurls it toward the enemy. The wire's own tension causes it to writhe and lash, and where it touches flesh, slices through the victim's body, causing an agonising, messy death."
   STR_DEATHWEAVERS_CODEX: "{NEWLINE} Death Weavers are a type of Monofilament Weapon used by Warp Spiders. They are twin-linked shorter ranged versions of standard Death Spinners and are mounted in pairs on the waist of Warp Spider Exarchs."
   STR_ELDAR_POWER_BLADE_CODEX: "{NEWLINE} Power Blades are Eldar power weapons commonly wielded by Warp Spider Exarchs. A blade is fixed to the forearm and can be skillfully used to slash at the enemy."
@@ -6811,6 +6889,13 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_HWP_SCATTERLASER_CODEX: "{NEWLINE} The weapon is comprised of six separate laser chambers which can be fired simultaneously or in bursts, at either the same or different targets, and uses crystalline power cells to store energy. It is similar in some respects to the Imperium Multi-laser, but far more refined and energy-efficient."
   STR_ELDAR_HWP_STARCANNON_CODEX: "{NEWLINE} A plasma weapon designed by the Eldar, using sophisticated electromagnetic pulses to guide bolts of destructive plasma to a target. Though its plasma core produces the incandescent heat of a star, unlike its crude and clumsy Imperial counterparts the Starcannon uses containment fields to not only prevent the weapon overheating but keep it cool to the touch. That humanity uses a weapon which could maim or kill the wielder is seen by the Eldar as a testament to their idiocy"
   STR_ELDAR_WIREWEAVE_NET_CODEX: "{NEWLINE} Wireweave Nets are Monofilament throwable devices used by Eldar Rangers to ensnare enemies. After an initial stunning burst a mass of monofilament wires are deployed slowing and tangling enemies in a small area. The thin wires eventually disintegrate leaving only the spent shell of the device."
+  STR_ELDAR_SUNBURST_GRENADE_CODEX: "{NEWLINE} An accurate, lightweight anti-Infantry grenade that requires precise placement."
+  STR_ELDAR_STARSHOT_GRENADE_CODEX: "{NEWLINE} An accurate, lightweight anti-Armor grenade that requires precise placement."
+  STR_ELDAR_FUSION_GRENADE_CODEX: "{NEWLINE} The Aeldari analogue of Melta technology, these heat-based anti-tank and heavy-infantry explosives are effective against the most heavily armored foes. An accurate, lightweight grenade that requires precise placement."
+  STR_ELDAR_HAYWIRE_GRENADE_CODEX: "{NEWLINE} Used by the Eldar primarily for disabling enemy vehicles or similar electronic systems. They can have the additional effect of deafening and disorientating biological creatures near the grenade's explosion. An accurate, lightweight grenade that requires precise placement."
+  STR_ELDAR_PLASMA_GRENADE_CODEX: "{NEWLINE} The archetype Aeldari grenade, effective against more heavily armored infantry. An accurate, lightweight grenade that requires precise placement."
+  STR_ELDAR_FUSION_CHARGE_CODEX: "{NEWLINE} A highly potent fusion weapon used by the Craftworld Eldar. These disc-shaped explosives can be attached to enemy war engines or fortifications and psychically detonated after a short delay. Upon activation it generates so much heat that it's targets evaporate in an immense blast. If incorrectly discharged Aeldari technological safeguards result in a contained explosion"
+  STR_ELDAR_FUSION_CHARGE_DETONATOR_CODEX: "{NEWLINE} The psychically activated detonation device for Fusion Charges. Once deployed the Fusion Charge can be set off by just a thought."
   # OLD OR DUPLICATE REQUIRES CONSOLIDATING OR REMOVAL
   STR_ELDAR_CHAINSWORD: "Eldar Chainsword"
   STR_ELDAR_CHAINSWORD_UFOPEDIA: "{NEWLINE} A deadly one-handed melee weapon whose vicious blade is comprised of diamond-toothed edges that mangle and tear flesh."
@@ -8353,6 +8438,16 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_HRUD_STORMVERMIN_OFFICER_UFOPEDIA: "{NEWLINE} Fangleaders have the finest armor and gear amongst their kin."
 
   # Nurgle
+  STR_NURGLE_INTERCEPTOR: "Pustule Nail"
+  STR_NURGLE_SMALL_SCOUT: "Cancer Vestige"
+  STR_NURGLE_MEDIUM_SCOUT: "Pungent Destroyer"  # N02
+  STR_NURGLE_LARGE_SCOUT: "Blight Cruiser"  # N03C
+  STR_NURGLE_HARVESTER: "Rust Gatherer"
+  STR_NURGLE_TERROR_SHIP: "Rot Carrier"
+  STR_NURGLE_SUPPLY_SHIP: "Plague Hulk"
+  STR_NURGLE_ABDUCTOR: "Morbid Graveship"
+  STR_NURGLE_BATTLESHIP: "Terminus Despoiler"
+
   STR_NURGLE_EARLY: "Nurgle Vanguard"
   STR_NURGLE_ELITE: "Nurgle Deathguard"
 
@@ -8452,6 +8547,33 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_PESTIGOR_CORPSE: "Pestigor Corpse"
   STR_PESTIGOR_AUTOPSY: "Pestigor Origins"
   STR_PESTIGOR_AUTOPSY_UFOPEDIA: "{NEWLINE} Beastmen blessed from birth by Nurgle and nurtured into adulthood amid the gardens of Nurgle become pestigors. Like all of Nurgle's creations they are warped versions of their kin, constantly growing and decaying all at once."
+  STR_NURGLE_BLIGHT_HAULER: "Blight Hauler"
+  NURGLE_BLIGHT_HAULER_ARMOR: "Blight Hauler"
+  STR_BLIGHT_HAULER_MULTI_MELTA: "Blighted Multimelta"
+  STR_BLIGHT_HAULER_MISSILE_LAUNCHER: "Blighted Missile Launcher"
+  STR_BLIGHT_HAULER_MULTI_MISSILE_LAUNCHER: "Blighted Multi-Missile Pod"
+  STR_BLIGHT_HAULER_PLAGUE_SPEWER: "Heavy Plague Spewer"
+  STR_BLIGHT_HAULER_GRAVCANNON: "Blighted Gravcannon"
+  STR_BLIGHT_HAULER_MORTAR: "Blight Hauler Mortar"
+  STR_BLIGHT_HAULER_GNASHING_MAW: "Gnashing Maw"
+  STR_BLIGHT_HAULER_HEAVY_BOLTER: "Blight Hauler Heavy Bolter"
+  NURGLE_BLIGHT_HAULER_CORPSE: "Blight Hauler Wreckage"
+  STR_NURGLE_BLIGHT_HAULER_ORIGINS: "Blight Hauler Origins"
+  STR_NURGLE_BLIGHT_HAULER_UFOPEDIA: "Myphitic Blight-Haulers are a type of light Daemon Engine used by Nurgle affiliated Chaos warbands, most notably the Death Guard. Resembling a Bloat-Drone that has been stripped of its turbines, this strange machine has heavy weapons mounted on its carapace, typically a combination of multi-melta and missile launcher for mid-to-close range tank hunting."
+  STR_NURGLE_BLIGHT_HAULER_ORIGINS_UFOPEDIA: "{NEWLINE}Powering into battle on a trio of articulated track units, the Myphitic Blight-hauler is a light Daemon Engine that provides the Death Guard Traitor Legion with heavy firepower wherever it is needed. Most Death Guard commanders use packs of these Daemon Engines to fill the role that Havocs or Obliterators might in other Traitor Legions. The entities that inhabit Blight-haulers are as loyal as hounds to their masters, rushing to obey any instruction they are given."
+  STR_NURGLE_SOLDIER_BLESSED: "Plague Marine"
+  MUTON_ARMORNURGLEA_BLESSED: "Plague Marine"
+
+  STR_NURGLE_DREAD_BOLTER: "Plague Dreadnought"
+  STR_NURGLE DREADNOUGHT_ARMOR_CODEX: "Plague Dreadnought Armor"
+  STR_NURGLE_DREADNOUGHT_ARMOR_UFOPEDIA: "{NEWLINE}"
+  STR_NURGLE_DREADNOUGHT_AUTOPSY: "Plague Dreadnought Origins"
+  STR_NURGLE_DREADNOUGHT_AUTOPSY_UFOPEDIA: "{NEWLINE}"
+  STR_NURGLE_DREADNOUGHT: "Plague Dreadnought Captive"
+  STR_NURGLE_DREADNOUGHT_BOLTER_ARMOR: "Plague Dreadnought Armor"
+  STR_NURGLE_DREADNOUGHT_CORPSE_GEO: "Plague Dreadnought Corpse"
+  STR_TWIN_LINK_HEAVY_BOLTER_NURGLE_DREAD: "Twin-linked Blighted Heavy Bolter"
+  STR_NURGLE_DREAD_POWERCLAW: "Plague Power Claw"
 
 # CHAOS WEAPONS
   STR_CHAOS_LASCANNON_HANDHELD: "Chaos Light Lascannon"
@@ -8559,6 +8681,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_KHORNE_ELITE: "Khorne Terminators"
 
   STR_WORLDEATER_LEADER: "Khorne Captain"
+  STR_LIVE_CAPTURE_WORLDEATER_LEADER: "Khorne Captain"
   STR_KHORNE_CHAMPION_ARMOR: "Khorne Captain Armor"
   STR_WORLDEATER_LEADER_CORPSE: "Khorne Captain Corpse"
 
@@ -9122,21 +9245,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ADEPTAS_NURGLE_BLESSED: "Plague Sister"
   STR_ADEPTAS_NURGLE_BLESSED2: "Plague Sister"
   STR_ADEPTAS_NURGLE_BLESSED_ARMOR_MIDWIFE: "Plague Sister"
-  STR_NURGLE_BLIGHT_HAULER: "Blight Hauler"
-  NURGLE_BLIGHT_HAULER_ARMOR: "Blight Hauler"
-  STR_BLIGHT_HAULER_MULTI_MELTA: "Blighted Multimelta"
-  STR_BLIGHT_HAULER_MISSILE_LAUNCHER: "Blighted Missile Launcher"
-  STR_BLIGHT_HAULER_MULTI_MISSILE_LAUNCHER: "Blighted Multi-Missile Pod"
-  STR_BLIGHT_HAULER_PLAGUE_SPEWER: "Heavy Plague Spewer"
-  STR_BLIGHT_HAULER_GRAVCANNON: "Blighted Gravcannon"
-  STR_BLIGHT_HAULER_MORTAR: "Blight Hauler Mortar"
-  STR_BLIGHT_HAULER_GNASHING_MAW: "Gnashing Maw"
-  STR_BLIGHT_HAULER_HEAVY_BOLTER: "Blight Hauler Heavy Bolter"
-  NURGLE_BLIGHT_HAULER_CORPSE: "Blight Hauler Wreckage"
-  STR_NURGLE_BLIGHT_HAULER_ORIGINS: "Blight Hauler Origins"
-  STR_NURGLE_BLIGHT_HAULER_UFOPEDIA: "Myphitic Blight-Haulers are a type of light Daemon Engine used by Nurgle affiliated Chaos warbands, most notably the Death Guard. Resembling a Bloat-Drone that has been stripped of its turbines, this strange machine has heavy weapons mounted on its carapace, typically a combination of multi-melta and missile launcher for mid-to-close range tank hunting."
-  STR_NURGLE_BLIGHT_HAULER_ORIGINS_UFOPEDIA: "{NEWLINE}Powering into battle on a trio of articulated track units, the Myphitic Blight-hauler is a light Daemon Engine that provides the Death Guard Traitor Legion with heavy firepower wherever it is needed. Most Death Guard commanders use packs of these Daemon Engines to fill the role that Havocs or Obliterators might in other Traitor Legions. The entities that inhabit Blight-haulers are as loyal as hounds to their masters, rushing to obey any instruction they are given."
-# Tzeentch Sister forces. Themed: Mutated, Witnesses of Change, Demented Madness, Twisted and Turned Marionettes.
+  # Tzeentch Sister forces. Themed: Mutated, Witnesses of Change, Demented Madness, Twisted and Turned Marionettes.
   TZEENTCH_SHIP_00: "Witchfire Tracer"
   TZEENTCH_SHIP_01: "Crystal Sphinx"
   TZEENTCH_SHIP_02: "Luminous Complex"
@@ -9226,20 +9335,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ADEPTAS_ARMOR_CELESTIAN_ELITE_UFOPEDIA: "{NEWLINE} Celestian Armor is gifted to some of the most skilled fighters within the Sisters of Battle Order. The armor is expertly crafted, featuring some of the finest ceramite plates, sensor equipment, fibre bundles, and servo motors to cleanse the enemy from the battlefield. It also features a rosarius to further protect the Battle-Sister. "
   STR_ADEPTAS_ARMOR_CELESTIAN_ELITE_STOREITEM: "Celestian Armor"
   STR_ADEPTAS_CELESTIAN_ELITE_CORPSE: "Celestian Corpse"
-
-# Nurgle
-  STR_NURGLE_INTERCEPTOR: "Pustule Nail"
-  STR_NURGLE_SMALL_SCOUT: "Cancer Vestige"
-  STR_NURGLE_MEDIUM_SCOUT: "Pungent Destroyer"  # N02
-  STR_NURGLE_LARGE_SCOUT: "Blight Cruiser"  # N03C
-  STR_NURGLE_HARVESTER: "Rust Gatherer"
-  STR_NURGLE_TERROR_SHIP: "Rot Carrier"
-  STR_NURGLE_SUPPLY_SHIP: "Plague Hulk"
-  STR_NURGLE_ABDUCTOR: "Morbid Graveship"
-  STR_NURGLE_BATTLESHIP: "Terminus Despoiler"
-
-  STR_NURGLE_SOLDIER_BLESSED: "Plague Marine"
-  MUTON_ARMORNURGLEA_BLESSED: "Plague Marine"
 
 # Tzeentch Traitor Guard
   STR_TZEENTCH_EARLY_GUARD: "Turncoat Guard"
@@ -13289,6 +13384,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_PENETANTE_LEEROY: "Crazed Penitent"
   STR_GSC_PENETANTE_ARMOR_FEMALE: "Armed Penitent"
   STR_GSC_PENETANTE_ARMOR: "Crazed Penitent"
+  STR_GSC_PENETANTE_CORPSE_FEMALE: "Penitent Corpse" #female variant transformed into STR_GSC_PENETANTE_CORPSE during recovery
   STR_GSC_PENETANTE_CORPSE: "Penitent Corpse"
 
   STR_GSC_ARBITES_FACTION: "Arbites"
@@ -13352,6 +13448,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_GUARD_MEDIC_MALE: "Corrupted Medic"
   STR_GSC_GUARD_FLAK_OFFICER_FEMALE: "Corrupted Officer"
   STR_GSC_GUARD_FLAK_OFFICER_MALE: "Corrupted Officer"
+  STR_GSC_GUARD_FLAK_OFFICER_MALE_ARMED: "Corrupted Officer"
   STR_GSC_GUARD_CARAPACE_FEMALE: "Corrupted Stormtrooper"
   STR_GSC_GUARD_CARAPACE_MALE: "Corrupted Stormtrooper"
   STR_GSC_GUARD_CARAPACE_MEDIC_FEMALE: "Corrupted Medic"
@@ -13488,8 +13585,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_NEEDLER_RIFLE: "Xeno Needler Rifle"
   STR_GSC_NEEDLER_RIFLE_UFOPEDIA: "{NEWLINE}The Xeno Needle Rifle fires a sliver of crystallized gene-toxin, capable of penetrating most existing armor. Almost entirely silent to fire, the sliver itself is so fine that it is not felt even if it penetrates flesh. The crystallized gene-toxin dissolves almost immediately after penetration, with the fast-acting gene-toxin altering the genetics and mind of the victim nearly instantly."
 
-
-
   # Tyranids
   STR_TYRANID: "Tyranids"
   STR_SPOREMINE_TESTLIST: "Spore Mine Testlist"
@@ -13593,7 +13688,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TYRANID_BROODNEST_SPAWNER_ARMORED: "Armored Tyranid Broodnest"
   STR_TYRANID_BROODNEST_SPAWNER_SMALL: "Tyranid Broodnest"
   STR_TYRANID_BROODNEST_SPAWNER_LARGE: "Large Tyranid Broodnest"
-
+  STR_TYRANID_BROODNEST_SPAWNER_SMALL_CORPSE: "Tyranid Broodnest Rubbles"
+  STR_TYRANID_BROODNEST_SPAWNER_LARGE_CORPSE: "Large Tyranid Broodnest Rubbles"
+  STR_TYRANID_BROODNEST_SPAWNER_ARMORED_CORPSE: "Armored Tyranid Broodnest Rubbles"
 
   # Tyranid Biomorphs
   STR_RIPPERSWARM_ATTACK: ""
@@ -13614,35 +13711,7 @@ en-US: #  yamllint disable-line rule:empty-values
   CTHULHU_GENE_WEAK: "Ymgarl Spit"
   CTHULHU_GENE: "Ymgarl Spit"
 
-  # zombies expanded
-  # Guard zombies
-  STR_GUARD_SQUAT_FLAK_MALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_FLAK_FEMALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_CARA_MALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_CARA_FEMALE_ZOMBIE: "Traitor Squat"
-  STR_SQUAT_FLAK_ZOMBIE_MALE_ARMOR: "Traitor Squat"
-  STR_SQUAT_FLAK_ZOMBIE_FEM_ARMOR: "Traitor Squat"
-  STR_SQUAT_CARAPACE_ZOMBIE_MALE_ARMOR: "Traitor Squat"
-
-  # Adeptas Zombies
-  STR_ADEPTAS_ELOHIM_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_MEDICAE_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_PILOT_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_ASSASSIN_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_REPENTIA_ZOMBIE: "Traitor Repentia"
-  STR_ADEPTAS_NOVICE_ZOMBIE: "Traitor Novitiate"
-  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE: "Traitor Militia"
-  STR_ADEPTAS_ELOHIM_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_MEDICAE_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_ASSASSIN_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_REPENTIA_ZOMBIE_ARMOR: "Traitor Repentia"
-  STR_ADEPTAS_PILOT_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_NOVICE_ZOMBIE_ARMOR: "Traitor Novitiate"
-  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE_ARMOR: "Traitor Militia"
-
 ## Grey Knights
-
-
   STR_GREY_KNIGHT_REQUISITION: "Requisition Grey Knight"
 
   STR_INQ_STORMTROOPER: "Inquisition Storm Trooper"
@@ -14160,15 +14229,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_REPRISALIA_MEDIC_ARMOR_UFOPEDIA: "{NEWLINE} The Adeptas Reprisalia train medicae within their own ranks to ensure that they do not need to rely on medical aid from outside sources.{NEWLINE} Whether for keeping their sisters alive or ensuring a target lives long enough for all useful information to be extracted, the Reprisalia Medicae are skilled at tending all battlefield injuries."
 
 ## Primaris Armor Bonuses
-
-  STR_PRIMARIS_ZOMBIE_DW_TAC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_GRV: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_INC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_PHB: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_TAC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_GRV: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_INC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_PHB: "Fallen Brother"
 
   STR_MKX_TAC_LEVELS_STATS_UFOPEDIA: >
     Promotion Stat Total Bonuses:
@@ -14695,6 +14755,13 @@ en-US: #  yamllint disable-line rule:empty-values
   # ** FIREDRAGON CORONA COOLDOWN SCRIPT **
   STR_SCRIPT_FIREDRAGON_CORONA_RELOAD_RECHARGING: "Flame Corona Recharging. Turns left: {0}"
   STR_SCRIPT_FIREDRAGON_CORONA_RELOAD_RECHARGED: "Flame Corona Ready For Use"
+  # ** WARPING SCRIPT **
+  STR_SCRIPT_ENTERING_WARP: "Entering the Warp"
+  STR_SCRIPT_WARPING_LEAVING_WARP: "Leaving the Warp"
+  STR_SCRIPT_WARPING_TIME_REMAINING: "Inside Warp for {0} more turns!"
+  STR_SCRIPT_WARPER_COOLDOWN: "Warp Generator recharged in {0} more turns!"
+  STR_SCRIPT_WARPING_EJECTED_FROM_WARP: "EJECTED FROM THE WARP!!!"
+  STR_SCRIPT_WARPER_NO_BENEFIT: "Unit can't benefit from this while Warping!"
   # ** ENVIRONMENTAL SCRIPTS
 
   STR_DAEMON_PURGE_STRONG_ENVIRONMENTAL_TOKEN: "Strong Daemonic Purge Environmental Token"

@@ -197,8 +197,8 @@ items:
     accuracyAimed: 0
     tuAimed: 0
 
-  - type: STR_CHAOS_ASSAULT_CANNON  # Currently not in game
-    refNode: *STR_ASSAULTCANNON_TEMPLATE
+  # - type: STR_CHAOS_ASSAULT_CANNON  # Currently not in game
+  #   refNode: *STR_ASSAULTCANNON_TEMPLATE
 
   - type: STR_ASSCTZ  # TZEENTCH SOULREAPER ASSAULT CANNON
     dropoff: 4

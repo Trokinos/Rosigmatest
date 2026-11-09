@@ -431,3 +431,51 @@ units:
         - STR_ASSC_CLIP_INFERNO
         - STR_MGRENADE
         - STR_MGRENADE
+
+  - &TZEENTCH_DREADNOUGHT
+    type: STR_TZEENTCH_DREADNOUGHT_LASCANNON # Armed with a twin-linked lascannon and helfire missile launcher
+    race: STR_TZEENTCH
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 99
+      stamina: 120
+      health: 249 # fragile for a dreadnought
+      bravery: 110
+      reactions: 99
+      firing: 99
+      throwing: 0
+      strength: 209 # weak for a dreadnought
+      psiStrength: 109
+      psiSkill: 0
+      melee: 99 # bad for a dreadnought
+    armor: STR_TZEENTCH_DREADNOUGHT_LASCANNON_ARMOR
+    avoidsFire: false  # doesn't really care
+    intelligence: 6
+    aggression: 6
+    isLeeroyJenkins: true
+    spotter: 1
+    sniper: 70
+    canPanic: false
+    value: 30
+    canBeMindControlled: false
+    moraleLossWhenKilled: 50  # Dust boon
+    energyRecovery: 80
+    livingWeapon: true
+    standHeight: 21
+    builtInWeaponSets:
+      - - STR_TWIN_LINK_LASCANNON_CHAOS_DREADNOUGHT
+        - DM_WEAPON
+
+  - type: STR_TZEENTCH_DREADNOUGHT_AUTOCANNON # Armed with a twin-linked autocannon and helfire missile launcher
+    refNode: *TZEENTCH_DREADNOUGHT
+    armor: STR_TZEENTCH_DREADNOUGHT_AUTOCANNON_ARMOR
+    builtInWeaponSets:
+      - - STR_REAPER_AUTOCANNON_DREADNOUGHT
+        - DM_WEAPON
+
+  - type: STR_TZEENTCH_DREADNOUGHT_HFLAMER # Armed with a twin-linked lascannon and helfire missile launcher
+    refNode: *TZEENTCH_DREADNOUGHT
+    armor: STR_TZEENTCH_DREADNOUGHT_HFLAMER_ARMOR
+    builtInWeaponSets:
+      - - STR_HEAVY_FLAMER_DREADNOUGHT
+        - DM_WEAPON

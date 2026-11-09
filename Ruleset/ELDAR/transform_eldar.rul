@@ -15,6 +15,8 @@ soldierTransformation:
 # RANGER TRANSFORMATIONS
   - name: STR_RANGER_TO_GUARDIAN_PATH
     cost: 0
+    requires:
+      - STR_RECRUIT_ELDAR_OUTCAST
     producedSoldierType: STR_ELDAR_GUARDIAN_PLAYER
     allowsWoundedSoldiers: true
     allowsLiveSoldiers: true

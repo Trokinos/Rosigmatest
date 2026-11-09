@@ -395,6 +395,7 @@ items:
     compatibleAmmo:
       - STR_RANGER_LONG_RIFLE_MAG
       - STR_RANGER_LONG_RIFLE_MAG_FIXED
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED2
     listOrder: 16600
 
   - type: STR_RANGER_LONG_RIFLE_SCOPED
@@ -1036,7 +1037,7 @@ items:
     size: 0.4
     costBuy: 20000
     costSell: 10000
-    weight: 30
+    weight: 20
     invWidth: 2
     invHeight: 3
     bigSprite: 4863
@@ -1052,9 +1053,9 @@ items:
     tuSnap: 25
     tuAuto: 40
     flatRate: true
-    snapRange: 14
-    autoRange: 10
-    maxRange: 14
+    snapRange: 12
+    autoRange: 8
+    maxRange: 12
     dropoff: 5
     confSnap:
       followProjectiles: false
@@ -1084,7 +1085,7 @@ items:
     dropoff: 5
     costBuy: 50000
     costSell: 3000
-    weight: 30
+    weight: 20
     bigSprite: 4868
     floorSprite: 4868
     handSprite: 4970
@@ -1452,6 +1453,230 @@ items:
 
 #--- ELDAR.GRENADES ---
 
+  - &ELDAR_GRENADE_TEMPLATE # Accurate, Lighter, Lower TU but Shorter Range and Smaller AOE
+    type: STR_ELDAR_SUNBURST_GRENADE #frag
+    categories: [STR_CAT_ELDAR, STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+    bigSprite: 4918
+    floorSprite: 4918
+    handSprite: 1826
+    invWidth: 1
+    invHeight: 2
+    hitAnimation: {mod: 40k, index: 104}
+    primeSound: 2426
+    costBuy: 1000
+    costSell: 200
+    battleType: 4
+    weight: 1 # Test
+    size: 0.1
+    listOrder: 16310
+    fuseType: -2
+    ### Throwing Stats
+    accuracyThrow: 120 # +20% accuracy for eldar grenades
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    throwRange: 15 #-3
+    costThrow:
+      time: 45 # -10 Time reduction for Eldar grenades
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    # Damage Stats
+    power: 80
+    damageType: 1
+    damageAlter:
+      FixRadius: 3 # -2 vs Imperium
+      ToArmorPre: 0.05  # small ablation
+      ArmorEffectiveness: 1.1  # concussive + shrapnel everywhere
+      ToHealth: 0.7  # much damage dealt in the form of debuffs
+      ToTime: 0.2  # painful
+      ToStun: 0.4  # painful
+      ToMorale: 0.5  # painful
+      ToEnergy: 0.4  # painful
+      ToWound: 0.4  # shrapnel
+      RandomWound: false
+      ToTile: 0.25  # it's shrapnel; deals relatively little damage to the terrain.
+      ToItem: 0.25
+
+  - type: STR_ELDAR_STARSHOT_GRENADE #krak
+    refNode: *ELDAR_GRENADE_TEMPLATE
+    bigSprite: 4919
+    floorSprite: 4919
+    handSprite: 1834
+    listOrder: 16312
+    costBuy: 4000
+    costSell: 1000
+    throwRange: 12 # -3
+    weight: 2  # Guardsmen should be able to throw these a reasonable distance
+    ### Throwing Stats
+    ### Damage Stats
+    power: 100
+    damageType: 3
+    damageAlter:
+      ResistType: 1
+      RandomType: 6  # gaussian
+      ToHealth: 0.8
+      ToArmorPre: 0.2
+      ToArmor: 0.2
+      ArmorEffectiveness: 0.5
+      ToTile: 1.0
+      ToItem: 1.0
+      FixRadius: 1  # 1 for hand grenade version
+    powerForAnimation: 16  # 5 / 5 = 1
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+
+  - type: STR_ELDAR_FUSION_GRENADE #melta grenade      #4008
+    refNode: *ELDAR_GRENADE_TEMPLATE
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+      - STR_FUSION_TECH_RESEARCH
+      - STR_MIDTIER_PREREQ
+    costBuy: 20000
+    costSell: 15000
+    bigSprite: 4920
+    floorSprite: 4920
+    handSprite: 1842
+    listOrder: 16315
+    weight: 2
+    ### Throwing Stats
+    ### Damage Stats
+    power: 110
+    damageType: 11
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 1.0  # it's a melta grenade; it will melt armor
+      ToArmor: 0.0  # melts armor on the way in
+      ToTile: 1.0
+      ToItem: 1.0
+      ToHealth: 0.7
+      ToWound: 0.05
+      RadiusReduction: 15 # -5 than melta
+      RandomWound: false
+      FireThreshold: 0
+      FixRadius: 2 # -2
+
+  - type: STR_ELDAR_HAYWIRE_GRENADE #STR_TAU_EMP_GRENADE
+    refNode: *ELDAR_GRENADE_TEMPLATE
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_MIDTIER_PREREQ
+    costBuy: 4000
+    costSell: 2000
+    bigSprite: 4921
+    floorSprite: 4921
+    handSprite: 1850
+    bulletSprite: {mod: 40k, index: 21}
+    explosionHitSound: {mod: 40k, index: 803}
+    hitAnimation: 2070
+    weight: 2
+    ### Damage Stats
+    power: 150
+    damageType: 5 #EMP
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 0.1
+      ToTime: 0.2
+      ToStun: 0.2
+      ToEnergy: 0.2
+      ToMorale: 0.2
+      ToTile: 0.0
+      ToItem: 0.0
+      ToArmor: 0.0
+      ToHealth: 0.1
+      ToWound: 0.0
+      FixRadius: 5 # -2 Eldar
+      RandomWound: false
+      IgnoreOverKill: true # it's an EMP; we don't disintegrate
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    tags:
+      DAMAGE_BONUS_PERCENT_MECHANICAL: 1000
+      DAMAGE_RESIST_PENETRATION_PERCENT: 99
+      ITEM_ENERGY_SHIELD_REDUCTION_PERCENT: 100 #annihilates shields
+
+  - delete: STR_ELDAR_GRENADE
+  - type: STR_ELDAR_GRENADE  # Eldar Plasma Granade          16320
+    refNode: *ELDAR_GRENADE_TEMPLATE
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_MIDTIER_PREREQ
+    costBuy: 20000
+    costSell: 5000
+    bigSprite: 4922
+    floorSprite: 4922
+    handSprite: 1858
+    explosionHitSound: {mod: 40k, index: 690}
+    hitAnimation: {mod: 40k, index: 112} #XPLASMA
+    weight: 2
+    damageType: 5
+    power: 90
+    damageAlter: # DA PLASMA
+      RandomType: 6
+      ToArmorPre: 0.2  # melts some armor on the way in
+      ArmorEffectiveness: 0.75  # *** PLASMA rebalance
+      FireThreshold: 70  # can ignite at high damage
+      FixRadius: 3 #-2 Eldar
+    listOrder: 16320
+
+  - type: STR_ELDAR_FUSION_CHARGE  # eldar planted melta bomb. Used for spawning the actual bomb
+    refNode: *ELDAR_GRENADE_TEMPLATE
+    requires:
+      - STR_ELDAR_ONLY # eldar weapon training
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+      - STR_FUSION_TECH_RESEARCH
+    weight: 4
+    size: 0.1
+    costBuy: 50000
+    costSell: 15000
+    explosionHitSound: 1878 # deploy sound
+    bigSprite: 4923
+    floorSprite: 4923
+    handSprite: 1866
+    invWidth: 2
+    invHeight: 2
+    listOrder: 16310
+    # Throwing stats
+    throwRange: 1 # Placed on ground not thrown
+    costThrow:
+      time: 55 # -5
+      energy: 5 # Doesnt take a lot of energy to set up
+    costUnprime:
+      time: 0
+    # Damage stats
+    power: 0 # Used for spawning only #180 # +40 needs testing
+    damageType: 11
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 1.0  # it's a melta grenade; it will melt armor
+      ToTile: 1.0
+      ToItem: 1.0
+      ToArmor: 0.0
+      ToHealth: 0.7
+      ToWound: 0.05
+      RadiusReduction: 15 # melta explosions decay at twice the normal rate; coheres somewhat better than Imperium melta
+      RandomWound: false
+      FireThreshold: 0
+      FixRadius: 0 # Very big blast
+    spawnUnit: STR_ELDAR_FUSION_CHARGE_DEPLOYED
+    spawnUnitFaction: -1 # Same faction as user, (0 for player)
+
   - type: STR_ELDAR_WIREWEAVE_NET
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
@@ -1500,63 +1725,13 @@ items:
       FixRadius: 3
     noLOSAccuracyPenalty: 75  # indirect fire weapon
     spawnUnit: STR_ELDAR_WIREWEAVE_NET_DEPLOYED
-    spawnUnitFaction: 0
+    spawnUnitFaction: -1 # Same faction as user, (0 for player)
     listOrder: 16320
     tags:
       RemovesFlight: 1
 
-  - delete: STR_ELDAR_GRENADE
-  - type: STR_ELDAR_GRENADE  # Eldar Plasma Granade          16320
-    requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-    requiresBuy:
-      - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_MIDTIER_PREREQ
-    requiresBuyBaseFunc: []
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ELDAR]
-    weight: 2
-    primeSound: 2426
-    throwRange: 18
-    fuseType: -2
-    costThrow:
-      time: 55
-      energy: 5
-    costPrime:
-      time: 5
-    costUnprime:
-      time: 5
-    unprimeActionName: STR_UNPRIME_GRENADE
-    flatThrow:
-      time: false
-      energy: true
-    flatPrime:
-      time: false
-      energy: true
-    damageType: 5
-    power: 90
-    damageAlter: # DA PLASMA
-      RandomType: 6
-      ToArmorPre: 0.2  # melts some armor on the way in
-      ArmorEffectiveness: 0.75  # *** PLASMA rebalance
-      FireThreshold: 70  # can ignite at high damage
-      FixRadius: 5
-    noLOSAccuracyPenalty: 75  # indirect fire weapon
-    size: 0.1
-    costBuy: 20000
-    costSell: 5000
-    bigSprite: {mod: 40k, index: 397}
-    floorSprite: {mod: 40k, index: 252}
-    handSprite: {mod: 40k, index: 888}
-    battleType: 4
-    invWidth: 1
-    invHeight: 2
-    blastRadius: 5
-    explosionHitSound: {mod: 40k, index: 690}
-    hitAnimation: {mod: 40k, index: 112} #XPLASMA
-    listOrder: 16320
-
   - delete: STR_ELDAR_MGRENADE
-  - type: STR_ELDAR_MGRENADE  # eldar melta grenade         16310
+  - type: STR_ELDAR_MGRENADE  # eldar melta BOMB Keep for alliance and AI      16310
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
@@ -2229,6 +2404,20 @@ items:
     listOrder: 16499
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
+    size: 0.2
+    costBuy: 50000
+    costSell: 15000
+    weight: 10
+    bigSprite: 4880
+    floorSprite: 4880
+    handSprite: 1530
+    meleeAnimation: {mod: 40k, index: 4}
+    meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
+    meleeHitSound: {mod: 40k, index: 754} #744 Powerswrod hit
+    invWidth: 2
+    invHeight: 3
+    ## Weapon Stats
+    ## Damage Stats
     damageType: 5
     damageAlter:     # DA POWER
       ArmorEffectiveness: 0.7
@@ -2241,32 +2430,22 @@ items:
       time: 12
       energy: 2  # light melee weapon; light 1 energy, medium 2, heavy 4, very heavy 8
     flatMelee: true
+    # Aspect Bonus
+    meleeMultiplier:
+      melee: 0.7
+      strength: 0.3
     power: 80
     damageBonus:
       strength: 0.1
       melee: 0.4
-    meleeMultiplier:
-      melee: 0.7
-      reactions: 0.3
     accuracyMelee: 100
+
+    tuMelee: 10
+    flatRate: true
+    attraction: 8
     tags:
       ITEM_STRENGTH_REQUIREMENT: 30
       ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
-    size: 0.2
-    costBuy: 50000
-    costSell: 15000
-    weight: 10
-    bigSprite: 4880
-    floorSprite: 4880
-    handSprite: 1530
-    meleeAnimation: {mod: 40k, index: 4}
-    meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
-    meleeHitSound: {mod: 40k, index: 754} #744 Powerswrod hit
-    tuMelee: 10
-    invWidth: 2
-    invHeight: 3
-    flatRate: true
-    attraction: 8
 
   - type: STR_SCORPION_CHAINSWORD  # Tier2 Armor shredding strength based melee
     requires:
@@ -2694,6 +2873,66 @@ items:
       ITEM_CORONA_AMMO_TURN_COOLDOWN: 2 # use once per 3 turns
       ITEM_DOESNT_HURT_USER: 1
 
+  - type: STR_HAWK_GRENADE_PACK # Functions as a short ranged explosive launcher
+    costBuy: 0 # Cannot be bought
+    recover: false
+    fixedWeapon: true
+    fixedWeaponShow: true
+    twoHanded: false
+    defaultInventorySlot: STR_BELT
+    defaultInvSlotX: 2
+    invWidth: 2
+    invHeight: 2
+    bigSprite: 4929 #does not show technically
+    bulletSprite: {mod: 40k, index: 2}
+    fireSound: [1908, 1909, 1910]
+    hitAnimation: 2220 # No ANIMATION 150=Teleport hit original={mod: 40k, index: 26}
+    battleType: 1
+    accuracySnap: 40
+    tuLoad: 33 # Slow to load, fast to fire
+    tuSnap: 5 # Fast release, very little aiming needed
+    snapRange: 0
+    maxRange: 2 # Drops grenades vertically
+    confSnap:
+      name: STR_SKILL_HAWK_GRENADE_DROP
+    experienceTrainingMode: 7 # train throwing
+    arcingShot: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    compatibleAmmo:
+      - STR_HAWK_SUNBURST_GRENADES
+      - STR_HAWK_STARSHOT_GRENADES
+      - STR_HAWK_HAYWIRE_GRENADES
+      - STR_HAWK_PLASMA_GRENADES
+      - STR_HAWK_FUSION_GRENADES
+    scripts:
+      selectItemSprite:
+        var ptr BattleItem ammoItem;
+        var int ammoMax;
+        var int ammoCurrent;
+        var ptr RuleItem ammoRuleset;
+        var int skipBigobs;
+        var int ammoDiff;
+
+        item.getAmmoItem ammoItem;
+        ammoItem.getRuleItem ammoRuleset;
+        ammoRuleset.getTag skipBigobs Tag.ITEM_AMMO_SKIP_BIGOBS;
+
+        if and gt skipBigobs 0 eq blit_part blit_item_big;
+          add sprite_index skipBigobs;
+        end;
+
+        item.getAmmoItem ammoItem;
+        ammoItem.getAmmoQuantity ammoCurrent;
+        ammoItem.getAmmoQuantityMax ammoMax;
+
+        set ammoDiff ammoMax;
+        sub ammoDiff ammoCurrent;
+        if gt ammoDiff 0;
+          sub sprite_index ammoDiff;
+        end;
+
+        return sprite_index;
+
   - type: STR_DEATHWEAVERS_SPECIALWEAPON
     costBuy: 0 # Cannot be bought
     recover: false
@@ -2713,8 +2952,8 @@ items:
     clipSize: -1
     accuracyAuto: 40
     tuAuto: 32
-    autoRange: 8
-    maxRange: 8 # 6" Range
+    autoRange: 7
+    maxRange: 7 # 6" Range
     dropoff: 5
     flatRate: true
     confAuto:
@@ -2736,9 +2975,9 @@ items:
       ToHealth: 1.0
       ToMorale: 0.5 #
       ToTime: 0.3  # Tangled in Wire
-      ToArmorPre: 0.3 # -1 AP Wire cloud grates armor
+      ToArmorPre: 0.2 # -1 AP Wire cloud grates armor
       ToItem: 0.5 # Indiscriminate targeting
-      FixRadius: 2 # Monomolecular Cloud
+      FixRadius: 1 # Monomolecular Cloud
 
   - type: STR_POWERBLADEARRAY_SPECIALWEAPON
     refNode: *POWERBLADE_TEMPLATE
@@ -2857,6 +3096,49 @@ items:
       INTIMIDATION_MORALE_DAMAGE_MULTIPLIER: 40
       ITEM_DOESNT_HURT_FRIENDS: 1
 
+  - type: STR_ELDAR_FUSION_CHARGE_DETONATOR #
+    bigSprite: 4975
+    invWidth: 2
+    invHeight: 2
+    recover: false
+    hiddenOnMinimap: true
+    fixedWeapon: true
+   #specialUseEmptyHand: true
+    vaporColorSurface: {mod: 40k, index: 0}
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    weight: 0
+    hitSound: {mod: 40k, index: 12}
+    hitAnimation: {mod: 40k, index: 88}
+    #specialIconSprite: 254
+    # Weapon Stats
+    explodeInventory: 2
+    defaultInventorySlot: STR_RIGHT_HAND
+    fuseType: 0
+    battleType: 4
+    tuPrime: 100
+    tuThrow: 999 # explodes in inventory
+    throwRange: 0
+    maxRange: 0
+    # Damage stats
+    power: 180 # +40 needs testing
+    damageType: 11
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 1.0  # it's a melta grenade; it will melt armor
+      ToTile: 1.0
+      ToItem: 1.0
+      ToArmor: 0.0
+      ToHealth: 0.7
+      ToWound: 0.05
+      RadiusReduction: 15 # melta explosions decay at twice the normal rate; coheres somewhat better than Imperium melta
+      RandomWound: false
+      FireThreshold: 0
+      FixRadius: 14 # Very big blast
+    tags:
+      ITEM_IS_BOMB: 1
+      ITEM_IS_BOMB_ON_DEATH: 1
+      ITEM_IS_KAMIKAZI_BOMB: 1
       # DEPRECATED
 
   - delete: STR_ELDAR_LAUNCHER # OLD REAPER LAUNCHER, Used for enemies keep for now
@@ -2902,3 +3184,125 @@ items:
     recover: false
     costBuy: 0
     costSell: 0
+
+
+    ### temporary imperial weaponry removal
+  - type: STR_LASGUN
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_LASGUN_CLIP
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_LASER_RIFLEG
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_LASER_PISTOLG
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_LASPISTOL_CLIP
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_FLAMETHROWER
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_FLAMETHROWER_CLIP
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_SHOTGUN
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_SHOTGUN_SHELLS
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_STUN_SHELLS
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_STUN_GAS_SHELLS
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_AUTOGUN_CLIP
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_HC_AP_AMMO
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_HC_HE_AMMO
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_HC_I_AMMO
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_AC_AP_AMMO
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_AC_HE_AMMO
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_AC_I_AMMO
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_SMALL_ROCKET
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_LARGE_ROCKET
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_INCENDIARY_ROCKET
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_HEAVY_ROCKET_HE
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+
+  - type: STR_CHAINSWORD
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_POWERKNUCKLE
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_STUN_ROD
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_KNIF
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+
+  - type: STR_GRENADE
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_KRAK_GRENADE
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_PROXIMITY_GRENADE
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_ELECTRO_FLARE
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+
+  - type: STR_STINGRAY_LAUNCHER
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_STINGRAY_MISSILES
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_AVALANCHE_LAUNCHER
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_AVALANCHE_MISSILES
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_CANNON
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+  - type: STR_CANNON_ROUNDS_X50
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+
+  - type: STR_SERVITOR
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY
+
+  - type: STR_TANK_ROCKET_LAUNCHER
+    requiresBuy: !add
+      - STR_NOT_ELDAR_STRATEGY

@@ -1053,6 +1053,46 @@ items:
     bulletSprite: {mod: 40k, index: 17}
     recover: false
 
+  - type: STR_LESSER_ROTFLY_SPAWNER
+    categories: [STR_CAT_GRENADES]
+    invHeight: 0
+    invWidth: 0
+    hitAnimation: 2130 #needs unique
+    power: 0
+    damageType: 2
+    damageAlter:
+      RandomType: 1
+      IgnoreOverKill: false
+      FireBlastCalc: false
+      FixRadius: 0
+      ToHealth: 0.0
+      ToTime: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      ToMana: 0.0
+      ToEnergy: 0.0
+      ToMorale: 0.0
+      ArmorEffectiveness: 0.0
+      ToItem: 0.0
+      ToTile: 0.0
+    battleType: 4  # grenade
+    recover: false
+    tuThrow: 999  # only to be thrown via scripts
+    tuPrime: 999  # only to be thrown via scripts
+    throwRange: 1  # not meant to be thrown
+    armor: 999
+    fixedWeapon: false  # has to be false so kamikazi tag and scripts work properly
+    explodeInventory: 2
+    hiddenOnMinimap: false
+    powerForAnimation: 1
+    spawnUnit: STR_LESSER_ROTFLY
+    spawnUnitFaction: 1
+    spawnUnitChance: 37
+    tags:
+      ITEM_IS_BOMB: 1
+      ITEM_IS_BOMB_ON_DEATH: 1  # we blow this bomb up on death
+      ITEM_IS_KAMIKAZI_BOMB: 1
+
   - type: PREDSIDE_WEAPON  # Chaos Dread BOLTER
     weight: 60
     power: 60
@@ -1082,6 +1122,7 @@ items:
     bulletSpeed: 50
     hitAnimation: {mod: 40k, index: 26}
     recover: false
+
   - type: STR_OBLITERATOR_WEAPON  # OBLITERATOR MELTA
     weight: 20
     power: 110
@@ -1515,7 +1556,7 @@ items:
     invWidth: 1  # smaller
     invHeight: 1
     explosionHitSound: {mod: 40k, index: 832}  # blight rocket SFX
-    hitAnimation: 1030  # was 1010 but doesn't exist
+    hitAnimation: 1030
     clipSize: 3
     blastRadius: 3
     listOrder: 10778 # Moved to 40mm Grenade section, in case other weapons use this ammo in the future.
@@ -1653,6 +1694,127 @@ items:
     listOrder: 10341
     tags:
       INFECTION_DAMAGE_PERCENT: 10  # Inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+
+  - type: PREDSIDE_WEAPON  # Chaos Dread BOLTER
+    weight: 60
+    power: 60
+    damageType: 1
+    accuracyAuto: 50
+    accuracySnap: 75
+    accuracyAimed: 110
+    tuAuto: 35
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    damageAlter:  # DA BOLTER
+      ToArmorPre: 0.1
+      ArmorEffectiveness: 0.9
+      ToArmor: 0.15
+      ToHealth: 1.1
+      ToStun: 0.5
+      ToEnergy: 0.3
+      ToWound: 0.2
+      RandomWound: false
+    explosionSpeed: 5
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 50
+    hitAnimation: {mod: 40k, index: 26}
+    recover: false
+
+  - type: STR_TWIN_LINK_HEAVY_BOLTER_NURGLE_DREAD
+    categories: [STR_CAT_BOLTER, STR_CAT_NURGLE]
+    refNode: *CHAOS_ASTARTES_BOLTERS
+    size: 1
+    dropoff: 3  # superior stabilization due to Dreadnought mount
+    costSell: 2000  # rotted and disgusting; no one wants this
+    weight: 100
+    bigSprite: 2601 #change
+    floorSprite: 2600
+    handSprite: 2510
+    bulletSprite: {mod: 40k, index: 6}
+    fireSound: 2138
+    hitSound: {mod: 40k, index: 708}
+    explosionHitSound: {mod: 40k, index: 832}
+    hitAnimation: 1270
+    hitAnimFrames: 8
+    vaporColorSurface: 2  # toxic green plague tracer
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 25
+    power: 70
+    damageType: 8
+    damageAlter:  # DA BLIGHT
+      ToArmorPre: 0.4
+      ToArmor: 0.1
+      ToHealth: 0.6  # much less health damage; instead debilitates, infects and corrodes armor
+      ToTime: 0.2
+      ToMorale: 1.0  # morale loss from virulent payload
+      ToTile: 0.6  # corrosive
+      ToStun: 0.6  # increased stun damage from virulent payload
+      ToEnergy: 0.6  # increased energy damage from virulent payload
+      ToWound: 0.05  # debilitates and infects instead of wounds
+      RandomWound: false
+      FixRadius: 1
+    powerForAnimation: 2
+    explosionSpeed: 2
+    clipSize: -1
+    accuracyAimed: 0
+    accuracySnap: 85
+    accuracyAuto: 70
+    tuAimed: 0
+    tuSnap: 33
+    tuAuto: 40
+    kneelBonus: 133
+    snapRange: 18
+    autoRange: 13
+    battleType: 1
+    confSnap:
+      name: STR_BURST_SNAP_SHOT
+      arcing: false
+      shots: 6 # twin-linked
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 2
+    invHeight: 3
+    armor: 100
+    autoShots: 12 # twin-linked
+    bulletSpeed: 40
+    recover: false
+    listOrder: 10529
+    tags:
+      INFECTION_DAMAGE_PERCENT: 15  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+
+  - type: STR_NURGLE_DREAD_POWERCLAW
+    categories: [STR_CAT_MELEE, STR_CAT_NURGLE]
+    size: 1
+    weight: 77
+    bigSprite: {mod: 40k, index: 812}
+    meleeSound: {mod: 40k, index: 710} # 710 powerfist miss
+    meleeHitSound: {mod: 40k, index: 772} # 772 powerfist hit
+    meleeAnimation: 12
+    clipSize: -1
+    strengthApplied: false
+    power: 117
+    damageType: 7
+    accuracyMelee: 77
+    damageBonus:
+      strength: 0.7
+      melee: 0.1
+    tuMelee: 27
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+    tags:
+      INFECTION_DAMAGE_PERCENT: 77  # inflicts % of damage dealt as infection damage
+      YTAG_DAMAGE_RETURNED_AS_HP: 7  # regain 7% of damage dealt in HP
       INFECTION_TYPE: 1  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
 
   - type: STR_HEAVY_BOLTER_CHAOSNURGLE     # CHAOS NURGLE HBOLTER ROSEMOD
@@ -2553,7 +2715,7 @@ items:
     invHeight: 3
     armor: 200
     sprayWaypoints: 2
-    bulletSpeed: 100
+    bulletSpeed: 80
     attraction: 8
 
   - type: STR_REAPER_AUTOCANNON_DREADNOUGHT                                                             # 13210
@@ -4853,11 +5015,11 @@ items:
     floorSprite: 956
     handSprite: 928
     hitSound: {mod: 40k, index: 832}  # blight rocket SFX change to SCHUCK
-    explosionSpeed: 5
-    hitAnimation: {mod: 40k, index: 120}  # Green EX
+    explosionSpeed: 2
+    hitAnimation: 1030
     vaporColorSurface: 2  # toxic green plague tracer
-    vaporDensitySurface: 6
-    vaporProbabilitySurface: 50
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 20
     power: 30
     damageType: 8
     damageAlter:
@@ -4890,11 +5052,11 @@ items:
     floorSprite: 958
     handSprite: 928
     hitSound: {mod: 40k, index: 832}  # blight rocket SFX change to SCHUCK
-    explosionSpeed: 5
-    hitAnimation: {mod: 40k, index: 120}  # Green EX
+    explosionSpeed: 2
+    hitAnimation: 1030
     vaporColorSurface: 2  # toxic green plague tracer
-    vaporDensitySurface: 6
-    vaporProbabilitySurface: 50
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 25
     power: 30
     damageType: 8
     damageAlter:
@@ -4975,7 +5137,7 @@ items:
     type: STR_KHORNE_DREADNOUGHT_CHAIN_FIST_L  # single Khorne Dreadnought Chain fist, used for mixed weapon loadouts
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT, STR_CAT_KHORNE]
     refNode: *CHAOS_WEAPON
-    size: 0.2
+    size: 1
     weight: 30
     bigSprite: 2972
     meleeSound: [{mod: 40k, index: 808}, 2136]  # 753 Powersword miss

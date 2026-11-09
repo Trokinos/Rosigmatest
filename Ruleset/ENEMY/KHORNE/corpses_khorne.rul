@@ -131,7 +131,7 @@ items:
     invWidth: 0
     invHeight: 0
     battleType: 11
-    recover: false
+    recover: true
   - type: STR_KHORNE_DREADNOUGHT_CORPSE_2
     weight: 200
     armor: 100

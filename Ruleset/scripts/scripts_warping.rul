@@ -1,0 +1,446 @@
+# BattleUnit.MoveCost.setBaseTimePercent
+
+# Hooks
+# reactionUnitAction  # not necessary due to visibilityUnit?
+# selectUnitSprite
+# selectMoveSoundUnit
+# healUnit  # start teleport
+# newTurnUnit  # stop teleport
+# visibilityUnit  # hide unit while teleporting
+
+extended:
+  tags:
+    RuleArmor:
+      ARMOR_IS_WARPER: int
+      ARMOR_WARPING_DURATION: int
+      ARMOR_WARPING_DETECTION_RANGE: int
+    RuleSkill:
+      SKILL_WARPING_ID: int
+      SKILL_WARPING_TU_COST_PERCENTAGE: int
+      SKILL_WARPING_COOLDOWN: int
+      SKILL_WARPER_ENERGY: int
+    BattleUnit:
+      UNIT_IS_WARPING: int  # is stealth mode currently active? If so, for how many turns?
+      UNIT_WARPING_THIS_TURN: int # remembers if the unit was ever in the warp this turn, only works correctly for warping of 1 turn duration
+      UNIT_LAST_ACTIVATED_WARPING_TURN: int # Used for cooldown
+      UNIT_ENERGY_BEFORE_WARPING: int
+
+  scripts:
+
+    newTurnUnit:
+      - new: ROSIGMA_nTU_warping_decrement_warp
+        offset: 2
+        code: |
+          var int temp;
+          var int temp2;
+          var ptr RuleArmor myRuleArmor;
+
+          battle_game.getTurn temp;
+          if le temp 1; # we don't care about Turn 1 and prior; abort.
+            # debug_log "newTurnUnit | ROSIGMA_nTU_infiltration_decrement_stealth | offset: 2 | Not past turn 0. Aborting.";
+            return;
+          end;
+
+          battle_game.getTurnSide temp; # trigger only on the same turn as the unit's faction
+          unit.getFaction temp2;
+          if neq temp temp2;
+            # debug_log "newTurnUnit | ROSIGMA_nTU_infiltration_decrement_stealth | offset: 2 | Not the same turn as the unit. Aborting.";
+            return;
+          end;
+
+          unit.getRuleArmor myRuleArmor; # Cancel script if unit does not have warper armor
+          myRuleArmor.getTag temp Tag.ARMOR_IS_WARPER;
+          if lt temp 1;
+            return;
+          end;
+
+          unit.getHealth temp; # we don't care about dead units
+          if lt temp 1;
+            return;
+          end;
+
+          unit.getTag temp Tag.UNIT_IS_WARPING; # get the unit's current stealth counter
+          # Unit is not warping exit script
+          if le temp 0;
+            unit.getTag temp2 Tag.UNIT_WARPING_THIS_TURN; # decrease if knocked out of warp previous turn
+            if ge temp2 1;
+              sub temp2 1;
+              unit.setTag Tag.UNIT_WARPING_THIS_TURN temp2;
+              return;
+            end;
+          return;
+          end;
+            # debug_log "newTurnUnit | ROSIGMA_nTU_infiltration_decrement_stealth | offset: 2 | Target lacks UNIT_IS_WARPING. Aborting.";
+          sub temp 1; # decrement the counter by 1
+          unit.setTag Tag.UNIT_IS_WARPING temp;
+
+          if lt temp 1;
+            if eq side FACTION_PLAYER;
+              battle_game.flashMessage "STR_SCRIPT_WARPING_LEAVING_WARP";
+            end;
+            unit.getTag temp2 Tag.UNIT_WARPING_THIS_TURN; # decrease if Unit warp naturally ending
+            if ge temp2 1;
+              sub temp2 1;
+              unit.setTag Tag.UNIT_WARPING_THIS_TURN temp2;
+            end;
+            unit.MoveCost.setBaseTimePercent 100;
+            unit.MoveCost.setBaseClimbEnergyPercent 100;
+            unit.MoveCost.setBaseNormalEnergyPercent 100;
+            unit.MoveCost.setBaseFlyEnergyPercent 100;
+            unit.getOriginalMovementType temp;
+            unit.setMovementType temp;
+            unit.getTag temp Tag.UNIT_ENERGY_BEFORE_WARPING;
+            unit.setEnergy temp;
+          end;
+
+          # if eq side FACTION_PLAYER;
+          #  battle_game.flashMessage "STR_SCRIPT_WARPING_TIME_REMAINING" temp;
+          # end;
+
+          return;
+
+    skillUseUnit:
+      - new: ROSIGMA_sUU_warping
+        offset: 1
+        code: |
+          var int temp;
+          var int temp2;
+          var int warpSkill;
+          var ptr RuleArmor myRuleArmor;
+          var int warpActive;
+          var int warpTuCost;
+          var int maxTu;
+          var int lastActivatedWarpingTurn;
+          var int currentTurn;
+
+          # Check to see if we're using the Warping skill
+          skill.getTag warpSkill Tag.SKILL_WARPING_ID;
+          if le warpSkill 0;
+          #  debug_log "skillUseUnit | ROSIGMA_sUU_warping | offset: 1 | Not using SKILL_WARPING_ID. Aborting.";
+            return;
+          end;
+
+          actor.getTag warpActive Tag.UNIT_IS_WARPING; # check if stealth is active
+            if gt warpActive 0;
+              battle_game.flashMessage "STR_SCRIPT_WARPING_TIME_REMAINING" warpActive;
+              return;
+            end;
+
+          # Cooldown Checks
+          actor.getTag lastActivatedWarpingTurn Tag.UNIT_LAST_ACTIVATED_WARPING_TURN;
+          battle_game.getTurn currentTurn;
+          # UNIT_LAST_ACTIVATED_TELEPORTER_TURN + ITEM_TELEPORTER_COOLDOWN <= currentTurn
+          # debug_log "lastActivatedTeleporterTurn" lastActivatedTeleporterTurn;
+          if gt lastActivatedWarpingTurn 0; # first use
+            skill.getTag temp Tag.SKILL_WARPING_COOLDOWN;
+            add temp lastActivatedWarpingTurn;
+          else;
+            set temp 0;
+          end;
+
+          if gt currentTurn temp;
+                        # Pay tu costs
+            actor.getTimeUnitsMax maxTu;
+            skill.getTag warpTuCost Tag.SKILL_WARPING_TU_COST_PERCENTAGE;
+            muldiv maxTu warpTuCost 100;
+            mul maxTu -1;
+            actor.addTimeUnits maxTu; # tu cost subtracted here
+
+            # Put unit in warp with duration
+            actor.getRuleArmor myRuleArmor;
+            myRuleArmor.getTag temp Tag.ARMOR_WARPING_DURATION;
+            actor.setTag Tag.UNIT_IS_WARPING temp;
+
+            # set Movement cost reduction
+            actor.setTag Tag.UNIT_WARPING_THIS_TURN 1;
+            actor.setTag Tag.UNIT_LAST_ACTIVATED_WARPING_TURN currentTurn;
+            actor.getEnergy temp;
+            actor.setTag Tag.UNIT_ENERGY_BEFORE_WARPING temp;
+            skill.getTag temp Tag.SKILL_WARPER_ENERGY;
+            actor.setEnergy temp;
+            actor.MoveCost.setBaseTimePercent 0;
+            actor.MoveCost.setBaseClimbEnergyPercent 100; # normal is 0, so this will never do anything, woo
+            actor.MoveCost.setBaseNormalEnergyPercent 50; # normal energy cost is 2 per tile
+            actor.MoveCost.setBaseFlyEnergyPercent 50; # normal energy cost is 2 per tile
+            actor.setMovementType movement_type_fly;
+            battle_game.flashMessage "STR_SCRIPT_ENTERING_WARP";
+          else;
+            # debug_log "currentTurn" currentTurn;
+            # debug_log "temp" temp;
+            sub temp currentTurn;
+            add temp 1;
+            battle_game.flashMessage "STR_SCRIPT_WARPER_COOLDOWN" temp;
+          end;
+
+          return;
+
+    # BLIND AND INVISIBLE
+    visibilityUnit:
+      - new: ROSIGMA_vU_warping_proximity_detection
+        offset: 5  # hide unit
+        code: |
+          var int temp;
+          var ptr RuleArmor myRuleArmor;
+
+          target_unit.getTag temp Tag.UNIT_IS_WARPING;
+          if lt temp 1;
+            return current_visibility visibility_mode;
+          end;
+
+          # debug_log "ROSIGMA_vU_infiltration, offset 5: observer_unit:" observer_unit;
+          # debug_log "ROSIGMA_vU_infiltration, offset 5: distance:" distance;
+          # debug_log "ROSIGMA_vU_infiltration, offset 5: making unit invisible per ARMOR_WARPING_IS_ACTIVE tag, temp:" temp;
+          target_unit.getRuleArmor myRuleArmor;
+          myRuleArmor.getTag temp Tag.ARMOR_WARPING_DETECTION_RANGE;
+          if lt temp 1;
+            return 0 visibility_mode;
+          end;
+
+          mul temp 16;
+
+          if le distance temp; #enemies can see camo cloaks at range 5 and less; each tile = ~15.75 units of distance
+          #  debug_log "ROSIGMA_vU_warping_proximity_detection, offset 5: Warp unit spotted. distance:" distance;
+            return current_visibility visibility_mode;
+          end;
+
+          return 0 visibility_mode;
+
+      - new: ROSIGMA_vU_blind_warper  # ROSIGMA_vU_infiltration
+        offset: 4  # hide enemy units
+        code: |
+          var int temp;
+
+          observer_unit.getTag temp Tag.UNIT_IS_WARPING; # check if observer is warping currently
+
+          if le temp 0; # observer not warping exit script
+            # debug_log "ROSIGMA_vU_blindwarper, offset 5: making unit invisible per ARMOR_WARPING_IS_ACTIVE tag, temp:" temp;
+            return current_visibility visibility_mode;
+          end;
+
+          return 0 visibility_mode; # blind the observer
+
+      ## unecessary due to visibilityUnit
+#    reactionUnitAction:
+#      - new: ROSIGMA_rUA_warping_reaction
+#        offset: 10  # Turn off reactions while warping
+#        #code: |
+#          var int temp;
+#          var ptr RuleArmor myRuleArmor;
+#          var int reactRange;
+
+#          action_unit.getTag temp Tag.UNIT_IS_WARPING; # Disable script for non warping
+#          if le temp 0;
+            # debug_log "reactionUnitAction | ROSIGMA_rUA_infiltration_no_reactions | offset: 10 | Acting unit has UNIT_STEALTH_IS_ACTIVE. Abort reaction." temp;
+#            return reaction_chance;
+#          end;
+          ## Now check if Warping actor is close enough to be reacted to and throw them out of warp
+#          action_unit.getRuleArmor myRuleArmor;
+#          myRuleArmor.getTag reactRange Tag.ARMOR_WARPING_DETECTION_RANGE;
+#          mul reactRange 16; #15.75 / 2 = 8
+#          if le distance reactRange;
+            # debug_log "reactionUnitAction | ROSIGMA_rUA_warping_reaction | offset: 10 | Reacting within half ARMOR_STEALTH_DETECTION_RANGE." reactRange;
+#            return reaction_chance; # enemy reacts as normal
+#          end;
+          # debug_log "reactionUnitAction | ROSIGMA_rUA_infiltration_no_reactions | offset: 10 | Reacting unit has UNIT_STEALTH_IS_ACTIVE. Abort reaction." temp;
+#          return 0; # Doesn't matter as Warper is invisible.
+
+    hitUnit:
+      - new: ROSIGMA_hU_warping_deactivate_on_hit
+        offset: 2
+        code: |
+          var int temp;
+
+          unit.getTag temp Tag.UNIT_IS_WARPING; # Disables script if target is not warping
+          if lt temp 1;
+            return power part side;
+          end;
+
+          # disable warping for unit from non-impact damage
+          if neq damaging_type 10;
+            battle_game.flashMessage "STR_SCRIPT_WARPING_EJECTED_FROM_WARP";
+            unit.setTag Tag.UNIT_IS_WARPING 0;
+            # debug_log "ROSIGMA_hU_infiltration_stealth_deactivate_on_hit, offset 1: disabling target invisibility due to damage. UNIT_IS_WARPING";
+            # return original movements to warper
+            unit.MoveCost.setBaseTimePercent 100;
+            unit.MoveCost.setBaseClimbEnergyPercent 100;
+            unit.MoveCost.setBaseNormalEnergyPercent 100;
+            unit.MoveCost.setBaseFlyEnergyPercent 100;
+            unit.getOriginalMovementType temp;
+            unit.setMovementType temp;
+          # Set Warper TU to zero (NO REACTIONS)
+            unit.setTimeUnits 0;
+            unit.setEnergy 0;
+            set power 0; # Not hurt but knocked out of warp
+            return power part side;
+          end;
+          return power part side;
+
+      - new: ROSIGMA_hU_warping_deactivate_on_attack
+        offset: 2  # reveal unit
+        code: |
+          var int temp;
+
+          attacker.getTag temp Tag.UNIT_IS_WARPING; # Disables script if attacker is not warping
+          if lt temp 1;
+            return power part side;
+          end;
+
+          battle_game.flashMessage "STR_SCRIPT_WARPING_EJECTED_FROM_WARP";
+          attacker.getTag temp Tag.UNIT_IS_WARPING;
+          attacker.setTag Tag.UNIT_IS_WARPING 0; # disable warp
+
+          # return original movements to warping attacker
+          attacker.MoveCost.setBaseTimePercent 100;
+          attacker.MoveCost.setBaseClimbEnergyPercent 100;
+          attacker.MoveCost.setBaseNormalEnergyPercent 100;
+          attacker.MoveCost.setBaseFlyEnergyPercent 100;
+          attacker.getOriginalMovementType temp;
+          attacker.setMovementType temp;
+
+          # Set attacker TU to zero
+          attacker.setTimeUnits 0;
+          attacker.setEnergy 0;
+          # debug_log "ROSIGMA_hU_infiltration_stealth_deactivate_on_attack, offset 1: disabling attacker invisibility due to damage. UNIT_IS_WARPING" temp;
+          set power 0;
+          return power part side;
+
+      - new: ROSIGMA_hU_warping_no_power_on_hits_this_turn # If the unit warped this turn, all attacks deal 0 power (for multishot weapons)
+        offset: 3  # we want this scripts for after warper is revealed
+        code: |
+          var int temp;
+
+          # cancel script if attacker was never in the warp this turn
+          attacker.getTag temp Tag.UNIT_WARPING_THIS_TURN; # Disables script if attacker is not warping
+          if lt temp 1;
+            # debug_log "UNIT_WARPING_THIS_TURN NOT FOUND";
+            return power part side;
+          end;
+          set power 0;
+          set temp power;
+          # debug_log "how much power" power;
+          return power part side;
+
+    healUnit:
+      - new: ROSIGMA_healU_stop_warper_healing # Stop warping units from healing others
+        offset: 21 # runs after other healUnit scripts cancel effects, then exits warp.
+        code: |
+          var int temp;
+          var int lastActivatedTeleporterTurn;
+          var int currentTurn;
+
+          actor.getTag temp Tag.UNIT_IS_WARPING; # Disables script if actor is not warping
+          if lt temp 1;
+            return;
+          end;
+
+          # Eject Warping Unit
+
+            battle_game.flashMessage "STR_SCRIPT_WARPING_EJECTED_FROM_WARP";
+            actor.setTag Tag.UNIT_IS_WARPING 0;
+            # debug_log "ROSIGMA_hU_infiltration_stealth_deactivate_on_hit, offset 1: disabling target invisibility due to damage. UNIT_IS_WARPING";
+            # return original movements to warper
+            actor.MoveCost.setBaseTimePercent 100;
+            actor.MoveCost.setBaseClimbEnergyPercent 100;
+            actor.MoveCost.setBaseNormalEnergyPercent 100;
+            actor.MoveCost.setBaseFlyEnergyPercent 100;
+            actor.getOriginalMovementType temp;
+            actor.setMovementType temp;
+          # Set Warper TU to zero (NO REACTIONS)
+            actor.setTimeUnits 0;
+            actor.setEnergy 0;
+            set wound_recovery 0;
+            set health_recovery 0;
+            set energy_recovery 0;
+            set stun_recovery 0;
+            set mana_recovery 0;
+            set morale_recovery 0;
+            set painkiller_recovery 0;
+            return;
+
+      - new: ROSIGMA_healU_stop_warper_being_healed # Stop warping units from healing others
+        offset: 21 # runs after other healUnit scripts cancel effects, then exits warp.
+        code: |
+          var int temp;
+          var int lastActivatedTeleporterTurn;
+          var int currentTurn;
+
+          target.getTag temp Tag.UNIT_IS_WARPING; # Disables script if target is not warping
+          if lt temp 1;
+            return;
+          end;
+
+          # Eject Warping Unit
+
+            battle_game.flashMessage "STR_SCRIPT_WARPING_EJECTED_FROM_WARP";
+            target.setTag Tag.UNIT_IS_WARPING 0;
+            # debug_log "ROSIGMA_hU_infiltration_stealth_deactivate_on_hit, offset 1: disabling target invisibility due to damage. UNIT_IS_WARPING";
+            # return original movements to warper
+            target.MoveCost.setBaseTimePercent 100;
+            target.MoveCost.setBaseClimbEnergyPercent 100;
+            target.MoveCost.setBaseNormalEnergyPercent 100;
+            target.MoveCost.setBaseFlyEnergyPercent 100;
+            target.getOriginalMovementType temp;
+            target.setMovementType temp;
+          # Set Warper TU to zero (NO REACTIONS)
+            target.setTimeUnits 0;
+            target.setEnergy 0;
+            set wound_recovery 0;
+            set health_recovery 0;
+            set energy_recovery 0;
+            set stun_recovery 0;
+            set mana_recovery 0;
+            set morale_recovery 0;
+            set painkiller_recovery 0;
+            return;
+
+      # VISUAL CHANGE
+    recolorUnitSprite:
+      - new: ROSIGMA_rUS_warping_visual_effect
+        offset: 5  # change unit color to grey so player knows target is in infiltrator mode
+        code: |
+          var int temp;
+          var int animFrame;
+          var int newShade;
+
+          unit.getTag temp Tag.UNIT_IS_WARPING;
+
+          if lt temp 1;
+            return new_pixel;
+          end;
+
+          set animFrame anim_frame; #new
+          if gt animFrame 20;
+            set temp animFrame;
+            muldiv temp 1 20;
+            mul temp 20;
+            sub animFrame temp;
+            if lt animFrame 0;
+              add animFrame 20;
+            end;
+          end;
+          if and le animFrame 4 neq old_pixel 0;
+            get_shade newShade new_pixel;
+            add newShade animFrame;
+            add newShade 3;
+            if ge newShade 16;
+              set new_pixel 0;
+              return new_pixel;
+            end;
+            sub newShade 15;
+            mul newShade -1;
+            set_shade new_pixel newShade;
+            set_color new_pixel COLOR_X1_GRAY;
+          else gt animFrame 4;
+            get_shade newShade old_pixel;
+            sub newShade animFrame;
+            sub newShade 3;
+            if le newShade -16;
+              set new_pixel 0;
+              return new_pixel;
+            end;
+            add newShade 15;
+            set_shade new_pixel newShade;
+            set_color new_pixel COLOR_X1_GRAY;
+          end;
+
+          return new_pixel;

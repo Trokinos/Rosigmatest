@@ -81,6 +81,7 @@ armors:
     builtInWeapons:
       - STR_SHOTGUN_MONKEIGH
       - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SHELLS
       - STR_SHOTGUN_SHELLS_AP
       - STR_SHOTGUN_SHELLS_INC
       - STR_GRENADE
@@ -270,8 +271,9 @@ armors:
       firing: 5
     builtInWeapons:
       - STR_RANGER_LONG_RIFLE
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED # one for loading
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED # one for inventory
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED2 # another for inventory
       - STR_ELDAR_WIREWEAVE_NET
 
   - type: STR_ELDAR_RANGER_SNIPER_ARMOR_P
@@ -287,8 +289,9 @@ armors:
       firing: 10
     builtInWeapons:
       - STR_RANGER_LONG_RIFLE_SCOPED
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
-      - STR_RANGER_LONG_RIFLE_MAG_FIXED
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED # one for loading
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED # one for inventory
+      - STR_RANGER_LONG_RIFLE_MAG_FIXED2 # another for inventory
 
 # DEPRECATED. in future version (3.4 onward) please add - delete: name to keep rosigma clean
 
@@ -800,7 +803,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 1359
     drawingRoutine: 0
-    moveSound: 1912
+    #moveSound: 1912 # Unfortunately used for flyingsound too
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 0.9  # AP
@@ -827,7 +830,8 @@ armors:
       melee: 0
     units:
       - STR_ELDAR_HAWK_P
-    #builtInWeapons:
+    builtInWeapons:
+      - STR_HAWK_GRENADE_PACK
     movementType: 1
     moveCost:
       baseFlyPercent: [75, 75]
@@ -926,9 +930,9 @@ armors:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
       UNIT_TYPE_LIVING: 1
-      ARMOR_IS_INFILTRATOR: 1  # 1 turns to infiltrate
-      ARMOR_RESTEALTH_TURN_REQUIREMENT: 3  # 3 turns to re-infiltrate
-      ARMOR_STEALTH_DETECTION_RANGE: 1  # in the warp, only pulled out in special circumstances
+      ARMOR_IS_WARPER: 1
+      ARMOR_WARPING_DURATION: 1
+      ARMOR_WARPING_DETECTION_RANGE: 3  # in the warp, pulled out in touch distance
       DODGE_CHANCE: 33
       ARMOR_MAX_SUCCESSFUL_DODGES: 3
       INTIMIDATION_RESISTANCE: 50
@@ -1558,7 +1562,7 @@ armors:
       F11: ["", "ELDAR_F", "CLOSEDHELMET8", "ACCESSORY3"]
     customArmorPreviewIndex: 1360
     drawingRoutine: 0
-    moveSound: 1912
+    #moveSound: 1912 # Unfortunately used for flyingsound too
     damageModifier:  # ELDAR ARMOR
       - 1.0  # none
       - 0.9  # AP
@@ -1585,7 +1589,8 @@ armors:
       melee: 0
     units:
       - STR_ELDAR_HAWKEX_P
-    #builtInWeapons:
+    builtInWeapons:
+      - STR_HAWK_GRENADE_PACK
     movementType: 1
     moveCost:
       baseFlyPercent: [75, 75]
@@ -1668,9 +1673,9 @@ armors:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
       UNIT_TYPE_LIVING: 1
-      ARMOR_IS_INFILTRATOR: 1  # 1 turns to infiltrate
-      ARMOR_RESTEALTH_TURN_REQUIREMENT: 3  # 3 turns to re-infiltrate
-      ARMOR_STEALTH_DETECTION_RANGE: 1  # in the warp, only pulled out in special circumstances
+      ARMOR_IS_WARPER: 1
+      ARMOR_WARPING_DURATION: 1
+      ARMOR_WARPING_DETECTION_RANGE: 3  # in the warp, only pulled out in special circumstances
       DODGE_CHANCE: 20 #+5
       ARMOR_MAX_SUCCESSFUL_DODGES: 2 #+1
       INTIMIDATION_RESISTANCE: 90
@@ -1743,9 +1748,9 @@ armors:
       UNIT_TYPE_XENO: 1
       UNIT_TYPE_ELDAR: 1
       UNIT_TYPE_LIVING: 1
-      ARMOR_IS_INFILTRATOR: 1  # 1 turns to infiltrate
-      ARMOR_RESTEALTH_TURN_REQUIREMENT: 3  # 3 turns to re-infiltrate
-      ARMOR_STEALTH_DETECTION_RANGE: 1  # in the warp, only pulled out in special circumstances
+      ARMOR_IS_WARPER: 1
+      ARMOR_WARPING_DURATION: 1
+      ARMOR_WARPING_DETECTION_RANGE: 3  # in the warp, only pulled out in special circumstances
       DODGE_CHANCE: 20 #+5
       ARMOR_MAX_SUCCESSFUL_DODGES: 2 #+1
       INTIMIDATION_RESISTANCE: 90
@@ -2498,8 +2503,8 @@ armors:
       UNIT_TYPE_MECHANICAL: 1
 
   - type: STR_ELDAR_WIREWEAVE_NET_DEPLOYED_ARMOR
-    visibilityAtDay: 0
-    visibilityAtDark: 0
+    visibilityAtDay: 1
+    visibilityAtDark: 1
     camouflageAtDay: 1 # Low priority target, ignored by enemies
     camouflageAtDark: 1
     spriteSheet: ELDAR_WIREWEAVENET_DEPLOYED.SPK
@@ -2552,3 +2557,54 @@ armors:
       AURA_RESPECT_HIGH_WATERMARK: 1 # Does the aura respect the high water mark for diminishing returns? i.e. only the highest aura value applies to a unit before being refreshed at the start of that unit's next turn.
       AURA_TILE_RADIUS_XY: 3 # aura's horizontal radius in tiles
       AURA_TILE_RADIUS_Z: 1 # aura's vertical radius in z levels; if 9+ we ignore height
+
+  - type: STR_ELDAR_FUSION_CHARGE_DEPLOYED_ARMOR
+    visibilityAtDay: 1
+    visibilityAtDark: 1
+    camouflageAtDay: 5 # Enemies will notice this at short range
+    camouflageAtDark: 5
+    spriteSheet: ELDAR_FUSIONCHARGE_DEPLOYED.SPK
+    spriteInv: ELDAR_FUSIONCHARGE_DEPLOYED_INVENTORY
+    #allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    corpseBattle:
+      - STR_ELDAR_FUSION_CHARGE_DEPLOYED_CORPSE
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    size: 1
+    damageModifier: #TARGET ARMOR
+      - 1.0 #none
+      - 1.0 #AP
+      - 1.0 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 1.0 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 1.0 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [1]
+    drawingRoutine: 16
+    constantAnimation: true
+    movementType: 2
+    allowsMoving: false
+    turnCost: 0 # Can "look" for free
+    builtInWeapons:
+      - STR_ELDAR_FUSION_CHARGE_DETONATOR
+    specab: 1
+    selfDestructItem: STR_ELDAR_FUSION_CHARGE_DEPLOYED_CORPSE
+    tags:
+      INFECTION_RESIST: 100  # infection immune
+      INTIMIDATION_RESISTANCE: 100  # intimidation immune
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_XENO: 1
+      UNIT_TYPE_ELDAR: 1
+      ARMOR_IS_EXPLODE_ON_DEATH: 1
+      ARMOR_IS_KAMIKAZI: 1

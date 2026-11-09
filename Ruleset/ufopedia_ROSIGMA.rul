@@ -16360,6 +16360,9 @@ ufopaedia:
   - id: STR_RANGER_LONG_RIFLE_MAG_FIXED
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_RANGER_LONG_RIFLE_MAG_FIXED2
+    type_id: 4
+    section: STR_NOT_AVAILABLE
 
   - id: STR_AELDARI_FLAMER
     type_id: 14
@@ -16489,6 +16492,28 @@ ufopaedia:
       - STR_ELDAR_ARMORY_EXAM
     text: STR_SUNPISTOL_SCOPED_CODEX
   - id: STR_SUNPISTOL_CHARGE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_GRENADE_PACK
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_HAWK_GRENADE_PACK_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_HAWK_GRENADE_PACK_CODEX
+  - id: STR_HAWK_SUNBURST_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_STARSHOT_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_FUSION_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_HAYWIRE_GRENADES
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_HAWK_PLASMA_GRENADES
     type_id: 4
     section: STR_NOT_AVAILABLE
 
@@ -16725,6 +16750,59 @@ ufopaedia:
   - id: STR_SHURIKEN_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
+
+
+  - id: STR_ELDAR_SUNBURST_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_SUNBURST_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_SUNBURST_GRENADE_CODEX
+  - id: STR_ELDAR_STARSHOT_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_STARSHOT_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_STARSHOT_GRENADE_CODEX
+  - id: STR_ELDAR_FUSION_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_FUSION_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_FUSION_GRENADE_CODEX
+  - id: STR_ELDAR_HAYWIRE_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_HAYWIRE_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_HAYWIRE_GRENADE_CODEX
+
+  - delete: STR_ELDAR_GRENADE
+  - id: STR_ELDAR_GRENADE   # ELDAR PLASMA GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: ELDAR_PLASMA_GRENADE_CODEX.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_PLASMA_GRENADE_CODEX
+  - id: STR_ELDAR_FUSION_CHARGE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1EL5.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_FUSION_CHARGE_CODEX
+  - id: STR_ELDAR_FUSION_CHARGE_DETONATOR
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1EL5.SPK
+    requires:
+      - STR_ELDAR_ARMORY_EXAM
+    text: STR_ELDAR_FUSION_CHARGE_DETONATOR_CODEX
   - id: STR_ELDAR_WIREWEAVE_NET
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -16732,14 +16810,6 @@ ufopaedia:
     requires:
       - STR_ELDAR_ARMORY_EXAM
     text: STR_ELDAR_WIREWEAVE_NET_CODEX
-  - delete: STR_ELDAR_GRENADE
-  - id: STR_ELDAR_GRENADE
-    type_id: 14
-    section: STR_WEAPONS_AND_EQUIPMENT
-    image_id: 1EL4.SPK
-    requires:
-      - STR_ELDAR_ARMORY_EXAM
-    text: STR_ELDAR_GRENADE_UFOPEDIA
   - delete: STR_ELDAR_MGRENADE
   - id: STR_ELDAR_MGRENADE
     type_id: 14
@@ -21903,9 +21973,10 @@ ufopaedia:
     type_id: 10
     section: STR_ALIEN_LIFE_FORMS
     requires:
-      - STR_KHORNE_DREADNOUGHT_CORPSE_GEO
+      - STR_KHORNE_DREADNOUGHT
     image_id: KHORNE_DREADNOUGHT_ARMOR_CODEX.SPK
     text: STR_KHORNE_DREADNOUGHT_ARMOR_CODEX
+
 
   # Nurgle
   - delete: MUTON_ARMORNURGLEA
@@ -21931,7 +22002,7 @@ ufopaedia:
     image_id: HAWLER2.SPK
     text: STR_NURGLE_BLIGHT_HAULER_ORIGINS_UFOPEDIA
     requires:
-      - STR_NURGLE_BLIGHT_HAULER
+      - NURGLE_BLIGHT_HAULER_CORPSE
   - id: STR_NURGLE_BLIGHT_HAULER
     type_id: 10
     section: STR_ALIEN_LIFE_FORMS
@@ -21947,6 +22018,21 @@ ufopaedia:
       - STR_NURGLE_BLIGHT_HAULER
     image_id: HAWLER.SPK
     text: STR_NURGLE_UFOPEDIA
+
+  - id: STR_NURGLE_DREADNOUGHT_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_NURGLE_DREADNOUGHT_CORPSE_GEO
+    image_id: NURGLE_DREADNOUGHT_ORIGIN_CODEX.SPK
+    text: STR_NURGLE_DREADNOUGHT_AUTOPSY_UFOPEDIA
+  - id: STR_NURGLE_DREADNOUGHT_ARMOR_CODEX
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_NURGLE_DREADNOUGHT
+    image_id: NURGLE_DREADNOUGHT_ARMOR_CODEX.SPK
+    text: STR_NURGLE_DREADNOUGHT_ARMOR_UFOPEDIA
 
   # Slaanesh
   - delete: MUTON_ARMORSLAANESH
@@ -21990,6 +22076,21 @@ ufopaedia:
       - STR_LIVE_CAPTURE_TZEENTCH_MARINE
     image_id: UP110.SPK
     text: STR_TZEENTCH_UFOPEDIA
+
+  - id: STR_TZEENTCH_DREADNOUGHT
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_TZEENTCH_DREADNOUGHT_CORPSE_GEO
+    image_id: TZEENTCH_DREADNOUGHT_ORIGIN_CODEX.SPK
+    text: STR_TZEENTCH_DREADNOUGHT_CODEX
+  - id: STR_TZEENTCH_DREADNOUGHT_ARMOR
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_TZEENTCH_DREADNOUGHT
+    image_id: TZEENTCH_DREADNOUGHT_ARMOR_CODEX.SPK
+    text: STR_TZEENTCH_DREADNOUGHT_ARMOR_CODEX
 
   # Alpha Legion
   - id: STR_ALPHA_SOLDIER_AUTOPSY
@@ -23234,7 +23335,7 @@ ufopaedia:
     type_id: 10
     section: STR_ALIEN_LIFE_FORMS
     image_id: tzeentch_officer_origins.SPK
-    text: STR_DESER TER_OFFICER_AUTOPSY_UFOPEDIA
+    text: STR_DESERTER_OFFICER_AUTOPSY_UFOPEDIA
     requires:
       - STR_DESERTER_GUARD_OFFICER_CORPSE
   - id: STR_DESERTER_GUARD_OFFICER_ARMOR

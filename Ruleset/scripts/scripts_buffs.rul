@@ -63,6 +63,12 @@ extended:
             return 0 part side;
           end;
 
+          unit.getTag temp Tag.UNIT_IS_WARPING;
+          if gt temp 0;
+            battle_game.flashMessage "STR_SCRIPT_WARPER_NO_BENEFIT";
+            return 0 part side;
+          end;
+
           attacker.getFaction faction; # the target must be from the buffer's faction
           unit.getFaction temp;
           if neq faction temp;

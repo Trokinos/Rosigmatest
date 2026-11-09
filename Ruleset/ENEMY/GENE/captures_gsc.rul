@@ -14,11 +14,11 @@ items:
     recover: true
     liveAlien: true
     costSell: 1000
-  - type: STR_GSC_CLOAKED_ORANGE     # 20400
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 1000
+  # - type: STR_GSC_CLOAKED_ORANGE     # 20400
+  #   size: 0.0
+  #   recover: true
+  #   liveAlien: true
+  #   costSell: 1000
   - type: STR_GSC_CIVILIAN_F0                     # 22000
     size: 0.0
     recover: true
@@ -495,43 +495,7 @@ items:
     liveAlien: true
     costSell: 1000
 
-  - type: STR_TYRANID_WARRIOR_DUMMY
-    size: 0.0
-    recover: false
-    liveAlien: false
-    costSell: 1000
-
-  - type: STR_TYRANID_WARRIOR_CLAWS
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 1000
-
-  - type: STR_TYRANID_WARRIOR_SWORD
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 1000
-
   - type: STR_TYRANID_PRIME
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 1000
-
-  - type: STR_TYRANID_PRIME_DUMMY
-    size: 0.0
-    recover: false
-    liveAlien: false
-    costSell: 1000
-
-  - type: STR_TYRANID_PRIME_CLAWS
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 1000
-
-  - type: STR_TYRANID_PRIME_SWORD
     size: 0.0
     recover: true
     liveAlien: true
