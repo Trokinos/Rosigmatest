@@ -155,7 +155,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -230,7 +230,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -305,7 +305,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -382,7 +382,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -460,7 +460,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -537,7 +537,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -615,7 +615,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -692,7 +692,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
@@ -772,7 +772,7 @@ soldiers:
     avatarOffsetY: 42
     soldierNames:
       - delete
-      - Names/adeptas_novice.nam
+      - Names/slaanesh_handmaiden.nam
     deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
     deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
     rankStrings:
