@@ -5,19 +5,19 @@
 # **** please keep indices in numerical order ****
 
     # OXCE allows defining custom frame counts in hitAnimFrames
-    # Use subX and subY to define custome frame sizes
+    # Use subX and subY to define custome frame sizes (Might not work properly)
     # Note even an inproperly defined image might run its animation smoothly
 
 # SMOKE.PCK
-    # Used for smoke, fire, rank insignia, and weapon (bullet, non-explosive) hits.
+    # Used for smoke, fire, rank insignia, and weapon (bullet, non-explosive) hits, as well as for psiweapons' on hit animation.
     # default 128x40px or 4 32x40px frames for smoke, fire, and rankinsigna;
     # default 320x40px or 10 32x40px frames for bullet animations, or can use custom amounts defined in hitAnimFrames.
-# HIT.PCK 
+# HIT.PCK
     # Used for melee and psi attack - meleeAnimation, and psiAnimation
     # default 128x40px, or 4 frames of 32x40px
-# X1.PCK 
+# X1.PCK
     # Used by explosive items with damageType: 2 (incendiary), 3 (high explosive), 6 (stun), and 9 (smoke).
-    # Also used when fixRadius is defined, 
+    # Also used when fixRadius is defined
     # default 1024x64 or 8 frames of 128x64
 # PROJECTILES
     # bullet sprites - 35 frames of 3x3px.
