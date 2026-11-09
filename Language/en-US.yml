@@ -8121,7 +8121,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_NURGLE_DREADNOUGHT: "Plague Dreadnought Captive"
   STR_NURGLE_DREADNOUGHT_BOLTER_ARMOR: "Plague Dreadnought Armor"
   STR_NURGLE_DREADNOUGHT_CORPSE_GEO: "Plague Dreadnought Corpse"
-  STR_TWIN_LINK_DREAD_HEAVY_BOLTER: "Twin-linked Blighted Heavy Bolter"
+  STR_TWIN_LINK_HEAVY_BOLTER_NURGLE_DREAD: "Twin-linked Blighted Heavy Bolter"
   STR_NURGLE_DREAD_POWERCLAW: "Plague Power Claw"
 
 # CHAOS WEAPONS

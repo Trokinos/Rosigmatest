@@ -1734,7 +1734,7 @@ items:
     costSell: 2000  # rotted and disgusting; no one wants this
     weight: 100
     bigSprite: 2601 #change
-    floorSprite: 2600 
+    floorSprite: 2600
     handSprite: 2510
     bulletSprite: {mod: 40k, index: 6}
     fireSound: 2138
