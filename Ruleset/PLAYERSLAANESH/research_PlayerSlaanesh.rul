@@ -331,6 +331,10 @@ research:
     cost: 40
     dependencies:
       - STR_WEAPON_CONSECRATION
+    needItem: true
+    neededItem: STR_SLAANESHPATH_BOON
+    destroyItem: true
+
 
   #Tech that gives access to weapon conversions through piety.
   #Gets disabled once the ability to manufacture these weapons is unlocked.
@@ -425,6 +429,8 @@ research:
   - name: STR_OUR_HOLY_MISSION # CODEX ENTRY ON CAMPAIGN GOALS
     cost: 20
     points: 20
+    spawnedItem: STR_SLAANESHPATH_BOON
+    spawnedItemCount: 1
     dependencies: # GATEWAY TECH TO MISSION GENERATION
       - STR_SLAANESHPATH_GATE
 
@@ -448,25 +454,27 @@ research:
     points: 30
     dependencies:
       - STR_OUR_HOLY_MISSION
-      - STR_GENERALLOCK
 
   - name: STR_SUFFER_NOT_THE_XENO
     cost: 50
     points: 30
     dependencies:
       - STR_WAR_FOR_THE_UNDERHIVE
+      - STR_GENERALLOCK
 
   - name: STR_BLEEDING_THE_BLOOD_GOD
     cost: 50
     points: 30
     dependencies:
       - STR_WAR_FOR_THE_UNDERHIVE
+      - STR_GENERALLOCK
 
   - name: BRINGING_THEM_TO_HEEL
     cost: 50
     points: 30
     dependencies:
       - STR_WAR_FOR_THE_UNDERHIVE
+      - STR_GENERALLOCK
 
   - name: STR_AGAINST_THE_ECCLESIARCHY
     cost: 80
@@ -475,19 +483,19 @@ research:
       - STR_OUR_HOLY_MISSION
       - STR_GENERALLOCK
 
+  - name: STR_OUR_FOOLISH_SISTERS # Available at start. Unlocks the ability to corrupt sisters. Codex entry.
+    cost: 80
+    points: 30
+    dependencies:
+      - STR_AGAINST_THE_ECCLESIARCHY
+
   - name: STR_TOPPLE_THEIR_SHRINES
     cost: 80
     points: 30
     dependencies:
       - STR_AGAINST_THE_ECCLESIARCHY
 
-  - name: STR_CAST_DOWN_THEIR_LIES
-    cost: 80
-    points: 30
-    dependencies:
-      - STR_AGAINST_THE_ECCLESIARCHY
-
-  - name: STR_REDEEM_OUR_LOYALIST_SISTERS
+  - name: STR_CAST_DOWN_THEIR_LIES # Mission-related tech. Unlocked later.
     cost: 80
     points: 30
     dependencies:

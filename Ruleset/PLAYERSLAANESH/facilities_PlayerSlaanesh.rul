@@ -6,7 +6,7 @@ facilities:
 # items and promotions compared to many other factions.
 
   - type: STR_SLAANESH_ALTAR
-    refundValue: 125000
+    refundValue: 500000
     destroyedFacility: STR_CORRIDOR
     sickBayAbsoluteBonus: 0.0
     sickBayRelativeBonus: 1.0 # Chaos Shrine effect.
@@ -16,11 +16,11 @@ facilities:
     placeSound: {mod: 40k, index: 98}
     requiresBaseFunc: [BASE]
     requires:
-      - STR_PATH_OF_PERFECTION
+      - STR_SLAANESHPATH_GATE
     spriteShape: 1
     spriteFacility: 36
     rightClickActionType: 5
-    buildCost: 250000 # This building is meant to be cheap and provide passive money generation.
+    buildCost: 1000000 # This building is meant to be cheap and provide passive money generation.
     maxAllowedPerBase: 1
     buildTime: 10
     monthlyCost: -100000
@@ -38,15 +38,15 @@ facilities:
       - ADORATION_THROUGH_AGONY
     spriteShape: 1
     spriteFacility: {mod: 40k, index: 444}
-    buildCost: 400000
+    buildCost: 500000
     refundValue: 200000
     buildTime: 20
     monthlyCost: 25000
     aliens: 10
     trainingRooms: 15
+    personnel: 15
     destroyedFacility: STR_CORRIDOR
     maxAllowedPerBase: 1
-    provideBaseFunc: [TORTURE]
     mapName: XBASE_36
 
   - type: STR_HERETEK_WORKSHOP

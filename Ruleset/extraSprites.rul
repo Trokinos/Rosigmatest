@@ -20310,3 +20310,5 @@ extraSprites:
     fileSingle: Resources/CODEX/UNDERHIVE_MARKET.png
   - typeSingle: AMMO_JACKS.SPK
     fileSingle: Resources/CODEX/AMMO_JACKS.png
+  - typeSingle: SLAANESH_ALTAR_CODEX.SPK
+    fileSingle: Resources/CODEX/SLAANESH_ALTAR_CODEX.png

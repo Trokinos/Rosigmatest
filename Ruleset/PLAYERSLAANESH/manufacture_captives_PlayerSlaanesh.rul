@@ -5,11 +5,33 @@ manufacture:
     category: STR_RITES_OF_PAIN
     requires:
       - STR_SACRIFICIAL_RITUALS
-    space: 15
+    space: 0
     time: 100
     producedItems:
       STR_ALIEN_SURGERY: 1
-      STR_SLAANESHPATH_PIETY: 10
+      STR_SLAANESHPATH_PIETY: 5
     requiredItems:
       STR_LIVE_CAPTURE_GUARDAI: 1
     points: 10
+
+  - name: STR_PREPARE_SACRIFICE_FRATERIS_MILITIA
+    refNode: *STR_SACRIFICE_TEMPLATE
+    requiredItems:
+      STR_FRATERIS_MILITIA_AI: 1
+
+
+  - &STR_CORRUPT_TEMPLATE
+    name: CORRUPT_NOVICE
+    requiresBaseFunc: [ALTAR]
+    category: STR_RITES_OF_DEPRAVITY
+    requires:
+      - STR_OUR_FOOLISH_SISTERS
+    space: 0
+    time: 300
+    cost: 6000
+    producedItems:
+      STR_SLAANESHPATH_PIETY: 30
+    spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
+    requiredItems:
+      STR_SHRINE_NOVICE_AI: 1
+      STR_ALIEN_FOOD: 3

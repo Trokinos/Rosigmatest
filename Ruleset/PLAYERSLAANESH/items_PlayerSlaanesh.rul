@@ -6,6 +6,12 @@ items:
   - type: STR_SLAANESHPATH_PIETY
     size: 0.0
 
+ # The Boon of Slaanesh is a reward token that can be gained from missions, research, or traded for piety.
+ # It is required to unlock many different kinds of research.
+
+  - type: STR_SLAANESHPATH_BOON
+    size: 0.0
+
   - type: STR_SLAANESHPATH_WARPSTONE_TRIBUTE
     size: 0.0
 

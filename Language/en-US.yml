@@ -2548,6 +2548,8 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_SLAANESHPATH_CHIRURGEON_ARMOR_UFOPEDIA: "{NEWLINE}{NEWLINE}Adepta Sororitas Hospitaliers may be at adepts both torture and healing, but the Chirurgeon is a master of one unified craft. Drawing no distinction btween the most excruciating pain and the efficacious of healing, the Chirurgeon's obessively customized medical tools are terrying weapons in combat."
 
+  STR_ALTAR_OF_SLAANESH_UFOPEDIA: "Through this altar, the Prince of Excess recieves both souls and supplication, and bestows gifts and blessings in turn. {NEWLINE}{NEWLINE}{ALT}The Altar of Slaanesh is a powerful building with many benefits: it improves healing times, allows for devotion training, and offers some space for research. It is also vital for many manufacturing projects."
+
 ###
 
   STR_SLAANESHPATH: "Slaanesh strategy [EARLY WIP]"
@@ -2574,8 +2576,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BLACK_MARKET_AMMUNITION: "Underhive Ammo-Jacks"
   STR_BLACK_MARKET_AMMO_TRADE: "(Underhive Ammo Trade)"
   STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
-  STR_CORRUPT_ADEPTAS_BOLTERS: "Adeptas Bolter Consecration"
-  STR_IMMACULATE_CHAINBLADES: "Immaculate Chainblades"
+  STR_CORRUPT_ADEPTAS_BOLTERS: "*Adeptas Bolter Consecration*"
+  STR_IMMACULATE_CHAINBLADES: "Chainblade Consecration"
   STR_CONTACT_HERETEKS: "Contact the True Mechanicum"
   STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
   STR_LASCANNON_DATACRYPT: "Decode Lascannon Data-crypt"
@@ -2584,12 +2586,13 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
   STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
 
-  STR_OUR_HOLY_MISSION: "Our Holy Mission"
+  STR_OUR_HOLY_MISSION: "Our Holy Crusade"
   STR_WAR_FOR_THE_UNDERHIVE: "The War for the Underhive"
   STR_SUFFER_NOT_THE_XENO: "Suffer not the Xeno"
   STR_KILL_THE_ENFORCERS: "Kill the Enforcers"
 
-  STR_AGAINST_THE_ECCLESIARCHY: "Death to the Ecclesiarchy"
+  STR_AGAINST_THE_ECCLESIARCHY: "The Cathedrum of Lies"
+  STR_OUR_FOOLISH_SISTERS: "Our Foolish Sisters"
 
 
   STR_STRANGLER_GRENADES: "Strangler Grenades"
@@ -2616,11 +2619,14 @@ en-US: #  yamllint disable-line rule:empty-values
   ### MANUFACTURING PROJECTS - PROGRESSION
 
   STR_PREPARE_SACRIFICE_SOLDIER_IG: "Prepare Guardsman for Sacrifice"
+  STR_PREPARE_SACRIFICE_FRATERIS_MILITIA: "Prepare Frateris Militia for Sacrifice"
 
+  CORRUPT_NOVICE: "Corrupt Sororitas Novice"
 
  #Piety projects & progression projects
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
   STR_SACRIFICE_TO_SLAANESH: "Offer Souls to Slaanesh"
+  STR_REQUEST_BOON: "Request Boon"
   STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
   STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
   STR_CAPTURE_CHAOS_SACRIFICES: "Capture Sacrificial Victims"
@@ -2687,6 +2693,7 @@ en-US: #  yamllint disable-line rule:empty-values
 
 #PLOT ITEMS AND TOKENS
   STR_SLAANESHPATH_PIETY: "Piety"
+  STR_SLAANESHPATH_BOON: "Boon of Slaanesh"
   STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
   STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"

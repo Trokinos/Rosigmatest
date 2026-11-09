@@ -72,12 +72,25 @@ manufacture:
     requiresBaseFunc: [ALTAR]
     space: 15
     time: 200
-    cost: 2000
+    cost: 10000
     producedItems:
-      STR_SLAANESHPATH_PIETY: 260
+      STR_SLAANESHPATH_PIETY: 250
+      STR_ALIEN_FOOD: 12
     requiredItems:
       STR_ALIEN_SURGERY: 6
     points: 10
+
+  - name: STR_REQUEST_BOON
+    category: STR_RITES_OF_EXCESS
+    requires:
+      - STR_PATH_OF_PERFECTION #Placeholder
+    requiresBaseFunc: [ALTAR]
+    space: 0
+    time: 20
+    producedItems:
+      STR_SLAANESHPATH_BOON: 1
+    requiredItems:
+      STR_SLAANESHPATH_PIETY: 200
 
   - name: STR_CONVERT_MINOR_MISSION_BOUNTY # Random reward for minor missions.
     category: STR_RITES_OF_EXCESS

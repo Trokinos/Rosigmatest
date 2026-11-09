@@ -5,6 +5,11 @@ alienMissions:
  # Shrine attack mission vs frateris, redemptors, and novices
  # Underhive missions
 
+# SET UP ECCLESIARCHY BASE, ECCLESIARCHY LISTS, REDEMPTIONISTS
+
+
+
+
   - type: STR_VEHICLE_RAID
     points: 5
     objective: 3

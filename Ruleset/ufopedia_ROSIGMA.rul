@@ -3453,6 +3453,15 @@ ufopaedia:
     text: STR_CHAOS_SHRINE_DESC
     requires:
       - STR_ALIENS_ONLY
+      - STR_NOT_SLAANESHPATH
+
+  - id: STR_SLAANESH_ALTAR
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: SLAANESH_ALTAR_CODEX.SPK
+    text: STR_ALTAR_OF_SLAANESH_UFOPEDIA
+    requires:
+      - STR_SLAANESHPATH_GATE
 
   - id: STR_ARMORY_WB
     type_id: 16
