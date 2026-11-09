@@ -3106,32 +3106,27 @@ extraSounds:
       # UNIT SECTION
       # Handmaidens & Exalted Handmaidens
 
-      # Select Unit
-      2446: Resources/PLAYERSLAANESH/Sounds/handmaiden/temple.wav
-      2447: Resources/PLAYERSLAANESH/Sounds/handmaiden/thirstforblood.wav
-      2448: Resources/PLAYERSLAANESH/Sounds/handmaiden/toolong.wav
-      2449: Resources/PLAYERSLAANESH/Sounds/handmaiden/yourdesire.wav
-      2457: Resources/PLAYERSLAANESH/Sounds/handmaiden/sacrificeneeded.wav
-      2458: Resources/PLAYERSLAANESH/Sounds/handmaiden/landisripe.wav
-      2459: Resources/PLAYERSLAANESH/Sounds/handmaiden/ourblades.wav
-      # Move order
-      2460: Resources/PLAYERSLAANESH/Sounds/handmaiden/moveswiftly.wav
-      2461: Resources/PLAYERSLAANESH/Sounds/handmaiden/movewithhaste.wav
-      2462: Resources/PLAYERSLAANESH/Sounds/handmaiden/onwardsmysisters.wav
-      2463: Resources/PLAYERSLAANESH/Sounds/handmaiden/deathstalks.wav
-      2464: Resources/PLAYERSLAANESH/Sounds/handmaiden/wemovequickly.wav
-      # Attack order
-      2465: Resources/PLAYERSLAANESH/Sounds/handmaiden/rushofthekill.wav
-      2466: Resources/PLAYERSLAANESH/Sounds/handmaiden/killthem1.wav
-      2467: Resources/PLAYERSLAANESH/Sounds/handmaiden/nothroat.wav
-      2468: Resources/PLAYERSLAANESH/Sounds/handmaiden/bloodletting.wav
-      2469: Resources/PLAYERSLAANESH/Sounds/handmaiden/batheinblood.wav
-      2470: Resources/PLAYERSLAANESH/Sounds/handmaiden/riversrunred.wav
-      # Death
-      2471: Resources/PLAYERSLAANESH/Sounds/handmaiden/death1.wav
-      # Annoyed
-      2472: Resources/PLAYERSLAANESH/Sounds/handmaiden/doasyouwish.wav
-      2473: Resources/PLAYERSLAANESH/Sounds/handmaiden/touchme.wav
+      2446: Resources/PLAYERSLAANESH/Sounds/mystes/temple.wav
+      2447: Resources/PLAYERSLAANESH/Sounds/mystes/thirstforblood.wav
+      2448: Resources/PLAYERSLAANESH/Sounds/mystes/toolong.wav
+      2449: Resources/PLAYERSLAANESH/Sounds/mystes/yourdesire.wav
+      2457: Resources/PLAYERSLAANESH/Sounds/mystes/sacrificeneeded.wav
+      2458: Resources/PLAYERSLAANESH/Sounds/mystes/landisripe.wav
+      2459: Resources/PLAYERSLAANESH/Sounds/mystes/ourblades.wav
+      2460: Resources/PLAYERSLAANESH/Sounds/mystes/moveswiftly.wav
+      2461: Resources/PLAYERSLAANESH/Sounds/mystes/movewithhaste.wav
+      2462: Resources/PLAYERSLAANESH/Sounds/mystes/onwardsmysisters.wav
+      2463: Resources/PLAYERSLAANESH/Sounds/mystes/deathstalks.wav
+      2464: Resources/PLAYERSLAANESH/Sounds/mystes/wemovequickly.wav
+      2465: Resources/PLAYERSLAANESH/Sounds/mystes/rushofthekill.wav
+      2466: Resources/PLAYERSLAANESH/Sounds/mystes/killthem1.wav
+      2467: Resources/PLAYERSLAANESH/Sounds/mystes/nothroat.wav
+      2468: Resources/PLAYERSLAANESH/Sounds/mystes/bloodletting.wav
+      2469: Resources/PLAYERSLAANESH/Sounds/mystes/batheinblood.wav
+      2470: Resources/PLAYERSLAANESH/Sounds/mystes/riversrunred.wav
+      2471: Resources/PLAYERSLAANESH/Sounds/mystes/death1.wav
+      2472: Resources/PLAYERSLAANESH/Sounds/mystes/doasyouwish.wav
+      2473: Resources/PLAYERSLAANESH/Sounds/mystes/touchme.wav
 
       6000: Resources/PLAYERSLAANESH/Sounds/sister/atonce.wav
       6001: Resources/PLAYERSLAANESH/Sounds/sister/behold.wav
@@ -3228,6 +3223,28 @@ extraSounds:
       6089: Resources/PLAYERSLAANESH/Sounds/sorceress/swiftly.wav
       6090: Resources/PLAYERSLAANESH/Sounds/sorceress/whenyouresist.wav
       6091: Resources/PLAYERSLAANESH/Sounds/sorceress/wheresthepleasure.wav
+
+      6092: Resources/PLAYERSLAANESH/Sounds/handmaiden/asyoudesire.wav
+      6093: Resources/PLAYERSLAANESH/Sounds/handmaiden/asyouwish.wav
+      6094: Resources/PLAYERSLAANESH/Sounds/handmaiden/cutthemdown.wav
+      6095: Resources/PLAYERSLAANESH/Sounds/handmaiden/death1.wav
+      6096: Resources/PLAYERSLAANESH/Sounds/handmaiden/death2.wav
+      6097: Resources/PLAYERSLAANESH/Sounds/handmaiden/fire.wav
+      6098: Resources/PLAYERSLAANESH/Sounds/handmaiden/fireandreload.wav
+      6099: Resources/PLAYERSLAANESH/Sounds/handmaiden/howcanweserve.wav
+      6100: Resources/PLAYERSLAANESH/Sounds/handmaiden/hurryitup.wav
+      6101: Resources/PLAYERSLAANESH/Sounds/handmaiden/itshallbedone.wav
+      6102: Resources/PLAYERSLAANESH/Sounds/handmaiden/massacred.wav
+      6103: Resources/PLAYERSLAANESH/Sounds/handmaiden/slaughter.wav
+      6104: Resources/PLAYERSLAANESH/Sounds/handmaiden/thislandisweak.wav
+      6105: Resources/PLAYERSLAANESH/Sounds/handmaiden/unleashhell.wav
+      6106: Resources/PLAYERSLAANESH/Sounds/handmaiden/verywell.wav
+      6107: Resources/PLAYERSLAANESH/Sounds/handmaiden/wewillmovequickly.wav
+      6108: Resources/PLAYERSLAANESH/Sounds/handmaiden/whatisyourorder.wav
+      6109: Resources/PLAYERSLAANESH/Sounds/handmaiden/wishtoseedead.wav
+      6110: Resources/PLAYERSLAANESH/Sounds/handmaiden/yesmylord.wav
+      6111: Resources/PLAYERSLAANESH/Sounds/handmaiden/youhaveatarget.wav
+
 
 # Remaining Indexes: (Thanks Theron!)
 

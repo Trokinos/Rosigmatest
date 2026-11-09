@@ -117,7 +117,7 @@ items:
 
   - type: STR_GRAIA_MKVII
     battleType: 1
-    bigSprite: 4085 # PLACEHOLDER UNTIL BIGOB IS CONVERTED
+    bigSprite: 4090 # PLACEHOLDER UNTIL BIGOB IS CONVERTED
     handSprite: 6040 # Headhunter
     floorSprite: 2115
     fireSound: {mod: 40k, index: 875}

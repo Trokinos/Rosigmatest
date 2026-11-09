@@ -1297,12 +1297,15 @@ extraSprites:
 
       4080: Resources/PLAYERSLAANESH/Weapons/Cantus/bolter_cantus_slaan.png
       4081: Resources/PLAYERSLAANESH/Weapons/Cantus/bolter_cantus_slaan_gl.png
-      4082: Resources/PLAYERSLAANESH/Weapons/Grenades/STRANGLER_GRENADE40_BIGOB.png # REMOVE THIS
+      4082: Resources/PLAYERSLAANESH/Weapons/Grenades/STRANGLER_GRENADE40_BIGOB.png
       4083: Resources/PLAYERSLAANESH/Weapons/Grenades/40mm_sonic.png
       4084: Resources/PLAYERSLAANESH/Weapons/Autoguns/MKIX.png
       4085: Resources/PLAYERSLAANESH/Weapons/Autoguns/MKIXb.png
       4086: Resources/PLAYERSLAANESH/Weapons/Grenades/STRANGLER_GRENADE_BIGOB.png
-#      4087: Resources/Bigobs/AutogunsExpanded/AUTOGUN_HEADHUNTER_B_101.png
+      4087: Resources/PLAYERSLAANESH/Weapons/Grenades/STRANGLER_GRENADE40_BIGOB.png
+      4088: Resources/PLAYERSLAANESH/Weapons/Grenades/SHARD_GRENADE40_BIGOB.png
+      4089: Resources/PLAYERSLAANESH/Weapons/Grenades/SHARD_GRENADE_BIGOB.png
+      4090: Resources/PLAYERSLAANESH/Weapons/Autoguns/MKVII.png
 
 # Eldars
       4850: Resources/Eldar/weapons/reaper_aml_bigObj.png #reaper launcher

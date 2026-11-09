@@ -503,8 +503,8 @@ extraSprites:
       6000: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_hand.png
       6008: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_fire.png
       6016: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_gl.png
-      6024: Resources/HandObs/AutogunsExpanded/handob_autogun_agripinaa_t3.png
-      6032: Resources/HandObs/AutogunsExpanded/handob_autogun_agripinaa_t3b.png
-      6040: Resources/HandObs/AutogunsExpanded/handob_autogun_headhunter_scope.png
+      6024: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_IX_HANDOB.png
+      6032: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_IXB_HANDOB.png
+      6040: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_VII_HANDOB.png
 
       # 1850-1899 free spaces here, make sure to double check
