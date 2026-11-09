@@ -11829,6 +11829,25 @@ ufopaedia:
     type_id: 14
     section: STR_NOT_AVAILABLE
 
+  - id: STR_BOLTER_CANTUS_SLAAN  # Bolter Cantus Pattern
+    # Does not accept standard ammo
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1MB.SPK
+    text: STR_BOLTER_CANTUS_SLAAN_UFOPEDIA
+  - id: STR_BOLTER_CANTUS_GL  # Bolter Cantus Pattern
+    # Does not accept standard ammo
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1MB.SPK
+    text: STR_BOLTER_CANTUS_GL_UFOPEDIA
+  - id: STR_CANTUS_BOLTER_AMMO_PENETRATOR
+    type_id: 14
+    section: STR_NOT_AVAILABLE
+  - id: STR_CANTUS_BOLTER_AMMO_BM
+    type_id: 14
+    section: STR_NOT_AVAILABLE
+
   - id: STR_BOLTER_LIGHT_ULTRA  # Light Bolter Ultra Pattern
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -14706,6 +14725,12 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: 1FG.SPK
     text: STR_GRENADE_UFOPEDIA
+
+  - id: STR_SHARD_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1FG.SPK
+    text: STR_SHARD_GRENADE_UFOPEDIA
 
   - delete: STR_KRAK_GRENADE
   - id: STR_KRAK_GRENADE

@@ -1,0 +1,15 @@
+manufacture:
+
+  - &STR_SACRIFICE_TEMPLATE
+    name: STR_PREPARE_SACRIFICE_SOLDIER_IG
+    category: STR_RITES_OF_PAIN
+    requires:
+      - STR_SACRIFICIAL_RITUALS
+    space: 15
+    time: 100
+    producedItems:
+      STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_PIETY: 10
+    requiredItems:
+      STR_LIVE_CAPTURE_GUARDAI: 1
+    points: 10

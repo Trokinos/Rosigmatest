@@ -2532,14 +2532,17 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GRAIA_MKVII_UFOPEDIA: "An oddity among autoguns, the Graia Mk. VII has been heavily modified for counter-sniper duty during siege actions. Straddling the line between a marksman and a sniper rifle, the Mk. VII is a very deadly weapon in the right hands."
   STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, this plasma weapon has been imbued with the power of Slaanesh. Like many other such plasma weapons, it carries little risk of overheating, but cannot be overcharged."
   STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
-  STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, twisted to have much higher rate of fire than would normally be safe. When equipped with bolts more capable of penetrating armor, this weapon should not be taken lightly."
+  STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, now twisted by Slaanesh into firing far faster than would normally be safe. When loaded with penetrator bolts capable of defeating armor, this weapon should not be taken lightly."
   STR_BOLTER_CANTUS_GL_UFOPEDIA: "{NEWLINE}{NEWLINE}With the foregrip replaced by an underslung grenade launcher, this corrupted Cantus bolter trades accuracy and performance for greatly improved tactical flexibility."
   STR_BOLTER_DEAZ_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a corrupted Sororitas Godwyn-De'az bolter, twisted by the power of Slaanesh. Unlike many other so-called Immaculate weapons, the De'az still retains most performance characteristics of the original."
   STR_BOLTER_ARACHNE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Arachne is a modified Godwyn-De'az bolter with an attached constrictor web module. Though the module itself is no less powerful than a full web pistol, it is significantly less ammo-efficient."
   STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. In addition, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
   STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}This once holy De'az bolter has been afflicted with an incredibly malign machine spirit. Sporting a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
 
-  STR_STRANGLER_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Strangler carries a two part payload: a fast-acting nerve gas and a lingering cloud of smoke. The nerve gas is designed to disperse quickly, allowing the smoke cloud to be used as battlefield cover."
+  STR_STRANGLER_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Strangler carries a two part payload: a fast-acting nerve gas and a lingering cloud of thick smoke. Though fully capable of painfully disabling or outright killing a healthy adult through convulsions and asphyxication, the nerve gas is intentionally designed to disperse very quickly, allowing the smoke cloud to be used as battlefield cover."
+  STR_SHARD_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}A favorite on Necromunda, the shard grenade is a highly illegal and dangerous weapon. Packed with foul, warp-corrupted slivers of metal, even the tiniest wound from this grenade is capable of killing its victim through corruption, insanity, and malmutation."
+  STR_SCREAMER_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Screamer is a variant of the handheld sonic grenade favored by Slaanesh-aligned forces. Like all sonic weapons, it works by using concentrated sound waves to create oscillations in the target, distorting and rupturing it from within. As such, it is capable of bypassing most forms of armor."
+
 
   STR_EVISCERATOR_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite its lighter weight and refined exterior, this heavily modfied eviscerator is an even more brutal weapon than its before. When used to deliver heavy thrusts through armor, the sheer bloody carnage this weapon unleashes belies its more graceful appearance."
 
@@ -2612,7 +2615,8 @@ en-US: #  yamllint disable-line rule:empty-values
 
   ### MANUFACTURING PROJECTS - PROGRESSION
 
-  STR_SLAANESH_PDF_TOKEN_MANUFACTURE: "Infiltrate Local PDF Regiments"
+  STR_PREPARE_SACRIFICE_SOLDIER_IG: "Prepare Guardsman for Sacrifice"
+
 
  #Piety projects & progression projects
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"

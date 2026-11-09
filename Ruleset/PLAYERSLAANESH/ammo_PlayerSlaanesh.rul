@@ -405,6 +405,10 @@ items:
     invHeight: 2
     listOrder: 10460
 
+  - type: STR_CANTUS_BOLTER_AMMO_PENETRATOR
+    refNode: *STR_SLAANESHPATH_PENETRATOR_TEMPLATE
+    power: 55
+
   - &STR_SLAANESHPATH_SHREDDER_TEMPLATE
     type: STR_SLAANESHPATH_CLIP_SHREDDER  # Shredder rounds ruin armor but have zero penetration.
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
@@ -728,7 +732,7 @@ items:
     flatPrime:
       time: false
       energy: true
-    damageType: 2 # Armor piercing
+    damageType: 1 # Armor piercing
     damageAlter:  # DA WARP SHARDS
       RandomType: 2
       ToHealth: 0.25 # Tiny armor piercing fragments
