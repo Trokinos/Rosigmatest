@@ -2403,7 +2403,44 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
   STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
   STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
+# zombies expanded
+  # Marines zombies
+  STR_MARINE_ZOMBIE_TACTICAL_M: "Fallen Brother"
+  STR_MARINE_ZOMBIE_SCOUT_M: "Fallen Brother"
+  STR_MARINE_ZOMBIE_TER_M: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_TAC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_GRV: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_INC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_PHB: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_TAC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_GRV: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_INC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_PHB: "Fallen Brother"
 
+  # Guard zombies
+  STR_GUARD_SQUAT_FLAK_MALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_FLAK_FEMALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_CARA_MALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_CARA_FEMALE_ZOMBIE: "Traitor Squat"
+  STR_SQUAT_FLAK_ZOMBIE_MALE_ARMOR: "Traitor Squat"
+  STR_SQUAT_FLAK_ZOMBIE_FEM_ARMOR: "Traitor Squat"
+  STR_SQUAT_CARAPACE_ZOMBIE_MALE_ARMOR: "Traitor Squat"
+
+  # Adeptas Zombies
+  STR_ADEPTAS_ELOHIM_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_MEDICAE_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_PILOT_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_ASSASSIN_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_REPENTIA_ZOMBIE: "Traitor Repentia"
+  STR_ADEPTAS_NOVICE_ZOMBIE: "Traitor Novitiate"
+  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE: "Traitor Militia"
+  STR_ADEPTAS_ELOHIM_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_MEDICAE_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_ASSASSIN_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_REPENTIA_ZOMBIE_ARMOR: "Traitor Repentia"
+  STR_ADEPTAS_PILOT_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_NOVICE_ZOMBIE_ARMOR: "Traitor Novitiate"
+  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE_ARMOR: "Traitor Militia"
 # #03-TYR.PURE
 
 # #03-NECRON
@@ -3277,6 +3314,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_STORMTALON: "Stormtalon"
   STR_LTS: "Missile Launcher System"
   STR_RTS: "Missile Launcher System"
+  STR_STORMTALON_CORPSE: "Stormtalon Wreck"
   STR_LTS_CORPSE: "Wrecked Launcher System"
   STR_RTS_CORPSE: "Wrecked Launcher System"
   STR_LTT: "Twin Linked Bolter"
@@ -8193,6 +8231,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_KHORNE_ELITE: "Khorne Terminators"
 
   STR_WORLDEATER_LEADER: "Khorne Captain"
+  STR_LIVE_CAPTURE_WORLDEATER_LEADER: "Khorne Captain"
   STR_KHORNE_CHAMPION_ARMOR: "Khorne Captain Armor"
   STR_WORLDEATER_LEADER_CORPSE: "Khorne Captain Corpse"
 
@@ -12922,6 +12961,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_PENETANTE_LEEROY: "Crazed Penitent"
   STR_GSC_PENETANTE_ARMOR_FEMALE: "Armed Penitent"
   STR_GSC_PENETANTE_ARMOR: "Crazed Penitent"
+  STR_GSC_PENETANTE_CORPSE_FEMALE: "Penitent Corpse" #female variant transformed into STR_GSC_PENETANTE_CORPSE during recovery
   STR_GSC_PENETANTE_CORPSE: "Penitent Corpse"
 
   STR_GSC_ARBITES_FACTION: "Arbites"
@@ -12985,6 +13025,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_GUARD_MEDIC_MALE: "Corrupted Medic"
   STR_GSC_GUARD_FLAK_OFFICER_FEMALE: "Corrupted Officer"
   STR_GSC_GUARD_FLAK_OFFICER_MALE: "Corrupted Officer"
+  STR_GSC_GUARD_FLAK_OFFICER_MALE_ARMED: "Corrupted Officer"
   STR_GSC_GUARD_CARAPACE_FEMALE: "Corrupted Stormtrooper"
   STR_GSC_GUARD_CARAPACE_MALE: "Corrupted Stormtrooper"
   STR_GSC_GUARD_CARAPACE_MEDIC_FEMALE: "Corrupted Medic"
@@ -13121,8 +13162,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_NEEDLER_RIFLE: "Xeno Needler Rifle"
   STR_GSC_NEEDLER_RIFLE_UFOPEDIA: "{NEWLINE}The Xeno Needle Rifle fires a sliver of crystallized gene-toxin, capable of penetrating most existing armor. Almost entirely silent to fire, the sliver itself is so fine that it is not felt even if it penetrates flesh. The crystallized gene-toxin dissolves almost immediately after penetration, with the fast-acting gene-toxin altering the genetics and mind of the victim nearly instantly."
 
-
-
   # Tyranids
   STR_TYRANID: "Tyranids"
   STR_SPOREMINE_TESTLIST: "Spore Mine Testlist"
@@ -13226,7 +13265,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TYRANID_BROODNEST_SPAWNER_ARMORED: "Armored Tyranid Broodnest"
   STR_TYRANID_BROODNEST_SPAWNER_SMALL: "Tyranid Broodnest"
   STR_TYRANID_BROODNEST_SPAWNER_LARGE: "Large Tyranid Broodnest"
-
+  STR_TYRANID_BROODNEST_SPAWNER_SMALL_CORPSE: "Tyranid Broodnest Rubbles"
+  STR_TYRANID_BROODNEST_SPAWNER_LARGE_CORPSE: "Large Tyranid Broodnest Rubbles"
+  STR_TYRANID_BROODNEST_SPAWNER_ARMORED_CORPSE: "Armored Tyranid Broodnest Rubbles"
 
   # Tyranid Biomorphs
   STR_RIPPERSWARM_ATTACK: ""
@@ -13247,35 +13288,7 @@ en-US: #  yamllint disable-line rule:empty-values
   CTHULHU_GENE_WEAK: "Ymgarl Spit"
   CTHULHU_GENE: "Ymgarl Spit"
 
-  # zombies expanded
-  # Guard zombies
-  STR_GUARD_SQUAT_FLAK_MALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_FLAK_FEMALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_CARA_MALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_CARA_FEMALE_ZOMBIE: "Traitor Squat"
-  STR_SQUAT_FLAK_ZOMBIE_MALE_ARMOR: "Traitor Squat"
-  STR_SQUAT_FLAK_ZOMBIE_FEM_ARMOR: "Traitor Squat"
-  STR_SQUAT_CARAPACE_ZOMBIE_MALE_ARMOR: "Traitor Squat"
-
-  # Adeptas Zombies
-  STR_ADEPTAS_ELOHIM_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_MEDICAE_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_PILOT_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_ASSASSIN_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_REPENTIA_ZOMBIE: "Traitor Repentia"
-  STR_ADEPTAS_NOVICE_ZOMBIE: "Traitor Novitiate"
-  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE: "Traitor Militia"
-  STR_ADEPTAS_ELOHIM_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_MEDICAE_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_ASSASSIN_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_REPENTIA_ZOMBIE_ARMOR: "Traitor Repentia"
-  STR_ADEPTAS_PILOT_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_NOVICE_ZOMBIE_ARMOR: "Traitor Novitiate"
-  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE_ARMOR: "Traitor Militia"
-
 ## Grey Knights
-
-
   STR_GREY_KNIGHT_REQUISITION: "Requisition Grey Knight"
 
   STR_INQ_STORMTROOPER: "Inquisition Storm Trooper"
@@ -13793,15 +13806,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_REPRISALIA_MEDIC_ARMOR_UFOPEDIA: "{NEWLINE} The Adeptas Reprisalia train medicae within their own ranks to ensure that they do not need to rely on medical aid from outside sources.{NEWLINE} Whether for keeping their sisters alive or ensuring a target lives long enough for all useful information to be extracted, the Reprisalia Medicae are skilled at tending all battlefield injuries."
 
 ## Primaris Armor Bonuses
-
-  STR_PRIMARIS_ZOMBIE_DW_TAC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_GRV: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_INC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_PHB: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_TAC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_GRV: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_INC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_PHB: "Fallen Brother"
 
   STR_MKX_TAC_LEVELS_STATS_UFOPEDIA: >
     Promotion Stat Total Bonuses:
