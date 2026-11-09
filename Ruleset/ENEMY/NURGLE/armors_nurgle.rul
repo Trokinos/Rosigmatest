@@ -2034,7 +2034,7 @@ armors:
     frontArmor: 270 # slighty worse and more vulnerable dreadnought armor
     sideArmor: 237
     rearArmor: 177
-    underArmor: 207
+    underArmor: 217
     moveSound: 3960
     drawingRoutine: 5
     size: 2
