@@ -201,11 +201,20 @@ research:
     spawnedItemCount: 200
     points: 20
 
+  - name: STR_OUR_DEVOTION_DEEPENS
+    cost: 100
+    needItem: true
+    destroyItem: true
+    neededItem: STR_SLAANESHPATH_BOON
+    dependencies:
+      - ADORATION_THROUGH_AGONY
+      - STR_TERROR_WEAPONRY
+
   - name: STR_SOULSTAIN_SORCERY
     cost: 50
-    points: 20
+    points: 0
     dependencies:
-      - STR_SACRIFICIAL_RITUALS
+      - STR_OUR_DEVOTION_DEEPENS
 
 
   - name: STR_POWER_ARMOR_CORRUPTION # This is the tech that unlocks immaculate power armor.
@@ -216,7 +225,7 @@ research:
   - name: STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
     cost: 30
     needItem: true
-    destroyItem: false
+    destroyItem: true
 
 
  ### TIER 1 PIETY PROJECTS
@@ -296,7 +305,7 @@ research:
     points: 30
     dependencies:
       - STR_CONTACT_HERETEKS
-      - STR_PATH_OF_PERFECTION
+      - STR_OUR_DEVOTION_DEEPENS
 
   - name: STR_IMMACULATE_LASGUN_TECHNOLOGY
     cost: 25
@@ -368,12 +377,6 @@ research:
       - STR_LIGHT_GRENADE_LAUNCHERS
     getOneFree:
       - STR_STRANGLER_GRENADES
-
-  - name: STR_IMMACULATE_CHAINBLADES
-    cost: 0
-    dependencies:
-      - STR_WEAPON_CONSECRATION
-      - ADORATION_THROUGH_AGONY
 
   - name: STR_LIGHT_GRENADE_LAUNCHERS # Codex entry.
     cost: 0
@@ -488,6 +491,22 @@ research:
     points: 30
     dependencies:
       - STR_AGAINST_THE_ECCLESIARCHY
+
+
+
+
+  - name: STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
+    cost: 150
+    points: 40
+
+  - name: STR_IMMACULATE_ARMOR_TECHNOLOGY
+    cost: 80
+    points: 30
+    dependencies:
+      - STR_OUR_FOOLISH_SISTERS
+      - STR_CONTACT_HERETEKS
+      - STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
+      - STR_OUR_DEVOTION_DEEPENS
 
   - name: STR_TOPPLE_THEIR_SHRINES
     cost: 80

@@ -41,6 +41,22 @@ items:
     hiddenOnMinimap: true
 
 #PROMOTION ARMOR TOKENS
+
+  - type: STR_SLAANESHPATH_ADEPTAS_INVENTORYTOKEN
+    battleType: 6
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+    recoveryTransformations:
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 50, 35, 15]
+
+  - type: STR_SLAANESHPATH_MILITE_ARMOR_STOREITEM
+    size: 0.2
+    costSell: 10000
+
+
   - type: STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN # PROMOTION ITEM
     size: 0.1
   - type: STR_SLAANESHPATH_HARBINGER_ARMOR_TOKEN # PROMOTION ITEM
@@ -75,7 +91,7 @@ items:
 #ARMOR COMPONENT TOKENS
   - type: STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
     size: 0.1
-    costSell: 5000 # Subject to further balance changes.
+    costSell: 2000 # Subject to further balance changes.
   - type: STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_COMPONENTS
     size: 0.1
     costSell: 1000 # Much less valuable.
