@@ -123,7 +123,7 @@ items:
     fireSound: {mod: 40k, index: 875}
     bulletSprite: {mod: 40k, index: 2}
     bulletSpeed: 35
-    invWidth: 1
+    invWidth: 2
     invHeight: 3
     twoHanded: true
     armor: 200

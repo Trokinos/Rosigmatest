@@ -150,7 +150,7 @@ soldiers:
     allowPromotion: false
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 50
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -225,7 +225,7 @@ soldiers:
     allowPromotion: false
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 50
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -300,7 +300,7 @@ soldiers:
     allowPromotion: true
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 50
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -377,7 +377,7 @@ soldiers:
     allowPromotion: true
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 50
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -455,7 +455,7 @@ soldiers:
     allowPromotion: true
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 50
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -532,7 +532,7 @@ soldiers:
     allowPromotion: true
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 40
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -610,7 +610,7 @@ soldiers:
     allowPromotion: true
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 40
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -687,7 +687,7 @@ soldiers:
     allowPromotion: true
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 40
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -767,7 +767,7 @@ soldiers:
     allowPromotion: true
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 50
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -842,7 +842,7 @@ soldiers:
     allowPromotion: true
     standHeight: 22
     kneelHeight: 14
-    femaleFrequency: 95
+    femaleFrequency: 50
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -933,7 +933,7 @@ soldiers:
     rankSprite: {mod: 40k, index: 80} # ADD LATER
     rankBattleSprite: {mod: 40k, index: 194} # ADD LATER
     rankTinySprite: {mod: 40k, index: 127} # ADD LATER
-    femaleFrequency: 20
+    femaleFrequency: 10
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
