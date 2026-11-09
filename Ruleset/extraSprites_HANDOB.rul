@@ -186,7 +186,7 @@ extraSprites:
       1472: Resources/Handobs/handob_lucius_hellgun.png
       1480: Resources/Handobs/handob_lucius_volleygun.png
 
-# ELDAR 1498-1850
+# ELDAR 1498-1900
       1498: Resources/Eldar/weapons/fusionpistols/fusion_pistol_handObj.png
       1506: Resources/Eldar/weapons/fusionpistols/dragon_fusion_pistol_handObj.png
       1514: Resources/Eldar/weapons/fusionpistols/fusion_pistol_canister_handObj.png
@@ -228,7 +228,12 @@ extraSprites:
       1802: Resources/Eldar/weapons/ghostsword_handObj.png
       1810: Resources/Eldar/weapons/Reaper_launcher_handObj.png
       1818: Resources/Eldar/weapons/grenades/wireweavenet_handObj.png
-
+      1826: Resources/Eldar/weapons/grenades/sunburst_grenade_handObj.png
+      1834: Resources/Eldar/weapons/grenades/starshot_grenade_handObj.png
+      1842: Resources/Eldar/weapons/grenades/eldarfusion_grenade_handObj.png
+      1850: Resources/Eldar/weapons/grenades/eldarhaywire_grenade_handObj.png
+      1858: Resources/Eldar/weapons/grenades/eldarplasma_grenade_handObj.png
+      1866: Resources/Eldar/weapons/grenades/eldar_fusioncharge_handObj.png
 # Arbites; 1900-2000
       # Arbites' heavy stubber and ammo
       1900: Resources/Handobs/handob_handheld_heavy_stubber.png  # STR_HEAVY_STUBBER_HANDHELD replacement
@@ -497,7 +502,6 @@ extraSprites:
       4978: Resources/Eldar/weapons/spinneretrifle/spinneretrifle_spool_handObj.png
       4986: Resources/Eldar/weapons/dragon_fusion_gun_canister_handObj.png
 
-
 # Slaanesh strategy weapons
 
       6000: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_hand.png
@@ -506,5 +510,3 @@ extraSprites:
       6024: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_IX_HANDOB.png
       6032: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_IXB_HANDOB.png
       6040: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_VII_HANDOB.png
-
-      # 1850-1899 free spaces here, make sure to double check
