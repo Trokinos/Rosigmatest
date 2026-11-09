@@ -23221,7 +23221,7 @@ ufopaedia:
     type_id: 10
     section: STR_ALIEN_LIFE_FORMS
     image_id: tzeentch_officer_origins.SPK
-    text: STR_DESER TER_OFFICER_AUTOPSY_UFOPEDIA
+    text: STR_DESERTER_OFFICER_AUTOPSY_UFOPEDIA
     requires:
       - STR_DESERTER_GUARD_OFFICER_CORPSE
   - id: STR_DESERTER_GUARD_OFFICER_ARMOR
