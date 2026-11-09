@@ -3,42 +3,50 @@ extended:
 
 skills:
   # STEALTH SKILLS
-  - type: STR_SKILL_WARPSPIDER_STEALTH_TELEPORT  # Allows unit to enter stealth mode again at the cost of their turn
+  - type: STR_SKILL_WARPSPIDER_STEALTH_TELEPORT  # Allows unit to enter the warp
     tags:
-      SKILL_LIKE_FIGHTING_A_SHADOW_ID: 2
-      SKILL_LIKE_FIGHTING_A_SHADOW_RESTEALTH_DURATION: 3
+      SKILL_WARPING_ID: 1
+      SKILL_WARPING_COOLDOWN: 2
+      SKILL_WARPING_TU_COST_PERCENTAGE: 50 # prevents use as panic button to escape after shooting
       SKILL_IS_PSYCHIC_POWER: 80
+      SKILL_WARPER_ENERGY: 30 # Determines Movement distance
     costUse:
-      time: 70 # allows to walk a bit during the same turn
-      energy: 30 # taxing to use
-      stun: 20 # entering the warp for eldar is risking its soul stolen from slaanesh
+      time: 40 # Button checks Script deducts.
+      #energy: 10 # need energy for movement
+      #stun: 20 # entering the warp for eldar is risking its soul stolen from slaanesh
     flatUse:
       time: false
-      energy: true
-      stun: true
+      #energy: true
+      #stun: true
 
   - type: STR_SKILL_BANSHEE_DASH
     tags:
       #SKILL_LIKE_FIGHTING_A_SHADOW_ID: 2
       #SKILL_LIKE_FIGHTING_A_SHADOW_RESTEALTH_DURATION: 4
       #SKILL_IS_PSYCHIC_POWER: 40
+      SKILL_SPRINTING_TU_COST_PERCENTAGE: 20 # How much it costs to use skill
+      SKILL_SPRINTING_ENERGY_COST: 20 # How much it costs to use skill
+      SKILL_SPRINTING_STUN_COST: 20 # How much it costs to use skill
       SKILL_SPRINT_MOVECOST_TIMEPERCENT: 70 # what is the new TU % when sprinting
       SKILL_SPRINT_MOVECOST_ENERGYPERCENT: 70 # what is the new ENERGY % when sprinting
       SKILL_SPRINT_COOLDOWN_PERIOD: 11 # remember: each "turn" is 1 player, 1 enemy, 1 neutral, 11 turn is either at the start of player turn 4 or at the start of neutral turn 4
       SKILL_SPRINT_REUSABLE: 0 #is sprint reusable? 1=YES 0=Limited uses (use SKILL_SPRINT_USES to specify how many)
       SKILL_SPRINT_USES: 2
     costUse:
-      time: 20 #
+      time: 20 # checks Tu
       energy: 20 # taxing to use
       stun: 10 # using the warp for eldar is risking its soul stolen from slaanesh
     flatUse:
-      time: true
+      time: false
       energy: true
       stun: true
 
   - type: STR_SKILL_BANSHEE_EXARCH_DASH
     tags:
       #SKILL_IS_PSYCHIC_POWER: 40
+      SKILL_SPRINTING_TU_COST_PERCENTAGE: 20 # How much it costs to use skill
+      SKILL_SPRINTING_ENERGY_COST: 20 # How much it costs to use skill
+      SKILL_SPRINTING_STUN_COST: 20 # How much it costs to use skill
       SKILL_SPRINT_MOVECOST_TIMEPERCENT: 49 # what is the new TU % when sprinting
       SKILL_SPRINT_MOVECOST_ENERGYPERCENT: 49 # what is the new ENERGY % when sprinting
       SKILL_SPRINT_COOLDOWN_PERIOD: 8 # remember: each "turn" is 1 player, 1 enemy, 1 neutral, 8 turn is either at the start of player turn 3 or at the start of neutral turn 3
@@ -49,7 +57,7 @@ skills:
       energy: 20 #
       stun: 10 # using the warp for eldar is risking its soul stolen from slaanesh
     flatUse:
-      time: true
+      time: false
       energy: true
       stun: true
 
@@ -79,12 +87,12 @@ skills:
 
 soldiers:
   - type: STR_ELDAR_SPIDER_PLAYER
-    skillIconSprite: 221  #
+    skillIconSprite: 256  #
     skills:
       - STR_SKILL_WARPSPIDER_STEALTH_TELEPORT
 
   - type: STR_ELDAR_SPIDEREX_PLAYER
-    skillIconSprite: 221
+    skillIconSprite: 256
     skills:
       - STR_SKILL_WARPSPIDER_STEALTH_TELEPORT
 

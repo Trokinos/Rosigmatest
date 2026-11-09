@@ -6171,7 +6171,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_FUSION_CHARGE_DEPLOYED_ARMOR: "Deployed Fusion Charge"
   STR_ELDAR_FUSION_CHARGE_DEPLOYED_CORPSE: "Expended Fusion Charge"
   # eldar skills
-  STR_SKILL_WARPSPIDER_STEALTH_TELEPORT: "Warp-jump"
+  STR_SKILL_WARPSPIDER_STEALTH_TELEPORT: "Warp Jump"
   STR_DEATHWEAVERS_SPECIALWEAPON: "Death Weavers"
   STR_POWERBLADEARRAY_SPECIALWEAPON: "Powerblade Array"
   STR_POWERBLADEARRAY_NAME: "Powerblades"
@@ -14341,6 +14341,13 @@ en-US: #  yamllint disable-line rule:empty-values
   # ** FIREDRAGON CORONA COOLDOWN SCRIPT **
   STR_SCRIPT_FIREDRAGON_CORONA_RELOAD_RECHARGING: "Flame Corona Recharging. Turns left: {0}"
   STR_SCRIPT_FIREDRAGON_CORONA_RELOAD_RECHARGED: "Flame Corona Ready For Use"
+  # ** WARPING SCRIPT **
+  STR_SCRIPT_ENTERING_WARP: "Entering the Warp"
+  STR_SCRIPT_WARPING_LEAVING_WARP: "Leaving the Warp"
+  STR_SCRIPT_WARPING_TIME_REMAINING: "Inside Warp for {0} more turns!"
+  STR_SCRIPT_WARPER_COOLDOWN: "Warp Generator recharged in {0} more turns!"
+  STR_SCRIPT_WARPING_EJECTED_FROM_WARP: "EJECTED FROM THE WARP!!!"
+  STR_SCRIPT_WARPER_NO_BENEFIT: "Unit can't benefit from this while Warping!"
   # ** ENVIRONMENTAL SCRIPTS
 
   STR_DAEMON_PURGE_STRONG_ENVIRONMENTAL_TOKEN: "Strong Daemonic Purge Environmental Token"

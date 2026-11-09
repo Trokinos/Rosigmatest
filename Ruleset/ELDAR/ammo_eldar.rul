@@ -633,10 +633,10 @@ items:
       ArmorEffectiveness: 0.9 #Minor armor pen
       ToHealth: 1.0
       ToMorale: 0.5 #
-      ToTime: 0.3  # Tangled in Wire
-      ToArmorPre: 0.3 # -1 AP Wire cloud grates armor
+      ToTime: 0.2  # Tangled in Wire
+      ToArmorPre: 0.2 # -1 AP Wire cloud grates armor
       ToItem: 0.5 # Indiscriminate targeting
-      FixRadius: 2 # Monomolecular Cloud
+      FixRadius: 1 # Monomolecular Cloud
     listOrder: 16610
 
   - type: STR_WIREWEAVE_SPOOL
