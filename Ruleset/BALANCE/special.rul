@@ -2,8 +2,20 @@
 
 items:
 
+  # ship info dataslate, unused
+  - delete: STR_SHIPINFO1
+  - delete: STR_SHIPINFO2
+  - delete: STR_SHIPINFO3
+  - delete: STR_SHIPINFO4
+  - delete: STR_SHIPINFO5
+  - delete: STR_SHIPINFO6
+  - delete: STR_SHIPINFO7
+  - delete: STR_SHIPINFO8
+  - delete: STR_SHIPINFO9
+  - delete: STR_SHIPINFO10
+  - delete: STR_SHIPINFO11
+  - delete: STR_SHIPINFO13
 ## Rifle
-
   - type: STR_WEBBER  # done
     dropoff: 5
     autoRange: 0
