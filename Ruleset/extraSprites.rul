@@ -2032,7 +2032,7 @@ extraSprites:
       253: Resources/Spicons/SPICON_POWERBLADES.png
       254: Resources/Spicons/SPICON_CORONA.png
       255: Resources/Spicons/SPICON_drop.png
-
+      256: Resources/Spicons/SPICON_warp.png
 
   - type: SPICONS.DAT
     files:

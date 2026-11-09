@@ -818,6 +818,17 @@ extended:
             return;
           end;
 
+          target.getTag temp Tag.UNIT_IS_WARPING;
+          if gt temp 0;
+            battle_game.flashMessage "STR_SCRIPT_WARPER_NO_BENEFIT";
+            return;
+          end;
+          actor.getTag temp Tag.UNIT_IS_WARPING;
+          if gt temp 0;
+            battle_game.flashMessage "STR_SCRIPT_WARPER_NO_BENEFIT";
+            return;
+          end;
+
           target.getFire temp;
           if and eq medikit_action_type medikit_action_heal gt temp 0;
             set wound_recovery 0;
