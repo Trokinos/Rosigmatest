@@ -245,7 +245,7 @@ items:
       - STR_BLACK_MARKET_AMMO_TRADE
     listOrder: 10289
 
-    type: STR_PLASMA_SPRAY_CLIP_SLAAN
+  - type: STR_PLASMA_SPRAY_CLIP_SLAAN
     categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     refNode: *IMMACULATE_WEAPON
     size: 0.1

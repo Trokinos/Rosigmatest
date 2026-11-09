@@ -453,7 +453,7 @@ items:
       1:
         compatibleAmmo: [STR_MELTA_GRENADE40, STR_SHARD_GRENADE40, STR_STRANGLER_GRENADE40, STR_HALLUCINOGEN_GRENADE40]
 
-    type: STR_BOLTER_DEAZ_SLAAN
+  - type: STR_BOLTER_DEAZ_SLAAN
     battleType: 1
     bigSprite: {mod: 40k, index: 550}
     floorSprite: {mod: 40k, index: 1}

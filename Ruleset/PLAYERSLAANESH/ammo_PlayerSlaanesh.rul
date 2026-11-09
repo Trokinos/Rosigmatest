@@ -562,7 +562,7 @@ items:
 
  #### GRENADES
 
-    type: STR_SCREAMER_GRENADE # Smaller versions of the Slaanesh Sonic Grenade.
+  - type: STR_SCREAMER_GRENADE # Smaller versions of the Slaanesh Sonic Grenade.
     bigSprite: 2313
     floorSprite: 2420
     handSprite: 2390
@@ -609,7 +609,7 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 75
 
 
-    type: STR_SHRIEKER_GRENADE # A sonic stun grenade.
+  - type: STR_SHRIEKER_GRENADE # A sonic stun grenade.
     bigSprite: 2313
     floorSprite: 2420
     handSprite: 2390

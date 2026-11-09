@@ -204,7 +204,7 @@ items:
       ITEM_RECOIL: 30 # Worse performance due to lack of foregrip.
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-    type: STR_BOLTER_DEAZ_SLAAN # Better performance than a normal De'az, due to "blessed" nature. No autofire.
+  - type: STR_BOLTER_DEAZ_SLAAN # Better performance than a normal De'az, due to "blessed" nature. No autofire.
     dropoff: 5
     snapRange: 14
     autoRange: 12
