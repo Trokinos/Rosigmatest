@@ -192,26 +192,26 @@ items:
       ITEM_RECOIL: 70
       ITEM_IS_HEAVY_WEAPON: 1
 
-  - type: STR_CHAOS_ASSAULT_CANNON             #Chaos variant doesnt exist in game yet                                               # 13210
-    categories: [STR_CAT_AUTO]
-    requires:
-      - STR_ALIENS_ONLY
-    size: 0.6
-    costSell: 20000
-    weight: 100
-    compatibleAmmo:
-      - STR_ASSC_CLIP
-      - STR_ASSC_CLIP_AP
-      - STR_ASSC_CLIP_HE
-    battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 100
-    invWidth: 2
-    invHeight: 3
-    armor: 30
-    bulletSpeed: 50
-    attraction: 8
-    listOrder: 13210
+  # - type: STR_CHAOS_ASSAULT_CANNON             #Chaos variant doesnt exist in game yet                                               # 13210
+  #   categories: [STR_CAT_AUTO]
+  #   requires:
+  #     - STR_ALIENS_ONLY
+  #   size: 0.6
+  #   costSell: 20000
+  #   weight: 100
+  #   compatibleAmmo:
+  #     - STR_ASSC_CLIP
+  #     - STR_ASSC_CLIP_AP
+  #     - STR_ASSC_CLIP_HE
+  #   battleType: 1
+  #   twoHanded: true
+  #   oneHandedPenalty: 100
+  #   invWidth: 2
+  #   invHeight: 3
+  #   armor: 30
+  #   bulletSpeed: 50
+  #   attraction: 8
+  #   listOrder: 13210
 
   - type: STR_ASSCTZ  # TZEENTCH SOULREAPER ASSAULT CANNON
     categories: [STR_CAT_AUTO, STR_CAT_CHAOS, STR_CAT_TZEENTCH]
