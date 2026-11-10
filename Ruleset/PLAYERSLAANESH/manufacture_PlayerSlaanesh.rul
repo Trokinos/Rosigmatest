@@ -1,0 +1,409 @@
+manufacture:
+
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠛⣛⣛⣛⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠄⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠄⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⢰⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠉⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠈⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢠⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⠻⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠿⠿⠿⠛⠛⠉⠄⠄⠄⣰⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣶⣶⣤⣤⣄⣀⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⠟⣁⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣶⣤⣄⣀⣀⣀⣀⣀⣀⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣵⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠉⠉⠉⠉⠉⠉⠉⠙⠛⠻⠿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣤⡀⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣷⡄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⠟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢿⣿⣿⣿⣿⣿⡄⠄⠄⠄⠄⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⡏⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣷⡀⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⣿⣿⣿⣿⣿⣇⠄⠄⠄⠄⠄⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣧⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⠁⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⡿⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⣿⠇⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢠⣾⣿⣿⣿⣿⣿⣿⡏⠄⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⠟⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⢏⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣤⣀⣀⠄⠄⠄⠄⠄⢀⣀⣠⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+
+###################################### TABLE OF CONTENTS #############################################
+
+
+      #PA - POWER ARMOR PRODUCTION
+
+  #AT - ARMOR TOKEN PRODUCTION
+    #AC  - ARMOR COMPONENT PRODUCTION
+      #AU  - ARMOR UPGRADE PRODUCTION
+
+
+#### RITUALS OF EXCESS - PIETY GENERATION
+
+  - name: STR_PROPITIATE_SLAANESH
+    category: STR_RITES_OF_EXCESS
+    requires:
+      - STR_PATH_OF_PERFECTION
+    requiresBaseFunc: [ALTAR]
+    space: 15
+    time: 60
+    cost: 6000
+    producedItems:
+      STR_SLAANESHPATH_PIETY: 66
+    requiredItems:
+      STR_KILLPOINT_TOKEN: 60
+    points: 10
+
+  - name: STR_SACRIFICE_TO_SLAANESH
+    category: STR_RITES_OF_EXCESS
+    requires:
+      - STR_SACRIFICIAL_RITUALS
+    requiresBaseFunc: [ALTAR]
+    space: 15
+    time: 200
+    cost: 10000
+    producedItems:
+      STR_SLAANESHPATH_PIETY: 250
+      STR_ALIEN_FOOD: 12
+    requiredItems:
+      STR_ALIEN_SURGERY: 6
+    points: 10
+
+  - name: STR_REQUEST_BOON
+    category: STR_RITES_OF_EXCESS
+    requires:
+      - STR_PATH_OF_PERFECTION #Placeholder
+    requiresBaseFunc: [ALTAR]
+    space: 0
+    time: 20
+    producedItems:
+      STR_SLAANESHPATH_BOON: 1
+    requiredItems:
+      STR_SLAANESHPATH_PIETY: 200
+
+  - name: STR_CONVERT_MINOR_MISSION_BOUNTY # Random reward for minor missions.
+    category: STR_RITES_OF_EXCESS
+    requires:
+      - STR_GENERALLOCK
+    space: 5
+    time: 60
+    cost: 6000
+    requiredItems:
+      STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: 1
+    producedItems: # Roughly 90K worth of piety + warpstones; minor randomized weapon rewards on top.
+      STR_ALIEN_FOOD: 5
+      STR_SLAANESHPATH_PIETY: 45
+    randomProducedItems: # PLACEHOLDER, WILL GIVE SLAANESH WEAPONS AND EXOTIC AMMO
+      - [10, {STR_TAU_PULSE_RIFLE: 1}]
+      - [20, {STR_TAU_PULSE_CARBINE: 1, STR_TAU_PHOTON_GRENADE_CARBINE: 5}]
+      - [10, {STR_TAU_PULSE_BLASTER: 1, STR_TAU_PULSE_BLASTER_MAG: 5}]
+      - [20, {STR_TAU_PULSE_PISTOL: 2}]
+      - [5, {STR_TAU_RAIL_RIFLE: 1, STR_TAU_RAIL_MAG: 5}]
+      - [25, {STR_TAU_PHOTON_GRENADE: 10, STR_TAU_FUSION_GRENADE: 5, STR_TAU_EMP_GRENADE: 5}]
+      - [70, {STR_TAU_PULSE_MAG: 25}]
+    points: 10
+
+#### RITUALS OF PAIN - CHAOS SACRIFICE PREPARATION & GENERATION
+
+  - name: STR_CAPTURE_CHAOS_SACRIFICES
+    category: STR_RITES_OF_PAIN
+    requires:
+      - STR_SACRIFICIAL_RITUALS
+    space: 0
+    time: 200
+    cost: 50000
+    producedItems:
+      STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_PIETY: 5
+
+
+#### RITUALS OF SUBVERSION - UNIT RECRUITMENT
+
+  - name: STR_RECRUIT_HANDMAIDEN
+    category: STR_RITES_OF_SUBVERSION
+    requires:
+      - STR_PATH_OF_PERFECTION
+    requiresBaseFunc: [ALTAR]
+    space: 0
+    time: 200
+    cost: 25000
+    producedItems: {}
+    spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
+    requiredItems:
+      STR_SLAANESHPATH_PIETY: 90
+    points: 0
+
+#### RITUALS OF DECADENCE ####
+
+####################################################################
+######## RITUALS OF CORRUPTION - WEAPON & ITEM CONVERSIONS #########
+####################################################################
+
+ # TIER 1 WEAPON CONVERSIONS
+
+  - name: STR_CORRUPT_CANTUS_BOLTER
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
+    space: 0
+    time: 160
+    cost: 10000
+    producedItems:
+      STR_BOLTER_CANTUS_SLAAN: 1
+    requiredItems:
+      STR_BOLTER_CANTUS: 1
+      STR_SLAANESHPATH_PIETY: 30
+    points: 10
+
+  - name: STR_ATTACH_GL_TO_CANTUS
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_LIGHT_GRENADE_LAUNCHERS
+    space: 5
+    time: 80
+    cost: 2000
+    producedItems:
+      STR_BOLTER_CANTUS_GL: 1
+    requiredItems:
+      STR_BOLTER_CANTUS_SLAAN: 1
+      STR_GRENADE_LAUNCHER_GORGE: 1
+    points: 0
+
+  - name: STR_CORRUPT_DEAZ_BOLTER
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
+    space: 0
+    time: 160
+    cost: 5000 # +20K promethium
+    producedItems:
+      STR_BOLTER_DEAZ_SLAAN: 1
+    requiredItems:
+      STR_BOLTER_DEAZ: 1
+      STR_ELERIUM_115: 4
+      STR_SLAANESHPATH_PIETY: 35
+    points: 12
+
+  - name: STR_ATTACH_WEBBER_TO_DEAZ
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CONSTRICTOR_WEBBER_PISTOLS
+      - STR_CORRUPT_ADEPTAS_BOLTERS
+    space: 10
+    time: 140
+    cost: 5000
+    producedItems:
+      STR_BOLTER_ARACHNE: 1
+    requiredItems:
+      STR_BOLTER_DEAZ_SLAAN: 1
+      STR_CONSTRICTOR_PISTOL: 1
+    points: 0
+
+  - name: STR_CORRUPT_ELOHIM_BOLTER
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
+    time: 160
+    cost: 9000 # +25K promethium
+    producedItems:
+      STR_BOLTER_ELOHIM_SLAAN: 1
+    requiredItems:
+      STR_BOLTER_ELOHIM: 1
+      STR_ELERIUM_115: 5
+      STR_SLAANESHPATH_PIETY: 35
+    points: 15
+
+  - name: STR_CREATE_IMMACULATE_EVISCERATOR
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_WEAPON_CONSECRATION
+    time: 160
+    cost: 5000 # +15K promethium
+    producedItems:
+      STR_LIGHT_CHAINSWORD_SLAAN: 1
+    requiredItems:
+      STR_EVISCERATOR: 1
+      STR_ELERIUM_115: 2
+      STR_SLAANESHPATH_PIETY: 35
+
+  - name: STR_CREATE_IMMACULATE_CHAINSWORD
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_WEAPON_CONSECRATION
+    time: 160
+    cost: 5000 # +15K promethium
+    producedItems:
+      STR_EVISCERATOR_SLAAN: 1
+    requiredItems:
+      STR_EVISCERATOR: 1
+      STR_ELERIUM_115: 2
+      STR_SLAANESHPATH_PIETY: 25
+
+########################################################
+### #PA ####### POWER ARMOR PRODUCTION #################
+########################################################
+
+ #AT - PROMOTION TOKENS
+  - name: STR_CREATE_IMMACULATE_TOKEN # REBALANCE THIS
+    category: STR_RITES_OF_CONSECRATION
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    space: 20
+    time: 300
+    cost: 12000 # Actual cost factoring in material sell value is 70K
+    producedItems:
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
+      STR_SLAANESHPATH_PIETY: 50
+      STR_ELERIUM_115: 4
+    points: 20
+
+  - name: STR_CREATE_ANGELIC_TOKEN # BALANCE TBD
+    category: STR_RITES_OF_CONSECRATION
+    requires:
+      - STR_GENERALLOCK # PLACEHOLDER
+    space: 20
+    time: 300
+    cost: 1200 # BALANCE TBD
+    producedItems:
+      STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
+      STR_SLAANESHPATH_PIETY: 50
+      STR_ELERIUM_115: 4
+    points: 20
+
+  - name: STR_CREATE_HARBINGER_TOKEN # BALANCE TBD
+    category: STR_RITES_OF_CONSECRATION
+    requires:
+      - STR_GENERALLOCK # PLACEHOLDER
+    space: 20
+    time: 300
+    cost: 1200 # BALANCE TBD
+    producedItems:
+      STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
+      STR_SLAANESHPATH_PIETY: 50
+      STR_ELERIUM_115: 4
+    points: 20
+
+  - name: STR_CREATE_ARCHANGEL_TOKEN # BALANCE TBD
+    category: STR_RITES_OF_CONSECRATION
+    requires:
+      - STR_GENERALLOCK # PLACEHOLDER
+    space: 20
+    time: 300
+    cost: 1200 # BALANCE TBD
+    producedItems:
+      STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
+      STR_SLAANESHPATH_PIETY: 50
+      STR_ELERIUM_115: 4
+    points: 20
+
+#AC
+  - name: STR_REPAIR_ADEPTAS_ARMOR_COMPONENT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    space: 20
+    time: 200
+    cost: 1000 # Adds a hefty cost and time requirement.
+    producedItems:
+      STR_SLAANESHPATH_MILITE_ARMOR_STOREITEM: 1
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 5
+    points: 0
+
+#  - name: STR_FORGE_ADEPTAS_ARMOR_COMPONENT
+#    category: STR_PERSONAL_ARMOR
+#    requires:
+#      - STR_POWER_ARMOR_CORRUPTION
+#    space: 20
+#    time: 200
+#    cost: 1000 # Adds a hefty cost and time requirement.
+#    producedItems:
+#      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
+#    requiredItems:
+#      STR_ALIEN_ALLOYS: 3
+#      STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_COMPONENTS: 3
+#    points: 0
+
+#WEAPON & AMMO MANUFACTURE
+
+
+
+  - name: STR_PLASMA_CARBINE_SLAAN
+    category: STR_WEAPON
+    requires:
+      - STR_IMMACULATE_PLASMA_TECHNOLOGY
+    space: 0
+    time: 800
+    cost: 85000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 4
+    producedItems:
+      STR_PLASMA_CARBINE_SLAAN: 1
+  - name: STR_PLASMA_SPRAY_CLIP_SLAAN
+    category: STR_AMMUNITION
+    requires:
+      - STR_IMMACULATE_PLASMA_TECHNOLOGY
+    space: 0
+    time: 200
+    cost: 30000
+    producedItems:
+      STR_PLASMA_SPRAY_CLIP_SLAAN: 5
+
+
+  - name: STR_CONSTRICTOR_PISTOL_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_CONSTRICTOR_WEBBER_PISTOLS
+    space: 0
+    time: 200
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 6
+      STR_ELERIUM_115: 6
+    producedItems:
+      STR_CONSTRICTOR_PISTOL_AMMO: 5
+  - name: STR_CONSTRICTOR_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_CONSTRICTOR_WEBBER_PISTOLS
+    space: 0
+    time: 500
+    cost: 40000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_CONSTRICTOR_PISTOL: 1
+

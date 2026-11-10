@@ -1,0 +1,270 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+
+
+
+
+items:
+
+##### WEAPONS
+
+  - &IMMACULATE_WEAPON # RefNode for chaos weapon use requirements.
+    type: STR_HEARTBREAKER_SNIPER_RIFLE
+    requires:
+      - STR_CHAOS_WEAPON_USE_DEP
+
+  - type: STR_AGRIPINAA_MKIX
+    categories: [STR_CAT_AUTO]
+    size: 0.2
+    costBuy: 18000
+    costSell: 3500
+    requiresBuy:
+      - STR_MARKSMAN_AUTOGUNS
+    listOrder: 10741
+
+  - type: STR_AGRIPINAA_MKIXB
+    categories: [STR_CAT_AUTO]
+    size: 0.2
+    costBuy: 22000
+    costSell: 2600
+    requiresBuy:
+      - STR_MARKSMAN_AUTOGUNS
+    listOrder: 10742
+
+  - type: STR_GRAIA_MKVII
+    categories: [STR_CAT_AUTO]
+    size: 0.2
+    costBuy: 32000
+    costSell: 6000
+    requiresBuy:
+      - STR_MARKSMAN_AUTOGUNS
+    listOrder: 10743
+    recoveryPoints: 2
+
+  - type: STR_MELTA_CARBINE_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costSell: 40000
+    listOrder: 11160
+    recoveryPoints: 3
+
+  - type: STR_PLASMA_CARBINE_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.2
+    costSell: 22000
+    listOrder: 11400
+    recoveryPoints: 1
+
+  - type: STR_BOLTPISTOL_DEAZ_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.2
+    costSell: 4000
+    listOrder: 10090
+
+  - type: STR_BOLTER_CANTUS_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 20000
+    costSell: 3500
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10286
+
+  - type: STR_BOLTER_CANTUS_GL
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 30000
+    costSell: 6000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10287
+
+  - type: STR_BOLTER_DEAZ_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 23000
+    costSell: 4000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10288
+
+  - type: STR_BOLTER_ARACHNE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 23000
+    costSell: 9000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10289
+
+  - type: STR_BOLTER_KELPIE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 23000
+    costSell: 9000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10230
+
+
+  - type: STR_BOLTER_KERES
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costBuy: 23000
+    costSell: 12000
+    requiresBuy:
+      - STR_GENERALLOCK
+    listOrder: 10235 # PLACEHOLDER?
+
+
+#### GRENADES
+
+
+  - type: STR_STRANGLER_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 3000
+    costSell: 250
+    requiresBuy:
+      - STR_STRANGLER_GRENADES
+    listOrder: 15298
+
+  - type: STR_STRANGLER_GRENADE40
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 4000
+    costSell: 250
+    requiresBuy:
+      - STR_STRANGLER_GRENADES
+    listOrder: 15299
+
+  - type: STR_SCREAMER_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 2600
+    costSell: 350
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15300
+
+  - type: STR_SCREAMER_GRENADE40
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 4500
+    costSell: 500
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15301
+
+  - type: STR_SHRIEKER_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 2600
+    costSell: 350
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15302
+
+  - type: STR_SHRIEKER_GRENADE40
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 4500
+    costSell: 500
+    requiresBuy:
+      - STR_TERROR_WEAPONRY
+    listOrder: 15301
+
+# - type: STR_SHARD_GRENADE
+
+  - type: STR_SHARD_GRENADE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 3000
+    costSell: 450
+    requiresBuy:
+      - STR_SHARD_GRENADES
+    listOrder: 15303
+
+  - type: STR_SHARD_GRENADE40
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costBuy: 5500
+    costSell: 550
+    requiresBuy:
+      - STR_SHARD_GRENADES
+    listOrder: 15304
+
+
+#### AMMO
+
+  - type: STR_CANTUS_BOLTER_AMMO_BM
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costBuy: 1500 # way too expensive
+    costSell: 100
+    requiresBuy:
+      - STR_BLACK_MARKET_AMMUNITION
+      - STR_BLACK_MARKET_AMMO_TRADE
+    listOrder: 10287
+
+  - type: STR_LIGHT_BOLTER_AMMO_BM
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costBuy: 2000 # way too expensive
+    costSell: 100
+    requiresBuy:
+      - STR_BLACK_MARKET_AMMUNITION
+      - STR_BLACK_MARKET_AMMO_TRADE
+    listOrder: 10288
+
+  - type: STR_LIGHT_BOLTPISTOL_AMMO_BM
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costBuy: 1800 # way too expensive
+    costSell: 100
+    requiresBuy:
+      - STR_BLACK_MARKET_AMMUNITION
+      - STR_BLACK_MARKET_AMMO_TRADE
+    listOrder: 10289
+
+  - type: STR_PLASMA_SPRAY_CLIP_SLAAN
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    refNode: *IMMACULATE_WEAPON
+    size: 0.1
+    costSell: 2000
+    listOrder: 11310
+    recoveryPoints: 1
+
+  - type: STR_PLASMA_RIFLE_CLIP_SLAAN
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    refNode: *IMMACULATE_WEAPON
+    size: 0.1
+    costSell: 3900
+    listOrder: 11311
+    recoveryPoints: 1
+
+  - type: STR_CONSTRICTOR_PISTOL_AMMO
+    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    refNode: *IMMACULATE_WEAPON
+    size: 0.1
+    costSell: 300
+    listOrder: 11806
+    recoveryPoints: 1

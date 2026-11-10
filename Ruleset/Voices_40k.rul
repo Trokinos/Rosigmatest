@@ -2385,3 +2385,82 @@ armors:
     annoyedFemale:      [{mod: 40k, index: 336}, {mod: 40k, index: 337}, {mod: 40k, index: 338}, {mod: 40k, index: 339}, {mod: 40k, index: 340}]  # yamllint disable-line rule:colons
     deathMale:          [{mod: 40k, index: 385}, {mod: 40k, index: 386}, {mod: 40k, index: 387}, {mod: 40k, index: 388}]  # yamllint disable-line rule:colons
     deathFemale:        [{mod: 40k, index: 389}, {mod: 40k, index: 390}, {mod: 40k, index: 392}, {mod: 40k, index: 392}, {mod: 40k, index: 393}]  # yamllint disable-line rule:colons
+
+
+#### SLAANESH STRATEGY
+
+ # Handmaiden
+
+  - &STR_HANDMAIDEN_NODE
+    type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR
+    selectUnitMale:     [6092, 6099, 6104, 6108, 6109, 6111]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [6092, 6099, 6104, 6108, 6109, 6111]  # yamllint disable-line rule:colons
+    startMovingMale:    [6093, 6100, 6101, 6106, 6107, 6110]  # yamllint disable-line rule:colons
+    startMovingFemale:  [6093, 6100, 6101, 6106, 6107, 6110]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [6094, 6102, 6103, 6105, 6097, 6098]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [6094, 6102, 6103, 6105, 6097, 6098]  # yamllint disable-line rule:colons
+    annoyedMale:        [6092, 6099, 6104, 6108, 6109, 6111]  # yamllint disable-line rule:colons
+    annoyedFemale:      [6092, 6099, 6104, 6108, 6109, 6111]  # yamllint disable-line rule:colons
+    deathMale:          [6095, 6094]  # yamllint disable-line rule:colons
+    deathFemale:        [6095, 6094]  # yamllint disable-line rule:colons
+
+  - &STR_MYSTES_NODE
+    type: STR_SLAANESHPATH_MYSTES_ARMOR
+    selectUnitMale:     [2446, 2447, 2448, 2449, 2457, 2458, 2459]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [2446, 2447, 2448, 2449, 2457, 2458, 2459]  # yamllint disable-line rule:colons
+    startMovingMale:    [2460, 2461, 2462, 2463, 2464]  # yamllint disable-line rule:colons
+    startMovingFemale:  [2460, 2461, 2462, 2463, 2464]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [2465, 2466, 2467, 2468, 2469, 2470]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [2465, 2466, 2467, 2468, 2469, 2470]  # yamllint disable-line rule:colons
+    annoyedMale:        [2472, 2473]  # yamllint disable-line rule:colons
+    annoyedFemale:      [2472, 2473]  # yamllint disable-line rule:colons
+    deathMale:          [2471]  # yamllint disable-line rule:colons
+    deathFemale:        [2471]  # yamllint disable-line rule:colons
+
+#  - type: STR_SLAANESHPATH_MYSTES_ARMOR
+#    refNode: *STR_MYSTES_NODE
+
+  - &STR_IMMACULATEARMOR_NODE
+    type: STR_SLAANESHPATH_IMMACULATE_ARMOR
+    selectUnitMale:     [6004, 6006, 6013, 6016, 6020, 6021, 6009, 6029, 6024, 6016, 6025, 6001]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [6004, 6006, 6013, 6016, 6020, 6021, 6009, 6029, 6024, 6016, 6025, 6001]  # yamllint disable-line rule:colons
+    startMovingMale:    [6000, 6002, 6003, 6007, 6011, 6012, 6014, 6017, 6018, 6023, 6028, 6022]  # yamllint disable-line rule:colons
+    startMovingFemale:  [6000, 6002, 6003, 6007, 6011, 6012, 6014, 6017, 6018, 6023, 6028, 6022]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [6008, 6005, 6010, 6014, 6015, 6019, 6026, 6027]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [6008, 6005, 6010, 6014, 6015, 6019, 6026, 6027]  # yamllint disable-line rule:colons
+    annoyedMale:        [6028, 6024]  # yamllint disable-line rule:colons
+    annoyedFemale:      [6028, 6024]  # yamllint disable-line rule:colons
+    deathMale:          [2471]  # yamllint disable-line rule:colons
+    deathFemale:        [2471]  # yamllint disable-line rule:colons
+
+  - &STR_CHIRURGEON_NODE
+    type: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR
+    selectUnitMale:     [6040, 6042, 6044, 6045, 6046, 6047, 6052, 6053, 6061, 6062, 6065, 6066, 6067]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [6040, 6042, 6044, 6045, 6046, 6047, 6052, 6053, 6061, 6062, 6065, 6066, 6067]  # yamllint disable-line rule:colons
+    startMovingMale:    [6031, 6032, 6037, 6038, 6039, 6041, 6043, 6048, 6049, 6050, 6051, 6056, 6057, 6060]  # yamllint disable-line rule:colons
+    startMovingFemale:  [6031, 6032, 6037, 6038, 6039, 6041, 6043, 6048, 6049, 6050, 6051, 6056, 6057, 6060]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [6033, 6034, 6054, 6055, 6058, 6059, 6063, 6064]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [6033, 6034, 6054, 6055, 6058, 6059, 6063, 6064]  # yamllint disable-line rule:colons
+    annoyedMale:        [6060, 6062, 6040]  # yamllint disable-line rule:colons
+    annoyedFemale:      [6060, 6062, 6040]  # yamllint disable-line rule:colons
+    deathMale:          [6035, 6036]  # yamllint disable-line rule:colons
+    deathFemale:        [6035, 6036]  # yamllint disable-line rule:colons
+
+  - type: STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR
+    refNode: *STR_CHIRURGEON_NODE
+
+  - &STR_SORCERESS_NODE
+    type: STR_SLAANESHPATH_SORCERESS_ARMOR
+    selectUnitMale:     [6071, 6072, 6075, 6078, 6082, 6083, 6085, 6086, 6088]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [6071, 6072, 6075, 6078, 6082, 6083, 6085, 6086, 6088]  # yamllint disable-line rule:colons
+    startMovingMale:    [6068, 6069, 6073, 6074, 6084, 6089, 6091]  # yamllint disable-line rule:colons
+    startMovingFemale:  [6068, 6069, 6073, 6074, 6084, 6089, 6091]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [6079, 6080, 6081, 6090, 6087]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [6079, 6080, 6081, 6090, 6087]  # yamllint disable-line rule:colons
+    annoyedMale:        [6075, 6082]  # yamllint disable-line rule:colons
+    annoyedFemale:      [6075, 6082]  # yamllint disable-line rule:colons
+    deathMale:          [6070]  # yamllint disable-line rule:colons
+    deathFemale:        [6070]  # yamllint disable-line rule:colons
+
+  - type: STR_SLAANESHPATH_ANATHEMANT_ARMOR
+    refNode: *STR_SORCERESS_NODE

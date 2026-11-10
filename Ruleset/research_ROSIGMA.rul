@@ -8848,6 +8848,10 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
+  - name: STR_MARKSMAN_AUTOGUNS # Tech that gives access to the Agripinaa Mk. IX and Graia VII
+    dependencies:
+      - STR_GENERALLOCK
+
   - name: STR_LIBERATOR_AUTOSTUB  # Liberator Autostubber
     # Player Version
     cost: 250

@@ -75,6 +75,7 @@
 # #AT.ORKZ#           Da Emprah's Greenest
 # #AT.TAU#            The greater good strategy
 # #AT.ELDAR#          Eldar Strategy
+# #AT.SLAAN#          Slaanesh Strategy
 # #SOB#             Adeptas
 # #SOB.REP#           Repentia Strategy
 # #SOB.NOV#           Novice Strategy
@@ -1777,6 +1778,57 @@ ufopaedia:
     image_id: ELDAR_HWP_STARCANNON_ARMOR_CODEX.SPK
     text: STR_ELDAR_HWP_STARCANNON_ARMOR_CODEX
 
+## #AT.SLAAN# SLAANESH STRATEGY SECTION
+
+
+  - id: STR_SLAANESHPATH_SELECTED
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: SLAANESHUNDERCONSTRUCTIONCODEX.SPK
+    title: STR_SLAANESHUNDERCONSTRUCTION_TITLE
+    requires:
+      - STR_SLAANESHPATH_SELECTED
+    text: STR_SLAANESHPATH_SELECTED_UFOPEDIA_DESCRIPTION
+
+
+  - id: STR_SLAANESHPATH_GATE
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: SLAANESH_CONVERSION_EVENT_CODEX.SPK
+    requires:
+      - STR_SLAANESHPATH_GATE
+    pages:
+      - title: STR_VOICE_UFOPEDIA_TITLE
+        text: STR_SLAANESHPATH_GATE_UFOPEDIA_P1
+      - title: STR_VOICE_UFOPEDIA_TITLE
+        text: STR_SLAANESHPATH_GATE_UFOPEDIA_P2
+
+  - id: STR_PROCURE_TRANSPORTATION
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: CANTUSARMOR2.SPK
+    requires:
+      - STR_PROCURE_TRANSPORTATION
+    text: STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION
+
+  - id: CONTACT_ARMS_SMUGGLERS
+    title: "STR_CONTACT_ARMS_SMUGGLERS_TITLE"
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: UNDERHIVE_MARKET.SPK
+    requires:
+      - STR_CONTACT_ARMS_SMUGGLERS
+    text: STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION
+
+  - id: STR_BLACK_MARKET_AMMUNITION
+    title: "STR_BLACK_MARKET_AMMUNITION_TITLE"
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: AMMO_JACKS.SPK
+    requires:
+      - STR_BLACK_MARKET_AMMUNITION
+    text: STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION
+
 ## #STRATEGY.SOB#
   - delete: STR_CHOSEN_ADEPTAS
   - id: STR_CHOSEN_ADEPTAS
@@ -3401,6 +3453,15 @@ ufopaedia:
     text: STR_CHAOS_SHRINE_DESC
     requires:
       - STR_ALIENS_ONLY
+      - STR_NOT_SLAANESHPATH
+
+  - id: STR_SLAANESH_ALTAR
+    type_id: 16
+    section: STR_BASE_FACILITIES
+    image_id: SLAANESH_ALTAR_CODEX.SPK
+    text: STR_ALTAR_OF_SLAANESH_UFOPEDIA
+    requires:
+      - STR_SLAANESHPATH_GATE
 
   - id: STR_ARMORY_WB
     type_id: 16
@@ -11421,6 +11482,28 @@ ufopaedia:
     image_id: AUTOGUN_HIGH_GRADE_UNDERSLUNG_CODEX.SPK
     text: STR_AUTOGUN_HIGHGRADE_UNDERSLUNG_CODEX
 
+  - id: STR_AGRIPINAA_MKIX
+    requires:
+      - STR_MARKSMAN_AUTOGUNS
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: AUTOGUN_HIGH_GRADE_CODEX.SPK #Placeholder for now
+    text: STR_AGRIPINAA_MKIX_UFOPEDIA
+  - id: STR_AGRIPINAA_MKIXB
+    requires:
+      - STR_MARKSMAN_AUTOGUNS
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: AUTOGUN_HIGH_GRADE_CODEX.SPK #Placeholder for now
+    text: STR_AGRIPINAA_MKIXB_UFOPEDIA
+  - id: STR_GRAIA_MKVII
+    requires:
+      - STR_MARKSMAN_AUTOGUNS
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: AUTOGUN_HIGH_GRADE_CODEX.SPK #Placeholder for now
+    text: STR_GRAIA_MKVII_UFOPEDIA
+
   - id: STR_VALHALLAN_STUBRIFLE
     type_id: 14
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -11752,6 +11835,25 @@ ufopaedia:
     image_id: 1MB.SPK
     text: STR_BOLTER_CANTUS_UFOPEDIA
   - id: STR_CANTUS_BOLTER_AMMO
+    type_id: 14
+    section: STR_NOT_AVAILABLE
+
+  - id: STR_BOLTER_CANTUS_SLAAN  # Bolter Cantus Pattern
+    # Does not accept standard ammo
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1MB.SPK
+    text: STR_BOLTER_CANTUS_SLAAN_UFOPEDIA
+  - id: STR_BOLTER_CANTUS_GL  # Bolter Cantus Pattern
+    # Does not accept standard ammo
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1MB.SPK
+    text: STR_BOLTER_CANTUS_GL_UFOPEDIA
+  - id: STR_CANTUS_BOLTER_AMMO_PENETRATOR
+    type_id: 14
+    section: STR_NOT_AVAILABLE
+  - id: STR_CANTUS_BOLTER_AMMO_BM
     type_id: 14
     section: STR_NOT_AVAILABLE
 
@@ -14633,6 +14735,12 @@ ufopaedia:
     image_id: 1FG.SPK
     text: STR_GRENADE_UFOPEDIA
 
+  - id: STR_SHARD_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1FG.SPK
+    text: STR_SHARD_GRENADE_UFOPEDIA
+
   - delete: STR_KRAK_GRENADE
   - id: STR_KRAK_GRENADE
     type_id: 14
@@ -14646,6 +14754,12 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: 1SG2.SPK
     text: STR_SMOKE_GRENADE_UFOPEDIA
+
+  - id: STR_STRANGLER_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1SG2.SPK
+    text: STR_STRANGLER_GRENADE_UFOPEDIA
 
   - delete: STR_PROXIMITY_GRENADE
   - id: STR_PROXIMITY_GRENADE

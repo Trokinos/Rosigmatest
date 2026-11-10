@@ -33,6 +33,10 @@ items:
     tags:
       ITEM_IS_HEAVY_WEAPON: 1
 
+  - type: STR_SLAANESHPATH_LASCANNON_HANDHELD  # HW Bipod  # Las
+    tags:
+      ITEM_IS_HEAVY_WEAPON: 1
+
   - type: STR_HEAVY_BOLTER_GUARD  # HW Bipod  # Bolter
     tags:
       ITEM_IS_HEAVY_WEAPON: 1

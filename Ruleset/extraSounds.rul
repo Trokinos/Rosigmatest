@@ -3100,11 +3100,156 @@ extraSounds:
       # PANIC and BERSERK
       # DEATH
 
+# SLAANESH STRATEGY SECTION
+
+      # UNIT SECTION
+      # Handmaidens & Exalted Handmaidens
+
+      2446: Resources/PLAYERSLAANESH/Sounds/mystes/temple.wav
+      2447: Resources/PLAYERSLAANESH/Sounds/mystes/thirstforblood.wav
+      2448: Resources/PLAYERSLAANESH/Sounds/mystes/toolong.wav
+      2449: Resources/PLAYERSLAANESH/Sounds/mystes/yourdesire.wav
+      2457: Resources/PLAYERSLAANESH/Sounds/mystes/sacrificeneeded.wav
+      2458: Resources/PLAYERSLAANESH/Sounds/mystes/landisripe.wav
+      2459: Resources/PLAYERSLAANESH/Sounds/mystes/ourblades.wav
+      2460: Resources/PLAYERSLAANESH/Sounds/mystes/moveswiftly.wav
+      2461: Resources/PLAYERSLAANESH/Sounds/mystes/movewithhaste.wav
+      2462: Resources/PLAYERSLAANESH/Sounds/mystes/onwardsmysisters.wav
+      2463: Resources/PLAYERSLAANESH/Sounds/mystes/deathstalks.wav
+      2464: Resources/PLAYERSLAANESH/Sounds/mystes/wemovequickly.wav
+      2465: Resources/PLAYERSLAANESH/Sounds/mystes/rushofthekill.wav
+      2466: Resources/PLAYERSLAANESH/Sounds/mystes/killthem1.wav
+      2467: Resources/PLAYERSLAANESH/Sounds/mystes/nothroat.wav
+      2468: Resources/PLAYERSLAANESH/Sounds/mystes/bloodletting.wav
+      2469: Resources/PLAYERSLAANESH/Sounds/mystes/batheinblood.wav
+      2470: Resources/PLAYERSLAANESH/Sounds/mystes/riversrunred.wav
+      2471: Resources/PLAYERSLAANESH/Sounds/mystes/death1.wav
+      2472: Resources/PLAYERSLAANESH/Sounds/mystes/doasyouwish.wav
+      2473: Resources/PLAYERSLAANESH/Sounds/mystes/touchme.wav
+
+      6000: Resources/PLAYERSLAANESH/Sounds/sister/atonce.wav
+      6001: Resources/PLAYERSLAANESH/Sounds/sister/behold.wav
+      6002: Resources/PLAYERSLAANESH/Sounds/sister/charge.wav
+      6003: Resources/PLAYERSLAANESH/Sounds/sister/comethen.wav
+      6004: Resources/PLAYERSLAANESH/Sounds/sister/darkwhispers.wav
+      6005: Resources/PLAYERSLAANESH/Sounds/sister/enjoyyourdeaths.wav
+      6006: Resources/PLAYERSLAANESH/Sounds/sister/excessinallthings.wav
+      6007: Resources/PLAYERSLAANESH/Sounds/sister/go.wav
+      6008: Resources/PLAYERSLAANESH/Sounds/sister/howdelicious.wav
+      6009: Resources/PLAYERSLAANESH/Sounds/sister/lordarises.wav
+      6010: Resources/PLAYERSLAANESH/Sounds/sister/makethemscream.wav
+      6011: Resources/PLAYERSLAANESH/Sounds/sister/move.wav
+      6012: Resources/PLAYERSLAANESH/Sounds/sister/moving.wav
+      6013: Resources/PLAYERSLAANESH/Sounds/sister/newextremes.wav
+      6014: Resources/PLAYERSLAANESH/Sounds/sister/ohyes.wav
+      6015: Resources/PLAYERSLAANESH/Sounds/sister/orgasmicagony.wav
+      6016: Resources/PLAYERSLAANESH/Sounds/sister/perfection.wav
+      6017: Resources/PLAYERSLAANESH/Sounds/sister/run.wav
+      6018: Resources/PLAYERSLAANESH/Sounds/sister/sauntering.wav
+      6019: Resources/PLAYERSLAANESH/Sounds/sister/savortheiragony.wav
+      6020: Resources/PLAYERSLAANESH/Sounds/sister/serpentstrikes.wav
+      6021: Resources/PLAYERSLAANESH/Sounds/sister/servant.wav
+      6022: Resources/PLAYERSLAANESH/Sounds/sister/slaaneshdecreesit.wav
+      6023: Resources/PLAYERSLAANESH/Sounds/sister/slither.wav
+      6024: Resources/PLAYERSLAANESH/Sounds/sister/spreaddecadence.wav
+      6025: Resources/PLAYERSLAANESH/Sounds/sister/stridewithperfection.wav
+      6026: Resources/PLAYERSLAANESH/Sounds/sister/theydie.wav
+      6027: Resources/PLAYERSLAANESH/Sounds/sister/yes.wav
+      6028: Resources/PLAYERSLAANESH/Sounds/sister/yesmaster.wav
+      6029: Resources/PLAYERSLAANESH/Sounds/sister/yourwill.wav
+
+      # CHIRURGEON
+
+      6031: Resources/PLAYERSLAANESH/Sounds/chirurgeon/appreciate1.wav
+      6032: Resources/PLAYERSLAANESH/Sounds/chirurgeon/appreciate2.wav
+      6033: Resources/PLAYERSLAANESH/Sounds/chirurgeon/crimson1.wav
+      6034: Resources/PLAYERSLAANESH/Sounds/chirurgeon/crimson2.wav
+      6035: Resources/PLAYERSLAANESH/Sounds/chirurgeon/death1.wav
+      6036: Resources/PLAYERSLAANESH/Sounds/chirurgeon/death2.wav
+      6037: Resources/PLAYERSLAANESH/Sounds/chirurgeon/desire1.wav
+      6038: Resources/PLAYERSLAANESH/Sounds/chirurgeon/desire2.wav
+      6039: Resources/PLAYERSLAANESH/Sounds/chirurgeon/discretion1.wav
+      6040: Resources/PLAYERSLAANESH/Sounds/chirurgeon/finalsurprise.wav
+      6041: Resources/PLAYERSLAANESH/Sounds/chirurgeon/firstblood.wav
+      6042: Resources/PLAYERSLAANESH/Sounds/chirurgeon/greatteam1.wav
+      6043: Resources/PLAYERSLAANESH/Sounds/chirurgeon/heartbeat.wav
+      6044: Resources/PLAYERSLAANESH/Sounds/chirurgeon/helpful1.wav
+      6045: Resources/PLAYERSLAANESH/Sounds/chirurgeon/helpful2.wav
+      6046: Resources/PLAYERSLAANESH/Sounds/chirurgeon/hm1.wav
+      6047: Resources/PLAYERSLAANESH/Sounds/chirurgeon/hm2.wav
+      6048: Resources/PLAYERSLAANESH/Sounds/chirurgeon/lastoneforme.wav
+      6049: Resources/PLAYERSLAANESH/Sounds/chirurgeon/myway.wav
+      6050: Resources/PLAYERSLAANESH/Sounds/chirurgeon/notexpect1.wav
+      6051: Resources/PLAYERSLAANESH/Sounds/chirurgeon/notexpect2.wav
+      6052: Resources/PLAYERSLAANESH/Sounds/chirurgeon/open1.wav
+      6053: Resources/PLAYERSLAANESH/Sounds/chirurgeon/open2.wav
+      6054: Resources/PLAYERSLAANESH/Sounds/chirurgeon/painpleasure1.wav
+      6055: Resources/PLAYERSLAANESH/Sounds/chirurgeon/painpleasure2.wav
+      6056: Resources/PLAYERSLAANESH/Sounds/chirurgeon/pleasesyou1.wav
+      6057: Resources/PLAYERSLAANESH/Sounds/chirurgeon/pleasesyou2.wav
+      6058: Resources/PLAYERSLAANESH/Sounds/chirurgeon/sacrifice1.wav
+      6059: Resources/PLAYERSLAANESH/Sounds/chirurgeon/sacrifice2.wav
+      6060: Resources/PLAYERSLAANESH/Sounds/chirurgeon/sigh.wav
+      6061: Resources/PLAYERSLAANESH/Sounds/chirurgeon/trustme.wav
+      6062: Resources/PLAYERSLAANESH/Sounds/chirurgeon/well1.wav
+      6063: Resources/PLAYERSLAANESH/Sounds/chirurgeon/wideopen1.wav
+      6064: Resources/PLAYERSLAANESH/Sounds/chirurgeon/wideopen2.wav
+      6065: Resources/PLAYERSLAANESH/Sounds/chirurgeon/yourback1.wav
+      6066: Resources/PLAYERSLAANESH/Sounds/chirurgeon/yourback2.wav
+      6067: Resources/PLAYERSLAANESH/Sounds/chirurgeon/yourmind1.wav
+
+      # SORCERESS
+
+      6068: Resources/PLAYERSLAANESH/Sounds/sorceress/agonyawaits.wav
+      6069: Resources/PLAYERSLAANESH/Sounds/sorceress/asiwill.wav
+      6070: Resources/PLAYERSLAANESH/Sounds/sorceress/death1.wav
+      6071: Resources/PLAYERSLAANESH/Sounds/sorceress/ecstacyofagony.wav
+      6072: Resources/PLAYERSLAANESH/Sounds/sorceress/exquisiteagony.wav
+      6073: Resources/PLAYERSLAANESH/Sounds/sorceress/fasterthansound.wav
+      6074: Resources/PLAYERSLAANESH/Sounds/sorceress/forward.wav
+      6075: Resources/PLAYERSLAANESH/Sounds/sorceress/goodtobebad.wav
+      6078: Resources/PLAYERSLAANESH/Sounds/sorceress/loveastruggle.wav
+      6079: Resources/PLAYERSLAANESH/Sounds/sorceress/laugh1.wav
+      6080: Resources/PLAYERSLAANESH/Sounds/sorceress/laugh2.wav
+      6081: Resources/PLAYERSLAANESH/Sounds/sorceress/laugh3.wav
+      6082: Resources/PLAYERSLAANESH/Sounds/sorceress/lovemeanyway.wav
+      6083: Resources/PLAYERSLAANESH/Sounds/sorceress/miserylovescompany.wav
+      6084: Resources/PLAYERSLAANESH/Sounds/sorceress/ohyes.wav
+      6085: Resources/PLAYERSLAANESH/Sounds/sorceress/painisthebestteacher.wav
+      6086: Resources/PLAYERSLAANESH/Sounds/sorceress/painspecialist.wav
+      6087: Resources/PLAYERSLAANESH/Sounds/sorceress/setyoufree.wav
+      6088: Resources/PLAYERSLAANESH/Sounds/sorceress/sufferfools.wav
+      6089: Resources/PLAYERSLAANESH/Sounds/sorceress/swiftly.wav
+      6090: Resources/PLAYERSLAANESH/Sounds/sorceress/whenyouresist.wav
+      6091: Resources/PLAYERSLAANESH/Sounds/sorceress/wheresthepleasure.wav
+
+      6092: Resources/PLAYERSLAANESH/Sounds/handmaiden/asyoudesire.wav
+      6093: Resources/PLAYERSLAANESH/Sounds/handmaiden/asyouwish.wav
+      6094: Resources/PLAYERSLAANESH/Sounds/handmaiden/cutthemdown.wav
+      6095: Resources/PLAYERSLAANESH/Sounds/handmaiden/death1.wav
+      6096: Resources/PLAYERSLAANESH/Sounds/handmaiden/death2.wav
+      6097: Resources/PLAYERSLAANESH/Sounds/handmaiden/fire.wav
+      6098: Resources/PLAYERSLAANESH/Sounds/handmaiden/fireandreload.wav
+      6099: Resources/PLAYERSLAANESH/Sounds/handmaiden/howcanweserve.wav
+      6100: Resources/PLAYERSLAANESH/Sounds/handmaiden/hurryitup.wav
+      6101: Resources/PLAYERSLAANESH/Sounds/handmaiden/itshallbedone.wav
+      6102: Resources/PLAYERSLAANESH/Sounds/handmaiden/massacred.wav
+      6103: Resources/PLAYERSLAANESH/Sounds/handmaiden/slaughter.wav
+      6104: Resources/PLAYERSLAANESH/Sounds/handmaiden/thislandisweak.wav
+      6105: Resources/PLAYERSLAANESH/Sounds/handmaiden/unleashhell.wav
+      6106: Resources/PLAYERSLAANESH/Sounds/handmaiden/verywell.wav
+      6107: Resources/PLAYERSLAANESH/Sounds/handmaiden/wewillmovequickly.wav
+      6108: Resources/PLAYERSLAANESH/Sounds/handmaiden/whatisyourorder.wav
+      6109: Resources/PLAYERSLAANESH/Sounds/handmaiden/wishtoseedead.wav
+      6110: Resources/PLAYERSLAANESH/Sounds/handmaiden/yesmylord.wav
+      6111: Resources/PLAYERSLAANESH/Sounds/handmaiden/youhaveatarget.wav
+
+
 # Remaining Indexes: (Thanks Theron!)
 
 # 1977 - 1999
 # 2173 - 2199
-# 2445 - 2499
+# 2445 - 2499 - taken by slaanesh temporarily
 # 2557 - 2599
 # 2691 - 2699
 # 2794 - 2799

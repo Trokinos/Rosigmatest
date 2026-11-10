@@ -1,0 +1,23 @@
+# Slaanesh followers can gather many different marks based on doing a wide-variety of things (i.e earning commendations.)
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+soldierBonuses:
+  - name: STR_SEEKER_MARK
+    stats:
+      melee: 3
+      firing: 3
+    recovery:
+      energy:
+        flatOne: 6

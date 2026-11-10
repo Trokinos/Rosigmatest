@@ -1,0 +1,337 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠛⣛⣛⣛⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠄⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠄⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⢰⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠉⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠈⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢠⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⠻⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠿⠿⠿⠛⠛⠉⠄⠄⠄⣰⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣶⣶⣤⣤⣄⣀⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⠟⣁⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣶⣤⣄⣀⣀⣀⣀⣀⣀⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣵⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠉⠉⠉⠉⠉⠉⠉⠙⠛⠻⠿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣤⡀⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣷⡄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⠟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢿⣿⣿⣿⣿⣿⡄⠄⠄⠄⠄⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⡏⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣷⡀⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⣿⣿⣿⣿⣿⣇⠄⠄⠄⠄⠄⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣧⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⠁⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⡿⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⣿⠇⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢠⣾⣿⣿⣿⣿⣿⣿⡏⠄⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⠟⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⢏⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣤⣀⣀⠄⠄⠄⠄⠄⢀⣀⣠⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+######################################################################################################
+#                           THIS FILE USES THE FOLLOWING FORMAT
+# 1: DROPOFF
+# 2: ACCURACYSNAP
+# 3: ACCURACYAUTO
+# 4: ACCURACYAIMED
+# 5: SNAPRANGE
+# 6: AUTORANGE
+# 7: AIMEDRANGE
+# 8: TUSNAP
+# 9: TUAUTO
+# 10: TUAIMED
+# 11: AUTOSHOTS
+# 12: CONFSNAP, CONFAUTO, CONFAIMED
+# 13: WEIGHT
+# 14: TAGS & MISC ATTRIBUTES
+#
+# WEAPON GENERAL ATTRIBUTES ARE LOCATED IN WEAPONS.PLAYERSLAANESH.RUL
+# PRICE, REQUIREMENT, & AVAILABILITY ATTRIBUTES ARE LOCATED IN ITEMREQUIREMENTS.PLAYERSLAANESH.RUL
+#
+###################################### TABLE OF CONTENTS #############################################
+#
+# 1: NON-BOLTER BALLISTIC WEAPONS
+# 2: BOLTPISTOLS
+# 3: LIGHT BOLTERS
+# 4: MEDIUM & HEAVY BOLTERS
+# 5: LAS WEAPONS
+# 6: PLASMA WEAPONS
+# 7: MELTA WEAPONS
+# 8: GRENADES
+
+
+
+items:
+
+  - type: STR_AGRIPINAA_MKIX # Agripinaa Mk. IX Autogun.
+    dropoff: 5
+    accuracySnap: 85  # Top-quality autogun.
+
+    snapRange: 17
+
+    tuSnap: 24
+
+    confSnap:
+      shots: 2
+
+    weight: 9
+    tags:
+      ITEM_SNAP_ACCURACY_POWER_BONUS: 10 # DMR-like rifle, a la Darktide.
+
+  - type: STR_AGRIPINAA_MKIXB
+    dropoff: 5
+    accuracySnap: 85  # Top-quality autogun.
+    accuracyAimed: 100
+
+    snapRange: 17
+    aimRange: 21
+
+    tuSnap: 30
+    tuAimed: 60
+
+    confSnap:
+      shots: 2
+    confAimed:
+      shots: 2
+
+    weight: 11
+    tags:
+      ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 35 # DMR-like rifle, a la Darktide.
+
+  - type: STR_GRAIA_MKVII
+    dropoff: 3
+    snapRange: 21
+    aimRange: 32
+
+    accuracySnap: 75
+    accuracyAimed: 110
+
+    tuSnap: 30
+    tuAimed: 65 # -5
+
+    weight: 17 # Heavy
+    tags:
+      ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 10 # Darktide-style DMR rifle.
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 35  # +10 vs Stub Rifle
+      ITEM_RECOIL: 15  # +5 vs Stub Rifle
+
+
+  - type: STR_BOLTPISTOL_DEAZ_SLAAN
+    dropoff: 6
+    accuracySnap: 60
+    snapRange: 9
+
+    tuSnap: 25
+
+    confSnap:
+      name: STR_BURST_DOUBLE_TAP
+      shots: 2  # Double shot snap
+
+    weight: 7 # -3, Slaanesh weapon profile.
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+    tags:
+      REACTION_MULTIPLIER: 200
+      ITEM_RECOIL: 25
+
+  - type: STR_BOLTER_CANTUS_SLAAN
+    dropoff: 5
+    snapRange: 11 # -1 vs Cantus, Slaanesh weapon profile
+    autoRange: 7
+
+    accuracySnap: 75
+    accuracyAuto: 55
+
+    tuSnap: 20
+    tuAuto: 30
+
+    autoShots: 4 # foregrip
+    confSnap:
+      name: STR_BURST_DOUBLE_TAP
+      shots: 2  # Double shot snap
+
+    weight: 10
+    tags:
+      ITEM_FIRING_SPRITE: 6001
+      ITEM_RECOIL: 20
+      REACTION_MULTIPLIER: 135 # Halfway between a carbine and a normal bolter due to foregrip.
+
+  - type: STR_BOLTER_CANTUS_GL
+    dropoff: 5
+    snapRange: 12
+    autoRange: 7
+    aimRange: 15 # -1 vs hellspite.
+
+    accuracySnap: 70
+    accuracyAuto: 50
+    accuracyAimed: 65
+
+    tuSnap: 22
+    tuAuto: 34
+    tuAimed: 40
+
+    confSnap:  # Double Shot
+      ammoSlot: 0  # Bolter
+      name: STR_BURST_DOUBLE_TAP
+      arcing: false
+      shots: 2
+    autoShots: 4
+    confAuto: # Bolter
+      ammoSlot: 0
+      name: STR_AUTOFIRE
+      arcing: false
+    confAimed:  # Grenade launcher 40mm, direct fire only.
+      ammoSlot: 1  # Grenades
+      name: STR_LAUNCH_GRENADE
+      shortName: STR_LAUNCH_GRENADE_SHORT
+      arcing: false
+
+    weight: 14 # Heavier
+    tags:
+      ITEM_FIRING_SPRITE: 6001
+      ITEM_RECOIL: 30 # Worse performance due to lack of foregrip.
+      ITEM_COLOR_CHANGES_WITH_AMMO: 15
+
+  - type: STR_BOLTER_DEAZ_SLAAN # Better performance than a normal De'az, due to "blessed" nature. No autofire.
+    dropoff: 5
+    snapRange: 14
+    autoRange: 12
+
+    accuracySnap: 85
+    accuracyAuto: 60
+
+    tuSnap: 23
+    tuAuto: 31
+
+    autoShots: 2
+    confAuto:  # Double Shot
+      name: STR_BURST_DOUBLE_TAP
+      arcing: false
+    weight: 15 # - 3
+    tags:
+      ITEM_FIRING_SPRITE: 6001
+      ITEM_RECOIL: 30
+
+  - type: STR_BOLTER_ARACHNE
+    dropoff: 6
+    snapRange: 14
+    autoRange: 12
+    aimRange: 1
+
+    accuracySnap: 82
+    accuracyAuto: 58
+    accuracyAimed: 60
+
+    tuSnap: 25
+    tuAuto: 33
+    tuAimed: 30
+
+    autoShots: 2
+    confSnap:
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      ammoSlot: 0
+      name: STR_BURST_DOUBLE_TAP
+      arcing: false
+    confAimed:
+      ammoSlot: 1
+      spendPerShot: 2
+      name: STR_FIRE_WEBBER
+      arcing: false
+    weight: 20
+    tags:
+      ITEM_RECOIL: 30
+
+
+  - type: STR_BOLTER_KELPIE
+    dropoff: 6
+    snapRange: 15
+    autoRange: 10
+    aimRange: 5
+
+    accuracySnap: 80
+    accuracyAuto: 75
+    accuracyAimed: 65
+
+    tuSnap: 24
+    tuAuto: 35
+    tuAimed: 20
+
+    confSnap:
+      ammoSlot: 0
+      name: STR_SNAP_SNOT
+      shots: 1
+      arcing: false
+    autoShots: 2
+    confAuto:
+      ammoSlot: 0
+      name: STR_BURST_DOUBLE_TAP
+      arcing: false
+    confAimed:
+      ammoSlot: 1
+      name: STR_FIRE_SHOTGUN
+      arcing: false
+
+    weight: 20
+    tags:
+      ITEM_RECOIL: 30
+
+  - type: STR_BOLTER_KERES
+    dropoff: 7 # You *really* don't want to fire this one at range.
+    snapRange: 12  # -1 vs hellspite.
+    autoRange: 6  # -2 vs hellspite
+
+    accuracySnap: 70 # -10 vs hellspite
+    accuracyAuto: 55 # -15 vs hellspite
+
+    tuAuto: 36
+    tuSnap: 30
+
+    confSnap:  # Triple Shot
+      name: STR_BURST_TRIPLE_TAP
+      arcing: false
+      shots: 3  # TRIPLE shot snap
+    autoShots: 6
+    confAuto:  # Bolter
+      name: STR_AUTOFIRE
+      arcing: false
+
+    weight: 19
+    tags:
+      ITEM_RECOIL: 45
+      ITEM_FIRING_SPRITE: 6001 # PLACEHOLDER?
+
+
+#PC
+  - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az.
+    dropoff: 6
+    accuracySnap: 65
+    accuracyAuto: 55
+    snapRange: 14 # Slaanesh plasma specialization; 1/3 of the normal burst fire malus.
+    autoRange: 10
+    aimRange: 0
+
+    tuSnap: 25
+    tuAuto: 35
+    tuAimed: 0
+
+    autoShots: 3
+    confSnap:
+      name: STR_BURST_DOUBLE_TAP
+      shots: 2
+    weight: 14 # -2 weight
+    tags:
+      REACTION_MULTIPLIER: 150 #carbine

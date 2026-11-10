@@ -1,0 +1,103 @@
+### STRUCTURE OF FILE:
+### 1: PLOT ITEMS & TOKENS
+### 2: RITUAL ITEMS
+
+items:
+  - type: STR_SLAANESHPATH_PIETY
+    size: 0.0
+
+ # The Boon of Slaanesh is a reward token that can be gained from missions, research, or traded for piety.
+ # It is required to unlock many different kinds of research.
+
+  - type: STR_SLAANESHPATH_BOON
+    size: 0.0
+
+  - type: STR_SLAANESHPATH_WARPSTONE_TRIBUTE
+    size: 0.0
+
+  - type: STR_SLAANESHPATH_SORORITAS_TOKEN
+    size: 0.0
+
+  - type: STR_SLAANESHPATH_PDF_TOKEN
+    size: 0.0
+
+  - type: STR_SLAANESHPATH_MINOR_MISSION_BOUNTY
+    size: 0.0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+
+  - type: STR_HERETEK_TRIBUTE
+    size: 0.0
+
+  - type: STR_SLAANESH_VEHICLE_TOKEN
+    size: 0.0
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+
+#PROMOTION ARMOR TOKENS
+
+  - type: STR_SLAANESHPATH_ADEPTAS_INVENTORYTOKEN
+    battleType: 6
+    invWidth: 0
+    invHeight: 0
+    armor: 255
+    recover: true
+    hiddenOnMinimap: true
+    recoveryTransformations:
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 50, 35, 15]
+
+  - type: STR_SLAANESHPATH_MILITE_ARMOR_STOREITEM
+    size: 0.2
+    costSell: 10000
+
+
+  - type: STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN # PROMOTION ITEM
+    size: 0.1
+  - type: STR_SLAANESHPATH_HARBINGER_ARMOR_TOKEN # PROMOTION ITEM
+    size: 0.1
+  - type: STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN # PROMOTION ITEM
+    size: 0.1
+
+#UPGRADE ARMOR TOKENS
+
+  - type: STR_SLAANESHPATH_SACRED_IMMACULATE_STOREITEM # Compatible with Immaculates, Mystagogues.
+
+#ANGEL OF THE CHOIR ARMOR/WEAPON TOKENS
+
+#  - type: STR_SLAANESHPATH_ANGELIC_SONIC_STOREITEM
+
+#  - type: STR_SLAANESHPATH_ANGELIC_ASSAULT_GL_STOREITEM
+
+#  - type: STR_SLAANESHPATH_ANGELIC_HEAVYBOLTER_STOREITEM
+
+#  - type: STR_SLAANESHPATH_ANGELIC_PLASMA_STOREITEM
+
+
+#    size: 0.1
+#ARCHANGEL OF THE CHOIR ARMOR/WEAPON TOKENS
+  - type: STR_SLAANESHPATH_KOKABIEL_STOREITEM # Kokabiel Heavy Assault Armor
+    size: 0.1
+  - type: STR_SLAANESHPATH_SHEMYAZA_STOREITEM # Shemyaza Anathemant Armor
+    size: 0.1
+  - type: STR_SLAANESHPATH_SHAMSHIEL_STOREITEM # Shamshiel Catechizer Armor
+    size: 0.1
+
+#ARMOR COMPONENT TOKENS
+  - type: STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
+    size: 0.1
+    costSell: 2000 # Subject to further balance changes.
+  - type: STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_COMPONENTS
+    size: 0.1
+    costSell: 1000 # Much less valuable.
+
+
+
+
+############### STORY PROGRESSION TOKENS ############
+

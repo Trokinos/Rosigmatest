@@ -505,6 +505,7 @@ extraSprites:
       4000: Resources/Eldar/Ranks/eldar_ranks_basescape.png         #smoke.pck is in the ExtraspritesAnimation ruleset
       4036: Resources/Eldar/Ranks/eldar_ranks_basescape2.png
       4072: Resources/Eldar/Ranks/eldar_ranks_basescape3.png
+      4144: Resources/PLAYERSLAANESH/Ranks/slaanesh_ranks_basescape1.png
   - type: BASEBITS.PCK
     files:
       135: Resources/Crafts/Valkyrieinq_base.png
@@ -16816,6 +16817,7 @@ extraSprites:
       4030: Resources/Eldar/Ranks/eldar_ranks_tiny2.png
       4060: Resources/Eldar/Ranks/eldar_ranks_tiny3.png
       4090: Resources/Eldar/Ranks/eldar_ranks_tiny4.png
+      4144: Resources/PLAYERSLAANESH/ranks/slaanesh_ranks_tiny1.png
 
   - type: CustomArmorPreviews
     width: 360
@@ -17498,6 +17500,11 @@ extraSprites:
     fileSingle: Resources/Backgrounds/ELDAR_GUARDIAN_ASSAULTING.png
   - typeSingle: ELDAR_ASPECT_WARRIOR_ASSAULTING.SCR
     fileSingle: Resources/Backgrounds/ELDAR_ASPECT_WARRIOR_ASSAULTING.png
+
+  # Slaanesh strategy events
+  - typeSingle: SLAANESHBUNKERBG.SCR
+    fileSingle: Resources/Backgrounds/SLAANESHBUNKERBG.png
+
       #GENESTEALER CULT
 
 #zombie
@@ -20326,3 +20333,62 @@ extraSprites:
     height: 200
     files:
       0: Resources/templates/RATLING_CAMO_CLOAK_CONTROL.png
+
+  ## SLAANESH STRATEGY UNITS
+
+  #Handmaiden
+  - type: HANDMAIDEN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/PLAYERSLAANESH/Units/Handmaiden/slaanesh_handmaiden_unitsprite.png
+
+  #Handmaiden Inventory
+
+  - typeSingle: HNDM_33F0.SPK  # Handmaiden INV 33 F
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0f0.png
+  - typeSingle: HNDM_33F1.SPK  # Handmaiden INV 33 F
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0f1.png
+  - typeSingle: HNDM_33F2.SPK  # Handmaiden INV 33 F
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0f2.png
+  - typeSingle: HNDM_33F3.SPK  # Handmaiden INV 33 F
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0f3.png
+  - typeSingle: HNDM_33F4.SPK  # Handmaiden INV 33 F
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0f4.png
+  - typeSingle: HNDM_33F5.SPK  # Handmaiden INV 33 F
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0f5.png
+  - typeSingle: HNDM_33F6.SPK  # Handmaiden INV 33 F
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0f6.png
+  - typeSingle: HNDM_33M0.SPK  # Handmaiden INV 33 M
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m0.png
+  - typeSingle: HNDM_33M1.SPK  # Handmaiden INV 33 M
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m1.png
+  - typeSingle: HNDM_33M2.SPK  # Handmaiden INV 33 M
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m2.png
+  - typeSingle: HNDM_33M3.SPK  # Handmaiden INV 33 M
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m3.png
+  - typeSingle: HNDM_33M4.SPK  # Handmaiden INV 33 M
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m4.png
+  - typeSingle: HNDM_33M5.SPK  # Handmaiden INV 33 M
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m5.png
+  - typeSingle: HNDM_33M6.SPK  # Handmaiden INV 33 M
+    fileSingle: Resources/PLAYERSLAANESH/Units/Handmaiden/layers/man_0m6.png
+
+# Slaanesh strategy codex art
+
+  - typeSingle: SLAANESH_CONVERSION_EVENT_CODEX.SPK
+    fileSingle: Resources/CODEX/SLAANESH_CONVERSION_EVENT_CODEX.png
+  - typeSingle: SLAANESHUNDERCONSTRUCTIONCODEX.SPK
+    fileSingle: Resources/CODEX/SLAANESHUNDERCONSTRUCTIONCODEX.png
+  - typeSingle: CANTUSARMOR2.SPK
+    fileSingle: Resources/CODEX/CantusArmor2.png
+  - typeSingle: AGAINST_THE_ECCLESIARCHY.SPK
+    fileSingle: Resources/CODEX/AGAINST_THE_ECCLESIARCHY.png
+  - typeSingle: UNDERHIVE_MARKET.SPK
+    fileSingle: Resources/CODEX/UNDERHIVE_MARKET.png
+  - typeSingle: AMMO_JACKS.SPK
+    fileSingle: Resources/CODEX/AMMO_JACKS.png
+  - typeSingle: SLAANESH_ALTAR_CODEX.SPK
+    fileSingle: Resources/CODEX/SLAANESH_ALTAR_CODEX.png

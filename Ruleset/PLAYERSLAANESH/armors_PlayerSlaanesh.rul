@@ -1,0 +1,794 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+armors:
+
+#HA
+  - type: STR_SLAANESHPATH_HANDMAIDEN_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 21 # Very slightly improved senses
+    antiCamouflageAtDay: 1  # Very slightly improved senses
+    antiCamouflageAtDark: 1 # Very slightly improved senses
+    heatVision: 5 # Very slightly improved senses
+    spriteSheet: HANDMAIDEN.PCK
+    spriteInv: HNDM_33
+    customArmorPreviewIndex: 1128
+    spriteFaceGroup: 6
+    spriteFaceColor: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 5
+      stamina: 0
+      health: 0
+      bravery: 10
+      reactions: 10  # Slightly better reactions
+      firing: 5
+      throwing: 5
+      strength: 0 # No extra strength
+      psiStrength: 0
+      psiSkill: 0
+      melee: 5
+    storeItem: STR_NONE
+    frontArmor: 60
+    sideArmor: 45
+    rearArmor: 45
+    underArmor: 65
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 0.8  # HE - Weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_HANDMAIDEN
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_2X3_BACKPACK
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags: # Handmaidens are now using flak rather than power armor, but they get increased dodge as a consolation prize.
+      INFECTION_RESIST: 25 # Slaanesh protection
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 25
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_MILITANT_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 22 # Very slightly improved senses
+    antiCamouflageAtDay: 2  # Very slightly improved senses
+    antiCamouflageAtDark: 2 # Very slightly improved senses
+    heatVision: 15 # Very slightly improved senses
+    spriteSheet: HANDMAIDEN.PCK
+    spriteInv: HNDM_33
+    customArmorPreviewIndex: 1128
+    spriteFaceGroup: 6
+    spriteFaceColor: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 5
+      stamina: 5
+      health: 0
+      bravery: 10
+      reactions: 5
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 0
+      psiSkill: 10
+      melee: 5
+    storeItem: STR_NONE
+    frontArmor: 80
+    sideArmor: 65
+    rearArmor: 60
+    underArmor: 85
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 1.1  # HE - Weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_MILITANT
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+      - INV_NULL_2X3_BACKPACK
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags:
+      INFECTION_RESIST: 35 # Slaanesh protection
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+#HM
+  - type: STR_SLAANESHPATH_MYSTES_ARMOR  # Armor for Mystagogues in training. Allows for wielding of Slaaneshi relics.
+    visibilityAtDay: 40
+    visibilityAtDark: 24 # Minor mark of Slaanesh
+    antiCamouflageAtDay: 4  # Minor mark of Slaanesh
+    antiCamouflageAtDark: 4 # Minor mark of Slaanesh
+    heatVision: 20 # Improved heatvision
+    spriteSheet: HANDMAIDEN.PCK # Fix later
+    spriteInv: HNDM_33 # Fix later
+    customArmorPreviewIndex: 1128 # Add later
+    spriteFaceGroup: 6
+    spriteFaceColor: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5
+      bravery: 10  # always multiples of 10
+      firing: 5
+      strength: 5
+      psiStrength: 10
+      psiSkill: 10
+      melee: 5
+    storeItem: STR_NONE
+    frontArmor: 85
+    sideArmor: 65
+    rearArmor: 65
+    underArmor: 70
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 0.9  # AP - Evasive
+      - 1.0  # FLAMES
+      - 1.1  # HE - Further weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Even further improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_MYSTES
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags:
+      INFECTION_RESIST: 55 # Exalted Slaanesh protection
+      INTIMIDATION_RESISTANCE: 35 # Exalted Slaanesh protection
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_ANATHEMANT_ARMOR  # Armor for Sorceresses in training. Comes with psychic powers.
+    visibilityAtDay: 40
+    visibilityAtDark: 26 # Minor mark of Slaanesh
+    antiCamouflageAtDay: 6  # Minor mark of Slaanesh
+    antiCamouflageAtDark: 6 # Minor mark of Slaanesh
+    psiVision: 5 # Novice sorceress.
+    heatVision: 30 # Improved heatvision
+    spriteSheet: HANDMAIDEN.PCK # Fix later
+    spriteInv: HNDM_33 # Fix later
+    customArmorPreviewIndex: 1128 # Add later
+    spriteFaceGroup: 6
+    spriteFaceColor: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # M0 F0 M1 F1 M2 F2 M3 F3 M4 F4 M5 F5 M6 F6
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5 # +5 vs HM
+      bravery: 10  # always multiples of 10
+      strength: 5 # +5 vs HM
+      psiStrength: 5
+      psiSkill: 10
+      melee: 0 # Slightly better melee
+    storeItem: STR_NONE
+    frontArmor: 80
+    sideArmor: 65
+    rearArmor: 65
+    underArmor: 70
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 0.9  # AP - Evasive
+      - 1.0  # FLAMES
+      - 1.1  # HE - Further weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Even further improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_ANATHEMANT
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags:
+      INFECTION_RESIST: 45 # Exalted Slaanesh protection
+      INTIMIDATION_RESISTANCE: 25 # Exalted Slaanesh protection
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+
+
+#HC
+  - type: STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR # Armor for aspiring Chirurgeons.
+    visibilityAtDay: 40
+    visibilityAtDark: 24
+    antiCamouflageAtDay: 5  # Heightened senses
+    antiCamouflageAtDark: 5 # Heightened senses
+    heatVision: 20 # Heightened senses
+    spriteSheet: ADEPTASMEDICAE.PCK
+    spriteInv: MED_33
+    customArmorPreviewIndex: 140
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5
+      bravery: 10
+      reactions: 10  # Slightly better reactions
+      throwing: 5
+      strength: 0 # No extra strength
+      psiStrength: 0
+      psiSkill: 0
+      melee: 10
+    storeItem: STR_NONE
+    frontArmor: 75
+    sideArmor: 65
+    rearArmor: 55
+    underArmor: 85
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 0.8  # HE - Weakness to HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.8  # STUN - Improved stun resistance
+      - 0.8  # MELEE - Improved melee resistance; turns hits into glancing blows
+      - 1.2  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_VIVISECTIONIST
+    builtInWeapons:
+      - AUX_VIVISECTIONIST_MEDI_KIT
+      - INV_NULL_2X3_BACKPACK
+    loftempsSet: [2] # Handmaidens are lithe and hard to hit
+    tags:
+      INFECTION_RESIST: 55 # Slaanesh protection + Chirurgeon.
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 25
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+
+  - type: STR_SLAANESHPATH_IMMACULATE_ARMOR     # Corrupted Adeptas Armor. Baseline armor full immaculate sisters.
+    visibilityAtDay: 40
+    visibilityAtDark: 24 # +4 heightened senses.
+    antiCamouflageAtDay: 5  # Heightened senses
+    antiCamouflageAtDark: 5 # Heightened senses
+    heatVision: 20 # Heightened senses
+    spriteSheet: XCOM_33DRED.PCK # Fix later
+    spriteInv: MAN_33 # Fix later
+    customArmorPreviewIndex: 60 # Fix later
+    corpseBattle:
+      - STR_ADEPTAS_CORPSE
+    stats:
+      tu: 10 # + 10 vs adeptas power armor
+      stamina: 20
+      health: 5
+      bravery: 0 # - 10 vs adeptas power armor
+      reactions: 10 # + 5 vs adeptas power armor
+      firing: 5
+      throwing: 5
+      strength: 5
+      psiStrength: 0
+      psiSkill: 0 # -10 vs adeptas power armor
+      melee: 10 # + 10 vs adeptas power armor
+    storeItem: STR_NONE
+    frontArmor: 95 # -10
+    sideArmor: 85
+    rearArmor: 50
+    underArmor: 95 # + 10
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.8  # FLAMES - 0.2 malus vs adeptas power armor
+      - 0.8  # HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA - 0.1 bonus vs adeptas power armor.
+      - 0.7  # STUN - 0.3 bonus vs adeptas power armor.
+      - 0.8  # MELEE - 0.2 bonus vs Adeptas power armor
+      - 1.0  # ACID - 0.2 malus vs Adeptas power armor
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_HANDMAIDEN # Temporary until Immaculates are implemented
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [3]
+    tags:
+      INFECTION_RESIST: 40 # Slaanesh Immaculate baseline.
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_SORCERESS_ARMOR     # Higher quality immaculate armor.
+    visibilityAtDay: 40
+    visibilityAtDark: 30 # Bride of Tzeentch equivalent
+    antiCamouflageAtDay: 12  # Bride of Tzeentch equivalent
+    antiCamouflageAtDark: 12 # Bride of Tzeentch equivalent
+    psiVision: 5
+    heatVision: 40 #
+    spriteSheet: XCOM_33DRED.PCK # Fix later
+    spriteInv: MAN_33 # Fix later
+    customArmorPreviewIndex: 60 # Fix later
+    corpseBattle:
+      - STR_ADEPTAS_CORPSE
+    stats:
+      tu: 10 # + 10 vs adeptas power armor
+      stamina: 20
+      health: 10
+      bravery: 0 # - 10 vs adeptas power armor
+      reactions: 10 # + 5 vs adeptas power armor
+      firing: 10
+      throwing: 5
+      strength: 5
+      psiStrength: 10
+      psiSkill: 10
+      melee: 10 # + 10 vs adeptas power armor
+    storeItem: STR_NONE
+    frontArmor: 95 # -10
+    sideArmor: 85
+    rearArmor: 50
+    underArmor: 95 # + 10
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.8  # FLAMES - 0.2 malus vs adeptas power armor
+      - 0.8  # HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA - 0.1 bonus vs adeptas power armor.
+      - 0.7  # STUN - 0.3 bonus vs adeptas power armor.
+      - 0.8  # MELEE - 0.2 bonus vs Adeptas power armor
+      - 1.0  # ACID - 0.2 malus vs Adeptas power armor
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_SORCERESS # Temporary until Immaculates are implemented
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [3]
+    tags:
+      INFECTION_RESIST: 60 # Baseline + soreress
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - &STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
+    type: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR # HEAVILY modified immaculate armor. A medicae-assassin hybrid.
+    visibilityAtDay: 40
+    visibilityAtDark: 27 # Heightened senses and modified medicae sensors.
+    antiCamouflageAtDay: 7  # Heightened senses
+    antiCamouflageAtDark: 7 # Heightened senses
+    psiVision: 5
+    heatVision: 34 # Heightened senses and modified medicae sensors. Night Lord CSM level.
+    spriteSheet: ADEPTASMEDICAE.PCK
+    spriteInv: MED_33
+    storeItem: STR_NONE
+    customArmorPreviewIndex: 140
+    corpseBattle:
+      - STR_SLAANESHPATH_HANDMAIDEN_CORPSE
+    stats:
+      tu: 25 # Combat drugs
+      stamina: 25 # Combat drugs
+      health: 15 # Combat drugs, medicae armor
+      bravery: 10  # always multiples of 10
+      reactions: 15 # Combat drugs
+      firing: 0
+      throwing: 0
+      strength: 5
+      psiStrength: 0
+      psiSkill: 5
+      melee: 15 # Combat drugs
+      mana: 20 # Auxilliary ammo/energy reserve
+    frontArmor: 80
+    sideArmor: 75
+    rearArmor: 65
+    underArmor: 90 # Agility
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 0.9  # AP - Uncanny dodge
+      - 0.7  # FLAMES
+      - 0.7  # Resistance to HE, uncanny dodge
+      - 0.9  # LASCANON
+      - 0.9  # PLASMA
+      - 0.7  # STUN Further improved stun resistance
+      - 0.7  # MELEE Uncanny dodge + combat drugs
+      - 0.9  # ACID
+      - 0.2  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_CHIRURGEON
+    specialWeapon: AUX_CHIRURGEON_NEEDLER
+    builtInWeapons:
+      - INV_NULL_3X3
+      - AUX_CHIRURGEON_MEDI_KIT
+    loftempsSet: [2] # Agile and dodgy!
+    tags:
+      INFECTION_RESIST: 70 # Slaanesh immaculate blessing + medicae equipment.
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      UNIT_IS_DIEHARD: 1
+      DIEHARD_TEMP_MODIFIER_INCREMENT: -100  # they only get one second chance
+      DODGE_CHANCE: 30
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_CHIRURGEON_GAS_ARMOR
+    refNode: *STR_SLAANESHPATH_CHIRURGEON_TEMPLATE
+    specialWeapon: AUX_CHIRURGEON_GAS_LAUNCHER
+
+  - type: STR_SLAANESHPATH_HARBINGER_ARMOR # Slaanesh seraphim equivalent.
+    # group: 2
+    visibilityAtDay: 40
+    visibilityAtDark: 24
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    spriteSheet: BLOODYROSE_SERAPH_battle.PCK # PLACEHOLDER
+    customArmorPreviewIndex: 1427
+    corpseBattle:
+      - STR_BRSERAPH_CORPSE
+    stats:
+      tu: 10
+      stamina: 20
+      health: 10
+      bravery: 0  # always multiples of 10
+      reactions: 15
+      firing: 5
+      throwing: 0
+      strength: 10
+      psiStrength: 0
+      psiSkill: 15
+      melee: 15
+    storeItem: STR_SERAPHIM_ARMOR_BLOODYROSE # PLACEHOLDER
+    frontArmor: 80
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 80
+    movementType: 1
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.8  # FLAMES
+      - 1.0  # HE
+      - 0.9  # LASCANON
+      - 0.9  # PLASMA
+      - 0.8  # STUN
+      - 1.0  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_SORCERESS
+    builtInWeapons:
+      - INV_NULL_3X3
+    loftempsSet: [2]
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 30
+      FLIGHT_DODGE_CHANCE: 30
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+  - type: STR_SLAANESHPATH_CHOIR_ARMOR # Baseline Immaculate heavy armor. Required to use most factional heavy weapons.
+    visibilityAtDay: 40
+    visibilityAtDark: 26 # High quality optics + heightened senses.
+    antiCamouflageAtDay: 6  # High quality optics + heightened senses.
+    antiCamouflageAtDark: 6 # High quality optics + heightened senses.
+    heatVision: 35 # High quality optics + heightened senses.
+    spriteSheet: XCOM_33DRED.PCK # Fix later
+    spriteInv: MAN_33 # Fix later
+    customArmorPreviewIndex: 60 # Fix later
+    corpseBattle:
+      - STR_ADEPTAS_CORPSE
+    stats:
+      tu: 0
+      stamina: 10
+      health: 15
+      bravery: 20
+      reactions: 15
+      firing: 20
+      throwing: 5
+      strength: 5
+      psiStrength: 0
+      psiSkill: 0 # -10 vs adeptas power armor
+      melee: -10
+    storeItem: STR_NONE
+    frontArmor: 115
+    sideArmor: 100
+    rearArmor: 85
+    underArmor: 105 # + 10
+    damageModifier:  # MARINE ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.1  # FLAMES
+      - 0.8  # HE
+      - 0.7  # LASCANON
+      - 0.9  # PLASMA - 0.1 bonus vs adeptas power armor.
+      - 0.7  # STUN - 0.3 bonus vs adeptas power armor.
+      - 1.0  # MELEE
+      - 1.0  # ACID - 0.2 malus vs Adeptas power armor
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_SORCERESS # Temporary until Immaculates are implemented
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [3]
+    tags:
+      INFECTION_RESIST: 50 # Baseline + angelic blessing.
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 15
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+
+
+  - type: STR_SLAANESHPATH_HARVESTER_ARMOR
+    camouflageAtDay: -12  # Half Assassin Camo
+    camouflageAtDark: -9
+    visibilityAtDay: 40
+    visibilityAtDark: 28  # + 3 vs reprisalia
+    heatVision: 35  # +5 vs reprisalia
+    antiCamouflageAtDay: 8  # +3 vs reprisalia
+    antiCamouflageAtDark: 8  # +3 vs reprisalia
+    spriteSheet: ADEPTAS_REPRISALIA_BS.PCK
+    spriteInv: REPRI_51
+    drawingRoutine: 0
+    customArmorPreviewIndex: 81
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_REPRISALIA_CORPSE # FIX LATER
+    frontArmor: 65 # -5
+    sideArmor: 55 # -5
+    rearArmor: 45
+    underArmor: 75 # +15
+    damageModifier:  # GUARD/MARINE HYBRID ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.7  # FLAMES
+      - 0.9  # HE
+      - 0.8  # LASCANON
+      - 0.9  # PLASMA
+      - 1.0  # STUN
+      - 0.8  # MELEE
+      - 0.9  # ACID INQ prepped
+      - 0.0  # SMOKE
+      - 0.2  # IMPACT; droppod proof
+      - 1.0  # MELTA
+    units:
+      - STR_SLAANESHPATH_HARVESTER
+    builtInWeapons:
+      - INV_NULL_2X1_RL
+      - INV_NULL_2X1_LL
+    loftempsSet: [3]
+    tags:
+      ARMOR_GAINS_PSISKILL_SECONDARY_EXPERIENCE: 6
+      INFECTION_RESIST: 50  # infection resistant
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 30
+      ARMOR_MAX_SUCCESSFUL_DODGES: 2
+
+
+
+  - type: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR # Decent-quality, custom mesh armor.
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    forcedTorso: 0
+    customArmorPreviewIndex: 1121
+    corpseBattle:
+      - STR_SLAANESH_CULTIST_CORPSE_PLAYER
+    frontArmor: 40 # Mesh armor
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 35 # + 10
+    stats:
+      tu: 5
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 5
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+    storeItem: STR_NONE
+    damageModifier:  # CULTIST ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 1.0  # HE
+      - 1.0  # LASCANON
+      - 1.0  # PLASMA
+      - 1.0  # STUN
+      - 1.0  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 1.0  # IMPACT
+      - 1.0  # MELTA
+    loftempsSet: [2]
+    units:
+      - STR_SLAANESHPATH_VICTUAL_BROTHER
+    spriteSheet: SLAANCULTIST_BS.PCK
+    spriteInv: SLAANCULTIST_PLAYER_INV
+    tags:
+      INFECTION_RESIST: 25  # infection resistant
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 15
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+
+  - type: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR # Work in progress. For now this is identical to normal cultists.
+    visibilityAtDay: 40
+    visibilityAtDark: 20
+    forcedTorso: 0
+    customArmorPreviewIndex: 1121
+    corpseBattle:
+      - STR_SLAANESH_CULTIST_CORPSE_PLAYER
+    frontArmor: 25 # +5
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 25 # + 10
+    stats:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0  # always multiples of 10
+      reactions: 0  # Slightly better reactions
+      firing: 0
+      throwing: 0
+      strength: 0 # No extra strength
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0 # Slightly better melee
+    storeItem: STR_NONE
+    damageModifier:  # CULTIST ARMOR
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 1.0  # HE
+      - 1.0  # LASCANON
+      - 1.0  # PLASMA
+      - 1.0  # STUN
+      - 1.0  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 1.0  # IMPACT
+      - 1.0  # MELTA
+    loftempsSet: [2]
+    units:
+      - STR_SLAANESHPATH_JUICED_CULTIST
+    spriteSheet: SLAANCULTIST_BS.PCK
+    spriteInv: SLAANCULTIST_PLAYER_INV
+    tags:
+      INFECTION_RESIST: 25  # infection resistant
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 20
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+      UNIT_IS_DIEHARD: 1
+      DIEHARD_TEMP_MODIFIER_INCREMENT: -100  # they only get one second chance
+
+  - type: STR_SLAANESHPATH_HERETEK_ARMOR # Enginseer
+    spriteSheet: ENGINSEER.PCK
+    spriteInv: ENGINSEER.SPK
+    customArmorPreviewIndex: 837
+    forcedTorso: 1
+    corpseBattle:
+      - STR_ENGINSEER_CORPSE
+    storeItem: STR_NONE
+    units:
+      - STR_ENGINSEER
+    visibilityAtDay: 40
+    visibilityAtDark: 25
+    heatVision: 20
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    painImmune: true
+    frontArmor: 90
+    sideArmor: 80
+    rearArmor: 60
+    underArmor: 80
+    weight: -15 # partially negate servo arm
+    drawingRoutine: 0
+    damageModifier:
+      - 1.0 #SUPPORT
+      - 1.0 #AP
+      - 0.7 #FLAMES
+      - 1.0 #HE
+      - 1.0 #LASCANON
+      - 1.0 #PLASMA
+      - 1.0 #STUN
+      - 1.0 #MELEE
+      - 0.5 #ACID naturally resistant to contaminants
+      - 0.0 #SMOKE
+      - 0.2 #IMPACT
+      - 1.0 #MELTA
+    loftempsSet: [3]
+    builtInWeapons: # TO DO LATER: Change this weapon set to plasma-based long ranged weaponry. I.e. Heretek plasma caliver.
+      - STR_TECHPRIEST_SCANNER
+      - STR_TECHPRIEST_REPAIRTOOL
+      - STR_TECHPRIEST_POWERAXE
+      - STR_TECHPRIEST_LASPISTOL
+    tags:
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_CHAOS: 1

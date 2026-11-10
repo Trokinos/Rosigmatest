@@ -313,3 +313,17 @@ commendations:
         - [1, ["STATUS_DEAD", "FACTION_HOSTILE", "STR_REAPER_LAUNCHER"]]
     units:
       - STR_ELDAR_REAPER_M
+
+### SLAANESH COMMENDATIONS
+
+  - type: STR_HANDMAIDEN_COMMENDATION
+    description: STR_HANDMAIDEN_COMMENDATION_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [3]
+      totalWins: [3]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+    units:
+      - STR_SLAANESHPATH_HANDMAIDEN
