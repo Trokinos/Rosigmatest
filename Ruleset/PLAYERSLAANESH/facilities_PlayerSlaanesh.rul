@@ -37,7 +37,8 @@ facilities:
     requires:
       - ADORATION_THROUGH_AGONY
     spriteShape: 1
-    spriteFacility: {mod: 40k, index: 444}
+    #spriteFacility: {mod: 40k, index: 444}
+    spriteFacility: {mod: 40k, index: 31} #Placeholder
     buildCost: 500000
     refundValue: 200000
     buildTime: 20

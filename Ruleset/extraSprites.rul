@@ -20385,7 +20385,7 @@ extraSprites:
   - typeSingle: CANTUSARMOR2.SPK
     fileSingle: Resources/CODEX/CantusArmor2.png
   - typeSingle: AGAINST_THE_ECCLESIARCHY.SPK
-    fileSingle: AGAINST_THE_ECCLESIARCHY.png
+    fileSingle: Resources/CODEX/AGAINST_THE_ECCLESIARCHY.png
   - typeSingle: UNDERHIVE_MARKET.SPK
     fileSingle: Resources/CODEX/UNDERHIVE_MARKET.png
   - typeSingle: AMMO_JACKS.SPK
