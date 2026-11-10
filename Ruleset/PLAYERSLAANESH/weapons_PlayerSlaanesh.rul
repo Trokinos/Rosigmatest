@@ -527,18 +527,15 @@ items:
     requires:
       - STR_ALIENS_ONLY
     dropoff: 5
-    autoRange: 9
     snapRange: 16  # DMR
-    aimRange: 0
-
+    autoRange: 9
+    aimRange: 8
     accuracyAuto: 80
     accuracySnap: 90 # 5 less
     accuracyAimed: 50 # PLACEHOLDER
     tuAuto: 36 # 4 less
     tuSnap: 24 # 3 less
     tuAimed: 30 # PLACEHOLDER
-
-    autoShots: 3
     compatibleAmmo: # PLACEHOLDER
       - STR_RIFLE_CLIP
       - STR_RIFLE_CLIP_S
@@ -551,17 +548,16 @@ items:
         compatibleAmmo: [STR_RIFLE_CLIP_S, STR_RIFLE_CLIP, STR_RIFLE_CLIP_MC, STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX]
       1:
         compatibleAmmo: [STR_PLASMA_SPRAY_CLIP_SLAAN]
-
-    confAuto:  # Bolter
-      ammoSlot: 1  # Bolter
-      name: STR_BURST_SNAP_SHOT
-      arcing: false
-      autoShots: 2
     confSnap:  # Double Shot
       ammoSlot: 0  # Bolter
       name: STR_SNAP_SHOT
       arcing: false
       shots: 1  # Double shot snap
+    confAuto:  # Bolter
+      ammoSlot: 1  # Bolter
+      name: STR_PLASMA_SNAP
+      arcing: false
+      shots: 2
     confAimed:  # Plasma spray gun
       ammoSlot: 1  # Plasma barrage
       shots: 3
