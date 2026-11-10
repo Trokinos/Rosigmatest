@@ -389,7 +389,7 @@ items:
 
     autoShots: 10
     confSnap:
-      shots: 4
+      shots: 5
 
     tags:
       REACTION_MULTIPLIER: 50

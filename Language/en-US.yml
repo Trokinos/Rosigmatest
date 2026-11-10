@@ -10191,7 +10191,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_HEAVY_STUBBER_LIGHT: "Heavy Stubber (Handheld)"
   # STR_HEAVY_STUBBER_LIGHT_UFOPEDIA: "{NEWLINE} This is the handheld version of the Heavy Stubber. By replacing parts with lighter variants it can be used without a bipod, allowing more mobility. On the other hand this means that the fire rate has been reduced to compensate for the recoil.{NEWLINE}{NEWLINE}Recoil: {ALT}30"
   # Ticker175
-  STR_HEAVY_STUBBER_LIGHT_UFOPEDIA: "{NEWLINE} A handheld variant of the Heavy Stubber. By replacing parts of the widely used pattern with lighter components, the lighter pattern can provide a high volume of fire whilst being a handheld weapon with great mobility. This pattern is not as powerful as the standard variant but will still perform well on the battlefield. {NEWLINE}{NEWLINE}Recoil: {ALT}30"
+  STR_HEAVY_STUBBER_LIGHT_UFOPEDIA: "{NEWLINE} A handheld variant of the Heavy Stubber. By replacing parts of the widely used pattern with lighter components, the lighter pattern can provide a high volume of fire whilst being a handheld weapon with great mobility. This pattern is not as powerful as the standard variant but will still perform well on the battlefield. {NEWLINE}{NEWLINE}Recoil: {ALT}25"
   STR_HEAVY_STUBBER_CLIP_MC: "Master Crafted Heavy Stubber Belt"
 
   STR_LIGHT_MELTAGUN_MYNERVA: "Light Meltagun"

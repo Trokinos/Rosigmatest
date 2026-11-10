@@ -868,7 +868,7 @@ items:
     invWidth: 1
     invHeight: 3
     armor: 30
-    listOrder: 10770
+    listOrder: 10767
 
   - type: STR_AUTOGUN_SLAANESH  # "Tainted Autogun"
     categories: [STR_CAT_AUTO]
