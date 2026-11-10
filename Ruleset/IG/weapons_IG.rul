@@ -43,7 +43,7 @@ items:
     invHeight: 3
     armor: 200
     confSnap:
-      shots: 4
+      shots: 5
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     confAimed:
       shots: 1
@@ -53,7 +53,7 @@ items:
       arcing: true
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 2
-    listOrder: 10761
+    listOrder: 10763
     tags:
       ITEM_RECOIL: 40
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
@@ -614,7 +614,7 @@ items:
     confAuto:
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 2
-    listOrder: 10761
+    listOrder: 10763
     tags:
       ITEM_RECOIL: 45  # 30 for basic bipod less one)
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
@@ -4240,6 +4240,7 @@ items:
       - STR_LASER_WEAPONS
     clipSize: 150
     armor: 200
+    listOrder: 10766
     tags:
       ITEM_AMMO_COLOR: 6
 
@@ -4299,7 +4300,7 @@ items:
     sprayWaypoints: 2
     listOrder: 10761
     tags:
-      ITEM_RECOIL: 30
+      ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO_NON_GRAY: 6
 
   - type: STR_BOLTER_LIGHT_LMG  # ACCATRAN AIRBORNE LIGHT BOLTER W BIPOD
@@ -6036,7 +6037,7 @@ items:
     invHeight: 3
     armor: 200
     sprayWaypoints: 2
-    listOrder: 10765
+    listOrder: 10764
 
   - type: STR_HEAVY_STUBBER_CLIP_KRIEG
     requiresBuy:
@@ -6067,7 +6068,7 @@ items:
     armor: 200
     invWidth: 2  # make it chunky, see bigOB, does not fit in belt slots inventory
     invHeight: 2
-    listOrder: 10766
+    listOrder: 10768
 
 
   - type: STR_HELLGUN
@@ -7373,7 +7374,7 @@ items:
     confAuto:
       followProjectiles: false   # the camera stays still while shooting (prevents minigun seizures)
     sprayWaypoints: 2
-    listOrder: 10765 #    listOrder: 10766 and 10767 for its ammo
+    listOrder: 10765 #    listOrder: 10769 and 10770 for its ammo
     tags:
       ITEM_RECOIL: 35 #offset by bipod
       ITEM_HAS_BIPOD: 1
@@ -7489,7 +7490,7 @@ items:
     clipSize: 40
     battleType: 2
     armor: 200
-    listOrder: 10766
+    listOrder: 10769
 
   - type: STR_VL_HEAVYSTUBBER_DRUM_KRAKEN
     categories: [STR_CAT_AUTO]
@@ -7515,7 +7516,7 @@ items:
     clipSize: 40
     battleType: 2
     armor: 200
-    listOrder: 10767
+    listOrder: 10770
 
 #Baneblade
   - type: AUX_BOLTERBANE  # STR_BANE_BOLTER_TURRET

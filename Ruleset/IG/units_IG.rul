@@ -185,7 +185,7 @@ units:
       - - STR_ELECTRO_FLARE_HOLOGRAM
 
   - &STR_GUARD_FLAK_NPC
-    type: MALE_CIVILIAN
+    type: MALE_CIVILIAN # Guardsmen that survive get recruited
     liveAlien: MALE_CIVILIAN  # oxce_40k sets this to ""
     stats:
       tu: 50  # was 35
@@ -208,7 +208,7 @@ units:
         - STR_KRAK_GRENADE
 #        - STR_UNIT_TURNER_FT1
 
-  - type: FEMALE_CIVILIAN
+  - type: FEMALE_CIVILIAN # Guardsmen that survive get recruited
     refNode: *STR_GUARD_FLAK_NPC
     armor: STR_NPC_GUARDPD_ARMOR_UC
     liveAlien: FEMALE_CIVILIAN  # oxce_40k sets this to ""

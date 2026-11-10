@@ -711,7 +711,7 @@ items:
     confSnap:
       shots: 7
     sprayWaypoints: 2
-    listOrder: 10762
+    listOrder: 10761
 
   - type: STR_MAKESHIFT_GRENADE
     categories: [STR_CAT_GRENADES]

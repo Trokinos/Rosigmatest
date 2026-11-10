@@ -92,7 +92,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 20
+      STR_SLAANESHPATH_PIETY: 20
  #NV
   - name: STR_NOMINATE_VIVISECTIONIST # Turns a Handmaiden into an apprentice Chirurgeon.
     requires:
@@ -186,7 +186,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 100 # Very expensive in terms of piety.
+      STR_SLAANESHPATH_PIETY: 100 # Very expensive in terms of piety.
  #NA
   - name: STR_NOMINATE_ANATHEMANT # Turns a Handmaiden into an apprentice Sorceress.
     requires:
@@ -221,7 +221,7 @@ soldierTransformation:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
       STR_ALIEN_SURGERY: 3 # Requires sacrifical blood.
-      STR_SLAANESH_PIETY: 66 # Expensive in terms of piety.
+      STR_SLAANESHPATH_PIETY: 66 # Expensive in terms of piety.
 
 #### INDUCTIONS
 #IS
@@ -241,7 +241,7 @@ soldierTransformation:
       - STR_SLAANESHPATH_HANDMAIDEN
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 20
+      STR_SLAANESHPATH_PIETY: 20
       STR_ELERIUM-115: 6
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
@@ -258,7 +258,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 66
+      STR_SLAANESHPATH_PIETY: 66
       STR_ELERIUM-115: 6
       STR_ALIEN_ALLOYS: 10
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
@@ -276,7 +276,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 66
+      STR_SLAANESHPATH_PIETY: 66
       STR_ELERIUM-115: 6
       STR_SLAANESHPATH_HARBINGER_ARMOR_TOKEN: 1
 
@@ -296,7 +296,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 66
+      STR_SLAANESHPATH_PIETY: 66
       STR_ELERIUM-115: 6
       STR_ALIEN_SURGERY: 6
       STR_ALIEN_FOOD: 6
@@ -318,7 +318,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 200
+      STR_SLAANESHPATH_PIETY: 200
       STR_ELERIUM-115: 25
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
 
@@ -337,7 +337,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_SLAANESH_PIETY: 50
+      STR_SLAANESHPATH_PIETY: 50
       STR_ELERIUM-115: 5
       STR_ALIEN_FOOD: 2
 
@@ -358,7 +358,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_IMMACULATE_SISTER
     requiredItems:
-      STR_SLAANESH_PIETY: 10
+      STR_SLAANESHPATH_PIETY: 10
       STR_ELERIUM-115: 5
       STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
 

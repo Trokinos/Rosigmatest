@@ -60,6 +60,17 @@ items:
     armor: 40
     battleType: 11
 
+  - type: STR_GUARDPD_CORPSE_AI
+    name: STR_CORPSE
+    weight: 30
+    bigSprite: {mod: 40k, index: 631}
+    floorSprite: {mod: 40k, index: 625}
+    invWidth: 2
+    invHeight: 3
+    armor: 35
+    battleType: 11
+    recover: true
+
   - type: STR_GUARD_AICORPSE
     recover: true
     weight: 50

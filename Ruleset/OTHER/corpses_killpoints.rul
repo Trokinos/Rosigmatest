@@ -2033,6 +2033,12 @@ items:
 
   # imperial enemies
 
+  - type: STR_GUARDPD_CORPSE_AI
+    costSell: 2000
+    recoveryTransformations:
+      STR_KILLPOINT_TOKEN: [3]
+      STR_GUARDPD_CORPSE_AI: [1]
+
   - type: STR_GUARD_AICORPSE
     costSell: 2500
     recoveryTransformations:
