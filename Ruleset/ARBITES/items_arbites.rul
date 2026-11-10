@@ -159,7 +159,7 @@ items:
     floorSprite: 3200
     handSprite: 1900
     tags:
-      ITEM_RECOIL: 30
+      ITEM_RECOIL: 25
     compatibleAmmo:
       - STR_HEAVY_STUBBER_CLIP
       - STR_HEAVY_STUBBER_CLIP_MC
