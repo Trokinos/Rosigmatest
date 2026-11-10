@@ -12295,6 +12295,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_DREADCLAW_TURRET: "Chaos Shredder Turret"
   STR_WBSMOKER_WEAPON: "Chaos Smoker"
   STR_DREADCLAW_TURRET_DROPPOD: "Chaos Shredder"
+  WBSMOKER_ARMOR: "Chaos Smoker Turret Armor"
 
   STR_WBSMOKER_AMMO: "Chaos Smoker Shell"
 

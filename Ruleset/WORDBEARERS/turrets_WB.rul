@@ -59,7 +59,7 @@ units:
       psiSkill: 0
       melee: 0
       mana: 100
-    armor: WBRAZORBACK_ARMOR
+    armor: WBSMOKER_ARMOR
     builtInWeaponSets:
       - - STR_WBSMOKER_WEAPON
         - STR_WBSMOKER_AMMO
@@ -186,6 +186,60 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_SIZE: 200 # HUGE
 
+  - type: WBSMOKER_ARMOR
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    heatVision: 30
+    spriteSheet: WBSMOKERTUR.PCK
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    allowsMoving: false
+    spriteInv: RAZOR
+    corpseGeo: STR_DREAD_CORPSE
+    corpseBattle:
+      - O_CORPSE
+      - O_CORPSE
+      - O_CORPSE
+      - O_CORPSE
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 130
+    size: 2
+    specialWeapon: STR_TURRET_RELOAD
+    damageModifier:  # VEHICLE ARMOR LARGE
+      - 1.0  # none
+      - 1.0  # AP
+      - 0.4  # FLAMES
+      - 1.0  # HE
+      - 1.4  # LASCANON
+      - 1.0  # PLASMA
+      - 0.0  # STUN
+      - 0.8  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 1.0  # IMPACT
+      - 1.2  # MELTA
+    loftempsSet: [92, 89, 90, 91]
+    drawingRoutine: 3
+    selectUnitMale: [{mod: 40k, index: 575}, {mod: 40k, index: 576}]
+    selectUnitFemale: [{mod: 40k, index: 575}, {mod: 40k, index: 576}]
+    selectWeaponMale: [{mod: 40k, index: 571}, {mod: 40k, index: 572}, {mod: 40k, index: 573}, {mod: 40k, index: 574}]
+    selectWeaponFemale: [{mod: 40k, index: 571}, {mod: 40k, index: 572}, {mod: 40k, index: 573}, {mod: 40k, index: 574}]
+    annoyedMale: [{mod: 40k, index: 577}]
+    annoyedFemale: [{mod: 40k, index: 577}]
+    tags:
+      INFECTION_RESIST: 100  # infection immune
+      INTIMIDATION_RESISTANCE: 100  # intimidation immune
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_SIZE: 200 # HUGE
+
 
 extraSprites:
 
@@ -196,3 +250,11 @@ extraSprites:
     height: 320
     files:
       0: Resources/UnitSprites/WBRAZB.png
+
+  - type: WBSMOKERTUR.PCK  # word bearers smoker turret
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/UnitSprites/WBSMOKER.png
