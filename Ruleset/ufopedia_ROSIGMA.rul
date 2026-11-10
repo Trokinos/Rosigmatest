@@ -1803,6 +1803,14 @@ ufopaedia:
       - title: STR_VOICE_UFOPEDIA_TITLE
         text: STR_SLAANESHPATH_GATE_UFOPEDIA_P2
 
+  - id: STR_PATH_OF_PERFECTION
+    type_id: 10
+    section: STR_STRATEGY
+    image_id: PATH_OF_PERFECTION_CODEX.SPK
+    requires:
+      - STR_PATH_OF_PERFECTION
+    text: STR_PATH_OF_PERFECTION_UFOPEDIA_DESCRIPTION
+
   - id: STR_PROCURE_TRANSPORTATION
     type_id: 10
     section: STR_STRATEGY
@@ -6720,6 +6728,16 @@ ufopaedia:
     section: STR_SOLDIERS_UC
     image_id: DCASSASSINORIGINS.SPK
     text: STR_DEATHCULT_ASSASSIN_ORIGINS
+
+  - id: STR_SLAANESHPATH_HANDMAIDEN  # HANDMAIDEN ORIGINS
+    type_id: 10
+    section: STR_SOLDIERS_UC
+    image_id: HANDMAIDEN_ORIGINS.SPK
+    pages:
+      - title: STR_HANDMAIDEN_ORIGINS_TITLE
+        text: STR_HANDMAIDEN_ORIGINS_UFOPEDIA
+      - title: STR_HANDMAIDEN_PROMOTIONS_TITLE
+        text: STR_HANDMAIDEN_PROMOTIONS_UFOPEDIA
 
 ### #SOLDIERS.SOB.REP#      Repential Strategy
 ### #SOLDIERS.SOB.NOV#      Novitiate Strategy
@@ -14740,6 +14758,12 @@ ufopaedia:
     section: STR_WEAPONS_AND_EQUIPMENT
     image_id: 1FG.SPK
     text: STR_SHARD_GRENADE_UFOPEDIA
+
+  - id: STR_SCREAMER_GRENADE
+    type_id: 14
+    section: STR_WEAPONS_AND_EQUIPMENT
+    image_id: 1FG.SPK
+    text: STR_SCREAMER_GRENADE_UFOPEDIA
 
   - delete: STR_KRAK_GRENADE
   - id: STR_KRAK_GRENADE

@@ -25,7 +25,7 @@ manufacture:
     requiresBaseFunc: [ALTAR]
     category: STR_RITES_OF_DEPRAVITY
     requires:
-      - STR_OUR_FOOLISH_SISTERS
+      - STR_OUR_FOOLISH_COUSINS
     space: 0
     time: 300
     cost: 6000

@@ -2548,7 +2548,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have helped introduce you to Pelega's black markets. And with order deteriorating, those market are booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future killers.{NEWLINE}{NEWLINE}An absurd situation, no doubt, but absurdity is the lifeblood of the Imperium."
   STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Wars are won by two things, and by two things alone. The man bereft of faith is a shell; the bolter bereft of ammunition is a lump of metal. Hoping to prove their usefulness, the hivers have have reached out to old contacts on your behalf. The thought of using the shoddy ammunition povided by these “Ammo-Jacks” is unpleasant, but it may be a necessary expedient. Yet the Angel already whispers of a better solution..."
   STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}“When those who have nothing hold firm to faith, those who hold riches soon find their true poverty revealed to them.”{NEWLINE}{NEWLINE}Words spoken in service of a lie may still contain truth. Today you lack for everything, including vehicles. Yet your privation is joyful, even holy: for the faithless have plenty of vehicles in their depots, and your sisters are eager to begin their chastisement."
-  STR_PATH_TO_PERFECTION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}We cast aside our old garments, taking the firsts steps on the path Immaculate. The Angel used the last of his power to free us: trapped below the earth, he lacks the strength to forestall the coming calamities. We must do what He cannot. Thus, we pick up the sword and bolter: we vow to be the first rays of the coming dawn."
+  STR_PATH_OF_PERFECTION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Yesterday, we obeyed tyrants and bent our necks before the throne of lies. Today we kneel only to truth; we give our worship only to true divinity. The Angel who freed us spent much of his power to do so. Trapped below the earth, He is unable to forestall the calamities to come. It falls to us to take up sword and bolter. A new dawn is coming, and we are the first rays of sun."
   STR_WEAPON_CONSECRATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}The Prince of Perfection is generous beyond compare; in his benevolence, he extends his touch to the faithful and the uninitiated alike. But we must strive to become ever more devoted servants, that we may one day be worthy of further gifts still. By channeling the power of our faith, the profane tools of this decrepit Imperium will one day be reborn and reawakened, just as we were."
   STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it has taken some time for us to understand the strange and haphazard scribblings within this data-crypt. It details various different efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the Warp alone. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
   STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation and prayer, we finally have a partial understanding of the heretek research on plasma weaponry. Though the sections on infusing hydrogen with empyrean energies are much too esoteric for our adepts, the simpler schematics are still of direct use. We are now able to manufacture basic plasma weaponry without outside assistance."
@@ -2612,7 +2612,10 @@ en-US: #  yamllint disable-line rule:empty-values
 
 
 
-  STR_HANDMAIDEN_ORIGINS_UFOPEDIA: "{NEWLINE}{NEWLINE}Handmaidens are former Adepta Sororitas novices who have been corrupted or seduced into serving the Prince of Excess. Brimming with the zealotry of the recently converted and eager for service, Handmaidens are every bit as fanatically devoted to their dark patron as they once were to the Emperor of Mankind."
+  STR_HANDMAIDEN_ORIGINS_UFOPEDIA: "{NEWLINE}{NEWLINE}Handmaidens are Adepta Sororitas novices who have been corrupted or seduced into worshipping the Prince of Excess. Brimming with the zealotry of the recently converted and eager to prove their faith, Handmaidens are just as fanatically devoted to their dark patron as they once were to the Emperor of Mankind."
+  STR_HANDMAIDEN_ORIGINS_TITLE: "Handmaiden Origins"
+  STR_HANDMAIDEN_PROMOTIONS_TITLE: "Handmaiden Promotions"
+  STR_HANDMAIDEN_PROMOTIONS_UFOPEDIA: "{NEWLINE}{NEWLINE}UNDER CONSTRUCTION"
   STR_ALTAR_OF_SLAANESH_UFOPEDIA: "Through this altar, the Prince of Excess recieves both souls and supplication, and bestows gifts and blessings in turn. {NEWLINE}{NEWLINE}{ALT}The Altar of Slaanesh is a powerful building with many benefits: it improves healing times, allows for devotion training, and offers some space for research. It is also vital for many manufacturing projects."
 
 ###
@@ -2624,14 +2627,14 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_BUNKER: "The Abandoned Bunker"
   STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
   STR_SLAANESHPATH_GATE: "The Angel's Voice"
-  STR_RITUALS_OF_WORSHIP: "Reascendance"
+  STR_RITUALS_OF_WORSHIP: "(Slaanesh Worship)"
   STR_PATH_OF_PERFECTION: "The Path of Perfection"
   STR_SACRIFICIAL_RITUALS: "Sacrificial Rituals"
   STR_SOULSTAIN_SORCERY: "Soulstain Sorcery"
   STR_WEAPON_CONSECRATION: "Rites of Weapon Consecration"
   STR_CONTACT_ARMS_SMUGGLERS: "Black Market Weapons"
   STR_CONTACT_ARMS_SMUGGLERS_TITLE: "Black Market Trade"
-  STR_PROCURE_TRANSPORTATION: "Procure Transports"
+  STR_PROCURE_TRANSPORTATION: "Procure Transport Craft"
   STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launcher Requisition"
@@ -2652,12 +2655,12 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
 
   STR_OUR_HOLY_MISSION: "Our Holy Crusade"
-  STR_WAR_FOR_THE_UNDERHIVE: "The War for the Underhive"
+  STR_WAR_FOR_THE_UNDERHIVE: "War for the Underhive"
   STR_SUFFER_NOT_THE_XENO: "Suffer not the Xeno"
   STR_KILL_THE_ENFORCERS: "Kill the Enforcers"
 
-  STR_AGAINST_THE_ECCLESIARCHY: "The Cathedrum of Lies"
-  STR_OUR_FOOLISH_SISTERS: "Our Foolish Sisters"
+  STR_AGAINST_THE_ECCLESIARCHY: "The Ministorum of Lies"
+  STR_OUR_FOOLISH_COUSINS: "Our Foolish Cousins"
   STR_IMMACULATE_ARMOR_TECHNOLOGY: "Immaculate Power Armor"
   STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: "Adeptas Power Armor Components"
   STR_OUR_DEVOTION_DEEPENS: "*Our Devotion Deepens*"

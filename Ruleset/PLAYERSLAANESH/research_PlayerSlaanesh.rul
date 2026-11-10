@@ -160,7 +160,7 @@ research:
 
 
   - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
-    cost: 40
+    cost: 50
     points: 20
     dependencies:
       - STR_SLAANESHPATH_GATE
@@ -169,10 +169,10 @@ research:
       - STR_BASIC_BALLISTICS_DEP
 
   - name: STR_BLACK_MARKET_AMMUNITION # Codex Entry.
-    cost: 40
+    cost: 50
     points: 20
     dependencies:
-      - STR_CONTACT_ARMS_SMUGGLERS
+      - STR_SLAANESHPATH_GATE
     unlocks:
       - STR_BLACK_MARKET_AMMO_TRADE
 
@@ -194,7 +194,7 @@ research:
       - STR_ELERIUM_115
 
   - name: STR_PATH_OF_PERFECTION # Gateway tech that also gives access to handmaiden training.
-    cost: 30
+    cost: 25
     dependencies:
       - STR_SLAANESHPATH_GATE
     spawnedItem: STR_SLAANESHPATH_PIETY
@@ -428,20 +428,11 @@ research:
  ##### MISSION & STORYLINE RESEARCH #####
  ########################################
 
-
-  - name: STR_OUR_HOLY_MISSION # CODEX ENTRY ON CAMPAIGN GOALS
-    cost: 20
-    points: 20
-    spawnedItem: STR_SLAANESHPATH_BOON
-    spawnedItemCount: 1
-    dependencies: # GATEWAY TECH TO MISSION GENERATION
-      - STR_SLAANESHPATH_GATE
-
   - name: STR_PROCURE_TRANSPORTATION
-    cost: 10
+    cost: 25
     points: 10
     dependencies:
-      - STR_OUR_HOLY_MISSION
+      - STR_PATH_OF_PERFECTION
     spawnedEvent: STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT
 
   - name: STR_DEPOT_SUCCESSFULLY_RAIDED
@@ -456,7 +447,7 @@ research:
     cost: 50
     points: 30
     dependencies:
-      - STR_OUR_HOLY_MISSION
+      - STR_PATH_OF_PERFECTION
 
   - name: STR_SUFFER_NOT_THE_XENO
     cost: 50
@@ -483,10 +474,9 @@ research:
     cost: 80
     points: 30
     dependencies:
-      - STR_OUR_HOLY_MISSION
-      - STR_GENERALLOCK
+      - STR_PATH_OF_PERFECTION
 
-  - name: STR_OUR_FOOLISH_SISTERS # Available at start. Unlocks the ability to corrupt sisters. Codex entry.
+  - name: STR_OUR_FOOLISH_COUSINS # Available at start. Unlocks sisters-related tech.
     cost: 80
     points: 30
     dependencies:
@@ -503,7 +493,7 @@ research:
     cost: 80
     points: 30
     dependencies:
-      - STR_OUR_FOOLISH_SISTERS
+      - STR_OUR_FOOLISH_COUSINS
       - STR_CONTACT_HERETEKS
       - STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
       - STR_OUR_DEVOTION_DEEPENS

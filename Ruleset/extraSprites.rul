@@ -20392,3 +20392,9 @@ extraSprites:
     fileSingle: Resources/CODEX/AMMO_JACKS.png
   - typeSingle: SLAANESH_ALTAR_CODEX.SPK
     fileSingle: Resources/CODEX/SLAANESH_ALTAR_CODEX.png
+  - typeSingle: HANDMAIDEN_ORIGINS.SPK
+    fileSingle: Resources/CODEX/HANDMAIDEN_ORIGINS.png
+  - typeSingle: IMMACULATE_SISTER_ORIGINS.SPK
+    fileSingle: Resources/CODEX/IMMACULATE_SISTER_ORIGINS.png
+  - typeSingle: PATH_OF_PERFECTION_CODEX.SPK
+    fileSingle: Resources/CODEX/PATH_OF_PERFECTION_CODEX.png
