@@ -5,7 +5,7 @@ on:  # yamllint disable-line rule:truthy
 
 jobs:
   lint:
-    runs-on: codeberg-small
+    runs-on: codeberg-medium
 
     steps:
       # Step 1: Check out the repository
