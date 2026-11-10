@@ -261,6 +261,7 @@ extended:
             actor.setEnergy temp;
 
             battle_game.flashMessage "STR_SCRIPT_TELEPORTER_SHUTTING_DOWN";
+            set spend_tu 1;
           else;
             actor.getTag lastActivatedTeleporterTurn Tag.UNIT_LAST_ACTIVATED_TELEPORTER_TURN;
             battle_game.getTurn currentTurn;
@@ -286,6 +287,7 @@ extended:
               actor.MoveCost.setBaseFlyEnergyPercent 50; # normal energy cost is 2 per tile
               actor.setMovementType movement_type_fly;
               battle_game.flashMessage "STR_SCRIPT_TELEPORTER_STARTING_UP";
+              set spend_tu 1;
             else;
               # debug_log "currentTurn" currentTurn;
               # debug_log "temp" temp;

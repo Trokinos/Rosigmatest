@@ -3,7 +3,6 @@
 items:
 
 ## Rifle
-
   - type: STR_WEBBER  # done
     dropoff: 5
     autoRange: 0

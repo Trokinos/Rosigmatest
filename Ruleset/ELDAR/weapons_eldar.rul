@@ -1037,7 +1037,7 @@ items:
     size: 0.4
     costBuy: 20000
     costSell: 10000
-    weight: 30
+    weight: 20
     invWidth: 2
     invHeight: 3
     bigSprite: 4863
@@ -1053,9 +1053,9 @@ items:
     tuSnap: 25
     tuAuto: 40
     flatRate: true
-    snapRange: 14
-    autoRange: 10
-    maxRange: 14
+    snapRange: 12
+    autoRange: 8
+    maxRange: 12
     dropoff: 5
     confSnap:
       followProjectiles: false
@@ -1085,7 +1085,7 @@ items:
     dropoff: 5
     costBuy: 50000
     costSell: 3000
-    weight: 30
+    weight: 20
     bigSprite: 4868
     floorSprite: 4868
     handSprite: 4970
@@ -2952,8 +2952,8 @@ items:
     clipSize: -1
     accuracyAuto: 40
     tuAuto: 32
-    autoRange: 8
-    maxRange: 8 # 6" Range
+    autoRange: 7
+    maxRange: 7 # 6" Range
     dropoff: 5
     flatRate: true
     confAuto:
@@ -2975,9 +2975,9 @@ items:
       ToHealth: 1.0
       ToMorale: 0.5 #
       ToTime: 0.3  # Tangled in Wire
-      ToArmorPre: 0.3 # -1 AP Wire cloud grates armor
+      ToArmorPre: 0.2 # -1 AP Wire cloud grates armor
       ToItem: 0.5 # Indiscriminate targeting
-      FixRadius: 2 # Monomolecular Cloud
+      FixRadius: 1 # Monomolecular Cloud
 
   - type: STR_POWERBLADEARRAY_SPECIALWEAPON
     refNode: *POWERBLADE_TEMPLATE

@@ -1,0 +1,1106 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠛⣛⣛⣛⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠄⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠄⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⢰⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠉⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠈⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢠⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⠻⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠿⠿⠿⠛⠛⠉⠄⠄⠄⣰⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣶⣶⣤⣤⣄⣀⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⠟⣁⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣶⣤⣄⣀⣀⣀⣀⣀⣀⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣵⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠉⠉⠉⠉⠉⠉⠉⠙⠛⠻⠿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣤⡀⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣷⡄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⠟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢿⣿⣿⣿⣿⣿⡄⠄⠄⠄⠄⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⡏⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣷⡀⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⣿⣿⣿⣿⣿⣇⠄⠄⠄⠄⠄⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣧⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⠁⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⡿⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⣿⠇⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢠⣾⣿⣿⣿⣿⣿⣿⡏⠄⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⠟⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⢏⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣤⣀⣀⠄⠄⠄⠄⠄⢀⣀⣠⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+
+###################################### TABLE OF CONTENTS ################################################
+
+      # 1: HANDMAIDENS OF SLAANESH
+
+  #HM - HANDMAIDEN
+    #PH - PROMISING HANDMAIDEN
+      #MI - HANDMAIDEN-MILITANT
+        #VI - HANDMAIDEN-VIVISECTIONIST
+          #MY - HANDMAIDEN-MYSTES
+            #AN - HANDMAIDEN-ANATHEMANT
+
+      # 2: CORE IMMACULATES
+
+  #SI - SISTER IMMACULATE
+    #HB - HARBINGER IMMACULATE
+      #EH - EXALTED HARBINGER
+        #AN - ANGEL OF THE CHOIR
+          #AA - ARCHANGEL OF THE CHOIR
+            #MG - MYSTAGOGUE
+              #EM - EXALTED MYSTAGOGUE
+
+      # 3: SPECIALIST SISTERS
+
+   #CH - CHIRURGEON
+     #EC - EXALTED CHIRURGEON
+       #SC - SORCERESS OF SLAANESH
+         #AS - ASCENDED SORCERESS OF SLAANESH
+           #HB - HEARTBREAKER OF SLAANESH
+            #MS - MIRIAEL SABATHIEL
+
+      # 3: POSSESSED SISTERS
+
+    #DI - DAUGHTER IMMACULATE
+      #BA - BRINGER OF ABLUTION
+        #HS - HARVESTER OF SORROWS
+         #SS - SERENE SAINT OF SLAANESH
+
+
+      # 4: AUXILIARY FORCES
+
+  #VB - VICTUAL BROTHER
+    #PB - PLEASUREGUARD
+      #FF - FELINID FATALE
+        #HT - HERETEK SAVANT
+
+#########################################################################################################
+
+soldiers:
+
+# 1: HANDMAIDENS OF SLAANESH
+ #HM
+
+  - type: STR_SLAANESHPATH_HANDMAIDEN
+    flagOffset: 21 # FIX LATER
+    costSalary: 9000 # Nearly twice as expensive as a novice. Hedonist lifestyles.
+    minStats:
+      tu: 50 # Slaanesh Influence
+      stamina: 50 # 5 Slaanesh influence
+      health: 35 # 5 More vs Adeptas
+      bravery: 50 # Followers of Slaanesh do not fear death
+      reactions: 35 # Slaanesh influence
+      firing: 40
+      throwing: 30
+      strength: 16
+      psiStrength: 20
+      psiSkill: 30
+      melee: 35 # Slaanesh Influence
+    maxStats:
+      tu: 65
+      stamina: 80
+      health: 45
+      bravery: 100
+      reactions: 62
+      firing: 57
+      throwing: 45
+      strength: 28
+      psiStrength: 70 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiSkill: 60
+      melee: 53
+    statCaps:
+      tu: 95 # Slaanesh Influence
+      stamina: 110 # Slaanesh Influence
+      health: 70
+      bravery: 110
+      reactions: 110 # Slaanesh Influence
+      firing: 100
+      throwing: 75
+      strength: 65
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    trainingStatCaps:
+      tu: 75 # 5 More
+      stamina: 85
+      health: 65
+      firing: 75
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_HANDMAIDEN_ARMOR # Adepta Sororitas Flak Armor
+    allowPiloting: true
+    allowPromotion: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_0
+    rankSprite: 4144
+    rankBattleSprite: 4144
+    rankTinySprite: 4144
+
+ #PH
+  - type: STR_SLAANESHPATH_EXALTEDMAIDEN  # Promising Handmaidens awaiting specialized training.
+    flagOffset: 21 # !!! need to fix this later !!!
+    costSalary: 11000 # Somewhat higher salary than base.
+    requires: ### >Remove this later.< ###
+      - STR_SLAANESHPATH_GATE
+    minStats:
+      tu: 55 # +5 vs base
+      stamina: 55 # +5 vs base
+      health: 40 # +5 vs base
+      bravery: 50
+      reactions: 35 # +5 vs base
+      firing: 45 # +5 vs base
+      throwing: 35 # +5 vs base
+      strength: 21 # +5 vs base
+      psiStrength: 20
+      psiSkill: 30
+      melee: 40 # +5 vs base
+    maxStats:
+      tu: 70 # +5 vs base
+      stamina: 80
+      health: 48 # +3 vs base
+      bravery: 100
+      reactions: 70 # +5 vs base
+      firing: 62 # +2 vs base
+      throwing: 45
+      strength: 30
+      psiStrength: 70 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiSkill: 60
+      melee: 60 # +5 vs base
+    statCaps:
+      tu: 95 # Slaanesh Influence
+      stamina: 110 # Slaanesh Influence
+      health: 70
+      bravery: 110
+      reactions: 110 # Slaanesh Influence
+      firing: 100
+      throwing: 75
+      strength: 65
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    trainingStatCaps:
+      tu: 75 # 5 More
+      stamina: 85
+      health: 65
+      firing: 75
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_HANDMAIDEN_ARMOR
+    allowPiloting: true
+    allowPromotion: false
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0
+    rankSprite: 4148
+    rankBattleSprite: 4148
+    rankTinySprite: 4148
+
+ #MI
+  - type: STR_SLAANESHPATH_MILITANT  # Handmaidens with militant training.
+    flagOffset: 21 # !!! need to fix this later !!!
+    costSalary: 14000 # Somewhat higher salary than base.
+    requires: ### >Remove this later.< ###
+      - STR_SLAANESHPATH_GATE
+    minStats:
+      tu: 60
+      stamina: 65
+      health: 40
+      bravery: 60
+      reactions: 60
+      firing: 52
+      throwing: 30
+      strength: 25
+      psiStrength: 25
+      psiSkill: 30
+      melee: 50
+    maxStats: # Higher min & max stats. Lower-tier captured Sororitas are given at this level.
+      tu: 70
+      stamina: 70
+      health: 50
+      bravery: 100
+      reactions: 65
+      firing: 65 #
+      throwing: 50
+      strength: 35
+      psiStrength: 70
+      psiSkill: 60
+      melee: 63
+    statCaps:
+      tu: 90 # Slaanesh Influence
+      stamina: 95 # Slaanesh Influence
+      health: 70
+      bravery: 110
+      reactions: 110 # Slaanesh Influence
+      firing: 100
+      throwing: 75
+      strength: 65
+      psiStrength: 100
+      psiSkill: 100
+      melee: 100
+    trainingStatCaps:
+      tu: 75 # 5 More
+      stamina: 85
+      health: 65
+      firing: 75
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_MILITANT_ARMOR
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_MILITANT_RANK_0
+      - STR_SLAANESHPATH_MILITANT_RANK_1
+      - STR_SLAANESHPATH_MILITANT_RANK_2
+    rankSprite: 4148
+    rankBattleSprite: 4148
+    rankTinySprite: 4148
+
+ #VI
+  - type: STR_SLAANESHPATH_VIVISECTIONIST # Chirurgeons in training.
+    flagOffset: 21 # FIX LATER
+    costSalary: 20000 # Expensive, elite unit.
+    requires: ### >Remove this later.< ###
+      - STR_SLAANESHPATH_GATE
+    minStats:
+      tu: 50
+      stamina: 60
+      health: 35
+      bravery: 50
+      reactions: 40
+      firing: 40
+      throwing: 35
+      strength: 28
+      psiStrength: 10
+      psiSkill: 20
+      melee: 55
+    maxStats:
+      tu: 65
+      stamina: 80
+      health: 45
+      bravery: 100
+      reactions: 70
+      firing: 55
+      throwing: 50
+      strength: 38
+      psiStrength: 60 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiSkill: 70
+      melee: 65
+    statCaps:
+      tu: 100 # Slaanesh Influence
+      stamina: 110 # Slaanesh Influence
+      health: 90
+      bravery: 110
+      reactions: 110 # Slaanesh Influence
+      firing: 85
+      throwing: 75
+      strength: 75
+      psiStrength: 110
+      psiSkill: 120
+      melee: 120
+    trainingStatCaps:
+      tu: 75
+      stamina: 65
+      health: 65
+      firing: 65
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80
+    dogfightExperience:
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR # Adepta Sororitas Flak Armor
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_VIVISECTIONIST_RANK_0
+      - STR_SLAANESHPATH_VIVISECTIONIST_RANK_1
+      - STR_SLAANESHPATH_VIVISECTIONIST_RANK_2
+    rankSprite: 4144
+    rankBattleSprite: 4144
+    rankTinySprite: 4144
+
+ #MY
+  - type: STR_SLAANESHPATH_MYSTES # Handmaiden Mystes; a Mystagogue in training. Wields relics and can inspire other novices.
+    flagOffset: 21 # FIX LATER
+    costBuy: 20000  # Placeholder - Not meant to be purchased directly.
+    costSalary: 20000 # Expensive, elite unit.
+    requires: ### >Remove this later.< ###
+      - STR_SLAANESHPATH_GATE
+    minStats:
+      tu: 50
+      stamina: 60
+      health: 35
+      bravery: 50
+      reactions: 40
+      firing: 50
+      throwing: 35
+      strength: 22
+      psiStrength: 50
+      psiSkill: 70
+      melee: 50
+    maxStats:
+      tu: 65
+      stamina: 80
+      health: 45
+      bravery: 100
+      reactions: 70
+      firing: 70
+      throwing: 50
+      strength: 35
+      psiStrength: 90 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiSkill: 100
+      melee: 70
+    statCaps:
+      tu: 90 # Slaanesh Influence
+      stamina: 95 # Slaanesh Influence
+      health: 70
+      bravery: 110
+      reactions: 110 # Slaanesh Influence
+      firing: 100
+      throwing: 75
+      strength: 65
+      psiStrength: 110
+      psiSkill: 120
+      melee: 100
+    trainingStatCaps:
+      tu: 65
+      stamina: 65
+      health: 65
+      firing: 70
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80
+    dogfightExperience:
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_MYSTES_ARMOR # Adepta Sororitas Flak Armor
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_MYSTES_RANK_0
+      - STR_SLAANESHPATH_MYSTES_RANK_1
+      - STR_SLAANESHPATH_MYSTES_RANK_2
+    rankSprite: 4144
+    rankBattleSprite: 4144
+    rankTinySprite: 4144
+
+ #AN
+  - type: STR_SLAANESHPATH_ANATHEMANT # Handmaiden Anathemant; a Sorceress in training. Has offensive psychic powers.
+    flagOffset: 21 # FIX LATER
+    costSalary: 30000 # Expensive, elite unit.
+    requires: ### >Remove this later.< ###
+      - STR_SLAANESHPATH_GATE
+    minStats:
+      tu: 50
+      stamina: 60
+      health: 35
+      bravery: 50
+      reactions: 40
+      firing: 50
+      throwing: 35
+      strength: 22
+      psiStrength: 70
+      psiSkill: 70
+      melee: 50
+    maxStats:
+      tu: 65
+      stamina: 80
+      health: 45
+      bravery: 100
+      reactions: 70
+      firing: 70
+      throwing: 50
+      strength: 35
+      psiStrength: 100 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiSkill: 100
+      melee: 70
+    statCaps:
+      tu: 90 # Slaanesh Influence
+      stamina: 95 # Slaanesh Influence
+      health: 70
+      bravery: 110
+      reactions: 110 # Slaanesh Influence
+      firing: 100
+      throwing: 75
+      strength: 65
+      psiStrength: 110
+      psiSkill: 120
+      melee: 100
+    trainingStatCaps:
+      tu: 65
+      stamina: 65
+      health: 65
+      firing: 70
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80
+    dogfightExperience:
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_ANATHEMANT_ARMOR # Adepta Sororitas Flak Armor
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 40
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_ANATHEMANT_RANK_0
+      - STR_SLAANESHPATH_ANATHEMANT_RANK_1
+      - STR_SLAANESHPATH_ANATHEMANT_RANK_2
+    rankSprite: 4144
+    rankBattleSprite: 4144
+    rankTinySprite: 4144
+
+
+
+#IS
+
+  - type: STR_SLAANESHPATH_IMMACULATE_SISTER  # Full Sisters. More elite than normal adeptas with higher stat caps.
+    flagOffset: 21 # !!! need to fix this later !!!
+    costSalary: 25000 # 10K more than normal Adeptas.
+    minStats:
+      tu: 55 # Slaanesh Influence
+      stamina: 60 # 5 Slaanesh influence
+      health: 35 # 5 More vs Adeptas
+      bravery: 60 # Followers of Slaanesh do not fear death
+      reactions: 40 # Slaanesh influence
+      firing: 45 # 10 More
+      throwing: 35 # 5 More
+      strength: 16
+      psiStrength: 25
+      psiSkill: 30
+      melee: 40 # Slaanesh Influence
+    maxStats:
+      tu: 70
+      stamina: 85
+      health: 60
+      bravery: 100
+      reactions: 75
+      firing: 75
+      throwing: 75
+      strength: 50
+      psiStrength: 100
+      psiSkill: 110
+      melee: 80
+    statCaps:
+      tu: 115
+      stamina: 125
+      health: 80
+      bravery: 110
+      reactions: 130
+      firing: 110
+      throwing: 80
+      strength: 80
+      psiStrength: 100
+      psiSkill: 110
+      melee: 120
+    trainingStatCaps:
+      tu: 85 # 5 More
+      stamina: 80
+      health: 65
+      firing: 80 # 5 More
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80 # Slaanesh Influence
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_IMMACULATE_ARMOR
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 40
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_SISTER_RANK_0
+      - STR_SLAANESHPATH_SISTER_RANK_1
+      - STR_SLAANESHPATH_SISTER_RANK_2
+      - STR_SLAANESHPATH_SISTER_RANK_3
+    rankSprite: 4144
+    rankBattleSprite: 4144
+    rankTinySprite: 4144
+
+#SC
+
+  - type: STR_SLAANESHPATH_SORCERESS  # Chaos Sorceresses wearing full power armor. Expensive & Limited deployment, but elite.
+    flagOffset: 21 # !!! need to fix this later !!!
+    costSalary: 66000 # 10K more than normal Adeptas.
+    minStats: # don't matter
+      tu: 55
+      stamina: 60
+      health: 35
+      bravery: 60
+      reactions: 40
+      firing: 45
+      throwing: 35
+      strength: 16
+      psiStrength: 25
+      psiSkill: 30
+      melee: 40
+    maxStats:
+      tu: 70
+      stamina: 85
+      health: 60
+      bravery: 100
+      reactions: 75
+      firing: 75
+      throwing: 75
+      strength: 50
+      psiStrength: 100
+      psiSkill: 10
+      melee: 80
+    statCaps:
+      tu: 115
+      stamina: 125
+      health: 80
+      bravery: 110
+      reactions: 130
+      firing: 110
+      throwing: 80
+      strength: 80
+      psiStrength: 100
+      psiSkill: 100
+      melee: 120
+    trainingStatCaps:
+      tu: 85 # 5 More
+      stamina: 80
+      health: 65
+      firing: 80 # 5 More
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80 # Slaanesh Influence
+    dogfightExperience:
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_SORCERESS_ARMOR
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 40
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_SORCERESS_RANK_0
+      - STR_SLAANESHPATH_SORCERESS_RANK_1
+      - STR_SLAANESHPATH_SORCERESS_RANK_2
+      - STR_SLAANESHPATH_SORCERESS_RANK_3
+    rankSprite: 4144
+    rankBattleSprite: 4144
+    rankTinySprite: 4144
+
+#CH
+
+  - type: STR_SLAANESHPATH_CHIRURGEON  # Tier 1 ELITE units. A mix between Novitiate superiors, death cultists, and medicae.
+    flagOffset: 21 # !!! need to fix this later !!!
+    costBuy: 20000  # Not meant to be purchased directly.
+    costSalary: 40000 # VERY expensive.
+    requires: ### >Remove this later.< ###
+      - STR_SLAANESHPATH_GATE
+    minStats:
+      tu: 65 # Slaanesh Influence
+      stamina: 70 # 5 Slaanesh influence
+      health: 40 # 5 More vs Adeptas
+      bravery: 60 # Followers of Slaanesh do not fear death
+      reactions: 40 # Slaanesh influence
+      firing: 40 # 10 More
+      throwing: 35 # 5 More
+      strength: 25
+      psiStrength: 25
+      psiSkill: 30
+      melee: 50 # Slaanesh Influence
+    maxStats:
+      tu: 75 # Slaanesh influence
+      stamina: 80 # Slaanesh Influence
+      health: 45
+      bravery: 110 # Followers of Slaanesh do not fear death
+      reactions: 80 # Slaanesh Influence
+      firing: 55
+      throwing: 50 # 5 More
+      strength: 35
+      psiStrength: 90 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiSkill: 60
+      melee: 65 # Slaanesh Influence
+    statCaps:
+      tu: 120 # Slaanesh Influence
+      stamina: 130 # Slaanesh Influence
+      health: 80 # 5 More
+      bravery: 110
+      reactions: 120 # Slaanesh Influence
+      firing: 90
+      throwing: 75 # 5 More
+      strength: 80 # 5 Less
+      psiStrength: 100
+      psiSkill: 100
+      melee: 130
+    trainingStatCaps:
+      tu: 85 # 5 More
+      stamina: 80
+      health: 65
+      firing: 80 # 5 More
+      throwing: 70
+      strength: 50
+      psiStrength: 60
+      psiSkill: 100
+      melee: 80 # Slaanesh Influence
+    dogfightExperience: # Same as Adeptas pilots; Slaanesh devotees are eager to experience new sensations
+      bravery: 20
+      reactions: 35
+      firing: 30
+    armor: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/slaanesh_handmaiden.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_0
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_1
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_2
+      - STR_SLAANESHPATH_HANDMAIDEN_RANK_3
+    rankSprite: 4144
+    rankBattleSprite: 4144
+    rankTinySprite: 4144
+
+  - type: STR_SLAANESHPATH_HARVESTER # A corrupted represalia. Extremely elite, extremely expensive.
+    flagOffset: 21
+    costSalary: 70000 # Twice the cost of a normal reprisalia.
+    minStats:
+      tu: 80 # +20
+      stamina: 100 # + 30
+      health: 45 # + 10
+      bravery: 70 # + 10
+      reactions: 80 # +25
+      firing: 70 # + 5
+      throwing: 50 # + 10
+      strength: 35 # + 10
+      psiStrength: 50 # + 10
+      psiSkill: 30
+      melee: 60 # + 10
+    maxStats:
+      tu: 100 # + 20
+      stamina: 110 # + 20
+      health: 60 # - 5
+      bravery: 100 # +10
+      reactions: 95
+      firing: 90 # +5
+      throwing: 75
+      strength: 45
+      psiStrength: 110 # +10
+      psiSkill: 60
+      melee: 80
+    statCaps:
+      tu: 130
+      stamina: 140
+      health: 75
+      bravery: 110
+      reactions: 120
+      firing: 130
+      throwing: 100
+      strength: 70
+      psiStrength: 120
+      psiSkill: 100
+      melee: 100
+    trainingStatCaps:
+      tu: 95
+      stamina: 100
+      health: 60
+      firing: 95
+      throwing: 85
+      strength: 55
+      psiStrength: 100
+      psiSkill: 100
+      melee: 85
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    armor: STR_SLAANESHPATH_HARVESTER_ARMOR
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/adeptas_reprisalia.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_ASSASSIN_RANK_0
+      - STR_ASSASSIN_RANK_1
+      - STR_ASSASSIN_RANK_2
+      - STR_ASSASSIN_RANK_3
+      - STR_ASSASSIN_RANK_4
+    rankSprite: {mod: 40k, index: 115}
+    rankBattleSprite: {mod: 40k, index: 215}
+    rankTinySprite: {mod: 40k, index: 115}
+
+
+# 2. SLAANESH VICTUAL BROTHERS.
+
+  - type: STR_SLAANESHPATH_VICTUAL_BROTHER
+    costBuy: 17000
+    costSalary: 5000
+    requires:
+      - STR_WAR_FOR_THE_UNDERHIVE # PLACEHOLDER
+    minStats:  # Steel legion stat equivalents, more expensive.
+      tu: 55 # +5
+      stamina: 50
+      health: 35
+      bravery: 40
+      reactions: 50 # +10
+      firing: 45
+      throwing: 45
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      melee: 25
+      mana: 0
+    maxStats:
+      tu: 65 # +5
+      stamina: 70
+      health: 40
+      bravery: 70
+      reactions: 66
+      firing: 75
+      throwing: 65
+      strength: 25
+      psiStrength: 100
+      psiSkill: 6
+      melee: 60
+      mana: 0
+    statCaps:
+      tu: 95  # Slaanesh influence
+      stamina: 90
+      health: 55  # was 45
+      bravery: 110  # was 100
+      reactions: 80  # was 60
+      firing: 100  # was 100
+      throwing: 70
+      strength: 65  # was 60
+      psiStrength: 100
+      psiSkill: 50
+      melee: 90
+      mana: 0
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 30
+      firing: 70
+      throwing: 65
+      strength: 30
+      psiStrength: 100
+      psiSkill: 50
+      melee: 50
+      mana: 0
+    armor: STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
+    deathFemale: [{mod: 40k, index: 44}, {mod: 40k, index: 45}, {mod: 40k, index: 46}]
+    allowPiloting: false
+    allowPromotion: true
+    rankStrings:
+      - STR_SLAANESHPATH_SERVANT-RANK_0
+      - STR_SLAANESHPATH_SERVANT-RANK_1
+      - STR_SLAANESHPATH_SERVANT-RANK_2
+      - STR_SLAANESHPATH_SERVANT-RANK_3
+    rankSprite: {mod: 40k, index: 80} # ADD LATER
+    rankBattleSprite: {mod: 40k, index: 194} # ADD LATER
+    rankTinySprite: {mod: 40k, index: 127} # ADD LATER
+    femaleFrequency: 10
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/cultists.nam
+    value: 4
+    moraleLossWhenKilled: 75  # people don't care about the grunts so much
+
+  - type: STR_SLAANESHPATH_JUICED_CULTIST
+    requires:
+      - STR_SLAANESHPATH # Placeholder
+    flagOffset: 42
+    armor: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR
+    costSalary: 15000
+    minStats: # For now these are just catachan stats. Will adjust later.
+      tu: 50  # 75
+      stamina: 60  # 90
+      health: 40  # 55
+      bravery: 10  # 110
+      reactions: 50  # 80
+      firing: 40  # 100
+      throwing: 40  # 70
+      strength: 40  # 65
+      psiStrength: 0  # 100
+      psiSkill: 0  # 100
+      melee: 60  # 90
+      mana: 0  # 0
+    maxStats: # For now these are just catachan stats. Will adjust later.
+      tu: 60  # 75
+      stamina: 80  # 90
+      health: 50  # 55
+      bravery: 90  # 110
+      reactions: 70  # 80
+      firing: 60  # 100
+      throwing: 60  # 70
+      strength: 65  # 65
+      psiStrength: 100  # 100
+      psiSkill: 50  # 100
+      melee: 90  # 90
+      mana: 0  # 0
+    statCaps:
+      tu: 80
+      stamina: 100
+      health: 65
+      bravery: 110
+      reactions: 90
+      firing: 90
+      throwing: 70
+      strength: 75
+      psiStrength: 100
+      psiSkill: 50
+      melee: 110
+      mana: 0
+    trainingStatCaps:
+      tu: 70
+      stamina: 90
+      health: 60
+      bravery: 110
+      reactions: 80
+      firing: 80
+      throwing: 65
+      strength: 70
+      psiStrength: 100
+      psiSkill: 50
+      melee: 100
+      mana: 0
+    allowPiloting: true
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 16
+    femaleFrequency: 50
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/cultists.nam
+    rankStrings:
+      - STR_SLAANESHPATH_SERVANT-RANK_0
+      - STR_SLAANESHPATH_SERVANT-RANK_1
+      - STR_SLAANESHPATH_SERVANT-RANK_2
+      - STR_SLAANESHPATH_SERVANT-RANK_3
+    deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
+    deathFemale: [{mod: 40k, index: 44}, {mod: 40k, index: 45}, {mod: 40k, index: 46}]
+    rankSprite: {mod: 40k, index: 1012}
+    rankBattleSprite: {mod: 40k, index: 1012}
+    rankTinySprite: {mod: 40k, index: 1012}
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    moraleLossWhenKilled: 75  # no one cares about grunts
+    value: 10
+
+#HT
+
+  - type: STR_SLAANESHPATH_HERETEK
+    costSalary: 75000
+    requires:
+      - STR_GENERALLOCK
+    minStats:
+      tu: 60 # +10 vs normal enginseer
+      stamina: 60
+      health: 45
+      bravery: 50
+      reactions: 50
+      firing: 60
+      throwing: 50
+      strength: 30
+      psiStrength: 10 # min human
+      psiSkill: 0
+      melee: 50  # was 20
+    maxStats:
+      tu: 70 # +10 vs normal enginseer
+      stamina: 70
+      health: 60
+      bravery: 80
+      firing: 70
+      reactions: 60
+      melee: 60
+      throwing: 65
+      strength: 45
+      psiStrength: 40 # regular non-psionic human
+      psiSkill: 25
+    statCaps:
+      tu: 85 # bionic enhancement but bulky/ponderous
+      stamina: 140 # bionic enhancement
+      health: 80 # bionic enhancement
+      bravery: 110
+      firing: 110 # bionic enhancement/targeting
+      reactions: 80 # bionic enhancement but bulky/ponderous
+      melee: 110 # bionic enhancement/targeting
+      throwing: 80
+      strength: 80 # inbuilt bionics
+      psiStrength: 45
+      psiSkill: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 80
+      health: 60
+      firing: 80
+      throwing: 70
+      strength: 40
+      melee: 70
+      psiStrength: 45
+      psiSkill: 100
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    allowPiloting: true
+    armor: STR_SLAANESHPATH_HERETEK_ARMOR
+    standHeight: 22
+    kneelHeight: 16
+    avatarOffsetX: 67
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/enginseer.nam
+    deathMale: [{mod: 40k, index: 713}, {mod: 40k, index: 714}, {mod: 40k, index: 715}, {mod: 40k, index: 716}, {mod: 40k, index: 717}, {mod: 40k, index: 718}, {mod: 40k, index: 719}, {mod: 40k, index: 720}, {mod: 40k, index: 721}, {mod: 40k, index: 722}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}, {mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    value: 30
+    rankStrings:
+      - STR_TECH_ENGINSEER_RANK_0
+      - STR_TECH_ENGINSEER_RANK_0
+    rankSprite: {mod: 40k, index: 1000}
+    rankBattleSprite: {mod: 40k, index: 1000}
+    rankTinySprite: {mod: 40k, index: 1000}
+    flagOffset: 42 # guard kill flags
+    tags:
+      SOLDIER_WOUND_TIME_MULTIPLIER: 45 # inbuilt bionics + heretical, warp-based means of regeneration.

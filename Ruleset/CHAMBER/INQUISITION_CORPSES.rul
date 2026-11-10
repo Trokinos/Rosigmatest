@@ -1,4 +1,6 @@
 items:
+  - delete: STR_GK_APO_CORPSE #unused leftover from 40k mod
+
   - &STR_STORMTROOPER_CORPSES
     type: STR_INQ_STORMTROOPER_CORPSE_GEO
     name: STR_INQ_STORMTROOPER_CORPSE

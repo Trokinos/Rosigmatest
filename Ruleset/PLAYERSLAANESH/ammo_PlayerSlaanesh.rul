@@ -1,0 +1,893 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+
+
+
+
+
+items:
+
+ #### BLACK MARKET AMMO ####
+  - &BM_BOLTER_AMMO_TEMPLATE
+    type: STR_CANTUS_BOLTER_AMMO_BM  # Low-grade, unreliable light bolts bought at unreasonable prices.
+    weight: 2
+    bigSprite: 3230
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: {mod: 40k, index: 26}
+    explosionSpeed: 5
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    damageAlter:  # DA ILLEGAL PIRATE COPY BOLTER
+      ToArmorPre: 0.15
+      ArmorEffectiveness: 1.0 # worse
+      ToArmor: 0.2
+      ToHealth: 1.0 # worse
+      ToStun: 0.4 # worse
+      ToEnergy: 0.3
+      ToWound: 0.3
+      RandomWound: false
+      RandomType: 2 # 50-150 spread. No weak hits
+    power: 47 # Worse
+    damageType: 1
+    clipSize: 30
+    tags:
+      ITEM_AMMO_COLOR: 0
+      ITEM_IS_PALETTE_SWAP: 1
+      ITEM_GETS_ACCENT_RECOLOR: 1
+      ITEM_BASE_COLOR: 14
+      ITEM_ACCENT_COLOR: 1
+      ITEM_SWAP_BASE_COLOR: 8
+      ITEM_SWAP_ACCENT_COLOR: 6
+
+  - type: STR_LIGHT_BOLTER_AMMO_BM
+    refNode: *BM_BOLTER_AMMO_TEMPLATE
+    power: 54
+    costBuy: 2400
+    costSell: 140
+    hitAnimation:
+      mod: 40k
+      index: 120
+    explosionSpeed: 3
+
+  - type: STR_LIGHT_BOLTPISTOL_AMMO_BM
+    refNode: *BM_BOLTER_AMMO_TEMPLATE
+    bigSprite: {mod: 40k, index: 4}
+    floorSprite: {mod: 40k, index: 4}
+    handSprite: {mod: 40k, index: 464}
+    power: 46
+    costBuy: 2400
+    costSell: 140
+    hitAnimation:
+      mod: 40k
+      index: 120
+    explosionSpeed: 3
+
+ #### SLAANESH PLASMA AMMO ####
+
+  - &STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
+    type: STR_PLASMA_SPRAY_CLIP_SLAAN
+    bigSprite: {mod: 40k, index: 34}
+    floorSprite: {mod: 40k, index: 33}
+    handSprite: {mod: 40k, index: 440}
+    hitSound: {mod: 40k, index: 19}
+    hitAnimation: 60
+    power: 70 # Spraygun power
+    damageType: 5
+    damageAlter:  # DA PLASMA SLAAN
+      RandomType: 2
+      ToHealth: 0.5  # Slightly worse
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.5  # Slaan melt
+      ToArmor: 0.2
+      ToEnergy: 0.2
+      ToMorale: 0.25
+      ToStun: 0.2 # Added
+    powerRangeReduction: 5
+    powerRangeThreshold: 20.0  # plasma decoheres at longer ranges
+    vaporColorSurface: 17
+    vaporDensitySurface: 6
+    vaporProbabilitySurface: 18
+
+    weight: 3
+    clipSize: 12
+    battleType: 2
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+
+  - type: STR_PLASMA_RIFLE_CLIP_SLAAN
+    refNode: *STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
+    power: 100
+
+ #### SLAANESH MELTA AMMO ####
+
+  - type: STR_LIGHT_MELTA_AMMO_SLAAN  # Slaanesh variant of meltagun ammo.
+    power: 10 # - 2 vs normal
+    damageType: 11
+    damageAlter:  # DA MELTA SLAN
+      RandomType: 6
+      ToArmorPre: 1.0
+      ToHealth: 1.1 # - 0.5 vs normal
+      ToTile: 6.5 # + 0.5 vs normal
+      ToWound: 0.2 # +0.15 vs normal
+      ToMorale: 0.2 # Slaanesh profile
+      ToEnergy: 0.2 # Slaanesh profile
+      RandomWound: false
+      TileDamageMethod: 2
+    shotgunBehavior: 1
+    shotgunPellets: 6
+    shotgunSpread: 0
+    powerRangeReduction: 1.5 # Slightly worse than normal melta
+    powerRangeThreshold: 8.0 #
+    clipSize: 12 # +6
+
+ #### SLAANESH LAS AMMO ####
+
+  - &STR_SLAANESHPATH_LASGUN_MUNITION_STANDARD_TEMPLATE
+    type: STR_SLAANESHPATH_LASGUN_CLIP_STANDARD
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    requiresBuy: # Placeholder
+      - STR_SLAANESHPATH
+    size: 0.1
+    costSell: 200
+    weight: 1
+    bigSprite: 2307
+    floorSprite: {mod: 40k, index: 1021}
+    handSprite: {mod: 40k, index: 1168}
+    hitAnimation: 36
+    power: 55
+    damageType: 1 # AP, to be in line with rebalanced lasgun ammo
+    damageAlter:  # LAS SLAANESH
+      ToArmorPre: 0.30 # 0.2 -> 0.30
+      ArmorEffectiveness: 0.9 # Penetrative power
+      ToHealth: 0.7 # Worse at health damage.
+      ToStun: 0.45 # 0.3 -> 0.35
+      ToEnergy: 0.1 # Weakening
+      ToMorale: 0.1 # Weakening
+      ToTime: 0.1 # Weakening
+    clipSize: 30 # Half the clip size of a normal lasgun clip.
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 70
+    listOrder: 11060
+    # lasgun aesthetics
+    hitSound: 3986
+    fireSound: 3981
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 17  # purple laser
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+
+  - &STR_SLAANESHPATH_LASGUN_MUNITION_TAINTED_TEMPLATE
+    type: STR_SLAANESHPATH_LASGUN_CLIP_TAINTED
+    categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    requiresBuy: # Placeholder
+      - STR_SLAANESHPATH
+    size: 0.1
+    costSell: 400
+    weight: 1
+    bigSprite: 2307
+    floorSprite: {mod: 40k, index: 1021}
+    handSprite: {mod: 40k, index: 1168}
+    hitAnimation: 36
+    power: 60 # +5
+    damageType: 4
+    damageAlter:  # LAS SLAANESH
+      ToArmorPre: 0.5 # BIG armor damage!
+      ArmorEffectiveness: 0.7 # HIGH Penetrative power!
+      ToHealth: 0.30 # TERRIBLE health damage!
+      ToStun: 0.35 # 0.3 -> 0.35
+      ToEnergy: 0.25 # Weakening
+      ToMorale: 0.25 # Weakening
+      ToTime: 0.25 # Weakening
+    clipSize: 15 # only 15 shots!
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 70
+    listOrder: 11060
+    # lasgun aesthetics
+    hitSound: 3986
+    fireSound: 3981
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 17  # purple laser
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+    tags: #Minor infection due to warp nature of ammo.
+      INFECTION_DAMAGE_PERCENT: 15  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+
+  - type: STR_SLAANESHPATH_LASPISTOL_CLIP  # 4010
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.05
+    costSell: 40
+    weight: 1
+    bigSprite: 2308
+    floorSprite: {mod: 40k, index: 130}
+    handSprite: {mod: 40k, index: 1144}
+    hitAnimation: 36
+    power: 50
+    damageType: 4
+    damageAlter:  #Da Las SLAAN v 2.0!!
+      RandomType: 2
+      ArmorEffectiveness: 0.8 # Extra penetration
+      ToArmorPre: 0.3
+      ToHealth: 0.8 # 0.5 > 0.8
+      ToArmor: 0.2
+      ToStun: 0.1
+      ToEnergy: 0.1
+      ToMorale: 0.1
+    clipSize: 12
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 70
+    vaporColor: 2
+    vaporDensity: 5
+    listOrder: 10850
+    # lasgun aesthetics
+    hitSound: 3986
+    fireSound: 3981
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 17  # purple laser
+    vaporDensitySurface: 1
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+
+ #### SLAANESH BALLISTIC AMMO ####
+
+#  - type: STR_HEARTBREAKER_AMMO_BARBED
+
+#  - type: STR_HEARTBREAKER_AMMO_TERRORCHEM
+
+#  - type: STR_HEARTBREAKER_AMMO_AMPUTATOR
+
+  - type: STR_HEARTBREAKER_AMMO_AP
+    categories: [STR_CAT_SNIPER]
+    size: 0.1
+    costSell: 4000
+    weight: 3
+    bigSprite: 1002
+    floorSprite: {mod: 40k, index: 1118}
+    handSprite: {mod: 40k, index: 1896}
+    hitSound: {mod: 40k, index: 22}
+    hitAnimation: {mod: 40k, index: 26}
+    explosionSpeed: 5
+    power: 70
+    damageType: 1
+    damageAlter:
+      ToArmorPre: 0.02
+      ArmorEffectiveness: 0.5 # Semi AP
+      ToHealth: 0.8
+    clipSize: 6
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 200
+    listOrder: 11898
+
+# - type: STR_AMPUTATOR_SHELLS
+
+# - type: STR_GLITTERSHELLS
+
+# - type: STR_SCATTERSCREAM_SHELLS
+
+# - type: CHEM_FLECHETTE_SHELLS
+
+
+
+ #### SONIC AMMO ####
+
+  - type: STR_NAIAD_SONIC_SHRIEKER_CHARGE
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2317
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    fireSound: {mod: 40k, index: 861}
+    explosionHitSound: {mod: 40k, index: 863}  # Sound
+    bulletSprite: {mod: 40k, index: 11}
+    hitAnimation: {mod: 40k, index: 96}
+    power: 75
+    damageType: 3
+    damageAlter:  # DA SHRIEK
+      ToHealth: 0.2
+      ToTime: 1.0
+      ToStun: 1.5
+      ToEnergy: 2.0
+      ToMorale: 2.5
+      ToWound: 0.05
+      ToTile: 0.1
+      ArmorEffectiveness: 0.6
+      RandomType: 6
+      FixRadius: 4
+    bulletSpeed: 80
+    clipSize: 6
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+
+  - type: STR_NAIAD_SONIC_SCREAMER_CHARGE
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2317
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    fireSound: {mod: 40k, index: 861}
+    explosionHitSound: {mod: 40k, index: 863}  # Sound
+    bulletSprite: {mod: 40k, index: 11}
+    hitAnimation: {mod: 40k, index: 96}
+    power: 70
+    damageType: 3
+    damageAlter:  # DA Sound
+      ToHealth: 0.8
+      ToTime: 1.0
+      ToStun: 2.0
+      ToEnergy: 2.0
+      ToMorale: 2.0
+      RandomType: 6
+      FixRadius: 3
+      ToArmorPre: 0.3
+      ToArmor: 0.0 #deals damage on the way in
+      ArmorEffectiveness: 0.7
+      ToTile: 0.75
+      ToItem: 0.75
+
+    bulletSpeed: 80
+    clipSize: 6
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+
+ #### LIGHT & STANDARD BOLTER AMMO
+
+  - &STR_SLAANESHPATH_PENETRATOR_TEMPLATE
+    type: STR_SLAANESHPATH_CLIP_PENETRATOR  # The standard Slaanesh ammunition. Penetration + armor shredding.
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.3
+      ArmorEffectiveness: 0.75
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.35
+      ToEnergy: 0.3
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 65
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+
+  - type: STR_CANTUS_BOLTER_AMMO_PENETRATOR
+    refNode: *STR_SLAANESHPATH_PENETRATOR_TEMPLATE
+    power: 55
+
+  - &STR_SLAANESHPATH_SHREDDER_TEMPLATE
+    type: STR_SLAANESHPATH_CLIP_SHREDDER  # Shredder rounds ruin armor but have zero penetration.
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageType: 7 # Melee damage.
+    damageAlter:  # DA SHRED
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.4 # Good at shredding armor.
+      ArmorEffectiveness: 1.4
+      ToArmor: 0.01 # Deals damage on the way in.
+      ToHealth: 1.5
+      ToStun: 0.6 # Extremely agonizing.
+      ToEnergy: 0.4 # Extremely agonizing.
+      ToMorale: 2.0 # Extremely agonizing.
+      ToWound: 0.6 # Shrapnel
+      RandomWound: false
+    explosionSpeed: 5
+    power: 65
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+
+  - &STR_SLAANESHPATH_SOULBLIGHTER_TEMPLATE # Soulstain bolts
+    type: STR_SLAANESHPATH_CLIP_SOULBLIGHTER # Slaanesh-flavored Necromunda Warp bolts.
+    categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 2318
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageType: 5 # Plasma damage
+    damageAlter:  # DA SLAAN CURSE
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.5
+      ArmorEffectiveness: 0.5
+      ToArmor: 0.1
+      ToWound: 0.4 # Targets start bleeding due to warp influence, not physical trauma.
+      ToHealth: 0.25 # Very low direct damage. Corrupting weapon.
+      ToStun: 0.6
+      ToEnergy: 1.0 # Drains a lot of energy.
+      ToMana: 0.6
+      ToMorale: 3.0
+      ToTime: 0.6
+    explosionSpeed: 5
+    power: 65
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10460
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 25
+      INFECTION_DAMAGE_PERCENT: 30
+      INFECTION_TYPE: 3
+
+  - type: STR_CANTUS_BOLTER_AMMO_PENETRATOR # Penetrator bolts for the Cantus bolter.
+    categories: [STR_CAT_BOLTER]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 3230
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA LIGHT BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.2 # Slightly nerfed
+      ArmorEffectiveness: 0.8
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.25
+      ToEnergy: 0.25
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 55
+    damageType: 1
+    clipSize: 24
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10295
+
+  - type: STR_CANTUS_BOLTER_AMMO_SHRED # For now this is identical to penetrator ammo. Will amend later.
+    categories: [STR_CAT_BOLTER]
+    size: 0.1
+    costSell: 150
+    weight: 3
+    bigSprite: 3230
+    floorSprite: {mod: 40k, index: 2}
+    handSprite: {mod: 40k, index: 464}
+    hitSound: {mod: 40k, index: 708}
+    hitAnimation: 26
+    damageAlter:  # DA LIGHT BOLTER SLAAN
+      RandomType: 2 #50-150%
+      ToArmorPre: 0.15
+      ArmorEffectiveness: 0.8
+      ToArmor: 0.2
+      ToHealth: 0.7
+      ToStun: 0.25
+      ToEnergy: 0.25
+      ToMorale: 0.2
+    explosionSpeed: 5
+    power: 55
+    damageType: 1
+    clipSize: 24
+    battleType: 2
+    armor: 30
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10295
+
+ #### WEBBER AMMO
+
+  - type: STR_CONSTRICTOR_PISTOL_AMMO
+    bigSprite: 2305
+    floorSprite: 2414
+    handSprite: {mod: 40k, index: 616}
+    hitSound: {mod: 40k, index: 790}
+    hitAnimation: 160
+    power: 40 # -10 vs big constrictor.
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    damageAlter:  # SLAAN
+      RandomType: 2  # TFTD [50% - 150%]
+      ArmorEffectiveness: 0.1
+      ToArmorPre: 0.5
+      ToArmor: 0.5  # crushes armor
+      ToHealth: 0.2
+      ToStun: 1.2
+      ToWound: 0.5
+      ToEnergy: 2.0
+      ToMorale: 1.0
+    weight: 3
+
+ #### GRENADES
+
+  - type: STR_SCREAMER_GRENADE # Smaller versions of the Slaanesh Sonic Grenade.
+    bigSprite: 2313
+    floorSprite: 2420
+    handSprite: 2390
+    explosionHitSound: 2118  # Sonichit
+    hitAnimation: {mod: 40k, index: 96}
+    throwRange: 18 # +2
+    primeSound: 2424
+    weight: 2
+    invWidth: 1
+    invHeight: 2
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    power: 80 # - 20 power.
+    damageType: 3
+    damageAlter:  # DA Sound
+      ToHealth: 0.85 # -0.15 vs normal sonic grenades
+      ToTime: 1.2 # +0.2
+      ToStun: 2.2 # +0.2
+      ToEnergy: 2.2 # +0.2
+      ToMorale: 2.2
+      ToArmorPre: 0.4 # +0.1
+      ToArmor: 0.0 #deals damage on the way in
+      ArmorEffectiveness: 0.7
+      ToTile: 0.45 # -0.3
+      ToItem: 0.45 # -0.3
+      RandomType: 6
+      FixRadius: 4
+    battleType: 4
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 75
+
+
+  - type: STR_SHRIEKER_GRENADE # A sonic stun grenade.
+    bigSprite: 2313
+    floorSprite: 2420
+    handSprite: 2390
+    explosionHitSound: 2118  # Sonichit
+    hitAnimation: {mod: 40k, index: 96}
+    throwRange: 18 # +2
+    primeSound: 2424
+    weight: 2
+    invWidth: 1
+    invHeight: 2
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    power: 75 # - 20 power.
+    damageType: 3
+    damageAlter:  # DA SHRIEK
+      ToHealth: 0.15
+      ToTime: 1.5 # +0.2
+      ToStun: 2.2 # +0.2
+      ToEnergy: 2.2 # +0.2
+      ToMorale: 2.2
+      ToArmorPre: 0.20
+      ToArmor: 0.0
+      ArmorEffectiveness: 0.6
+      ToTile: 0.15
+      ToItem: 0.15
+      RandomType: 6
+      FixRadius: 5
+    battleType: 4
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 75
+
+
+  - type: STR_STRANGLER_GRENADE # Nerve gas/smoke grenade combo.
+    bigSprite: 4086 # Power of pink
+    floorSprite: 2955 # Scare gas grenade - fix later
+    handSprite: 2750 # Scare gas grenade - fix later
+    explosionHitSound: {mod: 40k, index: 792}
+    hitAnimation: {mod: 40k, index: 104}
+    throwRange: 20
+    primeSound: 2424
+    weight: 2
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    battleType: 4
+    invWidth: 1
+    invHeight: 2
+    power: 70
+    damageType: 8
+    damageAlter:  # DA NERVE GAS
+      RandomType: 2  # Less swingy
+      ToHealth: 0.2
+      ToWound: 0.01
+      RandomWound: false
+      ToTile: 0.0
+      ToItem: 0.0
+      ToArmor: 0.0
+      ToEnergy: 0.5
+      ToStun: 1.2
+      ToTime: 0.5
+      ToMorale: 0.5
+      ArmorEffectiveness: 0.4
+      FixRadius: 5
+      SmokeThreshold: 0  # Slaanesh smoke grenades are NOT safe for children.
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+      ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
+
+  - type: STR_SHARD_GRENADE  # Cursed, armor-piercing fragments: wounds + corruption.
+    bigSprite: 4089
+    floorSprite: {mod: 40k, index: 19} #TODO: MAKE A PINK FRAG GRENADE CASE
+    handSprite: {mod: 40k, index: 336} #TODO: MAKE A PINK FRAG GRENADE CASE
+    battleType: 4
+    invWidth: 1
+    invHeight: 2
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    power: 80 # Rare & expensive.
+    throwRange: 20
+    primeSound: 2424
+    weight: 2
+    fuseType: -2
+    costThrow:
+      time: 55
+      energy: 5
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    unprimeActionName: STR_UNPRIME_GRENADE
+    flatThrow:
+      time: false
+      energy: true
+    flatPrime:
+      time: false
+      energy: true
+    damageType: 1 # Armor piercing
+    damageAlter:  # DA WARP SHARDS
+      RandomType: 2
+      ToHealth: 0.25 # Tiny armor piercing fragments
+      ToWound: 0.6 # Cursed fragments will quickly kill or mutate those afflicted.
+      RandomWound: false
+      ToTile: 0.1
+      ToItem: 0.2
+      ToArmor: 0.05
+      ToEnergy: 0.7
+      ToStun: 0.7
+      ToTime: 0.5
+      ToMorale: 4.0 # EXTREMELY debilitating.
+      ArmorEffectiveness: 0.7 # Some shards will likely get through.
+      FixRadius: 5
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 25
+      INFECTION_DAMAGE_PERCENT: 50  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+
+ #### 40MM GRENADES
+
+  - type: STR_HALLUCINOGEN_GRENADE40  # multipurpose smoke/morale/debuff/corruption
+    bigSprite: 2055
+    floorSprite: 2060
+    handSprite: {mod: 40k, index: 336}  # Needs new
+    battleType: 2  # 4 is Grenade, but these are not primed
+    invWidth: 1  # smaller
+    invHeight: 1
+    explosionHitSound: [2122, 2119]  # daemonettelaughter
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    listOrder: 10331
+    power: 70
+    damageType: 8
+    damageAlter:  # DA CRAZY GAS
+      ToArmorPre: 0.3 # Corrosive
+      RandomType: 1  # Swingy; unpredictable response
+      ToHealth: 0.20 # Corrosive, toxic gas
+      ToWound: 0.0
+      RandomWound: false
+      ToTile: 0.0
+      ToItem: 0.3
+      ToArmor: 0.0
+      ToEnergy: 0.5
+      ToStun: 0.5
+      ToTime: 0.5
+      ToMorale: 2.0
+      ArmorEffectiveness: 0.4
+      FixRadius: 5
+      RadiusReduction: 6.0
+      SmokeThreshold: 0
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 25
+      ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
+      INFECTION_DAMAGE_PERCENT: 50
+      INFECTION_TYPE: 3
+    clipSize: 2
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
+
+  - type: STR_STRANGLER_GRENADE40  # Non-damaging stun gas.
+    bigSprite: 4082
+    floorSprite: 2060 # Needs new
+    handSprite: {mod: 40k, index: 336}  # Needs new
+    explosionHitSound: {mod: 40k, index: 792}
+    hitAnimation: {mod: 40k, index: 104}
+    battleType: 2  # 4 is Grenade, but these are not primed
+    invWidth: 1
+    invHeight: 1
+    power: 60
+    damageType: 8
+    damageAlter:  # DA STUN GAS
+      RandomType: 2  # Less swingy
+      ToHealth: 0.01
+      ToWound: 0.0
+      RandomWound: false
+      ToTile: 0.0
+      ToItem: 0.0
+      ToArmor: 0.0
+      ToEnergy: 0.5
+      ToStun: 1.2
+      ToTime: 0.5
+      ArmorEffectiveness: 0.4
+      FixRadius: 4
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 50
+      ITEM_ENERGY_SHIELD_PENETRATION_PERCENT: 100 # ignores shields; it's a gas
+    clipSize: 2
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
+
+  - type: STR_SHARD_GRENADE40  # Cursed, armor-piercing fragments: wounds + corruption.
+    bigSprite: 4088
+    floorSprite: 2060
+    handSprite: {mod: 40k, index: 336}  # Needs new
+    battleType: 2  # 4 is Grenade, but these are not primed
+    invWidth: 1  # smaller
+    invHeight: 1
+    explosionHitSound: {mod: 40k, index: 776}  # 776: Resources/Sounds/SPELLFAIL.wav
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    power: 90 # Rare & expensive.
+    damageType: 2 # Armor piercing
+    damageAlter:  # DA WARP SHARDS
+      RandomType: 2
+      ToHealth: 0.25 # Tiny armor piercing fragments
+      ToWound: 0.6 # Cursed fragments will quickly kill or mutate those afflicted.
+      RandomWound: false
+      ToTile: 0.1
+      ToItem: 0.2
+      ToArmor: 0.05
+      ToEnergy: 0.7
+      ToStun: 0.7
+      ToTime: 0.5
+      ToMorale: 4.0 # EXTREMELY debilitating.
+      ArmorEffectiveness: 0.7 # Some shards will likely get through.
+      FixRadius: 5
+    noLOSAccuracyPenalty: 75 # Indirect fire weapon.
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 20
+      INFECTION_DAMAGE_PERCENT: 50  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+    clipSize: 2
+
+  - type: STR_SCREAMER_GRENADE40 # Direct damage: scaled-down sonic grenades
+    weight: 2
+    bigSprite: 4083
+    floorSprite: 2060
+    handSprite: 2390
+    power: 70
+    damageType: 3
+    damageAlter:  # DA Sound slightly nerfed
+      ToHealth: 0.85 # -0.15 vs normal sonic grenades
+      ToTime: 1.2 # +0.2
+      ToStun: 2.2 # +0.2
+      ToEnergy: 2.2 # +0.2
+      ToMorale: 2.2
+      ToArmorPre: 0.4 # +0.1
+      ToArmor: 0.0 #deals damage on the way in
+      ArmorEffectiveness: 0.7
+      ToTile: 0.45 # -0.3
+      ToItem: 0.45 # -0.3
+      RandomType: 6
+      FixRadius: 3
+    explosionHitSound: 2118  # Sonichit
+    hitAnimation: {mod: 40k, index: 96}
+    battleType: 2
+    invWidth: 1  # smaller
+    invHeight: 1
+    hitSound: {mod: 40k, index: 0}
+    noLOSAccuracyPenalty: 75
+    recoveryPoints: 1
+    clipSize: 2
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 65 # Slightly nerfed.
+
+  - type: STR_BALEFIRE_GRENADE40 # multipurpose: armor melt/incendiary/morale damage
+
+  - type: STR_AMPUTATOR40 # Rippershot; high damage and stun vs unarmored, direct-fire only
+
+  - type: STR_FLECHETTE40 # Toxic armor-piercing flechettes; direct-fire only.

@@ -211,14 +211,14 @@ items:
     battleType: 11
     listOrder: 19911
 
-  - type: STR_ALPHA_LEGION_CORPSE_CORVUS  # ninja vanish smoke bomb; theatricality and deception: powerful agents to the uninitiated
-    refNode: *STR_ALPHA_LEGION_CORPSE_TEMPLATE
-    spawnUnit: STR_ALPHA_SOLDIER_CORVUS_INFILTRATOR
-    listOrder: 19911
+  # - type: STR_ALPHA_LEGION_CORPSE_CORVUS  # ninja vanish smoke bomb; theatricality and deception: powerful agents to the uninitiated
+  #   refNode: *STR_ALPHA_LEGION_CORPSE_TEMPLATE
+  #   spawnUnit: STR_ALPHA_SOLDIER_CORVUS_INFILTRATOR
+  #   listOrder: 19911
 
-  - type: STR_ALPHA_LEGION_CORPSE_CATAPHRACT  # ninja vanish smoke bomb; theatricality and deception: powerful agents to the uninitiated
-    refNode: *STR_ALPHA_LEGION_CORPSE_TEMPLATE
-    listOrder: 19912
+  # - type: STR_ALPHA_LEGION_CORPSE_CATAPHRACT  # ninja vanish smoke bomb; theatricality and deception: powerful agents to the uninitiated
+  #   refNode: *STR_ALPHA_LEGION_CORPSE_TEMPLATE
+  #   listOrder: 19912
 
   - type: STR_GREYKALP_CORPSE                  # GK ALPHA disguise
     recover: false

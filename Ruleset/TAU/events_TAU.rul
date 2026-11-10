@@ -331,7 +331,9 @@ events:
     description: STR_ORCA_DROPSHIPS_CODEX_DESCRIPTION_GV
     background: InquisitionBG.SCR
 
-
+  - name: STR_RALLY_GUARD_EVENT_GV
+    description: STR_RALLY_GUARD_CODEX_DESCRIPTION_GV
+    background: InquisitionBG.SCR
 
   # turn off the GSC arrival events
   # - update: STR_GSC_ARRIVAL_BASE_SPAWN

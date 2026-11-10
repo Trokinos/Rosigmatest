@@ -8848,6 +8848,10 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
+  - name: STR_MARKSMAN_AUTOGUNS # Tech that gives access to the Agripinaa Mk. IX and Graia VII
+    dependencies:
+      - STR_GENERALLOCK
+
   - name: STR_LIBERATOR_AUTOSTUB  # Liberator Autostubber
     # Player Version
     cost: 250
@@ -12763,6 +12767,16 @@ research:
       - STR_LIVE_CAPTURE_NURGLE_MARINE
     destroyItem: true
 
+  - name: NURGLE_BLIGHT_HAULER_CORPSE
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_INTERROGATION_COMPLETED
+      - STR_ALIEN_ORIGINS
+      - STR_THREAT_ONE
+
   - name: STR_NURGLE_DREADNOUGHT  # Nurgle Dreadnought
     cost: 192
     points: 50
@@ -15165,10 +15179,10 @@ research:
     refNode: *STR_CORPSE_BASIC
   - name: STR_ALPHA_LEGION_CORPSE
     refNode: *STR_CORPSE_BASIC
-  - name: STR_ALPHA_LEGION_CORPSE_CORVUS
-    refNode: *STR_CORPSE_BASIC
-    getOneFree:
-      - STR_ALPHA_LEGION_CORPSE
+  # - name: STR_ALPHA_LEGION_CORPSE_CORVUS
+  #   refNode: *STR_CORPSE_BASIC
+  #   getOneFree:
+  #     - STR_ALPHA_LEGION_CORPSE
   - name: STR_CHAOS_HERETEK_CORPSE
     refNode: *STR_CORPSE_BASIC
   - name: STR_CHAOSFURY_CORPSE

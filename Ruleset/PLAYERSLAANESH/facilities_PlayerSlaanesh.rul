@@ -1,0 +1,115 @@
+facilities:
+
+
+# One of the main benefits on the strategy is that the buildings are relatively inexpensive
+# and provide various benefits. This is meant to defray the often ruinous costs of
+# items and promotions compared to many other factions.
+
+  - type: STR_SLAANESH_ALTAR
+    refundValue: 500000
+    destroyedFacility: STR_CORRIDOR
+    sickBayAbsoluteBonus: 0.0
+    sickBayRelativeBonus: 1.0 # Chaos Shrine effect.
+    psiLabs: 10
+    aliens: 4
+    labs: 10
+    placeSound: {mod: 40k, index: 98}
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_SLAANESHPATH_GATE
+    spriteShape: 1
+    spriteFacility: 36
+    rightClickActionType: 5
+    buildCost: 1000000 # This building is meant to be cheap and provide passive money generation.
+    maxAllowedPerBase: 1
+    buildTime: 10
+    monthlyCost: -100000
+    provideBaseFunc: [ALTAR]
+    mapName: XBASE_49
+    listOrder: 850
+
+# type: STR_SLAANESH_TEMPLE
+
+
+  - type: STR_HALLS_OF_DELECTATION
+    placeSound: {mod: 40k, index: 98}
+    requiresBaseFunc: [BASE]
+    requires:
+      - ADORATION_THROUGH_AGONY
+    spriteShape: 1
+    #spriteFacility: {mod: 40k, index: 444}
+    spriteFacility: {mod: 40k, index: 31} #Placeholder
+    buildCost: 500000
+    refundValue: 200000
+    buildTime: 20
+    monthlyCost: 25000
+    aliens: 10
+    trainingRooms: 15
+    personnel: 15
+    destroyedFacility: STR_CORRIDOR
+    maxAllowedPerBase: 1
+    mapName: XBASE_36
+
+  - type: STR_HERETEK_WORKSHOP
+    placeSound: {mod: 40k, index: 98}
+    requiresBaseFunc: [BASE]
+    requires:
+      - STR_HERETEK_MANUFACTURING_SUPPORT
+    spriteShape: 1
+    spriteFacility: {mod: 40k, index: 317}
+    buildCost: 450000
+    buildTime: 20
+    monthlyCost: 20000
+    refundValue: 250000
+    workshops: 40
+    storage: 25
+    mapName: XBASE_25
+    maxAllowedPerBase: 1
+    provideBaseFunc: [HERETEKS]
+
+
+  - type: STR_OUTPOST_SLAANESH # For now, this is copied from the chaos cult outpost.
+    requires:
+      - STR_SLAANESHPATH_GATE
+    placeSound: {mod: 40k, index: 98}
+    canBeBuiltOver: true
+    requiresBaseFunc: [OUTP]
+    provideBaseFunc: [OUTP, HANGAR, IMPERIUM]
+    maxAllowedPerBase: 1
+    monthlyCost: 300000
+    refundValue: 500000
+    connectorsDisabled: true
+    spriteShape: {mod: 40k, index: 600}
+    spriteFacility: {mod: 40k, index: 600}
+    size: 4
+    buildCost: 1000000
+    crafts: 1
+    buildTime: 10
+    personnel: 50
+    storage: 100
+    radarRange: 2577
+    radarChance: 20
+    mapName: XBASE_60
+    storageTiles:
+      - [24, 6, 1]
+      - [25, 6, 1]
+      - [27, 6, 1]
+      - [22, 4, 1]
+      - [34, 10, 1]
+      - [28, 3, 1]
+      - [27, 3, 2]
+    verticalLevels:
+      - type: ground
+        terrain: baseTerrain
+        groups: [13]
+        size: [4, 4, 0]
+      - type: middle
+        blocks: [60] # probably not 60, you'll have to count the number of where XBASE_60 is in the terrain, starting from 0
+        size: [4, 4, 1] # if the craft is going on z = 1, the height here needs to be 1
+      - type: ceiling
+        size: [4, 4, 3] # x and y need to match the size of the facility, and all of the heights should add up to the deployment height
+        terrain: VOSS4X4 # needs a 40x40 map to match the outpost
+        blocks: [0]
+    listOrder: 800
+#
+#

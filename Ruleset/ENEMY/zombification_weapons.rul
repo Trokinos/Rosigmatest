@@ -387,6 +387,11 @@ items:
     specialChance: 1  # tiny chance of zombifying its victims
     zombieUnitFaction: -1
 
+  - type: STR_NURGLE_DREAD_POWERCLAW
+    refNode: *STR_NURGLE_ZOMBIFICATION
+    specialChance: 17  # chance of zombifying its victims
+    zombieUnitFaction: -1
+
   - &STR_NORMAL_ZOMBIFICATION
     type: CHRYSSALID_WEAPON
     zombieUnit: STR_ZOMBIE

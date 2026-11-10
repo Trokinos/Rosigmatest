@@ -14,11 +14,11 @@ items:
     recover: true
     liveAlien: true
     costSell: 1000
-  - type: STR_GSC_CLOAKED_ORANGE     # 20400
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 1000
+  # - type: STR_GSC_CLOAKED_ORANGE     # 20400
+  #   size: 0.0
+  #   recover: true
+  #   liveAlien: true
+  #   costSell: 1000
   - type: STR_GSC_CIVILIAN_F0                     # 22000
     size: 0.0
     recover: true

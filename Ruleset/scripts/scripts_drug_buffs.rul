@@ -55,6 +55,17 @@ extended:  # WIP
             return;
           end;
 
+          target.getTag temp Tag.UNIT_IS_WARPING;
+          if gt temp 0;
+            battle_game.flashMessage "STR_SCRIPT_WARPER_NO_BENEFIT";
+            return;
+          end;
+          actor.getTag temp Tag.UNIT_IS_WARPING;
+          if gt temp 0;
+            battle_game.flashMessage "STR_SCRIPT_WARPER_NO_BENEFIT";
+            return;
+          end;
+
           target.getRuleArmor armorRule;
           armorRule.getTag temp Tag.UNIT_TYPE_LIVING;
           if lt temp 1;

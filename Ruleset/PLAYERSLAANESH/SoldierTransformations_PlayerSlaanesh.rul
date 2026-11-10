@@ -1,0 +1,365 @@
+soldierTransformation:
+
+
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠛⣛⣛⣛⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠄⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠄⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⢰⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠉⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠈⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢠⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⠻⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠿⠿⠿⠛⠛⠉⠄⠄⠄⣰⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣶⣶⣤⣤⣄⣀⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⠟⣁⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣶⣤⣄⣀⣀⣀⣀⣀⣀⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣵⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠉⠉⠉⠉⠉⠉⠉⠙⠛⠻⠿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣤⡀⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣷⡄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⠟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢿⣿⣿⣿⣿⣿⡄⠄⠄⠄⠄⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⡏⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣷⡀⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⣿⣿⣿⣿⣿⣇⠄⠄⠄⠄⠄⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣧⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⠁⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⡿⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⣿⠇⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢠⣾⣿⣿⣿⣿⣿⣿⡏⠄⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⠟⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⢏⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣤⣀⣀⠄⠄⠄⠄⠄⢀⣀⣠⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+
+###################################### TABLE OF CONTENTS ################################################
+
+      # 1: HANDMAIDEN NOMINATION
+
+  #NH - ELEVATE PROMISING HANDMAIDEN
+    #NV - NOMINATE VIVISECTIONIST
+      #NM - NOMINATE MILITANT
+        #NY - NOMINATE MYSTES
+          #NA - NOMINATE ANATHEMANT
+
+      # 2: HANDMAIDEN INDUCTION
+
+
+# In order to more closely mirror the way in which Adepta novitiates work in settings like Kill Team,
+# Handmaidens are now given specializations once they achieve enough experience.
+
+#NH
+  - name: STR_ELEVATE_PROMISING_HANDMAIDEN
+    requires:
+      - STR_PATH_OF_PERFECTION # Placeholder. Change later.
+    cost: 6000
+    producedSoldierType: STR_SLAANESHPATH_EXALTEDMAIDEN
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    showMinMax: true
+    requiredCommendations:
+      STR_HANDMAIDEN_COMMENDATION: 0 # Mark of Promise. 3 kills, 3 missions.
+    flatMin:
+      tu: 1
+      health: 1
+      reactions: 1
+      psiStrength: 1
+      strength: 1
+    flatMax:
+      tu: 6
+      health: 6
+      reactions: 6
+      psiStrength: 15
+      strength: 6
+    percentGainedMin:
+      firing: 3
+      melee: 3
+      throwing: 3
+    percentGainedMax:
+      firing: 10
+      melee: 10
+      throwing: 10
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_HANDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 20
+ #NV
+  - name: STR_NOMINATE_VIVISECTIONIST # Turns a Handmaiden into an apprentice Chirurgeon.
+    requires:
+      - STR_PATH_OF_PERFECTION
+    cost: 50000 # Expensive; this is a powerful unit.
+    producedSoldierType: STR_SLAANESHPATH_MYSTES
+    producedSoldierArmor: STR_SLAANESHPATH_MYSTES_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    showMinMax: false
+    transferTime: 336 # Two weeks of training time.
+    flatMin:
+      tu: 1
+      health: 6
+      melee: 6
+      reactions: 5
+      strength: 3
+      firing: -1
+    flatMax:
+      tu: 6
+      health: 12
+      reactions: 15
+      melee: 12
+      firing: -6
+      strength: 8
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+ #NM
+  - name: STR_NOMINATE_MILITANT # Turns a handmaiden into a handmaiden-militant.
+    requires:
+      - STR_PATH_OF_PERFECTION
+    cost: 10000 # Relatively cheap.
+    producedSoldierType: STR_SLAANESHPATH_MILITANT
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    showMinMax: true
+    transferTime: 144 # Six days of training time.
+    flatMin:
+      tu: 1
+      health: 1
+      melee: 1
+      reactions: 1
+      strength: 1
+      firing: 1
+      throwing: 1
+    flatMax:
+      tu: 6
+      health: 6
+      reactions: 12
+      melee: 6
+      firing: 6
+      strength: 6
+      throwing: 6
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+
+
+ #NY   # TODO: ADD STAT REQUIREMENTS FOR PSISKILL & PSISTRENGTH
+  - name: STR_NOMINATE_MYSTES # Turns a Handmaiden into an apprentice Mystagogue.
+    requires:
+      - STR_SACRIFICIAL_RITUALS
+    cost: 50000 # Expensive; this is a powerful unit.
+    producedSoldierType: STR_SLAANESHPATH_MYSTES
+    producedSoldierArmor: STR_SLAANESHPATH_MYSTES_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    showMinMax: false
+    transferTime: 288 # Twelve days of training time.
+    flatMin:
+      tu: 1
+      health: 6
+      melee: -1
+      reactions: 1
+      strength: 3
+      firing: -1
+      psiStrength: 10
+      psiSkill: 10
+    flatMax:
+      tu: 6
+      health: 12
+      reactions: 4
+      melee: 4
+      firing: 6
+      strength: 4
+      psiStrength: 10
+      psiSkill: 10
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 100 # Very expensive in terms of piety.
+ #NA
+  - name: STR_NOMINATE_ANATHEMANT # Turns a Handmaiden into an apprentice Sorceress.
+    requires:
+      - STR_SOULSTAIN_SORCERY
+    cost: 66600 # Expensive; this is a powerful unit.
+    producedSoldierType: STR_SLAANESHPATH_ANATHEMANT
+    producedSoldierArmor: STR_SLAANESHPATH_ANATHEMANT_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    showMinMax: true
+    transferTime: 288 # Twelve days of training time.
+    flatMin:
+      tu: 1
+      health: 6
+      melee: -1
+      reactions: 1
+      strength: 3
+      firing: -1
+      psiStrength: 10
+      psiSkill: 10
+    flatMax:
+      tu: 6
+      health: 12
+      reactions: 4
+      melee: 4
+      firing: 7
+      strength: 4
+      psiStrength: 20
+      psiSkill: 20
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_ALIEN_SURGERY: 3 # Requires sacrifical blood.
+      STR_SLAANESH_PIETY: 66 # Expensive in terms of piety.
+
+#### INDUCTIONS
+#IS
+  - name: STR_INDUCT_IMMACULATE_SISTER # TODO: Add stat requirement. Add basic commendation requirement.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    producedSoldierType: STR_SLAANESHPATH_IMMACULATE_SISTER
+    producedSoldierArmor: STR_SLAANESHPATH_IMMACULATE_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    requiredCommendations:
+      STR_HANDMAIDEN_COMMENDATION: 1 # Handmaiden bronze star. 3 kills, 3 missions.
+    transferTime: 66
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_HANDMAIDEN
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 20
+      STR_ELERIUM-115: 6
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+
+  - name: STR_TRAIN_CHIRURGEON # Will 3 melee kills & favored status.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    producedSoldierType: STR_SLAANESHPATH_CHIRURGEON
+    producedSoldierArmor: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    transferTime: 266
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 66
+      STR_ELERIUM-115: 6
+      STR_ALIEN_ALLOYS: 10
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+
+  - name: STR_TRAIN_HARBINGER # REQUIREMENTS TBD
+    requires:
+      - STR_GENERALLOCK
+    producedSoldierType: STR_SLAANESHPATH_CHIRURGEON # PLACEHOLDER
+    producedSoldierArmor: STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR #PLACEHOLDER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    transferTime: 366
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 66
+      STR_ELERIUM-115: 6
+      STR_SLAANESHPATH_HARBINGER_ARMOR_TOKEN: 1
+
+  - name: STR_TRAIN_SORCERESS # Needs high psi stats and favored status.
+    requires:
+      - STR_GENERALLOCK
+    producedSoldierType: STR_SLAANESHPATH_SORCERESS
+    producedSoldierArmor: STR_SLAANESHPATH_SORCERESS_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    requiredMinStats:
+      psiStrength: 85
+      psiSkill: 85
+    transferTime: 666
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 66
+      STR_ELERIUM-115: 6
+      STR_ALIEN_SURGERY: 6
+      STR_ALIEN_FOOD: 6
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+
+  - name: STR_CATECHIZE_MYSTAGOGUE # Requires an Exalted Sister Immaculate.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION # PLACEHOLDER
+    producedSoldierType: STR_SLAANESHPATH_SORCERESS # PLACEHOLDER
+    producedSoldierArmor: STR_SLAANESHPATH_SORCERESS_ARMOR # PLACEHOLDER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    upperBoundType: 1 # Remember to set the mystagogue psistrength to a decent number.
+    requiredMinStats:
+      psiSkill: 60
+    transferTime: 666
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 200
+      STR_ELERIUM-115: 25
+      STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
+
+  - name: STR_ELEVATE_MYSTAGOGUE # Promotes a mystagogue from a sister. Much faster and cheaper.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION # PLACEHOLDER
+    producedSoldierType: STR_SLAANESHPATH_SORCERESS # PLACEHOLDER
+    producedSoldierArmor: STR_SLAANESHPATH_SORCERESS_ARMOR # PLACEHOLDER
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    upperBoundType: 1 # Remember to set the mystagogue psistrength to a decent number.
+    requiredMinStats:
+      psiSkill: 100
+    transferTime: 166
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_EXALTEDMAIDEN
+    requiredItems:
+      STR_SLAANESH_PIETY: 50
+      STR_ELERIUM-115: 5
+      STR_ALIEN_FOOD: 2
+
+    #requiredCommendations:
+    #  STR_BATTLE_TESTED: 0
+
+
+  - name: STR_ELEVATE_ANGEL # TODO: Add stat requirement. Add basic commendation requirement.
+    requires:
+      - STR_POWER_ARMOR_CORRUPTION
+    producedSoldierType: STR_SLAANESHPATH_IMMACULATE_SISTER
+    producedSoldierArmor: STR_SLAANESHPATH_IMMACULATE_ARMOR
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    resetRank: true
+    transferTime: 66
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_IMMACULATE_SISTER
+    requiredItems:
+      STR_SLAANESH_PIETY: 10
+      STR_ELERIUM-115: 5
+      STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
+
+    #resetRank - use this for promoting handmaidens to sisters immaculate.

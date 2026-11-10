@@ -140,6 +140,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
+      - STR_NOT_SLAANESHPATH
     space: 0
     time: 200
     cost: 20000
@@ -153,6 +154,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
+      - STR_NOT_SLAANESHPATH
     space: 0
     time: 900
     cost: 60000
@@ -163,6 +165,7 @@ manufacture:
     category: STR_AMMUNITION
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
+      - STR_NOT_SLAANESHPATH
     space: 0
     time: 200
     cost: 16000
@@ -175,6 +178,7 @@ manufacture:
     category: STR_WEAPON
     requires:
       - STR_IMPERIAL_WEBBER_DEP1
+      - STR_NOT_SLAANESHPATH
     space: 0
     time: 900
     cost: 50000

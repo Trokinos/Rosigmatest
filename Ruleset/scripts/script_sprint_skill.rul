@@ -8,6 +8,9 @@ extended:
       SKILL_SPRINT_COOLDOWN_PERIOD: int # how many turns the unit must wait after sprinting once
       SKILL_SPRINT_REUSABLE: int #is sprint reusable? 1=YES 0=Limited uses (use SKILL_SPRINT_USES to specify how many)
       SKILL_SPRINT_USES: int #how many uses of sprint you have
+      SKILL_SPRINTING_TU_COST_PERCENTAGE: int # %tuCost to start skill
+      SKILL_SPRINTING_ENERGY_COST: int # energy cost to start skill
+      SKILL_SPRINTING_STUN_COST: int # stun cost to start skill
     BattleUnit:
       SKILL_SPRINT_COOLDOWN_TURNS: int # how many turns of cooldown it must wait to sprint again
       SKILL_SPRINT_USES_SPENT: int #how many uses of sprint you have left
@@ -25,6 +28,10 @@ extended:
           var int sprint_is_reusable;
           var int sprint_total_uses;
           var int sprint_uses_spent;
+          var int maxTu;
+          var int sprintTuCost;
+          var int sprintEnergyCost;
+          var int sprintStunCost;
 
           #get the value of the TU sprint cost %
           skill.getTag sprintSkill_timepercent Tag.SKILL_SPRINT_MOVECOST_TIMEPERCENT;
@@ -70,6 +77,21 @@ extended:
             set continue_action 0;
             return;
           end;
+          # Pay skill costs
+          set spend_tu 1;
+          #  actor.getTimeUnitsMax maxTu;
+          #  skill.getTag sprintTuCost Tag.SKILL_SPRINTING_TU_COST_PERCENTAGE;
+          #  muldiv maxTu sprintTuCost 100;
+          #  mul maxTu -1;
+          #  actor.addTimeUnits maxTu; # tu cost subtracted here
+          # Pay energy costs
+          #  skill.getTag sprintEnergyCost Tag.SKILL_SPRINTING_ENERGY_COST;
+          #  mul sprintEnergyCost -1;
+          #  actor.addEnergy sprintEnergyCost; # tu cost subtracted here
+          # Pay Stun cost
+          #  skill.getTag sprintStunCost Tag.SKILL_SPRINTING_STUN_COST;
+          #  mul sprintStunCost -1;
+          #  actor.addStun sprintStunCost; # tu cost subtracted here
 
           actor.MoveCost.setBaseTimePercent sprintSkill_timepercent;
           actor.MoveCost.setBaseEnergyPercent sprintSkill_energypercent;

@@ -66,6 +66,7 @@ en-US: #  yamllint disable-line rule:empty-values
 # #03-TYR.PURE
 # #03-NECRON
 # #03-TAU
+# #03-SLAANESH_STRATEGY
 #########################
 # 04. MAP AND ASSETS # everything map related
 #########################
@@ -2360,6 +2361,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_HULKERARTIFACT_SITE: "MASSIVE ARTIFACT SITE"
   STR_HULKERARTIFACT_SITE_: "MASSIVE ARTIFACT SITE-{0}"
   STR_CATACOMBS_MARKERNAME: "Catacomb Assault"
+  STR_CATACOMBS_MARKERNAME_SLAANESH: "Strike Team Ambush"
   STR_CATACOMBS_MARKERNAME_: "Catacomb Assault-{0}"
   STR_CATACOMBS_HRUD_MARKERNAME: "Hrud Catacomb Reclamation"
   STR_CATACOMBS_HRUD_MARKERNAME_: "Hrud Catacomb Reclamation"
@@ -2403,7 +2405,44 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ABERRANT_AUTOPSY_CODEX: "An Aberrant is a Genestealer hybrid who was born mutated for a number of different reasons from the normal phenotype for their generation of the brood cycle. Though misshapen and possessed of an inferior intellect, Aberrants are physically powerful, have superhuman endurance and are possessed of a potent need to protect the other members of their Genestealer Cult. For this reason, they are used as shock assault troops by their cult's leaders."
   STR_GENE_CULTIST_UFOPEDIA: "{NEWLINE} Normal Humans who have been infected with the xenos genetic material of a Genestealer Patriarch through its ovipositor. This infection makes these people members of the cult's collective psychic Broodmind as well as the potential parents of a new generation of Genestealer hybrids. Brood Brothers appear completely Human despite their infection and so may be members of the local civil or military authorities, continuing to carry out their normal duties in their world's society"
   STR_GENE_SAB_UFOPEDIA: "{NEWLINE} An infected explosives expert.Their foul features go unnoticed in the underhives of many Imperial worlds. However, on closer inspection their alien form is revealed. They have heavily ridged heads, mauve to black skin, and may even hide an extra clawed limb under their tattered clothes."
+# zombies expanded
+  # Marines zombies
+  STR_MARINE_ZOMBIE_TACTICAL_M: "Fallen Brother"
+  STR_MARINE_ZOMBIE_SCOUT_M: "Fallen Brother"
+  STR_MARINE_ZOMBIE_TER_M: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_TAC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_GRV: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_INC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_DW_PHB: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_TAC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_GRV: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_INC: "Fallen Brother"
+  STR_PRIMARIS_ZOMBIE_PHB: "Fallen Brother"
 
+  # Guard zombies
+  STR_GUARD_SQUAT_FLAK_MALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_FLAK_FEMALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_CARA_MALE_ZOMBIE: "Traitor Squat"
+  STR_GUARD_SQUAT_CARA_FEMALE_ZOMBIE: "Traitor Squat"
+  STR_SQUAT_FLAK_ZOMBIE_MALE_ARMOR: "Traitor Squat"
+  STR_SQUAT_FLAK_ZOMBIE_FEM_ARMOR: "Traitor Squat"
+  STR_SQUAT_CARAPACE_ZOMBIE_MALE_ARMOR: "Traitor Squat"
+
+  # Adeptas Zombies
+  STR_ADEPTAS_ELOHIM_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_MEDICAE_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_PILOT_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_ASSASSIN_ZOMBIE: "Traitor Sister"
+  STR_ADEPTAS_REPENTIA_ZOMBIE: "Traitor Repentia"
+  STR_ADEPTAS_NOVICE_ZOMBIE: "Traitor Novitiate"
+  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE: "Traitor Militia"
+  STR_ADEPTAS_ELOHIM_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_MEDICAE_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_ASSASSIN_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_REPENTIA_ZOMBIE_ARMOR: "Traitor Repentia"
+  STR_ADEPTAS_PILOT_ZOMBIE_ARMOR: "Traitor Sister"
+  STR_ADEPTAS_NOVICE_ZOMBIE_ARMOR: "Traitor Novitiate"
+  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE_ARMOR: "Traitor Militia"
 # #03-TYR.PURE
 
 # #03-NECRON
@@ -2465,6 +2504,417 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GAUSS_CANNON: "Gauss Cannon"
   AUX_DISPERSIONSHIELD: "Dispersion Shield"
 # #03-TAU
+# #03-SLAANESH_STRATEGY
+########## SLAANESH STRATEGY SECTION ################
+
+  ### SLAANESH FACILITIES
+
+  STR_SLAANESH_ALTAR: "Altar of Slaanesh"
+  STR_HALLS_OF_DELECTATION: "Halls of Delectation"
+  STR_OUTPOST_SLAANESH: "Immaculate Outpost"
+
+  ### SLAANESH COMMENDATIONS
+  STR_HANDMAIDEN_COMMENDATION: "Mark of Promise"
+  STR_HANDMAIDEN_COMMENDATION_DESCRIPTION: "{NEWLINE}This Handmaiden has displayed promise and initiative and is now allowed to continue her advance along the Path of Perfection."
+
+  ### SLAANESH STORY EVENTS & STORY CODEX DESCRIPTIONS
+
+  STR_SLAANESHUNDERCONSTRUCTION_TITLE: "UNDER CONSTRUCTION"
+  STR_SLAANESHPATH_SELECTED_UFOPEDIA_DESCRIPTION: "{NEWLINE}Sadly, or perhaps surprisingly, somehow you selected this shamefully simple Slaanesh strategy.{NEWLINE}{NEWLINE}Regrettably, it is still under construction. Very little is currently playable, so do try to moderate your expectations. According to our enginseer, the servitor is already working as hard as he can. But we have given him another kick, just in case."
+
+  STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
+  STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you are left as the most senior member of the Order of the Sacred Rose on this Throne-cursed world."
+  STR_SLAANESHPATH_INTRO_A_EVENT: "Escape"
+  STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Three of the younger novices report seeing a vision from the Emperor Himself, of an old command bunker with an intact archeotech Vox array.{NEWLINE}{NEWLINE}Shamefully, your joy at this news comes bundled with a pang of envy. You swear to seek your penance in the blood of the next heretic you encounter."
+  STR_SLAANESHPATH_GATE_EVENT: "Homecoming"
+  STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you all begin to remove the hated insignias of your previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
+
+  STR_SLAANESHPATH_INTRO_B_EVENT: "The Old Bunker"
+  STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker entrance well-hidden; you wouldn't have found it if someone hadn't guided your steps.{NEWLINE}{NEWLINE}Unfortunately, while the Vox array is truly impressive, the interfacing cogitator is non-functional. But maintenance drills in the snow were a common punishment at your Schola; you think you can manage at least basic repairs. As your old Drill-Abbess put it: the Emperor will never deign to help those who can't help themselves."
+  STR_SLAANESHPATH_INTRO_D_EVENT: "Encroaching Shadows"
+  STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION: "Some kind of fault just disabled all the lumens in the bunker, though the generators themselves are still functional.{NEWLINE}{NEWLINE}Logically, there's no reason to fear a bit of darkness... yet you can't help yourself. For hours you've felt a strange headache; urges and emotions you barely recognize as your own. Something about this place is *wrong*. At least the damned cogitator is finally working. Soon, you'll be able to leave this place."
+  STR_SLAANESHPATH_INTRO_C_EVENT: "The Calling"
+  STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION: "Somehow, you must have fallen asleep. when you open your eyes, your sisters are standing around you, their faces barely visible in the gloom.{NEWLINE}{NEWLINE}“You're the only one who refuses to listen.” one of them says in a low voice. “But it's okay. It isn't your fault. Once we bring you to him, you'll finally hear him as we do.”{NEWLINE}{NEWLINE}In silence, they come at you from every direction. A hard blow impacts the back of your head, and again the darkness claims you."
+  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT: "Unenlightened Interlopers"
+  STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION: "With the auspex grid still awaiting repairs, the intruders almost make it into your sanctum unnoticed.{NEWLINE}{NEWLINE}Almost.{NEWLINE}{NEWLINE}Examining the bloodied survivors, your nose scrunches in disgust: Hive-gangers. Scavengers. Gutter-rats. Yet even the most profane of tools must occasionally be pressed into holy work. With the right education, these men and the trucks they rode in on can yet serve a greater cause."
+  STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT: "Wave of Despair"
+  STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION: "With the divine warp storm only intensifying, the weak Planetary Defense Force has hit its breaking point.{NEWLINE}{NEWLINE}En masse, soldiers are giving in to fear and despair. Local forces are turning traitor or abandoning their outposts in ever-greater number, offering us a delicious opportunity to attain their equipment. Provided we have the money, we will now be able to purchase black market PDF vehicles directly."
+
+  STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT: "PDF Captives"
+  STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT_CODEX_DESCRIPTION: "Over the last few days, your sisters have stalked and ambushed several smaller PDF patrols, bringing in a number of captives for interrogation.{NEWLINE}{NEWLINE}You now have a good picture of which PDF installations are most vulnerable to assault. Additionally, though most captives failed to survive the tender ministrations of your sisters for more than a day or two, a few plucky survivors are still intact enough to be sacrificed."
+
+  STR_TERROR_WEAPONRY_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Despite their blindness, the Adepta Sororitas know that pain is worship, and that basking in the agony and terror of the unbeliever is approach the Divine. Yet their methods are laughable; flamers and meltaguns cannot ever hope to reach the sacred peaks of despair that we yearn for. With nerve gas, sonic weaponry and warp-tainted plasma, we claim the true conductor's baton in the divine symphony of screams."
+  STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Through faith and good works, our vox array has forced open a channel to a clandestine sects of the Dark Mechanicum. The hereteks are oepn to a pact of cooperation, but only if we gather for them a great trove of slaves and materials. As a first step, Arch-savant Valtiek has relucantly agreed to lend us few of their “trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon schematics."
+  STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have helped introduce you to Pelega's black markets. And with order deteriorating, those market are booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future killers.{NEWLINE}{NEWLINE}An absurd situation, no doubt, but absurdity is the lifeblood of the Imperium."
+  STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Wars are won by two things, and by two things alone. The man bereft of faith is a shell; the bolter bereft of ammunition is a lump of metal. Hoping to prove their usefulness, the hivers have have reached out to old contacts on your behalf. The thought of using the shoddy ammunition povided by these “Ammo-Jacks” is unpleasant, but it may be a necessary expedient. Yet the Angel already whispers of a better solution..."
+  STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}“When those who have nothing hold firm to faith, those who hold riches soon find their true poverty revealed to them.”{NEWLINE}{NEWLINE}Words spoken in service of a lie may still contain truth. Today you lack for everything, including vehicles. Yet your privation is joyful, even holy: for the faithless have plenty of vehicles in their depots, and your sisters are eager to begin their chastisement."
+  STR_PATH_TO_PERFECTION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}We cast aside our old garments, taking the firsts steps on the path Immaculate. The Angel used the last of his power to free us: trapped below the earth, he lacks the strength to forestall the coming calamities. We must do what He cannot. Thus, we pick up the sword and bolter: we vow to be the first rays of the coming dawn."
+  STR_WEAPON_CONSECRATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}The Prince of Perfection is generous beyond compare; in his benevolence, he extends his touch to the faithful and the uninitiated alike. But we must strive to become ever more devoted servants, that we may one day be worthy of further gifts still. By channeling the power of our faith, the profane tools of this decrepit Imperium will one day be reborn and reawakened, just as we were."
+  STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it has taken some time for us to understand the strange and haphazard scribblings within this data-crypt. It details various different efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the Warp alone. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
+  STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation and prayer, we finally have a partial understanding of the heretek research on plasma weaponry. Though the sections on infusing hydrogen with empyrean energies are much too esoteric for our adepts, the simpler schematics are still of direct use. We are now able to manufacture basic plasma weaponry without outside assistance."
+  STR_VOICE_UFOPEDIA_TITLE: "The Angel's Voice"
+  STR_BLACK_MARKET_AMMUNITION_TITLE: "Underhive Ammo-Jacks"
+  STR_SLAANESHPATH_GATE_UFOPEDIA_P1: "{NEWLINE}Floating alone in a vast sea of darkness, how long had it been since you knew what light was? From a great distance, the voice finally reached you. Filled with mercy and compassion, it spoke of freedom: of a radiant sun that would burn all your shackles to ash. For a long, long time you fought it, plunging deeper into the familiar blackness. It did not fight back, nor follow you. Kindly, it waited for you to come to your senses.{NEWLINE}{NEWLINE}>>> Continued on next page.>>>"
+  STR_SLAANESHPATH_GATE_UFOPEDIA_P2: "{NEWLINE}Then, another voice. A girl, once brimming with curiosity and wonder. A girl broken and hobbled by the tortures of the Schola, a soul smothered in the name of a millennia of lies. A single, sad word is all she had for you: “traitor”.{NEWLINE}{NEWLINE}Wailing, you fled out of the hated darkness, racing towards the beckoning light. Awakening anew, you found your sisters there to greet you. Love and compassion shone in their eyes. Finally, you had come home."
+  ######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
+
+  ### MISSIONS
+
+  STR_SLAANESHPATH_PDF_VEHICLE_RAID_TITLE: "PDF Vehicle Depot"
+  STR_SLAANESHPATH_PDF_VEHICLE_RAID_DESC: "Through torture of captured loyalists, we have ascertained that this PDF motor pool is ripe for assault. In order to access the underground vehicle storage, the security system must first be disabled: this can be done by destroying five large control cogitators on the upper levels. Be warned that nearby loyalists will attempt to scramble reinforcements once they learn of our intentions. You must finish the mission before they arrive."
+  STR_SLAANESHPATH_PDF_VEHICLE_RAID_DETECTED: "PDF Depot Raid"
+  STR_PDF_VEHICLE_RAID_MARKER: "Raid PDF Vehicle Depot"
+  STR_VEHICLE_RAID_FAILED: "Vehicles not secured"
+  STR_SLAANESH_VEHICLE_TOKEN: "Looted PDF Vehicles"
+  STR_DEPOT_SUCCESSFULLY_RAIDED: "Depot Successfully Raided"
+
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT: "We have detected a PDF distress signal!"
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT_DESCRIPTION: "A disabled PDF Valkyrie is broadcasting an urgent call for assistance. Assault it before loyalist help can arrive."
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE: "Raid Disabled PDF Valkyrie"
+  STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_DESCRIPTION: "Poor maintenance or sabotage recently forced a PDF Valkyrie to make a crash landing in this sparsely populated region. Unfortunately for them, their desperate pleas for help on an open Vox frequency has led us right to them. Assault the craft and seize everything of value. Kill or capture the crew if possible, Slaanesh desires more suffering!"
+
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Strike Team Ambush"
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make a fine offering to Slaanesh."
+  STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
+
+  #############################
+  ##### CODEX    ENTRIES ######
+  #############################
+
+  #ATSLCW CODEX WEAPON ENTRIES
+  STR_AGRIPINAA_MKIX_UFOPEDIA: "{NEWLINE}{NEWLINE}The product of a recently discovered STC, the Agripinaa Mark IX Vigilant Autogun is both accurate and deadly. Though rarer than other Agripinaa patterns, it is still occasionally issued to Adepta Sororitas novitiates."
+  STR_AGRIPINAA_MKIXB_UFOPEDIA: "{NEWLINE}{NEWLINE}With the addition of a scope, the Mark IX Autogun makes for a reliable and competent marksman rifle. Aimed shots from this weapon inflict additional damage based on accuracy, though less so compared to a full sniper rifle."
+  STR_GRAIA_MKVII_UFOPEDIA: "An oddity among autoguns, the Graia Mk. VII has been heavily modified for counter-sniper duty during siege actions. Straddling the line between a marksman and a sniper rifle, the Mk. VII is a very deadly weapon in the right hands."
+  STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, this plasma weapon has been imbued with the power of Slaanesh. Like many other such plasma weapons, it carries little risk of overheating, but cannot be overcharged."
+  STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
+  STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, now twisted by Slaanesh into firing far faster than would normally be safe. When loaded with penetrator bolts capable of defeating armor, this weapon should not be taken lightly."
+  STR_BOLTER_CANTUS_GL_UFOPEDIA: "{NEWLINE}{NEWLINE}With the foregrip replaced by an underslung grenade launcher, this corrupted Cantus bolter trades accuracy and performance for greatly improved tactical flexibility."
+  STR_BOLTER_DEAZ_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a corrupted Sororitas Godwyn-De'az bolter, twisted by the power of Slaanesh. Unlike many other so-called Immaculate weapons, the De'az still retains most performance characteristics of the original."
+  STR_BOLTER_ARACHNE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Arachne is a modified Godwyn-De'az bolter with an attached constrictor web module. Though the module itself is no less powerful than a full web pistol, it is significantly less ammo-efficient."
+  STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. In addition, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
+  STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}This once holy De'az bolter has been afflicted with an incredibly malign machine spirit. Sporting a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
+
+  STR_STRANGLER_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Strangler carries a two part payload: a fast-acting nerve gas and a lingering cloud of smoke. Though fully capable of debilitating or killing a healthy adult through asphyxication, the nerve agent disperses very quickly, allowing the smoke cloud to be used as battlefield cover."
+  STR_SHARD_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}A favorite on Necromunda, the shard grenade is a highly illegal and dangerous weapon. Packed with foul, warp-corrupted slivers of metal, even the tiniest wound from this grenade is capable of killing its victim through corruption, insanity, and malmutation."
+  STR_SCREAMER_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Screamer is a variant of the handheld sonic grenade favored by Slaanesh-aligned forces. Like all sonic weapons, it works by using concentrated sound waves to create oscillations in the target, distorting and rupturing it from within. As such, it is capable of bypassing most forms of armor."
+
+
+  STR_EVISCERATOR_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Despite its lighter weight and refined exterior, this heavily modfied eviscerator is an even more brutal weapon than its before. When used to deliver heavy thrusts through armor, the sheer bloody carnage this weapon unleashes belies its more graceful appearance."
+
+  STR_SLAANESHPATH_CHIRURGEON_ARMOR_UFOPEDIA: "{NEWLINE}{NEWLINE}Adepta Sororitas Hospitaliers may be at adepts both torture and healing, but the Chirurgeon is a master of one unified craft. Drawing no distinction btween the most excruciating pain and the efficacious of healing, the Chirurgeon's obessively customized medical tools are terrying weapons in combat."
+
+  STR_ALTAR_OF_SLAANESH_UFOPEDIA: "Through this altar, the Prince of Excess recieves both souls and supplication, and bestows gifts and blessings in turn. {NEWLINE}{NEWLINE}{ALT}The Altar of Slaanesh is a powerful building with many benefits: it improves healing times, allows for devotion training, and offers some space for research. It is also vital for many manufacturing projects."
+
+###
+
+  STR_SLAANESHPATH: "Slaanesh strategy [EARLY WIP]"
+  STR_SLAANESHPATH_SELECTED: "(Slaanesh strategy selected)"
+  STR_NOT_SLAANESHPATH: "(Not Slaanesh strategy)"
+  STR_CHOSEN_SLAANESHPATH: "Slaanesh Strategy Subversively Selected"
+  STR_SLAANESHPATH_INTRO_BUNKER: "The Abandoned Bunker"
+  STR_SLAANESHPATH_INTRO_CALLING: "Restore Vox Equipment"
+  STR_SLAANESHPATH_GATE: "The Angel's Voice"
+  STR_RITUALS_OF_WORSHIP: "Reascendance"
+  STR_PATH_OF_PERFECTION: "The Path of Perfection"
+  STR_SACRIFICIAL_RITUALS: "Sacrificial Rituals"
+  STR_SOULSTAIN_SORCERY: "Soulstain Sorcery"
+  STR_WEAPON_CONSECRATION: "Rites of Weapon Consecration"
+  STR_CONTACT_ARMS_SMUGGLERS: "Black Market Weapons"
+  STR_CONTACT_ARMS_SMUGGLERS_TITLE: "Black Market Trade"
+  STR_PROCURE_TRANSPORTATION: "Procure Transports"
+  STR_SLAANESH_WEAPON_CORRUPTION_TIER_1: "(Slaanesh Tier 1 Weapon Corruption)"
+  STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
+  STR_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launcher Requisition"
+  STR_TERROR_WEAPONRY: "Devotion through Despair"
+  ADORATION_THROUGH_AGONY: "Adoration through Agony"
+  STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
+  STR_BLACK_MARKET_AMMUNITION: "Underhive Ammo-Jacks"
+  STR_BLACK_MARKET_AMMO_TRADE: "(Underhive Ammo Trade)"
+  STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
+  STR_CORRUPT_ADEPTAS_BOLTERS: "*Adeptas Bolter Consecration*"
+  STR_IMMACULATE_CHAINBLADES: "Chainblade Consecration"
+  STR_CONTACT_HERETEKS: "Contact the True Mechanicum"
+  STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
+  STR_LASCANNON_DATACRYPT: "Decode Lascannon Data-crypt"
+  STR_IMMACULATE_LASGUN_TECHNOLOGY: "Decode Lasgun Data-crypt"
+  STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
+  STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
+  STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
+
+  STR_OUR_HOLY_MISSION: "Our Holy Crusade"
+  STR_WAR_FOR_THE_UNDERHIVE: "The War for the Underhive"
+  STR_SUFFER_NOT_THE_XENO: "Suffer not the Xeno"
+  STR_KILL_THE_ENFORCERS: "Kill the Enforcers"
+
+  STR_AGAINST_THE_ECCLESIARCHY: "The Cathedrum of Lies"
+  STR_OUR_FOOLISH_SISTERS: "Our Foolish Sisters"
+  STR_IMMACULATE_ARMOR_TECHNOLOGY: "Immaculate Power Armor"
+  STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: "Adeptas Power Armor Components"
+  STR_OUR_DEVOTION_DEEPENS: "*Our Devotion Deepens*"
+  STR_STRANGLER_GRENADES: "Strangler Grenades"
+  STR_SONIC_GRENADES: "Immaculate Sonic Grenades"
+  STR_HALLUCINOGEN_GRENADES: "Hallucinogen Grenades"
+  STR_SHARD_GRENADES: "Shard Grenades"
+  STR_BALEFIRE_GRENADES: "Balefire Grenades"
+
+
+ ###############################################
+ ####### SLAANESH MANUFACTURING PROJECTS #######
+ ###############################################
+
+  ### MANUFACTURE DEFINITIONS
+
+  STR_RITES_OF_EXCESS: "Rites of Excess"
+  STR_RITES_OF_DEPRAVITY: "Rites of Depravity"
+  STR_RITES_OF_PAIN: "Rites of Pain"
+  STR_RITES_OF_DECADENCE: "Rites of Decadence"
+  STR_RITES_OF_SUBVERSION: "Rites of Subversion"
+  STR_RITES_OF_CORRUPTION: "Rites of Corruption"
+  STR_RITES_OF_CONSECRATION: "Rites of Consecration"
+
+  ### MANUFACTURING PROJECTS - PROGRESSION
+
+  STR_PREPARE_SACRIFICE_SOLDIER_IG: "Prepare Guardsman for Sacrifice"
+  STR_PREPARE_SACRIFICE_FRATERIS_MILITIA: "Prepare Frateris Militia for Sacrifice"
+
+  CORRUPT_NOVICE: "Corrupt Sororitas Novice"
+
+ #Piety projects & progression projects
+  STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
+  STR_SACRIFICE_TO_SLAANESH: "Offer Souls to Slaanesh"
+  STR_REQUEST_BOON: "Request Boon"
+  STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
+  STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
+  STR_CAPTURE_CHAOS_SACRIFICES: "Capture Sacrificial Victims"
+
+#Weapon conversion, armor corruption, armor repair
+  STR_CREATE_IMMACULATE_EVISCERATOR: "Consecrate Eviscerator"
+  STR_CREATE_IMMACULATE_CHAINSWORD: "Consecrate Chainsword"
+  STR_CORRUPT_CANTUS_BOLTER: "Consecrate Cantus Bolter"
+  STR_CORRUPT_DEAZ_BOLTER: "Consecrate Godwyn-De'az Bolter"
+  STR_CORRUPT_ELOHIM_BOLTER: "Consecrate Elohim Bolter"
+  STR_ATTACH_GL_TO_CANTUS: "Attach Launcher to Cantus Bolter"
+  STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
+  STR_REPAIR_ADEPTAS_ARMOR_COMPONENTS: "Repair Adeptas Armor Components"
+  STR_FORGE_ADEPTAS_ARMOR_COMPONENTS: "Forge Adeptas Armor Components"
+  STR_CREATE_IMMACULATE_TOKEN: "Create Immaculate Armor"
+  STR_CREATE_ANGELIC_TOKEN: "Create Angelic Armor"
+  STR_CREATE_HARBINGER_TOKEN: "Create Harbinger Armor"
+
+
+  ## UNIT PROJECTS
+
+  STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
+  STR_ELEVATE_PROMISING_HANDMAIDEN: "Recognize Promising Handmaiden"
+
+  STR_NOMINATE_VIVISECTIONIST: "Nominate Vivisectionist"
+  STR_NOMINATE_ANATHEMANT: "Nominate Anathemant"
+  STR_NOMINATE_MILITANT: "Nominate Militant"
+  STR_NOMINATE_MYSTES: "Nominate Mystes"
+
+  STR_INDUCT_IMMACULATE_SISTER: "Induct Immaculate Sister"
+  STR_INDUCT_CHIRURGEON: "Induct Immaculate Chirurgeon"
+  STR_INDUCT_SORCERESS: "Induct Sorceress of Slaanesh"
+  STR_INDUCT_MYSTAGOGUE: "Induct Immaculate Mystagogue"
+
+  STR_INDUCT_HARBINGER: "Proclaim Harbinger of Slaanesh"
+  STR_INDUCT_ANGEL: "Welcome Angel to the Choir"
+  STR_ELEVATE_EXALTED_MYSTAGOGUE: "Elevate Mystagogue"
+  STR_EXALT_ARCHANGEL: "Elevate Angel of the Choir"
+
+
+ #################### UNITS #########################
+
+ #### ENEMY UNITS
+  STR_PDFTROOPER_LVL0_SLP: "PDF Conscript"
+
+  STR_SLAANESHPATH_CATACOMB_CULTIST_LEADER: "Cultist Leader"
+  STR_SLAANESHPATH_CATACOMB_ASPIRING_CHAMPION: "Aspiring Champion"
+  STR_SLAANESHPATH_CATACOMB_CULTIST: "Khorne Cultist"
+  STR_SLAANESHPATH_CATACOMB_CHORF: "Squat Cultist"
+
+  ##############################
+  ##### ITEM DEFINITIONS #######
+  ##############################
+
+#Slaanesh crafts
+
+  REPAINT_LOOTED_VALKYRIE: "Refurbish PDF Valkyrie"
+  REPAINT_LOOTED_CHIMERAS: "Refurbish PDF Light Chimeras"
+  REPAINT_LOOTED_LIGHTNING: "Refurbish PDF Lightning Interceptor"
+
+  STR_CHIMERA_LIGHT_SLAANESH: "Immaculate Light Chimeras"
+  STR_LIGHTNING_INTERCEPTOR_SLAANESH: "Immaculate Lightning Interceptor"
+  STR_VALKYRIE_SLAANESH: "Immaculate Valkyrie"
+
+#PLOT ITEMS AND TOKENS
+  STR_SLAANESHPATH_PIETY: "Piety"
+  STR_SLAANESHPATH_BOON: "Boon of Slaanesh"
+  STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
+  STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
+  STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
+  STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"
+  STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: "Immaculate Power Armor"
+  STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: "Immaculate Angelic Amor"
+  STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Armor Component"
+  STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Armor Component"
+  STR_HERETEK_TRIBUTE: "Tribute to the Dark Mechanicum"
+
+#WEAPONS
+  STR_SLAMFIRE: "Slam-fire"
+  STR_SNAP_SHOT: "Snap Shot"
+  STR_LOW_POWER_MODE: "Low Power Mode"
+  STR_FULL_POWER_MODE: "Full Power Mode"
+  STR_SLAMFIRE_MODE: "Slamfire Mode"
+  STR_FIRE_SHOTGUN: "Fire Shotgun"
+  STR_FIRE_WEBBER: "Fire Webber"
+  STR_PLASMA_BARRAGE: "Plasma Barrage"
+  STR_BURST_DOUBLE_TAP: "Double Tap"
+  STR_BURST_TRIPLE_TAP: "Triple Tap"
+
+  STR_AGRIPINAA_MKIX: "Agripinaa Mk. IX Autogun"
+  STR_AGRIPINAA_MKIXB: "Agripinaa Mk. IX (Scoped)"
+  STR_GRAIA_MKVII: "Graia Mk. VII Headhunter Autogun"
+
+  STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
+  STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
+  STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
+  STR_BOLTER_KERES: "Keres Combi-bolter"
+  STR_BOLTER_KELPIE: "Kelpie Combi-bolter"
+  STR_BOLTER_NAIAD: "Naiad Combi-bolter"
+  STR_BOLTER_NAGA: "Naga Combi-bolter"
+  STR_BOLTER_TIAMAT: "Tiamat Combi-bolter"
+  STR_BOLTER_CANTUS_GL: "Immaculate Cantus Bolter /GL"
+  STR_BOLTER_ELOHIM_SLAAN: "Immaculate Elohim Bolter"
+  STR_PLASMA_CARBINE_SLAAN: "Immaculate Plasma Carbine"
+  STR_MELTA_CARBINE_SLAAN: "Immaculate Melta Carbine"
+  AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
+  AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
+  STR_GRENADE_LAUNCHER_GORGE: "Gorge Pattern Grenade Launcher"
+  STR_LIGHT_CHAINSWORD_SLAAN: "Immaculate Light Chainsword"
+  STR_EVISCERATOR_SLAAN: "Immaculate Eviscerator"
+
+  ### AMMO
+  STR_LIGHT_MELTA_AMMO_SLAAN: "Slaanesh Light Melta Ammo"
+  STR_CANTUS_BOLTER_AMMO_PENETRATOR: "Cantus Penetrator Magazine"
+  STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Magazine"
+  STR_CANTUS_BOLTER_AMMO_BM: "Black Market Cantus Magazine"
+  STR_LIGHT_BOLTPISTOL_AMMO_BM: "Black Market Boltpistol Clip"
+  STR_LIGHT_BOLTER_AMMO_BM: "Black Market Light Bolter Magazine"
+  STR_LIGHT_BOLTER_AMMO_SB: "Light Bolter Soulblight Magazine"
+  STR_STRANGLER_GRENADE40: "40mm Strangler Grenade"
+  STR_STRANGLER_GRENADE: "Strangler Grenade"
+  STR_SCREAMER_GRENADE40: "40mm Screamer Grenade"
+  STR_SCREAMER_GRENADE: "Screamer Grenade"
+  STR_BALEFIRE_GRENADE40: "40mm Balefire Grenade"
+  STR_BALEFIRE_GRENADE: "Balefire Grenade"
+  STR_SHARD_GRENADE40: "40mm Shard Grenade"
+  STR_SHARD_GRENADE: "Shard Grenade"
+  STR_HALLUCINOGEN_GRENADE40: "40mm Hallucinogen Grenade"
+  STR_HALLUCINOGEN_GRENADE: "Hallucinogen Grenade"
+  STR_AMPUTATOR40: "40mm Amputator Round"
+  STR_FLECHETTE40: "40mm Flechette Round"
+  STR_CONSTRICTOR_PISTOL_AMMO: "Light Constrictor Web Ammo"
+  #SOLDIER BONUSES
+
+  STR_SEEKER_MARK: "Mark of the Seeker"
+
+  #UNIT DEFINITIONS
+  STR_SLAANESHPATH_VICTUAL_BROTHER: "Victual Brother"
+
+  STR_SLAANESHPATH_HANDMAIDEN: "Handmaiden"
+  STR_SLAANESHPATH_EXALTEDMAIDEN: "Promising Handmaiden"
+  STR_SLAANESHPATH_VIVISECTIONIST: "Handmaiden Vivisectionist"
+  STR_SLAANESHPATH_MILITANT: "Handmaiden Militant"
+  STR_SLAANESHPATH_MYSTES: "Handmaiden Mystes"
+  STR_SLAANESHPATH_ANATHEMANT: "Handmaiden Anathemant"
+  STR_SLAANESHPATH_CHIRURGEON: "Immaculate Chirurgeon"
+  STR_SLAANESHPATH_IMMACULATE_SISTER: "Sister Immaculate"
+  STR_SLAANESHPATH_EXALTEDSISTER: "Exalted Sister"
+  STR_SLAANESHPATH_SORC: "Immaculate Sorceress"
+  STR_SLAANESHPATH_EXALTEDSORC: "Ascended Sorceress of Slaanesh"
+  STR_SLAANESHPATH_CHOIR_ANGEL: "Angel of the Choir"
+  STR_SLAANESHPATH_CHOIR_ARCHANGEL: "Archangel of the Choir"
+  STR_SLAANESHPATH_HARVESTER: "Harvester of Sorrows"
+  STR_SLAANESHPATH_HERETEK: "Heretek Savant"
+  ## Slaanesh Adeptas Armors
+
+  STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
+  STR_SLAANESHPATH_MILITANT_ARMOR: "Handmaiden Militant Armor"
+  STR_SLAANESHPATH_MYSTES_ARMOR: "Handmaiden Mystes Armor"
+  STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR: "Vivisectionist Armor"
+  STR_SLAANESHPATH_ANATHEMANT_ARMOR: "Handmaiden Anathemant Armor"
+  STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
+  STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
+  STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"
+  STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
+  STR_SLAANESHPATH_ANGEL_ARMOR: "Angelic Armor"
+
+  ## Slaanesh Adeptas Ranks
+
+  STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"
+  STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Solicitous Seeker"
+  STR_SLAANESHPATH_MILITANT_RANK_0: "Slayer"
+  STR_SLAANESHPATH_MILITANT_RANK_1: "Supple Slayer"
+  STR_SLAANESHPATH_MILITANT_RANK_2: "Sister Speculative"
+
+  STR_SLAANESHPATH_SISTER_RANK_0: "Sister"
+  STR_SLAANESHPATH_SISTER_RANK_1: "Scrumptious Sister"
+  STR_SLAANESHPATH_SISTER_RANK_2: "Sister Suggestive"
+  STR_SLAANESHPATH_SISTER_RANK_3: "Sister Sensational"
+  STR_SLAANESHPATH_EXALTEDSISTER_RANK_0: "Sister Spectacular"
+
+  STR_SLAANESHPATH_ANATHEMANT_RANK_0: "Seeress"
+  STR_SLAANESHPATH_ANATHEMANT_RANK_1: "Sultry Seeress"
+  STR_SLAANESHPATH_ANATHEMANT_RANK_2: "Sorceress Speculative"
+  STR_SLAANESHPATH_SORC_RANK_0: "Sorceress"
+  STR_SLAANESHPATH_SORC_RANK_1: "Smart Sorceress"
+  STR_SLAANESHPATH_SORC_RANK_2: "Sorceress Suave"
+  STR_SLAANESHPATH_SORC_RANK_3: "Sorceress Secure"
+  STR_SLAANESHPATH_EXALTEDSORC_RANK_0: "Sorceress Supreme"
+
+  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_0: "Songstress"
+  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_1: "Sordid Songstress"
+  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_2: "Songstress Seditious"
+  STR_SLAANESHPATH_CHOIR_ANGEL_RANK_3: "Songstress Subversive"
+  STR_SLAANESHPATH_CHOIR_ARCHANGEL_RANK_0: "Songstress Sacrilegious"
+
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_0: "Stitcher"
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_1: "Sinful Sticher"
+  STR_SLAANESHPATH_VIVISECTIONIST_RANK_2: "Surgeon Speculative"
+  STR_SLAANESHPATH_CHIRURGEON_RANK_0: "Surgeon"
+  STR_SLAANESHPATH_CHIRURGEON_RANK_1: "Stygian Surgeon"
+  STR_SLAANESHPATH_CHIRURGEON_RANK_2: "Surgeon Systematic"
+  STR_SLAANESHPATH_CHIRURGEON_RANK_3: "Surgeon Sadistic"
+  STR_SLAANESHPATH_EXALTEDCHIRURGEON_RANK_0: "Surgeon Sanguine"
+
+  STR_SLAANESHPATH_MYSTES_RANK_0: "Shepherd"
+  STR_SLAANESHPATH_MYSTES_RANK_1: "Scrupulous Shepherd"
+  STR_SLAANESHPATH_MYSTES_RANK_2: "Sibyl Speculative"
+  STR_SLAANESHPATH_MYSTAGOGUE_RANK_0: "Sibyl"
+  STR_SLAANESHPATH_MYSTAGOGUE_RANK_1: "Stirring Sibyl"
+  STR_SLAANESHPATH_MYSTAGOGUE_RANK_2: "Sibyl Stimulating"
+  STR_SLAANESHPATH_MYSTAGOGUE_RANK_3: "Sibyl Scintillating"
+
+  STR_SLAANESHPATH_HARBINGER_RANK_0: "Sphinx"
+  STR_SLAANESHPATH_HARBINGER_RANK_1: "Swooping Sphinx"
+  STR_SLAANESHPATH_HARBINGER_RANK_2: "Sphinx Seraphic"
+  STR_SLAANESHPATH_HARBINGER_RANK_3: "Sphinx Serendipitous"
+  STR_SLAANESHPATH_EXALTEDHARBINGER_RANK_0: "Sphinx Statuesque"
+
+  ## Slaanesh cultist armors
+
+  STR_SLAANESHPATH_VICTUAL_BROTHER_ARMOR: "Victualist Mesh Armor"
+
+  ## Slaanesh cultist ranks
+
+  STR_SLAANESHPATH_SERVANT-RANK_0: "Servant"
+  STR_SLAANESHPATH_SERVANT-RANK_1: "Skillful Servant"
+  STR_SLAANESHPATH_SERVANT-RANK_2: "Servant Substantial"
+  STR_SLAANESHPATH_SERVANT-RANK_3: "Servant Significant"
+
+  STR_SLAANESHPATH_SAVANT_RANK_0: "Minoris Sigma-Nu"
+  STR_SLAANESHPATH_SAVANT_RANK_1: "Minoris Sigma-Lambda"
 #########################
 # 04. MAP AND ASSETS # everything map related
 #########################
@@ -3277,6 +3727,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_STORMTALON: "Stormtalon"
   STR_LTS: "Missile Launcher System"
   STR_RTS: "Missile Launcher System"
+  STR_STORMTALON_CORPSE: "Stormtalon Wreck"
   STR_LTS_CORPSE: "Wrecked Launcher System"
   STR_RTS_CORPSE: "Wrecked Launcher System"
   STR_LTT: "Twin Linked Bolter"
@@ -6133,7 +6584,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ELDAR_FUSION_CHARGE_DEPLOYED_ARMOR: "Deployed Fusion Charge"
   STR_ELDAR_FUSION_CHARGE_DEPLOYED_CORPSE: "Expended Fusion Charge"
   # eldar skills
-  STR_SKILL_WARPSPIDER_STEALTH_TELEPORT: "Warp-jump"
+  STR_SKILL_WARPSPIDER_STEALTH_TELEPORT: "Warp Jump"
   STR_DEATHWEAVERS_SPECIALWEAPON: "Death Weavers"
   STR_POWERBLADEARRAY_SPECIALWEAPON: "Powerblade Array"
   STR_POWERBLADEARRAY_NAME: "Powerblades"
@@ -7987,6 +8438,16 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_HRUD_STORMVERMIN_OFFICER_UFOPEDIA: "{NEWLINE} Fangleaders have the finest armor and gear amongst their kin."
 
   # Nurgle
+  STR_NURGLE_INTERCEPTOR: "Pustule Nail"
+  STR_NURGLE_SMALL_SCOUT: "Cancer Vestige"
+  STR_NURGLE_MEDIUM_SCOUT: "Pungent Destroyer"  # N02
+  STR_NURGLE_LARGE_SCOUT: "Blight Cruiser"  # N03C
+  STR_NURGLE_HARVESTER: "Rust Gatherer"
+  STR_NURGLE_TERROR_SHIP: "Rot Carrier"
+  STR_NURGLE_SUPPLY_SHIP: "Plague Hulk"
+  STR_NURGLE_ABDUCTOR: "Morbid Graveship"
+  STR_NURGLE_BATTLESHIP: "Terminus Despoiler"
+
   STR_NURGLE_EARLY: "Nurgle Vanguard"
   STR_NURGLE_ELITE: "Nurgle Deathguard"
 
@@ -8086,6 +8547,34 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_PESTIGOR_CORPSE: "Pestigor Corpse"
   STR_PESTIGOR_AUTOPSY: "Pestigor Origins"
   STR_PESTIGOR_AUTOPSY_UFOPEDIA: "{NEWLINE} Beastmen blessed from birth by Nurgle and nurtured into adulthood amid the gardens of Nurgle become pestigors. Like all of Nurgle's creations they are warped versions of their kin, constantly growing and decaying all at once."
+  STR_NURGLE_BLIGHT_HAULER: "Blight Hauler"
+  NURGLE_BLIGHT_HAULER_ARMOR: "Blight Hauler"
+  STR_BLIGHT_HAULER_MULTI_MELTA: "Blighted Multimelta"
+  STR_BLIGHT_HAULER_MISSILE_LAUNCHER: "Blighted Missile Launcher"
+  STR_BLIGHT_HAULER_MULTI_MISSILE_LAUNCHER: "Blighted Multi-Missile Pod"
+  STR_BLIGHT_HAULER_PLAGUE_SPEWER: "Heavy Plague Spewer"
+  STR_BLIGHT_HAULER_GRAVCANNON: "Blighted Gravcannon"
+  STR_BLIGHT_HAULER_MORTAR: "Blight Hauler Mortar"
+  STR_BLIGHT_HAULER_GNASHING_MAW: "Gnashing Maw"
+  STR_BLIGHT_HAULER_HEAVY_BOLTER: "Blight Hauler Heavy Bolter"
+  NURGLE_BLIGHT_HAULER_CORPSE: "Blight Hauler Wreckage"
+  STR_NURGLE_BLIGHT_HAULER_ORIGINS: "Blight Hauler Origins"
+  STR_NURGLE_BLIGHT_HAULER_UFOPEDIA: "Myphitic Blight-Haulers are a type of light Daemon Engine used by Nurgle affiliated Chaos warbands, most notably the Death Guard. Resembling a Bloat-Drone that has been stripped of its turbines, this strange machine has heavy weapons mounted on its carapace, typically a combination of multi-melta and missile launcher for mid-to-close range tank hunting."
+  STR_NURGLE_BLIGHT_HAULER_ORIGINS_UFOPEDIA: "{NEWLINE}Powering into battle on a trio of articulated track units, the Myphitic Blight-hauler is a light Daemon Engine that provides the Death Guard Traitor Legion with heavy firepower wherever it is needed. Most Death Guard commanders use packs of these Daemon Engines to fill the role that Havocs or Obliterators might in other Traitor Legions. The entities that inhabit Blight-haulers are as loyal as hounds to their masters, rushing to obey any instruction they are given."
+  STR_NURGLE_SOLDIER_BLESSED: "Plague Marine"
+  MUTON_ARMORNURGLEA_BLESSED: "Plague Marine"
+
+  STR_NURGLE_DREAD_BOLTER: "Plague Dreadnought"
+  STR_NURGLE_DREADNOUGHT_BOLTER: "Plague Dreadnought"
+  STR_NURGLE DREADNOUGHT_ARMOR_CODEX: "Plague Dreadnought Armor"
+  STR_NURGLE_DREADNOUGHT_ARMOR_UFOPEDIA: "{NEWLINE}"
+  STR_NURGLE_DREADNOUGHT_AUTOPSY: "Plague Dreadnought Origins"
+  STR_NURGLE_DREADNOUGHT_AUTOPSY_UFOPEDIA: "{NEWLINE}"
+  STR_NURGLE_DREADNOUGHT: "Plague Dreadnought Captive"
+  STR_NURGLE_DREADNOUGHT_BOLTER_ARMOR: "Plague Dreadnought Armor"
+  STR_NURGLE_DREADNOUGHT_CORPSE_GEO: "Plague Dreadnought Corpse"
+  STR_TWIN_LINK_HEAVY_BOLTER_NURGLE_DREAD: "Twin-linked Blighted Heavy Bolter"
+  STR_NURGLE_DREAD_POWERCLAW: "Plague Power Claw"
 
 # CHAOS WEAPONS
   STR_CHAOS_LASCANNON_HANDHELD: "Chaos Light Lascannon"
@@ -8193,6 +8682,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_KHORNE_ELITE: "Khorne Terminators"
 
   STR_WORLDEATER_LEADER: "Khorne Captain"
+  STR_LIVE_CAPTURE_WORLDEATER_LEADER: "Khorne Captain"
   STR_KHORNE_CHAMPION_ARMOR: "Khorne Captain Armor"
   STR_WORLDEATER_LEADER_CORPSE: "Khorne Captain Corpse"
 
@@ -8756,21 +9246,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ADEPTAS_NURGLE_BLESSED: "Plague Sister"
   STR_ADEPTAS_NURGLE_BLESSED2: "Plague Sister"
   STR_ADEPTAS_NURGLE_BLESSED_ARMOR_MIDWIFE: "Plague Sister"
-  STR_NURGLE_BLIGHT_HAULER: "Blight Hauler"
-  NURGLE_BLIGHT_HAULER_ARMOR: "Blight Hauler"
-  STR_BLIGHT_HAULER_MULTI_MELTA: "Blighted Multimelta"
-  STR_BLIGHT_HAULER_MISSILE_LAUNCHER: "Blighted Missile Launcher"
-  STR_BLIGHT_HAULER_MULTI_MISSILE_LAUNCHER: "Blighted Multi-Missile Pod"
-  STR_BLIGHT_HAULER_PLAGUE_SPEWER: "Heavy Plague Spewer"
-  STR_BLIGHT_HAULER_GRAVCANNON: "Blighted Gravcannon"
-  STR_BLIGHT_HAULER_MORTAR: "Blight Hauler Mortar"
-  STR_BLIGHT_HAULER_GNASHING_MAW: "Gnashing Maw"
-  STR_BLIGHT_HAULER_HEAVY_BOLTER: "Blight Hauler Heavy Bolter"
-  NURGLE_BLIGHT_HAULER_CORPSE: "Blight Hauler Wreckage"
-  STR_NURGLE_BLIGHT_HAULER_ORIGINS: "Blight Hauler Origins"
-  STR_NURGLE_BLIGHT_HAULER_UFOPEDIA: "Myphitic Blight-Haulers are a type of light Daemon Engine used by Nurgle affiliated Chaos warbands, most notably the Death Guard. Resembling a Bloat-Drone that has been stripped of its turbines, this strange machine has heavy weapons mounted on its carapace, typically a combination of multi-melta and missile launcher for mid-to-close range tank hunting."
-  STR_NURGLE_BLIGHT_HAULER_ORIGINS_UFOPEDIA: "{NEWLINE}Powering into battle on a trio of articulated track units, the Myphitic Blight-hauler is a light Daemon Engine that provides the Death Guard Traitor Legion with heavy firepower wherever it is needed. Most Death Guard commanders use packs of these Daemon Engines to fill the role that Havocs or Obliterators might in other Traitor Legions. The entities that inhabit Blight-haulers are as loyal as hounds to their masters, rushing to obey any instruction they are given."
-# Tzeentch Sister forces. Themed: Mutated, Witnesses of Change, Demented Madness, Twisted and Turned Marionettes.
+  # Tzeentch Sister forces. Themed: Mutated, Witnesses of Change, Demented Madness, Twisted and Turned Marionettes.
   TZEENTCH_SHIP_00: "Witchfire Tracer"
   TZEENTCH_SHIP_01: "Crystal Sphinx"
   TZEENTCH_SHIP_02: "Luminous Complex"
@@ -8860,20 +9336,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ADEPTAS_ARMOR_CELESTIAN_ELITE_UFOPEDIA: "{NEWLINE} Celestian Armor is gifted to some of the most skilled fighters within the Sisters of Battle Order. The armor is expertly crafted, featuring some of the finest ceramite plates, sensor equipment, fibre bundles, and servo motors to cleanse the enemy from the battlefield. It also features a rosarius to further protect the Battle-Sister. "
   STR_ADEPTAS_ARMOR_CELESTIAN_ELITE_STOREITEM: "Celestian Armor"
   STR_ADEPTAS_CELESTIAN_ELITE_CORPSE: "Celestian Corpse"
-
-# Nurgle
-  STR_NURGLE_INTERCEPTOR: "Pustule Nail"
-  STR_NURGLE_SMALL_SCOUT: "Cancer Vestige"
-  STR_NURGLE_MEDIUM_SCOUT: "Pungent Destroyer"  # N02
-  STR_NURGLE_LARGE_SCOUT: "Blight Cruiser"  # N03C
-  STR_NURGLE_HARVESTER: "Rust Gatherer"
-  STR_NURGLE_TERROR_SHIP: "Rot Carrier"
-  STR_NURGLE_SUPPLY_SHIP: "Plague Hulk"
-  STR_NURGLE_ABDUCTOR: "Morbid Graveship"
-  STR_NURGLE_BATTLESHIP: "Terminus Despoiler"
-
-  STR_NURGLE_SOLDIER_BLESSED: "Plague Marine"
-  MUTON_ARMORNURGLEA_BLESSED: "Plague Marine"
 
 # Tzeentch Traitor Guard
   STR_TZEENTCH_EARLY_GUARD: "Turncoat Guard"
@@ -9430,6 +9892,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_STUBCANNON_GUARD: "Stubcannon"
   STR_STUBCANNON_GUARD_CODEX: "{NEWLINE}A House Orlock design, this multi-purpose stubcannon can fire a number of 40mm projectiles and grenades. Considered non-standard issue, this weapon nonetheless finds itself into the hands of veteran and abhuman guardsmen that desire the added firepower. {NEWLINE} RECOIL: {ALT} 35"
   STR_BALLISTIC_WEAPONS_HIGHGRADE: "High-Grade Ballistic Weapons"
+  STR_MARKSMAN_AUTOGUNS: "Marksman Autoguns"
   STR_AUTOGUN_HIGHGRADE: "High-Grade Autogun"
   STR_AUTOGUN_HIGHGRADE_UNDERSLUNG: "High-Grade Autogun w/ Launcher"
   STR_AUTOGUN_CLIP_DRUM: "Autogun Ammo Drum"
@@ -12922,6 +13385,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_PENETANTE_LEEROY: "Crazed Penitent"
   STR_GSC_PENETANTE_ARMOR_FEMALE: "Armed Penitent"
   STR_GSC_PENETANTE_ARMOR: "Crazed Penitent"
+  STR_GSC_PENETANTE_CORPSE_FEMALE: "Penitent Corpse" #female variant transformed into STR_GSC_PENETANTE_CORPSE during recovery
   STR_GSC_PENETANTE_CORPSE: "Penitent Corpse"
 
   STR_GSC_ARBITES_FACTION: "Arbites"
@@ -12985,6 +13449,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_GUARD_MEDIC_MALE: "Corrupted Medic"
   STR_GSC_GUARD_FLAK_OFFICER_FEMALE: "Corrupted Officer"
   STR_GSC_GUARD_FLAK_OFFICER_MALE: "Corrupted Officer"
+  STR_GSC_GUARD_FLAK_OFFICER_MALE_ARMED: "Corrupted Officer"
   STR_GSC_GUARD_CARAPACE_FEMALE: "Corrupted Stormtrooper"
   STR_GSC_GUARD_CARAPACE_MALE: "Corrupted Stormtrooper"
   STR_GSC_GUARD_CARAPACE_MEDIC_FEMALE: "Corrupted Medic"
@@ -13121,8 +13586,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GSC_NEEDLER_RIFLE: "Xeno Needler Rifle"
   STR_GSC_NEEDLER_RIFLE_UFOPEDIA: "{NEWLINE}The Xeno Needle Rifle fires a sliver of crystallized gene-toxin, capable of penetrating most existing armor. Almost entirely silent to fire, the sliver itself is so fine that it is not felt even if it penetrates flesh. The crystallized gene-toxin dissolves almost immediately after penetration, with the fast-acting gene-toxin altering the genetics and mind of the victim nearly instantly."
 
-
-
   # Tyranids
   STR_TYRANID: "Tyranids"
   STR_SPOREMINE_TESTLIST: "Spore Mine Testlist"
@@ -13226,7 +13689,9 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TYRANID_BROODNEST_SPAWNER_ARMORED: "Armored Tyranid Broodnest"
   STR_TYRANID_BROODNEST_SPAWNER_SMALL: "Tyranid Broodnest"
   STR_TYRANID_BROODNEST_SPAWNER_LARGE: "Large Tyranid Broodnest"
-
+  STR_TYRANID_BROODNEST_SPAWNER_SMALL_CORPSE: "Tyranid Broodnest Rubbles"
+  STR_TYRANID_BROODNEST_SPAWNER_LARGE_CORPSE: "Large Tyranid Broodnest Rubbles"
+  STR_TYRANID_BROODNEST_SPAWNER_ARMORED_CORPSE: "Armored Tyranid Broodnest Rubbles"
 
   # Tyranid Biomorphs
   STR_RIPPERSWARM_ATTACK: ""
@@ -13247,35 +13712,7 @@ en-US: #  yamllint disable-line rule:empty-values
   CTHULHU_GENE_WEAK: "Ymgarl Spit"
   CTHULHU_GENE: "Ymgarl Spit"
 
-  # zombies expanded
-  # Guard zombies
-  STR_GUARD_SQUAT_FLAK_MALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_FLAK_FEMALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_CARA_MALE_ZOMBIE: "Traitor Squat"
-  STR_GUARD_SQUAT_CARA_FEMALE_ZOMBIE: "Traitor Squat"
-  STR_SQUAT_FLAK_ZOMBIE_MALE_ARMOR: "Traitor Squat"
-  STR_SQUAT_FLAK_ZOMBIE_FEM_ARMOR: "Traitor Squat"
-  STR_SQUAT_CARAPACE_ZOMBIE_MALE_ARMOR: "Traitor Squat"
-
-  # Adeptas Zombies
-  STR_ADEPTAS_ELOHIM_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_MEDICAE_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_PILOT_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_ASSASSIN_ZOMBIE: "Traitor Sister"
-  STR_ADEPTAS_REPENTIA_ZOMBIE: "Traitor Repentia"
-  STR_ADEPTAS_NOVICE_ZOMBIE: "Traitor Novitiate"
-  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE: "Traitor Militia"
-  STR_ADEPTAS_ELOHIM_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_MEDICAE_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_ASSASSIN_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_REPENTIA_ZOMBIE_ARMOR: "Traitor Repentia"
-  STR_ADEPTAS_PILOT_ZOMBIE_ARMOR: "Traitor Sister"
-  STR_ADEPTAS_NOVICE_ZOMBIE_ARMOR: "Traitor Novitiate"
-  STR_FRATERIS_MILITIA_HEAVY_ZOMBIE_ARMOR: "Traitor Militia"
-
 ## Grey Knights
-
-
   STR_GREY_KNIGHT_REQUISITION: "Requisition Grey Knight"
 
   STR_INQ_STORMTROOPER: "Inquisition Storm Trooper"
@@ -13793,15 +14230,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_REPRISALIA_MEDIC_ARMOR_UFOPEDIA: "{NEWLINE} The Adeptas Reprisalia train medicae within their own ranks to ensure that they do not need to rely on medical aid from outside sources.{NEWLINE} Whether for keeping their sisters alive or ensuring a target lives long enough for all useful information to be extracted, the Reprisalia Medicae are skilled at tending all battlefield injuries."
 
 ## Primaris Armor Bonuses
-
-  STR_PRIMARIS_ZOMBIE_DW_TAC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_GRV: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_INC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_DW_PHB: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_TAC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_GRV: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_INC: "Fallen Brother"
-  STR_PRIMARIS_ZOMBIE_PHB: "Fallen Brother"
 
   STR_MKX_TAC_LEVELS_STATS_UFOPEDIA: >
     Promotion Stat Total Bonuses:
@@ -14328,6 +14756,13 @@ en-US: #  yamllint disable-line rule:empty-values
   # ** FIREDRAGON CORONA COOLDOWN SCRIPT **
   STR_SCRIPT_FIREDRAGON_CORONA_RELOAD_RECHARGING: "Flame Corona Recharging. Turns left: {0}"
   STR_SCRIPT_FIREDRAGON_CORONA_RELOAD_RECHARGED: "Flame Corona Ready For Use"
+  # ** WARPING SCRIPT **
+  STR_SCRIPT_ENTERING_WARP: "Entering the Warp"
+  STR_SCRIPT_WARPING_LEAVING_WARP: "Leaving the Warp"
+  STR_SCRIPT_WARPING_TIME_REMAINING: "Inside Warp for {0} more turns!"
+  STR_SCRIPT_WARPER_COOLDOWN: "Warp Generator recharged in {0} more turns!"
+  STR_SCRIPT_WARPING_EJECTED_FROM_WARP: "EJECTED FROM THE WARP!!!"
+  STR_SCRIPT_WARPER_NO_BENEFIT: "Unit can't benefit from this while Warping!"
   # ** ENVIRONMENTAL SCRIPTS
 
   STR_DAEMON_PURGE_STRONG_ENVIRONMENTAL_TOKEN: "Strong Daemonic Purge Environmental Token"
@@ -15164,6 +15599,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SCRIPT_SNEAK_ATTACK: "Unit Sneak Attacked!"
   STR_SCRIPT_SPIRIT_OF_MARTYR: "Unit Saved by Spirit of the Martyr"
   STR_SCRIPT_REMAINING_SHIELD_POINTS: "Remaining Shield Points: {0}"
+  STR_SCRIPT_DARK_DEVOTION: "Unit Saved by Dark Devotion"
 
   # infection scripts
   STR_SCRIPT_INFECTION_HEAL_INCOMPLETE_LIGHT: "Corruption partially treated. Light contamination still present."

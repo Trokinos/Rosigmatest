@@ -1,0 +1,188 @@
+# weaponSets:
+#
+#
+#
+#
+#
+# TODO: MAKE A SLAANESH CHERUBIM SPOTTER/PSIVISION UNIT
+# TODO: MAKE A SLAANESH CHERUBIM AURA BUFF UNIT
+# TODO: MAKE A SLAANESH CHERUBIM ARTILLERY UNIT
+# SLAANESH CHERUBIM CAN BE BROUGHT ONCE HIGHER TIER SORORITAS CORRUPTED VEHICLES ARE AVAILABLE
+#
+
+
+
+
+##### UNIT STRUCTURE
+##### PART 1: "CIVILIANS"
+
+
+
+units:
+
+
+ # 1: "CIVILIANS" - CATACOMB MISSION
+
+
+  - type: STR_SLAANESHPATH_CATACOMB_CULTIST_LEADER
+    civilianRecoveryType: STR_ALIEN_SURGERY
+    race: STR_SECTOID
+    armor: STR_SECTOID_ARMORP
+    stats:
+      tu: 58
+      stamina: 90
+      health: 40
+      bravery: 80
+      reactions: 55
+      firing: 55
+      throwing: 58
+      strength: 40
+      psiStrength: 50
+      psiSkill: 0  # 50
+      melee: 76
+    intelligence: 7
+    aggression: 3
+    spotter: 2
+    sniper: 75
+    value: 2
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_STUB_RIFLE_CHAOS
+        - STR_STUB_GUN_AMMO_AP
+        - STR_STUB_GUN_AMMO_HP
+        - STR_STUB_GUN_AMMO_WOUND
+        - STR_MAKESHIFT_PIPEBOMB
+      - - STR_SNIPER_CHAOS
+        - STR_HC_AP_AMMO  # only 3 shots per, so we have 4 units for 12 shots total.
+        - STR_HC_AP_AMMO
+        - STR_HC_AP_AMMO
+        - STR_HC_AP_AMMO
+        - STR_KRAK_GRENADE
+      - - STR_SNIPER_CHAOS
+        - STR_HC_AP_AMMO  # only 3 shots per, so we have 4 units for 12 shots total.
+        - STR_HC_AP_AMMO
+        - STR_HC_AP_AMMO
+        - STR_HC_AP_AMMO
+        - STR_MGRENADE
+
+  - type: STR_SLAANESHPATH_CATACOMB_ASPIRING_CHAMPION       # Elite Sectoid Cultist Soldier
+    race: STR_SECTOID
+    rank: STR_LIVE_SOLDIER
+    civilianRecoveryType: STR_ALIEN_SURGERY
+    value: 3
+    stats:
+      tu: 65
+      stamina: 95
+      health: 60
+      bravery: 90
+      reactions: 68
+      firing: 60
+      throwing: 62
+      strength: 50
+      psiStrength: 65
+      psiSkill: 0
+      melee: 80
+    armor: STR_CULTIST_ASPIRING_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    deathSound: [{mod: 40k, index: 733}, {mod: 40k, index: 734}, {mod: 40k, index: 735}, {mod: 40k, index: 736}]
+    intelligence: 2
+    aggression: 4
+    berserkChance: 70
+    spotter: 1
+    sniper: 25
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_LASER_RIFLEC
+        - STR_LASGUN_CLIP
+        - STR_LASGUN_CLIP
+        - STR_MAKESHIFT_PIPEBOMB
+      - - STR_LASER_RIFLEC
+        - STR_LASGUN_CLIP_HOTSHOT_CHAOS
+        - STR_LASGUN_CLIP_HOTSHOT_CHAOS
+        - STR_GRENADE
+      - - STR_CHAOS_RIPPERGUN
+        - STR_RIPPER_GUN_CLIP
+        - STR_RIPPER_GUN_CLIP
+        - STR_MAKESHIFT_PIPEBOMB
+      - - STR_CHAOS_HELLGUN
+        - STR_KRAK_GRENADE
+
+  - type: STR_SLAANESHPATH_CATACOMB_CULTIST                                         # RANK 4 weapons done
+    civilianRecoveryType: STR_ALIEN_SURGERY
+    stats:
+      tu: 54
+      stamina: 90
+      health: 30
+      bravery: 80
+      reactions: 55
+      firing: 45
+      throwing: 58
+      strength: 30
+      psiStrength: 40
+      psiSkill: 0
+      melee: 76
+    armor: STR_CULTIST_ARMOR
+    intelligence: 1
+    aggression: 2
+    spotter: 1
+    value: 1
+    livingWeapon: true
+    builtInWeaponSets:
+      -
+        - STR_STUB_RIFLE_CHAOS
+        - STR_STUB_GUN_AMMO_WOUND
+        - STR_STUB_GUN_AMMO_WOUND
+        - STR_MAKESHIFT_GRENADE
+      -
+        - STR_LASER_RIFLEC
+        - STR_LASGUN_CLIP
+        - STR_LASGUN_CLIP
+        - STR_GRENADE
+      -
+        - STR_AUTOGUN_CHAOS
+        - STR_AUTOGUN_CLIP
+        - STR_AUTOGUN_CLIP
+        - STR_MAKESHIFT_PIPEBOMB
+        - STR_MAKESHIFT_PIPEBOMB
+
+  - type: STR_SLAANESHPATH_CATACOMB_CHORF  # CHORF!
+    race: STR_SECTOID
+    rank: STR_LIVE_SOLDIER
+    civilianRecoveryType: STR_ALIEN_SURGERY
+    stats:
+      tu: 45
+      stamina: 95
+      health: 90
+      bravery: 90
+      reactions: 50
+      firing: 60
+      throwing: 50
+      strength: 45
+      psiStrength: 80
+      psiSkill: 0
+      melee: 60
+    armor: STR_CULTIST_SQUATS_ARMOR
+    standHeight: 16
+    kneelHeight: 12
+    deathSound: [{mod: 40k, index: 733}, {mod: 40k, index: 734}, {mod: 40k, index: 735}, {mod: 40k, index: 736}]  # [2150, 2151, 2152, 2153]
+    moveSound: -1
+    moraleLossWhenKilled: 75
+    intelligence: 2
+    aggression: 2
+    spotter: 1
+    value: 4
+    sniper: 10
+    energyRecovery: 50
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_FLAMETHROWER_CHAOS
+        - STR_FLAMETHROWER_CLIP
+        - STR_FLAMETHROWER_CLIP
+      - - STR_CHAOS_RIPPERGUN
+        - STR_RIPPER_GUN_CLIP
+        - STR_RIPPER_GUN_CLIP
+      - - STR_CHAOS_MELTAGUN
+        - STR_MELTA_AMMO
+        - STR_MELTA_AMMO

@@ -1,0 +1,993 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠛⣛⣛⣛⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠄⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠄⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⢰⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠉⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠈⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢠⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠙⠻⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠙⠛⠿⠿⠿⠛⠛⠉⠄⠄⠄⣰⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠄⢀⣀⣠⣤⣤⣶⣶⣶⣶⣶⣶⣶⣤⣤⣄⣀⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⠟⣁⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣶⣤⣄⣀⣀⣀⣀⣀⣀⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣵⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠉⠉⠉⠉⠉⠉⠉⠙⠛⠻⠿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠉⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠉⠛⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣤⡀⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣷⡄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⠟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢿⣿⣿⣿⣿⣿⡄⠄⠄⠄⠄⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⡏⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢻⣿⣿⣿⣿⣷⡀⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⣿⣿⣿⣿⣿⣇⠄⠄⠄⠄⠄⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢹⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⡇⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣧⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⠁⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⡿⠄⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣼⣿⣿⣿⣿⣿⣿⠇⠄⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢠⣾⣿⣿⣿⣿⣿⣿⡏⠄⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⠟⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⢏⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣤⣀⣀⠄⠄⠄⠄⠄⢀⣀⣠⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+######################################################################################################
+#                           THIS FILE USES THE FOLLOWING FORMAT
+# 1: BATTLETYPE
+# 2: BIGSPRITE
+# 3: HANDSPRITE
+# 4: FLOORSPRITE
+# 5: FIRESOUND
+# 6: BULLETSPRITE
+# 7: BULLETSPEED
+# 8: INVWIDTH
+# 9: INVHEIGHT
+# 10: TWOHANDED
+# 11: ARMOR
+# 12: COMPATIBLEAMMO
+# 13: ATTRACTION (OPTIONAL)
+#
+# WEAPON PERFORMANCE, TAGS, AND OTHER BALANCE ATTRIBUTES ARE LOCATED IN BALLISTICS_PLAYERSLAANESH.RUL
+# PRICE, REQUIREMENT, & AVAILABILITY ATTRIBUTES ARE LOCATED IN ITEMREQUIREMENTS.PLAYERSLAANESH.RUL
+#
+###################################### TABLE OF CONTENTS #############################################
+
+      # 1: BALLISTIC WEAPONS
+
+  #A1 - Agripinaa Mk. IX Autogun
+    #A2 - Agripinaa Mk. IX Autogun (Scoped)
+      #HB - Heartbreaker Sniper Rifle
+
+      # 2: LIGHT BOLTERS
+
+  #C1 - Immaculate Cantus
+    #C2 - Immaculate Cantus with GL
+
+
+      # X: Auxiliary weapons
+
+
+items:
+
+
+
+#### BALLISTIC WEAPONS ####
+
+ #A1
+
+  - type: STR_AGRIPINAA_MKIX # Agripinaa Mk. IX Autogun.
+    battleType: 1
+    bigSprite: 4084
+    handSprite: 6024
+    floorSprite: 2113
+    fireSound: {mod: 40k, index: 875} # Meatier shoota sound.
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 35
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    compatibleAmmo:
+      - STR_AUTOGUN_CLIP
+
+ #A2
+
+  - type: STR_AGRIPINAA_MKIXB
+    battleType: 1
+    bigSprite: 4085  # Agripinaa T3 with scope.
+    handSprite: 6032
+    floorSprite: 2114
+    fireSound: {mod: 40k, index: 875}
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 35
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    compatibleAmmo:
+      - STR_AUTOGUN_CLIP
+
+  - type: STR_GRAIA_MKVII
+    battleType: 1
+    bigSprite: 4090 # PLACEHOLDER UNTIL BIGOB IS CONVERTED
+    handSprite: 6040 # Headhunter
+    floorSprite: 2115
+    fireSound: {mod: 40k, index: 875}
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 35
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 200
+    compatibleAmmo:
+      - STR_STUB_GUN_AMMO
+      - STR_STUB_GUN_AMMO_AP
+      - STR_STUB_GUN_AMMO_WOUND
+      - STR_STUB_GUN_AMMO_HP
+      - STR_STUB_GUN_AMMO_INC
+
+  - type: STR_HEARTBREAKER_SNIPER_RIFLE  # WA2000 IN SPEES
+    categories: [STR_CAT_SNIPER]
+    dropoff: 3  # light sniper weapon
+    weight: 16  # -4 weight vs repressor
+    size: 0.4
+    costSell: 200000
+    bigSprite: 3481
+    floorSprite: 3401
+    handSprite: 4200
+    bulletSprite: {mod: 40k, index: 2}
+    bulletSpeed: 25
+    fireSound: {mod: 40k, index: 4}
+    compatibleAmmo:
+      - STR_HEARTBREAKER_AMMO_AP
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 200
+    snapRange: 18
+    aimRange: 30
+    accuracySnap: 65
+    accuracyAimed: 80
+    tuSnap: 32
+    tuAimed: 85
+    confSnap:  # Double Shot
+      shots: 2
+    confAimed:  # Called Precision Shot to emphasize the added lethality
+      name: STR_PRECISION_SHOT
+    listOrder: 11897
+    kneelBonus: 140  # light sniper rifle
+    minRange: 4  # Reduced minimum range due to bullpup construction
+    accuracyMultiplier:
+      firing: [0.5, 0.005]
+    tags:
+      REACTION_MULTIPLIER: 70
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_RECOIL: 30
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 75
+      ITEM_HAS_BIPOD: 1
+
+
+
+ #### LAS WEAPONS ####
+
+  - type: STR_LASCANNON_HANDHELD_SLAAN
+    categories: [STR_CAT_LASGUN, STR_CAT_ADEPTAS]
+    requiresBuy:
+      - STR_GENERALLOCK # Placeholder.
+    size: 0.4
+    costBuy: 200000  # can be manufactured for half the cost but requires materials
+    costSell: 50000
+    weight: 35
+    bigSprite: 2080
+    floorSprite: 2057
+    handSprite: 2076
+    compatibleAmmo:
+      - STR_LASCANNON_CLIP_MALTHUS
+    clipSize: 0
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 200
+    listOrder: 12221
+    bulletSpeed: 100
+    # lasgun aesthetics
+    hitSound: 3986
+    fireSound: 3984
+    hitAnimation: 2230
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 4  # red laser
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+
+  - type: STR_LAS_BATTLERIFLE_SLAAN
+    dropoff: 3
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    size: 0.3
+    requires:
+      - STR_ALIENS_ONLY
+    requiresBuy: # Placeholder
+      - STR_SLAANESHPATH
+    costSell: 4000
+    weight: 8
+    bigSprite: 205
+    floorSprite: 203
+    handSprite: 1698
+    bulletSprite: {mod: 40k, index: 12}
+    fireSound: {mod: 40k, index: 741}
+    hitSound: {mod: 40k, index: 19}
+    hitAnimation: {mod: 40k, index: 36}
+    autoRange: 11 # 1 More
+    snapRange: 17
+    aimRange: 22
+    accuracyAuto: 55
+    accuracySnap: 80
+    accuracyAimed: 90
+    tuAuto: 35  # Better at autofire than stock battle rifles
+    tuSnap: 33
+    tuAimed: 45 # 5 tu less
+    autoShots: 2
+    compatibleAmmo:
+      - STR_SLAANESHPATH_LASGUN_CLIP_STANDARD
+      - STR_SLAANESHPATH_LASGUN_CLIP_TAINTED
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    bulletSpeed: 50
+    listOrder: 10916
+    armor: 200  # to avoid item pile destruction
+    tags:
+      REACTION_MULTIPLIER: 75 # battle rifle penalty; multiplies base reaction score by this amount divided by 100
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25
+
+  - type: STR_HEAVY_LASPISTOL_SLAAN  # Accatran heavy. Takes normal lasgun cells.
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requires:
+      - STR_ALIENS_ONLY
+    size: 0.1
+    dropoff: 4
+    costSell: 500
+    weight: 3
+    bigSprite: 2300
+    floorSprite: 2410
+    handSprite: 2300
+    bulletSprite: {mod: 40k, index: 13}
+    bulletSpeed: 50
+    fireSound: 2115
+    accuracySnap: 55
+    # accuracyAimed: 70
+    tuSnap: 18
+    confSnap:
+      shots: 2
+    snapRange: 10 # Very low range.
+    # tuAimed: 50
+    clipSize: 0
+    compatibleAmmo:
+      - STR_LASGUN_CLIP # Add others later.
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    listOrder: 10820
+    inventoryMoveCost: # ULTRA quickdraw
+      basePercent: 40
+    tags:
+      REACTION_MULTIPLIER: 200
+
+#### MELTA WEAPONS ####
+
+  - type: STR_MELTA_CARBINE_SLAAN # Stolen & modified melta carbine technology. Expensive, but versatile.
+    weight: 12  # lightweight melta
+    bigSprite: 920
+    floorSprite: 920
+    handSprite: 630
+    bulletSprite: {mod: 40k, index: 16}
+    bulletSpeed: 100
+    fireSound: {mod: 40k, index: 739}
+    compatibleAmmo:
+      - STR_LIGHT_MELTA_AMMO_SLAAN # Only 60 power vs. full sized melta's 100.
+    dropoff: 8  #
+    maxRange: 16
+    autoRange: 6
+    snapRange: 7
+    aimRange: 10
+    accuracyAuto: 60
+    accuracySnap: 80
+    accuracyAimed: 90
+    tuAuto: 55
+    tuSnap: 28
+    tuAimed: 36
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    autoShots: 3
+    confSnap:
+      name: STR_LOW_POWER_MODE
+    confAuto:
+      spendPerShot: 2  # Doubles ammo consumption; very high power up close.
+      name: STR_SLAMFIRE_MODE
+    confAimed:  # More accurate and more ammo-efficient vs slamfire; lower damage per time unit.
+      spendPerShot: 2
+      name: STR_FULL_POWER_MODE
+    tags:
+      ITEM_AIMED_FLAT_POWER_BONUS_PERCENT: 55 # Slightly weaker than a full melta on focused setting.
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
+
+#### PLASMA WEAPONS ####
+
+  - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az. lacks overcharge, but faster to fire.
+    weight: 14 # -2 weight
+    bigSprite: 2086
+    handSprite: {mod: 40k, index: 48}
+    floorSprite: {mod: 40k, index: 30}
+    bulletSprite: {mod: 40k, index: 11}
+    fireSound: {mod: 40k, index: 18}
+    compatibleAmmo:
+      - STR_PLASMA_SPRAY_CLIP_SLAAN
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    attraction: 1
+
+ #### LAUNCHERS ###
+
+  - type: STR_GRENADE_LAUNCHER_GORGE # Small, break-open GL for utility grenades. Accurate.
+
+    weight: 11 # Stubcannon -3
+    bigSprite: 247 # Stubcannon sprites, placeholder
+    floorSprite: 262
+    handSprite: 668
+    bulletSprite: {mod: 40k, index: 6}
+    fireSound: {mod: 40k, index: 707}
+
+    armor: 200
+    dropoff: 4
+    autoRange: 0
+    snapRange: 20 # GL -1
+    aimRange: 0
+
+    accuracyAuto: 0
+    accuracySnap: 75 # GL +3
+    accuracyAimed: 0
+    tuAuto: 0
+    tuSnap: 35 # GL - 10
+    tuAimed: 0
+
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 3
+    noLOSAccuracyPenalty: 75  # indirect fire weapon
+    arcingShot: true
+
+    compatibleAmmo: # Cannot use direct-fire grenades.
+      - STR_STRANGLER_GRENADE40
+      - STR_HALLUCINOGEN_GRENADE40
+      - STR_SCREAMER_GRENADE40
+      - STR_SHARD_GRENADE40
+      - STR_BALEFIRE_GRENADE40
+
+ #### BOLT PISTOLS ####
+
+  - type: STR_BOLTPISTOL_DEAZ_SLAAN
+
+    battleType: 1
+    bulletSpeed: 30
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 120
+
+    compatibleAmmo:
+      - STR_LIGHT_BOLTPISTOL_AMMO
+
+ #### LIGHT BOLTERS ####
+
+  - type: STR_BOLTER_CANTUS_SLAAN # Done (Pending art asset rework)
+    battleType: 1
+    bigSprite: 4080 # Done
+    handSprite: 6000 # Done
+    floorSprite: 2111 # Done
+    fireSound: 2137
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 150
+    compatibleAmmo:
+      - STR_CANTUS_BOLTER_AMMO
+      - STR_CANTUS_BOLTER_AMMO_PENETRATOR
+      - STR_CANTUS_BOLTER_AMMO_BM
+
+  - type: STR_BOLTER_CANTUS_GL  # Done (Pending art asset rework)
+    battleType: 1
+    bigSprite: 4081 # Done
+    floorSprite: 2112 # Done
+    handSprite: 6016 # Done
+    fireSound: 2137
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 150
+    compatibleAmmo:
+      - STR_CANTUS_BOLTER_AMMO_PENETRATOR
+      - STR_CANTUS_BOLTER_AMMO
+      - STR_CANTUS_BOLTER_AMMO_BM
+      - STR_MELTA_GRENADE40
+      - STR_SHARD_GRENADE40
+      - STR_STRANGLER_GRENADE40
+      - STR_HALLUCINOGEN_GRENADE40
+      - STR_SCREAMER_GRENADE40
+   #   - STR_SLAANESHPATH_BALEFIRE_40MM
+   #   - STR_SLAANESHPATH_AMPUTATOR_40MM
+   #   - STR_SLAANESHPATH_FLECHETTE_40MM
+    ammo:
+      0:
+        compatibleAmmo: [STR_CANTUS_BOLTER_AMMO_PENETRATOR, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO_BM]
+      1:
+        compatibleAmmo: [STR_MELTA_GRENADE40, STR_SHARD_GRENADE40, STR_STRANGLER_GRENADE40, STR_HALLUCINOGEN_GRENADE40]
+
+  - type: STR_BOLTER_DEAZ_SLAAN
+    battleType: 1
+    bigSprite: {mod: 40k, index: 550}
+    floorSprite: {mod: 40k, index: 1}
+    handSprite: {mod: 40k, index: 1496}
+    fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 150
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
+
+  - type: STR_BOLTER_ARACHNE # COMBI WEBBER DEAZ - FIX ART ASSETS
+    battleType: 1
+    bigSprite: {mod: 40k, index: 550}
+    handSprite: {mod: 40k, index: 1496}
+    floorSprite: {mod: 40k, index: 1}
+    fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 150
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
+      - STR_CONSTRICTOR_PISTOL_AMMO
+    ammo:
+      0:
+        compatibleAmmo: [STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO_MC, STR_LIGHT_BOLTER_AMMO_SLAAN, STR_LIGHT_BOLTER_AMMO_BM]
+      1:
+        compatibleAmmo: [STR_CONSTRICTOR_PISTOL_AMMO]
+
+
+  - type: STR_BOLTER_KELPIE # SHOTGUN + DMR DE'AZ. PLACEHOLDER ART ASSETS.
+    battleType: 1
+    bigSprite: {mod: 40k, index: 550}
+    handSprite: {mod: 40k, index: 1496}
+    floorSprite: {mod: 40k, index: 1}
+    fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 120
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
+      - STR_SHOTGUN_SHELLS
+    ammo:
+      0:
+        compatibleAmmo: [STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO_MC, STR_LIGHT_BOLTER_AMMO_SLAAN, STR_LIGHT_BOLTER_AMMO_BM]
+      1:
+        compatibleAmmo: [STR_SHOTGUN_SHELLS] # PLACEHOLDER
+
+
+  - type: STR_BOLTER_ELOHIM_SLAAN
+
+  - type: STR_BOLTER_NAGA # Corrupted Elohim with plasma attachment.
+    requires:
+      - STR_ALIENS_ONLY
+    dropoff: 5
+    snapRange: 16  # DMR
+    autoRange: 9
+    aimRange: 8
+    accuracyAuto: 80
+    accuracySnap: 90 # 5 less
+    accuracyAimed: 50 # PLACEHOLDER
+    tuAuto: 36 # 4 less
+    tuSnap: 24 # 3 less
+    tuAimed: 30 # PLACEHOLDER
+    compatibleAmmo: # PLACEHOLDER
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_CLIP_S
+      - STR_RIFLE_CLIP_MC
+      - STR_RIFLE_CLIP_AP
+      - STR_RIFLE_CLIP_EX
+      - STR_PLASMA_SPRAY_CLIP_SLAAN
+    ammo: # PLACEHOLDER
+      0:
+        compatibleAmmo: [STR_RIFLE_CLIP_S, STR_RIFLE_CLIP, STR_RIFLE_CLIP_MC, STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX]
+      1:
+        compatibleAmmo: [STR_PLASMA_SPRAY_CLIP_SLAAN]
+    confSnap:  # Double Shot
+      ammoSlot: 0  # Bolter
+      name: STR_SNAP_SHOT
+      arcing: false
+      shots: 1  # Double shot snap
+    confAuto:  # Bolter
+      ammoSlot: 1  # Bolter
+      name: STR_PLASMA_SNAP
+      arcing: false
+      shots: 2
+    confAimed:  # Plasma spray gun
+      ammoSlot: 1  # Plasma barrage
+      shots: 3
+      arcing: false
+      name: STR_PLASMA_BARRAGE
+    tags:
+      ITEM_AIMED_FLAT_POWER_BONUS: -5 # Lower power output.
+
+  - type: STR_BOLTER_NAIAD  # Corrupted Hellspite bolter with a sonic projector.
+    requires:
+      - STR_ALIENS_ONLY
+    dropoff: 5
+    autoRange: 7  # 4 Auto
+    snapRange: 14
+    aimRange: 14  # Sonic projector
+
+    accuracyAuto: 70
+    accuracySnap: 80
+    accuracyAimed: 60
+    tuAuto: 40
+    tuSnap: 20
+    tuAimed: 35
+    compatibleAmmo: # PLACEHOLDER, CHANGE TO LIGHT BOLTS LATER
+      - STR_RIFLE_CLIP
+      - STR_RIFLE_CLIP_S
+      - STR_RIFLE_CLIP_MC
+      - STR_RIFLE_CLIP_AP
+      - STR_RIFLE_CLIP_EX
+    ammo: # PLACEHOLDER
+      0:
+        compatibleAmmo: [STR_RIFLE_CLIP_S, STR_RIFLE_CLIP, STR_RIFLE_CLIP_MC, STR_RIFLE_CLIP_AP, STR_RIFLE_CLIP_EX]
+      1:
+        compatibleAmmo: [STR_NAIAD_SONIC_SHRIEKER_CHARGE, STR_NAIAD_SONIC_SCREAMER_CHARGE]
+
+    autoShots: 4
+    confAuto:  # Bolter
+      ammoSlot: 0  # Bolter
+      name: STR_AUTOFIRE
+      arcing: false
+    confSnap:  # Snap shot
+      ammoSlot: 0  # Bolter
+      name: STR_SNAP_SHOT
+      arcing: false
+      shots: 1
+    confAimed:  # Sonic projector
+      ammoSlot: 1  # Sonic
+      name: STR_SONIC_FIRE
+
+  - type: STR_BOLTER_KERES # Possessed De'az bolter with canted foregrip. Extremely high RoF.
+    battleType: 1
+    bigSprite: {mod: 40k, index: 550}
+    handSprite: {mod: 40k, index: 1496}
+    floorSprite: {mod: 40k, index: 1}
+    fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 50 # Gotta go fast!
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 300
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
+
+
+  - type: STR_BOLTER_TIAMAT # De'az kombi-plasma.
+
+ #### MELEE WEAPONS ####
+
+  - type: STR_LIGHT_CHAINSWORD_SLAAN # Light chainsword with slaanesh damage profile applied
+    requiresBuy:
+      - STR_GENERALLOCK # Placeholder
+    categories: [STR_CAT_MELEE]
+    size: 0.2
+    costBuy: 4000 # P
+    costSell: 2000 # P
+    weight: 10
+    bigSprite: 295
+    floorSprite: 295
+    handSprite: 320
+    meleeSound: {mod: 40k, index: 753}
+    meleeHitSound: {mod: 40k, index: 709}
+    meleeAnimation: {mod: 40k, index: 44}
+    power: 45
+    damageAlter: # DA SLAANESH CHAIN
+      ToArmorPre: 0.5
+      ToHealth: 0.8
+      RandomType: 2  # TFTD [50% - 150%]
+      ToWound: 0.35
+      ToEnergy: 0.8
+      ToMorale: 0.2
+      ToStun: 0.1
+      RandomWound: false
+    damageType: 7
+    accuracyMelee: 100
+    costMelee:
+      time: 14
+      energy: 2  # light/medium melee
+    flatMelee:
+      time: true
+      energy: true
+    clipSize: -1
+    battleType: 3
+    invWidth: 1
+    invHeight: 3
+    armor: 200
+    skillApplied: true
+    meleeMultiplier:
+      melee: 0.8
+      reactions: 0.2
+      flatHundred: 0.0
+    damageBonus:
+      melee: 0.3
+      reactions: 0.1
+      strength: 0.1
+    experienceTrainingMode: 13
+    listOrder: 12360
+
+        #### TODO: ADD WAY TO AQUIRE EVIS, ADD ART ASSETS
+
+  - type: STR_EVISCERATOR_SLAAN  # A lighter and more accurate eviscerator with superior penetration.
+    categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
+    size: 0.2
+    power: 66 # -14 vs BR Evis
+    costMelee:
+      energy: 10 # requires MORE energy due to finesse requirement.
+      time: 19 # Requires MORE time due to finesse requirement.
+    damageAlter: # DA SLAANESH CHAIN
+      ToArmorPre: 0.5
+      ToArmor: 0.25 # Designed to pierce armor and ruin it.
+      ToHealth: 0.8
+      ArmorEffectiveness: 0.75 # This thing can actually thrust.
+      RandomType: 2  # TFTD [50% - 150%]
+      ToWound: 0.35
+      ToEnergy: 0.8
+      ToMorale: 0.2
+      ToStun: 0.2
+      RandomWound: false
+    weight: 16  # -4 vs standard evis.
+    bigSprite: {mod: 40k, index: 620}
+    floorSprite: {mod: 40k, index: 610}
+    handSprite: {mod: 40k, index: 168}
+    meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
+    meleeHitSound: {mod: 40k, index: 709} #709 chainhit
+    meleeAnimation: {mod: 40k, index: 44}
+    damageType: 7
+    accuracyMelee: 85
+    clipSize: -1
+    battleType: 3
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 200
+    skillApplied: true
+    damageBonus:
+      melee: 0.05
+      reactions: 0.15
+    meleeMultiplier:
+      melee: 0.8 # - 0.2
+      reactions: 0.25 # Added
+    experienceTrainingMode: 13
+    listOrder: 12410
+
+  - type: STR_POWER_SWORD_SLAAN  # Slaanesh power sword - similar profile to banshee blade
+    categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
+    battleType: 3
+    damageType: 5
+    damageAlter:     # DA POWER SLAN
+      ArmorEffectiveness: 0.7
+      ToArmorPre: 0.3
+      ToHealth: 0.7
+      ToMorale: 0.4
+      ToEnergy: 0.3
+      ToTime: 0.2
+      RandomType: 6
+    clipSize: -1
+    armor: 200
+    costMelee:
+      time: 14
+      energy: 2  # light melee weapon; light 1 energy, medium 2, heavy 4, very heavy 8
+    flatMelee: true
+    power: 80
+    damageBonus: # Slaanesh variant depends on reactions as well as melee skill
+      melee: 0.4
+      reactions: 0.2
+    meleeMultiplier:
+      melee: 0.7
+      reactions: 0.4
+    accuracyMelee: 100
+    tags:
+      ITEM_STRENGTH_REQUIREMENT: 30  # was 60 in vanilla
+      ITEM_HAS_OVERWEIGHT_TU_PENALTY: 1
+    size: 0.2
+    weight: 10
+    bigSprite: 4899
+    floorSprite: 4899
+    handSprite: 1682
+    meleeAnimation: {mod: 40k, index: 4}
+    meleeSound: {mod: 40k, index: 753} #753 Powerswrod miss
+    meleeHitSound: {mod: 40k, index: 754} #744 Powerswrod hit
+    invWidth: 2
+    invHeight: 3
+    listOrder: 16301
+
+ #### WEB WEAPONS ####
+
+  - type: STR_CONSTRICTOR_PISTOL
+    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
+    size: 0.2
+    dropoff: 8
+    weight: 10
+    blockBothHands: false
+    twoHanded: false
+    bigSprite: 2706
+    floorSprite: {mod: 40k, index: 615}
+    handSprite: 550
+    bulletSprite: {mod: 40k, index: 21}
+    fireSound: {mod: 40k, index: 802}
+    compatibleAmmo:
+      - STR_CONSTRICTOR_PISTOL_AMMO
+    accuracySnap: 60 # 5 more vs web pistol
+    tuSnap: 25
+    battleType: 1
+    invWidth: 2
+    invHeight: 1
+    recoveryPoints: 1
+    listOrder: 11805
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+    tags:
+      REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
+
+
+
+ #### AUX WEAPONS ####
+  - type: AUX_CHIRURGEON_NEEDLER # LOOK AT ADEPTAS NEURAL WHIP FOR ALT FIRE IMPLEMENTATION
+    weight: 0
+    dropoff: 6 # Very inaccurate beyond close range
+    bigSprite: {mod: 40k, index: 228}
+    floorSprite: {mod: 40k, index: 113}
+    bulletSprite: 25
+    fireSound: 2419  # silentshot
+    hitSound: {mod: 40k, index: 101}  # stabhit
+    hitAnimation: 2190  # purple juice
+    handSprite: 3813
+
+    power: 30
+    costSnap:
+      time: 15
+      mana: 4
+    accuracySnap: 55
+    accuracyMultiplier:
+      firing: 0.75
+      reactions: 0.25
+    tuAimed: 0
+    snapRange: 7
+    aimRange: 0
+
+    damageBonus: # Not a sniper weapon unlike most other needlers. Gains a bonus from reactions.
+      reactions: 0.15
+      firing: 0.15
+    damageType: 8  # acid
+    damageAlter:  # Hallucinogenic, warp-tainted chems.
+      ArmorEffectiveness: 0.5  # low power but high penetration
+      ToArmorPre: 0.05  # precision weapon; minimal armor damage
+      ToArmor: 0.05  # precision weapon; minimal armor damage
+      ToHealth: 0.25
+      ToMana: 0.9
+      ToEnergy: 0.75  # Hallucinogenic cocktail
+      ToStun: 1.5  # Hallucinogenic cocktail
+      ToTime: 0.5  # higher than normal TU depletion
+      ToWound: 0.01  # Precision needler weapon; leaves no terminal wounds
+      ToMorale: 4.5 # A psychedelic mushroom trip courtesy of hell itself.
+      RandomWound: false
+      RandomType: 6  # gaussian
+    ##### CLOSE RANGE SEDATIVE NEEDLE #####
+    #meleeAnimation: 0
+    #meleeType: 7
+    #meleeHitSound: {mod: 40k, index: 101}  # stabhit
+    #meleePower: 45
+    #meleeBonus:
+    #  reactions: 0.2
+    #  melee: 0.2
+    #meleeAlter:
+    #  ArmorEffectiveness: 0.3
+    #  toArmorPre: 0.1
+    #  ToTime: 0.5
+    #  ToEnergy: 0.5
+    #  RandomEnergy: true
+    #  ToMorale: 1.5
+    #  ToHealth: 0.1
+    #  RandomHealth: true
+    #  ToStun: 1.2
+    #  ToWound: 0.1
+    #accuracyMelee: 70
+    #meleeMultiplier: # Requires precision to hit a weak spot.
+    #  reactions: 0.6
+    #  melee: 0.3
+    #tuMelee: 15
+    #flatMelee:
+    #  time: true
+    clipSize: -1
+    battleType: 1
+    twoHanded: false
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 2778
+    specialUseEmptyHand: false
+    tags:
+      INFECTION_DAMAGE_PERCENT: 85  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+    bulletSpeed: 15
+
+  - type: AUX_CHIRURGEON_GAS_LAUNCHER
+    weight: 0
+    dropoff: 5 # close range weapon
+    bigSprite: {mod: 40k, index: 611}
+    floorSprite: {mod: 40k, index: 24}
+    fireSound: {mod: 40k, index: 4}
+    bulletSprite: {mod: 40k, index: 0}
+    explosionHitSound: [2122, 2119]  # daemonettelaughter
+    hitAnimation: 1020  # X1 Pink skullsplosion
+    power: 70
+
+    accuracySnap: 60
+    accuracyMultiplier:
+      firing: 0.15
+      reactions: 0.25
+    costSnap:
+      time: 30
+      mana: 7
+    snapRange: 12
+    battleType: 1
+    arcingShot: true
+
+    damageType: 8
+    damageAlter:  # DA SPOOKY GAS
+      ToHealth: 0.01
+      ToEnergy: 0.3
+      ToStun: 0.3
+      ToMorale: 3.5  # even with high bravery this will fuck you up
+      ArmorEffectiveness: 0.4
+      RandomType: 2  # TFTD [50% - 150%]
+      FixRadius: 4
+    twoHanded: false
+    recover: false
+    fixedWeapon: true
+    specialIconSprite: 2778
+    specialUseEmptyHand: false
+    clipSize: -1
+    listOrder: 15300
+    tags:
+      INFECTION_DAMAGE_PERCENT: 35  # inflicts % of damage dealt as infection damage
+      INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
+
+  - &CHIRURGEON_MEDIKIT_TEMPLATE
+    type: AUX_CHIRURGEON_MEDI_KIT      # A modified medicae kit. More killy, with better stimulants.
+    medikitTargetImmune: true
+    size: 0.1
+    costSell: 50
+    weight: 0
+    bigSprite: {mod: 40k, index: 611}
+    floorSprite: {mod: 40k, index: 24}
+    battleType: 6
+    invWidth: 2
+    invHeight: 3
+    painKiller: 15
+    heal: 20
+    stimulant: 20
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 4
+    energyRecovery: 10
+    tuUse: 10
+    experienceTrainingMode: 19  # *** makes the apothecary medikit item train bravery ***
+    medikitTargetSelf: true
+    flatRate: true
+    recover: false
+    fixedWeapon: true
+    # *** Melee
+    meleeSound: {mod: 40k, index: 753}  # 753 Powersword miss
+    meleeHitSound: {mod: 40k, index: 709}  # 709 chainhit
+    meleeAnimation: 44
+    meleeType: 7
+    meleePower: 60
+    damageType: 7
+    accuracyMelee: 80
+    tuMelee: 15
+    meleeBonus:
+      reactions: 0.2
+      melee: 0.2
+    damageAlter:  # DA CHAIN
+      ToArmorPre: 0.5
+      ToHealth: 0.8
+      RandomType: 2  # TFTD [50% - 150%]
+      ToWound: 0.45 # Extra sadistic
+      ToEnergy: 0.8
+      ToMorale: 0.2
+      ToStun: 0.1
+      RandomWound: false
+    meleeMultiplier:
+      reactions: 0.25
+      melee: 0.75
+    defaultInventorySlot: STR_LEFT_HAND
+
+  - type: AUX_VIVISECTIONIST_MEDI_KIT
+    refNode: *CHIRURGEON_MEDIKIT_TEMPLATE
+    meleePower: 45
+
+# - type: ARAKIEL_MISSILE_LAUNCHER
+
+# - type: AUX_ANGELIC_ASSAULT_GRENADE_LAUNCHER
+
+# - type: SHAMSIEL_ANGELIC_PROJECTOR
+
+# - type: AUX_KOKABIEL_GRENADE_HARNESS
+
+# - type: AUX_KOKABIEL_BOLTSTORM_GAUNTLETS
+
+# - type: AUX_SHEMYAZA_PLASMA_CULVERIN
+
+
+# - type: AUX_FELINIDFATALE_STORM_NEEDLER
+
+# - type: AUX_FELINIDFATALE_SLAANESH_HELLPISTOL
+
+# - type: AUX_CHIRURGEON_NEURAL_FLAYER
+
+
+
+#

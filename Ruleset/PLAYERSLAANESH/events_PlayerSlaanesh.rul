@@ -1,0 +1,184 @@
+adhocScripts:
+
+ # 10040 minutes in a week
+ # NOTE: Currently all items and units will have arrived at HQ on the 6th day of January.
+ # Missions should not start generating before the 10th.
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+ #
+
+### start adhocScript Mission
+ # Copied from TAU, readjust later. Triggers missions in player region.
+
+  - &STR_SLAANESHPATH_START_MISSION
+    type: adhocGameStartSlaanesh
+    # initial mission in player region
+    adhocMissionScriptTags: ["gameStartSlaanesh"]
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH: 10
+        STR_ALIEN_HARVEST: 10
+        STR_ALIEN_ABDUCTION: 20
+        STR_NURGLE_HARVEST: 8
+        STR_IMPERIALS_ABDUCTION: 10
+        STR_IMPERIALS_HARVEST: 10
+        STR_SISIMPERIALS_ABDUCTION: 10
+        STR_SISIMPERIALS_HARVEST: 10
+        STR_ALIEN_RESEARCH_TZEENTCH: 5
+        STR_ALIEN_HARVEST_TZEENTCH: 5
+    targetBaseOdds: 100
+    startDelay: 12960  # 9 days
+    randomDelay: 4320  # additional random 0 to 3 days
+    useTable: true
+    maxRuns: 1
+    varName: GameStartSlaanesh
+
+  - type: adhocStarterBaseSlaanesh
+    missionWeights:
+      0:
+        STR_TS_CULTIST_BASE_GV: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 18
+        STR_ARCTIC: 4
+        STR_ANTARCTICA: 4
+        STR_SOUTH_AMERICA: 10
+        STR_EUROPE: 16
+        STR_NORTH_AFRICA: 12
+        STR_SOUTHERN_AFRICA: 8
+        STR_CENTRAL_ASIA: 12
+        STR_SOUTH_EAST_ASIA: 15
+        STR_SIBERIA: 10
+        STR_AUSTRALASIA: 10
+    useTable: false
+    startDelay: 20080  # 2-3 weeks
+    randomDelay: 10040
+    adhocMissionScriptTags: ["adhocStarterBaseSlaanesh"]
+
+
+  - type: adhocVehicleRaid
+    missionWeights:
+      0:
+        STR_VEHICLE_RAID: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 18
+        STR_ARCTIC: 4
+        STR_ANTARCTICA: 4
+        STR_SOUTH_AMERICA: 10
+        STR_EUROPE: 16
+        STR_NORTH_AFRICA: 12
+        STR_SOUTHERN_AFRICA: 8
+        STR_CENTRAL_ASIA: 12
+        STR_SOUTH_EAST_ASIA: 15
+        STR_SIBERIA: 10
+        STR_AUSTRALASIA: 10
+    useTable: false
+    startDelay: 1440 # 1 days
+    randomDelay: 7200 # 5 days
+    adhocMissionScriptTags: ["adhocVehicleRaidSlaanesh"]
+    maxRuns: 1
+    varName: VehicleRaidcount
+
+events:
+
+  - name: STR_SLAANESHPATH_CHOSEN_EVENT
+    adhocMissionScriptTags: ["gameStartSlaanesh", "adhocStarterBaseSlaanesh"]
+    description: STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION
+    background: AdeptasAttackedBG.scr
+
+  ###### INTRO EVENTS ######
+  - name: STR_SLAANESHPATH_INTRO_A_EVENT
+    description: STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION
+    background: SistersReinforcements3BG.SCR
+    interruptResearch: STR_NOT_SLAANESHPATH
+    timer: 1560  # 26 hours
+
+  - name: STR_SLAANESHPATH_INTRO_B_EVENT
+    description: STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTSISTERCHAOSBG.SCR
+
+  - name: STR_SLAANESHPATH_INTRO_C_EVENT
+    description: STR_SLAANESHPATH_INTRO_C_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTSISTERCORRUPTBG.SCR
+
+  - name: STR_SLAANESHPATH_INTRO_D_EVENT #### Power failure event
+    description: STR_SLAANESHPATH_INTRO_D_EVENT_CODEX_DESCRIPTION
+    background: SLAANESHBUNKERBG.SCR
+    interruptResearch: STR_NOT_SLAANESHPATH
+    timer: 2880  # 48 hours
+
+  - name: STR_SLAANESHPATH_GATE_EVENT # This is the event that gives you the sisters.
+    description: STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTTEMPLEADEPTASBG.SCR
+    everyMultiSoldierList:
+      STR_SLAANESHPATH_HANDMAIDEN: 13
+      STR_SLAANESHPATH_VIVISECTIONIST: 1
+    everyMultiItemList:
+      STR_BOLTER_DEAZ: 1
+      STR_EVISCERATOR: 2
+      STR_LIGHT_BOLTER_AMMO: 4
+      STR_BOLTER_CANTUS: 3
+      STR_CANTUS_BOLTER_AMMO: 12
+      STR_BOLTPISTOL_DEAZ: 2
+      STR_LIGHT_BOLTPISTOL_AMMO: 8
+      STR_AGRIPINAA_MKIX: 6
+      STR_AGRIPINAA_MKIXB: 2
+      STR_AUTOGUN_CLIP: 30
+      STR_KRAK_GRENADE: 12
+      STR_GRENADE: 12
+      STR_SMOKE_GRENADE: 18
+      STR_CHAINSWORD_GUARD: 6
+    timer: 60
+
+
+
+  - name: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT
+    description: STR_SLAANESHPATH_CULTISTS_ARRIVE_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTDRAFTBG.SCR
+    timer: 6600  # 110 hours
+    interruptResearch: STR_NOT_SLAANESHPATH
+    spawnedCraftType: STR_TRUCKBASE_CHAOS
+    everyMultiSoldierList:
+      STR_SLAANESHPATH_VICTUAL_BROTHER: 7
+    #everyMultiItemList:
+
+
+  - name: STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT
+    description: STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTDRAFTBG.SCR
+    timer: 13200  # 220 hours
+    interruptResearch: STR_NOT_SLAANESHPATH
+    researchList: [STR_BLACK_MARKET_CRAFT_AVAILABLE]
+
+
+  - name: STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT
+    description: STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT_CODEX_DESCRIPTION
+    background: DesertionBG.SCR
+    timer: 2880
+    timerRandom: 4320 # 2-5 days of time.
+    adhocMissionScriptTags: ["adhocVehicleRaidSlaanesh"]
+    everyMultiItemList:
+      STR_ALIEN_SURGERY: 3
+      STR_SLAANESHPATH_PIETY: 50
+      STR_CHAINSWORD_GUARD: 2
+      STR_LAS_BATTLERIFLE: 4
+      STR_LASCARBINE: 3
+      STR_LASGUN_CLIP: 12
+      STR_KRAK_GRENADE: 3
+      STR_BOLTER_LIGHT_SOLO_SHORT: 1
+      STR_LIGHT_BOLTER_AMMO_SHORT: 4
+
+######## TO DO: EVENT FOR DISCOVERING THE PDF DEPOT.
+
+######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED

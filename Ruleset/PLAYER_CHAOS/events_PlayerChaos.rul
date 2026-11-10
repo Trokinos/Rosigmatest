@@ -47,6 +47,7 @@ eventScripts:
       - STR_INQUISITION_WARNING
     researchTriggers:
       STR_ALIENS_ONLY: true
+      STR_SLAANESHPATH: false
 
   - type: hrudAllianceStart
     oneTimeSequentialEvents:
