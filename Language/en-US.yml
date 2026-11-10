@@ -2552,6 +2552,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_WEAPON_CONSECRATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}The Prince of Perfection is generous beyond compare; in his benevolence, he extends his touch to the faithful and the uninitiated alike. But we must strive to become ever more devoted servants, that we may one day be worthy of further gifts still. By channeling the power of our faith, the profane tools of this decrepit Imperium will one day be reborn and reawakened, just as we were."
   STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it has taken some time for us to understand the strange and haphazard scribblings within this data-crypt. It details various different efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the Warp alone. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
   STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation and prayer, we finally have a partial understanding of the heretek research on plasma weaponry. Though the sections on infusing hydrogen with empyrean energies are much too esoteric for our adepts, the simpler schematics are still of direct use. We are now able to manufacture basic plasma weaponry without outside assistance."
+
+  STR_OUR_CRUSADE: "{NEWLINE}{NEWLINE}Yesterday we obeyed tyrants and bent our necks before a throne of lies. Today we kneel only to truth and give our worship only to true divinity. The Angel who freed us spent much of his power to do so; trapped below the earth, He is unable to forestall the calamities to come. It now falls to us to take up sword and bolter, for we are the first rays of sun in the coming dawn."
+  STR_WAR_FOR_THE_UNDERHIVE: "{NEWLINE}{NEWLINE}The destiny of everyone on this planet is to one day serve the True Faith: either as willing supplicants, or as sacrifices upon the altar. That is the nature of the great mission that we have been entrusted with. But true greatness must always begin from humble foundations: it is among the downtrodden and forgotten masses of the underhives we must begin building our flock."
+
+
   STR_VOICE_UFOPEDIA_TITLE: "The Angel's Voice"
   STR_BLACK_MARKET_AMMUNITION_TITLE: "Underhive Ammo-Jacks"
   STR_SLAANESHPATH_GATE_UFOPEDIA_P1: "{NEWLINE}Floating alone in a vast sea of darkness, how long had it been since you knew what light was? From a great distance, the voice finally reached you. Filled with mercy and compassion, it spoke of freedom: of a radiant sun that would burn all your shackles to ash. For a long, long time you fought it, plunging deeper into the familiar blackness. It did not fight back, nor follow you. Kindly, it waited for you to come to your senses.{NEWLINE}{NEWLINE}>>> Continued on next page.>>>"
@@ -2594,6 +2599,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. In addition, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
   STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}This once holy De'az bolter has been afflicted with an incredibly malign machine spirit. Sporting a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
 
+
+  STR_GRENADE_LAUNCHER_GORGE_UFOPEDIA: "{NEWLINE}{NEWLINE}Not actually a standard weapon pattern, Gorge is a colloquial term for a number of simple, rugged grenade launchers popular with rebels and hive gangers. More advanced variants carry several grenades in an internal magazine, allowing a skilled user to fire multiple shots in rapid succession."
   STR_STRANGLER_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Strangler carries a two part payload: a fast-acting nerve gas and a lingering cloud of smoke. Though fully capable of debilitating or killing a healthy adult through asphyxication, the nerve agent disperses very quickly, allowing the smoke cloud to be used as battlefield cover."
   STR_SHARD_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}A favorite on Necromunda, the shard grenade is a highly illegal and dangerous weapon. Packed with foul, warp-corrupted slivers of metal, even the tiniest wound from this grenade is capable of killing its victim through corruption, insanity, and malmutation."
   STR_SCREAMER_GRENADE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Screamer is a variant of the handheld sonic grenade favored by Slaanesh-aligned forces. Like all sonic weapons, it works by using concentrated sound waves to create oscillations in the target, distorting and rupturing it from within. As such, it is capable of bypassing most forms of armor."
@@ -2603,6 +2610,9 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_SLAANESHPATH_CHIRURGEON_ARMOR_UFOPEDIA: "{NEWLINE}{NEWLINE}Adepta Sororitas Hospitaliers may be at adepts both torture and healing, but the Chirurgeon is a master of one unified craft. Drawing no distinction btween the most excruciating pain and the efficacious of healing, the Chirurgeon's obessively customized medical tools are terrying weapons in combat."
 
+
+
+  STR_HANDMAIDEN_ORIGINS_UFOPEDIA: "{NEWLINE}{NEWLINE}Handmaidens are former Adepta Sororitas novices who have been corrupted or seduced into serving the Prince of Excess. Brimming with the zealotry of the recently converted and eager for service, Handmaidens are every bit as fanatically devoted to their dark patron as they once were to the Emperor of Mankind."
   STR_ALTAR_OF_SLAANESH_UFOPEDIA: "Through this altar, the Prince of Excess recieves both souls and supplication, and bestows gifts and blessings in turn. {NEWLINE}{NEWLINE}{ALT}The Altar of Slaanesh is a powerful building with many benefits: it improves healing times, allows for devotion training, and offers some space for research. It is also vital for many manufacturing projects."
 
 ###
