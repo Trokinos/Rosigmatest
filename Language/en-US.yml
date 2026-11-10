@@ -8152,6 +8152,7 @@ en-US: #  yamllint disable-line rule:empty-values
   MUTON_ARMORNURGLEA_BLESSED: "Plague Marine"
 
   STR_NURGLE_DREAD_BOLTER: "Plague Dreadnought"
+  STR_NURGLE_DREADNOUGHT_BOLTER: "Plague Dreadnought"
   STR_NURGLE DREADNOUGHT_ARMOR_CODEX: "Plague Dreadnought Armor"
   STR_NURGLE_DREADNOUGHT_ARMOR_UFOPEDIA: "{NEWLINE}"
   STR_NURGLE_DREADNOUGHT_AUTOPSY: "Plague Dreadnought Origins"
