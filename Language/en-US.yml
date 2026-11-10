@@ -3134,6 +3134,7 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_PENAL_ARMOR_UC: "Penal Clothing"
   STR_GUARDPD_ARMOR_UC: "Flak Armor"
+  STR_GUARDPD_ARMOR_UC_AI: "Flak Armor"
   STR_ENFORCER_ARMOR: "Enforcer Armor"
   STR_ENFORCER_ARMOR_UC: "Enforcer Armor"
   STR_ENFORCER_MEDIC_ARMOR: "Enforcer Medic Armor"
@@ -17110,6 +17111,7 @@ en-US: #  yamllint disable-line rule:empty-values
   SLMDREAD_CORPSE3: "Dreadnought Corpse"
   SLMDREAD_CORPSE4: "Dreadnought Corpse"
 
+  STR_GUARDPD_CORPSE_AI: "PDF Trooper Corpse"
   STR_GUARD_AICORPSE: "Guardsman Corpse"
   STR_GUARDH_AICORPSE: "Veteran Guardsman Corpse"
 
