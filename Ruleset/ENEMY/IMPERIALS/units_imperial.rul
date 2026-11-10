@@ -5112,7 +5112,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 55
-    armor: STR_GUARDPD_ARMOR_UC
+    armor: STR_GUARDPD_ARMOR_UC_AI
     moraleLossWhenKilled: 75  # like PC guard
     standHeight: 21
     kneelHeight: 14
