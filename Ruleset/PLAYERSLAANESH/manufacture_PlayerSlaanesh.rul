@@ -254,7 +254,7 @@ manufacture:
     producedItems:
       STR_LIGHT_CHAINSWORD_SLAAN: 1
     requiredItems:
-      STR_EVISCERATOR: 1
+      STR_CHAINSWORD_GUARD: 1
       STR_ELERIUM_115: 2
       STR_SLAANESHPATH_PIETY: 25
 
