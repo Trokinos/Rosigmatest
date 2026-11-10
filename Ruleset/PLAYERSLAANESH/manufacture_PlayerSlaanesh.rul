@@ -238,7 +238,7 @@ manufacture:
     time: 160
     cost: 5000 # +15K promethium
     producedItems:
-      STR_LIGHT_CHAINSWORD_SLAAN: 1
+      STR_EVISCERATOR_SLAAN: 1
     requiredItems:
       STR_EVISCERATOR: 1
       STR_ELERIUM_115: 2
@@ -252,7 +252,7 @@ manufacture:
     time: 160
     cost: 5000 # +15K promethium
     producedItems:
-      STR_EVISCERATOR_SLAAN: 1
+      STR_LIGHT_CHAINSWORD_SLAAN: 1
     requiredItems:
       STR_EVISCERATOR: 1
       STR_ELERIUM_115: 2
