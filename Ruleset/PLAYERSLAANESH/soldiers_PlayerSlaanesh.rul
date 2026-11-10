@@ -321,7 +321,7 @@ soldiers:
     flagOffset: 21 # FIX LATER
     costSalary: 20000 # Expensive, elite unit.
     requires: ### >Remove this later.< ###
-    - STR_SLAANESHPATH_GATE
+      - STR_SLAANESHPATH_GATE
     minStats:
       tu: 50
       stamina: 60
@@ -399,7 +399,7 @@ soldiers:
     costBuy: 20000  # Placeholder - Not meant to be purchased directly.
     costSalary: 20000 # Expensive, elite unit.
     requires: ### >Remove this later.< ###
-    - STR_SLAANESHPATH_GATE
+      - STR_SLAANESHPATH_GATE
     minStats:
       tu: 50
       stamina: 60
