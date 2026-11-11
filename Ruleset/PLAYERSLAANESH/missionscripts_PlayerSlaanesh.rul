@@ -47,7 +47,6 @@ missionScripts:
         STR_SISIMPERIALS_ABDUCTION: 10
         STR_SISIMPERIALS_HARVEST: 10
         STR_IMPERIALGUARD_BASEV0: 60
-        STR_BLOODYROSE_BASEV0: 60
       3:  # equal distribution for now
         STR_ALIEN_RESEARCH: 10
         STR_ALIEN_RESEARCH_TZEENTCH: 10
@@ -71,7 +70,6 @@ missionScripts:
         STR_SPACEWOLVES_BASE: 50
         STR_CRIMSONFIST_BASE: 50
         STR_SALAMANDER_BASE: 50
-        STR_BLOODYROSE_BASE: 30
       5:  # equal distribution for now
         STR_ALIEN_RESEARCH: 10
         STR_ALIEN_RESEARCH_TZEENTCH: 10
