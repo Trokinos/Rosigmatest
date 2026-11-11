@@ -31,7 +31,7 @@ facilities:
 # type: STR_SLAANESH_TEMPLE
 
 
-  - type: STR_HALLS_OF_DELECTATION
+  - type: STR_HALLS_OF_DELECTATION # Powerful prison-training-barracks combo.
     placeSound: {mod: 40k, index: 98}
     requiresBaseFunc: [BASE]
     requires:
@@ -39,13 +39,13 @@ facilities:
     spriteShape: 1
     #spriteFacility: {mod: 40k, index: 444}
     spriteFacility: {mod: 40k, index: 31} #Placeholder
-    buildCost: 500000
-    refundValue: 200000
+    buildCost: 700000
+    refundValue: 350000
     buildTime: 20
     monthlyCost: 25000
     aliens: 10
     trainingRooms: 15
-    personnel: 15
+    personnel: 40
     destroyedFacility: STR_CORRIDOR
     maxAllowedPerBase: 1
     mapName: XBASE_36

@@ -184,7 +184,7 @@ events:
     description: STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT_CODEX_DESCRIPTION
     background: DesertionBG.SCR
     timer: 2880
-    timerRandom: 4320 # 2-5 days of time.
+    timerRandom: 2880 # 2-4 days of time.
     adhocMissionScriptTags: ["adhocVehicleRaidSlaanesh"]
     everyMultiItemList:
       STR_ALIEN_SURGERY: 3
@@ -200,7 +200,7 @@ events:
 
   - name: STR_SUFFER_NOT_THE_XENO_EVENT
     description: STR_SUFFER_NOT_THE_XENO_CODEX_DESCRIPTION
-    background: GSCBROODBG.SCR
+    background: GSCSPEECHBG.SCR
     timer: 2880
     timerRandom: 21600
     researchList: [STR_GENESTEALER_CULTS_DISCOVERED]

@@ -1,5 +1,8 @@
 alienDeployments:
 
+# TODO: ADD "BUG HUNT" MISSIONS VS GSC, I.E ALTERNATE UNDERHIVE MAPS.
+
+
   - type: STR_GENE_HIVE_SLAANESH
     data:
       - alienRank: 5
@@ -159,7 +162,7 @@ alienDeployments:
     script: HIVE_SCRIPT
     briefing:
       desc: STR_GENE_HIVE_BRIEFING_SLAANESH
-      music: gmstory2
+      music: GMTACTIC19
       showCraft: true
       showTarget: false
       background: GSCTEMPLEBG2.SCR

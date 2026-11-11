@@ -258,6 +258,7 @@ missionScripts:
     executionOdds: 25  # 25% chance of firing every month until month 7
     researchTriggers:
       STR_GENESTEALER_CULTS_DISCOVERED: true
+      STR_SLAANESHPATH: true
 
 
  ### MONTHLY MISSIONS

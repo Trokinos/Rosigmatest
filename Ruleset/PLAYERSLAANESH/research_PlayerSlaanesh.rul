@@ -106,11 +106,31 @@ research:
       - STR_GENERALLOCK
     cost: 0
 
+
+ ############### SECTION FOR STORYLINE & PROGRESSION TRIGGER TECHS #################
+
+
   - name: STR_GENESTEALER_CULTS_DISCOVERED # Alternate trigger for genestealer activity.
+    cost: 0
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_UNDERHIVE_NOT_CONVERTED
+    cost: 0
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_UNDERHIVE_CONVERTED # This tech is meant to increase an arcscript counter, as well as enable positive random events.
+    cost: 0
     dependencies:
       - STR_GENERALLOCK
 
   - name: STR_TIER_0_WEAPON_PRODUCTION
+    cost: 0
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_HIVE_GANGER_RECRUITMENT
     cost: 0
     dependencies:
       - STR_GENERALLOCK
@@ -465,27 +485,24 @@ research:
     points: 30
     dependencies:
       - STR_PATH_OF_PERFECTION
+    unlocks:
+      - STR_UNDERHIVE_NOT_CONVERTED
+      - STR_HIVE_GANGER_RECRUITMENT
 
-  - name: STR_SUFFER_NOT_THE_XENO
-    cost: 50
-    points: 30
+  - name: STR_UNDERHIVE_CULT_TOKEN
+    lookup: STR_UNDERHIVE_CONVERTED
+    cost: 20
+    points: 100
     dependencies:
       - STR_WAR_FOR_THE_UNDERHIVE
-      - STR_GENERALLOCK
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_UNDERHIVE_CONVERTED
+    disables:
+      - STR_UNDERHIVE_NOT_CONVERTED
 
-  - name: STR_BLEEDING_THE_BLOOD_GOD
-    cost: 50
-    points: 30
-    dependencies:
-      - STR_WAR_FOR_THE_UNDERHIVE
-      - STR_GENERALLOCK
 
-  - name: BRINGING_THEM_TO_HEEL
-    cost: 50
-    points: 30
-    dependencies:
-      - STR_WAR_FOR_THE_UNDERHIVE
-      - STR_GENERALLOCK
 
   - name: STR_AGAINST_THE_ECCLESIARCHY
     cost: 80

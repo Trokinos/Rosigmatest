@@ -23,7 +23,7 @@ manufacture:
     points: 200
 
   - &STR_CRAFT_LOOTED
-    name: REPAINT_LOOTED_VALKYRIE
+    name: STR_REPAINT_LOOTED_VALKYRIE
     category: STR_CRAFT
     requires:
       - STR_DEPOT_SUCCESSFULLY_RAIDED
@@ -35,15 +35,26 @@ manufacture:
     producedItems:
       STR_VALKYRIE_SLAANESH: 1
 
-  - name: REPAINT_LOOTED_CHIMERAS
+  - name: STR_REPAINT_LOOTED_CHIMERAS
     refNode: *STR_CRAFT_LOOTED
     producedItems:
       STR_CHIMERA_LIGHT_SLAANESH: 1
 
-  - name: REPAINT_LOOTED_LIGHTNING
+  - name: STR_REPAINT_LOOTED_LIGHTNING
     refNode: *STR_CRAFT_LOOTED
     producedItems:
       STR_LIGHTNING_INTERCEPTOR_SLAANESH: 1
+
+  - name: STR_SPREAD_TRUE_FAITH_UNDERHIVE
+    time: 5000
+    cost: 400000
+    requires:
+      - STR_WAR_FOR_THE_UNDERHIVE
+      - STR_UNDERHIVE_NOT_CONVERTED
+    producedItems:
+      STR_UNDERHIVE_CULT_TOKEN: 1
+      STR_SLAANESHPATH_PIETY: 200
+
 
 #  - name: STR_SLAANESHPATH_SORORITAS_TOKEN_MANUFACTURE
 #    category: STR_RITUALS_OF_SUBVERSION

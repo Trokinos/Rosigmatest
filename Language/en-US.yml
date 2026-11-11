@@ -2529,7 +2529,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_GATE_EVENT: "Homecoming"
   STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you all begin to remove the hated insignias of your previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
   STR_SUFFER_NOT_THE_XENO_EVENT: "Suffer not the Xeno"
-  STR_SUFFER_NOT_THE_XENO_CODEX_DESCRIPTION: "As your sisters move through the underhive, many report a constant sensation of being watched.{NEWLINE}{NEWLINE}A great many hours of investigation and prayer later, you uncover the truth: a strain of predatory xenos have made the deeper sublevels their home. Under no circumstances can their abominable presence be tolerated. The only fate for such xenos is an excruciating death."
+  STR_SUFFER_NOT_THE_XENO_CODEX_DESCRIPTION: "Moving through the underhive, many sisters report a constant sensation of being watched.{NEWLINE}{NEWLINE}After much investigation and prayer, you uncover the truth: the hive is home to a malignant strain of xenos with an eerie ability to blend in with the human population! Under no circumstances can their blasphemous presence be tolerated. The only fate for such abominations is an excruciating death!"
 
   STR_SLAANESHPATH_INTRO_B_EVENT: "The Old Bunker"
   STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker entrance well-hidden; you wouldn't have found it if someone hadn't guided your steps.{NEWLINE}{NEWLINE}Unfortunately, while the Vox array is truly impressive, the interfacing cogitator is non-functional. But maintenance drills in the snow were a common punishment at your Schola; you think you can manage at least basic repairs. As your old Drill-Abbess put it: the Emperor will never deign to help those who can't help themselves."
@@ -2550,13 +2550,12 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have helped introduce you to Pelega's black markets. And with order deteriorating, those market are booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future killers.{NEWLINE}{NEWLINE}An absurd situation, no doubt, but absurdity is the lifeblood of the Imperium."
   STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Wars are won by two things, and by two things alone. The man bereft of faith is a shell; the bolter bereft of ammunition is a lump of metal. Hoping to prove their usefulness, the hivers have have reached out to old contacts on your behalf. The thought of using the shoddy ammunition povided by these “Ammo-Jacks” is unpleasant, but it may be a necessary expedient. Yet the Angel already whispers of a better solution..."
   STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}“When those who have nothing hold firm to faith, those who hold riches soon find their true poverty revealed to them.”{NEWLINE}{NEWLINE}Words spoken in service of a lie may still contain truth. Today you lack for everything, including vehicles. Yet your privation is joyful, even holy: for the faithless have plenty of vehicles in their depots, and your sisters are eager to begin their chastisement."
-  STR_PATH_OF_PERFECTION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Yesterday, we obeyed tyrants and bent our necks before the throne of lies. Today we kneel only to truth; we give our worship only to true divinity. The Angel who freed us spent much of his power to do so. Trapped below the earth, He is unable to forestall the calamities to come. It falls to us to take up sword and bolter. A new dawn is coming, and we are the first rays of sun."
+  STR_PATH_OF_PERFECTION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Yesterday, we obeyed tyrants and bent our necks before the throne of lies. Today we kneel only to truth; we give our worship only to true divinity. The Angel who freed us spent much of his power in doing so. Trapped below the earth, He cannot forestall the calamities ahead.{NEWLINE}{NEWLINE}It now falls to us to take up sword and bolter. A new dawn is coming, and we are the first rays of sun."
   STR_WEAPON_CONSECRATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}The Prince of Perfection is generous beyond compare; in his benevolence, he extends his touch to the faithful and the uninitiated alike. But we must strive to become ever more devoted servants, that we may one day be worthy of further gifts still. By channeling the power of our faith, the profane tools of this decrepit Imperium will one day be reborn and reawakened, just as we were."
   STR_IMMACULATE_LASGUN_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}Though not technically encrypted, it has taken some time for us to understand the strange and haphazard scribblings within this data-crypt. It details various different efforts at modulating lasgun power output, including methods to charge power cells directly through the power of the Warp alone. Drawing upon these lessons, it should be possible for us to manufacture several types of tainted las weapons on our own."
   STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation and prayer, we finally have a partial understanding of the heretek research on plasma weaponry. Though the sections on infusing hydrogen with empyrean energies are much too esoteric for our adepts, the simpler schematics are still of direct use. We are now able to manufacture basic plasma weaponry without outside assistance."
 
-  STR_OUR_CRUSADE: "{NEWLINE}{NEWLINE}Yesterday we obeyed tyrants and bent our necks before a throne of lies. Today we kneel only to truth and give our worship only to true divinity. The Angel who freed us spent much of his power to do so; trapped below the earth, He is unable to forestall the calamities to come. It now falls to us to take up sword and bolter, for we are the first rays of sun in the coming dawn."
-  STR_WAR_FOR_THE_UNDERHIVE: "{NEWLINE}{NEWLINE}The destiny of everyone on this planet is to one day serve the True Faith: either as willing supplicants, or as sacrifices upon the altar. That is the nature of the great mission that we have been entrusted with. But true greatness must always begin from humble foundations: it is among the downtrodden and forgotten masses of the underhives we must begin building our flock."
+  STR_WAR_FOR_THE_UNDERHIVE_UFOPEDIA: "{NEWLINE}{NEWLINE}The destiny of everyone on this planet is to one day serve the True Faith: either as willing supplicants, or as sacrifices. That is the nature of the great mission that we have been entrusted with. But true greatness must always begin from humble foundations: it is among the downtrodden and forgotten masses of the underhives we will first gather our flock."
 
 
   STR_VOICE_UFOPEDIA_TITLE: "The Angel's Voice"
@@ -2661,10 +2660,13 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_TIER_0_WEAPON_PRODUCTION: "(Tier 0 Weapon Production)"
   STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
   STR_GENESTEALER_CULTS_DISCOVERED: "(Genestealer Cults Discovered)"
+  STR_UNDERHIVE_NOT_CONVERTED: "(Underhive Not Converted)"
+  STR_UNDERHIVE_CONVERTED: "(Underhive Converted)"
+  STR_HIVE_GANGER_RECRUITMENT: "Hive Ganger Recruitment"
 
   STR_OUR_HOLY_MISSION: "Our Holy Crusade"
   STR_WAR_FOR_THE_UNDERHIVE: "War for the Underhive"
-  STR_SUFFER_NOT_THE_XENO: "Suffer not the Xeno"
+  STR_SUFFER_NOT_THE_XENO: "Suffer Not the Xeno"
   STR_KILL_THE_ENFORCERS: "Kill the Enforcers"
 
   STR_AGAINST_THE_ECCLESIARCHY: "The Ministorum of Lies"
@@ -2773,9 +2775,9 @@ en-US: #  yamllint disable-line rule:empty-values
 
 #Slaanesh crafts
 
-  REPAINT_LOOTED_VALKYRIE: "Refurbish PDF Valkyrie"
-  REPAINT_LOOTED_CHIMERAS: "Refurbish PDF Light Chimeras"
-  REPAINT_LOOTED_LIGHTNING: "Refurbish PDF Lightning Interceptor"
+  STR_REPAINT_LOOTED_VALKYRIE: "Refurbish PDF Valkyrie"
+  STR_REPAINT_LOOTED_CHIMERAS: "Refurbish PDF Light Chimera"
+  STR_REPAINT_LOOTED_LIGHTNING: "Refurbish PDF Lightning Interceptor"
 
   STR_CHIMERA_LIGHT_SLAANESH: "Immaculate Light Chimeras"
   STR_LIGHTNING_INTERCEPTOR_SLAANESH: "Immaculate Lightning Interceptor"
@@ -2784,7 +2786,9 @@ en-US: #  yamllint disable-line rule:empty-values
 #PLOT ITEMS AND TOKENS
   STR_SLAANESHPATH_PIETY: "Piety"
   STR_SLAANESHPATH_BOON: "Boon of Slaanesh"
-  STR_SLAANESHPATH_WARPSTONE_TRIBUTE: "Warpstone Tribute"
+  STR_SPREAD_TRUE_FAITH_UNDERHIVE: "Proselytize the Underhive"
+  STR_UNDERHIVE_CULT_TOKEN: "Underhive Cultist Ledger"
+
   STR_SLAANESHPATH_SORORITAS_TOKEN: "Sororitas Reconnaissance Data"
   STR_SLAANESHPATH_PDF_TOKEN: "PDF Contact Ledger"
   STR_SLAANESHPATH_MINOR_MISSION_BOUNTY: "Minor Boon of Slaanesh"

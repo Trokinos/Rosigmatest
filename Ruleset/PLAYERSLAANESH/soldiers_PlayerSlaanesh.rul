@@ -396,7 +396,6 @@ soldiers:
  #MY
   - type: STR_SLAANESHPATH_MYSTES # Handmaiden Mystes; a Mystagogue in training. Wields relics and can inspire other novices.
     flagOffset: 21 # FIX LATER
-    costBuy: 20000  # Placeholder - Not meant to be purchased directly.
     costSalary: 20000 # Expensive, elite unit.
     requires: ### >Remove this later.< ###
       - STR_GENERALLOCK
@@ -708,10 +707,7 @@ soldiers:
 
   - type: STR_SLAANESHPATH_CHIRURGEON  # Tier 1 ELITE units. A mix between Novitiate superiors, death cultists, and medicae.
     flagOffset: 21 # !!! need to fix this later !!!
-    costBuy: 20000  # Not meant to be purchased directly.
     costSalary: 40000 # VERY expensive.
-    requires: ### >Remove this later.< ###
-      - STR_SLAANESHPATH_GATE
     minStats:
       tu: 65 # Slaanesh Influence
       stamina: 70 # 5 Slaanesh influence
@@ -867,7 +863,7 @@ soldiers:
     costBuy: 17000
     costSalary: 5000
     requires:
-      - STR_WAR_FOR_THE_UNDERHIVE # PLACEHOLDER
+      - STR_HIVE_GANGER_RECRUITMENT
     minStats:  # Steel legion stat equivalents, more expensive.
       tu: 55 # +5
       stamina: 50
@@ -944,7 +940,7 @@ soldiers:
 
   - type: STR_SLAANESHPATH_JUICED_CULTIST
     requires:
-      - STR_SLAANESHPATH # Placeholder
+      - STR_GENERALLOCK # Placeholder
     flagOffset: 42
     armor: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR
     costSalary: 15000
