@@ -488,6 +488,8 @@ research:
     unlocks:
       - STR_UNDERHIVE_NOT_CONVERTED
       - STR_HIVE_GANGER_RECRUITMENT
+    spawnedItem: STR_SLAANESHPATH_BOON
+    spawnedItemCount: 1
 
   - name: STR_UNDERHIVE_CULT_TOKEN
     lookup: STR_UNDERHIVE_CONVERTED
@@ -501,7 +503,8 @@ research:
       - STR_UNDERHIVE_CONVERTED
     disables:
       - STR_UNDERHIVE_NOT_CONVERTED
-
+    spawnedItem: STR_SLAANESHPATH_BOON
+    spawnedItemCount: 2
 
 
   - name: STR_AGAINST_THE_ECCLESIARCHY

@@ -503,6 +503,25 @@ items:
       - STR_LIGHT_BOLTER_AMMO_SLAAN
       - STR_LIGHT_BOLTER_AMMO_BM
 
+  - type: STR_BOLTER_DEAZ_SLAAN_SCOPED # DMR rifle.
+    battleType: 1
+    bigSprite: {mod: 40k, index: 550}
+    floorSprite: {mod: 40k, index: 1}
+    handSprite: {mod: 40k, index: 1496}
+    fireSound: {mod: 40k, index: 707}
+    bulletSprite: {mod: 40k, index: 6}
+    bulletSpeed: 30
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    armor: 150
+    compatibleAmmo:
+      - STR_LIGHT_BOLTER_AMMO
+      - STR_LIGHT_BOLTER_AMMO_MC
+      - STR_LIGHT_BOLTER_AMMO_SLAAN
+      - STR_LIGHT_BOLTER_AMMO_BM
+
+
   - type: STR_BOLTER_ARACHNE # COMBI WEBBER DEAZ - FIX ART ASSETS
     battleType: 1
     bigSprite: {mod: 40k, index: 550}
