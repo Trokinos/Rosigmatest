@@ -23,8 +23,7 @@ adhocScripts:
   - type: adhocStarterBaseSlaaneeshCultist_Eldar
     missionWeights:
       0:
-        # STR_SLAANESH_ABBEY_SCALING_GV: 100
-        STR_TS_CULTIST_BASE_GV: 100
+        STR_TS_CULTIST_BASE_START_ELDAR: 100
     regionWeights:
       0:
         STR_NORTH_AMERICA: 18

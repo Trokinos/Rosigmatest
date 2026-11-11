@@ -15,12 +15,12 @@ alienMissions:
     retaliationOdds: 0
     raceWeights:
       0:
-        STR_SLAANESH_CULT_EARLY: 100 # todo: add slaanesh variants
-    operationType: 0
-    operationSpawnZone: 0
+        STR_SLAANESH_CULT_EARLY: 100 # todo: add slaanesh cultist variant list for eldars mixing cultist and eldars
     operationBaseType: STR_CULTIST_BASE_START
-    objective: 2
     siteType: STR_CULTIST_BASE_START
+    operationType: 3 # Only creates a new base if the region doesn't have one
+    operationSpawnZone: 4
+    objective: 2
     points: 0
 
   - type: STR_TS_GANGER_BASE_START_ELDAR
@@ -33,7 +33,14 @@ alienMissions:
     operationBaseType: STR_GANGER_BASE_CHAOSCORRUPTED
     objective: 2
     siteType: STR_GANGER_BASE_CHAOSCORRUPTED
+    spawnZone: 0
     points: 0
+    waves:
+      - ufo: STR_GANGERBASE_TRICK
+        count: 1
+        trajectory: DIRECT_TO_MISSION_SITE_TRAJECTORY
+        timer: 0
+        objective: true
 
   - type: STR_SLAANESH_BASE_ELDAR
     points: 50
