@@ -2687,10 +2687,13 @@ en-US: #  yamllint disable-line rule:empty-values
 
   ### MANUFACTURING PROJECTS - PROGRESSION
 
-  STR_PREPARE_SACRIFICE_SOLDIER_IG: "Prepare Guardsman for Sacrifice"
-  STR_PREPARE_SACRIFICE_FRATERIS_MILITIA: "Prepare Frateris Militia for Sacrifice"
+  STR_PREPARE_SACRIFICE_SOLDIER_IG: "Prepare Guardsman"
+  STR_PREPARE_SACRIFICE_FRATERIS_MILITIA: "Prepare Frateris Militia"
+  STR_PREPARE_SACRIFICE_NOVITIATE_SUPERIOR: "Prepare Novitiate Superior"
 
-  CORRUPT_NOVICE: "Corrupt Sororitas Novice"
+  CORRUPT_NOVICE: "Redeem Sororitas Novice"
+  STR_CORRUPT_MEDICAE: "Redeem Sororitas Medicae"
+  CORRUPT_REPENTIA: "Absolve Sister Repentia"
 
  #Piety projects & progression projects
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
@@ -2739,6 +2742,13 @@ en-US: #  yamllint disable-line rule:empty-values
  #################### UNITS #########################
 
  #### ENEMY UNITS
+
+  STR_ECCLESIARCHY_NOVICE: "Sororitas Novice"
+  STR_ECCLESIARCHY_CANTUS: "Sororitas Cantus"
+  STR_ECCLESIARCHY_MEDICAE: "Sororitas Medicae"
+  STR_ECCLESIARCHY_SISTER: "Sororitas Battle Sister"
+  STR_ECCLESIARCHY_ELOHIM: "Sororitas Elohim"
+
   STR_PDFTROOPER_LVL0_SLP: "PDF Conscript"
 
   STR_SLAANESHPATH_CATACOMB_CULTIST_LEADER: "Cultist Leader"
@@ -9662,6 +9672,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SHRINE_RETRIBUTOR_AI: "Retributor"
   STR_SHRINE_SUPERIOR_AI: "Sister Superior"
   STR_SHRINE_NOVITIATE_SUPERIOR_AI: "Novitiate Superior"
+  STR_ECCLESIARCHY_REPENTIA_AI: "Sister Repentia"
+  STR_ECCLESIARCHY_NOVITIATE_SUPERIOR_AI: "Novitiate Superior"
   STR_GK_DREAD_AI_UNIT: "Aegis Dreadnought"
   STR_GK_DREAD_ARMOR_AI: "Aegis Dreadnought"
 

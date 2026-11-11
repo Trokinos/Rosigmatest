@@ -40,9 +40,10 @@ items:
     recover: true
     hiddenOnMinimap: true
 
-#PROMOTION ARMOR TOKENS
+# LOOTABLE ARMOR TOKENS
 
-  - type: STR_SLAANESHPATH_ADEPTAS_INVENTORYTOKEN
+  - &STR_ARMOR_TOKEN
+    type: STR_NOVICE_ARMORTOKEN
     battleType: 6
     invWidth: 0
     invHeight: 0
@@ -50,7 +51,20 @@ items:
     recover: true
     hiddenOnMinimap: true
     recoveryTransformations:
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 50, 35, 15]
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 50, 40, 10]
+
+  - type: STR_CANTUS_ARMORTOKEN
+    refNode: *STR_ARMOR_TOKEN
+    recoveryTransformations:
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 40, 45, 10, 5]
+
+  - type: STR_SISTER_ARMORTOKEN
+    refNode: *STR_ARMOR_TOKEN
+    recoveryTransformations:
+      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 0, 30, 30, 30]
+
+
+
 
   - type: STR_SLAANESHPATH_MILITE_ARMOR_STOREITEM
     size: 0.2

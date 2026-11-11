@@ -599,6 +599,18 @@ items:  # Geoscape items representing genericized live aliens
     liveAlien: true
     costSell: 15000
 
+  ## Ecclesiarchy Adeptas Sororitas
+  - type: STR_ECCLESIARCHY_REPENTIA_AI # Only available during the Slaanesh strategy.
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 5000
+  - type: STR_ECCLESIARCHY_NOVITIATE_SUPERIOR_AI
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 20000
+
   ## Redemptionists
   - type: STR_REDEMPTIONIST_T0_GV # Redemptionist T1
     refNode: *STR_LIVE_CAPTURE_GENERIC

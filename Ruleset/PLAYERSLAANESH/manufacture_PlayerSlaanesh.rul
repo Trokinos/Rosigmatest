@@ -83,7 +83,7 @@ manufacture:
   - name: STR_REQUEST_BOON
     category: STR_RITES_OF_EXCESS
     requires:
-      - STR_PATH_OF_PERFECTION #Placeholder
+      - STR_SACRIFICIAL_RITUALS #Placeholder
     requiresBaseFunc: [ALTAR]
     space: 0
     time: 20

@@ -19,19 +19,62 @@ manufacture:
     requiredItems:
       STR_FRATERIS_MILITIA_AI: 1
 
+  - name: STR_PREPARE_SACRIFICE_NOVITIATE_SUPERIOR
+    refNode: *STR_SACRIFICE_TEMPLATE
+    time: 400
+    producedItems:
+      STR_ALIEN_SURGERY: 1
+      STR_SLAANESHPATH_PIETY: 100
+    requiredItems:
+      STR_FRATERIS_MILITIA_AI: 1
 
-  - &STR_CORRUPT_TEMPLATE
-    name: CORRUPT_NOVICE
+
+  - &STR_CORRUPT_TEMPLATE # Elohim, Seprahim & above will require special research.
+    name: STR_CORRUPT_NOVICE
     requiresBaseFunc: [ALTAR]
     category: STR_RITES_OF_DEPRAVITY
     requires:
       - STR_OUR_FOOLISH_COUSINS
     space: 0
-    time: 300
+    time: 200
     cost: 6000
     producedItems:
-      STR_SLAANESHPATH_PIETY: 40
+      STR_SLAANESHPATH_PIETY: 30
     spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
       STR_SHRINE_NOVICE_AI: 1
-      STR_ALIEN_FOOD: 3
+
+  - name: STR_CORRUPT_MEDICAE
+    refNode: *STR_CORRUPT_TEMPLATE
+    spawnedPersonType: STR_SLAANESHPATH_VIVISECTIONIST
+    time: 500
+    cost: 15000
+    requiredItems:
+      STR_SHRINE_MEDICAE_AI: 1
+
+  - name: STR_CORRUPT_REPENTIA
+    refNode: *STR_CORRUPT_TEMPLATE
+    spawnedPersonType: STR_SLAANESHPATH_MILITANT
+    time: 600
+    producedItems:
+      STR_SLAANESHPATH_PIETY: 60
+    requiredItems:
+      STR_ECCLESIARCHY_REPENTIA_AI: 1
+
+
+  - &STR_WARPSTONE_CORRUPT_TEMPLATE # Elohim, Seprahim & above will require special research.
+    name: STR_CORRUPT_ELOHIM
+    requiresBaseFunc: [ALTAR]
+    category: STR_RITES_OF_DEPRAVITY
+    requires:
+      - STR_OUR_FOOLISH_COUSINS
+      - STR_GENERALLOCK
+    space: 0
+    time: 1000
+    cost: 30000
+    producedItems:
+      STR_SLAANESHPATH_PIETY: 80
+    spawnedPersonType: STR_SLAANESHPATH_IMMACULATE_SISTER
+    requiredItems:
+      STR_SHRINE_ELOHIM_AI: 1
+      STR_ALIEN_FOOD: 6
