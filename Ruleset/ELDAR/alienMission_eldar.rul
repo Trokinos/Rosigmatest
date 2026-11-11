@@ -16,7 +16,7 @@ alienMissions:
     raceWeights:
       0:
         STR_SLAANESH_CULT_EARLY: 100 # todo: add slaanesh variants
-    operationType: 3 # Only creates a new base if the region doesn't have one
+    operationType: 0
     operationSpawnZone: 0
     operationBaseType: STR_CULTIST_BASE_START
     objective: 2
@@ -27,12 +27,12 @@ alienMissions:
     retaliationOdds: 0
     raceWeights:
       0:
-        STR_SLAANESH_CORRUPTED_GANGERS: 100 # todo: add slaanesh variants
-    operationType: 3 # Only creates a new base if the region doesn't have one
+        STR_SLAANESH_CORRUPTED_GANGERS: 100 # todo: add variants
+    operationType: 0
     operationSpawnZone: 0
-    operationBaseType: STR_GANGER_BASE_CHAOSCORRUPTED  # todo: change to ganger base
+    operationBaseType: STR_GANGER_BASE_CHAOSCORRUPTED
     objective: 2
-    siteType: STR_GANGER_BASE_CHAOSCORRUPTED # todo: change to ganger base
+    siteType: STR_GANGER_BASE_CHAOSCORRUPTED
     points: 0
 
   - type: STR_SLAANESH_BASE_ELDAR
@@ -57,3 +57,162 @@ alienMissions:
         count: 1
         trajectory: P7
         timer: 60
+
+  - type: STR_ALIEN_ARTIFACT_ELDAR  # SPACE HULK
+    raceWeights:
+      0:
+        STR_GSC_SPACEHULK_EARLY: 25
+        STR_ORK_SPACEHULK_CREW: 25
+        STR_TYRANID: 5
+        STR_ORK_DEATHSKULLS_SPACEHULK: 5
+        STR_HRUD_EARLY_FORCE: 10
+        STR_SNAKEMAN_DESERTERS_WITH_HRUD: 5
+        STR_WORDBEARERS_EARLY: 2
+        STR_IMPERIAL_PDF_LIST: 5
+        STR_IGOPFOR_TIER0: 2
+        STR_IGOPFOR_TIER0PLUS: 3
+        STR_TAUGUEVESATIER1: 5
+        STR_TAUFIREWARRIORS_EARLY: 2
+        STR_BASIC_GANGERS: 5
+      3:
+        STR_GSC_SPACEHULK_EARLY: 15
+        STR_GSC_SPACEHULK_MID: 15
+        STR_TYRANID: 15
+        STR_ORK_SPACEHULK_CREW: 15
+        STR_ORK_DEATHSKULLS_SPACEHULK: 10
+        STR_HRUD_WARRIOR_FORCE: 2
+        STR_VERMIN_FANG_FORCE: 3
+        STR_WORDBEARERS_EARLY: 5
+        STR_TAUGUEVESATIER2: 5
+        STR_TAUFIREWARRIORS_EARLY: 5
+        STR_TAUFIREWARRIORS_MID: 5
+        STR_IGOPFOR_ABHUMAN_TIER0PLUS: 5
+        STR_SLEGOPFOR_TIER1: 5
+      5:
+        STR_GSC_SPACEHULK_MID: 50
+        STR_GSC_SPACEHULK_LATE: 25
+        STR_ORK_SPACEHULK_CREW: 10
+        STR_TYRANID: 25
+        STR_ORK_DEATHSKULLS_SPACEHULK: 10
+        STR_HRUD_WARRIOR_FORCE: 5
+        STR_VERMIN_FANG_FORCE: 5
+        STR_WORDBEARERS_MID: 5
+        STR_IGOPFOR_TIER1: 5
+        STR_SLEGOPFOR_TIER1: 5
+        STR_SMOPFOR_TIER0PLUS: 5
+        STR_BTANDFIERYHEART_OPFOR_TIER0: 5
+      7:
+        STR_GSC_SPACEHULK_MID: 15
+        STR_GSC_SPACEHULK_LATE: 15
+        STR_TYRANID: 25
+        STR_ORK_SPACEHULK_CREW: 10
+        STR_ORK_DEATHSKULLS_SPACEHULK: 15
+        STR_HRUD_WARRIOR_FORCE: 5
+        STR_VERMIN_FANG_FORCE: 5
+        STR_WORDBEARERS_MID: 5
+        STR_TAUGUEVESATIER2: 5
+        STR_TAUFIREWARRIORS_MID: 5
+        STR_TAUFIREWARRIORS_LATE: 5
+        STR_IGOPFOR_TIER2: 5
+        STR_SLMOPFOR_TIER1: 5
+        STR_DAOPFOR_TIER1: 5
+      9:
+        STR_GENE: 15
+        STR_GSC_SPACEHULK_LATE: 15
+        STR_TYRANID: 30
+        STR_ORK_DEATHSKULLS: 5
+        STR_RADICAL_SISTERS: 5
+        STR_ALPHA_LEGION_FALSE_FLAG: 2
+        STR_ALPHA_LEGION_FALSE_FLAG2GREYK: 1
+        STR_HRUD_WARRIOR_FORCE: 5
+        STR_VERMIN_FANG_FORCE: 5
+        STR_NIGHTLORDS_RACELIST: 5
+        STR_ALPHA_DAEMONETTE_FORCE: 3
+        STR_ALPHA_DAEMONETTE_FORCE_REAL: 3
+        STR_ALPHA_COMMANDO_RAID: 3
+        STR_WORDBEARERS_LATE: 5
+        STR_TAUFIREWARRIORS_MID: 5
+        STR_TAUFIREWARRIORS_LATE: 5
+        STR_TAU_RETALIATION_CADRE: 2
+        STR_FIERYHOPFOR_TIER2: 5
+        STR_CFOPFOR_TIER1: 5
+      11:
+        STR_GENE: 25
+        STR_GSC_SPACEHULK_LATE: 50
+        STR_TYRANID: 25
+        STR_NIGHTLORDS_RACELIST: 1
+        STR_NIGHTLORDS_RACELIST_ELITE: 5
+        STR_RADICAL_SISTERS: 5
+        STR_ALPHA_LEGION_FALSE_FLAG2GREYK: 2
+        STR_ALPHA_COMMANDO_RAID: 10
+        STR_ALPHA_DAEMONETTE_FORCE: 1
+        STR_ALPHA_DAEMONETTE_FORCE_REAL: 1
+        STR_WORDBEARERS_LATE: 5 #i really want to put legion of the damned here instead of WB
+        STR_TAUFIREWARRIORS_LATE: 5
+        STR_TAU_RETALIATION_CADRE: 5
+        STR_SWOPFOR_TIER2: 5
+        STR_CFOPFOR_TIER2: 5
+        STR_NECRON_EARLY: 2 #one of those list that makes you say NO in late game
+    points: 10
+    objective: 3
+    spawnZone: 0
+    waves:
+      - ufo: STR_ARTIFACT_SITE_P1 # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true
+
+  - type: STR_ALIENER_ARTIFACT_ELDAR
+    points: 0
+    objective: 2
+    spawnZone: 0
+    retaliationOdds: 0
+    operationType: 0
+    siteType: STR_SPACERHULKER_SITE_P1
+    showAlienBase: true
+    raceWeights:
+      0:
+        STR_HULKER_GENESTEALER_LIST: 30
+        STR_HULKER_ORK_LIST: 10
+        STR_HULKER_KHORNE_LIST: 10
+        STR_HULKER_NURGLE_LIST: 10
+        STR_HULKER_SLAANESH_LIST: 10
+        STR_HULKER_TZEENTCH_LIST: 10
+        STR_HULKER_HRUD_WARRIOR_FORCE_LIST: 10
+        STR_HULKER_BLACKSTONE_STORMTROOPERS_LIST: 10
+        STR_IGOPFOR_ABHUMAN_TIER0PLUS: 5
+      3:
+        STR_HULKER_GENESTEALER_LIST: 30
+        STR_HULKER_ORK_LIST: 10
+        STR_HULKER_KHORNE_LIST: 10
+        STR_HULKER_NURGLE_LIST: 10
+        STR_HULKER_SLAANESH_LIST: 10
+        STR_HULKER_TZEENTCH_LIST: 10
+        STR_HULKER_HRUD_WARRIOR_FORCE_LIST: 10
+        STR_HULKER_BLACKSTONE_STORMTROOPERS_LIST: 10
+        STR_SLEGOPFOR_TIER1: 5
+        STR_CFOPFOR_TIER0: 5
+        STR_SWOPFOR_TIER0: 5
+        STR_TAUFIREWARRIORS_EARLY: 5
+        STR_FIERYHOPFOR_TIER0: 5
+      5:
+        STR_HULKER_GENESTEALER_LIST: 30
+        STR_HULKER_ORK_LIST: 10
+        STR_HULKER_KHORNE_LIST: 10
+        STR_HULKER_NURGLE_LIST: 10
+        STR_HULKER_SLAANESH_LIST: 10
+        STR_HULKER_TZEENTCH_LIST: 10
+        STR_HULKER_HRUD_WARRIOR_FORCE_LIST: 10
+        STR_HULKER_BLACKSTONE_STORMTROOPERS_LIST: 10
+        STR_CFOPFOR_TIER1: 5
+        STR_SWOPFOR_TIER1: 5
+        STR_TAUFIREWARRIORS_MID: 5
+        STR_FIERYHOPFOR_TIER1: 5
+        STR_IGOPFOR_TIER2: 2
+        STR_SLEGOPFOR_TIER2: 5
+    waves:
+      - ufo: STR_WARPED_TRICK  # ufo does not exist so game skips to mission site creation
+        count: 1
+        trajectory: P10
+        timer: 0

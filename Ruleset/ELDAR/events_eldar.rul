@@ -39,7 +39,7 @@ adhocScripts:
         STR_SIBERIA: 10
         STR_AUSTRALASIA: 10
     useTable: false
-    startDelay: 20080  # 2-3 weeks
+    startDelay: 60
     randomDelay: 10040
     adhocMissionScriptTags: ["adhocStarterBaseSlaan_eldar"]
 
@@ -61,7 +61,7 @@ adhocScripts:
         STR_SIBERIA: 10
         STR_AUSTRALASIA: 10
     useTable: false
-    startDelay: 20080  # 2-3 weeks
+    startDelay: 60
     randomDelay: 10040
     adhocMissionScriptTags: ["adhocStarterBaseGangers_eldar_Tag"]
 
@@ -70,7 +70,6 @@ events:
     description: STR_ELDAR_ASURYANI_CAMPAING_START_SHORT_DESCRIPTION
     background: ELDAR_GUARDIAN_ASSAULTING.SCR
     adhocMissionScriptTags: ["adhocStarterBaseSlaan_eldar", "adhocStarterBaseGangers_eldar_Tag"]
-    # adhocMissionScriptTags: ["intro_missions", "tenaxBaseL1", "PRINCEBISHOPBaseL1", "redeemedBaseL1"]
     spawnedPersons: 20
     spawnedPersonType: STR_ELDAR_GUARDIAN_PLAYER
     spawnedCraftType: STR_WAVESERPENT
@@ -99,6 +98,7 @@ events:
       STR_TRAUMA_PACK: 5
       STR_CRATED_HORNET: 1
     researchList: [STR_ELDAR_ASURYANI_CAMPAING_LETTER_RECEIVED]
+    interruptResearch: STR_NOT_ELDAR_STRATEGY
 
   - name: STR_ELDAR_MIDTIER_REINFORCEMENTS
     description: STR_ELDAR_MIDTIER_REINFORCEMENTS_DESCRIPTION #Temporary
@@ -107,6 +107,7 @@ events:
     spawnedPersonType: STR_ENGINEER
     everyMultiItemList:
       STR_ELDAR_CITIZEN: 125
+    interruptResearch: STR_NOT_ELDAR_STRATEGY
 
   - name: STR_ELDAR_HIGHTIER_REINFORCEMENTS
     description: STR_ELDAR_HIGHTIER_REINFORCEMENTS_DESCRIPTION #Temporary
@@ -115,6 +116,7 @@ events:
     spawnedPersonType: STR_ENGINEER
     everyMultiItemList:
       STR_ELDAR_CITIZEN: 125
+    interruptResearch: STR_NOT_ELDAR_STRATEGY
 
   - name: STR_SLAANESH_PALACE_ACTIVITY_DETECTED
     description: STR_SLAANESH_PALACE_ACTIVITY_DETECTED_DESCRIPTION
@@ -122,12 +124,14 @@ events:
     spawnedPersonType: STR_ELDAR_SEER_F
     spawnedPersons: 1
     researchList: [STR_SLAANESH_PALACE_ACTIVITY_DETECTED]
+    interruptResearch: STR_NOT_ELDAR_STRATEGY
 
   - name: STR_ELDAR_ASURYANI_CAMPAING_SLAANESH_PALACE_DEFEATED
     description: STR_ELDAR_ASURYANI_CAMPAING_SLAANESH_PALACE_DEFEATED_DEBRIEFING
     background: ELDAR_ASPECT_WARRIOR_ASSAULTING.SCR
     spawnedPersonType: STR_ELDAR_SEER_F
     researchList: [STR_ELDAR_ASURYANI_CAMPAING_SLAANESH_PALACE_DEFEATED]
+    interruptResearch: STR_NOT_ELDAR_STRATEGY
 
 ### intercept lone spawn events
   - name: STR_CHAOS_LONE_SERVITOR_EVENT

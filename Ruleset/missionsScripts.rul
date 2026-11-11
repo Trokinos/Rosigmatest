@@ -608,6 +608,7 @@ missionScripts:
       STR_EVEN_HARDER_MISSIONS: false
       STR_CHAPTER_PURITY: true
       STR_TAU_GUEVESA_GV: false
+      STR_ELDAR_ASURYANI_CAMPAING: false
   - type: warpStormBuilding
     refNode: *STR_NORMAL_MISSION_TABLE
     firstMonth: 3
@@ -694,6 +695,7 @@ missionScripts:
       STR_EVEN_HARDER_MISSIONS: false
       STR_CHAPTER_PURITY: true
       STR_TAU_GUEVESA_GV: false
+      STR_ELDAR_ASURYANI_CAMPAING: false
   - type: warpStormBuildingHard
     refNode: *STR_HARD_MISSION_TABLE
     firstMonth: 3
@@ -1859,6 +1861,7 @@ missionScripts:
       STR_HARDER_MISSIONS: false
       STR_NOT_SLAANESHPATH: true
       STR_NOT_TAU_EMPIRE_GV: true  # Gue'vesa have missions without Tau - can still fire month 0
+      STR_NOT_ELDAR_STRATEGY: true
       STR_EVEN_HARDER_MISSIONS: false
       STR_NOT_WORDBEARERS: true
 
@@ -1899,6 +1902,7 @@ missionScripts:
       STR_HARDER_MISSIONS: false
       STR_VALHALLAN_STRATEGY: true
       STR_NOT_TAU_EMPIRE_GV: true  # Gue'vesa have missions without Tau - can still fire month 0
+      STR_NOT_ELDAR_STRATEGY: true
       STR_EVEN_HARDER_MISSIONS: false
       STR_NOT_WORDBEARERS: true
 
@@ -1920,6 +1924,7 @@ missionScripts:
     researchTriggers:
       STR_EVEN_HARDER_MISSIONS: true
       STR_NOT_TAU_EMPIRE_GV: true  # Gue'vesa have missions without Tau - can still fire month 0
+      STR_NOT_ELDAR_STRATEGY: true
       STR_NOT_WORDBEARERS: true
 
   # Traitor Guard
@@ -2390,6 +2395,7 @@ missionScripts:
     researchTriggers:
       STR_NOT_CHAOSCULT: true
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_ELDAR_STRATEGY: true
       STR_NOT_SLAANESHPATH: true
     firstMonth: 1
     lastMonth: 4
@@ -2418,6 +2424,7 @@ missionScripts:
     startDelay: 10000
     researchTriggers:
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_ELDAR_STRATEGY: true
 
   - &SPACEHULK_ORK_BASE
     type: SPACEHULK_ORK_BASE_1
@@ -2434,6 +2441,7 @@ missionScripts:
       STR_SPACEHULK_ORK: true
       STR_SPACEHULK_FIRST: false
       STR_NOT_SLAANESHPATH: true
+      STR_NOT_ELDAR_STRATEGY: true
   - type: SPACEHULK_ORK_BASE_2
     refNode: *SPACEHULK_ORK_BASE
     missionWeights:
@@ -2926,6 +2934,7 @@ missionScripts:
     researchTriggers:
       STR_WARPED_VAULT: true
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_ELDAR_STRATEGY: true
     firstMonth: 0
     startDelay: 4320  # 3 days
     randomDelay: 4320  # additional random 0 to 3 days
@@ -2952,6 +2961,7 @@ missionScripts:
     varName: MARBOPrologue
     researchTriggers:
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_ELDAR_STRATEGY: true
       STR_IMPERIAL_GUARD_OPERATIONS: true
       STR_CATACHAN_GEN: true
       STR_NOT_MARINES: true
@@ -2973,6 +2983,7 @@ missionScripts:
     researchTriggers:
       STR_MARBO_ALPHA_DATA: true
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_ELDAR_STRATEGY: true
       STR_IMPERIAL_GUARD_OPERATIONS: true
       STR_CATACHAN_GEN: true
       STR_NOT_MARINES: true
@@ -3001,6 +3012,7 @@ missionScripts:
     researchTriggers:
       STR_MARBO_BETA_DATA: true
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_ELDAR_STRATEGY: true
       STR_IMPERIAL_GUARD_OPERATIONS: true
       STR_CATACHAN_GEN: true
       STR_NOT_MARINES: true
@@ -3029,6 +3041,7 @@ missionScripts:
     researchTriggers:
       STR_MARBO_GAMMA_DATA: true
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_ELDAR_STRATEGY: true
       STR_IMPERIAL_GUARD_OPERATIONS: true
       STR_CATACHAN_GEN: true
       STR_NOT_MARINES: true
@@ -3928,6 +3941,7 @@ missionScripts:
       STR_ALIENS_ONLY: true
       STR_CHAPTER_PURITY: false
       STR_NOT_TAU_EMPIRE_GV: true
+      STR_NOT_ELDAR_STRATEGY: true
       STR_NOT_CHAOSCULT: true
       STR_NOT_WORDBEARERS: true
       STR_NOT_SLAANESHPATH: true
