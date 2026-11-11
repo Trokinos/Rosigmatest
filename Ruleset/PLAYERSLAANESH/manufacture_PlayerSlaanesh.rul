@@ -357,9 +357,48 @@ manufacture:
 
 #WEAPON & AMMO MANUFACTURE
 
+  - name: STR_LASGUN_CLIP_TAINTED
+    category: STR_AMMO
+    requires:
+    - STR_IMMACULATE_LASGUN_TECHNOLOGY
+    space: 5
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_SLAANESHPATH_PIETY: 5
+    producedItems:
+      STR_LASGUN_CLIP_TAINTED: 10
+
+  - name: STR_CONVERT_LAS_BATTLERIFLE
+    category: STR_WEAPON
+    requires:
+    - STR_IMMACULATE_LASGUN_TECHNOLOGY
+    - STR_TIER_0_WEAPON_PRODUCTION
+    space: 5
+    time: 300
+    cost: 15000
+    producedItems:
+      STR_LAS_BATTLERIFLE_SLAAN: 1
+    requiredItems:
+      STR_LAS_BATTLERIFLE: 1
+      STR_SLAANESHPATH_PIETY: 15
+
+  - name: STR_CONVERT_LASCARBINE
+    category: STR_WEAPON
+    requires:
+    - STR_IMMACULATE_LASGUN_TECHNOLOGY
+    - STR_TIER_0_WEAPON_PRODUCTION
+    space: 5
+    time: 300
+    cost: 15000
+    producedItems:
+      STR_SLAANESHPATH_LASCARBINE: 1
+    requiredItems:
+      STR_LASCARBINE: 1
+      STR_SLAANESHPATH_PIETY: 15
 
 
-  - name: STR_PLASMA_CARBINE_SLAAN
+  - name: STR_PLASMA_CARBINE_SLAAN # TODO: SPLIT THIS INTO AN EXPENSIVE AND CHEAP RECIPE DEPENDING ON TECHNOLOGY TIER
     category: STR_WEAPON
     requires:
       - STR_IMMACULATE_PLASMA_TECHNOLOGY
@@ -371,6 +410,7 @@ manufacture:
       STR_ELERIUM_115: 4
     producedItems:
       STR_PLASMA_CARBINE_SLAAN: 1
+
   - name: STR_PLASMA_SPRAY_CLIP_SLAAN
     category: STR_AMMUNITION
     requires:

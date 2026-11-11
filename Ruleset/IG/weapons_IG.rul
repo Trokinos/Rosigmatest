@@ -6017,6 +6017,7 @@ items:
       - STR_BASIC_BALLISTICS_DEP
       - STR_LASER_WEAPONS
       - STR_NOT_TAU_EMPIRE_GV
+      - STR_NOT_SLAANESHPATH
     size: 0.3
     weight: 30  # light heavy stubber is 15, HB is 40, heavy plasma is 35, Rippergun is 50
     costBuy: 50000   #should be lower priced than their heavy bolter
@@ -6043,6 +6044,7 @@ items:
       - STR_BASIC_BALLISTICS_DEP
       - STR_LASER_WEAPONS
       - STR_NOT_TAU_EMPIRE_GV
+      - STR_NOT_SLAANESHPATH
     categories: [STR_CAT_AUTO]
     size: 0.1
     costBuy: 2500  # expensive special AP rounds, could maybe be manufactured for 1 adam per magazine

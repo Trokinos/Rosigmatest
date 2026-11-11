@@ -2658,6 +2658,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_IMMACULATE_LASGUN_TECHNOLOGY: "Decode Lasgun Data-crypt"
   STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
   STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
+  STR_TIER_0_WEAPON_PRODUCTION: "(Tier 0 Weapon Production)"
   STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
   STR_GENESTEALER_CULTS_DISCOVERED: "(Genestealer Cults Discovered)"
 
@@ -2719,6 +2720,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CORRUPT_ELOHIM_BOLTER: "Consecrate Elohim Bolter"
   STR_ATTACH_GL_TO_CANTUS: "Attach Launcher to Cantus Bolter"
   STR_ATTACH_WEBBER_TO_DEAZ: "Create Arachne Combi-bolter"
+  STR_CONVERT_LAS_BATTLERIFLE: "Convert Las Battle Rifle"
+  STR_CONVERT_LASCARBINE: "Convert Lascarbine"
   STR_REPAIR_ADEPTAS_ARMOR_COMPONENTS: "Repair Adeptas Armor Components"
   STR_FORGE_ADEPTAS_ARMOR_COMPONENTS: "Forge Adeptas Armor Components"
   STR_CREATE_IMMACULATE_TOKEN: "Create Immaculate Armor"
@@ -2805,7 +2808,10 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_AGRIPINAA_MKIX: "Agripinaa Mk. IX Autogun"
   STR_AGRIPINAA_MKIXB: "Agripinaa Mk. IX (Scoped)"
-  STR_GRAIA_MKVII: "Graia Mk. VII Headhunter Autogun"
+  STR_GRAIA_MKVII: "Graia Mk. VII Autogun"
+
+  STR_LAS_BATTLERIFLE_SLAAN: "Slaanesh Marksman Lasrifle"
+  STR_SLAANESHPATH_LASCARBINE: "Slaanesh Assault Lascarbine"
 
   STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
   STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
@@ -2826,6 +2832,12 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_EVISCERATOR_SLAAN: "Immaculate Eviscerator"
 
   ### AMMO
+
+
+  STR_LASGUN_CLIP_TAINTED: "Tainted Lasgun Ammo"
+
+  STR_PLASMA_SPRAY_CLIP_SLAAN: "Slaanesh Light Plasma Charge"
+
   STR_LIGHT_MELTA_AMMO_SLAAN: "Slaanesh Light Melta Ammo"
   STR_CANTUS_BOLTER_AMMO_PENETRATOR: "Cantus Penetrator Magazine"
   STR_CANTUS_BOLTER_AMMO_SHRED: "Cantus Shredder Magazine"

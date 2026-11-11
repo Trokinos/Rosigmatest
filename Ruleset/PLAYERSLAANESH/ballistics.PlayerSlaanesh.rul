@@ -315,6 +315,30 @@ items:
       ITEM_FIRING_SPRITE: 6001 # PLACEHOLDER?
 
 
+  - type: STR_SLAANESHPATH_LASCARBINE
+    dropoff: 5
+    snapRange: 13  # actually autoRange
+    autoRange: 8
+    aimRange: 0
+
+    accuracySnap: 65  # 40k 70
+    accuracyAuto: 50  # 40k 50
+    accuracyAimed: 0
+
+    tuAuto: 30  # 40k 34; slightly faster to fire as a carbine
+    tuSnap: 25  # 40k 22; slightly faster to fire as a carbine
+    tuAimed: 0
+
+    oneHandedPenalty: 66 # compact
+
+    autoShots: 4
+    confSnap:
+      shots: 2
+      name: STR_BURST_DOUBLE_TAP
+
+    tags:
+      REACTION_MULTIPLIER: 150  # carbine
+
 #PC
   - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az.
     dropoff: 6

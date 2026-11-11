@@ -1073,6 +1073,7 @@ manufacture:
     requires:
       - STR_LASER_WEAPONS
       - STR_ALIENS_ONLY
+      - STR_NOT_SLAANESHPATH
     space: 0
     time: 200
     cost: 500

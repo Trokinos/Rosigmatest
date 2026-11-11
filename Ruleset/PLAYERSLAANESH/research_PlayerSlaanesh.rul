@@ -89,6 +89,8 @@ research:
       - STR_COMBAT_SERVITOR_PROGRAM # In the eyes of Slaanesh, lobotomizing soldiers ruins all the fun.
       - STR_PHOSPHOR_GRENADE # Replaced by balefire grenades.
       - STR_MELTAGUN_TECH # This faction gets its own alternative melta weaponry.
+      - STR_LIGHT_MELTAGUN_TECH
+      - STR_LASCAN_TECH
     ############## DISABLED CHAOS-RELATED TECHS GO HERE #########
       - STR_ALIEN_SURGERY # Followers of Slaanesh do not need to research chaos implements normally
       - STR_ALIEN_FOOD # Followers of Slaanesh do not need to research chaos implements normally
@@ -105,6 +107,11 @@ research:
     cost: 0
 
   - name: STR_GENESTEALER_CULTS_DISCOVERED # Alternate trigger for genestealer activity.
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_TIER_0_WEAPON_PRODUCTION
+    cost: 0
     dependencies:
       - STR_GENERALLOCK
 
@@ -164,13 +171,15 @@ research:
 
 
   - name: STR_CONTACT_ARMS_SMUGGLERS # Codex entry.
-    cost: 50
+    cost: 100
     points: 20
     dependencies:
       - STR_SLAANESHPATH_GATE
     unlocks:
       - STR_MARKSMAN_AUTOGUNS
       - STR_BASIC_BALLISTICS_DEP
+    getOneFree:
+      - STR_LASER_WEAPONS
 
   - name: STR_BLACK_MARKET_AMMUNITION # Codex Entry.
     cost: 50
@@ -249,6 +258,7 @@ research:
       - STR_BLACK_MARKET_AMMUNITION
     unlocks:
       - STR_HERETEK_TRIBUTE_PRODUCTION
+      - STR_TIER_0_WEAPON_PRODUCTION
     getOneFree:
       - STR_ALIEN_ALLOYS
 
@@ -260,6 +270,7 @@ research:
     destroyItem: true
     disables:
       - STR_HERETEK_TRIBUTE_PRODUCTION
+      - STR_TIER_0_WEAPON_PRODUCTION
     getOneFree:
       - STR_ALIEN_ALLOYS
 
@@ -299,10 +310,12 @@ research:
       - STR_CONTACT_HERETEKS
 
   - name: STR_LASCANNON_DATACRYPT
-    cost: 75
+    cost: 250
     dependencies:
       - STR_CONTACT_HERETEKS
       - STR_IMMACULATE_LASGUN_TECHNOLOGY
+    unlocks:
+      - STR_LASER_CANNON
 
   - name: STR_IMMACULATE_PLASMA_TECHNOLOGY
     cost: 150
@@ -312,7 +325,7 @@ research:
       - STR_OUR_DEVOTION_DEEPENS
 
   - name: STR_IMMACULATE_LASGUN_TECHNOLOGY
-    cost: 25
+    cost: 100
     dependencies:
       - STR_CONTACT_HERETEKS
 

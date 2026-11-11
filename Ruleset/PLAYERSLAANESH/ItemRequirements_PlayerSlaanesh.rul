@@ -215,6 +215,12 @@ items:
 
 #### AMMO
 
+  - type: STR_LASGUN_CLIP_TAINTED
+    refNode: *IMMACULATE_WEAPON
+    size: 0.1
+    costSell: 300
+    listOrder: 11059
+
   - type: STR_CANTUS_BOLTER_AMMO_BM
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
     size: 0.1
