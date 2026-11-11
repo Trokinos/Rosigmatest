@@ -191,7 +191,7 @@ soldierTransformation:
   - name: STR_NOMINATE_ANATHEMANT # Turns a Handmaiden into an apprentice Sorceress.
     requires:
       - STR_SOULSTAIN_SORCERY
-    cost: 66600 # Expensive; this is a powerful unit.
+    cost: 66000 # Expensive; this is a powerful unit.
     producedSoldierType: STR_SLAANESHPATH_ANATHEMANT
     producedSoldierArmor: STR_SLAANESHPATH_ANATHEMANT_ARMOR
     allowsDeadSoldiers: false
@@ -220,7 +220,7 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SLAANESHPATH_EXALTEDMAIDEN
     requiredItems:
-      STR_ALIEN_SURGERY: 3 # Requires sacrifical blood.
+      STR_SLAANESHPATH_BOON: 1 # Requires Slaanesh to care enough to gift sorcerous powers.
       STR_SLAANESHPATH_PIETY: 66 # Expensive in terms of piety.
 
 #### INDUCTIONS

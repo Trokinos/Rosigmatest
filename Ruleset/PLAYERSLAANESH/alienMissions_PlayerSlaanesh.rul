@@ -9,6 +9,25 @@ alienMissions:
 
 
 
+  - type: STR_GENE_BASE_SLAANESH
+    raceWeights:
+      0:
+        STR_GENE_CULT: 100
+      8:
+        STR_BROOD_HUNTDESTROY: 100
+    operationType: 3 # Creates a new base to start from if the region doesn't have one
+    operationSpawnZone: 4 # Makes the craft spawn from the base
+    operationBaseType: STR_GENE_HIVE_SLAANESH
+    objective: 2
+    spawnZone: 4
+    siteType: STR_GENE_HIVE_SLAANESH
+    points: 5
+    waves:
+      - ufo: STR_GOLIATH_UFO
+        count: 1
+        timer: 0
+        trajectory: DIRECT_TO_NEW_BASE_TRAJECTORY
+        objective: true
 
   - type: STR_VEHICLE_RAID
     points: 5

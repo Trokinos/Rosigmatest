@@ -1,6 +1,7 @@
 missionScripts:
 
 
+ # TODO: Refactor Warp storm & other scripts to avoid having bloody roses etc appear until later in the campaign.
  #TODO: Adjust warp storm script to put higher weight on Khorne and Tzeentch, lower on Nurgle.
  #TODO: Add more sister lists to warp storm.
 
@@ -14,10 +15,10 @@ missionScripts:
         STR_TS_CULTIST_BASE_GV: 33
         STR_KTS_TRAITOR_GUARD_BASE_GV: 33
     firstMonth: 1
-    lastMonth: 2
+    lastMonth: 3
     startDelay: 120
     randomDelay: 20160 # Up to 2 weeks random delay
-    executionOdds: 70
+    executionOdds: 60
     researchTriggers:
       STR_DEFAULT_CAMPAIGN: false
       STR_SLAANESHPATH: true
@@ -244,6 +245,22 @@ missionScripts:
         STR_WARP_TERRORCCULT: 30
     researchTriggers:
       STR_SLAANESHPATH: true
+
+
+ ### GENESTEALER SCRIPTS
+
+  - type: GSC_GENE_HIVE_BASE_GEN_SLAANESHPATH  # Generates the underground GSC Genestealer hive base
+    missionWeights:
+      0:
+        STR_GENE_BASE_SLAANESH: 100  # from 40k, generates a hive if there isn't one
+    firstMonth: 2  # can show up after month 1, with 4 weeks random delay
+    lastMonth: 6
+    startDelay: 120
+    randomDelay: 40160  # Up to 4 weeks random delay
+    executionOdds: 25  # 25% chance of firing every month until month 7
+    researchTriggers:
+      STR_GENESTEALER_CULTS_DISCOVERED: true
+
 
  ### MONTHLY MISSIONS
 

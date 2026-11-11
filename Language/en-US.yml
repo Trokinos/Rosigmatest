@@ -2528,6 +2528,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Three of the younger novices report seeing a vision from the Emperor Himself, of an old command bunker with an intact archeotech Vox array.{NEWLINE}{NEWLINE}Shamefully, your joy at this news comes bundled with a pang of envy. You swear to seek your penance in the blood of the next heretic you encounter."
   STR_SLAANESHPATH_GATE_EVENT: "Homecoming"
   STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you all begin to remove the hated insignias of your previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
+  STR_SUFFER_NOT_THE_XENO_EVENT: "Suffer not the Xeno"
+  STR_SUFFER_NOT_THE_XENO_CODEX_DESCRIPTION: "As your sisters move through the underhive, many report a constant sensation of being watched.{NEWLINE}{NEWLINE}A great many hours of investigation and prayer later, you uncover the truth: a strain of predatory xenos have made the deeper sublevels their home. Under no circumstances can their abominable presence be tolerated. The only fate for such xenos is an excruciating death."
 
   STR_SLAANESHPATH_INTRO_B_EVENT: "The Old Bunker"
   STR_SLAANESHPATH_INTRO_B_EVENT_CODEX_DESCRIPTION: "The bunker entrance well-hidden; you wouldn't have found it if someone hadn't guided your steps.{NEWLINE}{NEWLINE}Unfortunately, while the Vox array is truly impressive, the interfacing cogitator is non-functional. But maintenance drills in the snow were a common punishment at your Schola; you think you can manage at least basic repairs. As your old Drill-Abbess put it: the Emperor will never deign to help those who can't help themselves."
@@ -2564,6 +2566,10 @@ en-US: #  yamllint disable-line rule:empty-values
   ######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
 
   ### MISSIONS
+
+  STR_GENE_HIVE_SLAANESH: "GENESTEALER CULT BASE"
+  STR_GENE_HIVE_BRIEFING_SLAANESH: "We have tracked down the local xenos presence to this section of the underhive. Even were they not a direct threat to our future plans, the presence of these abominable parasites are an affront to both humanity and to the Master of Excess. Scourge away their blasphemous existence in Slaanesh's name!"
+
 
   STR_SLAANESHPATH_PDF_VEHICLE_RAID_TITLE: "PDF Vehicle Depot"
   STR_SLAANESHPATH_PDF_VEHICLE_RAID_DESC: "Through torture of captured loyalists, we have ascertained that this PDF motor pool is ripe for assault. In order to access the underground vehicle storage, the security system must first be disabled: this can be done by destroying five large control cogitators on the upper levels. Be warned that nearby loyalists will attempt to scramble reinforcements once they learn of our intentions. You must finish the mission before they arrive."
@@ -2653,6 +2659,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
   STR_IMMACULATE_PLASMA_TECHNOLOGY: "Decode Plasma Data-crypt"
   STR_BLACK_MARKET_CRAFT_AVAILABLE: "(Black Market Craft Available)"
+  STR_GENESTEALER_CULTS_DISCOVERED: "(Genestealer Cults Discovered)"
 
   STR_OUR_HOLY_MISSION: "Our Holy Crusade"
   STR_WAR_FOR_THE_UNDERHIVE: "War for the Underhive"
@@ -2691,9 +2698,10 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_PREPARE_SACRIFICE_FRATERIS_MILITIA: "Prepare Frateris Militia"
   STR_PREPARE_SACRIFICE_NOVITIATE_SUPERIOR: "Prepare Novitiate Superior"
 
-  CORRUPT_NOVICE: "Redeem Sororitas Novice"
+  STR_CORRUPT_NOVICE: "Redeem Sororitas Novice"
   STR_CORRUPT_MEDICAE: "Redeem Sororitas Medicae"
-  CORRUPT_REPENTIA: "Absolve Sister Repentia"
+  STR_CORRUPT_REPENTIA: "Absolve Sister Repentia"
+  STR_CORRUPT_ELOHIM: "Corrupt Sororitas Elohim"
 
  #Piety projects & progression projects
   STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
@@ -2829,6 +2837,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_STRANGLER_GRENADE: "Strangler Grenade"
   STR_SCREAMER_GRENADE40: "40mm Screamer Grenade"
   STR_SCREAMER_GRENADE: "Screamer Grenade"
+  STR_SHRIEKER_GRENADE: "Shrieker Grenade"
+  STR_SHRIEKER_GRENADE40: "40mm Shrieker Grenade"
   STR_BALEFIRE_GRENADE40: "40mm Balefire Grenade"
   STR_BALEFIRE_GRENADE: "Balefire Grenade"
   STR_SHARD_GRENADE40: "40mm Shard Grenade"

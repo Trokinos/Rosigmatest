@@ -65,6 +65,15 @@ adhocScripts:
     randomDelay: 10040
     adhocMissionScriptTags: ["adhocStarterBaseSlaanesh"]
 
+  - type: adhocGSCBaseSlaanesh
+    missionWeights:
+      0:
+        STR_GENE_BASE_SLAANESH: 100
+    useTable: false
+    targetBaseOdds: 100
+    startDelay: 300
+    randomDelay: 300
+    adhocMissionScriptTags: ["adhocGSCBaseSlaanesh"]
 
   - type: adhocVehicleRaid
     missionWeights:
@@ -151,8 +160,17 @@ events:
     spawnedCraftType: STR_TRUCKBASE_CHAOS
     everyMultiSoldierList:
       STR_SLAANESHPATH_VICTUAL_BROTHER: 7
-    #everyMultiItemList:
-
+    everyMultiItemList:
+      STR_LASCARBINE: 2
+      STR_LASGUN_CLIP: 12
+      STR_PUMP_SHOTGUN: 2
+      STR_SHOTGUN_SHELLS: 8
+      STR_LAS_BATTLERIFLE: 1
+      STR_BOLTER_LIGHT_SOLO_SHORT: 1
+      STR_LIGHT_BOLTER_AMMO_SHORT: 4
+      STR_HEAVY_STUBBER: 1
+      STR_HEAVY_STUBBER_CLIP: 5
+      STR_PHOTON_GRENADE: 6
 
   - name: STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT
     description: STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT_CODEX_DESCRIPTION
@@ -178,7 +196,12 @@ events:
       STR_KRAK_GRENADE: 3
       STR_BOLTER_LIGHT_SOLO_SHORT: 1
       STR_LIGHT_BOLTER_AMMO_SHORT: 4
+      STR_PHOTON_GRENADE: 5
 
-######## TO DO: EVENT FOR DISCOVERING THE PDF DEPOT.
-
-######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
+  - name: STR_SUFFER_NOT_THE_XENO_EVENT
+    description: STR_SUFFER_NOT_THE_XENO_CODEX_DESCRIPTION
+    background: GSCBROODBG.SCR
+    timer: 2880
+    timerRandom: 21600
+    researchList: [STR_GENESTEALER_CULTS_DISCOVERED]
+    adhocMissionScriptTags: ["adhocGSCBaseSlaanesh"]

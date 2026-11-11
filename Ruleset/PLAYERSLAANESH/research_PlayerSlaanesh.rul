@@ -70,7 +70,7 @@ research:
       - STR_SLAANESHPATH_SELECTED
     disables:
       - STR_NOT_SLAANESHPATH
-      - STR_GENESTEALERS_ACTIVE
+      - STR_GENESTEALERS_ACTIVE #Genestealers
       - STR_CHAOS_STRATEGY_ARBITES
       - STR_CHAOS_STRATEGY
       - STR_ELDAR_STRATEGY
@@ -103,6 +103,10 @@ research:
     dependencies:
       - STR_GENERALLOCK
     cost: 0
+
+  - name: STR_GENESTEALER_CULTS_DISCOVERED # Alternate trigger for genestealer activity.
+    dependencies:
+      - STR_GENERALLOCK
 
  ##################### SECTION FOR INTRO-RELATED TECHS ######################
  ### ALL THESE TECHS ARE REQUIRED TO ACCESS THE REAL TECH TREE ###

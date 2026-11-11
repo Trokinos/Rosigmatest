@@ -1,8 +1,11 @@
+
+
 eventScripts:
 
- ######## INTRO EVENTS #########
- #### TIMED INTRO EVENTS SHOULD TRIGGER AT 24 HOURS AND 48 HOURS
+#TODO: SET UP ALTERNATIVE WAY FOR GSC ARBITES TO SPAWN
 
+ ######## INTRO EVENTS #########
+# INTRO EVENTSCRIPTS
   - type: STR_SLAANESHPATH_INTRO_A_EVENTSCRIPT
     oneTimeSequentialEvents:
       - STR_SLAANESHPATH_INTRO_A_EVENT
@@ -31,6 +34,7 @@ eventScripts:
     researchTriggers:
       STR_ARBITES: true
 
+# Timed techs or gate events
   - type: STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENTSCRIPT
     oneTimeSequentialEvents:
       - STR_SLAANESHPATH_VEHICLES_AVAILABLE_EVENT
@@ -39,3 +43,14 @@ eventScripts:
     executionOdds: 100
     researchTriggers:
       STR_ARBITES: true
+
+# UNDERHIVE EVENTS
+
+  - type: STR_SLAANESHPATH_GSC_DISCOVERED_EVENTSCRIPT
+    oneTimeSequentialEvents:
+      - STR_SUFFER_NOT_THE_XENO_EVENT
+    firstMonth: 1
+    lastMonth: 3
+    executionOdds: 100
+    researchTriggers:
+      STR_SLAANESHPATH_GATE: true

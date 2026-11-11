@@ -75,7 +75,6 @@ manufacture:
     cost: 10000
     producedItems:
       STR_SLAANESHPATH_PIETY: 250
-      STR_ALIEN_FOOD: 12
     requiredItems:
       STR_ALIEN_SURGERY: 6
     points: 10
@@ -83,7 +82,7 @@ manufacture:
   - name: STR_REQUEST_BOON
     category: STR_RITES_OF_EXCESS
     requires:
-      - STR_SACRIFICIAL_RITUALS #Placeholder
+      - STR_SACRIFICIAL_RITUALS
     requiresBaseFunc: [ALTAR]
     space: 0
     time: 20
@@ -328,7 +327,7 @@ manufacture:
     points: 20
 
 #AC
-  - name: STR_REPAIR_ADEPTAS_ARMOR_COMPONENT
+  - name: STR_CREATE_HANDMAIDEN_POWER_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_POWER_ARMOR_CORRUPTION

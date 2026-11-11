@@ -584,6 +584,7 @@ eventScripts:
       STR_GSC_ARBITES_SPAWNED: false
       STR_STEEL_LEGION_STRATEGY: false
       STR_TAU_GUEVESA_STRATEGY_GV: false
+      STR_SLAANESHPATH: false
 
   - type: STR_GSC_ARRIVAL_BASE_SPAWN_EVENTSCRIPT_SL
     eventWeights:
@@ -607,6 +608,7 @@ eventScripts:
       STR_GSC_ARBITES_SPAWNED: false
       STR_STEEL_LEGION_STRATEGY: false
       STR_TAU_GUEVESA_STRATEGY_GV: false
+      STR_SLAANESHPATH: false
 
   - type: STR_GSC_ARBITES_SPAWNED_EVENTSCRIPT_SL
     eventWeights:
