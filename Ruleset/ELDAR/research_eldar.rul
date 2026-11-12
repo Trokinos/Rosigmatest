@@ -62,6 +62,7 @@ research:
       - STR_CHAOS_STRATEGY
       - STR_GREENEST_ORKZ
       - STR_TAU_GUEVESA_STRATEGY_GV
+      - STR_SLAANESHPATH
       #- STR_PSI_LAB # we need to develop a proper psyker chamber
       - STR_PSI_AMP # eldar won't get normal tome of the mind and other stuff
       - STR_COMBAT_SERVITOR_PROGRAM # eldar don't use such barbaric tech
