@@ -1122,3 +1122,7 @@ items:
     invHeight: 3
     armor: 40
     battleType: 11
+
+
+  - type: PRIMARIS_BIKER_CORPSE
+    recover: false

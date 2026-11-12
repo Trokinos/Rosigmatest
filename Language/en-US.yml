@@ -17193,6 +17193,12 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_DEATHCOMPANY_MARINE_ARMOR: "Death Company Armor"
   STR_DEATHCOMP_MARINE_AICORPSE: "Death Company Marine Corpse"
 
+  # primaris ai
+
+  STR_PRIMARIS_BIKER_AI: "Primaris Biker"
+  STR_PRIMARIS_BIKER_ARMOR_AI: "Primaris Biker Armor"
+  PRIMARIS_BIKER_CORPSE: "Primaris Biker Corpse"
+
 
   GUARD_ARMOR_M_LV1_AI_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   GUARD_ARMOR_OFF_M_LV1_AI_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
@@ -17276,6 +17282,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_DARKANGELARMOR_CHAP_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_DARKANGELARMOR_CAPTAIN_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   STR_DARKANGELARMOR_HONOR_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
+
 
   # adeptas bloody roses AI
 
@@ -17552,6 +17559,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_WOLF_CALLERAI: "Wolf Caller"
   STR_WOLF_GREATCALLERAI: "Wolf Great Caller"
   STR_ALLIEDWOLFAI_SPAWNER: "Wolf Spawner"
+
+  STR_PRIMARISBIKER_SPAWNER: "Primaris AI biker support"
 
   STR_CFRIFLEB: "Crimson Fist Bolter"
   STR_CFFLAMETHROWER: "Crimson Fist Flamer"
