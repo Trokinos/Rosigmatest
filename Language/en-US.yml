@@ -2018,6 +2018,13 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ALIEN_BASE_UFOPEDIA: "{NEWLINE} They want to establish a new base to continue there foul plans of taking over the planet. Expect heavy resistance from Chaos forces when attempting to take down of one of those sites"
   STR_ALIEN_TERROR_UFOPEDIA: "Blood Spread"
   STR_ALIEN_RETALIATION_UFOPEDIA: "Retaliation"
+  STR_GANGER_INFILTRATION_ELDAR_ALERT: "Ganger Claiming Friendly Mon'keigh settlement"
+  STR_GANGER_INFILTRATION_ELDAR_TITLE: "Ganger Claiming Friendly Mon'keigh settlement"
+  STR_GANGER_INFILTRATION_ELDAR_DESC: "Enemy Gangers groups have infiltrated a friendly Mon'keigh settlement and are now laying claim over a portion of it. Our informant report that this group is currently helding some Aeldari as slaves. Local Civilian are already sheltered and friendly PDF forces are present. This is the right time to save our citizens and prove our collaborators that none should try to get in the path of our people."
+  STR_RIOT_ELDAR: "Riot in Friendly Mon'keigh settlement"
+  STR_RIOT_ELDAR_ALTERNATE: "Riot in Friendly Mon'keigh settlement"
+  STR_RIOT_ELDAR_TITLE: "Riot in Friendly Mon'keigh settlement"
+  STR_RIOT_ELDAR_BRIEFING: "Cultist of the Chaos Gods supported by the local Gangers have incited a riot in a friendly Mon'keigh settlement, local citizen have armed themselfs to repel the intruders and defent their home the best they can, local PFD forces have requested out help in reducing to a minimum the improvised fighters casualty exchange for a substantial reward."
 # Traitor Guard Missions
   STR_TRAITOR_GUARD_BASE: "Base Creation"
   STR_TRAITOR_GUARD_BASE_FROM_EXISTING: "Base Creation"
@@ -17673,8 +17680,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GANGERSCITYCONVOYALT: "Truckers Rumble"
   STR_GANGERSCITYCONVOY_TITLE: "Destroy the Truckers Gathering"
   STR_GANGERSCITYCONVOY_BRIEFING: "The Gangers have setup a Truckers Gathering, an excellent opportunity for our Chaos Cult to use them and their death as a sacrifice to Chaos."
+  STR_GANGERSCITYCONVOY_BRIEFING_ELDAR: "The Gangers have setup a Truckers Gathering, an excellent opportunity for us to eliminate enemy assets and deal a significant blow to their logistic capability. Our informats reports that the trucks contain valuable merchandise and assets. Expect civilian presence from those filty Mon'keigh."
   STR_GANGERSCITYCONVOY_SITE: "Truckers Sacrifice"
   STR_GANGERSCITYCONVOY_SITE_: "Truckers Sacrifice-{0}"
+  STR_GANGERSCITYCONVOY_SITE_LOYALIST: "Truckers Interception"
+  STR_GANGERSCITYCONVOY_SITE_LOYALIST: "Truckers Interception-{0}"
   STR_GANGERSCITYCONVOY_DETECTED: "Truckers Gathering"
 
   # gangers

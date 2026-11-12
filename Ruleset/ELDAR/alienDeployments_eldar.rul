@@ -75,11 +75,11 @@ alienDeployments:
     markerName: STR_GANGER_BASE_SITE
     genMissionRaceFromAlienBase: true
     genMission:
-      STR_ALIEN_SABOTAGECHAOSCULT: 12
-      STR_RIOTCHAOSCULT: 20
-      STR_RIOTCHAOSCULTALTERNATE: 20
-      STR_GANGERSCITYCONVOYDEF: 20
-      STR_GANGERSCITYCONVOYALT: 20
+      STR_GANGER_INFILTRATION_ELDAR: 20 #rewards 5 eldar civilian
+      STR_RIOT_ELDAR: 20 # riot inside friendly mon'key settlement
+      STR_RIOT_ELDAR_ALTERNATE: 20 # riot inside friendly mon'key settlement
+      STR_GANGERSCITYCONVOYDEF: 20  # to clone to set it as interception of gangers convoy. may reward SOME eldar civilian
+      STR_GANGERSCITYCONVOYALT: 20 # to clone to set it as interception of gangers convoy. may reward SOME eldar civilian
       STR_TS_GANGER_BASE_START_ELDAR: 8
     genMissionFreq: 3
     genMissionLimit: 10000
@@ -88,6 +88,375 @@ alienDeployments:
     height: 12
     points: 0
     #unlockedResearch: STR_ENDGANGERSBASE
+
+  - type: STR_GANGER_INFILTRATION_ELDAR #clone of STR_SABOTAGE_MISSIONCHAOSCULT
+    data:
+      - alienRank: 5
+        lowQty: 5 #4
+        highQty: 5 #6
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: [[], [], []]
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets: [[], [], []]
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets: [[], [], []]
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1 #2
+        dQty: 1 #0
+        percentageOutsideUfo: 20
+        itemSets: [[], [], []]
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+      - alienRank: 6
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets: [[], [], []]
+      - alienRank: 7
+        lowQty: 2 #1
+        highQty: 2 #3
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets: [[], [], []]
+    width: 60
+    length: 60
+    height: 12
+    civilians: 4
+    civiliansByType:
+      # STR_CIVILIAN_F0ARMED: 1
+      # STR_CIVILIAN_M0ARMED: 1
+      # STR_CIVILIAN_F1ARMED: 1
+      # STR_CIVILIAN_M1ARMED: 1
+      MALE_CIVILIAN: 2
+      FEMALE_CIVILIAN: 2
+    terrains:
+      - MUNITORIUM
+    alert: STR_GANGER_INFILTRATION_ELDAR_ALERT
+    alertBackground: UnrestBG.SCR
+    alertSound: 46
+    briefing:
+      cutscene: SABOTAGE
+      music: gmstory2
+      palette: 2
+      desc: STR_GANGER_INFILTRATION_ELDAR_DESC #STR_SABOTAGE_MISSIONCHAOSCULT_BRIEFING
+      title: STR_GANGER_INFILTRATION_ELDAR_TITLE
+      background: UnrestBG2.SCR
+    markerName: STR_RIOT_MARKERNAME
+    duration: [4, 10]
+    despawnPenalty: 500
+    missionBountyItem: STR_ELDAR_CITIZEN
+    missionBountyItemCount: 5
+
+  - type: STR_RIOT_ELDAR
+    briefing:
+      title: STR_RIOT_ELDAR_TITLE
+      palette: 4
+      desc: STR_RIOT_ELDAR_BRIEFING
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: UnrestBG2.SCR
+    data:
+      - alienRank: 1
+        lowQty: 2
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 3
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 4
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 5
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 6
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 7
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+    civiliansByType:
+      STR_CIVILIAN_F0ARMED: 2
+      STR_CIVILIAN_M0ARMED: 2
+      STR_CIVILIAN_F1ARMED: 2
+      STR_CIVILIAN_M1ARMED: 2
+      MALE_CIVILIAN: 1
+      STR_HEAVY_GUARDSMAN_FEMALE: 1
+    width: 50
+    length: 50
+    height: 12
+    terrains:
+      - MUNDAINDUSTRIALURBANDIO
+    script: CULTIST_BASE_LEVEL_1
+    alert: STR_RIOT_ALERT
+    alertSound: 46
+    alertBackground: UnrestBG.SCR
+    duration: [168, 168]
+    despawnPenalty: 400
+    markerName: STR_RIOT_MARKERNAME
+    missionBountyItem: STR_REQUISITION_BOUNTY_100K
+    missionBountyItemCount: 1
+
+  - type: STR_RIOT_ELDAR_ALTERNATE
+    briefing:
+      title: STR_RIOT_ELDAR_TITLE
+      palette: 4
+      desc: STR_RIOT_ELDAR_BRIEFING
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: UnrestBG2.SCR
+    data:
+      - alienRank: 1
+        lowQty: 2
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 3
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 4
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 5
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 6
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 7
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+    civiliansByType:
+      STR_CIVILIAN_F0ARMED: 2
+      STR_CIVILIAN_M0ARMED: 2
+      STR_CIVILIAN_F1ARMED: 2
+      STR_CIVILIAN_M1ARMED: 2
+      STR_GUARD_KRIEG: 2
+      STR_HEAVY_GUARDSMAN_MALE: 1
+    width: 50
+    length: 50
+    height: 12
+    terrains:
+      - MUNDAINDUSTRIALURBANDIOALTERNATE
+    script: CULTIST_BASE_LEVEL_1
+    alert: STR_RIOT_ALERT
+    alertSound: 46
+    alertBackground: UnrestBG.SCR
+    duration: [168, 168]
+    despawnPenalty: 400
+    markerName: STR_RIOT_MARKERNAME
+    missionBountyItem: STR_REQUISITION_BOUNTY_100K
+    missionBountyItemCount: 1
+
+  - type: STR_GANGERSCITYCONVOYDEF
+    briefing:
+      title: STR_GANGERSCITYCONVOY_TITLE
+      palette: 4
+      desc: STR_GANGERSCITYCONVOY_BRIEFING_ELDAR
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: CHAOSCULTHAGGLEBG.SCR
+    data:
+      - alienRank: 1
+        lowQty: 2
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 3
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 4
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 5
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 6
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 7
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+    civiliansByType:
+      STR_CIVILIAN_F0: 1
+      STR_CIVILIAN_M0: 1
+      STR_CIVILIAN_F1: 1
+      STR_CIVILIAN_M1: 1
+      STR_MONK1: 1
+      STR_MONK2: 1
+    width: 50
+    length: 50
+    height: 12
+    terrains:
+      - MUNDAINDUSTRIALURBANDIO
+    script: GANGCITYHIVEDDEF
+    alert: STR_GANGERSCITYCONVOY_DETECTED
+    alertSound: {mod: 40k, index: 52}
+    alertBackground: CHAOSCULTMARKETBG.SCR
+    duration: [168, 168]
+    despawnPenalty: 400
+    markerName: STR_GANGERSCITYCONVOY_SITE_LOYALIST
+    missionBountyItem: STR_REQUISITION_BOUNTY_100K
+    missionBountyItemCount: 1
+
+  - type: STR_GANGERSCITYCONVOYALT
+    briefing:
+      title: STR_GANGERSCITYCONVOY_TITLE
+      palette: 4
+      desc: STR_GANGERSCITYCONVOY_BRIEFING_ELDAR
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: CHAOSCULTHAGGLEBG.SCR
+    data:
+      - alienRank: 1
+        lowQty: 2
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 3
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 4
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 5
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 6
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 7
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+     civiliansByType:
+      STR_CIVILIAN_F0: 1
+      STR_CIVILIAN_M0: 1
+      STR_CIVILIAN_F1: 1
+      STR_CIVILIAN_M1: 1
+      STR_MONK1: 1
+      STR_MONK2: 1
+    width: 50
+    length: 50
+    height: 12
+    terrains:
+      - MUNDAINDUSTRIALURBANDIOALTERNATE
+    script: GANGCITYHIVEDALT
+    alert: STR_GANGERSCITYCONVOY_DETECTED
+    alertSound: {mod: 40k, index: 52}
+    alertBackground: CHAOSCULTMARKETBG.SCR
+    duration: [168, 168]
+    despawnPenalty: 400
+    markerName: STR_GANGERSCITYCONVOY_SITE_LOYALIST
+    missionBountyItem: STR_REQUISITION_BOUNTY_100K
+    missionBountyItemCount: 1
 
   - type: STR_ALIEN_BASE_ASSAULT_SLAANESH_ELDAR                       # RANK0  # RANK1
     randomRace: [STR_SLAANESH_PALACE_ELDARS_LV1]
