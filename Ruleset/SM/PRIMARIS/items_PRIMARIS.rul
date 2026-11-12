@@ -11,3 +11,18 @@ items:
     transferTime: 50
     listOrder: 5459
     ufopediaType: STR_MKX_BIKE_UC
+
+  # support AI grenade spawner for the tank repulsor
+
+  - type: STR_PRIMARISBIKER_SPAWNER
+    spawnUnit: STR_PRIMARIS_BIKER_AI
+    spawnUnitChance: 100
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+    recover: false
+    hitAnimation: {mod: 40k, index: 150}
+    hitSound: {mod: 40k, index: 788}
+    hiddenOnMinimap: true

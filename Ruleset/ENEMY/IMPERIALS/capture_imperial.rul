@@ -919,3 +919,10 @@ items:
     costSell: 3500
     recover: true
     liveAlien: true
+
+  - type: STR_PRIMARIS_BIKER_AI
+    size: 0.0
+    recover: false
+    liveAlien: false
+    costSell: 40000
+    listOrder: 20400

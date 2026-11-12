@@ -15695,6 +15695,9 @@ extraSprites:
     files:
       0: Resources/FOES/Battlesprites/WSbikerbattle.png
 
+  - typeSingle: PRIMARISARMOR_AIBIKE.PCK
+    fileSingle: Resources/UnitSprites/Armors/PrimarisBikerSupport.png
+
   # legion of damned
 
   - typeSingle: LEGIONDAMNED_MARINEinv.PCK

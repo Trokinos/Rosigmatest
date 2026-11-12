@@ -1,0 +1,102 @@
+extended:
+  tagsFile: Ruleset/tags_ROSIGMA.rul
+
+weaponSets:
+
+# placeholder to adjust to primaris stuff
+
+  - type: SM_PRBIKER_SET1
+    weapons: [STR_PISTOLB, STR_PISTOL_CLIP_EX, STR_PISTOL_CLIP_EX, STR_CHAINSWORD, STR_KRAK_GRENADE]
+  - type: SM_PRBIKER_SET2
+    weapons: [STR_PISTOLH, STR_PISTOL_CLIP_AP, STR_PISTOL_CLIP_AP, STR_CHAINSWORD, STR_MGRENADE]
+  - type: SM_PRBIKER_SET3
+    weapons: [STR_PLASMA_PISTOL_TERRAN, STR_PLASMA_PISTOL_CLIP, STR_PLASMA_PISTOL_CLIP, STR_POWERFIST, STR_MGRENADE]
+
+units:
+
+  - type: STR_PRIMARIS_BIKER_AI
+    race: STR_PRIMARIS_FACTION
+    rank: STR_LIVE_TERRORIST
+    liveAlien: ""
+    stats:
+      tu: 100
+      stamina: 100
+      health: 140
+      bravery: 100
+      reactions: 90
+      firing: 80
+      throwing: 80
+      strength: 75
+      psiStrength: 80
+      psiSkill: 0
+      melee: 100
+    armor: STR_PRIMARIS_BIKER_ARMOR_AI
+    standHeight: 21
+    kneelHeight: 16
+    value: 35
+    deathSound: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
+    intelligence: 2
+    aggression: 2
+    spotter: 2
+    energyRecovery: 30
+    moveSound: -1
+    livingWeapon: true
+    builtInWeaponSets: []
+    weightedBuiltInWeaponSets:
+      -
+        SM_PRBIKER_SET1: 50
+        SM_PRBIKER_SET2: 35
+        SM_PRBIKER_SET3: 15
+
+armors:
+
+  - type: STR_PRIMARIS_BIKER_ARMOR_AI
+    visibilityAtDay: 40
+    visibilityAtDark: 30
+    heatVision: 20
+    spriteSheet: MKXBIKELV2.PCK
+    spriteInv: PRIMARISARMOR_AIBIKE.PCK
+    allowInv: true
+    customArmorPreviewIndex: [23, 24, 25]
+    corpseGeo: PRIMARIS_BIKER_CORPSE
+    corpseBattle:
+      - BIKE_CORPSE1
+      - BIKE_CORPSE2
+      - BIKE_CORPSE3
+      - BIKE_CORPSE4
+    frontArmor: 160
+    sideArmor: 150
+    rearArmor: 85
+    underArmor: 145  # takes 4xHits from AoE
+    size: 2
+    moveSound: {mod: 40k, index: 14}
+    damageModifier: #VEHICLE ARMOR LARGE
+      - 1.0 #none
+      - 1.0 #AP
+      - 0.4 #FLAMES
+      - 1.0 #HE
+      - 1.2 #LASCANON
+      - 1.0 #PLASMA
+      - 0.0 #STUN
+      - 0.8 #MELEE
+      - 1.0 #ACID
+      - 0.0 #SMOKE
+      - 0.0 #IMPACT
+      - 1.2 #MELTA
+    loftempsSet: [92, 89, 90, 91]
+    drawingRoutine: 20
+    builtInWeapons:
+      - AUX_TANK_CANNON
+      - AUX_RAM
+      - INV_NULL_3X3
+      - INV_NULL_4X2
+    moveCost:
+      baseNormalPercent: [50, 50]  # halved movement costs
+    tags:
+      UNIT_TYPE_IMPERIUM: 1
+      UNIT_TYPE_MECHANICAL: 1
+      UNIT_TYPE_LIVING: 1
+      UNIT_SIZE: 200 # HUGE
+      DODGE_CHANCE: 50
+      FLIGHT_DODGE_CHANCE: 0
+      ARMOR_MAX_SUCCESSFUL_DODGES: 5
