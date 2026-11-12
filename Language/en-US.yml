@@ -17199,7 +17199,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_PRIMARIS_BIKER_ARMOR_AI: "Primaris Biker Armor"
   PRIMARIS_BIKER_CORPSE: "Primaris Biker Corpse"
 
-
   GUARD_ARMOR_M_LV1_AI_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   GUARD_ARMOR_OFF_M_LV1_AI_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
   GUARD_ARMOR_M_LV2_AI_UFOPEDIA: "{NEWLINE}{NEWLINE} CODEX ARMOR DETAIL"
@@ -17561,6 +17560,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ALLIEDWOLFAI_SPAWNER: "Wolf Spawner"
 
   STR_PRIMARISBIKER_SPAWNER: "Primaris AI biker support"
+  STR_PRIMARISDREAD_SPAWNER: "Primaris Dread Spawner"
+  STR_PRIMARISDWDREAD_SPAWNER: "Primaris DW Dread Spawner"
 
   STR_CFRIFLEB: "Crimson Fist Bolter"
   STR_CFFLAMETHROWER: "Crimson Fist Flamer"

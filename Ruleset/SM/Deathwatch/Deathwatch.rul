@@ -2686,3 +2686,16 @@ soldiers:
 items:
   - type: AUX_SHIELD_DW
     defaultInventorySlot: STR_LEFT_HAND
+
+  - type: STR_PRIMARISDWDREAD_SPAWNER
+    spawnUnit: STR_UMDREAD_AI  # for now oldmarine UM dread until a primaris deathwatch dreadnought is made
+    spawnUnitChance: 100
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
+    armor: 255
+    recover: false
+    hitAnimation: {mod: 40k, index: 150}
+    hitSound: {mod: 40k, index: 788}
+    hiddenOnMinimap: true
