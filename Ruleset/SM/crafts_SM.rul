@@ -370,7 +370,7 @@ crafts:
           fuseTimers:
             STR_REPULSORLASCANTURRET_SPAWNER: [0, 0]
             STR_REPULSORBATTLECANNON_SPAWNER: [0, 0]
-            STR_PRIMARISBIKER_SPAWNER: [0,0]
+            STR_PRIMARISBIKER_SPAWNER: [0, 0]
     deployment:
       - [3, 7, 1, 0]
       - [3, 8, 1, 0]
@@ -408,7 +408,7 @@ crafts:
           fuseTimers:
             STR_REPULSORLASCANTURRET_SPAWNER: [0, 0]
             STR_REPULSORBATTLECANNON_SPAWNER: [0, 0]
-            STR_PRIMARISBIKER_SPAWNER: [0,0]
+            STR_PRIMARISBIKER_SPAWNER: [0, 0]
     deployment:
       - [3, 7, 1, 0]
       - [3, 8, 1, 0]
