@@ -163,7 +163,7 @@ research:
     unlocks:
       - STR_SCIENTISTS_AND_ENGINEERS_AVAILABLE
       - STR_RITUALS_OF_WORSHIP
-    # - STR_CHAOS_ARMORY_EXAM_SLAANESH (This should be moved to later in the tree)
+      - STR_TIER_0_WEAPON_PRODUCTION
     spawnedEvent: STR_SLAANESHPATH_GATE_EVENT
 
   #- name: STR_CHOSEN_SLAANESH_STRATEGY #research lookup for Slaanesh chosen
@@ -219,7 +219,7 @@ research:
 ###################################
 
   - name: STR_SACRIFICIAL_RITUALS # Unlocks sacrifices. Codex Entry.
-    cost: 100
+    cost: 150
     points: 20
     dependencies:
       - STR_PATH_OF_PERFECTION
@@ -233,12 +233,11 @@ research:
     spawnedItem: STR_SLAANESHPATH_PIETY
     spawnedItemCount: 200
     points: 20
+    unlocks:
+    - STR_CHAOS_ARMORY_EXAM_SLAANESH
 
-  - name: STR_OUR_DEVOTION_DEEPENS
-    cost: 100
-    needItem: true
-    destroyItem: true
-    neededItem: STR_SLAANESHPATH_BOON
+  - name: STR_OUR_DEVOTION_DEEPENS # Change this to be unlocked through a campaign progression goal vs ecclesiarchy OR underhive.
+    cost: 300
     dependencies:
       - ADORATION_THROUGH_AGONY
       - STR_TERROR_WEAPONRY
@@ -278,7 +277,6 @@ research:
       - STR_BLACK_MARKET_AMMUNITION
     unlocks:
       - STR_HERETEK_TRIBUTE_PRODUCTION
-      - STR_TIER_0_WEAPON_PRODUCTION
     getOneFree:
       - STR_ALIEN_ALLOYS
 
@@ -469,7 +467,7 @@ research:
     cost: 25
     points: 10
     dependencies:
-      - STR_PATH_OF_PERFECTION
+      - STR_SLAANESHPATH_GATE
     spawnedEvent: STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT
 
   - name: STR_DEPOT_SUCCESSFULLY_RAIDED
