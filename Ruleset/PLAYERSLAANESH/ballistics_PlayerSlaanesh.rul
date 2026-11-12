@@ -164,7 +164,7 @@ items:
 
     weight: 10
     tags:
-      ITEM_FIRING_SPRITE: 6001
+      ITEM_FIRING_SPRITE: 6008
       ITEM_RECOIL: 20
       REACTION_MULTIPLIER: 135 # Halfway between a carbine and a normal bolter due to foregrip.
 
@@ -200,7 +200,6 @@ items:
 
     weight: 14 # Heavier
     tags:
-      ITEM_FIRING_SPRITE: 6001
       ITEM_RECOIL: 30 # Worse performance due to lack of foregrip.
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
@@ -221,7 +220,7 @@ items:
       arcing: false
     weight: 15 # - 3
     tags:
-      ITEM_FIRING_SPRITE: 6001
+      ITEM_FIRING_SPRITE: 6008
       ITEM_RECOIL: 30
 
   - type: STR_BOLTER_DEAZ_SLAAN_SCOPED # Marksman DMR bolter. Lacks a true aimed shot.
@@ -232,8 +231,8 @@ items:
     accuracySnap: 100
     accuracyAuto: 60
 
-    tuSnap: 30
-    tuAuto: 34
+    tuSnap: 28
+    tuAuto: 36
 
     autoShots: 2
     confAuto:  # Double Shot
@@ -241,7 +240,7 @@ items:
       arcing: false
     weight: 19 # +4
     tags:
-      ITEM_FIRING_SPRITE: 6001
+      ITEM_FIRING_SPRITE: 6008
       ITEM_RECOIL: 30
       ITEM_SNAP_ACCURACY_POWER_BONUS: 10
 
@@ -249,7 +248,7 @@ items:
     dropoff: 6
     snapRange: 14
     autoRange: 12
-    aimRange: 1
+    aimRange: 6
 
     accuracySnap: 82
     accuracyAuto: 58
@@ -333,48 +332,72 @@ items:
     weight: 19
     tags:
       ITEM_RECOIL: 45
-      ITEM_FIRING_SPRITE: 6001 # PLACEHOLDER?
+      ITEM_FIRING_SPRITE: 6008 # PLACEHOLDER?
 
 
   - type: STR_LASCANNON_HANDHELD_SLAAN
+    dropoff: 4
+    autoRange: 0
+    snapRange: 22  # more mobile, but less ranged
+    aimRange: 26  # more mobile, but less ranged
+
+    accuracyAuto: 0
+    accuracySnap: 70
+    accuracyAimed: 85
+    kneelBonus: 120  # heavy weapon, but lighter than usual
+
+    tuAuto: 0
+    tuSnap: 40  # mobile
+    tuAimed: 70
+    minRange: 5
+
+    tuLoad: 30
+    armor: 200
+
+    tags:
+      REACTION_MULTIPLIER: 75
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+
 
 
 
   - type: STR_SLAANESHPATH_LASCARBINE
     dropoff: 5
-    snapRange: 13  # actually autoRange
+    snapRange: 14  # actually autoRange
     autoRange: 8
-    aimRange: 0
 
     accuracySnap: 65  # 40k 70
     accuracyAuto: 50  # 40k 50
-    accuracyAimed: 0
 
-    tuAuto: 30  # 40k 34; slightly faster to fire as a carbine
-    tuSnap: 25  # 40k 22; slightly faster to fire as a carbine
+    tuAuto: 35  # 40k 34; slightly faster to fire as a carbine
+    tuSnap: 27  # 40k 22; slightly faster to fire as a carbine
     tuAimed: 0
 
     oneHandedPenalty: 66 # compact
 
-    autoShots: 4
+    autoShots: 5
     confSnap:
-      shots: 2
-      name: STR_BURST_DOUBLE_TAP
-
+      spendPerShot: 2
+      shots: 3
+      name: STR_BURST_TRIPLE_TAP
+    confAuto:
+      spendPerShot: 2
     tags:
       REACTION_MULTIPLIER: 150  # carbine
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 20
+      ITEM_AUTO_FLAT_POWER_BONUS_PERCENT: 20
 
 #PC
-  - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az.
+  - type: STR_PLASMA_SPRAYGUN_SLAAN  # Slaanesh Clovis IV.
     dropoff: 6
     accuracySnap: 65
     accuracyAuto: 55
     snapRange: 14 # Slaanesh plasma specialization; 1/3 of the normal burst fire malus.
-    autoRange: 10
+    autoRange: 9
     aimRange: 0
 
-    tuSnap: 25
-    tuAuto: 35
+    tuSnap: 30
+    tuAuto: 32
     tuAimed: 0
 
     autoShots: 3
@@ -383,7 +406,7 @@ items:
       shots: 2
     weight: 14 # -2 weight
     tags:
-      REACTION_MULTIPLIER: 150 #carbine
+      REACTION_MULTIPLIER: 125 # Sub-carbine
 
 
 

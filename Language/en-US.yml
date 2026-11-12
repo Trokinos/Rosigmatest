@@ -2592,16 +2592,20 @@ en-US: #  yamllint disable-line rule:empty-values
   #############################
 
   #ATSLCW CODEX WEAPON ENTRIES
+
+  STR_SLAANESHPATH_LASCARBINE_UFOPEDIA: "{NEWLINE}{NEWLINE}A Lascarbine with its internals and power modulator replaced by unsanctioned and poorly understood heretek technology, the Assault Lascarbine requires warp-tainted power packs to function. Exceedingly power-hungry, it is significantly more capable against armored targets than an ordinary las weapon of its size would be."
+
+
   STR_AGRIPINAA_MKIX_UFOPEDIA: "{NEWLINE}{NEWLINE}The product of a recently discovered STC, the Agripinaa Mark IX Vigilant Autogun is both accurate and deadly. Though rarer than other Agripinaa patterns, it is still occasionally issued to Adepta Sororitas novitiates."
   STR_AGRIPINAA_MKIXB_UFOPEDIA: "{NEWLINE}{NEWLINE}With the addition of a scope, the Mark IX Autogun makes for a reliable and competent marksman rifle. Aimed shots from this weapon inflict additional damage based on accuracy, though less so compared to a full sniper rifle."
   STR_GRAIA_MKVII_UFOPEDIA: "An oddity among autoguns, the Graia Mk. VII has been heavily modified for counter-sniper duty during siege actions. Straddling the line between a marksman and a sniper rifle, the Mk. VII is a very deadly weapon in the right hands."
-  STR_PLASMA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Based on the Sororitas De'az pattern, this plasma weapon has been imbued with the power of Slaanesh. Like many other such plasma weapons, it carries little risk of overheating, but cannot be overcharged."
+  STR_PLASMA_SPRAYGUN_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Outwardly a modified Clovis IV plasma gun, this weapon has been imbued with the power of Slaanesh, making it excessively effective against armor. Like many other such plasma weapons, it carries little risk of overheating, but cannot be overcharged."
   STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
   STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, now twisted by Slaanesh into firing far faster than would normally be safe. When loaded with penetrator bolts capable of defeating armor, this weapon should not be taken lightly."
   STR_BOLTER_CANTUS_GL_UFOPEDIA: "{NEWLINE}{NEWLINE}With the foregrip replaced by an underslung grenade launcher, this corrupted Cantus bolter trades accuracy and performance for greatly improved tactical flexibility."
   STR_BOLTER_DEAZ_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a corrupted Sororitas Godwyn-De'az bolter, twisted by the power of Slaanesh. Unlike many other so-called Immaculate weapons, the De'az still retains most performance characteristics of the original."
   STR_BOLTER_ARACHNE_UFOPEDIA: "{NEWLINE}{NEWLINE}The Arachne is a modified Godwyn-De'az bolter with an attached constrictor web module. Though the module itself is no less powerful than a full web pistol, it is significantly less ammo-efficient."
-  STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance minuaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. In addition, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
+  STR_BOLTER_KELPIE_UFOPEDIA: "{NEWLINE}{NEWLINE}Sporting a custom-built, high-performance miniaturized shotgun attachment, the Kelpie combi-bolter is a fearsome weapon up close. In addition, the bolter part of the weapon has been tuned to primarily favor slower, medium-range engagements."
   STR_BOLTER_KERES_UFOPEDIA: "{NEWLINE}{NEWLINE}This once holy De'az bolter has been afflicted with an incredibly malign machine spirit. Sporting a rate of fire close to a full squad of Battle Sisters, this vicious bolter is nigh-uncontrollable even in the strongest of hands."
 
 
@@ -2707,10 +2711,10 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CORRUPT_ELOHIM: "Corrupt Sororitas Elohim"
 
  #Piety projects & progression projects
-  STR_PROPITIATE_SLAANESH: "Propitiate Slaanesh"
+  STR_PROPITIATE_SLAANESH: "Venerate Slaanesh"
   STR_SACRIFICE_TO_SLAANESH: "Offer Souls to Slaanesh"
-  STR_REQUEST_BOON: "Request Boon"
-  STR_CONVERT_MINOR_MISSION_BOUNTY: "Receive Minor Boon of Slaanesh"
+  STR_REQUEST_BOON: "Propitiate Slaanesh"
+  STR_WEAPON_PETITION: "Receive Weapon Boon"
   STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
   STR_CAPTURE_CHAOS_SACRIFICES: "Capture Sacrificial Victims"
 
@@ -2816,10 +2820,12 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_LAS_BATTLERIFLE_SLAAN: "Slaanesh Marksman Lasrifle"
   STR_SLAANESHPATH_LASCARBINE: "Slaanesh Assault Lascarbine"
+  STR_LASCANNON_HANDHELD_SLAAN: "Hestia Light Lascannon"
 
   STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
   STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
-  STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
+  STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az"
+  STR_BOLTER_DEAZ_SLAAN_SCOPED: "Immaculate Godwyn-De'az (Scoped)"
   STR_BOLTER_KERES: "Keres Combi-bolter"
   STR_BOLTER_KELPIE: "Kelpie Combi-bolter"
   STR_BOLTER_NAIAD: "Naiad Combi-bolter"
@@ -2827,7 +2833,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BOLTER_TIAMAT: "Tiamat Combi-bolter"
   STR_BOLTER_CANTUS_GL: "Immaculate Cantus Bolter /GL"
   STR_BOLTER_ELOHIM_SLAAN: "Immaculate Elohim Bolter"
-  STR_PLASMA_CARBINE_SLAAN: "Immaculate Plasma Carbine"
+  STR_PLASMA_SPRAYGUN_SLAAN: "Immaculate Plasma Carbine"
   STR_MELTA_CARBINE_SLAAN: "Immaculate Melta Carbine"
   AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
   AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"

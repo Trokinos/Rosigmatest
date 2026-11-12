@@ -50,7 +50,7 @@ items:
     listOrder: 11160
     recoveryPoints: 3
 
-  - type: STR_PLASMA_CARBINE_SLAAN
+  - type: STR_PLASMA_SPRAYGUN_SLAAN
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.2
