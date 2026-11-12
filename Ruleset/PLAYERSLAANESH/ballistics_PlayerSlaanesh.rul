@@ -224,6 +224,27 @@ items:
       ITEM_FIRING_SPRITE: 6001
       ITEM_RECOIL: 30
 
+  - type: STR_BOLTER_DEAZ_SLAAN_SCOPED # Marksman DMR bolter. Lacks a true aimed shot.
+    dropoff: 4
+    snapRange: 18
+    autoRange: 11
+    minRange: 6 # bad up close.
+    accuracySnap: 100
+    accuracyAuto: 60
+
+    tuSnap: 30
+    tuAuto: 34
+
+    autoShots: 2
+    confAuto:  # Double Shot
+      name: STR_BURST_DOUBLE_TAP
+      arcing: false
+    weight: 19 # +4
+    tags:
+      ITEM_FIRING_SPRITE: 6001
+      ITEM_RECOIL: 30
+      ITEM_SNAP_ACCURACY_POWER_BONUS: 10
+
   - type: STR_BOLTER_ARACHNE
     dropoff: 6
     snapRange: 14
@@ -315,6 +336,10 @@ items:
       ITEM_FIRING_SPRITE: 6001 # PLACEHOLDER?
 
 
+  - type: STR_LASCANNON_HANDHELD_SLAAN
+
+
+
   - type: STR_SLAANESHPATH_LASCARBINE
     dropoff: 5
     snapRange: 13  # actually autoRange
@@ -359,3 +384,33 @@ items:
     weight: 14 # -2 weight
     tags:
       REACTION_MULTIPLIER: 150 #carbine
+
+
+
+
+  - type: STR_LASCANNON_CLIP_SLAAN
+    power: 135
+    damageType: 4
+    damageAlter:  # DA LAS MELTA
+      RandomType: 6
+      ToArmorPre: 0.65
+      ToHealth: 0.7
+      ToArmor: 0.25
+      ToStun: 0.0
+    clipSize: 8
+    powerRangeThreshold: 16
+    powerRangeReduction: 5  # lowers power by 5 by each tile beyond 10, at range 20 it has lost 50 power.
+    # lasgun aesthetics
+    hitSound: 3986
+    fireSound: 3984
+    hitAnimation: 2230
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 17  # Purple laser
+    vaporDensitySurface: 4
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;

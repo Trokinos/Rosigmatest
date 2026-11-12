@@ -181,17 +181,19 @@ items:
  #### LAS WEAPONS ####
 
   - type: STR_LASCANNON_HANDHELD_SLAAN
+    battleType: 1
+    bigSprite: 2080
+    handSprite: 2076
+    floorSprite: 2057
+
     categories: [STR_CAT_LASGUN]
     size: 0.4  # can be manufactured for half the cost but requires materials
     costSell: 50000
     weight: 35
-    bigSprite: 2080
-    floorSprite: 2057
-    handSprite: 2076
+
     compatibleAmmo:
       - STR_LASCANNON_CLIP_SLAAN
-    clipSize: 0
-    battleType: 1
+
     twoHanded: true
     blockBothHands: true
     invWidth: 2

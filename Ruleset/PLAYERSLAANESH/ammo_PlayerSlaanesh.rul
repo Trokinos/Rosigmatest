@@ -80,10 +80,10 @@ items:
     damageType: 5
     damageAlter:  # DA PLASMA SLAAN
       RandomType: 2
-      ToHealth: 0.5  # Slightly worse
+      ToHealth: 0.55  # Slightly worse
       ArmorEffectiveness: 0.75
       ToArmorPre: 0.5  # Slaan melt
-      ToArmor: 0.2
+      ToArmor: 0.35
       ToEnergy: 0.2
       ToMorale: 0.25
       ToStun: 0.2 # Added
@@ -98,6 +98,11 @@ items:
     battleType: 2
     inventoryMoveCost: #quickdraw
       basePercent: 50
+    tags:
+      REACTION_MULTIPLIER: 200
+      ITEM_IS_PALETTE_SWAP: 1
+      ITEM_BASE_COLOR: 0
+      ITEM_SWAP_BASE_COLOR: 12
 
   - type: STR_PLASMA_RIFLE_CLIP_SLAAN
     refNode: *STR_SLAANESHPATH_PLASMA_MUNITION_TEMPLATE
@@ -128,7 +133,11 @@ items:
  #### SLAANESH LAS AMMO ####
 
   - type: STR_LASCANNON_CLIP_SLAAN  # LASCANON MALTHUS POWER PACK               2018
+    categories: [STR_CAT_LASGUN, STR_CAT_SLAANESH]
     size: 0.2
+    requiresBuy:
+      - STR_LASCANNON_DATACRYPT
+    costBuy: 20000  # can be manufactured
     costSell: 2000
     weight: 7
     bigSprite: 2082
@@ -142,31 +151,6 @@ items:
     invHeight: 1
     armor: 40
     listOrder: 12222
-    power: 135
-    damageType: 4
-    damageAlter:  # DA LAS MELTA
-      RandomType: 6
-      ToArmorPre: 0.55
-      ToHealth: 0.7
-      ToArmor: 0.3
-      ToStun: 0.0
-    clipSize: 8
-    powerRangeThreshold: 16
-    powerRangeReduction: 5  # lowers power by 5 by each tile beyond 10, at range 20 it has lost 50 power.
-    # lasgun aesthetics
-    hitSound: 3986
-    fireSound: 3984
-    hitAnimation: 2230
-    bulletSprite: {mod: 40k, index: 22}
-    vaporColorSurface: 17  # purple laser
-    vaporDensitySurface: 4
-    vaporProbabilitySurface: 100
-    scripts:
-      vaporParticleAmmo: |
-        # noting
-        set particle_lifetime 1;
-        set subvoxel_drift 0;
-        return;
 
   - &STR_SLAANESHPATH_LASGUN_MUNITION_STANDARD_TEMPLATE
     type: STR_LASGUN_CLIP_TAINTED
