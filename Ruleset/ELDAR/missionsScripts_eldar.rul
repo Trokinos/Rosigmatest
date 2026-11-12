@@ -12,3 +12,296 @@ missionScripts:
     researchTriggers:
       STR_ELDAR_ASURYANI_CAMPAING_T2: true
       STR_ELDAR_PSYKER_RESEARCH: true
+
+# Space hulk scripts
+  - type: SpaceHulkEldar
+    missionWeights:
+      # 0 is just for safety
+      0:
+        STR_ALIEN_ARTIFACT_ELDAR: 100
+    regionWeights:
+      0:
+        REGION_HULK_SITES: 100
+    varName: hulk
+    useTable: false
+    firstMonth: 1 #from February onward can spawn
+    executionOdds: 30
+    startDelay: 10000
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: false
+      STR_ELDAR_STRATEGY: true
+
+  - type: HULKER_Eldar
+    missionWeights:
+      0:
+        STR_ALIENER_ARTIFACT_ELDAR: 100
+    regionWeights:
+      0:
+        REGION_HULK_SITES: 100
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: false
+      STR_ELDAR_STRATEGY: true
+      STR_WARPED_VAULT: true
+    firstMonth: 0
+    startDelay: 4320  # 3 days
+    randomDelay: 4320  # additional random 0 to 3 days
+    useTable: false
+    maxRuns: 1
+    varName: HULKER_Eldar
+
+### Normal warp storm content
+### Used to have active missions even when no events trigger
+### More Slaanesh and Tzeentch weighting (same as Tau strategy)
+  - &STR_NORMAL_MISSION_TABLE_ELDAR
+    type: warpStorm_ELDAR
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH: 33
+        STR_ALIEN_RESEARCH_TZEENTCH: 20
+        STR_NURGLE_RESEARCH: 11
+        STR_ALIEN_HARVEST: 33
+        STR_NURGLE_HARVEST: 11
+        STR_ALIEN_HARVEST_TZEENTCH: 8 # rare
+        STR_SLAANESH_HARVEST: 8 # rare
+        STR_ALIEN_ABDUCTION: 33
+        STR_NURGLE_ABDUCTION: 11
+        STR_ALIEN_ABDUCTION_TZEENTCH: 8
+        STR_SLAANESH_ABDUCTION: 66
+        STR_ALIEN_INFILTRATION: 33
+        STR_NURGLE_INFILTRATION: 11
+        STR_ALIEN_INFILTRATION_SLAANESH: 66
+        STR_ALIEN_INFILTRATION_TZEENTCH: 11
+        # STR_ALIEN_BASE_SCALING_GV: 11
+        ### Alien bases lists are balanced toward SM
+        #STR_ALIEN_BASE: 33
+        #STR_NURGLE_BASE: 11
+        #STR_SLAANESH_BASE: 11
+        #STR_TZEENTCH_BASE: 11
+        STR_FIERYHEART_BASEV0: 10
+        STR_IMPERIALS_ABDUCTION: 10
+        STR_IMPERIALS_HARVEST: 10
+        STR_SISIMPERIALS_ABDUCTION: 10
+        STR_SISIMPERIALS_HARVEST: 10
+        STR_IMPERIALGUARD_BASEV0: 25
+        # STR_ULTRAMARINE_BASEV0: 25
+        # STR_BLACKTEMPLAR_BASEV0: 25
+        # STR_SPACEWOLVES_BASEV0: 25
+        # STR_CRIMSONFIST_BASEV0: 25
+        # STR_SALAMANDER_BASEV0: 25
+      2:
+        STR_ALIEN_RESEARCH: 33
+        STR_ALIEN_RESEARCH_TZEENTCH: 20
+        STR_NURGLE_RESEARCH: 11
+        STR_ALIEN_HARVEST: 33
+        STR_NURGLE_HARVEST: 11
+        STR_ALIEN_HARVEST_TZEENTCH: 8 # rare
+        STR_SLAANESH_HARVEST: 8 # rare
+        STR_ALIEN_ABDUCTION: 33
+        STR_NURGLE_ABDUCTION: 11
+        STR_ALIEN_ABDUCTION_TZEENTCH: 8
+        STR_SLAANESH_ABDUCTION: 66
+        STR_ALIEN_INFILTRATION: 33
+        STR_NURGLE_INFILTRATION: 11
+        STR_ALIEN_INFILTRATION_SLAANESH: 66
+        STR_ALIEN_INFILTRATION_TZEENTCH: 11
+        # STR_ALIEN_BASE_SCALING_GV: 11
+        STR_ALIEN_BASE: 33
+        STR_NURGLE_BASE: 11
+        STR_SLAANESH_BASE: 33
+        STR_TZEENTCH_BASE: 11
+        STR_IMPERIALS_ABDUCTION: 10
+        STR_IMPERIALS_HARVEST: 10
+        STR_SISIMPERIALS_ABDUCTION: 10
+        STR_SISIMPERIALS_HARVEST: 10
+        STR_IMPERIALGUARD_BASE: 5
+        STR_FIERYHEART_BASE: 10
+        STR_BLOODYROSE_BASE: 10
+        STR_ULTRAMARINE_BASEV0: 5
+        STR_BLACKTEMPLAR_BASEV0: 5
+        STR_SPACEWOLVES_BASEV0: 5
+        STR_CRIMSONFIST_BASEV0: 5
+        STR_SALAMANDER_BASEV0: 5
+        STR_ULTRAMARINE_BASE: 20
+        STR_BLACKTEMPLAR_BASE: 20
+        STR_SPACEWOLVES_BASE: 20
+        STR_CRIMSONFIST_BASE: 20
+        STR_SALAMANDER_BASE: 20
+        STR_TAU_ORCAEXPEDITION: 30
+        STR_TAU_DEVILFISH_EXPEDITION: 30
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: false
+      STR_HARDER_MISSIONS: false
+      STR_ELDAR_STRATEGY: true
+    firstMonth: 1
+
+  # do the game spawn extra missions from months 3 to 5? (50% chances, as normal)
+  - type: warpStormBuilding_ELDAR
+    refNode: *STR_NORMAL_MISSION_TABLE_ELDAR
+    firstMonth: 3
+    lastMonth: 5
+    executionOdds: 50
+
+  - type: warpStormRaging_ELDAR
+    refNode: *STR_NORMAL_MISSION_TABLE_ELDAR
+    firstMonth: 6
+
+# Harder mission set to be used when unlocking harder mission from research milestone(s)
+  - &STR_HARD_MISSION_TABLE
+    type: warpStormHard_Eldar
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH_HARD: 33
+        STR_NURGLE_RESEARCH_HARD: 11
+        STR_ALIEN_RESEARCH_TZEENTCH_HARD: 20
+        STR_ALIEN_HARVEST_HARD: 33
+        STR_NURGLE_HARVEST_HARD: 11
+        STR_ALIEN_HARVEST_TZEENTCH_HARD: 8 # rare
+        STR_SLAANESH_HARVEST_HARD: 8 # rare
+        STR_ALIEN_ABDUCTION_HARD: 33
+        STR_NURGLE_ABDUCTION_HARD: 12
+        STR_SLAANESH_ABDUCTION_HARD: 66
+        STR_ALIEN_ABDUCTION_TZEENTCH_HARD: 8
+        STR_ALIEN_INFILTRATION_HARD: 33
+        STR_NURGLE_INFILTRATION_HARD: 11
+        STR_ALIEN_INFILTRATION_SLAANESH_HARD: 66
+        STR_ALIEN_INFILTRATION_TZEENTCH_HARD: 11
+        #STR_ALIEN_BASE_SCALING_GV: 11
+        STR_ALIEN_BASE: 33
+        STR_NURGLE_BASE: 11
+        STR_SLAANESH_BASE: 33
+        STR_TZEENTCH_BASE: 11
+        # STR_SLAANESH_ABBEY_SCALING_GV: 22
+        # STR_TZEENTCH_BASE_SCALING_GV: 22
+        STR_IMPERIALS_SUPPLY: 20
+        STR_BLOODYROSE_BASE: 20
+        STR_FIERYHEART_BASE: 10
+        STR_SISIMPERIALS_ABDUCTION: 10
+        STR_SISIMPERIALS_HARVEST: 10
+        STR_IMPERIALGUARD_BASE: 25
+        STR_ULTRAMARINE_BASE: 25
+        STR_BLACKTEMPLAR_BASE: 25
+        STR_SPACEWOLVES_BASE: 25
+        STR_CRIMSONFIST_BASE: 25
+        STR_SALAMANDER_BASE: 25
+
+      2:
+        STR_ALIEN_RESEARCH_HARD: 33
+        STR_NURGLE_RESEARCH_HARD: 11
+        STR_ALIEN_RESEARCH_TZEENTCH_HARD: 11
+        STR_ALIEN_HARVEST_HARD: 33
+        STR_NURGLE_HARVEST_HARD: 15
+        STR_ALIEN_HARVEST_TZEENTCH_HARD: 11
+        STR_SLAANESH_HARVEST_HARD: 33
+        STR_ALIEN_ABDUCTION_HARD: 22
+        STR_NURGLE_ABDUCTION_HARD: 12
+        STR_SLAANESH_ABDUCTION_HARD: 33
+        STR_ALIEN_ABDUCTION_TZEENTCH_HARD: 11
+        STR_ALIEN_INFILTRATION_HARD: 22
+        STR_NURGLE_INFILTRATION_HARD: 11
+        STR_ALIEN_INFILTRATION_SLAANESH_HARD: 33
+        STR_ALIEN_INFILTRATION_TZEENTCH_HARD: 11
+        #STR_ALIEN_BASE_SCALING_GV: 33
+        STR_ALIEN_BASE: 33
+        STR_NURGLE_BASE: 11
+        STR_SLAANESH_BASE: 66
+        STR_TZEENTCH_BASE: 11
+        STR_SLAANESH_ABBEY_SCALING_GV: 66 #Adopted from TAU strategy
+        #STR_TZEENTCH_BASE_SCALING_GV: 11
+        STR_IMPERIALS_ABDUCTION: 10
+        STR_IMPERIALS_HARVEST: 10
+        STR_SISIMPERIALS_ABDUCTION: 10
+        STR_SISIMPERIALS_HARVEST: 10
+        STR_IMPERIALGUARD_BASEV2: 25
+        STR_ULTRAMARINE_BASEV2: 25
+        STR_BLACKTEMPLAR_BASEV2: 25
+        STR_SPACEWOLVES_BASEV2: 25
+        STR_CRIMSONFIST_BASEV2: 25
+        STR_SALAMANDER_BASEV2: 25
+        STR_TAU_ORCAEXPEDITION: 30
+        STR_TAU_DEVILFISH_EXPEDITION: 30
+    firstMonth: 1
+    useTable: false
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: false
+      STR_HARDER_MISSIONS: true
+      STR_ELDAR_STRATEGY: true
+
+  - type: warpStormBuildingHard_Eldar
+    refNode: *STR_HARD_MISSION_TABLE
+    firstMonth: 3
+    lastMonth: 5
+    executionOdds: 50
+    useTable: true
+
+  - type: warpStormRagingHard_Eldar
+    refNode: *STR_HARD_MISSION_TABLE
+    firstMonth: 6
+    useTable: true
+
+### Bases #BASE#
+### used to constantly generate bases and not leave the world empty on top of warpstorm script
+  # Default Loyalist
+  - type: newTraditionalBasesEarly_Eldar
+    missionWeights:
+      0:
+        STR_CULTIST_BASE: 33
+        STR_TRAITOR_GUARD_BASE: 33
+        STR_ORK_BASE: 33
+        STR_TS_GANGER_BASE_START_ELDAR: 33
+        STR_IMPERIALGUARD_BASEV0: 33
+        STR_ULTRAMARINE_BASEV0: 11
+        STR_FIERYHEART_BASEV0: 22
+        STR_BLOODYROSE_BASEV0: 22
+    firstMonth: 1
+    lastMonth: 2
+    startDelay: 120
+    randomDelay: 20160 # Up to 2 weeks random delay
+    executionOdds: 70
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: true
+      STR_NOT_BLACKTEMPLARS: true
+
+  - type: newTraditionalBasesLater_Eldar
+    missionWeights:
+      0:
+        STR_CULTIST_BASE: 33
+        STR_TRAITOR_GUARD_BASE: 33
+        STR_SLAANESH_BASE: 44
+        STR_IMPERIALGUARD_BASE: 33
+        STR_ORK_BASE: 22
+        STR_BLOODYROSE_BASE: 5
+        STR_FIERYHEART_BASE: 5
+        STR_ULTRAMARINE_BASE: 5
+        STR_BLACKTEMPLAR_BASE: 5
+        STR_SPACEWOLVES_BASE: 5
+        STR_CRIMSONFIST_BASE: 5
+        STR_SALAMANDER_BASE: 5
+    firstMonth: 3
+    startDelay: 120
+    randomDelay: 20160 # Up to 2 weeks random delay
+    executionOdds: 100
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: true
+      STR_NOT_BLACKTEMPLARS: true
+
+  - type: newTraditionalBasesExtra_Eldar
+    missionWeights:
+      0:
+        STR_CULTIST_BASE: 33
+        STR_TRAITOR_GUARD_BASE: 33
+        STR_ORK_BASE: 33
+        # lower chances of harder races
+        STR_NECRON_BASE: 5 #REMOVE this entirely avoid submodding in base40Ks entry
+        STR_ULTRAMARINE_BASEV0: 5
+        STR_BLACKTEMPLAR_BASEV0: 5
+        STR_SPACEWOLVES_BASEV0: 5
+        STR_CRIMSONFIST_BASEV0: 5
+        STR_SALAMANDER_BASEV0: 5
+    firstMonth: 6
+    startDelay: 120
+    randomDelay: 20160 # Up to 2 weeks random delay
+    executionOdds: 70
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: true
+      STR_NOT_WORDBEARERS: true
+      STR_NOT_BLACKTEMPLARS: true

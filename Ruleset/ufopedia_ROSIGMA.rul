@@ -2167,7 +2167,7 @@ ufopaedia:
   # Ork Alliance Research
   - id: STR_ORK_DEAL
     requires:
-      - STR_ELDAR_ALLIANCE
+      - STR_ORK_DEAL
     type_id: 10
     section: STR_ALIEN_RESEARCH_UC
     image_id: RETAKING_SECTORS.SPK

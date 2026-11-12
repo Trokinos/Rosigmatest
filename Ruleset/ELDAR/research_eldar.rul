@@ -53,6 +53,7 @@ research:
       - STR_ELDAR_ASURYANI_CAMPAING # TEMPORARY addition until there are multiple eldar campaigns
       #- STR_CHOSEN_ELDAR_STRATEGY
       - STR_FUSION_TECH_RESEARCH # Eldar Meltagun equivalent
+      - STR_ELDAR_INACTIVE #no infighting
     disables:
       - STR_NOT_ELDAR_STRATEGY
       - STR_GENESTEALERS_ACTIVE
@@ -61,11 +62,12 @@ research:
       - STR_CHAOS_STRATEGY
       - STR_GREENEST_ORKZ
       - STR_TAU_GUEVESA_STRATEGY_GV
+      - STR_SLAANESHPATH
       #- STR_PSI_LAB # we need to develop a proper psyker chamber
       - STR_PSI_AMP # eldar won't get normal tome of the mind and other stuff
       - STR_COMBAT_SERVITOR_PROGRAM # eldar don't use such barbaric tech
       - STR_THE_MARTIAN_SOLUTION  # More like a Monke problem! Eldar care about Slaneesh
-      #- STR_DEFAULT_CAMPAIGN      # we need to develop a Eldar versions of this content
+      - STR_DEFAULT_CAMPAIGN
       - STR_DIFFICULTY_OPTIONS    # does not have harder missions
     spawnedEvent: STR_ELDAR_ASURYANI_CAMPAING_START # Temporary untill we split the strategy?
 
