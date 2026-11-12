@@ -42,6 +42,156 @@ alienMissions:
         timer: 0
         objective: true
 
+  # ganger base generate
+
+  - type: STR_GANGER_INFILTRATION_ELDAR
+    points: 10
+    operationType: 1 # comes from the base that spawned it
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+        STR_BASIC_GANGERS: 50
+        STR_SLAANESH_CORRUPTED_GANGERS: 50
+      2:
+        STR_SLAANESH_CORRUPTED_GANGERS: 100
+    waves:
+      - ufo: STR_SABOTAGE_MISSIONCHAOSCULT # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true
+
+  - type: STR_RIOT_ELDAR
+    points: 10
+    operationType: 1 # comes from the base that spawned it
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+        STR_EARLY_CULTISTS: 15
+        STR_SLAANESH_CULT_EARLY: 15
+        STR_BASIC_GANGERS: 30
+        STR_SLAANESH_CORRUPTED_GANGERS: 30
+        STR_CHAOS_RIOTS: 10
+      1:
+        STR_EARLY_CULTISTS: 10
+        STR_SLAANESH_CULT_EARLY: 20
+        STR_BASIC_GANGERS: 25
+        STR_SLAANESH_CORRUPTED_GANGERS: 30
+        STR_SLAANESH_TRAITOR_GUARD_EARLY: 5
+        STR_SLAANGOR_EARLY: 10
+      2:
+        STR_SLAANESH_CULT_EARLY: 20
+        STR_SLAANESH_CORRUPTED_GANGERS: 40
+        STR_SLAANESH_TRAITOR_GUARD_EARLY: 10
+        STR_SLAANGOR_EARLY: 10
+        STR_SLAANGOR_MIXED: 5
+    waves:
+      - ufo: STR_RIOTCHAOSCULT # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true
+
+  - type: STR_RIOT_ELDAR_ALTERNATE
+    points: 10
+    operationType: 1 # comes from the base that spawned it
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+        STR_EARLY_CULTISTS: 15
+        STR_SLAANESH_CULT_EARLY: 15
+        STR_BASIC_GANGERS: 30
+        STR_SLAANESH_CORRUPTED_GANGERS: 30
+        STR_CHAOS_RIOTS: 10
+      1:
+        STR_EARLY_CULTISTS: 10
+        STR_SLAANESH_CULT_EARLY: 20
+        STR_BASIC_GANGERS: 25
+        STR_SLAANESH_CORRUPTED_GANGERS: 30
+        STR_SLAANESH_TRAITOR_GUARD_EARLY: 5
+        STR_SLAANGOR_EARLY: 10
+      2:
+        STR_SLAANESH_CULT_EARLY: 20
+        STR_SLAANESH_CORRUPTED_GANGERS: 40
+        STR_SLAANESH_TRAITOR_GUARD_EARLY: 10
+        STR_SLAANGOR_EARLY: 10
+        STR_SLAANGOR_MIXED: 5
+    waves:
+      - ufo: STR_RIOT_ELDAR_ALTERNATE # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true
+
+  - type: STR_GANGERSCITYCONVOYDEF_ELDAR
+    points: 10
+    operationType: 1 # comes from the base that spawned it
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+        STR_EARLY_CULTISTS: 15
+        STR_SLAANESH_CULT_EARLY: 15
+        STR_BASIC_GANGERS: 10
+        STR_SLAANESH_CORRUPTED_GANGERS: 10
+        STR_CHAOS_RIOTS: 40
+      1:
+        STR_EARLY_CULTISTS: 10
+        STR_SLAANESH_CULT_EARLY: 20
+        STR_BASIC_GANGERS: 15
+        STR_SLAANESH_CORRUPTED_GANGERS: 10
+        STR_SLAANESH_TRAITOR_GUARD_EARLY: 5
+        STR_SLAANGOR_EARLY: 10
+        STR_CHAOS_RIOTS: 30
+      2:
+        STR_SLAANESH_CULT_EARLY: 20
+        STR_SLAANESH_CORRUPTED_GANGERS: 40
+        STR_SLAANESH_TRAITOR_GUARD_EARLY: 10
+        STR_SLAANGOR_EARLY: 10
+        STR_SLAANGOR_MIXED: 5
+    waves:
+      - ufo: STR_GANGERSCITYCONVOYDEF_ELDAR # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true
+
+  - type: STR_GANGERSCITYCONVOYALT_ELDAR
+    points: 10
+    operationType: 1 # comes from the base that spawned it
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+        STR_EARLY_CULTISTS: 15
+        STR_SLAANESH_CULT_EARLY: 15
+        STR_BASIC_GANGERS: 10
+        STR_SLAANESH_CORRUPTED_GANGERS: 10
+        STR_CHAOS_RIOTS: 40
+      1:
+        STR_EARLY_CULTISTS: 10
+        STR_SLAANESH_CULT_EARLY: 20
+        STR_BASIC_GANGERS: 15
+        STR_SLAANESH_CORRUPTED_GANGERS: 10
+        STR_SLAANESH_TRAITOR_GUARD_EARLY: 5
+        STR_SLAANGOR_EARLY: 10
+        STR_CHAOS_RIOTS: 30
+      2:
+        STR_SLAANESH_CULT_EARLY: 20
+        STR_SLAANESH_CORRUPTED_GANGERS: 40
+        STR_SLAANESH_TRAITOR_GUARD_EARLY: 10
+        STR_SLAANGOR_EARLY: 10
+        STR_SLAANGOR_MIXED: 5
+    waves:
+      - ufo: STR_GANGERSCITYCONVOYALT_ELDAR # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true
+
   - type: STR_SLAANESH_BASE_ELDAR
     points: 50
     retaliationOdds: 0

@@ -78,8 +78,8 @@ alienDeployments:
       STR_GANGER_INFILTRATION_ELDAR: 20 #rewards 5 eldar civilian
       STR_RIOT_ELDAR: 20 # riot inside friendly mon'key settlement
       STR_RIOT_ELDAR_ALTERNATE: 20 # riot inside friendly mon'key settlement
-      STR_GANGERSCITYCONVOYDEF: 20  # to clone to set it as interception of gangers convoy. may reward SOME eldar civilian
-      STR_GANGERSCITYCONVOYALT: 20 # to clone to set it as interception of gangers convoy. may reward SOME eldar civilian
+      STR_GANGERSCITYCONVOYDEF_ELDAR: 20  # interception of gangers convoy.
+      STR_GANGERSCITYCONVOYALT_ELDAR: 20 # interception of gangers convoy.
       STR_TS_GANGER_BASE_START_ELDAR: 8
     genMissionFreq: 3
     genMissionLimit: 10000
@@ -310,7 +310,7 @@ alienDeployments:
     missionBountyItem: STR_REQUISITION_BOUNTY_100K
     missionBountyItemCount: 1
 
-  - type: STR_GANGERSCITYCONVOYDEF
+  - type: STR_GANGERSCITYCONVOYDEF_ELDAR
     briefing:
       title: STR_GANGERSCITYCONVOY_TITLE
       palette: 4
@@ -384,7 +384,7 @@ alienDeployments:
     missionBountyItem: STR_REQUISITION_BOUNTY_100K
     missionBountyItemCount: 1
 
-  - type: STR_GANGERSCITYCONVOYALT
+  - type: STR_GANGERSCITYCONVOYALT_ELDAR
     briefing:
       title: STR_GANGERSCITYCONVOY_TITLE
       palette: 4
@@ -436,7 +436,7 @@ alienDeployments:
         dQty: 2
         percentageOutsideUfo: 100
         itemSets: [[], [], []]
-     civiliansByType:
+    civiliansByType:
       STR_CIVILIAN_F0: 1
       STR_CIVILIAN_M0: 1
       STR_CIVILIAN_F1: 1

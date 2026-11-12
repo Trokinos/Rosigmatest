@@ -17684,7 +17684,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GANGERSCITYCONVOY_SITE: "Truckers Sacrifice"
   STR_GANGERSCITYCONVOY_SITE_: "Truckers Sacrifice-{0}"
   STR_GANGERSCITYCONVOY_SITE_LOYALIST: "Truckers Interception"
-  STR_GANGERSCITYCONVOY_SITE_LOYALIST: "Truckers Interception-{0}"
+  STR_GANGERSCITYCONVOY_SITE_LOYALIST_: "Truckers Interception-{0}"
   STR_GANGERSCITYCONVOY_DETECTED: "Truckers Gathering"
 
   # gangers
