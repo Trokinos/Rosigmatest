@@ -154,7 +154,7 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 70
-    listOrder: 11060
+    listOrder: 11010
     # lasgun aesthetics
     hitSound: 3986
     fireSound: 3981
@@ -196,7 +196,7 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 70
-    listOrder: 11060
+    listOrder: 11011
     # lasgun aesthetics
     hitSound: 3986
     fireSound: 3981
@@ -241,7 +241,7 @@ items:
     armor: 70
     vaporColor: 2
     vaporDensity: 5
-    listOrder: 10850
+    listOrder: 10852
     # lasgun aesthetics
     hitSound: 3986
     fireSound: 3981

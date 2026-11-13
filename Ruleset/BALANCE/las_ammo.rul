@@ -34,7 +34,7 @@ items:
   - type: STR_LASPISTOL_CLIP_HOTSHOT
     refNode: *LASGUN_DAMAGE_ALTER
     fireSound: 3983
-    listOrder: 10850  # group with laspistol clips
+    listOrder: 10853  # group with laspistol clips
     damageAlter:
       ArmorEffectiveness: 0.75
     clipSize: 10  # -10, hotshot power drain

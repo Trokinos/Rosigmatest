@@ -575,7 +575,7 @@ items:
     invWidth: 2
     invHeight: 3
     bulletSpeed: 50
-    listOrder: 10915
+    listOrder: 10965
     # *** Melee bayonet
     meleeHitSound: {mod: 40k, index: 101}
     meleeAnimation: 0
@@ -626,7 +626,7 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 70
-    listOrder: 11060
+    listOrder: 11000
     # lasgun aesthetics
     hitSound: 3986
     fireSound: 3981
@@ -664,12 +664,14 @@ items:
       - STR_LASPISTOL_CLIP_SLAAN  # smaller, less damage
       - STR_LASPISTOL_CLIP
       - STR_LASPISTOL_CLIP_HOTSHOT
+      - STR_LASGUN_CLIP_SLAAN # Able to use the 20 round lasgun clip, but relies on laspistol hotshot rounds to pack a bigger punch
     battleType: 1
     twoHanded: true
+    oneHandedPenalty: 85 # Lightweight nature allows it be effective when used one handed
     invWidth: 1
     invHeight: 3
     bulletSpeed: 50
-    listOrder: 10915
+    listOrder: 10922
     # *** Melee bayonet
     meleeHitSound: {mod: 40k, index: 101}
     meleeAnimation: 0
@@ -714,13 +716,13 @@ items:
     dropoff: 4  # slightly worse drop off than other DMR lasrifles
     autoRange: 0
     snapRange: 18  # DMR role, 2x snapfire
-    aimRange: 0
+    aimRange: 22
     accuracyAuto: 0
     accuracySnap: 75  # +5 vs RIFLEG, -15 vs MC, -10 vs DMR Tanith
-    accuracyAimed: 0
+    accuracyAimed: 85 # -5 vs Longlas
     tuAuto: 0
     tuSnap: 33  # 2x snap shot, slightly higher TU cost
-    tuAimed: 0
+    tuAimed: 65 # Slightly worse than Tanith Longlas
     compatibleAmmo:
       - STR_LASGUN_CLIP_SLAAN
       - STR_LASGUN_CLIP_HOTSHOT
@@ -734,7 +736,7 @@ items:
     clipSize: 0
     bulletSpeed: 50
     armor: 200  # to avoid item pile destruction
-    listOrder: 10912
+    listOrder: 10944
 
   - type: STR_LASER_PISTOLCS  # LASPISTOL SLAAN
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
@@ -760,13 +762,13 @@ items:
     battleType: 1
     invWidth: 1
     invHeight: 2
-    listOrder: 10820
+    listOrder: 10803
     inventoryMoveCost: #quickdraw
       basePercent: 50
     tags:
       REACTION_MULTIPLIER: 200
 
-  - type: STR_LASPISTOL_CLIP_SLAAN  # LASPISTOL CLIP           10850
+  - type: STR_LASPISTOL_CLIP_SLAAN  # LASPISTOL CLIP           10851
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     size: 0.05
     costSell: 40
@@ -792,7 +794,7 @@ items:
     armor: 70
     vaporColor: 2
     vaporDensity: 5
-    listOrder: 10850
+    listOrder: 10851
     # lasgun aesthetics
     hitSound: 3986
     fireSound: 3981

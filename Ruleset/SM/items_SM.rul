@@ -74,6 +74,10 @@ items:
     tags:
       REACTION_MULTIPLIER: 200  # multiplies base reaction score by this amount divided by 100
 
+  - type: STR_LASER_PISTOL # Marine Support 10801
+    armor: 200
+    listOrder: 10801
+
   - type: STR_MCPISTOL  # BOLTER PISTOL  10100
     armor: 200
     inventoryMoveCost: #quickdraw
@@ -117,13 +121,17 @@ items:
       ITEM_GETS_ACCENT_RECOLOR: 1
       ITEM_ACCENT_COLOR: 1
 
-  - type: STR_RIFLE  # BOLTER  # From 10300 to 10308. Preparing Light Bolter listOrder changes.
+  - type: STR_RIFLE  # BOLTER GODWYN 10308
     armor: 200
     requiresBuy:
       - STR_MARINE_BOLTERS
       - STR_IMPERIAL_WEAPONS
     costBuy: 10000
     listOrder: 10308
+
+  - type: STR_LASER_RIFLE # Marine Support 10901
+    armor: 200
+    listOrder: 10901
 
   - type: STR_RIFLEA  # BOLTER ARTIFEX DEATHWATCH
     categories: [STR_CAT_BOLTER, STR_CAT_TACTICAL]
