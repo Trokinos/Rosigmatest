@@ -1006,6 +1006,7 @@ armors:
       UNIT_TYPE_IMPERIUM: 1
       UNIT_TYPE_MECHANICAL: 1
       UNIT_SIZE: 200 # HUGE
+    allowsKneeling: false
   - type: DREAD_ARMOR_UC
     stats:
       melee: 20

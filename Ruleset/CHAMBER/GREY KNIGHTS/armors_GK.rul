@@ -12,6 +12,7 @@ armors:
     sideArmor: 250
     rearArmor: 180
     underArmor: 280
+    allowsKneeling: false
     damageModifier:  # DREAD ARMOR VENERABLE
       - 1.0  # none
       - 0.8  # AP

@@ -1087,6 +1087,7 @@ armors:
     spriteSheet: WORDBEARERdreadnoughtbattle.PCK
     instantWoundRecovery: true
     allowInv: true
+    allowsKneeling: false
     customArmorPreviewIndex: [176, 971, 178]
     storeItem: STR_WORDBEARER_DREADNOUGHT_ARMORPLAYER
     corpseGeo: STR_WBDREAD_CORPSE
@@ -1149,6 +1150,7 @@ armors:
     spriteSheet: WORDBEARERhelbrutebattle.PCK
     instantWoundRecovery: true
     allowInv: true
+    allowsKneeling: false
     #storeItem: STR_WORDBEARER_HELBRUTE_ARMOR  # commented out because it was making it available for every player soldiers
     corpseGeo: STR_WBDREAD_CORPSE
     corpseBattle:
@@ -1427,6 +1429,7 @@ armors:
     spriteSheet: WORDBEARERobliteratorbattle.PCK
     instantWoundRecovery: true
     allowInv: true
+    allowsKneeling: false
     customArmorPreviewIndex: [977, 978, 979]
     storeItem: STR_WORDBEARER_OBLITERATOR_ARMORPLAYER
     corpseGeo: STR_WBOBLI_CORPSE
@@ -1492,6 +1495,7 @@ armors:
     customArmorPreviewIndex: [980, 961, 981]
     storeItem: STR_CHAOSBIKE_LEGIOARMORPLAYER
     allowInv: true
+    allowsKneeling: false
     units:
       - STR_WBSOLDIER
       - STR_WBSOLDIER_TERMINATOR
@@ -1678,6 +1682,7 @@ armors:
     spriteSheet: WORDBEARERmutilatorbattle.PCK
     instantWoundRecovery: true
     allowInv: true
+    allowsKneeling: false
     customArmorPreviewIndex: [983, 984, 985]
     storeItem: STR_WORDBEARER_MUTILATOR_ARMORPLAYER
     corpseGeo: STR_WBMUTIL_CORPSE
@@ -2151,6 +2156,7 @@ armors:
     spriteSheet: WORDBEARERbrassscorpbattle.PCK
     instantWoundRecovery: true
     allowInv: true
+    allowsKneeling: false
     customArmorPreviewIndex: [944, 945, 946]
     storeItem: STR_WORDBEARER_BRASSSCORP_ARMORPLAYER
     corpseGeo: STR_WBSCORP_CORPSE
@@ -2762,6 +2768,7 @@ armors:
     spriteSheet: WORDBEARERhelbrutebattle.PCK
     instantWoundRecovery: true
     allowInv: true
+    allowsKneeling: false
     storeItem: STR_WORDBEARER_HELBRUTE_ARMORPLAYER
     corpseGeo: STR_WBDREAD_CORPSE
     corpseBattle:

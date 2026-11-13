@@ -1078,6 +1078,7 @@ armors:
     heatVision: 35  # dreadnought sensors
     psiVision: 8  # Bloodhunt
     allowInv: false
+    allowsKneeling: false
     spriteSheet: KHORNE_DREADNOUGHT_BATTLESPRITES.PCK
     spriteInv: KHORNE_DREADNOUGHT_INV.SPK
     corpseBattle:

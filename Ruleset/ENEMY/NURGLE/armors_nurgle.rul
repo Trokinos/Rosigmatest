@@ -2023,6 +2023,7 @@ armors:
     heatVision: 35  # dreadnought sensors
     psiVision: 5
     allowInv: false
+    allowsKneeling: false
     spriteSheet: NURGLE_DREADNOUGHT_BOLTER_BS.PCK
     spriteInv: NURGLE_DREADNOUGHT_BOLTER_INV.SPK
     corpseBattle:

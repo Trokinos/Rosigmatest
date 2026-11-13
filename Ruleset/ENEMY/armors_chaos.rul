@@ -614,6 +614,7 @@ armors:
       - 1.0  # IMPACT
       - 1.2  # MELTA
     allowsRunning: false  # NPC limits for BAI
+    allowsKneeling: false
     specialWeapon: STR_CHAOS_DREAD_MELEE_WEAPON
     tags:
       INFECTION_RESIST: 100  # infection immune
@@ -646,6 +647,7 @@ armors:
       - 0.0  # IMPACT
       - 1.2  # MELTA
     allowsRunning: false  # NPC limits for BAI
+    allowsKneeling: false
     specialWeapon: STR_CHAOS_DREAD_MELEE_WEAPON
     tags:
       INFECTION_RESIST: 100  # infection immune
