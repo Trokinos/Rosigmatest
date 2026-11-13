@@ -217,62 +217,48 @@ items:
         return;
 
   - type: STR_LAS_BATTLERIFLE_SLAAN
-    dropoff: 3
-    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
-    size: 0.3
-    requires:
-      - STR_ALIENS_ONLY
-    requiresBuy: # Placeholder
-      - STR_SLAANESHPATH
-    costSell: 4000
-    weight: 8
-    bigSprite: 205
-    floorSprite: 203
-    handSprite: 1698
-    bulletSprite: {mod: 40k, index: 12}
+    battleType: 1
+
+    bigSprite: 4091
+    handSprite: 6048
+    floorSprite: 6000
+
     fireSound: {mod: 40k, index: 741}
+    bulletSprite: {mod: 40k, index: 12}
     hitSound: {mod: 40k, index: 19}
     hitAnimation: {mod: 40k, index: 36}
-    autoRange: 11 # 1 More
-    snapRange: 17
-    aimRange: 22
-    accuracyAuto: 55
-    accuracySnap: 90
-    accuracyAimed: 100
-    tuAuto: 35  # Better at autofire than stock battle rifles
-    tuSnap: 33
-    tuAimed: 45 # 5 tu less
-    autoShots: 2
+
     compatibleAmmo:
       - STR_LASGUN_CLIP_TAINTED
-    battleType: 1
+
     twoHanded: true
     invWidth: 2
     invHeight: 3
     bulletSpeed: 50
-    listOrder: 10916
     armor: 200  # to avoid item pile destruction
-    tags:
-      REACTION_MULTIPLIER: 75 # battle rifle penalty; multiplies base reaction score by this amount divided by 100
-      REACTION_PENALTY_KNEELING_BYPASS: 1
-      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
-      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 25
 
-  - type: STR_SLAANESHPATH_LASCARBINE # Fix this entry later.
-    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
-    weight: 4
+
+  - type: STR_SLAANESHPATH_LASCARBINE
+    battleType: 1
+
     bigSprite: {mod: 40k, index: 1022}
     floorSprite: {mod: 40k, index: 1022}
     handSprite: {mod: 40k, index: 1176}
+
     bulletSprite: {mod: 40k, index: 12}
     fireSound: {mod: 40k, index: 741}
     hitSound: {mod: 40k, index: 19}
     hitAnimation: {mod: 40k, index: 36}
+
     compatibleAmmo:
       - STR_LASGUN_CLIP_TAINTED
+
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    bulletSpeed: 50
     armor: 200  # to avoid item pile destruction
-    size: 0.2
-    costSell: 1500
+
     meleePower: 50
     meleeBonus:
       strength: 0.2
@@ -290,8 +276,6 @@ items:
     flatMelee:
       time: true
       energy: true
-    tags:
-      REACTION_MULTIPLIER: 150 #standard carbine reaction multiplier
 
 
   - type: STR_HEAVY_LASPISTOL_SLAAN  # Accatran heavy. Takes normal lasgun cells.
@@ -678,7 +662,26 @@ items:
       - STR_LIGHT_BOLTER_AMMO_BM
 
 
-  - type: STR_BOLTER_TIAMAT # De'az kombi-plasma.
+#  - type: STR_BOLTER_TIAMAT # De'az kombi-plasma.
+
+ #### WEB WEAPONS ####
+
+  - type: STR_CONSTRICTOR_PISTOL
+    battleType: 1
+    bigSprite: 4092
+    handSprite: 550
+    floorSprite: {mod: 40k, index: 615}
+
+    bulletSprite: {mod: 40k, index: 21}
+    fireSound: {mod: 40k, index: 802}
+
+    armor: 200
+    invWidth: 2
+    invHeight: 1
+    twoHanded: false
+    compatibleAmmo:
+      - STR_CONSTRICTOR_PISTOL_AMMO
+
 
  #### MELEE WEAPONS ####
 
@@ -816,35 +819,6 @@ items:
     invWidth: 2
     invHeight: 3
     listOrder: 16301
-
- #### WEB WEAPONS ####
-
-  - type: STR_CONSTRICTOR_PISTOL
-    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL]
-    size: 0.2
-    dropoff: 8
-    weight: 10
-    blockBothHands: false
-    twoHanded: false
-    bigSprite: 2706
-    floorSprite: {mod: 40k, index: 615}
-    handSprite: 550
-    bulletSprite: {mod: 40k, index: 21}
-    fireSound: {mod: 40k, index: 802}
-    compatibleAmmo:
-      - STR_CONSTRICTOR_PISTOL_AMMO
-    accuracySnap: 60 # 5 more vs web pistol
-    tuSnap: 25
-    battleType: 1
-    invWidth: 2
-    invHeight: 1
-    recoveryPoints: 1
-    listOrder: 11805
-    inventoryMoveCost: #quickdraw
-      basePercent: 50
-    tags:
-      REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
-
 
 
  #### AUX WEAPONS ####

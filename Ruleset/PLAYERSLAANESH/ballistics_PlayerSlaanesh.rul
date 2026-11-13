@@ -359,6 +359,24 @@ items:
       REACTION_PENALTY_KNEELING_BYPASS: 1
 
 
+  - type: STR_LAS_BATTLERIFLE_SLAAN
+    dropoff: 3
+    snapRange: 17
+    aimRange: 22
+
+
+    accuracySnap: 85
+    accuracyAimed: 100
+
+    tuSnap: 33
+    tuAimed: 46 # 5 tu less
+
+    weight: 10
+    tags:
+      REACTION_MULTIPLIER: 75 # battle rifle penalty; multiplies base reaction score by this amount divided by 100
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 20
 
 
   - type: STR_SLAANESHPATH_LASCARBINE
@@ -392,6 +410,7 @@ items:
     dropoff: 6
     accuracySnap: 65
     accuracyAuto: 55
+
     snapRange: 14 # Slaanesh plasma specialization; 1/3 of the normal burst fire malus.
     autoRange: 9
     aimRange: 0
@@ -408,6 +427,19 @@ items:
     tags:
       REACTION_MULTIPLIER: 125 # Sub-carbine
 
+  - type: STR_CONSTRICTOR_PISTOL
+    dropoff: 8
+    accuracySnap: 60 # 5 more vs web pistol
+
+    snapRange: 6
+
+    tuSnap: 25
+
+    weight: 8
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+    tags:
+      REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
 
 

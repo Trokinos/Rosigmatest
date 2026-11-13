@@ -2599,7 +2599,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_AGRIPINAA_MKIX_UFOPEDIA: "{NEWLINE}{NEWLINE}The product of a recently discovered STC, the Agripinaa Mark IX Vigilant Autogun is both accurate and deadly. Though rarer than other Agripinaa patterns, it is still occasionally issued to Adepta Sororitas novitiates."
   STR_AGRIPINAA_MKIXB_UFOPEDIA: "{NEWLINE}{NEWLINE}With the addition of a scope, the Mark IX Autogun makes for a reliable and competent marksman rifle. Aimed shots from this weapon inflict additional damage based on accuracy, though less so compared to a full sniper rifle."
   STR_GRAIA_MKVII_UFOPEDIA: "An oddity among autoguns, the Graia Mk. VII has been heavily modified for counter-sniper duty during siege actions. Straddling the line between a marksman and a sniper rifle, the Mk. VII is a very deadly weapon in the right hands."
-  STR_PLASMA_SPRAYGUN_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Outwardly a modified Clovis IV plasma gun, this weapon has been imbued with the power of Slaanesh, making it excessively effective against armor. Like many other such plasma weapons, it carries little risk of overheating, but cannot be overcharged."
+  STR_PLASMA_SPRAYGUN_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Though outwardly a modified Clovis IV plasma gun, this weapon has been “blessed” through the power of Slaanesh. Like many other such plasma weapons, it is superlative at melting armor and carries little risk of overheating, but cannot be overcharged."
   STR_MELTA_CARBINE_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}Reverse-engineered from a Tempestus Aquilon melta carbine, this heretically modified weapon packs nearly the punch of a full-sized meltagun. The price is a significant reduction in ammo efficiency outside of low-power mode."
   STR_BOLTER_CANTUS_SLAAN_UFOPEDIA: "{NEWLINE}{NEWLINE}This is a former Cantus-pattern Sororitas training bolter, now twisted by Slaanesh into firing far faster than would normally be safe. When loaded with penetrator bolts capable of defeating armor, this weapon should not be taken lightly."
   STR_BOLTER_CANTUS_GL_UFOPEDIA: "{NEWLINE}{NEWLINE}With the foregrip replaced by an underslung grenade launcher, this corrupted Cantus bolter trades accuracy and performance for greatly improved tactical flexibility."
@@ -2788,7 +2788,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_VALKYRIE_SLAANESH: "Immaculate Valkyrie"
 
 #PLOT ITEMS AND TOKENS
-  STR_SLAANESHPATH_PIETY: "Piety"
+  STR_SLAANESHPATH_PIETY: "Devotion"
   STR_SLAANESHPATH_BOON: "Boon of Slaanesh"
   STR_SPREAD_TRUE_FAITH_UNDERHIVE: "Proselytize the Underhive"
   STR_UNDERHIVE_CULT_TOKEN: "Underhive Cultist Ledger"
