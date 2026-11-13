@@ -405,6 +405,22 @@ items:
       ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 20
       ITEM_AUTO_FLAT_POWER_BONUS_PERCENT: 20
 
+  - type: STR_IMMACULATE_PLASMA_PISTOL
+    dropoff: 6
+    snapRange: 14  # *** PLASMA rebalance
+
+    accuracySnap: 70
+
+    tuSnap: 25
+
+    confSnap:
+      shots: 2
+      name: STR_BURST_DOUBLE_TAP
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+    tags:
+      REACTION_MULTIPLIER: 200
+
 #PC
   - type: STR_PLASMA_SPRAYGUN_SLAAN  # Slaanesh Clovis IV.
     dropoff: 6
@@ -412,10 +428,10 @@ items:
     accuracyAuto: 55
 
     snapRange: 14 # Slaanesh plasma specialization; 1/3 of the normal burst fire malus.
-    autoRange: 9
+    autoRange: 8
     aimRange: 0
 
-    tuSnap: 30
+    tuSnap: 25
     tuAuto: 32
     tuAimed: 0
 

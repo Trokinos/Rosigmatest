@@ -322,13 +322,13 @@ research:
       - STR_GENERALLOCK # Placeholder
 
   - name: STR_MELTAGUN_DATACRYPT
-    cost: 200
+    cost: 250
     points: 30
     dependencies:
       - STR_CONTACT_HERETEKS
 
   - name: STR_LASCANNON_DATACRYPT
-    cost: 250
+    cost: 350
     dependencies:
       - STR_CONTACT_HERETEKS
       - STR_IMMACULATE_LASGUN_TECHNOLOGY
@@ -336,10 +336,18 @@ research:
       - STR_LASER_CANNON
 
   - name: STR_IMMACULATE_PLASMA_TECHNOLOGY
-    cost: 150
+    cost: 300
     points: 30
     dependencies:
       - STR_CONTACT_HERETEKS
+      - STR_SACRIFICIAL_RITUALS
+
+  - name: STR_IMMACULATE_PLASMA_PISTOL_TECHNOLOGY
+    cost: 650
+    points: 20
+    dependencies:
+      - STR_IMMACULATE_PLASMA_TECHNOLOGY
+      - STR_SACRIFICIAL_RITUALS
       - STR_OUR_DEVOTION_DEEPENS
 
   - name: STR_IMMACULATE_LASGUN_TECHNOLOGY

@@ -64,6 +64,13 @@ items:
     size: 0.2
     costSell: 4000
 
+  - type: STR_IMMACULATE_PLASMA_PISTOL
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.1
+    costSell: 12000
+    listOrder: 11211
+    recoveryPoints: 2
 
   - type: STR_PLASMA_SPRAYGUN_SLAAN
     refNode: *IMMACULATE_WEAPON

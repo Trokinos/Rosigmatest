@@ -144,6 +144,23 @@ manufacture:
       STR_SLAANESHPATH_PIETY: 90
     points: 0
 
+  - name: STR_RECRUIT_FELINID
+    category: STR_RITES_OF_SUBVERSION
+    requires:
+      - STR_ABHUMAN_RECRUITMENT
+    requiresBaseFunc: [ALTAR]
+    space: 0
+    time: 1000
+    cost: 200000
+    producedItems: {}
+    spawnedPersonType: STR_SLAANESHPATH_FELINID_ACOLYTE
+    requiredItems:
+      STR_SLAANESHPATH_PIETY: 66
+      STR_ALIEN_FOOD: 2
+      STR_ALIEN_SURGERY: 1
+      STR_ALIEN_ALLOYS: 5
+    points: 25
+
 #### RITUALS OF DECADENCE ####
 
 ####################################################################
@@ -402,6 +419,30 @@ manufacture:
       STR_ALIEN_FOOD: 1
       STR_SLAANESHPATH_PIETY: 15
 
+
+  - name: STR_IMMACULATE_PLASMA_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_IMMACULATE_PLASMA_PISTOL_TECHNOLOGY
+    space: 0
+    time: 750
+    cost: 65000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+    producedItems:
+      STR_IMMACULATE_PLASMA_PISTOL: 1
+
+  - name: STR_SLAANESHPATH_PLASMA_PISTOL_MANUFACTURE
+    category: STR_AMMUNITION
+    requires:
+      - STR_IMMACULATE_PLASMA_PISTOL_TECHNOLOGY
+    space: 0
+    time: 120
+    cost: 7000
+    requiredItems:
+      STR_ELERIUM_115: 7
+    producedItems:
+      STR_PLASMA_PISTOL_CLIP_SLAAN: 5
 
   - name: STR_PLASMA_SPRAYGUN_SLAAN # TODO: SPLIT THIS INTO AN EXPENSIVE AND CHEAP RECIPE DEPENDING ON TECHNOLOGY TIER
     category: STR_WEAPON

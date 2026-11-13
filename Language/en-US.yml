@@ -2684,7 +2684,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_HALLUCINOGEN_GRENADES: "Hallucinogen Grenades"
   STR_SHARD_GRENADES: "Shard Grenades"
   STR_BALEFIRE_GRENADES: "Balefire Grenades"
-
+  STR_IMMACULATE_PLASMA_PISTOL_TECHNOLOGY: "Immaculate Plasma Pistols"
 
  ###############################################
  ####### SLAANESH MANUFACTURING PROJECTS #######
@@ -2735,9 +2735,12 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CREATE_ANGELIC_TOKEN: "Create Angelic Armor"
   STR_CREATE_HARBINGER_TOKEN: "Create Harbinger Armor"
 
+  STR_SLAANESHPATH_PLASMA_PISTOL_MANUFACTURE: "Slaanesh Plasma Pistol"
+  STR_SLAANESHPATH_PLASMA_PISTOL_AMMO_MANUFACTURE: "Slaanesh Plasma Pistol Ammo"
 
   ## UNIT PROJECTS
 
+  STR_RECRUIT_FELINID: "Induct Felinid Acolyte"
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
   STR_ELEVATE_PROMISING_HANDMAIDEN: "Recognize Promising Handmaiden"
 
@@ -2834,7 +2837,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BOLTER_TIAMAT: "Tiamat Combi-bolter"
   STR_BOLTER_CANTUS_GL: "Immaculate Cantus Bolter /GL"
   STR_BOLTER_ELOHIM_SLAAN: "Immaculate Elohim Bolter"
-  STR_PLASMA_SPRAYGUN_SLAAN: "Immaculate Plasma Carbine"
+  STR_PLASMA_SPRAYGUN_SLAAN: "Immaculate Plasma Spraygun"
+  STR_IMMACULATE_PLASMA_PISTOL: "Immaculate Plasma Pistol"
   STR_MELTA_CARBINE_SLAAN: "Immaculate Melta Carbine"
   AUX_CHIRURGEON_NEEDLER: "Chirurgeon Needler"
   AUX_CHIRURGEON_MEDI_KIT: "Chirurgeon Medicae Kit"
@@ -2906,7 +2910,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"
   STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
   STR_SLAANESHPATH_ANGEL_ARMOR: "Angelic Armor"
-  STR_SLAANESHPATH_FELINID_ASSASSIN_ARMOR: "Felinid Acolyte Catsuit"
+  STR_SLAANESHPATH_FELINID_ASSASSIN_ARMOR: "Acolyte Catsuit"
 
   ## Slaanesh Adeptas Ranks
 

@@ -354,6 +354,27 @@ items:
 
 #### PLASMA WEAPONS ####
 
+  - type: STR_IMMACULATE_PLASMA_PISTOL
+
+
+    battleType: 1
+    size: 0.1
+    costSell: 12000
+    weight: 3
+    bigSprite: 2306
+    floorSprite: 2415
+    handSprite: 2340
+    bulletSprite: {mod: 40k, index: 11}
+    fireSound: 2117
+    compatibleAmmo:
+      - STR_PLASMA_PISTOL_CLIP_SLAAN
+
+
+    invWidth: 1
+    invHeight: 2
+    armor: 155
+    twoHanded: false
+
   - type: STR_PLASMA_SPRAYGUN_SLAAN  # Slaanesh plasma De'az. lacks overcharge, but faster to fire.
     weight: 14 # -2 weight
     bigSprite: 4092
