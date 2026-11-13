@@ -141,6 +141,13 @@ items:
       - STR_GENERALLOCK
     listOrder: 10235 # PLACEHOLDER?
 
+  - type: STR_CONSTRICTOR_PISTOL
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.2
+    costSell: 7000
+    recoveryPoints: 2
+    listOrder: 11806
 
 #### GRENADES
 

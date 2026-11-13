@@ -1307,7 +1307,8 @@ extraSprites:
       4088: Resources/PLAYERSLAANESH/Weapons/Grenades/SHARD_GRENADE40_BIGOB.png
       4089: Resources/PLAYERSLAANESH/Weapons/Grenades/SHARD_GRENADE_BIGOB.png
       4090: Resources/PLAYERSLAANESH/Weapons/Autoguns/MKVII.png
-      4091: Resources/PLAYERSLAANESH/Weapons/Las/marksman_lasrifle.png
+      4091: Resources/PLAYERSLAANESH/Weapons/Las/marksman_lasrifle_bigob.png
+      4092: Resources/PLAYERSLAANESH/Weapons/Webber/constrictor_pistol_bigob.png
 
 # Eldars
       4850: Resources/Eldar/weapons/reaper_aml_bigObj.png #reaper launcher

@@ -359,7 +359,6 @@ items:
       REACTION_PENALTY_KNEELING_BYPASS: 1
 
 
-
   - type: STR_LAS_BATTLERIFLE_SLAAN
     dropoff: 3
     snapRange: 17
@@ -411,6 +410,7 @@ items:
     dropoff: 6
     accuracySnap: 65
     accuracyAuto: 55
+
     snapRange: 14 # Slaanesh plasma specialization; 1/3 of the normal burst fire malus.
     autoRange: 9
     aimRange: 0
@@ -427,6 +427,19 @@ items:
     tags:
       REACTION_MULTIPLIER: 125 # Sub-carbine
 
+  - type: STR_CONSTRICTOR_PISTOL
+    dropoff: 8
+    accuracySnap: 60 # 5 more vs web pistol
+
+    snapRange: 6
+
+    tuSnap: 25
+
+    weight: 8
+    inventoryMoveCost: #quickdraw
+      basePercent: 50
+    tags:
+      REACTION_MULTIPLIER: 200 # multiplies base reaction score by this amount divided by 100
 
 
 
