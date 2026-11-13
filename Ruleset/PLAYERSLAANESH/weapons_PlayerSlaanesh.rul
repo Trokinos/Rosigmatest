@@ -354,7 +354,7 @@ items:
 
 #### PLASMA WEAPONS ####
 
-  - type: STR_PLASMA_CARBINE_SLAAN  # Slaanesh plasma De'az. lacks overcharge, but faster to fire.
+  - type: STR_PLASMA_SPRAYGUN_SLAAN  # Slaanesh plasma De'az. lacks overcharge, but faster to fire.
     weight: 14 # -2 weight
     bigSprite: 2086
     handSprite: {mod: 40k, index: 48}
