@@ -245,10 +245,11 @@ items:
       ITEM_RECOIL: 25
       ITEM_COLOR_CHANGES_WITH_AMMO: 15
 
-  - type: STR_LASER_RIFLEC  # LASGUN CHAOS               10920
+  - type: STR_LASER_RIFLEC  # LASGUN CHAOS               10902
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
     refNode: *CHAOS_WEAPON
     costBuy: 3500
+    listOrder: 10902
     compatibleAmmo:
       - STR_LASGUN_CLIP
       - STR_LASGUN_CLIP_HOTSHOT_CHAOS
@@ -282,7 +283,7 @@ items:
     invWidth: 1
     invHeight: 3
     bulletSpeed: 50
-    listOrder: 11050
+    listOrder: 10961
     kneelBonus: 130
     minRange: 7
     accuracyMultiplier:
@@ -309,7 +310,7 @@ items:
     invWidth: 1
     invHeight: 1
     armor: 70
-    listOrder: 11060
+    listOrder: 11015
 
   - type: STR_CHAOS_RIPPERGUN
     categories: [STR_CAT_SHOTGUN, STR_CAT_ASSAULT]
@@ -5751,6 +5752,7 @@ items:
   - type: STR_LASER_PISTOLC
     refNode: *CHAOS_WEAPON
     costBuy: 1500
+    listOrder: 10802
     ufopediaType: ""
 
 

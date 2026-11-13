@@ -252,7 +252,7 @@ items:
     invWidth: 2
     invHeight: 3
     bulletSpeed: 50
-    listOrder: 10916
+    listOrder: 10941
     armor: 200  # to avoid item pile destruction
     tags:
       REACTION_MULTIPLIER: 75 # battle rifle penalty; multiplies base reaction score by this amount divided by 100

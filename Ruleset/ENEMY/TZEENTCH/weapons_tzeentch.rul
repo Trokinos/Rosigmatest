@@ -74,7 +74,7 @@ items:
     invWidth: 1
     invHeight: 2
     bulletSpeed: 50
-    listOrder: 11056
+    listOrder: 10803
 
   - type: STR_TZEENTCH_LASGUN  # Nihilis Pattern High Tech lasgun
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL, STR_CAT_TZEENTCH]
@@ -122,7 +122,7 @@ items:
     invWidth: 1
     invHeight: 3
     bulletSpeed: 50
-    listOrder: 11056
+    listOrder: 10942
 
   - type: STR_LONGLAS_TZEENTCH
     categories: [STR_CAT_LASGUN, STR_CAT_SNIPER, STR_CAT_TZEENTCH]
@@ -156,7 +156,7 @@ items:
     invWidth: 1
     invHeight: 3
     bulletSpeed: 50
-    listOrder: 11056
+    listOrder: 10975
     tags:
       ITEM_SNAP_ACCURACY_POWER_BONUS_PERCENT: 20
       ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 50
