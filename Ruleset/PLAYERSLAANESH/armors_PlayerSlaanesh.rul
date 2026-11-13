@@ -747,7 +747,7 @@ armors:
       UNIT_IS_DIEHARD: 1
       DIEHARD_TEMP_MODIFIER_INCREMENT: -100  # they only get one second chance
 
-  - type: STR_SLAANESHPATH_FELINID_ASSASSIN_ARMOR    # ADEPTAS ASSASIN
+  - type: STR_SLAANESHPATH_FELINID_ASSASSIN_ARMOR    #TODO: Add a built-in power sword.
     camouflageAtDay: -22  # you need to be 8 tiles closer than max vision range to see this unit in the light
     camouflageAtDark: -14  # you need to be 6 tiles closer than max vision range (at night!) to see this unit in the dark
     visibilityAtDay: 40
@@ -801,7 +801,7 @@ armors:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
     loftempsSet: [2]
-    meleeDodge:  # Felinid + assassin
+    meleeDodge:  # Felinid assassin
       reactions: 0.25
     tags:
       UNIT_TYPE_CHAOS: 1

@@ -1183,6 +1183,84 @@ soldiers:
     rankBattleSprite: {mod: 40k, index: 215}
     rankTinySprite: {mod: 40k, index: 115}
 
+  - type: STR_SLAANESHPATH_FELINID_FATALE # Felinids who have been fully inducted as assassins of Slaanesh.
+    flagOffset: 21
+    costSalary: 60000
+    requires:
+        - STR_GENERALLOCK
+    minStats:
+      tu: 70 # Higher than DCA. Felinid + Slaanesh profile.
+      stamina: 75
+      health: 45
+      bravery: 70
+      reactions: 65 # +20 vs DCA. Felinid + Slaanesh profile.
+      firing: 55
+      throwing: 55
+      strength: 45
+      psiStrength: 1
+      psiSkill: 30
+      melee: 70 # + 5 vs DCA.
+    maxStats:
+      tu: 95
+      stamina: 95
+      health: 60
+      bravery: 100
+      reactions: 100 # + 10 vs DCA. Felinid + Slaanesh profile.
+      firing: 80
+      throwing: 75
+      strength: 55
+      psiStrength: 70
+      psiSkill: 90
+      melee: 100
+    statCaps:
+      tu: 125 # +10.
+      stamina: 110 # +5
+      health: 85
+      bravery: 120
+      reactions: 110
+      firing: 100
+      throwing: 90
+      strength: 70
+      psiStrength: 100
+      psiSkill: 120
+      melee: 120
+    trainingStatCaps:
+      tu: 90
+      stamina: 90
+      health: 65
+      firing: 65
+      throwing: 65
+      strength: 50
+      psiStrength: 100
+      psiSkill: 100
+      melee: 90
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    armor: STR_SLAANESHPATH_FELINID_ASSASSIN_ARMOR
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 95
+    avatarOffsetX: 66
+    avatarOffsetY: 32
+    soldierNames:
+      - delete
+      - Names/adeptas_assassin.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_FELINIDFATALE_RANK_0
+      - STR_FELINIDFATALE_RANK_1
+      - STR_FELINIDFATALE_RANK_2
+
+    rankSprite: {mod: 40k, index: 115}
+    rankBattleSprite: {mod: 40k, index: 215}
+    rankTinySprite: {mod: 40k, index: 115}
+
+
 #HT
 
   - type: STR_SLAANESHPATH_HERETEK
