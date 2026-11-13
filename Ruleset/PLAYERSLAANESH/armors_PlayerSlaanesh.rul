@@ -343,7 +343,7 @@ armors:
       - 0.2  # IMPACT
       - 1.0  # MELTA
     units:
-      - STR_SLAANESHPATH_IMMACULATE_SISTER # Temporary until Immaculates are implemented
+      - STR_SLAANESHPATH_IMMACULATE_SISTER
     builtInWeapons:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
