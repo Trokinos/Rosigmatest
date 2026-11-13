@@ -42,6 +42,14 @@ items:
     listOrder: 10743
     recoveryPoints: 2
 
+  - type: STR_LAS_BATTLERIFLE_SLAAN
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.3
+    costSell: 6000
+    ListOrder: 10917
+    recoveryPoints: 1
+
   - type: STR_MELTA_CARBINE_SLAAN
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
@@ -50,7 +58,14 @@ items:
     listOrder: 11160
     recoveryPoints: 3
 
-  - type: STR_PLASMA_CARBINE_SLAAN
+  - type: STR_SLAANESHPATH_LASCARBINE
+    refNode: *IMMACULATE_WEAPON
+    categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    size: 0.2
+    costSell: 4000
+
+
+  - type: STR_PLASMA_SPRAYGUN_SLAAN
     refNode: *IMMACULATE_WEAPON
     categories: [STR_CAT_PLASMA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.2

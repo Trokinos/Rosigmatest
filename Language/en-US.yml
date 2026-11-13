@@ -2784,7 +2784,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_VALKYRIE_SLAANESH: "Immaculate Valkyrie"
 
 #PLOT ITEMS AND TOKENS
-  STR_SLAANESHPATH_PIETY: "Piety"
+  STR_SLAANESHPATH_PIETY: "Devotion"
   STR_SLAANESHPATH_BOON: "Boon of Slaanesh"
   STR_SPREAD_TRUE_FAITH_UNDERHIVE: "Proselytize the Underhive"
   STR_UNDERHIVE_CULT_TOKEN: "Underhive Cultist Ledger"

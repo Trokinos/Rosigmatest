@@ -339,6 +339,25 @@ items:
   - type: STR_LASCANNON_HANDHELD_SLAAN
 
 
+  - type: STR_LAS_BATTLERIFLE_SLAAN
+    dropoff: 3
+    snapRange: 17
+    aimRange: 22
+
+
+    accuracySnap: 85
+    accuracyAimed: 100
+
+    tuSnap: 33
+    tuAimed: 46 # 5 tu less
+
+    weight: 10
+    tags:
+      REACTION_MULTIPLIER: 75 # battle rifle penalty; multiplies base reaction score by this amount divided by 100
+      REACTION_PENALTY_KNEELING_BYPASS: 1
+      ITEM_SNAP_FLAT_POWER_BONUS_PERCENT: 10
+      ITEM_AIMED_ACCURACY_POWER_BONUS_PERCENT: 20
+
 
   - type: STR_SLAANESHPATH_LASCARBINE
     dropoff: 5
@@ -354,13 +373,13 @@ items:
     tuSnap: 25  # 40k 22; slightly faster to fire as a carbine
     tuAimed: 0
 
-    oneHandedPenalty: 66 # compact
-
     autoShots: 4
     confSnap:
       shots: 2
       name: STR_BURST_DOUBLE_TAP
 
+    weight: 4
+    oneHandedPenalty: 66 # compact
     tags:
       REACTION_MULTIPLIER: 150  # carbine
 

@@ -237,7 +237,7 @@ extraSprites:
       2109: Resources/ORK/floorob_311Tankhammer.gif
       2110: Resources/ORK/floorob_309gorkfaust.gif
 
-     # Slaanesh
+     # Slaanesh strategy (TEMPORARY)
       2111: Resources/PLAYERSLAANESH/Weapons/Cantus/floorob_cantus.png
       2112: Resources/PLAYERSLAANESH/Weapons/Cantus/floorob_cantusgl.png
       2113: Resources/Floorobs/AutogunsExpanded/floorob_autogun_agripinaa_t3.png
@@ -1072,6 +1072,12 @@ extraSprites:
       4970: Resources/Eldar/units/wraithguard/eldar_wraithblade_corpse_floorObj.png
       4971: Resources/Eldar/units/wireweave_net_deployed/eldar_wireweavenet_deployed_corpse_floorObj.png
       4972: Resources/Eldar/units/fusion_charge_deployed/eldar_fusioncharge_deployed_corpse_floorObj.png
+
+# SLAANESH STRATEGY
+
+      6000: Resources/PLAYERSLAANESH/Weapons/Las/floorob_marksman_rifle.png
+
+
 # Free Indexes
 
 # 204 - 209
