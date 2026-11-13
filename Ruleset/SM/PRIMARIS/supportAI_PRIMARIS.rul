@@ -57,6 +57,7 @@ armors:
     spriteSheet: MKXBIKELV2.PCK
     spriteInv: PRIMARISARMOR_AIBIKE.PCK
     allowInv: true
+    allowsKneeling: false
     customArmorPreviewIndex: [23, 24, 25]
     corpseGeo: PRIMARIS_BIKER_CORPSE
     corpseBattle:

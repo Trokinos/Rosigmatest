@@ -136,6 +136,7 @@ armors:
     spriteSheet: DREADGK.PCK
     instantWoundRecovery: true
     allowInv: false
+    allowsKneeling: false
     spriteInv: DREADINVGK.SPK
     corpseGeo: STR_DREAD_CORPSE
     corpseBattle:

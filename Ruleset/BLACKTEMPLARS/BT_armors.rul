@@ -807,6 +807,7 @@ armors:
     spriteSheet: BTDREADBS.PCK
     instantWoundRecovery: true
     allowInv: true
+    allowsKneeling: false
     customArmorPreviewIndex: [1342, 1343, 1345]
     storeItem: STR_BTDREAD_ARMOR_PLAYER
     corpseGeo: STR_BTDREAD_CORPSE

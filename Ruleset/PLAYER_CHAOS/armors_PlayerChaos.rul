@@ -433,6 +433,7 @@ armors:
       UNIT_TYPE_CHAOS: 1
       UNIT_TYPE_MECHANICAL: 1
       UNIT_SIZE: 200
+    allowsKneeling: false
   - type: DREAD_ARMOR_CHAOS_PLAYER
     spriteSheet: CDREAD_ASSAULT.PCK
     spriteInv: CDREAD_ASSUALT.SPK
@@ -494,7 +495,6 @@ armors:
       - INV_NULL_2X1_RL
       - INV_NULL_2X1_LL
       - INV_NULL_4X2
-
   ## Alpha Legion
 
   - type: STR_ALPHA_ARMOR_PLAYER  # Warrior

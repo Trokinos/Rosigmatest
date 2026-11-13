@@ -16,6 +16,7 @@ armors:
     customArmorPreviewIndex: [1342, 1343, 1345]
     storeItem: SWDREAD_ARMOR_UC
     corpseGeo: STR_SWDREAD_CORPSE
+    allowsKneeling: false
     corpseBattle:
       - SWDREAD_CORPSE1
       - SWDREAD_CORPSE2

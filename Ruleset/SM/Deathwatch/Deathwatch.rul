@@ -42,6 +42,7 @@ armors:
     sideArmor: 240  # +10 DW
     rearArmor: 190  # +10 DW
     underArmor: 240
+    allowsKneeling: false
     stats:
       strength: 50
       health: 200
@@ -60,6 +61,7 @@ armors:
     sideArmor: 240  # +10 DW
     rearArmor: 190  # +10 DW
     underArmor: 240
+    allowsKneeling: false
     stats:
       strength: 50
       health: 200
@@ -85,6 +87,7 @@ armors:
     sideArmor: 240  # +10 DW
     rearArmor: 190  # +10 DW
     underArmor: 240
+    allowsKneeling: false
     stats:
       strength: 50
       health: 200
@@ -110,6 +113,7 @@ armors:
     sideArmor: 240  # +10 DW
     rearArmor: 190  # +10 DW
     underArmor: 240
+    allowsKneeling: false
     stats:
       strength: 50
       health: 200
@@ -133,6 +137,7 @@ armors:
     sideArmor: 260
     rearArmor: 200
     underArmor: 270
+    allowsKneeling: false
     damageModifier:  # DREAD ARMOR VENERABLE
       - 1.0  # none
       - 0.7  # AP

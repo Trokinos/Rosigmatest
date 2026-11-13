@@ -1536,6 +1536,7 @@ armors:
       UNIT_SIZE: 200 # HUGE
     psiDefence:
       psiStrength: 5.0               # 500% the psiStrength dread protected
+    allowsKneeling: false
 
   # BLACKTEMPLAR TIER 0
 
@@ -2938,6 +2939,7 @@ armors:
     spriteSheet: WHITESCARSARMOR_ASSBIKEbattle.PCK
     spriteInv: WHITESCARSARMOR_ASSBIKE.PCK
     allowInv: true
+    allowsKneeling: false
     customArmorPreviewIndex: [474, 475, 476]
     corpseGeo: STR_WSBIKE_CORPSE
     corpseBattle:
@@ -3539,6 +3541,7 @@ armors:
     spriteSheet: SLMDREADbattle.PCK
     instantWoundRecovery: true
     allowInv: true
+    allowsKneeling: false
     corpseGeo: STR_SLMDREAD_CORPSE
     corpseBattle:
       - SLMDREAD_CORPSE1

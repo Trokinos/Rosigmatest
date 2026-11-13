@@ -1560,7 +1560,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_RADICAL_HIGHTIER: "Inquisition High-tier Requisitions"
 #GK Unsorted
   STR_DREAD_GK_ARMOR_UC: "Assault Dreadnought Armor ¬"
-  STR_DREAD1_ARMOR: "Dreadnought Armor"
+  #STR_DREAD1_ARMOR: "Dreadnought Armor" # does not exist, it's the assault armor
   STR_DREAD2_ARMOR: "Dreadnought Armor (Plasma)"
   STR_DREAD3_ARMOR: "Dreadnought Armor (Missile)"
   STR_DREAD4_ARMOR: "Dreadnought Armor (Lascannon)"
