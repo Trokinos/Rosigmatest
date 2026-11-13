@@ -219,8 +219,8 @@ items:
   - type: STR_LAS_BATTLERIFLE_SLAAN
     battleType: 1
 
-    bigSprite: 4091
-    handSprite: 6048
+    bigSprite: 4093
+    handSprite: 6064
     floorSprite: 6000
 
     fireSound: {mod: 40k, index: 741}
@@ -668,7 +668,7 @@ items:
 
   - type: STR_CONSTRICTOR_PISTOL
     battleType: 1
-    bigSprite: 4092
+    bigSprite: 4094
     handSprite: 550
     floorSprite: {mod: 40k, index: 615}
 

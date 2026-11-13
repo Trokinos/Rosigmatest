@@ -504,6 +504,12 @@ research:
     spawnedItem: STR_SLAANESHPATH_BOON
     spawnedItemCount: 2
 
+  - name: STR_ABHUMAN_RECRUITMENT
+    cost: 200
+    points: 25
+    dependencies:
+      - STR_UNDERHIVE_CULT_TOKEN
+      - STR_GENERALLOCK
 
   - name: STR_AGAINST_THE_ECCLESIARCHY
     cost: 80

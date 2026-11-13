@@ -1026,13 +1026,13 @@ soldiers:
   - type: STR_BEASTMAN_ACOLYTE # Beastmen auxiliaries. Treated much better by Slaanesh cultists than by the Imperium.
     requires:
       - STR_GENERALLOCK
-    costBuy: 25000  # lower purchase cost, temporary until we decide on recruitment methods, while paid less perhaps they should not be that easy to acquire in mass for non abhuman strategy
-    costSalary: 8000 # Expensive
+    costBuy: 25000
+    costSalary: 8000 # Beastmen are favored by the Chaos Gods; Slaanesh nuns have no time for anti-abhuman racism.
     minStats:
       tu: 55
       stamina: 55
       health: 30
-      bravery: 50 # Much higher bravery than IG beastmen, owing to better conditions + slaanesh profile.
+      bravery: 50 # Much, much higher bravery than IG beastmen, owing to better conditions + slaanesh profile.
       reactions: 40
       firing: 35
       throwing: 35
@@ -1045,7 +1045,7 @@ soldiers:
       tu: 80  # was 60
       stamina: 80  # was 70
       health: 60  # was 40
-      bravery: 70  # was 60
+      bravery: 80  # was 60
       reactions: 75  # was 60
       firing: 60  # was 70
       throwing: 70  # was 65
@@ -1106,7 +1106,82 @@ soldiers:
     value: 5
     moraleLossWhenKilled: 50  # we don't really care when these abhuman grunts die
 
+  - type: STR_SLAANESHPATH_FELINID_ACOLYTE # Felinid auxiliaries. Essentially assassins-in-training.
+    flagOffset: 21
+    costSalary: 35000 # +5K vs DCA.
+    requires:
+        - STR_GENERALLOCK
+    minStats:
+      tu: 60 # Higher than DCA. Felinid + Slaanesh profile.
+      stamina: 55
+      health: 35 # -5 vs DCA.
+      bravery: 60
+      reactions: 55 # +20 vs DCA. Felinid + Slaanesh profile.
+      firing: 35
+      throwing: 45
+      strength: 30
+      psiStrength: 1
+      psiSkill: 30
+      melee: 55 # + 5 vs DCA.
+    maxStats:
+      tu: 75
+      stamina: 80
+      health: 40
+      bravery: 100
+      reactions: 80 # + 10 vs DCA. Felinid + Slaanesh profile.
+      firing: 57
+      throwing: 65
+      strength: 40
+      psiStrength: 70
+      psiSkill: 90
+      melee: 80
+    statCaps:
+      tu: 110 # +10.
+      stamina: 95 # +5
+      health: 70
+      bravery: 120
+      reactions: 110
+      firing: 70
+      throwing: 90
+      strength: 70
+      psiStrength: 100
+      psiSkill: 120
+      melee: 120
+    trainingStatCaps:
+      tu: 90
+      stamina: 90
+      health: 65
+      firing: 65
+      throwing: 65
+      strength: 50
+      psiStrength: 100
+      psiSkill: 100
+      melee: 90
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    armor: STR_SLAANESHPATH_FELINID_ASSASSIN_ARMOR
+    allowPiloting: false
+    allowPromotion: true
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 95
+    avatarOffsetX: 66
+    avatarOffsetY: 32
+    soldierNames:
+      - delete
+      - Names/adeptas_assassin.nam
+    deathMale: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    deathFemale: [{mod: 40k, index: 744}, {mod: 40k, index: 745}, {mod: 40k, index: 746}, {mod: 40k, index: 747}, {mod: 40k, index: 748}]
+    rankStrings:
+      - STR_FELINIDASSASSIN_RANK_0
+      - STR_FELINIDASSASSIN_RANK_1
+      - STR_FELINIDASSASSIN_RANK_2
 
+    rankSprite: {mod: 40k, index: 115}
+    rankBattleSprite: {mod: 40k, index: 215}
+    rankTinySprite: {mod: 40k, index: 115}
 
 #HT
 

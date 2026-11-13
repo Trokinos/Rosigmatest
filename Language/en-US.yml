@@ -2556,7 +2556,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_IMMACULATE_PLASMA_TECHNOLOGY_UFOPEDIA: "{NEWLINE}{NEWLINE}After many cycles of data-interrogation and prayer, we finally have a partial understanding of the heretek research on plasma weaponry. Though the sections on infusing hydrogen with empyrean energies are much too esoteric for our adepts, the simpler schematics are still of direct use. We are now able to manufacture basic plasma weaponry without outside assistance."
 
   STR_WAR_FOR_THE_UNDERHIVE_UFOPEDIA: "{NEWLINE}{NEWLINE}The destiny of everyone on this planet is to one day serve the True Faith: either as willing supplicants, or as sacrifices. That is the nature of the great mission that we have been entrusted with. But true greatness must always begin from humble foundations: it is among the downtrodden and forgotten masses of the underhives we will first gather our flock."
-
+  STR_ABHUMAN_RECRUITMENT_UFOPEDIA: "{NEWLINE}{NEWLINE}For millennia, the Imperium has mistreated and reviled its abhumans. Yet, in the magnamonious eyes of our Dark Prince, they are neither lower nor less deserving. By bringing them into service to Slaanesh, we will offer these abhumans exactly that which the Imperium denies them: a chance at true greatness in service to a higher cause."
 
   STR_VOICE_UFOPEDIA_TITLE: "The Angel's Voice"
   STR_BLACK_MARKET_AMMUNITION_TITLE: "Underhive Ammo-Jacks"
@@ -2667,6 +2667,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_UNDERHIVE_NOT_CONVERTED: "(Underhive Not Converted)"
   STR_UNDERHIVE_CONVERTED: "(Underhive Converted)"
   STR_HIVE_GANGER_RECRUITMENT: "Hive Ganger Recruitment"
+  STR_ABHUMAN_RECRUITMENT: "Ennoble the Abhumans"
 
   STR_OUR_HOLY_MISSION: "Our Holy Crusade"
   STR_WAR_FOR_THE_UNDERHIVE: "War for the Underhive"
@@ -2892,6 +2893,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CHOIR_ARCHANGEL: "Archangel of the Choir"
   STR_SLAANESHPATH_HARVESTER: "Harvester of Sorrows"
   STR_SLAANESHPATH_HERETEK: "Heretek Savant"
+  STR_SLAANESHPATH_FELINID_ACOLYTE: "Felinid Acolyte"
   ## Slaanesh Adeptas Armors
 
   STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
@@ -2904,13 +2906,14 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"
   STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
   STR_SLAANESHPATH_ANGEL_ARMOR: "Angelic Armor"
+  STR_SLAANESHPATH_FELINID_ASSASSIN_ARMOR: "Felinid Acolyte Catsuit"
 
   ## Slaanesh Adeptas Ranks
 
   STR_SLAANESHPATH_HANDMAIDEN_RANK_0: "Seeker"
   STR_SLAANESHPATH_EXALTEDMAIDEN_RANK_0: "Solicitous Seeker"
-  STR_SLAANESHPATH_MILITANT_RANK_0: "Slayer"
-  STR_SLAANESHPATH_MILITANT_RANK_1: "Supple Slayer"
+  STR_SLAANESHPATH_MILITANT_RANK_0: "Stalwart"
+  STR_SLAANESHPATH_MILITANT_RANK_1: "Steady Stalwart"
   STR_SLAANESHPATH_MILITANT_RANK_2: "Sister Speculative"
 
   STR_SLAANESHPATH_SISTER_RANK_0: "Sister"
@@ -2956,6 +2959,16 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_HARBINGER_RANK_2: "Sphinx Seraphic"
   STR_SLAANESHPATH_HARBINGER_RANK_3: "Sphinx Serendipitous"
   STR_SLAANESHPATH_EXALTEDHARBINGER_RANK_0: "Sphinx Statuesque"
+
+  STR_FELINIDASSASSIN_RANK_0: "Skulker"
+  STR_FELINIDASSASSIN_RANK_1: "Stealthy Skulker"
+  STR_FELINIDASSASSIN_RANK_2: "Slayer Speculative"
+
+  STR_FELINIDFATALE_RANK_0: "Slayer"
+  STR_FELINIDFATALE_RANK_1: "Surgical Slayer"
+  STR_FELINIDFATALE_RANK_2: "Slayer Selective"
+  STR_FELINIDFATALE_RANK_3: "Slayer Secretive"
+  STR_EXALTEDFATALE_RANK_0: "Slayer Stupendous"
 
   ## Slaanesh cultist armors
 
