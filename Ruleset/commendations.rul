@@ -185,7 +185,7 @@ commendations:
     description: STR_COMMENDATION_BULLET_MAGNET_DESCRIPTION
     sprite: 5
     criteria:
-      totalShotAt10Times : [10] # Should be rare but possible
+      totalShotAt10Times: [10] # Should be rare but possible
     units:
       - STR_MONKEIGH_COLLABORATOR
 
