@@ -16,15 +16,31 @@ facilities:
   - type: STR_ELDAR_WORKSHOP
     placeSound: {mod: 40k, index: 98}
     requires:
-      - STR_ELDAR_STRATEGY
+      - STR_ELDAR_BONESINGING
     requiresBaseFunc: [BASE]
-    provideBaseFunc: [MANU]
+    buildOverFacilities: [STR_WORKSHOP]
+    provideBaseFunc:
+      - MANU
+      - BONESINGING
     spriteShape: {mod: 40k, index: 1}
     spriteFacility: {mod: 40k, index: 20}
     buildCost: 800000
     buildTime: 32
     monthlyCost: 35000
     workshops: 50
+    mapName: XBASE_03
+
+  - type: STR_ELDAR_ARMORY_GATE
+    placeSound: {mod: 40k, index: 98}
+    requires:
+      - STR_ELDAR_ARMORY_GATE_RESEARCH
+    requiresBaseFunc: [BASE]
+    provideBaseFunc: [ELDAROUT]
+    spriteShape: {mod: 40k, index: 1}
+    spriteFacility: {mod: 40k, index: 20}
+    buildCost: 800000
+    buildTime: 5
+    monthlyCost: 35000
     mapName: XBASE_03
 
   - &ASPECT_SHRINE_FACILITY
@@ -314,7 +330,7 @@ facilities:
     # radarRange: 2759
     # radarChance: 100
     requiresBaseFunc: [ELDAROUT]
-    provideBaseFunc: [ASPECT, PSI] # todo: understand if a PSI building is needed
+    provideBaseFunc: [ASPECT, PSI, AVENGER, DRAGON, BANSHEE, SCORPION, SPIDER, HAWK, REAPER] # todo: understand if a PSI building is needed
     # connectorsDisabled: true
     # buildCost: 1400000
     # buildTime: 20

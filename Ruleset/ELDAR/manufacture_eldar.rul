@@ -45,6 +45,7 @@ manufacture:
     category: STR_ADVANCEMENT
     requires:
       - STR_RECRUIT_ELDAR_OUTCAST
+      - STR_ELDAR_STRATEGY
     space: 0
     time: 1 # low stops annoying individual transfers when manufacturing larger quantities
     transferTimes: [72] # Rangers take a few days to get to your base.
@@ -58,9 +59,10 @@ manufacture:
 
   - name: STR_DIRESWORD_VESSEL_MANUFACTURE
     category: STR_ELDAR_SOULTECH_CATEGORY
+    requiresBaseFunc: [BONESINGING]
     requires:
-      - STR_ELDAR_ONLY
       - STR_FORGE_DIRESWORD_VESSEL_RESEARCH
+      - STR_ELDAR_BONESINGING
     # requiresBaseFunc: [ELDAROUT] # could be used for taboo soul manipulation eldar technology
     space: 0
     time: 200
@@ -74,9 +76,10 @@ manufacture:
 
   - name: STR_DIRESWORD_ENSOULED_MANUFACTURE
     category: STR_ELDAR_SOULTECH_CATEGORY
+    requiresBaseFunc: [BONESINGING]
     requires:
-      - STR_ELDAR_ONLY
       - STR_FORGE_DIRESWORD_VESSEL_RESEARCH
+      - STR_ELDAR_BONESINGING
     # requiresBaseFunc: [ELDAROUT] # could be used for taboo soul manipulation eldar technology
     space: 0
     time: 200
@@ -92,44 +95,56 @@ manufacture:
 
   - name: STR_WRAITHGUARD_ARMOR_ITEM
     category: STR_ELDAR_SOULTECH_CATEGORY
+    requiresBaseFunc: [BONESINGING]
     requires:
       - STR_ELDAR_WRAITHGUARD_RESEARCH
+      - STR_ELDAR_BONESINGING
     space: 0
     time: 600
     cost: 900000
   - name: STR_WRAITHCANNON
     category: STR_ELDAR_SOULTECH_CATEGORY
+    requiresBaseFunc: [BONESINGING]
     requires:
       - STR_ELDAR_WRAITHGUARD_RESEARCH
+      - STR_ELDAR_BONESINGING
     space: 0
     time: 200
     cost: 100000
   - name: STR_DSCYTHE
     category: STR_ELDAR_SOULTECH_CATEGORY
+    requiresBaseFunc: [BONESINGING]
     requires:
       - STR_ELDAR_WRAITHGUARD_RESEARCH
+      - STR_ELDAR_BONESINGING
     space: 0
     time: 200
     cost: 100000
 
   - name: STR_WRAITHBLADE_ARMOR_ITEM
     category: STR_ELDAR_SOULTECH_CATEGORY
+    requiresBaseFunc: [BONESINGING]
     requires:
       - STR_ELDAR_WRAITHBLADE_RESEARCH
+      - STR_ELDAR_BONESINGING
     space: 0
     time: 600
     cost: 900000
   - name: STR_GHOSTAXE
     category: STR_ELDAR_SOULTECH_CATEGORY
+    requiresBaseFunc: [BONESINGING]
     requires:
       - STR_ELDAR_WRAITHBLADE_RESEARCH
+      - STR_ELDAR_BONESINGING
     space: 0
     time: 200
     cost: 100000
   - name: STR_GHOSTSWORD
     category: STR_ELDAR_SOULTECH_CATEGORY
+    requiresBaseFunc: [BONESINGING]
     requires:
       - STR_ELDAR_WRAITHBLADE_RESEARCH
+      - STR_ELDAR_BONESINGING
     space: 0
     time: 200
     cost: 100000
@@ -139,49 +154,73 @@ manufacture:
   - &ASPECT_ARMOR_ITEM_MANUFACTURE
     name: STR_ELDAR_AVENGER_ARMOR_ITEM
     category: STR_PERSONAL_ARMOR
-    requiresBaseFunc: [AVENGER]
+    requiresBaseFunc:
+      - AVENGER
+      - BONESINGING
     requires:
       - STR_ELDAR_DIRE_AVENGER_RESEARCH
+      - STR_ELDAR_BONESINGING
     space: 0
     time: 300
     cost: 50000
   - name: STR_ELDAR_DRAGON_ARMOR_ITEM
     refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [DRAGON]
+    requiresBaseFunc:
+      - DRAGON
+      - BONESINGING
     requires:
       - STR_ELDAR_FIREDRAGON_RESEARCH
+      - STR_ELDAR_BONESINGING
   - name: STR_ELDAR_BANSHEE_ARMOR_ITEM
     refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [BANSHEE]
+    requiresBaseFunc:
+      - BANSHEE
+      - BONESINGING
     requires:
       - STR_ELDAR_BANSHEE_RESEARCH
+      - STR_ELDAR_BONESINGING
   - name: STR_ELDAR_SCORPION_ARMOR_ITEM
     refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [SCORPION]
+    requiresBaseFunc:
+      - SCORPION
+      - BONESINGING
     requires:
       - STR_ELDAR_SCORPION_RESEARCH
+      - STR_ELDAR_BONESINGING
   - name: STR_ELDAR_HAWK_ARMOR_ITEM
     refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [HAWK]
+    requiresBaseFunc:
+      - HAWK
+      - BONESINGING
     requires:
       - STR_ELDAR_HAWK_RESEARCH
+      - STR_ELDAR_BONESINGING
   - name: STR_ELDAR_SPIDER_ARMOR_ITEM
     refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [SPIDER]
+    requiresBaseFunc:
+      - SPIDER
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_SPIDER_RESEARCH
   - name: STR_ELDAR_REAPER_ARMOR_ITEM
     refNode: *ASPECT_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [REAPER]
+    requiresBaseFunc:
+      - REAPER
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_REAPER_RESEARCH
 
   # Exarch Armor
   - &EXARCH_ARMOR_ITEM_MANUFACTURE
     name: STR_ELDAR_AVENGEREX_ARMOR_ITEM
     category: STR_PERSONAL_ARMOR
-    requiresBaseFunc: [AVENGER]
+    requiresBaseFunc:
+      - AVENGER
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
     space: 0
     time: 300
@@ -194,47 +233,70 @@ manufacture:
       #STR_UFO_POWER_SOURCE: 1
   - name: STR_ELDAR_DRAGONEX_ARMOR_ITEM
     refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [DRAGON]
+    requiresBaseFunc:
+      - DRAGON
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
   - name: STR_ELDAR_BANSHEEEX_ARMOR_ITEM
     refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [BANSHEE]
+    requiresBaseFunc:
+      - BANSHEE
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
   - name: STR_ELDAR_SCORPIONEX_ARMOR_ITEM
     refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [SCORPION]
+    requiresBaseFunc:
+      - SCORPION
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_SCORPION_EXARCH_RESEARCH
   - name: STR_ELDAR_HAWKEX_ARMOR_ITEM
     refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [HAWK]
+    requiresBaseFunc:
+      - HAWK
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_HAWK_EXARCH_RESEARCH
   - name: STR_ELDAR_SPIDEREX_DS_ARMOR_ITEM
     refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [SPIDER]
+    requiresBaseFunc:
+      - SPIDER
+      - BONESINGING
     requires:
-      - STR_ELDAR_SPIDER_RESEARCH
+      - STR_ELDAR_BONESINGING
+      - STR_ELDAR_SPIDER_EXARCH_RESEARCH
   - name: STR_ELDAR_SPIDEREX_PB_ARMOR_ITEM
     refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [SPIDER]
+    requiresBaseFunc:
+      - SPIDER
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_SPIDER_EXARCH_RESEARCH
   - name: STR_ELDAR_REAPEREX_ARMOR_ITEM
     refNode: *EXARCH_ARMOR_ITEM_MANUFACTURE
-    requiresBaseFunc: [REAPER]
+    requiresBaseFunc:
+      - REAPER
+      - BONESINGING
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_REAPER_EXARCH_RESEARCH
-
 
   - &ELDAR_REAPER_ITEM_MANUFACTURE
     name: STR_REAPER_LAUNCHER_ITEM
     category: STR_WEAPON
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_REAPER_RESEARCH
-    requiresBaseFunc: [REAPER]
+    requiresBaseFunc:
+      - REAPER
+      - BONESINGING
     space: 0
     time: 300
     cost: 50000
@@ -253,7 +315,9 @@ manufacture:
   - &ELDAR_HWP_ITEM_MANUFACTURE
     name: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_ITEM
     category: STR_PERSONAL_ARMOR
+    requiresBaseFunc: [BONESINGING]
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_RESEARCH
     space: 0
     time: 600
@@ -262,6 +326,7 @@ manufacture:
   - name: STR_ELDAR_HWP_AML_ARMOR_ITEM
     refNode: *ELDAR_HWP_ITEM_MANUFACTURE
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_HWP_AML_ARMOR_RESEARCH
     requiredItems:
       STR_ALIEN_ALLOYS: 80
@@ -270,6 +335,7 @@ manufacture:
   - name: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_ITEM
     refNode: *ELDAR_HWP_ITEM_MANUFACTURE
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_RESEARCH
     requiredItems:
       STR_ALIEN_ALLOYS: 80
@@ -278,6 +344,7 @@ manufacture:
   - name: STR_ELDAR_HWP_SCATTERLASER_ARMOR_ITEM
     refNode: *ELDAR_HWP_ITEM_MANUFACTURE
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_HWP_SCATTERLASER_ARMOR_RESEARCH
     requiredItems:
       STR_ALIEN_ALLOYS: 80
@@ -285,6 +352,7 @@ manufacture:
   - name: STR_ELDAR_HWP_STARCANNON_ARMOR_ITEM
     refNode: *ELDAR_HWP_ITEM_MANUFACTURE
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_HWP_STARCANNON_ARMOR_RESEARCH
     requiredItems:
       STR_ALIEN_ALLOYS: 80
@@ -294,7 +362,9 @@ manufacture:
   - &ELDAR_GRENADE_MANUFACTURE
     name: STR_ELDAR_WIREWEAVE_NET
     category: STR_EQUIPMENT
+    requiresBaseFunc: [BONESINGING]
     requires:
+      - STR_ELDAR_BONESINGING
       - STR_RECRUIT_ELDAR_OUTCAST
     space: 0
     time: 200

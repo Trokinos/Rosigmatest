@@ -15,8 +15,8 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [ELDAROUT]
     weight: 5
-    #requiresBuyBaseFunc: [ELDAROUT]
     size: 0.1
     costBuy: 500
     costSell: 250
@@ -46,13 +46,11 @@ items:
       ArmorEffectiveness: 0.3
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-      #Avenger Research
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
-      # Avenger Research
+      - STR_AVENGER_SHURIKEN_CLIP_RESEARCH
+    requiresBuyBaseFunc: [AVENGER]
     weight: 5
-    #requiresBuyBaseFunc: [ELDAROUT]
     size: 0.1
     costBuy: 3000
     costSell: 1200
@@ -76,11 +74,11 @@ items:
   - type: STR_AELDARI_FLAMER_FUEL #STR_FLAMETHROWER_CLIP stats needs rework
     categories: [STR_CAT_FLAMER, STR_CAT_TACTICAL]
     listOrder: 16152
-    requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [ELDAROUT]
     size: 0.2
     costBuy: 500
     costSell: 400
@@ -120,6 +118,7 @@ items:
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_RECRUIT_ELDAR_OUTCAST
+    requiresBuyBaseFunc: [ELDAROUT]
     size: 0.2
     weight: 2 #light weight
     invHeight: 1
@@ -172,11 +171,12 @@ items:
   - type: STR_DRAGON_BREATH_FLAMER_FUEL
     categories: [STR_CAT_ELDAR, STR_CAT_FLAMER]
     listOrder: 16532
-    requiresBuyBaseFunc: []
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_FIREDRAGON_RESEARCH
-    requiresBuy: []
+      - STR_DRAGON_BREATH_FLAMER_FUEL_RESEARCH
+    requiresBuyBaseFunc: [DRAGON]
     size: 0.2
     costBuy: 10000 # expensive materials
     costSell: 5000
@@ -226,10 +226,12 @@ items:
     type: STR_FUSION_AMMO  # Lower strength vs Melta but made up by flatrate
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_MELTA]
     listOrder: 16505
-    #requiresBuyBaseFunc: [ELDAROUT]
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
+    requiresBuyBaseFunc: [ELDAROUT]
     vaporColorSurface: {mod: 40k, index: 1}
     vaporDensitySurface: 2
     vaporProbabilitySurface: 85
@@ -268,11 +270,12 @@ items:
   - type: STR_DRAGON_FUSION_AMMO             # Slightly better power but 0 powerRangeThreshold
     refNode: *FUSION_AMMO_TEMPLATE
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
-      - STR_ELDAR_FIREDRAGON_RESEARCH
-    requiresBuy: [] # Already requires the eldar base service
-    requiresBuyBaseFunc: []
+      - STR_DRAGON_FUSION_AMMO_RESEARCH
+    requiresBuyBaseFunc: [DRAGON]
     costBuy: 3000
     costSell: 1500
     bigSprite: 4870
@@ -287,9 +290,11 @@ items:
     refNode: *FUSION_AMMO_TEMPLATE
     listOrder: 16492
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [ELDAROUT]
     bigSprite: 4878
     floorSprite: 4878
     handSprite: 1514
@@ -303,10 +308,12 @@ items:
     refNode: *FUSION_AMMO_TEMPLATE
     listOrder: 16497
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
-      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
-    requiresBuyBaseFunc: []
+      - STR_DRAGON_FUSION_PISTOL_AMMO_RESEARCH
+    requiresBuyBaseFunc: [DRAGON]
     costBuy: 3000
     costSell: 1500
     bigSprite: 4879
@@ -326,11 +333,12 @@ items:
     vaporDensitySurface: 6
     vaporProbabilitySurface: 18
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
-      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
-    requiresBuy: [] # Already requires the eldar base service
-    requiresBuyBaseFunc: []
+      - STR_FIREPIKE_RESEARCH
+    requiresBuyBaseFunc: [DRAGON]
     bigSprite: 4871
     floorSprite: 4871
     handSprite: 4842
@@ -359,8 +367,11 @@ items:
   - &HAWK_LAS_AMMO_TEMPLATE
     type: STR_LASBLASTER_CHARGE # same profile as imperial las but +1 Str
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_HAWK_RESEARCH
+      - STR_LASBLASTER_RESEARCH
+    requiresBuyBaseFunc: [HAWK]
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_LASGUN]
     size: 0.2
     costBuy: 5000
@@ -405,9 +416,9 @@ items:
 
   - type: STR_HAWKSTALON_CHARGE
     refNode: *HAWK_LAS_AMMO_TEMPLATE
-    requires:
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+      - STR_HAWKSTALON_RESEARCH
     costBuy: 10000
     costSell: 1000
     power: 85 # STR 6
@@ -428,6 +439,9 @@ items:
 
   - type: STR_SUNPISTOL_CHARGE
     refNode: *HAWK_LAS_AMMO_TEMPLATE
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_SUNPISTOL_RESEARCH
     clipSize: 20
     bigSprite: 4907
     floorSprite: 4907
@@ -436,9 +450,9 @@ items:
 
   - type: STR_HAWK_SCATTERLASER_CHARGE
     refNode: *HAWK_LAS_AMMO_TEMPLATE
-    requires:
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+      - STR_HAWK_SCATTERLASER_RESEARCH
     costBuy: 10000
     costSell: 1000
     weight: 5
@@ -458,7 +472,8 @@ items:
       - STR_ELDAR_ONLY
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_HAWK_RESEARCH
+      - STR_ELDAR_HAWK_RESEARCH # used for builtin weapon
+    requiresBuyBaseFunc: [HAWK]
     costBuy: 2000
     costSell: 1000
     listOrder: 16558
@@ -492,6 +507,9 @@ items:
       ITEM_AMMO_SKIP_BIGOBS: 3
   - type: STR_HAWK_STARSHOT_GRENADES
     refNode: *HAWK_GRENADE_AMMO_TEMPLATE
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_HAWK_RESEARCH
     costBuy: 8000
     costSell: 2000
     bigSprite: 4925
@@ -517,12 +535,9 @@ items:
     refNode: *HAWK_GRENADE_AMMO_TEMPLATE
     bigSprite: 4926
     floorSprite: 4926
-    requires:
-      - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
-      - STR_ELDAR_HAWK_RESEARCH
-      - STR_FUSION_TECH_RESEARCH
-      - STR_MIDTIER_PREREQ
+      - STR_HAWK_FUSION_GRENADES_RESEARCH
+      - STR_ELDAR_WEAPONS_ACQUISITION
     costBuy: 40000
     costSell: 10000
         ### Damage Stats
@@ -544,12 +559,9 @@ items:
       ITEM_AMMO_SKIP_BIGOBS: 9
   - type: STR_HAWK_HAYWIRE_GRENADES
     refNode: *HAWK_GRENADE_AMMO_TEMPLATE
-    requires:
-      - STR_ELDAR_ONLY
     requiresBuy:
+      - STR_HAWK_HAYWIRE_GRENADES_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_MIDTIER_PREREQ
-      - STR_ELDAR_HAWK_RESEARCH
     costBuy: 8000
     costSell: 2000
     bigSprite: 4927
@@ -582,11 +594,9 @@ items:
       ITEM_AMMO_SKIP_BIGOBS: 12
   - type: STR_HAWK_PLASMA_GRENADES
     refNode: *HAWK_GRENADE_AMMO_TEMPLATE
-    requires:
-      - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
+      - STR_HAWK_PLASMA_GRENADES_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_MIDTIER_PREREQ
     costBuy: 40000
     costSell: 10000
     bigSprite: 4928
@@ -610,9 +620,11 @@ items:
     costBuy: 6000
     costSell: 2000
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_SPIDER_RESEARCH
-    requiresBuyBaseFunc: []
+      - STR_SPINNER_SPOOL_RESEARCH
+    requiresBuyBaseFunc: [SPIDER]
     armor: 200
     size: 0.3
     weight: 10
@@ -641,10 +653,10 @@ items:
 
   - type: STR_WIREWEAVE_SPOOL
     refNode: *SPOOL_AMMO_TEMPLATE
-    #requires:
-    #  - STR_ELDAR_WEAPONS_ACQUISITION
-    #  - STR_ELDAR_SPIDER_RESEARCH
-    #  - STR_ WIREWEAVE_AMMO
+    listOrder: 16611
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_WIREWEAVE_SPOOL_RESEARCH
     bigSprite: 4916
     floorSprite: 4916
     costBuy: 6000
@@ -670,10 +682,11 @@ items:
     costBuy: 12000
     costSell: 4000
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_SPIDER_EXARCH_RESEARCH
-    requiresBuyBaseFunc: []
-    requiresBuy: []
+      - STR_SPINNERET_RIFLE_SPOOL_RESEARCH
+    requiresBuyBaseFunc: [SPIDER]
     armor: 200
     size: 0.3
     weight: 10
@@ -708,13 +721,12 @@ items:
     requires:
       - STR_ELDAR_ONLY
     requiresBuy:
-      - STR_ELDAR_REAPER_EXARCH_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_MIDTIER_PREREQ
+      - STR_SHURIKEN_CANNON_MAG_RESEARCH
+    requiresBuyBaseFunc: [REAPER]
     weight: 20
-    #requiresBuyBaseFunc: [ELDAROUT]
     size: 0.1
-    costBuy: 500
+    costBuy: 1000
     costSell: 250
     bigSprite: 4862
     floorSprite: 4862
@@ -740,10 +752,12 @@ items:
 
   - type: STR_SMALL_ROCKET_TEMPEST_ELDAR  # eldar tempest rocket launcher clip
     categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
-    #requiresBuyBaseFunc: [ELDAROUT]
-    #requiresBuy: []
     requires:
-      - STR_ELDAR_REAPER_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_SMALL_ROCKET_TEMPEST_ELDAR_RESEARCH
+    requiresBuyBaseFunc: [REAPER]
     size: 0.5
     costBuy: 10000
     costSell: 6000
@@ -774,10 +788,12 @@ items:
 
   - type: STR_LARGE_ROCKET_ELDAR  # REAPER AML STARSHOT (KRAK)
     categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
-    #requiresBuyBaseFunc: [ELDAROUT]
-    #requiresBuy: []
     requires:
-      - STR_ELDAR_REAPER_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_LARGE_ROCKET_ELDAR_RESEARCH
+    requiresBuyBaseFunc: [REAPER]
     power: 130  # +30 over krak rocket
     powerForAnimation: 1
     size: 0.1
@@ -812,7 +828,11 @@ items:
   - type: STR_SMALL_ROCKET_ELDAR # REAPER AML SUNBURST (FRAG)
     categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
     requires:
-      - STR_ELDAR_REAPER_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_SMALL_ROCKET_ELDAR_RESEARCH
+    requiresBuyBaseFunc: [REAPER]
     size: 0.1
     battleType: 2
     invWidth: 2
@@ -847,7 +867,11 @@ items:
   - type: STR_REAPER_LAUNCHER_AMMO            # Heavy Bolter with -1 AP -1 D
     categories: [STR_CAT_DEVASTATOR, STR_CAT_ELDAR]
     requires:
-      - STR_ELDAR_REAPER_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_REAPER_LAUNCHER_AMMO_RESEARCH
+    requiresBuyBaseFunc: [REAPER]
     size: 0.1
     battleType: 2
     invWidth: 2
@@ -878,14 +902,67 @@ items:
       #RadiusReduction: 45
     listOrder: 16900
 
-  ### HWP WEAPONS
-  - &HWP_AML_AMMO_TEMPLATE
-    type: STR_HWP_SUNBURST_AMMO
-    categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
-    requires:
-      - STR_ELDAR_HWP_AML_ARMOR_RESEARCH
+  ### MOUNTED WEAPONS AMMO
+  - type: STR_ELDAR_HWP_SCATTERLASER_AMMO
+    invHeight: 0
+    invWidth: 0
     battleType: 2
-    bulletSprite: 0
+    hitSound: 3986
+    hitAnimation: 2220
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 4  # red laser
+    vaporDensitySurface: 2
+    vaporProbabilitySurface: 100
+    bulletSpeed: 10
+    explosionSpeed: 3
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+    clipSize: -1
+    recover: false
+      # Damage Stats
+    power: 75 # STR 5
+    damageType: 1  # AP instead of LAS
+    damageAlter:
+      RandomType: 2 # Consistent damage, lower crits less effective against high armor.
+      ToArmorPre: 0.2
+      ToHealth: 1.0
+      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
+      ToStun: 0.3  # painful las burns
+      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
+      RandomWound: false
+
+  - type: STR_ELDAR_HWP_SHURIKENCANNON_AMMO
+    battleType: 2
+    invHeight: 0
+    invWidth: 0
+    bulletSprite: {mod: 40k, index: 20}
+    hitSound: 1887 #{mod: 40k, index: 708} old sound
+    hitAnimation: {mod: 40k, index: 26}
+    bulletSpeed: 30
+    explosionSpeed: 5
+    clipSize: -1
+    recover: false
+      # Damage stats
+    power: 50
+    damageType: 1
+    damageAlter:  # DA SHURIKEN
+      ToArmorPre: 0.1  # was ToArmor, i.e doesn't damage high armor it can't pen, making certain units invincible.
+      RandomType: 2  # TFTD [50% - 150%]
+      ToHealth: 0.5
+      ToStun: 0.2
+      ArmorEffectiveness: 0.3
+
+  - &HWP_AML_AMMO_TEMPLATE
+    type: STR_ELDAR_HWP_SUNBURST_AMMO
+    categories: [STR_CAT_ROCKETL, STR_CAT_ELDAR]
+    invHeight: 0
+    invWidth: 0
+    battleType: 2
+    bulletSprite: {mod: 40k, index: 0}
     hitSound: 0
     hitAnimation: 0
     clipSize: -1
@@ -905,7 +982,7 @@ items:
       ToItem: 0.75  # high explosive
       FixRadius: 6
 
-  - type: STR_HWP_STARSHOT_AMMO
+  - type: STR_ELDAR_HWP_STARSHOT_AMMO
     refNode: *HWP_AML_AMMO_TEMPLATE
     # Damage profile
     power: 125  # +15 for +1 Strength over Imperium
@@ -923,3 +1000,53 @@ items:
       FixRadius: 1  # 1 for hand grenade version
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 50
+
+  - type: STR_ELDAR_HWP_STARCANNON_AMMO
+    battleType: 2
+    invHeight: 0
+    invWidth: 0
+    hitSound: {mod: 40k, index: 858}
+    hitAnimation: {mod: 40k, index: 100}
+    bulletSprite: {mod: 40k, index: 17}
+    bulletSpeed: 10
+    clipSize: -1
+    recover: false
+      # Damage stats
+    power: 100
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      ToArmorPre: 0.1  # melts some armor on the way in
+      ArmorEffectiveness: 0.75  # *** PLASMA rebalance
+      FireThreshold: 70  # can ignite at high damage
+      ToArmor: 0.1
+    #powerRangeReduction: 5
+    #powerRangeThreshold: 25.0  # plasma decoheres at longer ranges
+
+  - type: STR_ELDAR_HWP_BRIGHTLANCE_AMMO
+    invHeight: 0
+    invWidth: 0
+    battleType: 2
+    hitAnimation: 2230
+    hitSound: 3986
+    bulletSprite: {mod: 40k, index: 22}
+    vaporColorSurface: 4  # red laser
+    vaporDensitySurface: 6
+    vaporProbabilitySurface: 100
+    scripts:
+      vaporParticleAmmo: |
+        # noting
+        set particle_lifetime 1;
+        set subvoxel_drift 0;
+        return;
+    clipSize: -1
+    recover: false
+    # Damage stats
+    damageType: 4
+    power: 250 # +30 over Imperium to balance lower RandomType damage cap.
+    damageAlter:  # DA LAS
+      RandomType: 2  # 1d6+2 More consistent damage
+      ToArmorPre: 0.4
+      ToHealth: 1.0
+      ToArmor: 0.1
+      ToStun: 0.3

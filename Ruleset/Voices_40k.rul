@@ -676,7 +676,8 @@ armors:
     deathMale: [3215, 3216, 3217]  # yamllint disable-line rule:colons
     deathFemale: [3218, 3219, 3220]  # yamllint disable-line rule:colons
     # GUARDIAN
-  - type: STR_ELDAR_ARMOR_GUARDIAN_PLAYER
+  - &STR_ELDAR_GUARDIAN_VOICE
+    type: STR_ELDAR_ARMOR_GUARDIAN_PLAYER
     selectUnitMale:     [3263, 3264, 3265, 3266, 3267]  # yamllint disable-line rule:colons
     selectUnitFemale:   [3268, 3269, 3270, 3271, 3272]  # yamllint disable-line rule:colons
     startMovingMale:    [3273, 3274, 3275, 3276, 3277]  # yamllint disable-line rule:colons
@@ -687,6 +688,27 @@ armors:
     annoyedFemale:      [3296, 3297, 3298]  # yamllint disable-line rule:colons
     deathMale: [3257, 3258, 3259]  # yamllint disable-line rule:colons
     deathFemale: [3260, 3261, 3262]  # yamllint disable-line rule:colons
+
+  - &STR_ELDAR_HWP_VOICE
+    type: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_P
+    selectUnitMale:     [3263, 3264, 3265, 3266, 3267]  # yamllint disable-line rule:colons
+    selectUnitFemale:   [3268, 3269, 3270, 3271, 3272]  # yamllint disable-line rule:colons
+    startMovingMale:    [3273, 3274, 3275, 3276, 3277]  # yamllint disable-line rule:colons
+    startMovingFemale:  [3278, 3279, 3280, 3281, 3282]  # yamllint disable-line rule:colons
+    selectWeaponMale:   [3283, 3284, 3285, 3286, 3287]  # yamllint disable-line rule:colons
+    selectWeaponFemale: [3288, 3289, 3290, 3291, 3292]  # yamllint disable-line rule:colons
+    annoyedMale:        [3293, 3294, 3295]  # yamllint disable-line rule:colons
+    annoyedFemale:      [3296, 3297, 3298]  # yamllint disable-line rule:colons
+    deathMale: [{mod: 40k, index: 842}, {mod: 40k, index: 843}, {mod: 40k, index: 844}]
+    deathFemale: [{mod: 40k, index: 842}, {mod: 40k, index: 843}, {mod: 40k, index: 844}]
+  - type: STR_ELDAR_HWP_AML_ARMOR_P
+    refnode: *STR_ELDAR_HWP_VOICE
+  - type: STR_ELDAR_HWP_STARCANNON_ARMOR_P
+    refnode: *STR_ELDAR_HWP_VOICE
+  - type: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_P
+    refnode: *STR_ELDAR_HWP_VOICE
+  - type: STR_ELDAR_HWP_SCATTERLASER_ARMOR_P
+    refnode: *STR_ELDAR_HWP_VOICE
 # AVENGER
   - &STR_ELDAR_GENERIC_ASPECT_ARMOR_VOICE  #GENERIC ASPECT WARRIOR VOICES
     type: STR_ELDAR_ARMOR4_P
@@ -780,6 +802,33 @@ armors:
     annoyedFemale:        [3150, 3151, 3152]  # yamllint disable-line rule:colons
     deathMale:            [3153, 3154, 3155]  # yamllint disable-line rule:colons
     deathFemale:          [3153, 3154, 3155]  # yamllint disable-line rule:colons
+
+  - &STR_ELDAR_REAPER_VOICE
+    type: STR_ELDAR_ARMOR6_P
+    selectUnitMale:       [{mod: 40k, index: 1413}, {mod: 40k, index: 1414}, {mod: 40k, index: 1415}, {mod: 40k, index: 1416}, {mod: 40k, index: 1417}]  # yamllint disable-line rule:colons
+    selectUnitFemale:     [{mod: 40k, index: 1413}, {mod: 40k, index: 1414}, {mod: 40k, index: 1415}, {mod: 40k, index: 1416}, {mod: 40k, index: 1417}]  # yamllint disable-line rule:colons
+    startMovingMale:      [{mod: 40k, index: 1408}, {mod: 40k, index: 1409}, {mod: 40k, index: 1410}, {mod: 40k, index: 1411}, {mod: 40k, index: 1412}]  # yamllint disable-line rule:colons
+    startMovingFemale:    [{mod: 40k, index: 1408}, {mod: 40k, index: 1409}, {mod: 40k, index: 1410}, {mod: 40k, index: 1411}, {mod: 40k, index: 1412}]  # yamllint disable-line rule:colons
+    selectWeaponMale:     [{mod: 40k, index: 1403}, {mod: 40k, index: 1404}, {mod: 40k, index: 1405}, {mod: 40k, index: 1406}, {mod: 40k, index: 1407}]  # yamllint disable-line rule:colons
+    selectWeaponFemale:   [{mod: 40k, index: 1403}, {mod: 40k, index: 1404}, {mod: 40k, index: 1405}, {mod: 40k, index: 1406}, {mod: 40k, index: 1407}]  # yamllint disable-line rule:colons
+    annoyedMale:          [{mod: 40k, index: 1418}, {mod: 40k, index: 1419}, {mod: 40k, index: 1420}, {mod: 40k, index: 1421}, {mod: 40k, index: 1422}]  # yamllint disable-line rule:colons
+    annoyedFemale:        [{mod: 40k, index: 1418}, {mod: 40k, index: 1419}, {mod: 40k, index: 1420}, {mod: 40k, index: 1421}, {mod: 40k, index: 1422}]  # yamllint disable-line rule:colons
+    deathMale:            [{mod: 40k, index: 1423}, {mod: 40k, index: 1424}, {mod: 40k, index: 1425}, {mod: 40k, index: 1426}]  # yamllint disable-line rule:colons
+    deathFemale:          [{mod: 40k, index: 1423}, {mod: 40k, index: 1424}, {mod: 40k, index: 1425}, {mod: 40k, index: 1426}]  # yamllint disable-line rule:colons
+  - type: STR_ELDAR_REAPER_TEMPESTLAUNCHER_ARMOR_P
+    refNode: *STR_ELDAR_REAPER_VOICE
+  - type: STR_ELDAR_REAPER_SHURIKENCANNON_ARMOR_P
+    refNode: *STR_ELDAR_REAPER_VOICE
+  - type: STR_ELDAR_REAPER_REAPERLAUNCHER_ARMOR_P
+    refNode: *STR_ELDAR_REAPER_VOICE
+  - type: STR_ELDAR_ARMOR_EXARCH_P
+    refNode: *STR_ELDAR_REAPER_VOICE
+  - type: STR_ELDAR_REAPEREX_TEMPESTLAUNCHER_ARMOR_P
+    refNode: *STR_ELDAR_REAPER_VOICE
+  - type: STR_ELDAR_REAPEREX_SHURIKENCANNON_ARMOR_P
+    refNode: *STR_ELDAR_REAPER_VOICE
+  - type: STR_ELDAR_REAPEREX_REAPERLAUNCHER_ARMOR_P
+    refNode: *STR_ELDAR_REAPER_VOICE
 
   - &STR_ELDAR_RANGER_ARMOR_VOICE
     type: STR_ELDAR_RANGER_ARMOR_P

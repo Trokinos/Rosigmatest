@@ -894,7 +894,6 @@ armors:
       F9: ["", "ELDAR_F", "CLOSEDHELMET4", "ACCESSORY4"]
       F10: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY5"]
       F11: ["", "ELDAR_F", "CLOSEDHELMET5", "ACCESSORY8"]
-    #ufopediaType: ""
     customArmorPreviewIndex: 1353
     corpseBattle:
       - STR_ELDAR_SPIDER_CORPSE_P
@@ -990,16 +989,6 @@ armors:
     customArmorPreviewIndex: 1440
     corpseBattle:
       - STR_ELDAR_REAPER_CORPSE_P
-    selectUnitMale:       [{mod: 40k, index: 1413}, {mod: 40k, index: 1414}, {mod: 40k, index: 1415}, {mod: 40k, index: 1416}, {mod: 40k, index: 1417}]  # yamllint disable-line rule:colons
-    selectUnitFemale:     [{mod: 40k, index: 1413}, {mod: 40k, index: 1414}, {mod: 40k, index: 1415}, {mod: 40k, index: 1416}, {mod: 40k, index: 1417}]  # yamllint disable-line rule:colons
-    startMovingMale:      [{mod: 40k, index: 1408}, {mod: 40k, index: 1409}, {mod: 40k, index: 1410}, {mod: 40k, index: 1411}, {mod: 40k, index: 1412}]  # yamllint disable-line rule:colons
-    startMovingFemale:    [{mod: 40k, index: 1408}, {mod: 40k, index: 1409}, {mod: 40k, index: 1410}, {mod: 40k, index: 1411}, {mod: 40k, index: 1412}]  # yamllint disable-line rule:colons
-    selectWeaponMale:     [{mod: 40k, index: 1403}, {mod: 40k, index: 1404}, {mod: 40k, index: 1405}, {mod: 40k, index: 1406}, {mod: 40k, index: 1407}]  # yamllint disable-line rule:colons
-    selectWeaponFemale:   [{mod: 40k, index: 1403}, {mod: 40k, index: 1404}, {mod: 40k, index: 1405}, {mod: 40k, index: 1406}, {mod: 40k, index: 1407}]  # yamllint disable-line rule:colons
-    annoyedMale:          [{mod: 40k, index: 1418}, {mod: 40k, index: 1419}, {mod: 40k, index: 1420}, {mod: 40k, index: 1421}, {mod: 40k, index: 1422}]  # yamllint disable-line rule:colons
-    annoyedFemale:        [{mod: 40k, index: 1418}, {mod: 40k, index: 1419}, {mod: 40k, index: 1420}, {mod: 40k, index: 1421}, {mod: 40k, index: 1422}]  # yamllint disable-line rule:colons
-    deathMale:            [{mod: 40k, index: 1423}, {mod: 40k, index: 1424}, {mod: 40k, index: 1425}, {mod: 40k, index: 1426}]  # yamllint disable-line rule:colons
-    deathFemale:          [{mod: 40k, index: 1423}, {mod: 40k, index: 1424}, {mod: 40k, index: 1425}, {mod: 40k, index: 1426}]  # yamllint disable-line rule:colons
     drawingRoutine: 0
     moveSound: 1912
     damageModifier:  # ELDAR ARMOR
@@ -2238,8 +2227,6 @@ armors:
     moveSound: {mod: 40k, index: 845}
     standHeight: 23
     kneelHeight: 16
-    deathMale: [{mod: 40k, index: 842}, {mod: 40k, index: 843}, {mod: 40k, index: 844}]
-    deathFemale: [{mod: 40k, index: 842}, {mod: 40k, index: 843}, {mod: 40k, index: 844}]
     size: 2
     stats:
       tu: 0
@@ -2273,6 +2260,7 @@ armors:
     allowsKneeling: false
     builtInWeapons:
       - STR_ELDAR_HWP_SHURIKENCANNON
+      - STR_ELDAR_HWP_SHURIKENCANNON_AMMO
       #- INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_ELDARHWP_2x1_LL
@@ -2344,6 +2332,7 @@ armors:
       3: ELDARG_ACCESSORY
     builtInWeapons:
       - STR_ELDAR_HWP_SCATTERLASER
+      - STR_ELDAR_HWP_SCATTERLASER_AMMO
       #- INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_ELDARHWP_2x1_LL
@@ -2359,8 +2348,8 @@ armors:
       2: GUARDIAN_HELMET
       3: ELDARG_ACCESSORY
     builtInWeapons:
-      - STR_HWP_SUNBURST_AMMO
-      - STR_HWP_STARSHOT_AMMO
+      - STR_ELDAR_HWP_SUNBURST_AMMO
+      - STR_ELDAR_HWP_STARSHOT_AMMO
       - STR_ELDAR_HWP_AML
       #- INV_NULL_3X3
       - INV_NULL_2X1_RL
@@ -2378,6 +2367,7 @@ armors:
       3: ELDARG_ACCESSORY
     builtInWeapons:
       - STR_ELDAR_HWP_STARCANNON
+      - STR_ELDAR_HWP_STARCANNON_AMMO
       #- INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_ELDARHWP_2x1_LL
@@ -2394,6 +2384,7 @@ armors:
       3: ELDARG_ACCESSORY
     builtInWeapons:
       - STR_ELDAR_HWP_BRIGHTLANCE
+      - STR_ELDAR_HWP_BRIGHTLANCE_AMMO
       #- INV_NULL_3X3
       - INV_NULL_2X1_RL
       - INV_NULL_ELDARHWP_2x1_LL

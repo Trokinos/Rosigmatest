@@ -180,6 +180,15 @@ commendations:
       - STR_REPENTIA_PLAYERBLOODYROSE
 
   # Eldar
+    # Mon'keigh Upgrade Commendation
+  - type: STR_COMMENDATION_BULLET_MAGNET
+    description: STR_COMMENDATION_BULLET_MAGNET_DESCRIPTION
+    sprite: 5
+    criteria:
+      totalShotAt10Times : [10] # Should be rare but possible
+    units:
+      - STR_MONKEIGH_COLLABORATOR
+
     # ASPECT PATH COMMENDATIONS
   - type: STR_COMMENDATION_MASTER_AVENGER_PATH
     description: STR_COMMENDATION_MASTER_AVENGER_PATH_DESCRIPTION

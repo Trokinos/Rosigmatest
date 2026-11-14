@@ -1,3 +1,10 @@
+# - Inquistion hunts for Collaborators
+# soldierTypeTriggers: STR_MONKEIGH_COLLABORATOR
+# - Slaanesh cults hunt for Soul gems
+# itemTriggers: STR_SOULGEM
+# - MonkeighCollab Aid missions
+# researchTriggers: STR_MONKEIGH_PACT
+
 missionScripts:
   - type: STR_SLAANESH_BASE_ELDAR
     missionWeights:
