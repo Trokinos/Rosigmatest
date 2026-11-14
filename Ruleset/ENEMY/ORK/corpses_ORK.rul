@@ -352,10 +352,10 @@ items:
     type: STR_PLAYER_SQUIG_CORPSE
     recover: false
     weight: 70
-    bigSprite: 2100  # needs squig bits
+    bigSprite: 2190
     floorSprite: 2108
     invWidth: 2
-    invHeight: 3
+    invHeight: 2
     battleType: 11
     armor: 100
 
@@ -367,10 +367,10 @@ items:
     type: STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE
     recover: false #if it even survives....
     weight: 70
-    bigSprite: 2100  # needs squig bits with bomba
-    floorSprite: 2108
+    bigSprite: 2191
+    floorSprite: 2048
     invWidth: 2
-    invHeight: 3
+    invHeight: 2
     battleType: 11
     armor: 100
     power: 180
@@ -379,6 +379,21 @@ items:
   - type: STR_SQUIG_CORPSE_EXPLOSIVE_AI
     refNode: *EXPLOSIVE_SQUIG_CORPSE
     recover: true #if it even survives....
+
+  - &BIG_SQUIG_CORPSE
+    type: STR_PLAYER_BIG_SQUIG_CORPSE
+    recover: false
+    weight: 100
+    bigSprite: 2192
+    floorSprite: 2049
+    invWidth: 2
+    invHeight: 2
+    battleType: 11
+    armor: 100
+
+  - type: STR_BIG_SQUIG_CORPSE_AI
+    refNode: *BIG_SQUIG_CORPSE
+    recover: true
 
   - type: STR_PLAYER_GRETCHIN_CORPSE                 #ORK 19970
     weight: 10

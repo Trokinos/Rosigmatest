@@ -1356,7 +1356,8 @@ armors:
 
 # Squigs
 
-  - type: STR_SQUIG_ARMOR
+  - &PLAYER_SQUIG_ARMOR_TEMPLATE
+    type: STR_SQUIG_ARMOR
     visibilityAtDay: 40
     visibilityAtDark: 20
     antiCamouflageAtDay: 5 # Good sniffers
@@ -1405,7 +1406,7 @@ armors:
       - 0.0  # SMOKE
       - 1.0  # IMPACT
       - 1.0  # MELTA
-    loftempsSet: [3]
+    loftempsSet: [2]
     storeItem: STR_NONE
     units:
       - STR_SQUIG
@@ -1421,28 +1422,9 @@ armors:
       INTIMIDATION_RESISTANCE: 50
 
   - type: STR_SQUIG_ARMOR_BOMB
-    visibilityAtDay: 40
-    visibilityAtDark: 20
-    antiCamouflageAtDay: 5 # Good sniffers
-    antiCamouflageAtDark: 5
-    heatVision: 20 # Good sniffers
-    spriteSheet: SQUIG_BS.PCK # TODO: needs to be redone
+    refNode: *PLAYER_SQUIG_ARMOR_TEMPLATE
+    spriteSheet: SQUIG_BOMBA.PCK
     #spriteInv: BOMB_SQUIG_INV.SPK
-    allowInv: true
-    zombiImmune: true
-    bleedImmune: false
-    drawingRoutine: 4
-    constantAnimation: false
-    deathMale: [1970]
-    deathFemale: [1970]
-    selectUnitMale: [1971, 1972, 1973] # 1973 has been added here for variety
-    selectUnitFemale: [1971, 1972, 1973] # 1973 has been added here for variety
-    startMovingMale: [1974, 1975, 1976] # 1974 has been added here for variety
-    startMovingFemale: [1974, 1975, 1976] # 1974 has been added here for variety
-    selectWeaponMale: [1973, 1974]
-    selectWeaponFemale: [1973, 1974]
-    annoyedMale: [1968, 1969]
-    annoyedFemale: [1968, 1969]
     specab: 1
     corpseBattle:
       - STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE
@@ -1462,20 +1444,6 @@ armors:
     sideArmor: 45  # bomb covers a bit
     rearArmor: 50  # bomb covers a bit
     underArmor: 20  # was 10
-    damageModifier:  # same as cyber mastiff, seems ok. Tough muscly hide protects against most things, but is weak to flame.
-      - 1.0  # none
-      - 0.9  # AP
-      - 1.5  # FLAMES
-      - 0.9  # HE
-      - 0.9  # LASCANON
-      - 0.9  # PLASMA
-      - 0.9  # STUN
-      - 0.9  # MELEE
-      - 0.5  # ACID
-      - 0.0  # SMOKE
-      - 1.0  # IMPACT
-      - 1.0  # MELTA
-    loftempsSet: [3]
     storeItem: STR_TANKBUSTA_BOMB
     specialWeapon: STR_TANKBUSTA_BOMB_COLLAR
     units:
@@ -1483,16 +1451,27 @@ armors:
     customArmorPreviewIndex: 838  # cyber mastiff. Needs new
     allowsKneeling: false
     tags:
-      INFECTION_RESIST: 75  # infection/corruption resistant due to ORKY
-      UNIT_TYPE_IMPERIUM: 1
-      UNIT_TYPE_LIVING: 1
-      UNIT_TYPE_XENO: 1
-      UNIT_TYPE_ORK: 1
-      ARMOR_ALPHA_ATTACKER_BONUS_MODIFIER: -1 # cant be alpha legion
-      INTIMIDATION_RESISTANCE: 50
       #add kamikaze tags
       ARMOR_DISABLE_OVERKILL_SELF_DESTRUCT: 1
       ARMOR_IS_EXPLODE_ON_DEATH: 1
       ARMOR_IS_KAMIKAZI: 1
       #ARMOR_ALWAYS_OVERKILL: 1
       ARMOR_IS_EXPLODE_ON_DEATH_MELEE_BYPASS: 1
+
+  - type: STR_SQUIG_BIG_ARMOR
+    refNode: *PLAYER_SQUIG_ARMOR_TEMPLATE
+    spriteSheet: SQUIG_BIG.PCK
+    spriteInv: ASSAULT_SQUIG_INV.SPK #TODO: Replace
+    corpseBattle:
+      - STR_PLAYER_BIG_SQUIG_CORPSE
+    units:
+      - STR_SQUIG_BIG
+    loftempsSet: [3]
+    frontArmor: 80
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 80
+    tags:
+      INFECTION_RESIST: 85  # infection/corruption resistant due to ORKY
+      UNIT_SIZE: 100 # Medium
+      INTIMIDATION_RESISTANCE: 75

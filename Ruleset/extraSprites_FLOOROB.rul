@@ -176,6 +176,8 @@ extraSprites:
       2004: Resources/Adeptas/floorob_200Elohim.png
       2005: Resources/Adeptas/FLOOROB_BLOODYROSE_ELOHIM.png
       2012: Resources/Adeptas/floorob_461F.png  # Frateris
+      2048: Resources/ORK/SQUIG_BIG_floorobj.png
+      2049: Resources/ORK/SQUIG_BOMBA_floorobj.png
       2050: Resources/Adeptas/floorob_1Elohim.png
       2051: Resources/Adeptas/floorob_Phosphor.gif
       2052: Resources/Adeptas/floorob_grenade_launcher_cherubim.gif
@@ -1090,7 +1092,7 @@ extraSprites:
 # 994 - 1064
 # 1066 - 2000
 # 2006 - 2009
-# 2013 - 2049
+# 2013 - 2047
 # 2100
 # 2111 - 2169   - Using this for Slaanesh strategy, temporarily at least - tink
 # 2176 - 2299

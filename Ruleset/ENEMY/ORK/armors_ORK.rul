@@ -792,7 +792,7 @@ armors:
       - 0.0  # SMOKE
       - 1.0  # IMPACT
       - 1.0  # MELTA
-    loftempsSet: [3]
+    loftempsSet: [2]
     builtInWeapons:
       - STR_SQUIG_BITE
       - STR_SQUIG_BITE
@@ -812,8 +812,8 @@ armors:
   - type: STR_SQUIG_ARMOR_BOMB_AI
     refNode: *SQUIG_ARMOR_TEMPLATE_AI
     spriteInv: BOMB_SQUIG_INV.SPK
-    # spriteSheet: SQUIG_BS.PCK # TODO
-    specab: 0
+    spriteSheet: SQUIG_BOMBA.PCK
+    specab: 1
     builtInWeapons:
       - STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI
       - STR_SQUIG_BITE_EXPLOSIVE_TRIGGER_AI
@@ -822,13 +822,29 @@ armors:
       - STR_TANKBUSTA_INVENTORY_BOMB # 3x3 space replaced with bomb
       - INV_NULL_4X2
     corpseBattle:
-      - STR_SQUIG_CORPSE_EXPLOSIVE_AI #TODO
+      - STR_SQUIG_CORPSE_EXPLOSIVE_AI
     tags:
       ARMOR_DISABLE_OVERKILL_SELF_DESTRUCT: 1
       ARMOR_IS_EXPLODE_ON_DEATH: 1
       ARMOR_IS_KAMIKAZI: 1
       #ARMOR_ALWAYS_OVERKILL: 1
       ARMOR_IS_EXPLODE_ON_DEATH_MELEE_BYPASS: 1
+
+  - type: STR_SQUIG_ARMOR_BIG_AI
+    refNode: *SQUIG_ARMOR_TEMPLATE_AI
+    spriteSheet: SQUIG_BIG.PCK
+    spriteInv: ASSAULT_SQUIG_INV.SPK #TODO: Replace
+    corpseBattle:
+      - STR_BIG_SQUIG_CORPSE_AI
+    loftempsSet: [3]
+    frontArmor: 80
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 80
+    tags:
+      INFECTION_RESIST: 85  # infection/corruption resistant due to ORKY
+      UNIT_SIZE: 100 # Medium
+      INTIMIDATION_RESISTANCE: 75
 
   - type: STR_WEIRDORK_ARMOR
     movementType: 0
