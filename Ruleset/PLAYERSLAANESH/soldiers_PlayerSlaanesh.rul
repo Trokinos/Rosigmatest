@@ -101,7 +101,7 @@ soldiers:
       health: 35 # 5 More vs Adeptas
       bravery: 50 # Followers of Slaanesh do not fear death
       reactions: 35 # Slaanesh influence
-      firing: 47
+      firing: 46
       throwing: 30
       strength: 16
       psiStrength: 20
@@ -113,7 +113,7 @@ soldiers:
       health: 45
       bravery: 100
       reactions: 62
-      firing: 61
+      firing: 60
       throwing: 45
       strength: 28
       psiStrength: 70 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
@@ -171,7 +171,7 @@ soldiers:
     requires: ### >Remove this later.< ###
       - STR_SLAANESHPATH_GATE
     minStats:
-      tu: 55 # +5 vs base
+      tu: 60 # +5 vs base
       stamina: 55 # +5 vs base
       health: 40 # +5 vs base
       bravery: 50
@@ -181,7 +181,7 @@ soldiers:
       strength: 21 # +5 vs base
       psiStrength: 20
       psiSkill: 30
-      melee: 40 # +5 vs base
+      melee: 45 # +5 vs base
     maxStats:
       tu: 70 # +5 vs base
       stamina: 80
@@ -193,7 +193,7 @@ soldiers:
       strength: 30
       psiStrength: 70 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
       psiSkill: 60
-      melee: 60 # +5 vs base
+      melee: 63 # +5 vs base
     statCaps:
       tu: 95 # Slaanesh Influence
       stamina: 110 # Slaanesh Influence
@@ -918,18 +918,18 @@ soldiers:
     standHeight: 21
     kneelHeight: 16
     deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
-    deathFemale: [{mod: 40k, index: 44}, {mod: 40k, index: 45}, {mod: 40k, index: 46}]
+    deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
     allowPiloting: false
     allowPromotion: true
     rankStrings:
-      - STR_SLAANESHPATH_SERVANT-RANK_0
-      - STR_SLAANESHPATH_SERVANT-RANK_1
-      - STR_SLAANESHPATH_SERVANT-RANK_2
-      - STR_SLAANESHPATH_SERVANT-RANK_3
+      - STR_SLAANESHPATH_SERVANT_RANK_0
+      - STR_SLAANESHPATH_SERVANT_RANK_1
+      - STR_SLAANESHPATH_SERVANT_RANK_2
+      - STR_SLAANESHPATH_SERVANT_RANK_3
     rankSprite: {mod: 40k, index: 80} # ADD LATER
     rankBattleSprite: {mod: 40k, index: 194} # ADD LATER
     rankTinySprite: {mod: 40k, index: 127} # ADD LATER
-    femaleFrequency: 10
+    femaleFrequency: 0
     avatarOffsetX: 66
     avatarOffsetY: 42
     soldierNames:
@@ -937,6 +937,80 @@ soldiers:
       - Names/cultists.nam
     value: 4
     moraleLossWhenKilled: 75  # people don't care about the grunts so much
+
+  - type: STR_SLAANESHPATH_LAY_BROTHER
+    costSalary: 8000
+    minStats:  # Improved stats, but these brothers aren't generally meant to be purchased.
+      tu: 60 # +5
+      stamina: 60
+      health: 45
+      bravery: 40
+      reactions: 50 # +10
+      firing: 55
+      throwing: 45
+      strength: 25
+      psiStrength: 0
+      psiSkill: 0
+      melee: 35
+      mana: 0
+    maxStats:
+      tu: 75 # +5
+      stamina: 70
+      health: 50
+      bravery: 70
+      reactions: 66
+      firing: 75
+      throwing: 65
+      strength: 40
+      psiStrength: 100
+      psiSkill: 6
+      melee: 65
+      mana: 0
+    statCaps:
+      tu: 100  # Slaanesh influence
+      stamina: 100
+      health: 66  # was 45
+      bravery: 110  # was 100
+      reactions: 90  # was 60
+      firing: 100  # was 100
+      throwing: 70
+      strength: 65  # was 60
+      psiStrength: 100
+      psiSkill: 50
+      melee: 90
+      mana: 0
+    trainingStatCaps:
+      tu: 60
+      stamina: 70
+      health: 30
+      firing: 70
+      throwing: 65
+      strength: 30
+      psiStrength: 100
+      psiSkill: 50
+      melee: 50
+      mana: 0
+    armor: STR_SLAANESHPATH_LAY_BROTHER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
+    deathMale: [{mod: 40k, index: 41}, {mod: 40k, index: 42}, {mod: 40k, index: 43}]
+    allowPiloting: false
+    allowPromotion: true
+    rankStrings:
+      - STR_SLAANESHPATH_BROTHER_RANK_0
+    rankSprite: {mod: 40k, index: 80} # ADD LATER
+    rankBattleSprite: {mod: 40k, index: 194} # ADD LATER
+    rankTinySprite: {mod: 40k, index: 127} # ADD LATER
+    femaleFrequency: 0
+    avatarOffsetX: 66
+    avatarOffsetY: 42
+    soldierNames:
+      - delete
+      - Names/cultists.nam
+    value: 4
+    moraleLossWhenKilled: 75  # people don't care about the grunts so much
+
 
   - type: STR_SLAANESHPATH_JUICED_CULTIST
     requires:

@@ -313,6 +313,7 @@ alienDeployments:
     objectiveType: 14
     objectivesRequired: 4
     objectiveFailed: [STR_VEHICLE_RAID_FAILED, -300]
+    objectiveComplete: [STR_VEHICLE_RAID_SUCCESSFUL, 300]
     alienBase: true    # this is only to tell new battle mode what to do with this deployment
     abortPenalty: 150
     missionBountyItem: STR_SLAANESH_VEHICLE_TOKEN  # item added after successful mission

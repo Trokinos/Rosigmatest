@@ -198,6 +198,7 @@ research:
     unlocks:
       - STR_MARKSMAN_AUTOGUNS
       - STR_BASIC_BALLISTICS_DEP
+      - STR_LIGHT_BOLTERS_LOWTIER
     getOneFree:
       - STR_LASER_WEAPONS
 
@@ -239,8 +240,9 @@ research:
   - name: STR_OUR_DEVOTION_DEEPENS # Change this to be unlocked through a campaign progression goal vs ecclesiarchy OR underhive.
     cost: 300
     dependencies:
-      - ADORATION_THROUGH_AGONY
-      - STR_TERROR_WEAPONRY
+      - STR_RIVAL_GANGERS_DESTROYED
+      - STR_UNDERHIVE_CONVERTED
+    points: 30
 
   - name: STR_SOULSTAIN_SORCERY
     cost: 50

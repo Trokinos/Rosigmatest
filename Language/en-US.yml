@@ -2516,6 +2516,8 @@ en-US: #  yamllint disable-line rule:empty-values
   ### SLAANESH COMMENDATIONS
   STR_HANDMAIDEN_COMMENDATION: "Mark of Promise"
   STR_HANDMAIDEN_COMMENDATION_DESCRIPTION: "{NEWLINE}This Handmaiden has displayed promise and initiative and is now allowed to continue her advance along the Path of Perfection."
+  STR_VICTUAL_COMMENDATION: "Mark of Servitude"
+  STR_VICTUAL_COMMENDATION_DESCRIPTION: "{NEWLINE}Having killed and bled in the Dark Prince's name, this former ganger is worthy of being inducted as a lay member of the True Faith."
 
   ### SLAANESH STORY EVENTS & STORY CODEX DESCRIPTIONS
 
@@ -2579,6 +2581,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_PDF_VEHICLE_RAID_DETECTED: "PDF Depot Raid"
   STR_PDF_VEHICLE_RAID_MARKER: "Raid PDF Vehicle Depot"
   STR_VEHICLE_RAID_FAILED: "Vehicles not secured"
+  STR_VEHICLE_RAID_SUCCESSFUL: "Depot Raid Successful!"
   STR_SLAANESH_VEHICLE_TOKEN: "Looted PDF Vehicles"
   STR_DEPOT_SUCCESSFULLY_RAIDED: "Depot Successfully Raided"
 
@@ -2761,6 +2764,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_RECRUIT_HANDMAIDEN: "Indoctrinate Handmaiden"
   STR_ELEVATE_PROMISING_HANDMAIDEN: "Recognize Promising Handmaiden"
 
+  STR_INDUCT_LAY_BROTHER: "Induct Lay Brother"
+
   STR_NOMINATE_VIVISECTIONIST: "Nominate Vivisectionist"
   STR_NOMINATE_ANATHEMANT: "Nominate Anathemant"
   STR_NOMINATE_MILITANT: "Nominate Militant"
@@ -2923,6 +2928,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_HARVESTER: "Harvester of Sorrows"
   STR_SLAANESHPATH_HERETEK: "Heretek Savant"
   STR_SLAANESHPATH_FELINID_ACOLYTE: "Felinid Acolyte"
+  STR_SLAANESHPATH_LAY_BROTHER: "Lay Brother"
+
   ## Slaanesh Adeptas Armors
 
   STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
@@ -2936,6 +2943,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_HARBINGER_ARMOR: "Harbinger Armor"
   STR_SLAANESHPATH_ANGEL_ARMOR: "Angelic Armor"
   STR_SLAANESHPATH_FELINID_ASSASSIN_ARMOR: "Acolyte Catsuit"
+  STR_SLAANESHPATH_LAY_BROTHER_ARMOR: "Lay Brother Carapace"
 
   ## Slaanesh Adeptas Ranks
 
@@ -3005,10 +3013,10 @@ en-US: #  yamllint disable-line rule:empty-values
 
   ## Slaanesh cultist ranks
 
-  STR_SLAANESHPATH_SERVANT-RANK_0: "Servant"
-  STR_SLAANESHPATH_SERVANT-RANK_1: "Skillful Servant"
-  STR_SLAANESHPATH_SERVANT-RANK_2: "Servant Substantial"
-  STR_SLAANESHPATH_SERVANT-RANK_3: "Servant Significant"
+  STR_SLAANESHPATH_SERVANT_RANK_0: "Servant"
+  STR_SLAANESHPATH_SERVANT_RANK_1: "Skillful Servant"
+  STR_SLAANESHPATH_SERVANT_RANK_2: "Servant Significant"
+  STR_SLAANESHPATH_BROTHER_RANK_0: "Servant Substantial"
 
   STR_SLAANESHPATH_SAVANT_RANK_0: "Minoris Sigma-Nu"
   STR_SLAANESHPATH_SAVANT_RANK_1: "Minoris Sigma-Lambda"

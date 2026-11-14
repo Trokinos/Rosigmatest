@@ -327,3 +327,15 @@ commendations:
         - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
     units:
       - STR_SLAANESHPATH_HANDMAIDEN
+
+  - type: STR_VICTUAL_COMMENDATION
+    description: STR_VICTUAL_COMMENDATION_DESCRIPTION
+    sprite: 5
+    criteria:
+      killsWithCriteriaCareer: [3]
+      totalWins: [6]
+    killCriteria:
+      -
+        - [1, ["STATUS_DEAD", "FACTION_HOSTILE"]]
+    units:
+      - STR_SLAANESHPATH_VICTUAL_BROTHER

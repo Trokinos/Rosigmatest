@@ -703,6 +703,54 @@ armors:
       DODGE_CHANCE: 15
       ARMOR_MAX_SUCCESSFUL_DODGES: 1
 
+  - type: STR_SLAANESHPATH_LAY_BROTHER_ARMOR # Decent-quality, custom mesh armor.
+    visibilityAtDay: 40
+    visibilityAtDark: 24
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    weight: 3
+    forcedTorso: 1
+    customArmorPreviewIndex: 1125
+    corpseBattle:
+      - STR_SLAANESH_CARAPACE_CORPSE_PLAYER
+    frontArmor: 65
+    sideArmor: 60
+    rearArmor: 40
+    underArmor: 65
+    stats:
+      tu: 5
+      reactions: 5
+      stamina: 5
+      bravery: 10
+      melee: 5
+      firing: 0
+    damageModifier:
+      - 1.0  # none
+      - 1.0  # AP
+      - 1.0  # FLAMES
+      - 1.0  # HE
+      - 0.8  # LASCANON
+      - 1.0  # PLASMA
+      - 0.9  # STUN
+      - 0.9  # MELEE
+      - 1.0  # ACID
+      - 0.0  # SMOKE
+      - 1.0  # IMPACT
+      - 1.0  # MELTA
+    loftempsSet: [2]
+    storeItem: STR_NONE
+    units:
+      - STR_SLAANESHPATH_LAY_BROTHER
+    spriteInv: SLAAN_CARAPACE_INV.SPK
+    spriteSheet: SLAANESH_GUARD_CARAPACE_BS.PCK
+    tags:
+      INFECTION_RESIST: 35  # infection resistant
+      UNIT_TYPE_LIVING: 1
+      UNIT_TYPE_CHAOS: 1
+      UNIT_TYPE_SLAANESH: 1
+      DODGE_CHANCE: 15
+      ARMOR_MAX_SUCCESSFUL_DODGES: 1
+
   - type: STR_SLAANESHPATH_JUICED_CULTIST_ARMOR # Work in progress. For now this is identical to normal cultists.
     visibilityAtDay: 40
     visibilityAtDark: 20

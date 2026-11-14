@@ -363,3 +363,42 @@ soldierTransformation:
       STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
 
     #resetRank - use this for promoting handmaidens to sisters immaculate.
+
+
+  - name: STR_INDUCT_LAY_BROTHER
+    requires:
+      - STR_OUR_DEVOTION_DEEPENS # Placeholder. Change later.
+    cost: 10000
+    producedSoldierType: STR_SLAANESHPATH_LAY_BROTHER
+    keepSoldierArmor: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    showMinMax: true
+    requiredCommendations:
+      STR_VICTUAL_COMMENDATION: 0 # Mark of Promise. 3 kills, 6 missions.
+    flatMin:
+      tu: 1
+      health: 1
+      reactions: 1
+      psiSkill: 5
+      strength: 1
+    flatMax:
+      tu: 6
+      health: 6
+      reactions: 6
+      psiSkill: 15
+      strength: 6
+    percentGainedMin:
+      firing: 3
+      melee: 3
+      throwing: 3
+    percentGainedMax:
+      firing: 6
+      melee: 6
+      throwing: 6
+    allowedSoldierTypes:
+      - STR_SLAANESHPATH_VICTUAL_BROTHER
+    requiredItems:
+      STR_SLAANESHPATH_PIETY: 30
+      STR_ALIEN_SURGERY: 1
