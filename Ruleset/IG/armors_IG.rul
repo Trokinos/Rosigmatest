@@ -1586,7 +1586,7 @@ armors:
     size: 2
     moveSound: {mod: 40k, index: 700}
     loftempsSet: [92, 89, 90, 91]
-    drawingRoutine: 20
+    drawingRoutine: 5
     allowsKneeling: false
     refNode: *STR_GUARD_ARMOR_SENTINEL_CLOSED
     builtInWeapons:
@@ -1619,7 +1619,7 @@ armors:
     size: 2
     moveSound: {mod: 40k, index: 700}
     loftempsSet: [92, 89, 90, 91]
-    drawingRoutine: 20
+    drawingRoutine: 5
     allowsKneeling: false
     damageModifier:
       - 1.0  # none
@@ -1668,7 +1668,7 @@ armors:
     size: 2
     moveSound: {mod: 40k, index: 700}
     loftempsSet: [92, 89, 90, 91]
-    drawingRoutine: 20
+    drawingRoutine: 5
     allowsKneeling: false
     damageModifier:
       - 1.0  # none
@@ -1715,7 +1715,7 @@ armors:
     size: 2
     moveSound: {mod: 40k, index: 700}
     loftempsSet: [92, 89, 90, 91]
-    drawingRoutine: 20
+    drawingRoutine: 5
     allowsKneeling: false
     damageModifier:
       - 1.0  # none
@@ -1770,7 +1770,7 @@ armors:
     size: 2
     moveSound: {mod: 40k, index: 700}
     loftempsSet: [92, 89, 90, 91]
-    drawingRoutine: 20
+    drawingRoutine: 5
     allowsKneeling: false
     damageModifier:
       - 1.0  # none
@@ -1823,7 +1823,7 @@ armors:
     size: 2
     moveSound: {mod: 40k, index: 700}
     loftempsSet: [92, 89, 90, 91]
-    drawingRoutine: 20
+    drawingRoutine: 5
     allowsKneeling: false
     damageModifier:
       - 1.0  # none
@@ -1874,7 +1874,7 @@ armors:
     size: 2
     moveSound: {mod: 40k, index: 700}
     loftempsSet: [92, 89, 90, 91]
-    drawingRoutine: 20
+    drawingRoutine: 5
     allowsKneeling: false
     damageModifier:
       - 1.0  # none
