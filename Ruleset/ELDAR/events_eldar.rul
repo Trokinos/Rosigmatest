@@ -117,6 +117,14 @@ events:
       STR_ELDAR_CITIZEN: 125
     interruptResearch: STR_NOT_ELDAR_STRATEGY
 
+  - name: STR_ELDAR_ADDITIONAL_REINFORCEMENTS
+    description: STR_ELDAR_ADDITIONAL_REINFORCEMENTS_DESCRIPTION #Temporary
+    background: ELDAR_GUARDIAN_ASSAULTING.SCR # Temporary
+    spawnedPersons: 1
+    spawnedPersonType: STR_ENGINEER
+    everyMultiItemList:
+      STR_ELDAR_CITIZEN: 100
+
   - name: STR_SLAANESH_PALACE_ACTIVITY_DETECTED
     description: STR_SLAANESH_PALACE_ACTIVITY_DETECTED_DESCRIPTION
     background: SLAANESH_PALACE.SCR
@@ -131,6 +139,24 @@ events:
     spawnedPersonType: STR_ELDAR_SEER_F
     researchList: [STR_ELDAR_ASURYANI_CAMPAING_SLAANESH_PALACE_DEFEATED]
     interruptResearch: STR_NOT_ELDAR_STRATEGY
+
+### MISC EVENTS
+
+  - name: STR_EMERGENCY_BONESINGER_EVENT
+    description: STR_EMERGENCY_BONESINGER_EVENT_DESCRIPTION
+    background: ELDAR_GUARDIAN_ASSAULTING.SCR
+    spawnedPersons: 1
+    spawnedPersonType: STR_ENGINEER
+
+  - name: STR_ELDAR_DEBUG_PACKAGE_EVENT
+    description: STR_ELDAR_DEBUG_PACKAGE_EVENT_DESCRIPTION
+    background: ELDAR_GUARDIAN_ASSAULTING.SCR
+    everyMultiItemList:
+      STR_ALIEN_ALLOYS: 999
+      STR_ELERIUM_115: 999
+      STR_UFO_POWER_SOURCE: 5
+      STR_UFO_NAVIGATION: 5
+      STR_KILLPOINT_TOKEN: 999
 
 ### intercept lone spawn events
   - name: STR_CHAOS_LONE_SERVITOR_EVENT

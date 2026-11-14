@@ -11,6 +11,9 @@ soldierTransformation:
 #TIER3.MIXED.transformations # Path of the warlock
 #NOTIER.resurrections #resurrection to wraithguard
 #-------------
+# MONKEIGH TRANSFORMATION
+  # Monkeigh Upgrade
+  #   STR_COMMENDATION_BULLET_MAGNET: "Bullet Magnet"
 
 # RANGER TRANSFORMATIONS
   - name: STR_RANGER_TO_GUARDIAN_PATH

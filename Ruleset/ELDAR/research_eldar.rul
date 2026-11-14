@@ -44,8 +44,7 @@ research:
       - STR_ELDAR_SELECTED
       - STR_ELDAR_ARMORY_EXAM # unlock all eldar armory codex
       - STR_ELDAR_ONLY # eldar weapon training
-      - STR_RECRUIT_ELDAR_T1
-      - STR_ELDAR_WEAPONS_ACQUISITION
+      #- STR_ELDAR_WEAPONS_ACQUISITION # Gets in high tier
       - STR_ELDAR_OUTPOST_BUILDING_RESEARCH
       - STR_ELDAR_BASE_BUILDING_RESEARCH
       - STR_ELDAR_CRAFT_RESEARCH
@@ -53,6 +52,7 @@ research:
       - STR_ELDAR_ASURYANI_CAMPAING # TEMPORARY addition until there are multiple eldar campaigns
       #- STR_CHOSEN_ELDAR_STRATEGY
       - STR_FUSION_TECH_RESEARCH # Eldar Meltagun equivalent
+      - STR_ELDAR_BONESINGING
       - STR_ELDAR_INACTIVE #no infighting
     disables:
       - STR_NOT_ELDAR_STRATEGY
@@ -90,7 +90,19 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
-  - name: STR_ELDAR_WEAPONS_ACQUISITION
+  - name: STR_ELDAR_BONESINGING # Required for eldar equipment manufacture
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_ELDAR_WEAPONS_ACQUISITION # Required for Buying
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_ELDAR_ARMOR_ACQUISITION # Required for Buying
     cost: 0
     points: 0
     dependencies:
@@ -126,32 +138,45 @@ research:
     dependencies:
       - STR_ELDAR_STRATEGY
 
-  - name: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_RESEARCH # 1st Unlocks eldar Heavy Weapons Platform
+  - name: STR_ELDAR_HWP_RESEARCH
     cost: 100
     points: 0
     dependencies:
       - STR_ELDAR_STRATEGY
-  - name: STR_ELDAR_HWP_SCATTERLASER_ARMOR_RESEARCH
-    cost: 100
+    getOneFree:
+      - STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_RESEARCH
+#------------------------------------------------------------------
+  # ELDAR ALLIANCE ONLY
+  # ELDAR ALLIANCE MIDTIER Change after doin Midtier aspect warrior missions
+  - name: STR_ELDAR_ALLIANCE_ASPECT_MIDTIER
+    cost: 0
     points: 0
+    unlocks:
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+      - STR_ELDAR_SCORPION_RESEARCH
+      - STR_ELDAR_BANSHEE_RESEARCH
+      - STR_ELDAR_HAWK_RESEARCH
+      - STR_ELDAR_SPIDER_RESEARCH
+      - STR_ELDAR_REAPER_RESEARCH
     dependencies:
-      - STR_ELDAR_STRATEGY
-  - name: STR_ELDAR_HWP_AML_ARMOR_RESEARCH
-    cost: 100
-    points: 0
-    dependencies:
-      - STR_ELDAR_STRATEGY
-  - name: STR_ELDAR_HWP_STARCANNON_ARMOR_RESEARCH
-    cost: 100
-    points: 0
-    dependencies:
-      - STR_ELDAR_STRATEGY
-  - name: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_RESEARCH
-    cost: 100
-    points: 0
-    dependencies:
-      - STR_ELDAR_STRATEGY
+      - STR_GENERALLOCK
 
+  - name: STR_ELDAR_ALLIANCE_ASPECT_HIGHTIER
+    cost: 0
+    points: 0
+    unlocks:
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
+      - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+      - STR_ELDAR_SPIDER_EXARCH_RESEARCH
+      - STR_ELDAR_REAPER_EXARCH_RESEARCH
+    dependencies:
+      - STR_GENERALLOCK
+
+#------------------------------------------------------------------
   ### Eldar Alliance imports
   - delete: STR_ELDAR_SHIELD
   - name: STR_ELDAR_SHIELD  # Eldar Personal Shield
@@ -162,9 +187,18 @@ research:
       - STR_HIGHTIER_PREREQ
 
  ### Early Game Imperium Pact
+  - name: STR_LET_MONKEIGH_ORKEAD_FIGHT # Let them deal with each other.
+    cost: 100
+    points: 200 # Popular with the Eldar
+    dependencies:
+      - STR_ELDAR_STRATEGY
+    disables: [STR_MONKEIGH_PACT]
+    # spawnedEvent: Some reward to balance the alliance choice, doesnt have to be a lot
+
   - name: STR_MONKEIGH_PACT # Allows recruitment of Imperial meatshield unit
     cost: 100
     points: -200 # unpopular with the Eldar
+    disables: [STR_LET_MONKEIGH_ORKEAD_FIGHT]
     dependencies:
       - STR_ELDAR_STRATEGY
     # spawnedEvent: MONKEIGH ALLIES STARTING PACKAGE EVENT
@@ -182,10 +216,17 @@ research:
     points: 0
     dependencies:
       - STR_ELDAR_ASPECT_RESEARCH
+      - STR_ELDAR_STRATEGY
     disables:
       - STR_MONKEIGH_PACT # Remove access to Imperial recruits once Aspect Warriors are unlocked
+      - STR_LET_MONKEIGH_ORKEAD_FIGHT # If the player ignores both choices.
 
-
+  - name: STR_FUSION_TECH_RESEARCH # Eldar Meltagun Equivalent
+    cost: 150
+    points: 0
+    dependencies:
+      #- STR_MELTAGUN_TECH
+      - STR_ELDAR_WEAPONS_ACQUISITION
 
 #------------------------------------------------------------------
 # TIER 2
@@ -200,7 +241,19 @@ research:
       - STR_MOTION_SCANNER
     unlocks:
       - STR_MIDTIER_PREREQ
+      - STR_ELDAR_REQUEST_ADDITIONAL_MIDTIER_REINFORCEMENTS
+      - STR_ELDAR_EMERGENCY_REINFORCEMENT_REQUEST_RESEARCH # Allows Buying the Request Item
     spawnedEvent: STR_ELDAR_MIDTIER_REINFORCEMENTS
+
+  - name: STR_ELDAR_REQUEST_ADDITIONAL_MIDTIER_REINFORCEMENTS
+    points: -10000 # Guarantee Negative score for the month
+    cost: 0
+    needItem: true
+    neededItem: STR_ELDAR_EMERGENCY_REINFORCEMENT_REQUEST
+    destroyItem: true
+    dependencies:
+      - STR_GENERALLOCK
+    spawnedEvent: STR_ELDAR_ADDITIONAL_REINFORCEMENTS
 
   - name: STR_ELDAR_ASPECT_RESEARCH  # Aspect Warrior Promotions
     cost: 100
@@ -210,15 +263,8 @@ research:
 
   - name: STR_ELDAR_DIRE_AVENGER_RESEARCH #dire avenger will always be the entry point. this must not have a cost
     cost: 0
-    points: 0
     dependencies:
       - STR_ELDAR_ASPECT_RESEARCH
-
-  - name: STR_FORGE_DIRESWORD_VESSEL_RESEARCH
-    cost: 150
-    points: 0
-    dependencies:
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH # More researches necessary
 
   - name: STR_ELDAR_SCORPION_RESEARCH
     cost: 150
@@ -234,34 +280,29 @@ research:
 
   - name: STR_ELDAR_FIREDRAGON_RESEARCH
     cost: 200
-    points: 0
     dependencies:
       - STR_ELDAR_ASPECT_RESEARCH
 
   - name: STR_ELDAR_BANSHEE_RESEARCH
     cost: 150
-    points: 0
     dependencies:
       - STR_ELDAR_ASPECT_RESEARCH
 
   - name: STR_ELDAR_HAWK_RESEARCH
     cost: 200
-    points: 0
     dependencies:
       - STR_ELDAR_ASPECT_RESEARCH
 
   - name: STR_ELDAR_SPIDER_RESEARCH
     cost: 200
-    points: 0
     dependencies:
       - STR_ELDAR_ASPECT_RESEARCH
 
-  - name: STR_FUSION_TECH_RESEARCH # Eldar Meltagun Equivalent
+  - name: STR_FORGE_DIRESWORD_VESSEL_RESEARCH
     cost: 150
     points: 0
     dependencies:
-      #- STR_MELTAGUN_TECH
-      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH # More researches necessary
 
   - name: STR_ELDAR_PSYKER_RESEARCH  # path of the psyker research
     cost: 500
@@ -311,7 +352,17 @@ research:
       - STR_ELDAR_ASURYANI_CAMPAING_SLAANESH_PALACE_DEFEATED # event to be completed
     unlocks:
       - STR_HIGHTIER_PREREQ
-    spawnedEvent: STR_ELDAR_HIGHTIER_REINFORCEMENTS
+    spawnedEvent: STR_ELDAR_HIGHTIER_REINFORCEMENTS # This should happen after the Necron basedefense mission, players should be expecting reinforcements.
+
+  - name: STR_ELDAR_REQUEST_ADDITIONAL_HIGHTIER_REINFORCEMENTS
+    points: -10000 # Guarantee Negative score for the month
+    cost: 0
+    needItem: true
+    neededItem: STR_ELDAR_EMERGENCY_REINFORCEMENT_REQUEST
+    destroyItem: true
+    dependencies:
+      - STR_GENERALLOCK
+    spawnedEvent: STR_ELDAR_ADDITIONAL_REINFORCEMENTS
 
   - name: STR_ELDAR_AUTARCH_EXARCH_RESEARCH  # Promotions to exarch and autarch
     cost: 666 #slanesh lucky number
@@ -320,51 +371,53 @@ research:
       - STR_ELDAR_ASPECT_RESEARCH
       - STR_HIGHTIER_PREREQ
 
+  - name: STR_ELDAR_TAKING_PRIORITY # Unlocks buying research and facility for Eldar Strategy
+    cost: 100
+    unlocks:
+      - STR_ELDAR_ARMORY_GATE_RESEARCH
+    dependencies:
+      - STR_ELDAR_STRATEGY
+      - STR_HIGHTIER_PREREQ
+      # after a certain mission
+
   - name: STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH #dire avenger will always be the entry point. this must not have a cost
     cost: 0
-    points: 0
     dependencies:
       - STR_ELDAR_DIRE_AVENGER_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
 
+  - name: STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+    cost: 200
+    dependencies:
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+      - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
+
   - name: STR_ELDAR_SCORPION_EXARCH_RESEARCH
-    cost: 0
-    points: 0
+    cost: 200
     dependencies:
       - STR_ELDAR_SCORPION_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
 
   - name: STR_ELDAR_REAPER_EXARCH_RESEARCH
-    cost: 0
-    points: 0
+    cost: 200
     dependencies:
       - STR_ELDAR_REAPER_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
 
-  - name: STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_ELDAR_FIREDRAGON_RESEARCH
-      - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
-
   - name: STR_ELDAR_BANSHEE_EXARCH_RESEARCH
-    cost: 0
-    points: 0
+    cost: 200
     dependencies:
       - STR_ELDAR_BANSHEE_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
 
   - name: STR_ELDAR_HAWK_EXARCH_RESEARCH
-    cost: 0
-    points: 0
+    cost: 200
     dependencies:
       - STR_ELDAR_HAWK_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
 
   - name: STR_ELDAR_SPIDER_EXARCH_RESEARCH
-    cost: 0
-    points: 0
+    cost: 200
     dependencies:
       - STR_ELDAR_SPIDER_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
@@ -417,5 +470,247 @@ research:
       - STR_ELDAR_WARLOCK_PATH_RESEARCH
       - STR_ELDAR_AUTARCH_EXARCH_RESEARCH
       - STR_ELDAR_ASURYANI_CAMPAING_T3 #locks from eldar alliance paths for inquisition
+#--------------------------------------------------------------------
+# MISC Research
+  - name: STR_EMERGENCY_BONESINGER_RESEARCH
+    cost: 10
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_ELDAR_EMERGENCY_REINFORCEMENT_REQUEST_RESEARCH
+    cost: 0
+    dependencies:
+      - STR_GENERALLOCK
+
+  - name: STR_EMERGENCY_BONESINGER
+    cost: 0
+    points: 0
+    repeatable: true
+    needItem: true
+    destroyItem: true
+    spawnedEvent: STR_EMERGENCY_BONESINGER_EVENT
+    dependencies:
+      - STR_ELDAR_STRATEGY
+
+  - name: STR_ELDAR_DEBUG_PACKAGE_RESEARCH
+    cost: 10
+    points: 0
+    repeatable: true
+    spawnedEvent: STR_ELDAR_DEBUG_PACKAGE_EVENT
+    dependencies:
+      - STR_ELDAR_STRATEGY
+      - STR_GENERALLOCK
+#--------------------------------------------------------------------
+# Facilities Research
+  - name: STR_ELDAR_ARMORY_GATE_RESEARCH
+    cost: 10
+    points: 0
+    unlocks:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+    dependencies:
+      - STR_ELDAR_STRATEGY
+      - STR_ELDAR_TAKING_PRIORITY
 
 #--------------------------------------------------------------------
+  # ARMOR RESEARCH
+
+  - name: STR_ELDAR_HWP_SHURIKENCANNON_ARMOR_RESEARCH # 1st Unlocks eldar Heavy Weapons Platform
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_STRATEGY
+      - STR_GENERALLOCK
+  - name: STR_ELDAR_HWP_SCATTERLASER_ARMOR_RESEARCH
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_HAWK_RESEARCH
+      - STR_ELDAR_HWP_RESEARCH
+  - name: STR_ELDAR_HWP_AML_ARMOR_RESEARCH
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_HWP_RESEARCH
+  - name: STR_ELDAR_HWP_STARCANNON_ARMOR_RESEARCH
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_MIDTIER_PREREQ
+      - STR_ELDAR_HWP_RESEARCH
+  - name: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_RESEARCH
+    cost: 100
+    points: 0
+    dependencies:
+      - STR_ELDAR_HWP_RESEARCH
+      - STR_MIDTIER_PREREQ
+
+#--------------------------------------------------------------------
+# Firearms Buy Research
+  - name: STR_ELDAR_AVENGER_CATAPULT_RESEARCH
+    dependencies:
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+  - name: STR_ELDAR_AVENGER_CATAPULT_SCOPED_RESEARCH
+    dependencies:
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+  - name: STR_ELDAR_AVENGER_PISTOL_RESEARCH
+    dependencies:
+      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+  - name: STR_ELDAR_AVENGER_PISTOL_SCOPED_RESEARCH
+    dependencies:
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+
+  - name: STR_DRAGON_BREATH_FLAMER_RESEARCH
+    dependencies:
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+  - name: STR_DRAGON_FUSION_GUN_RESEARCH
+    dependencies:
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+  - name: STR_DRAGON_FUSION_PISTOL_RESEARCH
+    dependencies:
+      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+  - name: STR_FIREPIKE_RESEARCH
+    dependencies:
+      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+
+  - name: STR_LASBLASTER_RESEARCH
+    dependencies:
+      - STR_ELDAR_HAWK_RESEARCH
+
+  - name: STR_SUNPISTOL_RESEARCH
+    dependencies:
+      - STR_ELDAR_HAWK_RESEARCH
+  - name: STR_SUNPISTOL_SCOPED_RESEARCH
+    unlocks:
+      - STR_SUNPISTOL_RESEARCH #gives sunpistol charge ammo
+    dependencies:
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+  - name: STR_HAWKSTALON_RESEARCH
+    dependencies:
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+  - name: STR_HAWK_SCATTERLASER_RESEARCH
+    dependencies:
+      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+
+  - name: STR_DEATH_SPINNER_RESEARCH
+    dependencies:
+      - STR_ELDAR_SPIDER_RESEARCH
+  - name: STR_SPINNERET_RIFLE_RESEARCH
+    dependencies:
+      - STR_ELDAR_SPIDER_EXARCH_RESEARCH
+#--------------------------------------------------------------------
+  # AMMO Sidegrades and Upgrades
+
+  - name: STR_AVENGER_SHURIKEN_CLIP_RESEARCH
+    dependencies:
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+
+  - name: STR_DRAGON_BREATH_FLAMER_FUEL_RESEARCH
+    dependencies:
+      - STR_DRAGON_BREATH_FLAMER_RESEARCH
+
+  - name: STR_DRAGON_FUSION_AMMO_RESEARCH
+    dependencies:
+      - STR_DRAGON_FUSION_GUN_RESEARCH
+
+  - name: STR_DRAGON_FUSION_PISTOL_AMMO_RESEARCH
+    dependencies:
+      - STR_DRAGON_FUSION_PISTOL_AMMO_RESEARCH
+
+  - name: STR_HAWK_FUSION_GRENADES_RESEARCH
+    cost: 50
+    dependencies:
+      - STR_ELDAR_HAWK_RESEARCH # Needs Hawk to use
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+  - name: STR_HAWK_PLASMA_GRENADES_RESEARCH
+    cost: 50
+    dependencies:
+      - STR_ELDAR_HAWK_RESEARCH
+  - name: STR_HAWK_HAYWIRE_GRENADES_RESEARCH
+    cost: 50
+    dependencies:
+      - STR_ELDAR_HAWK_RESEARCH
+
+  - name: STR_SPINNER_SPOOL_RESEARCH
+    dependencies:
+      - STR_DEATH_SPINNER_RESEARCH
+  - name: STR_WIREWEAVE_SPOOL_RESEARCH
+    cost: 50
+    dependencies:
+      - STR_DEATH_SPINNER_RESEARCH
+      - STR_ELDAR_WIREWEAVE_NET_RESEARCH
+  - name: STR_SPINNERET_RIFLE_SPOOL_RESEARCH
+    dependencies:
+      - STR_SPINNERET_RIFLE_RESEARCH
+
+  - name: STR_SHURIKEN_CANNON_MAG_RESEARCH
+    dependencies:
+      - STR_GENERALLOCK
+  - name: STR_SMALL_ROCKET_TEMPEST_ELDAR_RESEARCH
+    dependencies:
+      - STR_GENERALLOCK
+  - name: STR_LARGE_ROCKET_ELDAR_RESEARCH
+    dependencies:
+      - STR_GENERALLOCK
+  - name: STR_SMALL_ROCKET_ELDAR_RESEARCH
+    dependencies:
+      - STR_GENERALLOCK
+  - name: STR_REAPER_LAUNCHER_AMMO_RESEARCH
+    dependencies:
+      - STR_GENERALLOCK
+
+  #--------------------------------------------------------------------
+# GRENADE Research
+  - name: STR_ELDAR_FUSION_GRENADE_RESEARCH
+    dependencies:
+      - STR_FUSION_TECH_RESEARCH
+      - STR_ELDAR_FIREDRAGON_RESEARCH
+  - name: STR_ELDAR_HAYWIRE_GRENADE_RESEARCH
+    dependencies:
+      - STR_ELDAR_SPIDER_RESEARCH
+  - name: STR_ELDAR_FUSION_CHARGE_RESEARCH
+    dependencies:
+      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+  - name: STR_ELDAR_WIREWEAVE_NET_RESEARCH
+    cost: 50
+    dependencies:
+      - STR_RECRUIT_ELDAR_OUTCAST
+  #--------------------------------------------------------------------
+# MELEE
+  - name: STR_EPOWER_SWORD_RESEARCH
+    dependencies:
+      - STR_ELDAR_BANSHEE_RESEARCH
+  - name: STR_TRISKELE_RESEARCH
+    dependencies:
+      - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
+  - name: STR_BANSHEE_EXECUTIONER_RESEARCH
+    dependencies:
+      - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
+  - name: STR_ELDAR_POWER_BLADE_RESEARCH
+    dependencies:
+      - STR_ELDAR_SPIDER_RESEARCH
+  - name: STR_ELDAR_POWER_GLAIVE_RESEARCH
+    dependencies:
+      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+  - name: STR_DRAGON_AXE_RESEARCH
+    dependencies:
+      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+  - name: STR_SCORPION_CHAINSWORD_RESEARCH
+    dependencies:
+      - STR_ELDAR_SCORPION_RESEARCH
+  - name: STR_BITING_BLADE_RESEARCH
+    dependencies:
+      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
+  - name: STR_SCORPIONS_CLAW_RESEARCH
+    dependencies:
+      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
+  - name: STR_WITCHBLADE_RESEARCH
+    dependencies:
+      - STR_ELDAR_WARLOCK_RESEARCH
+  - name: STR_WITCH_STAFF_RESEARCH
+    dependencies:
+      - STR_ELDAR_PSYKER_RESEARCH
+  - name: STR_SINGING_SPEAR_RESEARCH
+    dependencies:
+      - STR_GENERALLOCK
+      # - STR_ELDAR_FARSEER_RESEARCH
+

@@ -53,7 +53,7 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [ELDAROUT]
     weight: 17
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
     size: 0.3
@@ -67,7 +67,6 @@ items:
     fireSound: [{mod: 40k, index: 839}, {mod: 40k, index: 840}, {mod: 40k, index: 841}]
     compatibleAmmo:
       - STR_SHURIKEN_CLIP
-      - STR_AVENGER_SHURIKEN_CLIP
     accuracySnap: 80
     accuracyAuto: 66
     battleType: 1
@@ -137,7 +136,8 @@ items:
     weight: 20
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+      - STR_ELDAR_AVENGER_CATAPULT_RESEARCH
+    requiresBuyBaseFunc: [AVENGER]
     costBuy: 15000
     costSell: 5000
     bigSprite: 4884
@@ -168,7 +168,8 @@ items:
     weight: 20
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+      - STR_ELDAR_AVENGER_CATAPULT_SCOPED_RESEARCH
+    requiresBuyBaseFunc: [AVENGER]
     costBuy: 50000
     costSell: 20000
     bigSprite: 4885
@@ -209,11 +210,11 @@ items:
     type: STR_CATAPULT_PISTOL #              16000
     weight: 12
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
-    requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [ELDAROUT]
     size: 0.2
     dropoff: 6
     costBuy: 3500
@@ -225,7 +226,6 @@ items:
     fireSound: [{mod: 40k, index: 839}, {mod: 40k, index: 840}, {mod: 40k, index: 841}]
     compatibleAmmo:
       - STR_SHURIKEN_CLIP
-      - STR_AVENGER_SHURIKEN_CLIP
     accuracySnap: 75
     accuracyAuto: 60
 #    accuracyAimed: 100
@@ -259,12 +259,10 @@ items:
 
   - type: STR_AVENGER_PISTOL
     refNode: *ELDAR_PISTOL_TEMPLATE
-    categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
-    requires:
-      - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH
+      - STR_ELDAR_AVENGER_PISTOL_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [AVENGER]
     costBuy: 12000
     costSell: 4000
     bigSprite: 4886
@@ -299,13 +297,10 @@ items:
 
   - type: STR_AVENGER_PISTOL_SCOPED
     refNode: *ELDAR_PISTOL_TEMPLATE
-    categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL]
-    requires:
-      - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
-      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
+      - STR_ELDAR_AVENGER_PISTOL_SCOPED_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      #Avenger Research
+    requiresBuyBaseFunc: [AVENGER]
     costBuy: 12000
     costSell: 4000
     bigSprite: 4887
@@ -352,14 +347,14 @@ items:
 
   - &RANGER_LONG_RIFLE_TEMPLATE
     type: STR_RANGER_LONG_RIFLE
+    categories: [STR_CAT_SNIPER, STR_CAT_ELDAR]
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_RECRUIT_ELDAR_OUTCAST
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [ELDAROUT]
     weight: 17
-    categories: [STR_CAT_SNIPER, STR_CAT_ELDAR]
     fixedWeapon: true
     fixedWeaponShow: true
     recover: false # Fixed to armor
@@ -424,8 +419,11 @@ items:
   - type: STR_SHURIKEN_CANNON # REAPER SHURIKEN CANNON
     refNode: *ELDAR_SHURIKEN_WEAPON_TEMPLATE
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_REAPER_RESEARCH
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [REAPER]
     weight: 50
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
     size: 0.3
@@ -469,9 +467,9 @@ items:
   - &STR_ELDAR_LAUNCHER_REF
     type: STR_REAPER_AML
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [REAPER]
     requires:
-      - STR_ELDAR_REAPER_RESEARCH
+      - STR_ELDAR_ONLY
     size: 0.4
     fixedWeapon: true
     fixedWeaponShow: true
@@ -500,10 +498,10 @@ items:
     snapRange: 30
     minRange: 15
     confAimed:
-      name: STR_HWP_STARSHOT_SHOT
+      name: STR_ELDAR_HWP_STARSHOT_SHOT
       ammoSlot: 0
     confSnap:
-      name: STR_HWP_SUNBURST_SHOT
+      name: STR_ELDAR_HWP_SUNBURST_SHOT
       ammoSlot: 1
     battleType: 1
     twoHanded: true
@@ -518,7 +516,7 @@ items:
     #refNode: *STR_ELDAR_LAUNCHER_REF
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
     requires:
-      - STR_ELDAR_REAPER_RESEARCH
+      - STR_ELDAR_ONLY
     size: 0.4
     weight: 25
     fixedWeapon: true
@@ -542,7 +540,7 @@ items:
     minRange: 15 # required because of high accuracy
     dropoff: 4
     confAimed:
-      name: STR_HWP_STARSHOT_SHOT
+      name: STR_ELDAR_HWP_STARSHOT_SHOT
       shots: 1
       followProjectiles: false
       spendPerShot: 3
@@ -563,10 +561,9 @@ items:
   - type: STR_ELDAR_TEMPEST_LAUNCHER              #INITIAL IMPLEMENT FIX ME
     #refNode: *STR_ELDAR_LAUNCHER_REF
     categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [REAPER]
     requires:
-      - STR_ELDAR_REAPER_RESEARCH
-    requiresBuy: []  # Already requires the eldar base service
+      - STR_ELDAR_ONLY
     size: 0.4
     dropoff: 5
     weight: 25
@@ -614,11 +611,11 @@ items:
   - type: STR_AELDARI_FLAMER #STR_FLAMETHROWER stats REWORK NEEDED
     categories: [STR_CAT_FLAMER, STR_CAT_ASSAULT, STR_CAT_ELDAR]
     listOrder: 16150
-    requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [ELDAROUT]
     size: 0.2
     costBuy: 8000
     costSell: 6500
@@ -648,10 +645,12 @@ items:
   - type: STR_DRAGON_BREATH_FLAMER # stats from STR_PURIFIER_FLAMER rework needed (very fun weapon haha)
     categories: [STR_CAT_ELDAR, STR_CAT_FLAMER, STR_CAT_ASSAULT]
     listOrder: 16530
-    requiresBuyBaseFunc: []
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_FIREDRAGON_RESEARCH
+      - STR_DRAGON_BREATH_FLAMER_RESEARCH
+    requiresBuyBaseFunc: [DRAGON]
     costBuy: 50000
     costSell: 10000
     battleType: 1
@@ -693,10 +692,12 @@ items:
     listOrder: 16501
     weight: 15
     categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ASSAULT]
-    requiresBuyBaseFunc: []
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
+    requiresBuyBaseFunc: [ELDAROUT]
     size: 0.3
     costBuy: 10000
     costSell: 3000
@@ -724,12 +725,12 @@ items:
   - type: STR_DRAGON_FUSION_GUN
     weight: 20
     categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ASSAULT]
-    requiresBuyBaseFunc: []
     requires:
-      - STR_ELDAR_FIREDRAGON_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_DRAGON_FUSION_GUN_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_FUSION_TECH_RESEARCH
-    requiresBuy: []
+    requiresBuyBaseFunc: [DRAGON]
     size: 0.3
     costBuy: 50000
     costSell: 25000
@@ -755,16 +756,17 @@ items:
     armor: 300
     listOrder: 16510
 
-  - type: STR_FUSION_PISTOL                 #STR_ADEPTAS_MELTAGUN_NECRO stats
-    #refNode: *ELDAR_WEAPON_TEMPLATE             #listOrder 16500
+  - type: STR_FUSION_PISTOL
+    #refNode: *ELDAR_WEAPON_TEMPLATE
     listOrder: 16490
     weight: 5
     categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ASSAULT]
-    requiresBuyBaseFunc: []
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
-    requiresBuy: []
+    requiresBuyBaseFunc: [ELDAROUT]
     size: 0.3
     costBuy: 10000
     costSell: 3000
@@ -793,12 +795,12 @@ items:
     weight: 10
     categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL]
     listOrder: 16495
-    requiresBuyBaseFunc: []
     requires:
-      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_DRAGON_FUSION_PISTOL_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_FUSION_TECH_RESEARCH
-    requiresBuy: []
+    requiresBuyBaseFunc: [DRAGON]
     size: 0.3
     costBuy: 50000
     costSell: 25000
@@ -826,12 +828,13 @@ items:
     #refNode: *ELDAR_WEAPON_TEMPLATE             #listOrder 16515
     weight: 30 # +10 weight
     categories: [STR_CAT_ELDAR, STR_CAT_MELTA, STR_CAT_TACTICAL]
-    requiresBuyBaseFunc: []
     requires:
-      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_FIREPIKE_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_FUSION_TECH_RESEARCH
-    requiresBuy: []
+    requiresBuyBaseFunc: [DRAGON]
     size: 0.3
     costBuy: 100000
     costSell: 50000
@@ -865,10 +868,11 @@ items:
   - &ELDAR_HAWK_LAS_WEAPON_TEMPLATE
     type: STR_LASBLASTER
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_HAWK_RESEARCH
+      - STR_ELDAR_ONLY
     requiresBuy:
+      - STR_LASBLASTER_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [HAWK]
     weight: 10
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_LASGUN]
     size: 0.3
@@ -906,9 +910,9 @@ items:
 
   - type: STR_HAWKSTALON # Slower rate of fire, better accuracy, uses powerful AP AMMO
     refNode: *ELDAR_HAWK_LAS_WEAPON_TEMPLATE
-    requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+    requiresBuy:
+      - STR_HAWKSTALON_RESEARCH
+      - STR_ELDAR_WEAPONS_ACQUISITION
     weight: 20
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_LASGUN, STR_CAT_DEVASTATOR]
     size: 0.3
@@ -926,8 +930,11 @@ items:
   - type: STR_SUNPISTOL # Slower rate of fire, better accuracy, uses powerful AP AMMO
     refNode: *ELDAR_HAWK_LAS_WEAPON_TEMPLATE
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_HAWK_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_SUNPISTOL_RESEARCH
+      - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [HAWK]
     weight: 5
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_LASGUN]
     size: 0.2
@@ -962,8 +969,11 @@ items:
   - type: STR_SUNPISTOL_SCOPED # T3 Hawk Pistol, meant for safe potshots rather than lethalness
     refNode: *ELDAR_HAWK_LAS_WEAPON_TEMPLATE
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_SUNPISTOL_SCOPED_RESEARCH
+      - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [HAWK]
     weight: 7
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_LASGUN]
     size: 0.2
@@ -1004,8 +1014,11 @@ items:
   - type: STR_HAWK_SCATTERLASER # Long Range, High firerate, zero AP, Easy Training Weapon
     refNode: *ELDAR_HAWK_LAS_WEAPON_TEMPLATE
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_HAWK_EXARCH_RESEARCH
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_HAWK_SCATTERLASER_RESEARCH
+      - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [HAWK]
     weight: 30
     size: 0.3
     costBuy: 150000
@@ -1032,8 +1045,11 @@ items:
   - type: STR_DEATH_SPINNER  # Flamer with -1 AP, add TU and Energy damage to tie in stun and spider lore
     categories: [STR_CAT_FLAMER, STR_CAT_ASSAULT, STR_CAT_ELDAR]
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_DEATH_SPINNER_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_SPIDER_RESEARCH
+    requiresBuyBaseFunc: [SPIDER]
     size: 0.4
     costBuy: 20000
     costSell: 10000
@@ -1077,10 +1093,11 @@ items:
   - type: STR_SPINNERET_RIFLE  # T3 Deathspinner upgrade : Longer range, slightly less damage, better AP
     categories: [STR_CAT_SHOTGUN, STR_CAT_ASSAULT, STR_CAT_ELDAR]
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_SPINNERET_RIFLE_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_SPIDER_EXARCH_RESEARCH
-    requiresBuyBaseFunc: []
-    requiresBuy: []
+    requiresBuyBaseFunc: [SPIDER]
     size: 0.4
     dropoff: 5
     costBuy: 50000
@@ -1115,63 +1132,6 @@ items:
     aimRange: 20
     snapRange: 16
     listOrder: 16620
-
-#--- ELDAR.HWP and Support Platform
-
-  - &ELDAR_HWP_WEAPON_TEMPLATE
-    type: STR_ELDAR_HWP_WEAPON
-    categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
-    weight: 0
-    battleType: 1
-    fixedWeapon: true
-    twoHanded: true
-    blockBothHands: true
-    invWidth: 2
-    invHeight: 3
-    recover: false
-    clipSize: -1
-    snapRange: 20 # 36" range
-    dropoff: 4
-
-  - type: STR_ELDAR_HWP_SCATTERLASER
-    refNode: *ELDAR_HWP_WEAPON_TEMPLATE
-    categories: [STR_CAT_LASER, STR_CAT_ELDAR]
-  # Aesthetics
-    bigSprite: 4945  # TEMPORARY
-    hitSound: 3986
-    hitAnimation: 2220
-    bulletSprite: {mod: 40k, index: 22}
-    fireSound: [1899, 1900, 1901]
-    vaporColorSurface: 4  # red laser
-    vaporDensitySurface: 2
-    vaporProbabilitySurface: 100
-    bulletSpeed: 10
-    explosionSpeed: 3
-    scripts:
-      vaporParticleAmmo: |
-        # noting
-        set particle_lifetime 1;
-        set subvoxel_drift 0;
-        return;
-  # Weapon Stats
-    accuracySnap: 70
-    confSnap:
-      shots: 4 # Can be increased if buff needed
-      name: STR_HAWK_WEAPON_SNAPSHOT
-      followProjectiles: false
-    experienceTrainingMode: 5
-    tuSnap: 25 # %TU mounted weapon cannot be wielded with finesse
-  # Damage Stats
-    power: 75 # STR 5
-    damageType: 1  # AP instead of LAS
-    damageAlter:
-      RandomType: 2 # Consistent damage, lower crits less effective against high armor.
-      ToArmorPre: 0.2
-      ToHealth: 1.0
-      ToArmor: 0.1  # 40k 0.0  # hardly makes a difference
-      ToStun: 0.3  # painful las burns
-      ToWound: 0.05  # cauterizes, but there's still explosive thermal expansion of tissues; melta level wounding
-      RandomWound: false
 
 ### WRAITHGUARD WEAPONS
   - type: STR_WRAITHCANNON #WRAITH PLASMA
@@ -1320,16 +1280,47 @@ items:
       RandomType: 2
     tuMelee: 12 # faster melee swings
 
-### HWP WEAPONS
+#--- ELDAR.HWP and Support Platform
+
+  - &ELDAR_HWP_WEAPON_TEMPLATE
+    type: STR_ELDAR_HWP_WEAPON
+    categories: [STR_CAT_ELDAR, STR_CAT_DEVASTATOR]
+    weight: 0
+    battleType: 1
+    fixedWeapon: true
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    snapRange: 20 # 36" range
+    dropoff: 4
+
+  - type: STR_ELDAR_HWP_SCATTERLASER
+    refNode: *ELDAR_HWP_WEAPON_TEMPLATE
+    categories: [STR_CAT_LASER, STR_CAT_ELDAR]
+  # Aesthetics
+    bigSprite: 4945  # TEMPORARY
+    fireSound: [1899, 1900, 1901]
+    compatibleAmmo:
+      - STR_ELDAR_HWP_SCATTERLASER_AMMO
+  # Weapon Stats
+    accuracySnap: 70
+    confSnap:
+      shots: 4 # Can be increased if buff needed
+      name: STR_HAWK_WEAPON_SNAPSHOT
+      followProjectiles: false
+    experienceTrainingMode: 5
+    tuSnap: 25 # %TU mounted weapon cannot be wielded with finesse
+
   - type: STR_ELDAR_HWP_SHURIKENCANNON
     refNode: *ELDAR_HWP_WEAPON_TEMPLATE
   # Aesthetics
     bigSprite: 4946
-    bulletSprite: {mod: 40k, index: 20}
     fireSound: [1884, 1885, 1886]
-    hitSound: 1887 #{mod: 40k, index: 708} old sound
-    hitAnimation: {mod: 40k, index: 26}
-    explosionSpeed: 5
+    compatibleAmmo:
+      - STR_ELDAR_HWP_SHURIKENCANNON_AMMO
   # Weapon Stats
     snapRange: 15
     dropoff: 5
@@ -1338,7 +1329,6 @@ items:
     tuSnap: 25
     tuAuto: 40
     autoShots: 12
-    bulletSpeed: 30
     confSnap:
       shots: 4
       name: STR_SHURIKEN_WEAPON_SNAPSHOT
@@ -1347,21 +1337,11 @@ items:
       name: STR_SHURIKEN_WEAPON_AUTOSHOT
       followProjectiles: false
     experienceTrainingMode: 5 # 50% firing exp
-  # Damage stats
-    power: 50
-    damageType: 1
-    damageAlter:  # DA SHURIKEN
-      ToArmorPre: 0.1  # was ToArmor, i.e doesn't damage high armor it can't pen, making certain units invincible.
-      RandomType: 2  # TFTD [50% - 150%]
-      ToHealth: 0.5
-      ToStun: 0.2
-      ArmorEffectiveness: 0.3
 
   - type: STR_ELDAR_HWP_AML
     refNode: *ELDAR_HWP_WEAPON_TEMPLATE
   # Aesthetics
     bigSprite: 4947
-    bulletSprite: {mod: 40k, index: 0}
     fireSound: {mod: 40k, index: 52}
   # Weapon Stats
     accuracySnap: 70  # +10 vs marine
@@ -1371,18 +1351,18 @@ items:
     snapRange: 32  #48" range
     aimRange: 32
     confAimed:
-      name: STR_HWP_SUNBURST_SHOT
+      name: STR_ELDAR_HWP_SUNBURST_SHOT
       ammoSlot: 0
     confSnap:
-      name: STR_HWP_STARSHOT_SHOT
+      name: STR_ELDAR_HWP_STARSHOT_SHOT
       ammoSlot: 1
     ammo:
       0:
         compatibleAmmo:
-          - STR_HWP_SUNBURST_AMMO
+          - STR_ELDAR_HWP_SUNBURST_AMMO
       1:
         compatibleAmmo:
-          - STR_HWP_STARSHOT_AMMO
+          - STR_ELDAR_HWP_STARSHOT_AMMO
       #- STR_HEAVY_ROCKET_HE
       #- STR_HEAVY_ROCKET_KRAK
 
@@ -1391,10 +1371,8 @@ items:
   # Aesthetics
     bigSprite: 4948
     fireSound: [{mod: 40k, index: 846}, {mod: 40k, index: 847}]
-    hitSound: {mod: 40k, index: 858}
-    hitAnimation: {mod: 40k, index: 100}
-    bulletSprite: {mod: 40k, index: 17}
-    bulletSpeed: 10
+    compatibleAmmo:
+      - STR_ELDAR_HWP_STARCANNON_AMMO
   # Weapon Stats
     tuSnap: 30
     tuAimed: 40
@@ -1409,47 +1387,17 @@ items:
       name: STR_HAWK_WEAPON_AIMEDSHOT
       followProjectiles: false
     aimRange: 20 # 36" range, accuracy gives extra range
-  # Damage stats
-    power: 100
-    damageType: 5
-    damageAlter:
-      RandomType: 6
-      ToArmorPre: 0.1  # melts some armor on the way in
-      ArmorEffectiveness: 0.75  # *** PLASMA rebalance
-      FireThreshold: 70  # can ignite at high damage
-      ToArmor: 0.1
-    #powerRangeReduction: 5
-    #powerRangeThreshold: 25.0  # plasma decoheres at longer ranges
 
   - type: STR_ELDAR_HWP_BRIGHTLANCE # 36" range 1d6+2 damage
     refNode: *ELDAR_HWP_WEAPON_TEMPLATE
   # Aesthetics
     bigSprite: 4949
-    hitSound: 3986
     fireSound: 3984
-    hitAnimation: 2230
-    bulletSprite: {mod: 40k, index: 22}
-    vaporColorSurface: 4  # red laser
-    vaporDensitySurface: 6
-    vaporProbabilitySurface: 100
-    scripts:
-      vaporParticleAmmo: |
-        # noting
-        set particle_lifetime 1;
-        set subvoxel_drift 0;
-        return;
+    compatibleAmmo:
+      - STR_ELDAR_HWP_BRIGHTLANCE_AMMO
   # Weapon Stats
     accuracySnap: 90
     tuSnap: 40
-  # Damage stats
-    damageType: 4
-    power: 250 # +30 over Imperium to balance lower RandomType damage cap.
-    damageAlter:  # DA LAS
-      RandomType: 2  # 1d6+2 More consistent damage
-      ToArmorPre: 0.4
-      ToHealth: 1.0
-      ToArmor: 0.1
-      ToStun: 0.3
 
 #--- ELDAR.GRENADES ---
 
@@ -1457,9 +1405,10 @@ items:
     type: STR_ELDAR_SUNBURST_GRENADE #frag
     categories: [STR_CAT_ELDAR, STR_CAT_GRENADES, STR_CAT_TACTICAL]
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
+      - STR_ELDAR_ONLY
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [ELDAROUT]
     bigSprite: 4918
     floorSprite: 4918
     handSprite: 1826
@@ -1540,9 +1489,11 @@ items:
   - type: STR_ELDAR_FUSION_GRENADE #melta grenade      #4008
     refNode: *ELDAR_GRENADE_TEMPLATE
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-      - STR_FUSION_TECH_RESEARCH
-      - STR_MIDTIER_PREREQ
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+      - STR_ELDAR_FUSION_GRENADE_RESEARCH
+    requiresBuyBaseFunc: [ELDAROUT]
     costBuy: 20000
     costSell: 15000
     bigSprite: 4920
@@ -1570,10 +1521,11 @@ items:
   - type: STR_ELDAR_HAYWIRE_GRENADE #STR_TAU_EMP_GRENADE
     refNode: *ELDAR_GRENADE_TEMPLATE
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
+      - STR_ELDAR_ONLY
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_MIDTIER_PREREQ
+      - STR_ELDAR_HAYWIRE_GRENADE_RESEARCH
+    requiresBuyBaseFunc: [HAWK]
     costBuy: 4000
     costSell: 2000
     bigSprite: 4921
@@ -1611,10 +1563,11 @@ items:
   - type: STR_ELDAR_GRENADE  # Eldar Plasma Granade          16320
     refNode: *ELDAR_GRENADE_TEMPLATE
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
+      - STR_ELDAR_ONLY
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_MIDTIER_PREREQ
+    requiresBuyBaseFunc: [ELDAROUT]
     costBuy: 20000
     costSell: 5000
     bigSprite: 4922
@@ -1639,8 +1592,8 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_FIREDRAGON_RESEARCH
-      - STR_FUSION_TECH_RESEARCH
+      - STR_ELDAR_FUSION_CHARGE_RESEARCH
+    requiresBuyBaseFunc: [DRAGON]
     weight: 4
     size: 0.1
     costBuy: 50000
@@ -1682,8 +1635,8 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_RECRUIT_ELDAR_OUTCAST
-    requiresBuyBaseFunc: []
+      - STR_ELDAR_WIREWEAVE_NET_RESEARCH
+    requiresBuyBaseFunc: [ELDAROUT]
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ELDAR]
     weight: 4
     size: 0.1
@@ -1738,7 +1691,7 @@ items:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_MELTAGUN_TECH
       - STR_MIDTIER_PREREQ
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [ELDAROUT]
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_ELDAR]
     throwRange: 15
     primeSound: 2426
@@ -1792,9 +1745,10 @@ items:
 
   - type: STR_AELDARI_SWORD # Basic Melee Weapon for eldar, mostly for roleplaying value
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-    requiresBuy: []
-    requiresBuyBaseFunc: []
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [ELDAROUT]
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     size: 0.2
     costBuy: 1000
@@ -1838,9 +1792,10 @@ items:
 
   - type: STR_AELDARI_CHAINSWORD  # Tier0-1 Armor shredding strength based melee
     requires:
-      - STR_ELDAR_ONLY # eldar weapon training
-    requiresBuy: []
-    requiresBuyBaseFunc: []
+      - STR_ELDAR_ONLY
+    requiresBuy:
+      - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [ELDAROUT]
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT, STR_CAT_ELDAR]
     size: 0.2
     costBuy: 10000
@@ -1891,7 +1846,7 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [ELDAROUT]
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     size: 0.2
     costBuy: 20000
@@ -1938,8 +1893,8 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_BANSHEE_RESEARCH
-    requiresBuyBaseFunc: []
+      - STR_EPOWER_SWORD_RESEARCH
+    requiresBuyBaseFunc: [BANSHEE]
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
     damageType: 5
@@ -1985,8 +1940,8 @@ items:
       - STR_ELDAR_ONLY # eldar weapon training
     requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
-    requiresBuyBaseFunc: []
+      - STR_TRISKELE_RESEARCH
+    requiresBuyBaseFunc: [BANSHEE]
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 1
     damageType: 5
@@ -2072,9 +2027,11 @@ items:
   - type: STR_BANSHEE_EXECUTIONER  #  2 handed and more powerful than Eldar Powerglaive
     categories: [STR_CAT_MELEE, STR_CAT_ELDAR, STR_CAT_ASSAULT]
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_BANSHEE_EXARCH_RESEARCH
-    requiresBuy: []
+      - STR_BANSHEE_EXECUTIONER_RESEARCH
+    requiresBuyBaseFunc: [BANSHEE]
     size: 0.3
     costBuy: 100000
     costSell: 25000
@@ -2152,8 +2109,11 @@ items:
   - &POWERBLADE_TEMPLATE
     type: STR_ELDAR_POWER_BLADE  # STR_EPOWER_SWORD stats, REWORK required
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_SPIDER_RESEARCH
+      - STR_ELDAR_POWER_BLADE_RESEARCH
+    requiresBuyBaseFunc: [SPIDER]
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
     damageType: 5
@@ -2197,11 +2157,7 @@ items:
 
   - type: STR_DIRESWORD_VESSEL  # EMPTY DIRESWORD VESSEL, Weak
     requires:
-      - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH
-      # DIRESWORD RESEARCH
-    requiresBuy: []
-    requiresBuyBaseFunc: []
+      - STR_ELDAR_ONLY
     listOrder: 16497
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
@@ -2248,11 +2204,7 @@ items:
 
   - type: STR_DIRESWORD  # T2 Avenger Nemesis FORCE weapon that depends on soul inside spiritstone not wielder.
     requires:
-      - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_RESEARCH
-      # DIRESWORD RESEARCH
-    requiresBuy: []
-    requiresBuyBaseFunc: []
+      - STR_ELDAR_ONLY
     listOrder: 16497
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
@@ -2309,9 +2261,11 @@ items:
   - type: STR_ELDAR_POWER_GLAIVE  #  T3 Avenger melee weapon  BASED ON STR_DOMINION_HALBERD
     categories: [STR_CAT_MELEE, STR_CAT_ELDAR, STR_CAT_ASSAULT]
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_DIRE_AVENGER_EXARCH_RESEARCH
-    requiresBuy: []
+      - STR_ELDAR_POWER_GLAIVE_RESEARCH
+    requiresBuyBaseFunc: [AVENGER]
     size: 0.3
     costBuy: 85000
     costSell: 12000
@@ -2397,10 +2351,11 @@ items:
 
   - type: STR_DRAGON_AXE  # eldar mirrorsword stats, REWORK required think fire damage
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_FIREDRAGON_EXARCH_RESEARCH
-    requiresBuy: []
-    requiresBuyBaseFunc: []
+      - STR_DRAGON_AXE_RESEARCH
+    requiresBuyBaseFunc: [DRAGON]
     listOrder: 16499
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
@@ -2450,10 +2405,10 @@ items:
   - type: STR_SCORPION_CHAINSWORD  # Tier2 Armor shredding strength based melee
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_SCORPION_RESEARCH
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-    requiresBuyBaseFunc: []
+      - STR_SCORPION_CHAINSWORD_RESEARCH
+    requiresBuyBaseFunc: [SCORPION]
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT, STR_CAT_ELDAR]
     size: 0.2
     costBuy: 50000
@@ -2502,14 +2457,12 @@ items:
 
   - type: STR_BITING_BLADE  # T3 2 Handed chainsword Based on Eviscerator for BR Repentia
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT, STR_CAT_ELDAR]
-    requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-      # Scorpion research
-      # Scorpion Exarch Reasearch
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
-      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
+      - STR_BITING_BLADE_RESEARCH
+    requiresBuyBaseFunc: [SCORPION]
     costBuy: 100000
     costSell: 25000
     size: 0.2
@@ -2555,16 +2508,16 @@ items:
       DAMAGE_RESIST_PENETRATION_PERCENT: 25
       SUSTAINED_HIT_PERCENTAGE: 16 #(1/6) percentage
 
-  - type: STR_SCORPIONS_CLAW #              16500
+  - type: STR_SCORPIONS_CLAW
     refNode: *ELDAR_PISTOL_TEMPLATE
     weight: 30
     categories: [STR_CAT_ELDAR, STR_CAT_TACTICAL, STR_CAT_MELEE, STR_CAT_ASSAULT]
-    requiresBuyBaseFunc: []
     requires:
       - STR_ELDAR_ONLY # eldar weapon training
-      - STR_ELDAR_SCORPION_EXARCH_RESEARCH
     requiresBuy:
+      - STR_SCORPIONS_CLAW_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
+    requiresBuyBaseFunc: [SCORPION]
     size: 0.2
     dropoff: 5
     costBuy: 100000
@@ -2576,7 +2529,6 @@ items:
     fireSound: [{mod: 40k, index: 839}, {mod: 40k, index: 840}, {mod: 40k, index: 841}]
     compatibleAmmo:
       - STR_SHURIKEN_CLIP
-      - STR_AVENGER_SHURIKEN_CLIP
     accuracySnap: 75
     accuracyAuto: 60
 #    accuracyAimed: 100
@@ -2630,10 +2582,11 @@ items:
   - &STR_WITCHWEAPON_REF
     type: STR_WITCHBLADE  # NEEDS REWORK (A LOT?)
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      - STR_ELDAR_WARLOCK_RESEARCH
-    requiresBuy: []
-    requiresBuyBaseFunc: []
+      - STR_WITCHBLADE_RESEARCH
+    requiresBuyBaseFunc: [ELDAROUT]
     listOrder: 16995
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 3
@@ -2687,8 +2640,11 @@ items:
   - type: STR_WITCH_STAFF # WITCH BLADE UPGRADE, Could add extra functions not just dmg increase
     refNode: *STR_WITCHWEAPON_REF
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
-      # PSYKER UPGRADE RESEARCH
+      - STR_WITCH_STAFF_RESEARCH
+    requiresBuyBaseFunc: [ELDAROUT]
     listOrder: 16996
     damageBonus:
       strength: 0.1
@@ -2708,10 +2664,12 @@ items:
 
   - type: STR_SINGING_SPEAR  #Needs WORK
     requires:
+      - STR_ELDAR_ONLY
+    requiresBuy:
       - STR_ELDAR_POWER_WEAPONS_ACQUISITION
+      - STR_SINGING_SPEAR_RESEARCH
       # ELDAR FARSEER RESEARCH
-    requiresBuy: []
-    requiresBuyBaseFunc: []
+    requiresBuyBaseFunc: [ELDAROUT]
     listOrder: 16997
     categories: [STR_CAT_ELDAR, STR_CAT_MELEE, STR_CAT_ASSAULT]
     battleType: 1
