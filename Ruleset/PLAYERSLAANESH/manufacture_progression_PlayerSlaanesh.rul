@@ -6,22 +6,6 @@ manufacture:
 # ONCE THE COUNTER IS HIGH ENOUGH, THE EVENT TRIGGERS THAT DENOTES THAT YOU NOW HAVE "WON" AND CONTROL THE AREA
 
 
-
-  - name: STR_PRODUCE_HERETEK_TRIBUTE
-    category: STR_RITES_OF_EXCESS
-    requires:
-      - STR_HERETEK_TRIBUTE_PRODUCTION
-    space: 15
-    time: 50
-    cost: 1000
-    producedItems:
-      STR_HERETEK_TRIBUTE: 1
-    requiredItems:
-      STR_ALIEN_SURGERY: 5
-      STR_ALIEN_ALLOYS: 150
-      STR_ELERIUM_115: 100
-    points: 200
-
   - &STR_CRAFT_LOOTED
     name: STR_REPAINT_LOOTED_VALKYRIE
     category: STR_CRAFT

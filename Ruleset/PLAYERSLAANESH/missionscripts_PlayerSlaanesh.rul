@@ -233,14 +233,13 @@ missionScripts:
  ### TERROR MISSION SCRIPT ###
 
   - type: recurringTerrorSlaanesh
-    executionOdds: 80
+    executionOdds: 65
     startDelay: 8000  # 10k = 7 days
     randomDelay: 4320  # additional random 0 to 3 days
-    firstMonth: 2
+    firstMonth: 1
     missionWeights:
       0:
-        STR_ALIEN_TERRORCCULT: 70
-        STR_WARP_TERRORCCULT: 30
+        STR_ALIEN_TERRORCCULT_SLAANESHPATH: 100
     researchTriggers:
       STR_SLAANESHPATH: true
 
@@ -255,37 +254,13 @@ missionScripts:
     lastMonth: 6
     startDelay: 120
     randomDelay: 40160  # Up to 4 weeks random delay
-    executionOdds: 25  # 25% chance of firing every month until month 7
+    executionOdds: 30  # 30% chance of firing every month until month 7
     researchTriggers:
       STR_GENESTEALER_CULTS_DISCOVERED: true
       STR_SLAANESHPATH: true
 
 
  ### MONTHLY MISSIONS
-
-  - type: Slaaneshstrategy_MonthlyAdeptasMissions # Monthly script for sisters missions
-    missionWeights: # TODO: ADD MORE MISSIONS
-      0:
-        STR_SLAANESHPATH_CATACOMBS: 20
-        #STR_RESCUE_PDF_VALKYRIE_TAU: 40  # grounded valkyrie appears on radar, go to support to pick up some PDF, maybe an officer
-      2:
-        STR_CATACOMBS: 20
-      4:
-        #STR_ALIEN_WAR_TAU: 50  # delays the WAR mission until month 5+
-        #STR_CATACOMBS: 10
-        #STR_ALIEN_ARTIFACT_TAU: 10
-        #STR_RESCUE_PDF_VALKYRIE_TAU: 20
-        STR_SUPPORT_PDF_ASSAULT: 20  # PDF assaulting chaos base of cult or traitor guard
-    regionWeights:
-      0:
-        REGION_HULK_SITES: 100
-    useTable: false
-    firstMonth: 1
-    executionOdds: 100
-    startDelay: 15000  # 10k = 7 days
-    researchTriggers:
-      STR_DEFAULT_CAMPAIGN: false
-      STR_SLAANESHPATH: true
 
   - type: Slaaneshstrategy_MonthlyAdeptasMissions # Monthly script for sisters missions
     missionWeights: # TODO: ADD MORE MISSIONS
@@ -300,13 +275,28 @@ missionScripts:
         #STR_ALIEN_ARTIFACT_TAU: 10
         #STR_RESCUE_PDF_VALKYRIE_TAU: 20
         STR_SUPPORT_PDF_ASSAULT: 20  # PDF assaulting chaos base of cult or traitor guard
+    useTable: false
+    firstMonth: 1
+    executionOdds: 50
+    randomDelay: 20160  # 10k = 7 days
+    researchTriggers:
+      STR_DEFAULT_CAMPAIGN: false
+      STR_SLAANESHPATH: true
+
+  - type: GSC_SPACE_HULK_ARRIVAL_SCRIPT_SLAAN
+    executionOdds: 40  # 40% per month
+    researchTriggers:
+      STR_SLAANESHPATH: true
+    firstMonth: 1
+    lastMonth: 4
+    startDelay: 16000
+    randomDelay: 20160
+    maxRuns: 1
+    varName: SLAANGSC_HULK_VAR
+    missionWeights:
+      0:
+        STR_SPACE_HULK_GSC: 100  # space hulk
     regionWeights:
       0:
         REGION_HULK_SITES: 100
     useTable: false
-    firstMonth: 1
-    executionOdds: 100
-    startDelay: 15000  # 10k = 7 days
-    researchTriggers:
-      STR_DEFAULT_CAMPAIGN: false
-      STR_SLAANESHPATH: true

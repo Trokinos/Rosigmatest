@@ -2528,6 +2528,10 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_INTRO_A_EVENT_CODEX_DESCRIPTION: "Heretics pursue you, forcing several battles during the night. Despite the gloom, your spirits are high.{NEWLINE}{NEWLINE}Three of the younger novices report seeing a vision from the Emperor Himself, of an old command bunker with an intact archeotech Vox array.{NEWLINE}{NEWLINE}Shamefully, your joy at this news comes bundled with a pang of envy. You swear to seek your penance in the blood of the next heretic you encounter."
   STR_SLAANESHPATH_GATE_EVENT: "Homecoming"
   STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you all begin to remove the hated insignias of your previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
+
+  STR_WAR_FOR_THE_UNDERHIVE_EVENT: "War for the Underhive"
+  STR_WAR_FOR_THE_UNDERHIVE_EVENT_CODEX_DESCRIPTION: "Without a great number of supplicants, your great benefactor will never be free, and so today you begin the task of bringing the low and the downtrodden into the fold.{NEWLINE}{NEWLINE}A great number of enemies stand arrayed against you: hive gangers, corrupt enforcers, rival cultists. Drown them in the most excruciating of agonies, and let their deaths serve as an example to anyone who would interfere!"
+
   STR_SUFFER_NOT_THE_XENO_EVENT: "Suffer not the Xeno"
   STR_SUFFER_NOT_THE_XENO_CODEX_DESCRIPTION: "Moving through the underhive, many sisters report a constant sensation of being watched.{NEWLINE}{NEWLINE}After much investigation and prayer, you uncover the truth: the hive is home to a malignant strain of xenos with an eerie ability to blend in with the human population! Under no circumstances can their blasphemous presence be tolerated. The only fate for such abominations is an excruciating death!"
 
@@ -2546,7 +2550,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_VEHICLE_RAID_TRIGGER_EVENT_CODEX_DESCRIPTION: "Over the last few days, your sisters have stalked and ambushed several smaller PDF patrols, bringing in a number of captives for interrogation.{NEWLINE}{NEWLINE}You now have a good picture of which PDF installations are most vulnerable to assault. Additionally, though most captives failed to survive the tender ministrations of your sisters for more than a day or two, a few plucky survivors are still intact enough to be sacrificed."
 
   STR_TERROR_WEAPONRY_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Despite their blindness, the Adepta Sororitas know that pain is worship, and that basking in the agony and terror of the unbeliever is approach the Divine. Yet their methods are laughable; flamers and meltaguns cannot ever hope to reach the sacred peaks of despair that we yearn for. With nerve gas, sonic weaponry and warp-tainted plasma, we claim the true conductor's baton in the divine symphony of screams."
-  STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Through faith and good works, our vox array has forced open a channel to a clandestine sects of the Dark Mechanicum. The hereteks are oepn to a pact of cooperation, but only if we gather for them a great trove of slaves and materials. As a first step, Arch-savant Valtiek has relucantly agreed to lend us few of their “trinkets”; datacrypts containing fabrication notes and non-sanctioned weapon schematics."
+  STR_CONTACT_HERETEKS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Through faith and good works, our vox array has finally forced a channel to a clandestine sect of the Dark Mechanicum. The hereteks are willing to cooperate, provided we can secure a steady supply of the slaves and raw materials they need for their forges. Arch-savant Valtiek has relucantly agreed to lend us few of their “trinkets”; valuable datacrypts containing fabrication notes and non-sanctioned weapon schematics."
   STR_CONTACT_ARMS_SMUGGLERS_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}As natives of the planet's underworld, the hive gangers have helped introduce you to Pelega's black markets. And with order deteriorating, those market are booming: every day, mutinous PDF soldiers ransack another armory, selling their own weapons into the hands of their future killers.{NEWLINE}{NEWLINE}An absurd situation, no doubt, but absurdity is the lifeblood of the Imperium."
   STR_BLACK_MARKET_AMMUNITION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}Wars are won by two things, and by two things alone. The man bereft of faith is a shell; the bolter bereft of ammunition is a lump of metal. Hoping to prove their usefulness, the hivers have have reached out to old contacts on your behalf. The thought of using the shoddy ammunition povided by these “Ammo-Jacks” is unpleasant, but it may be a necessary expedient. Yet the Angel already whispers of a better solution..."
   STR_SECURE_TRANSPORTATION_UFOPEDIA_DESCRIPTION: "{NEWLINE}{NEWLINE}“When those who have nothing hold firm to faith, those who hold riches soon find their true poverty revealed to them.”{NEWLINE}{NEWLINE}Words spoken in service of a lie may still contain truth. Today you lack for everything, including vehicles. Yet your privation is joyful, even holy: for the faithless have plenty of vehicles in their depots, and your sisters are eager to begin their chastisement."
@@ -2564,7 +2568,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_GATE_UFOPEDIA_P2: "{NEWLINE}Then, another voice. A girl, once brimming with curiosity and wonder. A girl broken and hobbled by the tortures of the Schola, a soul smothered in the name of a millennia of lies. A single, sad word is all she had for you: “traitor”.{NEWLINE}{NEWLINE}Wailing, you fled out of the hated darkness, racing towards the beckoning light. Awakening anew, you found your sisters there to greet you. Love and compassion shone in their eyes. Finally, you had come home."
   ######## TO DO: EVENT FOR DATA CRYPTS BEING ENCRYPTED
 
-  ### MISSIONS
+  ### SLAANESH STRATEGY MISSIONS
 
   STR_GENE_HIVE_SLAANESH: "GENESTEALER CULT BASE"
   STR_GENE_HIVE_BRIEFING_SLAANESH: "We have tracked down the local xenos presence to this section of the underhive. Even were they not a direct threat to our future plans, the presence of these abominable parasites are an affront to both humanity and to the Master of Excess. Scourge away their blasphemous existence in Slaanesh's name!"
@@ -2586,6 +2590,18 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_CATACOMBS_AMBUSH: "Strike Team Ambush"
   STR_SLAANESHPATH_CATACOMBS_AMBUSH_DESCRIPTION: "Our agents among the corpse-god's faithful have provided us the opportunity to murder two birds with one stone. They have goaded the slaves of Khorne into assaulting an Ecclesiarchy tomb complex. Predictable as ever, a loyalist Adeptas strike team is already on-site. Enter the catacombs behind them and take pains to bring some of our foolish cousins back alive. {NEWLINE}{NEWLINE}In the event that any of our “allies” survive the battle, their souls will make a fine offering to Slaanesh."
   STR_SLAANESHPATH_CATACOMBS_AMBUSH_TITLE: "Catacombs Disturbance"
+
+  STR_ALIEN_TERRORCCULTDEPLOY_SLAANESH: "War of Faith"
+  STR_ALIEN_TERRORCCULT_SLAANESH_TITLE: "Destroy the Invaders"
+  STR_ALIEN_TERRORCCULT_SLAANESH_BRIEFING: "As the influence of Slaanesh grows across the planet, so does the list of enemies conspiring against us. A local cult of our faithful brethren has come under attack. Go, and bestow upon the interlopers the excruciating mercies of our Dark Prince!"
+  STR_ALIEN_TERRORCCULT_SLAANESH_SITE: "Cult Defense"
+  STR_ALIEN_TERRORCCULT_SLAANESH_SITE_: "Cult Defense-{0}"
+  STR_ALIEN_TERRORCCULT_SLAANESH_DETECTED: "Cult under Attack"
+
+  STR_GANGER_BASE_ASSAULT_SLAANESH_BRIEFING: "Underhivers naturally respect strength, and so our domination over them will be announced in the only language they are fit to understand. We have tracked down the hideout of the most powerful gang in this section of the Underhive: massacre them all. Their flayed corpses shall serve as a warning to any other gang who would dream of resisting our rule."
+  STR_GANGER_BASE_SLAANESH_DESTROYED: "Heathen massacre complete"
+  STR_GANGER_BASE_SLAANESH_KILLED: "Ganger Hideout massacred"
+  STR_GANGER_BASE_SLAANESH_ASSAULT: "Educational Massacre"
 
   #############################
   ##### CODEX    ENTRIES ######
@@ -2656,7 +2672,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CORRUPT_ADEPTAS_BOLTERS: "*Adeptas Bolter Consecration*"
   STR_IMMACULATE_CHAINBLADES: "Chainblade Consecration"
   STR_CONTACT_HERETEKS: "Contact the True Mechanicum"
-  STR_HERETEK_TRIBUTE_PRODUCTION: "(Hereteks request tribute)"
   STR_LASCANNON_DATACRYPT: "Decode Lascannon Data-crypt"
   STR_IMMACULATE_LASGUN_TECHNOLOGY: "Decode Lasgun Data-crypt"
   STR_MELTAGUN_DATACRYPT: "Decode Melta Data-crypt"
@@ -2668,6 +2683,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_UNDERHIVE_CONVERTED: "(Underhive Converted)"
   STR_HIVE_GANGER_RECRUITMENT: "Hive Ganger Recruitment"
   STR_ABHUMAN_RECRUITMENT: "Ennoble the Abhumans"
+  STR_RIVAL_GANGERS_DESTROYED: "(Rival Gangers Destroyed)"
+  STR_SLAVES_FOR_THE_DARK_MECHANICUM: "Slaves for the Dark Mechanicum"
 
   STR_OUR_HOLY_MISSION: "Our Holy Crusade"
   STR_WAR_FOR_THE_UNDERHIVE: "War for the Underhive"
@@ -2716,7 +2733,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SACRIFICE_TO_SLAANESH: "Offer Souls to Slaanesh"
   STR_REQUEST_BOON: "Propitiate Slaanesh"
   STR_WEAPON_PETITION: "Receive Weapon Boon"
-  STR_PRODUCE_HERETEK_TRIBUTE: "Prepare tribute to the Dark Mechanicum"
   STR_CAPTURE_CHAOS_SACRIFICES: "Capture Sacrificial Victims"
 
 #Weapon conversion, armor corruption, armor repair
@@ -2813,7 +2829,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: "Immaculate Angelic Amor"
   STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_TOKEN: "Damaged Adeptas Armor Component"
   STR_SLAANESHPATH_ADEPTAS_ARMOR_TOKEN: "Adeptas Armor Component"
-  STR_HERETEK_TRIBUTE: "Tribute to the Dark Mechanicum"
 
 #WEAPONS
   STR_SLAMFIRE: "Slam-fire"
@@ -18483,6 +18498,10 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SISIMPERIALS_SUPPLY: "Imperial Supply"
   STR_SISIMPERIALS_ABDUCTION: "Imperial Raid"
   STR_SISIMPERIALS_HARVEST: "Imperial Sweep"
+
+  # Ecclesiarchy AI ufo
+
+  STR_ECCLESIARCHY_ABDUCTION: "Ecclesiarchy Confessor Raid"
 
 
   # Imposter space marines enemy ship for the Alpha Legion

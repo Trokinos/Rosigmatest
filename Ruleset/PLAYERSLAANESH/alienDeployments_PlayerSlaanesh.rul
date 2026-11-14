@@ -11,6 +11,165 @@ alienDeployments:
  # DEFEND CULTISTS AGAINST ENFORCERS/SISTERS OF BATTLE
 
 
+  - type: STR_GANGER_BASE_SLAANESHPATH
+    markerIcon: 54
+    baseSelfDestructCode: STR_NOT_SLAANESHPATH #STR_THE_IMPERIAL_LAW_STRATEGY
+    terrains:
+      - MUNDAINDUSTRIALURBANDIO
+      #- CULTIST_TEMPLE
+    script: MUNDAINDUSTRIALURBANDIO
+    alienBase: true
+    objectiveType: 100
+    objectiveComplete: [STR_GANGER_BASE_SLAANESH_DESTROYED, 250]
+    objectivePopup: STR_GANGER_BASE_SLAANESH_KILLED
+    data:
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+      - alienRank: 1
+        lowQty: 3
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+      - alienRank: 2
+        lowQty: 3
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+      - alienRank: 3
+        lowQty: 3
+        highQty: 3
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+      - alienRank: 4
+        lowQty: 3
+        highQty: 3
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+      - alienRank: 5
+        lowQty: 3
+        highQty: 3
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+      - alienRank: 6
+        lowQty: 3
+        highQty: 3
+        dQty: 5
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+      - alienRank: 7
+        lowQty: 3
+        highQty: 3
+        dQty: 5
+        percentageOutsideUfo: 0
+        itemSets: [[], [], []]
+    briefing:
+      cutscene: CULTBASE
+      music: gmstory2
+      title: STR_GANGER_BASE_SLAANESH_ASSAULT
+      textOffset: -16
+      background: GANGERBASE.SCR
+      showTarget: false
+      desc: STR_GANGER_BASE_ASSAULT_SLAANESH_BRIEFING
+    missionBountyItem: STR_SLAANESHPATH_PIETY
+    missionBountyItemCount: 200
+    markerName: STR_GANGER_BASE_SITE
+    genMissionRaceFromAlienBase: false
+    genMission:
+      STR_ALIEN_SABOTAGECHAOSCULT: 8
+      STR_RIOTCHAOSCULT: 23
+      STR_RIOTCHAOSCULTALTERNATE: 23
+      STR_GANGERSCITYCONVOYDEF: 23
+      STR_GANGERSCITYCONVOYALT: 23
+    genMissionFreq: 3
+    width: 50
+    length: 50
+    height: 12
+    points: 0
+    unlockedResearch: STR_RIVAL_GANGERS_DESTROYED
+
+  - type: STR_ALIEN_TERRORCCULTDEPLOY_SLAANESHPATH
+    briefing:
+      title: STR_ALIEN_TERRORCCULT_SLAANESH_TITLE
+      palette: 4
+      desc: STR_ALIEN_TERRORCCULT_SLAANESH_BRIEFING
+      music: gmstory2
+      showCraft: true
+      showTarget: false
+      background: ChaosMassacreBG.SCR
+    data:
+      - alienRank: 1
+        lowQty: 2
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 3
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 4
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 5
+        lowQty: 3
+        highQty: 3 #3
+        dQty: 2 #1
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 6
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+      - alienRank: 7
+        lowQty: 3 #1
+        highQty: 3 #3
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: [[], [], []]
+    civiliansByType:
+      STR_CIVILIAN_F0ARMED: 3
+      STR_CIVILIAN_M0ARMED: 3
+      STR_CIVILIAN_F1ARMED: 3
+      STR_CIVILIAN_M1ARMED: 3
+      STR_MONK1: 2
+      STR_MONK2: 2
+    width: 50
+    length: 50
+    height: 12
+    terrains:
+      - MUNDAINDUSTRIALURBANDIOALTERNATE
+    script: CHAOSEDCITY
+    alert: STR_ALIEN_TERRORCCULT_SLAANESH_DETECTED
+    alertSound: {mod: 40k, index: 52}
+    alertBackground: CHAOSCULTMARKETBG.SCR
+    duration: [168, 168]
+    despawnPenalty: 400
+    markerName: STR_ALIEN_TERRORCCULT_SLAANESH_SITE
+    missionBountyItem: STR_SLAANESHPATH_BOON
+    missionBountyItemCount: 2
+
   - type: STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE
     alert: STR_SLAANESHPATH_CRASHED_PDF_VALKYRIE_ALERT
     alertBackground: VALKCRASHBG.SCR

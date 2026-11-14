@@ -231,7 +231,7 @@ research:
     dependencies:
       - STR_SLAANESHPATH_GATE
     spawnedItem: STR_SLAANESHPATH_PIETY
-    spawnedItemCount: 200
+    spawnedItemCount: 100
     points: 20
     unlocks:
     - STR_CHAOS_ARMORY_EXAM_SLAANESH
@@ -269,51 +269,39 @@ research:
  ##### MELTA, PLASMA & LASCANNON RESEARCH #####
  ###################################
 
-  - name: STR_CONTACT_HERETEKS # Codex entry. Unlocks the ability to produce a tribute.
+  - name: STR_CONTACT_HERETEKS # Codex entry.
     cost: 100
     points: 30
     dependencies:
       - STR_CONTACT_ARMS_SMUGGLERS
       - STR_BLACK_MARKET_AMMUNITION
-    unlocks:
-      - STR_HERETEK_TRIBUTE_PRODUCTION
-    getOneFree:
-      - STR_ALIEN_ALLOYS
 
-  - name: STR_HERETEK_TRIBUTE
+  - name: STR_SLAVES_FOR_THE_DARK_MECHANICUM
     cost: 30
     dependencies:
       - STR_CONTACT_HERETEKS
-    needItem: true
-    destroyItem: true
+      - STR_RIVAL_GANGERS_DESTROYED
+      - STR_GENERALLOCK
     disables:
-      - STR_HERETEK_TRIBUTE_PRODUCTION
       - STR_TIER_0_WEAPON_PRODUCTION
     getOneFree:
       - STR_ALIEN_ALLOYS
 
-  - name: STR_HERETEK_TRIBUTE_PRODUCTION
-    cost: 0
-    dependencies:
-      - STR_GENERALLOCK
-  #This is the tech that allows you to produce the tribute.
-  # Gets disabled once the tribute itself has been researched.
-
   - name: STR_HERETEK_MANUFACTURING_SUPPORT
     cost: 0
     dependencies:
-      - STR_HERETEK_TRIBUTE
+      - STR_GENERALLOCK
 
   - name: STR_HERETEK_AMMO_MANUFACTURING
     cost: 0
     dependencies:
-      - STR_HERETEK_TRIBUTE
+      - STR_GENERALLOCK
 
   - name: STR_DEIMOS_RHINO_ACCESS
     cost: 100
     points: 30
     dependencies:
-      - STR_HERETEK_TRIBUTE # Placeholder
+      - STR_GENERALLOCK # Placeholder
 
   - name: STR_IMMACULATE_CHERUBIM
     cost: 200
@@ -487,15 +475,22 @@ research:
 # THESE MISSIONS WILL REQUIRE DEPENDENCIY TECHS UNLOCKED THROUGH EVENTS THAT TRIGGER ONCE PER MONTH, MAKING THE SEQUENCE OF DEALING WITH THREATS SOMEWHAT RANDOM.
 
   - name: STR_WAR_FOR_THE_UNDERHIVE
-    cost: 50
+    cost: 40
     points: 30
     dependencies:
       - STR_PATH_OF_PERFECTION
     unlocks:
       - STR_UNDERHIVE_NOT_CONVERTED
       - STR_HIVE_GANGER_RECRUITMENT
-    spawnedItem: STR_SLAANESHPATH_BOON
-    spawnedItemCount: 1
+    spawnedItem: STR_SLAANESHPATH_PIETY
+    spawnedItemCount: 250
+    spawnedEvent: STR_WAR_FOR_THE_UNDERHIVE_EVENT
+
+  - name: STR_RIVAL_GANGERS_DESTROYED
+    cost: 0
+    points: 70
+    dependencies:
+      - STR_GENERALLOCK
 
   - name: STR_UNDERHIVE_CULT_TOKEN
     lookup: STR_UNDERHIVE_CONVERTED

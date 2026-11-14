@@ -4,21 +4,16 @@ adhocScripts:
  # NOTE: Currently all items and units will have arrived at HQ on the 6th day of January.
  # Missions should not start generating before the 10th.
  #
- #
- #
- #
- #
- #
- #
- #
- #
- #
- #
- #
- #
+  - type: gangerbaseSlaanesh # Triggers the creation of the ganger base whenever War for the Underhive is researched.
+    missionWeights:
+      0:
+        STR_GANGERBASE_SLAANESHPATH: 100
+    regionWeights:
+      0:
+        REGION_HULK_SITES: 100
+    startDelay: 1
+    adhocMissionScriptTags: ["gangerbaseSlaanesh"]
 
-### start adhocScript Mission
- # Copied from TAU, readjust later. Triggers missions in player region.
 
   - &STR_SLAANESHPATH_START_MISSION
     type: adhocGameStartSlaanesh
@@ -32,6 +27,7 @@ adhocScripts:
         STR_NURGLE_HARVEST: 8
         STR_IMPERIALS_ABDUCTION: 10
         STR_IMPERIALS_HARVEST: 10
+        STR_ECCLESIARCHY_ABDUCTION: 20
         STR_SISIMPERIALS_ABDUCTION: 10
         STR_SISIMPERIALS_HARVEST: 10
         STR_ALIEN_RESEARCH_TZEENTCH: 5
@@ -61,7 +57,7 @@ adhocScripts:
         STR_SIBERIA: 10
         STR_AUSTRALASIA: 10
     useTable: false
-    startDelay: 20080  # 2-3 weeks
+    startDelay: 10040  # 2-3 weeks
     randomDelay: 10040
     adhocMissionScriptTags: ["adhocStarterBaseSlaanesh"]
 
@@ -197,6 +193,12 @@ events:
       STR_BOLTER_LIGHT_SOLO_SHORT: 1
       STR_LIGHT_BOLTER_AMMO_SHORT: 4
       STR_PHOTON_GRENADE: 5
+
+  - name: STR_WAR_FOR_THE_UNDERHIVE_EVENT
+    description: STR_WAR_FOR_THE_UNDERHIVE_EVENT_CODEX_DESCRIPTION
+    background: CHAOSCULTRULEBG.SCR
+    timer: 600
+    adhocMissionScriptTags: ["gangerbaseSlaanesh"]
 
   - name: STR_SUFFER_NOT_THE_XENO_EVENT
     description: STR_SUFFER_NOT_THE_XENO_CODEX_DESCRIPTION
