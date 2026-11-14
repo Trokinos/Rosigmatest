@@ -295,7 +295,7 @@ soldiers:
       bravery: 20
       reactions: 35
       firing: 30
-    armor: STR_SLAANESHPATH_MILITANT_ARMOR
+    armor: STR_SLAANESHPATH_HANDMAIDEN_ARMOR
     allowPiloting: true
     allowPromotion: true
     standHeight: 22

@@ -281,6 +281,7 @@ research:
     dependencies:
       - STR_CONTACT_HERETEKS
       - STR_RIVAL_GANGERS_DESTROYED
+      - STR_UNDERHIVE_CONVERTED
       - STR_GENERALLOCK
     disables:
       - STR_TIER_0_WEAPON_PRODUCTION

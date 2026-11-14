@@ -368,7 +368,7 @@ manufacture:
     time: 200
     cost: 1000 # Adds a hefty cost and time requirement.
     producedItems:
-      STR_SLAANESHPATH_MILITE_ARMOR_STOREITEM: 1
+      STR_HANDMAIDEN_POWERARMOR_STOREITEM: 1
     requiredItems:
       STR_ALIEN_ALLOYS: 3
       STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 5
