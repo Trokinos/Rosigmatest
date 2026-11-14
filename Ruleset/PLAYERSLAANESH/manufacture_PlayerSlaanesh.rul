@@ -141,7 +141,7 @@ manufacture:
     producedItems: {}
     spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
-      STR_SLAANESHPATH_PIETY: 90
+      STR_SLAANESHPATH_PIETY: 30
     points: 0
 
   - name: STR_RECRUIT_FELINID
