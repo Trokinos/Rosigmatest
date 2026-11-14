@@ -129,9 +129,9 @@ items:
 
 
   - type: STR_BOLTPISTOL_DEAZ_SLAAN
-    dropoff: 6
+    dropoff: 5
     accuracySnap: 60
-    snapRange: 9
+    snapRange: 12
 
     tuSnap: 25
 
@@ -144,7 +144,7 @@ items:
       basePercent: 50
     tags:
       REACTION_MULTIPLIER: 200
-      ITEM_RECOIL: 25
+      ITEM_RECOIL: 20
 
   - type: STR_BOLTER_CANTUS_SLAAN
     dropoff: 5

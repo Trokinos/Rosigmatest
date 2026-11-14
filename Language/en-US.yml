@@ -2511,7 +2511,7 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_SLAANESH_ALTAR: "Altar of Slaanesh"
   STR_HALLS_OF_DELECTATION: "Halls of Delectation"
-  STR_OUTPOST_SLAANESH: "Immaculate Outpost"
+  STR_OUTPOST_SLAANESH: "Cult Outpost"
 
   ### SLAANESH COMMENDATIONS
   STR_HANDMAIDEN_COMMENDATION: "Mark of Promise"
@@ -2722,6 +2722,7 @@ en-US: #  yamllint disable-line rule:empty-values
 #Weapon conversion, armor corruption, armor repair
   STR_CREATE_IMMACULATE_EVISCERATOR: "Consecrate Eviscerator"
   STR_CREATE_IMMACULATE_CHAINSWORD: "Consecrate Chainsword"
+  STR_CORRUPT_DEAZ_BOLTPISTOL: "Consecrate Godwyn-De'az Boltpistol"
   STR_CORRUPT_CANTUS_BOLTER: "Consecrate Cantus Bolter"
   STR_CORRUPT_DEAZ_BOLTER: "Consecrate Godwyn-De'az Bolter"
   STR_CORRUPT_ELOHIM_BOLTER: "Consecrate Elohim Bolter"
@@ -2762,13 +2763,21 @@ en-US: #  yamllint disable-line rule:empty-values
 
  #################### UNITS #########################
 
- #### ENEMY UNITS
+ #### SLAANESH STRATEGY ECCLESIARCHY OPFOR UNITS
 
-  STR_ECCLESIARCHY_NOVICE: "Sororitas Novice"
-  STR_ECCLESIARCHY_CANTUS: "Sororitas Cantus"
-  STR_ECCLESIARCHY_MEDICAE: "Sororitas Medicae"
-  STR_ECCLESIARCHY_SISTER: "Sororitas Battle Sister"
-  STR_ECCLESIARCHY_ELOHIM: "Sororitas Elohim"
+  STR_ECCLESIARCHY_FRATERIS_MILITIA_AI: "Frateris Militia"
+  STR_ECCLESIARCHY_FRATERIS_MILITIA_VETERAN_AI: "Frateris Militia Veteran"
+
+  STR_ECCLESIARCHY_NOVICE_AI: "Sororitas Novice"
+  STR_ECCLESIARCHY_CANTUS_AI: "Sororitas Cantus"
+  STR_ECCLESIARCHY_MEDICAE_AI: "Sororitas Medicae"
+  STR_ECCLESIARCHY_SISTER_AI: "Sororitas Battle Sister"
+  STR_ECCLESIARCHY_ELOHIM_AI: "Sororitas Elohim"
+  STR_ECCLESIARCHY_REPENTIA_AI: "Sister Repentia"
+  STR_ECCLESIARCHY_NOVITIATE_SUPERIOR_AI: "Novitiate Superior"
+
+  STR_ECCLESIARCHY_CONFESSOR_PATROL_T0: "Ecclesiarchy Confessor Patrol"
+  STR_ECCLESIARCHY_CONFESSOR_PATROL_T1: "Ecclesiarchy Confessor Patrol"
 
   STR_PDFTROOPER_LVL0_SLP: "PDF Conscript"
 
@@ -2828,7 +2837,8 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_BOLTER_CANTUS_SLAAN: "Immaculate Cantus Bolter"
   STR_BOLTER_ARACHNE: "Arachne Combi-bolter"
-  STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az"
+  STR_BOLTPISTOL_DEAZ_SLAAN: "Immaculate Godwyn-De'az Boltpistol"
+  STR_BOLTER_DEAZ_SLAAN: "Immaculate Godwyn-De'az Bolter"
   STR_BOLTER_DEAZ_SLAAN_SCOPED: "Immaculate Godwyn-De'az (Scoped)"
   STR_BOLTER_KERES: "Keres Combi-bolter"
   STR_BOLTER_KELPIE: "Kelpie Combi-bolter"
@@ -9721,8 +9731,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SHRINE_RETRIBUTOR_AI: "Retributor"
   STR_SHRINE_SUPERIOR_AI: "Sister Superior"
   STR_SHRINE_NOVITIATE_SUPERIOR_AI: "Novitiate Superior"
-  STR_ECCLESIARCHY_REPENTIA_AI: "Sister Repentia"
-  STR_ECCLESIARCHY_NOVITIATE_SUPERIOR_AI: "Novitiate Superior"
+
   STR_GK_DREAD_AI_UNIT: "Aegis Dreadnought"
   STR_GK_DREAD_ARMOR_AI: "Aegis Dreadnought"
 

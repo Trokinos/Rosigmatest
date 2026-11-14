@@ -1,0 +1,412 @@
+
+# TODO: ADD FRATERIS BEASTMEN
+# TODO: ADD ECCLESIARCHY DEATH CULT ASSASSINS
+# TODO: ADD FRATERIS PREACHERS
+
+weaponSets:
+
+  - type: ECCLESIARCHY_FRATERIS_T0_SET1
+    weapons: [STR_AUTOGUN_ADEPTAS, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_MAKESHIFT_GRENADE]
+  - type: ECCLESIARCHY_FRATERIS_T0_SET2
+    weapons: [STR_PUMP_SHOTGUN, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS]
+  - type: ECCLESIARCHY_FRATERIS_T0_SET3
+    weapons: [STR_AUTOPISTOL, STR_AUTOPISTOL_CLIP, STR_AUTOPISTOL_CLIP, STR_CHAINSWORD_GUARD]
+  - type: ECCLESIARCHY_FRATERIS_T0_SET4
+    weapons: [STR_CHAINSWORD_GUARD, STR_SMG_STUB_GUN, STR_STUB_GUN_AMMO_LONG, STR_STUB_GUN_AMMO_LONG]
+  - type: ECCLESIARCHY_FRATERIS_T0_SET5
+    weapons: [STR_FLAMETHROWER, STR_FLAMETHROWER_CLIP, STR_FLAMETHROWER_CLIP, STR_MAKESHIFT_GRENADE]
+  - type: ECCLESIARCHY_FRATERIS_T0_SET6
+    weapons: [STR_BOLTER_LIGHT_SOLO_SHORT, STR_LIGHT_BOLTER_AMMO_SHORT, STR_LIGHT_BOLTER_AMMO_SHORT, STR_KRAK_GRENADE]
+
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET0
+    weapons: [STR_AUTOGUN_ADEPTAS, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_GRENADE]
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET1
+    weapons: [STR_CHERUBIM_GRENADE_LAUNCHER, STR_PHOSPHOR_GRENADE_DRUM, STR_CHERUBIM_INCENDIARY_GRENADE_DRUM]
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET2
+    weapons: [STR_LIGHT_MELTAGUN_MYNERVA, STR_LIGHT_MELTA_AMMO, STR_LIGHT_MELTA_AMMO]
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET3
+    weapons: [STR_AGRIPINAA_MKIXB, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP]
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET4
+    weapons: [STR_BOLTER_LIGHT_SOLO, STR_LIGHT_BOLTER_AMMO_SHORT, STR_LIGHT_BOLTER_AMMO_SHORT, STR_GRENADE]
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET5
+    weapons: [STR_AGRIPINAA_MKIX, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP]
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET6
+    weapons: [STR_STUBCANNON_GUARD, STR_INCENDIARY_GRENADE40, STR_INCENDIARY_GRENADE40, STR_KRAK_GRENADE40]
+
+  - type: ECCLESIARCHY_FRATERISSERGEANT_T0_SET1
+    weapons: [STR_CHERUBIM_GRENADE_LAUNCHER, STR_PHOSPHOR_GRENADE_DRUM, STR_CHERUBIM_INCENDIARY_GRENADE_DRUM]
+  - type: ECCLESIARCHY_FRATERISSERGEANT_T0_SET2
+    weapons: [STR_BOLTER_LIGHT_SOLO_DMR, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_BOLTER_AMMO_AP]
+  - type: ECCLESIARCHY_FRATERISSERGEANT_T0_SET3
+    weapons: [STR_BOLTER_LIGHT_SOLO_COMBIMELTA, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_MELTA_AMMO, STR_LIGHT_MELTA_AMMO]
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET4
+    weapons: [STR_GRAIA_MKVII, STR_STUB_GUN_AMMO_AP, STR_STUB_GUN_AMMO_AP, STR_KRAK_GRENADE]
+
+  - type: ECCLESIARCHY_NOVICE_T0_SET1
+    weapons: [STR_AUTOGUN_ADEPTAS, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_PHOSPHOR_GRENADE, STR_NOVICE_ARMORTOKEN]
+  - type: ECCLESIARCHY_NOVICE_T0_SET2
+    weapons: [STR_AUTOGUN_ADEPTAS, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_NOVICE_ARMORTOKEN]
+  - type: ECCLESIARCHY_NOVICE_T0_SET3
+    weapons: [STR_BOLTER_CANTUS, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO, STR_GRENADE, STR_NOVICE_ARMORTOKEN]
+  - type: ECCLESIARCHY_NOVICE_T0_SET4
+    weapons: [STR_BOLTER_CANTUS, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO, STR_NOVICE_ARMORTOKEN]
+  - type: ECCLESIARCHY_NOVICE_T0_SET5
+    weapons: [STR_HAND_FLAMETHROWER, STR_HAND_FLAMETHROWER_CLIP, STR_HAND_FLAMETHROWER_CLIP, STR_NOVICE_ARMORTOKEN]
+  - type: ECCLESIARCHY_NOVICE_T0_SET6
+    weapons: [STR_BOLTPISTOL_DEAZ, STR_LIGHT_BOLTPISTOL_AMMO, STR_LIGHT_BOLTPISTOL_AMMO, STR_NOVICE_ARMORTOKEN]
+  - type: ECCLESIARCHY_NOVICE_T0_SET7
+    weapons: [STR_AUTOGUN_ADEPTAS_SCOPED, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_NOVICE_ARMORTOKEN]
+  - type: ECCLESIARCHY_NOVICE_T0_SET8
+    weapons: [STR_BOLTPISTOL_DEAZ, STR_LIGHT_BOLTPISTOL_AMMO, STR_LIGHT_BOLTPISTOL_AMMO, STR_NOVICE_ARMORTOKEN]
+
+  - type: ECCLESIARCHY_CANTUS_T0_SET1
+    weapons: [STR_AGRIPINAA_MKIX, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_CANTUS_ARMORTOKEN]
+  - type: ECCLESIARCHY_CANTUS_T0_SET2
+    weapons: [STR_AGRIPINAA_MKIXB, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_CANTUS_ARMORTOKEN]
+  - type: ECCLESIARCHY_CANTUS_T0_SET3
+    weapons: [STR_BOLTER_CANTUS, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO, STR_GRENADE, STR_CANTUS_ARMORTOKEN]
+  - type: ECCLESIARCHY_CANTUS_T0_SET4
+    weapons: [STR_BOLTER_CANTUS, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_BOLTER_AMMO, STR_CANTUS_ARMORTOKEN]
+  - type: ECCLESIARCHY_CANTUS_T0_SET5
+    weapons: [STR_LIGHT_MELTAGUN_MYNERVA, STR_LIGHT_MELTA_AMMO, STR_LIGHT_MELTA_AMMO, STR_CANTUS_ARMORTOKEN]
+
+  - type: ECCLESIARCHY_SISTER_T0_SET1
+    weapons: [STR_BOLTER_DEAZ, STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO, STR_GRENADE, STR_SISTER_ARMORTOKEN]
+  - type: ECCLESIARCHY_SISTER_T0_SET2
+    weapons: [STR_BOLTER_DEAZ, STR_LIGHT_BOLTER_AMMO_INF, STR_LIGHT_BOLTER_AMMO_INF, STR_PHOSPHOR_GRENADE, STR_SISTER_ARMORTOKEN]
+  - type: ECCLESIARCHY_SISTER_T0_SET3
+    weapons: [STR_ADEPTAS_MELTAGUN_NECRO, STR_MELTA_AMMO, STR_MELTA_AMMO, STR_GRENADE, STR_SISTER_ARMORTOKEN]
+  - type: ECCLESIARCHY_SISTER_T0_SET4
+    weapons: [STR_FLAMETHROWER, STR_FLAMETHROWER_CLIP, STR_FLAMETHROWER_CLIP, STR_SISTER_ARMORTOKEN]
+  - type: ECCLESIARCHY_SISTER_T0_SET5
+    weapons: [STR_HAND_FLAMETHROWER, STR_HAND_FLAMETHROWER_CLIP, STR_HAND_FLAMETHROWER_CLIP, STR_CHAINSWORD_GUARD, STR_SISTER_ARMORTOKEN]
+  - type: ECCLESIARCHY_SISTER_T0_SET6
+    weapons: [STR_BOLTER_ELOHIM, STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO, STR_PHOSPHOR_GRENADE, STR_SISTER_ARMORTOKEN]
+
+  - type: ECCLESIARCHY_ELOHIM_T1_SET1
+    weapons: [STR_ADEPTAS_BOLTGUN_JOVE, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_PHOSPHOR_GRENADE, STR_ELOHIM_ARMORTOKEN]
+  - type: ECCLESIARCHY_ELOHIM_T1_SET2
+    weapons: [STR_BOLTER_ELOHIM, STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO, STR_ELOHIM_ARMORTOKEN]
+  - type: ECCLESIARCHY_ELOHIM_T1_SET3
+    weapons: [STR_BOLTER_ELOHIM, STR_LIGHT_BOLTER_AMMO_INF, STR_LIGHT_BOLTER_AMMO_INF, STR_LIGHT_BOLTER_AMMO_INF, STR_PHOSPHOR_GRENADE, STR_ELOHIM_ARMORTOKEN]
+  - type: ECCLESIARCHY_ELOHIM_T1_SET4
+    weapons: [STR_SNIPER_ARCHE, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_BOLTER_AMMO_AP, STR_GRENADE, STR_ELOHIM_ARMORTOKEN]
+  - type: ECCLESIARCHY_ELOHIM_T1_SET5
+    weapons: [STR_ADEPTAS_MELTAGUN_NECRO, STR_MELTA_AMMO, STR_MELTA_AMMO, STR_GRENADE, STR_ELOHIM_ARMORTOKEN]
+
+units:
+
+  - type: STR_ECCLESIARCHY_FRATERIS_MILITIA_AI
+    race: STR_ECCLESIARCHY
+    liveAlien: STR_FRATERIS_MILITIA_AI
+    stats:
+      tu: 55
+      stamina: 65
+      health: 30
+      bravery: 70
+      reactions: 30
+      firing: 45 # +5 vs normal frateris.
+      throwing: 40
+      strength: 30
+      psiStrength: 5
+      psiSkill: 0
+      melee: 45
+    armor: STR_FRATERIS_MILITIA_HEAVY
+    standHeight: 21
+    kneelHeight: 14
+    value: 10
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 30
+    deathSound: [{mod: 40k, index: 385}, {mod: 40k, index: 387}]
+    psiWeapon: STR_NONE
+    weightedBuiltInWeaponSets:
+      -
+        ECCLESIARCHY_FRATERIS_T0_SET1: 12
+        ECCLESIARCHY_FRATERIS_T0_SET2: 12
+        ECCLESIARCHY_FRATERIS_T0_SET3: 10
+        ECCLESIARCHY_FRATERIS_T0_SET4: 10
+        ECCLESIARCHY_FRATERIS_T0_SET5: 8
+        ECCLESIARCHY_FRATERIS_T0_SET6: 5
+
+  - type: STR_ECCLESIARCHY_FRATERIS_MILITIA_VETERAN_AI
+    race: STR_ECCLESIARCHY
+    liveAlien: STR_FRATERIS_MILITIA_VETERAN_AI
+    stats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 90
+      reactions: 50
+      firing: 58 # +3
+      throwing: 55
+      strength: 35
+      psiStrength: 50
+      psiSkill: 25
+      melee: 45
+    armor: STR_FRATERIS_MILITIA_HEAVY_VETERAN_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 20
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 30
+    deathSound: [{mod: 40k, index: 385}, {mod: 40k, index: 387}]
+    psiWeapon: STR_NONE
+    weightedBuiltInWeaponSets:
+      -
+        ECCLESIARCHY_FRATERISVET_T0_SET0: 20
+        ECCLESIARCHY_FRATERISVET_T0_SET1: 7
+        ECCLESIARCHY_FRATERISVET_T0_SET2: 10
+        ECCLESIARCHY_FRATERISVET_T0_SET3: 10
+        ECCLESIARCHY_FRATERISVET_T0_SET4: 15
+        ECCLESIARCHY_FRATERISVET_T0_SET5: 10
+        ECCLESIARCHY_FRATERISVET_T0_SET6: 7
+
+  - type: STR_ECCLESIARCHY_NOVICE_AI
+    race: STR_ECCLESIARCHY
+    liveAlien: STR_SHRINE_NOVICE_AI
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 80
+      reactions: 35
+      firing: 55
+      throwing: 45
+      strength: 30
+      psiStrength: 55
+      psiSkill: 10
+      melee: 40
+    armor: STR_ADEPTAS_NOVICEHABIT
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 30
+    deathSound: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    psiWeapon: STR_NONE
+    weightedBuiltInWeaponSets:
+      -
+        ECCLESIARCHY_NOVICE_T0_SET1: 10
+        ECCLESIARCHY_NOVICE_T0_SET2: 10
+        ECCLESIARCHY_NOVICE_T0_SET3: 10
+        ECCLESIARCHY_NOVICE_T0_SET4: 10
+        ECCLESIARCHY_NOVICE_T0_SET5: 10
+        ECCLESIARCHY_NOVICE_T0_SET6: 10
+        ECCLESIARCHY_NOVICE_T0_SET7: 10
+        ECCLESIARCHY_NOVICE_T0_SET8: 10
+
+
+  - type: STR_ECCLESIARCHY_CANTUS_AI
+    race: STR_ECCLESIARCHY
+    liveAlien: STR_SHRINE_NOVICE_AI
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 80
+      reactions: 35
+      firing: 55
+      throwing: 45
+      strength: 30
+      psiStrength: 55
+      psiSkill: 10
+      melee: 40
+    armor: STR_ADEPTAS_CANTUSArmor
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 30
+    deathSound: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    psiWeapon: STR_NONE
+    weightedBuiltInWeaponSets:
+      -
+        ECCLESIARCHY_CANTUS_T0_SET1: 10
+        ECCLESIARCHY_CANTUS_T0_SET2: 10
+        ECCLESIARCHY_CANTUS_T0_SET3: 10
+        ECCLESIARCHY_CANTUS_T0_SET4: 10
+        ECCLESIARCHY_CANTUS_T0_SET5: 10
+
+  - type: STR_ECCLESIARCHY_MEDICAE_AI
+    liveAlien: STR_SHRINE_MEDICAE_AI
+    race: STR_ECCLESIARCHY
+    stats:
+      tu: 65
+      stamina: 70
+      health: 50
+      bravery: 90
+      reactions: 40
+      firing: 50
+      throwing: 50
+      strength: 35
+      psiStrength: 75
+      psiSkill: 15
+      melee: 50
+    armor: STR_ADEPTAS_MEDICAE_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 50
+    intelligence: 4
+    aggression: 1
+    energyRecovery: 30
+    deathSound: [1710, 1711, 1712, 1713, 1714]
+    psiWeapon: STR_NONE
+    builtInWeaponSets:
+      - - STR_BOLTPISTOL_DEAZ
+        - STR_LIGHT_BOLTPISTOL_AMMO
+        - STR_LIGHT_BOLTPISTOL_AMMO
+      - - STR_BOLTPISTOL_DEAZ
+        - STR_LIGHT_BOLTPISTOL_AMMO
+        - STR_LIGHT_BOLTPISTOL_AMMO
+      - - STR_BOLTPISTOL_DEAZ
+        - STR_LIGHT_BOLTPISTOL_AMMO
+        - STR_LIGHT_BOLTPISTOL_AMMO
+        - STR_PHOSPHOR_GRENADE
+
+  - type: STR_ECCLESIARCHY_REPENTIA_AI
+    race: STR_ECCLESIARCHY
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 90
+      reactions: 50
+      firing: 60
+      throwing: 55
+      strength: 35
+      psiStrength: 75
+      psiSkill: 50
+      melee: 70
+    armor: STR_ADEPTAS_ARMORR_UC
+    psiWeapon: STR_NONE
+    standHeight: 21
+    kneelHeight: 14
+    value: 15
+    intelligence: 1
+    aggression: 8
+    energyRecovery: 30
+    deathSound: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    builtInWeaponSets:
+      - - STR_EVISCERATOR
+        - STR_GRENADE
+        - STR_PHOSPHOR_GRENADE
+      - - STR_EVISCERATOR
+        - STR_GRENADE
+        - STR_PHOSPHOR_GRENADE
+      - - STR_REDEEMER_SHOTGUN
+        - STR_REDEEMER_PENITENCE_SHELLS
+        - STR_REDEEMER_SHELLS_INC
+        - STR_GRENADE
+        - STR_PHOSPHOR_GRENADE
+
+  - type: STR_ECCLESIARCHY_SISTER_AI
+    liveAlien: STR_SHRINE_ADEPTAS_AI
+    race: STR_ECCLESIARCHY
+    stats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 90
+      reactions: 50
+      firing: 63 # +3
+      throwing: 55
+      strength: 35
+      psiStrength: 75
+      psiSkill: 50
+      melee: 70
+    armor: STR_ADEPTAS_ARMORH_UC
+    standHeight: 21
+    kneelHeight: 14
+    value: 40
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 30
+    deathSound: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    psiWeapon: STR_NONE
+    weightedBuiltInWeaponSets:
+      -
+        ECCLESIARCHY_SISTER_T0_SET1: 10
+        ECCLESIARCHY_SISTER_T0_SET2: 10
+        ECCLESIARCHY_SISTER_T0_SET3: 10
+        ECCLESIARCHY_SISTER_T0_SET4: 10
+        ECCLESIARCHY_SISTER_T0_SET5: 10
+        ECCLESIARCHY_SISTER_T0_SET6: 10
+
+  - type: STR_ECCLESIARCHY_NOVITIATE_SUPERIOR_AI
+    race: STR_ECCLESIARCHY
+    stats:
+      tu: 70
+      stamina: 65
+      health: 60
+      bravery: 100
+      reactions: 65
+      firing: 76
+      throwing: 65
+      strength: 55
+      psiStrength: 75
+      psiSkill: 75
+      melee: 85
+    armor: STR_ADEPTAS_ARMOR_NOVSUPERIOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 50
+    intelligence: 4
+    aggression: 4
+    energyRecovery: 60
+    deathSound: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    psiWeapon: STR_NONE
+    builtInWeaponSets: # CHANGE THIS LATER
+      - - STR_NEURAL_WHIP
+        - STR_BOLTPISTOL_DEAZ
+        - STR_LIGHT_BOLTPISTOL_AMMO
+        - STR_LIGHT_BOLTPISTOL_AMMO
+        - STR_PHOSPHOR_GRENADE
+      - - STR_CHOIR_GUN
+        - STR_MGRENADE
+      - - STR_ADEPTAS_BOLTGUN_JOVE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_MGRENADE
+
+  - type: STR_ECCLESIARCHY_ELOHIM
+    liveAlien: STR_SHRINE_ELOHIM_AI
+    race: STR_ECCLESIARCHY
+    stats:
+      tu: 60
+      stamina: 70
+      health: 40
+      bravery: 90
+      reactions: 50
+      firing: 60
+      throwing: 55
+      strength: 35
+      psiStrength: 75
+      psiSkill: 50
+      melee: 70
+    armor: STR_ADEPTAS_ARMOR_ELOHIM
+    standHeight: 21
+    kneelHeight: 14
+    value: 40
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 40
+    deathSound: [{mod: 40k, index: 749}, {mod: 40k, index: 750}, {mod: 40k, index: 751}, {mod: 40k, index: 752}]
+    psiWeapon: STR_NONE
+    builtInWeaponSets:
+      - - STR_HAND_FLAMETHROWER
+        - STR_HAND_FLAMETHROWER_CLIP
+        - STR_HAND_FLAMETHROWER_CLIP
+        - STR_BOLTPISTOL_DEAZ
+        - STR_LIGHT_BOLTPISTOL_AMMO
+      - - STR_ADEPTAS_MELTAGUN_NECRO
+        - STR_MELTA_AMMO
+        - STR_MELTA_AMMO
+      - - STR_ADEPTAS_BOLTGUN_JOVE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_PHOSPHOR_GRENADE

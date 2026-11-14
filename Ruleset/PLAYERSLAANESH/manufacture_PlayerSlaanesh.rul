@@ -169,6 +169,21 @@ manufacture:
 
  # TIER 1 WEAPON CONVERSIONS
 
+  - name: STR_CORRUPT_DEAZ_BOLTPISTOL
+    category: STR_RITES_OF_CORRUPTION
+    requires:
+      - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
+      - STR_CORRUPT_ADEPTAS_BOLTERS
+    space: 0
+    time: 120
+    cost: 6000
+    producedItems:
+      STR_BOLTPISTOL_DEAZ_SLAAN: 1
+    requiredItems:
+      STR_BOLTPISTOL_DEAZ: 1
+      STR_SLAANESHPATH_PIETY: 15
+    points: 5
+
   - name: STR_CORRUPT_CANTUS_BOLTER
     category: STR_RITES_OF_CORRUPTION
     requires:
