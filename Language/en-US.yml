@@ -1623,6 +1623,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_ORK_ARMORH: "Ork Nob"
   STR_ORK_KILLA_ARMOR: "Killa Kan"
   STR_SQUIG: "Squig"
+  STR_SQUIG_BIG: "Big Squig"
   # Orks mercenaries
   STR_BLOOD_AXE_ORK_BOY: "Blood Axe Ork Boy"
   STR_GUARD_ORK_ARDBOY: "Blood Axe 'ardboy"
@@ -1673,7 +1674,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_MEGANOB_ARMOR: "Meganob Armor"
   STR_ASSAULT_MEGANOB_ARMOR: "Azzault Mega-Arma"
   STR_SQUIG_ARMOR: "Azzault Squig Arma"
-  STR_SQUIG_ARMOR_BOMB: "Squig Bommarz Arma"  # ORKMOD
+  STR_SQUIG_ARMOR_BOMB: "Squig Bommarz Arma"
+  STR_SQUIG_BIG_ARMOR: "Big Squig Arma"
 # ORKS.Ranks
   STR_ORK_BOY_RANK_0: "Boy"
   STR_ORK_BOY_RANK_1: "Greener Boy"
@@ -1695,6 +1697,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SQUIG_CORPSE: "Squig Corpse" #for compatibility
   STR_PLAYER_SQUIG_CORPSE: "Squig Corpse"
   STR_PLAYER_SQUIG_CORPSE_EXPLOSIVE: "Stuffed Squig Corpse"
+  STR_PLAYER_BIG_SQUIG_CORPSE: "Big Squig Corpse"
 #ork ufopedia
   STR_ORK_DEAL_UFOPEDIA: "{NEWLINE} With the arms deal between us and the Orks secured, we are now able to purchase orkish weaponry through our trade outposts. Defeating more powerful groups of Orks will expand the access of goods we're able to purchase {NEWLINE}{NEWLINE}Defeat a Tier 3 ork base to gain access to ork mercenaries, and a Tier 5 base to unlock the purchase of all orkish weapons available for trade."
 # ORKS.Items
@@ -1739,9 +1742,11 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_MEKBOYZ: "Mek Boy"
   STR_SQUIG_ASSAULT_AI: "Azzault Squig"
   STR_SQUIG_BOMBA_AI: "Squig Bommarz"
+  STR_SQUIG_BIG_AI: "Big Squig"
 # Enemy Units Armors
   STR_SQUIG_ARMOR_AI: "Azzault Squig Arma"
   STR_SQUIG_ARMOR_BOMB_AI: "Squig Bommarz Arma"
+  STR_SQUIG_ARMOR_BIG_AI: "Big Squig Arma"
 # ORK OPFOR Corpses
   STR_GRETCHIN_CORPSE: "Ork Gretchin Corpse"
   STR_ORKBOY_CORPSE: "Ork Boy Corpse"
@@ -1752,6 +1757,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_KILLA_CORPSE: "Wrecked Killa kan"
   STR_SQUIG_CORPSE_AI: "Squig Corpse"
   STR_SQUIG_CORPSE_EXPLOSIVE_AI: "Stuffed Squig Corpse"
+  STR_BIG_SQUIG_CORPSE_AI: "Big Squig Corpse"
 # FOE.ORK
   STR_ORK_TANKBUSTAZ: "Tankbusta Boy"  # ORKMOD
   STR_ORK_TANKBUSTA_ARMOR: "Ork Tankbusta"  # orkmod

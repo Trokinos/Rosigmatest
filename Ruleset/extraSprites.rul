@@ -10376,6 +10376,20 @@ extraSprites:
     height: 720
     files:
       0: Resources/ORK/SQUIG_BS.png
+  - type: SQUIG_BOMBA.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/ORK/SQUIG_BOMBA.png
+  - type: SQUIG_BIG.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/ORK/SQUIG_BIG.png
   - type: ORKDR4.PCK  # ORK4
     subX: 32
     subY: 40

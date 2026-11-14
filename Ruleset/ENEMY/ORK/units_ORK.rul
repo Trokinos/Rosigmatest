@@ -1012,6 +1012,26 @@ units:
     aggression: 12
     isLeeroyJenkins: true
 
+  - type: STR_SQUIG_BIG_AI
+    refNode: *SQUIG_TEMPLATE
+    armor: STR_SQUIG_ARMOR_BIG_AI
+    stats:
+      tu: 120
+      stamina: 140
+      health: 140
+      bravery: 110
+      reactions: 100
+      firing: 0
+      throwing: 0
+      strength: 110
+      psiStrength: 80
+      psiSkill: 0
+      melee: 100
+    aggression: 12
+    standHeight: 20
+    kneelHeight: 20
+    intelligence: 1
+
   - type: STR_WEIRDBOYZ  # STR_WEIRDORK_ARMOR                      RANK 5 weapons done
     race: STR_ORK
     rank: STR_LIVE_LEADER

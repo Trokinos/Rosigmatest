@@ -906,7 +906,8 @@ soldiers:
 
 # Squigs
 
-  - type: STR_SQUIG  # Copied the cyber mastiff for a starting point
+  - &SQUIG_TEMPLATE
+    type: STR_SQUIG  # Copied the cyber mastiff for a starting point
     requires:
       - STR_GREENEST_ORKZ
       - STR_GENERALLOCK # Not finished
@@ -984,3 +985,49 @@ soldiers:
     tags:
       SOLDIER_GAINS_EXTRA_STRENGTH: 3 # orky strength growth
       SOLDIER_WOUND_TIME_MULTIPLIER: 45 # balls of muscle heal rather quick
+
+  - type: STR_SQUIG_BIG
+    refNode: *SQUIG_TEMPLATE
+    armor: STR_SQUIG_BIG_ARMOR
+    costSalary: 5000
+    minStats:
+      tu: 90
+      stamina: 100
+      health: 100
+      bravery: 80
+      reactions: 80
+      firing: 0
+      throwing: 0
+      strength: 55
+      psiStrength: 100
+      psiSkill: 0
+      melee: 80
+    statCaps:
+      tu: 150
+      stamina: 160
+      health: 160 # chonky puppers
+      bravery: 120
+      reactions: 120
+      firing: 0
+      throwing: 0
+      strength: 130
+      psiStrength: 100
+      psiSkill: 0
+      melee: 150
+    trainingStatCaps:
+      tu: 100
+      stamina: 110
+      health: 120
+      firing: 0
+      throwing: 0
+      strength: 80
+      psiStrength: 100
+      psiSkill: 50
+      melee: 100
+    costBuy: 0
+    value: 4
+    standHeight: 20
+    kneelHeight: 20
+    tags:
+      SOLDIER_GAINS_EXTRA_STRENGTH: 5 # orky strength growth
+      SOLDIER_WOUND_TIME_MULTIPLIER: 35 # balls of muscle heal rather quick
