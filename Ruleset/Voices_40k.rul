@@ -702,13 +702,13 @@ armors:
     deathMale: [{mod: 40k, index: 842}, {mod: 40k, index: 843}, {mod: 40k, index: 844}]
     deathFemale: [{mod: 40k, index: 842}, {mod: 40k, index: 843}, {mod: 40k, index: 844}]
   - type: STR_ELDAR_HWP_AML_ARMOR_P
-    refnode: *STR_ELDAR_HWP_VOICE
+    refNode: *STR_ELDAR_HWP_VOICE
   - type: STR_ELDAR_HWP_STARCANNON_ARMOR_P
-    refnode: *STR_ELDAR_HWP_VOICE
+    refNode: *STR_ELDAR_HWP_VOICE
   - type: STR_ELDAR_HWP_BRIGHTLANCE_ARMOR_P
-    refnode: *STR_ELDAR_HWP_VOICE
+    refNode: *STR_ELDAR_HWP_VOICE
   - type: STR_ELDAR_HWP_SCATTERLASER_ARMOR_P
-    refnode: *STR_ELDAR_HWP_VOICE
+    refNode: *STR_ELDAR_HWP_VOICE
 # AVENGER
   - &STR_ELDAR_GENERIC_ASPECT_ARMOR_VOICE  #GENERIC ASPECT WARRIOR VOICES
     type: STR_ELDAR_ARMOR4_P

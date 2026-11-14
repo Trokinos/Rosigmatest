@@ -137,7 +137,7 @@ items:
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_AVENGER_CATAPULT_RESEARCH
-    requiresBaseBuyFunc: [AVENGER]
+    requiresBuyBaseFunc: [AVENGER]
     costBuy: 15000
     costSell: 5000
     bigSprite: 4884
@@ -169,7 +169,7 @@ items:
     requiresBuy:
       - STR_ELDAR_WEAPONS_ACQUISITION
       - STR_ELDAR_AVENGER_CATAPULT_SCOPED_RESEARCH
-    requiresBaseBuyFunc: [AVENGER]
+    requiresBuyBaseFunc: [AVENGER]
     costBuy: 50000
     costSell: 20000
     bigSprite: 4885
@@ -262,7 +262,7 @@ items:
     requiresBuy:
       - STR_ELDAR_AVENGER_PISTOL_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-    requiresBaseBuyFunc: [AVENGER]
+    requiresBuyBaseFunc: [AVENGER]
     costBuy: 12000
     costSell: 4000
     bigSprite: 4886
@@ -300,7 +300,7 @@ items:
     requiresBuy:
       - STR_ELDAR_AVENGER_PISTOL_SCOPED_RESEARCH
       - STR_ELDAR_WEAPONS_ACQUISITION
-    requiresBaseBuyFunc: [AVENGER]
+    requiresBuyBaseFunc: [AVENGER]
     costBuy: 12000
     costSell: 4000
     bigSprite: 4887
