@@ -98,25 +98,25 @@ soldiers:
     minStats:
       tu: 50 # Slaanesh Influence
       stamina: 50 # 5 Slaanesh influence
-      health: 35 # 5 More vs Adeptas
+      health: 30
       bravery: 50 # Followers of Slaanesh do not fear death
       reactions: 35 # Slaanesh influence
-      firing: 46
+      firing: 44
       throwing: 30
       strength: 16
-      psiStrength: 20
+      psiStrength: 10
       psiSkill: 30
-      melee: 40 # Slaanesh Influence
+      melee: 43 # Slaanesh Influence
     maxStats:
       tu: 65
       stamina: 80
       health: 45
       bravery: 100
       reactions: 62
-      firing: 60
+      firing: 58
       throwing: 45
       strength: 28
-      psiStrength: 70 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
+      psiStrength: 80 # Uncapped Psi strength, can be gifted psyker powers by Slaanesh
       psiSkill: 60
       melee: 56
     statCaps:
@@ -135,7 +135,7 @@ soldiers:
       tu: 75 # 5 More
       stamina: 85
       health: 65
-      firing: 75
+      firing: 65
       throwing: 70
       strength: 50
       psiStrength: 60
@@ -176,11 +176,11 @@ soldiers:
       health: 40 # +5 vs base
       bravery: 50
       reactions: 35 # +5 vs base
-      firing: 53 # +5 vs base
+      firing: 49
       throwing: 35 # +5 vs base
-      strength: 21 # +5 vs base
-      psiStrength: 20
-      psiSkill: 30
+      strength: 22 # +5 vs base
+      psiStrength: 10
+      psiSkill: 40
       melee: 45 # +5 vs base
     maxStats:
       tu: 70 # +5 vs base
@@ -210,7 +210,7 @@ soldiers:
       tu: 75 # 5 More
       stamina: 85
       health: 65
-      firing: 75
+      firing: 70
       throwing: 70
       strength: 50
       psiStrength: 60

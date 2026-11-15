@@ -316,9 +316,11 @@ alienDeployments:
     objectiveComplete: [STR_VEHICLE_RAID_SUCCESSFUL, 300]
     alienBase: true    # this is only to tell new battle mode what to do with this deployment
     abortPenalty: 150
-    missionBountyItem: STR_SLAANESH_VEHICLE_TOKEN  # item added after successful mission
-    missionBountyItemCount: 3
+    missionBountyItem: STR_SLAANESHPATH_PIETY  # item added after successful mission
+    missionBountyItemCount: 100
     unlockedResearch: STR_DEPOT_SUCCESSFULLY_RAIDED
+    successEvents:
+      STR_SLAANESHPATH_VEHICLE_RAID_SUCCESSFUL_EVENT
 
   - type: STR_SLAANESHPATH_CATACOMBS_AMBUSH #TODO: SET UP APPROPRIATE ALIEN LISTS
     markerIcon: 54

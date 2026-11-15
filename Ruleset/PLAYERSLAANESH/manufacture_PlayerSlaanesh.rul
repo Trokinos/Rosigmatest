@@ -136,7 +136,7 @@ manufacture:
       - STR_SLAANESHPATH_GATE
     space: 0
     time: 200
-    cost: 25000
+    cost: 45000
     producedItems: {}
     spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:

@@ -203,7 +203,7 @@ research:
       - STR_LASER_WEAPONS
 
   - name: STR_BLACK_MARKET_AMMUNITION # Codex Entry.
-    cost: 50
+    cost: 130
     points: 20
     dependencies:
       - STR_SLAANESHPATH_GATE
@@ -482,7 +482,7 @@ research:
       - STR_UNDERHIVE_NOT_CONVERTED
       - STR_HIVE_GANGER_RECRUITMENT
     spawnedItem: STR_SLAANESHPATH_PIETY
-    spawnedItemCount: 250
+    spawnedItemCount: 150
     spawnedEvent: STR_WAR_FOR_THE_UNDERHIVE_EVENT
 
   - name: STR_RIVAL_GANGERS_DESTROYED
@@ -518,6 +518,7 @@ research:
     points: 30
     dependencies:
       - STR_PATH_OF_PERFECTION
+      - STR_GENERALLOCK
 
   - name: STR_OUR_FOOLISH_COUSINS # Available at start. Unlocks sisters-related tech.
     cost: 80

@@ -60,6 +60,9 @@ items:
 
   - type: STR_ALIEN_GRENADE                # 4010
     categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    requiresBuy:
+      - STR_CORRUPTED_REQUISITIONS
+      - STR_NOT_SLAANESHPATH
     refNode: *CHAOS_WEAPON
     size: 0.1
     costBuy: 2000
@@ -247,6 +250,9 @@ items:
 
   - type: STR_LASER_RIFLEC  # LASGUN CHAOS               10920
     categories: [STR_CAT_LASGUN, STR_CAT_TACTICAL]
+    requiresBuy:
+      - STR_CORRUPTED_REQUISITIONS
+      - STR_NOT_SLAANESHPATH
     refNode: *CHAOS_WEAPON
     costBuy: 3500
     compatibleAmmo:
@@ -293,6 +299,9 @@ items:
 
   - type: STR_LASGUN_CLIP_HOTSHOT_CHAOS
     categories: [STR_CAT_LASGUN, STR_CAT_SNIPER]
+    requiresBuy:
+      - STR_CORRUPTED_REQUISITIONS
+      - STR_NOT_SLAANESHPATH
     size: 0.1
     refNode: *CHAOS_WEAPON
     costBuy: 4000
@@ -2178,6 +2187,9 @@ items:
   - type: STR_CPOWER_AXE  #         3009           DA POWER
     categories: [STR_CAT_MELEE, STR_CAT_TERMINATOR]
     refNode: *CHAOS_WEAPON
+    requiresBuy:
+      - STR_CORRUPTED_REQUISITIONS
+      - STR_NOT_SLAANESHPATH
     size: 0.2
     costSell: 20000
     weight: 30
@@ -5488,6 +5500,9 @@ items:
   - type: STR_AXE #                 from 40k files; a brutal version of the chainaxe
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
     refNode: *CHAOS_WEAPON
+    requiresBuy:
+      - STR_CORRUPTED_REQUISITIONS
+      - STR_NOT_SLAANESHPATH
     size: 0.2
     costBuy: 4000
     costSell: 2050
@@ -5530,6 +5545,9 @@ items:
   - type: STR_CHAOS_CHAIN_AXE #                  Unchanged from 40k chainaxe #A scrappier chain axe for heretics
     categories: [STR_CAT_MELEE, STR_CAT_ASSAULT]
     refNode: *CHAOS_WEAPON
+    requiresBuy:
+      - STR_CORRUPTED_REQUISITIONS
+      - STR_NOT_SLAANESHPATH
     size: 0.2
     costBuy: 3000
     costSell: 1500
