@@ -1076,6 +1076,7 @@ extraSprites:
 # SLAANESH STRATEGY
 
       6000: Resources/PLAYERSLAANESH/Weapons/Las/floorob_marksman_rifle.png
+      6001: Resources/PLAYERSLAANESH/Weapons/Grenades/FLOOROB_GORGE_GL.png
 
 
 # Free Indexes

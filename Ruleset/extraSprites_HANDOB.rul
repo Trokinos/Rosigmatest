@@ -504,12 +504,13 @@ extraSprites:
 
 # Slaanesh strategy weapons
 
-      6000: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_hand.png
-      6008: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_fire.png
-      6016: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolter_gl.png
-      6024: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_IX_HANDOB.png
-      6032: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_IXB_HANDOB.png
-      6040: Resources/PLAYERSLAANESH/weapons/Autoguns/MK_VII_HANDOB.png
-      6048: Resources/PLAYERSLAANESH/weapons/Plasma/SPLASMA.png
-      6056: Resources/PLAYERSLAANESH/weapons/handobs/bolters/slaanpathbolterscoped.png
-      6064: Resources/PLAYERSLAANESH/weapons/Las/handob_marksman_rifle.png
+      6000: Resources/PLAYERSLAANESH/Weapons/handobs/bolters/slaanpathbolter_hand.png
+      6008: Resources/PLAYERSLAANESH/Weapons/handobs/bolters/slaanpathbolter_fire.png
+      6016: Resources/PLAYERSLAANESH/Weapons/handobs/bolters/slaanpathbolter_gl.png
+      6024: Resources/PLAYERSLAANESH/Weapons/Autoguns/MK_IX_HANDOB.png
+      6032: Resources/PLAYERSLAANESH/Weapons/Autoguns/MK_IXB_HANDOB.png
+      6040: Resources/PLAYERSLAANESH/Weapons/Autoguns/MK_VII_HANDOB.png
+      6048: Resources/PLAYERSLAANESH/Weapons/Plasma/SPLASMA.png
+      6056: Resources/PLAYERSLAANESH/Weapons/handobs/bolters/slaanpathbolterscoped.png
+      6064: Resources/PLAYERSLAANESH/Weapons/Las/handob_marksman_rifle.png
+      6072: Resources/PLAYERSLAANESH/Weapons/Grenades/HANDOB_GORGE.png

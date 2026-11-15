@@ -876,12 +876,13 @@ items:
       INFECTION_TYPE: 3  # the type of infection. Thus far: 1: Nurgle, 2: GSC, 3: Slaanesh 4: Tzeentch
     clipSize: 2
 
-  - type: STR_SCREAMER_GRENADE40 # Direct damage: scaled-down sonic grenades
+  - &STR_SCREAMER_GRENADE40_TEMPLATE
+    type: STR_SCREAMER_GRENADE40 # Direct damage: scaled-down sonic grenades
     weight: 2
     bigSprite: 4083
     floorSprite: 2060
     handSprite: 2390
-    power: 70
+    power: 75
     damageType: 3
     damageAlter:  # DA Sound slightly nerfed
       ToHealth: 0.85 # -0.15 vs normal sonic grenades
@@ -904,9 +905,27 @@ items:
     hitSound: {mod: 40k, index: 0}
     noLOSAccuracyPenalty: 75
     recoveryPoints: 1
-    clipSize: 2
+    clipSize: 3
     tags:
       DAMAGE_RESIST_PENETRATION_PERCENT: 65 # Slightly nerfed.
+
+  - type: STR_SHRIEKER_GRENADE40
+    refNode: *STR_SCREAMER_GRENADE40_TEMPLATE
+    damageAlter:  # DA SHRIEK
+      ToHealth: 0.15
+      ToTime: 1.5 # +0.2
+      ToStun: 2.2 # +0.2
+      ToEnergy: 2.2 # +0.2
+      ToMorale: 2.2
+      ToArmorPre: 0.20
+      ToArmor: 0.0
+      ArmorEffectiveness: 0.6
+      ToTile: 0.15
+      ToItem: 0.15
+      RandomType: 6
+      FixRadius: 5
+    tags:
+      DAMAGE_RESIST_PENETRATION_PERCENT: 75
 
   - type: STR_BALEFIRE_GRENADE40 # multipurpose: armor melt/incendiary/morale damage
 

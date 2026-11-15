@@ -158,6 +158,14 @@ items:
 
 #### GRENADES
 
+  - type: STR_GRENADE_LAUNCHER_GORGE
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL]
+    size: 0.2
+    costBuy: 10000
+    costSell: 2000
+    requiresBuy:
+      - STR_LIGHT_GRENADE_LAUNCHERS
+    recoveryPoints: 1
 
   - type: STR_STRANGLER_GRENADE
     refNode: *IMMACULATE_WEAPON
@@ -181,7 +189,7 @@ items:
 
   - type: STR_SCREAMER_GRENADE
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH, STR_CAT_SONIC]
     size: 0.1
     costBuy: 2600
     costSell: 350
@@ -191,9 +199,9 @@ items:
 
   - type: STR_SCREAMER_GRENADE40
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH, STR_CAT_SONIC]
     size: 0.1
-    costBuy: 4500
+    costBuy: 5500
     costSell: 500
     requiresBuy:
       - STR_TERROR_WEAPONRY
@@ -201,7 +209,7 @@ items:
 
   - type: STR_SHRIEKER_GRENADE
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH, STR_CAT_SONIC]
     size: 0.1
     costBuy: 2600
     costSell: 350
@@ -211,9 +219,9 @@ items:
 
   - type: STR_SHRIEKER_GRENADE40
     refNode: *IMMACULATE_WEAPON
-    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
+    categories: [STR_CAT_GRENADES, STR_CAT_TACTICAL, STR_CAT_SLAANESH, STR_CAT_SONIC]
     size: 0.1
-    costBuy: 4500
+    costBuy: 5000
     costSell: 500
     requiresBuy:
       - STR_TERROR_WEAPONRY

@@ -1124,6 +1124,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CAT_GRAVGUN: "Graviton Weapons"
   STR_CAT_FLAMER: "Flamer Weapons"
   STR_CAT_SHOTGUN: "Shotgun Weapons"
+  STR_CAT_SONIC: "Sonic Weapons"
   STR_CAT_SNIPER: "Sniper Weapons"
   STR_CAT_ROCKETL: "Launcher Weapons"
   STR_CAT_MELEE: "Melee Weapons"

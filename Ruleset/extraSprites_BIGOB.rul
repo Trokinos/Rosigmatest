@@ -1311,6 +1311,7 @@ extraSprites:
       4092: Resources/PLAYERSLAANESH/Weapons/Plasma/IMMACULATE_PLASMA_SPRAYGUN.png
       4093: Resources/PLAYERSLAANESH/Weapons/Las/marksman_lasrifle_bigob.png
       4094: Resources/PLAYERSLAANESH/Weapons/Webber/constrictor_pistol_bigob.png
+      4095: Resources/PLAYERSLAANESH/Weapons/Grenades/BIGOB_GORGE_GL.png
 
 # Eldars
       4850: Resources/Eldar/weapons/reaper_aml_bigObj.png #reaper launcher

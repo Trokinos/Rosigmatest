@@ -396,9 +396,9 @@ items:
   - type: STR_GRENADE_LAUNCHER_GORGE # Small, break-open GL for utility grenades. Accurate.
 
     weight: 11 # Stubcannon -3
-    bigSprite: 247 # Stubcannon sprites, placeholder
-    floorSprite: 262
-    handSprite: 668
+    bigSprite: 4095 # Stubcannon sprites, placeholder
+    floorSprite: 6001
+    handSprite: 6072
     bulletSprite: {mod: 40k, index: 6}
     fireSound: {mod: 40k, index: 707}
 
@@ -412,8 +412,9 @@ items:
     accuracySnap: 75 # GL +3
     accuracyAimed: 0
     tuAuto: 0
-    tuSnap: 35 # GL - 10
+    tuSnap: 30 # GL - 10
     tuAimed: 0
+    flatTRate: true
 
     battleType: 1
     twoHanded: false
