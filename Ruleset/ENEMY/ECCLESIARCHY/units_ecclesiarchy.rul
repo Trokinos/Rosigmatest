@@ -18,9 +18,10 @@
 # TIER 1: SANCTIFIER PATROL 1(Conflagrators, Beastmen, Preachers, Zealots, Missionaries, Salvationists, Persecutors, Confessors)
 # TIER 1: WITCHFINDER PATROL 1(Sisters of Battle, Witchfinder Acolyte, Frateris Militia, Frateris Veterans)
 # TIER 1: FRATERIS CONCLAVE PATROL 1(Militia, Veterans, Beastmen, Confessors, Confessor-sergeants)
-# TIER 2: FRATERIS CONCLAVE PATROL 2(Veterans, Ogryns, Shock Troops, Kasrkin Abbots, Sisters Oblatia, Sister Dialogus)
+# TIER 2: FRATERIS CONCLAVE PATROL 2(Veterans, Ogryns, Shock Troops, Kasrkin Abbots, Sisters Oblatia, Sister Dialogus, Miraculists)
 # TIER 2: WITCHFINDER PATROL 2 (Sisters of Battle, Questkeepers, Pyroclasts, Sisters Oblatia, Miraculists, Sisters Dialogus, Witchfinder Explicator)
 # TIER 2: OBLATIONIST RETINUE 1 (Frateris Shock troops, Pyroclasts, Kasrkin Abbots, Oblationist Explicator, Oblationist Psyker, Frateris Ogryns)
+# TIER 3: OBLATIONIST OATHED CADRE
 
 weaponSets:
 
