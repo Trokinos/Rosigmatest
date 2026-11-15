@@ -1,9 +1,9 @@
 
 # ECCLESIARCHY TENTATIVE FACTION LIST
 #
-# TIER 1 TROOPS: Zealots, Frateris Militia, Frateris Beastmen, Frateris Preachers, Conflagrator
+# TIER 1 TROOPS: Zealots, Frateris Militia, Frateris Militia Veterans, Frateris Beastmen, Frateris Preachers, Conflagrators, Persecutors
 # TIER 1 ELITES: Missionary, Salvationist, Confessor, Witchfinder Acolyte
-# TIER 2 TROOPS: Frateris Veterans, Confessor-Sergeants, Persecutors, Questkeepers, Pyroclasts, Sisters Oblatia, Kasrkin Drill-Abbots
+# TIER 2 TROOPS: Frateris Ogryns, Frateris Shock troops, Confessor-Sergeants, Questkeepers, Pyroclasts, Sisters Oblatia, Kasrkin Drill-Abbots
 # TIER 2 ELITES: Oblationist Explicator, Sister Dialogus, Miraculist, Confessor-Militant, Witchfinder Explicator
 # TIER 3 TROOPS: Oblationist Sin-eaters, Crusaders, Oblationist Tech-priests, Banishers, Hexorcists, Oblationist Stormtroopers
 # TIER 3 ELITES: Oblationist Interrogator, Oblationist Inquisitor, Cardinal, Forsaken Priest, Oblationist Possessed, Oblationist Daemonhost
@@ -13,11 +13,11 @@
 #
 #
 #
+# TYPES OF WARBANDS:
 #
-#
-#
-#
-#
+# TIER 1: SANCTIFIER PATROL (Conflagrators, Preachers, Zealots, Missionaries, Salvationists, Persecutors)
+# TIER 1: WITCHFINDER PATROL (Sisters of Battle, Witchfinder Acolyte, Frateris Militia, Frateris Veterans)
+# TIER 2: FRATERIS CONCLAVE PATROL (Veterans, )
 #
 
 weaponSets:
