@@ -833,7 +833,7 @@ armors:
   - type: STR_SQUIG_ARMOR_BIG_AI
     refNode: *SQUIG_ARMOR_TEMPLATE_AI
     spriteSheet: SQUIG_BIG.PCK
-    spriteInv: ASSAULT_SQUIG_INV.SPK #TODO: Replace
+    spriteInv: BIG_SQUIG_INV.SPK #TODO: Replace
     corpseBattle:
       - STR_BIG_SQUIG_CORPSE_AI
     loftempsSet: [3]
