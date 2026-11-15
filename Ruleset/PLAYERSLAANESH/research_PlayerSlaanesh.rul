@@ -467,7 +467,7 @@ research:
 
   - name: STR_DEPOT_SUCCESSFULLY_RAIDED
     cost: 0
-    points: 30
+    points: 300
     dependencies:
       - STR_GENERALLOCK
 
