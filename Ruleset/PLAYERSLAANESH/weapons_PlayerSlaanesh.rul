@@ -404,20 +404,16 @@ items:
 
     armor: 200
     dropoff: 4
-    autoRange: 0
-    snapRange: 20 # GL -1
-    aimRange: 0
 
-    accuracyAuto: 0
+    snapRange: 20 # GL -1
+
     accuracySnap: 75 # GL +3
-    accuracyAimed: 0
-    tuAuto: 0
+
     tuSnap: 30 # GL - 10
-    tuAimed: 0
-    flatTRate: true
+    flatRate: true # If you are quick you can fire this weapon several times.
 
     battleType: 1
-    twoHanded: false
+    twoHanded: true
     invWidth: 1
     invHeight: 3
     noLOSAccuracyPenalty: 75  # indirect fire weapon

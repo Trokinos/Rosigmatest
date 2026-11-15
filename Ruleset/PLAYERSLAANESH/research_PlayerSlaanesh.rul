@@ -404,7 +404,7 @@ research:
 ### TIER 1 TERROR PROJECTS
  #BASIC TECHS
   - name: ADORATION_THROUGH_AGONY #The gateway tech for pain and torture-related weapons and facilities.
-    cost: 50
+    cost: 120
     points: 10
     dependencies:
       - STR_PATH_OF_PERFECTION
@@ -424,13 +424,11 @@ research:
       - STR_GENERALLOCK
 
   - name: STR_TERROR_WEAPONRY #Codex entry describing terror doctrine.
-    cost: 50
+    cost: 120
     dependencies:
       - STR_PATH_OF_PERFECTION
     unlocks:
       - STR_LIGHT_GRENADE_LAUNCHERS
-    getOneFree:
-      - STR_SONIC_GRENADES
 
   - name: STR_HALLUCINOGEN_GRENADES
     cost: 100
@@ -441,10 +439,7 @@ research:
     cost: 100
     dependencies:
       - ADORATION_THROUGH_AGONY
-  - name: STR_SONIC_GRENADES
-    cost: 60
-    dependencies:
-      - STR_GENERALLOCK
+
   - name: STR_BALEFIRE_GRENADES
     cost: 200
     dependencies:

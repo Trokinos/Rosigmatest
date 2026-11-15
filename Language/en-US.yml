@@ -2700,7 +2700,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: "Adeptas Power Armor Components"
   STR_OUR_DEVOTION_DEEPENS: "*Our Devotion Deepens*"
   STR_STRANGLER_GRENADES: "Strangler Grenades"
-  STR_SONIC_GRENADES: "Immaculate Sonic Grenades"
   STR_HALLUCINOGEN_GRENADES: "Hallucinogen Grenades"
   STR_SHARD_GRENADES: "Shard Grenades"
   STR_BALEFIRE_GRENADES: "Balefire Grenades"

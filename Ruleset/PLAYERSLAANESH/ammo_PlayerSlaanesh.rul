@@ -882,7 +882,7 @@ items:
     bigSprite: 4083
     floorSprite: 2060
     handSprite: 2390
-    power: 75
+    power: 80
     damageType: 3
     damageAlter:  # DA Sound slightly nerfed
       ToHealth: 0.85 # -0.15 vs normal sonic grenades
@@ -911,6 +911,8 @@ items:
 
   - type: STR_SHRIEKER_GRENADE40
     refNode: *STR_SCREAMER_GRENADE40_TEMPLATE
+    bigSprite: 4096
+    power: 90
     damageAlter:  # DA SHRIEK
       ToHealth: 0.15
       ToTime: 1.5 # +0.2
