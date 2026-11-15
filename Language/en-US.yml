@@ -2523,7 +2523,7 @@ en-US: #  yamllint disable-line rule:empty-values
   ### SLAANESH STORY EVENTS & STORY CODEX DESCRIPTIONS
 
   STR_SLAANESHUNDERCONSTRUCTION_TITLE: "UNDER CONSTRUCTION"
-  STR_SLAANESHPATH_SELECTED_UFOPEDIA_DESCRIPTION: "{NEWLINE}Sadly, or perhaps surprisingly, somehow you selected this shamefully simple Slaanesh strategy.{NEWLINE}{NEWLINE}Regrettably, it is still under construction. Very little is currently playable, so do try to moderate your expectations. According to our enginseer, the servitor is already working as hard as he can. But we have given him another kick, just in case."
+  STR_SLAANESHPATH_SELECTED_UFOPEDIA_DESCRIPTION: "{NEWLINE}Sadly, or perhaps surprisingly, somehow you selected this shamefully simple strategem of Slaanesh.{NEWLINE}{NEWLINE}Regrettably, it is still under construction. Only the early parts are currently playable, so do try to moderate your expectations. According to our enginseer, the servitor is already working as hard as he can. But we have given him another kick, just in case."
 
   STR_SLAANESHPATH_CHOSEN_EVENT: "Lost And Alone"
   STR_SLAANESHPATH_CHOSEN_EVENT_CODEX_DESCRIPTION: "“You are their shepherd now.” Those were the Superior's last words.{NEWLINE}{NEWLINE}The mission is gone; brought low by heretics without and treachery within. Only the novices remain.{NEWLINE}{NEWLINE}If not for this warp storm, you'd be back at the convent with your fellow Novitiates. Now you are left as the most senior member of the Order of the Sacred Rose on this Throne-cursed world."
@@ -2533,7 +2533,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_GATE_EVENT_CODEX_DESCRIPTION: "There is no need for speech. As you all begin to remove the hated insignias of your previous life, you understand each other perfectly.{NEWLINE}{NEWLINE}By acclamation, your sisters again name you their rightful leader. Humbled by such faith and loyalty, you cry for the first time since childhood. There is so, so much work to do, but as long as you all are together, you cannot fail."
 
   STR_WAR_FOR_THE_UNDERHIVE_EVENT: "War for the Underhive"
-  STR_WAR_FOR_THE_UNDERHIVE_EVENT_CODEX_DESCRIPTION: "Without a great number of supplicants, your great benefactor will never be free, and so today you begin the task of bringing the low and the downtrodden into the fold.{NEWLINE}{NEWLINE}A great number of enemies stand arrayed against you: hive gangers, corrupt enforcers, rival cultists. Drown them in the most excruciating of agonies, and let their deaths serve as an example to anyone who would interfere!"
+  STR_WAR_FOR_THE_UNDERHIVE_EVENT_CODEX_DESCRIPTION: "Today you begin the task of bringing the low and the downtrodden into the fold; for without a great number of supplicants, your benefactor will never be free.{NEWLINE}{NEWLINE}A great number of enemies stand arrayed against you: hive gangers, corrupt enforcers, rival cultists and the slaves of the Golden Throne. Drown them in the most excruciating of agonies, and let their deaths serve as an example to anyone who would interfere!"
 
   STR_SUFFER_NOT_THE_XENO_EVENT: "Suffer not the Xeno"
   STR_SUFFER_NOT_THE_XENO_CODEX_DESCRIPTION: "Moving through the underhive, many sisters report a constant sensation of being watched.{NEWLINE}{NEWLINE}After much investigation and prayer, you uncover the truth: the hive is home to a malignant strain of xenos with an eerie ability to blend in with the human population! Under no circumstances can their blasphemous presence be tolerated. The only fate for such abominations is an excruciating death!"
@@ -2874,6 +2874,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GRENADE_LAUNCHER_GORGE: "Gorge Pattern Grenade Launcher"
   STR_LIGHT_CHAINSWORD_SLAAN: "Immaculate Light Chainsword"
   STR_EVISCERATOR_SLAAN: "Immaculate Eviscerator"
+  STR_CONSTRICTOR_PISTOL: "Constrictor Pistol"
 
   ### AMMO
 
@@ -3014,8 +3015,10 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_SLAANESHPATH_SERVANT_RANK_0: "Servant"
   STR_SLAANESHPATH_SERVANT_RANK_1: "Skillful Servant"
-  STR_SLAANESHPATH_SERVANT_RANK_2: "Servant Significant"
-  STR_SLAANESHPATH_BROTHER_RANK_0: "Servant Substantial"
+  STR_SLAANESHPATH_SERVANT_RANK_2: "Servant Substantial"
+  STR_SLAANESHPATH_SERVANT_RANK_4: "Servant Significant"
+
+  STR_SLAANESHPATH_BROTHER_RANK_0: "Supplicant"
 
   STR_SLAANESHPATH_SAVANT_RANK_0: "Minoris Sigma-Nu"
   STR_SLAANESHPATH_SAVANT_RANK_1: "Minoris Sigma-Lambda"

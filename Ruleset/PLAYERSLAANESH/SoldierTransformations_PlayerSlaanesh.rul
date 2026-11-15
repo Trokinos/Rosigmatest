@@ -60,35 +60,45 @@ soldierTransformation:
   - name: STR_ELEVATE_PROMISING_HANDMAIDEN
     requires:
       - STR_PATH_OF_PERFECTION # Placeholder. Change later.
-    cost: 6000
+    cost: 10000
     producedSoldierType: STR_SLAANESHPATH_EXALTEDMAIDEN
     keepSoldierArmor: true
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
+    lowerBoundAtMinStats: true
+    upperBoundAtMaxStats: false
     showMinMax: true
+    upperBoundType: 1
     requiredCommendations:
       STR_HANDMAIDEN_COMMENDATION: 0 # Mark of Promise. 3 kills, 3 missions.
     flatMin:
       tu: 1
+      stamina: 1
       health: 1
       reactions: 1
       psiStrength: 1
       strength: 1
+      firing: 1
+      melee: 1
+      throwing: 1
+      psiSkill: 10
     flatMax:
       tu: 6
+      stamina: 6
       health: 6
-      reactions: 6
+      reactions: 10
       psiStrength: 15
       strength: 6
-    percentGainedMin:
-      firing: 3
-      melee: 3
-      throwing: 3
-    percentGainedMax:
-      firing: 10
-      melee: 10
-      throwing: 10
+      firing: 6
+      melee: 6
+      throwing: 6
+      psiSkill: 10
+    percentGainedStatChange:
+      melee: 100
+      throwing: 100
+      tu: 50
+      stamina: 50
     allowedSoldierTypes:
       - STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
@@ -103,20 +113,20 @@ soldierTransformation:
     allowsDeadSoldiers: false
     allowsLiveSoldiers: true
     allowsWoundedSoldiers: true
-    showMinMax: false
+    showMinMax: true
     transferTime: 336 # Two weeks of training time.
     flatMin:
-      tu: 1
+      tu: 6
       health: 6
       melee: 6
-      reactions: 5
+      reactions: 6
       strength: 3
       firing: -1
     flatMax:
-      tu: 6
+      tu: 18
       health: 12
-      reactions: 15
-      melee: 12
+      reactions: 19
+      melee: 16
       firing: -6
       strength: 8
     allowedSoldierTypes:
@@ -125,7 +135,7 @@ soldierTransformation:
   - name: STR_NOMINATE_MILITANT # Turns a handmaiden into a handmaiden-militant.
     requires:
       - STR_PATH_OF_PERFECTION
-    cost: 10000 # Relatively cheap.
+    cost: 20000 # Relatively cheap.
     producedSoldierType: STR_SLAANESHPATH_MILITANT
     keepSoldierArmor: true
     allowsDeadSoldiers: false

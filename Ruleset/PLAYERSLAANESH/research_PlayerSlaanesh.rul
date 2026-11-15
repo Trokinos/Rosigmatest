@@ -447,12 +447,12 @@ research:
 
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
-    cost: 60
+    cost: 130
     dependencies:
       - STR_TERROR_WEAPONRY
     getOneFree:
       - STR_IMPERIAL_WEBBER_DEP1
-
+    points: 20
 
  ########################################
  ##### MISSION & STORYLINE RESEARCH #####
