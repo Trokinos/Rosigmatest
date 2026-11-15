@@ -861,7 +861,7 @@ soldiers:
 
   - type: STR_SLAANESHPATH_VICTUAL_BROTHER
     costBuy: 17000
-    costSalary: 5000
+    costSalary: 6000
     requires:
       - STR_HIVE_GANGER_RECRUITMENT
     minStats:  # Steel legion stat equivalents, more expensive.
@@ -925,7 +925,6 @@ soldiers:
       - STR_SLAANESHPATH_SERVANT_RANK_0
       - STR_SLAANESHPATH_SERVANT_RANK_1
       - STR_SLAANESHPATH_SERVANT_RANK_2
-      - STR_SLAANESHPATH_SERVANT_RANK_3
     rankSprite: {mod: 40k, index: 80} # ADD LATER
     rankBattleSprite: {mod: 40k, index: 194} # ADD LATER
     rankTinySprite: {mod: 40k, index: 127} # ADD LATER

@@ -133,15 +133,14 @@ manufacture:
   - name: STR_RECRUIT_HANDMAIDEN
     category: STR_RITES_OF_SUBVERSION
     requires:
-      - STR_PATH_OF_PERFECTION
-    requiresBaseFunc: [ALTAR]
+      - STR_SLAANESHPATH_GATE
     space: 0
     time: 200
     cost: 25000
     producedItems: {}
     spawnedPersonType: STR_SLAANESHPATH_HANDMAIDEN
     requiredItems:
-      STR_SLAANESHPATH_PIETY: 30
+      STR_SLAANESHPATH_PIETY: 25
     points: 0
 
   - name: STR_RECRUIT_FELINID
@@ -173,7 +172,7 @@ manufacture:
     category: STR_RITES_OF_CORRUPTION
     requires:
       - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-      - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_WEAPON_CONSECRATION
     space: 0
     time: 120
     cost: 6000
@@ -188,7 +187,7 @@ manufacture:
     category: STR_RITES_OF_CORRUPTION
     requires:
       - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-      - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_WEAPON_CONSECRATION
     space: 0
     time: 160
     cost: 10000
@@ -203,7 +202,7 @@ manufacture:
     category: STR_RITES_OF_CORRUPTION
     requires:
       - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-      - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_WEAPON_CONSECRATION
       - STR_LIGHT_GRENADE_LAUNCHERS
     space: 5
     time: 80
@@ -219,7 +218,7 @@ manufacture:
     category: STR_RITES_OF_CORRUPTION
     requires:
       - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-      - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_WEAPON_CONSECRATION
     space: 0
     time: 160
     cost: 5000 # +20K promethium
@@ -236,7 +235,7 @@ manufacture:
     requires:
       - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
       - STR_CONSTRICTOR_WEBBER_PISTOLS
-      - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_WEAPON_CONSECRATION
     space: 10
     time: 140
     cost: 5000
@@ -251,7 +250,7 @@ manufacture:
     category: STR_RITES_OF_CORRUPTION
     requires:
       - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-      - STR_CORRUPT_ADEPTAS_BOLTERS
+      - STR_WEAPON_CONSECRATION
     time: 160
     cost: 9000 # +25K promethium
     producedItems:

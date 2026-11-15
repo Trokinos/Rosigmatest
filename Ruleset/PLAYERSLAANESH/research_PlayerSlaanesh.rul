@@ -333,6 +333,15 @@ research:
       - STR_CONTACT_HERETEKS
       - STR_SACRIFICIAL_RITUALS
 
+
+  - name: STR_PLASMA_RIFLE_TERRAN # Allows you to research terran plasma guns for a slaanesh version.
+    cost: 700 # TODO: Tie this in with hereteks. Tier 2 weapons will need looted imperial weapons!
+    points: 30
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_IMMACULATE_PLASMA_TECHNOLOGY
+
   - name: STR_IMMACULATE_PLASMA_PISTOL_TECHNOLOGY
     cost: 650
     points: 20
@@ -363,20 +372,12 @@ research:
  # Basic Corruption tech. Unlocks cantus corruption and a codex entry explaining the concept.
 
   - name: STR_WEAPON_CONSECRATION
-    cost: 30
-    points: 10
+    cost: 200
+    points: 20
     dependencies:
       - STR_PATH_OF_PERFECTION
     unlocks:
       - STR_SLAANESH_WEAPON_CORRUPTION_TIER_1
-
-  - name: STR_CORRUPT_ADEPTAS_BOLTERS
-    cost: 40
-    dependencies:
-      - STR_WEAPON_CONSECRATION
-    needItem: true
-    neededItem: STR_SLAANESHPATH_BOON
-    destroyItem: true
 
 
   #Tech that gives access to weapon conversions through piety.

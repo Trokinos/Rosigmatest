@@ -2672,7 +2672,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_BLACK_MARKET_AMMUNITION: "Underhive Ammo-Jacks"
   STR_BLACK_MARKET_AMMO_TRADE: "(Underhive Ammo Trade)"
   STR_POWER_ARMOR_CORRUPTION: "Power Armor Corruption Rites"
-  STR_CORRUPT_ADEPTAS_BOLTERS: "*Adeptas Bolter Consecration*"
   STR_IMMACULATE_CHAINBLADES: "Chainblade Consecration"
   STR_CONTACT_HERETEKS: "Contact the True Mechanicum"
   STR_LASCANNON_DATACRYPT: "Decode Lascannon Data-crypt"
@@ -2932,11 +2931,11 @@ en-US: #  yamllint disable-line rule:empty-values
 
   ## Slaanesh Adeptas Armors
 
-  STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Armor"
+  STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Carapace"
   STR_SLAANESHPATH_MILITANT_ARMOR: "Handmaiden Militant Armor"
-  STR_SLAANESHPATH_MYSTES_ARMOR: "Handmaiden Mystes Armor"
-  STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR: "Vivisectionist Armor"
-  STR_SLAANESHPATH_ANATHEMANT_ARMOR: "Handmaiden Anathemant Armor"
+  STR_SLAANESHPATH_MYSTES_ARMOR: "Mystes Carapace"
+  STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR: "Vivisectionist Carapace"
+  STR_SLAANESHPATH_ANATHEMANT_ARMOR: "Anathemant Carapace"
   STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
   STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
   STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"
