@@ -13610,7 +13610,13 @@ research:
     needItem: true
     unlocks:
       - STR_ORK_SQUIG_EXAM
-  - name: STR_SQUIG_BOMBA_AI  # Squig Farm
+  - name: STR_SQUIG_BOMBA_AI
+    cost: 50
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_ORK_SQUIG_EXAM
+  - name: STR_SQUIG_BIG_AI
     cost: 50
     points: 25
     needItem: true
@@ -15711,6 +15717,10 @@ research:
     unlocks:
       - STR_ORK_SQUIG_EXAM
   - name: STR_SQUIG_CORPSE_EXPLOSIVE_AI
+    refNode: *STR_CORPSE_BASIC
+    unlocks:
+      - STR_ORK_SQUIG_EXAM
+  - name: STR_BIG_SQUIG_CORPSE_AI
     refNode: *STR_CORPSE_BASIC
     unlocks:
       - STR_ORK_SQUIG_EXAM
