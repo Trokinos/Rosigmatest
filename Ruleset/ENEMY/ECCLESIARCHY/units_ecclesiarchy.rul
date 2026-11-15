@@ -2,9 +2,9 @@
 # ECCLESIARCHY TENTATIVE FACTION LIST
 #
 # TIER 1 TROOPS: Zealots, Frateris Militia, Frateris Militia Veterans, Frateris Beastmen, Frateris Preachers, Conflagrators, Persecutors
-# TIER 1 ELITES: Missionary, Salvationist, Confessor, Witchfinder Acolyte
+# TIER 1 ELITES: Missionary, Salvationist, Confessor, Witchfinder Acolyte, Confessor-sergeants
 # TIER 2 TROOPS: Frateris Ogryns, Frateris Shock troops, Confessor-Sergeants, Questkeepers, Pyroclasts, Sisters Oblatia, Kasrkin Drill-Abbots
-# TIER 2 ELITES: Oblationist Explicator, Sister Dialogus, Miraculist, Confessor-Militant, Witchfinder Explicator
+# TIER 2 ELITES: Oblationist Explicator, Sister Dialogus, Miraculist, Confessor-Militant, Witchfinder Explicator, Oblationist Psyker
 # TIER 3 TROOPS: Oblationist Sin-eaters, Crusaders, Oblationist Tech-priests, Banishers, Hexorcists, Oblationist Stormtroopers
 # TIER 3 ELITES: Oblationist Interrogator, Oblationist Inquisitor, Cardinal, Forsaken Priest, Oblationist Possessed, Oblationist Daemonhost
 # SPECIAL UNITS: Blessed Gun-Servitors, Chrono-gladiators, Arco-flagellants, Penitent Engines, Cherubim
@@ -15,10 +15,12 @@
 #
 # TYPES OF WARBANDS:
 #
-# TIER 1: SANCTIFIER PATROL (Conflagrators, Preachers, Zealots, Missionaries, Salvationists, Persecutors)
-# TIER 1: WITCHFINDER PATROL (Sisters of Battle, Witchfinder Acolyte, Frateris Militia, Frateris Veterans)
-# TIER 2: FRATERIS CONCLAVE PATROL (Veterans, )
-#
+# TIER 1: SANCTIFIER PATROL 1(Conflagrators, Beastmen, Preachers, Zealots, Missionaries, Salvationists, Persecutors, Confessors)
+# TIER 1: WITCHFINDER PATROL 1(Sisters of Battle, Witchfinder Acolyte, Frateris Militia, Frateris Veterans)
+# TIER 1: FRATERIS CONCLAVE PATROL 1(Militia, Veterans, Beastmen, Confessors, Confessor-sergeants)
+# TIER 2: FRATERIS CONCLAVE PATROL 2(Veterans, Ogryns, Shock Troops, Kasrkin Abbots, Sisters Oblatia, Sister Dialogus)
+# TIER 2: WITCHFINDER PATROL 2 (Sisters of Battle, Questkeepers, Pyroclasts, Sisters Oblatia, Miraculists, Sisters Dialogus, Witchfinder Explicator)
+# TIER 2: OBLATIONIST RETINUE 1 (Frateris Shock troops, Pyroclasts, Kasrkin Abbots, Oblationist Explicator, Oblationist Psyker, Frateris Ogryns)
 
 weaponSets:
 
