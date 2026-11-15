@@ -1461,7 +1461,7 @@ armors:
   - type: STR_SQUIG_BIG_ARMOR
     refNode: *PLAYER_SQUIG_ARMOR_TEMPLATE
     spriteSheet: SQUIG_BIG.PCK
-    spriteInv: ASSAULT_SQUIG_INV.SPK #TODO: Replace
+    #spriteInv: ASSAULT_SQUIG_INV.SPK #TODO: Replace
     corpseBattle:
       - STR_PLAYER_BIG_SQUIG_CORPSE
     units:

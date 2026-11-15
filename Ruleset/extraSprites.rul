@@ -5037,6 +5037,38 @@ extraSprites:
   - typeSingle: SQUIG_BOMB_ACCESSORY__5__BOMB_ACCESSORY_02
     fileSingle: Resources/ORK/Paperdolls/SQUIG_BOMB/SQUIG_BOMB_ARMOR_ACCESSORY_02.png
 
+  #BIG SQUIG
+  - typeSingle: SQUIG_BIG_LEGS__1__LEGS_01
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_LEGS_01.png
+  - typeSingle: SQUIG_BIG_LEGS_ACCESSORY__2__LEGS_ACCESSORY_01
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_LEGS_ACCESSORY_01.png
+  - typeSingle: SQUIG_BIG_LEGS_ACCESSORY__2__LEGS_ACCESSORY_02
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_LEGS_ACCESSORY_02.png
+  - typeSingle: SQUIG_BIG_BODY__3__BODY_01
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_01.png
+  - typeSingle: SQUIG_BIG_ARMOR__4__SQUIG_BIG_ARMOR_01
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_SQUIG_ARMOR_01.png
+  - typeSingle: SQUIG_BIG_BODY_JAWS_AND_L_BODY_ACCESSORY__6__J+L_BODY_01
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_JAWS_AND_L_BODY_ACCESSORY_01.png
+  - typeSingle: SQUIG_BIG_BODY_JAWS_AND_L_BODY_ACCESSORY__6__J+L_BODY_02
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_JAWS_AND_L_BODY_ACCESSORY_02.png
+  - typeSingle: SQUIG_BIG_BODY_JAWS_AND_L_BODY_ACCESSORY__6__J+L_BODY_03
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_JAWS_AND_L_BODY_ACCESSORY_03.png
+  - typeSingle: SQUIG_BIG_BODY_NOSERING__7__NOSERING_01
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_NOSE_ACCESSORY_01.png
+  - typeSingle: SQUIG_BIG_BODY_NOSERING__7__NOSERING_02
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_NOSE_ACCESSORY_02.png
+  - typeSingle: SQUIG_BIG_BODY_TOP_ACCESSORY__8__TOP_ACC_01
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_TOP_ACCESSORY_01.png
+  - typeSingle: SQUIG_BIG_BODY_TOP_ACCESSORY__8__TOP_ACC_02
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_TOP_ACCESSORY_02.png
+  - typeSingle: SQUIG_BIG_BODY_TOP_ACCESSORY__8__TOP_ACC_03
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_TOP_ACCESSORY_03.png
+  - typeSingle: SQUIG_BIG_BODY_TOP_ACCESSORY__8__TOP_ACC_04
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_TOP_ACCESSORY_04.png
+  - typeSingle: SQUIG_BIG_BODY_TOP_ACCESSORY__8__TOP_ACC_05
+    fileSingle: Resources/ORK/Paperdolls/SQUIG_BIG/SQUIG_BIG_BODY_TOP_ACCESSORY_05.png
+
   ### ORK
   ### AUTHOR NOTE: each body will have dedicated layers for everything. base bodies are too different
   ### all layers except the one with [ARMORTYPE] will be generic and reusable for future paperdolls
@@ -5428,6 +5460,8 @@ extraSprites:
     fileSingle: Resources/ORK/OPFOR_ATTACK_SQUIG.png
   - typeSingle: BOMB_SQUIG_INV.SPK  # Bomb Squig Inventory
     fileSingle: Resources/ORK/OPFOR_BOMB_SQUIG.png
+  - typeSingle: BIG_SQUIG_INV.SPK  # BIG Squig Inventory
+    fileSingle: Resources/ORK/OPFOR_BIG_SQUIG.png
 
   - typeSingle: ORKYGUARD_INV.SPK  #Flakguard Boy
     fileSingle: Resources/ORK/ORKYGUARD_INV.png

@@ -432,3 +432,46 @@ armors:
       #F13,F14,F15[...]
       # M0: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "", "", "J+L_BODY_01", "NOSERING_01", "TOP_ACC_01"]
       # F0: ["", "LEGS_01", "LEGS_ACCESSORY_02", "BODY_01", "", "", "J+L_BODY_03", "NOSERING_02", "TOP_ACC_05"]
+
+  - type: STR_SQUIG_BIG_ARMOR
+    layersDefaultPrefix: "1"
+    layersSpecificPrefix:
+      1: SQUIG_BIG_LEGS
+      2: SQUIG_BIG_LEGS_ACCESSORY
+      3: SQUIG_BIG_BODY
+      4: SQUIG_BIG_ARMOR #SPIKES
+      # 5: SQUIG_ARMOR_ACCESSORY # empty for now, to be used for additional
+      6: SQUIG_BIG_BODY_JAWS_AND_L_BODY_ACCESSORY
+      7: SQUIG_BIG_BODY_NOSERING
+      8: SQUIG_BIG_BODY_TOP_ACCESSORY
+    layersDefinition:
+      M0: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "", ""]
+      M1: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "", ""]
+      M2: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "NOSERING_01", ""]
+      M3: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "", "TOP_ACC_01"]
+      F0: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_02", "NOSERING_02", ""]
+      F1: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_01", "", "TOP_ACC_02"]
+      F2: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "", "TOP_ACC_03"]
+      F3: ["", "LEGS_01", "LEGS_ACCESSORY_02", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_03", "NOSERING_01", "TOP_ACC_04"]
+      M4: ["", "LEGS_01", "LEGS_ACCESSORY_02", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "", "TOP_ACC_02"]
+      M5: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "NOSERING_01", "TOP_ACC_03"]
+      M6: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "NOSERING_01", "TOP_ACC_01"]
+      M7: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "", "TOP_ACC_01"]
+      F4: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_02", "NOSERING_02", "TOP_ACC_04"]
+      F5: ["", "LEGS_01", "LEGS_ACCESSORY_02", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_01", "", "TOP_ACC_02"]
+      F6: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "NOSERING_02", "TOP_ACC_03"]
+      F7: ["", "LEGS_01", "LEGS_ACCESSORY_02", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_03", "", "TOP_ACC_05"]
+      M8: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "", "TOP_ACC_02"]
+      M9: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "NOSERING_01", "TOP_ACC_01"]
+      M10: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "NOSERING_02", "TOP_ACC_05"]
+      M11: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_01", "", ""]
+      F8: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_03", "NOSERING_02", ""]
+      F9: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_01", "", "TOP_ACC_04"]
+      F10: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "NOSERING_02", "TOP_ACC_03"]
+      F11: ["", "LEGS_01", "", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "", "NOSERING_01", ""]
+      M12: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_02", "NOSERING_01", "TOP_ACC_05"]
+      #M13,M14,M15[...]
+      F12: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_02", "NOSERING_02", "TOP_ACC_04"]
+      #F13,F14,F15[...]
+      # M0: ["", "LEGS_01", "LEGS_ACCESSORY_01", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_01", "NOSERING_01", "TOP_ACC_01"]
+      # F0: ["", "LEGS_01", "LEGS_ACCESSORY_02", "BODY_01", "SQUIG_BIG_ARMOR_01", "", "J+L_BODY_03", "NOSERING_02", "TOP_ACC_05"]

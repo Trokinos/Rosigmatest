@@ -9377,6 +9377,14 @@ ufopaedia:
       - STR_GREENEST_ORKZ
     image_id: SQUIG_BOMB.SPK
     text: STR_NOT_DONE
+  - id: STR_SQUIG_BIG_ARMOR
+    type_id: 15
+    section: STR_ARMORPEDIA
+    requires:
+      - STR_ORK_SQUIG_EXAM
+      - STR_GREENEST_ORKZ
+    image_id: SQUIG_ASSAULT.SPK
+    text: STR_NOT_DONE
 
   - id: STR_PLAYER_VINDI_GROT_ARMOR
     type_id: 15
@@ -23765,6 +23773,13 @@ ufopaedia:
       - STR_SQUIG_CORPSE_EXPLOSIVE_AI
     image_id: SQUIG_BOMB.SPK
     text: STR_NOT_DONE
+  - id: STR_SQUIG_BIG_AUTOPSY
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BIG_SQUIG_CORPSE_AI
+    image_id: SQUIG_ASSAULT.SPK
+    text: STR_NOT_DONE
   - id: STR_SQUIG_ARMOR_AI
     type_id: 15
     section: STR_ALIEN_LIFE_FORMS
@@ -23778,6 +23793,13 @@ ufopaedia:
     requires:
       - STR_ORK_SQUIG_EXAM
     image_id: SQUIG_BOMB.SPK
+    text: STR_NOT_DONE
+  - id: STR_SQUIG_ARMOR_BIG_AI
+    type_id: 15
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ORK_SQUIG_EXAM
+    image_id: SQUIG_ASSAULT.SPK
     text: STR_NOT_DONE
 
   - delete: STR_ORK_AUTOPSY
