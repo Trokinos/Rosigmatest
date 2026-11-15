@@ -1782,6 +1782,7 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_GUARD_ORK_BOY_AUTOPSY: "Ork Boy Origins"
   STR_SQUIG_AUTOPSY: "Squig Origin"
   STR_SQUIG_EXPLOSIVE_AUTOPSY: "Bommarz Squig Origin"
+  STR_SQUIG_BIG_AUTOPSY: "Big Squig Origin"
 # FOE.ORK.Craft
   STR_TRUKK_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
   STR_WAGGON_UFO_UFOPEDIA: "{NEWLINE} The Waggon isn't a specific variant of Ork vehicle, but rather a term for any number of large, noisy ground vehicles designed to carry mobs of greenskins into battle. Kannons, Big Shootas, and Rokkit Launchas are their commonly seen weaponry, equipped anywhere they can fit on the Waggon."
