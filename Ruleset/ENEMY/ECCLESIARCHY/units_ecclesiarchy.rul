@@ -1,4 +1,45 @@
-
+######################################### PRIMER ON ECCLESIARCHY SUB-FACTIONS #####################################################################
+#
+# The Ecclesiarchy faction in ROSIGMA consists of several parts, reflecting the unique and often self-contradictory relationship the Ministorum has
+# in the wake of the Age of Apostacy and the Decree Passive. In general, the Ecclesiarchy adopts an attitude of "it's only illegal if we don't get away with it"
+# attitude towards the restrictions imposed on it, and the Inquisition generally tolerates SOME level of illegality as long as the SPIRIT of the decree
+# is respected, and also because it offers the Inquisition significant amounts of leverage.
+#
+# The "sub-factions" represented in ROSIGMA are as follows:
+#
+# 1) REDEMPTIONISTS
+#
+# This is the classic horde faction, representing both the Cult of the Redemption and other, similar cults. Poor, zealous rabble with little discipline or organization.
+# Few Redemptionists have military training; they use makeshift weapons and wear little armor. Redemptionist units use "Redemptionist" as a unit name prefix.
+#
+# 2) SANCTIFIERS
+#
+# Sanctifiers are either laypeople who have joined the Frateris Militia and survived long enough to become proficient warriors, or ordained members of the Ecclesiarchy
+# who have an aptitude for combat. At the low end, a member of a Sanctifier warband is at least as skilled as an Imperial Guardsman, and at
+# the high end these are (or have been) trusted Inquisitoral Acolytes and retinue members, meaning they are extremely capable elites.
+# Sanctifiers are essentially the Zealots from Darktide: the (unofficial) professional soldiers of the Ecclesiarchy.
+#
+# Sanctifier units use good quality equipment, including special weapons like meltaguns and plasma guns, and will usually have the word "Zealous" as a unit name prefix.
+#
+# 3) FRATERIS MILITANTS
+#
+# Frateris *Militants* is the unofficial nomenclature for the tiny minority of the Frateris Militia who have professional military experience. At the low end, these
+# are guardsmen or PDF-level troops. At the high end, however, these are ideologically committed elite volunteers with decades of military service, using their old equipment.
+# High-level Frateris Militants ride dangerously close to the limits of the Decree Passive: one of the ways the Ecclesiarchy smooths this over is by inducting former IG veterans
+# into the Ecclesiarchy as lay religious brothers. Frateris Militants generally wear their old Militarium flak or Carapace armor, repainted in red and black and partly covered
+# behind robes or monk vestments. High-level Frateris Militants include Kasrkin Drill Abbots, Taniths, Cadian Shock troops, and Catachans.
+#
+# Frateris Militants use VERY high quality Militarium gear at the top end, but lack heavy weapons and vehicles. Instead, they rely on Ecclesiarchy special units, like Miraculists.
+#
+# 4) OBLATIONISTS
+#
+# Oblationists are perhaps the most hated and feared radical sect within the Inquisition. Though obviously not part of the Ecclesiarchy itself, Oblationists acolytes are present
+# in some of the Ecclesiarchy lists, being outwardly little different from any other puritan inquisitorial acolyte. At the higher levels, however, true Oblationist
+# Oathed Cadres make their appearance: combining the most fanatical aspects of Inquisition monodominant ideology with the chaos sorcery, warp weaponry and heretical methods of
+# the most corrupt arch-Xanthite. Oblationists have access to extremely powerful Chaos sorcery, Daemonhosts, Daemon weapons, Xeno weapons, possessed soldiers, and other profane tools.
+# They are possibly the most dangerous and ruthless kind of inquisitorial warband in existence.
+#
+##################################################################################################################################################
 # ECCLESIARCHY TENTATIVE FACTION LIST
 #
 # TIER 1 TROOPS: Zealots, Frateris Militia, Frateris Militia Veterans, Frateris Beastmen, Frateris Preachers, Conflagrators, Persecutors
@@ -9,11 +50,9 @@
 # TIER 3 ELITES: Oblationist Interrogator, Oblationist Inquisitor, Cardinal, Forsaken Priest, Oblationist Possessed, Oblationist Daemonhost
 # SPECIAL UNITS: Blessed Gun-Servitors, Chrono-gladiators, Arco-flagellants, Penitent Engines, Cherubim
 #
-# ALL TIERS HAVE ACCESS TO EQUIVALENT ADEPTA SORORITAS UNITS IN SUPPORT
+##################################################################################################################################################
 #
-#
-#
-# TYPES OF WARBANDS:
+# TYPES OF WARBANDS: # (move this list to alienDeployments_ecclesiarchy.rul later.)
 #
 # TIER 1: SANCTIFIER PATROL 1(Conflagrators, Beastmen, Preachers, Zealots, Missionaries, Salvationists, Persecutors, Confessors)
 # TIER 1: WITCHFINDER PATROL 1(Sisters of Battle, Witchfinder Acolyte, Frateris Militia, Frateris Veterans)
@@ -22,8 +61,66 @@
 # TIER 2: WITCHFINDER PATROL 2 (Sisters of Battle, Questkeepers, Pyroclasts, Sisters Oblatia, Miraculists, Sisters Dialogus, Witchfinder Explicator)
 # TIER 2: OBLATIONIST RETINUE 1 (Frateris Shock troops, Pyroclasts, Kasrkin Abbots, Oblationist Explicator, Oblationist Psyker, Frateris Ogryns)
 # TIER 3: OBLATIONIST OATHED CADRE
+# TIER 3: OBLATIONIST EXTERMINATOR CADRE
+#
+# NOTE: Ecclesiarchy Sororitas support comes from the Order of the Bleeding Thorn, a minor subsidiary order to the Bloody Rose.
+#       This is to help differentiate Ecclesiarchy faction lists further from normal Bloody Rose/Fiery Heart OPFOR.
+#
+################################################################################################################################
+#                                                 ##### TABLE OF CONTENTS #####
+#
+#
+#     #1: REDEMPTIONIST SECTION
+#
+#     #2: FRATERIS ZEALOT SECTION
+#
+#     #3: FRATERIS MILITANT SECTION
+#
+#     #4: BLEEDING THORN SECTION
+#
+#     #5: OBLATIONIST SECTION
+#
+###############################################################################################################################
+
+#WEAPONSETS
 
 weaponSets:
+
+  # CONFLAGRATORS
+
+  # Conflagrators mainly use dual hand flamers; a minority switch one flamer out for grenades or a bolt pistol.
+
+  - type: ECCLESIARCHY_CONFLAGRATOR_T0_SET1
+    weapons: [STR_HAND_FLAMETHROWER, STR_HAND_FLAMETHROWER, STR_HAND_FLAMETHROWER_CLIP, STR_HAND_FLAMETHROWER_CLIP]
+  - type: ECCLESIARCHY_CONFLAGRATOR_T0_SET2
+    weapons: [STR_HAND_FLAMETHROWER, STR_HAND_FLAMETHROWER_CLIP, STR_HAND_FLAMETHROWER_CLIP, STR_PHOSPHOR_GRENADE, STR_PHOSPHOR_GRENADE, STR_KRAK_GRENADE]
+  - type: ECCLESIARCHY_CONFLAGRATOR_T0_SET3
+    weapons: [STR_HAND_FLAMETHROWER, STR_HAND_FLAMETHROWER_CLIP, STR_HAND_FLAMETHROWER_CLIP, STR_BOLTPISTOL_DEAZ, STR_LIGHT_BOLTPISTOL_AMMO, STR_LIGHT_BOLTPISTOL_AMMO]
+
+  # REDEEMERS
+
+  # Zealous Redeemers are elite melee and close range zealots, a la Darktide. They have access to power weapons and bolters.
+
+  # MISSIONARIES
+
+  # Missionaries use an incredibly wide variety of high-quality weapons. Not even the inquisition cares about Missionarus Galaxia gun control.
+
+  - type: ECCLESIARCHY_MISSIONARY_T0_SET1
+    weapons: [STR_PLASMA_PISTOL_TERRAN, STR_PLASMA_PISTOL_CLIP, STR_PLASMA_PISTOL_CLIP, STR_CHAINSWORD, STR_KRAK_GRENADE]
+  - type: ECCLESIARCHY_MISSIONARY_T0_SET2
+    weapons: [STR_BOLTER_LOCKE, STR_LIGHT_BOLTER_AMMO_INF, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_BOLTER_AMMO, STR_MGRENADE]
+  - type: ECCLESIARCHY_MISSIONARY_T0_SET3
+    weapons: [STR_PLASMA_RIFLE_TERRAN, STR_PLASMA_RIFLE_CLIP, STR_PLASMA_RIFLE_CLIP, STR_KRAK_GRENADE, STR_PHOSPHOR_GRENADE]
+  - type: ECCLESIARCHY_MISSIONARY_T0_SET4
+    weapons: [STR_HEAVY_LASER, STR_MELTA_AMMO, STR_MELTA_AMMO, STR_MGRENADE]
+  - type: ECCLESIARCHY_MISSIONARY_T0_SET5
+    weapons: [STR_HARMONIC_MELTAGUN, STR_MELTA_AMMO_HARMONIC, STR_MELTA_AMMO_HARMONIC, STR_KRAK_GRENADE]
+  - type: STR_ECCLESIARCHY_MISSIONARY_T0_SET6
+    weapons: [STR_STUBCANNON_GUARD, STR_INCENDIARY_GRENADE40, STR_MELTA_GRENADE40, STR_KRAK_GRENADE40]
+  - type: STR_ECCLESIARCHY_MISSIONARY_T0_SET7
+    weapons: [STR_AUTOSHOTGUN, STR_SHOTGUN_DRUM, STR_SHOTGUN_DRUM, STR_KRAK_GRENADE, STR_MGRENADE]
+
+
 
   - type: ECCLESIARCHY_FRATERIS_T0_SET1
     weapons: [STR_AUTOGUN_ADEPTAS, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_MAKESHIFT_GRENADE]
@@ -39,9 +136,9 @@ weaponSets:
     weapons: [STR_BOLTER_LIGHT_SOLO_SHORT, STR_LIGHT_BOLTER_AMMO_SHORT, STR_LIGHT_BOLTER_AMMO_SHORT, STR_KRAK_GRENADE]
 
   - type: ECCLESIARCHY_FRATERISVET_T0_SET0
-    weapons: [STR_AUTOGUN_ADEPTAS, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_GRENADE]
+    weapons: [STR_LASGUN_STEEL_LEGION_MID, STR_LASGUN_CLIP_HOTSHOT, STR_LASGUN_CLIP_HOTSHOT, STR_GRENADE]
   - type: ECCLESIARCHY_FRATERISVET_T0_SET1
-    weapons: [STR_CHERUBIM_GRENADE_LAUNCHER, STR_PHOSPHOR_GRENADE_DRUM, STR_CHERUBIM_INCENDIARY_GRENADE_DRUM]
+    weapons: [STR_GRENADE_LAUNCHER, STR_KRAK_GRENADE_DRUM, STR_KRAK_GRENADE_DRUM]
   - type: ECCLESIARCHY_FRATERISVET_T0_SET2
     weapons: [STR_LIGHT_MELTAGUN_MYNERVA, STR_LIGHT_MELTA_AMMO, STR_LIGHT_MELTA_AMMO]
   - type: ECCLESIARCHY_FRATERISVET_T0_SET3
@@ -52,6 +149,8 @@ weaponSets:
     weapons: [STR_AGRIPINAA_MKIX, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP]
   - type: ECCLESIARCHY_FRATERISVET_T0_SET6
     weapons: [STR_STUBCANNON_GUARD, STR_INCENDIARY_GRENADE40, STR_INCENDIARY_GRENADE40, STR_KRAK_GRENADE40]
+  - type: ECCLESIARCHY_FRATERISVET_T0_SET7
+    weapons: [STR_BOLTER_LOCKE, STR_LIGHT_BOLTER_AMMO, STR_LIGHT_BOLTER_AMMO, STR_KRAK_GRENADE]
 
   - type: ECCLESIARCHY_FRATERISSERGEANT_T0_SET1
     weapons: [STR_CHERUBIM_GRENADE_LAUNCHER, STR_PHOSPHOR_GRENADE_DRUM, STR_CHERUBIM_INCENDIARY_GRENADE_DRUM]
@@ -61,6 +160,9 @@ weaponSets:
     weapons: [STR_BOLTER_LIGHT_SOLO_COMBIMELTA, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_BOLTER_AMMO_AP, STR_LIGHT_MELTA_AMMO, STR_LIGHT_MELTA_AMMO]
   - type: ECCLESIARCHY_FRATERISVET_T0_SET4
     weapons: [STR_GRAIA_MKVII, STR_STUB_GUN_AMMO_AP, STR_STUB_GUN_AMMO_AP, STR_KRAK_GRENADE]
+
+
+#### ORDER OF THE BLEEDING THORN WEAPON SETS ####
 
   - type: ECCLESIARCHY_NOVICE_T0_SET1
     weapons: [STR_AUTOGUN_ADEPTAS, STR_AUTOGUN_CLIP, STR_AUTOGUN_CLIP, STR_PHOSPHOR_GRENADE]
@@ -116,8 +218,51 @@ weaponSets:
 
 units:
 
+ ##### REDEMPTIONIST SECTION ########
+
+ ##### FRATERIS ZEALOTS SECTION ######
+
+#CF
+  #Conflagrators are close range hand flamer specialists. Should have FNP and very high fire resistance.
+
+  - type: STR_ECCLESIARCHY_CONFLAGRATOR_AI
+    race: STR_ECCLESIARCHY_SANCTIFIERS
+    liveAlien: STR_FRATERIS_MILITIA_AI # Temporary placeholder
+    stats:
+      tu: 65
+      stamina: 65
+      health: 55 # Much tougher than a frateris mook.
+      bravery: 80
+      reactions: 40
+      firing: 50 # Decent aim, but uses short-range weapons.
+      throwing: 40
+      strength: 35
+      psiStrength: 5
+      psiSkill: 0
+      melee: 45
+    armor: STR_ECCLESIARCHY_CONFLAGRATOR_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 10
+    intelligence: 3
+    aggression: 6
+    energyRecovery: 30
+    deathSound: [{mod: 40k, index: 385}, {mod: 40k, index: 387}]
+    psiWeapon: STR_NONE
+    weightedBuiltInWeaponSets:
+      -
+        ECCLESIARCHY_CONFLAGRATOR_T0_SET1: 50 # Akimbo hand flamers
+        ECCLESIARCHY_CONFLAGRATOR_T0_SET2: 35 # Hand flamer + grenades
+        ECCLESIARCHY_CONFLAGRATOR_T0_SET3: 15 # Hand flamer + boltpistol
+
+#  - type: STR_ECCLESIARCHY_MISSIONARY_AI
+#    race: STR_ECCLESIARCHY_SANCTIFIERS
+
+#FM
+ ##### FRATERIS MILITANTS SECTION #####
+
   - type: STR_ECCLESIARCHY_FRATERIS_MILITIA_AI
-    race: STR_ECCLESIARCHY
+    race: STR_ECCLESIARCHY_FRATERIS
     liveAlien: STR_FRATERIS_MILITIA_AI
     stats:
       tu: 55
@@ -149,16 +294,20 @@ units:
         ECCLESIARCHY_FRATERIS_T0_SET5: 8
         ECCLESIARCHY_FRATERIS_T0_SET6: 5
 
+ # Frateris "Lay Brothers" are in actuality experienced Guardsmen who fight for the Ecclesiarchy.
+ # In order to make this less of a flagrant violation of the Decree Passive, they have been inducted as lay members of the clergy.
+
+
   - type: STR_ECCLESIARCHY_FRATERIS_MILITIA_VETERAN_AI
-    race: STR_ECCLESIARCHY
+    race: STR_ECCLESIARCHY_FRATERIS
     liveAlien: STR_FRATERIS_MILITIA_VETERAN_AI
     stats:
       tu: 60
       stamina: 70
-      health: 40
+      health: 43
       bravery: 90
       reactions: 50
-      firing: 58 # +3
+      firing: 62 # +3
       throwing: 55
       strength: 35
       psiStrength: 50
@@ -182,6 +331,11 @@ units:
         ECCLESIARCHY_FRATERISVET_T0_SET4: 15
         ECCLESIARCHY_FRATERISVET_T0_SET5: 10
         ECCLESIARCHY_FRATERISVET_T0_SET6: 7
+
+#  - type: STR_ECCLESIARCHY_FRATERIS_OGRYN_T1_AI
+
+
+ ##### BLEEDING THORN SECTION #######
 
   - type: STR_ECCLESIARCHY_NOVICE_AI
     race: STR_ECCLESIARCHY
@@ -217,7 +371,6 @@ units:
         ECCLESIARCHY_NOVICE_T0_SET6: 10
         ECCLESIARCHY_NOVICE_T0_SET7: 10
         ECCLESIARCHY_NOVICE_T0_SET8: 10
-
 
   - type: STR_ECCLESIARCHY_CANTUS_AI
     race: STR_ECCLESIARCHY

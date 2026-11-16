@@ -67,6 +67,7 @@ en-US: #  yamllint disable-line rule:empty-values
 # #03-NECRON
 # #03-TAU
 # #03-SLAANESH_STRATEGY
+# #03-ECCLESIARCHY
 #########################
 # 04. MAP AND ASSETS # everything map related
 #########################
@@ -2787,19 +2788,6 @@ en-US: #  yamllint disable-line rule:empty-values
 
  #### SLAANESH STRATEGY ECCLESIARCHY OPFOR UNITS
 
-  STR_ECCLESIARCHY_FRATERIS_MILITIA_AI: "Frateris Militia"
-  STR_ECCLESIARCHY_FRATERIS_MILITIA_VETERAN_AI: "Frateris Militia Veteran"
-
-  STR_ECCLESIARCHY_NOVICE_AI: "Sororitas Novice"
-  STR_ECCLESIARCHY_CANTUS_AI: "Sororitas Cantus"
-  STR_ECCLESIARCHY_MEDICAE_AI: "Sororitas Medicae"
-  STR_ECCLESIARCHY_SISTER_AI: "Sororitas Battle Sister"
-  STR_ECCLESIARCHY_ELOHIM_AI: "Sororitas Elohim"
-  STR_ECCLESIARCHY_REPENTIA_AI: "Sister Repentia"
-  STR_ECCLESIARCHY_NOVITIATE_SUPERIOR_AI: "Novitiate Superior"
-
-  STR_ECCLESIARCHY_CONFESSOR_PATROL_T0: "Ecclesiarchy Confessor Patrol"
-  STR_ECCLESIARCHY_CONFESSOR_PATROL_T1: "Ecclesiarchy Confessor Patrol"
 
   STR_PDFTROOPER_LVL0_SLP: "PDF Conscript"
 
@@ -3024,6 +3012,35 @@ en-US: #  yamllint disable-line rule:empty-values
 
   STR_SLAANESHPATH_SAVANT_RANK_0: "Minoris Sigma-Nu"
   STR_SLAANESHPATH_SAVANT_RANK_1: "Minoris Sigma-Lambda"
+
+# #03-ECCLESIARCHY
+########## ECCLESIARCHY OPFOR DEFINITIONS ################
+
+  STR_ECCLESIARCHY_REDEMPTIONISTS: "Redemptionist Warband"
+  STR_ECCLESIARCHY_FRATERIS: "Frateris Militia"
+  STR_ECCLESIARCHY_SANCTIFIERS: "Ministorum Sanctifiers"
+  STR_ECCLESIARCHY_OBLATIONISTS: "Oblationist Cadre"
+
+  STR_ECCLESIARCHY_CONFLAGRATOR_AI: "Zealous Conflagrator"
+  STR_ECCLESIARCHY_REDEEMER_AI: "Zealous Redeemer"
+
+  STR_ECCLESIARCHY_FRATERIS_MILITIA_AI: "Frateris Militia"
+  STR_ECCLESIARCHY_FRATERIS_MILITIA_VETERAN_AI: "Frateris Lay Brother"
+  STR_ECCLESIARCHY_FRATERIS_OGRYN_T1_AI: "Frateris Ogryn"
+  STR_ECCLESIARCHY_FRATERIS_BEASTMAN_T1_AI: "Frateris Beastman"
+
+
+  STR_ECCLESIARCHY_NOVICE_AI: "Bleeding Thorn Novice"
+  STR_ECCLESIARCHY_CANTUS_AI: "Bleeding Thorn Cantus"
+  STR_ECCLESIARCHY_MEDICAE_AI: "Bleeding Thorn Medicae"
+  STR_ECCLESIARCHY_SISTER_AI: "Bleeding Thorn Battle Sister"
+  STR_ECCLESIARCHY_ELOHIM_AI: "Bleeding Thorn Elohim"
+  STR_ECCLESIARCHY_REPENTIA_AI: "Bleeding Thorn Repentia"
+  STR_ECCLESIARCHY_NOVITIATE_SUPERIOR_AI: "Bleeding Thorn Novitiate Superior"
+
+  STR_ECCLESIARCHY_CONFESSOR_PATROL_T0: "Ecclesiarchy Confessor Patrol"
+  STR_ECCLESIARCHY_CONFESSOR_PATROL_T1: "Ecclesiarchy Confessor Patrol"
+
 #########################
 # 04. MAP AND ASSETS # everything map related
 #########################
