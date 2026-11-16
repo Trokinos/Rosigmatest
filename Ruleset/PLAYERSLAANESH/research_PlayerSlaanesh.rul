@@ -403,7 +403,7 @@ research:
 
 ### TIER 1 TERROR PROJECTS
  #BASIC TECHS
-  - name: ADORATION_THROUGH_AGONY #The gateway tech for pain and torture-related weapons and facilities.
+  - name: STR_ADORATION_THROUGH_AGONY #The gateway tech for pain and torture-related weapons and facilities.
     cost: 120
     points: 10
     dependencies:
@@ -438,12 +438,12 @@ research:
   - name: STR_SHARD_GRENADES
     cost: 100
     dependencies:
-      - ADORATION_THROUGH_AGONY
+      - STR_ADORATION_THROUGH_AGONY
 
   - name: STR_BALEFIRE_GRENADES
     cost: 200
     dependencies:
-      - ADORATION_THROUGH_AGONY
+      - STR_ADORATION_THROUGH_AGONY
 
 
   - name: STR_CONSTRICTOR_WEBBER_PISTOLS
@@ -471,7 +471,6 @@ research:
     dependencies:
       - STR_GENERALLOCK
 
-# THESE MISSIONS WILL REQUIRE DEPENDENCIY TECHS UNLOCKED THROUGH EVENTS THAT TRIGGER ONCE PER MONTH, MAKING THE SEQUENCE OF DEALING WITH THREATS SOMEWHAT RANDOM.
 
   - name: STR_WAR_FOR_THE_UNDERHIVE
     cost: 40
@@ -513,43 +512,25 @@ research:
       - STR_UNDERHIVE_CULT_TOKEN
       - STR_GENERALLOCK
 
-  - name: STR_AGAINST_THE_ECCLESIARCHY
-    cost: 80
+
+  - name: STR_HANDMAIDEN_POWER_ARMOR
+    cost: 300
     points: 30
     dependencies:
-      - STR_PATH_OF_PERFECTION
-      - STR_GENERALLOCK
-
-  - name: STR_OUR_FOOLISH_COUSINS # Available at start. Unlocks sisters-related tech.
-    cost: 80
-    points: 30
-    dependencies:
-      - STR_AGAINST_THE_ECCLESIARCHY
-
-
-
-
-  - name: STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
-    cost: 150
-    points: 40
+    - STR_CONTACT_HERETEKS
+    - STR_TERROR_WEAPONRY
+    - STR_ADORATION_THROUGH_AGONY
 
   - name: STR_IMMACULATE_ARMOR_TECHNOLOGY
     cost: 80
     points: 30
     dependencies:
-      - STR_OUR_FOOLISH_COUSINS
+      - STR_GENERALLOCK
       - STR_CONTACT_HERETEKS
-      - STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
-      - STR_OUR_DEVOTION_DEEPENS
+      - STR_ALIEN_ALLOYS
 
-  - name: STR_TOPPLE_THEIR_SHRINES
-    cost: 80
+  - name: STR_OUR_FOOLISH_COUSINS
+    cost: 100
     points: 30
     dependencies:
-      - STR_AGAINST_THE_ECCLESIARCHY
-
-  - name: STR_CAST_DOWN_THEIR_LIES # Mission-related tech. Unlocked later.
-    cost: 80
-    points: 30
-    dependencies:
-      - STR_AGAINST_THE_ECCLESIARCHY
+      - STR_GENERALLOCK

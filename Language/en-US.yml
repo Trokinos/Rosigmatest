@@ -2672,7 +2672,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESH_WEAPON_MANUFACTURE_TIER_1: "(Slaanesh Tier 1 Weapon Manufacture)"
   STR_LIGHT_GRENADE_LAUNCHERS: "Light Grenade Launcher Requisition"
   STR_TERROR_WEAPONRY: "Devotion through Despair"
-  ADORATION_THROUGH_AGONY: "Adoration through Agony"
+  STR_ADORATION_THROUGH_AGONY: "Adoration through Agony"
+  STR_HANDMAIDEN_POWER_ARMOR: "Handmaiden Power Armor"
   STR_CONSTRICTOR_WEBBER_PISTOLS: "Constrictor Webber Technology"
   STR_BLACK_MARKET_AMMUNITION: "Underhive Ammo-Jacks"
   STR_BLACK_MARKET_AMMO_TRADE: "(Underhive Ammo Trade)"
@@ -2756,6 +2757,8 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_CREATE_IMMACULATE_TOKEN: "Create Immaculate Armor"
   STR_CREATE_ANGELIC_TOKEN: "Create Angelic Armor"
   STR_CREATE_HARBINGER_TOKEN: "Create Harbinger Armor"
+  STR_CREATE_HANDMAIDEN_POWER_ARMOR: "Handmaiden Power Armor"
+  STR_HANDMAIDEN_POWERARMOR_STOREITEM: "Handmaiden Power Armor"
 
   STR_SLAANESHPATH_PLASMA_PISTOL_MANUFACTURE: "Slaanesh Plasma Pistol"
   STR_SLAANESHPATH_PLASMA_PISTOL_AMMO_MANUFACTURE: "Slaanesh Plasma Pistol Ammo"
@@ -2785,9 +2788,6 @@ en-US: #  yamllint disable-line rule:empty-values
 
 
  #################### UNITS #########################
-
- #### SLAANESH STRATEGY ECCLESIARCHY OPFOR UNITS
-
 
   STR_PDFTROOPER_LVL0_SLP: "PDF Conscript"
 
@@ -2920,13 +2920,17 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_SLAANESHPATH_FELINID_ACOLYTE: "Felinid Acolyte"
   STR_SLAANESHPATH_LAY_BROTHER: "Lay Brother"
 
-  ## Slaanesh Adeptas Armors
+## Slaanesh Adeptas Armors
 
   STR_SLAANESHPATH_HANDMAIDEN_ARMOR: "Handmaiden Carapace"
-  STR_SLAANESHPATH_MILITANT_ARMOR: "Handmaiden Militant Armor"
+  STR_SLAANESHPATH_HANDMAIDEN_POWER_ARMOR: "Handmaiden Power Armor"
+
   STR_SLAANESHPATH_MYSTES_ARMOR: "Mystes Carapace"
+  STR_SLAANESHPATH_MYSTES_POWER_ARMOR: "Mystes Power Armor"
   STR_SLAANESHPATH_HANDMAIDEN_VIVISECTIONIST_ARMOR: "Vivisectionist Carapace"
+  STR_SLAANESHPATH_VIVISECTIONIST_POWER_ARMOR: "Vivisectionist Power Armor"
   STR_SLAANESHPATH_ANATHEMANT_ARMOR: "Anathemant Carapace"
+  STR_SLAANESHPATH_ANATHEMANT_POWER_ARMOR: "Anathemant Power Armor"
   STR_SLAANESHPATH_IMMACULATE_ARMOR: "Immaculate Armor"
   STR_SLAANESHPATH_CHIRURGEON_NEEDLER_ARMOR: "Chirurgeon Armor (Needler)"
   STR_SLAANESHPATH_SORCERESS_ARMOR: "Sorceress Armor"

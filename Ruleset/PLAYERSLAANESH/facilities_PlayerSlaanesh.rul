@@ -35,7 +35,7 @@ facilities:
     placeSound: {mod: 40k, index: 98}
     requiresBaseFunc: [BASE]
     requires:
-      - ADORATION_THROUGH_AGONY
+      - STR_ADORATION_THROUGH_AGONY
     spriteShape: 1
     #spriteFacility: {mod: 40k, index: 444}
     spriteFacility: {mod: 40k, index: 31} #Placeholder
