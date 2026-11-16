@@ -52,7 +52,7 @@ extended:
           item.getTag itemFrequency Tag.ITEM_IS_REMOTE_DETONATED;
           if lt itemFrequency 1;
             item.getTag itemFrequency Tag.ITEM_IS_REMOTE_DETONATOR;
-            if ge itemFrequency 0;
+            if gt itemFrequency 0;
               item.setHealQuantity 999; #reset the number of uses for our detonators
             end;
             return;
