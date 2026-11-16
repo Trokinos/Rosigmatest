@@ -44,34 +44,6 @@ items:
     recover: true
     hiddenOnMinimap: true
 
-# LOOTABLE ARMOR TOKENS
-
-  - &STR_ARMOR_TOKEN
-    type: STR_NOVICE_ARMORTOKEN
-    battleType: 6
-    invWidth: 0
-    invHeight: 0
-    armor: 255
-    recover: true
-    hiddenOnMinimap: true
-    recoveryTransformations:
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 50, 40, 10]
-
-  - type: STR_CANTUS_ARMORTOKEN
-    refNode: *STR_ARMOR_TOKEN
-    recoveryTransformations:
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 40, 45, 15, 10]
-
-  - type: STR_SISTER_ARMORTOKEN
-    refNode: *STR_ARMOR_TOKEN
-    recoveryTransformations:
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 0, 30, 30, 25, 15]
-
-  - type: STR_ELOHIM_ARMORTOKEN
-    refNode: *STR_ARMOR_TOKEN
-    recoveryTransformations:
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: [0, 0, 15, 20, 30, 30, 10]
-
 
   - type: STR_HANDMAIDEN_POWERARMOR_STOREITEM
     size: 0.2
@@ -108,14 +80,6 @@ items:
     size: 0.1
   - type: STR_SLAANESHPATH_SHAMSHIEL_STOREITEM # Shamshiel Catechizer Armor
     size: 0.1
-
-#ARMOR COMPONENT TOKENS
-  - type: STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS
-    size: 0.1
-    costSell: 2000 # Subject to further balance changes.
-  - type: STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_COMPONENTS
-    size: 0.1
-    costSell: 1000 # Much less valuable.
 
 
 

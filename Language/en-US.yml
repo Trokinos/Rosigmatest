@@ -2700,7 +2700,6 @@ en-US: #  yamllint disable-line rule:empty-values
   STR_AGAINST_THE_ECCLESIARCHY: "The Ministorum of Lies"
   STR_OUR_FOOLISH_COUSINS: "Our Foolish Cousins"
   STR_IMMACULATE_ARMOR_TECHNOLOGY: "Immaculate Power Armor"
-  STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: "Adeptas Power Armor Components"
   STR_OUR_DEVOTION_DEEPENS: "*Our Devotion Deepens*"
   STR_STRANGLER_GRENADES: "Strangler Grenades"
   STR_HALLUCINOGEN_GRENADES: "Hallucinogen Grenades"

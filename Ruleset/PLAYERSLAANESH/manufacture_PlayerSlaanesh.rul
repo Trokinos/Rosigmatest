@@ -305,7 +305,6 @@ manufacture:
       STR_SLAANESHPATH_IMMACULATE_ARMOR_TOKEN: 1
     requiredItems:
       STR_ALIEN_SURGERY: 1
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
       STR_SLAANESHPATH_PIETY: 50
       STR_ELERIUM_115: 4
     points: 20
@@ -321,7 +320,6 @@ manufacture:
       STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
     requiredItems:
       STR_ALIEN_SURGERY: 1
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
       STR_SLAANESHPATH_PIETY: 50
       STR_ELERIUM_115: 4
     points: 20
@@ -337,7 +335,6 @@ manufacture:
       STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
     requiredItems:
       STR_ALIEN_SURGERY: 1
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
       STR_SLAANESHPATH_PIETY: 50
       STR_ELERIUM_115: 4
     points: 20
@@ -353,7 +350,6 @@ manufacture:
       STR_SLAANESHPATH_ANGELIC_ARMOR_TOKEN: 1
     requiredItems:
       STR_ALIEN_SURGERY: 1
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
       STR_SLAANESHPATH_PIETY: 50
       STR_ELERIUM_115: 4
     points: 20
@@ -369,23 +365,10 @@ manufacture:
     producedItems:
       STR_HANDMAIDEN_POWERARMOR_STOREITEM: 1
     requiredItems:
-      STR_ALIEN_ALLOYS: 3
-      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 5
-    points: 0
+      STR_ALIEN_ALLOYS: 4
+      STR_SLAANESHPATH_PIETY: 20
+    points: 5
 
-#  - name: STR_FORGE_ADEPTAS_ARMOR_COMPONENT
-#    category: STR_PERSONAL_ARMOR
-#    requires:
-#      - STR_POWER_ARMOR_CORRUPTION
-#    space: 20
-#    time: 200
-#    cost: 1000 # Adds a hefty cost and time requirement.
-#    producedItems:
-#      STR_SLAANESHPATH_ADEPTAS_ARMOR_COMPONENTS: 1
-#    requiredItems:
-#      STR_ALIEN_ALLOYS: 3
-#      STR_SLAANESHPATH_BROKEN_ADEPTAS_ARMOR_COMPONENTS: 3
-#    points: 0
 
 #WEAPON & AMMO MANUFACTURE
 
