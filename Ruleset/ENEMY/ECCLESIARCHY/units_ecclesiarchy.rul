@@ -81,8 +81,18 @@
 #     #5: OBLATIONIST SECTION
 #
 ###############################################################################################################################
+#                                           NOTE ON WEAPON SETS
+#
+# The Ecclesiarchy adopts a strict "BYOB" (Bring Your Own Boltgun) policy when it comes to equipment. It cannot actually issue
+# any kind of standardized weapons without violating the Decree Passive, so Ecclesiarchy units are all armed based on their own ability
+# to purchase, borrow, or otherwise aquire weapons. However, the Ecclesiarchy DOES possess the resources to maintain and supply those weapons;
+# a Tanith scout who brings his own Tanith lasgun will be able to maintain that lasgun in good condition. The limitation here is not one of resources;
+# the Ecclesiarchy is incredibly rich and in possession of thousands of planets. It is purely administrative: for LEGAL reasons, it cannot formally hand out
+# standardized equipment.
+#
+# The main upshot of this is that Ecclesiarchy lists use an EXTREMELY wide variety of equipment. Some Lasguns will be Steel Legion lasguns, others will be
+# Vostroyan or Lucius pattern. Essentially, ANY kind of (legal) imperial weapon that isn't restricted to the Astartes or Sororitas can be used.
 
-#WEAPONSETS
 
 weaponSets:
 
