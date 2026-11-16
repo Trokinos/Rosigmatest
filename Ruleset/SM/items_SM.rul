@@ -310,6 +310,7 @@ items:
 
   - type: STR_HEAVY_LASER
     costSell: 10000
+    listOrder: 11110
 
   - type: STR_HFLAMER
     costSell: 35000
@@ -478,7 +479,7 @@ items:
     invHeight: 2
     recoveryPoints: 1
     armor: 200
-    listOrder: 11150
+    listOrder: 11119
 
 
   - type: STR_BLASTER_BOMB  # MULTIMELTA AMMO            2023
@@ -1973,7 +1974,7 @@ items:
     oneHandedPenalty: 25
     invWidth: 2
     invHeight: 3
-    listOrder: 11101
+    listOrder: 11115
 
   - &STR_PRIMARIS_EXTERMINATOR_TEMPLATE
     type: STR_PRIMARIS_EXTERMINATOR
