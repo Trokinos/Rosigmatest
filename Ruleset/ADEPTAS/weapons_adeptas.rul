@@ -1843,7 +1843,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 300
-    listOrder: 11101
+    listOrder: 11112
 
   - type: STR_HARMONIC_MELTAGUN  # ADEPTAS MELTAGUN                    2019
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]
@@ -1867,7 +1867,7 @@ items:
     invWidth: 2
     invHeight: 3
     armor: 200
-    listOrder: 11102
+    listOrder: 11120
 
   - type: STR_GRAVGUN_ADEPTAS  # GRAVGUN ADEPTAS                  11800
     categories: [STR_CAT_GRAVGUN, STR_CAT_TACTICAL, STR_CAT_ADEPTAS]

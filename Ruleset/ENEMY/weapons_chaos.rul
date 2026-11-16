@@ -3386,7 +3386,7 @@ items:
     twoHanded: true
     invWidth: 2
     invHeight: 3
-    listOrder: 11101
+    listOrder: 11121
     refNode: *CHAOS_WEAPON
 
 
@@ -3409,7 +3409,7 @@ items:
     twoHanded: true
     invWidth: 2
     invHeight: 3
-    listOrder: 11110
+    listOrder: 11111
 
   - type: STR_BLASTER_LAUNCHER  # MULTIMELTA            2021
     categories: [STR_CAT_MELTA, STR_CAT_DEVASTATOR]

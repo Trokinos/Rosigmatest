@@ -153,7 +153,7 @@ items:
     invHeight: 2
     armor: 200
     recoveryPoints: 1
-    listOrder: 11102
+    listOrder: 11129
 
   - type: STR_LIGHT_MELTA_AMMO  # POTESTAS/LIGHT MELTAGUN AMMO                2020
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL]
@@ -172,4 +172,4 @@ items:
     invWidth: 1
     invHeight: 1
     recoveryPoints: 1
-    listOrder: 11165
+    listOrder: 11109

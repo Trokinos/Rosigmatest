@@ -47,7 +47,7 @@ items:
     categories: [STR_CAT_MELTA, STR_CAT_TACTICAL, STR_CAT_SLAANESH]
     size: 0.3
     costSell: 40000
-    listOrder: 11160
+    listOrder: 11105
     recoveryPoints: 3
 
   - type: STR_PLASMA_CARBINE_SLAAN
